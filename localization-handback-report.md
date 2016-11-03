@@ -1,11 +1,39 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [CloudAppSecurityDocs\includes\adallom_md.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b4c45769356e70388027f4b93011e2dee12bfecf/CloudAppSecurityDocs/includes/adallom_md.md) | InSyncHandedBackSuccess | [Details](#1b95273f4f639ebd4bc1d0200fed97b9c1acb02d31)
+ [CloudAppSecurityDocs\includes\adallom1_md.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/8841b5eca8285935ec4b4c6134bd7514a2dc6ac9/CloudAppSecurityDocs/includes/adallom1_md.md) | InSyncHandedBackSuccess | [Details](#2e7cec9538ebefe236d29dfaa1d2abcbbce98b9c30)
 
 ## Item Details
+##### <a name='1b95273f4f639ebd4bc1d0200fed97b9c1acb02d31'></a> Source: [CloudAppSecurityDocs\includes\adallom_md.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b4c45769356e70388027f4b93011e2dee12bfecf/CloudAppSecurityDocs/includes/adallom_md.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [CloudAppSecurityDocs\includes\adallom_md.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.es-es/blob/565f4adc04c2d6a3a7cb2aeead9ccfa5d300ae76/CloudAppSecurityDocs/includes/adallom_md.md)
+* Handoff File: [adallom_md.d1b518bca7d9aa221b90dc6cc2195be3f8c83d00.es-es.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/e0e418620b56b393b1830a5d8770bc7db721ad15/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.es-es/live/ht/adallom_md.d1b518bca7d9aa221b90dc6cc2195be3f8c83d00.es-es.xlf)
+* Handoff Datetime: 2016-10-28 07:04:04
+* Handoff Reason: Include
+* Archive File: [adallom_md.d1b518bca7d9aa221b90dc6cc2195be3f8c83d00.es-es.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/0f2202618eb0eead93f5d7bb65721575d2e58b09/ol-archive/Microsoft/CloudAppSecurityDocs-pr.es-es/live/ht/adallom_md.d1b518bca7d9aa221b90dc6cc2195be3f8c83d00.es-es.xlf)
+* Archive Datetime: 2016-10-29 00:52:17
+* Handback File: [adallom_md.d1b518bca7d9aa221b90dc6cc2195be3f8c83d00.es-es.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/419c4721bf810ba9b8c8d51eca700a5dbd711193/ol-handback/Microsoft/CloudAppSecurityDocs-pr.es-es/live/ht/adallom_md.d1b518bca7d9aa221b90dc6cc2195be3f8c83d00.es-es.xlf)
+* Handback Datetime: 2016-11-03 08:07:09
+* [Back to Top](#report-top)
+
+##### <a name='2e7cec9538ebefe236d29dfaa1d2abcbbce98b9c30'></a> Source: [CloudAppSecurityDocs\includes\adallom1_md.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/8841b5eca8285935ec4b4c6134bd7514a2dc6ac9/CloudAppSecurityDocs/includes/adallom1_md.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [CloudAppSecurityDocs\includes\adallom1_md.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.es-es/blob/565f4adc04c2d6a3a7cb2aeead9ccfa5d300ae76/CloudAppSecurityDocs/includes/adallom1_md.md)
+* Handoff File: [adallom1_md.48f9b8ef1547f0fc495a6958228ba1fdb0ffffc1.es-es.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/e0e418620b56b393b1830a5d8770bc7db721ad15/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.es-es/live/ht/adallom1_md.48f9b8ef1547f0fc495a6958228ba1fdb0ffffc1.es-es.xlf)
+* Handoff Datetime: 2016-10-28 07:04:04
+* Handoff Reason: Include
+* Archive File: [adallom1_md.48f9b8ef1547f0fc495a6958228ba1fdb0ffffc1.es-es.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/0f2202618eb0eead93f5d7bb65721575d2e58b09/ol-archive/Microsoft/CloudAppSecurityDocs-pr.es-es/live/ht/adallom1_md.48f9b8ef1547f0fc495a6958228ba1fdb0ffffc1.es-es.xlf)
+* Archive Datetime: 2016-10-29 00:52:17
+* Handback File: [adallom1_md.48f9b8ef1547f0fc495a6958228ba1fdb0ffffc1.es-es.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/419c4721bf810ba9b8c8d51eca700a5dbd711193/ol-handback/Microsoft/CloudAppSecurityDocs-pr.es-es/live/ht/adallom1_md.48f9b8ef1547f0fc495a6958228ba1fdb0ffffc1.es-es.xlf)
+* Handback Datetime: 2016-11-03 08:07:09
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
