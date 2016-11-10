@@ -14,8 +14,8 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: e74cd96f9bf8537f230dcb58715492bc6fccd2f0
+ms.sourcegitcommit: 14de5a6b28c6593250a1a7827905fb0f8a6482b5
+ms.openlocfilehash: 3ea2fbe78b943513a1b6ce483bc50ed5d79ae7c5
 
 
 ---
@@ -23,12 +23,7 @@ ms.openlocfilehash: e74cd96f9bf8537f230dcb58715492bc6fccd2f0
 # <a name="enable-instant-visibility-protection-and-governance-actions-for-your-apps"></a>Habilite la visibilidad, la protección y las acciones de gobierno instantáneas para las aplicaciones
 Los conectores de aplicaciones aprovechan las API de los proveedores de aplicaciones para permitir mediante Cloud App Security una mayor visibilidad y control de las aplicaciones a las que se conecta.  
   
-Cloud App Security aprovecha las API que proporciona el proveedor de nube. Cada servicio tiene su propio marco de trabajo y limitaciones de API. Cloud App Security funciona con los servicios para optimizar el uso de las API y garantizar el máximo rendimiento. Teniendo en cuenta las diferentes limitaciones que los servicios imponen a las API (como la limitación de peticiones, los límites de API, las ventanas de API dinámicas de tiempo cambiante, etc.), los motores de Cloud App Security aprovechan la capacidad permitida. Algunas operaciones, como el análisis de todos los archivos del inquilino, requieren numerosas API y, por lo tanto, se reparten a lo largo de un período de tiempo mayor. Tengan en cuenta que algunas directivas pueden ejecutarse durante varias horas o varios días.  
-  
-**ExpressRoute**  
-  
-Cloud App Security se ha implementado en Azure y está totalmente integrado con [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Todas las interacciones con las aplicaciones de Cloud App Security y el tráfico enviado a Cloud App Security, incluida la carga de registros de detección, se enrutan a través del **emparejamiento público** de ExpressRoute para mejorar la latencia, el rendimiento y la seguridad. No hay ningún paso de configuración necesario en el lado cliente.  
-Para obtener más información sobre el emparejamiento público, consulte [Circuitos ExpressRoute y dominios de enrutamiento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
+Cloud App Security aprovecha las API que proporciona el proveedor de nube. Cada servicio tiene su propio marco de trabajo y limitaciones de API. Cloud App Security funciona con los servicios para optimizar el uso de las API y garantizar el máximo rendimiento. Teniendo en cuenta las diferentes limitaciones que los servicios imponen a las API (como la limitación de peticiones, los límites de API, las ventanas de API dinámicas de tiempo cambiante, etc.), los motores de Cloud App Security aprovechan la capacidad permitida. Algunas operaciones, como el análisis de todos los archivos del inquilino, requieren numerosas API y, por lo tanto, se reparten a lo largo de un período de tiempo mayor. Tenga en cuenta que algunas directivas pueden ejecutarse durante varias horas o varios días.  
   
 ## <a name="how-it-works"></a>Cómo funciona  
 Cloud App Security se implementa con privilegios de administrador del sistema para permitir el acceso total a todos los objetos del entorno.  
@@ -71,10 +66,9 @@ En función de la aplicación a la que se conecte (consulte la tabla siguiente),
      Capacidad de eliminar tokens.  
   
 En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades son compatibles con los conectores de aplicaciones:  
-  
-||||||||||  
-|-|-|-|-|-|-|-|-|-|  
+
 ||**Office 365**|**Box**|**Okta**|**Google Apps**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|  
+|-|-|-|-|-|-|-|-|-|  
 |**Cuentas de lista**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**Grupo**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**Privilegios**|✔|✔|No es compatible con el proveedor|✔|✔|✔|✔||  
@@ -121,6 +115,12 @@ Para usar los conectores de aplicaciones, debe asegurarse de que tiene lo siguie
 |ServiceNow|Eureka o versión posterior|Administrador + rol de API de REST|  
 |Salesforce||Administración|  
   
+
+**ExpressRoute**  
+  
+Cloud App Security se ha implementado en Azure y está totalmente integrado con [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Todas las interacciones con las aplicaciones de Cloud App Security y el tráfico enviado a Cloud App Security, incluida la carga de registros de detección, se enrutan a través del **emparejamiento público** de ExpressRoute para mejorar la latencia, el rendimiento y la seguridad. No hay ningún paso de configuración necesario en el lado cliente.  
+Para obtener más información sobre el emparejamiento público, vea [Circuitos ExpressRoute y dominios de enrutamiento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
+  
 ## <a name="see-also"></a>Consulte también  
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 [Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -129,6 +129,6 @@ Para usar los conectores de aplicaciones, debe asegurarse de que tiene lo siguie
    
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
