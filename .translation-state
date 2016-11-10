@@ -34,9 +34,9 @@
       "ArchiveFileCommit": "0f2202618eb0eead93f5d7bb65721575d2e58b09",
       "ArchiveFileDateTime": "2016-10-29T00:52:17.9919554Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\activity-filters.35fa2d219e36862b231b46c7dfacda5de7ef660b.es-es.xlf",
+      "BilingualFileCommit": "4ad24e94394149a98e3f6370278c4eea5107ffd2",
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
       "BilingualException": null
     },
     "bd612cfcecae2eb9c5a81d59250585fb9f4adb01": {
@@ -72,8 +72,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\anomaly-detection-policy.dd2b5dd1893cc80c78ec83f5577ce52762e7088f.es-es.xlf with commit: 4ad24e94394149a98e3f6370278c4eea5107ffd2 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "HTTP POST http://oltm.azurewebsites.net//trainxliff?sourceLocale=en-US&targetLocale=es-es&correlation=bd612cfcecae2eb9c5a81d59250585fb9f4adb01&tenant=ol timed out after 10000 milliseconds.",
+        "exception_type": "System.Net.WebException",
+        "stack_trace": "   at Microsoft.OpenLocalization.RestClientCore.<ExecuteAsync>d__18.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\RestClient.cs:line 169\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliffInternal>d__6.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 57\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliff>d__7.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 85",
+        "extended_information": null
+      }
     },
     "520017dab0301fe2a64c7b82d5e14c71efb2522f": {
       "FileHash": "520017dab0301fe2a64c7b82d5e14c71efb2522f",
@@ -108,8 +116,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\built-in-report-reference.06ef27a7cdb4893931731baf0fa83a525142b359.es-es.xlf with commit: 4ad24e94394149a98e3f6370278c4eea5107ffd2 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "HTTP POST http://oltm.azurewebsites.net//trainxliff?sourceLocale=en-US&targetLocale=es-es&correlation=520017dab0301fe2a64c7b82d5e14c71efb2522f&tenant=ol timed out after 10000 milliseconds.",
+        "exception_type": "System.Net.WebException",
+        "stack_trace": "   at Microsoft.OpenLocalization.RestClientCore.<ExecuteAsync>d__18.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\RestClient.cs:line 169\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliffInternal>d__6.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 57\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliff>d__7.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 85",
+        "extended_information": null
+      }
     },
     "481ca3d68e5e7aea006eeff443ec521a374e6e11": {
       "FileHash": "481ca3d68e5e7aea006eeff443ec521a374e6e11",
@@ -144,8 +160,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\cloud-discovery-anomaly-detection-policy.903fdba9b72e571d910618590663e0e171d0f329.es-es.xlf with commit: 4ad24e94394149a98e3f6370278c4eea5107ffd2 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "HTTP POST http://oltm.azurewebsites.net//trainxliff?sourceLocale=en-US&targetLocale=es-es&correlation=481ca3d68e5e7aea006eeff443ec521a374e6e11&tenant=ol timed out after 10000 milliseconds.",
+        "exception_type": "System.Net.WebException",
+        "stack_trace": "   at Microsoft.OpenLocalization.RestClientCore.<ExecuteAsync>d__18.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\RestClient.cs:line 169\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliffInternal>d__6.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 57\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliff>d__7.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 85",
+        "extended_information": null
+      }
     },
     "a43f96ec1d0f6047570677f07281b3e5ad42a40e": {
       "FileHash": "a43f96ec1d0f6047570677f07281b3e5ad42a40e",
@@ -178,9 +202,9 @@
       "ArchiveFileCommit": "0f2202618eb0eead93f5d7bb65721575d2e58b09",
       "ArchiveFileDateTime": "2016-10-29T00:52:17.9919554Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\cloud-discovery-policies.da5e4d2673d9645d8cbeb92a28438d64960fbf3f.es-es.xlf",
+      "BilingualFileCommit": "4ad24e94394149a98e3f6370278c4eea5107ffd2",
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
       "BilingualException": null
     },
     "9672336d69f19875d160eb414bf3ca2c525692e1": {
@@ -214,9 +238,9 @@
       "ArchiveFileCommit": "0f2202618eb0eead93f5d7bb65721575d2e58b09",
       "ArchiveFileDateTime": "2016-10-29T00:52:17.9919554Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\configure-automatic-log-upload-for-continuous-reports.91b5b443228b3acaf7cd43a2f90ef1e554534454.es-es.xlf",
+      "BilingualFileCommit": "4ad24e94394149a98e3f6370278c4eea5107ffd2",
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
       "BilingualException": null
     },
     "4b9ab028bb45f77513217dd3784cefc73e984962": {
@@ -250,9 +274,9 @@
       "ArchiveFileCommit": "0f2202618eb0eead93f5d7bb65721575d2e58b09",
       "ArchiveFileDateTime": "2016-10-29T00:52:17.9919554Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\connect-aws-to-microsoft-cloud-app-security.2e0aa10f1eb614bfeb960cd771cc3d1eb94e2fb5.es-es.xlf",
+      "BilingualFileCommit": "4ad24e94394149a98e3f6370278c4eea5107ffd2",
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
       "BilingualException": null
     },
     "849408f84e2a80022623c11f7951e921a95625b6": {
@@ -288,8 +312,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\connect-box-to-microsoft-cloud-app-security.82c39b5ca41da383e588f730f655cba858b4d64d.es-es.xlf with commit: 4ad24e94394149a98e3f6370278c4eea5107ffd2 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "HTTP POST http://oltm.azurewebsites.net//trainxliff?sourceLocale=en-US&targetLocale=es-es&correlation=849408f84e2a80022623c11f7951e921a95625b6&tenant=ol timed out after 10000 milliseconds.",
+        "exception_type": "System.Net.WebException",
+        "stack_trace": "   at Microsoft.OpenLocalization.RestClientCore.<ExecuteAsync>d__18.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\RestClient.cs:line 169\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliffInternal>d__6.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 57\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliff>d__7.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 85",
+        "extended_information": null
+      }
     },
     "105003dfbd8afbb10cdb2058e2da180d4b49e294": {
       "FileHash": "105003dfbd8afbb10cdb2058e2da180d4b49e294",
@@ -322,9 +354,9 @@
       "ArchiveFileCommit": "0f2202618eb0eead93f5d7bb65721575d2e58b09",
       "ArchiveFileDateTime": "2016-10-29T00:52:17.9919554Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\connect-dropbox-to-microsoft-cloud-app-security.6d004feae3806e9133b60c4d64f9134230d28a0b.es-es.xlf",
+      "BilingualFileCommit": "4ad24e94394149a98e3f6370278c4eea5107ffd2",
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
       "BilingualException": null
     },
     "0f38f61be8a0db4a28d3c7df614807ace69bb38e": {
@@ -360,8 +392,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\connect-google-apps-to-microsoft-cloud-app-security.7799cb4f4bb568bd1e5172a8e691865e184e4864.es-es.xlf with commit: 4ad24e94394149a98e3f6370278c4eea5107ffd2 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "HTTP POST http://oltm.azurewebsites.net//trainxliff?sourceLocale=en-US&targetLocale=es-es&correlation=0f38f61be8a0db4a28d3c7df614807ace69bb38e&tenant=ol timed out after 10000 milliseconds.",
+        "exception_type": "System.Net.WebException",
+        "stack_trace": "   at Microsoft.OpenLocalization.RestClientCore.<ExecuteAsync>d__18.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\RestClient.cs:line 169\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliffInternal>d__6.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 57\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliff>d__7.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 85",
+        "extended_information": null
+      }
     },
     "25adba6d9c2586d3fed162673008cd4212e22401": {
       "FileHash": "25adba6d9c2586d3fed162673008cd4212e22401",
@@ -526,9 +566,9 @@
       "ArchiveFileCommit": "0f2202618eb0eead93f5d7bb65721575d2e58b09",
       "ArchiveFileDateTime": "2016-10-29T00:52:17.9919554Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\connect-servicenow-to-microsoft-cloud-app-security.90a19b1636e01fd113dd392d1c181a4082cc3f60.es-es.xlf",
+      "BilingualFileCommit": "4ad24e94394149a98e3f6370278c4eea5107ffd2",
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
       "BilingualException": null
     },
     "ea1854d6bf32e01afe6183409b68ded32ee37dd1": {
@@ -564,8 +604,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\content-inspection.6d59b72cee1c900e0dd6e415b73590b948c6b657.es-es.xlf with commit: 4ad24e94394149a98e3f6370278c4eea5107ffd2 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "HTTP POST http://oltm.azurewebsites.net//trainxliff?sourceLocale=en-US&targetLocale=es-es&correlation=ea1854d6bf32e01afe6183409b68ded32ee37dd1&tenant=ol timed out after 10000 milliseconds.",
+        "exception_type": "System.Net.WebException",
+        "stack_trace": "   at Microsoft.OpenLocalization.RestClientCore.<ExecuteAsync>d__18.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\RestClient.cs:line 169\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliffInternal>d__6.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 57\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliff>d__7.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 85",
+        "extended_information": null
+      }
     },
     "9dc74c35f32c9a3dff251d6e0ac6b35a3591f4b9": {
       "FileHash": "9dc74c35f32c9a3dff251d6e0ac6b35a3591f4b9",
@@ -598,9 +646,9 @@
       "ArchiveFileCommit": "0f2202618eb0eead93f5d7bb65721575d2e58b09",
       "ArchiveFileDateTime": "2016-10-29T00:52:17.9919554Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\control.207bb840c36c3c6e248e75c23548d9a4a409b03f.es-es.xlf",
+      "BilingualFileCommit": "4ad24e94394149a98e3f6370278c4eea5107ffd2",
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
       "BilingualException": null
     },
     "10b4a9575951007dbee9003fd061fb5aaa2d3823": {
@@ -636,8 +684,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\control-cloud-apps-with-policies.4e47ecb5fb670e52316f664550b4212a65f6248c.es-es.xlf with commit: 4ad24e94394149a98e3f6370278c4eea5107ffd2 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "HTTP POST http://oltm.azurewebsites.net//trainxliff?sourceLocale=en-US&targetLocale=es-es&correlation=10b4a9575951007dbee9003fd061fb5aaa2d3823&tenant=ol timed out after 10000 milliseconds.",
+        "exception_type": "System.Net.WebException",
+        "stack_trace": "   at Microsoft.OpenLocalization.RestClientCore.<ExecuteAsync>d__18.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\RestClient.cs:line 169\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliffInternal>d__6.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 57\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliff>d__7.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 85",
+        "extended_information": null
+      }
     },
     "669d1c1942e8c7e930cd2421e9b56821eff04d12": {
       "FileHash": "669d1c1942e8c7e930cd2421e9b56821eff04d12",
@@ -672,8 +728,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\create-snapshot-cloud-discovery-reports.b2686f4704ad683496ba87d07125301223a2aae0.es-es.xlf with commit: 4ad24e94394149a98e3f6370278c4eea5107ffd2 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "HTTP POST http://oltm.azurewebsites.net//trainxliff?sourceLocale=en-US&targetLocale=es-es&correlation=669d1c1942e8c7e930cd2421e9b56821eff04d12&tenant=ol timed out after 10000 milliseconds.",
+        "exception_type": "System.Net.WebException",
+        "stack_trace": "   at Microsoft.OpenLocalization.RestClientCore.<ExecuteAsync>d__18.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\RestClient.cs:line 169\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliffInternal>d__6.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 57\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliff>d__7.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 85",
+        "extended_information": null
+      }
     },
     "cc6a6e4b41b6660462c9c873469a1e8c9af97c4e": {
       "FileHash": "cc6a6e4b41b6660462c9c873469a1e8c9af97c4e",
@@ -706,9 +770,9 @@
       "ArchiveFileCommit": "0f2202618eb0eead93f5d7bb65721575d2e58b09",
       "ArchiveFileDateTime": "2016-10-29T00:52:17.9919554Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\daily-activities-to-protect-your-cloud-environment.5e15f04793bbcadad02048ae9b154526545f1024.es-es.xlf",
+      "BilingualFileCommit": "4ad24e94394149a98e3f6370278c4eea5107ffd2",
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
       "BilingualException": null
     },
     "b5887c21fe93262cd9982b0d99bf3301b4ef3f0f": {
@@ -744,8 +808,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\data-protection-policies.9283ea52b7bca46e511f7c792246a6207518a10e.es-es.xlf with commit: 4ad24e94394149a98e3f6370278c4eea5107ffd2 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "HTTP POST http://oltm.azurewebsites.net//trainxliff?sourceLocale=en-US&targetLocale=es-es&correlation=b5887c21fe93262cd9982b0d99bf3301b4ef3f0f&tenant=ol timed out after 10000 milliseconds.",
+        "exception_type": "System.Net.WebException",
+        "stack_trace": "   at Microsoft.OpenLocalization.RestClientCore.<ExecuteAsync>d__18.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\RestClient.cs:line 169\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliffInternal>d__6.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 57\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliff>d__7.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 85",
+        "extended_information": null
+      }
     },
     "d554863f40160b8a1363e604d00869d607852680": {
       "FileHash": "d554863f40160b8a1363e604d00869d607852680",
@@ -824,8 +896,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\enable-instant-visibility-protection-and-governance-actions-for-your-apps.cb5f69f35a41584708bb295f6c3c5c18850d95a6.es-es.xlf with commit: 4ad24e94394149a98e3f6370278c4eea5107ffd2 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "HTTP POST http://oltm.azurewebsites.net//trainxliff?sourceLocale=en-US&targetLocale=es-es&correlation=e74cd96f9bf8537f230dcb58715492bc6fccd2f0&tenant=ol timed out after 10000 milliseconds.",
+        "exception_type": "System.Net.WebException",
+        "stack_trace": "   at Microsoft.OpenLocalization.RestClientCore.<ExecuteAsync>d__18.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\RestClient.cs:line 169\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliffInternal>d__6.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 57\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliff>d__7.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 85",
+        "extended_information": null
+      }
     },
     "1687dd8d98a2e44acbf3f8ad34f875cbbc0bcdd1": {
       "FileHash": "1687dd8d98a2e44acbf3f8ad34f875cbbc0bcdd1",
@@ -932,9 +1012,9 @@
       "ArchiveFileCommit": "0f2202618eb0eead93f5d7bb65721575d2e58b09",
       "ArchiveFileDateTime": "2016-10-29T00:52:17.9919554Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\getting-started-with-cloud-app-security.595efa3f26c538d1c9171dffaf30d61a4aa5939b.es-es.xlf",
+      "BilingualFileCommit": "4ad24e94394149a98e3f6370278c4eea5107ffd2",
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
       "BilingualException": null
     },
     "052ca8e20e75fcae7687d17687d7dd1a645ae5e6": {
@@ -968,9 +1048,9 @@
       "ArchiveFileCommit": "0f2202618eb0eead93f5d7bb65721575d2e58b09",
       "ArchiveFileDateTime": "2016-10-29T00:52:17.9919554Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\governance-actions.fea9f47fd8651f964dbb0ca81289979f72228663.es-es.xlf",
+      "BilingualFileCommit": "4ad24e94394149a98e3f6370278c4eea5107ffd2",
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
       "BilingualException": null
     },
     "1b95273f4f639ebd4bc1d0200fed97b9c1acb02d": {
@@ -1080,8 +1160,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\index.9f376d5a796451d09ac1781b0f592917baf408f1.es-es.xlf with commit: 4ad24e94394149a98e3f6370278c4eea5107ffd2 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "HTTP POST http://oltm.azurewebsites.net//trainxliff?sourceLocale=en-US&targetLocale=es-es&correlation=b61ffbf820d94f41afb0f595700cf95ad6180445&tenant=ol timed out after 10000 milliseconds.",
+        "exception_type": "System.Net.WebException",
+        "stack_trace": "   at Microsoft.OpenLocalization.RestClientCore.<ExecuteAsync>d__18.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\RestClient.cs:line 169\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliffInternal>d__6.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 57\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliff>d__7.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 85",
+        "extended_information": null
+      }
     },
     "186643ab8efa7391b06a09dd2cddbb22ba583e71": {
       "FileHash": "186643ab8efa7391b06a09dd2cddbb22ba583e71",
@@ -5865,9 +5953,9 @@
       "ArchiveFileCommit": "0f2202618eb0eead93f5d7bb65721575d2e58b09",
       "ArchiveFileDateTime": "2016-10-29T00:52:17.9919554Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\monitor-alerts.49ecce0959fd3fe6cd5eebfcebf62e74b5881cd5.es-es.xlf",
+      "BilingualFileCommit": "4ad24e94394149a98e3f6370278c4eea5107ffd2",
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
       "BilingualException": null
     },
     "6f204a955d3186013691fe876e185286a55dd8af": {
@@ -5901,9 +5989,9 @@
       "ArchiveFileCommit": "0f2202618eb0eead93f5d7bb65721575d2e58b09",
       "ArchiveFileDateTime": "2016-10-29T00:52:17.9919554Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\release-notes.17e301be5316791275be7a0b7d7c1a5ccef11655.es-es.xlf",
+      "BilingualFileCommit": "4ad24e94394149a98e3f6370278c4eea5107ffd2",
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
       "BilingualException": null
     },
     "cfca549e1e16ca83972876626771a55d698530a2": {
@@ -5937,9 +6025,9 @@
       "ArchiveFileCommit": "0f2202618eb0eead93f5d7bb65721575d2e58b09",
       "ArchiveFileDateTime": "2016-10-29T00:52:17.9919554Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\set-up-cloud-discovery.c7490cab4e9823138e0a38e271acb08dc2d1a5b9.es-es.xlf",
+      "BilingualFileCommit": "4ad24e94394149a98e3f6370278c4eea5107ffd2",
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
       "BilingualException": null
     },
     "b4a73c596c7fc91e75c6304d208f01b0423517e7": {
@@ -5975,8 +6063,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\TOC.9254fd8b61e22108f63162b1fb6861b4ae9dd503.es-es.xlf with commit: 4ad24e94394149a98e3f6370278c4eea5107ffd2 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "HTTP POST http://oltm.azurewebsites.net//trainxliff?sourceLocale=en-US&targetLocale=es-es&correlation=b4a73c596c7fc91e75c6304d208f01b0423517e7&tenant=ol timed out after 10000 milliseconds.",
+        "exception_type": "System.Net.WebException",
+        "stack_trace": "   at Microsoft.OpenLocalization.RestClientCore.<ExecuteAsync>d__18.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\RestClient.cs:line 169\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliffInternal>d__6.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 57\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliff>d__7.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 85",
+        "extended_information": null
+      }
     },
     "7446c3eb17befdf473c8841a0d92524c029f67df": {
       "FileHash": "7446c3eb17befdf473c8841a0d92524c029f67df",
@@ -6009,9 +6105,9 @@
       "ArchiveFileCommit": "0f2202618eb0eead93f5d7bb65721575d2e58b09",
       "ArchiveFileDateTime": "2016-10-29T00:52:17.9919554Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\troubleshooting.2660c1dcd0a77f797019ffa217675b0468d1bf42.es-es.xlf",
+      "BilingualFileCommit": "4ad24e94394149a98e3f6370278c4eea5107ffd2",
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
       "BilingualException": null
     },
     "61492a0126bff93c2a61d5d1317784ca96687df7": {
@@ -6047,8 +6143,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\troubleshooting-api-connectors-using-error-messages.868b6e7f182d18d959771470a8775c43abe15648.es-es.xlf with commit: 4ad24e94394149a98e3f6370278c4eea5107ffd2 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "HTTP POST http://oltm.azurewebsites.net//trainxliff?sourceLocale=en-US&targetLocale=es-es&correlation=61492a0126bff93c2a61d5d1317784ca96687df7&tenant=ol timed out after 10000 milliseconds.",
+        "exception_type": "System.Net.WebException",
+        "stack_trace": "   at Microsoft.OpenLocalization.RestClientCore.<ExecuteAsync>d__18.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\RestClient.cs:line 169\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliffInternal>d__6.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 57\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliff>d__7.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 85",
+        "extended_information": null
+      }
     },
     "2d0b2cebdfa15cccc5888660da498446d620b64f": {
       "FileHash": "2d0b2cebdfa15cccc5888660da498446d620b64f",
@@ -6081,9 +6185,9 @@
       "ArchiveFileCommit": "0f2202618eb0eead93f5d7bb65721575d2e58b09",
       "ArchiveFileDateTime": "2016-10-29T00:52:17.9919554Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\troubleshooting-cloud-discovery.d3bcd935e967afb077dddf348e7bbc1af22d7b0b.es-es.xlf",
+      "BilingualFileCommit": "4ad24e94394149a98e3f6370278c4eea5107ffd2",
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
       "BilingualException": null
     },
     "a88691fbe6c23fa537133c077402d8e9e1121047": {
@@ -6119,8 +6223,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\user-activity-policies.b7869d730b900e0d69f055dfc34f8d1ed13fb37f.es-es.xlf with commit: 4ad24e94394149a98e3f6370278c4eea5107ffd2 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "HTTP POST http://oltm.azurewebsites.net//trainxliff?sourceLocale=en-US&targetLocale=es-es&correlation=a88691fbe6c23fa537133c077402d8e9e1121047&tenant=ol timed out after 10000 milliseconds.",
+        "exception_type": "System.Net.WebException",
+        "stack_trace": "   at Microsoft.OpenLocalization.RestClientCore.<ExecuteAsync>d__18.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\RestClient.cs:line 169\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliffInternal>d__6.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 57\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliff>d__7.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 85",
+        "extended_information": null
+      }
     },
     "d2ece0e3a47dc0febbb1314c496045abdc5c8d61": {
       "FileHash": "d2ece0e3a47dc0febbb1314c496045abdc5c8d61",
@@ -6155,8 +6267,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\what-is-cloud-app-security.15558b12c33b1fa7547b161b413c292a732924ca.es-es.xlf with commit: 4ad24e94394149a98e3f6370278c4eea5107ffd2 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "HTTP POST http://oltm.azurewebsites.net//trainxliff?sourceLocale=en-US&targetLocale=es-es&correlation=d2ece0e3a47dc0febbb1314c496045abdc5c8d61&tenant=ol timed out after 10000 milliseconds.",
+        "exception_type": "System.Net.WebException",
+        "stack_trace": "   at Microsoft.OpenLocalization.RestClientCore.<ExecuteAsync>d__18.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\RestClient.cs:line 169\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliffInternal>d__6.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 57\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at Microsoft.OpenLocalization.Common.Bilingual.BilingualTrainer.<TrainXliff>d__7.MoveNext() in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Common\\Bilingual\\BilingualTrainer.cs:line 85",
+        "extended_information": null
+      }
     },
     "4b9bf05e43966ff39dacc58a082c7b8eb3627eda": {
       "FileHash": "4b9bf05e43966ff39dacc58a082c7b8eb3627eda",
@@ -6189,9 +6309,9 @@
       "ArchiveFileCommit": "0f2202618eb0eead93f5d7bb65721575d2e58b09",
       "ArchiveFileDateTime": "2016-10-29T00:52:17.9919554Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\working-with-cloud-discovery-data.678cd20d2833ae830d430cd09c77c6b4bd4cd274.es-es.xlf",
+      "BilingualFileCommit": "4ad24e94394149a98e3f6370278c4eea5107ffd2",
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
       "BilingualException": null
     },
     "77468efb5d4cb62f560c11e624545fc8abe8c99e": {
@@ -6225,9 +6345,9 @@
       "ArchiveFileCommit": "0f2202618eb0eead93f5d7bb65721575d2e58b09",
       "ArchiveFileDateTime": "2016-10-29T00:52:17.9919554Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\working-with-the-regex-engine.ca593a4d7946d556e005afffad5262b5dc64a0e4.es-es.xlf",
+      "BilingualFileCommit": "4ad24e94394149a98e3f6370278c4eea5107ffd2",
+      "BilingualDateTime": "2016-11-10T11:06:28.4849199Z",
       "BilingualException": null
     },
     "59e97ef0bd0a1f3ed388c3d21cfe6a70abf7936a": {
