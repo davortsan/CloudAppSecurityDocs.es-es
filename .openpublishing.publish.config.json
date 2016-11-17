@@ -1,4 +1,4 @@
-l{
+{
   "build_entry_point": "docs",
   "need_generate_pdf": false,
   "need_generate_intellisense": false,
