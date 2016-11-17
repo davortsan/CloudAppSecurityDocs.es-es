@@ -11780,9 +11780,9 @@
       "ArchiveFileCommit": "f31538feeb232a6d3156d2dd240c8a7860e16c68",
       "ArchiveFileDateTime": "2016-11-10T01:23:57.8840999Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\azip-integration.bb192bd1d331da60f814da44b801cf4714502352.es-es.xlf",
+      "BilingualFileCommit": "68f70a4e96d3b1599f150e5910f657dfed914ebe",
+      "BilingualDateTime": "2016-11-17T12:47:56.7740949Z",
       "BilingualException": null
     },
     "c6103fffd99295eb37ad575680b4169cbbac42df": {
@@ -11924,9 +11924,9 @@
       "ArchiveFileCommit": "f31538feeb232a6d3156d2dd240c8a7860e16c68",
       "ArchiveFileDateTime": "2016-11-10T01:23:57.8840999Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\manage-app-permissions.4e9e0a90857ca7ea9657170a841d43edc5129d8a.es-es.xlf",
+      "BilingualFileCommit": "68f70a4e96d3b1599f150e5910f657dfed914ebe",
+      "BilingualDateTime": "2016-11-17T12:47:56.7740949Z",
       "BilingualException": null
     },
     "629f4065348f5d082518eda592e0303bf8f05dca": {
@@ -13018,9 +13018,9 @@
       "ArchiveFileCommit": "f31538feeb232a6d3156d2dd240c8a7860e16c68",
       "ArchiveFileDateTime": "2016-11-10T01:23:57.8840999Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\README.8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d.es-es.xlf",
+      "BilingualFileCommit": "68f70a4e96d3b1599f150e5910f657dfed914ebe",
+      "BilingualDateTime": "2016-11-17T12:47:56.7740949Z",
       "BilingualException": null
     },
     "d1e6d944f998ff2aa2ef74836fd1f4eb3cdd48ee": {
