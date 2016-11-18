@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 10/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,30 @@ ms.assetid: 4949ab4f-22c3-4371-b2dc-c8422a097dfe
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 6f204a955d3186013691fe876e185286a55dd8af
+ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
+ms.openlocfilehash: d95ddaef15cbb11f005156f272578f49f012e16d
 
 
 ---
 
 # <a name="release-notes"></a>Notas de la versión
+
+## <a name="cloud-app-security-release-83"></a>Notas de la versión 83 de Cloud App Security
+Publicado el 30 de octubre de 2016
+
+**Nuevas características**
+-   Para simplificar el filtrado en el [registro de actividad](activity-filters.md) y en el [registro de archivo](file-filters.md), se han consolidado filtros similares. Utilice los filtros de actividad: Objeto de actividad, Dirección IP y Usuario. Utilice el filtro de archivos Colaboradores para encontrar exactamente lo que necesita.
+-   Desde el cajón del registro de actividades, bajo **Origen**, puede hacer clic en el vínculo de **ver los datos sin procesar** para descargar los datos sin procesar usados para generar el registro de actividades, para explorar en profundidad en los eventos de la aplicación. 
+-   Compatibilidad agregada para las actividades de inicio de sesión adicionales en Okta. [Versión preliminar privada]
+-   Compatibilidad agregada para las actividades de inicio de sesión adicionales en Salesforce. 
+
+**Mejoras**
+-   Facilidad de uso mejorada para informes y solución de problemas de instantáneas de Cloud Discovery.
+-   Visibilidad mejorada en la lista de alertas de varias aplicaciones.
+-   Facilidad de uso mejorada al crear nuevos informes continuos de Cloud Discovery.
+-   Facilidad de uso mejorada en el registro de gobierno.
+
+
 
 ## <a name="cloud-app-security-release-82"></a>Notas de la versión 82 de Cloud App Security
 Publicado el 9 de octubre de 2016
@@ -198,6 +215,6 @@ Fecha de publicación: 15 de mayo de 2016
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 
