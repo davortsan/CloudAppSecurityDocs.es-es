@@ -1,5 +1,5 @@
 # [Conceptos básicos y exploración](what-is-cloud-app-security.md)
-## [Qué es Cloud App Discovery](what-is-cloud-app-security.md)
+## [¿Qué es la CAS?](what-is-cloud-app-security.md)
 ## [Notas de la versión](release-notes.md)
 # [Introducción](getting-started-with-cloud-app-security.md)
 ## [Configuración general](general-setup.md)
@@ -7,7 +7,6 @@
 ### [Crear informes de instantáneas de Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 ### [Configurar la carga de registros automática para informes continuos](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Trabajar con datos de Cloud Discovery](working-with-cloud-discovery-data.md)
-# [Implementación](deploy.md)
 ## [Habilitar la visibilidad, la protección y las acciones de gobierno instantáneas para las aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Conectar Box con Microsoft Cloud App Security](connect-box-to-microsoft-cloud-app-security.md)
 ### [Conectar Google Apps con Microsoft Cloud App Security](connect-google-apps-to-microsoft-cloud-app-security.md)
@@ -28,15 +27,17 @@
 # [Uso](daily-activities-to-protect-your-cloud-environment.md)
 ## [Investigación](investigate.md)
 ### [Referencia de informes integrados](built-in-report-reference.md)
-### [Filtros de archivo](file-filters.md)
-### [Filtros de actividad](activity-filters.md)
+### [Archivos](file-filters.md)
+### [Actividades](activity-filters.md)
 ### [Alertas](monitor-alerts.md)
+### [Integración con Azure Information Protection](azip-integration.md)
 ## [Control](control.md)
-## [Acciones de gobierno](governance-actions.md)
+### [Administración de permisos de aplicación](manage-app-permissions.md)
+## [Registro de gobierno](governance-actions.md)
 # [Solución de problemas](troubleshooting.md)
 ## [Solución de problemas de Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Solución de problemas de conectores de API mediante mensajes de error](troubleshooting-api-connectors-using-error-messages.md)
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

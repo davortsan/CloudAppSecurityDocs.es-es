@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/8/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: a88691fbe6c23fa537133c077402d8e9e1121047
+ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
+ms.openlocfilehash: e66cc36b7ff2591c9eff2b7399e7aba7304fd960
 
 
 ---
@@ -42,7 +42,7 @@ Para crear una nueva directiva de actividad, siga este procedimiento:
 4.  Para establecer qué acciones o qué otras métricas desencadenan esta directiva, trabaje con **filtros de actividad**.  
   
 5.  En **Parámetros de coincidencia de actividad**, seleccione si se desencadenará una infracción de directiva cuando una sola actividad coincida con los filtros o si solo se detectará una infracción cuando se detecte un número especificado de **actividades repetidas**.  
-    Si elige **Actividad repetida**, establezca las actividades que desencadenarán la alerta: el número de actividades, el período de tiempo y si una infracción contará para un usuario de una aplicación específica o para el mismo usuario de cualquier aplicación.  
+    Si elige **Actividad repetida**, puede establecer ** Actividades de grupo coincidentes por aplicación**. Esto desencadenará una coincidencia de directiva solo cuando se producen las actividades repetidas en la misma aplicación (por ejemplo, 5 descargas desde Box).  
   
 6.  Configure las **acciones** que deben realizarse cuando se encuentra una coincidencia.  
   
@@ -133,6 +133,6 @@ Cada directiva se compone de las siguientes partes:
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
