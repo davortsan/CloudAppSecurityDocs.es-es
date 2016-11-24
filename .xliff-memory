@@ -827,8 +827,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-11-24T01:30:27.6520263Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\f65d64b240eb26f13a70143f5fb84a4f84f4cb6d.d13f09520036bbce177d311a94af373509b49284.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.es-es\\live\\ht\\file-filters.9e3bd07111b91fd128d2565e14937c0a6ac16bf3.es-es.xlf",
+      "LocXliffCommit": "21aac2343e9924232f8082a42b0820509c123b34"
     },
     "CloudAppSecurityDocs\\manage-app-permissions.md.cc593eb2e5f8feb91598baad50f78b678095bd1d.HT": {
       "SourceFilename": "CloudAppSecurityDocs\\manage-app-permissions.md",
