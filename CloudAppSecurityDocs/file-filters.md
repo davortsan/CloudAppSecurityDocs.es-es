@@ -14,8 +14,8 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
-ms.openlocfilehash: 95dab01c101b6e6171c7985b6571ddb6b4ff5923
+ms.sourcegitcommit: 3c342e019dfca316ee89f68de60886d848abdb17
+ms.openlocfilehash: f65d64b240eb26f13a70143f5fb84a4f84f4cb6d
 
 
 ---
@@ -97,45 +97,7 @@ También puede establecer que la directiva se ejecute en archivos específicos. 
   
 ![filtro Aplicar a](./media/apply-to-filter.png "apply to filter")  
   
-### <a name="governance-actions"></a>Acciones de gobierno  
-  
--   Notificaciones  
-  
-    -   Alertas: las alertas pueden desencadenarse en el sistema y propagarse a través de mensajes de correo electrónico y de texto, según el nivel de gravedad.  
-  
-    -   Notificación de correo electrónico de usuario: es posible personalizar los mensajes de correo electrónico y enviarlos a todos los propietarios de archivos infractores.  
-  
-    -   Administrador de CC: según la integración de directorios del usuario, también se pueden enviar notificaciones de correo electrónico al administrador de la persona que haya infringido una directiva.  
-  
--   Enviar una notificación a usuarios concretos: lista específica de direcciones de correo electrónico que recibirán las notificaciones.  
-  
--   Enviar una notificación al último editor del archivo: se envían notificaciones a la última persona que ha modificado el archivo.  
-  
--   Acciones de gobierno en aplicaciones  
-  
-     Se pueden aplicar acciones pormenorizadas por aplicación. Las acciones específicas varían según la terminología de la aplicación.  
-  
-    -   Cambio del uso compartido  
-  
-        -   Quitar el uso compartido público: permite el acceso únicamente a los colaboradores con nombre, por ejemplo, Quitar el acceso público a Google Apps y Quitar el vínculo compartido directo a Box.  
-  
-        -   Quitar usuarios externos: permite el acceso únicamente a los usuarios de la empresa.  
-  
-        -   Convertir en privado: solo el propietario puede tener acceso al archivo. Se quitan todos los recursos compartidos.  
-  
-        -   Quitar un colaborador: quita un colaborador específico del archivo.  
-  
-    -   Cuarentena  
-  
-        -   Poner en cuarentena de usuario: permite el autoservicio moviendo el archivo a una carpeta de cuarentena controlada por el usuario.  
-  
-        -   Poner en cuarentena de administrador: el archivo se pone en cuarentena en la unidad del administrador y este tiene que aprobarlo.  
-  
--   Enviar a la papelera: el archivo se mueve a la carpeta de la papelera.
-  
-![alertas de crear directiva](./media/policy_create-alerts.png "policy_create alerts")  
-  
- 
+
 ## <a name="see-also"></a>Consulte también  
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 [Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -144,6 +106,6 @@ También puede establecer que la directiva se ejecute en archivos específicos. 
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO4-->
 
 
