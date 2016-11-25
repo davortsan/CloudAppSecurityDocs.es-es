@@ -2,9 +2,6 @@
   "342d9fcc84f9fb4b250578b653578403a06605f1": [
     "CloudAppSecurityDocs\\activity-filters.md"
   ],
-  "92507e352a88cd0c5ff4a7bc9f66b94defd864ff": [
-    "CloudAppSecurityDocs\\activity-filters.md"
-  ],
   "ca51d36a6d899124d3d4eb84ded1972ad9c8bab4": [
     "CloudAppSecurityDocs\\anomaly-detection-policy.md"
   ],
@@ -20,55 +17,28 @@
   "2a079813677020b1181648394c818edd5f294786": [
     "CloudAppSecurityDocs\\configure-automatic-log-upload-for-continuous-reports.md"
   ],
-  "c6103fffd99295eb37ad575680b4169cbbac42df": [
-    "CloudAppSecurityDocs\\configure-automatic-log-upload-for-continuous-reports.md"
-  ],
   "d78f324cc8fba6c45a49c1260c157fb4f4feaab7": [
-    "CloudAppSecurityDocs\\connect-aws-to-microsoft-cloud-app-security.md"
-  ],
-  "4b9ab028bb45f77513217dd3784cefc73e984962": [
     "CloudAppSecurityDocs\\connect-aws-to-microsoft-cloud-app-security.md"
   ],
   "1899e9ab0c1c3c3eb8a3ef1c6f69bdab88143ee6": [
     "CloudAppSecurityDocs\\connect-box-to-microsoft-cloud-app-security.md"
   ],
-  "849408f84e2a80022623c11f7951e921a95625b6": [
-    "CloudAppSecurityDocs\\connect-box-to-microsoft-cloud-app-security.md"
-  ],
   "e6c450215330f2b4cb1f52156aa5f80653d522fc": [
-    "CloudAppSecurityDocs\\connect-dropbox-to-microsoft-cloud-app-security.md"
-  ],
-  "105003dfbd8afbb10cdb2058e2da180d4b49e294": [
     "CloudAppSecurityDocs\\connect-dropbox-to-microsoft-cloud-app-security.md"
   ],
   "f5329d2cb2a95f59079b8a5797d24d444a9d94b5": [
     "CloudAppSecurityDocs\\connect-google-apps-to-microsoft-cloud-app-security.md"
   ],
-  "0f38f61be8a0db4a28d3c7df614807ace69bb38e": [
-    "CloudAppSecurityDocs\\connect-google-apps-to-microsoft-cloud-app-security.md"
-  ],
   "1565d094f9cbce883ce9bb5300ee5e1f7752d4dd": [
-    "CloudAppSecurityDocs\\connect-office-365-to-microsoft-cloud-app-security.md"
-  ],
-  "31abf4ad6ee9326894592e1a98b3232bd4c03787": [
     "CloudAppSecurityDocs\\connect-office-365-to-microsoft-cloud-app-security.md"
   ],
   "f5f355a42321e4467ce3ef487c48508522a286ab": [
     "CloudAppSecurityDocs\\connect-okta-to-microsoft-cloud-app-security.md"
   ],
-  "3fd8ada1ce622da339368c64ecc8b1d319b9c333": [
-    "CloudAppSecurityDocs\\connect-okta-to-microsoft-cloud-app-security.md"
-  ],
   "9a076831c8d93e3af34541b3e881181d829bf348": [
     "CloudAppSecurityDocs\\connect-salesforce-to-microsoft-cloud-app-security.md"
   ],
-  "28ce67bd096d82e3775a281359fc100e2c214715": [
-    "CloudAppSecurityDocs\\connect-salesforce-to-microsoft-cloud-app-security.md"
-  ],
   "38f87fce6925b380c5b02e1c5ae4daa83d4d45a2": [
-    "CloudAppSecurityDocs\\connect-servicenow-to-microsoft-cloud-app-security.md"
-  ],
-  "30ddba23a0c481cb434e9239950cce90c52efc4f": [
     "CloudAppSecurityDocs\\connect-servicenow-to-microsoft-cloud-app-security.md"
   ],
   "ea1854d6bf32e01afe6183409b68ded32ee37dd1": [
@@ -78,9 +48,6 @@
     "CloudAppSecurityDocs\\control.md"
   ],
   "df5d9b927e3cb51d2b8a2910329cfc4824c168b0": [
-    "CloudAppSecurityDocs\\control-cloud-apps-with-policies.md"
-  ],
-  "36f249cbb900bdb516ea6909a0ed6c76b4ea3ab4": [
     "CloudAppSecurityDocs\\control-cloud-apps-with-policies.md"
   ],
   "650bf424d77f6cbcf11e24058ec54278cfd579f5": [
@@ -93,9 +60,6 @@
     "CloudAppSecurityDocs\\daily-activities-to-protect-your-cloud-environment.md"
   ],
   "24498fd5935ab8919231c284ca41b00ffb27e769": [
-    "CloudAppSecurityDocs\\data-protection-policies.md"
-  ],
-  "ed0701c4513f9501e0b2e5a7b0b7931f5d76a628": [
     "CloudAppSecurityDocs\\data-protection-policies.md"
   ],
   "3ea2fbe78b943513a1b6ce483bc50ed5d79ae7c5": [
@@ -119,9 +83,6 @@
   "d1b13f6c3cf3a466296285e53fddbc4faffbb359": [
     "CloudAppSecurityDocs\\governance-actions.md"
   ],
-  "e67fecd17b26314720a34691f83464c59a244ea6": [
-    "CloudAppSecurityDocs\\governance-actions.md"
-  ],
   "1b95273f4f639ebd4bc1d0200fed97b9c1acb02d": [
     "CloudAppSecurityDocs\\includes\\adallom_md.md"
   ],
@@ -129,9 +90,6 @@
     "CloudAppSecurityDocs\\includes\\adallom1_md.md"
   ],
   "8a0e20692fbfe0054f8c5816bfe29fd1ac737820": [
-    "CloudAppSecurityDocs\\index.md"
-  ],
-  "d35e70624ffa969c086ece8d67e209d7b168f674": [
     "CloudAppSecurityDocs\\index.md"
   ],
   "fbd75fadb63bbaecd1e0dbd12b9162c0d17ce50e": [
@@ -914,9 +872,6 @@
   "cb526fedc12519c05bfca8b411adb158d44c1887": [
     "CloudAppSecurityDocs\\TOC.md"
   ],
-  "93dc54bc2e38d880561c15a0f167f8246e1a6741": [
-    "CloudAppSecurityDocs\\TOC.md"
-  ],
   "7446c3eb17befdf473c8841a0d92524c029f67df": [
     "CloudAppSecurityDocs\\troubleshooting.md"
   ],
@@ -987,9 +942,6 @@
     "CloudAppSecurityDocs\\azip-integration.md"
   ],
   "156be8b048c12e5db0a4b1118314c0b600ded24a": [
-    "CloudAppSecurityDocs\\manage-app-permissions.md"
-  ],
-  "9a139df8dd337bf3c3feb17c44a22fdc45476c3f": [
     "CloudAppSecurityDocs\\manage-app-permissions.md"
   ],
   "3751552a7e2dec067a6f1aab86565e07ac2f999d": [
