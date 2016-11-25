@@ -5,22 +5,45 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/30/2016
+ms.date: 11/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: 4949ab4f-22c3-4371-b2dc-c8422a097dfe
+ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
-ms.openlocfilehash: d95ddaef15cbb11f005156f272578f49f012e16d
+ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
+ms.openlocfilehash: 3161fd1c61779ba943d8269d2ec979050ee0ae1f
 
 
 ---
 
 # <a name="release-notes"></a>Notas de la versión
+
+
+## <a name="cloud-app-security-release-84"></a>Notas de la versión 84 de Cloud App Security
+Publicado el 13 de noviembre de 2016
+
+**Nuevas características**
+-   Cloud App Security ahora admite Microsoft Azure Information Protection, que incluye una integración mejorada y autoaprovisionamiento. Puede filtrar los archivos y establecer directivas de archivo mediante la clasificación segura de etiquetas y, después, establecer la etiqueta de clasificación que quiere ver. Las etiquetas también indican si la clasificación la estableció alguien de su organización o un usuario de otro inquilino (externo). También puede establecer directivas de actividad, en función de las etiquetas de clasificación de Azure Information Protection y habilitar la detección automática de etiquetas de clasificación en Office 365. Para obtener más información acerca de cómo sacar partido a esta nueva característica increíble, consulte [Integración con Azure Information Protection](azip-integration.md).
+ 
+**Mejoras**
+-   Se realizaron mejoras en el registro de actividad de Cloud App Security: 
+   -    Los eventos de Office 365 del Centro de seguridad y cumplimiento de Office 365 ahora se integran con Cloud App Security y se ven en el **Registro de actividades**.
+   -    Toda la actividad de Cloud App Security se registra en el registro de actividades de Cloud App Security como actividad administrativa.
+-   Para ayudarle a investigar alertas relacionadas con archivos, en cada alerta derivada de una directiva de archivo, ahora puede ver la lista de actividades que se realizaron en el archivo coincidente.
+-   El algoritmo de viaje imposible del motor de detección de anomalías se ha mejorado para proporcionar una mayor compatibilidad para inquilinos pequeños. 
+ 
+**Mejoras menores**
+-   El **Activity export limit** (Límite de exportación de actividades) se elevó a 10 000. 
+-   Al crear un **Informe de instantáneas** en el proceso de carga del registro manual de Cloud Discovery, ahora recibirá una estimación precisa de cuánto tardará el procesamiento del registro. 
+-   En una directiva de archivo, la acción de gobierno **Remove collaborator** (Quitar colaborador) ahora funciona en grupos.
+-   Se realizaron mejoras menores en la página **Permisos de la aplicación**. 
+-   Si había más de 10 000 usuarios que disponían de permisos para una aplicación que se conectaba a Office 365, la lista se cargaba lentamente. Esto se ha solucionado.
+-   Se han agregado atributos adicionales al **Catálogo de aplicaciones** con relación al sector de tarjetas de pago.
+
 
 ## <a name="cloud-app-security-release-83"></a>Notas de la versión 83 de Cloud App Security
 Publicado el 30 de octubre de 2016
@@ -215,6 +238,6 @@ Fecha de publicación: 15 de mayo de 2016
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO3-->
 
 

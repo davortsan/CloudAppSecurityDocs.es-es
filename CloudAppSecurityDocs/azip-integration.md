@@ -10,17 +10,17 @@ ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
+ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4ddfce677376f370e332938059e741af613853db
-ms.openlocfilehash: 1fda4411d17acf90338263df9df147ed0075881c
+ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
+ms.openlocfilehash: 104dbdbc22d748e924f42c92ba2607e970f03b9e
 
 
 ---
 
-# <a name="azure-information-protection-integration-private-preview"></a>Integración de Azure Information Protection - **VERSIÓN PRELIMINAR PRIVADA**
+# <a name="azure-information-protection-integration---private-preview"></a>Integración de Azure Information Protection - **VERSIÓN PRELIMINAR PRIVADA**
 
 Cloud App Security le permite investigar archivos y establecer directivas basadas en etiquetas de archivo de Azure Information Protection, lo que permite mayor visibilidad y control de sus datos confidenciales en la nube. Para habilitar esta opción, establezca una directiva en Cloud App Security para analizar archivos que tengan la inspección de contenido habilitada. Además, como parte de la versión preliminar privada de Cloud App Security, puede desencadenar alertas en las actividades relacionadas con archivos clasificados. La integración de Azure Information Protection le permite:
 -   Cuantificar la exposición de información confidencial en sus aplicaciones de nube.
@@ -29,7 +29,7 @@ Cloud App Security le permite investigar archivos y establecer directivas basada
 
 > [!NOTE] De forma predeterminada, los archivos se analizan en busca de etiquetas solo cuando hay una directiva de archivo que los analiza con la inspección de contenido habilitada. Para analizar todos los archivos en busca de etiquetas sin directivas de archivos, habilite el examen automático.
 
-## <a name="terminology-overview"></a>Información general de la terminología:
+## <a name="terminology-overview"></a>Información general de la terminología
 -   Etiqueta de clasificación de Azure Information Protection: un atributo establecido por los usuarios finales que se agrega a los archivos de la organización, ya sea de forma automática, según una directiva, o de forma manual.
 -   Externo: una etiqueta establecida por alguien externo a la organización.
 -   Etiqueta de archivo: la presentación de la etiqueta de clasificación en Cloud App Security. Este campo se muestra para cada archivo en la tabla de archivos y puede usarse en filtros.
@@ -63,7 +63,7 @@ O bien, para archivos que se han etiquetado con cualquier etiqueta de archivo:
 
 ![todos los filtros de etiquetas de archivo](./media/azip-file-tags-all-filter.png)
 
-## <a name="enable-automatic-scan-coming-soon"></a>Habilitar el examen automático (próximamente)
+## <a name="enable-automatic-scan"></a>Habilitar el examen automático
 Para habilitar el examen automático de etiquetas de archivo para los nuevos archivos en Office 365:
 
 1. En Office 365, vaya a la página **Configuración general**.
@@ -72,7 +72,7 @@ Para habilitar el examen automático de etiquetas de archivo para los nuevos arc
 ![habilitar azure information protection](./media/enable-azip.png)
  
 
-## <a name="internal-and-external-tags-coming-soon"></a>Etiquetas internas y externas (próximamente)
+## <a name="internal-and-external-tags"></a>Etiquetas internas y externas
 De forma predeterminada, Cloud App Security examinará las etiquetas de clasificación que se han definido en su organización, así como las externas que han definido otras organizaciones. 
 
 Para ignorarlas, vaya a **Configuración de seguridad de Azure** y seleccione **Ignorar etiquetas de clasificación de Azure Information Protection de otros inquilinos**.
@@ -119,6 +119,6 @@ Obtenga más información sobre [Azure Information Protection](https://docs.micr
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 
