@@ -14,8 +14,8 @@ ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 31abf4ad6ee9326894592e1a98b3232bd4c03787
+ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
+ms.openlocfilehash: 1565d094f9cbce883ce9bb5300ee5e1f7752d4dd
 
 
 ---
@@ -33,7 +33,7 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
 >- El registro de auditoría de buzones de Exchange debe estar activado para cada buzón de usuario antes de que se registre la actividad del usuario en Exchange Online. Consulte [Exchange Mailbox activities](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c) (Actividades de buzones de Exchange).
 >- Si las aplicaciones de Office están habilitadas, también se crean grupos que forman parte de Office 365 en las aplicaciones de Office específicas. Por ejemplo, si SharePoint está habilitado, se crearán grupos de Office 365 en SharePoint.
  
-1.  En la fila de Office 365, haga clic en **Conectar** en la columna **Estado del conector de aplicaciones** o haga clic en el botón **Conectar una aplicación** y seleccione **Office 365**.  
+1.  En la página **Conectores de aplicaciones**, haga clic en el botón **Conectar una aplicación** y seleccione **Office 365**.  
 
 2.  En el menú emergente de Office 365, haga clic en Conectar Office 365.
 
@@ -58,6 +58,6 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

@@ -14,8 +14,8 @@ ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 105003dfbd8afbb10cdb2058e2da180d4b49e294
+ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
+ms.openlocfilehash: e6c450215330f2b4cb1f52156aa5f80653d522fc
 
 
 ---
@@ -28,13 +28,13 @@ Dado que Dropbox permite el acceso a archivos desde vínculos compartidos sin in
 
 ## <a name="how-to-connect-dropbox-to-cloud-app-security"></a>Cómo conectar Dropbox con Cloud App Security  
   
-1.  En la consola de Cloud App Security, haga clic en **Investigar** y, después, en **Aplicaciones sancionadas**.  
+1.  En la consola de Cloud App Security, haga clic en **Investigar** y, después, en **Aplicaciones conectadas**.  
   
-2.  En la fila de Dropbox, haga clic en **Conectar** en la columna **Estado del conector de aplicaciones** o haga clic en el botón **Conectar una aplicación** seguido de **Dropbox**.  
+2.  En la página **Conectores de aplicaciones**, haga clic en el botón **Conectar una aplicación** y, después, en **Dropbox**.  
   
      ![conectar Dropbox](./media/connect-dropbox.png "connect dropbox")  
   
-3.  En la pestaña de API de la página de configuración de Dropbox, escriba la dirección de correo electrónico de la cuenta de administrador.  
+3.  En el elemento emergente, escriba la dirección de correo electrónico de la cuenta de administrador.  
   
 4.  Haga clic en **Generar vínculo**.  
   
@@ -63,6 +63,6 @@ Después de conectar Dropbox, recibirá eventos de 60 días anteriores a la cone
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

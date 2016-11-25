@@ -14,8 +14,8 @@ ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
-ms.openlocfilehash: c6103fffd99295eb37ad575680b4169cbbac42df
+ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
+ms.openlocfilehash: 2a079813677020b1181648394c818edd5f294786
 
 
 ---
@@ -47,7 +47,7 @@ El recopilador de registros tiene un mecanismo de seguridad integrado que superv
 ### <a name="step-1-web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Paso 1: Configuración del portal web: definición de orígenes de datos y vinculación a un recopilador de registros  
   
 1.  Vaya a la página de configuración de carga automatizada:  
-    En el portal de Cloud App Security, haga clic en el icono de configuración ![icono de configuración](./media/settings-icon.png "settings icon") y luego en **Configuración de Cloud Discovery**. Por último, seleccione la pestaña **Cargar registros automáticamente**.  
+    En el portal de Cloud App Security, haga clic en el icono de configuración ![icono de configuración](./media/settings-icon.png "settings icon") y, después, en **Recopiladores de registros** y la pestaña **Recopiladores de registros**.  
   
 3.  Cree un origen de datos coincidente para cada firewall o servidor proxy desde el que quiera cargar registros:  
   
@@ -77,7 +77,7 @@ El recopilador de registros tiene un mecanismo de seguridad integrado que superv
   > - Copie el contenido de la pantalla, ya que necesitará la información al configurar el recopilador de registros para comunicarse con Cloud App Security. Si ha seleccionado Syslog, esta información incluirá información sobre el puerto en el que escucha el agente de escucha de Syslog.
 4.  **Descargue** una nueva máquina virtual del recopilador de registros. Para ello, haga clic en Hyper-V o VMware y descomprima el archivo con la contraseña que ha recibido en el portal.  
   
-### <a name="step-2-onpremises-deployment-of-the-virtual-machine-and-network-configuration"></a>Paso 2: Implementación local de la máquina virtual y la configuración de red   
+### <a name="step-2-on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Paso 2: Implementación local de la máquina virtual y la configuración de red   
 
 > [!NOTE] 
 > En los pasos siguientes se describe la implementación de Hyper-V. Los pasos de implementación para el hipervisor de la máquina virtual son ligeramente diferentes.  
@@ -114,7 +114,7 @@ sudo network_config
 
 En este punto, el recopilador de registros debería estar conectado a la red y ser capaz de acceder al portal de Cloud App Security.  
 
-### <a name="step-3-onpremises-configuration-of-the-log-collection"></a>Paso 3: Configuración local de la recopilación de registros 
+### <a name="step-3-on-premises-configuration-of-the-log-collection"></a>Paso 3: Configuración local de la recopilación de registros 
 Para iniciar sesión por primera vez en el recopilador de registros e importar la configuración del recopilador de registros desde el portal, debe hacer lo siguiente. 
 
 1.  Inicie sesión en el recopilador de registros a través de SSH con las credenciales de administrador interactivas proporcionadas en el portal. (Si es la primera vez que inicia sesión en la consola, deberá cambiar la contraseña y volver a iniciar sesión después de cambiar la contraseña. Si está usando una sesión de terminal, podría tener que reiniciar la sesión. )
@@ -133,7 +133,7 @@ Para iniciar sesión por primera vez en el recopilador de registros e importar l
   
       d. Escriba el nombre del recopilador de registros que quiere configurar, por ejemplo:``` CloudAppSecurityLogCollector01  ```
 
-### <a name="step-4-onpremises-configuration-of-your-network-appliances"></a>Paso 4: Configuración local de los dispositivos de red
+### <a name="step-4---on-premises-configuration-of-your-network-appliances"></a>Paso 4: Configuración local de los dispositivos de red
 
 Configure los firewalls y los servidores proxy de la red de modo que exporten periódicamente los registros al puerto Syslog dedicado del directorio FTP según las instrucciones del cuadro de diálogo, por ejemplo:  
   
@@ -141,7 +141,7 @@ Configure los firewalls y los servidores proxy de la red de modo que exporten pe
   
      `SF Blue Coat - Destination path: \\CloudAppSecurityCollector01\BlueCoat\`  
   
-### <a name="step-5-verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Paso 5: Comprobación de la implementación correcta en el portal Cloud App Security
+### <a name="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Paso 5: Comprobación de la implementación correcta en el portal Cloud App Security
 
 Vaya al registro de gobierno y comprobar que los registros se están cargando periódicamente en el portal.  
   
@@ -158,6 +158,6 @@ Si tiene problemas durante la implementación, consulte [Solución de problemas 
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

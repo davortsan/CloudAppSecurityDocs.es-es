@@ -14,8 +14,8 @@ ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 9a139df8dd337bf3c3feb17c44a22fdc45476c3f
+ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
+ms.openlocfilehash: 156be8b048c12e5db0a4b1118314c0b600ded24a
 
 
 ---
@@ -30,7 +30,7 @@ La pestaña **Permisos de aplicación** muestra información sobre los permisos 
 
 Para obtener acceso a la pestaña Permisos de aplicación:
 
-1. En el portal Cloud App Security, haga clic en **Investigar** y, en Aplicaciones autorizadas, seleccione **Office 365**. 
+1. En el portal Cloud App Security, haga clic en **Investigar** y, en **Aplicaciones conectadas**, seleccione **Office 365**. 
 > [!Note]
 > Primero tiene que conectar Cloud App Security a Office 365 para trabajar con los permisos de aplicación.
 
@@ -115,6 +115,6 @@ Los filtros se aplicarán automáticamente y se actualizará la lista de aplicac
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

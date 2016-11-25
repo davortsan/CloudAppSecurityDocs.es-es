@@ -14,8 +14,8 @@ ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2cb87afa3c5342e01cfd4049669ac4b3b7efa4fe
-ms.openlocfilehash: 36f249cbb900bdb516ea6909a0ed6c76b4ea3ab4
+ms.sourcegitcommit: 6637aaaa34c855cfd6070e9420428d19087e0aa7
+ms.openlocfilehash: df5d9b927e3cb51d2b8a2910329cfc4824c168b0
 
 
 ---
@@ -36,7 +36,6 @@ Pueden crearse los siguientes tipos de directivas:
 |![icono de directiva de detección de anomalías](./media/anomaly_detection_policy.png)|Directiva de detección de anomalías|Las directivas de detección de anomalías permiten buscar actividades inusuales en la nube según los factores de riesgo que se establezcan aquí para emitir alertas cuando ocurra algo diferente de la línea de base de la organización o de la actividad normal del usuario.|  
 |![icono de directivas de Cloud Discovery](./media/discovery_policy.png)|Directiva de detección de aplicaciones|Las directivas de detección de aplicaciones permiten establecer alertas que notifican cuando se detectan nuevas aplicaciones en la organización.|  
 |![icono de directiva de detección de anomalías](./media/anomaly_detection_policy.png)|Directiva de detección de anomalías de Cloud Discovery|Las directivas de detección de anomalías de Cloud Discovery examinan los registros que se usan para detectar aplicaciones en la nube y buscan apariciones inusuales. Por ejemplo, cuando un usuario que nunca ha usado Dropbox de repente carga 600 GB o cuando hay muchas más transacciones de lo habitual en una aplicación determinada.|  
-|![icono de directiva de campo](./media/field_policy.png)|Directiva de campo|Las directivas de campo le permiten analizar las aplicaciones de nube para los campos de su entorno de nube que pueden contener datos confidenciales como entradas, mensajes de chat, descripciones y campos de texto largos.|  
 |![icono de directiva de archivo](./media/file_policy.png)|Directiva de archivo|Las directivas de archivo permiten examinar las aplicaciones en la nube para detectar tipos de archivo o archivos concretos (compartidos, compartidos con dominios externos), datos (información de propiedad, información personal, información de tarjeta de crédito, etc.) y aplicar acciones de gobierno a los archivos (las acciones de gobierno son específicas de la aplicación en la nube).|  
   
 ## <a name="identifying-risk"></a>La identificación de riesgos  
@@ -54,7 +53,7 @@ Cloud App Security ayuda a mitigar los distintos riesgos en la nube. Puede confi
   
      Se supervisan los cambios de configuración, incluida la manipulación de la configuración remota.  
   
--   **Cloud Discovery:** ¿se están usando nuevas aplicaciones sin autorizar en la organización? ¿Tiene un problema de uso de aplicaciones de TI en la sombra del que no es consciente?  
+-   **Cloud Discovery:** ¿se están usando nuevas aplicaciones en la organización? ¿Tiene un problema de uso de aplicaciones de TI en la sombra del que no es consciente?  
   
      La valoración del riesgo general de cada aplicación en la nube en función de las certificaciones normativas y del sector y  
     los procedimientos recomendados permite supervisar el número de usuarios, actividades, volumen de tráfico y horas de uso típicas de  
@@ -156,6 +155,6 @@ Después de crear varias directivas, puede darse el caso de que las directivas s
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO4-->
 
 

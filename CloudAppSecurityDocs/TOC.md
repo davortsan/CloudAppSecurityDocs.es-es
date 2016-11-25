@@ -16,14 +16,6 @@
 ### [Conectar Okta con Microsoft Cloud App Security](connect-okta-to-microsoft-cloud-app-security.md)
 ### [Conectar ServiceNow con Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security.md)
 ### [Conectar Salesforce con Microsoft Cloud App Security](connect-salesforce-to-microsoft-cloud-app-security.md)
-## [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
-### [Directivas de Cloud Discovery](cloud-discovery-policies.md)
-#### [Directiva de detección de anomalías de Cloud Discovery](cloud-discovery-anomaly-detection-policy.md)
-### [Directivas de actividad de usuario](user-activity-policies.md)
-#### [Directiva de detección de anomalías](anomaly-detection-policy.md)
-### [Directivas de protección de datos](data-protection-policies.md)
-#### [Inspección de contenido](content-inspection.md)
-#### [Trabajar con el motor de RegEx](working-with-the-regex-engine.md)
 # [Uso](daily-activities-to-protect-your-cloud-environment.md)
 ## [Investigación](investigate.md)
 ### [Referencia de informes integrados](built-in-report-reference.md)
@@ -32,12 +24,20 @@
 ### [Alertas](monitor-alerts.md)
 ### [Integración con Azure Information Protection](azip-integration.md)
 ## [Control](control.md)
+### [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
+#### [Directivas de Cloud Discovery](cloud-discovery-policies.md)
+##### [Directiva de detección de anomalías de Cloud Discovery](cloud-discovery-anomaly-detection-policy.md)
+#### [Directivas de actividad de usuario](user-activity-policies.md)
+##### [Directiva de detección de anomalías](anomaly-detection-policy.md)
+#### [Directivas de protección de datos](data-protection-policies.md)
+##### [Inspección de contenido](content-inspection.md)
+##### [Trabajar con el motor de RegEx](working-with-the-regex-engine.md)
 ### [Administración de permisos de aplicación](manage-app-permissions.md)
-## [Registro de gobierno](governance-actions.md)
+## [Gobierno](governance-actions.md)
 # [Solución de problemas](troubleshooting.md)
 ## [Solución de problemas de Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Solución de problemas de conectores de API mediante mensajes de error](troubleshooting-api-connectors-using-error-messages.md)
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

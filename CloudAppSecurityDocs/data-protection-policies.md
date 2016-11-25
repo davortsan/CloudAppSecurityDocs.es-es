@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a413236b04726dddc69068e39967f6ad17218719
-ms.openlocfilehash: ed0701c4513f9501e0b2e5a7b0b7931f5d76a628
+ms.sourcegitcommit: 3c342e019dfca316ee89f68de60886d848abdb17
+ms.openlocfilehash: 24498fd5935ab8919231c284ca41b00ffb27e769
 
 
 ---
@@ -74,7 +74,7 @@ Haga lo siguiente para crear una directiva de archivo:
   
 6.  En Box, SharePoint, Dropbox y OneDrive, puede aplicar la directiva de archivo en todos los archivos en la aplicación o en carpetas específicas. En **Aplicar a**, seleccione **carpetas seleccionadas** o **todos los archivos excepto las carpetas seleccionadas**. Se le redirigirá para que inicie sesión en la aplicación en la nube. Tras ello, agregue las carpetas correspondientes.  
   
-7.  Seleccione el **método de inspección de contenido**. El DLP integrado permite filtrar archivos por su contenido. Para examinar archivos en busca de contenido, seleccione **DLP integrado**. Una vez habilitada la inspección de contenido, puede optar entre usar expresiones preestablecidas o buscar otras expresiones personalizadas, como una subcadena o una expresión regular propias.  
+7.  Seleccione el **método de inspección de contenido**. El DLP integrado permite filtrar archivos por su contenido. Para examinar archivos en busca de contenido, seleccione **DLP integrado**. Una vez habilitada la inspección de contenido, puede optar entre usar expresiones preestablecidas o buscar otras expresiones personalizadas, como una subcadena o una [expresión regular](working-with-the-regex-engine.md) propia.  
     Además, puede especificar una expresión regular para excluir un archivo de los resultados. Esto es muy útil si tiene un estándar de palabra clave de clasificación interna que quiera excluir de la directiva.  
     También puede decidir cuál es el número mínimo de infracciones de contenido que debe producirse antes de que el archivo se considere una infracción. Por ejemplo, puede elegir 10 si quiere recibir alertas sobre archivos con al menos 10 números de tarjeta de crédito en su contenido.  
     Cuando el contenido se compara con la expresión seleccionada, puede elegir enmascarar la coincidencia de los registros y la notificación de infracción. Si opta por esto, el texto de la infracción se reemplazará por caracteres “X”. Recuerde que los números se reemplazan por caracteres "#" y nunca se almacenan en Cloud App Security.  
@@ -125,6 +125,6 @@ Cada directiva se compone de las siguientes partes:
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO4-->
 
 

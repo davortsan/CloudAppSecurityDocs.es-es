@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
 translationtype: Human Translation
-ms.sourcegitcommit: 23e30c53f65fd7a0357a7bb7f116727163e0800d
-ms.openlocfilehash: d35e70624ffa969c086ece8d67e209d7b168f674
+ms.sourcegitcommit: 3c342e019dfca316ee89f68de60886d848abdb17
+ms.openlocfilehash: 8a0e20692fbfe0054f8c5816bfe29fd1ac737820
 
 
 ---
@@ -145,7 +145,7 @@ ms.openlocfilehash: d35e70624ffa969c086ece8d67e209d7b168f674
                 </li>
                 <li class="column-third">
                   <a href="./governance-actions.md">
-                    <h3>Registro de gobierno</h3>
+                    <h3>Gobierno</h3>
                     <p>Use el registro de gobierno para obtener un registro del estado de cada tarea que haya determinado que Cloud App Security debe ejecutar, incluidas las tareas manuales y automáticas.</p>
                   </a>
                 </li>
@@ -203,6 +203,6 @@ ms.openlocfilehash: d35e70624ffa969c086ece8d67e209d7b168f674
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

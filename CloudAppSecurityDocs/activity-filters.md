@@ -14,8 +14,8 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
-ms.openlocfilehash: 92507e352a88cd0c5ff4a7bc9f66b94defd864ff
+ms.sourcegitcommit: a0b71a03c932ea529000d7545faf8849d99fcb6d
+ms.openlocfilehash: 342d9fcc84f9fb4b250578b653578403a06605f1
 
 
 ---
@@ -68,7 +68,10 @@ A continuación se muestra una lista de los filtros de actividad que se pueden a
 
 -   ISP registrado: ISP desde el que se ha realizado la actividad.   
 
--  Origen: buscar el origen desde el que se detectó la actividad, por ejemplo, el conector de aplicación. 
+-  Origen: busque el origen desde el que se detectó la actividad. El origen podría ser cualquiera de los siguientes:
+  - Conector de aplicaciones: los registros provienen directamente del conector de la API de la aplicación.
+  - Análisis del conector de aplicaciones: enriquecimientos de Cloud App Security basados en la obtención de información del conector de la API.
+  
 
 -   Usuario: el usuario que realizó la actividad, que se puede filtrar en el dominio, grupo, nombre u organización. Para filtrar las actividades sin un usuario específico, puede usar el operador 'no establecido'.  
     -   Dominio del usuario: busca un dominio de usuario específico.
@@ -130,6 +133,6 @@ Acciones de gobierno en aplicaciones
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

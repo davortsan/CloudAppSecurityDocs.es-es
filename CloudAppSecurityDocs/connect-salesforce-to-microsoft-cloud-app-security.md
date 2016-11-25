@@ -14,8 +14,8 @@ ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 28ce67bd096d82e3775a281359fc100e2c214715
+ms.sourcegitcommit: 6637aaaa34c855cfd6070e9420428d19087e0aa7
+ms.openlocfilehash: 9a076831c8d93e3af34541b3e881181d829bf348
 
 
 ---
@@ -44,7 +44,7 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
   
          ![perfiles de Administrar usuarios en Salesforce](./media/salesforce-manageusers-profiles.png "salesforce manageusers profiles")  
   
-    -   Elija el perfil que usa para implementar Cloud App Security y haga clic en **Editar**.  
+    -   Elija el perfil que usa para implementar Cloud App Security y haga clic en **Editar**. Este es el perfil que se usará para la cuenta de servicio de Cloud App Security con la que se configurará el conector de aplicaciones.  
   
          ![editar perfil en Salesforce](./media/salesforce-edit-profile.png "salesforce edit profile")  
   
@@ -72,9 +72,9 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
   
     5.  Haga clic en **Guardar**.  
   
-4.  En la consola de Cloud App Security, haga clic en **Investigar** y, después, en **Aplicaciones sancionadas**.  
+4.  En la consola de Cloud App Security, haga clic en **Investigar** y, después, en **Aplicaciones conectadas**.  
   
-5.  En la fila de Box, haga clic en **Conectar** en la columna **Estado del conector de aplicaciones** o haga clic en el botón **Conectar una aplicación** seguido de **Salesforce**.  
+5.  En la página **Conectores de aplicaciones**, haga clic en el botón **Conectar una aplicación** y, después, en **Salesforce**.  
   
      ![conectarse a Salesforce](./media/connect-salesforce.png "connect salesforce")  
   
@@ -105,6 +105,6 @@ Después de conectarse a Salesforce, recibirá eventos como se indica a continua
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

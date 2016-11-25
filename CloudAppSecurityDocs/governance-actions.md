@@ -1,11 +1,11 @@
 ---
-title: Registro de gobierno | Microsoft Docs
-description: En este tema se enumeran y se describen todas las acciones de gobierno que se pueden realizar en Cloud App Security.
+title: Gobierno | Microsoft Docs
+description: "En este tema se enumeran y se describen todas las acciones de gobierno que se pueden realizar en Cloud App Security, así como los mensajes de registro asociados."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 11/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,15 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759c4e09af65ce54c2e3ecaa2f1fccd2fded91d1
-ms.openlocfilehash: e67fecd17b26314720a34691f83464c59a244ea6
+ms.sourcegitcommit: 3c342e019dfca316ee89f68de60886d848abdb17
+ms.openlocfilehash: d1b13f6c3cf3a466296285e53fddbc4faffbb359
 
 
 ---
 
-# <a name="governance-log"></a>Registro de gobierno
+# <a name="governance"></a>Gobierno
+
+## <a name="governance-log"></a>Registro de gobierno
 El registro de gobierno proporciona un registro del estado de cada tarea que Cloud App Security deba ejecutar, incluidas las tareas manuales y automáticas. Entre estas tareas se incluyen las tareas definidas en las directivas, las acciones de gobierno establecidas en los archivos y los usuarios, y cualquier otra acción que haya determinado que debe realizar Cloud App Security. El registro de gobierno también proporciona información sobre el resultado correcto o incorrecto de estas acciones. Puede volver a intentar o revertir algunas de las acciones de gobierno en el registro de gobierno. 
 
 A continuación se muestra una lista completa de las acciones que Cloud App Security permite realizar. Estas acciones se habilitarán en varios lugares de la consola, según se desprende de la columna **Ubicación**. Cada acción de gobierno realizada se incluye en el registro de gobierno.
@@ -68,7 +70,46 @@ Para obtener información sobre cómo se tratan las acciones de gobierno cuando 
 |Configuración > Configuración de Cloud Discovery > Cargar registros manualmente/Cargar registros automáticamente|Cloud Discovery|Analizar datos de Cloud Discovery|Notificación de que todos los datos de registro se han analizado.|Detección|
 
 
-
+## <a name="governance-actions"></a>Acciones de gobierno  
+Las siguientes acciones de gobierno pueden realizarse en un archivo o usuario específico o bien desde una directiva concreta.
+  
+-   Notificaciones  
+  
+    -   Alertas: las alertas pueden desencadenarse en el sistema y propagarse a través de mensajes de correo electrónico y de texto, según el nivel de gravedad.  
+  
+    -   Notificación de correo electrónico de usuario: es posible personalizar los mensajes de correo electrónico y enviarlos a todos los propietarios de archivos infractores.  
+  
+    -   Administrador de CC: según la integración de directorios del usuario, también se pueden enviar notificaciones de correo electrónico al administrador de la persona que haya infringido una directiva.  
+  
+-   Enviar una notificación a usuarios concretos: lista específica de direcciones de correo electrónico que recibirán las notificaciones.  
+  
+-   Enviar una notificación al último editor del archivo: se envían notificaciones a la última persona que ha modificado el archivo.  
+  
+-   Acciones de gobierno en aplicaciones  
+  
+     Se pueden aplicar acciones pormenorizadas por aplicación. Las acciones específicas varían según la terminología de la aplicación.  
+  
+    -   Cambio del uso compartido  
+  
+        -   Quitar el uso compartido público: permite el acceso únicamente a los colaboradores con nombre, por ejemplo, Quitar el acceso público a Google Apps y Quitar el vínculo compartido directo a Box.  
+  
+        -   Quitar usuarios externos: permite el acceso únicamente a los usuarios de la empresa.  
+  
+        -   Convertir en privado: solo el propietario puede tener acceso al archivo. Se quitan todos los recursos compartidos.  
+  
+        -   Quitar un colaborador: quita un colaborador específico del archivo.  
+  
+    -   Cuarentena  
+  
+        -   Poner en cuarentena de usuario: permite el autoservicio moviendo el archivo a una carpeta de cuarentena controlada por el usuario.  
+  
+        -   Poner en cuarentena de administrador: el archivo se pone en cuarentena en la unidad del administrador y este tiene que aprobarlo.  
+  
+-   Enviar a la papelera: el archivo se mueve a la carpeta de la papelera.
+  
+![alertas de crear directiva](./media/policy_create-alerts.png "policy_create alerts")  
+  
+ 
 
 
 
@@ -82,6 +123,6 @@ Para obtener información sobre cómo se tratan las acciones de gobierno cuando 
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 
