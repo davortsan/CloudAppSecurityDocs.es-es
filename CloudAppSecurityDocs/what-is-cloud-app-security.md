@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 224c7039ecb7200ad951774ac5fb76202543a35c
-ms.openlocfilehash: 690e58cd598ee9a6dd329e19cd65129df160e009
+ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
+ms.openlocfilehash: d3877fa17daaf9e838ca799f52b1b2fcbb0db5f4
 
 
 ---
@@ -50,7 +50,7 @@ Cloud App Security integra visibilidad con la nube de las siguientes formas:
 ![Arquitectura de Cloud App Security](./media/architecture.png)  
 
 > [!NOTE]  
-> Cuando Cloud App Security realiza la inspección de contenido, se aplica la privacidad de los datos. Únicamente se almacenan los metadatos de los registros de archivos y las infracciones identificadas en la base de datos de Cloud App Security. Sus datos no se almacenan en la base de datos de Cloud App Security. Para obtener más información sobre la retención de datos, consulte nuestra [directiva de privacidad](http://go.microsoft.com/fwlink/?LinkId=512132) y [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data).
+> Cuando Cloud App Security realiza la inspección de contenido, se aplica la privacidad de los datos. Los datos no se almacenan en la base de datos Cloud App Security; solo los metadatos de los registros de archivo y las infracciones que se identificaron se almacenan en la base de datos Cloud App Security. Para más información sobre la retención de datos, consulte nuestra [política de privacidad](http://go.microsoft.com/fwlink/?LinkId=512132) y [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data).
 Cloud App Security conserva los datos como se indica a continuación:
 >- Registro de actividad: 180 días
 >- Datos de detección: 90 días
@@ -87,6 +87,6 @@ Los clientes Premier también pueden elegir Cloud App Security directamente desd
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

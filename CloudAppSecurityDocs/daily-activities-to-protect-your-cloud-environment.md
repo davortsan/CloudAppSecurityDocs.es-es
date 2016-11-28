@@ -14,8 +14,8 @@ ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 42cd06942ef90bc40a191bc12ddc12a18388430d
-ms.openlocfilehash: d07f8cfebd5654036078d474656a6e73e24d93d0
+ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
+ms.openlocfilehash: 5defb9bde515be712bc64ce84be42b2120935ed8
 
 
 ---
@@ -39,7 +39,7 @@ Es recomendable que consulte el panel a diario para ver qué nuevas alertas se h
 ![Panel de Cloud App Security](./media/dashboard.png "dashboard")  
 
 ## <a name="handle-your-alerts"></a>Administrar las alertas  
-Las alertas son los puntos de entrada para comprender el entorno de nube en más profundidad. Es posible que quiera crear nuevas directivas según lo que encuentre. Por ejemplo, podría ver un administrador iniciando sesión desde una ubicación desconocida. Puede crear una directiva que suspende automáticamente una cuenta de administrador cuando se utiliza para iniciar sesión desde esa ubicación.  
+Las alertas son los puntos de entrada para comprender el entorno de nube en más profundidad. Es posible que quiera crear nuevas directivas según lo que encuentre. Por ejemplo, es posible que vea un administrador iniciando sesión desde Groenlandia y nadie en su organización nunca inició sesión desde Groenlandia antes. Puede crear una directiva que suspende automáticamente una cuenta de administrador cuando se utiliza para iniciar sesión desde esa ubicación.  
 
 Es buena idea revisar todas las alertas y usarlas como herramientas para modificar las directivas. Si hay eventos inofensivos que las directivas existentes consideran como infracciones, perfeccione las directivas para recibir menos alertas innecesarias.  
 
@@ -66,7 +66,7 @@ Es buena idea revisar todas las alertas y usarlas como herramientas para modific
 
          For a data leak you might want to restrict permissions or quarantine the file.  
 
-         If a new, unsanctioned service is discovered, you might want to block access to the service on your proxy or firewall.  
+         If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
 
     #### <a name="questionable-violations"></a>Infracciones cuestionables
     Infracciones cuestionables que exigen más investigación.  
@@ -130,6 +130,6 @@ Los clientes Premier también pueden elegir Cloud App Security directamente desd
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 
