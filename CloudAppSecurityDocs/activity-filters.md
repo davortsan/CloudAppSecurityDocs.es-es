@@ -14,8 +14,8 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a0b71a03c932ea529000d7545faf8849d99fcb6d
-ms.openlocfilehash: 342d9fcc84f9fb4b250578b653578403a06605f1
+ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
+ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
 
 
 ---
@@ -97,34 +97,9 @@ Para ver más información sobre cada actividad, haga clic en la misma actividad
 
 ![cajón de actividades](./media/activity-drawer.png "activity drawer")  
   
+Para obtener una lista de acciones de gobierno disponibles, consulte [Parámetros de coincidencia de actividad](governance-actions.md#activity-match-parameters).
 
 
-## <a name="activity-match-parameters"></a>Parámetros de coincidencia de actividad  
-Especifique la cantidad de repeticiones de la actividad necesarias para que haya coincidencia con la directiva, por ejemplo, el establecimiento de una directiva para alertar cuando un usuario realice diez intentos de inicio de sesión incorrectos en un período de tiempo de dos minutos.  
-El valor predeterminado, **Parámetros de coincidencia de actividad**, genera una coincidencia para cada actividad única que cumple todos los filtros de la actividad.   
-Con **Actividad repetida** puede establecer el número de actividades repetidas, la duración del período en el que se cuentan las actividades e incluso especificar que todas las actividades las debe realizar el mismo usuario y en la misma aplicación en la nube.  
-  
-### <a name="actions"></a>Acciones  
-Notificaciones  
-  
--   Alertas: las alertas pueden desencadenarse en el sistema y propagarse a través de mensajes de correo electrónico y de texto, según el nivel de gravedad.  
-  
--   Notificación de correo electrónico de usuario: es posible personalizar los mensajes de correo electrónico y enviarlos a todos los propietarios de archivos infractores.  
-  
--   Administrador de CC: según la integración de directorios del usuario, también se pueden enviar notificaciones de correo electrónico al administrador de la persona que haya infringido una directiva.  
-  
--   Enviar una notificación a usuarios adicionales: lista específica de direcciones de correo electrónico que recibirán las notificaciones.  
-  
-Acciones de gobierno en aplicaciones  
-  
--   Se pueden aplicar acciones granulares por aplicación. Las acciones específicas varían según la terminología de la aplicación.  
-  
--   Suspender usuario: se suspende al usuario de la aplicación.  
-  
--   Revocar contraseña: se revoca la contraseña del usuario y se le obliga a establecer una contraseña nueva en su siguiente inicio de sesión.  
-  
-     ![directiva de actividad, ref6](./media/activity-policy-ref6.png "activity policy ref6")  
-  
 ## <a name="see-also"></a>Consulte también  
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 [Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -133,6 +108,6 @@ Acciones de gobierno en aplicaciones
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
