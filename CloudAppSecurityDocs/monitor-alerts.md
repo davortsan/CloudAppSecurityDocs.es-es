@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: af3585cbf123ba826efbdb79339c84a2dcb740c8
+ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
+ms.openlocfilehash: ee4b4e7a43603654eb415ff225a4ae3d8b139383
 
 
 ---
@@ -31,7 +31,7 @@ En el portal de Cloud App Security, haga clic en Alertas.
 
 Se mostrarán los siguientes tipos de alertas. 
 
-## <a name="builtin-alerts"></a>Alertas integradas
+## <a name="built-in-alerts"></a>Alertas integradas
 
 |Nombre de alerta|Id. de alerta|Descripción|
 |----|----|----|
@@ -62,6 +62,6 @@ Se mostrarán los siguientes tipos de alertas.
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

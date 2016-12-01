@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
 translationtype: Human Translation
-ms.sourcegitcommit: 3c342e019dfca316ee89f68de60886d848abdb17
-ms.openlocfilehash: 8a0e20692fbfe0054f8c5816bfe29fd1ac737820
+ms.sourcegitcommit: 4c2f6f240a579230c65899f36941dc627b2519e5
+ms.openlocfilehash: ed9c1bbdf3652cd8daff79ab41044e8f26429c8a
 
 
 ---
@@ -196,13 +196,13 @@ ms.openlocfilehash: 8a0e20692fbfe0054f8c5816bfe29fd1ac737820
         <aside class="alert alert-social">
       <p>Mantenerse al día en Cloud App Security <ol class="action-list">
         <li><a href="https://go.microsoft.com/fwlink/?linkid=835381" target="_blank" class="button-bordered button-translucent">Sitio oficial de Cloud App Security</a></li>
-        <li><a href="https://go.microsoft.com/fwlink/?linkid=835382" target="_blank" class="button-bordered button-translucent">Soporte técnico asistido de Cloud App Security</a></li>
+        <li><a href="http://support.microsoft.com/oas/default.aspx?prid=16031" target="_blank" class="button-bordered button-translucent">Soporte técnico asistido de Cloud App Security</a></li>
       </ol>
     </aside>
 </article>
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
