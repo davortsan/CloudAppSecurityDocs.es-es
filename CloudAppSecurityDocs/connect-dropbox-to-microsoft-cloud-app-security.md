@@ -1,5 +1,5 @@
 ---
-title: Conectar Dropbox con Microsoft Cloud App Security | Microsoft Docs
+title: Conectar Dropbox | Microsoft Docs
 description: "En este tema se proporciona información sobre cómo conectar la aplicación Dropbox con Cloud App Security mediante el conector de API."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
-ms.openlocfilehash: e6c450215330f2b4cb1f52156aa5f80653d522fc
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: a2b9a7e9cf254c52465922af4b0e3a0256e60c5d
 
 
 ---
@@ -30,7 +30,7 @@ Dado que Dropbox permite el acceso a archivos desde vínculos compartidos sin in
   
 1.  En la consola de Cloud App Security, haga clic en **Investigar** y, después, en **Aplicaciones conectadas**.  
   
-2.  En la página **Conectores de aplicaciones**, haga clic en el botón **Conectar una aplicación** y, después, en **Dropbox**.  
+2.  En la página **Conectores de aplicaciones**, haga clic en el botón del signo más y, después, en **Dropbox**.  
   
      ![conectar Dropbox](./media/connect-dropbox.png "connect dropbox")  
   
@@ -63,6 +63,6 @@ Después de conectar Dropbox, recibirá eventos de 60 días anteriores a la cone
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

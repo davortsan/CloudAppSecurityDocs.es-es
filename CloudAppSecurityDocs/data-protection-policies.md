@@ -1,11 +1,11 @@
 ---
-title: "Directivas de protección de datos | Microsoft Docs"
+title: Directivas de archivos | Microsoft Docs
 description: "En este tema se describe el procedimiento para configurar una directiva de datos para supervisar y controlar los datos y los archivos durante el uso de aplicaciones en la nube de la organización."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,15 +14,13 @@ ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3c342e019dfca316ee89f68de60886d848abdb17
-ms.openlocfilehash: 24498fd5935ab8919231c284ca41b00ffb27e769
+ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
+ms.openlocfilehash: 12d9ef74f923c430fbfb547635786dc4c4300499
 
 
 ---
 
-# <a name="data-protection-policies"></a>Directivas de protección de datos
-    
-## <a name="file-policies"></a>Directivas de archivo  
+# <a name="file-policies"></a>Directivas de archivo  
 Las directivas de archivo permiten aplicar una amplia gama de procesos automatizados, con lo que se aprovechan las API del proveedor en la nube. Las directivas se pueden establecer para proporcionar análisis de conformidad constantes, tareas de exhibición de documentos electrónicos legales, DLP para el contenido confidencial compartido públicamente y otros muchos casos de uso.  
 Cloud App Security puede supervisar cualquier tipo de archivo basado en más de 20 filtros de metadatos (por ejemplo, nivel de acceso o tipo de archivo). 
  
@@ -71,7 +69,8 @@ Haga lo siguiente para crear una directiva de archivo:
 4.  Dentro de **Tipo de riesgo**, vincule la directiva al tipo de riesgo más adecuado. Este campo es meramente informativo y solo sirve para encontrar más fácilmente directivas específicas y las consiguientes alertas, según el tipo de riesgo.  Puede que el riesgo ya esté seleccionado previamente según la categoría para la que eligió crear la directiva. Las directivas de archivo están configuradas como DLP de forma predeterminada.  
   
 5.  Para definir qué aplicaciones van a activar esta directiva, **cree un filtro para los archivos sobre los que esta directiva actuará**. Limite los filtros de directiva hasta conseguir exactamente el conjunto de archivos sobre los que quiere actuar. Sea lo más restrictivo posible para evitar falsos positivos. Por ejemplo, si quiere quitar permisos públicos, agregue el filtro “Público”; si lo que quiere es quitar un usuario externo, use el filtro “Externo”, etc.  
-  
+> [!NOTE] 
+> Al usar filtros de directiva, **Contiene** solo buscará palabras completas separadas por comas, puntos, espacios o caracteres de subrayado. Por ejemplo, si busca **malware** o **virus**, encontrará virus_malware_file.exe, pero no encontrará malwarevirusfile.exe. Si busca **malware.exe**, encontrará TODOS los archivos que contengan malware o exe en el nombre de archivo, mientras que si busca **"malware.exe"** (con comillas) solo encontrará los archivos que contengan exactamente "malware.exe". **Es igual a** solo buscará la cadena completa. Por ejemplo, si busca **malware.exe**, encontrará malware.exe pero no malware.exe.txt.  
 6.  En Box, SharePoint, Dropbox y OneDrive, puede aplicar la directiva de archivo en todos los archivos en la aplicación o en carpetas específicas. En **Aplicar a**, seleccione **carpetas seleccionadas** o **todos los archivos excepto las carpetas seleccionadas**. Se le redirigirá para que inicie sesión en la aplicación en la nube. Tras ello, agregue las carpetas correspondientes.  
   
 7.  Seleccione el **método de inspección de contenido**. El DLP integrado permite filtrar archivos por su contenido. Para examinar archivos en busca de contenido, seleccione **DLP integrado**. Una vez habilitada la inspección de contenido, puede optar entre usar expresiones preestablecidas o buscar otras expresiones personalizadas, como una subcadena o una [expresión regular](working-with-the-regex-engine.md) propia.  
@@ -113,9 +112,9 @@ Cada directiva se compone de las siguientes partes:
     > [!NOTE]  
     >  Las extensiones solo están disponibles con la versión Cloud App Security Technical Preview.  
   
-    -   Es posible realizar una inspección del contenido mediante motores de terceros para DLP mejorada o funcionalidades antimalware.  
+    -  Es posible realizar una inspección del contenido mediante motores de terceros para DLP mejorada o funcionalidades antimalware.  
   
-    -   Es posible realizar acciones de gobierno mediante motores de terceros para aplicar control de cifrado personalizado u otros tipos de procesamiento de archivos (por ejemplo, marcas de agua personalizadas).  
+    -  Es posible realizar [acciones de gobierno](governance-actions.md) mediante motores de terceros para aplicar un control de cifrado personalizado u otros tipos de procesamiento de archivos (por ejemplo, marcas de agua personalizadas).  
   
 ## <a name="see-also"></a>Consulte también  
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
@@ -125,6 +124,6 @@ Cada directiva se compone de las siguientes partes:
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

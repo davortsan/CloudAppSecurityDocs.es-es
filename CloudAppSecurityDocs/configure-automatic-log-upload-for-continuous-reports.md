@@ -14,8 +14,8 @@ ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
-ms.openlocfilehash: 2a079813677020b1181648394c818edd5f294786
+ms.sourcegitcommit: 7901bb58f70949873fb3c423ae7951a67f7cd671
+ms.openlocfilehash: 96575cfc6bc3d736b40503049816ccc191fbf3e8
 
 
 ---
@@ -47,7 +47,7 @@ El recopilador de registros tiene un mecanismo de seguridad integrado que superv
 ### <a name="step-1-web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Paso 1: Configuración del portal web: definición de orígenes de datos y vinculación a un recopilador de registros  
   
 1.  Vaya a la página de configuración de carga automatizada:  
-    En el portal de Cloud App Security, haga clic en el icono de configuración ![icono de configuración](./media/settings-icon.png "settings icon") y, después, en **Recopiladores de registros** y la pestaña **Recopiladores de registros**.  
+    En el portal de Cloud App Security, haga clic en el ![icono de configuración](./media/settings-icon.png "settings icon") y, después, en **Recopiladores de registros**.  
   
 3.  Cree un origen de datos coincidente para cada firewall o servidor proxy desde el que quiera cargar registros:  
   
@@ -158,6 +158,6 @@ Si tiene problemas durante la implementación, consulte [Solución de problemas 
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

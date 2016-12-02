@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,20 +14,21 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 104dbdbc22d748e924f42c92ba2607e970f03b9e
+ms.sourcegitcommit: eceb326c4ab14852ecd284cfbaa0d2eb07149168
+ms.openlocfilehash: bf3b2c9fcd374ee9a980d123890b9c78f6fb9e07
 
 
 ---
 
-# <a name="azure-information-protection-integration---private-preview"></a>Integración de Azure Information Protection - **VERSIÓN PRELIMINAR PRIVADA**
+# <a name="azure-information-protection-integration"></a>Integración de Azure Information Protection
 
-Cloud App Security le permite investigar archivos y establecer directivas basadas en etiquetas de archivo de Azure Information Protection, lo que permite mayor visibilidad y control de sus datos confidenciales en la nube. Para habilitar esta opción, establezca una directiva en Cloud App Security para analizar archivos que tengan la inspección de contenido habilitada. Además, como parte de la versión preliminar privada de Cloud App Security, puede desencadenar alertas en las actividades relacionadas con archivos clasificados. La integración de Azure Information Protection le permite:
+Cloud App Security le permite investigar archivos y establecer directivas basadas en etiquetas de archivo de Azure Information Protection, lo que permite mayor visibilidad y control de sus datos confidenciales en la nube. Para habilitar esta opción, establezca una directiva en Cloud App Security para analizar archivos que tengan la inspección de contenido habilitada. Además, puede desencadenar alertas en las actividades relacionadas con archivos clasificados. La integración de Azure Information Protection le permite:
 -   Cuantificar la exposición de información confidencial en sus aplicaciones de nube.
 -   Crear directivas y alertas sobre las infracciones de carga de datos clasificados en las aplicaciones de nube conectadas, o bien poner datos en cuarentena o bloquear que se puedan compartir externamente.
 -   Investigar trazas de auditoría y corregir archivos que infringen las directivas 
 
-> [!NOTE] De forma predeterminada, los archivos se analizan en busca de etiquetas solo cuando hay una directiva de archivo que los analiza con la inspección de contenido habilitada. Para analizar todos los archivos en busca de etiquetas sin directivas de archivos, habilite el examen automático.
+> [!NOTE] 
+> De forma predeterminada, los archivos se analizan en busca de etiquetas solo cuando hay una directiva de archivo que los analiza con la inspección de contenido habilitada. Para analizar todos los archivos en busca de etiquetas sin directivas de archivos, habilite el examen automático.
 
 ## <a name="terminology-overview"></a>Información general de la terminología
 -   Etiqueta de clasificación de Azure Information Protection: un atributo establecido por los usuarios finales que se agrega a los archivos de la organización, ya sea de forma automática, según una directiva, o de forma manual.
@@ -62,6 +63,13 @@ Use el filtro **Etiquetas de archivo** para buscar archivos con una etiqueta esp
 O bien, para archivos que se han etiquetado con cualquier etiqueta de archivo:
 
 ![todos los filtros de etiquetas de archivo](./media/azip-file-tags-all-filter.png)
+
+## <a name="how-it-works"></a>Cómo funciona
+Al conectar Cloud App Security con Azure Information Protection, Cloud App Security examina los archivos del modo siguiente:
+1. Recupera la lista de todas las etiquetas de clasificación que se hayan usado en su inquilino. Esta acción se realiza cada hora para mantener la lista actualizada.
+2. Examina los archivos para obtener las etiquetas de clasificación. Esto puede suceder de dos maneras: a. Los archivos que se examinan en busca de contenido mediante una directiva de archivos también se agregarán a la cola para detectar etiquetas de clasificación.
+    b. Para agregar sus archivos a la cola de detección automática sin tener que establecer una directiva de archivos, habilite la detección automática (consulte la información a continuación), que se encargará de examinar todos los archivos nuevos o modificados.
+3. Las etiquetas externas se agregan a la lista de etiquetas de clasificación solo si se encuentran en un archivo específico, excepto si selecciona la casilla de verificación **Ignorar las etiquetas de clasificación de Azure Information Protection de otros inquilinos** (consulte la información a continuación).
 
 ## <a name="enable-automatic-scan"></a>Habilitar el examen automático
 Para habilitar el examen automático de etiquetas de archivo para los nuevos archivos en Office 365:
@@ -119,6 +127,6 @@ Obtenga más información sobre [Azure Information Protection](https://docs.micr
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

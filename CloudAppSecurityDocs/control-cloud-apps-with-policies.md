@@ -14,8 +14,8 @@ ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6637aaaa34c855cfd6070e9420428d19087e0aa7
-ms.openlocfilehash: df5d9b927e3cb51d2b8a2910329cfc4824c168b0
+ms.sourcegitcommit: 37661b255147b3f43c5bfd8b5f6459bd4c25ac95
+ms.openlocfilehash: f6ba051dfbf443509323844c6327e18cde1ec29e
 
 
 ---
@@ -106,13 +106,14 @@ Para crear una directiva a partir de una **plantilla de directiva**, haga lo sig
   
 También puede **crear una directiva durante la investigación**. Si está investigando el **Registro de actividades**, los **Archivos** o las **Cuentas** y los explora en profundidad en busca de algo concreto, puede crear una nueva directiva basada en los resultados de la investigación en cualquier momento.  
   
-Por ejemplo, si está mirando el **Registro de actividades** y ve que se está iniciando sesión con una de las cuentas de administrador desde una ubicación geográfica inesperada, puede filtrar los resultados del **Registro de actividades** para mostrar todos los registros en actividades de dicho administrador y luego crear un informe que le avise la siguiente vez que se detecte actividad de ese usuario.  
+Por ejemplo, si está consultando el **registro de actividad** y observa una actividad de administrador que no proviene de la dirección IP de su oficina.
+
   
 Para crear una directiva basada en los resultados de la investigación, haga lo siguiente:  
   
 1.  En la consola, haga clic en **Investigar** y luego en **Registro de actividades**, **Archivos** o **Cuentas**.  
   
-2.  Use los filtros de la parte superior de la página para limitar los resultados de búsqueda al área sospechosa, por ejemplo, en la página Registro de actividades, haga clic en **Usuario** y seleccione el administrador cuya cuenta está registrando actividad inusual. Después, en **Actividad**, seleccione **Copiar carpeta** y **Copiar archivo**.  
+2.  Use los filtros de la parte superior de la página para limitar los resultados de búsqueda al área sospechosa. Por ejemplo, en la página del registro de actividad, haga clic en **Actividad** y seleccione **Inicio de sesión de administrador**. A continuación, en **Dirección IP**, seleccione **Categoría** y establezca el valor para que no incluya categorías de dirección IP que haya creado para los dominios reconocidos, como las direcciones IP de administrador, corporativas o de VPN.  
   
      ![](./media/create-file-from-investigation.png)  
   
@@ -141,11 +142,6 @@ Para crear una directiva basada en los resultados de la investigación, haga lo 
 >   
 >  [Directivas de Cloud Discovery](cloud-discovery-policies.md)  
   
-### <a name="policy-conflicts"></a>Conflictos de directivas
-Después de crear varias directivas, puede darse el caso de que las directivas se superpongan. Si es así, Cloud App Security procesará las directivas de la manera siguiente:
-* Si dos directivas contienen acciones que están contenidas en la otra directiva (por ejemplo, **Quitar recursos compartidos externos** se incluye en **Hacer privado**), Cloud App Security resolverá el conflicto y se aplicará la acción más fuerte.
-* Si las acciones no tienen ninguna relación (por ejemplo, **Enviar una notificación al propietario** y **Hacer privado**), se llevarán a cabo ambas acciones.
-* Si las acciones entran en conflicto (por ejemplo **Cambiar el propietario al usuario A** y **Cambiar el propietario al usuario B**), pueden darse resultados diferentes para cada coincidencia. Es importante cambiar las directivas para evitar conflictos, ya que pueden producir cambios no deseados en la unidad que serán difíciles de detectar. 
 
 
 ## <a name="see-also"></a>Consulte también  
@@ -155,6 +151,6 @@ Después de crear varias directivas, puede darse el caso de que las directivas s
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

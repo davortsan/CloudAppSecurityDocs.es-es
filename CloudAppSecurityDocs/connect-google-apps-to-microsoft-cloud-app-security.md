@@ -1,11 +1,11 @@
 ---
-title: Conectar Google Apps con Microsoft Cloud App Security | Microsoft Docs
+title: Conectar Google Apps | Microsoft Docs
 description: "En este tema se proporciona información sobre cómo conectar Google Apps con Cloud App Security mediante el conector de API."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 11/23/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3c342e019dfca316ee89f68de60886d848abdb17
-ms.openlocfilehash: f5329d2cb2a95f59079b8a5797d24d444a9d94b5
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
 
 
 ---
@@ -222,7 +222,7 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
   
 1.  En el portal de Cloud App Security, haga clic en **Investigar** y, después, en **Aplicaciones conectadas**.  
   
-2.  En la página **Conector de aplicaciones**, haga clic en **Conectar una aplicación** y seleccione ** Google Apps**.  
+2.  En la página **Conectores de aplicaciones**, haga clic en el botón del signo más y seleccione **Google Apps**.  
   
      ![conectar con Google Apps](./media/connect-google-apps.png "connect google apps")  
   
@@ -266,6 +266,6 @@ Después de conectar Google Apps, Cloud App Security realiza un examen completo.
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "Solución de problemas de conectores de API mediante mensajes de error | Microsoft Docs"
-description: "En este tema se proporciona una lista de los mensajes de error de conectores de API, así como recomendaciones para solucionarlos."
+title: Solucionar problemas relacionados con conectores de aplicaciones a partir de los mensajes de error | Microsoft Docs
+description: "En este tema se proporciona una lista de los mensajes de error de los conectores de aplicaciones, así como recomendaciones para solucionarlos."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 10/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,15 +14,20 @@ ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 61492a0126bff93c2a61d5d1317784ca96687df7
+ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
+ms.openlocfilehash: 71e2a213ddf6f625037b11373e55aa270c3b1785
 
 
 ---
 
-# <a name="troubleshooting-api-connectors-using-error-messages"></a>Solución de problemas de conectores de API mediante mensajes de error
+
+# <a name="troubleshooting-app-connectors-using-error-messages"></a>Solucionar problemas relacionados con conectores de aplicaciones a partir de los mensajes de error
+
+Los errores de conectores de aplicaciones se pueden consultar en el cuadro de diálogo del conector de aplicaciones después de intentar conectar una aplicación en la nube mediante el conector de aplicaciones de la API.
+
+
 |Mensaje de error|Aplicación correspondiente|Descripción|Solución|
-|----|----|----|----|
+|----|----|----|------------|
 |HttpRequestFailure: Server returned: 400 Bad Request: {"error":{"code":"AF20012","message":"Specified tenant ID (Tenant_ID goes here) is incorrectly configured in the system." (HttpRequestFailure: El servidor devolvió: 400 Solicitud incorrecta: {"error":{"code":"AF20012","message":"El id. de inquilino especificado (ID_de_inquilino) está configurado incorrectamente en el sistema".)|Office 365 |No se han encontrado licencias de Office 365 asignadas. |Asigne al menos una licencia de Office 365 a su inquilino.| 
 |AuthFatalFailureException: com.box.boxjavalibv2.exceptions.BoxServerException: {"error":"invalid_grant","error_description":"Invalid refresh token"} (AuthFatalFailureException: com.box.boxjavalibv2.exceptions.BoxServerException: {"error":"invalid_grant","error_description":"Token de actualización no válido"})|Cuadro|El token de actualización de Box no es válido.|Siga el proceso para volver a conectar Box con Cloud App Security.|
 |BoxRestException: Failed to parse response. (BoxRestException: No se pudo analizar la respuesta.)|Cuadro|Error interno.|Haga clic de nuevo en el vínculo Probar ahora para probar la conexión con Box.|
@@ -59,6 +64,6 @@ ms.openlocfilehash: 61492a0126bff93c2a61d5d1317784ca96687df7
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

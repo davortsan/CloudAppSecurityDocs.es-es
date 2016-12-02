@@ -1,11 +1,11 @@
 ---
-title: Directivas de actividad de usuario | Microsoft Docs
-description: En este tema se proporcionan instrucciones para crear y trabajar con directivas de actividad de usuario.
+title: Directivas de actividad | Microsoft Docs
+description: En este tema se proporcionan instrucciones para crear y trabajar con directivas de actividad.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/8/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,13 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
-ms.openlocfilehash: e66cc36b7ff2591c9eff2b7399e7aba7304fd960
+ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
+ms.openlocfilehash: 68961bf66a0c0bb3b668e681502ccf10bc673197
 
 
 ---
 
-# <a name="user-activity-policies"></a>Directivas de actividad de usuario
+# <a name="activity-policies"></a>Directivas de actividad
 Las directivas de actividad permiten aplicar una amplia gama de procesos automatizados, con lo que se aprovechan las API del proveedor de aplicaciones. Estas directivas permiten supervisar actividades concretas realizadas por distintos usuarios o seguir niveles inesperadamente altos de un determinado tipo de actividad.  
   
 Una vez que se ha establecido una directiva de detección de actividad, empieza a generar alertas, pero únicamente para las actividades que se producen después de haber creado la directiva.
@@ -133,6 +133,6 @@ Cada directiva se compone de las siguientes partes:
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 

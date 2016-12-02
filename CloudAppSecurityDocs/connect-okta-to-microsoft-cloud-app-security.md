@@ -1,5 +1,5 @@
 ---
-title: Conectar Okta con Microsoft Cloud App Security | Microsoft Docs
+title: Conectar Okta | Microsoft Docs
 description: "En este tema se proporciona información sobre cómo conectar la aplicación Okta con Cloud App Security mediante el conector de API."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: 9c3673b9-99bd-400c-9da1-5bf809ea5892
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
-ms.openlocfilehash: f5f355a42321e4467ce3ef487c48508522a286ab
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 1e82f94cb8423bdaa3dcdc8d4a4f04179089546c
 
 
 ---
@@ -51,7 +51,7 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
   
 3.  En la consola de Cloud App Security, haga clic en **Investigar** y, después, en **Aplicaciones conectadas**.  
   
-4.  En la página **Conectores de aplicaciones**, haga clic en el botón **Conectar una aplicación** y, después, en **Okta**.  
+4.  En la página **Conectores de aplicaciones**, haga clic en el botón del signo más y, después, en **Okta**.  
   
      ![conectar Okta](./media/connect-okta.png "connect okta")  
   
@@ -73,6 +73,6 @@ Después de conectar Okta, recibirá eventos de 60 días anteriores a la conexi�
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

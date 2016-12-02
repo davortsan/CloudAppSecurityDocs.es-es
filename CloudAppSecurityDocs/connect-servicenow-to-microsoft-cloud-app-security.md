@@ -1,5 +1,5 @@
 ---
-title: Conectar ServiceNow con Microsoft Cloud App Security | Microsoft Docs
+title: Conectar ServiceNow | Microsoft Docs
 description: "En este tema se proporciona información sobre cómo conectar la aplicación ServiceNow con Cloud App Security mediante el conector de API."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
-ms.openlocfilehash: 38f87fce6925b380c5b02e1c5ae4daa83d4d45a2
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 7935006b6b28ed93601ca60adf3c1a408440eae7
 
 
 ---
@@ -38,7 +38,7 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
   
 4.  En el portal de Cloud App Security, haga clic en **Investigar** y, después, en **Aplicaciones conectadas**.  
   
-5.  En la página **Conectores de aplicaciones**, haga clic en el botín **Conectar una aplicación** y, después, en **ServiceNow**.  
+5.  En la página **Conectores de aplicaciones**, haga clic en el botón del signo más y, después, en **ServiceNow**.  
   
      ![conectar ServiceNow](./media/connect-servicenow.png "connect servicenow")  
   
@@ -62,6 +62,6 @@ Después de conectar ServiceNow, recibirá eventos de 60 días anteriores a la c
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

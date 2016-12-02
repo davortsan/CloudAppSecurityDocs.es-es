@@ -1,5 +1,5 @@
 ---
-title: Configurar Cloud Discovery | Microsoft Docs
+title: Implementar Cloud Discovery | Microsoft Docs
 description: "En este tema se describe el procedimiento de configuración de Cloud Discovery para que entre en funcionamiento."
 keywords: 
 author: rkarlin
@@ -14,14 +14,14 @@ ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: cfca549e1e16ca83972876626771a55d698530a2
+ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
+ms.openlocfilehash: e0a3f507ddf135eed01ed3acd71b7b5ec15e8e50
 
 
 ---
 
 # <a name="set-up-cloud-discovery"></a>Configurar Cloud Discovery
-Cloud Discovery analiza los registros de tráfico del catálogo de aplicaciones en la nube de Cloud App Security de más de 13 000 aplicaciones en la nube que se clasifican y se puntúan en función de más de 50 atributos, a fin de proporcionar visibilidad continua del uso de la nube, Shadow IT y el riesgo que Shadow IT supone para la organización.
+Cloud Discovery analiza los registros de tráfico del catálogo de aplicaciones en la nube de Cloud App Security de más de 13 000 aplicaciones en la nube que se clasifican y se puntúan en función de más de 50 atributos, a fin de proporcionar visibilidad continua del uso de la nube, Shadow IT y el riesgo que Shadow IT supone para la organización.
 El **catálogo de aplicaciones en la nube** evalúa el riesgo de las aplicaciones en la nube en función de certificaciones normativas, estándares del sector y procedimientos recomendados. En el catálogo de aplicaciones en la nube se ejecutan cuatro procesos complementarios para mantenerlo actualizado:
 1.  Extracción de datos automatizada directamente desde la aplicación en la nube (para atributos como el cumplimiento de SOC 2).
 2.  Extracción de datos automatizada avanzada mediante algoritmos de Cloud App Security (para atributos como encabezados de seguridad HTTP).
@@ -131,6 +131,6 @@ Para obtener más información, consulte
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

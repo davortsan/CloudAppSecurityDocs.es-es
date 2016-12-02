@@ -1,6 +1,6 @@
 ---
-title: "Configuración general | Microsoft Docs"
-description: En este tema se proporcionan los primeros pasos para que Cloud App Security entre en funcionamiento.
+title: Personalizar el portal | Microsoft Docs
+description: En este tema se proporcionan los pasos iniciales para personalizar el portal.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
@@ -14,39 +14,18 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3c342e019dfca316ee89f68de60886d848abdb17
-ms.openlocfilehash: 57d01e08546885881da38835961cf6384c1c788e
+ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
+ms.openlocfilehash: 912d3c5065722469c436446ba67511ffc6e44d77
 
 
 ---
 
-# <a name="general-setup"></a>Configuración general
-El siguiente procedimiento proporciona instrucciones para configurar [!INCLUDE[Adallom1](./includes/adallom1_md.md)] de forma que funcione en su entorno en la nube.  
-  
-## <a name="prerequisites"></a>Requisitos previos  
-  
--   Para usar el producto, la organización debe tener una licencia de Cloud App Security. Para obtener más información, vea [How to buy Cloud App Security](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) (Cómo comprar Cloud App Security) y lea la sección [Licensing resources](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) (Recursos de licencia).  
-  
-     Para obtener soporte para activar inquilinos, vea [Póngase en contacto con el soporte de Office 365 para empresas: ayuda para administradores](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).  
-  
-> [!NOTE] 
-> No es necesaria una licencia de Office 365 para Cloud App Security.  
-  
--   Después de haber adquirido una licencia para Cloud App Security, recibirá un correo electrónico con la información de activación y un vínculo al portal de Cloud App Security.  
-  
--   Para configurar Cloud App Security, debe ser un administrador global, un administrador de cumplimiento o un administrador de seguridad de Azure Active Directory u Office 365. Es importante saber que un usuario que tiene asignado un rol de administrador tendrá los mismos permisos en todas las aplicaciones en la nube a las que la organización esté suscrita, independientemente de si el rol se ha asignado en el portal de Office 365, en Portal de Azure clásico o a través el módulo de Azure AD para [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx). Para obtener más información, vea [Asignación de roles de administrador en Office 365](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) y [Asignación de roles de administrador en Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).  
-  
--   Para ejecutar el portal de Cloud App Security, use Internet Explorer 11, Microsoft Edge (versión más reciente), Google Chrome (versión más reciente), Mozilla Firefox (versión más reciente) o Apple Safari (versión más reciente).  
+# <a name="customize-the-portal"></a>Personalizar el portal
+En el siguiente procedimiento se proporcionan instrucciones para personalizar el portal de Cloud App Security.
   
 ## <a name="set-up-the-portal"></a>Configurar el portal  
   
-1.  Para tener acceso al portal de Cloud App Security, vaya a [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com).  
-  
-     También puede acceder al portal a través del **Centro de administración de Office 365**. Para ello, haga clic en el icono Centros de administración ![icono Centros de administración de O365](./media/o365-admin-centers-icon.png "O365 admin centers icon") seguido de **Cloud App Security**.  
-  
-     ![Acceso desde O365](./media/access-from-o365.png "Access from O365")  
-  
-2.  En la barra de menús del portal de Cloud App Security, haga clic en el icono de configuración ![icono de configuración](./media/settings-icon.png "settings icon") y seleccione **Configuración general** para configurar lo siguiente:  
+1.  En la barra de menús del portal de Cloud App Security, haga clic en el icono de configuración ![icono de configuración](./media/settings-icon.png "settings icon") y seleccione **Configuración general** para configurar lo siguiente:  
   
 3.  **Detalles de la organización**  
   
@@ -252,6 +231,6 @@ Cloud App Security está acoplado a Azure Active Directory para la autenticació
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

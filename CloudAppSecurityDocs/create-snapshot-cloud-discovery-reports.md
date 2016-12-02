@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
-ms.openlocfilehash: 650bf424d77f6cbcf11e24058ec54278cfd579f5
+ms.sourcegitcommit: 851617bc68618b177600523a4d4432b3e557f394
+ms.openlocfilehash: abd134c9ff3b000170bce474e8ecebb71b762b98
 
 
 ---
@@ -36,7 +36,7 @@ Para crear un informe de instantáneas:
   
 4.  Seleccione el **Origen de datos** desde el que quiere cargar los archivos de registro.  
   
-5.  **Elija los registros de tráfico** que quiera cargar. Puede cargar hasta 20 archivos a la vez.  
+5.  **Elija los registros de tráfico** que quiera cargar. Puede cargar hasta 20 archivos a la vez. También se admiten los archivos comprimidos.  
   
 6.  Haga clic en **Crear**.  
   
@@ -68,6 +68,6 @@ Una vez completado el procesamiento de los archivos de registro, recibirá un co
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO5-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Conectar Salesforce con Microsoft Cloud App Security | Microsoft Docs
+title: Conectar Salesforce | Microsoft Docs
 description: "En este tema se proporciona información sobre cómo conectar la aplicación Salesforce con Cloud App Security mediante el conector de API."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6637aaaa34c855cfd6070e9420428d19087e0aa7
-ms.openlocfilehash: 9a076831c8d93e3af34541b3e881181d829bf348
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
 
 
 ---
@@ -74,7 +74,7 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
   
 4.  En la consola de Cloud App Security, haga clic en **Investigar** y, después, en **Aplicaciones conectadas**.  
   
-5.  En la página **Conectores de aplicaciones**, haga clic en el botón **Conectar una aplicación** y, después, en **Salesforce**.  
+5.  En la página **Conectores de aplicaciones**, haga clic en el botón del signo más y, después, en **Salesforce**.  
   
      ![conectarse a Salesforce](./media/connect-salesforce.png "connect salesforce")  
   
@@ -105,6 +105,6 @@ Después de conectarse a Salesforce, recibirá eventos como se indica a continua
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

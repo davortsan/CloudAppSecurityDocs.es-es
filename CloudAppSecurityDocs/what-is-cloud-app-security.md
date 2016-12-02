@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/17/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
-ms.openlocfilehash: d3877fa17daaf9e838ca799f52b1b2fcbb0db5f4
+ms.sourcegitcommit: 480a94edbb36cc421b5ff64ea29268f0041326bc
+ms.openlocfilehash: dfc9ec25d2c7822d9239685375136c1dc0d1a3bc
 
 
 ---
@@ -34,7 +34,7 @@ Cloud App Security es un componente crítico de la pila de Microsoft Cloud Secur
 |-------|---|:---|
 |![Detectar](./media/discovery-icon.png)|Detectar|Descubra Shadow IT con Cloud App Security. Gane visibilidad al detectar aplicaciones, actividades, usuarios, datos y archivos en el entorno de nube. Detecte aplicaciones de terceros que están conectadas a la nube.|
 |![Investigar](./media/investigate-icon.png)|Investigar|Investigue las aplicaciones de la nube mediante las herramientas de análisis forense de la nube para observar en profundidad aplicaciones en riesgo, usuarios específicos y archivos de la red. Identifique patrones en los datos recopilados de la nube. Genere informes para supervisar la nube.|
-|![Control](./media/protect-icon.png)|Control|Mitigue el riesgo al establecer directivas y alertas para lograr el máximo control sobre el tráfico de red de la nube. Use Cloud App Security para migrar a los usuarios a alternativas de aplicaciones seguras y autorizadas en la nube.|
+|![Control](./media/control-icon.png)|Control|Mitigue el riesgo al establecer directivas y alertas para lograr el máximo control sobre el tráfico de red de la nube. Use Cloud App Security para migrar a los usuarios a alternativas de aplicaciones seguras y autorizadas en la nube.|
 |![Proteger](./media/protect-icon.png)|Proteger|Utilice Cloud App Security para autorizar o no aplicaciones, aplicar la prevención de pérdida de datos, controlar los permisos y el uso compartido y generar alertas e informes personalizados.|
 
 
@@ -54,7 +54,7 @@ Cloud App Security integra visibilidad con la nube de las siguientes formas:
 Cloud App Security conserva los datos como se indica a continuación:
 >- Registro de actividad: 180 días
 >- Datos de detección: 90 días
->- Alertas: ilimitado
+>- Alertas: 180 días
 
 Después de recopilar datos de estos orígenes, Cloud App Security ejecuta análisis sofisticados sobre los datos. Le avisa de inmediato de actividades anómalas y le proporciona visibilidad en su entorno de la nube. Puede configurar una directiva en Cloud App Security y usarla para proteger todo el contenido del entorno de la nube.  
 
@@ -66,7 +66,7 @@ Para obtener más información sobre Cloud Discovery, consulte [Set up Cloud Dis
 
 ### <a name="sanctioning-and-unsanctioning-an-app"></a>Autorización o no autorización de una aplicación  
 
-Puede utilizar Cloud App Security para autorizar o no aplicaciones de la organización mediante el *catálogo de aplicaciones en la nube*. El equipo de analistas de Microsoft tiene un amplio catálogo en permanente aumento de más de 13 000 aplicaciones en la nube clasificadas y puntuadas según estándares del sector. Puede utilizar el catálogo de aplicaciones en la nube para evaluar el riesgo de las aplicaciones en la nube en función de certificaciones normativas, estándares del sector y procedimientos recomendados. A continuación puede personalizar las puntuaciones y la importancia de los distintos parámetros según las necesidades de la organización. En función de estas puntuaciones, Cloud App Security permite conocer el nivel de riesgo de una aplicación atendiendo a más de 50 factores de riesgo que podrían afectar al entorno.  
+Puede utilizar Cloud App Security para autorizar o no aplicaciones de la organización mediante el *catálogo de aplicaciones en la nube*. El equipo de analistas de Microsoft tiene un amplio catálogo en permanente aumento de más de 13 000 aplicaciones en la nube clasificadas y puntuadas según estándares del sector. Puede utilizar el catálogo de aplicaciones en la nube para evaluar el riesgo de las aplicaciones en la nube en función de certificaciones normativas, estándares del sector y procedimientos recomendados. A continuación puede personalizar las puntuaciones y la importancia de los distintos parámetros según las necesidades de la organización. En función de estas puntuaciones, Cloud App Security permite conocer el nivel de riesgo de una aplicación atendiendo a más de 50 factores de riesgo que podrían afectar al entorno.  
 
 ### <a name="app-connectors"></a>Conectores de aplicaciones  
 Los conectores de aplicaciones utilizan las API de los proveedores de aplicaciones de la nube para integrar la nube de Cloud App Security con otras aplicaciones de la nube. Los conectores de aplicaciones amplían la protección y el control. También proporcionan acceso a la información directamente desde las aplicaciones de la nube, para el análisis de Cloud App Security.  
@@ -87,6 +87,6 @@ Los clientes Premier también pueden elegir Cloud App Security directamente desd
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

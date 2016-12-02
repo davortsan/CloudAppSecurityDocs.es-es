@@ -1,5 +1,5 @@
 ---
-title: Trabajo con datos de Cloud Discovery | Microsoft Docs
+title: Personalizar Cloud Discovery | Microsoft Docs
 description: "En este tema se proporcionan instrucciones sobre cómo trabajar con datos de Cloud Discovery, lo que incluye trabajar con la puntuación de riesgo de la aplicación."
 keywords: 
 author: rkarlin
@@ -14,13 +14,13 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 4b9bf05e43966ff39dacc58a082c7b8eb3627eda
+ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
+ms.openlocfilehash: e2123c83a770ecbfb0466c6ef1a4f67e7c271ca2
 
 
 ---
 
-# <a name="working-with-cloud-discovery-data"></a>Trabajo con datos de Cloud Discovery
+# <a name="customize-cloud-discovery"></a>Personalizar Cloud Discovery
 ## <a name="review-the-cloud-discovery-dashboard"></a>Revisar el panel de Cloud Discovery
 
 El panel de Cloud Discovery está diseñado para proporcionar más información sobre cómo se usan las aplicaciones en la nube en la organización. Proporciona una visión general de un vistazo sobre los tipos de aplicaciones que se usan, las alertas abiertas y los niveles de riesgo de las aplicaciones de la organización. También muestra quiénes son los usuarios que más usan las aplicaciones y proporciona un mapa de ubicación de la sede central de la aplicación. El panel de Cloud Discovery tiene numerosas opciones para filtrar los datos, de modo que pueda generar vistas específicas en función de lo que más le interese y gráficos fáciles de entender para que se haga una idea general de un vistazo.
@@ -132,6 +132,6 @@ Para eliminar datos de Cloud Discovery:
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

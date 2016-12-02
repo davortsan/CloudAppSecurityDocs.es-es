@@ -14,13 +14,13 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3c342e019dfca316ee89f68de60886d848abdb17
-ms.openlocfilehash: d1b13f6c3cf3a466296285e53fddbc4faffbb359
+ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
+ms.openlocfilehash: 43069f7a9f91dc34f4ce3ebb52ca399441bbb1f1
 
 
 ---
 
-# <a name="governance"></a>Gobierno
+# <a name="govern"></a>Gobierno
 
 ## <a name="governance-log"></a>Registro de gobierno
 El registro de gobierno proporciona un registro del estado de cada tarea que Cloud App Security deba ejecutar, incluidas las tareas manuales y automáticas. Entre estas tareas se incluyen las tareas definidas en las directivas, las acciones de gobierno establecidas en los archivos y los usuarios, y cualquier otra acción que haya determinado que debe realizar Cloud App Security. El registro de gobierno también proporciona información sobre el resultado correcto o incorrecto de estas acciones. Puede volver a intentar o revertir algunas de las acciones de gobierno en el registro de gobierno. 
@@ -70,7 +70,7 @@ Para obtener información sobre cómo se tratan las acciones de gobierno cuando 
 |Configuración > Configuración de Cloud Discovery > Cargar registros manualmente/Cargar registros automáticamente|Cloud Discovery|Analizar datos de Cloud Discovery|Notificación de que todos los datos de registro se han analizado.|Detección|
 
 
-## <a name="governance-actions"></a>Acciones de gobierno  
+## <a name="file-governance-actions"></a>Acciones de gobierno relacionadas con archivos  
 Las siguientes acciones de gobierno pueden realizarse en un archivo o usuario específico o bien desde una directiva concreta.
   
 -   Notificaciones  
@@ -110,8 +110,40 @@ Las siguientes acciones de gobierno pueden realizarse en un archivo o usuario es
 ![alertas de crear directiva](./media/policy_create-alerts.png "policy_create alerts")  
   
  
+## <a name="activity-match-parameters"></a>Parámetros de coincidencia de actividad  
+Especifique la cantidad de repeticiones de la actividad necesarias para que haya coincidencia con la directiva, por ejemplo, el establecimiento de una directiva para alertar cuando un usuario realice diez intentos de inicio de sesión incorrectos en un período de tiempo de dos minutos.  
+El valor predeterminado, **Parámetros de coincidencia de actividad**, genera una coincidencia para cada actividad única que cumple todos los filtros de la actividad.   
+Con **Actividad repetida** puede establecer el número de actividades repetidas, la duración del período en el que se cuentan las actividades e incluso especificar que todas las actividades las debe realizar el mismo usuario y en la misma aplicación en la nube.  
+  
+### <a name="actions"></a>Acciones  
+Notificaciones  
+  
+-   Alertas: las alertas pueden desencadenarse en el sistema y propagarse a través de mensajes de correo electrónico y de texto, según el nivel de gravedad.  
+  
+-   Notificación de correo electrónico de usuario: es posible personalizar los mensajes de correo electrónico y enviarlos a todos los propietarios de archivos infractores.  
+  
+-   Administrador de CC: según la integración de directorios del usuario, también se pueden enviar notificaciones de correo electrónico al administrador de la persona que haya infringido una directiva.  
+  
+-   Enviar una notificación a usuarios adicionales: lista específica de direcciones de correo electrónico que recibirán las notificaciones.  
+  
+Acciones de gobierno en aplicaciones  
+  
+-   Se pueden aplicar acciones granulares por aplicación. Las acciones específicas varían según la terminología de la aplicación.  
+  
+-   Suspender usuario: se suspende al usuario de la aplicación.  
+  
+-   Revocar contraseña: se revoca la contraseña del usuario y se le obliga a establecer una contraseña nueva en su siguiente inicio de sesión.  
+  
+     ![directiva de actividad, ref6](./media/activity-policy-ref6.png "activity policy ref6")  
+  
 
+## <a name="governance-conflicts"></a>Conflictos de gobierno
 
+Después de crear varias directivas, puede darse el caso de que sus acciones de gobierno se superpongan. Si es así, Cloud App Security procesará las acciones de gobierno de la manera siguiente:
+
+- Si dos directivas contienen acciones que forman parte de la otra directiva (por ejemplo, **Quitar recursos compartidos externos** se incluye en **Hacer privado**), Cloud App Security resolverá el conflicto y se aplicará la acción más restrictiva.
+- Si las acciones no tienen ninguna relación (por ejemplo, **Enviar una notificación al propietario** y **Hacer privado**), se llevarán a cabo ambas acciones.
+- Si las acciones entran en conflicto (por ejemplo **Cambiar el propietario al usuario A** y **Cambiar el propietario al usuario B**), pueden darse resultados diferentes para cada coincidencia. Es importante cambiar las directivas para evitar conflictos, ya que pueden producir cambios no deseados en la unidad que serán difíciles de detectar.
 
 
 
@@ -123,6 +155,6 @@ Las siguientes acciones de gobierno pueden realizarse en un archivo o usuario es
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,14 +14,34 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 3161fd1c61779ba943d8269d2ec979050ee0ae1f
+ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
+ms.openlocfilehash: cbe341faf692772ac5461e038233e9b1a6b2694f
 
 
 ---
 
 # <a name="release-notes"></a>Notas de la versión
 
+
+## <a name="cloud-app-security-release-85"></a>Notas de la versión 85 de Cloud App Security
+Publicado el 27 de noviembre de 2016
+
+**Nuevas características**
+- Se ha creado una distinción entre las aplicaciones conectadas y las aplicaciones autorizadas. La autorización y la desautorización de aplicaciones funcionan ahora como etiquetas, de modo que se pueden aplicar a las aplicaciones detectadas o a cualquier aplicación del catálogo. Las aplicaciones conectadas son aplicaciones que ha conectado con el conector de la API para supervisarlas y controlarlas con mayor profundidad. Ahora puede etiquetar aplicaciones como autorizadas o no autorizadas, así como conectarlas mediante el conector de aplicaciones, en caso de que esté disponible. 
+ 
+- Como parte de este cambio, se ha sustituido la página de aplicaciones autorizadas por la página **Aplicaciones conectadas**, que se ha rediseñado. Esta página externaliza los datos de estado de los conectores. 
+ 
+- Se puede acceder más fácilmente a los recopiladores de registros desde el menú **Configuración**, en **Orígenes**. 
+- Al crear un filtro de directiva de actividad, puede reducir el número de falsos positivos seleccionando la opción para ignorar las actividades repetidas cuando un mismo usuario las realiza de forma repetida en el mismo objeto. Este es el caso, por ejemplo, cuando una misma persona intenta descargar el mismo archivo varias veces, de modo que no se generará ninguna alerta. 
+- Se han realizado mejoras en el cajón de actividades. Ahora, al hacer clic en un objeto de actividad, puede explorarlo en profundidad para obtener más información.
+
+**Mejoras**
+- Se han realizado mejoras en el motor de detección de anomalías, incluidas las alertas de desplazamiento imposible. Ahora, la información sobre la IP para este tipo de alertas está disponible en su descripción.
+- También se han realizado mejoras en los filtros complejos, de modo que permitan agregar el mismo filtro más de una vez para ajustar los resultados que se filtran. 
+- Se han separado las actividades de archivos y carpetas de Dropbox del resto para que se puedan consultar con mayor facilidad. 
+  
+**Correcciones de errores**
+- Se ha corregido un error en el mecanismo del sistema de alertas que creaba falsos positivos.
 
 ## <a name="cloud-app-security-release-84"></a>Notas de la versión 84 de Cloud App Security
 Publicado el 13 de noviembre de 2016
@@ -37,11 +57,11 @@ Publicado el 13 de noviembre de 2016
 -   El algoritmo de viaje imposible del motor de detección de anomalías se ha mejorado para proporcionar una mayor compatibilidad para inquilinos pequeños. 
  
 **Mejoras menores**
--   El **Activity export limit** (Límite de exportación de actividades) se elevó a 10 000. 
+-   El **Activity export limit** (Límite de exportación de actividades) se elevó a 10 000. 
 -   Al crear un **Informe de instantáneas** en el proceso de carga del registro manual de Cloud Discovery, ahora recibirá una estimación precisa de cuánto tardará el procesamiento del registro. 
 -   En una directiva de archivo, la acción de gobierno **Remove collaborator** (Quitar colaborador) ahora funciona en grupos.
 -   Se realizaron mejoras menores en la página **Permisos de la aplicación**. 
--   Si había más de 10 000 usuarios que disponían de permisos para una aplicación que se conectaba a Office 365, la lista se cargaba lentamente. Esto se ha solucionado.
+-   Si había más de 10 000 usuarios que disponían de permisos para una aplicación que se conectaba a Office 365, la lista se cargaba lentamente. Esto se ha solucionado.
 -   Se han agregado atributos adicionales al **Catálogo de aplicaciones** con relación al sector de tarjetas de pago.
 
 
@@ -69,7 +89,7 @@ Publicado el 9 de octubre de 2016
 
 - Las actividades **Cambiar correo electrónico** y **Cambiar contraseña** ahora son independientes de la actividad genérica **Administrar usuarios** en Salesforce.
 - Se ha agregado una aclaración sobre el límite de alertas diarias por SMS. Se envía un máximo de 10 mensajes por número de teléfono y por día (UTC).
-- Se ha agregado un nuevo certificado a los atributos de Cloud Discovery para Privacy Shield que reemplaza Safe Harbor (relevante solo para proveedores de EE. UU.).
+- Se ha agregado un nuevo certificado a los atributos de Cloud Discovery para Privacy Shield que reemplaza Safe Harbor (relevante solo para proveedores de EE. UU.).
 - Se ha agregado un proceso de solución de problemas a los mensajes de error del conector de API para que sea más fácil solucionar los problemas.
 - Mejora de la frecuencia de actualización del examen de aplicaciones de terceros de Office 365.
 - Mejoras en el panel de Cloud Discovery.
@@ -238,6 +258,6 @@ Fecha de publicación: 15 de mayo de 2016
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

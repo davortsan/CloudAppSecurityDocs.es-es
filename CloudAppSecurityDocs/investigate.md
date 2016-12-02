@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 23ec0b7bef05146d3ff4a953225b56b52aa4959f
-ms.openlocfilehash: fbd75fadb63bbaecd1e0dbd12b9162c0d17ce50e
+ms.sourcegitcommit: fd3be51a8a81b688383b40a19582f5739c889580
+ms.openlocfilehash: f1b32304a8218316f744defa4632b3e8a6af771d
 
 
 ---
@@ -37,17 +37,15 @@ Los siguientes paneles están disponibles para ayudarle a investigar las aplicac
 |Panel de la aplicación: aplicaciones de terceros|Profundización en las aplicaciones de terceros implementadas actualmente, como Google Apps, y establecimiento de directivas para esas aplicaciones|  
 |Panel del usuario|Información general completa del perfil de usuario en la nube, incluidos grupos, ubicaciones, actividades recientes, alertas relacionadas y exploradores usados|  
 
-##  <a name="a-namesanctionappa-sanction-or-unsanction-apps"></a><a name="sanctionapp"></a> Autorizar o no autorizar aplicaciones  
-El primer paso para comprender la nube consiste en autorizar aplicaciones. Después de autorizar una aplicación, puede filtrar por las aplicaciones que no estén autorizadas e iniciar la migración a las aplicaciones autorizadas que sean del mismo tipo.  
+##  <a name="a-namesanctionappa-tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp"></a> Marcar aplicaciones como autorizadas o no autorizadas  
+Marcar aplicaciones como autorizadas o no autorizadas es un paso importante para comprender su entorno en la nube. Después de autorizar una aplicación, puede filtrar por las aplicaciones que no estén autorizadas e iniciar la migración a las aplicaciones autorizadas que sean del mismo tipo.  
 
--   En la consola de Cloud App Security, elija **Detectar** y después **Panel de detección**.  
+-   En la consola de Cloud App Security, vaya a Catálogo de aplicaciones o Aplicaciones detectadas.  
 
--   En la lista de aplicaciones detectadas, en la fila en la que esté la aplicación que quiera sancionar, elija los tres puntos al final de dicha fila ![tres puntos para sancionar](./media/sanction-three-dots.png "Sanction three dots") y elija **Marcar como sancionada**.  
+-   En la lista de aplicaciones, en la fila que contenga la aplicación que quiera marcar como autorizada, elija los tres puntos al final de la fila ![Puntos para marcar como autorizada](./media/sanction-three-dots.png "Tag as sanctioned dots") y elija **Marcar como autorizada**.  
 
-     ![Marcar como sancionada](./media/mark-as-sanctioned.png "mark as sanctioned")  
+     ![Marcar como autorizada](./media/mark-as-sanctioned.png "tag as sanctioned")  
 
-> [!NOTE]  
->  Por cada aplicación que quiera supervisar con la integración de API de Cloud App Security, se recomienda crear una cuenta de servicio de administración dedicada a Cloud App Security.  
 
 ## <a name="use-the-investigation-tools"></a>Usar las herramientas de investigación  
 
@@ -160,6 +158,6 @@ Los clientes Premier también pueden elegir Cloud App Security directamente desd
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

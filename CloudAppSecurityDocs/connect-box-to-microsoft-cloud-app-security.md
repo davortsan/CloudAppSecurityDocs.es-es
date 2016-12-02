@@ -1,5 +1,5 @@
 ---
-title: Conectar Box con Microsoft Cloud App Security | Microsoft Docs
+title: Conectar Box | Microsoft Docs
 description: "En este tema se proporciona información sobre cómo conectar la aplicación Box con Cloud App Security mediante el conector de API."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
-ms.openlocfilehash: 1899e9ab0c1c3c3eb8a3ef1c6f69bdab88143ee6
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
 
 
 ---
@@ -47,7 +47,7 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
   
 2.  En el portal de Cloud App Security, haga clic en **Investigar** y, después, en **Aplicaciones conectadas**.  
   
-3.  En la página **Conectores de aplicaciones**, haga clic en el botón **Conectar una aplicación** y seleccione **Box**.  
+3.  En la página **Conectores de aplicaciones**, haga clic en el botón del signo más y seleccione **Box**.  
   
      ![conectar Box](./media/connect-box.png "connect box")  
   
@@ -77,6 +77,6 @@ Después de conectar Box, Cloud App Security realiza un examen completo. En func
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

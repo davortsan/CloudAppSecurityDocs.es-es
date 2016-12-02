@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.assetid: 588b3639-f748-45a6-bc4b-a6ee47c1865e
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 520017dab0301fe2a64c7b82d5e14c71efb2522f
+ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
+ms.openlocfilehash: c7db3995c314dbc07cc1e0e2807476299d4446f7
 
 
 ---
 
-# <a name="builtin-report-reference"></a>Referencia de informes integrados
+# <a name="built-in-report-reference"></a>Referencia de informes integrados
 Se recomienda que cree informes personalizados usando como punto de partida los informes integrados, como si fueran una plantilla en la que basar los informes personalizados. En la tabla siguiente se proporciona una lista de informes integrados y los tipos de eventos que puede supervisar mediante dichos informes.  
   
-## <a name="builtin-report-list"></a>Lista de informes integrados  
+## <a name="built-in-report-list"></a>Lista de informes integrados  
   
 |Tipo de informe|Nombre del informe integrado|Descripción|  
 |-----------------|---------------------------|-----------------|  
@@ -35,7 +35,7 @@ Se recomienda que cree informes personalizados usando como punto de partida los 
 |Seguridad|Uso de SO|Las brechas de seguridad del sistema operativo (SO) tienden a producir vulnerabilidades muy peligrosas. Los proveedores invierten muchos recursos en proteger los sistemas, para lo que crean un mecanismo de actualización eficaz para distribuir actualizaciones a los extremos. En cambio, los sistemas operativos en desuso que ya no se admiten no están incluidos en dichos mecanismos de actualización, por lo que son un objetivo fácil para los actores de amenazas que usan los kits de vulnerabilidad de seguridad disponibles. En este informe se enumeran los sistemas operativos que los usuarios que tienen acceso a los servicios en la nube usaron en los últimos 30 días.|  
 |Seguridad|Usuarios estrictamente remotos|Los usuarios siguientes nunca han compartido una dirección IP con otro empleado de la empresa. Esto es típico de los equipos o empleados remotos, los contratistas empleados y los servicios de soporte técnico externo. En cambio, esto también puede indicar que un atacante ha dejado un usuario de puerta trasera.|  
 |Administración de usuarios|Información general sobre las aplicaciones en la nube|En este informe se enumeran las aplicaciones de nube y diversos parámetros que representan el volumen de actividad de cada aplicación, como el número de archivos, los usuarios, etc. Úselo para obtener una visión general de las diferentes aplicaciones y saber en qué medida las usan los usuarios.|  
-|Administración de usuarios|Cuentas inactivas|Las cuentas inactivas son aquellas que tienen acceso a la instancia en la nube, pero no han realizado eventos durante los últimos 60 días. Esto sugiere que estas cuentas ya no están activas y que deben suspenderse para evitar que en el futuro tengan acceso a ellas agentes de amenaza o empleados que abandonan la organización. Si se sigue esta recomendación no solo mejora la seguridad, sino que se reducen los costos operativos.|  
+|Administración de usuarios|Cuentas inactivas|Las cuentas inactivas son aquellas que tienen acceso a la instancia en la nube, pero no han realizado ningún evento en los últimos 60 días. Esto sugiere que estas cuentas ya no están activas y que deben suspenderse para evitar que en el futuro tengan acceso a ellas agentes de amenaza o empleados que abandonan la organización. Si se sigue esta recomendación no solo mejora la seguridad, sino que se reducen los costos operativos.|  
 |Administración de usuarios|Usuarios con privilegios|En este informe se muestran los usuarios que tienen privilegios elevados en los servicios corporativos, como los administradores. Las cuentas con privilegios como estas son el vector de ataque preferido de los actores de amenazas, ya que les permiten tener acceso a información corporativa y a la configuración de red. El hecho de que haya cuentas con privilegios que no se usaron en el mes pasado puede indicar que una empresa no es consciente de la importancia de la seguridad de TI, lo que potencialmente prepara el camino para una oleada de infracciones de datos. Puede investigar en detalle el uso de los privilegios de usuario elevados mediante el registro de auditoría y considerar la posibilidad de revocar los privilegios cuando ya no sean necesarios.|  
 |Administración de usuarios|Cuentas con privilegios especiales|Salesforce tiene varios tipos de cuentas con privilegios, incluidos Modificar todos los datos, Ver todos los datos y Administrar todos los usuarios. Las cuentas con privilegios como estas son el vector de ataque preferido de los actores de amenazas, ya que les permiten tener acceso a información corporativa y a la configuración.|  
 |Administración de usuarios|Inicio de sesión del usuario|En este informe se muestra el número de intentos de inicio de sesión, el número de inicios de sesión correctos y el porcentaje de intentos de inicio de sesión incorrectos realizados por cada usuario de cada servicio. Un alto porcentaje de intentos de inicio de sesión incorrectos puede indicar que una cuenta de usuario sufrió un ataque en algún momento.|  
@@ -57,6 +57,6 @@ Se recomienda que cree informes personalizados usando como punto de partida los 
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
