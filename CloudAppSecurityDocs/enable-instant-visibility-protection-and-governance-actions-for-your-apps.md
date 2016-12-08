@@ -86,7 +86,7 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
 \* El conector de aplicaciones de Office 365 incluye actividad de administración para Exchange Online. Para agregar la actividad del usuario para Exchange Online, debe implementar por separado el conector de Exchange Online.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
-Para algunas aplicaciones, puede ser necesario agregar las siguientes direcciones IP a la lista blanca para habilitar Cloud App Security de modo que recopile registros y proporcione acceso a la consola de Cloud App Security:  
+Para algunas aplicaciones, puede ser necesario agregar las siguientes direcciones IP a la lista de permitidos para habilitar Cloud App Security de modo que recopile registros y proporcione acceso a la consola de Cloud App Security:  
   
 -   Para los registros:  
   
