@@ -14,8 +14,8 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eceb326c4ab14852ecd284cfbaa0d2eb07149168
-ms.openlocfilehash: bf3b2c9fcd374ee9a980d123890b9c78f6fb9e07
+ms.sourcegitcommit: 86a5f7371b7a1d0fd16f68fd3060390b05601607
+ms.openlocfilehash: 3497225dfa98b487fd384a819cc51a51bd79a7cb
 
 
 ---
@@ -72,9 +72,10 @@ Al conectar Cloud App Security con Azure Information Protection, Cloud App Secur
 3. Las etiquetas externas se agregan a la lista de etiquetas de clasificación solo si se encuentran en un archivo específico, excepto si selecciona la casilla de verificación **Ignorar las etiquetas de clasificación de Azure Information Protection de otros inquilinos** (consulte la información a continuación).
 
 ## <a name="enable-automatic-scan"></a>Habilitar el examen automático
-Para habilitar el examen automático de etiquetas de archivo para los nuevos archivos en Office 365:
+El examen automático permite buscar etiquetas de clasificación de Azure Information Protection en los archivos de Office 365 sin necesidad de crear una directiva. Esta característica está disponible si tiene una licencia independiente de Cloud App Security.
+Para habilitar el examen automático de etiquetas de archivo para los nuevos archivos:
 
-1. En Office 365, vaya a la página **Configuración general**.
+1. En Cloud App Security, vaya a la página de **Configuración general**.
 2. En la configuración de seguridad de Azure, seleccione **Analizar automáticamente los archivos en busca de etiquetas de clasificación de Azure Information Protection**. Una vez se habilite la opción, se examinarán en busca de etiquetas todos los archivos nuevos que se agreguen a Office 365, y no solo aquellos cuyo contenido se examina por una directiva de archivo.
 
 ![habilitar azure information protection](./media/enable-azip.png)
@@ -83,7 +84,7 @@ Para habilitar el examen automático de etiquetas de archivo para los nuevos arc
 ## <a name="internal-and-external-tags"></a>Etiquetas internas y externas
 De forma predeterminada, Cloud App Security examinará las etiquetas de clasificación que se han definido en su organización, así como las externas que han definido otras organizaciones. 
 
-Para ignorarlas, vaya a **Configuración de seguridad de Azure** y seleccione **Ignorar etiquetas de clasificación de Azure Information Protection de otros inquilinos**.
+Para ignorarlas, en el portal de Cloud App Security, vaya a **Configuración general** y, a continuación, a **Configuración de seguridad de Azure** y seleccione **Ignorar etiquetas de clasificación de Azure Information Protection de otros inquilinos**.
  
 ![ignorar las etiquetas](./media/azip-ignore.png)
 
@@ -127,6 +128,6 @@ Obtenga más información sobre [Azure Information Protection](https://docs.micr
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO1-->
 
 
