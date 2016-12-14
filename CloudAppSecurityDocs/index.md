@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
 translationtype: Human Translation
-ms.sourcegitcommit: 88cabd2002947a31592e3bf523ce2d7abf4d7a01
-ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
+ms.sourcegitcommit: 4c2f6f240a579230c65899f36941dc627b2519e5
+ms.openlocfilehash: ed9c1bbdf3652cd8daff79ab41044e8f26429c8a
 
 
 ---
@@ -24,12 +24,12 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
     <section id="hero-content">
       <h1>Documentación de Cloud App Security</h1>
       <h2>Obtenga información sobre cómo configurar y usar Cloud App Security para que la organización pueda aprovechar las ventajas de las aplicaciones en la nube sin perder el control gracias a una visibilidad mejorada de la actividad y a una mayor protección de los datos críticos de la empresa. </h2>
-      <h3>¿Es nuevo en Cloud App Security? <a href="https://www.microsoft.com/en-us/cloud-platform/cloud-app-security" target="_blank">Visite el sitio del producto &rarr;</a></h3>
+      <h3>¿Es nuevo en Cloud App Security? <a href="https://go.microsoft.com/fwlink/?linkid=835379" target="_blank">Visite el sitio del producto &rarr;</a></h3>
     </section>
     <aside class="alert section-border">
         <p>¿Listo para empezar a usarlo?</p>
         <ol class="action-list">
-            <li><a href="https://aka.ms/buycas" target="_blank" class="button-bordered button-translucent">Comprar ahora</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?linkid=835380" target="_blank" class="button-bordered button-translucent">Comprar ahora</a></li>
         </ol>
     </aside>
     <section id="featured" class="container">
@@ -94,59 +94,21 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="./getting-started-with-cloud-app-security.md">
-                    <h3>Configuración general</h3>
-                    <p>Realice los pasos de configuración básica de Cloud App Security.</p>
-                  </a>
-                </li>
-                <li class="column-third">
                   <a href="./set-up-cloud-discovery.md">
                     <h3>Configurar Cloud Discovery</h3>
                     <p>Use la característica de Cloud Discovery para logar visibilidad en el uso de aplicaciones en la nube y Shadow IT en la organización.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="./configure-automatic-log-upload-for-continuous-reports.md">
-                    <h3>Configurar la carga de registros automática</h3>
-                    <p>Configure la carga de registros automática para los informes continuos de Cloud Discovery.</p>
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </li>
-       </section>
-    </div>
-<div id="journeys">
-      <section class="container">
-        <ul class="journeys-list">
-          <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="./deploy.md">
-                <div class="title column-third">
-                  <span class="step-number">3</span>
-                  <p>Implementar</p>
-                </div>
-                <p class="description column-two-thirds">Habilite la visibilidad mejorada de la conexión de API e implemente directivas para controlar las aplicaciones.</p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
                   <a href="./enable-instant-visibility-protection-and-governance-actions-for-your-apps.md">
-                    <h3>Habilitar conectores de API</h3>
-                    <p>Habilite los conectores de API para logar visibilidad mejorada en las aplicaciones, incluido Office 365, Google Apps, Box, Dropbox y muchas más.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./connect-office-365-to-microsoft-cloud-app-security.md">
-                    <h3>Conectar Office 365 con Cloud App Security</h3>
-                    <p>Conecte Cloud App Security con una cuenta de Microsoft Office 365 existente mediante la API del conector de aplicaciones.</p>
+                    <h3>Conectar aplicaciones</h3>
+                    <p>Conecte las aplicaciones de nube a Cloud App Security para mayor visibilidad y control.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./control-cloud-apps-with-policies.md">
                     <h3>Controlar las aplicaciones en la nube con directivas</h3>
-                    <p>Configure directivas para controlar y regular el uso de la nube de la organización.</p>
+                    <p>Establezca directivas para supervisar y controlar el uso de aplicaciones de nube en su organización.</p>
                   </a>
                 </li>
               </ul>
@@ -183,7 +145,7 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
                 </li>
                 <li class="column-third">
                   <a href="./governance-actions.md">
-                    <h3>Registro de gobierno</h3>
+                    <h3>Gobierno</h3>
                     <p>Use el registro de gobierno para obtener un registro del estado de cada tarea que haya determinado que Cloud App Security debe ejecutar, incluidas las tareas manuales y automáticas.</p>
                   </a>
                 </li>
@@ -233,14 +195,14 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
 
         <aside class="alert alert-social">
       <p>Mantenerse al día en Cloud App Security <ol class="action-list">
-        <li><a href="https://www.cloudappsecurity.com" target="_blank" class="button-bordered button-translucent">Sitio oficial de Cloud App Security</a></li>
-        <li><a href="http://support.microsoft.com/oas/default.aspx?prid=16031)  " target="_blank" class="button-bordered button-translucent">Soporte técnico asistido de Cloud App Security</a></li>
+        <li><a href="https://go.microsoft.com/fwlink/?linkid=835381" target="_blank" class="button-bordered button-translucent">Sitio oficial de Cloud App Security</a></li>
+        <li><a href="http://support.microsoft.com/oas/default.aspx?prid=16031" target="_blank" class="button-bordered button-translucent">Soporte técnico asistido de Cloud App Security</a></li>
       </ol>
     </aside>
 </article>
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

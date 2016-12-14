@@ -1,5 +1,5 @@
 ---
-title: Conectar ServiceNow con Microsoft Cloud App Security | Microsoft Docs
+title: Conectar ServiceNow | Microsoft Docs
 description: "En este tema se proporciona información sobre cómo conectar la aplicación ServiceNow con Cloud App Security mediante el conector de API."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 30ddba23a0c481cb434e9239950cce90c52efc4f
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 7935006b6b28ed93601ca60adf3c1a408440eae7
 
 
 ---
@@ -36,13 +36,13 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
   
      ![cuenta de ServiceNow](./media/servicenow-account.png "servicenow account")  
   
-4.  En el portal de Cloud App Security, haga clic en **Investigar** y, después, en **Aplicaciones autorizadas**.  
+4.  En el portal de Cloud App Security, haga clic en **Investigar** y, después, en **Aplicaciones conectadas**.  
   
-5.  En la fila de ServiceNow, haga clic en **Conectar** en la columna **Estado del conector de aplicaciones** o haga clic en el botón **Conectar una aplicación** y luego en **ServiceNow**.  
+5.  En la página **Conectores de aplicaciones**, haga clic en el botón del signo más y, después, en **ServiceNow**.  
   
      ![conectar ServiceNow](./media/connect-servicenow.png "connect servicenow")  
   
-6.  En la página de configuración de ServiceNow, en la pestaña API, agregue el nombre de usuario, la contraseña y la dirección URL de la instancia de ServiceNow en los cuadros correspondientes.  
+6.  En el elemento emergente, agregue el nombre de usuario, la contraseña y la dirección URL de la instancia de ServiceNow en los cuadros correspondientes.  
   
 7.  Haga clic en **Conectar**.  
   
@@ -62,6 +62,6 @@ Después de conectar ServiceNow, recibirá eventos de 60 días anteriores a la c
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

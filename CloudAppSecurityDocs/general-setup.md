@@ -1,11 +1,11 @@
 ---
-title: "Configuración general | Microsoft Docs"
-description: En este tema se proporcionan los primeros pasos para que Cloud App Security entre en funcionamiento.
+title: Personalizar el portal | Microsoft Docs
+description: En este tema se proporcionan los pasos iniciales para personalizar el portal.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/21/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,44 +14,18 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 1b131e3918a7623995656f03ba98aca698e3b0c9
+ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
+ms.openlocfilehash: 912d3c5065722469c436446ba67511ffc6e44d77
 
 
 ---
 
-# <a name="general-setup"></a>Configuración general
-El siguiente procedimiento proporciona instrucciones para configurar [!INCLUDE[Adallom1](./includes/adallom1_md.md)] de forma que funcione en su entorno en la nube.  
-  
-## <a name="prerequisites"></a>Requisitos previos  
-  
--   Para usar el producto, la organización debe tener una licencia de Cloud App Security. Para obtener más información, vea [How to buy Cloud App Security](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) (Cómo comprar Cloud App Security) y lea la sección [Licensing resources](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) (Recursos de licencia).  
-  
-     Para obtener soporte para activar inquilinos, vea [Póngase en contacto con el soporte de Office 365 para empresas: ayuda para administradores](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).  
-  
-> [!NOTE] 
-> No es necesaria una licencia de Office 365 para Cloud App Security.  
-  
--   Después de haber adquirido una licencia para Cloud App Security, recibirá un correo electrónico con la información de activación y un vínculo al portal de Cloud App Security.  
-  
--   Para configurar Cloud App Security, debe ser un administrador global, un administrador de cumplimiento o un administrador de seguridad de Azure Active Directory u Office 365. Es importante saber que un usuario que tiene asignado un rol de administrador tendrá los mismos permisos en todas las aplicaciones en la nube a las que la organización esté suscrita, independientemente de si el rol se ha asignado en el portal de Office 365, en el Portal de Azure clásico o a través el módulo de Azure AD para Windows PowerShell. Para obtener más información, vea [Asignación de roles de administrador en Office 365](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) y [Asignación de roles de administrador en Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).  
-  
--   Para ejecutar el portal de Cloud App Security, use Internet Explorer 11, Microsoft Edge (versión más reciente), Google Chrome (versión más reciente), Mozilla Firefox (versión más reciente) o Apple Safari (versión más reciente).  
-  
--   **ExpressRoute**  
-  
-     Cloud App Security se ha implementado en Azure y está totalmente integrado con [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Todas las interacciones con las aplicaciones de Cloud App Security y el tráfico enviado a Cloud App Security, incluida la carga de registros de detección, se enrutan a través del **emparejamiento público** de ExpressRoute para mejorar la latencia, el rendimiento y la seguridad. No hay ningún paso de configuración necesario en el lado cliente.  
-    Para obtener más información sobre el emparejamiento público, vea [Circuitos ExpressRoute y dominios de enrutamiento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
+# <a name="customize-the-portal"></a>Personalizar el portal
+En el siguiente procedimiento se proporcionan instrucciones para personalizar el portal de Cloud App Security.
   
 ## <a name="set-up-the-portal"></a>Configurar el portal  
   
-1.  Para tener acceso al portal de Cloud App Security, vaya a [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com).  
-  
-     También puede acceder al portal a través del **Centro de administración de Office 365**. Para ello, haga clic en el icono Centros de administración ![icono Centros de administración de O365](./media/o365-admin-centers-icon.png "O365 admin centers icon") seguido de **Cloud App Security**.  
-  
-     ![Acceso desde O365](./media/access-from-o365.png "Access from O365")  
-  
-2.  En la barra de menús del portal de Cloud App Security, haga clic en el icono de configuración ![icono de configuración](./media/settings-icon.png "settings icon") y seleccione **Configuración general** para configurar lo siguiente:  
+1.  En la barra de menús del portal de Cloud App Security, haga clic en el icono de configuración ![icono de configuración](./media/settings-icon.png "settings icon") y seleccione **Configuración general** para configurar lo siguiente:  
   
 3.  **Detalles de la organización**  
   
@@ -91,7 +65,7 @@ También se puede proporcionar un **logotipo**, que se mostrará en las notifica
   
 ![administrar el acceso de administrador](./media/manage-admin-access.png "manage admin access")  
   
-##  <a name="a-nameadminsettingsa-customize-your-admin-settings"></a> Personalizar la configuración de administración  
+##  <a name="a-nameadminsettingsa-customize-your-admin-settings"></a><a name="Adminsettings"></a> Personalizar la configuración de administración  
 Para configurar sus preferencias como un administrador de Cloud App Security, haga clic en su nombre en la barra de menús del portal y seleccione **Configuración de usuario** para establecer lo siguiente:  
   
 1.  Haga clic en **Configuración de la cuenta**. Aquí puede personalizar el idioma del portal para verlo según su elección. Se puede establecer para mostrar el portal en el idioma predeterminado o bien en un idioma diferente de su preferencia.  
@@ -103,11 +77,12 @@ Para configurar sus preferencias como un administrador de Cloud App Security, ha
 > [!NOTE] 
 > El número máximo de alertas que se enviarán por mensaje de texto es de 10 al día por número de teléfono. Tenga en cuenta que el día se calcula según la zona horaria UTC. 
   
-     ![notification settings](./media/notification-settings.png "notification settings")  
+  ![configuración de notificación](./media/notification-settings.png "notification settings")  
   
-     When you are done, click **Save**.  
   
-##  <a name="a-nameiptagsandrangesa-organize-the-data-according-to-your-needs"></a> Organizar los datos de acuerdo a sus necesidades  
+3. Haga clic en **Guardar** cuando acabe.  
+  
+##  <a name="a-nameiptagsandrangesa-organize-the-data-according-to-your-needs"></a><a name="IPtagsandRanges"></a> Organizar los datos de acuerdo a las necesidades  
 Para identificar fácilmente las direcciones IP conocidas, como las direcciones IP de la oficina física, es necesario establecer los intervalos de direcciones IP que permiten etiquetar y clasificar adecuadamente, así como personalizar la forma en que los registros y alertas se muestran e investigan.   
 Cada grupo de intervalos IP se puede clasificar en función de una lista predeterminada de categorías IP o etiquetarse con etiquetas IP de creación propia. Además, esta configuración permite invalidar la información de geolocalización pública según su conocimiento de la red interna.  
   
@@ -151,7 +126,7 @@ En la barra de menús, haga clic en el icono de configuración ![icono de config
   
      ![nuevo intervalo de direcciones IP](./media/newipaddress-range.png "newipaddress range")  
   
-##  <a name="a-nameadallommailsettingsa-personalize-your-experience"></a> Personalizar la experiencia  
+##  <a name="a-nameadallommailsettingsa-personalize-your-experience"></a><a name="Adallom_mailsettings"></a>Personalizar la experiencia  
 En la barra de menús, haga clic en el icono de configuración ![icono de configuración](./media/settings-icon.png "settings icon") y seleccione **Configuración de correo** para establecer los parámetros de las notificaciones de correo enviadas desde Cloud App Security a los administradores que solicitan alertas, así como de las notificaciones enviadas a los usuarios finales sobre infracciones en las que puedan haber participado.  
   
 ![menú de configuración de correo](./media/mail-setting-menu.png "mail setting menu")  
@@ -240,9 +215,14 @@ Configura lo siguiente:
      Luego, haga clic en **Enviar un correo electrónico de prueba** para enviarse a sí mismo un mensaje de prueba para ver un ejemplo de la plantilla creada.  
      El correo se enviará a la cuenta usada para iniciar sesión en el portal. En el correo de prueba podrá ver los campos de metadatos, la plantilla, el asunto del correo, el título en el cuerpo del correo y el contenido.  
   
-## <a name="single-signon"></a>Inicio de sesión único  
+## <a name="single-sign-on"></a>Inicio de sesión único  
 Cloud App Security está acoplado a Azure Active Directory para la autenticación, el aprovisionamiento y la concesión de licencias de las actividades relacionadas. Para obtener información sobre cómo administrar el inicio de sesión único, consulte [Lista de compatibilidad de federación de Azure Active Directory: proveedores de identidades de terceros que se pueden utilizar para implementar el inicio de sesión único](https://msdn.microsoft.com/library/azure/jj679342.aspx).  
-  
+
+
+> [!NOTE] 
+> Si utiliza ExpressRoute, Cloud App Security se ha implementado en Azure y está totalmente integrado con [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Todas las interacciones con las aplicaciones de Cloud App Security y el tráfico enviado a Cloud App Security, incluida la carga de registros de detección, se enrutan a través del **emparejamiento público** de ExpressRoute para mejorar la latencia, el rendimiento y la seguridad. No hay ningún paso de configuración necesario en el lado cliente.  
+    Para obtener más información sobre el emparejamiento público, vea [Circuitos ExpressRoute y dominios de enrutamiento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
+    
 ## <a name="see-also"></a>Consulte también  
 [Configurar Cloud Discovery](set-up-cloud-discovery.md)   
 [Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -251,6 +231,6 @@ Cloud App Security está acoplado a Azure Active Directory para la autenticació
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

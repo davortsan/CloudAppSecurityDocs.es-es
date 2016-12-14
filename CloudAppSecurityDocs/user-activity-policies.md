@@ -1,11 +1,11 @@
 ---
-title: Directivas de actividad de usuario | Microsoft Docs
-description: En este tema se proporcionan instrucciones para crear y trabajar con directivas de actividad de usuario.
+title: Directivas de actividad | Microsoft Docs
+description: En este tema se proporcionan instrucciones para crear y trabajar con directivas de actividad.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,13 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: a88691fbe6c23fa537133c077402d8e9e1121047
+ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
+ms.openlocfilehash: 68961bf66a0c0bb3b668e681502ccf10bc673197
 
 
 ---
 
-# <a name="user-activity-policies"></a>Directivas de actividad de usuario
+# <a name="activity-policies"></a>Directivas de actividad
 Las directivas de actividad permiten aplicar una amplia gama de procesos automatizados, con lo que se aprovechan las API del proveedor de aplicaciones. Estas directivas permiten supervisar actividades concretas realizadas por distintos usuarios o seguir niveles inesperadamente altos de un determinado tipo de actividad.  
   
 Una vez que se ha establecido una directiva de detección de actividad, empieza a generar alertas, pero únicamente para las actividades que se producen después de haber creado la directiva.
@@ -42,7 +42,7 @@ Para crear una nueva directiva de actividad, siga este procedimiento:
 4.  Para establecer qué acciones o qué otras métricas desencadenan esta directiva, trabaje con **filtros de actividad**.  
   
 5.  En **Parámetros de coincidencia de actividad**, seleccione si se desencadenará una infracción de directiva cuando una sola actividad coincida con los filtros o si solo se detectará una infracción cuando se detecte un número especificado de **actividades repetidas**.  
-    Si elige **Actividad repetida**, establezca las actividades que desencadenarán la alerta: el número de actividades, el período de tiempo y si una infracción contará para un usuario de una aplicación específica o para el mismo usuario de cualquier aplicación.  
+    Si elige **Actividad repetida**, puede establecer ** Actividades de grupo coincidentes por aplicación**. Esto desencadenará una coincidencia de directiva solo cuando se producen las actividades repetidas en la misma aplicación (por ejemplo, 5 descargas desde Box).  
   
 6.  Configure las **acciones** que deben realizarse cuando se encuentra una coincidencia.  
   
@@ -133,6 +133,6 @@ Cada directiva se compone de las siguientes partes:
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "Introducción a Cloud App Security | Microsoft Docs"
+title: Deploy Microsoft Docs
 description: En este tema se describe el proceso para que Cloud App Security entre en funcionamiento.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/21/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,38 +14,159 @@ ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 8b454edde557c408b644c9bff6f7bf6136ba9819
+ms.sourcegitcommit: eceb326c4ab14852ecd284cfbaa0d2eb07149168
+ms.openlocfilehash: 57ba1ea49d009dd10797609885463948f359e11e
 
 
 ---
 
-# <a name="getting-started-with-cloud-app-security"></a>Introducción a Cloud App Security
-Cloud App Security ayuda a los clientes a aprovechar las ventajas de las aplicaciones en la nube sin perder el control gracias a una visibilidad mejorada de la actividad y a una mayor protección de los datos críticos de la empresa.  Esta documentación le guiará por los siguientes pasos para trabajar con Cloud App Security.  
-  
-Para usar el producto, la organización debe tener una licencia de Cloud App Security. Para obtener más información, vea [How to buy Cloud App Security](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) (Cómo comprar Cloud App Security) y lea la sección [Licensing resources](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) (Recursos de licencia).  
-  
+# <a name="deploy-cloud-app-security"></a>Implementar Cloud App Security
+Cloud App Security le puede ayudar a sacar partido de las ventajas de las aplicaciones en la nube y a mantener a la vez el control de los recursos corporativos. Funciona mejorando la visibilidad de la actividad en la nube y ayuda a aumentar la protección de los datos corporativos. En este tema, le indicaremos los pasos que debe llevar a cabo para configurar Cloud App Security y trabajar con él.  
+
+Su organización debe tener una licencia para utilizar Cloud App Security. Para obtener más información, consulte la sección Recursos sobre licencia en [Cómo comprar Cloud App Security](https://www.microsoft.com/en-us/cloud-platform/cloud-app-security).  
+
 >[!NOTE]
->No es necesaria una licencia de Office 365 para Cloud App Security.  
+>No necesita una licencia de Office 365 para utilizar Cloud App Security.  
+
+## <a name="prerequisites"></a>Requisitos previos  
   
+-   Para usar el producto, la organización debe tener una licencia de Cloud App Security. Para obtener más información, vea [How to buy Cloud App Security](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) (Cómo comprar Cloud App Security) y lea la sección [Licensing resources](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) (Recursos de licencia).  
+  
+     Para obtener soporte para activar inquilinos, vea [Póngase en contacto con el soporte de Office 365 para empresas: ayuda para administradores](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).  
+  
+> [!NOTE] 
+> No es necesaria una licencia de Office 365 para Cloud App Security.  
+  
+-   Después de haber adquirido una licencia para Cloud App Security, recibirá un correo electrónico con la información de activación y un vínculo al portal de Cloud App Security.  
+  
+-   Para configurar Cloud App Security, debe ser un administrador global, un administrador de cumplimiento o un administrador de seguridad de Azure Active Directory u Office 365. Es importante saber que un usuario que tiene asignado un rol de administrador tendrá los mismos permisos en todas las aplicaciones en la nube a las que la organización esté suscrita, independientemente de si el rol se ha asignado en el portal de Office 365, en Portal de Azure clásico o a través el módulo de Azure AD para [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx). Para obtener más información, vea [Asignación de roles de administrador en Office 365](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) y [Asignación de roles de administrador en Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).  
+  
+-   Para ejecutar el portal de Cloud App Security, use Internet Explorer 11, Microsoft Edge (versión más reciente), Google Chrome (versión más reciente), Mozilla Firefox (versión más reciente) o Apple Safari (versión más reciente).  
+
+## <a name="to-access-the-portal"></a>Para acceder al portal:
+
+Para tener acceso al portal de Cloud App Security, vaya a [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com).  
+  
+También puede acceder al portal a través del **Centro de administración de Office 365**. Para ello, haga clic en el icono Centros de administración ![icono Centros de administración de O365](./media/o365-admin-centers-icon.png "O365 admin centers icon") seguido de **Cloud App Security**.  
+  
+     ![Access from O365](./media/access-from-o365.png "Access from O365")  
+  
+
+
+
 ## <a name="get-started-quickly-with-cloud-app-security"></a>Inicio rápido de Cloud App Security  
-  
-|Haga lo siguiente:|Tarea|¿Requerido?|Cómo:|Descripción|  
-|-------------------------|----------|---------------|-------------|-----------------|  
-|PASO 1. [Configure Cloud Discovery](set-up-cloud-discovery.md).|Cargar registros de tráfico|Requerido|**Crear un informe continuo de Cloud Discovery**<br /><br /> 1.   Vaya a **Configuración** -> **Cloud Discovery settings** (Configuración de Cloud Discovery).<br /><br /> 2.    Haga clic en **Cargar registros automáticamente**.<br /><br /> 3.   Agregue los orígenes de datos en la pestaña **Orígenes de datos**.<br /><br /> 4.    Configure el recopilador de registros en la pestaña **Recopiladores de registros**.<br /><br /> Crear un informe de instantáneas de Cloud Discovery<br /><br /> 1.    Vaya a **Detectar** -> **Crear nuevo informe de instantáneas** y siga los pasos.|**¿Por qué se deben configurar los informes de Cloud Discovery?** La visibilidad de la TI en la sombra de la organización es crítica.  <br />Después de analizar los registros, podrá detectar fácilmente qué aplicaciones en la nube se usan, qué usuarios lo hacen y en qué dispositivos.|  
-|PASO 2. [Habilite la visibilidad, la protección y las acciones de gobierno instantáneas para las aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).|Conectar aplicaciones|Requerido|1.   Vaya a **Configuración** -> **Aplicaciones sancionadas**.<br /><br /> 2. Haga clic en **Conectar aplicación** y seleccione una aplicación.<br /><br /> 3. Siga los pasos de configuración para conectar la aplicación.|**¿Por qué conectar una aplicación?**<br /><br /> Solo después de conectar una aplicación podrá obtener una mayor visibilidad para investigar las actividades, los archivos y las cuentas del entorno de nube de las aplicaciones en la nube.|  
-|PASO 3. [Controle las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).|Crear las directivas|Requerido|**Crear las directivas**<br /><br /> 1.  Vaya a **Control** -> **Plantillas**.<br /><br /> 2.    Seleccione una plantilla de directiva de la lista y haga clic en (+) **Crear directiva**.<br /><br /> 3.  Personalice la directiva de acuerdo a sus necesidades (seleccione filtros, acciones y otras configuraciones) y haga clic en **Crear**.<br /><br /> 4.    En la pestaña **Directivas**, haga clic en la directiva que ha creado para ver las coincidencias relevantes (actividades, archivos, alertas, etc.).<br /><br /> Sugerencia: Cree una directiva para cada **Categoría de riesgo** a fin de cubrir todos los escenarios de seguridad del entorno de nube.|**¿Cómo pueden las directivas ayudar a la organización?**<br /><br /> Las directivas proporcionan las herramientas necesarias para supervisar tendencias, ver amenazas de seguridad y generar alertas e informes personalizados. Con las directivas se pueden crear distintas acciones de gobierno, DLP y controles de uso compartido de archivos.|  
-|PASO 4. [Personalice la experiencia](general-setup.md#Adallom_mailsettings).|Agregar detalles de la organización|Recomendado|**Especificar configuración de correo electrónico**<br /><br /> 1. Vaya a **Configuración** -> **Configuración de correo**.<br /><br /> 2.   En **Identidad del emisor de correo electrónico**, escriba las direcciones de correo electrónico y el nombre para mostrar.<br /><br /> 3. En **Diseño del correo electrónico**, cargue la plantilla de correo electrónico de la organización.<br /><br /> **Establecer notificaciones de administrador**<br /><br /> 1.    Haga clic en el nombre de usuario en la barra de navegación y vaya a **Configuración de usuario**.<br /><br /> 2.    En **Notificaciones**, configure los métodos que quiere establecer para las notificaciones del sistema.<br /><br /> 3.  Haga clic en **Guardar**.<br /><br /> **Personalizar las métricas de puntuación**<br /><br /> 1.  Vaya a **Configuración** -> **Cloud Discovery settings** (Configuración de Cloud Discovery).<br /><br /> 2.    En **Configurar métrica de puntuación**, configure la importancia de los distintos valores de riesgo.<br /><br /> 3.    Haga clic en **Guardar**.<br /><br /> Ahora las puntuaciones de riesgo otorgadas a las aplicaciones detectadas están configuradas exactamente según las necesidades y las prioridades de la organización.|**¿Por qué personalizar el entorno?**<br /><br /> Algunas características funcionan mejor si se personalizan de acuerdo a las necesidades.  <br />Ofrezca una mejor experiencia a los usuarios con sus propias plantillas de correo electrónico, decida qué notificaciones recibe y personalice las métricas de puntuación de riesgo de modo que se ajusten a las preferencias de la organización.|  
-|PASO 5. [Organice los datos de acuerdo a las necesidades](general-setup.md#IPtagsandRanges).|Configurar valores de configuración importantes|Recomendado|**Crear etiquetas de dirección IP**<br /><br /> 1.   Vaya a **Configuración** -> **Etiquetas de dirección IP**.<br /><br /> 2. Haga clic en (+) **Agregar intervalo de direcciones IP**.<br /><br /> 3.    Escriba los **detalles**, la **ubicación**, las **etiquetas** y la **categoría** del intervalo IP.<br /><br /> 4. Haga clic en **Crear**.<br /><br /> Ahora puede usar etiquetas IP al crear directivas, al filtrar y al crear vistas de datos.<br /><br /> **Crear vistas**<br /><br /> 1.  Vaya a **Configuración** -> **Cloud Discovery settings** (Configuración de Cloud Discovery).<br /><br /> 2.    En **Vistas de datos**, haga clic en (+) **Add data view** (Agregar vista de datos).<br /><br /> 3.  Siga los pasos de configuración.<br /><br /> 4.  Haga clic en **Crear**.<br /><br /> Ahora puede ver datos detectados según sus propias preferencias, por ejemplo, unidades de negocio o intervalos IP.<br /><br /> **Agregar dominios**<br /><br /> 1.    Vaya a **Configuración** -> **Configuración general**.<br /><br /> 2.    En **Detalles de la organización**, agregue los dominios internos de la organización.<br /><br /> 3. Haga clic en **Guardar**.|**¿Por qué se deben configurar estos valores?**<br /><br /> Esta configuración se traduce en un control mejor y más sencillo de distintas características en la consola. Con las etiquetas IP es más fácil crear directivas adaptadas a las propias necesidades, filtrar con precisión los datos, etc. Use vistas de datos para agrupar los datos en categorías lógicas.|  
-  
-## <a name="see-also"></a>Consulte también  
-[Configuración general](general-setup.md)   
-[Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
-[Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
-  
-  
+
+ 
+
+### <a name="step-1-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>Paso 1. [Configure Cloud Discovery](set-up-cloud-discovery.md).
+Tarea necesaria: cargar registros de tráfico **para crear un informe continuo de Cloud Discovery**
+
+ 1. Vaya a **Configuración** > **Cloud Discovery settings** (Configuración de Cloud Discovery).
+ 2. Elija **Cargar registros automáticamente**.
+ 3. En la ficha **Orígenes de datos**, agregue los orígenes.
+ 4. En la pestaña **Recopiladores de registros**, configure el recopilador de registros.
+ 
+ **Para crear un informe de instantáneas de Cloud Discovery**
+
+ 1. Vaya a **Detectar** > **Crear nuevo informe de instantáneas** y siga los pasos.
+
+**¿Por qué se deben configurar los informes de Cloud Discovery?**
+Tener visibilidad de la TI en la sombra de la organización es algo esencial.
+Después de analizar los registros, podrá detectar fácilmente qué aplicaciones en la nube se usan, qué usuarios lo hacen y en qué dispositivos.
 
 
-<!--HONumber=Oct16_HO4-->
+### <a name="step-2-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>Paso 2. [Establezca la visibilidad, la protección y las acciones de gobierno instantáneas para las aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+Tarea necesaria: conectar aplicaciones
+
+1. Vaya a **Configuración** > **Conectores de aplicación**.
+2. Elija **Conectar aplicación** y seleccione una aplicación.
+3. Siga los pasos de configuración para conectar la aplicación.
+
+**¿Por qué conectar una aplicación?**
+Después de conectar una aplicación, puede obtener una mayor visión para que pueda investigar actividades, archivos y cuentas para las aplicaciones en su entorno de la nube.
+
+
+### <a name="step-3-control-cloud-apps-with-policiescontrol-cloud-apps-with-policiesmd"></a>Paso 3. [Controle las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).
+Tarea necesaria: crear directivas
+
+**Para crear directivas**
+
+1. Vaya a **Control** > **Plantillas**.
+2. Seleccione una plantilla de directiva de la lista y elija (+) **Crear directiva**.
+3. Personalice la directiva (seleccione filtros, acciones y otras configuraciones) y luego elija **Crear**.
+4. En la ficha **Directivas**, elija la directiva para ver las coincidencias relevantes (actividades, archivos y alertas).
+ Sugerencia: a fin de cubrir todos los escenarios de seguridad del entorno de la nube, cree una política para cada **categoría de riesgo**.
+
+**¿Cómo pueden las directivas ayudar a la organización?**
+Puede utilizar directivas para ayudarle a supervisar tendencias, ver amenazas de seguridad y generar alertas e informes personalizados. Con las directivas se pueden crear acciones de gobierno y establecer controles de uso compartido de archivos y de prevención de pérdida de datos.
+
+
+### <a name="step-4-personalize-your-experiencegeneral-setupmdadallommailsettings"></a>Paso 4. [Personalice la experiencia](general-setup.md#Adallom_mailsettings).
+Tarea necesaria: agregar detalles de su organización
+
+**Para especificar la configuración de correo electrónico**
+
+1. Vaya a **Configuración** > **Configuración de correo**.
+2. En **Identidad del emisor de correo electrónico**, escriba las direcciones de correo electrónico y el nombre para mostrar.
+3. En **Diseño del correo electrónico**, cargue la plantilla de correo electrónico de la organización.
+
+ **Para establecer notificaciones de administrador**
+
+1. En la barra de navegación, seleccione el nombre de usuario y luego vaya a **Configuración de usuario**.
+2. En **Notificaciones**, configure los métodos que quiere establecer para las notificaciones del sistema.
+3. Elija **Guardar**.
+
+ **Para personalizar las métricas de puntuación**
+
+1. Vaya a **Configuración** > **Cloud Discovery settings** (Configuración de Cloud Discovery).
+2. En **Configurar métrica de puntuación**, configure la importancia de los distintos valores de riesgo.
+3. Elija **Guardar**.
+
+ Ahora las puntuaciones de riesgo otorgadas a las aplicaciones detectadas están configuradas exactamente según las necesidades y las prioridades de la organización.
+
+**¿Por qué personalizar el entorno?**
+Algunas características funcionan mejor si se personalizan de acuerdo a las necesidades. Ofrezca una mejor experiencia a los usuarios con sus propias plantillas de correo electrónico, decida qué notificaciones recibe y personalice las métricas de puntuación de riesgo de modo que se ajusten a las preferencias de la organización.
+
+
+### <a name="step-5-organize-the-data-according-to-your-needsgeneral-setupmdiptagsandranges"></a>Paso 5. [Organice los datos de acuerdo a las necesidades](general-setup.md#IPtagsandRanges).
+Tarea necesaria: configurar opciones importantes
+
+**Para crear etiquetas de dirección IP**
+
+1. Vaya a **Configuración** > **Etiquetas de dirección IP**.
+2. Elija (+) **Agregar intervalo de direcciones IP**.
+3. Escriba los **detalles**, la **ubicación**, las **etiquetas** y la **categoría** del intervalo IP.
+4. Elija **Crear**.
+
+ Ahora puede utilizar etiquetas IP al crear directivas y al filtrar y crear vistas de datos.
+
+ **Para crear vistas**
+
+1. Vaya a **Configuración** > **Cloud Discovery settings** (Configuración de Cloud Discovery).
+2. En **Vistas de datos**, elija (+) **Agregar vista de datos**.
+3. Siga los pasos de configuración.
+4. Elija **Crear**.
+
+Ahora puede ver datos detectados según sus propias preferencias, por ejemplo, unidades de negocio o intervalos IP.
+
+**Para agregar dominios**
+
+1. Vaya a **Configuración** > **Configuración general**.
+2. En **Detalles de la organización**, agregue los dominios internos de la organización.
+3. Elija **Guardar**.
+
+**¿Por qué se deben configurar estos valores?**
+Estos valores le ayudan a controlar mejor las características de la consola. Con las etiquetas IP es más fácil crear directivas adaptadas a las propias necesidades, filtrar con precisión los datos, etc. Use vistas de datos para agrupar los datos en categorías lógicas.
+  
+
+## <a name="see-also"></a>Consulte también
+
+Establezca directivas: [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).    
+Para obtener soporte técnico, visite la página de [soporte técnico asistido de Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031).   
+Los clientes Premier también pueden elegir Cloud App Security directamente desde el [Portal Premier](https://premier.microsoft.com/).   
+
+
+
+<!--HONumber=Nov16_HO5-->
 
 

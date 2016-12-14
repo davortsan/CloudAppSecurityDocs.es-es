@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,15 +14,23 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 1687dd8d98a2e44acbf3f8ad34f875cbbc0bcdd1
+ms.sourcegitcommit: bf862116fb4db1d4a50c25497d72634a97bb3a80
+ms.openlocfilehash: 8fca376e5d414192bdb7c99a7741c97ebcaf3892
 
 
 ---
 
 # <a name="files"></a>Archivos
 
-###  <a name="a-namefilefiltersa-file-filters"></a> Filtros de archivo 
+Se puede filtrar el registro de archivos para que pueda buscar archivos específicos. El filtro básico proporciona excelentes herramientas para empezar a filtrar los archivos.
+
+ ![filtro del registro de archivo básico](media/file-log-filter-basic.png)
+
+Para profundizar en archivos más específicos, puede ampliar el filtro básico haciendo clic en Opciones avanzadas.
+
+ ![filtro de registro de archivo avanzado](media/file-log-filter-advanced.png)
+ 
+###  <a name="a-namefilefiltersa-file-filters"></a><a name="Filefilters"></a> Filtros de archivo 
  
 Cloud App Security puede supervisar cualquier tipo de archivo basado en más de 20 filtros de metadatos (por ejemplo, nivel de acceso o tipo de archivo). 
  
@@ -30,18 +38,16 @@ Los motores DLP integrados de Cloud App Security inspeccionan el contenido media
 
 A continuación se muestra una lista de los filtros de archivo que se pueden aplicar. La mayoría de los filtros admiten varios valores, así como NOT, para proporcionarle una herramienta muy eficaz para la creación de directivas.  
 > [!NOTE] 
-> Al usar filtros de directiva, **Contiene** solo buscará palabras completas separadas por comas, puntos, espacios o caracteres de subrayado. Por ejemplo, si busca **malware** o **virus**, encontrará virus_malware_file.exe, pero no encontrará malwarevirusfile.exe. Si busca **malware.exe**, encontrará TODOS los archivos que contengan malware o exe en el nombre de archivo, mientras que si busca **"malware.exe"** (con comillas) solo encontrará los archivos que contengan exactamente "malware.exe".  **Es igual a** solo buscará la cadena completa. Por ejemplo, si busca **malware.exe**, encontrará malware.exe pero no malware.exe.txt. 
+> Al usar filtros de directiva de archivo, **Contiene** solo buscará palabras completas separadas por comas, puntos, espacios o caracteres de subrayado. Si delimita palabras usando comillas, se tratarán como si usaran el operador AND. Por ejemplo, si busca **"malware"** **"virus"**, se encontrará virus_malware_file.exe, pero no se encontrarán ni malwarevirus.exe ni malware.exe. Los espacios entre palabras funcionan como el operador OR. Por ejemplo, si busca **malware** **virus**, se encontrarán todos los archivos con la palabra malware o virus en el nombre, como malware-virus.exe o virus.exe.   **Es igual a** solo buscará la cadena completa. Por ejemplo, si busca **malware.exe**, encontrará malware.exe pero no malware.exe.txt. 
 
-   
-![filtros de tipo de archivo de directiva](./media/policy_file-type-filters.png "policy_file type filters")  
-  
 -   Nivel de acceso: nivel de acceso de recursos compartidos (público, externo, interno o privado).  Para obtener más información sobre los archivos externos, consulte [General Setup, Set up the portal](getting-started-with-cloud-app-security.md) (Configuración general, Configurar el portal). Los archivos internos son los que se encuentran dentro de los dominios internos que haya establecido en [General setup](General-setup.md) (Configuración general). Los archivos externos son los que están guardados en ubicaciones que no se encuentran dentro de los dominios internos que haya establecido. Los archivos compartidos son los que tienen un nivel de uso compartido superior a privado. Esto incluye uso compartido interno (archivos compartidos dentro de los dominios internos), uso compartido externo (archivos compartidos en dominios que no se muestran en los dominios internos), público con un vínculo (archivos que se pueden compartir con cualquier usuario a través de un vínculo) y público (archivos que se pueden encontrar al realizar búsquedas en Internet). 
 
 > [!NOTE]
->  Cloud App Security controla como se indica a continuación los archivos que los usuarios externos comparten en las aplicaciones de almacenamiento conectadas:     - **OneDrive:** OneDrive asigna un usuario interno como propietario de cualquier archivo que un usuario externo coloque en OneDrive. Dado que, a partir de ese momento, se considera que estos archivos pertenecen a la organización, Cloud App Security los examina y les aplica directivas, tal como hace con cualquier otro archivo de OneDrive.
-     - **Google Drive:** Google Drive considera que pertenecen al usuario externo y, debido a las restricciones legales relativas a los archivos y los datos que no pertenecen a la organización, Cloud App Security no tiene acceso a estos archivos.
-    - **Box:** dado que Box considera que los archivos de propiedad externa son información privada, los administradores globales de Box no pueden ver el contenido de los archivos. Por este motivo, Cloud App Security no tiene acceso a estos archivos. 
-    - **Dropbox:** dado que Dropbox considera que los archivos de propiedad externa son información privada, los administradores globales de Dropbox no pueden ver el contenido de los archivos. Por este motivo, Cloud App Security no tiene acceso a estos archivos.
+>  Cloud App Security controla los archivos compartidos en las aplicaciones de almacenamiento conectadas a usuarios externos de la forma siguiente:
+> - **OneDrive:** OneDrive asigna un usuario interno como propietario de cualquier archivo colocado en su OneDrive por un usuario externo. Dado que, a partir de ese momento, se considera que estos archivos pertenecen a la organización, Cloud App Security los examina y les aplica directivas, tal como hace con cualquier otro archivo de OneDrive.
+> - **Google Drive:** Google Drive considera que pertenecen al usuario externo y, debido a las restricciones legales relativas a los archivos y los datos que no pertenecen a la organización, Cloud App Security no tiene acceso a estos archivos.
+> - **Box:** dado que Box considera que los archivos de propiedad externa son información privada, los administradores globales de Box no pueden ver el contenido de los archivos. Por este motivo, Cloud App Security no tiene acceso a estos archivos. 
+> - **Dropbox:** dado que Dropbox considera que los archivos de propiedad externa son información privada, los administradores globales de Dropbox no pueden ver el contenido de los archivos. Por este motivo, Cloud App Security no tiene acceso a estos archivos.
 
 -   Aplicación: solo busca archivos dentro de estas aplicaciones.  
   
@@ -57,21 +63,26 @@ A continuación se muestra una lista de los filtros de archivo que se pueden apl
   
 -   Creado: hora de creación de archivo. El filtro admite fechas antes y después e intervalos de fechas.  
   
--   Última modificación: hora de modificación del archivo. El filtro admite valores de fecha Antes de/Después de, intervalos de fechas y expresiones de tiempo relativo, por ejemplo, Todos los archivos que no se han modificado en los últimos 6 meses.  
-  
 -   Extensión: se centra en extensiones de archivo específicas, por ejemplo, todos los archivos que son ejecutables (exe).  
   
 -   Id. de archivo: busca identificadores de archivo específicos. Se trata de una característica avanzada que permite hacer un seguimiento de determinados archivos de gran valor sin depender de su propietario/ubicación/nombre.  
   
--   Nombre de archivo: nombre de archivo o subcadena del nombre tal como se define en la aplicación en la nube, por ejemplo, Todos los archivos con una contraseña en su nombre.  
+-   Nombre de archivo: nombre de archivo o subcadena del nombre tal como se define en la aplicación en la nube, por ejemplo, Todos los archivos con una contraseña en su nombre.   
   
+-   Etiqueta de archivo: busca archivos con etiquetas específicas establecidas por Azure Information Protection. Esto requiere la integración con Azure Integration Protection.
+
 -   Tipo de archivo: Cloud App Security toma el tipo MIME recibido del servicio y examina el archivo para determinar el tipo de archivo real. Tenga en cuenta que este examen se aplica a archivos pertinentes para el examen de datos (documentos, imágenes, presentaciones, hojas de cálculo, archivos de texto y archivos de almacenamiento o ZIP). El filtro funciona por tipo de archivo/carpeta, por ejemplo, Todas las carpetas que son… o Todos los archivos de hoja de cálculo que son...
 
 
-     ![filtros en papelera de archivo de directiva](./media/policy_file-filters-trash.png "policy_file filters trash")  
+ ![filtros en papelera de archivo de directiva](./media/policy_file-filters-trash.png "policy_file filters trash")  
+
   
 -   En la papelera: excluye/incluye archivos que se encuentran en la carpeta de la papelera. Estos archivos siguen pudiendo compartirse y suponen un riesgo.  
   
+-   Última modificación: hora de modificación del archivo. El filtro admite valores de fecha Antes de/Después de, intervalos de fechas y expresiones de tiempo relativo, por ejemplo, Todos los archivos que no se han modificado en los últimos 6 meses.  
+
+-   Directiva coincidente: archivos que coinciden gracias a una directiva de Cloud App Security.
+
 -   Tipo MIME: comprobación del tipo MIME del archivo. Acepta el texto sin formato.  
   
 -   Propietario: incluye/excluye propietarios de archivo específicos, por ejemplo, Realizar un seguimiento de todos los archivos compartidos por rogue_employee_#100.  
@@ -86,45 +97,20 @@ También puede establecer que la directiva se ejecute en archivos específicos. 
   
 ![filtro Aplicar a](./media/apply-to-filter.png "apply to filter")  
   
-### <a name="governance-actions"></a>Acciones de gobierno  
+## <a name="working-with-the-file-drawer"></a>Uso del cajón de archivos
+
+Puede ver más información sobre un archivo haciendo clic en él en el registro de archivos. El cajón de archivos se abrirá con las siguientes acciones adicionales relacionadas con el archivo en cuestión:
+
+- Dirección URL: le lleva a la ubicación del archivo.
+- Identificadores de archivos: si hace clic en uno, se abrirá una ventana emergente con los datos sin procesar sobre el archivo, como su id. o las claves de cifrado.
+- Propietario: haga clic en esta opción para ver la página de usuario del propietario del archivo.
+- Directivas coincidentes: haga clic en este vínculo para ver una lista de las directivas con las que coincida el archivo.
+- Etiqueta de clasificación: haga clic en esta opción para ver una lista de etiquetas de clasificación de Azure Information Protection que se hayan encontrado en este archivo. A continuación, podrá filtrar todos los archivos que coincidan con esta etiqueta.    
+
+![Cajón de archivos](./media/file-drawer.png "File drawer")  
   
--   Notificaciones  
-  
-    -   Alertas: las alertas pueden desencadenarse en el sistema y propagarse a través de mensajes de correo electrónico y de texto, según el nivel de gravedad.  
-  
-    -   Notificación de correo electrónico de usuario: es posible personalizar los mensajes de correo electrónico y enviarlos a todos los propietarios de archivos infractores.  
-  
-    -   Administrador de CC: según la integración de directorios del usuario, también se pueden enviar notificaciones de correo electrónico al administrador de la persona que haya infringido una directiva.  
-  
--   Enviar una notificación a usuarios concretos: lista específica de direcciones de correo electrónico que recibirán las notificaciones.  
-  
--   Enviar una notificación al último editor del archivo: se envían notificaciones a la última persona que ha modificado el archivo.  
-  
--   Acciones de gobierno en aplicaciones  
-  
-     Se pueden aplicar acciones pormenorizadas por aplicación. Las acciones específicas varían según la terminología de la aplicación.  
-  
-    -   Cambio del uso compartido  
-  
-        -   Quitar el uso compartido público: permite el acceso únicamente a los colaboradores con nombre, por ejemplo, Quitar el acceso público a Google Apps y Quitar el vínculo compartido directo a Box.  
-  
-        -   Quitar usuarios externos: permite el acceso únicamente a los usuarios de la empresa.  
-  
-        -   Convertir en privado: solo el propietario puede tener acceso al archivo. Se quitan todos los recursos compartidos.  
-  
-        -   Quitar un colaborador: quita un colaborador específico del archivo.  
-  
-    -   Cuarentena  
-  
-        -   Poner en cuarentena de usuario: permite el autoservicio moviendo el archivo a una carpeta de cuarentena controlada por el usuario.  
-  
-        -   Poner en cuarentena de administrador: el archivo se pone en cuarentena en la unidad del administrador y este tiene que aprobarlo.  
-  
--   Enviar a la papelera: el archivo se mueve a la carpeta de la papelera.
-  
-![alertas de crear directiva](./media/policy_create-alerts.png "policy_create alerts")  
-  
- 
+Para obtener una lista de las acciones de gobierno disponibles, consulte [Acciones de gobierno de archivos](governance-actions.md#file-governance-actions).
+
 ## <a name="see-also"></a>Consulte también  
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 [Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -133,6 +119,6 @@ También puede establecer que la directiva se ejecute en archivos específicos. 
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

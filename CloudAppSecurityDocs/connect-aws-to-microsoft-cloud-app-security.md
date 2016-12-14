@@ -1,5 +1,5 @@
 ---
-title: Conectar AWS con Microsoft Cloud App Security | Microsoft Docs
+title: Conectar AWS | Microsoft Docs
 description: "En este tema se proporciona información sobre cómo conectar la aplicación AWS con Cloud App Security mediante el conector de API."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 4b9ab028bb45f77513217dd3784cefc73e984962
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: a56257b7c149c3ea054f200ef88df0ab41b7e25b
 
 
 ---
@@ -96,15 +96,15 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
   
     3.  Repita el paso 11 para todas las regiones, pero no establezca ninguna otra región para que incluya servicios globales.  
   
-11. En el portal de Cloud App Security, haga clic en **Investigar** y, después, en **Aplicaciones autorizadas**.  
+11. En el portal de Cloud App Security, haga clic en **Investigar** y, después, en **Aplicaciones conectadas**.  
   
-12. En la fila de AWS, haga clic en **Conectar** en la columna **Estado del conector de aplicaciones** o haga clic en el botón **Conectar una aplicación** seguido de **AWS**.  
+12. En la página **Conectores de aplicaciones**, haga clic en el botón del signo más y, después, en **AWS**.  
   
      ![conectar AWS](./media/connect-aws.png "connect AWS")  
   
-13. En la página de configuración de Amazon Web Services, pegue la **clave de acceso** y la **clave secreta** del archivo csv en los campos de la página de la API y haga clic en **Actualizar clave de acceso**.  
+13. En el elemento emergente, pegue la **clave de acceso** y la **clave secreta** del archivo csv en los campos de la página de la API y haga clic en **Actualizar clave de acceso**.  
   
-14. Haga clic en **Probar API** para asegurarse de que la conexión se ha realizado correctamente.  
+14. Haga clic en **Probar API** para confirmar que la conexión se ha realizado correctamente.  
   
      La prueba puede tardar unos minutos. Cuando haya finalizado, recibirá una notificación que le indicará si se ha realizado correcta o incorrectamente. Cuando reciba la notificación de que se ha realizado correctamente, haga clic en **Listo**.  
   
@@ -118,6 +118,6 @@ Después de conectar AWS, recibirá eventos de 7 días anteriores a la conexión
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "Habilitar la visibilidad, la protección y las acciones de gobierno instantáneas para las aplicaciones | Microsoft Docs"
-description: "En este tema se describe el proceso para habilitar los conectores de API en las aplicaciones en la nube de la organización."
+title: Conectar aplicaciones | Microsoft Docs
+description: "En este tema se describe el proceso para conectar aplicaciones con las aplicaciones en la nube de la organización mediante conectores de API."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/21/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,13 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 14de5a6b28c6593250a1a7827905fb0f8a6482b5
-ms.openlocfilehash: 3ea2fbe78b943513a1b6ce483bc50ed5d79ae7c5
+ms.sourcegitcommit: 7901bb58f70949873fb3c423ae7951a67f7cd671
+ms.openlocfilehash: 4cfad222fb78e0bfc106fab64f6cc22d3819c1c8
 
 
 ---
 
-# <a name="enable-instant-visibility-protection-and-governance-actions-for-your-apps"></a>Habilite la visibilidad, la protección y las acciones de gobierno instantáneas para las aplicaciones
+# <a name="connect-apps"></a>Conectar aplicaciones 
 Los conectores de aplicaciones aprovechan las API de los proveedores de aplicaciones para permitir mediante Cloud App Security una mayor visibilidad y control de las aplicaciones a las que se conecta.  
   
 Cloud App Security aprovecha las API que proporciona el proveedor de nube. Cada servicio tiene su propio marco de trabajo y limitaciones de API. Cloud App Security funciona con los servicios para optimizar el uso de las API y garantizar el máximo rendimiento. Teniendo en cuenta las diferentes limitaciones que los servicios imponen a las API (como la limitación de peticiones, los límites de API, las ventanas de API dinámicas de tiempo cambiante, etc.), los motores de Cloud App Security aprovechan la capacidad permitida. Algunas operaciones, como el análisis de todos los archivos del inquilino, requieren numerosas API y, por lo tanto, se reparten a lo largo de un período de tiempo mayor. Tenga en cuenta que algunas directivas pueden ejecutarse durante varias horas o varios días.  
@@ -86,7 +86,7 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
 \* El conector de aplicaciones de Office 365 incluye actividad de administración para Exchange Online. Para agregar la actividad del usuario para Exchange Online, debe implementar por separado el conector de Exchange Online.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
-Para algunas aplicaciones, puede ser necesario agregar las siguientes direcciones IP a la lista blanca para habilitar Cloud App Security de modo que recopile registros y proporcione acceso a la consola de Cloud App Security:  
+Para algunas aplicaciones, puede ser necesario agregar las siguientes direcciones IP a la lista de permitidos para habilitar Cloud App Security de modo que recopile registros y proporcione acceso a la consola de Cloud App Security:  
   
 -   Para los registros:  
   
@@ -97,6 +97,8 @@ Para algunas aplicaciones, puede ser necesario agregar las siguientes direccione
 -   Para la consola:  
   
      104.42.231.28  
+
+- Se recomienda crear una cuenta de servicio de administración dedicada a Cloud App Security por cada aplicación que quiera conectar con la integración de la API de Cloud App Security.  
   
 > [!NOTE]  
 >  Para obtener actualizaciones cuando las direcciones URL y las direcciones IP cambien, suscríbase al RSS como se explica en: [URL de Office 365 e intervalos de direcciones IP](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).  
@@ -129,6 +131,6 @@ Para obtener más información sobre el emparejamiento público, vea [Circuitos 
    
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 

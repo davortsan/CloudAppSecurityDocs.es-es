@@ -5,22 +5,82 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: 4949ab4f-22c3-4371-b2dc-c8422a097dfe
+ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 6f204a955d3186013691fe876e185286a55dd8af
+ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
+ms.openlocfilehash: cbe341faf692772ac5461e038233e9b1a6b2694f
 
 
 ---
 
 # <a name="release-notes"></a>Notas de la versión
+
+
+## <a name="cloud-app-security-release-85"></a>Notas de la versión 85 de Cloud App Security
+Publicado el 27 de noviembre de 2016
+
+**Nuevas características**
+- Se ha creado una distinción entre las aplicaciones conectadas y las aplicaciones autorizadas. La autorización y la desautorización de aplicaciones funcionan ahora como etiquetas, de modo que se pueden aplicar a las aplicaciones detectadas o a cualquier aplicación del catálogo. Las aplicaciones conectadas son aplicaciones que ha conectado con el conector de la API para supervisarlas y controlarlas con mayor profundidad. Ahora puede etiquetar aplicaciones como autorizadas o no autorizadas, así como conectarlas mediante el conector de aplicaciones, en caso de que esté disponible. 
+ 
+- Como parte de este cambio, se ha sustituido la página de aplicaciones autorizadas por la página **Aplicaciones conectadas**, que se ha rediseñado. Esta página externaliza los datos de estado de los conectores. 
+ 
+- Se puede acceder más fácilmente a los recopiladores de registros desde el menú **Configuración**, en **Orígenes**. 
+- Al crear un filtro de directiva de actividad, puede reducir el número de falsos positivos seleccionando la opción para ignorar las actividades repetidas cuando un mismo usuario las realiza de forma repetida en el mismo objeto. Este es el caso, por ejemplo, cuando una misma persona intenta descargar el mismo archivo varias veces, de modo que no se generará ninguna alerta. 
+- Se han realizado mejoras en el cajón de actividades. Ahora, al hacer clic en un objeto de actividad, puede explorarlo en profundidad para obtener más información.
+
+**Mejoras**
+- Se han realizado mejoras en el motor de detección de anomalías, incluidas las alertas de desplazamiento imposible. Ahora, la información sobre la IP para este tipo de alertas está disponible en su descripción.
+- También se han realizado mejoras en los filtros complejos, de modo que permitan agregar el mismo filtro más de una vez para ajustar los resultados que se filtran. 
+- Se han separado las actividades de archivos y carpetas de Dropbox del resto para que se puedan consultar con mayor facilidad. 
+  
+**Correcciones de errores**
+- Se ha corregido un error en el mecanismo del sistema de alertas que creaba falsos positivos.
+
+## <a name="cloud-app-security-release-84"></a>Notas de la versión 84 de Cloud App Security
+Publicado el 13 de noviembre de 2016
+
+**Nuevas características**
+-   Cloud App Security ahora admite Microsoft Azure Information Protection, que incluye una integración mejorada y autoaprovisionamiento. Puede filtrar los archivos y establecer directivas de archivo mediante la clasificación segura de etiquetas y, después, establecer la etiqueta de clasificación que quiere ver. Las etiquetas también indican si la clasificación la estableció alguien de su organización o un usuario de otro inquilino (externo). También puede establecer directivas de actividad, en función de las etiquetas de clasificación de Azure Information Protection y habilitar la detección automática de etiquetas de clasificación en Office 365. Para obtener más información acerca de cómo sacar partido a esta nueva característica increíble, consulte [Integración con Azure Information Protection](azip-integration.md).
+ 
+**Mejoras**
+-   Se realizaron mejoras en el registro de actividad de Cloud App Security: 
+   -    Los eventos de Office 365 del Centro de seguridad y cumplimiento de Office 365 ahora se integran con Cloud App Security y se ven en el **Registro de actividades**.
+   -    Toda la actividad de Cloud App Security se registra en el registro de actividades de Cloud App Security como actividad administrativa.
+-   Para ayudarle a investigar alertas relacionadas con archivos, en cada alerta derivada de una directiva de archivo, ahora puede ver la lista de actividades que se realizaron en el archivo coincidente.
+-   El algoritmo de viaje imposible del motor de detección de anomalías se ha mejorado para proporcionar una mayor compatibilidad para inquilinos pequeños. 
+ 
+**Mejoras menores**
+-   El **Activity export limit** (Límite de exportación de actividades) se elevó a 10 000. 
+-   Al crear un **Informe de instantáneas** en el proceso de carga del registro manual de Cloud Discovery, ahora recibirá una estimación precisa de cuánto tardará el procesamiento del registro. 
+-   En una directiva de archivo, la acción de gobierno **Remove collaborator** (Quitar colaborador) ahora funciona en grupos.
+-   Se realizaron mejoras menores en la página **Permisos de la aplicación**. 
+-   Si había más de 10 000 usuarios que disponían de permisos para una aplicación que se conectaba a Office 365, la lista se cargaba lentamente. Esto se ha solucionado.
+-   Se han agregado atributos adicionales al **Catálogo de aplicaciones** con relación al sector de tarjetas de pago.
+
+
+## <a name="cloud-app-security-release-83"></a>Notas de la versión 83 de Cloud App Security
+Publicado el 30 de octubre de 2016
+
+**Nuevas características**
+-   Para simplificar el filtrado en el [registro de actividad](activity-filters.md) y en el [registro de archivo](file-filters.md), se han consolidado filtros similares. Utilice los filtros de actividad: Objeto de actividad, Dirección IP y Usuario. Utilice el filtro de archivos Colaboradores para encontrar exactamente lo que necesita.
+-   Desde el cajón del registro de actividades, bajo **Origen**, puede hacer clic en el vínculo de **ver los datos sin procesar** para descargar los datos sin procesar usados para generar el registro de actividades, para explorar en profundidad en los eventos de la aplicación. 
+-   Compatibilidad agregada para las actividades de inicio de sesión adicionales en Okta. [Versión preliminar privada]
+-   Compatibilidad agregada para las actividades de inicio de sesión adicionales en Salesforce. 
+
+**Mejoras**
+-   Facilidad de uso mejorada para informes y solución de problemas de instantáneas de Cloud Discovery.
+-   Visibilidad mejorada en la lista de alertas de varias aplicaciones.
+-   Facilidad de uso mejorada al crear nuevos informes continuos de Cloud Discovery.
+-   Facilidad de uso mejorada en el registro de gobierno.
+
+
 
 ## <a name="cloud-app-security-release-82"></a>Notas de la versión 82 de Cloud App Security
 Publicado el 9 de octubre de 2016
@@ -198,6 +258,6 @@ Fecha de publicación: 15 de mayo de 2016
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

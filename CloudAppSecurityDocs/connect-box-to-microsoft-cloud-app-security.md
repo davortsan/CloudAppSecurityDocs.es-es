@@ -1,5 +1,5 @@
 ---
-title: Conectar Box con Microsoft Cloud App Security | Microsoft Docs
+title: Conectar Box | Microsoft Docs
 description: "En este tema se proporciona información sobre cómo conectar la aplicación Box con Cloud App Security mediante el conector de API."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 849408f84e2a80022623c11f7951e921a95625b6
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
 
 
 ---
@@ -45,13 +45,13 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
     > [!NOTE]  
     >  Si es cliente de Adallom y la dirección URL de la consola es de Adallom y no de Cloud App Security, use este número de serie de la aplicación: bwahmilhdlpbqy2ongkl119o3lrkoshc.  
   
-2.  En el portal de Cloud App Security, haga clic en **Investigar** y, después, en **Aplicaciones autorizadas**.  
+2.  En el portal de Cloud App Security, haga clic en **Investigar** y, después, en **Aplicaciones conectadas**.  
   
-3.  En la fila de Box, haga clic en **Conectar** en la columna **Estado del conector de aplicaciones** o haga clic en el botón **Conectar una aplicación** y seleccione **Box**.  
+3.  En la página **Conectores de aplicaciones**, haga clic en el botón del signo más y seleccione **Box**.  
   
      ![conectar Box](./media/connect-box.png "connect box")  
   
-4.  En la página **Configuración de Box**, en la pestaña **API**, haga clic en **Siga este vínculo**.  
+4.  En el elemento emergente **Configuración de Box**, haga clic en **Seguir este vínculo**.  
   
 5.  Con esto se abre la página de inicio de sesión de Box. Escriba sus credenciales para permitir que Cloud App Security tenga acceso a la aplicación de Box de su equipo.  
   
@@ -77,6 +77,6 @@ Después de conectar Box, Cloud App Security realiza un examen completo. En func
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

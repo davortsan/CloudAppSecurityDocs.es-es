@@ -50,6 +50,6 @@ Puede realizar un seguimiento del procesamiento de registros de Cloud Discovery 
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
