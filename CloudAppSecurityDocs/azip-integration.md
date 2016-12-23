@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 86a5f7371b7a1d0fd16f68fd3060390b05601607
-ms.openlocfilehash: 3497225dfa98b487fd384a819cc51a51bd79a7cb
+ms.sourcegitcommit: 5fe0c3c04f290fb5a087e387560bf742a7192513
+ms.openlocfilehash: 0432ccf823234617bb4c8466f88ca8f385704928
 
 
 ---
@@ -76,10 +76,12 @@ El examen automático permite buscar etiquetas de clasificación de Azure Inform
 Para habilitar el examen automático de etiquetas de archivo para los nuevos archivos:
 
 1. En Cloud App Security, vaya a la página de **Configuración general**.
-2. En la configuración de seguridad de Azure, seleccione **Analizar automáticamente los archivos en busca de etiquetas de clasificación de Azure Information Protection**. Una vez se habilite la opción, se examinarán en busca de etiquetas todos los archivos nuevos que se agreguen a Office 365, y no solo aquellos cuyo contenido se examina por una directiva de archivo.
+2. En Azure Information Protection, seleccione **Analizar automáticamente los archivos en busca de etiquetas de clasificación de Azure Information Protection**. Una vez se habilite la opción, se examinarán en busca de etiquetas todos los archivos nuevos que se agreguen a Office 365, y no solo aquellos cuyo contenido se examina por una directiva de archivo.
 
 ![habilitar azure information protection](./media/enable-azip.png)
- 
+
+> [!NOTE] 
+> El examen automático no examinará los archivos existentes hasta que se vuelvan a modificar. Para examinar los archivos existentes para las etiquetas de clasificación de Azure Information Protection, cree una nueva **Directiva de archivo** sin filtros, seleccione la opción **Content inspection** (Inspección de contenido) y guarde la directiva.
 
 ## <a name="internal-and-external-tags"></a>Etiquetas internas y externas
 De forma predeterminada, Cloud App Security examinará las etiquetas de clasificación que se han definido en su organización, así como las externas que han definido otras organizaciones. 
@@ -128,6 +130,6 @@ Obtenga más información sobre [Azure Information Protection](https://docs.micr
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
