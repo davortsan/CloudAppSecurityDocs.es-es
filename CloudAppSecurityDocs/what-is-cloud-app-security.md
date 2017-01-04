@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 480a94edbb36cc421b5ff64ea29268f0041326bc
-ms.openlocfilehash: dfc9ec25d2c7822d9239685375136c1dc0d1a3bc
+ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
+ms.openlocfilehash: 4875a1ae80dae101416c9b26932bc57edf755a84
 
 
 ---
@@ -30,13 +30,9 @@ Cloud App Security es un componente crítico de la pila de Microsoft Cloud Secur
 
 ## <a name="the-cloud-app-security-framework"></a>Marco de Cloud App Security  
 
-|       |   |   |
-|-------|---|:---|
-|![Detectar](./media/discovery-icon.png)|Detectar|Descubra Shadow IT con Cloud App Security. Gane visibilidad al detectar aplicaciones, actividades, usuarios, datos y archivos en el entorno de nube. Detecte aplicaciones de terceros que están conectadas a la nube.|
-|![Investigar](./media/investigate-icon.png)|Investigar|Investigue las aplicaciones de la nube mediante las herramientas de análisis forense de la nube para observar en profundidad aplicaciones en riesgo, usuarios específicos y archivos de la red. Identifique patrones en los datos recopilados de la nube. Genere informes para supervisar la nube.|
-|![Control](./media/control-icon.png)|Control|Mitigue el riesgo al establecer directivas y alertas para lograr el máximo control sobre el tráfico de red de la nube. Use Cloud App Security para migrar a los usuarios a alternativas de aplicaciones seguras y autorizadas en la nube.|
-|![Proteger](./media/protect-icon.png)|Proteger|Utilice Cloud App Security para autorizar o no aplicaciones, aplicar la prevención de pérdida de datos, controlar los permisos y el uso compartido y generar alertas e informes personalizados.|
 
+**Cloud Discovery** Detecte todo el uso de la nube de la organización. Control y creación de informes de Shadow IT: - Detecte todas las aplicaciones en la nube en la red, desde todos los dispositivos - Investigue y profundice en aplicaciones, usuarios, direcciones IP de origen específicas, etc. - Administre y controle el uso de la nube mediante el bloqueo, la autorización y la protección de aplicaciones Evaluación de riesgos: - Comprenda los riesgos de la nube de más de 13.000 aplicaciones en la nube - Basada en más de 60 factores de riesgo de seguridad y cumplimiento Alerta sobre el uso arriesgado de la nube: - Obtenga alertas sobre patrones de uso de usuarios anómalos, nuevas aplicaciones y aplicaciones de moda **Information Protection** Supervise y controle los datos en la nube. Obtenga visibilidad en la nube - Obtenga visibilidad, incluidos el nivel de confidencialidad y el nivel de uso compartido - Cuantifique la exposición y el riesgo - Detecte todos los accesos de aplicaciones de terceros a los datos Aplique directivas DLP y controle el uso compartido Controle los datos en la nube con directivas DLP granulares - Saque provecho de motores DLP de terceros y de Microsoft para la clasificación Alerta e investigación - Identifique infracciones de directiva - Investigue incidentes y actividades relacionadas - Corrección automática, incluidas la cuarentena y la eliminación de permisos **Threat Protection** Detecte el uso anómalo e incidentes de seguridad. Mitigue el riesgo al establecer directivas y alertas para lograr el máximo control sobre el tráfico de red de la nube. Use Cloud App Security para migrar a los usuarios a alternativas de aplicaciones seguras y autorizadas en la nube.
+Análisis de comportamiento: - Detección rápida de actividades sospechosas - Motor de detección anómala basado en más de 20 factores de riesgo Investigación avanzada: - Herramientas de investigación de incidentes avanzadas - Consulte usuarios, archivos, actividades y ubicaciones - Personalice detecciones según sus conclusiones Inteligencia de amenazas - Saque provecho de la fuente de inteligencia de amenazas líder de Microsoft - Información única, sacada de billones de señales de toda la base de clientes de Microsoft
 
 ## <a name="architecture"></a>Arquitectura  
 
@@ -50,7 +46,7 @@ Cloud App Security integra visibilidad con la nube de las siguientes formas:
 ![Arquitectura de Cloud App Security](./media/architecture.png)  
 
 > [!NOTE]  
-> Cuando Cloud App Security realiza la inspección de contenido, se aplica la privacidad de los datos. Los datos no se almacenan en la base de datos Cloud App Security; solo los metadatos de los registros de archivo y las infracciones que se identificaron se almacenan en la base de datos Cloud App Security. Para más información sobre la retención de datos, consulte nuestra [política de privacidad](http://go.microsoft.com/fwlink/?LinkId=512132) y [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data).
+> Cuando Cloud App Security realiza la inspección de contenido, se aplica la privacidad de los datos. El contenido del archivo no se almacena en la base de datos de Cloud App Security; solo los metadatos de los registros de archivo y las infracciones que se han identificado se almacenan en la base de datos de Cloud App Security. Para obtener más información sobre la retención de datos, consulte nuestra [directiva de privacidad](http://go.microsoft.com/fwlink/?LinkId=512132) y el [Centro de confianza de Microsoft](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data).
 Cloud App Security conserva los datos como se indica a continuación:
 >- Registro de actividad: 180 días
 >- Datos de detección: 90 días
@@ -66,7 +62,7 @@ Para obtener más información sobre Cloud Discovery, consulte [Set up Cloud Dis
 
 ### <a name="sanctioning-and-unsanctioning-an-app"></a>Autorización o no autorización de una aplicación  
 
-Puede utilizar Cloud App Security para autorizar o no aplicaciones de la organización mediante el *catálogo de aplicaciones en la nube*. El equipo de analistas de Microsoft tiene un amplio catálogo en permanente aumento de más de 13 000 aplicaciones en la nube clasificadas y puntuadas según estándares del sector. Puede utilizar el catálogo de aplicaciones en la nube para evaluar el riesgo de las aplicaciones en la nube en función de certificaciones normativas, estándares del sector y procedimientos recomendados. A continuación puede personalizar las puntuaciones y la importancia de los distintos parámetros según las necesidades de la organización. En función de estas puntuaciones, Cloud App Security permite conocer el nivel de riesgo de una aplicación atendiendo a más de 50 factores de riesgo que podrían afectar al entorno.  
+Puede utilizar Cloud App Security para autorizar o no aplicaciones de la organización mediante el *catálogo de aplicaciones en la nube*. El equipo de analistas de Microsoft tiene un amplio catálogo en permanente aumento de más de 13 000 aplicaciones en la nube clasificadas y puntuadas según estándares del sector. Puede utilizar el catálogo de aplicaciones en la nube para evaluar el riesgo de las aplicaciones en la nube en función de certificaciones normativas, estándares del sector y procedimientos recomendados. A continuación puede personalizar las puntuaciones y la importancia de los distintos parámetros según las necesidades de la organización. En función de estas puntuaciones, Cloud App Security permite conocer el nivel de riesgo de una aplicación atendiendo a más de 50 factores de riesgo que podrían afectar al entorno.  
 
 ### <a name="app-connectors"></a>Conectores de aplicaciones  
 Los conectores de aplicaciones utilizan las API de los proveedores de aplicaciones de la nube para integrar la nube de Cloud App Security con otras aplicaciones de la nube. Los conectores de aplicaciones amplían la protección y el control. También proporcionan acceso a la información directamente desde las aplicaciones de la nube, para el análisis de Cloud App Security.  
@@ -87,6 +83,6 @@ Los clientes Premier también pueden elegir Cloud App Security directamente desd
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/29/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,14 +14,16 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 851617bc68618b177600523a4d4432b3e557f394
-ms.openlocfilehash: abd134c9ff3b000170bce474e8ecebb71b762b98
+ms.sourcegitcommit: 2a2d4396a3960bd3124196b9c616f6a7765247ce
+ms.openlocfilehash: ce887ed4f8727b0c36f5e5e9a40b13b11dc78920
 
 
 ---
 
 # <a name="create-snapshot-cloud-discovery-reports"></a>Crear informes de instantáneas de Cloud Discovery
 Es importante cargar un registro manualmente y dejar que Cloud App Security lo analice antes de intentar usar el recopilador de registros automáticos.
+Si aún no tiene un registro y quiere ver un ejemplo del aspecto que debería tener, siga el procedimiento siguiente para descargar un archivo de registro de ejemplo.
+
 
 Para crear un informe de instantáneas:
   
@@ -29,19 +31,22 @@ Para crear un informe de instantáneas:
   
 2.  En el portal de Cloud App Security, haga clic en **Detectar** y, después, en **Crear nuevo informe de instantáneas**.  
   
-     ![Crear nuevo informe de instantáneas](./media/create-new-snapshot-report.png)
+   ![Crear nuevo informe de instantáneas](./media/create-new-snapshot-report.png)
      
-      
 3.  Escriba un **nombre de informe** y una **descripción**
   
+     ![Nuevo informe de instantáneas](./media/new-snapshot-report.png) 
+
 4.  Seleccione el **Origen de datos** desde el que quiere cargar los archivos de registro.  
   
+5. Compruebe el formato del registro para asegurarse de que es correcto según el ejemplo que puede descargar. Haga clic en **View and verify** (Ver y comprobar) y luego haga clic en **Download sample log** (Descargar registro de ejemplo). Después, compare su registro con el ejemplo proporcionado para asegurarse de que es compatible. 
+
+ ![Comprobar el formato del registro](./media/cloud-discovery-snapshot-verify.png)  
+
 5.  **Elija los registros de tráfico** que quiera cargar. Puede cargar hasta 20 archivos a la vez. También se admiten los archivos comprimidos.  
   
 6.  Haga clic en **Crear**.  
-  
-     ![Nuevo informe de instantáneas](./media/new-snapshot-report.png) 
-  
+
 7.  Una vez finalizada la carga, aparecerá el mensaje de estado en la esquina superior derecha de la pantalla, que informa de que el registro se ha cargado correctamente.  
   
 8.  Después de cargar los archivos de registro, pasará algún tiempo hasta que se redistribuyan y se analicen.  
@@ -68,6 +73,6 @@ Una vez completado el procesamiento de los archivos de registro, recibirá un co
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

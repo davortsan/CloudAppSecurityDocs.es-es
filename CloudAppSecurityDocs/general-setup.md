@@ -14,8 +14,8 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
-ms.openlocfilehash: 912d3c5065722469c436446ba67511ffc6e44d77
+ms.sourcegitcommit: 525a6c5274843f63c300e97d1dbd40ece6465edf
+ms.openlocfilehash: 3a6750f244d3d0cd8d691ffd768cf5183da78d32
 
 
 ---
@@ -25,60 +25,60 @@ En el siguiente procedimiento se proporcionan instrucciones para personalizar el
   
 ## <a name="set-up-the-portal"></a>Configurar el portal  
   
-1.  En la barra de menús del portal de Cloud App Security, haga clic en el icono de configuración ![icono de configuración](./media/settings-icon.png "settings icon") y seleccione **Configuración general** para configurar lo siguiente:  
+1.  En la barra de menús del portal de Cloud App Security, haga clic en el icono de configuración ![icono de configuración](./media/settings-icon.png "icono de configuración") y seleccione **Configuración general** para configurar lo siguiente:  
   
 3.  **Detalles de la organización**  
   
      Es importante que indique un **nombre para mostrar de la organización** relativo a su organización. Este nombre se mostrará en los correos electrónicos y páginas web enviados desde el sistema.  
   
-     Proporcione un **nombre del entorno** (inquilino). Esto es especialmente importante si administra varios inquilinos.  
+     Proporcione un **Nombre del entorno** (inquilino). Esto es especialmente importante si administra varios inquilinos.  
   
-     Incluya una lista de los **dominios administrados**. Los dominios administrados sirven para que Cloud App Security pueda averiguar qué usuarios son internos y cuáles son externos, así como dónde se deben y no se deben compartir archivos. Esto se usa en los informes y de cara a las alertas.  
+4. También se puede proporcionar un **logotipo**, que se mostrará en las notificaciones de correo electrónico y en las páginas web enviadas desde el sistema. El logotipo tiene que ser un archivo .png con un tamaño máximo de 150x50 píxeles con fondo transparente.  
+
+4.  Incluya una lista de los **dominios administrados**. Los dominios administrados sirven para que Cloud App Security pueda averiguar qué usuarios son internos y cuáles son externos, así como dónde se deben y no se deben compartir archivos. Esto se usa en los informes y de cara a las alertas.  
 > [!NOTE] 
-> Los usuarios de dominios que no están configurados como internos se marcarán como externos y no se examinarán en busca de actividades o archivos.
-   
-También se puede proporcionar un **logotipo**, que se mostrará en las notificaciones de correo electrónico y en las páginas web enviadas desde el sistema. El logotipo tiene que ser un archivo .png con un tamaño máximo de 150x50 píxeles con fondo transparente.  
+> - Los usuarios de dominios que no están configurados como internos se marcarán como externos y no se examinarán en busca de actividades o archivos.
+> - Si está integrando mediante la integración de Azure Information Protection, consulte [Integración de Azure Information Protection](azip-integration.md) para obtener información. 
   
 4.  **Configuración de la privacidad de correo electrónico del registro de actividades**  
   
      Cuando se detectan mensajes de correo de Exchange Online, es posible establecer cómo se muestran a fin de preservar la privacidad. Los mensajes de correo se pueden configurar para mostrarse con una **línea de asunto enmascarada**, con una **línea de asunto completa** o con un **identificador solo**.  
   
-     ![configuración general](./media/general-settings.png "general settings")  
+     ![configuración general](./media/general-settings.png "configuración general")  
   
 5.  **Configuración de región e idioma**  
   
      Establezca el **idioma** predeterminado que se usará en el portal. Para cambiar el idioma de un administrador específico, vaya a **Configuración de usuario** > **Configuración de la cuenta**.  
   
-     ![idioma de la zona horaria](./media/timezone-language.png "timezone language")  
+     ![idioma de la zona horaria](./media/timezone-language.png "idioma de la zona horaria")  
   
      Establezca la **zona horaria principal**. Cloud App Security analiza y agrega datos continuamente. La zona horaria del portal de Cloud App Security está establecida en UTC de forma predeterminada. Es importante establecer la zona horaria principal, ya que permite a Cloud App Security fechar con precisión los incidentes en el sistema. Por ejemplo, en el diagrama de actividad, los datos se organizan por fecha, y estas fechas se ven afectadas por la zona horaria del sistema, por lo que si no ha modificado la zona horaria predeterminada, los datos se organizarán en días de 24 horas según la zona horaria UTC, lo que puede sesgar los datos por muchas horas.  
   
-     ![zona horaria principal](./media/master-time-zone.png "master time zone")  
+     ![zona horaria principal](./media/master-time-zone.png "zona horaria principal")  
   
 6.  Si, en un momento determinado, quiere hacer una copia de seguridad de la configuración del portal, puede hacerlo en esta pantalla. Haga clic en Exportar configuración del portal para crear un archivo .json con todas las opciones de configuración del portal, incluidas las reglas de directivas, los grupos de usuarios y los intervalos de direcciones IP.  
   
-     ![consola de copia de seguridad](./media/backup-console.png "backup console")  
+     ![consola de copia de seguridad](./media/backup-console.png "consola de copia de seguridad")  
   
-7.  Para agregar más administradores a Cloud App Security, haga clic en el engranaje de configuración ![icono de configuración](./media/settings-icon.png "settings icon") y, luego, en **Administrar acceso de administrador**. Agregue los administradores que deben tener acceso a Cloud App Security y haga clic en **Cerrar**.  
+7.  Para agregar más administradores a Cloud App Security, haga clic en el engranaje de configuración ![icono de configuración](./media/settings-icon.png "icono de configuración") y luego en **Manage admin access** (Administrar acceso de administrador). Agregue los administradores que deben tener acceso a Cloud App Security y haga clic en **Cerrar**.  
 >[!NOTE]
 >Cualquier usuario no invitado (con un rol adecuado, como administrador global, de seguridad o de cumplimiento), puede invitar a otros usuarios a Cloud App Security.
   
-![administrar el acceso de administrador](./media/manage-admin-access.png "manage admin access")  
+![administrar el acceso de administrador](./media/manage-admin-access.png "administrar el acceso de administrador")  
   
 ##  <a name="a-nameadminsettingsa-customize-your-admin-settings"></a><a name="Adminsettings"></a> Personalizar la configuración de administración  
 Para configurar sus preferencias como un administrador de Cloud App Security, haga clic en su nombre en la barra de menús del portal y seleccione **Configuración de usuario** para establecer lo siguiente:  
   
 1.  Haga clic en **Configuración de la cuenta**. Aquí puede personalizar el idioma del portal para verlo según su elección. Se puede establecer para mostrar el portal en el idioma predeterminado o bien en un idioma diferente de su preferencia.  
   
-     ![configuración de usuario personalizada](./media/custom-user-settings.png "custom user settings")  
+     ![configuración de usuario personalizada](./media/custom-user-settings.png "configuración de usuario personalizada")  
   
 2.  Haga clic en **Notificaciones** y establezca las preferencias de notificación de texto y correo electrónico para los mensajes recibidos del sistema.  Puede establecer la gravedad de las alertas y las infracciones para las que quiera recibir correos electrónicos. La gravedad se establece por directiva, por lo que cuando se produzcan infracciones, recibirá una notificación de correo según esta configuración y la configuración de gravedad de la directiva que se ha infringido. Los correos se enviarán al alias asociado con la cuenta de usuario de administrador que se ha usado para iniciar sesión en Cloud App Security. Escriba un número de teléfono para permitir que Cloud App Security le envíe mensajes de texto cuando se envíen alertas y notificaciones y establezca el nivel de gravedad a partir del cual quiera recibir notificaciones por mensaje de texto.  
   
 > [!NOTE] 
 > El número máximo de alertas que se enviarán por mensaje de texto es de 10 al día por número de teléfono. Tenga en cuenta que el día se calcula según la zona horaria UTC. 
   
-  ![configuración de notificación](./media/notification-settings.png "notification settings")  
-  
+  ![configuración de notificación](./media/notification-settings.png "configuración de notificación")  
   
 3. Haga clic en **Guardar** cuando acabe.  
   
@@ -88,7 +88,7 @@ Cada grupo de intervalos IP se puede clasificar en función de una lista predete
   
 Se admite tanto IPv4 como IPv6.  
   
-En la barra de menús, haga clic en el icono de configuración ![icono de configuración](./media/settings-icon.png "settings icon") y seleccione **Intervalos de direcciones IP**. Haga clic en **+Agregar intervalo de direcciones IP** y configure lo siguiente:  
+En la barra de menús, haga clic en el icono de configuración ![icono de configuración](./media/settings-icon.png "icono de configuración") y seleccione **Intervalos de direcciones IP**. Haga clic en **+Agregar intervalo de direcciones IP** y configure lo siguiente:  
   
 > [!NOTE]  
 >  La ubicación y el ISP registrado invalidarán los valores predeterminados.   
@@ -124,12 +124,12 @@ En la barra de menús, haga clic en el icono de configuración ![icono de config
   
 7.  Haga clic en **Crear** cuando acabe.  
   
-     ![nuevo intervalo de direcciones IP](./media/newipaddress-range.png "newipaddress range")  
+     ![nuevo intervalo de direcciones IP](./media/newipaddress-range.png "nuevo intervalo de direcciones IP")  
   
 ##  <a name="a-nameadallommailsettingsa-personalize-your-experience"></a><a name="Adallom_mailsettings"></a>Personalizar la experiencia  
-En la barra de menús, haga clic en el icono de configuración ![icono de configuración](./media/settings-icon.png "settings icon") y seleccione **Configuración de correo** para establecer los parámetros de las notificaciones de correo enviadas desde Cloud App Security a los administradores que solicitan alertas, así como de las notificaciones enviadas a los usuarios finales sobre infracciones en las que puedan haber participado.  
+En la barra de menús, haga clic en el icono de configuración ![icono de configuración](./media/settings-icon.png "icono de configuración") y seleccione **Configuración de correo** para establecer los parámetros de las notificaciones de correo enviadas desde Cloud App Security a los administradores que solicitan alertas, así como de las notificaciones enviadas a los usuarios finales sobre infracciones en las que puedan haber participado.  
   
-![menú de configuración de correo](./media/mail-setting-menu.png "mail setting menu")  
+![menú de configuración de correo](./media/mail-setting-menu.png "menú de configuración de correo")  
   
 Configura lo siguiente:  
   
@@ -139,7 +139,7 @@ Configura lo siguiente:
   
      **Dirección de correo electrónico del campo Responder a**: cuenta de correo que se usará para las respuestas al mensaje.  
   
-     ![configuración de las opciones de correo](./media/mail-settings-config.png "mail settings config")  
+     ![configuración de las opciones de correo](./media/mail-settings-config.png "configuración de las opciones de correo")  
   
 2.  Puede usar un archivo .html para personalizar y diseñar los mensajes de correo enviados desde el sistema. El archivo .html que use como plantilla debe incluir lo siguiente:  
   
@@ -153,62 +153,63 @@ Configura lo siguiente:
   
          %%content%%: marcador de posición del contenido que se incluirá para los usuarios finales, según lo establecido por la directiva.  
   
-     Esta es una plantilla de correo de ejemplo:  
-  
-    ```  
-    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
-    <html>  
-    <head>  
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
-    </head>  
-    <body class="end-user">  
-    <table border="0" cellpadding="20%" cellspacing="0" width="100%" id="background-table">  
-      <tr>  
-        <td align="center">  
-          <!--[if (gte mso 9)|(IE)]>  
-          <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">  
+     Esta es una plantilla de correo de ejemplo: 
+
+
+           
+          <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+          <html>  
+          <head>  
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+          </head>  
+          <body class="end-user">  
+          <table border="0" cellpadding="20%" cellspacing="0" width="100%" id="background-table">  
             <tr>  
-              <td>  
-          <![endif]-->  
-          <table bgcolor="#ffffff" align="center" border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 40px;" id="container-table">  
-            <tr>  
-              <td align="right" id="header-table-cell">  
-                <img src="%%logo%%" alt="Microsoft Cloud App Security" id="org-logo" />  
-              </td>  
-            </tr>  
-            <tr>  
-              <td style="padding-top: 58px;" align="center" valign="top">  
-                <table width="100%" cellpadding="12">  
+              <td align="center">  
+                <!--[if (gte mso 9)|(IE)]>  
+                <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">  
                   <tr>  
-                    <td align="center" class="round-title">  
-                      %%title%%  
+                    <td>  
+                <![endif]-->  
+                <table bgcolor="#ffffff" align="center" border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 40px;" id="container-table">  
+                  <tr>  
+                    <td align="right" id="header-table-cell">  
+                      <img src="%%logo%%" alt="Microsoft Cloud App Security" id="org-logo" />  
                     </td>  
                   </tr>  
+                  <tr>  
+                    <td style="padding-top: 58px;" align="center" valign="top">  
+                      <table width="100%" cellpadding="12">  
+                        <tr>  
+                          <td align="center" class="round-title">  
+                            %%title%%  
+                          </td>  
+                        </tr>  
+                      </table>  
+                    </td>  
+                  </tr>  
+                  <tr>  
+                    <td style="padding: 0 40px 79px 40px;" class="content-table-cell" align="left" valign="top">  
+                        %%content%%  
+                    </td>  
+                  </tr>  
+                  <tr>  
+                    <td class="last-row"></td>  
+                  </tr>  
                 </table>  
+                <!--[if (gte mso 9)|(IE)]>  
+                </td>  
+                </tr>  
+                </table>  
+                  <![endif]-->  
               </td>  
-            </tr>  
-            <tr>  
-              <td style="padding: 0 40px 79px 40px;" class="content-table-cell" align="left" valign="top">  
-                  %%content%%  
-              </td>  
-            </tr>  
-            <tr>  
-              <td class="last-row"></td>  
-            </tr>  
+              </tr>  
           </table>  
-          <!--[if (gte mso 9)|(IE)]>  
-          </td>  
-          </tr>  
-          </table>  
-          <![endif]-->  
-        </td>  
-      </tr>  
-    </table>  
-    </body>  
-    </html>  
-  
-    ```  
+            </body>  
+          </html>  
+         
+
   
 3.  Haga clic en **Cargar una plantilla...** y seleccione el archivo que ha creado.  
   
@@ -231,6 +232,6 @@ Cloud App Security está acoplado a Azure Active Directory para la autenticació
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

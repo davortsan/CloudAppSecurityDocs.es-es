@@ -14,8 +14,8 @@ ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
-ms.openlocfilehash: 12d9ef74f923c430fbfb547635786dc4c4300499
+ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
+ms.openlocfilehash: 21edb17ac01d7f54cab9b7b2ced838752a916c1e
 
 
 ---
@@ -76,7 +76,7 @@ Haga lo siguiente para crear una directiva de archivo:
 7.  Seleccione el **método de inspección de contenido**. El DLP integrado permite filtrar archivos por su contenido. Para examinar archivos en busca de contenido, seleccione **DLP integrado**. Una vez habilitada la inspección de contenido, puede optar entre usar expresiones preestablecidas o buscar otras expresiones personalizadas, como una subcadena o una [expresión regular](working-with-the-regex-engine.md) propia.  
     Además, puede especificar una expresión regular para excluir un archivo de los resultados. Esto es muy útil si tiene un estándar de palabra clave de clasificación interna que quiera excluir de la directiva.  
     También puede decidir cuál es el número mínimo de infracciones de contenido que debe producirse antes de que el archivo se considere una infracción. Por ejemplo, puede elegir 10 si quiere recibir alertas sobre archivos con al menos 10 números de tarjeta de crédito en su contenido.  
-    Cuando el contenido se compara con la expresión seleccionada, puede elegir enmascarar la coincidencia de los registros y la notificación de infracción. Si opta por esto, el texto de la infracción se reemplazará por caracteres “X”. Recuerde que los números se reemplazan por caracteres "#" y nunca se almacenan en Cloud App Security.  
+    Cuando el contenido se compara con la expresión seleccionada, puede elegir enmascarar la coincidencia de los registros y la notificación de infracción. Si opta por esto, el texto de la infracción se reemplazará por caracteres “X”. Recuerde que los números se reemplazan por caracteres "#" y nunca se almacenan en Cloud App Security.  También puede seleccionar la opción de mostrar los últimos 4 caracteres de una infracción. De manera predeterminada, las infracciones se enmascaran completamente y se muestran en su contexto mostrando 40 caracteres antes y después de la infracción. Esta opción mostrará los últimos 4 caracteres de la infracción.
   
 8.  Elija las acciones de **gobierno** que quiera que Cloud App Security lleve a cabo cuando detecte una coincidencia.  
   
@@ -88,7 +88,7 @@ Haga lo siguiente para crear una directiva de archivo:
 >   
 >  Para obtener orientación, puede usar el botón **Editar y obtener vista previa de resultados** de la sección Filtros.  
   
-![editar la directiva de archivo y obtener una vista previa de resultados](./media/file-policy-edit-and-preview-results.png "file policy edit and preview results")  
+![editar la directiva de archivo y obtener una vista previa de resultados](./media/file-policy-edit-and-preview-results.png "editar la directiva de archivo y obtener una vista previa de resultados")  
   
 10. Para ver coincidencias con la directiva de archivo, es decir, archivos sospechosos de infringir la directiva, haga clic en **Control** y, después, en **Directivas**. Filtre los resultados para mostrar solo las directivas de archivo con el filtro **Tipo** en la parte superior. Para obtener más información sobre las coincidencias de cada directiva, haga clic en una directiva. De este modo, se muestran los archivos que coinciden ahora con la directiva. Haga clic en la pestaña **Historial** para ver el historial de los 6 meses anteriores con los archivos que coincidieron con la directiva.     
   
@@ -101,12 +101,10 @@ Cada directiva se compone de las siguientes partes:
   
 -   Filtros de archivo: permiten crear condiciones muy pormenorizadas basadas en metadatos.  
   
--   Inspección del contenido: permite restringir la directiva en función de los resultados del motor DLP.  
+-   Inspección del contenido: permite restringir la directiva en función de los resultados del motor DLP. Puede incluir una expresión personalizada o una expresión preestablecida. Se pueden establecer exclusiones y puede elegir el número de coincidencias. También puede usar el anonimato para enmascarar el nombre de usuario. 
   
 -   Acciones: la directiva proporciona un conjunto de acciones de gobierno que se pueden aplicar automáticamente cuando se detectan infracciones.  Se dividen en acciones de colaboración, las acciones de seguridad y acciones de investigación.
 
-![menú desplegable de gobierno de archivos](./media/file-governance-drop-down.png)
-  
 -   Extensions  
   
     > [!NOTE]  
@@ -124,6 +122,6 @@ Cada directiva se compone de las siguientes partes:
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

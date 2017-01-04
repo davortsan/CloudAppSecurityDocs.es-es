@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,12 +14,20 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
-ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
+ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
+ms.openlocfilehash: f1dc1e39309cfe06037a13da55d92935786bed81
 
 
 ---
 # <a name="activities"></a>Actividades
+Para proporcionar protección de datos, Cloud App Security le ofrece visibilidad en todas las actividades de las aplicaciones conectadas. Después de conectar Cloud App Security con una aplicación mediante el conector de aplicaciones, Cloud App Security examina todas las actividades que se han producido (el período de tiempo de examen retroactivo varía según la aplicación) y después se actualiza constantemente con nuevas actividades. Puede crear directivas basadas en las actividades y después definir sobre qué quiere recibir alertas. También puede buscar actividades realizadas en determinados archivos. El tipo de actividades y la información que obtenemos de cada actividad dependen de la aplicación y de qué tipo de datos puede proporcionar la aplicación. 
+
+Por ejemplo, puede usar el registro de **actividades** para buscar usuarios de la organización que usan sistemas operativos o exploradores que no están actualizados de la siguiente forma: después de conectar Office 365, Google Apps, Box, Dropbox, Okta, Amazon Web Services o Salesforce con Cloud App Security en la página del **registro de actividades**, use el filtro avanzado y seleccione la etiqueta **Agente de usuario**. Después, seleccione **Outdated browser** (Explorador obsoleto) u **Outdated operating system** (Sistema operativo obsoleto). Si ve que hay archivos **confidenciales** compartidos fuera de su organización, puede hacer clic en **New policy from search** (Nueva directiva de búsqueda) para crear una directiva de actividad que detecte exploradores y sistemas operativos obsoletos y notifique a los usuarios de forma automática.
+
+ ![Ejemplo de actividad de explorador obsoleto](media/activity-outdated-example.png)
+
+ 
+
 Se puede filtrar el registro de actividad para que pueda buscar actividades específicas. El filtro básico proporciona excelentes herramientas para empezar a filtrar sus actividades.
 
  ![filtro de registro de actividad básica](media/activity-log-filter-basic.png)
@@ -33,7 +41,8 @@ A continuación se muestra una lista de los filtros de actividad que se pueden a
   
 -   Identificador de actividad: busca solo actividades específicas por su identificador. Este filtro es muy útil cuando se conecta MCAS con SIEM (mediante el agente SIEM) y se quiere investigar más las alertas del portal MCAS.  
   
--   Objetos de actividad: buscar direcciones URL de archivo, carpeta o sitio o los objetos de destino (archivo o carpeta).
+-   Objetos de actividad: busca los objetos en los que se ha realizado la actividad. Este filtro se aplica a objetos de archivo, carpeta, usuario o aplicación.
+    - Identificador de objeto de actividad: el identificador del objeto (identificador del archivo, carpeta, usuario o aplicación).
     - URL del archivo, carpeta o sitio: permite seleccionar direcciones URL de archivos, carpetas y direcciones que comienzan con una cadena específica.
     - Objeto de destino (archivo/carpeta): permite seleccionar un archivo o carpeta específicos. 
     
@@ -95,7 +104,7 @@ Para ver más información sobre cada actividad, haga clic en la misma actividad
 - Ubicación: haga clic en la ubicación para ver la ubicación en los mapas de Bing.
 - Categoría y etiquetas de la dirección IP: haga clic en la etiqueta IP para ver la lista de etiquetas IP que se encuentran en esta actividad. Después, puede filtrar por todas las actividades que coinciden con esta etiqueta.    
 
-![cajón de actividades](./media/activity-drawer.png "activity drawer")  
+![cajón de actividades](./media/activity-drawer.png "cajón de actividades")  
   
 Para obtener una lista de acciones de gobierno disponibles, consulte [Parámetros de coincidencia de actividad](governance-actions.md#activity-match-parameters).
 
@@ -108,6 +117,6 @@ Para obtener una lista de acciones de gobierno disponibles, consulte [Parámetro
   
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

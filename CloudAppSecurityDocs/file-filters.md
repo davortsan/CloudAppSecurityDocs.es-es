@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,24 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bf862116fb4db1d4a50c25497d72634a97bb3a80
-ms.openlocfilehash: 8fca376e5d414192bdb7c99a7741c97ebcaf3892
+ms.sourcegitcommit: 5fe0c3c04f290fb5a087e387560bf742a7192513
+ms.openlocfilehash: 9f180b0697fbf990534670050c555800d7ba83fb
 
 
 ---
 
 # <a name="files"></a>Archivos
+
+
+Para proporcionar protección de datos, Cloud App Security le ofrece visibilidad en todos los archivos de las aplicaciones conectadas. Después de conectar Cloud App Security a una aplicación mediante el conector de aplicaciones, Cloud App Security examina todos los archivos, por ejemplo, todos los archivos almacenados en OneDrive y Salesforce. Después, Cloud App Security vuelve a examinar cada archivo cada vez que se modifica (la modificación puede ser de contenido, metadatos o permisos de uso compartido). Los tiempos de examen dependen del número de archivos almacenados en la aplicación. Use la página **Archivos** para obtener control sobre sus datos y para ayudarle a entender qué directivas debe crear. También puede usar la página **Archivos** para filtrar archivos e investigar qué tipo de datos se guarda en las aplicaciones en la nube. 
+
+Por ejemplo, puede usar la página **Archivos** para proteger de forma externa archivos compartidos etiquetados como **confidenciales** de la siguiente forma: después de conectar Office 365, Google Apps, Box, Dropbox o Salesforce con Cloud App Security, puede integrarlos con Azure Information Protection. Después, en la página **Archivos**, filtre los archivos con la etiqueta **confidencial**. Si ve que hay archivos **confidenciales** compartidos fuera de su organización, puede crear una directiva de archivo que detecte archivos **confidenciales** que tengan niveles de acceso incorrectos aplicados y aplicar acciones de regulación automáticas, como **Put in user quarantine** (Poner en cuarentena de usuario) para poner en cuarentena el archivo y evitar la pérdida de datos en la organización.
+
+ ![Filtro de archivos confidenciales](media/file-filter-confidential.png)
+
+Aquí tiene otro ejemplo en que puede usar la página **Archivos** para proteger los archivos compartidos con dominios no autorizados o cuentas personales: después de conectar Office 365, Google Apps, Box o Dropbox con Cloud App Security, en la página **Archivos**, filtre los archivos con un nivel de acceso **interno** o **privado**. Si ve que hay archivos **confidenciales** compartidos con dominios externos o cuentas personales, puede crear una directiva de archivo que detecte archivos **confidenciales** que tengan niveles de acceso incorrectos aplicados, hacer clic en **New policy from search** (Nueva directiva de búsqueda) y aplicar acciones de regulación automáticas, como **Quitar los usuarios externos** para evitar la pérdida de datos en la organización.
+
+ ![Filtro de archivo no autorizado](media/file-filter-unauth.png)
 
 Se puede filtrar el registro de archivos para que pueda buscar archivos específicos. El filtro básico proporciona excelentes herramientas para empezar a filtrar los archivos.
 
@@ -38,7 +49,11 @@ Los motores DLP integrados de Cloud App Security inspeccionan el contenido media
 
 A continuación se muestra una lista de los filtros de archivo que se pueden aplicar. La mayoría de los filtros admiten varios valores, así como NOT, para proporcionarle una herramienta muy eficaz para la creación de directivas.  
 > [!NOTE] 
-> Al usar filtros de directiva de archivo, **Contiene** solo buscará palabras completas separadas por comas, puntos, espacios o caracteres de subrayado. Si delimita palabras usando comillas, se tratarán como si usaran el operador AND. Por ejemplo, si busca **"malware"** **"virus"**, se encontrará virus_malware_file.exe, pero no se encontrarán ni malwarevirus.exe ni malware.exe. Los espacios entre palabras funcionan como el operador OR. Por ejemplo, si busca **malware** **virus**, se encontrarán todos los archivos con la palabra malware o virus en el nombre, como malware-virus.exe o virus.exe.   **Es igual a** solo buscará la cadena completa. Por ejemplo, si busca **malware.exe**, encontrará malware.exe pero no malware.exe.txt. 
+> Al usar filtros de directiva de archivo, **Contiene** solo buscará **palabras completas** separadas por comas, puntos, espacios o caracteres de subrayado. 
+> - Los espacios entre palabras funcionan como el operador OR. Por ejemplo, si busca **malware** **virus**, se encontrarán todos los archivos con la palabra malware o virus en el nombre, como malware-virus.exe o virus.exe.  
+> - Si quiere buscar una cadena, escriba las palabras entre comillas. Se tratarán como si usaran el operador AND. Por ejemplo, si busca **"malware"** **"virus"**, se encontrará virus_malware_file.exe, pero no se encontrarán ni malwarevirus.exe ni malware.exe. En cambio, buscará la cadena exacta. Si busca **"malware virus"** no encontrará **"virus"** ni **"virus_malware"**.
+
+>**Es igual a** solo buscará la cadena completa. Por ejemplo, si busca **malware.exe**, encontrará malware.exe pero no malware.exe.txt. 
 
 -   Nivel de acceso: nivel de acceso de recursos compartidos (público, externo, interno o privado).  Para obtener más información sobre los archivos externos, consulte [General Setup, Set up the portal](getting-started-with-cloud-app-security.md) (Configuración general, Configurar el portal). Los archivos internos son los que se encuentran dentro de los dominios internos que haya establecido en [General setup](General-setup.md) (Configuración general). Los archivos externos son los que están guardados en ubicaciones que no se encuentran dentro de los dominios internos que haya establecido. Los archivos compartidos son los que tienen un nivel de uso compartido superior a privado. Esto incluye uso compartido interno (archivos compartidos dentro de los dominios internos), uso compartido externo (archivos compartidos en dominios que no se muestran en los dominios internos), público con un vínculo (archivos que se pueden compartir con cualquier usuario a través de un vínculo) y público (archivos que se pueden encontrar al realizar búsquedas en Internet). 
 
@@ -74,7 +89,7 @@ A continuación se muestra una lista de los filtros de archivo que se pueden apl
 -   Tipo de archivo: Cloud App Security toma el tipo MIME recibido del servicio y examina el archivo para determinar el tipo de archivo real. Tenga en cuenta que este examen se aplica a archivos pertinentes para el examen de datos (documentos, imágenes, presentaciones, hojas de cálculo, archivos de texto y archivos de almacenamiento o ZIP). El filtro funciona por tipo de archivo/carpeta, por ejemplo, Todas las carpetas que son… o Todos los archivos de hoja de cálculo que son...
 
 
- ![filtros en papelera de archivo de directiva](./media/policy_file-filters-trash.png "policy_file filters trash")  
+ ![filtros en papelera de archivo de directiva](./media/policy_file-filters-trash.png "filtros en papelera de archivo de directiva")  
 
   
 -   En la papelera: excluye/incluye archivos que se encuentran en la carpeta de la papelera. Estos archivos siguen pudiendo compartirse y suponen un riesgo.  
@@ -95,7 +110,7 @@ A continuación se muestra una lista de los filtros de archivo que se pueden apl
   
 También puede establecer que la directiva se ejecute en archivos específicos. Para ello, establezca el filtro **Aplicar a** en Todos los archivos, Carpetas seleccionadas o Todos los archivos excepto las carpetas seleccionadas y, después, seleccione los archivos o las carpetas pertinentes.  
   
-![filtro Aplicar a](./media/apply-to-filter.png "apply to filter")  
+![filtro Aplicar a](./media/apply-to-filter.png "filtro Aplicar a")  
   
 ## <a name="working-with-the-file-drawer"></a>Uso del cajón de archivos
 
@@ -107,7 +122,7 @@ Puede ver más información sobre un archivo haciendo clic en él en el registro
 - Directivas coincidentes: haga clic en este vínculo para ver una lista de las directivas con las que coincida el archivo.
 - Etiqueta de clasificación: haga clic en esta opción para ver una lista de etiquetas de clasificación de Azure Information Protection que se hayan encontrado en este archivo. A continuación, podrá filtrar todos los archivos que coincidan con esta etiqueta.    
 
-![Cajón de archivos](./media/file-drawer.png "File drawer")  
+![cajón de archivo](./media/file-drawer.png "cajón de archivo")  
   
 Para obtener una lista de las acciones de gobierno disponibles, consulte [Acciones de gobierno de archivos](governance-actions.md#file-governance-actions).
 
@@ -119,6 +134,6 @@ Para obtener una lista de las acciones de gobierno disponibles, consulte [Accion
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 
