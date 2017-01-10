@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/12/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5fe0c3c04f290fb5a087e387560bf742a7192513
-ms.openlocfilehash: 9f180b0697fbf990534670050c555800d7ba83fb
+ms.sourcegitcommit: d11339040da669b77069c286f6171f7b3a6161db
+ms.openlocfilehash: 3262d01aed03bbb462832f8ff2836152e6208e74
 
 
 ---
@@ -23,17 +23,17 @@ ms.openlocfilehash: 9f180b0697fbf990534670050c555800d7ba83fb
 # <a name="files"></a>Archivos
 
 
-Para proporcionar protección de datos, Cloud App Security le ofrece visibilidad en todos los archivos de las aplicaciones conectadas. Después de conectar Cloud App Security a una aplicación mediante el conector de aplicaciones, Cloud App Security examina todos los archivos, por ejemplo, todos los archivos almacenados en OneDrive y Salesforce. Después, Cloud App Security vuelve a examinar cada archivo cada vez que se modifica (la modificación puede ser de contenido, metadatos o permisos de uso compartido). Los tiempos de examen dependen del número de archivos almacenados en la aplicación. Use la página **Archivos** para obtener control sobre sus datos y para ayudarle a entender qué directivas debe crear. También puede usar la página **Archivos** para filtrar archivos e investigar qué tipo de datos se guarda en las aplicaciones en la nube. 
+Para proporcionar protección de datos, Cloud App Security le ofrece visibilidad en todos los archivos de las aplicaciones conectadas. Después de conectar Cloud App Security a una aplicación mediante el conector de aplicaciones, Cloud App Security examina todos los archivos, por ejemplo, todos los archivos almacenados en OneDrive y Salesforce. Después, Cloud App Security vuelve a examinar cada archivo cada vez que se modifica (la modificación puede ser de contenido, metadatos o permisos de uso compartido). Los tiempos de examen dependen del número de archivos almacenados en la aplicación. También puede usar la página **Archivos** para filtrar archivos e investigar qué tipo de datos se guarda en las aplicaciones en la nube. 
 
-Por ejemplo, puede usar la página **Archivos** para proteger de forma externa archivos compartidos etiquetados como **confidenciales** de la siguiente forma: después de conectar Office 365, Google Apps, Box, Dropbox o Salesforce con Cloud App Security, puede integrarlos con Azure Information Protection. Después, en la página **Archivos**, filtre los archivos con la etiqueta **confidencial**. Si ve que hay archivos **confidenciales** compartidos fuera de su organización, puede crear una directiva de archivo que detecte archivos **confidenciales** que tengan niveles de acceso incorrectos aplicados y aplicar acciones de regulación automáticas, como **Put in user quarantine** (Poner en cuarentena de usuario) para poner en cuarentena el archivo y evitar la pérdida de datos en la organización.
+Por ejemplo, puede usar la página **Archivos** para proteger de forma externa archivos compartidos etiquetados como **confidenciales** de la siguiente forma: después de conectar una aplicación a Cloud App Security, puede integrarla con Azure Information Protection. Después, en la página **Archivos**, filtre los archivos con la etiqueta **confidencial**. Si ve que hay archivos **confidenciales** compartidos fuera de su organización mediante el filtro **Colaboradores** para excluir su dominio, puede crear una directiva de archivo que detecte archivos **confidenciales** que tengan niveles de acceso incorrectos aplicados y efectuar acciones de regulación automáticas, como **Remove external collaborators** (Quitar colabores externos) y **Send policy-match digest to file owner** (Enviar resumen de directivas que coinciden al propietario del archivo) para evitar la pérdida de datos en la organización.
 
  ![Filtro de archivos confidenciales](media/file-filter-confidential.png)
 
-Aquí tiene otro ejemplo en que puede usar la página **Archivos** para proteger los archivos compartidos con dominios no autorizados o cuentas personales: después de conectar Office 365, Google Apps, Box o Dropbox con Cloud App Security, en la página **Archivos**, filtre los archivos con un nivel de acceso **interno** o **privado**. Si ve que hay archivos **confidenciales** compartidos con dominios externos o cuentas personales, puede crear una directiva de archivo que detecte archivos **confidenciales** que tengan niveles de acceso incorrectos aplicados, hacer clic en **New policy from search** (Nueva directiva de búsqueda) y aplicar acciones de regulación automáticas, como **Quitar los usuarios externos** para evitar la pérdida de datos en la organización.
+Este es otro ejemplo de cómo puede usar la página **Archivos**. Para asegurarse de que nadie de la organización comparta de forma pública o externa archivos que no se hayan modificado en los últimos 6 meses, después de conectar una aplicación a Cloud App Security, en la página **Archivos**, filtre por los archivos cuyo nivel de acceso sea **Externo** o **Público**, y establezca la fecha **Última modificación** en los 6 meses anteriores. Puede crear una directiva de archivo que detecte archivos obsoletos públicos haciendo clic en **New policy from search** (Nueva directiva de búsqueda) y aplicar acciones de regulación automática, como **Remove external users** (Quitar usuarios externos) para evitar que su organización pueda perder datos.
 
- ![Filtro de archivo no autorizado](media/file-filter-unauth.png)
+ ![Filtro de archivo obsoleto externo](media/file-example-stale-external.png)
 
-Se puede filtrar el registro de archivos para que pueda buscar archivos específicos. El filtro básico proporciona excelentes herramientas para empezar a filtrar los archivos.
+El filtro básico proporciona excelentes herramientas para empezar a filtrar los archivos.
 
  ![filtro del registro de archivo básico](media/file-log-filter-basic.png)
 
@@ -134,6 +134,6 @@ Para obtener una lista de las acciones de gobierno disponibles, consulte [Accion
   
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

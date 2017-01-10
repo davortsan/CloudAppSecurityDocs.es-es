@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
-ms.openlocfilehash: 4875a1ae80dae101416c9b26932bc57edf755a84
+ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
+ms.openlocfilehash: 64881249bbf81ad7b181eed53035b7b19791d0db
 
 
 ---
@@ -30,9 +30,11 @@ Cloud App Security es un componente crítico de la pila de Microsoft Cloud Secur
 
 ## <a name="the-cloud-app-security-framework"></a>Marco de Cloud App Security  
 
-
-**Cloud Discovery** Detecte todo el uso de la nube de la organización. Control y creación de informes de Shadow IT: - Detecte todas las aplicaciones en la nube en la red, desde todos los dispositivos - Investigue y profundice en aplicaciones, usuarios, direcciones IP de origen específicas, etc. - Administre y controle el uso de la nube mediante el bloqueo, la autorización y la protección de aplicaciones Evaluación de riesgos: - Comprenda los riesgos de la nube de más de 13.000 aplicaciones en la nube - Basada en más de 60 factores de riesgo de seguridad y cumplimiento Alerta sobre el uso arriesgado de la nube: - Obtenga alertas sobre patrones de uso de usuarios anómalos, nuevas aplicaciones y aplicaciones de moda **Information Protection** Supervise y controle los datos en la nube. Obtenga visibilidad en la nube - Obtenga visibilidad, incluidos el nivel de confidencialidad y el nivel de uso compartido - Cuantifique la exposición y el riesgo - Detecte todos los accesos de aplicaciones de terceros a los datos Aplique directivas DLP y controle el uso compartido Controle los datos en la nube con directivas DLP granulares - Saque provecho de motores DLP de terceros y de Microsoft para la clasificación Alerta e investigación - Identifique infracciones de directiva - Investigue incidentes y actividades relacionadas - Corrección automática, incluidas la cuarentena y la eliminación de permisos **Threat Protection** Detecte el uso anómalo e incidentes de seguridad. Mitigue el riesgo al establecer directivas y alertas para lograr el máximo control sobre el tráfico de red de la nube. Use Cloud App Security para migrar a los usuarios a alternativas de aplicaciones seguras y autorizadas en la nube.
-Análisis de comportamiento: - Detección rápida de actividades sospechosas - Motor de detección anómala basado en más de 20 factores de riesgo Investigación avanzada: - Herramientas de investigación de incidentes avanzadas - Consulte usuarios, archivos, actividades y ubicaciones - Personalice detecciones según sus conclusiones Inteligencia de amenazas - Saque provecho de la fuente de inteligencia de amenazas líder de Microsoft - Información única, sacada de billones de señales de toda la base de clientes de Microsoft
+- **Cloud Discovery**: detecte todo el uso en la nube de su organización, incluida la creación de informes y el control de Shadow IT y la evaluación de riesgos.
+    
+- **Protección de datos**: supervise y controle sus datos en la nube mediante la obtención de visibilidad, la aplicación de directivas DLP, alertas e investigación. 
+    
+- **Protección contra amenazas**: detecte incidentes de seguridad y uso erróneo. Use las herramientas de análisis de comportamiento e investigación avanzada para mitigar los riesgos y establecer directivas y alertas para lograr el máximo control sobre el tráfico de red en la nube.
 
 ## <a name="architecture"></a>Arquitectura  
 
@@ -83,6 +85,6 @@ Los clientes Premier también pueden elegir Cloud App Security directamente desd
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

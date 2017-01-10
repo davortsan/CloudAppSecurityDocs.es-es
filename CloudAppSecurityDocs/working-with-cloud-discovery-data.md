@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 12/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
-ms.openlocfilehash: e2123c83a770ecbfb0466c6ef1a4f67e7c271ca2
+ms.sourcegitcommit: 89f533e3b9c8397818e5aaa108dca168fda64db7
+ms.openlocfilehash: 0077b634d09cd9476d07c2de6a84d0c9396285da
 
 
 ---
@@ -60,7 +60,7 @@ Es importante dedicar un minuto a revisar y modificar las ponderaciones predeter
   
 3.  Además, puede establecer si determinados valores no están disponibles o no son aplicables en el cálculo de la puntuación. Cuando se incluyen, los valores no aplicables tienen una contribución negativa a la puntuación calculada.  
   
-     ![puntuación](./media/score.png "score")  
+     ![puntuación](./media/score.png "puntuación")  
   
 ## <a name="manage-continuous-reports"></a>Administrar informes continuos  
 Los informes continuos personalizados proporcionan más granularidad al supervisar los datos de registro de Cloud Discovery de la organización. Al crear informes personalizados, es posible filtrar por ubicaciones geográficas concretas, redes y sitios o unidades organizativas. De forma predeterminada, solo aparecen los informes siguientes en el selector de informes de Cloud Discovery:  
@@ -98,7 +98,7 @@ Para crear una exclusión:
   
 4.  Agregue un alias de usuario o una dirección IP. Se recomienda agregar información sobre por qué se ha excluido la dirección IP o el usuario.  
   
-     ![excluir usuario](./media/exclude-user.png "exclude user")  
+     ![Excluir usuario](./media/exclude-user.png "excluir usuario")  
   
 ## <a name="deleting-cloud-discovery-data"></a>Eliminar datos de Cloud Discovery  
 Hay una serie de razones por las que puede que quiera eliminar los datos de Cloud Discovery. Se recomienda eliminarlos en los casos siguientes:  
@@ -119,11 +119,14 @@ Para eliminar datos de Cloud Discovery:
   
 3.  Haga clic en el botón **Eliminar**.  
   
-     ![eliminar datos](./media/delete-data.png "delete data")  
+     ![eliminar datos](./media/delete-data.png "eliminar datos")  
   
     > [!NOTE]  
     >  El proceso de eliminación tarda unos minutos y no es inmediato.  
 
+
+
+ 
 ## <a name="see-also"></a>Consulte también  
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 [Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -132,6 +135,6 @@ Para eliminar datos de Cloud Discovery:
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO4-->
 
 
