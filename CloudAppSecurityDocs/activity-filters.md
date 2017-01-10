@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/12/2016
+ms.date: 12/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,21 +14,24 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
-ms.openlocfilehash: f1dc1e39309cfe06037a13da55d92935786bed81
+ms.sourcegitcommit: 89f533e3b9c8397818e5aaa108dca168fda64db7
+ms.openlocfilehash: 7ad577c4b6222d96c21f51dd4023f10a9c402c55
 
 
 ---
 # <a name="activities"></a>Actividades
-Para proporcionar protección de datos, Cloud App Security le ofrece visibilidad en todas las actividades de las aplicaciones conectadas. Después de conectar Cloud App Security con una aplicación mediante el conector de aplicaciones, Cloud App Security examina todas las actividades que se han producido (el período de tiempo de examen retroactivo varía según la aplicación) y después se actualiza constantemente con nuevas actividades. Puede crear directivas basadas en las actividades y después definir sobre qué quiere recibir alertas. También puede buscar actividades realizadas en determinados archivos. El tipo de actividades y la información que obtenemos de cada actividad dependen de la aplicación y de qué tipo de datos puede proporcionar la aplicación. 
+Cloud App Security le ofrece visibilidad en todas las actividades de las aplicaciones conectadas. Después de conectar Cloud App Security con una aplicación mediante el conector de aplicaciones, Cloud App Security examina todas las actividades que se han producido (el período de tiempo de examen retroactivo varía según la aplicación) y después se actualiza constantemente con nuevas actividades. Se puede filtrar el **registro de actividades** para que pueda buscar actividades específicas. Puede crear directivas basadas en las actividades y después definir sobre qué quiere recibir alertas y actuar en consecuencia. También puede buscar actividades realizadas en determinados archivos. El tipo de actividades y la información que obtenemos de cada actividad dependen de la aplicación y de qué tipo de datos puede proporcionar la aplicación. 
 
-Por ejemplo, puede usar el registro de **actividades** para buscar usuarios de la organización que usan sistemas operativos o exploradores que no están actualizados de la siguiente forma: después de conectar Office 365, Google Apps, Box, Dropbox, Okta, Amazon Web Services o Salesforce con Cloud App Security en la página del **registro de actividades**, use el filtro avanzado y seleccione la etiqueta **Agente de usuario**. Después, seleccione **Outdated browser** (Explorador obsoleto) u **Outdated operating system** (Sistema operativo obsoleto). Si ve que hay archivos **confidenciales** compartidos fuera de su organización, puede hacer clic en **New policy from search** (Nueva directiva de búsqueda) para crear una directiva de actividad que detecte exploradores y sistemas operativos obsoletos y notifique a los usuarios de forma automática.
+Por ejemplo, puede usar el **registro de actividades** para buscar usuarios de la organización que usan sistemas operativos o exploradores que no están actualizados de la siguiente forma: después de conectar una aplicación a Cloud App Security en la página del **registro de actividades**, use el filtro avanzado y seleccione **User agent tag** (Etiqueta de agente de usuario). Después, seleccione **Outdated browser** (Explorador obsoleto) u **Outdated operating system** (Sistema operativo obsoleto).
 
- ![Ejemplo de actividad de explorador obsoleto](media/activity-outdated-example.png)
+ ![Ejemplo de actividad de explorador obsoleto](media/activity-example-outdated.png)
+
+Si quiere comprobar si se tiene acceso a archivos **confidenciales** fuera de su organización, establezca el filtro **Objeto de actividad** para buscar **Etiqueta de clasificación** y seleccione la etiqueta **Confidencial**. Establezca el filtro **Dirección IP** para buscar **Categoría** y excluir las direcciones IP de la oficina (en el menú **Configuración** se pueden configurar categorías IP). Puede hacer clic en **New policy from search** (Nueva directiva de búsqueda) para crear una directiva de actividad basada en los filtros definidos y notificar automáticamente a los usuarios.
+
+ ![Ejemplo de archivos confidenciales de actividad externos](media/activity-example-ip.png)
 
  
-
-Se puede filtrar el registro de actividad para que pueda buscar actividades específicas. El filtro básico proporciona excelentes herramientas para empezar a filtrar sus actividades.
+El filtro básico proporciona excelentes herramientas para empezar a filtrar sus actividades.
 
  ![filtro de registro de actividad básica](media/activity-log-filter-basic.png)
 
@@ -66,9 +69,21 @@ A continuación se muestra una lista de los filtros de actividad que se pueden a
   
 -   Dirección IP: dirección IP sin procesar, categoría o etiqueta desde la que se ha realizado la actividad.  
     - Dirección IP sin procesar: le permite realizar búsquedas de actividades que se realizaron en direcciones IP sin formato, o por dichas direcciones, que sean iguales, diferentes o que comiencen con o no por una secuencia determinada o por direcciones IP sin procesar que están o no establecidas. 
-    - Categoría IP: categoría de la dirección IP desde la que se ha realizado la actividad, por ejemplo, todas las actividades desde el intervalo administrativo de direcciones IP. Para obtener más información sobre las categorías IP, consulte [Organice los datos de acuerdo a las necesidades](general-setup.md#IPtagsandRanges).  
-    - Etiqueta IP: etiqueta de la dirección IP desde la que se ha realizado la actividad, por ejemplo, todas las actividades desde direcciones IP de servidores proxy anónimos. Para obtener más información sobre las etiquetas IP, consulte [Organice los datos de acuerdo a las necesidades](general-setup.md#IPtagsandRanges).
-  
+    - Categoría IP: categoría de la dirección IP desde la que se ha realizado la actividad, por ejemplo, todas las actividades desde el intervalo administrativo de direcciones IP. Las categorías deben configurarse para incluir las direcciones IP correspondientes, excepto para la categoría de "De riesgo" que está preconfigurada e incluye dos etiquetas IP: proxy anónimo y Tor. Para más información sobre cómo configurar las categorías IP, vea [Organizar los datos de acuerdo a las necesidades](general-setup.md#IPtagsandRanges).  
+    - Etiqueta IP: etiqueta de la dirección IP desde la que se ha realizado la actividad, por ejemplo, todas las actividades desde direcciones IP de servidores proxy anónimos. Cloud App Security crea un conjunto de etiquetas IP integradas que no son configurables. Además, puede configurar sus propias etiquetas IP. Para más información sobre cómo configurar sus propias etiquetas IP, vea [Organizar los datos de acuerdo a las necesidades](general-setup.md#IPtagsandRanges).
+   Las etiquetas IP integradas incluyen:
+    - Aplicaciones de Microsoft (14)
+    - Proxy anónimo
+    - Red de robots (botnet)
+    - IP de análisis de Darknet
+    - Servidor de malware C&C
+    - Analizador de conectividad remota
+    - Proveedores de satélite
+    - Proxy inteligente y proxy de acceso (excluido a propósito)
+    - Nodos de salida tor
+    - Zscaler
+
+
 -   Actividad suplantada: busca solo las actividades realizadas en nombre de otro usuario.  
 
 -   Ubicación: país desde el que se ha realizado la actividad.  
@@ -106,7 +121,7 @@ Para ver más información sobre cada actividad, haga clic en la misma actividad
 
 ![cajón de actividades](./media/activity-drawer.png "cajón de actividades")  
   
-Para obtener una lista de acciones de gobierno disponibles, consulte [Parámetros de coincidencia de actividad](governance-actions.md#activity-match-parameters).
+Para obtener una lista de las acciones de control disponibles, vea [Acciones de control de actividades](governance-actions.md#activity-governance-actions).
 
 
 ## <a name="see-also"></a>Consulte también  
@@ -117,6 +132,6 @@ Para obtener una lista de acciones de gobierno disponibles, consulte [Parámetro
   
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO4-->
 
 

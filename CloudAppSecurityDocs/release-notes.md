@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 12/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,50 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
-ms.openlocfilehash: cbe341faf692772ac5461e038233e9b1a6b2694f
+ms.sourcegitcommit: cc4f3db1307261c41786f7c4458b37ba9d7f620e
+ms.openlocfilehash: 2da187cd863af431c359b8079f6b30ebae0b615b
 
 
 ---
 
 # <a name="release-notes"></a>Notas de la versión
+
+## <a name="cloud-app-security-release-87"></a>Notas de la versión 87 de Cloud App Security
+Fecha de publicación 25 de diciembre de 2016
+
+**Nuevas características**
+-   Estamos en proceso de lanzar la [anonimización de datos](cloud-discovery-anonymizer.md) para que pueda disfrutar de Cloud Discovery a la vez que se protege la privacidad de los usuarios. La anonimización de datos se realiza mediante el cifrado de la información de nombres de usuario.
+-   Estamos en proceso de lanzar la capacidad de exportar un script de bloqueo desde Cloud App Security a dispositivos adicionales. El script le permitirá reducir fácilmente Shadow IT mediante el bloqueo del tráfico a aplicaciones no autorizadas. Esta opción ya está disponible para: 
+    -   BlueCoat ProxySG
+    -   Cisco ASA
+    -   Fortinet
+    -   Juniper SRX
+    -   Palo Alto
+    -   Websense
+-   Se ha agregado una nueva acción de control de archivos que le permite forzar a un archivo heredar permisos del elemento principal, eliminando así los permisos únicos que se hayan configurado para el archivo o carpeta. Esta acción de control de archivos le permite cambiar los permisos de la carpeta o el archivo para que se hereden de la carpeta principal. 
+-   Se ha agregado un nuevo grupo de usuarios con el nombre Externos. Es un grupo de usuarios predeterminado configurado previamente por Cloud App Security para incluir todos los usuarios que no forman parte de los dominios internos. Puede usar este grupo como filtro, por ejemplo puede buscar actividades realizadas por los usuarios externos.
+-   La característica Cloud Discovery ahora admite dispositivos Sophos Cyberoam.
+ 
+**Correcciones de errores**
+-   Los archivos SPO y OD4B se mostraban en el informe de directiva de archivo y en la página de archivos como para uso interno en lugar de privado. Esto se ha corregido.
+ 
+
+
+## <a name="cloud-app-security-release-86"></a>Notas de la versión 86 de Cloud App Security
+Fecha de publicación: 13 de diciembre de 2016
+
+**Nuevas características**
+- Todas las licencias independientes de Cloud App Security proporcionan la capacidad de habilitar el análisis de Azure Information Protection desde la configuración general (sin necesidad de crear una directiva). 
+ 
+**Mejoras**
+- Ahora puede usar "o" en el filtro de archivos para el nombre de archivo y en el filtro de tipo MIME para los archivos y directivas. Esto habilita escenarios como escribir la palabra "pasaporte" O "controlador" al crear una directiva con PII y coincidirá con cualquier archivo que contenga "pasaporte" o "controlador" en el nombre de archivo. 
+- De forma predeterminada, cuando se ejecuta una directiva DLP de inspección de contenido, los datos de las infracciones resultantes se enmascaran. Ahora puede mostrar los últimos cuatro caracteres de la infracción. 
+
+**Mejoras menores**
+- Nuevo eventos relacionados con buzones de Office 365 (Exchange) relacionados con las reglas de reenvío y agregar y quitar permisos de delegado de buzón.
+- Nuevo evento que audita la concesión de consentimiento para nuevas aplicaciones en Azure Active Directory. 
+
+
 
 
 ## <a name="cloud-app-security-release-85"></a>Notas de la versión 85 de Cloud App Security
@@ -258,6 +295,6 @@ Fecha de publicación: 15 de mayo de 2016
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO4-->
 
 

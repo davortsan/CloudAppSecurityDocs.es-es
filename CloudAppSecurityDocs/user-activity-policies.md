@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
-ms.openlocfilehash: 68961bf66a0c0bb3b668e681502ccf10bc673197
+ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
+ms.openlocfilehash: 46ab0f13a8d0839f77525c334e75c840c9bfc73f
 
 
 ---
@@ -35,7 +35,7 @@ Para crear una nueva directiva de actividad, siga este procedimiento:
   
 2.  Haga clic en **Crear directiva** y seleccione **Directiva de actividad**.  
   
-     ![menú de directiva de actividad](./media/activity-policy-menu.png "activity policy menu")  
+     ![menú de directiva de actividad](./media/activity-policy-menu.png "menú de directiva de actividad")  
   
 3.  Asigne un nombre y una descripción a la directiva. Si quiere, puede basarla en una plantilla. Para obtener más información sobre las plantillas de directiva, vea [Controlar aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).  
   
@@ -54,13 +54,13 @@ Observe estos ejemplos:
   
      Bajo el campo **Filtros de actividad**, configure los parámetros para los que se desencadenará la alerta.  
   
-     ![ejemplo de directiva de varios intentos de inicio de sesión erróneos](./media/multiple-failed-log-on-attempts-policy-example.png "multiple failed log on attempts policy example")  
+     ![ejemplo de directiva de varios intentos de inicio de sesión erróneos](./media/multiple-failed-log-on-attempts-policy-example.png "ejemplo de directiva de varios intentos de inicio de sesión erróneos")  
   
 -   Frecuencia de descarga alta  
   
      Puede establecer la directiva de modo que reciba una alerta cuando se produzca un nivel de actividad de descarga inesperado o inusitado. Para configurar una directiva de este tipo, en el parámetro **Frecuencia**, elija los parámetros que desencadenen la alerta.  
   
-     ![ejemplo de frecuencia de descarga alta](./media/high-download-rate-example.png "high download rate example")  
+     ![ejemplo de frecuencia de descarga alta](./media/high-download-rate-example.png "ejemplo de frecuencia de descarga alta")  
   
 ## <a name="anomaly-detection"></a>Detección de anomalías  
 Cuando la organización está protegida mediante Cloud App Security, todas las actividades en la nube se puntúan según diversos factores de riesgo predefinidos. Cloud App Security examina todas las sesiones de los usuarios en la nube y toma en consideración los factores de riesgo que se establezcan aquí para emitir alertas cuando ocurra algo diferente de la línea de base de la organización o de la actividad normal del usuario. La página de la directiva de detección de anomalías permite configurar y personalizar qué familias de factores de riesgo se tendrán en cuenta en el proceso de puntuación de riesgo. Las directivas se pueden aplicar de manera diferente a distintos usuarios, ubicaciones y sectores de la organización. Por ejemplo, puede crear una directiva que le avise cuando los miembros del equipo de TI estén activos fuera de la oficina.  
@@ -71,7 +71,7 @@ Para configurar una directiva de detección de anomalías:
   
 2.  Haga clic en **Crear directiva** y seleccione la directiva **Detección de anomalías**.  
   
-     ![menú de la directiva de detección de anomalías](./media/anomaly-detection-policy-menu.png "Anomaly detection policy menu")  
+     ![menú de la directiva de detección de anomalías](./media/anomaly-detection-policy-menu.png "menú de la directiva de detección de anomalías")  
   
 3.  Rellene el nombre y la descripción de la directiva y vaya al campo **Filtros de actividad**, donde puede elegir la actividad a la que quiere aplicar la directiva.  
   
@@ -109,7 +109,7 @@ Para configurar una directiva de detección de anomalías:
   
      El valor de sensibilidad determinará cuántas alertas semanales se desencadenarán por término medio por cada 1000 usuarios.  
   
-     ![IP de detección de anomalías](./media/anomaly-detection-ips.png "anomaly detection IPs")  
+     ![IP de detección de anomalías](./media/anomaly-detection-ips.png "IP de detección de anomalías")  
   
 8.  Haga clic en **Crear**.  
  
@@ -122,7 +122,9 @@ Cada directiva se compone de las siguientes partes:
   
 -   Filtros de actividad: permiten crear condiciones muy granulares basadas en metadatos.  
   
--   Parámetros de coincidencia de actividad: permiten establecer un umbral de número de veces que se repite una actividad para que se considere que coincide con la directiva.  
+-   Parámetros de coincidencia de actividad: permiten establecer un umbral de número de veces que se repite una actividad para que se considere que coincide con la directiva.  Especifique el número de actividades repetidas necesarias para que haya coincidencia con la directiva, por ejemplo, el establecimiento de una directiva para alertar cuando un usuario realice diez intentos de inicio de sesión incorrectos en un período de tiempo de dos minutos.  De forma predeterminada, **Parámetros de coincidencia de actividad**, genera una coincidencia para cada actividad única que cumple todos los filtros de la actividad.   
+Con **Actividad repetida** puede establecer el número de actividades repetidas, la duración del período en el que se cuentan las actividades e incluso especificar que todas las actividades las debe realizar el mismo usuario y en la misma aplicación en la nube.  
+  
   
 -   Acciones: la directiva proporciona un conjunto de acciones de gobierno que se pueden aplicar automáticamente cuando se detectan infracciones.  
 ## <a name="see-also"></a>Consulte también  
@@ -133,6 +135,6 @@ Cada directiva se compone de las siguientes partes:
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO3-->
 
 

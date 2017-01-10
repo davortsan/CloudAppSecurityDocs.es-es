@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 12/26/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,20 +14,24 @@ ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
-ms.openlocfilehash: e0a3f507ddf135eed01ed3acd71b7b5ec15e8e50
+ms.sourcegitcommit: 99ad61811b68b47ac62b4bac83b611e535d4a6be
+ms.openlocfilehash: 2070adb26a6b23cd0d699f3c4b9241819e24928d
 
 
 ---
 
 # <a name="set-up-cloud-discovery"></a>Configurar Cloud Discovery
-Cloud Discovery analiza los registros de tráfico del catálogo de aplicaciones en la nube de Cloud App Security de más de 13 000 aplicaciones en la nube que se clasifican y se puntúan en función de más de 50 atributos, a fin de proporcionar visibilidad continua del uso de la nube, Shadow IT y el riesgo que Shadow IT supone para la organización.
+Cloud Discovery analiza los registros de tráfico del catálogo de aplicaciones en la nube de Cloud App Security de más de 13 000 aplicaciones en la nube que se clasifican y se puntúan en función de más de 50 atributos, a fin de proporcionar visibilidad continua del uso de la nube, Shadow IT y el riesgo que Shadow IT supone para la organización.
 El **catálogo de aplicaciones en la nube** evalúa el riesgo de las aplicaciones en la nube en función de certificaciones normativas, estándares del sector y procedimientos recomendados. En el catálogo de aplicaciones en la nube se ejecutan cuatro procesos complementarios para mantenerlo actualizado:
 1.  Extracción de datos automatizada directamente desde la aplicación en la nube (para atributos como el cumplimiento de SOC 2).
 2.  Extracción de datos automatizada avanzada mediante algoritmos de Cloud App Security (para atributos como encabezados de seguridad HTTP).
 3.  Análisis continuo por parte del equipo de analistas de la nube de Cloud App Security (para atributos como el cifrado en reposo).
 4.  Solicitudes de revisión de los clientes, según las solicitudes de envío de clientes para realizar cambios en el catálogo de aplicaciones en la nube. Todas las solicitudes se someten al examen del equipo de analistas de la nube y se actualizan en función de sus conclusiones.
   
+## <a name="cloud-discovery-data-anonymization"></a>Anonimización de datos de Cloud Discovery
+
+La anonimización de datos de Cloud Discovery le permite proteger la privacidad del usuario. Una vez que el registro de datos se ha cargado en el portal de Cloud App Security, se depura el registro y se reemplaza toda la información de nombres de usuario con nombres de usuario cifrados. De este modo, todas las actividades de la nube se mantienen anónimas. Para más información, vea [Cloud Discovery anonymization](cloud-discovery-anonymizer.md) (Anonimización de Cloud Discovery).
+
 ## <a name="snapshot-and-continuous-risk-assessment-reports"></a>Informes de instantáneas y de evaluación continua de riesgos 
 
 Se pueden generar dos tipos de informes: 
@@ -50,7 +54,7 @@ El proceso de generación de una evaluación de riesgos consta de los siguientes
 >[!NOTE]
 >Los datos de los informes continuos se analizan dos veces al día.
  
-## <a name="using-traffic-logs-for-cloud-discovery"></a>Uso de registros de tráfico para Cloud Discovery
+## <a name="using-traffic-logs-for--cloud-discovery"></a>Uso de registros de tráfico para Cloud Discovery
 Cloud Discovery usa los datos de los registros de tráfico. Cuanto más detallado sea el registro, mejor visibilidad se logrará. Cloud Discovery requiere que los datos de tráfico de web tengan los siguientes atributos:
 - Fecha de la transacción
 - IP de origen
@@ -86,6 +90,7 @@ Para generar correctamente un informe de Cloud Discovery, los registros de tráf
 - Microsoft Forefront Threat Management Gateway (W3C)
 - Firewalls de la serie Palo Alto
 - Sophos SG
+- Sophos Cyberoam
 - Squid (Common)
 - Squid (Native)
 - Websense - Web Security Solutions - Investigative detail report (CSV)
@@ -119,8 +124,7 @@ Atributos de datos (según la documentación del proveedor):
 |Zscaler|**Sí**|No|**Sí**|No|**Sí**|No|
 
 
- 
-Para obtener más información, consulte 
+## <a name="see-also"></a>Vea también
  
 [Crear informes de instantáneas de Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 
@@ -131,6 +135,6 @@ Para obtener más información, consulte
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO4-->
 
 
