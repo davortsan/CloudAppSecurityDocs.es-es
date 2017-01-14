@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 1/9/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7901bb58f70949873fb3c423ae7951a67f7cd671
-ms.openlocfilehash: 4cfad222fb78e0bfc106fab64f6cc22d3819c1c8
+ms.sourcegitcommit: a6133e3cf0521515088dfd9d301aed2df2c4b430
+ms.openlocfilehash: 199a3c9909093551e3eca5e524f6bf04ce03aa4e
 
 
 ---
@@ -77,13 +77,12 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
 |**Actividad del usuario**|✔*|✔|✔|✔ (requiere Google Unlimited)|Parcial|Compatible con Salesforce Shield|✔|No disponible|  
 |**Actividad administrativa**|✔|✔|✔|✔|Parcial|✔|✔|✔|  
 |**Examen periódico de archivos**|✔|✔|No disponible|✔|✔|✔|✔|Próximamente|  
-|**Examen de archivos prácticamente en tiempo real**|Próximamente|✔|No disponible|✔ (requiere Google Unlimited)|||Próximamente||  
+|**Examen de archivos prácticamente en tiempo real**|✔|✔|No disponible|✔ (requiere Google Unlimited)|||Próximamente||  
 |**Control de uso compartido**|✔|✔|No disponible|✔|No disponible||✔||  
 |**Cuarentena**|✔|✔|No disponible|Próximamente|||Próximamente||  
 |**Ver permisos de aplicación**|✔|No es compatible con el proveedor|No disponible|✔||✔|No es compatible con el proveedor||  
 |**Revocar permisos de aplicación**|✔||No disponible|✔||✔|No disponible||  
   
-\* El conector de aplicaciones de Office 365 incluye actividad de administración para Exchange Online. Para agregar la actividad del usuario para Exchange Online, debe implementar por separado el conector de Exchange Online.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
 Para algunas aplicaciones, puede ser necesario agregar las siguientes direcciones IP a la lista de permitidos para habilitar Cloud App Security de modo que recopile registros y proporcione acceso a la consola de Cloud App Security:  
@@ -131,6 +130,6 @@ Para obtener más información sobre el emparejamiento público, vea [Circuitos 
    
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 
