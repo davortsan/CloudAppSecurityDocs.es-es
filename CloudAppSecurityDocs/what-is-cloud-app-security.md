@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/19/2016
+ms.date: 1/8/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
-ms.openlocfilehash: 64881249bbf81ad7b181eed53035b7b19791d0db
+ms.sourcegitcommit: 142f2ba21ddeae5878cfa5d2e0b744c4581a1d65
+ms.openlocfilehash: dd43677f5437c5733a7cee55b67c8d39445d51a4
 
 
 ---
@@ -47,12 +47,13 @@ Cloud App Security integra visibilidad con la nube de las siguientes formas:
 
 ![Arquitectura de Cloud App Security](./media/architecture.png)  
 
-> [!NOTE]  
-> Cuando Cloud App Security realiza la inspección de contenido, se aplica la privacidad de los datos. El contenido del archivo no se almacena en la base de datos de Cloud App Security; solo los metadatos de los registros de archivo y las infracciones que se han identificado se almacenan en la base de datos de Cloud App Security. Para obtener más información sobre la retención de datos, consulte nuestra [directiva de privacidad](http://go.microsoft.com/fwlink/?LinkId=512132) y el [Centro de confianza de Microsoft](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data).
-Cloud App Security conserva los datos como se indica a continuación:
->- Registro de actividad: 180 días
->- Datos de detección: 90 días
->- Alertas: 180 días
+### <a name="data-retention"></a>Retención de datos  
+Cuando Cloud App Security realiza la inspección de contenido, se aplica la privacidad de los datos. El contenido del archivo no se almacena en la base de datos de Cloud App Security; solo los metadatos de los registros de archivo y las infracciones que se han identificado se almacenan en la base de datos de Cloud App Security. Para obtener más información sobre la retención de datos, consulte nuestra [directiva de privacidad](http://go.microsoft.com/fwlink/?LinkId=512132) y [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data).
+Cloud App Security conserva los datos como se indica a continuación: Cloud App Security conserva los datos como se indica a continuación: 
+ 
+- Registro de actividad: 180 días 
+- Datos de detección: 90 días 
+- Alertas: 180 días 
 
 Después de recopilar datos de estos orígenes, Cloud App Security ejecuta análisis sofisticados sobre los datos. Le avisa de inmediato de actividades anómalas y le proporciona visibilidad en su entorno de la nube. Puede configurar una directiva en Cloud App Security y usarla para proteger todo el contenido del entorno de la nube.  
 
@@ -85,6 +86,6 @@ Los clientes Premier también pueden elegir Cloud App Security directamente desd
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO2-->
 
 

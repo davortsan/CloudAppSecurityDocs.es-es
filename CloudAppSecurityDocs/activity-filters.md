@@ -14,8 +14,8 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 89f533e3b9c8397818e5aaa108dca168fda64db7
-ms.openlocfilehash: 7ad577c4b6222d96c21f51dd4023f10a9c402c55
+ms.sourcegitcommit: 98b16c96c31039248bdfbe57f980b3ae6a26a7de
+ms.openlocfilehash: 6f465f1a322168e86208042deea405a756be6e57
 
 
 ---
@@ -48,6 +48,7 @@ A continuación se muestra una lista de los filtros de actividad que se pueden a
     - Identificador de objeto de actividad: el identificador del objeto (identificador del archivo, carpeta, usuario o aplicación).
     - URL del archivo, carpeta o sitio: permite seleccionar direcciones URL de archivos, carpetas y direcciones que comienzan con una cadena específica.
     - Objeto de destino (archivo/carpeta): permite seleccionar un archivo o carpeta específicos. 
+    - Elemento: permite buscar por el nombre o por el identificador de cualquier objeto de actividad (por ejemplo, nombres de usuario, archivos, parámetros, sitios). 
     
 -   Tipo de actividad: busca la actividad de la aplicación.
 
@@ -132,6 +133,6 @@ Para obtener una lista de las acciones de control disponibles, vea [Acciones de 
   
 
 
-<!--HONumber=Dec16_HO4-->
+<!--HONumber=Jan17_HO2-->
 
 

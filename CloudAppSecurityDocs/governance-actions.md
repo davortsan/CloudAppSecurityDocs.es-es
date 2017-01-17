@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/26/2016
+ms.date: 1/8/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 89f533e3b9c8397818e5aaa108dca168fda64db7
-ms.openlocfilehash: f5107adbe61a9dff00754e39134a35b8f620fa4c
+ms.sourcegitcommit: 98b16c96c31039248bdfbe57f980b3ae6a26a7de
+ms.openlocfilehash: 2998a0a9aa2cfa234d8a6a45a6eb0e1646ee2a2a
 
 
 ---
@@ -57,7 +57,7 @@ Las siguientes acciones de gobierno pueden realizarse en un archivo o usuario es
   
         -   Poner en cuarentena de administrador: el archivo se pone en cuarentena en la unidad del administrador y este tiene que aprobarlo.  
   
--   Heredar permisos del principal: esta acción de control le permite quitar el conjunto de permisos específicos para un archivo o carpeta, y revertirlos a los permisos establecidos para la carpeta principal.
+-   Heredar permisos del primario: esta acción de control le permite quitar el conjunto de permisos específicos para un archivo o carpeta en Office 365 y revertirlos a los permisos establecidos para la carpeta principal.
 -   Enviar a la papelera: el archivo se mueve a la carpeta de la papelera.
   
 ![alertas de crear directiva](./media/policy_create-alerts.png "alertas de crear directiva")  
@@ -150,6 +150,6 @@ Para obtener información sobre cómo se tratan las acciones de control cuando h
   
 
 
-<!--HONumber=Dec16_HO4-->
+<!--HONumber=Jan17_HO2-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/2/2017
+ms.date: 1/8/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76908638d803be2f4f8d3a2a6a56571ce0545fec
-ms.openlocfilehash: 5ba1772200d001c1565d342a23f9662bd97edb74
+ms.sourcegitcommit: 4ab3275bdff2ec3aae5b5069c5ae65ba4292e93d
+ms.openlocfilehash: f8e3e744cd030777fe82a1edbc1197784f1ac8fa
 
 
 ---
@@ -23,6 +23,8 @@ ms.openlocfilehash: 5ba1772200d001c1565d342a23f9662bd97edb74
 # <a name="siem-integration--public-preview-"></a>Integración de SIEM, versión preliminar pública: 
     
 Ahora puede integrar Cloud App Security con su servidor SIEM para habilitar la supervisión centralizada de alertas y actividades. La integración de un servicio SIEM le permite proteger mejor sus aplicaciones de nube a la vez que mantiene el flujo de trabajo de seguridad habitual, automatizando así los procedimientos de seguridad y estableciendo correlaciones entre eventos basados en la nube y eventos locales. El agente SIEM de Cloud App Security se ejecuta en el servidor y extrae las alertas y las actividades de Cloud App Security y las transmite al servidor SIEM.
+
+Cuando integre por primera vez su SIEM con Cloud App Security, las actividades y las alertas de los dos últimos días se reenviarán al SIEM, así como todas las actividades y alertas (en función del filtro seleccionado) que se produzcan a partir de entonces. Además, si deshabilita esta característica durante un período prolongado, cuando la habilite de nuevo, se reenviarán las alertas y las actividades de los dos últimos días, así como las que se produzcan a partir de entonces.
 
 La integración con SIEM se realiza en tres pasos:
 1. Configuración en el portal de Cloud App Security 
@@ -65,13 +67,15 @@ Puede hacer clic en **Edit and preview results** (Editar y obtener una vista pre
 2. Extraiga el archivo .jar desde el archivo .zip y ejecútelo en el servidor.
  Después de ejecutar el archivo, ejecute lo siguiente:
     
-      java -jar siemagent-0.87.20-signed.jar [--logsDirectory NOMBRE_DIRECTORIO] [--proxy DIRECCIÓN[:PUERTO]] --token TOKEN
+      java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory NOMBRE_DIRECTORIO] [--proxy DIRECCIÓN[:PUERTO]] --token TOKEN
 > [!NOTE]
-> El nombre de archivo puede diferir dependiendo de la versión del agente SIEM.
+> - El nombre de archivo puede diferir dependiendo de la versión del agente SIEM.
+> - Los parámetros entre corchetes [] son opcionales y solo deben usarse si procede.
 
-NOMBRE_DIRECTORIO es la ruta de acceso al directorio que quiere usar para los registros de depuración del agente local.
-DIRECCIÓN[:PUERTO] es la dirección del servidor proxy y el puerto que usa el servidor para conectarse a Internet.
-TOKEN es el token del agente SIEM que ha copiado en el paso anterior.
+Se usan las variables siguientes:
+- NOMBRE_DIRECTORIO es la ruta de acceso al directorio que quiere usar para los registros de depuración del agente local.
+- DIRECCIÓN[:PUERTO] es la dirección del servidor proxy y el puerto que usa el servidor para conectarse a Internet.
+- TOKEN es el token del agente SIEM que ha copiado en el paso anterior.
 
 Puede escribir -h en cualquier momento para obtener ayuda.
 
@@ -131,6 +135,6 @@ Después de crear el agente, si ve una de las siguientes **Notificaciones de age
   
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

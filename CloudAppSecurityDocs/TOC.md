@@ -1,7 +1,8 @@
-# [Conceptos básicos y exploración](what-is-cloud-app-security.md)
+# Conceptos básicos y exploración
 ## [¿Qué es la CAS?](what-is-cloud-app-security.md)
 ## [Notas de la versión](release-notes.md)
-# [Implementación](getting-started-with-cloud-app-security.md)
+# Implementar
+## [Introducción](getting-started-with-cloud-app-security.md)
 ## [Personalizar el portal](general-setup.md)
 ## [Implementar Cloud Discovery](set-up-cloud-discovery.md)
 ### [Crear informes de instantáneas de Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
@@ -17,7 +18,8 @@
 ### [Conectar Okta](connect-okta-to-microsoft-cloud-app-security.md)
 ### [Conectar ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md)
 ### [Conectar Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
-# [Uso](daily-activities-to-protect-your-cloud-environment.md)
+# Use
+## [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
 ## [Investigación](investigate.md)
 ### [Referencia de informes integrados](built-in-report-reference.md)
 ### [Archivos](file-filters.md)
@@ -28,20 +30,21 @@
 #### [Directivas de Cloud Discovery](cloud-discovery-policies.md)
 ##### [Directiva de detección de anomalías de Cloud Discovery](cloud-discovery-anomaly-detection-policy.md)
 #### [Directivas de actividad](user-activity-policies.md)
-##### [Directiva de detección de anomalías](anomaly-detection-policy.md)
+#### [Directiva de detección de anomalías](anomaly-detection-policy.md)
 #### [Directivas de archivos](data-protection-policies.md)
 ##### [Inspección de contenido](content-inspection.md)
 ##### [Trabajar con el motor de RegEx](working-with-the-regex-engine.md)
+#### [Referencia de plantillas de directiva](policy-template-reference.md)
 ### [Administración de permisos de aplicación](manage-app-permissions.md)
 ## [Gobierno](governance-actions.md)
 ## Integrar
 ### [Integración de Azure Information Protection](azip-integration.md)
 ### [Integración de SIEM](siem.md)
-# [Solución de problemas](troubleshooting.md)
+# Solución de problemas
 ## [Solución de problemas de Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Solución de problemas de conectores de API mediante mensajes de error](troubleshooting-api-connectors-using-error-messages.md)
 ## [Solucionar problemas relacionados con la inspección de contenido](troubleshooting-content-inspection.md)
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

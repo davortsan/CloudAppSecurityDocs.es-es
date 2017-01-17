@@ -14,8 +14,8 @@ ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 99ad61811b68b47ac62b4bac83b611e535d4a6be
-ms.openlocfilehash: 2070adb26a6b23cd0d699f3c4b9241819e24928d
+ms.sourcegitcommit: 98b16c96c31039248bdfbe57f980b3ae6a26a7de
+ms.openlocfilehash: 3c722ac79fa124193655ca053c713f3d6edc7017
 
 
 ---
@@ -113,16 +113,17 @@ Atributos de datos (según la documentación del proveedor):
 |Cisco ScanSafe|**Sí**|No|**Sí**|**Sí**|**Sí**|**Sí**|
 |Dell SonicWall|**Sí**|**Sí**|No|**Sí**|**Sí**|**Sí**|
 |FortiGate|No|**Sí**|No|**Sí**|**Sí**|**Sí**|
-|Juniper SRX|No|**Sí**|No|**Sí**|**Sí**|**Sí**|
+|Juniper SRX|No|**Sí**|No|**Sí**\*|**Sí**|**Sí**|
 |McAfee SWG|**Sí**|No|No|**Sí**|**Sí**|**Sí**|
 |Meraki|**Sí**|**Sí**|No|**Sí**|No|No|
 |MS TMG|**Sí**|No|**Sí**|**Sí**|**Sí**|**Sí**|
-|PAN|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
+|Palo Alto Networks|**Sí**|**Sí**|**Sí**|**Sí**\*|**Sí**|**Sí**|
 |Sophos|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|No|
 |Websense: informe de detalle de investigación (CSV)|**Sí**|No|No|**Sí**|No|No|
 |Websense: registro de actividad de Internet (CEF)|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
 |Zscaler|**Sí**|No|**Sí**|No|**Sí**|No|
 
+\* Cloud Discovery es compatible con IPv6.
 
 ## <a name="see-also"></a>Vea también
  
@@ -135,6 +136,6 @@ Atributos de datos (según la documentación del proveedor):
   
 
 
-<!--HONumber=Dec16_HO4-->
+<!--HONumber=Jan17_HO2-->
 
 

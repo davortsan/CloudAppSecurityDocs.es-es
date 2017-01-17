@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/28/2016
+ms.date: 1/8/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cc4f3db1307261c41786f7c4458b37ba9d7f620e
-ms.openlocfilehash: 2da187cd863af431c359b8079f6b30ebae0b615b
+ms.sourcegitcommit: 98b16c96c31039248bdfbe57f980b3ae6a26a7de
+ms.openlocfilehash: a4e45ff982c6f53e442ae65803695a2c858145cb
 
 
 ---
@@ -39,7 +39,7 @@ Fecha de publicación 25 de diciembre de 2016
 -   La característica Cloud Discovery ahora admite dispositivos Sophos Cyberoam.
  
 **Correcciones de errores**
--   Los archivos SPO y OD4B se mostraban en el informe de directiva de archivo y en la página de archivos como para uso interno en lugar de privado. Esto se ha corregido.
+-   Los archivos de SharePoint Online y OneDrive para la Empresa se mostraban en el informe de directiva de archivo y en la página de archivos como para uso interno en lugar de privado. Esto se ha corregido.
  
 
 
@@ -295,6 +295,6 @@ Fecha de publicación: 15 de mayo de 2016
   
 
 
-<!--HONumber=Dec16_HO4-->
+<!--HONumber=Jan17_HO2-->
 
 
