@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 12/21/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 525a6c5274843f63c300e97d1dbd40ece6465edf
-ms.openlocfilehash: 3a6750f244d3d0cd8d691ffd768cf5183da78d32
+ms.sourcegitcommit: 49b64ea6cee1a33fd4005388d5b09cfbdcf59052
+ms.openlocfilehash: b5250ccb93dda950b417bbbe3fc2e64f0bab8320
 
 
 ---
@@ -82,7 +82,7 @@ Para configurar sus preferencias como un administrador de Cloud App Security, ha
   
 3. Haga clic en **Guardar** cuando acabe.  
   
-##  <a name="a-nameiptagsandrangesa-organize-the-data-according-to-your-needs"></a><a name="IPtagsandRanges"></a> Organizar los datos de acuerdo a las necesidades  
+##  <a name="a-nameiptagsandrangesa-set-ip-ranges"></a><a name="IPtagsandRanges"></a> Configurar intervalos IP  
 Para identificar fácilmente las direcciones IP conocidas, como las direcciones IP de la oficina física, es necesario establecer los intervalos de direcciones IP que permiten etiquetar y clasificar adecuadamente, así como personalizar la forma en que los registros y alertas se muestran e investigan.   
 Cada grupo de intervalos IP se puede clasificar en función de una lista predeterminada de categorías IP o etiquetarse con etiquetas IP de creación propia. Además, esta configuración permite invalidar la información de geolocalización pública según su conocimiento de la red interna.  
   
@@ -104,9 +104,7 @@ En la barra de menús, haga clic en el icono de configuración ![icono de config
   
 4.  Escriba un **ISP registrado**. Esto invalidará los datos de sus actividades.  
   
-5.  Especifique una etiqueta para **etiquetar** las actividades de estas direcciones IP. La etiqueta se creará si escribe una palabra en el cuadro. Con la etiqueta ya configurada, puede agregarla a más intervalos IP seleccionándola de la lista. Puede agregar tantas etiquetas IP como quiera para cada intervalo. Las etiquetas IP se pueden usar al crear directivas.  
-  
-     Las **etiquetas IP** de Cloud App Security integradas están configuradas para direcciones que entrañan riesgo y se actualizan constantemente. Estas etiquetas incluyen servidores proxy anónimos, proveedores por satélite, nodos de salida de Tor y la red proxy de Cloud App Security. Estas etiquetas integradas no son visibles.  
+5.  Especifique una etiqueta para **etiquetar** las actividades de estas direcciones IP. La etiqueta se creará si escribe una palabra en el cuadro. Con la etiqueta ya configurada, puede agregarla a más intervalos IP seleccionándola de la lista. Puede agregar tantas etiquetas IP como quiera para cada intervalo. Las etiquetas IP se pueden usar al crear directivas.  Además de configurar las etiquetas IP, Cloud App Security tiene etiquetas integradas que no son configurables. Puede ver la lista de etiquetas en el [Filtro de etiquetas IP](activity-filters.md).  
   
 6.  Las **categorías IP** sirven para reconocer fácilmente las actividades de las direcciones IP interesantes. Las categorías están disponibles en el portal, pero requieren una configuración de usuario para saber qué direcciones IP están incluidas en cada categoría, excepto la categoría de "De riesgo", que incluye dos etiquetas IP: proxy anónimo y Tor.  
   
@@ -232,6 +230,6 @@ Cloud App Security está acoplado a Azure Active Directory para la autenticació
   
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO4-->
 
 

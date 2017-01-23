@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 1/8/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,19 +14,91 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
-ms.openlocfilehash: 43069f7a9f91dc34f4ce3ebb52ca399441bbb1f1
+ms.sourcegitcommit: 98b16c96c31039248bdfbe57f980b3ae6a26a7de
+ms.openlocfilehash: 2998a0a9aa2cfa234d8a6a45a6eb0e1646ee2a2a
 
 
 ---
 
 # <a name="govern"></a>Gobierno
 
+## <a name="file-governance-actions"></a>Acciones de gobierno relacionadas con archivos  
+Las siguientes acciones de gobierno pueden realizarse en un archivo o usuario específico o bien desde una directiva concreta.
+  
+-   Notificaciones  
+  
+    -   Alertas: las alertas pueden desencadenarse en el sistema y propagarse a través de mensajes de correo electrónico y de texto, según el nivel de gravedad.  
+  
+    -   Notificación de correo electrónico de usuario: es posible personalizar los mensajes de correo electrónico y enviarlos a todos los propietarios de archivos infractores.  
+  
+    -   Administrador de CC: según la integración de directorios del usuario, también se pueden enviar notificaciones de correo electrónico al administrador de la persona que haya infringido una directiva.  
+  
+-   Enviar una notificación a usuarios concretos: lista específica de direcciones de correo electrónico que recibirán las notificaciones.  
+  
+-   Enviar una notificación al último editor del archivo: se envían notificaciones a la última persona que ha modificado el archivo.  
+  
+-   Acciones de gobierno en aplicaciones  
+  
+     Se pueden aplicar acciones pormenorizadas por aplicación. Las acciones específicas varían según la terminología de la aplicación.  
+  
+    -   Cambio del uso compartido  
+  
+        -   Quitar el uso compartido público: permite el acceso únicamente a los colaboradores con nombre, por ejemplo, Quitar el acceso público a Google Apps y Quitar el vínculo compartido directo a Box.  
+  
+        -   Quitar usuarios externos: permite el acceso únicamente a los usuarios de la empresa.  
+  
+        -   Convertir en privado: solo el propietario puede tener acceso al archivo. Se quitan todos los recursos compartidos.  
+  
+        -   Quitar un colaborador: quita un colaborador específico del archivo.  
+  
+    -   Cuarentena  
+  
+        -   Poner en cuarentena de usuario: permite el autoservicio moviendo el archivo a una carpeta de cuarentena controlada por el usuario.  
+  
+        -   Poner en cuarentena de administrador: el archivo se pone en cuarentena en la unidad del administrador y este tiene que aprobarlo.  
+  
+-   Heredar permisos del primario: esta acción de control le permite quitar el conjunto de permisos específicos para un archivo o carpeta en Office 365 y revertirlos a los permisos establecidos para la carpeta principal.
+-   Enviar a la papelera: el archivo se mueve a la carpeta de la papelera.
+  
+![alertas de crear directiva](./media/policy_create-alerts.png "alertas de crear directiva")  
+  
+ 
+## <a name="activity-governance-actions"></a>Acciones de control de actividades  
+
+- Notificaciones  
+  
+    -   Alertas: las alertas pueden desencadenarse en el sistema y propagarse a través de mensajes de correo electrónico y de texto, según el nivel de gravedad.  
+  
+    -   Notificación de correo electrónico de usuario: es posible personalizar los mensajes de correo electrónico y enviarlos a todos los propietarios de archivos infractores.  
+  
+    -   Administrador de CC: según la integración de directorios del usuario, también se pueden enviar notificaciones de correo electrónico al administrador de la persona que haya infringido una directiva.  
+  
+    -   Enviar una notificación a usuarios adicionales: lista específica de direcciones de correo electrónico que recibirán las notificaciones.  
+  
+- Acciones de gobierno en aplicaciones  
+  
+    -   Se pueden aplicar acciones granulares por aplicación. Las acciones específicas varían según la terminología de la aplicación.  
+  
+    -   Suspender usuario: se suspende al usuario de la aplicación.  
+  
+    -   Revocar contraseña: se revoca la contraseña del usuario y se le obliga a establecer una contraseña nueva en su siguiente inicio de sesión.  
+  
+     ![directiva de actividad, ref6](./media/activity-policy-ref6.png "directiva de actividad, ref6")  
+  
+
+## <a name="governance-conflicts"></a>Conflictos de gobierno
+
+Después de crear varias directivas, puede darse el caso de que sus acciones de gobierno se superpongan. Si es así, Cloud App Security procesará las acciones de gobierno de la manera siguiente:
+
+- Si dos directivas contienen acciones que forman parte de la otra directiva (por ejemplo, **Quitar recursos compartidos externos** se incluye en **Hacer privado**), Cloud App Security resolverá el conflicto y se aplicará la acción más restrictiva.
+- Si las acciones no tienen ninguna relación (por ejemplo, **Enviar una notificación al propietario** y **Hacer privado**), se llevarán a cabo ambas acciones.
+- Si las acciones entran en conflicto (por ejemplo **Cambiar el propietario al usuario A** y **Cambiar el propietario al usuario B**), pueden darse resultados diferentes para cada coincidencia. Es importante cambiar las directivas para evitar conflictos, ya que pueden producir cambios no deseados en la unidad que serán difíciles de detectar.
+
 ## <a name="governance-log"></a>Registro de gobierno
 El registro de gobierno proporciona un registro del estado de cada tarea que Cloud App Security deba ejecutar, incluidas las tareas manuales y automáticas. Entre estas tareas se incluyen las tareas definidas en las directivas, las acciones de gobierno establecidas en los archivos y los usuarios, y cualquier otra acción que haya determinado que debe realizar Cloud App Security. El registro de gobierno también proporciona información sobre el resultado correcto o incorrecto de estas acciones. Puede volver a intentar o revertir algunas de las acciones de gobierno en el registro de gobierno. 
 
 A continuación se muestra una lista completa de las acciones que Cloud App Security permite realizar. Estas acciones se habilitarán en varios lugares de la consola, según se desprende de la columna **Ubicación**. Cada acción de gobierno realizada se incluye en el registro de gobierno.
-Para obtener información sobre cómo se tratan las acciones de gobierno cuando hay conflictos de directivas, consulte [Policy Conflicts](control-cloud-apps-with-policies.md) (Conflictos de directivas). 
+Para obtener información sobre cómo se tratan las acciones de control cuando hay conflictos de directivas, vea [Policy Conflicts](control-cloud-apps-with-policies.md) (Conflictos de directivas).
 
 **Ubicación**|**Tipo de objeto de destino**|**Acción de gobierno**|**Descripción**|**Conectores relacionados** 
 ---------|---------|---------|---------|---------
@@ -70,83 +142,6 @@ Para obtener información sobre cómo se tratan las acciones de gobierno cuando 
 |Configuración > Configuración de Cloud Discovery > Cargar registros manualmente/Cargar registros automáticamente|Cloud Discovery|Analizar datos de Cloud Discovery|Notificación de que todos los datos de registro se han analizado.|Detección|
 
 
-## <a name="file-governance-actions"></a>Acciones de gobierno relacionadas con archivos  
-Las siguientes acciones de gobierno pueden realizarse en un archivo o usuario específico o bien desde una directiva concreta.
-  
--   Notificaciones  
-  
-    -   Alertas: las alertas pueden desencadenarse en el sistema y propagarse a través de mensajes de correo electrónico y de texto, según el nivel de gravedad.  
-  
-    -   Notificación de correo electrónico de usuario: es posible personalizar los mensajes de correo electrónico y enviarlos a todos los propietarios de archivos infractores.  
-  
-    -   Administrador de CC: según la integración de directorios del usuario, también se pueden enviar notificaciones de correo electrónico al administrador de la persona que haya infringido una directiva.  
-  
--   Enviar una notificación a usuarios concretos: lista específica de direcciones de correo electrónico que recibirán las notificaciones.  
-  
--   Enviar una notificación al último editor del archivo: se envían notificaciones a la última persona que ha modificado el archivo.  
-  
--   Acciones de gobierno en aplicaciones  
-  
-     Se pueden aplicar acciones pormenorizadas por aplicación. Las acciones específicas varían según la terminología de la aplicación.  
-  
-    -   Cambio del uso compartido  
-  
-        -   Quitar el uso compartido público: permite el acceso únicamente a los colaboradores con nombre, por ejemplo, Quitar el acceso público a Google Apps y Quitar el vínculo compartido directo a Box.  
-  
-        -   Quitar usuarios externos: permite el acceso únicamente a los usuarios de la empresa.  
-  
-        -   Convertir en privado: solo el propietario puede tener acceso al archivo. Se quitan todos los recursos compartidos.  
-  
-        -   Quitar un colaborador: quita un colaborador específico del archivo.  
-  
-    -   Cuarentena  
-  
-        -   Poner en cuarentena de usuario: permite el autoservicio moviendo el archivo a una carpeta de cuarentena controlada por el usuario.  
-  
-        -   Poner en cuarentena de administrador: el archivo se pone en cuarentena en la unidad del administrador y este tiene que aprobarlo.  
-  
--   Enviar a la papelera: el archivo se mueve a la carpeta de la papelera.
-  
-![alertas de crear directiva](./media/policy_create-alerts.png "policy_create alerts")  
-  
- 
-## <a name="activity-match-parameters"></a>Parámetros de coincidencia de actividad  
-Especifique la cantidad de repeticiones de la actividad necesarias para que haya coincidencia con la directiva, por ejemplo, el establecimiento de una directiva para alertar cuando un usuario realice diez intentos de inicio de sesión incorrectos en un período de tiempo de dos minutos.  
-El valor predeterminado, **Parámetros de coincidencia de actividad**, genera una coincidencia para cada actividad única que cumple todos los filtros de la actividad.   
-Con **Actividad repetida** puede establecer el número de actividades repetidas, la duración del período en el que se cuentan las actividades e incluso especificar que todas las actividades las debe realizar el mismo usuario y en la misma aplicación en la nube.  
-  
-### <a name="actions"></a>Acciones  
-Notificaciones  
-  
--   Alertas: las alertas pueden desencadenarse en el sistema y propagarse a través de mensajes de correo electrónico y de texto, según el nivel de gravedad.  
-  
--   Notificación de correo electrónico de usuario: es posible personalizar los mensajes de correo electrónico y enviarlos a todos los propietarios de archivos infractores.  
-  
--   Administrador de CC: según la integración de directorios del usuario, también se pueden enviar notificaciones de correo electrónico al administrador de la persona que haya infringido una directiva.  
-  
--   Enviar una notificación a usuarios adicionales: lista específica de direcciones de correo electrónico que recibirán las notificaciones.  
-  
-Acciones de gobierno en aplicaciones  
-  
--   Se pueden aplicar acciones granulares por aplicación. Las acciones específicas varían según la terminología de la aplicación.  
-  
--   Suspender usuario: se suspende al usuario de la aplicación.  
-  
--   Revocar contraseña: se revoca la contraseña del usuario y se le obliga a establecer una contraseña nueva en su siguiente inicio de sesión.  
-  
-     ![directiva de actividad, ref6](./media/activity-policy-ref6.png "activity policy ref6")  
-  
-
-## <a name="governance-conflicts"></a>Conflictos de gobierno
-
-Después de crear varias directivas, puede darse el caso de que sus acciones de gobierno se superpongan. Si es así, Cloud App Security procesará las acciones de gobierno de la manera siguiente:
-
-- Si dos directivas contienen acciones que forman parte de la otra directiva (por ejemplo, **Quitar recursos compartidos externos** se incluye en **Hacer privado**), Cloud App Security resolverá el conflicto y se aplicará la acción más restrictiva.
-- Si las acciones no tienen ninguna relación (por ejemplo, **Enviar una notificación al propietario** y **Hacer privado**), se llevarán a cabo ambas acciones.
-- Si las acciones entran en conflicto (por ejemplo **Cambiar el propietario al usuario A** y **Cambiar el propietario al usuario B**), pueden darse resultados diferentes para cada coincidencia. Es importante cambiar las directivas para evitar conflictos, ya que pueden producir cambios no deseados en la unidad que serán difíciles de detectar.
-
-
-
 ## <a name="see-also"></a>Consulte también  
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 [Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -155,6 +150,6 @@ Después de crear varias directivas, puede darse el caso de que sus acciones de 
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 
