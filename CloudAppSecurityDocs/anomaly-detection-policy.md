@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2016
+ms.date: 1/8/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 002e0b82296162ee13fa378c4641cc8f21547237
-ms.openlocfilehash: ca51d36a6d899124d3d4eb84ded1972ad9c8bab4
+ms.sourcegitcommit: 98b16c96c31039248bdfbe57f980b3ae6a26a7de
+ms.openlocfilehash: a0d8975ae20830fe1b9d4ce3c1a54858038eebd3
 
 
 ---
@@ -60,6 +60,8 @@ Cada factor de riesgo, cuando se incluye en la evaluación del riesgo, tiene sus
   
 -   Agente de usuario y dispositivo: actividad realizada por un usuario mediante un agente de usuario o dispositivo que nunca ha usado otro usuario, este usuario concreto nunca ha usado o nunca se ha usado en absoluto.  
   
+-   Tasa de actividad: actividades repetidas que realiza un usuario durante un breve período. 
+
 ### <a name="sensitivity"></a>Sensibilidad  
 Hay dos formas de controlar el número de alertas activadas por la directiva:  
   
@@ -76,6 +78,6 @@ Hay dos formas de controlar el número de alertas activadas por la directiva:
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 
