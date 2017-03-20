@@ -1,11 +1,11 @@
 ---
-title: Actividades | Microsoft Docs
+title: Visibilidad de las actividades de aplicaciones en la nube | Microsoft Docs
 description: "En este tema se proporciona una lista de actividades, filtros y parámetros de coincidencia que se pueden aplicar a directivas de actividad."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/26/2016
+ms.date: 3/6/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,9 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 98b16c96c31039248bdfbe57f980b3ae6a26a7de
-ms.openlocfilehash: 6f465f1a322168e86208042deea405a756be6e57
-
-
+ms.openlocfilehash: 548dceaedc5bc22a5ca6da0690702b411b2987fb
+ms.sourcegitcommit: 80d9396833957429cf4fe178f336ab2e1793069e
+translationtype: HT
 ---
 # <a name="activities"></a>Actividades
 Cloud App Security le ofrece visibilidad en todas las actividades de las aplicaciones conectadas. Después de conectar Cloud App Security con una aplicación mediante el conector de aplicaciones, Cloud App Security examina todas las actividades que se han producido (el período de tiempo de examen retroactivo varía según la aplicación) y después se actualiza constantemente con nuevas actividades. Se puede filtrar el **registro de actividades** para que pueda buscar actividades específicas. Puede crear directivas basadas en las actividades y después definir sobre qué quiere recibir alertas y actuar en consecuencia. También puede buscar actividades realizadas en determinados archivos. El tipo de actividades y la información que obtenemos de cada actividad dependen de la aplicación y de qué tipo de datos puede proporcionar la aplicación. 
@@ -42,7 +40,7 @@ Para profundizar en actividades más específicas, puede ampliar el filtro bási
 ## <a name="activity-filters"></a>Filtros de actividad
 A continuación se muestra una lista de los filtros de actividad que se pueden aplicar. La mayoría de los filtros admiten varios valores, así como NOT, para proporcionarle una herramienta muy eficaz para la creación de directivas.  
   
--   Identificador de actividad: busca solo actividades específicas por su identificador. Este filtro es muy útil cuando se conecta MCAS con SIEM (mediante el agente SIEM) y se quiere investigar más las alertas del portal MCAS.  
+-   Identificador de actividad: busca solo actividades específicas por su identificador. Este filtro es muy útil cuando se conecta Cloud App Security con SIEM (mediante el agente SIEM) y se quiere investigar más las alertas del portal Cloud App Security.  
   
 -   Objetos de actividad: busca los objetos en los que se ha realizado la actividad. Este filtro se aplica a objetos de archivo, carpeta, usuario o aplicación.
     - Identificador de objeto de actividad: el identificador del objeto (identificador del archivo, carpeta, usuario o aplicación).
@@ -94,15 +92,19 @@ A continuación se muestra una lista de los filtros de actividad que se pueden a
 -   ISP registrado: ISP desde el que se ha realizado la actividad.   
 
 -  Origen: busque el origen desde el que se detectó la actividad. El origen podría ser cualquiera de los siguientes:
-  - Conector de aplicaciones: los registros provienen directamente del conector de la API de la aplicación.
-  - Análisis del conector de aplicaciones: enriquecimientos de Cloud App Security basados en la obtención de información del conector de la API.
+  -    Conector de aplicaciones: los registros provienen directamente del conector de la API de la aplicación.
+  -    Análisis del conector de aplicaciones: enriquecimientos de Cloud App Security basados en la obtención de información del conector de la API.
   
 
 -   Usuario: el usuario que realizó la actividad, que se puede filtrar en el dominio, grupo, nombre u organización. Para filtrar las actividades sin un usuario específico, puede usar el operador 'no establecido'.  
     -   Dominio del usuario: busca un dominio de usuario específico.
-    -   Grupo de usuarios: grupos de usuarios concretos importados automáticamente por Cloud App Security desde la aplicación en la nube, por ejemplo, todas las actividades realizadas por los administradores de Office 365.
-    -   Nombre de usuario: busca por un nombre de usuario específico.
     -   Organización de usuario: unidad organizativa del usuario que ha realizado la actividad, por ejemplo, todas las actividades realizadas por usuarios de marketing o EMEA.  
+    -   Grupo de usuarios: grupos de usuarios específicos que puede importar de aplicaciones conectadas, como administradores de Office 365.  
+    -   Nombre de usuario: busca por un nombre de usuario específico. Para ver una lista de los usuarios de un grupo de usuarios específico, en el **Cajón de actividades**, haga clic en el nombre del grupo de usuarios. Esto le llevará a la página de cuentas, en la que se enumeran todos los usuarios del grupo. Desde ahí puede profundizar en los detalles de las cuentas de usuarios específicos del grupo.
+       -  Los filtros **Grupo de usuarios** y **Nombre de usuario** se pueden filtrar aún más si se usa el filtro **Como** y se selecciona el rol del usuario, que puede ser uno de los siguientes:
+            - Objeto de actividad solo: esto significa que el usuario o grupo de usuarios seleccionado no ha realizado la actividad en cuestión, sino que era el objeto de la actividad.
+            - Solo actor: esto significa que el usuario o grupo de usuarios ha realizado la actividad.
+            - Cualquier rol: esto significa que el usuario o grupo de usuarios ha participado en la actividad, como la persona que ha realizado la actividad o como objeto de la actividad.
 
 -   Agente de usuario: agente de usuario desde el que se ha realizado la actividad.  
   
@@ -131,8 +133,3 @@ Para obtener una lista de las acciones de control disponibles, vea [Acciones de 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Jan17_HO2-->
-
-
