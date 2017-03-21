@@ -1,11 +1,11 @@
 ---
-title: Directivas de archivos | Microsoft Docs
+title: Crear directivas para supervisar y proteger los archivos de las aplicaciones en la nube | Microsoft Docs
 description: "En este tema se describe el procedimiento para configurar una directiva de datos para supervisar y controlar los datos y los archivos durante el uso de aplicaciones en la nube de la organización."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,20 +13,17 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
-ms.openlocfilehash: 21edb17ac01d7f54cab9b7b2ced838752a916c1e
-
-
+ms.openlocfilehash: fdaacd43a21ec1cd8d0bf8fdee08e4918af47e68
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
 # <a name="file-policies"></a>Directivas de archivo  
 Las directivas de archivo permiten aplicar una amplia gama de procesos automatizados, con lo que se aprovechan las API del proveedor en la nube. Las directivas se pueden establecer para proporcionar análisis de conformidad constantes, tareas de exhibición de documentos electrónicos legales, DLP para el contenido confidencial compartido públicamente y otros muchos casos de uso.  
 Cloud App Security puede supervisar cualquier tipo de archivo basado en más de 20 filtros de metadatos (por ejemplo, nivel de acceso o tipo de archivo). 
  
 **Tipos de archivo compatibles** 
 
-Los motores de DLP integrados de Cloud App Security realizan la inspección de contenido mediante la extracción de texto de todos los tipos de archivo comunes (más de 100), incluidos los de Office, Open Office, archivos comprimidos, varios formatos de texto enriquecido, XML, HTML y muchos más.
+Los motores de DLP integrados de Cloud App Security realizan la inspección de contenido mediante la extracción de texto de todos los tipos de archivo comunes (más de&100;), incluidos los de Office, Open Office, archivos comprimidos, varios formatos de texto enriquecido, XML, HTML y muchos más.
 
 El motor combina tres aspectos en cada directiva:  
   
@@ -50,7 +47,7 @@ Estos son algunos ejemplos de las directivas de archivo que se pueden crear:
     Reciba una alerta sobre cualquier archivo compartido con cuentas propiedad de determinados dominios externos (por ejemplo, un dominio de la competencia). Seleccione el dominio externo con el que quiera limitar el uso compartido.  
   
 -   Poner en cuarentena archivos compartidos que no se han modificado durante el último período:  
-    Reciba una alerta sobre los archivos compartidos que nadie haya modificado recientemente, con objeto de ponerlos en cuarentena u optar por activar una acción automatizada. Excluir todos los archivos privados que no se han modificado durante un intervalo de fechas especificado. En Google Apps, puede poner en cuarentena estos archivos si activa la casilla para poner archivos en cuarentena de la página de creación de directivas.  
+    Reciba una alerta sobre los archivos compartidos que nadie haya modificado recientemente, con objeto de ponerlos en cuarentena u optar por activar una acción automatizada. Excluir todos los archivos privados que no se han modificado durante un intervalo de fechas especificado. En G Suite, puede poner en cuarentena estos archivos si activa la casilla para poner archivos en cuarentena de la página de creación de directivas.  
   
 -   Uso compartido con usuarios no autorizados:  
     Reciba una alerta sobre los archivos que se comparten con un grupo de usuarios no autorizado de la organización. Seleccione los usuarios con los que el uso compartido está prohibido.  
@@ -76,7 +73,7 @@ Haga lo siguiente para crear una directiva de archivo:
 7.  Seleccione el **método de inspección de contenido**. El DLP integrado permite filtrar archivos por su contenido. Para examinar archivos en busca de contenido, seleccione **DLP integrado**. Una vez habilitada la inspección de contenido, puede optar entre usar expresiones preestablecidas o buscar otras expresiones personalizadas, como una subcadena o una [expresión regular](working-with-the-regex-engine.md) propia.  
     Además, puede especificar una expresión regular para excluir un archivo de los resultados. Esto es muy útil si tiene un estándar de palabra clave de clasificación interna que quiera excluir de la directiva.  
     También puede decidir cuál es el número mínimo de infracciones de contenido que debe producirse antes de que el archivo se considere una infracción. Por ejemplo, puede elegir 10 si quiere recibir alertas sobre archivos con al menos 10 números de tarjeta de crédito en su contenido.  
-    Cuando el contenido se compara con la expresión seleccionada, puede elegir enmascarar la coincidencia de los registros y la notificación de infracción. Si opta por esto, el texto de la infracción se reemplazará por caracteres “X”. Recuerde que los números se reemplazan por caracteres "#" y nunca se almacenan en Cloud App Security.  También puede seleccionar la opción de mostrar los últimos 4 caracteres de una infracción. De manera predeterminada, las infracciones se enmascaran completamente y se muestran en su contexto mostrando 40 caracteres antes y después de la infracción. Esta opción mostrará los últimos 4 caracteres de la infracción.
+    Cuando el contenido se compara con la expresión seleccionada, el texto de la infracción se reemplazará por caracteres "X". De manera predeterminada, las infracciones se enmascaran completamente y se muestran en su contexto mostrando 40 caracteres antes y después de la infracción. Los números del contexto de la expresión se reemplazan por caracteres "#" y nunca se almacenan en Cloud App Security. Puede seleccionar la opción de **quitar máscara de los últimos 4 caracteres de una infracción** para mostrarlos.
   
 8.  Elija las acciones de **gobierno** que quiera que Cloud App Security lleve a cabo cuando detecte una coincidencia.  
   
@@ -88,7 +85,7 @@ Haga lo siguiente para crear una directiva de archivo:
 >   
 >  Para obtener orientación, puede usar el botón **Editar y obtener vista previa de resultados** de la sección Filtros.  
   
-![editar la directiva de archivo y obtener una vista previa de resultados](./media/file-policy-edit-and-preview-results.png "editar la directiva de archivo y obtener una vista previa de resultados")  
+ ![editar la directiva de archivo y obtener una vista previa de resultados](./media/file-policy-edit-and-preview-results.png "editar la directiva de archivo y obtener una vista previa de resultados")  
   
 10. Para ver coincidencias con la directiva de archivo, es decir, archivos sospechosos de infringir la directiva, haga clic en **Control** y, después, en **Directivas**. Filtre los resultados para mostrar solo las directivas de archivo con el filtro **Tipo** en la parte superior. Para obtener más información sobre las coincidencias de cada directiva, haga clic en una directiva. De este modo, se muestran los archivos que coinciden ahora con la directiva. Haga clic en la pestaña **Historial** para ver el historial de los 6 meses anteriores con los archivos que coincidieron con la directiva.     
   
@@ -120,8 +117,3 @@ Cada directiva se compone de las siguientes partes:
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO2-->
-
-

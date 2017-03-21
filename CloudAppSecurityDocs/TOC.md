@@ -4,14 +4,15 @@
 # Implementar
 ## [Introducción](getting-started-with-cloud-app-security.md)
 ## [Personalizar el portal](general-setup.md)
+### [Grupos de usuarios](user-groups.md)
+### [Etiquetas e intervalos IP](ip-tags.md)
 ## [Implementar Cloud Discovery](set-up-cloud-discovery.md)
 ### [Crear informes de instantáneas de Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 ### [Configurar la carga de registros automática para informes continuos](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Anonimización de datos de Cloud Discovery](cloud-discovery-anonymizer.md)
-### [Personalizar Cloud Discovery](working-with-cloud-discovery-data.md)
 ## [Conectar aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Conectar Box](connect-box-to-microsoft-cloud-app-security.md)
-### [Conectar Google Apps](connect-google-apps-to-microsoft-cloud-app-security.md)
+### [Conectar G Suite](connect-google-apps-to-microsoft-cloud-app-security.md)
 ### [Conectar Office 365](connect-office-365-to-microsoft-cloud-app-security.md)
 ### [Conectar AWS](connect-aws-to-microsoft-cloud-app-security.md)
 ### [Conectar Dropbox](connect-dropbox-to-microsoft-cloud-app-security.md)
@@ -20,6 +21,7 @@
 ### [Conectar Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
 # Use
 ## [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
+## [Trabajo con Cloud Discovery](working-with-cloud-discovery-data.md)
 ## [Investigación](investigate.md)
 ### [Referencia de informes integrados](built-in-report-reference.md)
 ### [Archivos](file-filters.md)
@@ -36,7 +38,8 @@
 ##### [Trabajar con el motor de RegEx](working-with-the-regex-engine.md)
 #### [Referencia de plantillas de directiva](policy-template-reference.md)
 ### [Administración de permisos de aplicación](manage-app-permissions.md)
-## [Gobierno](governance-actions.md)
+### [Control de aplicaciones conectadas](governance-actions.md)
+### [Control de aplicaciones detectadas](governance-discovery.md)
 ## Integrar
 ### [Integración de Azure Information Protection](azip-integration.md)
 ### [Integración de SIEM](siem.md)
@@ -44,7 +47,3 @@
 ## [Solución de problemas de Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Solución de problemas de conectores de API mediante mensajes de error](troubleshooting-api-connectors-using-error-messages.md)
 ## [Solucionar problemas relacionados con la inspección de contenido](troubleshooting-content-inspection.md)
-
-<!--HONumber=Jan17_HO2-->
-
-

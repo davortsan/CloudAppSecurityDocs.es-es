@@ -1,11 +1,11 @@
 ---
-title: "Investigación | Microsoft Docs"
+title: Investigar los riesgos y las actividades sospechosas de las aplicaciones en la nube con Cloud App Security | Microsoft Docs
 description: "En este tema se proporciona un esquema del proceso de investigación de alertas, problemas y actividades sospechosas mediante Cloud App Security."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: fd3be51a8a81b688383b40a19582f5739c889580
-ms.openlocfilehash: f1b32304a8218316f744defa4632b3e8a6af771d
-
-
+ms.openlocfilehash: c4bd7c44ec5ced6da82de3c7bf8f3aa1fd12a517
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
 # <a name="investigate"></a>Investigar
-Después de que Cloud App Security se ejecute en su entorno en la nube, será necesaria una fase de aprendizaje e investigación sobre el uso de las herramientas de Cloud App Security para adquirir un mayor conocimiento de lo que ocurre en su entorno en la nube. Luego, y según su entorno concreto y su uso, puede identificar los requisitos para proteger su organización de posibles riesgos.  
+Después de que Cloud App Security se ejecute en su entorno en la nube, será necesaria una fase de aprendizaje e investigación sobre el uso de las herramientas de Cloud App Security para adquirir un mayor conocimiento de lo que ocurre en su entorno en la nube. Luego, y según su entorno concreto y su uso, puede identificar los requisitos para proteger su organización de posibles riesgos.
 
 En este tema se describe cómo realizar una investigación para comprender mejor lo que está ocurriendo en su entorno en la nube.  
 
@@ -34,17 +31,17 @@ Los siguientes paneles están disponibles para ayudarle a investigar las aplicac
 |Panel de la aplicación: general|Información general sobre el uso de las aplicaciones por ubicación, gráficos de uso por número de usuarios.|  
 |Panel de la aplicación: datos|Análisis de los datos almacenados en la aplicación; desglose por tipo de archivo y por nivel de uso compartido de archivos|  
 |Panel de la aplicación: archivos|Profundización en archivos, posibilidad de filtrar por propietario, nivel de uso compartido, etc., así como realización de acciones de gobierno (como poner en cuarentena)|  
-|Panel de la aplicación: aplicaciones de terceros|Profundización en las aplicaciones de terceros implementadas actualmente, como Google Apps, y establecimiento de directivas para esas aplicaciones|  
+|Panel de la aplicación: aplicaciones de terceros|Profundización en las aplicaciones de terceros implementadas actualmente, como G Suite, y definición de directivas para esas aplicaciones|  
 |Panel del usuario|Información general completa del perfil de usuario en la nube, incluidos grupos, ubicaciones, actividades recientes, alertas relacionadas y exploradores usados|  
 
-##  <a name="a-namesanctionappa-tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp"></a> Marcar aplicaciones como autorizadas o no autorizadas  
+##  <a name="sanctionapp"></a> Marcar aplicaciones como autorizadas o no autorizadas  
 Marcar aplicaciones como autorizadas o no autorizadas es un paso importante para comprender su entorno en la nube. Después de autorizar una aplicación, puede filtrar por las aplicaciones que no estén autorizadas e iniciar la migración a las aplicaciones autorizadas que sean del mismo tipo.  
 
 -   En la consola de Cloud App Security, vaya a Catálogo de aplicaciones o Aplicaciones detectadas.  
 
--   En la lista de aplicaciones, en la fila que contenga la aplicación que quiera marcar como autorizada, elija los tres puntos al final de la fila ![Puntos para marcar como autorizada](./media/sanction-three-dots.png "Tag as sanctioned dots") y elija **Marcar como autorizada**.  
+-   En la lista de aplicaciones, en la fila que contenga la aplicación que quiera marcar como autorizada, elija los tres puntos al final de la fila ![Puntos para marcar como autorizada](./media/sanction-three-dots.png "Puntos para marcar como autorizada") y elija **Marcar como autorizada**.  
 
-     ![Marcar como autorizada](./media/mark-as-sanctioned.png "tag as sanctioned")  
+     ![Marcar como autorizada](./media/mark-as-sanctioned.png "Marcar como autorizada")  
 
 
 ## <a name="use-the-investigation-tools"></a>Usar las herramientas de investigación  
@@ -85,7 +82,7 @@ Marcar aplicaciones como autorizadas o no autorizadas es un paso importante para
 
 4.  Vaya a **Investigar** y, luego, seleccione una aplicación. El panel de la aplicación se abre y le presenta información y datos. Puede usar las fichas de la parte superior para comprobar lo siguiente:  
 
-     ![Panel de la aplicación](./media/investigate-app.png "investigate app")  
+     ![Panel de la aplicación](./media/investigate-app.png "Investigar aplicación")  
 
     -   ¿Qué tipo de dispositivos usan los usuarios para conectarse a la aplicación?  
 
@@ -135,7 +132,7 @@ Imaginemos que, en teoría, ninguna dirección IP de riesgo puede tener acceso a
 
 5.  En **Filtros de actividad**, elija **+** para agregar un filtro. Desplácese hasta **Etiqueta IP** y, luego, elija **Anónimo** y **Tor**.  
 
-     ![Ejemplo de directiva de IP de riesgo](./media/example-policy-risky-ips.png "example policy risky ips")  
+     ![Ejemplo de directiva de IP de riesgo](./media/example-policy-risky-ips.png "Ejemplo de directiva de IP de riesgo")  
 
 Con la directiva en marcha, le sorprenderá ver que recibe una alerta que indica que la directiva se ha infringido.  
 
@@ -155,9 +152,3 @@ Con la directiva en marcha, le sorprenderá ver que recibe una alerta que indica
 Para obtener información sobre cómo controlar la aplicación de la nube de su organización, consulte [Control](control.md).   
 Para obtener soporte técnico, visite la página de [soporte técnico asistido de Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031).  
 Los clientes Premier también pueden elegir Cloud App Security directamente desde el [Portal Premier](https://premier.microsoft.com/).  
-
-
-
-<!--HONumber=Nov16_HO5-->
-
-
