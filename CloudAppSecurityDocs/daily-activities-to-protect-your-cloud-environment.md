@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
-ms.openlocfilehash: f4cf027220a7f4329a72d662f6ccf4d9ab02ede4
-
-
+ms.openlocfilehash: 28068d41d44aa0b2f7a5e5950546a5e185d77eba
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="daily-activities-to-protect-your-cloud-environment"></a>Actividades diarias para proteger el entorno de nube
 Después de tener Cloud App Security configurado y en funcionamiento tendrá que configurar secuencias de datos, autorizar las aplicaciones que quiera permitir que utilicen los usuarios y configurar directivas para supervisar el entorno de la nube. A continuación, puede utilizar Cloud App Security para controlar y proteger la nube, y para administrar los riesgos.  
 
@@ -36,7 +33,7 @@ En el panel de Cloud App Security se proporciona una visión general de las acti
 
 Es recomendable que consulte el panel a diario para ver qué nuevas alertas se han activado. También es un buen lugar para vigilar el estado del entorno de la nube para hacerse una idea de lo que está ocurriendo en él.  
 
-![Panel de Cloud App Security](./media/dashboard.png "dashboard")  
+![Panel de Cloud App Security](./media/dashboard.png "Panel de Cloud App Security")  
 
 ## <a name="handle-your-alerts"></a>Administrar las alertas  
 Las alertas son los puntos de entrada para comprender el entorno de nube en más profundidad. Es posible que quiera crear nuevas directivas según lo que encuentre. Por ejemplo, es posible que vea un administrador iniciando sesión desde Groenlandia y nadie en su organización nunca inició sesión desde Groenlandia antes. Puede crear una directiva que suspende automáticamente una cuenta de administrador cuando se utiliza para iniciar sesión desde esa ubicación.  
@@ -47,7 +44,7 @@ Es buena idea revisar todas las alertas y usarlas como herramientas para modific
 
      En esta sección del panel se proporciona visibilidad completa de cualquier actividad sospechosa o infracción de las políticas establecidas. A continuación, le ayuda a proteger la postura de seguridad que ha definido para su entorno de la nube.  
 
-     ![Alertas](./media/alerts.png "alerts")  
+     ![Alertas](./media/alerts.png "Alertas")  
 
 2.   Debe investigar y determinar la naturaleza de la infracción y la respuesta necesaria en cada alerta.  
 
@@ -109,11 +106,11 @@ Después de echar un vistazo a las alertas abiertas, vaya al centro de directiva
 
      Si la directiva está establecida para detectar infracciones de cumplimiento normativo y alguien guarda números de tarjetas de crédito en archivos en OneDrive, tendrá una coincidencia en la directiva.  
 
-     ![Coincidencias de PCI](./media/pci-matches.png "pci matches")  
+     ![Coincidencias de PCI](./media/pci-matches.png "Coincidencias de PCI")  
 
 -   Seleccione la coincidencia para ver los archivos reales que han infringido la directiva.  
 
-     ![Coincidencias de contenido de PCI](./media/pci-content-matches.png "pci content matches")  
+     ![Coincidencias de contenido de PCI](./media/pci-content-matches.png "Coincidencias de contenido de PCI")  
 
      Puede seleccionar el propio archivo para obtener información sobre los archivos.  
 
@@ -121,15 +118,9 @@ Después de echar un vistazo a las alertas abiertas, vaya al centro de directiva
 
      Puede hacer clic en **Coincidencias** para ver los números de tarjeta de crédito reales.  
 
-     ![Coincidencias de contenido de números de tarjetas de crédito](./media/content-matches-ccn.png "content matches ccn")  
+     ![Coincidencias de contenido de números de tarjetas de crédito](./media/content-matches-ccn.png "Coincidencias de contenido de números de tarjetas de crédito")  
 
 ## <a name="next-steps"></a>Pasos siguientes  
 Para obtener más información acerca de la investigación de alertas, consulte [Investigar](investigate.md).  
 Para obtener soporte técnico, visite [la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 Los clientes Premier también pueden elegir Cloud App Security directamente desde el [Portal Premier](https://premier.microsoft.com/).  
-
-
-
-<!--HONumber=Nov16_HO5-->
-
-

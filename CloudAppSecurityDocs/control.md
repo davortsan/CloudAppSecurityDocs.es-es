@@ -1,11 +1,11 @@
 ---
-title: Control | Microsoft Docs
+title: "Cómo usar acciones de gobierno para controlar el uso de las aplicaciones en la nube | Microsoft Docs"
 description: "En este artículo se proporciona información sobre las acciones de gobierno que se pueden realizar en Cloud App Security para controlar el uso de aplicaciones en la nube de la organización."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,22 +13,19 @@ ms.technology:
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2f158e2f3643629d215eb23281b17a58ee7f78fc
-ms.openlocfilehash: 5a051fc106661fc2266587ac5dbbb8bbdabd88bc
-
-
+ms.openlocfilehash: 947e7e7cee59090a71085a4544bc20449399181a
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="control"></a>Control
 Puede aplicar acciones de gobierno a los archivos de los usuarios en el entorno de la nube. Después de haber investigado exhaustivamente y aprendido sobre la nube, puede utilizar las acciones de gobierno para ayudar a proteger la organización.  
 
 ## <a name="apply-governance-actions"></a>Aplicar acciones de gobierno  
 Puede aplicar acciones de gobierno desde las directivas, desde las alertas y desde el registro **Archivo**.  
 
-Puede revisar y ver en cualquier momento el estado de todas las acciones de gobierno aplicadas anteriormente si va al icono de engranaje **Configuración** ![icono de configuración](./media/settings-icon.png "settings icon") y elije **Registro de gobierno**.  
+Puede revisar y ver en cualquier momento el estado de todas las acciones de gobierno aplicadas anteriormente si va al icono de engranaje **Configuración** ![icono de configuración](./media/settings-icon.png "icono de configuración") y elije **Registro de gobierno**.  
 
-Para volver a aplicar cualquier acción de gobierno errónea, elija el icono **Reintentar** ![icono de reintento](./media/retry-icon.png "retry icon") para aplicarla de nuevo.  
+Para volver a aplicar cualquier acción de gobierno errónea, elija el icono **Reintentar** ![icono de reintento](./media/retry-icon.png "icono de reintento") para aplicarla de nuevo.  
 
 Hay acciones de gobierno distintas según el tipo de directiva, de infracción y de aplicación.  
 
@@ -42,7 +39,7 @@ Puesto que las acciones correctoras utilizan las API del proveedor de la nube, p
 >   
 >  Para obtener orientación, puede utilizar el botón **Editar y obtener vista previa de resultados** de la sección **Filtros**.  
 
-![Editar la directiva de archivo y obtener una vista previa de resultados](./media/file-policy-edit-and-preview-results.png "file policy edit and preview results")  
+![Editar la directiva de archivo y obtener una vista previa de resultados](./media/file-policy-edit-and-preview-results.png "Editar la directiva de archivo y obtener una vista previa de resultados")  
 
 ## <a name="migration"></a>Migración  
 Cloud App Security le ayuda a implementar las migraciones, ya que le informa de qué usuarios de la organización usan una determinada aplicación y le ofrece herramientas para supervisar la adopción de aplicaciones nuevas. También puede ayudarle a decidir qué tipos de aplicaciones debe ofrecer en la organización al proporcionarle las herramientas para saber lo que todos los usuarios ya están usando.  
@@ -56,7 +53,7 @@ Imagínese esta situación: hace poco adquirió Office 365 y quiere que todos lo
 
     1.  En el **panel de Cloud Discovery**, elija **Dropbox** y luego la ficha **Dirección IP** o **Usuarios**.  
 
-    2.  Elija la flecha ![Icono de flecha](./media/arrow-icon.png "arrow icon") y seleccione **Exportar**.  
+    2.  Elija la flecha ![Icono de flecha](./media/arrow-icon.png "icono de flecha") y seleccione **Exportar**.  
 
 ### <a name="find-more-secure-alternatives"></a>Buscar alternativas más seguras  
 El catálogo de servicios de Cloud App Security puede ayudarle a encontrar alternativas adecuadas para la organización en sustitución de las aplicaciones de riesgo que los usuarios puedan estar utilizando.  
@@ -75,9 +72,3 @@ Imagínese esta situación: está pensando en comprar una herramienta de product
 Para obtener información sobre cómo usar y configurar directivas para controlar el uso de la aplicación de la nube, consulte [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).   
 Para obtener soporte técnico, visite la página de [soporte técnico asistido de Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031).   
 Los clientes Premier también pueden elegir Cloud App Security directamente desde el [Portal Premier](https://premier.microsoft.com/).  
-
-
-
-<!--HONumber=Nov16_HO5-->
-
-

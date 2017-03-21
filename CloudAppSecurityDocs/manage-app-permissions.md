@@ -1,11 +1,11 @@
 ---
-title: "Administrar permisos de aplicación | Documentos de Microsoft"
+title: "Controlar qué aplicaciones en la nube de terceros obtienen permisos | Microsoft Docs"
 description: "Este artículo proporciona información sobre cómo puede controlar, prohibir y permitir permisos de aplicación de terceros."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
-ms.openlocfilehash: 156be8b048c12e5db0a4b1118314c0b600ded24a
-
-
+ms.openlocfilehash: 3866ae5606fd2add90338ac58a49edf646aa87c5
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="manage-app-permissions"></a>Administrar permisos de aplicación
 Muchas aplicaciones de productividad de terceros que puedan instalar los usuarios profesionales de su organización solicitan permiso para acceder a datos e información de usuario e iniciar sesión en nombre del usuario en otras aplicaciones de nube, como Office 365.  Cuando los usuarios instalan estas aplicaciones, a menudo hacen clic en Aceptar sin revisar detenidamente los detalles en el mensaje, incluyendo la concesión de permisos a la aplicación.  Este problema se agrava por el hecho de que es posible que el departamento de TI no tenga suficiente información para evaluar el riesgo de seguridad que supone una aplicación frente a la ventaja de productividad que ofrece. Dado que aceptar permisos de aplicación de terceros es un riesgo de seguridad potencial para la organización, supervisar los permisos de aplicación que conceden los usuarios le ofrece la visibilidad y el control necesarios para proteger a los usuarios y las aplicaciones. Los permisos de aplicación de Cloud App Security le permiten ver qué aplicaciones instaladas por el usuario tienen acceso a los datos de Office 365, los permisos que tienen y qué usuarios les concedieron acceso a sus cuentas de Office 365. Los permisos de aplicación le ayudan a decidir a qué aplicaciones permite que los usuarios tengan acceso y cuáles quiere prohibir.
 
@@ -113,8 +110,3 @@ Los filtros se aplicarán automáticamente y se actualizará la lista de aplicac
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

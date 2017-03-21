@@ -1,11 +1,11 @@
 ---
-title: "Anonimización de datos de Cloud Discovery | Microsoft Docs"
+title: "Proteger la privacidad de usuario en Cloud App Security mediante la anonimización de datos | Microsoft Docs"
 description: "En este artículo se proporciona información sobre cómo anonimizar los nombres de usuario en los datos de Cloud Discovery."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/27/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,10 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 99ad61811b68b47ac62b4bac83b611e535d4a6be
-ms.openlocfilehash: 049494e45caf670f753f6b5fbfbbf117462b7156
-
-
+ms.openlocfilehash: 5e3b10cc8fa00deb296076063a6b5f6cde76999e
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
-
 ## <a name="cloud-discovery-data-anonymization"></a>Anonimización de datos de Cloud Discovery
 
 La anonimización de datos de Cloud Discovery le permite proteger la privacidad del usuario. Una vez que el registro de datos se ha cargado en el portal de Cloud App Security, se depura el registro y se reemplaza toda la información de nombres de usuario con nombres de usuario cifrados. De este modo, todas las actividades de la nube se mantienen anónimas. Cuando sea necesario, para una investigación de seguridad específica (por ejemplo, debido a una infracción de seguridad o una actividad sospechosa del usuario), los administradores pueden resolver el nombre de usuario real. Si un administrador tiene un motivo para sospechar de un usuario específico, puede buscar el nombre de usuario cifrado de un nombre de usuario conocido y, después, comenzar la investigación usando el nombre de usuario cifrado. En el **Registro de gobierno** del portal se audita cada conversión de nombre de usuario.
@@ -77,8 +73,3 @@ Cómo funciona la anonimización de datos:
     
       
   
-
-
-<!--HONumber=Dec16_HO4-->
-
-

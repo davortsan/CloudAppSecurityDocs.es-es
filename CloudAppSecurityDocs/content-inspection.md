@@ -1,11 +1,11 @@
 ---
-title: "Inspección de contenido | Microsoft Docs"
+title: "Cómo realiza Cloud App Security la inspección de contenido | Microsoft Docs"
 description: "En este artículo se describe el proceso que Cloud App Security sigue al realizar la inspección de contenido de DLP en los datos en la nube."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
-ms.openlocfilehash: 19d5b0624233da2af64cf35bd2e7ef8ca118c638
-
-
+ms.openlocfilehash: a1ff57c60d8b35711330e8e4879fe1a48a7dee77
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="content-inspection"></a>Inspección de contenido
 En este artículo se describe el proceso que Cloud App Security sigue al realizar la inspección de contenido de DLP en los datos en la nube. 
 
@@ -70,8 +67,3 @@ Las directivas de inspección de contenido integradas pueden buscar la siguiente
 [Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-
