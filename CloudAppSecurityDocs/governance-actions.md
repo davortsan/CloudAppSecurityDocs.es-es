@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9797791f11e1329167252f713ecc0698572d2134
-ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+ms.openlocfilehash: 5db9f82b948f2db192b7c5ba47fb911413397271
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="governing-connected-apps"></a>Control de aplicaciones conectadas
@@ -103,10 +103,10 @@ Para obtener información sobre cómo se tratan las acciones de control cuando h
 **Ubicación**|**Tipo de objeto de destino**|**Acción de gobierno**|**Descripción**|**Conectores relacionados** 
 ---------|---------|---------|---------|---------
 |Cuentas|Archivo|Quitar las colaboraciones del usuario|Se quitan todas las colaboraciones de un usuario específico en cualquiera de los archivos. Resulta conveniente cuando las personas dejan la empresa.|Box, G Suite|
-|Cuentas|Cuenta|Anular la suspensión del usuario|Se anula la suspensión del usuario.|G Suite, Box, Office|
+|Cuentas|Cuenta|Anular la suspensión del usuario|Se anula la suspensión del usuario.|G Suite, Box, Office, Salesforce|
 |Cuentas|Cuenta|Configuración de la cuenta|Le lleva a la página de configuración de la cuenta de la aplicación específica (por ejemplo, Salesforce).|Todas las aplicaciones (la configuración de One Drive y SharePoint se establece en Office).|
 |Cuentas |Archivo|Transferir la propiedad de todos los archivos|En una cuenta, todos los archivos de un usuario se transfieren para pasar a pertenecer a una nueva persona de su elección. El propietario anterior se convierte en editor. Después de transferir la propiedad, admin@gtest1.adallom.com se convertirá en editor y ya no podrá cambiar la configuración de uso compartido. El nuevo propietario recibirá una notificación por correo relativa al cambio de propiedad.|G Suite|
-|Cuentas, Directiva de actividad|Cuenta|Suspender usuario|El usuario se configura de forma que no tiene acceso ni la posibilidad de iniciar sesión. Si este usuario ya ha iniciado sesión cuando define esta opción, se le bloqueará inmediatamente.|G Suite, Box, Office|
+|Cuentas, Directiva de actividad|Cuenta|Suspender usuario|El usuario se configura de forma que no tiene acceso ni la posibilidad de iniciar sesión. Si este usuario ya ha iniciado sesión cuando define esta opción, se le bloqueará inmediatamente.|G Suite, Box, Office, Salesforce|
 |Directiva de actividad, Cuentas|Cuenta|Revocar contraseña|Se revoca la contraseña de una cuenta de usuario; por ejemplo, establecer una directiva de actividad que revoca una contraseña tras 10 intentos de inicio de sesión infructuosos.|G Suite|
 |Directiva de actividad, Cuentas|Cuenta|Revocar privilegios de administrador|Se revocan los privilegios de una cuenta de administrador; por ejemplo, establecer una directiva de actividad que revoca los privilegios de administrador tras 10 intentos de inicio de sesión infructuosos.|G Suite|
 |Panel de la aplicación > Permisos de aplicación|Permisos|Eliminar la prohibición de una aplicación|En Google y Salesforce: quite la prohibición de una aplicación y permita que los usuarios concedan permisos a la aplicación de terceros con Google o Salesforce. En Office 365: se restauran los permisos de la aplicación de terceros para acceder a Office.|G Suite, Salesforce, Office|
@@ -140,6 +140,7 @@ Para obtener información sobre cómo se tratan las acciones de control cuando h
 |Configuración > Configuración de Cloud Discovery > Administrar vistas de datos|Cloud Discovery|Crear vista de datos de filtro personalizado de Cloud Discovery|Se crea una vista de datos para obtener una vista más detallada de los resultados de la detección. Por ejemplo, intervalos de IP específicos.|Detección|
 |Configuración > Configuración de Cloud Discovery > Eliminar datos|Cloud Discovery|Eliminar datos de Cloud Discovery|Se eliminan todos los datos recopilados de los orígenes de detección.|Detección|
 |Configuración > Configuración de Cloud Discovery > Cargar registros manualmente/Cargar registros automáticamente|Cloud Discovery|Analizar datos de Cloud Discovery|Notificación de que todos los datos de registro se han analizado.|Detección|
+
 
 
 ## <a name="see-also"></a>Consulte también  

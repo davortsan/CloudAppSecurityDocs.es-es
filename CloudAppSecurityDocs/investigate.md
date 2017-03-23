@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c4bd7c44ec5ced6da82de3c7bf8f3aa1fd12a517
-ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+ms.openlocfilehash: 8e552aea95318288d329597ec2a0749535e06a52
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="investigate"></a>Investigar
@@ -79,6 +79,8 @@ Marcar aplicaciones como autorizadas o no autorizadas es un paso importante para
     -   ¿Alguien al que se ha despedido sigue teniendo acceso a una aplicación y puede usar ese acceso para robar información?  
 
     -   ¿Quiere revocar el permiso de un usuario en una aplicación concreta o requerir a un usuario específico que realice una autenticación multifactor?  
+    
+    -   Puede también profundizar en la cuenta de usuario haciendo clic en el engranaje al final de la fila de cuenta de usuario y seleccionando la acción que realizar, como **Suspender usuario** o **Quitar las colaboraciones del usuario**. Si el usuario se ha importado desde Azure Active Directory, también puede hacer clic en **Configuración de la cuenta de Azure AD** para obtener acceso fácil a las características de administración de usuario avanzadas como la administración de grupos, MFA, detalles sobre inicios de sesión del usuario y la capacidad de bloquear el inicio de sesión.
 
 4.  Vaya a **Investigar** y, luego, seleccione una aplicación. El panel de la aplicación se abre y le presenta información y datos. Puede usar las fichas de la parte superior para comprobar lo siguiente:  
 

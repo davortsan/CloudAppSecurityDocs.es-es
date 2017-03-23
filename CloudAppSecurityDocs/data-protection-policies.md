@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fdaacd43a21ec1cd8d0bf8fdee08e4918af47e68
-ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+ms.openlocfilehash: 26a89346868e4d8a5df450d30b69826b4791c1f8
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="file-policies"></a>Directivas de archivo  
@@ -65,7 +65,7 @@ Haga lo siguiente para crear una directiva de archivo:
   
 4.  Dentro de **Tipo de riesgo**, vincule la directiva al tipo de riesgo más adecuado. Este campo es meramente informativo y solo sirve para encontrar más fácilmente directivas específicas y las consiguientes alertas, según el tipo de riesgo.  Puede que el riesgo ya esté seleccionado previamente según la categoría para la que eligió crear la directiva. Las directivas de archivo están configuradas como DLP de forma predeterminada.  
   
-5.  Para definir qué aplicaciones van a activar esta directiva, **cree un filtro para los archivos sobre los que esta directiva actuará**. Limite los filtros de directiva hasta conseguir exactamente el conjunto de archivos sobre los que quiere actuar. Sea lo más restrictivo posible para evitar falsos positivos. Por ejemplo, si quiere quitar permisos públicos, agregue el filtro “Público”; si lo que quiere es quitar un usuario externo, use el filtro “Externo”, etc.  
+5.  Para definir qué aplicaciones van a activar esta directiva, **cree un filtro para los archivos sobre los que esta directiva actuará**. Limite los filtros de directiva hasta conseguir exactamente el conjunto de archivos sobre los que quiere actuar. Sea lo más restrictivo posible para evitar falsos positivos. Por ejemplo, si quiere quitar permisos públicos, agregue el filtro **Público**; si lo que quiere es quitar un usuario externo, use el filtro "Externo", etc.  
 > [!NOTE] 
 > Al usar filtros de directiva, **Contiene** solo buscará palabras completas separadas por comas, puntos, espacios o caracteres de subrayado. Por ejemplo, si busca **malware** o **virus**, encontrará virus_malware_file.exe, pero no encontrará malwarevirusfile.exe. Si busca **malware.exe**, encontrará TODOS los archivos que contengan malware o exe en el nombre de archivo, mientras que si busca **"malware.exe"** (con comillas) solo encontrará los archivos que contengan exactamente "malware.exe". **Es igual a** solo buscará la cadena completa. Por ejemplo, si busca **malware.exe**, encontrará malware.exe pero no malware.exe.txt.  
 6.  En Box, SharePoint, Dropbox y OneDrive, puede aplicar la directiva de archivo en todos los archivos en la aplicación o en carpetas específicas. En **Aplicar a**, seleccione **carpetas seleccionadas** o **todos los archivos excepto las carpetas seleccionadas**. Se le redirigirá para que inicie sesión en la aplicación en la nube. Tras ello, agregue las carpetas correspondientes.  

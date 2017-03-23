@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/6/2016
+ms.date: 3/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 548dceaedc5bc22a5ca6da0690702b411b2987fb
-ms.sourcegitcommit: 80d9396833957429cf4fe178f336ab2e1793069e
+ms.openlocfilehash: 97ddfe457d8d287b23eaaca61981716a42037339
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="activities"></a>Actividades
@@ -42,11 +42,11 @@ A continuación se muestra una lista de los filtros de actividad que se pueden a
   
 -   Identificador de actividad: busca solo actividades específicas por su identificador. Este filtro es muy útil cuando se conecta Cloud App Security con SIEM (mediante el agente SIEM) y se quiere investigar más las alertas del portal Cloud App Security.  
   
--   Objetos de actividad: busca los objetos en los que se ha realizado la actividad. Este filtro se aplica a objetos de archivo, carpeta, usuario o aplicación.
+-   Objetos de actividad: busca los objetos en los que se ha realizado la actividad. Este filtro se aplica a objetos de archivo, carpeta, usuario o aplicación. 
     - Identificador de objeto de actividad: el identificador del objeto (identificador del archivo, carpeta, usuario o aplicación).
     - URL del archivo, carpeta o sitio: permite seleccionar direcciones URL de archivos, carpetas y direcciones que comienzan con una cadena específica.
     - Objeto de destino (archivo/carpeta): permite seleccionar un archivo o carpeta específicos. 
-    - Elemento: permite buscar por el nombre o por el identificador de cualquier objeto de actividad (por ejemplo, nombres de usuario, archivos, parámetros, sitios). 
+    - Elemento: permite buscar por el nombre o por el identificador de cualquier objeto de actividad (por ejemplo, nombres de usuario, archivos, parámetros, sitios). Para el filtro **Elemento de objetos de actividad**, puede seleccionar filtrar elementos que **contengan**, **sean iguales** o **comiencen por** el elemento específico.
     
 -   Tipo de actividad: busca la actividad de la aplicación.
 

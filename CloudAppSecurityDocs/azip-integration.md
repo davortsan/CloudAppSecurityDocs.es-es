@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/13/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e31fd5f40aa432fd149cef0b5923818247aed326
-ms.sourcegitcommit: 1a01ac2d5b4ff92e46e1bc4fd4318330f6ff41dd
+ms.openlocfilehash: 81ee0b71e6e66d102edf41269197d955b16fbeb4
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="azure-information-protection-integration"></a>Integración de Azure Information Protection
@@ -86,7 +86,8 @@ Para ignorar las etiquetas de clasificación establecidas por una persona extern
 
 ![etiquetas de azure information protection en cloud app security](./media/azip-tags-in-cas.png)
 
-**Directiva 1: datos confidenciales que se comparten externamente en Box:**
+> ![Nota] Cuando las etiquetas de Azure Identity Protection están deshabilitadas en un archivo, las etiquetas deshabilitadas aparecerán como deshabilitadas en Cloud App Security. No se mostrarán las etiquetas eliminadas.
+> **Directiva 1: datos confidenciales que se comparten externamente en Box:**
 
 1.    Cree una directiva de archivo.
 2.    Establezca el nombre, la gravedad y la categoría de la directiva.
