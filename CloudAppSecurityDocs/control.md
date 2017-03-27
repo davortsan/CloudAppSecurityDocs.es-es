@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 3/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,12 +13,37 @@ ms.technology:
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f72c13059ebcb320bed24430b06061b1cbb884cd
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: b22b51e5d41f525240c0430c31760177bf62ca1f
+ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
 translationtype: HT
 ---
 # <a name="control"></a>Control
 Puede aplicar acciones de gobierno a los archivos de los usuarios en el entorno de la nube. Después de haber investigado exhaustivamente y aprendido sobre la nube, puede utilizar las acciones de gobierno para ayudar a proteger la organización.  
+
+## <a name="use-policies-to-assess-risk"></a>Usar directivas para evaluar el riesgo  
+Después de echar un vistazo a las alertas abiertas, vaya al centro de directivas para revisar las infracciones de directivas que no han activado alertas.  
+
+-   En el panel de Cloud App Security, haga clic en **Control** y, luego, en **Directivas**.  
+
+-   Seleccione una directiva específica para ver la lista **Infringiendo ahora** de coincidencias de directivas que no han activado alertas.  
+
+-   Haga clic en las infracciones de una en una y decida qué hacer con cada una. Para obtener más información sobre las acciones de gobierno, consulte las imágenes que aparecen a continuación.  
+
+     Si la directiva está establecida para detectar infracciones de cumplimiento normativo y alguien guarda números de tarjetas de crédito en archivos en OneDrive, tendrá una coincidencia en la directiva.  
+
+     ![Coincidencias de PCI](./media/pci-matches.png "Coincidencias de PCI")  
+
+-   Seleccione la coincidencia para ver los archivos reales que han infringido la directiva.  
+
+     ![Coincidencias de contenido de PCI](./media/pci-content-matches.png "Coincidencias de contenido de PCI")  
+
+     Puede seleccionar el propio archivo para obtener información sobre los archivos.  
+
+     Puede hacer clic en **Colaboradores** para ver quién tiene acceso a este archivo.  
+
+     Puede hacer clic en **Coincidencias** para ver los números de tarjeta de crédito reales.  
+
+     ![Coincidencias de contenido de números de tarjetas de crédito](./media/content-matches-ccn.png "Coincidencias de contenido de números de tarjetas de crédito")  
 
 ## <a name="apply-governance-actions"></a>Aplicar acciones de gobierno  
 Puede aplicar acciones de gobierno desde las directivas, desde las alertas y desde el registro **Archivo**.  
