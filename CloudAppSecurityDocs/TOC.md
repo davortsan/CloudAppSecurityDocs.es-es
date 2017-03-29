@@ -35,7 +35,7 @@
 ##### [Directiva de detección de anomalías de Cloud Discovery](cloud-discovery-anomaly-detection-policy.md)
 #### [Directivas de actividad](user-activity-policies.md)
 #### [Directiva de detección de anomalías](anomaly-detection-policy.md)
-##### [Directivas de archivos](data-protection-policies.md)
+#### [Directivas de archivos](data-protection-policies.md)
 ##### [Inspección de contenido](content-inspection.md)
 ##### [Trabajar con el motor de RegEx](working-with-the-regex-engine.md)
 #### [Referencia de plantillas de directiva](policy-template-reference.md)
