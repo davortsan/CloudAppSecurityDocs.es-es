@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/20/2017
+ms.date: 3/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e72aa915989592fda28f489d2dab0ddbe988dc31
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 2d9095a39f5000e88bd0ad94ba0ca9f4a780f58e
+ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
 translationtype: HT
 ---
 # <a name="release-notes"></a>Notas de la versión
@@ -23,6 +23,7 @@ translationtype: HT
 Fecha de publicación: 20 de marzo de 2017
 
 **Nuevas características**
+-   Ahora puede aplicar directivas para incluir o excluir grupos de usuarios importados. 
 -    Anonimización de datos de Cloud Discovery ahora le permite configurar una clave de cifrado personalizada. Para más información, vea [Cloud Discovery Anonymization](cloud-discovery-anonymizer.md) (Anonimización de Cloud Discovery).
 -    Para tener más control sobre la administración de cuentas y de usuario, ahora tiene acceso directo a la configuración de la cuenta de Azure AD para cada usuario y cuenta desde dentro de la página **Cuenta** haciendo clic en el engranaje junto a cada usuario. Esto permite facilitar el acceso a la administración del grupo de características de administración de usuario avanzado, la configuración de MFA, los detalles acerca de los inicios de sesión de usuario y la capacidad de bloquear el inicio de sesión. 
 -    Ahora puede exportar un script de bloqueo para las aplicaciones sin aprobación a través de la API de Cloud App Security. Obtenga más información acerca de las API en el portal de Cloud App Security haciendo clic en el signo de interrogación en la barra de menús, seguido por **Documentación de la API**.
@@ -32,7 +33,7 @@ Fecha de publicación: 20 de marzo de 2017
 -    Para los eventos de suplantación Exchange Online, ahora puede filtrar por nivel de permiso: usado-delegado, administrador o administrador delegado. Puede buscar eventos que muestran el nivel de suplantación que le interese en el **registro de actividad** buscando **Elemento de** > **objetos de actividad**.
 -    En el cajón de aplicación en la ficha Permisos de la aplicación ahora puede ver el **publicador** de cada aplicación. También puede utilizar el publicador como un filtro para la investigación de las aplicaciones adicionales del mismo publicador.
 -    Las direcciones IP de riesgo aparecen ahora como un factor de riesgo independiente en lugar de ponderado en el factor de riesgo de la **ubicación** general. 
--    Cuando las etiquetas de Azure Identity Protection están deshabilitadas en un archivo, las etiquetas deshabilitadas aparecerán como deshabilitadas en Cloud App Security. No se mostrarán las etiquetas eliminadas.
+-    Cuando las etiquetas de Azure Information Protection están deshabilitadas en un archivo, las etiquetas deshabilitadas aparecerán como deshabilitadas en Cloud App Security. No se mostrarán las etiquetas eliminadas.
  
 **Compatibilidad adicional de Salesforce:**
 -    Ahora puede suspender y quitar la suspensión de los usuarios de Salesforce en Cloud App Security. Esto puede realizarse en la ficha **Cuentas** del conector de Salesforce haciendo clic en el engranaje al final de la fila de un usuario específico y seleccionando **Suspender** o **Anular suspensión**, y también se puede aplicar como una acción de control como parte de una directiva. Todas las actividades de suspensión y de anulación de la suspensión realizadas en Cloud App Security se almacenarán en el [registro de control](governance-actions.md). 
