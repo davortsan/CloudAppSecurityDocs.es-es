@@ -1,11 +1,11 @@
 ---
-title: "Configurar la carga de registros automática para informes continuos | Microsoft Docs"
+title: "Configurar la carga de registros automática para informes continuos en Cloud App Security | Microsoft Docs"
 description: "En este tema se proporciona información sobre cómo cargar registros para crear informes de Cloud Discovery automáticos."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/08/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7901bb58f70949873fb3c423ae7951a67f7cd671
-ms.openlocfilehash: 96575cfc6bc3d736b40503049816ccc191fbf3e8
-
-
+ms.openlocfilehash: f6eb2a844d62848ad232a92609a02ddb6fcfe325
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurar la carga de registros automática para informes continuos
 Los recopiladores de registros permiten automatizar fácilmente la carga de registros desde la red. El recopilador de registros se ejecuta en la red y recibe los registros a través de Syslog o FTP. Cada registro se procesa, se comprime y se transmite automáticamente al portal. Los registros de FTP se cargan en Cloud App Security una vez que el archivo haya finalizado la transferencia FTP al recopilador de registros. En el caso de Syslog, el recopilador de registros escribe los registros recibidos en el disco cada 20 minutos y, después, carga el archivo en Cloud App Security.
 
@@ -44,7 +41,7 @@ El recopilador de registros tiene un mecanismo de seguridad integrado que superv
 
 ## <a name="set-up-and-configuration"></a>Establecimiento y configuración  
   
-### <a name="step-1-web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Paso 1: Configuración del portal web: definición de orígenes de datos y vinculación a un recopilador de registros  
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Paso 1: Configuración del portal web: definición de orígenes de datos y vinculación a un recopilador de registros  
   
 1.  Vaya a la página de configuración de carga automatizada:  
     En el portal de Cloud App Security, haga clic en el ![icono de configuración](./media/settings-icon.png "settings icon") y, después, en **Recopiladores de registros**.  
@@ -77,7 +74,7 @@ El recopilador de registros tiene un mecanismo de seguridad integrado que superv
   > - Copie el contenido de la pantalla, ya que necesitará la información al configurar el recopilador de registros para comunicarse con Cloud App Security. Si ha seleccionado Syslog, esta información incluirá información sobre el puerto en el que escucha el agente de escucha de Syslog.
 4.  **Descargue** una nueva máquina virtual del recopilador de registros. Para ello, haga clic en Hyper-V o VMware y descomprima el archivo con la contraseña que ha recibido en el portal.  
   
-### <a name="step-2-on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Paso 2: Implementación local de la máquina virtual y la configuración de red   
+### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Paso 2: Implementación local de la máquina virtual y la configuración de red   
 
 > [!NOTE] 
 > En los pasos siguientes se describe la implementación de Hyper-V. Los pasos de implementación para el hipervisor de la máquina virtual son ligeramente diferentes.  
@@ -114,7 +111,7 @@ sudo network_config
 
 En este punto, el recopilador de registros debería estar conectado a la red y ser capaz de acceder al portal de Cloud App Security.  
 
-### <a name="step-3-on-premises-configuration-of-the-log-collection"></a>Paso 3: Configuración local de la recopilación de registros 
+### <a name="step-3--on-premises-configuration-of-the-log-collection"></a>Paso 3: Configuración local de la recopilación de registros 
 Para iniciar sesión por primera vez en el recopilador de registros e importar la configuración del recopilador de registros desde el portal, debe hacer lo siguiente. 
 
 1.  Inicie sesión en el recopilador de registros a través de SSH con las credenciales de administrador interactivas proporcionadas en el portal. (Si es la primera vez que inicia sesión en la consola, deberá cambiar la contraseña y volver a iniciar sesión después de cambiar la contraseña. Si está usando una sesión de terminal, podría tener que reiniciar la sesión. )
@@ -156,8 +153,3 @@ Si tiene problemas durante la implementación, consulte [Solución de problemas 
     
       
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

@@ -1,11 +1,11 @@
 ---
-title: "Integración de Azure Information Protection | Documentos de Microsoft"
+title: Integrar Azure Information Protection con Cloud App Security | Microsoft Docs
 description: "Este artículo proporciona información sobre cómo sacar provecho de las etiquetas de Azure Information Protection en Cloud App Security para tener un mayor control del uso de aplicaciones de nube de la organización."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/12/2016
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,104 +13,93 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 5fe0c3c04f290fb5a087e387560bf742a7192513
-ms.openlocfilehash: 0432ccf823234617bb4c8466f88ca8f385704928
-
-
+ms.openlocfilehash: b78a120c64af1887e5768082e5c81776b509f5a6
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+translationtype: HT
 ---
-
 # <a name="azure-information-protection-integration"></a>Integración de Azure Information Protection
 
-Cloud App Security le permite investigar archivos y establecer directivas basadas en etiquetas de archivo de Azure Information Protection, lo que permite mayor visibilidad y control de sus datos confidenciales en la nube. Para habilitar esta opción, establezca una directiva en Cloud App Security para analizar archivos que tengan la inspección de contenido habilitada. Además, puede desencadenar alertas en las actividades relacionadas con archivos clasificados. La integración de Azure Information Protection le permite:
--   Cuantificar la exposición de información confidencial en sus aplicaciones de nube.
--   Crear directivas y alertas sobre las infracciones de carga de datos clasificados en las aplicaciones de nube conectadas, o bien poner datos en cuarentena o bloquear que se puedan compartir externamente.
--   Investigar trazas de auditoría y corregir archivos que infringen las directivas 
+Cloud App Security le permite investigar archivos y establecer directivas basadas en etiquetas de clasificación de Azure Information Protection, lo que permite mayor visibilidad y control de sus datos confidenciales en la nube. La integración de Azure Information Protection con Cloud App Security es tan fácil como seleccionar una sola casilla. 
+
+Al integrar Azure Information Protection en Cloud App Security, puede aprovechar todas las funciones de ambos servicios y proteger los archivos en la nube, entre lo que se incluye lo siguiente:
+- La capacidad de ver todos los archivos clasificados en una ubicación central.
+- La capacidad de realizar la investigación en función del nivel de clasificación y cuantificar la exposición de la información confidencial en las aplicaciones en la nube.
+- La capacidad de crear directivas para asegurarse de que los archivos clasificados se controlan correctamente.
 
 > [!NOTE] 
-> De forma predeterminada, los archivos se analizan en busca de etiquetas solo cuando hay una directiva de archivo que los analiza con la inspección de contenido habilitada. Para analizar todos los archivos en busca de etiquetas sin directivas de archivos, habilite el examen automático.
-
-## <a name="terminology-overview"></a>Información general de la terminología
--   Etiqueta de clasificación de Azure Information Protection: un atributo establecido por los usuarios finales que se agrega a los archivos de la organización, ya sea de forma automática, según una directiva, o de forma manual.
--   Externo: una etiqueta establecida por alguien externo a la organización.
--   Etiqueta de archivo: la presentación de la etiqueta de clasificación en Cloud App Security. Este campo se muestra para cada archivo en la tabla de archivos y puede usarse en filtros.
--   Directiva de archivo: un conjunto de reglas basadas en filtros de archivos que permiten aplicar una amplia gama de procesos automatizados, con lo que se aprovechan las API del proveedor en la nube.
-
-## <a name="license-and-tenant-creation"></a>Creación de licencias y de inquilinos
-Para habilitar esta característica necesitará una licencia de Cloud App Security y una licencia para Azure Information Protection Premium P1 o P2. Tan pronto como se activen las licencias, Cloud App Security sincronizará las etiquetas de las organizaciones del servicio Azure Information Protection:
-
-![pantalla de ejemplo de azip](./media/azip-screen.png)
-
-![cas comparado con azip](./media/cas-compared-azip.png)
-     
-Además, de manera predeterminada, también se buscarán etiquetas de clasificación en los archivos cuyo contenido estén inspeccionado una o varias directivas de archivo.
-
-## <a name="gain-visibility"></a>Ganar visibilidad
-
-Las etiquetas de archivo analizadas para cada archivo están visibles en el cajón de archivo.
-En la página **Archivos**, haga clic en el archivo correspondiente para ver si tiene etiquetas de archivo:
-
-![cajón de archivo](./media/azip-file-drawer.png)
-
-Puede hacer clic en las etiquetas para ver más información o la lista completa de etiquetas:
- 
-![lista de etiquetas](./media/azip-tags-list.png)
-
-Use el filtro **Etiquetas de archivo** para buscar archivos con una etiqueta específica:
- 
-![filtro etiquetas de archivo](./media/azip-file-tags-filter.png)
-
-O bien, para archivos que se han etiquetado con cualquier etiqueta de archivo:
-
-![todos los filtros de etiquetas de archivo](./media/azip-file-tags-all-filter.png)
+> Para habilitar esta característica necesitará una licencia de Cloud App Security y una licencia para Azure Information Protection Premium P1 o P2. Tan pronto como se activen las licencias, Cloud App Security sincronizará las etiquetas de las organizaciones del servicio Azure Information Protection.
 
 ## <a name="how-it-works"></a>Cómo funciona
-Al conectar Cloud App Security con Azure Information Protection, Cloud App Security examina los archivos del modo siguiente:
-1. Recupera la lista de todas las etiquetas de clasificación que se hayan usado en su inquilino. Esta acción se realiza cada hora para mantener la lista actualizada.
-2. Examina los archivos para obtener las etiquetas de clasificación. Esto puede suceder de dos maneras: a. Los archivos que se examinan en busca de contenido mediante una directiva de archivos también se agregarán a la cola para detectar etiquetas de clasificación.
-    b. Para agregar sus archivos a la cola de detección automática sin tener que establecer una directiva de archivos, habilite la detección automática (consulte la información a continuación), que se encargará de examinar todos los archivos nuevos o modificados.
-3. Las etiquetas externas se agregan a la lista de etiquetas de clasificación solo si se encuentran en un archivo específico, excepto si selecciona la casilla de verificación **Ignorar las etiquetas de clasificación de Azure Information Protection de otros inquilinos** (consulte la información a continuación).
+Probablemente esté familiarizado con las etiquetas de clasificación de archivos de [Azure Information Protection](https://docs.microsoft.com/information-protection/). Puede ver las etiquetas de clasificación de Azure Information Protection en Cloud App Security. Al integrar Cloud App Security con Azure Information Protection, Cloud App Security examina los archivos del modo siguiente:
+1. Cloud App Security recupera la lista de todas las etiquetas de clasificación que se hayan usado en su inquilino. Esta acción se realiza cada hora para mantener la lista actualizada.
+2. Después, Cloud App Security examina los archivos en busca de etiquetas de clasificación de la manera siguiente: a. Si ha habilitado el examen automático (consulte la información a continuación), todos los archivos nuevos o modificados se agregarán a la cola de examen.
+    b. Si ha establecido una directiva de archivo (consulte la información a continuación) para buscar etiquetas de clasificación, estos archivos se agregarán a la cola de examen de etiquetas de clasificación.
+3. Como se mencionó anteriormente, estos exámenes son para las etiquetas de clasificación detectadas en el examen inicial que Cloud App Security lleva a cabo para ver qué etiquetas de clasificación se usan en el inquilino. Las etiquetas externas, es decir, las etiquetas de clasificación establecidas por una persona externa al inquilino, se agregan a la lista de etiquetas de clasificación. Si no quiere que se examinen, seleccione la casilla **Examinar solo archivos en busca de etiquetas de clasificación de Azure Information Protection en este inquilino** (consulte la información a continuación).
+4. Después de habilitar Azure Information Protection en Cloud App Security, también se examinarán en busca de etiquetas de clasificación todos los archivos nuevos que se agreguen a Office 365.
 
-## <a name="enable-automatic-scan"></a>Habilitar el examen automático
-El examen automático permite buscar etiquetas de clasificación de Azure Information Protection en los archivos de Office 365 sin necesidad de crear una directiva. Esta característica está disponible si tiene una licencia independiente de Cloud App Security.
-Para habilitar el examen automático de etiquetas de archivo para los nuevos archivos:
+## <a name="how-to-integrate-azure-information-protection-with-cloud-app-security"></a>Cómo integrar Azure Information Protection con Cloud App Security
+  
+### <a name="enable-azure-information-protection"></a>Habilitar Azure Information Protection
 
-1. En Cloud App Security, vaya a la página de **Configuración general**.
-2. En Azure Information Protection, seleccione **Analizar automáticamente los archivos en busca de etiquetas de clasificación de Azure Information Protection**. Una vez se habilite la opción, se examinarán en busca de etiquetas todos los archivos nuevos que se agreguen a Office 365, y no solo aquellos cuyo contenido se examina por una directiva de archivo.
+Lo único que debe hacer para integrar Azure Information Protection con Cloud App Security es habilitar el examen automático para permitir la búsqueda de etiquetas de clasificación de Azure Information Protection en los archivos de Office 365 sin necesidad de crear una directiva. Después de habilitarlo, si tiene archivos en su entorno de nube con etiquetas de clasificación de Azure Information Protection, los verá en Cloud App Security.
 
-![habilitar azure information protection](./media/enable-azip.png)
+Para permitir que Cloud App Security examine archivos que tengan la inspección de contenido habilitada en busca de etiquetas de clasificación:
+
+1. En Cloud App Security, en el engranaje de configuración, seleccione la página **Configuración general**.
+2. En Azure Information Protection, seleccione **Analizar automáticamente los archivos en busca de etiquetas de clasificación de Azure Information Protection**. 
+
+Después de habilitar Azure Information Protection, podrá ver los archivos que tengan etiquetas de clasificación y filtrarlos por etiqueta en Cloud App Security.
+
+ ![habilitar azure information protection](./media/enable-azip.png)
 
 > [!NOTE] 
-> El examen automático no examinará los archivos existentes hasta que se vuelvan a modificar. Para examinar los archivos existentes para las etiquetas de clasificación de Azure Information Protection, cree una nueva **Directiva de archivo** sin filtros, seleccione la opción **Content inspection** (Inspección de contenido) y guarde la directiva.
+> El examen automático no examinará los archivos existentes hasta que se vuelvan a modificar. Para examinar los archivos existentes en busca de etiquetas de clasificación de Azure Information Protection, debe tener al menos una **directiva de archivos de inspección de contenido**. Si no tiene ninguna, cree una nueva **directiva de archivos**, elimine todos los filtros predeterminados, marque la opción **Inspección de contenido**. A continuación, en **Inspección de contenido**, haga clic en **Incluir archivos que coincidan con una expresión preestablecida** y seleccione un valor predefinido. Después, guarde la directiva. Esto habilitará la inspección de contenido, que detectará automáticamente etiquetas de clasificación de Azure Information Protection.
 
-## <a name="internal-and-external-tags"></a>Etiquetas internas y externas
+### <a name="set-internal-and-external-tags"></a>Establecer etiquetas internas y externas
 De forma predeterminada, Cloud App Security examinará las etiquetas de clasificación que se han definido en su organización, así como las externas que han definido otras organizaciones. 
 
-Para ignorarlas, en el portal de Cloud App Security, vaya a **Configuración general** y, a continuación, a **Configuración de seguridad de Azure** y seleccione **Ignorar etiquetas de clasificación de Azure Information Protection de otros inquilinos**.
+Para ignorar las etiquetas de clasificación establecidas por una persona externa a la organización, en el portal de Cloud App Security, vaya a **Configuración general** y, después, a **Configuración de seguridad de Azure** y seleccione **Ignorar las etiquetas de clasificación de Azure Information Protection de otros inquilinos**.
  
 ![ignorar las etiquetas](./media/azip-ignore.png)
 
-> [!Note]
-> Si está trabajando en un inquilino de prueba, probablemente no querrá omitir las etiquetas de clasificación externas para poder probar archivos que haya recibido de otros inquilinos.
+### <a name="control-file-exposure"></a>Controlar la exposición del archivo
+- Si este es el documento en el que ha incluido una etiqueta de clasificación de Azure Information Protection:
+
+![pantalla de ejemplo de azip](./media/azip-screen.png)
+
+- Podrá ver este archivo en Cloud App Security en la página **Archivos**. Para ello, filtre la etiqueta de clasificación:
+
+![cas comparado con azip](./media/cas-compared-azip.png)
+
+- Puede obtener más información sobre estos archivos y sus etiquetas de clasificación en el cajón de archivos.
+
+- En la página **Archivos**, haga clic en el archivo correspondiente para ver si tiene etiquetas de clasificación:
+
+![cajón de archivo](./media/azip-file-drawer.png)
+
+- Puede hacer clic en la etiqueta de clasificación para ver más información o para ver la lista completa de etiquetas de clasificación:
+ 
+![lista de etiquetas](./media/azip-tags-list.png)
+
+- Después, puede crear directivas de archivos en Cloud App Security para controlar los archivos que se comparten de forma inapropiada y los archivos que están etiquetados y se han modificado recientemente.
+- Además, puede desencadenar alertas en las actividades relacionadas con archivos clasificados.
 
 ![etiquetas de azure information protection en cloud app security](./media/azip-tags-in-cas.png)
 
-## <a name="use-azure-information-protection-tags-to-apply-control"></a>Usar etiquetas de Azure Information Protection para aplicar control
-Cree directivas de archivos en Cloud App Security para buscar archivos que se comparten de forma inapropiada y archivos que están etiquetados y se han modificado recientemente. 
+> ![Nota] Cuando las etiquetas de Azure Identity Protection están deshabilitadas en un archivo, las etiquetas deshabilitadas aparecerán como deshabilitadas en Cloud App Security. No se mostrarán las etiquetas eliminadas.
+> **Directiva 1: datos confidenciales que se comparten externamente en Box:**
 
-**Directiva 1: datos confidenciales que se comparten externamente en Box:**
-
-1.  Cree una directiva de archivo.
-2.  Establezca el nombre, la gravedad y la categoría de la directiva.
-3.  Agregue los siguientes filtros para buscar todos los datos confidenciales que se comparten externamente en Box:
+1.    Cree una directiva de archivo.
+2.    Establezca el nombre, la gravedad y la categoría de la directiva.
+3.    Agregue los siguientes filtros para buscar todos los datos confidenciales que se comparten externamente en Box:
 
 ![directiva de confidencialidad](./media/azip-confidentiality-policy.png) 
 
 **Directiva 2: datos restringidos que se han modificado recientemente fuera de la carpeta Finanzas en SharePoint:**
 
-1.  Cree una directiva de archivo.
-2.  Establezca el nombre, la gravedad y la categoría de la directiva.
-3.  Agregue los siguientes filtros para buscar todos los datos restringidos que se han modificado recientemente y agregue una exclusión para la carpeta Finanzas en la opción de selección de carpeta: 
+1.    Cree una directiva de archivo.
+2.    Establezca el nombre, la gravedad y la categoría de la directiva.
+3.    Agregue los siguientes filtros para buscar todos los datos restringidos que se han modificado recientemente y agregue una exclusión para la carpeta Finanzas en la opción de selección de carpeta: 
  
 ![directiva de datos restringidos](./media/azip-restricted-data-policy.png) 
 
@@ -119,17 +108,35 @@ Obtenga más información sobre [acciones de gobierno](governance-actions.md).
 
 Obtenga más información sobre [Azure Information Protection](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-information-protection) y consulte su [Tutorial de inicio rápido](https://docs.microsoft.com/en-us/information-protection/get-started/infoprotect-quick-start-tutorial).
 
-  
 
+## <a name="integration-with-azure-rights-management"></a>Integración con Azure Rights Management
+
+Su organización debe tener Azure Rights Management con licencia y activado para integrar entre Cloud App Security y Azure RMS.  Estos dos pasos independientes se pueden encontrar en [Activar Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/activate-service).
+
+Cloud App Security actualmente solo admite el nivel de protección genérico. La protección nativa para los archivos de Office, PDF e imagen estará disponible en versiones futuras. 
+
+Esta característica está disponible actualmente para los archivos que se almacenan en SharePoint Online y OneDrive para la Empresa. Se admitirán más aplicaciones en la nube en futuras versiones.
+
+Después de que Cloud App Security se conecte al servicio de Office 365, podrá usar las características de integración de RMS de Cloud App Security que le permiten proteger documentos con RMS directamente en el portal de Cloud App Security, como se indica a continuación:
+
+1. En la página **Archivos**, seleccione el archivo que desea proteger y luego haga clic en los tres puntos al final de la fila del archivo y elija **Proteger**. 
+![protección de la aplicación](./media/protect-app.png)
+2. Se le pedirá que elija una de las plantillas de su organización se utilizan para proteger el archivo; luego, haga clic en **Proteger**. 
+![plantilla de protección](./media/protect-template.png)
+3. Después de elegir una plantilla y hacer clic en Proteger, Cloud App Security aplicará la plantilla y protegerá el archivo original. El archivo protegido tendrá el mismo nombre que el archivo original, pero con una nueva extensión de archivo “.pfile”.
+> [!NOTE]
+>     Se recomienda aplicar plantillas RMS que abarquen toda la compañía en los archivos, de forma que todos los usuarios de la organización puedan acceder a estos archivos, incluido el propietario original del archivo. El propietario del archivo, la directiva de uso compartido del archivo y la lista de usuarios que ya tienen acceso a él no cambian cuando el archivo pasa a estar protegido.
+
+4. Si los usuarios desean tener acceso al archivo protegido, necesitan tener la aplicación RMS sharing instalada en sus dispositivos. Para más información, consulte [Información general técnica de la aplicación Microsoft Rights Management sharing](https://docs.microsoft.com/information-protection/rms-client/sharing-app-admin-guide-technical).
+
+5. Puede revertir esta acción en cualquier momento en el **Registro de gobierno** haciendo clic en el botón **Revertir** situado en el extremo de la fila de la acción Proteger tomada previamente. 
+
+
+
+
+ 
 ## <a name="see-also"></a>Consulte también  
 [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)   
 [Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   
-  
-
-
-
-<!--HONumber=Dec16_HO2-->
-
-

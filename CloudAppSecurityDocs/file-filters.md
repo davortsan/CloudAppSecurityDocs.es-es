@@ -1,11 +1,11 @@
 ---
-title: Archivos | Microsoft Docs
+title: "Descripción de los datos y los filtros de archivo disponibles en Cloud App Security | Microsoft Docs"
 description: "En este tema de referencia se proporciona información sobre los tipos de archivo y filtros de archivo que usa Cloud App Security."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/19/2016
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: d11339040da669b77069c286f6171f7b3a6161db
-ms.openlocfilehash: 3262d01aed03bbb462832f8ff2836152e6208e74
-
-
+ms.openlocfilehash: 046816dbffffb8f91b11656375730b07be4b4fb0
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+translationtype: HT
 ---
-
 # <a name="files"></a>Archivos
 
 
@@ -41,7 +38,7 @@ Para profundizar en archivos más específicos, puede ampliar el filtro básico 
 
  ![filtro de registro de archivo avanzado](media/file-log-filter-advanced.png)
  
-###  <a name="a-namefilefiltersa-file-filters"></a><a name="Filefilters"></a> Filtros de archivo 
+###  <a name="Filefilters"></a> Filtros de archivo 
  
 Cloud App Security puede supervisar cualquier tipo de archivo basado en más de 20 filtros de metadatos (por ejemplo, nivel de acceso o tipo de archivo). 
  
@@ -84,7 +81,7 @@ A continuación se muestra una lista de los filtros de archivo que se pueden apl
   
 -   Nombre de archivo: nombre de archivo o subcadena del nombre tal como se define en la aplicación en la nube, por ejemplo, Todos los archivos con una contraseña en su nombre.   
   
--   Etiqueta de archivo: busca archivos con etiquetas específicas establecidas por Azure Information Protection. Esto requiere la integración con Azure Integration Protection.
+-   Etiqueta de clasificación: busca archivos con etiquetas específicas establecidas por Azure Information Protection. Esto requiere la integración con Azure Integration Protection.
 
 -   Tipo de archivo: Cloud App Security toma el tipo MIME recibido del servicio y examina el archivo para determinar el tipo de archivo real. Tenga en cuenta que este examen se aplica a archivos pertinentes para el examen de datos (documentos, imágenes, presentaciones, hojas de cálculo, archivos de texto y archivos de almacenamiento o ZIP). El filtro funciona por tipo de archivo/carpeta, por ejemplo, Todas las carpetas que son… o Todos los archivos de hoja de cálculo que son...
 
@@ -122,6 +119,9 @@ Puede ver más información sobre un archivo haciendo clic en él en el registro
 - Directivas coincidentes: haga clic en este vínculo para ver una lista de las directivas con las que coincida el archivo.
 - Etiqueta de clasificación: haga clic en esta opción para ver una lista de etiquetas de clasificación de Azure Information Protection que se hayan encontrado en este archivo. A continuación, podrá filtrar todos los archivos que coincidan con esta etiqueta.    
 
+Los campos del cajón de archivos proporcionan vínculos contextuales a archivos adicionales y exploran en profundidad lo que desea realizar desde el cajón directamente. Por ejemplo, si mueve el cursor junto al campo **Propietario**, puede utilizar el icono Agregar a filtro ![Agregar a filtro](./media/add-to-filter-icon.png) para agregar el propietario inmediatamente al filtro de la página actual. También puede utilizar el icono de engranaje de configuración ![icono de configuración](./media/contextual-settings-icon.png) que aparece para llegar directamente a la página de configuración necesaria para modificar la configuración de uno de los campos, como **Etiquetas de clasificación**.
+
+
 ![cajón de archivo](./media/file-drawer.png "cajón de archivo")  
   
 Para obtener una lista de las acciones de gobierno disponibles, consulte [Acciones de gobierno de archivos](governance-actions.md#file-governance-actions).
@@ -132,8 +132,3 @@ Para obtener una lista de las acciones de gobierno disponibles, consulte [Accion
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO3-->
-
-

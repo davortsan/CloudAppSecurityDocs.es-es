@@ -1,11 +1,11 @@
 ---
-title: "Solución de problemas de Cloud Discovery | Microsoft Docs"
+title: "Solución de errores de Cloud Discovery en Cloud App Security | Microsoft Docs"
 description: "En este tema se proporciona una lista de errores frecuentes de Cloud Discovery y recomendaciones para la solución de cada uno de ellos."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 2d0b2cebdfa15cccc5888660da498446d620b64f
-
-
+ms.openlocfilehash: 1cd697631f776c55fbedcec9a0ed34a3b68d8ac0
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="troubleshooting-cloud-discovery"></a>Solución de problemas de Cloud Discovery
 ## <a name="log-parsing-errors"></a>Errores de análisis de registro
 
@@ -48,8 +45,3 @@ Puede realizar un seguimiento del procesamiento de registros de Cloud Discovery 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

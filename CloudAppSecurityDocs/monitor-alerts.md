@@ -1,11 +1,11 @@
 ---
-title: Supervisar alertas | Microsoft Docs
+title: Uso de alertas en Cloud App Security | Microsoft Docs
 description: "En este tema se proporciona una lista y una descripción de todas las alertas."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/26/2016
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,11 @@ ms.technology:
 ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
-ms.openlocfilehash: ee4b4e7a43603654eb415ff225a4ae3d8b139383
-
-
+ms.openlocfilehash: b3d0aacdef885ba89638628b6d485ef81c3b26f3
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
-# <a name="monitor-alerts"></a>Supervisar alertas
+# <a name="alerts"></a>Alertas
 Para ver alertas:
 
 En el portal de Cloud App Security, haga clic en Alertas.
@@ -37,7 +34,7 @@ Se mostrarán los siguientes tipos de alertas.
 |----|----|----|
 |Nueva ubicación|ALERT_GEOLOCATION_NEW_COUNTRY|Se ha detectado una nueva ubicación desde que comenzó el examen (hasta 6 meses). Solo se muestra una vez para cada país para toda la organización. |
 |Nuevo usuario administrador|ALERT_ADMIN_USER|Se ha detectado un nuevo administrador en una aplicación específica. Puede tratarse de una persona que es un administrador de una aplicación y ahora es un administrador de otra aplicación. Esta alerta está relacionada con el tipo de administrador específico, por lo que se mostrará cada vez que cambie el tipo de administrador. Si un usuario había perdido los privilegios de administrador y los ha recuperado, se mostrará esta alerta.|
-|Cuenta inactiva|ALERT_ZOMBIE_USER|Si un usuario está inactivo durante 60 días por aplicación (por ejemplo, si alguien está activo en Box pero no ha tocado Google Apps durante 60 días), el usuario se considerará inactivo en Google Apps. Se agrega una etiqueta a estos usuarios, por lo que se pueden buscar cuentas inactivas.|
+|Cuenta inactiva|ALERT_ZOMBIE_USER|Si un usuario está inactivo durante 60 días por aplicación (por ejemplo, si alguien está activo en Box pero no ha tocado G Suite durante 60 días), el usuario se considerará inactivo en G Suite. Se agrega una etiqueta a estos usuarios, por lo que se pueden buscar cuentas inactivas.|
 |Ubicación de administrador inesperada|ALERT_NEW_ADMIN_LOCATION|Se ha detectado una nueva ubicación de los administradores desde que comenzó el examen (hasta 6 meses). Solo se muestra una vez para cada país para cualquier administrador de la organización. |
 |Cuenta en peligro|ALERT_COMPROMISED_ACCOUNT|Si se ha producido una infracción en una aplicación y se publica la lista de cuentas que se han infringido, Cloud App Security descarga la lista y la compara con la lista de usuarios, incluidos los usuarios internos, los usuarios externos y las cuentas personales. |
 
@@ -60,8 +57,3 @@ Se mostrarán los siguientes tipos de alertas.
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-
