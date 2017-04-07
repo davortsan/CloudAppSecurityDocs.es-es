@@ -1,11 +1,11 @@
 ---
-title: Controlar las aplicaciones en la nube con directivas | Microsoft Docs
+title: "Controlar el uso de aplicaciones en la nube mediante la creación de directivas en Cloud App Security | Microsoft Docs"
 description: "En este tema se proporciona información sobre cómo se usan las directivas y cómo se configuran para controlar el uso de aplicaciones en la nube."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,9 @@ ms.technology:
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 5fe0c3c04f290fb5a087e387560bf742a7192513
-ms.openlocfilehash: fcf5a37aa18ca7dd6fbb61c3e6100214048deeed
-
-
+ms.openlocfilehash: 1f897a528e425a2abd74f6828a7785fdfe147286
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
 # <a name="control-cloud-apps-with-policies"></a>Controlar las aplicaciones en la nube con directivas
 
@@ -161,8 +159,3 @@ De manera predeterminada, las directivas están habilitadas después de crearlas
 [Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   
-
-
-<!--HONumber=Dec16_HO2-->
-
-

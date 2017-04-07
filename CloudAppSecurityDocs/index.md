@@ -1,208 +1,139 @@
 ---
-asset_id: 0f64ab44-50c4-46b7-8071-533f31fe3627
-layout: HubPage
-title: Cloud App Security | Microsoft Docs
-description: "Documentación técnica de Cloud App Security"
-author: msmbaldwin
-manager: mbaldwin
-ms.date: 1/11/2017
-ms.topic: hubpage
-ms.prod: azure
-ms.service: cloud-app-security
-ms.technology: techgroup-identity
-ms.suite: ems
-ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
-translationtype: Human Translation
-ms.sourcegitcommit: 4c2f6f240a579230c65899f36941dc627b2519e5
-ms.openlocfilehash: ed9c1bbdf3652cd8daff79ab41044e8f26429c8a
+layout: LandingPage
+description: Aprenda a utilizar Cloud App Security.
+ms.openlocfilehash: a746de0da559ebe32f246fdb52601dc5f2309d42
+ms.sourcegitcommit: d52371ba06d72e742dd07d8a9c6db4c9ee5d5fa9
+translationtype: HT
+---
+# <a name="cloud-app-security-documentation"></a>Documentación de Cloud App Security
 
+Controle y ayude a proteger el correo electrónico, documentos y datos confidenciales que se comparten fuera de la empresa. Desde una clasificación sencilla a etiquetas y permisos insertados, mejore la protección de datos en todo momento con Azure Information Protection, con independencia de dónde se almacene o con quién se comparta.
+
+<ul class="panelContent cardsFTitle">
+    <li>
+        <a href="/cloud-app-security/what-is-cloud-app-security">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_whats-new.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Más información sobre Cloud App Security</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/cloud-app-security/investigate">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_investigate.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Investigar qué sucede en el entorno de nube</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/cloud-app-security/set-up-cloud-discovery"> 
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_setup.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Configurar Cloud Discovery</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/cloud-app-security/control"> 
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_cloud-security.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Usar Cloud App Security para controlar el uso de aplicaciones en la nube</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://www.microsoft.com/en-us/cloud-platform/cloud-app-security"> 
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_learn-about.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Más información sobre Cloud App Security</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://support.microsoft.com/en-us/assistedsupportproducts"> 
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_support.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Obtención de soporte técnico para Cloud App Security</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+</ul>
 
 ---
 
-# <a name="cloud-app-security-documentation"></a>Documentación de Cloud App Security
-<article id="main">
-    <section id="hero-content">
-      <h1>Documentación de Cloud App Security</h1>
-      <h2>Obtenga información sobre cómo configurar y usar Cloud App Security para que la organización pueda aprovechar las ventajas de las aplicaciones en la nube sin perder el control gracias a una visibilidad mejorada de la actividad y a una mayor protección de los datos críticos de la empresa. </h2>
-      <h3>¿Es nuevo en Cloud App Security? <a href="https://go.microsoft.com/fwlink/?linkid=835379" target="_blank">Visite el sitio del producto &rarr;</a></h3>
-    </section>
-    <aside class="alert section-border">
-        <p>¿Listo para empezar a usarlo?</p>
-        <ol class="action-list">
-            <li><a href="https://go.microsoft.com/fwlink/?linkid=835380" target="_blank" class="button-bordered button-translucent">Comprar ahora</a></li>
-        </ol>
-    </aside>
-    <section id="featured" class="container">
-      <h2 class="section-heading"><span class="icon icon-warning"></span> Contenido presentado</h2>
-      <div class="features row">
-        <ul class="column column-half">
-          <li><a href="./what-is-cloud-app-security.md">Descripción de Cloud App Security</a></li>
-          <li><a href="./set-up-cloud-discovery.md">Detectar las aplicaciones en la nube que se usan en la organización</a></li>
-        </ul>
-        <ul class="column column-half">
-          <li><a href="./investigate.md">Investigar qué sucede en el entorno de nube</a></li>
-          <li><a href="./control.md">Usar Cloud App Security para controlar el uso de aplicaciones en la nube</a></li>
-        </ul>
-      </div>
-    </section>
-    <div id="journeys">
-      <section class="container">
-        <ul class="journeys-list">
-          <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="./what-is-cloud-app-security.md">
-                <div class="title column-third">
-                  <span class="step-number">1</span>
-                  <p>Conceptos básicos y exploración</p>
+<h2>Comprar ahora</h2>
+<ul class="panelContent cardsW">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>Suscripción</h3>
+                        <p><a href="https://portal.office.com/Signup/Signup.aspx?OfferId=831aa0aa-1408-4d03-8799-e6e09273f5b2&ali=1#0">Agregar una suscripción</a></p>
+                    </div>
                 </div>
-                <p class="description column-two-thirds">Obtenga información sobre conceptos, características y capacidades de alto nivel de Cloud App Security.</p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
-                  <a href="./what-is-cloud-app-security.md">
-                    <h3>Descripción de Cloud App Security</h3>
-                    <p>Obtenga información sobre Cloud App Security, una solución basada en la nube que le ayuda a ganar visibilidad y control sobre las aplicaciones en la nube de la organización y a proteger la red en la nube.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./release-notes.md">
-                    <h3>Consulte las notas de la versión</h3>
-                    <p>Manténgase al día de las características y las correcciones de Cloud App Security.</p>
-                  </a>
-                </li>
-                
-              </ul>
-            </section>
-          </li>
-       </section>
-    </div>
-<div id="journeys">
-      <section class="container">
-        <ul class="journeys-list">
-          <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="./getting-started-with-cloud-app-security.md">
-                <div class="title column-third">
-                  <span class="step-number">2</span>
-                  <p>Introducción</p>
-                </div>
-                <p class="description column-two-thirds">Empiece a implementar Cloud App Security en la organización.</p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
-                  <a href="./set-up-cloud-discovery.md">
-                    <h3>Configurar Cloud Discovery</h3>
-                    <p>Use la característica de Cloud Discovery para logar visibilidad en el uso de aplicaciones en la nube y Shadow IT en la organización.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./enable-instant-visibility-protection-and-governance-actions-for-your-apps.md">
-                    <h3>Conectar aplicaciones</h3>
-                    <p>Conecte las aplicaciones de nube a Cloud App Security para mayor visibilidad y control.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./control-cloud-apps-with-policies.md">
-                    <h3>Controlar las aplicaciones en la nube con directivas</h3>
-                    <p>Establezca directivas para supervisar y controlar el uso de aplicaciones de nube en su organización.</p>
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </li>
-       </section>
-    </div>
-  <div id="journeys">
-      <section class="container">
-        <ul class="journeys-list">
-          <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="./daily-activities-to-protect-your-cloud-environment.md">
-                <div class="title column-third">
-                  <span class="step-number">4</span>
-                  <p>Use</p>
-                </div>
-                <p class="description column-two-thirds">Aprenda a usar Cloud App Security a través de estas actividades diarias que le ayudan a investigar y controlar el uso de las aplicaciones en la nube de la organización.</p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
-                  <a href="./investigate.md">
-                    <h3>Investigar</h3>
-                    <p>Investigue y obtenga información sobre el uso de las aplicaciones en la nube de la organización mediante herramientas de Cloud App Security para conocer mejor lo que sucede en el entorno.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./control.md">
-                    <h3>Controlar el uso de aplicaciones en la nube</h3>
-                    <p>Controle el uso de aplicaciones en la nube mediante la migración usuarios, el establecimiento de acciones de gobierno y el empleo de la corrección automática.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./governance-actions.md">
-                    <h3>Gobierno</h3>
-                    <p>Use el registro de gobierno para obtener un registro del estado de cada tarea que haya determinado que Cloud App Security debe ejecutar, incluidas las tareas manuales y automáticas.</p>
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </li>
-       </section>
-    </div>
-      <div id="journeys">
-      <section class="container">
-        <ul class="journeys-list">
-          <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="./troubleshooting-cloud-discovery.md">
-                <div class="title column-third">
-                  <span class="step-number">5</span>
-                  <p>Solución de problemas</p>
-                </div>
-                <p class="description column-two-thirds">Siga estos pasos para solucionar problemas relacionados con la configuración y el funcionamiento de Cloud App Security.</p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
-                  <a href="./troubleshooting-cloud-discovery.md">
-                    <h3>Solución de problemas</h3>
-                    <p>Use estas guías para solucionar problemas relacionados con Cloud Discovery y el conector de API.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./troubleshooting-cloud-discovery.md">
-                    <h3>Solución de problemas de Cloud Discovery</h3>
-                    <p>Use estas guías para encontrar soluciones a problemas comunes al implementar y trabajar con Cloud Discovery.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./troubleshooting-api-connectors-using-error-messages.md">
-                    <h3>Solución de problemas de los conectores de API</h3>
-                    <p>Use esta guía para encontrar soluciones a los mensajes de error del conector de API.</p>
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </li>
-       </section>
-    </div>  
-
-        <aside class="alert alert-social">
-      <p>Mantenerse al día en Cloud App Security <ol class="action-list">
-        <li><a href="https://go.microsoft.com/fwlink/?linkid=835381" target="_blank" class="button-bordered button-translucent">Sitio oficial de Cloud App Security</a></li>
-        <li><a href="http://support.microsoft.com/oas/default.aspx?prid=16031" target="_blank" class="button-bordered button-translucent">Soporte técnico asistido de Cloud App Security</a></li>
-      </ol>
-    </aside>
-</article>
-
-
-
-<!--HONumber=Nov16_HO5-->
-
-
+            </div>
+        </div>
+    </li>    
+</ul>

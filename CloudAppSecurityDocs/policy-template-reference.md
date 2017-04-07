@@ -1,11 +1,11 @@
 ---
-title: Controlar las aplicaciones en la nube con directivas | Microsoft Docs
+title: Referencia de plantillas de directiva en Cloud App Security | Microsoft Docs
 description: "En este tema se proporciona información sobre cómo se usan las directivas y cómo se configuran para controlar el uso de aplicaciones en la nube."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/8/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,9 @@ ms.technology:
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 98b16c96c31039248bdfbe57f980b3ae6a26a7de
-ms.openlocfilehash: 4d09fa2aa44634e9389baeef431e897c32f3a912
-
-
+ms.openlocfilehash: 5a06dd9f53c4074b2842eee3f369611b5b6b274c
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
 # <a name="policy-templates"></a>Plantillas de directiva
 
@@ -64,8 +62,3 @@ La lista siguiente contiene todas las plantillas de directiva que existen en Clo
 [Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   
-
-
-<!--HONumber=Jan17_HO2-->
-
-

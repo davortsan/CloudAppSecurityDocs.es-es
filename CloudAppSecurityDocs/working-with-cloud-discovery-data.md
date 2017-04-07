@@ -1,11 +1,11 @@
 ---
-title: Personalizar Cloud Discovery | Microsoft Docs
+title: Usar datos de Cloud Discovery para detectar comportamientos de riesgo | Microsoft Docs
 description: "En este tema se proporcionan instrucciones sobre cómo trabajar con datos de Cloud Discovery, lo que incluye trabajar con la puntuación de riesgo de la aplicación."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/26/2016
+ms.date: 3/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,12 @@ ms.technology:
 ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 89f533e3b9c8397818e5aaa108dca168fda64db7
-ms.openlocfilehash: 0077b634d09cd9476d07c2de6a84d0c9396285da
-
-
+ms.openlocfilehash: 0c1e1fbc2c67f341967c56409195baf0617eb0b0
+ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
+translationtype: HT
 ---
+# <a name="discover"></a>Detectar
 
-# <a name="customize-cloud-discovery"></a>Personalizar Cloud Discovery
 ## <a name="review-the-cloud-discovery-dashboard"></a>Revisar el panel de Cloud Discovery
 
 El panel de Cloud Discovery está diseñado para proporcionar más información sobre cómo se usan las aplicaciones en la nube en la organización. Proporciona una visión general de un vistazo sobre los tipos de aplicaciones que se usan, las alertas abiertas y los niveles de riesgo de las aplicaciones de la organización. También muestra quiénes son los usuarios que más usan las aplicaciones y proporciona un mapa de ubicación de la sede central de la aplicación. El panel de Cloud Discovery tiene numerosas opciones para filtrar los datos, de modo que pueda generar vistas específicas en función de lo que más le interese y gráficos fáciles de entender para que se haga una idea general de un vistazo.
@@ -38,29 +36,22 @@ Lo primero que debe hacer para obtener una visión general de sus aplicaciones d
 4. Puede ver los principales usuarios y las direcciones IP de origen para identificar los usuarios predominantes de aplicaciones en la nube de la organización.
 5. Compruebe cómo se extienden las aplicaciones detectadas según la ubicación geográfica (de acuerdo con su sede central) en el mapa de la sede central de la aplicación.
 
-6. Por último, no olvide revisar la puntuación de riesgo de la aplicación detectada en la información general sobre el riesgo de las aplicaciones y comprobar el estado de las alertas de detección para ver cuántas alertas abiertas debe investigar.
-
-
-## <a name="customize-the-risk-score"></a>Personalizar la puntuación de riesgo  
-Cloud Discovery proporciona datos importantes sobre la credibilidad y la confianza de las aplicaciones en la nube que se usan en el entorno. En el portal, cada aplicación detectada se muestra junto a una puntuación total que representa la evaluación de Cloud App Security de la madurez de uso de esta aplicación en concreto para las empresas. La puntuación total de cualquier aplicación es un promedio ponderado de tres subpuntuaciones relacionadas con las tres subcategorías que Cloud App Security tiene en cuenta al evaluar la confiabilidad:  
+6. Por último, no olvide revisar la puntuación de riesgo de la aplicación detectada en la **información general sobre el riesgo de las aplicaciones** y comprobar el estado de las alertas de detección para ver cuántas alertas abiertas debe investigar.
   
--   **General**: esta categoría se refiere a aspectos básicos sobre la empresa que produce la aplicación, incluidos su dominio, año de fundación y popularidad. Estos campos están diseñados para reflejar la estabilidad de la empresa en el nivel más básico.  
+## <a name="exclude-entities"></a>Excluir entidades  
+Si tiene usuarios o direcciones IP del sistema que son especialmente ruidosos y no interesantes o aplicaciones que no son relevantes, es posible que quiera excluir sus datos de los datos de Cloud Discovery que se analizan. Por ejemplo, puede excluir toda la información que se origina en 127.0.0.1 o el host local.  
   
--   **Seguridad**: la categoría de seguridad tiene en cuenta todos los estándares relacionados con la seguridad física de los datos usados por la aplicación detectada. Esto incluye campos como autenticación multifactor, cifrado, clasificación de los datos y propiedad de los datos.  
-  
--   **Cumplimiento normativo**: esta categoría muestra qué estándares comunes de cumplimiento de procedimientos recomendados cumple la empresa que produce la aplicación. La lista de especificaciones incluye estándares como HIPAA, CSA y PCI-DSS.  
-  
-Cada una de las categorías se compone de muchas propiedades específicas. Según el algoritmo de puntuación, cada propiedad recibe una puntuación preliminar de entre 0 y 10, en función del valor. En consecuencia, los valores True/False recibirán 10 o 0, mientras que propiedades continuas como la antigüedad del dominio recibirán un valor determinado del espectro. La puntuación de cada propiedad se pondera con todos los demás campos existentes en la categoría para crear la subpuntuación de esta. Si encuentra una aplicación sin puntuar, eso normalmente indica que sus propiedades son desconocidas y que, por lo tanto, no se ha puntuado.  
-  
-Es importante dedicar un minuto a revisar y modificar las ponderaciones predeterminadas otorgadas a la configuración de puntuación de Cloud Discovery. De forma predeterminada, todos los distintos parámetros evaluados tienen la misma ponderación. Si hay determinados parámetros que son más o menos importantes para la organización, es importante cambiarlos de la siguiente forma:  
+Para crear una exclusión:  
   
 1.  En el portal, en el icono de configuración, seleccione **Configuración de Cloud Discovery**.  
   
-2.  En **Configurar métrica de puntuación**, deslice el valor **Importancia** para cambiar la ponderación del campo a **Omitido**, **Bajo**, **Medio**, **Alto** o **Muy alto**.  
+2.  Haga clic en la pestaña **Excluir entidades**.  
   
-3.  Además, puede establecer si determinados valores no están disponibles o no son aplicables en el cálculo de la puntuación. Cuando se incluyen, los valores no aplicables tienen una contribución negativa a la puntuación calculada.  
+3.  Seleccione la pestaña **Usuarios excluidos** o **Direcciones IP excluidas** y haga clic en el botón para **Agregar usuario** o **Agregar dirección IP**.  
   
-     ![puntuación](./media/score.png "puntuación")  
+4.  Agregue un alias de usuario o una dirección IP. Se recomienda agregar información sobre por qué se ha excluido la dirección IP o el usuario.  
+  
+     ![Excluir usuario](./media/exclude-user.png "excluir usuario")  
   
 ## <a name="manage-continuous-reports"></a>Administrar informes continuos  
 Los informes continuos personalizados proporcionan más granularidad al supervisar los datos de registro de Cloud Discovery de la organización. Al crear informes personalizados, es posible filtrar por ubicaciones geográficas concretas, redes y sitios o unidades organizativas. De forma predeterminada, solo aparecen los informes siguientes en el selector de informes de Cloud Discovery:  
@@ -84,22 +75,7 @@ Para crear un informe continuo:
 6.  Defina los filtros que quiera en los datos. Pueden ser **Unidades organizativas**, **Etiquetas de dirección IP** o **Intervalos de direcciones IP**. Para obtener más información sobre el trabajo con etiquetas de dirección IP e intervalos de direcciones IP, consulte [Organize the data according to your needs](general-setup.md#IPtagsandRanges) (Organizar los datos de acuerdo a las necesidades).  
   
     ![crear informe continuo personalizado](./media/create-custom-continuous-report.png) 
-  
-## <a name="exclude-entities"></a>Excluir entidades  
-Si tiene usuarios o direcciones IP del sistema que son especialmente ruidosos y no interesantes o aplicaciones que no son relevantes, es posible que quiera excluir sus datos de los datos de Cloud Discovery que se analizan. Por ejemplo, puede excluir toda la información que se origina en 127.0.0.1 o el host local.  
-  
-Para crear una exclusión:  
-  
-1.  En el portal, en el icono de configuración, seleccione **Configuración de Cloud Discovery**.  
-  
-2.  Haga clic en la pestaña **Excluir entidades**.  
-  
-3.  Seleccione la pestaña **Usuarios excluidos** o **Direcciones IP excluidas** y haga clic en el botón para **Agregar usuario** o **Agregar dirección IP**.  
-  
-4.  Agregue un alias de usuario o una dirección IP. Se recomienda agregar información sobre por qué se ha excluido la dirección IP o el usuario.  
-  
-     ![Excluir usuario](./media/exclude-user.png "excluir usuario")  
-  
+
 ## <a name="deleting-cloud-discovery-data"></a>Eliminar datos de Cloud Discovery  
 Hay una serie de razones por las que puede que quiera eliminar los datos de Cloud Discovery. Se recomienda eliminarlos en los casos siguientes:  
   
@@ -133,8 +109,3 @@ Para eliminar datos de Cloud Discovery:
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO4-->
-
-

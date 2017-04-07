@@ -1,11 +1,11 @@
 ---
-title: Directivas de actividad | Microsoft Docs
+title: Crear directivas para controlar actividades en Cloud App Security | Microsoft Docs
 description: En este tema se proporcionan instrucciones para crear y trabajar con directivas de actividad.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/19/2016
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
-ms.openlocfilehash: 46ab0f13a8d0839f77525c334e75c840c9bfc73f
-
-
+ms.openlocfilehash: 1aaf81fe759fabd6105076d22c65f20c149b8d19
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="activity-policies"></a>Directivas de actividad
 Las directivas de actividad permiten aplicar una amplia gama de procesos automatizados, con lo que se aprovechan las API del proveedor de aplicaciones. Estas directivas permiten supervisar actividades concretas realizadas por distintos usuarios o seguir niveles inesperadamente altos de un determinado tipo de actividad.  
   
@@ -42,7 +39,7 @@ Para crear una nueva directiva de actividad, siga este procedimiento:
 4.  Para establecer qué acciones o qué otras métricas desencadenan esta directiva, trabaje con **filtros de actividad**.  
   
 5.  En **Parámetros de coincidencia de actividad**, seleccione si se desencadenará una infracción de directiva cuando una sola actividad coincida con los filtros o si solo se detectará una infracción cuando se detecte un número especificado de **actividades repetidas**.  
-    Si elige **Actividad repetida**, puede establecer ** Actividades de grupo coincidentes por aplicación**. Esto desencadenará una coincidencia de directiva solo cuando se producen las actividades repetidas en la misma aplicación (por ejemplo, 5 descargas desde Box).  
+    Si elige **Actividad repetida**, puede establecer **Actividades de grupo coincidentes por aplicación**. Esto desencadenará una coincidencia de directiva solo cuando se producen las actividades repetidas en la misma aplicación (por ejemplo, 5 descargas desde Box).  
   
 6.  Configure las **acciones** que deben realizarse cuando se encuentra una coincidencia.  
   
@@ -62,57 +59,6 @@ Observe estos ejemplos:
   
      ![ejemplo de frecuencia de descarga alta](./media/high-download-rate-example.png "ejemplo de frecuencia de descarga alta")  
   
-## <a name="anomaly-detection"></a>Detección de anomalías  
-Cuando la organización está protegida mediante Cloud App Security, todas las actividades en la nube se puntúan según diversos factores de riesgo predefinidos. Cloud App Security examina todas las sesiones de los usuarios en la nube y toma en consideración los factores de riesgo que se establezcan aquí para emitir alertas cuando ocurra algo diferente de la línea de base de la organización o de la actividad normal del usuario. La página de la directiva de detección de anomalías permite configurar y personalizar qué familias de factores de riesgo se tendrán en cuenta en el proceso de puntuación de riesgo. Las directivas se pueden aplicar de manera diferente a distintos usuarios, ubicaciones y sectores de la organización. Por ejemplo, puede crear una directiva que le avise cuando los miembros del equipo de TI estén activos fuera de la oficina.  
-  
-Para configurar una directiva de detección de anomalías:  
-  
-1.  En la consola, haga clic en **Control**, seguido de **Directivas**.  
-  
-2.  Haga clic en **Crear directiva** y seleccione la directiva **Detección de anomalías**.  
-  
-     ![menú de la directiva de detección de anomalías](./media/anomaly-detection-policy-menu.png "menú de la directiva de detección de anomalías")  
-  
-3.  Rellene el nombre y la descripción de la directiva y vaya al campo **Filtros de actividad**, donde puede elegir la actividad a la que quiere aplicar la directiva.  
-  
-4.  Asigne un nombre y una descripción a la directiva. Si quiere, puede basarla en una plantilla. Para obtener más información sobre las plantillas de directiva, vea [Controlar aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).  
-  
-5.  Para aplicar la directiva a todas las actividades del entorno en la nube, seleccione **Toda la actividad supervisada**. Para limitar la directiva a tipos específicos de actividades, elija **Actividad seleccionada**. Haga clic en **Agregar filtros** y establezca los parámetros adecuados por los que se filtrará la actividad. Por ejemplo, para aplicar la directiva solo en las actividades realizadas por los administradores de Salesforce, puede elegir esta etiqueta de usuario.  
-  
-6.  Debajo de este campo, establezca los **Factores de riesgo**. Puede elegir qué familias de riesgos quiere que se tengan en cuenta al calcular la puntuación de riesgo. Puede usar el botón Activar/Desactivar situado a la derecha de la fila para habilitar y deshabilitar los distintos riesgos. Además, para una mayor granularidad, puede elegir la actividad en la que quiere habilitar cada familia de riesgos.  
-  
-     Los factores de riesgo son los siguientes:  
-  
-    -   **Errores de inicio de sesión**: ¿intentan los usuarios iniciar sesión y se producen varios errores en un período de tiempo breve?  
-  
-    -   **Actividad de administración**: ¿usan los administradores sus cuentas con privilegios para iniciar sesión desde ubicaciones inusuales o a horas extrañas?  
-  
-    -   **Cuentas inactivas**: ¿hay repentinamente actividad en una cuenta que no se ha usado durante un tiempo?  
-  
-    -   **Ubicación**: ¿hay actividad en una ubicación nueva, sospechosa o inusual?  
-  
-    -   **Viaje imposible**: ¿ha iniciado sesión un usuario en Denver y diez minutos después en París?  
-  
-    -   **Agente de usuario y dispositivo**: ¿hay actividad en un dispositivo desconocido o no administrado?  
-  
-     Puede usar estos parámetros para definir escenarios complejos, por ejemplo, para excluir el intervalo IP de la oficina de los factores de riesgo considerados en la detección de anomalías, crear una etiqueta específica "office IP" (IP de la oficina) y filtrar el intervalo para que no se incluya entre los parámetros considerados. Después, para que el intervalo que ha creado se excluya de la detección de anomalías de la actividad de administración:  
-  
-    -   En **Tipo de riesgo**, busque **Actividad de administración**.  
-  
-    -   Cambie **Aplicar a** a **Actividad seleccionada**.  
-  
-    -   En **Filtros de actividad**, establezca **Aplicar a** en **Actividad seleccionada** y, en **Activities matching all of the following** (Actividades que coincidan con todo lo siguiente), establezca que la **Actividad administrativa** es **True**.  
-  
-    -   Haga clic en el icono **+**, seleccione **IP tag does not equal** (La etiqueta IP no es igual a) y seleccione la etiqueta "office IP".  
-  
-7.  En **Sensibilidad**, seleccione la frecuencia con la que quiere recibir alertas.  
-  
-     El valor de sensibilidad determinará cuántas alertas semanales se desencadenarán por término medio por cada 1000 usuarios.  
-  
-     ![IP de detección de anomalías](./media/anomaly-detection-ips.png "IP de detección de anomalías")  
-  
-8.  Haga clic en **Crear**.  
- 
   
 ## <a name="activity-policy-reference"></a>Referencia de directiva de actividad  
 En esta sección se proporciona información de referencia sobre directivas, se ofrecen explicaciones sobre cada tipo de directiva y se detallan los campos que se pueden configurar para cada directiva.  
@@ -133,8 +79,3 @@ Con **Actividad repetida** puede establecer el número de actividades repetidas,
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO3-->
-
-

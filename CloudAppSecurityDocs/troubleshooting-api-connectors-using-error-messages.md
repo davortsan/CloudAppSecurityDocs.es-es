@@ -1,11 +1,11 @@
 ---
-title: Solucionar problemas relacionados con conectores de aplicaciones a partir de los mensajes de error | Microsoft Docs
+title: Solucionar problemas relacionados con conectores de aplicaciones a partir de los mensajes de error en Cloud App Security | Microsoft Docs
 description: "En este tema se proporciona una lista de los mensajes de error de los conectores de aplicaciones, así como recomendaciones para solucionarlos."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/27/2016
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,10 @@ ms.technology:
 ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
-ms.openlocfilehash: 71e2a213ddf6f625037b11373e55aa270c3b1785
-
-
+ms.openlocfilehash: e9fa0b4d0527c6322da14cdf16cc8509ec37c1ed
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
-
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>Solucionar problemas relacionados con conectores de aplicaciones a partir de los mensajes de error
 
 Los errores de conectores de aplicaciones se pueden consultar en el cuadro de diálogo del conector de aplicaciones después de intentar conectar una aplicación en la nube mediante el conector de aplicaciones de la API.
@@ -46,9 +42,9 @@ Los errores de conectores de aplicaciones se pueden consultar en el cuadro de di
 |IgniteException|Office 365|El dominio o el usuario no son válidos.|Restablezca la configuración y siga el proceso para volver a conectar Office 365 con Cloud App Security.|
 |ContextManagerServiceException: com.adallom.adalib.httputils.exceptions.TokenRefreshException: {"error":"invalid_grant","error_description":"AADSTS70002: Error validating credentials. AADSTS70008: The provided authorization code or refresh token is expired. (ContextManagerServiceException: com.adallom.adalib.httputils.exceptions.TokenRefreshException: {"error":"invalid_grant","error_description":"AADSTS70002: Error al validar las credenciales. AADSTS70008: El código de autorización proporcionado o token de actualización ha expirado.) Envíe una nueva solicitud de autorización interactiva para este usuario y recurso.|Office 365|El dominio o el usuario no son válidos.|Restablezca la configuración y siga el proceso para volver a conectar Office 365 con Cloud App Security.|
 |HttpRequestFailure: Server returned: 400 Bad Request (HttpRequestFailure: El servidor devolvió: 400 Solicitud incorrecta)|Office 365|Error interno.|Haga clic de nuevo en el vínculo Probar ahora dentro de unos minutos. Si no funciona, siga el proceso para volver a conectar Office 365 con Cloud App Security.|
-|GoogleJsonResponseException: 401 Unauthorized (GoogleJsonResponseException: 401 No autorizado)|Google Apps|Acceso denegado: No está autorizado para leer registros de actividad. El usuario con que el inicie sesión en Google Apps debe ser un usuario administrador.|Siga el proceso para volver a conectar Google Apps con Cloud App Security mediante una cuenta de administrador.|
-|GoogleJsonResponseException: 403 Forbidden (GoogleJsonResponseException: 403 Prohibido)|Google Apps|Problema al ejecutar la API de Google Apps.|Si acaba de implementar el conector de aplicaciones de Cloud App Security para Google Apps, compruebe lo siguiente: si hizo clic en Ilimitado, asegúrese de que su cuenta de Google Apps es realmente ilimitada. Si no es así, vuelva a ejecutar el conector de aplicaciones y desactive la opción de cuenta ilimitada. Compruebe que los ámbitos definidos durante la configuración son correctos. Si no está realizando una implementación nueva y ve este error, es posible que se haya alcanzado el límite diario de API y al día siguiente se renovarán los eventos de Google Apps.|
-|TokenResponseException: 400 Bad Request (TokenResponseException: 400 Solicitud incorrecta)|Google Apps|O bien la conexión con Google Apps no se ha completado, o bien ha expirado.|Siga el proceso para volver a conectar Google Apps con Cloud App Security.|
+|GoogleJsonResponseException: 401 Unauthorized (GoogleJsonResponseException: 401 No autorizado)|G Suite|Acceso denegado: No está autorizado para leer registros de actividad. El usuario con que el inicie sesión en G Suite debe ser un usuario administrador.|Siga el proceso para volver a conectar G Suite con Cloud App Security mediante una cuenta de administrador.|
+|GoogleJsonResponseException: 403 Forbidden (GoogleJsonResponseException: 403 Prohibido)|G Suite|Problema al ejecutar la API de G Suite.|Si acaba de implementar el conector de aplicaciones de Cloud App Security para G Suite, compruebe lo siguiente: si hizo clic en Ilimitado, asegúrese de que su cuenta de G Suite es realmente ilimitada. Si no es así, vuelva a ejecutar el conector de aplicaciones y desactive la opción de cuenta ilimitada. Compruebe que los ámbitos definidos durante la configuración son correctos. Si no está realizando una implementación nueva y ve este error, es posible que se haya alcanzado el límite diario de API y al día siguiente se renovarán los eventos de G Suite.|
+|TokenResponseException: 400 Bad Request (TokenResponseException: 400 Solicitud incorrecta)|G Suite|O bien la conexión con G Suite no se ha completado, o bien ha expirado.|Siga el proceso para volver a conectar G Suite con Cloud App Security.|
 |RuntimeException: com.adallom.adalib.httputils.exceptions.HttpRequestFailure: Server returned: 403 Forbidden (RuntimeException: com.adallom.adalib.httputils.exceptions.HttpRequestFailure: El servidor devolvió: 403 Prohibido)|ServiceNow|Los permisos no son correctos.|Siga el proceso para volver a conectar ServiceNow con Cloud App Security mediante una cuenta de administrador.|
 |HttpRequestFailure: Server returned: 401 Unauthorized (HttpRequestFailure: El servidor devolvió: 401 No autorizado)|Exchange Online|Usuario o contraseña incorrectos.|Asegúrese de que el nombre de usuario y la contraseña son correctos y siga el proceso para volver a conectar Exchange Online con Cloud App Security.|
 |HttpRequestFailure: Server returned: 404 Not Found (HttpRequestFailure: El servidor devolvió: 404 No encontrado)|Exchange Online|El usuario que está usando para iniciar sesión en Exchange Online no tiene un buzón principal en Exchange Online (por ejemplo, un usuario que no existe en Azure AD o un usuario que existe en Azure AD pero no tiene una licencia de Exchange Online).|Siga el proceso para volver a conectar Exchange Online con Cloud App Security mediante una nueva cuenta de administrador.|
@@ -62,8 +58,3 @@ Los errores de conectores de aplicaciones se pueden consultar en el cuadro de di
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-
