@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,25 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2d9095a39f5000e88bd0ad94ba0ca9f4a780f58e
-ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
+ms.openlocfilehash: 9de7c7770e567ffc79c6af98582d46d86115babe
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="release-notes"></a>Notas de la versión
+
+## <a name="cloud-app-security-release-94"></a>Versión 94 de Cloud App Security
+Publicada el 2 de abril de 2017
+
+**Nuevas características**
+-    Cloud App Security ahora se integra con Azure RMS. Puede proteger archivos en Office 365 OneDrive y Sharepoint Online con Microsoft Rights Management directamente desde el portal de Cloud App Security. Esto puede realizarse desde la página **Archivos**. Para más información, consulte [Integración de Azure Information Protection](azip-integration.md). En versiones futuras se proporcionará compatibilidad con aplicaciones adicionales.
+-    Hasta ahora, cuando las actividades de robot y rastreador (crawler) tienen lugar en la red, era especialmente difícil de identificar porque dichas actividades no las realizaba un usuario de la red. Sin su conocimiento, los robots y rastreadores pueden ejecutar herramientas malintencionados en los equipos. Ahora, Cloud App Security proporciona las herramientas para ver cuándo los robots y los rastreadores están realizando actividades en la red. Puede usar la nueva etiqueta de agente de usuario para filtrar actividades en el registro de actividades. La etiqueta de agente de usuario le permite filtrar todas las actividades que realizan por robots y usarlo para crear una directiva que le avise cada vez que se detecte este tipo de actividad. El usuario se actualizará cuando las versiones futuras incluyan esta actividad de riesgo como insertada en las alertas de detección de anomalías. 
+-    La nueva página de permisos de aplicación unificada permite investigar más fácilmente los permisos que se han concedido a los usuarios a aplicaciones de terceros. Haciendo clic en **Investigar** > **Permisos de aplicación**, ahora puede ver una lista de todos los permisos que se les concedió a los usuarios a aplicaciones de terceros con una página de permisos de aplicación por aplicación conectada que le permite comparar mejor entre las distintas aplicaciones y los permisos concedidos.  Para más información, vea [Administrar permisos de aplicación](manage-app-permissions.md).
+-    Puede filtrar los datos desde el cajón de tablas para una investigación más sencilla.
+En el **Registro de actividades**, la tabla **Archivos** y las páginas **Permisos de aplicación** ahora se han mejorado con nuevas acciones contextuales, lo que facilita bastante los giros en el proceso de investigación. También agregamos vínculos rápidos a páginas de configuración y la capacidad de copiar los datos con un solo clic. Para más información, consulte la información sobre el [trabajo con los cajones de archivos y actividades](file-filters.md).
+-    Se ha completado el soporte para Microsoft Teams para la implementación de registros y alertas de actividad de Office 365.
+ 
+
+
 
 ## <a name="cloud-app-security-release-93"></a>Notas de la versión 93 de Cloud App Security
 Fecha de publicación: 20 de marzo de 2017

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a1ff57c60d8b35711330e8e4879fe1a48a7dee77
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+ms.openlocfilehash: f6ed28c8edd3f2897de8bad368db1da78527aea1
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="content-inspection"></a>Inspección de contenido
@@ -42,7 +42,7 @@ Las directivas de inspección de contenido integradas pueden buscar la siguiente
 
 - Direcciones de correo electrónico 
 - Números de tarjeta de crédito 
-  - Todas las compañías de tarjetas de crédito (Visa, MasterCard, American Express, Diners Club, Discover, JCB, Dankort, UnionPay, etc.) 
+  -    Todas las compañías de tarjetas de crédito (Visa, MasterCard, American Express, Diners Club, Discover, JCB, Dankort, UnionPay, etc.) 
   - Delimitadores de espacio, punto o guión
   - Este examen también incluye la validación Luhn.
 - Códigos SWIFT
@@ -59,6 +59,15 @@ Las directivas de inspección de contenido integradas pueden buscar la siguiente
 - Direcciones particulares
 - Tarjetas de pasaporte
 - Números de la seguridad social
+
+## <a name="supported-languages"></a>Idiomas admitidos
+
+El motor de inspección de contenido de Cloud App Security:
+-    Admite todos los caracteres Unicode
+-    Contempla más de 1000 tipos de archivo
+-    Se admiten varios idiomas, especialmente los archivos que utilizan juegos de caracteres Unicode. Asegúrese de definir las directivas en la cuenta para esos idiomas, por ejemplo si está buscando palabras clave, debe poner las palabras clave en los idiomas que pretende utilizar.
+-    En tipos de archivo basados en texto que utilizan codificación no Unicode, por ejemplo, Chino GB2312, la comparación con palabras clave en chino Unicode no funcionará según lo esperado.
+-    Para los tipos de archivo que se basan en bibliotecas de terceros, las cadenas y palabras coincidentes no siempre funcionen como se esperaba. Esto es muy habitual en archivos (como los tipos de archivo binarios) en los que la inspección de contenido se basa en bibliotecas de terceros que devuelven cadenas de Java para conjuntos de caracteres e idioma.
 
 
 

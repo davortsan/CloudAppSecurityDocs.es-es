@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5205f05b470ed61d09a70e5be066e02f4f02a9cf
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 4e4641af039ba2ad7b0f36b0322277081170be01
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="manage-app-permissions"></a>Administrar permisos de aplicación
@@ -27,11 +27,7 @@ La pestaña **Permisos de aplicación** muestra información sobre los permisos 
 
 Para obtener acceso a la pestaña Permisos de aplicación:
 
-1. En el portal Cloud App Security, haga clic en **Investigar** y, en **Aplicaciones conectadas**, seleccione **Office 365**. 
-> [!Note]
-> Primero tiene que conectar Cloud App Security a Office 365 para trabajar con los permisos de aplicación.
-
-2. Después, en el panel de Office 365, haga clic en la pestaña **Permisos de aplicación**.
+En el portal de Cloud App Security, haga clic en **Investigar** y, después, en **Permisos de aplicación**.
 
 
  ![permisos de aplicación](./media/app-permissions.png)
