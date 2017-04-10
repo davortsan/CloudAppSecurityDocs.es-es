@@ -23,7 +23,7 @@ Cloud App Security puede supervisar cualquier tipo de archivo basado en más de 
  
 **Tipos de archivo compatibles** 
 
-Los motores de DLP integrados de Cloud App Security realizan la inspección de contenido mediante la extracción de texto de todos los tipos de archivo comunes (más de&100;), incluidos los de Office, Open Office, archivos comprimidos, varios formatos de texto enriquecido, XML, HTML y muchos más.
+Los motores de DLP integrados de Cloud App Security realizan la inspección de contenido mediante la extracción de texto de todos los tipos de archivo comunes (más de 100), incluidos los de Office, Open Office, archivos comprimidos, varios formatos de texto enriquecido, XML, HTML y muchos más.
 
 El motor combina tres aspectos en cada directiva:  
   
