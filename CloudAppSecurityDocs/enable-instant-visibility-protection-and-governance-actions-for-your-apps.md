@@ -1,11 +1,11 @@
 ---
-title: Conectar aplicaciones | Microsoft Docs
+title: Conectar aplicaciones para obtener una mayor visibilidad y control con Cloud App Security | Microsoft Docs
 description: "En este tema se describe el proceso para conectar aplicaciones con las aplicaciones en la nube de la organización mediante conectores de API."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/9/2017
+ms.date: 3/12/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: a6133e3cf0521515088dfd9d301aed2df2c4b430
-ms.openlocfilehash: 199a3c9909093551e3eca5e524f6bf04ce03aa4e
-
-
+ms.openlocfilehash: 0c6fbb24a0b5d7f1c5ada4b805eb8b7ae5ecada2
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
 # <a name="connect-apps"></a>Conectar aplicaciones 
 Los conectores de aplicaciones aprovechan las API de los proveedores de aplicaciones para permitir mediante Cloud App Security una mayor visibilidad y control de las aplicaciones a las que se conecta.  
   
@@ -67,7 +64,7 @@ En función de la aplicación a la que se conecte (consulte la tabla siguiente),
   
 En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades son compatibles con los conectores de aplicaciones:  
 
-||**Office 365**|**Box**|**Okta**|**Google Apps**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|  
+||**Office 365**|**Box**|**Okta**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|  
 |-|-|-|-|-|-|-|-|-|  
 |**Cuentas de lista**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**Grupo**|✔|✔|✔|✔|✔|✔|✔|✔|  
@@ -89,9 +86,26 @@ Para algunas aplicaciones, puede ser necesario agregar las siguientes direccione
   
 -   Para los registros:  
   
-     104.209.35.177  
+    104.209.35.177  
   
-     13.91.98.185  
+    13.91.98.185
+ 
+    40.118.211.172
+
+    13.93.216.68
+
+    13.91.61.249
+
+    13.93.233.42
+
+    13.64.196.27
+
+    13.64.198.97
+
+    13.64.199.41
+
+    13.64.198.19
+  
   
 -   Para la consola:  
   
@@ -107,7 +121,7 @@ Para usar los conectores de aplicaciones, debe asegurarse de que tiene lo siguie
 |Aplicación|Tipo de licencia|Usuario|  
 |---------|------------------|----------|  
 |Cuadro|Enterprise|Se recomienda encarecidamente que se conecte a Box como administrador. Si se conecta como coadministrador, la visibilidad de los datos será parcial. En caso de que se conecte como coadministrador, asegúrese de seleccionar todos los permisos.|  
-|Google Apps|Google Apps Unlimited (preferido)<br /><br /> Google Apps Enterprise (como mínimo)|Superadministrador|  
+|G Suite|G Suite Unlimited (preferido)<br /><br /> G Suite Enterprise (como mínimo)|Superadministrador|  
 |Office 365||Administrador global|  
 |AWS||Usuario creado recientemente|  
 |Dropbox|Empresa/Enterprise|Administración|  
@@ -127,9 +141,5 @@ Para obtener más información sobre el emparejamiento público, vea [Circuitos 
 [Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   
+
    
-
-
-<!--HONumber=Jan17_HO2-->
-
-
