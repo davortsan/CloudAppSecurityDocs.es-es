@@ -1,11 +1,11 @@
 ---
-title: Personalizar el portal | Microsoft Docs
+title: Personalizar el portal de Cloud App Security para obtener mejores resultados | Microsoft Docs
 description: En este tema se proporcionan los pasos iniciales para personalizar el portal.
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/21/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 49b64ea6cee1a33fd4005388d5b09cfbdcf59052
-ms.openlocfilehash: b5250ccb93dda950b417bbbe3fc2e64f0bab8320
-
-
+ms.openlocfilehash: b55da41080d70a41382a94b9ff527d50046c61b2
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+translationtype: HT
 ---
-
 # <a name="customize-the-portal"></a>Personalizar el portal
 En el siguiente procedimiento se proporcionan instrucciones para personalizar el portal de Cloud App Security.
   
@@ -38,7 +35,7 @@ En el siguiente procedimiento se proporcionan instrucciones para personalizar el
 4.  Incluya una lista de los **dominios administrados**. Los dominios administrados sirven para que Cloud App Security pueda averiguar qué usuarios son internos y cuáles son externos, así como dónde se deben y no se deben compartir archivos. Esto se usa en los informes y de cara a las alertas.  
 > [!NOTE] 
 > - Los usuarios de dominios que no están configurados como internos se marcarán como externos y no se examinarán en busca de actividades o archivos.
-> - Si está integrando mediante la integración de Azure Information Protection, consulte [Integración de Azure Information Protection](azip-integration.md) para obtener información. 
+> - Si está integrando mediante la integración de Azure Information Protection, vea [Integración de Azure Information Protection](azip-integration.md) para obtener información. 
   
 4.  **Configuración de la privacidad de correo electrónico del registro de actividades**  
   
@@ -66,7 +63,7 @@ En el siguiente procedimiento se proporcionan instrucciones para personalizar el
   
 ![administrar el acceso de administrador](./media/manage-admin-access.png "administrar el acceso de administrador")  
   
-##  <a name="a-nameadminsettingsa-customize-your-admin-settings"></a><a name="Adminsettings"></a> Personalizar la configuración de administración  
+##  <a name="Adminsettings"></a> Personalizar la configuración de administración  
 Para configurar sus preferencias como un administrador de Cloud App Security, haga clic en su nombre en la barra de menús del portal y seleccione **Configuración de usuario** para establecer lo siguiente:  
   
 1.  Haga clic en **Configuración de la cuenta**. Aquí puede personalizar el idioma del portal para verlo según su elección. Se puede establecer para mostrar el portal en el idioma predeterminado o bien en un idioma diferente de su preferencia.  
@@ -82,49 +79,17 @@ Para configurar sus preferencias como un administrador de Cloud App Security, ha
   
 3. Haga clic en **Guardar** cuando acabe.  
   
-##  <a name="a-nameiptagsandrangesa-set-ip-ranges"></a><a name="IPtagsandRanges"></a> Configurar intervalos IP  
+##  <a name="IPtagsandRanges"></a> Configurar intervalos IP  
 Para identificar fácilmente las direcciones IP conocidas, como las direcciones IP de la oficina física, es necesario establecer los intervalos de direcciones IP que permiten etiquetar y clasificar adecuadamente, así como personalizar la forma en que los registros y alertas se muestran e investigan.   
-Cada grupo de intervalos IP se puede clasificar en función de una lista predeterminada de categorías IP o etiquetarse con etiquetas IP de creación propia. Además, esta configuración permite invalidar la información de geolocalización pública según su conocimiento de la red interna.  
+Vea [Etiquetas IP](ip-tags.md) para obtener más información.
   
-Se admite tanto IPv4 como IPv6.  
-  
-En la barra de menús, haga clic en el icono de configuración ![icono de configuración](./media/settings-icon.png "icono de configuración") y seleccione **Intervalos de direcciones IP**. Haga clic en **+Agregar intervalo de direcciones IP** y configure lo siguiente:  
-  
-> [!NOTE]  
->  La ubicación y el ISP registrado invalidarán los valores predeterminados.   
-> Las etiquetas IP, por contra, se agregan a la actividad sin invalidar datos.  
-  
-1.  Dé un **nombre** al intervalo IP. El nombre no aparecerá en el registro de actividades, sino que solo se usará para administrar el intervalo IP.  
-  
-     Para incluir el intervalo IP en una categoría IP, seleccione una categoría del menú desplegable.  
-  
-2.  Escriba el **intervalo de direcciones IP** que quiera configurar y, después, haga clic en el botón "+". Puede agregar cuantas direcciones IP y subredes quiera mediante la notación de prefijos de red (también conocida como notación CIDR), por ejemplo, 192.168.1.0/32.  
-  
-3.  Escriba un nuevo valor para **invalidar los campos de ubicación** u organización (ISP) de estas direcciones. Por ejemplo, si tiene una dirección IP que se considera públicamente como perteneciente a Irlanda, pero sabe que está en Estados Unidos, puede invalidar esta configuración.  
-  
-4.  Escriba un **ISP registrado**. Esto invalidará los datos de sus actividades.  
-  
-5.  Especifique una etiqueta para **etiquetar** las actividades de estas direcciones IP. La etiqueta se creará si escribe una palabra en el cuadro. Con la etiqueta ya configurada, puede agregarla a más intervalos IP seleccionándola de la lista. Puede agregar tantas etiquetas IP como quiera para cada intervalo. Las etiquetas IP se pueden usar al crear directivas.  Además de configurar las etiquetas IP, Cloud App Security tiene etiquetas integradas que no son configurables. Puede ver la lista de etiquetas en el [Filtro de etiquetas IP](activity-filters.md).  
-  
-6.  Las **categorías IP** sirven para reconocer fácilmente las actividades de las direcciones IP interesantes. Las categorías están disponibles en el portal, pero requieren una configuración de usuario para saber qué direcciones IP están incluidas en cada categoría, excepto la categoría de "De riesgo", que incluye dos etiquetas IP: proxy anónimo y Tor.  
-  
-     Las siguientes categorías IP están disponibles:  
-  
-    -   **Administrativo**: deben ser todas las direcciones IP de los administradores.  
-  
-    -   **Interno**: deben ser todas las direcciones IP de la red interna, las sucursales y las direcciones de itinerancia de Wi-Fi.  
-  
-    -   **De riesgo**: deben ser todas las direcciones IP que se consideran que entrañan riesgos. Puede englobar direcciones IP sospechosas detectadas en el pasado, direcciones IP en las redes de la competencia, etc.  
-  
-    -   **VPN**: deben ser las direcciones IP que se usan en los trabajos remotos.  
-  
-    -   **Proxy en la nube**: debe ser la dirección IP del proxy en la nube.  
-  
-7.  Haga clic en **Crear** cuando acabe.  
-  
-     ![nuevo intervalo de direcciones IP](./media/newipaddress-range.png "nuevo intervalo de direcciones IP")  
-  
-##  <a name="a-nameadallommailsettingsa-personalize-your-experience"></a><a name="Adallom_mailsettings"></a>Personalizar la experiencia  
+## <a name="import-user-groups"></a>Importar grupos de usuarios
+
+Al conectar aplicaciones mediante conectores de API, Cloud App Security permite importar grupos de usuarios , por ejemplo, de Office 365 y Azure Active Directory.
+
+Vea [Grupos de usuarios](user-groups.md) para obtener más información.
+
+##  <a name="Adallom_mailsettings"></a>Personalizar la experiencia  
 En la barra de menús, haga clic en el icono de configuración ![icono de configuración](./media/settings-icon.png "icono de configuración") y seleccione **Configuración de correo** para establecer los parámetros de las notificaciones de correo enviadas desde Cloud App Security a los administradores que solicitan alertas, así como de las notificaciones enviadas a los usuarios finales sobre infracciones en las que puedan haber participado.  
   
 ![menú de configuración de correo](./media/mail-setting-menu.png "menú de configuración de correo")  
@@ -152,12 +117,10 @@ Configura lo siguiente:
          %%content%%: marcador de posición del contenido que se incluirá para los usuarios finales, según lo establecido por la directiva.  
   
      Esta es una plantilla de correo de ejemplo: 
-
-
-           
-          <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
-          <html>  
-          <head>  
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html>  
+       <head>  
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
           </head>  
@@ -206,30 +169,25 @@ Configura lo siguiente:
           </table>  
             </body>  
           </html>  
-         
+    ```
 
   
-3.  Haga clic en **Cargar una plantilla...** y seleccione el archivo que ha creado.  
+3.  Click **Upload a template...** and select the file you created.  
   
-     Luego, haga clic en **Enviar un correo electrónico de prueba** para enviarse a sí mismo un mensaje de prueba para ver un ejemplo de la plantilla creada.  
-     El correo se enviará a la cuenta usada para iniciar sesión en el portal. En el correo de prueba podrá ver los campos de metadatos, la plantilla, el asunto del correo, el título en el cuerpo del correo y el contenido.  
+     Then, click **Send a test email** to send yourself a test email to see an example of the template you created.  
+     The email will be sent to the account you used to log into the portal. In the test email you will be able to see the metadata fields, the template, the email subject, the title in the email body and the content.  
   
-## <a name="single-sign-on"></a>Inicio de sesión único  
-Cloud App Security está acoplado a Azure Active Directory para la autenticación, el aprovisionamiento y la concesión de licencias de las actividades relacionadas. Para obtener información sobre cómo administrar el inicio de sesión único, consulte [Lista de compatibilidad de federación de Azure Active Directory: proveedores de identidades de terceros que se pueden utilizar para implementar el inicio de sesión único](https://msdn.microsoft.com/library/azure/jj679342.aspx).  
+## Single sign-on  
+Cloud App Security is coupled with Azure Active Directory for authentication, provisioning, and licensing related activities. For information on how to manage single sign-on, see [Azure Active Directory federation compatibility list: third-party identity providers that can be used to implement single sign-on](https://msdn.microsoft.com/library/azure/jj679342.aspx).  
 
 
 > [!NOTE] 
-> Si utiliza ExpressRoute, Cloud App Security se ha implementado en Azure y está totalmente integrado con [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Todas las interacciones con las aplicaciones de Cloud App Security y el tráfico enviado a Cloud App Security, incluida la carga de registros de detección, se enrutan a través del **emparejamiento público** de ExpressRoute para mejorar la latencia, el rendimiento y la seguridad. No hay ningún paso de configuración necesario en el lado cliente.  
-    Para obtener más información sobre el emparejamiento público, vea [Circuitos ExpressRoute y dominios de enrutamiento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
+> If you use ExpressRoute, Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute **public peering** for improved latency, performance and security. There are no configuration steps required from the customer side.  
+    For more information about  Public Peering, see [ExpressRoute circuits and routing domains](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
     
-## <a name="see-also"></a>Consulte también  
-[Configurar Cloud Discovery](set-up-cloud-discovery.md)   
-[Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
-[Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
+## See Also  
+[Set up Cloud Discovery](set-up-cloud-discovery.md)   
+[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO4-->
-
-

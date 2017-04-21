@@ -1,5 +1,5 @@
 ---
-title: Deploy Microsoft Docs
+title: "Implementar Cloud App Security para la información de uso y el control de aplicaciones en la nube | Microsoft Docs"
 description: En este tema se describe el proceso para que Cloud App Security entre en funcionamiento.
 keywords: 
 author: rkarlin
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: bf3e86ddb4c26758ce3cf6fbf4377a8550bbe78b
-ms.openlocfilehash: e9ee4724ee32d0d4592bc98dc8551b80caf1652d
-
-
+ms.openlocfilehash: 2c1b1506f4693304cc10f64b1db372dc710e026a
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="deploy-cloud-app-security"></a>Implementar Cloud App Security
 Cloud App Security le puede ayudar a sacar partido de las ventajas de las aplicaciones en la nube a la vez que mantiene el control de los recursos corporativos. Funciona mejorando la visibilidad de la actividad en la nube y ayuda a aumentar la protección de los datos corporativos. En este tema, le indicaremos los pasos que debe llevar a cabo para configurar Cloud App Security y trabajar con él.  
 
@@ -164,9 +161,3 @@ Estos valores le ayudan a controlar mejor las características de la consola. Co
 Establezca directivas: [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).    
 Para obtener soporte técnico, visite la página de [soporte técnico asistido de Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031).   
 Los clientes Premier también pueden elegir Cloud App Security directamente desde el [Portal Premier](https://premier.microsoft.com/).   
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-
