@@ -1,11 +1,11 @@
 ---
-title: Implementar Cloud Discovery | Microsoft Docs
+title: Implementar Cloud Discovery con Cloud App Security | Microsoft Docs
 description: "En este tema se describe el procedimiento de configuración de Cloud Discovery para que entre en funcionamiento."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/26/2016
+ms.date: 1/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,20 +13,17 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 98b16c96c31039248bdfbe57f980b3ae6a26a7de
-ms.openlocfilehash: 3c722ac79fa124193655ca053c713f3d6edc7017
-
-
+ms.openlocfilehash: 17da11ad5ca10eba14410e0a0458980b3f88d123
+ms.sourcegitcommit: 8c7c25bc727d9c471261da144d5c1d430c26af56
+translationtype: HT
 ---
-
 # <a name="set-up-cloud-discovery"></a>Configurar Cloud Discovery
 Cloud Discovery analiza los registros de tráfico del catálogo de aplicaciones en la nube de Cloud App Security de más de 13 000 aplicaciones en la nube que se clasifican y se puntúan en función de más de 50 atributos, a fin de proporcionar visibilidad continua del uso de la nube, Shadow IT y el riesgo que Shadow IT supone para la organización.
 El **catálogo de aplicaciones en la nube** evalúa el riesgo de las aplicaciones en la nube en función de certificaciones normativas, estándares del sector y procedimientos recomendados. En el catálogo de aplicaciones en la nube se ejecutan cuatro procesos complementarios para mantenerlo actualizado:
-1.  Extracción de datos automatizada directamente desde la aplicación en la nube (para atributos como el cumplimiento de SOC 2).
-2.  Extracción de datos automatizada avanzada mediante algoritmos de Cloud App Security (para atributos como encabezados de seguridad HTTP).
-3.  Análisis continuo por parte del equipo de analistas de la nube de Cloud App Security (para atributos como el cifrado en reposo).
-4.  Solicitudes de revisión de los clientes, según las solicitudes de envío de clientes para realizar cambios en el catálogo de aplicaciones en la nube. Todas las solicitudes se someten al examen del equipo de analistas de la nube y se actualizan en función de sus conclusiones.
+1.    Extracción de datos automatizada directamente desde la aplicación en la nube (para atributos como el cumplimiento de SOC 2).
+2.    Extracción de datos automatizada avanzada mediante algoritmos de Cloud App Security (para atributos como encabezados de seguridad HTTP).
+3.    Análisis continuo por parte del equipo de analistas de la nube de Cloud App Security (para atributos como el cifrado en reposo).
+4.    Solicitudes de revisión de los clientes, según las solicitudes de envío de clientes para realizar cambios en el catálogo de aplicaciones en la nube. Todas las solicitudes se someten al examen del equipo de analistas de la nube y se actualizan en función de sus conclusiones.
   
 ## <a name="cloud-discovery-data-anonymization"></a>Anonimización de datos de Cloud Discovery
 
@@ -84,7 +81,7 @@ Para generar correctamente un informe de Cloud Discovery, los registros de tráf
 - Cisco ScanSafe
 - Cisco Merkai (registro de direcciones URL)
 - Dell Sonicwall
-- Fortiner Fortigate
+- Fortinet Fortigate
 - Juniper SRX
 - McAfee Secure Web Gateway
 - Microsoft Forefront Threat Management Gateway (W3C)
@@ -121,7 +118,7 @@ Atributos de datos (según la documentación del proveedor):
 |Sophos|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|No|
 |Websense: informe de detalle de investigación (CSV)|**Sí**|No|No|**Sí**|No|No|
 |Websense: registro de actividad de Internet (CEF)|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
-|Zscaler|**Sí**|No|**Sí**|No|**Sí**|No|
+|Zscaler|**Sí**|No|**Sí**|No|**Sí**|**Sí**|
 
 \* Cloud Discovery es compatible con IPv6.
 
@@ -132,10 +129,3 @@ Atributos de datos (según la documentación del proveedor):
 [Configurar la carga de registros automática para informes continuos](configure-automatic-log-upload-for-continuous-reports.md)
 
 [Trabajar con datos de Cloud Discovery](working-with-cloud-discovery-data.md)
-  
-  
-
-
-<!--HONumber=Jan17_HO2-->
-
-
