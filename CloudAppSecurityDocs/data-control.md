@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 57927618-cb66-4c7f-afd7-c96926460816
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e7e735519caa7da514f06db13afc737cf6ef1806
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+ms.openlocfilehash: 25fef8249688d9116001fd7147a00aedf9d72ca7
+ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
 translationtype: HT
 ---
 # <a name="controlling-and-protecting-your-files"></a>Control y protección de los archivos  
@@ -27,10 +27,10 @@ Cloud App Security puede supervisar cualquier tipo de archivo basado en más de 
 Este caso de uso se aplica a Office 365, G Suite, Box, Dropbox y Salesforce.
 
 ### <a name="the-threat"></a>LA AMENAZA
-Los empleados comparten los archivos de la compañía con datos confidenciales fuera de la organización. Esto puede provocar fugas de datos que no se supervisan. Esto puede ser inofensivo y no infringir las directivas de su compañía pero, incluso en ese caso, es importante supervisar lo que se comparte para que siempre esté al corriente de cómo se usa la red y qué datos se comparte externamente.
+Una de las mayores ventajas de la tecnología en la nube es que ofrece la posibilidad de compartir cualquier cosa con todo el mundo. Sin embargo, tales capacidades conllevan una gran responsabilidad y, para garantizar que no se comparta ningún dato confidencial externamente, tiene que saber qué archivos contienen datos confidenciales y con quién se comparten. Con las herramientas proporcionadas en las aplicaciones en la nube, no puede saber lo que contiene una aplicación en la nube ni quién tiene acceso, así que no es consciente de posibles filtraciones de datos.
 
 ### <a name="the-solution"></a>LA SOLUCIÓN
-Conseguir visibilidad en el uso compartido de archivos en la red y llevar a cabo acciones de control mediante la implementación de lo siguiente en Cloud App Security fuera de la siguiente directiva y acción de gobierno en Cloud App Security.
+Mediante la detección de estos dos parámetros, sensibilidad y nivel de uso compartido, y su combinación es posible identificar estas posibles infracciones. Cloud App Security examina todos los archivos guardados en las aplicaciones en la nube y los clasifica por su nivel de uso compartido de forma automática. Luego se puede configurar una directiva de archivo en Cloud App Security para buscar todos los datos confidenciales guardados en las aplicaciones en la nube. Cuando se detecta un archivo confidencial compartido externamente, se pueden tomar medidas de corrección manuales o configurar Cloud App Security para que lo haga automáticamente. Así se puede eliminar el riesgo de filtración de datos con un solo clic.
 
 #### <a name="prerequisites"></a>Requisitos previos
 
@@ -38,7 +38,7 @@ Conseguir visibilidad en el uso compartido de archivos en la red y llevar a cabo
 
 #### <a name="setting-up-monitoring"></a>Configuración de la supervisión
 
-1.    Control de los archivos mediante la creación de una directiva
+1.    Inicie la supervisión de la aplicación mediante la configuración de una directiva que examine los archivos compartidos externamente en busca de contenido confidencial:
 
     1. En la página **Directivas**, haga clic en [**Crear directiva de archivo**](data-protection-policies.md). 
     ![creación de una directiva de archivo](./media/create-file-policy.png)
@@ -66,7 +66,7 @@ Conseguir visibilidad en el uso compartido de archivos en la red y llevar a cabo
 
 #### <a name="removing-the-risk"></a>Eliminación del riesgo
 
-Cuando la directiva se haya validado y ajustado para asegurarse de que se ejecuta como se esperaba, haga lo siguiente: 
+Una vez validada y perfeccionada la directiva, quite posibles falsos positivos que puedan haber coincidido con la directiva. Luego, haga lo siguiente: 
   1. Puede tomar [acciones de gobierno](governance-actions.md) inmediatas haciendo clic en los tres puntos situados al final de la fila y seleccionando la acción de gobierno relevante, por ejemplo, **Poner en cuarentena de usuario**.
 
  ![autogobierno externo](./media/auto-gov-external.png)
@@ -81,21 +81,21 @@ Este caso de uso se aplica a Office 365, G Suite, Box, Dropbox y Salesforce.
 
 Este caso de uso aprovecha las ventajas de la integración entre Cloud App Security y Azure Information Protection. Si está ejecutando Azure Information Protection en toda la organización y se ha tomado tiempo para etiquetar los archivos con etiquetas de Azure Information Protection, Cloud App Security le permite supervisar y controlar lo que ocurre en dichos archivos después de etiquetarse.
 
-## <a name="the-threat"></a>LA AMENAZA
+### <a name="the-threat"></a>LA AMENAZA
 
 Sabe que necesita proteger sus datos y ya ha sufrido la molestia de clasificar los archivos en Azure Information Protection. Pero una vez clasificados, ¿cómo sabe dónde se encuentran y quién los está consultando? 
 
-## <a name="the-solution"></a>LA SOLUCIÓN
- Puede supervisar estos archivos clasificados cuando están en la nube con Cloud App Security. Esto le permite asegurarse de que los datos que clasificó como **confidenciales** (o algún otro tipo de clasificación confidencial) no se están compartiendo inadecuadamente. Deje que Cloud App Security supervise y administre los archivos clasificados en Azure Information Protection implementando las siguientes acciones de directiva y gobierno.
+### <a name="the-solution"></a>LA SOLUCIÓN
+ Puede supervisar estos archivos clasificados cuando están en la nube con Cloud App Security. Esto le permite asegurarse de que los datos clasificados como **confidenciales**, o bien algún otro tipo de clasificación de confidencialidad, no se compartan de forma inadecuada. Permita que Cloud App Security supervise y administre los archivos clasificados en Azure Information Protection mediante la implementación de las siguientes acciones de directiva y control.
 
-### <a name="prerequisites"></a>Requisitos previos
+#### <a name="prerequisites"></a>Requisitos previos
 
 - [Conecte](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) al menos una aplicación en la nube a Cloud App Security.
 - Siga las [instrucciones de integración de Azure Information Protection](azip-integration.md) para habilitar el análisis automático.
 
-### <a name="setting-up-monitoring"></a>Configuración de la supervisión
+#### <a name="setting-up-monitoring"></a>Configuración de la supervisión
 
-1. Control de los datos mediante la creación de una directiva    
+1. Supervise todos los archivos con las etiquetas de clasificación pertinentes que se estén compartiendo públicamente:    
     
     1. En la página **Directivas**, haga clic en [**Crear directiva de archivo**](data-protection-policies.md). 
 
@@ -116,7 +116,7 @@ Sabe que necesita proteger sus datos y ya ha sufrido la molestia de clasificar l
     3. Si encuentra falsos positivos, márquelos con una marca de verificación para excluirlos del informe y de las coincidencias en vivo. Puede utilizar la característica de comentarios para hacer saber al equipo de Cloud App Security las mejoras que le gustaría agregar. 
 
 
-### <a name="validating-your-policy"></a>Validación de la directiva
+#### <a name="validating-your-policy"></a>Validación de la directiva
 
 1. Cree un nuevo documento de Word y utilice la barra de herramientas de Azure Information Protection para establecer cualquier etiqueta de confidencialidad, como **Confidencial**. 
 
@@ -129,7 +129,7 @@ Sabe que necesita proteger sus datos y ya ha sufrido la molestia de clasificar l
 
 #### <a name="removing-the-risk"></a>Eliminación del riesgo
 
-Cuando la directiva se haya validado y ajustado para asegurarse de que se ejecuta como se esperaba, haga lo siguiente: 
+Una vez validada y perfeccionada la directiva para quitar posibles falsos positivos que puedan haber coincidido con la directiva, haga lo siguiente: 
 
 1. Puede tomar [acciones de gobierno](governance-actions.md) inmediatas haciendo clic en los tres puntos situados al final de la fila y seleccionando la acción de gobierno relevante, por ejemplo, **Poner en cuarentena de usuario**.
     

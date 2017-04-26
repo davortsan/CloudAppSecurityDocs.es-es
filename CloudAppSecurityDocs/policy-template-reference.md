@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5a06dd9f53c4074b2842eee3f369611b5b6b274c
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 12b77282ebf900978efa6be7b6902aee5ad2eaaa
+ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
 translationtype: HT
 ---
 # <a name="policy-templates"></a>Plantillas de directiva
@@ -36,7 +36,7 @@ La lista siguiente contiene todas las plantillas de directiva que existen en Clo
 |Nueva aplicación de riesgo|Alerta cuando se detectan nuevas aplicaciones con una puntuación de riesgo inferior a 6 y que tienen más de 50 usuarios, con un uso diario total superior a 50 MB.|
 |Comprobación de cumplimiento de aplicaciones de colaboración|Alerta cuando se detectan nuevas aplicaciones de colaboración que no son compatibles con SOC2 y SSAE 16 y que tienen más de 50 usuarios, con un uso diario total superior a 50 MB.|
 |Inicio de sesión desde una dirección IP de riesgo|Alerta cuando un usuario inicia sesión en las aplicaciones autorizadas desde una dirección IP de riesgo. De forma predeterminada, la categoría de direcciones IP de riesgo contiene direcciones que tienen etiquetas de dirección IP de proxy anónimo, Tor o red de robots (botnet). Puede agregar más direcciones IP a esta categoría en la página de configuración de intervalos de direcciones IP.|
-|Actividad administrativa desde una dirección IP no administrativa|Alerta cuando un usuario administrador realiza una actividad administrativa desde una dirección IP que no está incluida en una categoría determinada de intervalos de direcciones IP. Puede establecer más direcciones IP de riesgo. Para ello, vaya a la página de configuración y seleccione los intervalos de direcciones IP.|
+|Actividad administrativa desde una dirección IP no corporativa|Cuando un usuario administrador realiza una actividad administrativa desde una dirección IP que no está incluida en la categoría de intervalo de direcciones IP corporativas, se puede optar por enviar o recibir una alerta. Primero debe configurar las direcciones IP corporativas en la página Configuración y establecer los **intervalos de direcciones IP**.|
 |Inicio de sesión de usuario desde una dirección IP no categorizada|Alerta cuando un usuario inicia sesión desde una dirección IP que no está incluida en una categoría específica de intervalos IP. Puede categorizar direcciones IP. Para ello, vaya a la página de configuración y seleccione los intervalos de direcciones IP.|
 |Archivo con información de identificación personal detectado en la nube (motor DLP integrado)|Alerta cuando nuestro motor de prevención de pérdida de datos (DLP) integrado detecta un archivo que contiene información de identificación personal en una aplicación de nube autorizada.|
 |Nueva aplicación de administración de recursos humanos|Alerta cuando las aplicaciones de administración de recursos humanos recientemente detectadas tienen más de 50 usuarios, con un uso diario total superior a 50 MB.|

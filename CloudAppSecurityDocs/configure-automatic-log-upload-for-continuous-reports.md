@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f6eb2a844d62848ad232a92609a02ddb6fcfe325
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+ms.openlocfilehash: 053ca16b0bff19d4c8bdd75350ed9b0bed4ce3d8
+ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
 translationtype: HT
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurar la carga de registros automática para informes continuos
 Los recopiladores de registros permiten automatizar fácilmente la carga de registros desde la red. El recopilador de registros se ejecuta en la red y recibe los registros a través de Syslog o FTP. Cada registro se procesa, se comprime y se transmite automáticamente al portal. Los registros de FTP se cargan en Cloud App Security una vez que el archivo haya finalizado la transferencia FTP al recopilador de registros. En el caso de Syslog, el recopilador de registros escribe los registros recibidos en el disco cada 20 minutos y, después, carga el archivo en Cloud App Security.
 
 Antes de configurar la recopilación automática de archivos de registros, compruebe que el registro coincide con el tipo de registro esperado, para asegurarse de que Cloud App Security puede analizar el archivo específico. 
+
+>[!NOTE]
+>Cloud App Security permite el reenvío de registros desde el servidor SIEM al recopilador de registros siempre que estos se reenvíen en su formato original. Sin embargo, se recomienda encarecidamente integrar el recopilador de registros directamente con el firewall o proxy.
+
 
 ## <a name="technical-requirements"></a>Requisitos técnicos
 - Hipervisor: Hyper-V o VMware
@@ -74,7 +78,7 @@ El recopilador de registros tiene un mecanismo de seguridad integrado que superv
   > - Copie el contenido de la pantalla, ya que necesitará la información al configurar el recopilador de registros para comunicarse con Cloud App Security. Si ha seleccionado Syslog, esta información incluirá información sobre el puerto en el que escucha el agente de escucha de Syslog.
 4.  **Descargue** una nueva máquina virtual del recopilador de registros. Para ello, haga clic en Hyper-V o VMware y descomprima el archivo con la contraseña que ha recibido en el portal.  
   
-### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Paso 2: Implementación local de la máquina virtual y la configuración de red   
+###    <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Paso 2: Implementación local de la máquina virtual y la configuración de red   
 
 > [!NOTE] 
 > En los pasos siguientes se describe la implementación de Hyper-V. Los pasos de implementación para el hipervisor de la máquina virtual son ligeramente diferentes.  
