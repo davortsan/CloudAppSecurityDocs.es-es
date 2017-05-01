@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1f897a528e425a2abd74f6828a7785fdfe147286
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 2a87251a533a9e8fa68b8807966019c186d5669e
+ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
 translationtype: HT
 ---
 # <a name="control-cloud-apps-with-policies"></a>Controlar las aplicaciones en la nube con directivas
@@ -139,7 +139,20 @@ Para crear una directiva basada en los resultados de la investigación, haga lo 
 >  [Directivas de protección de datos](data-protection-policies.md)  
 >   
 >  [Directivas de Cloud Discovery](cloud-discovery-policies.md)  
+
   
+### <a name="add-automated-actions-to-respond-and-remediate-risks-automatically"></a>Agregar acciones automatizadas para responder a los riesgos y corregirlos automáticamente
+
+Para obtener una lista de acciones de control disponibles por aplicación, vea [Control de aplicaciones conectadas](governance-actions.md).
+
+También puede configurar la directiva para que recibir una alerta por correo electrónico o mensaje de texto cuando se detecten coincidencias. 
+
+Para establecer las preferencias de notificación, vaya a [Personalizar el portal](general-setup.md). 
+  
+> [!NOTE] 
+> El número máximo de alertas que se enviarán por mensaje de texto es de 10 al día por número de teléfono. Tenga en cuenta que el día se calcula según la zona horaria UTC. 
+
+
 ## <a name="enable-and-disable-policies"></a>Habilitar y deshabilitar directivas
 
 Después de crear una directiva, puede habilitarla o deshabilitarla. Esto evita tener que eliminar una directiva después de crearla para detenerla. En su lugar, si por algún motivo quiere detener la directiva, solo tiene que deshabilitarla hasta que decida volver a habilitarla.

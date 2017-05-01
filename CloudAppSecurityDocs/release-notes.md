@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 4/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,26 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9de7c7770e567ffc79c6af98582d46d86115babe
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+ms.openlocfilehash: c6bffe24bc127b4435a7a334cdca001f6e5ad3c5
+ms.sourcegitcommit: fd3b6c04cec30f7c9300cc02d29d562d17bf43ea
 translationtype: HT
 ---
 # <a name="release-notes"></a>Notas de la versión
+
+
+## <a name="cloud-app-security-release-95-in-roll-out"></a>Versión 95 de Cloud App Security (lanzamiento en curso)
+Publicado el 24 de abril de 2017
+
+**Actualizaciones**
+- La página **Cuentas** se ha actualizado con mejoras que facilitan la detección de riesgos. Ahora se pueden filtrar más fácilmente las cuentas internas y externas, ver de un vistazo si un usuario tiene permisos de administrador y realizar acciones en cada cuenta individualmente por cada aplicación (como quitar permisos, quitar colaboraciones de usuario o suspender a un usuario). Además, se muestran los [grupos de usuarios](user-groups.md) importados de cada cuenta. 
+
+- En el caso de las cuentas Microsoft (Office 365 y Azure Active Directory), Cloud App Security agrupa distintos identificadores de usuario como direcciones proxy, alias, SID, etc. en una sola cuenta. Todos los alias relacionados con una cuenta aparecen en la dirección de correo electrónico principal. Basándose en la lista de identificadores de usuario, en las actividades cuyo actor sea un identificador de usuario, dicho actor se mostrará como UPN (nombre principal de usuario). Se asignarán los grupos y se aplicarán las directivas de acuerdo con el UPN. Esto mejorará la investigación de actividades y fusionará todas las relacionadas con la misma sesión para detectar anomalías y directivas basadas en grupos. Esta característica se implementará de forma gradual durante el próximo mes.
+
+- Se ha agregado la etiqueta Robot como un posible factor de riesgo en el informe integrado de uso del explorador. Ahora, además de etiquetar como obsoleto el uso del explorador, puede ver si ha sido un robot el que ha usado el explorador. Obtenga más información sobre los [informes integrados](built-in-report-reference.md).
+
+- Al crear una directiva de archivo de inspección de contenido, ahora puede establecer el filtro para incluir solo los archivos con un mínimo de 50 coincidencias.
+
+
 
 ## <a name="cloud-app-security-release-94"></a>Versión 94 de Cloud App Security
 Publicada el 2 de abril de 2017
@@ -44,7 +59,7 @@ Fecha de publicación: 20 de marzo de 2017
 -    El conector de la aplicación de Cloud App Security para ServiceNow se ha expandido para incluir compatibilidad con tokens de OAuth (tal como se presenta en Ginebra, Helsinki y Estambul). Esto proporciona una conexión más sólida de la API con ServiceNow, que no se basa en el usuario de implementación. Para más información, vea [Conectar ServiceNow con Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security.md). Los clientes existentes pueden actualizar su configuración en la página del conector de ServiceNow App.
 -    Si configura escáneres DLP adicionales de terceros, el estado del examen DLP ahora mostrará el estado de cada conector de forma independiente para mejorar la visibilidad.
 -    Cloud App Security ahora incluye compatibilidad para las actividades de Microsoft Teams que se admiten en el registro de auditoría de Office 365. Esta característica se está implantando gradualmente.
--    Para los eventos de suplantación Exchange Online, ahora puede filtrar por nivel de permiso: usado-delegado, administrador o administrador delegado. Puede buscar eventos que muestran el nivel de suplantación que le interese en el **registro de actividad** buscando **Elemento de** > **objetos de actividad**.
+-    Para los eventos de suplantación Exchange Online, ahora puede filtrar por nivel de permiso: usado-delegado, administrador o administrador delegado. Puede buscar eventos que muestran el nivel de suplantación que le interese en el  **registro de actividad** buscando **Elemento de** > **objetos de actividad**.
 -    En el cajón de aplicación en la ficha Permisos de la aplicación ahora puede ver el **publicador** de cada aplicación. También puede utilizar el publicador como un filtro para la investigación de las aplicaciones adicionales del mismo publicador.
 -    Las direcciones IP de riesgo aparecen ahora como un factor de riesgo independiente en lugar de ponderado en el factor de riesgo de la **ubicación** general. 
 -    Cuando las etiquetas de Azure Information Protection están deshabilitadas en un archivo, las etiquetas deshabilitadas aparecerán como deshabilitadas en Cloud App Security. No se mostrarán las etiquetas eliminadas.
