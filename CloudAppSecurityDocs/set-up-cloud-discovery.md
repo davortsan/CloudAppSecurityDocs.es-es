@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 4/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 17da11ad5ca10eba14410e0a0458980b3f88d123
-ms.sourcegitcommit: 8c7c25bc727d9c471261da144d5c1d430c26af56
+ms.openlocfilehash: f9c86d2ce7b45a8de88ebba84ff8608b67117080
+ms.sourcegitcommit: 7e9ae94cb4f90fbccaa84f19bdebb4652a425e45
 translationtype: HT
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar Cloud Discovery
@@ -64,7 +64,7 @@ Cloud Discovery usa los datos de los registros de tráfico. Cuanto más detallad
  
 Cloud Discovery no puede mostrar ni analizar los atributos que no estén incluidos en los registros.
 Por ejemplo, el formato de registro estándar del **firewall de Cisco ASA** no contiene la **cantidad de bytes cargados por transacción** ni el **nombre de usuario**, y no contiene la **dirección URL de destino** (solo la IP de destino).
-Por lo tanto, estos atributos se mostrarán en los datos de Cloud Discovery de estos registros y la visibilidad de las aplicaciones en la nube será limitada. En el caso de los firewalls de Cisco ASA, es necesario establecer el nivel de información en 6. 
+Por lo tanto, estos atributos no se mostrarán en los datos de Cloud Discovery de estos registros, y la visibilidad de las aplicaciones en la nube será limitada. En el caso de los firewalls de Cisco ASA, es necesario establecer el nivel de información en 6. 
  
 
 Para generar correctamente un informe de Cloud Discovery, los registros de tráfico deben cumplir las condiciones siguientes:
@@ -79,7 +79,7 @@ Para generar correctamente un informe de Cloud Discovery, los registros de tráf
 - Firewall de Cisco ASA (en el caso de los firewalls de Cisco ASA, es necesario establecer el nivel de información en 6)
 - Cisco IronPort WSA
 - Cisco ScanSafe
-- Cisco Merkai (registro de direcciones URL)
+- Cisco Meraki – Registro de direcciones URL
 - Dell Sonicwall
 - Fortinet Fortigate
 - Juniper SRX

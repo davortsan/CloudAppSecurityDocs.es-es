@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/23/2016
+ms.date: 4/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,30 +13,29 @@ ms.technology:
 ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5d5ccc55fe0d9c3fea93446daebfcbd5bbed8c8d
-ms.sourcegitcommit: fd3b6c04cec30f7c9300cc02d29d562d17bf43ea
+ms.openlocfilehash: f6a8ad3618f27cbfecd11fd0f12817c030620c20
+ms.sourcegitcommit: 06809e22a767723a77a52b910aa41eca9728228b
 translationtype: HT
 ---
 # <a name="accounts"></a>Cuentas
-Cloud App Security le ofrece visibilidad sobre todas las cuentas mediante las aplicaciones conectadas. Después de conectar Cloud App Security a una aplicación mediante el conector de aplicaciones, Cloud App Security examina todas las cuentas asociadas a ellas. La página Cuentas permite investigar esas cuentas, los grupos a los que pertenecen, sus alias y las aplicaciones que usan. 
+Cloud App Security le ofrece la posibilidad de supervisar las cuentas de sus aplicaciones conectadas. Después de conectar Cloud App Security a una aplicación mediante el conector de aplicaciones, Cloud App Security lee la información de la cuenta asociada a las aplicaciones conectadas. La página Cuentas permite investigar esas cuentas, los permisos, los grupos a los que pertenecen, sus alias y las aplicaciones que usan. Además, cuando Cloud App Security detecta una cuenta nueva que no se había detectado previamente en ninguna de las aplicaciones conectadas (por ejemplo, en la actividad o el uso compartido de archivos), la cuenta se agrega a la lista de cuentas de la aplicación en cuestión. Esto le permite supervisar la actividad de los usuarios externos que interactúan con sus aplicaciones en la nube.
 
 
-El registro **Cuentas** se puede filtrar para que se puedan buscar cuentas concretas y para profundizar en diferentes tipos de cuentas. Por ejemplo, puede filtrar por todas las cuentas externas a las que no se haya accedido desde el año pasado. Puede crear directivas basadas en las cuentas y, después, definir sobre qué quiere recibir alertas y actuar en consecuencia. 
+La página **Cuentas** se puede filtrar para que se puedan buscar cuentas concretas y para profundizar en diferentes tipos de cuentas. Por ejemplo, puede filtrar por todas las cuentas externas a las que no se haya accedido desde el año pasado. 
 
 La página **Cuentas** le permite investigar fácilmente las cuentas para detectar problemas como los siguientes:  
 
 -   Compruebe si alguna cuenta ha estado inactiva en un servicio determinado durante mucho tiempo, ya que quizás se deba revocar la licencia de ese usuario en ese servicio.  
 -   Puede filtrar por la lista de usuarios con permisos de administrador.  
 
--   Puede ver las cuentas que estén activas pero que pertenezcan a usuarios que ya no formen parte de la organización.  
+-   Puede buscar usuarios que ya no formen parte de su organización, pero que es posible que aún tengan cuentas activas.  
 
--   Puede revocar el permiso de un usuario en una aplicación concreta, según la aplicación, o exigir a un usuario determinado que realice autenticación multifactor.
+-   Puede realizar acciones de gobierno en la cuenta, como suspender una aplicación o ir a la página de configuración de la cuenta. Para obtener una lista completa de acciones de gobierno, consulte el [registro de gobierno](governance-actions.md).
     
 -   Puede ver qué cuentas están incluidas en cada grupo de usuarios.  
 
 -   Puede ver a qué aplicaciones accede cada cuenta y qué aplicaciones se han eliminado en cuentas concretas.
     
--   También puede profundizar en la cuenta de usuario y seleccionar acciones de control relevantes, como **Suspender usuario** o **Quitar las colaboraciones del usuario**. Si el usuario se ha importado desde Azure Active Directory, también puede hacer clic en **Configuración de la cuenta de Azure AD** para obtener acceso fácilmente a características avanzadas de administración de usuarios como la administración de grupos, la autenticación multifactor, los detalles sobre inicios de sesión de usuarios y la capacidad de bloquear el inicio de sesión.
 
 ![pantalla cuentas](./media/accounts-page.png)
 
@@ -53,7 +52,7 @@ A continuación se muestra una lista de los filtros de cuenta que se pueden apli
 
 - **Visto por última vez**: el filtro **Visto por última vez** permite buscar cuentas que estén inactivas y cuyos usuarios no hayan tenido actividad durante un tiempo.
 
-- **Organización o departamento**: permite filtrar por miembros de determinados grupos organizativos de Azure Active Directory u Office 365.
+- **Organización o departamento**: permite filtrar por miembros de determinados grupos organizativos definidos en sus aplicaciones conectadas.
 
 - **Grupo de usuarios**: permite filtrar por miembros de grupos de usuarios de Cloud App Security, tanto grupos de usuarios integrados como importados.
 
