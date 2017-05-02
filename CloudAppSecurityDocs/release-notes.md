@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c6bffe24bc127b4435a7a334cdca001f6e5ad3c5
-ms.sourcegitcommit: fd3b6c04cec30f7c9300cc02d29d562d17bf43ea
+ms.openlocfilehash: 3e84ccc43212975cc40318a5b67ea60015fbde75
+ms.sourcegitcommit: 06809e22a767723a77a52b910aa41eca9728228b
 translationtype: HT
 ---
 # <a name="release-notes"></a>Notas de la versión
@@ -26,7 +26,7 @@ Publicado el 24 de abril de 2017
 **Actualizaciones**
 - La página **Cuentas** se ha actualizado con mejoras que facilitan la detección de riesgos. Ahora se pueden filtrar más fácilmente las cuentas internas y externas, ver de un vistazo si un usuario tiene permisos de administrador y realizar acciones en cada cuenta individualmente por cada aplicación (como quitar permisos, quitar colaboraciones de usuario o suspender a un usuario). Además, se muestran los [grupos de usuarios](user-groups.md) importados de cada cuenta. 
 
-- En el caso de las cuentas Microsoft (Office 365 y Azure Active Directory), Cloud App Security agrupa distintos identificadores de usuario como direcciones proxy, alias, SID, etc. en una sola cuenta. Todos los alias relacionados con una cuenta aparecen en la dirección de correo electrónico principal. Basándose en la lista de identificadores de usuario, en las actividades cuyo actor sea un identificador de usuario, dicho actor se mostrará como UPN (nombre principal de usuario). Se asignarán los grupos y se aplicarán las directivas de acuerdo con el UPN. Esto mejorará la investigación de actividades y fusionará todas las relacionadas con la misma sesión para detectar anomalías y directivas basadas en grupos. Esta característica se implementará de forma gradual durante el próximo mes.
+- En el caso de las cuentas Microsoft profesionales (Office 365 y Azure Active Directory), Cloud App Security agrupa distintos identificadores de usuario como direcciones proxy, alias, SID, etc. en una sola cuenta. Todos los alias relacionados con una cuenta aparecen en la dirección de correo electrónico principal. Basándose en la lista de identificadores de usuario, en las actividades cuyo actor sea un identificador de usuario, dicho actor se mostrará como UPN (nombre principal de usuario). Se asignarán los grupos y se aplicarán las directivas de acuerdo con el UPN. Esto mejorará la investigación de actividades y fusionará todas las relacionadas con la misma sesión para detectar anomalías y directivas basadas en grupos. Esta característica se implementará de forma gradual durante el próximo mes.
 
 - Se ha agregado la etiqueta Robot como un posible factor de riesgo en el informe integrado de uso del explorador. Ahora, además de etiquetar como obsoleto el uso del explorador, puede ver si ha sido un robot el que ha usado el explorador. Obtenga más información sobre los [informes integrados](built-in-report-reference.md).
 
