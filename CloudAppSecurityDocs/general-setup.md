@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b55da41080d70a41382a94b9ff527d50046c61b2
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
-translationtype: HT
+ms.openlocfilehash: f05a39b834178406a6b4b010cd7a1c6096f8c37f
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: es-ES
 ---
 # <a name="customize-the-portal"></a>Personalizar el portal
 En el siguiente procedimiento se proporcionan instrucciones para personalizar el portal de Cloud App Security.
@@ -89,7 +90,7 @@ Al conectar aplicaciones mediante conectores de API, Cloud App Security permite 
 
 Vea [Grupos de usuarios](user-groups.md) para obtener más información.
 
-##  <a name="Adallom_mailsettings"></a>Personalizar la experiencia  
+##  <a name="mailsettings"></a>Personalizar la experiencia  
 En la barra de menús, haga clic en el icono de configuración ![icono de configuración](./media/settings-icon.png "icono de configuración") y seleccione **Configuración de correo** para establecer los parámetros de las notificaciones de correo enviadas desde Cloud App Security a los administradores que solicitan alertas, así como de las notificaciones enviadas a los usuarios finales sobre infracciones en las que puedan haber participado.  
   
 ![menú de configuración de correo](./media/mail-setting-menu.png "menú de configuración de correo")  
