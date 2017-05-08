@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 5/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 26a89346868e4d8a5df450d30b69826b4791c1f8
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.openlocfilehash: 04264ea25a987e2bfef60a0e77c0a227b650b740
+ms.sourcegitcommit: 34cd68651b5a1be9bc460d7175bc2711efa103b2
+ms.translationtype: HT
+ms.contentlocale: es-ES
 ---
 # <a name="file-policies"></a>Directivas de archivo  
 Las directivas de archivo permiten aplicar una amplia gama de procesos automatizados, con lo que se aprovechan las API del proveedor en la nube. Las directivas se pueden establecer para proporcionar análisis de conformidad constantes, tareas de exhibición de documentos electrónicos legales, DLP para el contenido confidencial compartido públicamente y otros muchos casos de uso.  
@@ -103,10 +104,7 @@ Cada directiva se compone de las siguientes partes:
 -   Acciones: la directiva proporciona un conjunto de acciones de gobierno que se pueden aplicar automáticamente cuando se detectan infracciones.  Se dividen en acciones de colaboración, las acciones de seguridad y acciones de investigación.
 
 -   Extensions  
-  
-    > [!NOTE]  
-    >  Las extensiones solo están disponibles con la versión Cloud App Security Technical Preview.  
-  
+   
     -  Es posible realizar una inspección del contenido mediante motores de terceros para DLP mejorada o funcionalidades antimalware.  
   
     -  Es posible realizar [acciones de gobierno](governance-actions.md) mediante motores de terceros para aplicar un control de cifrado personalizado u otros tipos de procesamiento de archivos (por ejemplo, marcas de agua personalizadas).  
