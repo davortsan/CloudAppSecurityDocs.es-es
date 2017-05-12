@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/23/2017
+ms.date: 5/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,34 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3e84ccc43212975cc40318a5b67ea60015fbde75
-ms.sourcegitcommit: 06809e22a767723a77a52b910aa41eca9728228b
-translationtype: HT
+ms.openlocfilehash: 4d65fec131538981f36660d2b5ec668fa11be86e
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: es-ES
 ---
 # <a name="release-notes"></a>Notas de la versión
+
+
+## <a name="cloud-app-security-release-96"></a>Notas de la versión 96 de Cloud App Security
+Fecha de publicación: 8 de mayo de 2017
+
+Nuevas características:
+-    Continuación de la implementación gradual del permiso de Lector de seguridad que le permite administrar los permisos que concede a los administradores dentro de la consola de Cloud App Security. De forma predeterminada, todos los administradores globales y administradores de seguridad de Azure Active Directory y Office 365 tendrán permisos completos en el portal, y todos los lectores de seguridad de Azure Active Directory y Office 365 tendrán acceso de solo lectura en Cloud App Security. Para obtener más información, consulte [Managing admin access](manage-admins.md) (Administración de permisos de administración).
+-    Implementación completada de Cloud Discovery para analizadores de registros definidos por el usuario para registros basados en CSV. Cloud App Security le permite configurar un analizador para los dispositivos que antes no eran compatibles, proporcionándole las herramientas para delinear las columnas que se correlacionan con datos específicos. Para obtener más información, consulte [Uso del analizador de registros personalizado](custom-log-parser.md).
+Mejoras:
+-    Cloud Discovery ahora admite dispositivos Juniper SSG.
+-    Se ha mejorado la compatibilidad de Cloud Discovery para los registros de Cisco ASA para una mejor visibilidad.
+-    Ahora puede ejecutar más fácilmente acciones masivas y seleccionar varios registros en las tablas del portal de Cloud App Security: la longitud de la página se ha aumentado para mejorar las operaciones masivas.
+-    Los informes integrados **Uso compartido externo por dominio** y **Propietarios de archivos compartidos** ahora se pueden ejecutar para datos de Salesforce.
+-    Estamos comenzando el lanzamiento de actividades de Salesforce adicionales que le permiten realizar un seguimiento de la información interesante extraída de los datos de actividad. Estas actividades incluyen ver y editar cuentas, clientes potenciales, oportunidades y otros objetos de Salesforce interesantes.
+-    Se han agregado nuevas actividades de Exchange para permitirle supervisar los permisos que se concedieron para buzones o carpetas de buzones. Estas actividades incluyen:
+    -    Agregar permisos de destinatario
+    -    Quitar permisos de destinatario
+    -    Agregar permisos de carpeta de buzón
+    -    Quitar permisos de carpeta de buzón
+    -    Establecer permisos de carpeta de buzón
+
+    Por ejemplo, ahora puede comprobar a qué usuarios se concedió el permiso **SendAs** sobre los buzones de otros usuarios y, como consecuencia, ahora pueden enviar mensajes de correo electrónico en su nombre.
 
 
 ## <a name="cloud-app-security-release-95-in-roll-out"></a>Versión 95 de Cloud App Security (lanzamiento en curso)

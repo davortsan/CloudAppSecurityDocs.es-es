@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/30/2017
+ms.date: 5/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f9c86d2ce7b45a8de88ebba84ff8608b67117080
-ms.sourcegitcommit: 7e9ae94cb4f90fbccaa84f19bdebb4652a425e45
-translationtype: HT
+ms.openlocfilehash: d12fa44f42c5545464c7e8ba9da366a2302f73c1
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: es-ES
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar Cloud Discovery
 Cloud Discovery analiza los registros de tráfico del catálogo de aplicaciones en la nube de Cloud App Security de más de 13 000 aplicaciones en la nube que se clasifican y se puntúan en función de más de 50 atributos, a fin de proporcionar visibilidad continua del uso de la nube, Shadow IT y el riesgo que Shadow IT supone para la organización.
@@ -74,15 +75,19 @@ Para generar correctamente un informe de Cloud Discovery, los registros de tráf
 4.  El archivo de registro es válido e incluye información sobre el tráfico saliente.
  
 ## <a name="supported-firewalls-and-proxies"></a>Firewalls y servidores proxy compatibles
+
+- Barracuda - Web App Firewall (W3C)
 - Blue Coat Proxy SG - registros de acceso (W3C)
 - Check Point
 - Firewall de Cisco ASA (en el caso de los firewalls de Cisco ASA, es necesario establecer el nivel de información en 6)
 - Cisco IronPort WSA
 - Cisco ScanSafe
 - Cisco Meraki – Registro de direcciones URL
+- Clavister NGFW (Syslog)
 - Dell Sonicwall
 - Fortinet Fortigate
 - Juniper SRX
+- Juniper SSG
 - McAfee Secure Web Gateway
 - Microsoft Forefront Threat Management Gateway (W3C)
 - Firewalls de la serie Palo Alto
@@ -95,24 +100,26 @@ Para generar correctamente un informe de Cloud Discovery, los registros de tráf
 - Zscaler
 
 
-Si el registro no es compatible, seleccione **Otro** como **Origen de datos** y especifique el dispositivo y el registro que está intentando cargar. El equipo de analistas de la nube de Cloud App Security examinará el registro y se le notificará si se ha agregado compatibilidad con el tipo de registro. 
+Si el registro no es compatible, seleccione **Otro** como **Origen de datos** y especifique el dispositivo y el registro que está intentando cargar. El equipo de analistas de la nube de Cloud App Security examinará el registro y se le notificará si se ha agregado compatibilidad con el tipo de registro. También puede definir un analizador personalizado que coincida con el formato. Para obtener más información, consulte [Uso del analizador de registros personalizado](custom-log-parser.md).
 
 
 Atributos de datos (según la documentación del proveedor):
 
 |Origen de datos|Dirección URL de la aplicación de destino|IP de la aplicación de destino|Nombre de usuario|IP de origen|Tráfico total|Bytes cargados|
 |----|----|----|-----|----|----|----|
+|Barracuda|**Sí**|**Sí**|**Sí**|**Sí**|No|No|
 |Blue Coat|**Sí**|No|**Sí**|**Sí**|**Sí**|**Sí**|
 |Checkpoint|No|**Sí**|No|**Sí**|No|No|
 |Cisco ASA|No|**Sí**|No|**Sí**|**Sí**|No|
 |Cisco FWSM|No|**Sí**|No|**Sí**|**Sí**|No|
 |Cisco Ironport WSA|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
-|Cisco ScanSafe|**Sí**|No|**Sí**|**Sí**|**Sí**|**Sí**|
+|Cisco Meraki|**Sí**|**Sí**|No|**Sí**|No|No||Cisco Scansafe|**Sí**|No|**Sí**|**Sí**|**Sí**|**Sí**|
+|Clavister NGFW (Syslog)|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
 |Dell SonicWall|**Sí**|**Sí**|No|**Sí**|**Sí**|**Sí**|
 |FortiGate|No|**Sí**|No|**Sí**|**Sí**|**Sí**|
-|Juniper SRX|No|**Sí**|No|**Sí**\*|**Sí**|**Sí**|
+|Juniper SRX|No|**Sí**|No|**Sí**\**|**Sí**|**Sí**|
+|Juniper SSG|No|**Sí**|No|**Sí**|**Sí**|**Sí**|
 |McAfee SWG|**Sí**|No|No|**Sí**|**Sí**|**Sí**|
-|Meraki|**Sí**|**Sí**|No|**Sí**|No|No|
 |MS TMG|**Sí**|No|**Sí**|**Sí**|**Sí**|**Sí**|
 |Palo Alto Networks|**Sí**|**Sí**|**Sí**|**Sí**\*|**Sí**|**Sí**|
 |Sophos|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|No|

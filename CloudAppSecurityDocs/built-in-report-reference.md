@@ -13,12 +13,17 @@ ms.technology:
 ms.assetid: 588b3639-f748-45a6-bc4b-a6ee47c1865e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4191a3c73344eb631a989ba6942b7ac6a515940f
-ms.sourcegitcommit: fd3b6c04cec30f7c9300cc02d29d562d17bf43ea
-translationtype: HT
+ms.openlocfilehash: d159cb95c9f0468e8c658c13586d07f0f20049ef
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: es-ES
 ---
 # <a name="built-in-report-reference"></a>Referencia de informes integrados
-Se recomienda que cree informes personalizados usando como punto de partida los informes integrados, como si fueran una plantilla en la que basar los informes personalizados. En la tabla siguiente se proporciona una lista de informes integrados y los tipos de eventos que puede supervisar mediante dichos informes.  
+
+CAS proporciona una lista completa de los informes integrados de fábrica que le permiten extraer información y supervisar el modo en que las personas usan la nube. Puede utilizar los filtros de cada informe para personalizar el informe y exportarlos para su comodidad.
+
+
+En la tabla siguiente se proporciona una lista de informes integrados y los tipos de eventos que puede supervisar mediante dichos informes.  
   
 ## <a name="built-in-report-list"></a>Lista de informes integrados  
   
