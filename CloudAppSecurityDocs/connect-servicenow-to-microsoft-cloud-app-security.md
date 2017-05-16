@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2017
+ms.date: 5/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2e21e146ffc5043b6e5a6861422818328c3a0857
-ms.sourcegitcommit: 847f0425de7686b1b4a2b242930a0069e793436a
-translationtype: HT
+ms.openlocfilehash: 18ae1b7bfd740303470504f3abd4021c8aa1deb9
+ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 05/15/2017
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Conectar ServiceNow con Microsoft Cloud App Security
 
@@ -62,7 +64,7 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
   
      ![conectar ServiceNow](./media/connect-servicenow.png "conectar ServiceNow")  
   
-8.  En el elemento emergente, agregue el nombre de usuario de ServiceNow, la contraseña, la dirección URL de la instancia, el identificador de cliente y el secreto de cliente en los cuadros correspondientes.  
+8.  En el elemento emergente, agregue el id. de usuario de ServiceNow, la contraseña, la dirección URL de la instancia, el identificador de cliente y el secreto de cliente en los cuadros correspondientes.  
   
 9.  Haga clic en **Conectar**.  
   
@@ -92,7 +94,7 @@ Para conectar ServiceNow con Cloud App Security, debe tener permisos de administ
 
     ![conectar ServiceNow](./media/connect-servicenow.png "conectar ServiceNow")   
 
-6.  En la página de configuración de ServiceNow, en la pestaña API, agregue el nombre de usuario, la contraseña y la dirección URL de la instancia de ServiceNow en los cuadros correspondientes.   
+6.  En la página de configuración de ServiceNow, en la pestaña API, agregue el id. de usuario, la contraseña y la dirección URL de la instancia de ServiceNow en los cuadros correspondientes.   
 
 7.  Haga clic en **Conectar**.   
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 5/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b5807498a87c39b54ece698cd5bec10f05b29fe2
-ms.sourcegitcommit: f4fcea309a5ba8c99d1dea306abf5bf07649d6fb
-translationtype: HT
+ms.openlocfilehash: 79e784c332045ebe300a34f5c6da918343a0df45
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="azure-information-protection-integration"></a>Integración de Azure Information Protection
 
@@ -135,7 +137,7 @@ Después de que Cloud App Security se conecte al servicio de Office 365, podrá 
 5. Puede revertir esta acción en cualquier momento en el **Registro de gobierno** haciendo clic en el botón **Revertir** situado en el extremo de la fila de la acción Proteger tomada previamente. 
 
 
-
+Para obtener más información sobre cómo funcionan conjuntamente Cloud App Security y Azure Information Protection, consulte [Protección de datos frente a errores de los usuarios](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake).
 
  
 ## <a name="see-also"></a>Consulte también  
