@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 5/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,16 @@ ms.technology:
 ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1cd697631f776c55fbedcec9a0ed34a3b68d8ac0
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
-translationtype: HT
+ms.openlocfilehash: 35d965d753dae9013a42f89ded8a87c461baa330
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Solución de problemas de Cloud Discovery
 ## <a name="log-parsing-errors"></a>Errores de análisis de registro
 
-Puede realizar un seguimiento del procesamiento de registros de Cloud Discovery mediante el registro de gobierno. En esta guía se proporcionan las acciones de resolución que se deben tomar para cada uno de los errores que se pueden mostrar allí.
+Puede realizar un seguimiento del procesamiento de registros de Cloud Discovery mediante el registro de gobierno. En este artículo se proporcionan las acciones para resolver cada uno de los errores que se pueden mostrar allí.
 
 ### <a name="governance-log-errors"></a>Errores del registro de gobierno
 |ERROR|DESCRIPCIÓN|SOLUCIÓN|
@@ -30,7 +32,7 @@ Puede realizar un seguimiento del procesamiento de registros de Cloud Discovery 
 |El formato del registro no coincide|El formato del registro que ha cargado no coincide con el formato esperado para este origen de datos.|1. Compruebe que el registro no está dañado. <br /> 2. Compare y haga coincidir el registro con el formato de ejemplo que se muestra en la página de carga.|
 |Las transacciones tienen más de 90 días|Todas las transacciones tienen más de 90 días y, por lo tanto, se omitirán.|Exporte un registro nuevo con eventos recientes y vuelva a cargarlo.|
 |No hay transacciones con las aplicaciones de nube catalogadas|No se ha encontrado en el registro ninguna transacción con las aplicaciones de nube reconocidas.|Compruebe que el registro contiene información sobre el tráfico saliente.|
-|Tipo de registro no admitido|Al seleccionar **Origen de datos = Otro (no admitido)**, el registro no se analiza. En su lugar, se envía para su revisión al equipo técnico de Cloud App Security.|El equipo técnico de Cloud App Security crea un analizador dedicado por cada origen de datos. Los orígenes de datos más populares [ya se admiten](set-up-cloud-discovery.md). Cada carga de un origen de datos no admitido se revisa y se agrega a la canalización para los analizadores de orígenes de datos nuevos. Las nuevas notificaciones del analizador se publican como parte de las notas de la versión de Cloud App Security.|
+|Tipo de registro no admitido|Al seleccionar **Origen de datos = Otro (no admitido)**, el registro no se analiza. En su lugar, se envía para su revisión al equipo técnico de Cloud App Security.|El equipo técnico de Cloud App Security crea un analizador dedicado por cada origen de datos. Los orígenes de datos más populares [ya se admiten](set-up-cloud-discovery.md). Cada carga de un origen de datos no admitido se revisa y se agrega a la canalización para los analizadores de orígenes de datos nuevos. Las nuevas notificaciones del analizador se publican como parte de las [notas de la versión](release-notes.md) de Cloud App Security.|
 ## <a name="log-collector-errors"></a>Errores del recopilador de registros
 
 |PROBLEMA|SOLUCIÓN|
