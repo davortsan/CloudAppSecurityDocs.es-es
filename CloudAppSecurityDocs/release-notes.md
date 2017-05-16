@@ -327,7 +327,7 @@ Publicado el 7 de agosto de 2016
 
 - Se han mejorado los analizadores de archivos de registro de Cloud Discovery, incluida la adición de Juniper y Cisco ASA.
 - Cloud App Security ahora permite proporcionar comentarios para la mejora de las alertas cuando se descarta una alerta. Puede ayudar a mejorar la calidad de la característica de alertas de Cloud App Security. Para ello, infórmenos del motivo por el que descarta la alerta, por ejemplo: no es interesante, ha recibido demasiadas alertas similares, la gravedad real debe ser inferior o la alerta no es precisa.
-- En la vista de la directiva de archivo o al ver un archivo, cuando se abre el cajón de archivos, se ha agregado un vínculo nuevo a las directivas coincidentes. Al hacer clic en él, puede ver todas las coincidencias y ahora puede descartarlas todas. 
+-En la vista de la directiva de archivo o al ver un archivo, cuando se abre el cajón de archivos, se ha agregado un vínculo nuevo a las directivas coincidentes. Al hacer clic en él, puede ver todas las coincidencias y ahora puede descartarlas todas. 
 - Ahora se ha agregado en todas las alertas correspondientes la unidad organizativa a la que pertenece un usuario.
 - Ahora se envía una notificación por correo electrónico para informarle de que se ha completado el procesamiento de los registros cargados manualmente.
 
