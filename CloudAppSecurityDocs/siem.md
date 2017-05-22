@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2017
+ms.date: 5/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5880ea404d6830c5d8f12534c04f123d8c517946
-ms.sourcegitcommit: ea8207f412f31127beafd18a0bd028052fbadf90
+ms.openlocfilehash: ad09d594b73ecd24066db10a19caf39580ad040e
+ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 05/15/2017
 ---
 # <a name="siem-integration"></a>Integración de SIEM
     
@@ -25,12 +25,38 @@ Ahora puede integrar Cloud App Security con su servidor SIEM para habilitar la s
 
 Cuando integre por primera vez su SIEM con Cloud App Security, las actividades y las alertas de los dos últimos días se reenviarán al SIEM, así como todas las actividades y alertas (en función del filtro seleccionado) que se produzcan a partir de entonces. Además, si deshabilita esta característica durante un período prolongado, cuando la habilite de nuevo, se reenviarán las alertas y las actividades de los dos últimos días, así como las que se produzcan a partir de entonces.
 
+## <a name="siem-integration-architecture"></a>Arquitectura de integración de SIEM
+
+El agente SIEM se implementa en la red de su organización. Una vez implementado y configurado, sondea los tipos de datos que se configuraron (alertas y actividades) mediante las API de RESTful de Cloud App Security.
+El tráfico se envía a través de un canal HTTPS cifrado en el puerto 443.
+
+Cuando el agente SIEM recupera los datos de Cloud App Security, envía mensajes de Syslog al SIEM local mediante la configuración de red proporcionada durante la instalación (TCP o UDP con un puerto personalizado). 
+
+![Arquitectura de integración de SIEM](./media/siem-architecture.png)
+
+## <a name="sample-siem-logs"></a>Ejemplo de registros de SIEM
+
+Los registros proporcionados a su SIEM desde Cloud App Security son CEF sobre Syslog. En los siguientes registros de ejemplo, podrá ver el tipo de evento que envía normalmente Cloud App Security a su servidor SIEM. En ellos puede ver cuándo se desencadenó la alerta, el **tipo del evento**, la **directiva** que se incumplió, el **usuario** que desencadenó el evento, la **aplicación** que el usuario estaba usando para crear la infracción y la **dirección URL** de la que procede la alerta:
+
+Ejemplo de registro de actividad: 
+  
+2017-05-12T13:15:32.131Z CEF:0|MCAS|SIEM_Agent|0.97.33|EVENT_CATEGORY_UPLOAD_FILE|**Upload file**|0|externalId=AVv8zNojeXPEqTlM-j6M start=1494594932131 end=1494594932131 msg=**Upload file: passwords.txt** **suser=admin@contoso.com** destination**ServiceName=Jive Software** dvc= requestClientApplication= cs1Label=**portalURL cs1=https://contoso.cloudappsecurity.com**/#/audits?activity.id\=eq(AVv8zNojeXPEqTlM-j6M,) cs2Label=uniqueServiceAppIds cs2=APPID_JIVE cs3Label=targetObjects cs3=test.txt c6a1Label="Device IPv6 Address" c6a1=
+
+
+
+Ejemplo de registro de alertas: 
+
+2017-05-12T13:25:57.640Z CEF:0|MCAS|SIEM_Agent|0.97.33|ALERT_CABINET_EVENT_MATCH_AUDIT|asddsddas|3|externalId=5915b7e50d5d72daaf394da9 start=1494595557640 end=1494595557640 msg=**Activity policy 'log ins to Jive'** was triggered by 'admin@contoso.com' **suser=admin@contoso.com** destination**ServiceName=Jive Software** cn1Label=riskScore cn1= cs1Label=portal**URL cs1=https://contoso.cloudappsecurity.com**/#/alerts/5915b7e50d5d72daaf394da9 cs2Label=uniqueServiceAppIds cs2=APPID_JIVE cs3Label=relatedAudits cs3=AVv81ljWeXPEqTlM-j-j
+
+
+## <a name="how-to-integrate"></a>Integración
+
 La integración con SIEM se realiza en tres pasos:
 1. Configuración en el portal de Cloud App Security 
 2. Descarga del archivo JAR y ejecución en el servidor
 3. Valide que el agente SIEM funcione.
 
-## <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Requisitos previos
 
 - Servidor Windows o Linux estándar (puede ser una máquina virtual).
 - El servidor debe ejecutar Java 8; no se admiten versiones anteriores.
