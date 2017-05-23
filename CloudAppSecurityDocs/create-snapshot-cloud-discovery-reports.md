@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7987786ed6db8593f8ec7baa60d1c6523ac00272
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.openlocfilehash: b694b6f117b0c5249520a43154675cdac70361b4
+ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 05/16/2017
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Crear informes de instantáneas de Cloud Discovery
 Es importante cargar un registro manualmente y dejar que Cloud App Security lo analice antes de intentar usar el recopilador de registros automáticos.
@@ -34,7 +36,7 @@ Para crear un informe de instantáneas:
   
      ![Nuevo informe de instantáneas](./media/new-snapshot-report.png) 
 
-4.  Seleccione el **Origen de datos** desde el que quiere cargar los archivos de registro.  
+4.  Seleccione el **Origen de datos** desde el que quiere cargar los 13 archivos de registro.  
   
 5. Compruebe el formato del registro para asegurarse de que es correcto según el ejemplo que puede descargar. Haga clic en **View and verify** (Ver y comprobar) y luego haga clic en **Download sample log** (Descargar registro de ejemplo). Después, compare su registro con el ejemplo proporcionado para asegurarse de que es compatible. 
 
