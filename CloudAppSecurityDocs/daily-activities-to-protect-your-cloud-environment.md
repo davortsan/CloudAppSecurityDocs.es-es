@@ -14,8 +14,10 @@ ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 62463e7336c58eefb3c82bc0e24261ba31684d5c
-ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="working-with-the-dashboard"></a>Trabajo con el panel
 Después de tener Cloud App Security configurado y en funcionamiento tendrá que configurar secuencias de datos, autorizar las aplicaciones que quiera permitir que utilicen los usuarios y configurar directivas para supervisar el entorno de la nube. A continuación, puede utilizar Cloud App Security para controlar y proteger la nube, y para administrar los riesgos.  

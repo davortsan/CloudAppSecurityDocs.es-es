@@ -14,9 +14,10 @@ ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 73da4104de24a7b2e6814f04b227140b0b57235f
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: es-ES
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="use-a-custom-log-parser"></a>Uso del analizador de registros personalizado
 Cloud App Security le permite configurar un analizador personalizado para satisfacer y procesar el formato de los registros de modo que se puedan usar para Cloud Discovery, incluso si proceden de un firewall o un dispositivo que no se admite explícitamente por Cloud App Security. 
@@ -26,13 +27,13 @@ El analizador personalizado le permite utilizar registros de firewalls no admiti
 
  
 Para configurar un analizador CSV personalizado:
-1.    En el portal de Cloud App Security, haga clic en **Detectar** y, después, en **Crear nuevo informe de instantáneas**.  
+1.  En el portal de Cloud App Security, haga clic en **Detectar** y, después, en **Crear nuevo informe de instantáneas**.  
   
     ![Crear nuevo informe de instantáneas](./media/create-new-snapshot-report.png)
      
 3.  Escriba un **nombre de informe** y una **descripción**
   
-4.  En **Origen de datos**, seleccione **Custom log format...**  (Formato de registro personalizado...).  
+4.  En **Origen de datos**, seleccione **Custom log format... ** (Formato de registro personalizado...).  
 
      ![Nuevo informe de instantáneas](./media/custom-log-upload.png)   
 
