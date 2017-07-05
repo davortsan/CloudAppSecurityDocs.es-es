@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2017
+ms.date: 6/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 57927618-cb66-4c7f-afd7-c96926460816
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a74df6095107943630e8bc39c0c702471325adfc
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.openlocfilehash: c218a1aa02aafaa38107bc6072a810dec2e5a0a4
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="controlling-and-protecting-your-files"></a>Control y protección de los archivos  
 
@@ -40,7 +40,7 @@ Mediante la detección de estos dos parámetros, sensibilidad y nivel de uso com
 
 #### <a name="setting-up-monitoring"></a>Configuración de la supervisión
 
-1.    Inicie la supervisión de la aplicación mediante la configuración de una directiva que examine los archivos compartidos externamente en busca de contenido confidencial:
+1.  Inicie la supervisión de la aplicación mediante la configuración de una directiva que examine los archivos compartidos externamente en busca de contenido confidencial:
 
     1. En la página **Directivas**, haga clic en [**Crear directiva de archivo**](data-protection-policies.md). 
     ![creación de una directiva de archivo](./media/create-file-policy.png)
@@ -101,11 +101,11 @@ Sabe que necesita proteger sus datos y ya ha sufrido la molestia de clasificar l
     
     1. En la página **Directivas**, haga clic en [**Crear directiva de archivo**](data-protection-policies.md). 
 
-    2.    En la sección de filtro, puede quitar los filtros de **Nivel de acceso** y **Última modificación** para ejecutar esta directiva en todos los archivos en la nube. Estos filtros solo se aplican a los archivos modificados a partir de ahora. Agregue el filtro **Etiqueta de clasificación** y luego **es igual a** y seleccione la etiqueta de clasificación de su organización. 
+    2.  En la sección de filtro, puede quitar los filtros de **Nivel de acceso** y **Última modificación** para ejecutar esta directiva en todos los archivos en la nube. Estos filtros solo se aplican a los archivos modificados a partir de ahora. Agregue el filtro **Etiqueta de clasificación** y luego **es igual a** y seleccione la etiqueta de clasificación de su organización. 
     
     ![etiqueta de clasificación de directivas de archivos](./media/file-policy-class-label.png)
 
-    3.    Para supervisar el uso compartido inadecuado de estos archivos clasificados, agregue un filtro con el nivel de acceso que está intentando evitar, por ejemplo, **Nivel de acceso es igual a Externo o Público (Internet)**.  Después de iniciar la directiva, Cloud App Security tarda un poco de tiempo en analizar los archivos existentes y también los archivos nuevos que agregue. Según la cantidad de datos que tenga en la nube, puede tardar algún tiempo en completar el análisis.
+    3.  Para supervisar el uso compartido inadecuado de estos archivos clasificados, agregue un filtro con el nivel de acceso que está intentando evitar, por ejemplo, **Nivel de acceso es igual a Externo o Público (Internet)**.  Después de iniciar la directiva, Cloud App Security tarda un poco de tiempo en analizar los archivos existentes y también los archivos nuevos que agregue. Según la cantidad de datos que tenga en la nube, puede tardar algún tiempo en completar el análisis.
 
     ![filtro de directivas de archivos público](./media/file-policy-filter-public.png)
 

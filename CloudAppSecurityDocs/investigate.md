@@ -14,8 +14,10 @@ ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 8e552aea95318288d329597ec2a0749535e06a52
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="investigate"></a>Investigar
 Después de que Cloud App Security se ejecute en su entorno en la nube, será necesaria una fase de aprendizaje e investigación sobre el uso de las herramientas de Cloud App Security para adquirir un mayor conocimiento de lo que ocurre en su entorno en la nube. Luego, y según su entorno concreto y su uso, puede identificar los requisitos para proteger su organización de posibles riesgos.

@@ -14,17 +14,19 @@ ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 3d74621d1c173c51a9a3d0e08f261290a6d24835
-ms.sourcegitcommit: 122268f3e7b0cadf1a6a495a50f388fe4adbcc2b
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/28/2017
 ---
 ## <a name="cloud-discovery-data-anonymization"></a>Anonimización de datos de Cloud Discovery
 
 La anonimización de datos de Cloud Discovery le permite proteger la privacidad del usuario. Una vez que el registro de datos se ha cargado en el portal de Cloud App Security, se depura el registro y se reemplaza toda la información de nombres de usuario con nombres de usuario cifrados. De este modo, todas las actividades de la nube se mantienen anónimas. Cuando sea necesario, para una investigación de seguridad específica (por ejemplo, debido a una infracción de seguridad o una actividad sospechosa del usuario), los administradores pueden resolver el nombre de usuario real. Si un administrador tiene un motivo para sospechar de un usuario específico, puede buscar el nombre de usuario cifrado de un nombre de usuario conocido y, después, comenzar la investigación usando el nombre de usuario cifrado. En el **Registro de gobierno** del portal se audita cada conversión de nombre de usuario.
 
 Puntos clave:
--    No se almacena ni se muestra ninguna información privada. Solo información cifrada.
--    Los datos privados se cifran mediante AES-128 con una clave dedicada por inquilino.
--    La resolución de nombres de usuario se realiza ad hoc, por nombre de usuario descifrando un nombre de usuario cifrado determinado.
+-   No se almacena ni se muestra ninguna información privada. Solo información cifrada.
+-   Los datos privados se cifran mediante AES-128 con una clave dedicada por inquilino.
+-   La resolución de nombres de usuario se realiza ad hoc, por nombre de usuario descifrando un nombre de usuario cifrado determinado.
 
 
 Cómo funciona la anonimización de datos:

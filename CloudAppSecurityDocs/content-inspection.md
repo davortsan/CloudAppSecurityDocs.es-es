@@ -14,8 +14,10 @@ ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 1083a743f2602bab6e55e96e1e7f7dd4c0b77bce
-ms.sourcegitcommit: fd3b6c04cec30f7c9300cc02d29d562d17bf43ea
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="content-inspection"></a>Inspección de contenido
 En este artículo se describe el proceso que Cloud App Security sigue al realizar la inspección de contenido de DLP en los datos en la nube. 
@@ -42,7 +44,7 @@ Las directivas de inspección de contenido integradas pueden buscar la siguiente
 
 - Direcciones de correo electrónico 
 - Números de tarjeta de crédito 
-  -    Todas las compañías de tarjetas de crédito (Visa, MasterCard, American Express, Diners Club, Discover, JCB, Dankort, UnionPay, etc.) 
+  - Todas las compañías de tarjetas de crédito (Visa, MasterCard, American Express, Diners Club, Discover, JCB, Dankort, UnionPay, etc.) 
   - Delimitadores de espacio, punto o guión
   - Este examen también incluye la validación Luhn.
 - Códigos SWIFT
@@ -63,11 +65,11 @@ Las directivas de inspección de contenido integradas pueden buscar la siguiente
 ## <a name="supported-languages"></a>Idiomas admitidos
 
 El motor de inspección de contenido de Cloud App Security:
--    Admite todos los caracteres Unicode
--    Contempla más de 1000 tipos de archivo
--    Se admiten varios idiomas, especialmente los archivos que utilizan juegos de caracteres Unicode. Asegúrese de definir las directivas en la cuenta para esos idiomas, por ejemplo si está buscando palabras clave, debe poner las palabras clave en los idiomas que pretende utilizar.
--    En tipos de archivo basados en texto que utilizan codificación no Unicode, por ejemplo, Chino GB2312, la comparación con palabras clave en chino Unicode no funcionará según lo esperado.
--    Para los tipos de archivo que se basan en bibliotecas de terceros, las cadenas y palabras coincidentes no siempre funcionen como se esperaba. Esto es muy habitual en archivos (como los tipos de archivo binarios) en los que la inspección de contenido se basa en bibliotecas de terceros que devuelven cadenas de Java para conjuntos de caracteres e idioma.
+-   Admite todos los caracteres Unicode
+-   Contempla más de 1000 tipos de archivo
+-   Se admiten varios idiomas, especialmente los archivos que utilizan juegos de caracteres Unicode. Asegúrese de definir las directivas en la cuenta para esos idiomas, por ejemplo si está buscando palabras clave, debe poner las palabras clave en los idiomas que pretende utilizar.
+-   En tipos de archivo basados en texto que utilizan codificación no Unicode, por ejemplo, Chino GB2312, la comparación con palabras clave en chino Unicode no funcionará según lo esperado.
+-   Para los tipos de archivo que se basan en bibliotecas de terceros, las cadenas y palabras coincidentes no siempre funcionen como se esperaba. Esto es muy habitual en archivos (como los tipos de archivo binarios) en los que la inspección de contenido se basa en bibliotecas de terceros que devuelven cadenas de Java para conjuntos de caracteres e idioma.
 
 
 

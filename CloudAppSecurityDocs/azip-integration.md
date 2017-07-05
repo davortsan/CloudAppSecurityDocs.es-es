@@ -14,10 +14,10 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 79e784c332045ebe300a34f5c6da918343a0df45
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="azure-information-protection-integration"></a>Integración de Azure Information Protection
 
@@ -94,17 +94,17 @@ Para ignorar las etiquetas de clasificación establecidas por una persona extern
 
 **Directiva 1: datos confidenciales que se comparten externamente en Box:**
 
-1.    Cree una directiva de archivo.
-2.    Establezca el nombre, la gravedad y la categoría de la directiva.
-3.    Agregue los siguientes filtros para buscar todos los datos confidenciales que se comparten externamente en Box:
+1.  Cree una directiva de archivo.
+2.  Establezca el nombre, la gravedad y la categoría de la directiva.
+3.  Agregue los siguientes filtros para buscar todos los datos confidenciales que se comparten externamente en Box:
 
 ![directiva de confidencialidad](./media/azip-confidentiality-policy.png) 
 
 **Directiva 2: datos restringidos que se han modificado recientemente fuera de la carpeta Finanzas en SharePoint:**
 
-1.    Cree una directiva de archivo.
-2.    Establezca el nombre, la gravedad y la categoría de la directiva.
-3.    Agregue los siguientes filtros para buscar todos los datos restringidos que se han modificado recientemente y agregue una exclusión para la carpeta Finanzas en la opción de selección de carpeta: 
+1.  Cree una directiva de archivo.
+2.  Establezca el nombre, la gravedad y la categoría de la directiva.
+3.  Agregue los siguientes filtros para buscar todos los datos restringidos que se han modificado recientemente y agregue una exclusión para la carpeta Finanzas en la opción de selección de carpeta: 
  
 ![directiva de datos restringidos](./media/azip-restricted-data-policy.png) 
 
@@ -130,7 +130,7 @@ Después de que Cloud App Security se conecte al servicio de Office 365, podrá 
 ![plantilla de protección](./media/protect-template.png)
 3. Después de elegir una plantilla y hacer clic en Proteger, Cloud App Security aplicará la plantilla y protegerá el archivo original. El archivo protegido tendrá el mismo nombre que el archivo original, pero con una nueva extensión de archivo “.pfile”.
 > [!NOTE]
->     Se recomienda aplicar plantillas RMS que abarquen toda la compañía en los archivos, de forma que todos los usuarios de la organización puedan acceder a estos archivos, incluido el propietario original del archivo. El propietario del archivo, la directiva de uso compartido del archivo y la lista de usuarios que ya tienen acceso a él no cambian cuando el archivo pasa a estar protegido.
+>   Se recomienda aplicar plantillas RMS que abarquen toda la compañía en los archivos, de forma que todos los usuarios de la organización puedan acceder a estos archivos, incluido el propietario original del archivo. El propietario del archivo, la directiva de uso compartido del archivo y la lista de usuarios que ya tienen acceso a él no cambian cuando el archivo pasa a estar protegido.
 
 4. Si los usuarios desean tener acceso al archivo protegido, necesitan tener la aplicación RMS sharing instalada en sus dispositivos. Para más información, consulte [Información general técnica de la aplicación Microsoft Rights Management sharing](https://docs.microsoft.com/information-protection/rms-client/sharing-app-admin-guide-technical).
 
