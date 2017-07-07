@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 29a52d474fdc09052506e88c8b871e611c3a5b27
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
-translationtype: HT
+ms.openlocfilehash: 95c92a7767f369d323d226c4362288ce043f905d
+ms.sourcegitcommit: 38e3c6749e3c746ab73b8da96cd81219781a7998
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/04/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Conectar G Suite con Microsoft Cloud App Security
 En esta sección se proporcionan instrucciones para conectar Cloud App Security con una cuenta de G Suite existente mediante las API del conector.
@@ -31,7 +33,7 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
      ![google1](./media/google1.png "google1")  
   
 3.  En la pantalla **Nuevo proyecto**, asigne al proyecto el nombre siguiente:</br>
-    **Cloud App Security para Google** y haga clic en **Crear**.  
+    **Microsoft Cloud App Security** y haga clic en **Crear**.  
            ![google2](./media/google2.png "google2")  
   
 4.  Una vez creado el proyecto, en la barra de herramientas, junto a Google Cloud Platform, seleccione el proyecto y, en **API**, haga clic en **Go to APIs overview** (Ir a la información general de las API).  
@@ -63,7 +65,7 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
   
 8.  Haga clic en **Credenciales** y, luego, en la **pantalla de autorización de OAuth**.  
   
-    -   En **Nombre de producto mostrado a los usuarios**, escriba **Cloud App Security para Google**.  
+    -   En **Product name shown to users** (Nombre de producto mostrado a los usuarios), escriba **Microsoft Cloud App Security**.  
   
     -   El resto de campos es opcional.  
   
@@ -79,11 +81,11 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
 
      ![clave de la cuenta del servicio de Google](./media/google8.png "google8")  
   
-11. En **Create service account key** (Crear clave de la cuenta del servicio), seleccione **New service account** (Nueva cuenta de servicio) y escriba cualquier nombre, por ejemplo, **Cuenta de servicio 1**. En **Rol** seleccione **Proyecto** y **Editor**, y en **Tipo de clave** seleccione **P12** y haga clic en **Crear**.  
+11. En **Create service account key** (Crear clave de la cuenta del servicio), seleccione **New service account** (Nueva cuenta de servicio) y escriba cualquier nombre, por ejemplo, **Cuenta de servicio 1**. En **Rol** seleccione **Proyecto** y **Editor**, y en **Tipo de clave** seleccione **P12** y haga clic en **Crear**. Active la casilla **Enable G Suite Domain-wide Delegation** (Habilitar delegación de todo el dominio de G Suite) y haga clic en **Guardar**.  
   
      ![crear clave de la cuenta del servicio de Google](./media/google9.png "google9")  
   
-12.  Se guardará un archivo de certificado P12 en el equipo. Un elemento emergente le mostrará la **contraseña de la clave privada**. ASEGÚRESE DE QUE LA GUARDA para su uso posterior.  
+12.  Se guardará un archivo de certificado P12 en el equipo.  
         
 12. En la pantalla **Credenciales**, haga clic en **Manage service accounts** (Administrar las cuentas de servicio) en el extremo derecho.  
        ![credenciales de la cuenta de servicio de G Suite](./media/google10.png "G Suite credentials service account")  
@@ -91,10 +93,6 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
 13. Haga clic en los tres puntos a la derecha de la cuenta de servicio que ha creado y seleccione **Editar**.  
   
      ![edición de Google](./media/google11.png "edición de Google")  
-  
-14. Active la casilla **Enable G Suite Domain-wide Delegation** (Habilitar delegación de todo el dominio de G Suite) y haga clic en **Guardar**.  
-  
-     ![todo el dominio de Google](./media/google12.png "todo el dominio de Google")  
   
 15. Copie el **identificador de la cuenta del servicio** asignado a su servicio, ya que lo necesitará más adelante.  
   
@@ -107,7 +105,7 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
 
 18. Proporcione la información siguiente:
 
-    -   **Nombre de la aplicación**: Cloud App Security para Google.  
+    -   **Nombre de la aplicación**: Microsoft Cloud App Security.  
   
     -   **Descripción breve y Descripción larga** (opcional): Microsoft Cloud App Security proporciona visibilidad de las aplicaciones en la nube, lo que sirve para controlar, investigar y gobernar el uso de esas aplicaciones en la nube, para proteger los datos corporativos y para detectar actividades sospechosas en cualquier aplicación en la nube.  
   
@@ -116,18 +114,16 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
     -   En **Drive Integration** (Integración de unidades), escriba lo siguiente en **Abrir dirección URL**:  
   
          https://portal.cloudappsecurity.com/#/services/11770?tab=files  
-  
-    -   Haga clic en **Guardar cambios**.  
-  
+     
          ![configuración de Google Drive](./media/google15.png "googledriveconfig")  
   
 19. En la lista **Enabled APIs** (API habilitadas), haga clic en el engranaje de configuración situado junto a **Google Apps Marketplace SDK**. 
          ![configuración de Marketplace SDK de Google](./media/google16.png "googledriveconfig")  
-20. Seleccione la pestaña **Configuración**.  
+20. Seleccione la pestaña **Configuración**. 
   
     -   Copie el **Número de proyecto (id. de aplicación)** que aparece en la parte superior para usarlo más adelante.  
   
-    -   En el **Nombre de la aplicación** debe aparecer **Cloud App Security para Google**.
+    -   En **Nombre de la aplicación**, debe aparecer **Microsoft Cloud App Security**.
   
          Rellene el campo **Descripción de la aplicación** con "Microsoft Cloud App Security proporciona visibilidad de las aplicaciones en la nube, lo que sirve para controlar, investigar y gobernar el uso de esas aplicaciones en la nube; para proteger los datos corporativos, y para detectar actividades sospechosas en cualquier aplicación en la nube".  
   

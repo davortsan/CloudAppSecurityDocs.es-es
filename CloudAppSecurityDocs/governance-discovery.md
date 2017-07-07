@@ -13,16 +13,31 @@ ms.technology:
 ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ca4a10f64429c481f49c75740f651302b1c7d1ef
-ms.sourcegitcommit: 7493d88e4fe7c827f870b81e2090ffcc77f1408a
-translationtype: HT
+ms.openlocfilehash: cf14aaa243baaea8223cc6a271e7a237a0a1e287
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/28/2017
 ---
-# <a name="governing-discovered-apps"></a>Control de aplicaciones detectadas
-Cloud App Security permite bloquear el acceso a aplicaciones no autorizadas con el uso de sus aplicaciones locales de seguridad. Puede generar un script de bloqueo dedicado e importarlo en su aplicación.
-Esta solución no requiere redireccionar todo el tráfico web de la organización a un proxy.
+## <a name="govern-discovered-apps"></a>Controlar las aplicaciones detectadas
+
+Después de revisar la lista de aplicaciones detectadas en el entorno, puede protegerlo contra el uso de aplicaciones no deseadas de las maneras que se indican a continuación.
+
+### <a name="sanctioningunsanctioning-an-app"></a>Autorizar o no autorizar una aplicación 
+
+Puede no autorizar una aplicación de riesgo específica. Para ello, haga clic en los tres puntos situados al final de la fila y seleccione **No autorizar**.
+El hecho de no autorizar una aplicación no impide que se use, pero le permite supervisar más fácilmente su uso con los filtros de Cloud Discovery. Después, puede notificar a los usuarios que la aplicación no está autorizada y sugerir una aplicación segura alternativa.
+
+![Etiquetar como no autorizada](./media/tag-as-unsanctioned.png)  
+
+
+Si tiene una lista de aplicaciones que quiere autorizar o no autorizar, puede activar la casilla de todas las aplicaciones que quiere administrar y, después, seleccionar la acción.
 
 
 ## <a name="export-a-block-script-to-govern-discovered-apps"></a>Exportar un script de bloque para controlar aplicaciones detectadas
+
+Cloud App Security permite bloquear el acceso a aplicaciones no autorizadas con el uso de sus aplicaciones locales de seguridad. Puede generar un script de bloqueo dedicado e importarlo en su aplicación.
+Esta solución no requiere redireccionar todo el tráfico web de la organización a un proxy.
 
 1. En el panel de Cloud Discovery, etiquete las aplicaciones que quiere bloquear como **No autorizada**.
 

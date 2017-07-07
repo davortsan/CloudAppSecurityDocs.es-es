@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b694b6f117b0c5249520a43154675cdac70361b4
-ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.openlocfilehash: 746727ee96513e473911a286fb53ea8cec52c3cc
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/16/2017
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Crear informes de instantáneas de Cloud Discovery
 Es importante cargar un registro manualmente y dejar que Cloud App Security lo analice antes de intentar usar el recopilador de registros automáticos.
@@ -41,6 +41,11 @@ Para crear un informe de instantáneas:
 5. Compruebe el formato del registro para asegurarse de que es correcto según el ejemplo que puede descargar. Haga clic en **View and verify** (Ver y comprobar) y luego haga clic en **Download sample log** (Descargar registro de ejemplo). Después, compare su registro con el ejemplo proporcionado para asegurarse de que es compatible. 
 
  ![Comprobar el formato del registro](./media/cloud-discovery-snapshot-verify.png)  
+
+  > [!NOTE]
+  > El formato FTP de ejemplo se admite en las instantáneas y la carga automatizada, mientras que Syslog solo se admite en la carga automatizada.<br></br>
+Si se descarga un registro de ejemplo, se descargará un registro de FTP de ejemplo.
+
 
 5.  **Elija los registros de tráfico** que quiera cargar. Puede cargar hasta 20 archivos a la vez. También se admiten los archivos comprimidos.  
   

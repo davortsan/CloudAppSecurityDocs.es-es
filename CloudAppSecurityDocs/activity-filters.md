@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 7/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 049ff6838e03e8d6d2fca49b4dd32c60a1a9db93
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.openlocfilehash: 104f44cb4dc890753551d23682a77b75bba510b1
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="activities"></a>Actividades
 Cloud App Security le ofrece visibilidad en todas las actividades de las aplicaciones conectadas. Después de conectar Cloud App Security con una aplicación mediante el conector de aplicaciones, Cloud App Security examina todas las actividades que se han producido (el período de tiempo de examen retroactivo varía según la aplicación) y después se actualiza constantemente con nuevas actividades. 
@@ -80,7 +80,7 @@ A continuación se muestra una lista de los filtros de actividad que se pueden a
    Las etiquetas IP integradas incluyen:
     - Aplicaciones de Microsoft (14)
     - Proxy anónimo
-    - Red de robots (botnet)
+    - Botnet (verá que una red de robots (botnet) ha realizado la actividad, con un vínculo para obtener más información sobre el botnet específico)
     - IP de análisis de Darknet
     - Servidor de malware C&C
     - Analizador de conectividad remota
@@ -99,8 +99,8 @@ A continuación se muestra una lista de los filtros de actividad que se pueden a
 -   ISP registrado: ISP desde el que se ha realizado la actividad.   
 
 -  Origen: busque el origen desde el que se detectó la actividad. El origen podría ser cualquiera de los siguientes:
-  -    Conector de aplicaciones: los registros provienen directamente del conector de la API de la aplicación.
-  -    Análisis del conector de aplicaciones: enriquecimientos de Cloud App Security basados en la obtención de información del conector de la API.
+  - Conector de aplicaciones: los registros provienen directamente del conector de la API de la aplicación.
+  - Análisis del conector de aplicaciones: enriquecimientos de Cloud App Security basados en la obtención de información del conector de la API.
   
 
 -   Usuario: el usuario que realizó la actividad, que se puede filtrar en el dominio, grupo, nombre u organización. Para filtrar las actividades sin un usuario específico, puede usar el operador 'no establecido'.  
@@ -117,10 +117,14 @@ A continuación se muestra una lista de los filtros de actividad que se pueden a
   
 -   Etiqueta de agente de usuario: etiqueta de agente de usuario integrada, por ejemplo, todas las actividades desde exploradores o sistemas operativos obsoletos.  
     
-  
-## <a name="working-with-the-activity-drawer"></a>Trabajo con el cajón de actividades
+>[!NOTE]
+> Para borrar los filtros, haga clic en el icono de borrar filtros ![icono de borrar filtros](./media/clear-filters.png).
 
-Para ver más información sobre cada actividad, haga clic en la misma actividad en el registro de actividades. Se abrirá el cajón de actividades que proporciona las siguientes acciones adicionales que puede realizar en el archivo:
+## <a name="the-activity-drawer"></a>El cajón de actividades
+
+### <a name="working-with-the-activity-drawer"></a>Trabajo con el cajón de actividades
+
+Para ver más información sobre cada actividad, haga clic en la misma actividad en el registro de actividades. Se abrirá el cajón de actividades, que proporciona las siguientes acciones adicionales que puede realizar en la actividad:
 
 - Directivas coincidentes: haga clic en el vínculo Directivas coincidentes para ver una lista de las directivas con las que coincide esta actividad.
 - Ver datos sin procesar: haga clic en la opción para ver los datos sin procesar para ver los datos reales recibidos desde la aplicación.
@@ -135,6 +139,22 @@ Los campos del cajón de actividades proporcionan vínculos contextuales a activ
 ![cajón de actividades](./media/activity-drawer.png "cajón de actividades")  
   
 Para obtener una lista de las acciones de control disponibles, vea [Acciones de control de actividades](governance-actions.md#activity-governance-actions).
+
+### <a name="user-insights"></a>Información de usuario
+
+La experiencia de investigación incluye información predeterminada sobre el usuario activo. Con un solo clic, puede obtener una descripción detallada del usuario, incluida la ubicación desde la que se ha conectado, con cuántas alertas abiertas está relacionado e información sobre sus metadatos.
+
+Para ver la información de usuario:
+
+1. Haga clic en la actividad en el **Registro de actividades**.
+
+2. Después, haga clic en la pestaña **Usuario**. <br></br> Se abrirá la pestaña **Usuario** del cajón de actividades, que contiene la información siguiente sobre el usuario:
+    - **Alertas abiertas**: número de alertas abiertas relacionadas con el usuario.
+    - **Infracción de archivos**: número de infracciones de archivo relacionadas con archivos que posee el usuario.
+    - **Actividades**: número de actividades realizadas por el usuario durante los últimos 30 días.
+    - **Países**: número de países desde los que se ha conectado el usuario durante los últimos 30 días.
+    - **ISP**: número de ISP desde los que se ha conectado el usuario durante los últimos 30 días.
+    - **Direcciones IP**: número de direcciones IP desde las que se ha conectado el usuario durante los últimos 30 días.
 
 
 ## <a name="see-also"></a>Consulte también  

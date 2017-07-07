@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4f0793afc91b7bf29afe56bc5fa2218fb07dc6bf
-ms.sourcegitcommit: 25564029fb94c1e37e7072775c88a0456089224c
-translationtype: HT
+ms.openlocfilehash: 23eedf73a5b3eec883da5e64a9db98f6ec895098
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="manage-app-permissions"></a>Administrar permisos de aplicación
 Muchas aplicaciones de productividad de terceros que puedan instalar los usuarios profesionales de su organización solicitan permiso para acceder a datos e información del usuario e iniciar sesión en nombre de este o en otras aplicaciones en la nube, como Office 365, G Suite y Salesforce.  Cuando los usuarios instalan estas aplicaciones, a menudo hacen clic en Aceptar sin revisar detenidamente los detalles en el mensaje, incluyendo la concesión de permisos a la aplicación.  Este problema se agrava por el hecho de que es posible que el departamento de TI no tenga suficiente información para evaluar el riesgo de seguridad que supone una aplicación frente a la ventaja de productividad que ofrece. Dado que aceptar permisos de aplicación de terceros es un riesgo de seguridad potencial para la organización, supervisar los permisos de aplicación que conceden los usuarios le ofrece la visibilidad y el control necesarios para proteger a los usuarios y las aplicaciones. Los permisos de aplicación de Cloud App Security le permiten ver qué aplicaciones que han instalado los usuarios tienen acceso a los datos de Office 365, G Suite y Salesforce, los permisos que tienen y qué usuarios les concedieron acceso a sus cuentas de Office 365, G Suite y Salesforce. Los permisos de aplicación le ayudan a decidir a qué aplicaciones permite que los usuarios tengan acceso y cuáles quiere prohibir.
@@ -69,6 +71,14 @@ El icono se vuelve verde y se aprueba la aplicación para todos los usuarios de 
 3. Escriba el mensaje que quiere enviar a los usuarios de la aplicación en el cuadro Escriba un mensaje de notificación personalizado y actualice la dirección de respuesta del correo electrónico de notificación si es necesario. 
  Haga clic en **Prohibir aplicación** para enviar el correo y prohibir que los usuarios de la aplicación conectada la usen.
 
+## <a name="revoke-app-and-notify-user"></a>Revocar la aplicación y enviar una notificación al usuario
+
+En el caso de G Suite y Salesforce, es posible revocar el permiso de una aplicación o notificarle al usuario que debería hacerlo. 
+
+1. En la página Permisos de aplicación, haga clic en los tres puntos situados al final de la fila de la aplicación y seleccione **Enviar notificación al usuario**. De forma predeterminada, se enviará la siguiente notificación al usuario: *Autorizó que la aplicación Adallom Google Protector accediera a su cuenta de G Suite. Esta aplicación está en conflicto con la directiva de seguridad de la organización. Vuelva a considerar la posibilidad de conceder o revocar los permisos que otorgó a esta aplicación en su cuenta de G Suite. Para revocar el acceso de la aplicación, vaya a: https://security.google.com/settings/security/permissions?hl=en&pli=1 Seleccione la aplicación y haga clic en "Revocar acceso" en la barra de menús derecha*. Puede personalizar el mensaje que se envía.
+2. También puede revocar permisos para usar la aplicación para el usuario. Para ello, haga clic en el icono situado al final de la fila de la aplicación en la tabla y seleccione **Revocar aplicación**. 
+
+ ![revocar aplicación](./media/revoke-app.png)
 
 ## <a name="query-app-permissions"></a>Permisos de aplicación de consulta
 

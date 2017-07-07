@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 7/1/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 305c7ab0293e35ffbabc9b665a5b797619111131
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.openlocfilehash: deabe5b6ccb46ad766ba8e4c206abaf021cd5b72
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="files"></a>Archivos
 
@@ -83,7 +83,12 @@ A continuación se muestra una lista de los filtros de archivo que se pueden apl
   
 -   Nombre de archivo: nombre de archivo o subcadena del nombre tal como se define en la aplicación en la nube, por ejemplo, Todos los archivos con una contraseña en su nombre.   
   
--   Etiqueta de clasificación: busca archivos con etiquetas específicas establecidas por Azure Information Protection. Esto requiere la integración con Azure Integration Protection.
+-   Etiqueta de clasificación: busca archivos con etiquetas específicas. Son las siguientes:
+    - Etiquetas de Azure Information Protection. Esto requiere la integración con Azure Integration Protection.
+    - Etiquetas de Cloud App Security. proporciona actualmente más información sobre los archivos que examina. Ahora ya puede saber si se ha impedido que la DLP de Cloud App Security inspeccione los archivos porque estaban dañados o cifrados. Por ejemplo, puede configurar directivas para que le alerten y pongan en cuarentena archivos protegidos con contraseña que se comparten externamente de la manera que se indica a continuación: 
+        - Cifrado con Azure RMS: archivos cuyo contenido no se ha inspeccionado porque tienen establecido un cifrado de Azure RMS.
+        - Cifrado con contraseña: archivos cuyo contenido no se ha inspeccionado porque el usuario los ha protegido con una contraseña.
+        - Archivo dañado: archivos cuyo contenido no se ha inspeccionado porque no se ha podido leer su contenido.
 
 -   Tipo de archivo: Cloud App Security toma el tipo MIME recibido del servicio y examina el archivo para determinar el tipo de archivo real. Tenga en cuenta que este examen se aplica a archivos pertinentes para el examen de datos (documentos, imágenes, presentaciones, hojas de cálculo, archivos de texto y archivos de almacenamiento o ZIP). El filtro funciona por tipo de archivo/carpeta, por ejemplo, Todas las carpetas que son… o Todos los archivos de hoja de cálculo que son...
 
@@ -111,6 +116,9 @@ También puede establecer que la directiva se ejecute en archivos específicos. 
   
 ![filtro Aplicar a](./media/apply-to-filter.png "filtro Aplicar a")  
   
+>[!NOTE]
+> Para borrar los filtros, haga clic en el icono de borrar filtros ![icono de borrar filtros](./media/clear-filters.png).
+
 ## <a name="working-with-the-file-drawer"></a>Uso del cajón de archivos
 
 Puede ver más información sobre un archivo haciendo clic en él en el registro de archivos. El cajón de archivos se abrirá con las siguientes acciones adicionales relacionadas con el archivo en cuestión:
