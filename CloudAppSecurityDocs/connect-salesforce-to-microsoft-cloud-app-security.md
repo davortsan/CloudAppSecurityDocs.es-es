@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 6/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6e4363db83a65fbb656a844086cc08fab8cdecbd
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.openlocfilehash: d50f77f5b19f9d965209639861a5672d2bcfc730
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Conectar Salesforce con Microsoft Cloud App Security
 En esta sección se proporcionan instrucciones para conectar Cloud App Security con una cuenta de Salesforce existente mediante la API del conector de aplicaciones.  
@@ -44,10 +46,14 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
   
          ![editar perfil en Salesforce](./media/salesforce-edit-profile.png "editar perfil en Salesforce")  
   
-    -   Asegúrese de que está activada la casilla **API Enabled** (API habilitada). Si no está seleccionada, es posible que deba ponerse en contacto con Salesforce para agregarla a su cuenta.  
-  
-         ![API habilitada en Salesforce](./media/salesforce-api-enabled.png "API habilitada en Salesforce")  
-  
+    -   Asegúrese de que las siguientes casillas están activadas:   
+        - **API Enabled** (API habilitada)
+        - **Ver todos los datos** 
+        - **Manage Salesforce CRM Content** (Administrar contenido CRM de Salesforce)
+        - **Administrar usuarios**
+        
+        Si no están seleccionadas, es posible que deba ponerse en contacto con Salesforce para agregarlas a su cuenta.  
+             
 3.  Si su organización tiene habilitada la opción **Salesforce CRM Content** (Contenido CRM de Salesforce), asegúrese de que la cuenta administrativa actual también la tenga habilitada.  
   
     1.  Vaya a la página de configuración de Salesforce.  

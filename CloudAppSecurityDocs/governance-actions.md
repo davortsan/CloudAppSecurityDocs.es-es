@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 6/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f6b7a2d88c748f8e5b379fb5d70b603c2b6f0e95
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.openlocfilehash: a30cf7f973daadd38a2049183ab1800d8d210cf4
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: es-ES
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="governing-connected-apps"></a>Control de aplicaciones conectadas
 El gobierno le permite controlar qué hacen los usuarios en tiempo real en varias aplicaciones. Para las aplicaciones conectadas, puede aplicar acciones de gobierno a archivos o actividades.
@@ -80,20 +81,28 @@ Las siguientes acciones de gobierno pueden realizarse para aplicaciones conectad
   
     -   Se pueden aplicar acciones granulares por aplicación. Las acciones específicas varían según la terminología de la aplicación.  
   
-    -   Suspender usuario: se suspende al usuario de la aplicación.  
+    -   Suspender usuario: se suspende al usuario de la aplicación. 
+    > [!NOTE] 
+    > Si Azure Active Directory está establecido de modo que se sincronice automáticamente con los usuarios del entorno local de Active Directory, la configuración del entorno local reemplazará la configuración de Azure AD y esta acción de gobierno se revertirá. 
   
     -   Revocar contraseña: se revoca la contraseña del usuario y se le obliga a establecer una contraseña nueva en su siguiente inicio de sesión.  
   
-     ![directiva de actividad, ref6](./media/activity-policy-ref6.png "directiva de actividad, ref6")  
+     ![Acciones de gobierno de la directiva de actividad de seguridad de Cloud App Security](./media/activity-policy-ref6.png "Ref6 de directiva de actividad")  
   
 
 ### <a name="governance-conflicts"></a>Conflictos de gobierno
 
 Después de crear varias directivas, puede darse el caso de que sus acciones de gobierno se superpongan. Si es así, Cloud App Security procesará las acciones de gobierno de la manera siguiente:
 
+#### <a name="conflicts-between-policies"></a>Conflictos entre directivas
+
 - Si dos directivas contienen acciones que forman parte de la otra directiva (por ejemplo, **Quitar recursos compartidos externos** se incluye en **Hacer privado**), Cloud App Security resolverá el conflicto y se aplicará la acción más restrictiva.
 - Si las acciones no tienen ninguna relación (por ejemplo, **Enviar una notificación al propietario** y **Hacer privado**), se llevarán a cabo ambas acciones.
 - Si las acciones entran en conflicto (por ejemplo **Cambiar el propietario al usuario A** y **Cambiar el propietario al usuario B**), pueden darse resultados diferentes para cada coincidencia. Es importante cambiar las directivas para evitar conflictos, ya que pueden producir cambios no deseados en la unidad que serán difíciles de detectar.
+
+#### <a name="conflicts-in-user-sync"></a>Conflictos en la sincronización de usuarios
+
+- Si Azure Active Directory está establecido de modo que se sincronice automáticamente con los usuarios del entorno local de Active Directory, la configuración del entorno local reemplazará la configuración de Azure AD y esta acción de gobierno se revertirá. 
 
 ### <a name="governance-log"></a>Registro de gobierno
 El registro de gobierno proporciona un registro del estado de cada tarea que Cloud App Security deba ejecutar, incluidas las tareas manuales y automáticas. Entre estas tareas se incluyen las tareas definidas en las directivas, las acciones de gobierno establecidas en los archivos y los usuarios, y cualquier otra acción que haya determinado que debe realizar Cloud App Security. El registro de gobierno también proporciona información sobre el resultado correcto o incorrecto de estas acciones. Puede volver a intentar o revertir algunas de las acciones de gobierno en el registro de gobierno. 
@@ -124,7 +133,8 @@ Para obtener información sobre cómo se tratan las acciones de control cuando h
 |Directiva de archivo, Directiva de actividad|Archivo, Actividad|Enviar una notificación a usuarios concretos|Se envía un correo para informar a determinados usuarios de que un archivo infringe una directiva.|Todas las aplicaciones|
 |Directiva de archivo y Directiva de actividad|Archivo, Actividad|Enviar notificación al usuario|Se envía un correo a los usuarios para informarles de que algo que han hecho o un archivo que poseen infringe una directiva. Se puede agregar una notificación personalizada que indique en qué consistió la infracción.|Todos|
 |Directiva de archivo y archivos|Archivo|Quitar la capacidad de compartir de los editores|En Google Drive, los permisos de editor predeterminados de un archivo permiten también compartir ese archivo. Esta acción de gobierno restringe esta opción y limita el uso compartido del archivo al propietario.|G Suite|
-|Directiva de archivo y archivos|Archivo|Poner en cuarentena de administrador|Se quitan todos los permisos del archivo y el archivo se mueve a una carpeta de cuarentena en la unidad raíz del usuario. De este modo, el administrador puede revisar el archivo y moverlo.|Cuadro|
+|Directiva de archivo y archivos|Archivo|[Poner en cuarentena de administrador](use-case-admin-quarantine.md)|Se quitan todos los permisos del archivo y el archivo se mueve a una carpeta de cuarentena en una ubicación para el administrador. De este modo, el administrador puede revisar el archivo y quitarlo.|Office 365 SharePoint, OneDrive para la Empresa, Box|
+|Directiva de archivo, Directiva de actividad, Alertas|Aplicación|Requerir a los usuarios que inicien sesión de nuevo|Puede requerir a los usuarios que inicien sesión de nuevo en todas las aplicaciones de Office 365 y Azure AD como una solución rápida y eficaz en el caso de alertas de actividad sospechosa del usuario y cuentas en peligro. Encontrará la nueva acción de gobierno en la configuración de directiva y las páginas de alertas, junto a la opción Suspender usuario.|Office 365, Azure AD|
 |Archivos|Archivo|Restaurar de la cuarentena de usuario|Se restaura un usuario que estaba en cuarentena.|Cuadro|
 |Archivos|Archivo|Concederme permisos de lectura|Se concede permisos de lectura para el archivo a sí mismo con el fin de tener acceso al archivo y saber si existe o no una infracción en él.|G Suite|
 |Archivos|Archivo|Permitir que los editores compartan|En Google Drive, los permisos de editor predeterminados de un archivo permiten también compartir ese archivo. Esta acción de gobierno hace lo contrario de “Quitar la capacidad de compartir de los editores” y permite que el editor comparta el archivo.|G Suite|

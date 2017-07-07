@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 7/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,34 +13,73 @@ ms.technology:
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2fcc085cc53d2d7580640022029b1a528bea416a
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
-translationtype: HT
+ms.openlocfilehash: 87653e25b6bb7344aa7670329d50aadae9cc9e02
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="working-with-the-risk-score"></a>Trabajo con la puntuación de riesgo  
 
 ## <a name="the-cloud-app-catalog"></a>El Catálogo de aplicaciones en la nube
 
-Para entender mejor qué aplicaciones en la nube puede detectar Cloud Discovery de Cloud App Security, use el Catálogo de aplicaciones en la nube.
+El Catálogo de aplicaciones en la nube proporciona una imagen completa de todo lo que puede identificar Cloud Discovery. Cloud Discovery analiza los registros de tráfico del catálogo de aplicaciones en la nube de Cloud App Security de más de 14 000 aplicaciones en la nube que se clasifican y se puntúan en función de más de 50 atributos, a fin de proporcionar visibilidad continua del uso de la nube, Shadow IT y el riesgo que Shadow IT supone para la organización.
+El **catálogo de aplicaciones en la nube** evalúa el riesgo de las aplicaciones en la nube en función de certificaciones normativas, estándares del sector y procedimientos recomendados. En el catálogo de aplicaciones en la nube se ejecutan cuatro procesos complementarios para mantenerlo actualizado:
+1.  Extracción de datos automatizada directamente desde la aplicación en la nube (para atributos como el cumplimiento de SOC 2).
+2.  Extracción de datos automatizada avanzada mediante algoritmos de Cloud App Security (para atributos como encabezados de seguridad HTTP).
+3.  Análisis continuo por parte del equipo de analistas de la nube de Cloud App Security (para atributos como el cifrado en reposo).
+4.  Solicitudes de revisión de los clientes, según las solicitudes de envío de clientes para realizar cambios en el catálogo de aplicaciones en la nube. Todas las solicitudes se someten al examen del equipo de analistas de la nube y se actualizan en función de sus conclusiones.
+  
+![El Catálogo de aplicaciones en la nube](./media/cloud-app-catalog.png)  
 
-El Catálogo de aplicaciones en la nube contiene más de 14 000 aplicaciones SaaS que se pueden ver (filtrar) por nombre, dominio, puntuación de riesgo, categoría o características de seguridad disponibles.
+Cada vez es mayor la demanda de aplicaciones en la nube por parte de las unidades de negocio, como solución para sus necesidades en constante evolución. El Catálogo de aplicaciones en la nube permite elegir con criterio qué aplicaciones se adaptan mejor a los requisitos de seguridad de la organización y a la necesidad de mantenerse al día de los estándares de seguridad, las vulnerabilidades y las infracciones más recientes. Por ejemplo, si quiere comparar las aplicaciones CRM y asegurarse de que están bien protegidas, puede usar la página del Catálogo de aplicaciones en la nube para filtrar las aplicaciones que le interesan. En la página del **Catálogo de aplicaciones en la nube**, en **Buscar por categoría**, seleccione **CRM**. 
 
-![acceso al Catálogo de aplicaciones en la nube](./media/risk-cac-dropdown.png)
+Después, use los filtros **Avanzados** y establezca **Factor de riesgo de cumplimiento** > **SOC 2** en igual a **True**; **Factor de riesgo de cumplimiento** > **ISO 27001** en igual a **True**; **Factor de riesgo para la seguridad** > **Cifrado de datos en reposo** en igual a **True**; **Factor de riesgo para la seguridad** > **Cifrado de datos en reposo** en igual a **True**; **Factor de riesgo para la seguridad** > **Pista de auditoría de administración** en igual a **True**; y **Factor de riesgo para la seguridad** > **Pista de auditoría de usuario** en igual a **True**.
 
-## <a name="discovery-requests"></a>Solicitudes de detección
+![Filtros del Catálogo de aplicaciones en la nube](./media/cloud-app-catalog-filters.png)
 
-La información y las puntuaciones de riesgo del Catálogo de aplicaciones en la nube se basan en diversos orígenes. Microsoft hace todo lo posible para mantener la información actualizada, pero no garantiza la exactitud de los orígenes de datos. 
+Una vez que se hayan filtrado los resultados, puede revisar las aplicaciones correspondientes y buscar la que mejor se adapte a sus necesidades.
 
-Póngase en contacto con nosotros si cree que la información acerca de una aplicación está obsoleta.
+## <a name="cloud-app-catalog-filters"></a>Filtros del Catálogo de aplicaciones en la nube
 
--    Solicite una actualización de puntuación si desea que nuestro equipo vuelva a evaluar esta aplicación en la nube.
--    Informe de nuevos datos (por campo específico o general) si piensa que la información acerca de la aplicación está obsoleta.
+Hay filtros básicos y avanzados en el Catálogo de aplicaciones en la nube. Para aplicar un filtro complejo, use la opción avanzada, que incluye lo siguiente:
 
-![actualizar los datos de riesgo](./media/risk-cac-feedback.png)
+- **Etiquetas de aplicación**: las etiquetas le permiten personalizar el Catálogo de aplicaciones en la nube. 
+  Puede seleccionar la etiqueta **Autorizada** o **No autorizada**, o bien puede crear etiquetas personalizadas para las aplicaciones. Estas etiquetas pueden usarse como filtros para profundizar un poco más en los tipos de aplicaciones específicos que quiere investigar. 
+- **Aplicaciones y dominios**: permite buscar aplicaciones específicas o aplicaciones usadas en dominios concretos. 
+- **Categorías**: el filtro de categorías, que se encuentra a la izquierda de la página, permite buscar tipos de aplicaciones en función de categorías de aplicaciones, como aplicaciones de redes sociales, aplicaciones de almacenamiento en la nube, etc. Puede seleccionar varias categorías a la vez o una sola categoría y, después, aplicarles los filtros básicos y avanzados.
+- **Factor de riesgo de cumplimiento**: permite buscar normas, certificaciones y compatibilidades específicas que puede cumplir la aplicación (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
+- **Factor de riesgo general**: permite buscar factores de riesgo generales, como la popularidad entre los consumidores, la configuración regional del centro de datos, etc.
+- **Puntuación de riesgo**: permite filtrar las aplicaciones según su puntuación de riesgo, de modo que pueda centrarse, por ejemplo, en revisar únicamente las aplicaciones de mucho riesgo.
+- **Factor de riesgo para la seguridad**: permite filtrar en función de medidas de seguridad específicas (por ejemplo, cifrado en reposo, autenticación multifactor, etc.).
 
-Además, le recomendamos que sugiera la incorporación de las aplicaciones en la nube que usa la organización que actualmente Cloud Discovery no puede detectar.
+## <a name="suggesting-a-change"></a>Sugerir un cambio
 
-![sugerir nuevas aplicaciones](./media/risk-suggest-app.png)
+Si encuentra una nueva aplicación en el entorno que Cloud App Security todavía no ha puntuado, un nuevo factor de riesgo, una actualización de puntuación o datos de la aplicación que no están actualizados, puede solicitar una revisión de la aplicación:
+
+**Para sugerir una nueva aplicación:**
+1. En la parte superior de la página **Aplicaciones detectadas**, haga clic en los tres puntos y seleccione **Sugerir nueva aplicación**. 
+
+  ![Sugerir una aplicación a Cloud App Security](./media/suggest-new-app.png)
+
+2. En la ventana emergente **Sugerir nueva aplicación de nube**, rellene la información relativa a la nueva aplicación, incluidos el nombre y el dominio de la aplicación. 
+
+  ![Ventana emergente para sugerir una aplicación a Cloud App Security](./media/suggest-new-app-popup.png)
+
+3. Se recomienda activar la casilla para permitir que los analistas de Cloud App Security se pongan en contacto con usted en caso de que necesiten más información sobre la aplicación. De este modo, también podrán avisarle cuando se haya completado el análisis.
+
+**Para actualizar un factor de riesgo, puntuación o datos de la aplicación:**
+
+1. En la página **Catálogo de aplicaciones en la nube**, en la fila de la aplicación que quiere actualizar, haga clic en los tres puntos que aparecen al final de la fila y seleccione **Solicitar actualización de puntuación**.
+
+  ![Solicitar actualización de puntuación](./media/request-score-update.png)
+
+2. En la ventana emergente **Sugerencia de mejora**, seleccione si quiere solicitar una actualización de puntuación, sugerir un nuevo factor de riesgo o actualizar los datos de una aplicación.
+
+  ![Sugerencia de mejora a Cloud App Security](./media/suggest-improvement-popup.png)
+
+3. Se recomienda activar la casilla para permitir que los analistas de Cloud App Security se pongan en contacto con usted en caso de que necesiten más información sobre la aplicación. De este modo, también podrán avisarle cuando se haya completado el análisis.
+ 
 
 
 ## <a name="customizing-the-risk-score"></a>Personalización de la puntuación de riesgo
@@ -63,7 +102,7 @@ Es importante dedicar un minuto a revisar y modificar las ponderaciones predeter
   
 3.  Además, puede establecer si determinados valores no están disponibles o no son aplicables en el cálculo de la puntuación. Cuando se incluyen, los valores no aplicables tienen una contribución negativa a la puntuación calculada.  
   
-     ![puntuación](./media/score.png "puntuación")  
+  ![puntuación](./media/score.png "puntuación")  
 
 Toda la información necesaria para entender cómo se apilan nuestras puntuaciones de riesgo está disponible en el portal de Cloud App Security.
 Para entender mejor el peso de un factor de riesgo en la categoría de riesgo específica, utilice el botón “i” situado a la derecha de cada nombre de campo en el perfil de la aplicación. Esto proporciona información sobre cómo Cloud App Security puntúa exactamente un factor de riesgo específico. La puntuación es el valor del factor de riesgo en una escala de 1 a 10 + su peso en la categoría de riesgo:
@@ -73,6 +112,17 @@ Para entender mejor el peso de un factor de riesgo en la categoría de riesgo es
 Para comprender el peso de una categoría de riesgo en la puntuación total de una aplicación, mantenga el mouse sobre la puntuación de la categoría de riesgo:
 
 ![peso de la categoría de riesgo](./media/risk-category-weight.png)
+
+## <a name="overriding-the-risk-score"></a>Reemplazar la puntuación de riesgo
+Puede reemplazar la puntuación de riesgo de una aplicación sin cambiar la forma en que se pondera, para obtener resultados inmediatos para la organización. Por ejemplo, si la puntuación de riesgo de una aplicación de LOB que usa es 8 y la organización la ha autorizado y la recomienda, podría interesarle cambiar la puntuación de riesgo a 10. 
+
+Para reemplazar la puntuación de riesgo, en la tabla **Aplicaciones detectadas** o en el **Catálogo de aplicaciones en la nube**, haga clic en los tres puntos que aparecen a la derecha de cualquier aplicación y seleccione **Override risk score** (Reemplazar la puntuación de riesgo).
+
+![reemplazar la puntuación de riesgo de una aplicación detectada de Cloud App Security](./media/override-risk-score.png)
+
+Después de actualizar la puntuación, puede incluir notas en la aplicación en las que explique a los demás administradores las razones empresariales por las que ha modificado la puntuación de la aplicación. 
+
+También puede agregar notas para que el motivo de este cambio le quede claro a los usuarios que revisen la aplicación.
 
 
  

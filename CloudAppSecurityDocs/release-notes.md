@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/7/2017
+ms.date: 7/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,37 +13,125 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4d65fec131538981f36660d2b5ec668fa11be86e
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.openlocfilehash: 4918b2765be87cb4090c6a55351f6fb0afe07339
+ms.sourcegitcommit: 83d3c800e268091a69e5dc2a229e6453d3243a62
 ms.translationtype: HT
 ms.contentlocale: es-ES
+ms.lasthandoff: 07/04/2017
 ---
 # <a name="release-notes"></a>Notas de la versión
 
+## <a name="cloud-app-security-release-100"></a>Notas de la versión 100 de Cloud App Security 
+Publicado el 3 de julio de 2017
+ 
+
+### <a name="new-features"></a>Nuevas características
+-   **Extensiones de seguridad:** se trata de un nuevo panel para la administración centralizada de todas las extensiones de seguridad de Cloud App Security, incluida la administración de tokens de API, agentes SIEM y conectores de DLP externa. El nuevo panel está disponible en Cloud App Security en "Configuración". 
+    - Tokens de API: genere y administre sus propios [tokens de API](api-tokens.md) para integrar Cloud App Security con software de terceros mediante nuestras API de RESTful. 
+    - Agentes SIEM: antes la [integración SIEM](siem.md) se encontraba en "Configuración", pero ahora está disponible como una pestaña en Extensiones de seguridad.
+    - DLP externa (versión preliminar): Cloud App Security permite [aprovechar las inversiones existentes en sistemas de clasificación de terceros](icap-stunnel.md), como soluciones de prevención de pérdida de datos (DLP), y permite examinar el contenido de aplicaciones en la nube mediante las implementaciones que se ejecutan en el entorno. Póngase en contacto con el administrador de cuentas para tomar parte en la versión preliminar. 
+-   **Autorizar o no autorizar automáticamente:** las nuevas directivas de detección de aplicaciones permiten que Cloud Discovery aplique automáticamente a las aplicaciones la etiqueta Autorizada/No autorizada. De este modo, puede identificar automáticamente las aplicaciones que infringen la directiva y la normativa de la organización y agregarlas al script de bloqueo generado.
+-   **Etiquetas de archivo de Cloud App Security:** actualmente se pueden aplicar etiquetas de archivo de Cloud App Security para proporcionar más información sobre los archivos que se examinan. Ahora ya puede saber si se ha impedido que la DLP de Cloud App Security inspeccione los archivos porque estaban dañados o cifrados. Por ejemplo, puede configurar directivas para que le alerten y pongan en cuarentena archivos protegidos con contraseña que se comparten externamente. Esta característica está disponible para los archivos examinados después del 3 de julio de 2017.
+
+    Puede filtrar estos archivos mediante el filtro **Etiquetas de clasificación** > **Cloud App Security**: 
+    - **Cifrado con Azure RMS**: archivos cuyo contenido no se ha inspeccionado porque tienen establecido un cifrado de Azure RMS.
+    - **Cifrado con contraseña**: archivos cuyo contenido no se ha inspeccionado porque el usuario los ha protegido con una contraseña.
+    - **Archivo dañado**: archivos cuyo contenido no se ha inspeccionado porque no se ha podido leer.
+-   **Información de usuario**: la experiencia de investigación se ha mejorado para que incluya información predeterminada sobre el usuario activo. Con un solo clic, ahora puede ver una descripción detallada de los usuarios desde el cajón de actividades, incluida la ubicación desde la que se han conectado, con cuántas alertas abiertas están relacionados e información sobre sus metadatos.
+-   **Información del conector de aplicaciones:** en **Conectores de aplicaciones**, cada aplicación conectada incluye ahora un cajón de aplicaciones en la tabla para explorar más fácilmente su estado. Entre los detalles que se proporcionan se incluyen cuándo se ha conectado el conector de aplicaciones y cuándo se ha realizado la última comprobación de estado del conector. También puede supervisar el estado del examen de DLP en cada aplicación, es decir, el número total de archivos inspeccionados por DLP, así como el estado de los exámenes en tiempo real (exámenes solicitados frente a exámenes reales). Podrá saber si el porcentaje de archivos examinados por Cloud App Security en tiempo real es inferior al número solicitado, y si el inquilino excede su capacidad y experimenta un retraso en los resultados de DLP.
+-   **Personalización del Catálogo de aplicaciones en la nube:** 
+    - **Etiquetas de aplicación**: ahora puede crear etiquetas personalizadas para las aplicaciones. Estas etiquetas pueden usarse como filtros para profundizar un poco más en los tipos de aplicaciones específicos que quiere investigar. Por ejemplo, lista de supervisión personalizada, asignación a una unidad de negocio específica o aprobaciones personalizadas (por ejemplo, "aprobado por el departamento legal").
+    - **Notas personalizadas**: ahora, a medida que revise y evalúe las diferentes aplicaciones detectadas en el entorno, puede guardar las conclusiones y la información en notas.
+    - **Puntuación de riesgo personalizada**: ahora puede reemplazar la puntuación de riesgo de una aplicación. Por ejemplo, si la puntuación de riesgo de una aplicación es 8 y es una aplicación autorizada en la organización, puede cambiar la puntuación de riesgo a 10 para la organización. También puede agregar notas para que el motivo de este cambio le quede claro a los usuarios que revisen la aplicación.
+-   **Nuevo modo de implementación del recopilador de registros:** hemos empezado a aplicar un nuevo modo de implementación para el recopilador de registros. Además de la implementación actual basada en el dispositivo virtual, el nuevo recopilador de registros basado en Docker (contenedor) puede instalarse como un paquete en equipos Windows y Ubuntu locales y en Azure. Cuando se usa Docker, el cliente es el propietario del equipo host y puede aplicarle revisiones y supervisarlo libremente.
+
+### <a name="other-improvements"></a>Otras mejoras: 
+-   **Análisis mejorado:** se ha mejorado el mecanismo de análisis de registros de Cloud Discovery. Es mucho menos probable que se produzcan errores internos.
+-   **Formatos de registro esperados:** ahora, el formato de registro esperado para los registros de Cloud Discovery proporciona ejemplos del formato Syslog y del formato FTP.
+-   **Estado de carga del recopilador de registros:** ahora puede ver el estado del recopilador de registros en el portal y solucionar los errores más rápidamente gracias a las notificaciones de estado en el portal y las alertas del sistema.
+
+
+## <a name="cloud-app-security-release-99"></a>Notas de la versión 99 de Cloud App Security 
+Publicado el 18 de junio de 2017
+
+### <a name="new-features"></a>Nuevas características
+
+-   Ahora puede requerir a los usuarios que inicien sesión de nuevo en todas las aplicaciones de Office 365 y Azure AD como una solución rápida y eficaz en el caso de alertas de actividad sospechosa del usuario y cuentas en peligro. Encontrará la nueva acción de gobierno en la configuración de directiva y las páginas de alertas, junto a la opción Suspender usuario.
+-   Ahora puede filtrar las actividades para **agregar asignación de roles de suplantación** en el registro de actividades. Esta actividad permite detectar si un administrador ha concedido un rol de **suplantación de aplicación** a una cuenta de usuario o del sistema, mediante el cmdlet **New-ManagementRoleAssignment**. Este rol permite al suplantador realizar operaciones con los permisos asociados a la cuenta suplantada, en lugar de con los permisos asociados a la cuenta del suplantador.
+Mejoras de Cloud Discovery:
+-   Ahora es posible mejorar los datos de Cloud Discovery con datos de nombre de usuario de Azure Active Directory. Cuando se habilita esta característica, el nombre de usuario que se recibe en los registros de tráfico de detección se hace coincidir con el nombre de usuario de Azure AD y se reemplaza por este, con lo que se habilitan las siguientes características nuevas:
+  - Puede investigar el uso de Shadow IT por parte del usuario de Azure Active Directory.
+  - Puede correlacionar el uso de las aplicaciones en la nube detectadas con las actividades de API recopiladas.
+  - Después, puede crear registros personalizados en función de los grupos de usuarios de Azure AD. Por ejemplo, un informe de Shadow IT para un departamento de marketing específico.
+-   Se han realizado mejoras en el analizador de Syslog de Juniper. Ahora admite los formatos welf y sd-syslog.
+-   Se han realizado mejoras en el analizador de Palo Alto para optimizar la detección de aplicaciones.
+-   Para comprobar que los registros se están cargando correctamente, ahora puede ver el estado de los recopiladores de registros en el portal de Cloud App Security. 
+
+### <a name="general-improvements"></a>Mejoras generales:
+-   Las etiquetas de dirección IP integradas y las etiquetas IP personalizadas ahora se consideran de forma jerárquica, y las etiquetas IP personalizadas tienen prioridad sobre las etiquetas IP integradas. Por ejemplo, si una dirección IP se etiqueta como **De riesgo** en función de la información disponible sobre las amenazas pero hay una etiqueta IP personalizada que la identifica como **Corporativa**, la categoría y las etiquetas personalizadas tendrán prioridad.
+
+
+## <a name="cloud-app-security-release-98"></a>Notas de la versión 98 de Cloud App Security 
+Publicado el 4 de junio de 2017
+ 
+Actualizaciones de Cloud Discovery:
+-   Ahora los usuarios pueden realizar un filtrado avanzado de las aplicaciones detectadas, lo que le permite realizar una investigación en profundidad, por ejemplo, filtrar las aplicaciones según su uso para saber cuánto tráfico de carga procede de las aplicaciones detectadas de ciertos tipos o cuántos usuarios han usado determinadas categorías de aplicaciones detectadas. También puede seleccionar al mismo tiempo varias categorías en el panel izquierdo. 
+-   Se ha iniciado la implementación de nuevas plantillas para Cloud Discovery basadas en búsquedas frecuentes, por ejemplo, "aplicación de almacenamiento en la nube no compatible". Estos filtros básicos se pueden usar como plantillas para realizar el análisis de las aplicaciones detectadas.
+-   Para facilitar el uso, ahora puede realizar determinadas acciones como autorizar y no autorizar varias aplicaciones de una sola vez.
+-   Estamos implementando la capacidad de crear informes de detección personalizados en función de los grupos de usuarios de Azure Active Directory. Por ejemplo, si quiere ver el uso de la nube por parte del departamento de marketing, puede importar el grupo de marketing mediante la característica para importar grupos de usuarios y, después, crear un informe personalizado para este grupo.
+
+Nuevas características:
+-   Se ha completado la implementación de RBAC para los lectores de seguridad. Esta característica permite administrar los permisos concedidos a los administradores dentro de la consola de Cloud App Security. De forma predeterminada, todos los administradores globales y administradores de seguridad de Azure Active Directory y Office 365 tienen permisos completos en el portal, y todos los lectores de seguridad de Azure Active Directory y Office 365 tienen acceso de solo lectura en Cloud App Security. Puede agregar más administradores o reemplazar los permisos mediante la opción "Administrar acceso". Para obtener más información, consulte [Managing admin access](manage-admins.md) (Administración de permisos de administración).
+-   Estamos implementando informes detallados de amenazas para las direcciones IP de riesgo detectadas por el gráfico de seguridad inteligente de Microsoft. Cuando una red de robots (botnet) realice una actividad, verá el nombre de la botnet (si está disponible) con un vínculo a un informe detallado sobre la botnet específica.
+ 
+## <a name="cloud-app-security-release-97"></a>Notas de la versión 97 de Cloud App Security
+Publicado el 24 de mayo de 2017
+
+### <a name="new-features"></a>Nuevas características
+-   Al investigar archivos e infracciones de directivas, ahora puede ver todas las coincidencias de directivas en la página Archivos. Además, se ha mejorado la página Alertas de archivo para que incluya una pestaña independiente con el historial del archivo específico, lo que le permite explorar en profundidad el historial de infracciones de todas las directivas del archivo específico. Cada evento del historial incluye una instantánea del archivo en el momento de la alerta e indica si el archivo se ha eliminado o se ha puesto en cuarentena.
+-   Ya está disponible la [cuarentena de administrador](use-case-admin-quarantine.md) para archivos de Office 365 SharePoint y OneDrive para la Empresa, en versión preliminar privada. Esta característica permite poner en cuarentena los archivos que coincidan con las directivas o establecer una acción automatizada para ponerlos en cuarentena, con lo que se eliminan del directorio de SharePoint del usuario y se realiza una copia del archivo original en la ubicación de cuarentena del administrador de su elección.
+        
+### <a name="cloud-discovery-improvements"></a>Mejoras de Cloud Discovery
+
+-   Se ha mejorado la compatibilidad de Cloud Discovery con los registros de Cisco Meraki.
+-   La opción para proponer una mejora de Cloud Discovery permite sugerir un nuevo factor de riesgo.
+-   Se ha mejorado el analizador de registros personalizado para que admita formatos de registro mediante la separación de la configuración de fecha y hora y para ofrecer la opción de establecer una marca de tiempo.
+-   Se ha empezado a implementar la capacidad de crear informes de detección personalizados en función de los grupos de usuarios de Azure Active Directory. Por ejemplo, si quiere ver el uso de la nube por parte del departamento de marketing, puede importar el grupo de marketing mediante la característica para importar grupos de usuarios y, después, crear un informe personalizado para este grupo.
+
+**Otras actualizaciones**
+
+-   Cloud App Security ahora incluye compatibilidad con las actividades de Microsoft Power BI que se admiten en el registro de auditoría de Office 365. Esta característica se está implantando gradualmente. Tenga en cuenta que debe habilitar [esta funcionalidad en el portal de Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-auditing/).
+-   En las directivas de actividad, ahora puede establecer que se realicen acciones para enviar notificaciones y suspender al usuario en todas las aplicaciones conectadas. Por ejemplo, puede establecer una directiva para notificar siempre al administrador del usuario y suspender al usuario de inmediato si este tiene varios inicios de sesión erróneos en una aplicación conectada.
+ 
+## <a name="oob-release"></a>Lanzamiento de OOM
+-   En respuesta a los ataques de ransomware que se están constatando en todo el mundo, el equipo de Cloud App Security agregó el domingo en el portal una nueva plantilla de [directiva de detección de posible actividad de ransomware](use-case-ransomware.md) que incluye la extensión de firma de WannaCrypt. Le recomendamos que establezca esta directiva hoy mismo.
 
 ## <a name="cloud-app-security-release-96"></a>Notas de la versión 96 de Cloud App Security
 Fecha de publicación: 8 de mayo de 2017
 
 Nuevas características:
--    Continuación de la implementación gradual del permiso de Lector de seguridad que le permite administrar los permisos que concede a los administradores dentro de la consola de Cloud App Security. De forma predeterminada, todos los administradores globales y administradores de seguridad de Azure Active Directory y Office 365 tendrán permisos completos en el portal, y todos los lectores de seguridad de Azure Active Directory y Office 365 tendrán acceso de solo lectura en Cloud App Security. Para obtener más información, consulte [Managing admin access](manage-admins.md) (Administración de permisos de administración).
--    Implementación completada de Cloud Discovery para analizadores de registros definidos por el usuario para registros basados en CSV. Cloud App Security le permite configurar un analizador para los dispositivos que antes no eran compatibles, proporcionándole las herramientas para delinear las columnas que se correlacionan con datos específicos. Para obtener más información, consulte [Uso del analizador de registros personalizado](custom-log-parser.md).
+
+-   Continuación de la implementación gradual del permiso de Lector de seguridad que le permite administrar los permisos que concede a los administradores dentro de la consola de Cloud App Security. De forma predeterminada, todos los administradores globales y administradores de seguridad de Azure Active Directory y Office 365 tendrán permisos completos en el portal, y todos los lectores de seguridad de Azure Active Directory y Office 365 tendrán acceso de solo lectura en Cloud App Security. Para obtener más información, consulte [Managing admin access](manage-admins.md) (Administración de permisos de administración).
+-   Implementación completada de Cloud Discovery para analizadores de registros definidos por el usuario para registros basados en CSV. Cloud App Security le permite configurar un analizador para los dispositivos que antes no eran compatibles, proporcionándole las herramientas para delinear las columnas que se correlacionan con datos específicos. Para obtener más información, consulte [Uso del analizador de registros personalizado](custom-log-parser.md).
+
 Mejoras:
--    Cloud Discovery ahora admite dispositivos Juniper SSG.
--    Se ha mejorado la compatibilidad de Cloud Discovery para los registros de Cisco ASA para una mejor visibilidad.
--    Ahora puede ejecutar más fácilmente acciones masivas y seleccionar varios registros en las tablas del portal de Cloud App Security: la longitud de la página se ha aumentado para mejorar las operaciones masivas.
--    Los informes integrados **Uso compartido externo por dominio** y **Propietarios de archivos compartidos** ahora se pueden ejecutar para datos de Salesforce.
--    Estamos comenzando el lanzamiento de actividades de Salesforce adicionales que le permiten realizar un seguimiento de la información interesante extraída de los datos de actividad. Estas actividades incluyen ver y editar cuentas, clientes potenciales, oportunidades y otros objetos de Salesforce interesantes.
--    Se han agregado nuevas actividades de Exchange para permitirle supervisar los permisos que se concedieron para buzones o carpetas de buzones. Estas actividades incluyen:
-    -    Agregar permisos de destinatario
-    -    Quitar permisos de destinatario
-    -    Agregar permisos de carpeta de buzón
-    -    Quitar permisos de carpeta de buzón
-    -    Establecer permisos de carpeta de buzón
+
+-   Cloud Discovery ahora admite dispositivos Juniper SSG.
+-   Se ha mejorado la compatibilidad de Cloud Discovery para los registros de Cisco ASA para una mejor visibilidad.
+-   Ahora puede ejecutar más fácilmente acciones masivas y seleccionar varios registros en las tablas del portal de Cloud App Security: la longitud de la página se ha aumentado para mejorar las operaciones masivas.
+-   Los informes integrados **Uso compartido externo por dominio** y **Propietarios de archivos compartidos** ahora se pueden ejecutar para datos de Salesforce.
+-   Estamos comenzando el lanzamiento de actividades de Salesforce adicionales que le permiten realizar un seguimiento de la información interesante extraída de los datos de actividad. Estas actividades incluyen ver y editar cuentas, clientes potenciales, oportunidades y otros objetos de Salesforce interesantes.
+-   Se han agregado nuevas actividades de Exchange para permitirle supervisar los permisos que se concedieron para buzones o carpetas de buzones. Estas actividades incluyen:
+    -   Agregar permisos de destinatario
+    -   Quitar permisos de destinatario
+    -   Agregar permisos de carpeta de buzón
+    -   Quitar permisos de carpeta de buzón
+    -   Establecer permisos de carpeta de buzón
 
     Por ejemplo, ahora puede comprobar a qué usuarios se concedió el permiso **SendAs** sobre los buzones de otros usuarios y, como consecuencia, ahora pueden enviar mensajes de correo electrónico en su nombre.
 
 
-## <a name="cloud-app-security-release-95-in-roll-out"></a>Versión 95 de Cloud App Security (lanzamiento en curso)
+## <a name="cloud-app-security-release-95"></a>Notas de la versión 95 de Cloud App Security
 Publicado el 24 de abril de 2017
 
 **Actualizaciones**
@@ -61,12 +149,12 @@ Publicado el 24 de abril de 2017
 Publicada el 2 de abril de 2017
 
 **Nuevas características**
--    Cloud App Security ahora se integra con Azure RMS. Puede proteger archivos en Office 365 OneDrive y Sharepoint Online con Microsoft Rights Management directamente desde el portal de Cloud App Security. Esto puede realizarse desde la página **Archivos**. Para más información, consulte [Integración de Azure Information Protection](azip-integration.md). En versiones futuras se proporcionará compatibilidad con aplicaciones adicionales.
--    Hasta ahora, cuando las actividades de robot y rastreador (crawler) tienen lugar en la red, era especialmente difícil de identificar porque dichas actividades no las realizaba un usuario de la red. Sin su conocimiento, los robots y rastreadores pueden ejecutar herramientas malintencionados en los equipos. Ahora, Cloud App Security proporciona las herramientas para ver cuándo los robots y los rastreadores están realizando actividades en la red. Puede usar la nueva etiqueta de agente de usuario para filtrar actividades en el registro de actividades. La etiqueta de agente de usuario le permite filtrar todas las actividades que realizan por robots y usarlo para crear una directiva que le avise cada vez que se detecte este tipo de actividad. El usuario se actualizará cuando las versiones futuras incluyan esta actividad de riesgo como insertada en las alertas de detección de anomalías. 
--    La nueva página de permisos de aplicación unificada permite investigar más fácilmente los permisos que se han concedido a los usuarios a aplicaciones de terceros. Haciendo clic en **Investigar** > **Permisos de aplicación**, ahora puede ver una lista de todos los permisos que se les concedió a los usuarios a aplicaciones de terceros con una página de permisos de aplicación por aplicación conectada que le permite comparar mejor entre las distintas aplicaciones y los permisos concedidos.  Para más información, vea [Administrar permisos de aplicación](manage-app-permissions.md).
--    Puede filtrar los datos desde el cajón de tablas para una investigación más sencilla.
+-   Cloud App Security ahora se integra con Azure RMS. Puede proteger archivos en Office 365 OneDrive y Sharepoint Online con Microsoft Rights Management directamente desde el portal de Cloud App Security. Esto puede realizarse desde la página **Archivos**. Para más información, consulte [Integración de Azure Information Protection](azip-integration.md). En versiones futuras se proporcionará compatibilidad con aplicaciones adicionales.
+-   Hasta ahora, cuando las actividades de robot y rastreador (crawler) tienen lugar en la red, era especialmente difícil de identificar porque dichas actividades no las realizaba un usuario de la red. Sin su conocimiento, los robots y rastreadores pueden ejecutar herramientas malintencionados en los equipos. Ahora, Cloud App Security proporciona las herramientas para ver cuándo los robots y los rastreadores están realizando actividades en la red. Puede usar la nueva etiqueta de agente de usuario para filtrar actividades en el registro de actividades. La etiqueta de agente de usuario le permite filtrar todas las actividades que realizan por robots y usarlo para crear una directiva que le avise cada vez que se detecte este tipo de actividad. El usuario se actualizará cuando las versiones futuras incluyan esta actividad de riesgo como insertada en las alertas de detección de anomalías. 
+-   La nueva página de permisos de aplicación unificada permite investigar más fácilmente los permisos que se han concedido a los usuarios a aplicaciones de terceros. Haciendo clic en **Investigar** > **Permisos de aplicación**, ahora puede ver una lista de todos los permisos que se les concedió a los usuarios a aplicaciones de terceros con una página de permisos de aplicación por aplicación conectada que le permite comparar mejor entre las distintas aplicaciones y los permisos concedidos.  Para más información, vea [Administrar permisos de aplicación](manage-app-permissions.md).
+-   Puede filtrar los datos desde el cajón de tablas para una investigación más sencilla.
 En el **Registro de actividades**, la tabla **Archivos** y las páginas **Permisos de aplicación** ahora se han mejorado con nuevas acciones contextuales, lo que facilita bastante los giros en el proceso de investigación. También agregamos vínculos rápidos a páginas de configuración y la capacidad de copiar los datos con un solo clic. Para más información, consulte la información sobre el [trabajo con los cajones de archivos y actividades](file-filters.md).
--    Se ha completado el soporte para Microsoft Teams para la implementación de registros y alertas de actividad de Office 365.
+-   Se ha completado el soporte para Microsoft Teams para la implementación de registros y alertas de actividad de Office 365.
  
 
 
@@ -76,21 +164,21 @@ Fecha de publicación: 20 de marzo de 2017
 
 **Nuevas características**
 -   Ahora puede aplicar directivas para incluir o excluir grupos de usuarios importados. 
--    Anonimización de datos de Cloud Discovery ahora le permite configurar una clave de cifrado personalizada. Para más información, vea [Cloud Discovery Anonymization](cloud-discovery-anonymizer.md) (Anonimización de Cloud Discovery).
--    Para tener más control sobre la administración de cuentas y de usuario, ahora tiene acceso directo a la configuración de la cuenta de Azure AD para cada usuario y cuenta desde dentro de la página **Cuenta** haciendo clic en el engranaje junto a cada usuario. Esto permite facilitar el acceso a la administración del grupo de características de administración de usuario avanzado, la configuración de MFA, los detalles acerca de los inicios de sesión de usuario y la capacidad de bloquear el inicio de sesión. 
--    Ahora puede exportar un script de bloqueo para las aplicaciones sin aprobación a través de la API de Cloud App Security. Obtenga más información acerca de las API en el portal de Cloud App Security haciendo clic en el signo de interrogación en la barra de menús, seguido por **Documentación de la API**.
--    El conector de la aplicación de Cloud App Security para ServiceNow se ha expandido para incluir compatibilidad con tokens de OAuth (tal como se presenta en Ginebra, Helsinki y Estambul). Esto proporciona una conexión más sólida de la API con ServiceNow, que no se basa en el usuario de implementación. Para más información, vea [Conectar ServiceNow con Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security.md). Los clientes existentes pueden actualizar su configuración en la página del conector de ServiceNow App.
--    Si configura escáneres DLP adicionales de terceros, el estado del examen DLP ahora mostrará el estado de cada conector de forma independiente para mejorar la visibilidad.
--    Cloud App Security ahora incluye compatibilidad para las actividades de Microsoft Teams que se admiten en el registro de auditoría de Office 365. Esta característica se está implantando gradualmente.
--    Para los eventos de suplantación Exchange Online, ahora puede filtrar por nivel de permiso: usado-delegado, administrador o administrador delegado. Puede buscar eventos que muestran el nivel de suplantación que le interese en el  **registro de actividad** buscando **Elemento de** > **objetos de actividad**.
--    En el cajón de aplicación en la ficha Permisos de la aplicación ahora puede ver el **publicador** de cada aplicación. También puede utilizar el publicador como un filtro para la investigación de las aplicaciones adicionales del mismo publicador.
--    Las direcciones IP de riesgo aparecen ahora como un factor de riesgo independiente en lugar de ponderado en el factor de riesgo de la **ubicación** general. 
--    Cuando las etiquetas de Azure Information Protection están deshabilitadas en un archivo, las etiquetas deshabilitadas aparecerán como deshabilitadas en Cloud App Security. No se mostrarán las etiquetas eliminadas.
+-   Anonimización de datos de Cloud Discovery ahora le permite configurar una clave de cifrado personalizada. Para más información, vea [Cloud Discovery Anonymization](cloud-discovery-anonymizer.md) (Anonimización de Cloud Discovery).
+-   Para tener más control sobre la administración de cuentas y de usuario, ahora tiene acceso directo a la configuración de la cuenta de Azure AD para cada usuario y cuenta desde dentro de la página **Cuenta** haciendo clic en el engranaje junto a cada usuario. Esto permite facilitar el acceso a la administración del grupo de características de administración de usuario avanzado, la configuración de MFA, los detalles acerca de los inicios de sesión de usuario y la capacidad de bloquear el inicio de sesión. 
+-   Ahora puede exportar un script de bloqueo para las aplicaciones sin aprobación a través de la API de Cloud App Security. Obtenga más información acerca de las API en el portal de Cloud App Security haciendo clic en el signo de interrogación en la barra de menús, seguido por **Documentación de la API**.
+-   El conector de la aplicación de Cloud App Security para ServiceNow se ha expandido para incluir compatibilidad con tokens de OAuth (tal como se presenta en Ginebra, Helsinki y Estambul). Esto proporciona una conexión más sólida de la API con ServiceNow, que no se basa en el usuario de implementación. Para más información, vea [Conectar ServiceNow con Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security.md). Los clientes existentes pueden actualizar su configuración en la página del conector de ServiceNow App.
+-   Si configura escáneres DLP adicionales de terceros, el estado del examen DLP ahora mostrará el estado de cada conector de forma independiente para mejorar la visibilidad.
+-   Cloud App Security ahora incluye compatibilidad para las actividades de Microsoft Teams que se admiten en el registro de auditoría de Office 365. Esta característica se está implantando gradualmente.
+-   Para los eventos de suplantación Exchange Online, ahora puede filtrar por nivel de permiso: usado-delegado, administrador o administrador delegado. Puede buscar eventos que muestran el nivel de suplantación que le interese en el ** registro de actividad** buscando **Elemento de** > **objetos de actividad**.
+-   En el cajón de aplicación en la ficha Permisos de la aplicación ahora puede ver el **publicador** de cada aplicación. También puede utilizar el publicador como un filtro para la investigación de las aplicaciones adicionales del mismo publicador.
+-   Las direcciones IP de riesgo aparecen ahora como un factor de riesgo independiente en lugar de ponderado en el factor de riesgo de la **ubicación** general. 
+-   Cuando las etiquetas de Azure Information Protection están deshabilitadas en un archivo, las etiquetas deshabilitadas aparecerán como deshabilitadas en Cloud App Security. No se mostrarán las etiquetas eliminadas.
  
 **Compatibilidad adicional de Salesforce:**
--    Ahora puede suspender y quitar la suspensión de los usuarios de Salesforce en Cloud App Security. Esto puede realizarse en la ficha **Cuentas** del conector de Salesforce haciendo clic en el engranaje al final de la fila de un usuario específico y seleccionando **Suspender** o **Anular suspensión**, y también se puede aplicar como una acción de control como parte de una directiva. Todas las actividades de suspensión y de anulación de la suspensión realizadas en Cloud App Security se almacenarán en el [registro de control](governance-actions.md). 
--    Visibilidad mejorada para el uso compartido de contenido de Salesforce: ahora puede ver qué archivos se comparten con quién, incluidos los archivos compartidos públicamente, compartidos con grupos de archivos y compartidos con todo el dominio de Salesforce. La visibilidad mejorada se extenderá retroactivamente a aplicaciones de Salesforce conectadas nuevas y actuales. Puede que tarde en actualizarse la primera vez.
--    Mejoramos la cobertura de los siguientes eventos de Salesforce y los separamos de la actividad **Administrar usuarios**: 
+-   Ahora puede suspender y quitar la suspensión de los usuarios de Salesforce en Cloud App Security. Esto puede realizarse en la ficha **Cuentas** del conector de Salesforce haciendo clic en el engranaje al final de la fila de un usuario específico y seleccionando **Suspender** o **Anular suspensión**, y también se puede aplicar como una acción de control como parte de una directiva. Todas las actividades de suspensión y de anulación de la suspensión realizadas en Cloud App Security se almacenarán en el [registro de control](governance-actions.md). 
+-   Visibilidad mejorada para el uso compartido de contenido de Salesforce: ahora puede ver qué archivos se comparten con quién, incluidos los archivos compartidos públicamente, compartidos con grupos de archivos y compartidos con todo el dominio de Salesforce. La visibilidad mejorada se extenderá retroactivamente a aplicaciones de Salesforce conectadas nuevas y actuales. Puede que tarde en actualizarse la primera vez.
+-   Mejoramos la cobertura de los siguientes eventos de Salesforce y los separamos de la actividad **Administrar usuarios**: 
     - Editar permisos
     - Crear usuario
     - Cambiar rol
@@ -113,11 +201,11 @@ Cloud App Security ahora está certificada oficialmente con Microsoft Compliance
 
 -  Ahora hay compatibilidad con IPv6 disponible para todos los dispositivos.
 
--    Cloud Discovery ahora admite dispositivos Barracuda.
+-   Cloud Discovery ahora admite dispositivos Barracuda.
 
--    Las alertas del sistema de Cloud App Security ahora incluyen errores de conectividad SIEM. Para obtener más información, vea [Integración de SIEM](siem.md).
+-   Las alertas del sistema de Cloud App Security ahora incluyen errores de conectividad SIEM. Para obtener más información, vea [Integración de SIEM](siem.md).
 
--    Cloud App Security ahora es compatible con las actividades siguientes:
+-   Cloud App Security ahora es compatible con las actividades siguientes:
 
      **Office 365, SharePoint/OneDrive**: actualizar la configuración de aplicaciones, quitar el propietario del grupo, eliminar sitio, crear carpeta.
 
@@ -130,16 +218,16 @@ Cloud App Security ahora está certificada oficialmente con Microsoft Compliance
 Publicado el 22 de enero de 2017
 
 **Nuevas características**
--    Estamos empezando a implementar la capacidad de ver los eventos de DLP del Centro de seguridad y cumplimiento de Office 365 en Cloud App Security. Si configuró directivas DLP en el Centro de seguridad y cumplimiento de Office 365, cuando se detecten coincidencias de directiva, podrá verlas en el registro de actividades de Cloud App Security. La información del registro de actividades incluirá el archivo o el correo electrónico que desencadenó la coincidencia y la directiva o la alerta con la que coincide. La actividad **Evento de seguridad** permite ver las coincidencias de la directiva DLP de Office 365 en el registro de actividades de Cloud App Security. Con esta característica, puede hacer lo siguiente:
-    -    Vea todas las coincidencias de DLP que proceden del motor DLP de Office 365.
-    -    Alertar sobre las coincidencias de la directiva DLP de Office 365 para un archivo específico, un sitio de SharePoint o una directiva.
-    -    Investigar las coincidencias de DLP con un contexto más amplio, por ejemplo, los usuarios externos que han obtenido acceso a un archivo o que han descargado un archivo que desencadenó una coincidencia de la directiva DLP.
+-   Estamos empezando a implementar la capacidad de ver los eventos de DLP del Centro de seguridad y cumplimiento de Office 365 en Cloud App Security. Si configuró directivas DLP en el Centro de seguridad y cumplimiento de Office 365, cuando se detecten coincidencias de directiva, podrá verlas en el registro de actividades de Cloud App Security. La información del registro de actividades incluirá el archivo o el correo electrónico que desencadenó la coincidencia y la directiva o la alerta con la que coincide. La actividad **Evento de seguridad** permite ver las coincidencias de la directiva DLP de Office 365 en el registro de actividades de Cloud App Security. Con esta característica, puede hacer lo siguiente:
+    -   Vea todas las coincidencias de DLP que proceden del motor DLP de Office 365.
+    -   Alertar sobre las coincidencias de la directiva DLP de Office 365 para un archivo específico, un sitio de SharePoint o una directiva.
+    -   Investigar las coincidencias de DLP con un contexto más amplio, por ejemplo, los usuarios externos que han obtenido acceso a un archivo o que han descargado un archivo que desencadenó una coincidencia de la directiva DLP.
  
--    Se han mejorado las descripciones de las actividades para una mayor claridad y coherencia. Ahora, cada actividad incluye un botón de comentarios, por lo que si no entiende algo o tiene una pregunta, puede hacérnoslo saber. 
+-   Se han mejorado las descripciones de las actividades para una mayor claridad y coherencia. Ahora, cada actividad incluye un botón de comentarios, por lo que si no entiende algo o tiene una pregunta, puede hacérnoslo saber. 
  
 **Mejoras**  
--    Se ha agregado una nueva acción de gobierno para Office 365 que permite quitar todos los usuarios externos de un archivo. Por ejemplo, esto permite implementar directivas que **quitan recursos compartidos externos de los archivos que tienen una clasificación solo interna**.
--    Se ha mejorado la identificación de los usuarios externos en SharePoint Online. Cuando se filtra el grupo de "usuarios externos", no se muestra la cuenta del sistema app@sharepoint.
+-   Se ha agregado una nueva acción de gobierno para Office 365 que permite quitar todos los usuarios externos de un archivo. Por ejemplo, esto permite implementar directivas que **quitan recursos compartidos externos de los archivos que tienen una clasificación solo interna**.
+-   Se ha mejorado la identificación de los usuarios externos en SharePoint Online. Cuando se filtra el grupo de "usuarios externos", no se muestra la cuenta del sistema app@sharepoint.
 
 
 
@@ -159,20 +247,20 @@ Publicado el 8 de enero de 2017
 Fecha de publicación 25 de diciembre de 2016
 
 **Nuevas características**
--    Estamos en proceso de lanzar la [anonimización de los datos](cloud-discovery-anonymizer.md) para que pueda disfrutar de Cloud Discovery a la vez que se protege la privacidad de los usuarios. La anonimización de los datos se realiza mediante el cifrado de la información del nombre de usuario.
--    Estamos en proceso de lanzar la capacidad de exportar un script de bloqueo desde Cloud App Security a dispositivos adicionales. El script le permitirá reducir fácilmente Shadow IT mediante el bloqueo del tráfico a aplicaciones no autorizadas. Esta opción ya está disponible para: 
-    -    BlueCoat ProxySG
-    -    Cisco ASA
-    -    Fortinet
-    -    Juniper SRX
-    -    Palo Alto
-    -    Websense
--    Se ha agregado una nueva acción de control de archivos que le permite forzar a un archivo heredar permisos del elemento principal, eliminando así los permisos únicos que se hayan configurado para el archivo o carpeta. Esta acción de control de archivos le permite cambiar los permisos de la carpeta o el archivo para que se hereden de la carpeta principal. 
--    Se ha agregado un nuevo grupo de usuarios con el nombre Externos. Es un grupo de usuarios predeterminado configurado previamente por Cloud App Security para incluir todos los usuarios que no forman parte de los dominios internos. Puede usar este grupo como filtro; por ejemplo, puede buscar actividades realizadas por los usuarios externos.
--    La característica Cloud Discovery ahora admite dispositivos Sophos Cyberoam.
+-   Estamos en proceso de lanzar la [anonimización de los datos](cloud-discovery-anonymizer.md) para que pueda disfrutar de Cloud Discovery a la vez que se protege la privacidad de los usuarios. La anonimización de los datos se realiza mediante el cifrado de la información del nombre de usuario.
+-   Estamos en proceso de lanzar la capacidad de exportar un script de bloqueo desde Cloud App Security a dispositivos adicionales. El script le permitirá reducir fácilmente Shadow IT mediante el bloqueo del tráfico a aplicaciones no autorizadas. Esta opción ya está disponible para: 
+    -   BlueCoat ProxySG
+    -   Cisco ASA
+    -   Fortinet
+    -   Juniper SRX
+    -   Palo Alto
+    -   Websense
+-   Se ha agregado una nueva acción de control de archivos que le permite forzar a un archivo heredar permisos del elemento principal, eliminando así los permisos únicos que se hayan configurado para el archivo o carpeta. Esta acción de control de archivos le permite cambiar los permisos de la carpeta o el archivo para que se hereden de la carpeta principal. 
+-   Se ha agregado un nuevo grupo de usuarios con el nombre Externos. Es un grupo de usuarios predeterminado configurado previamente por Cloud App Security para incluir todos los usuarios que no forman parte de los dominios internos. Puede usar este grupo como filtro; por ejemplo, puede buscar actividades realizadas por los usuarios externos.
+-   La característica Cloud Discovery ahora admite dispositivos Sophos Cyberoam.
  
 **Correcciones de errores**
--    Los archivos de SharePoint Online y OneDrive para la Empresa se mostraban en el informe de directiva de archivo y en la página de archivos como para uso interno en lugar de privado. Esto se ha corregido.
+-   Los archivos de SharePoint Online y OneDrive para la Empresa se mostraban en el informe de directiva de archivo y en la página de archivos como para uso interno en lugar de privado. Esto se ha corregido.
  
 
 
@@ -217,38 +305,38 @@ Publicado el 27 de noviembre de 2016
 Publicado el 13 de noviembre de 2016
 
 **Nuevas características**
--    Cloud App Security ahora admite Microsoft Azure Information Protection, que incluye una integración mejorada y autoaprovisionamiento. Puede filtrar los archivos y establecer directivas de archivo mediante la clasificación segura de etiquetas y, después, establecer la etiqueta de clasificación que quiere ver. Las etiquetas también indican si la clasificación la estableció alguien de su organización o un usuario de otro inquilino (externo). También puede establecer directivas de actividad, en función de las etiquetas de clasificación de Azure Information Protection y habilitar la detección automática de etiquetas de clasificación en Office 365. Para obtener más información acerca de cómo sacar partido a esta nueva característica increíble, consulte [Integración con Azure Information Protection](azip-integration.md).
+-   Cloud App Security ahora admite Microsoft Azure Information Protection, que incluye una integración mejorada y autoaprovisionamiento. Puede filtrar los archivos y establecer directivas de archivo mediante la clasificación segura de etiquetas y, después, establecer la etiqueta de clasificación que quiere ver. Las etiquetas también indican si la clasificación la estableció alguien de su organización o un usuario de otro inquilino (externo). También puede establecer directivas de actividad, en función de las etiquetas de clasificación de Azure Information Protection y habilitar la detección automática de etiquetas de clasificación en Office 365. Para obtener más información acerca de cómo sacar partido a esta nueva característica increíble, consulte [Integración con Azure Information Protection](azip-integration.md).
  
 **Mejoras**
--    Se realizaron mejoras en el registro de actividad de Cloud App Security: 
+-   Se realizaron mejoras en el registro de actividad de Cloud App Security: 
    -    Los eventos de Office 365 del Centro de seguridad y cumplimiento de Office 365 ahora se integran con Cloud App Security y se ven en el **Registro de actividades**.
    -    Toda la actividad de Cloud App Security se registra en el registro de actividades de Cloud App Security como actividad administrativa.
--    Para ayudarle a investigar alertas relacionadas con archivos, en cada alerta derivada de una directiva de archivo, ahora puede ver la lista de actividades que se realizaron en el archivo coincidente.
--    El algoritmo de viaje imposible del motor de detección de anomalías se ha mejorado para proporcionar una mayor compatibilidad para inquilinos pequeños. 
+-   Para ayudarle a investigar alertas relacionadas con archivos, en cada alerta derivada de una directiva de archivo, ahora puede ver la lista de actividades que se realizaron en el archivo coincidente.
+-   El algoritmo de viaje imposible del motor de detección de anomalías se ha mejorado para proporcionar una mayor compatibilidad para inquilinos pequeños. 
  
 **Mejoras menores**
--    El **Activity export limit** (Límite de exportación de actividades) se elevó a 10 000. 
--    Al crear un **Informe de instantáneas** en el proceso de carga del registro manual de Cloud Discovery, ahora recibirá una estimación precisa de cuánto tardará el procesamiento del registro. 
--    En una directiva de archivo, la acción de gobierno **Remove collaborator** (Quitar colaborador) ahora funciona en grupos.
--    Se realizaron mejoras menores en la página **Permisos de la aplicación**. 
--    Si había más de 10 000 usuarios que disponían de permisos para una aplicación que se conectaba a Office 365, la lista se cargaba lentamente. Esto se ha solucionado.
--    Se han agregado atributos adicionales al **Catálogo de aplicaciones** con relación al sector de tarjetas de pago.
+-   El **Activity export limit** (Límite de exportación de actividades) se elevó a 10 000. 
+-   Al crear un **Informe de instantáneas** en el proceso de carga del registro manual de Cloud Discovery, ahora recibirá una estimación precisa de cuánto tardará el procesamiento del registro. 
+-   En una directiva de archivo, la acción de gobierno **Remove collaborator** (Quitar colaborador) ahora funciona en grupos.
+-   Se realizaron mejoras menores en la página **Permisos de la aplicación**. 
+-   Si había más de 10 000 usuarios que disponían de permisos para una aplicación que se conectaba a Office 365, la lista se cargaba lentamente. Esto se ha solucionado.
+-   Se han agregado atributos adicionales al **Catálogo de aplicaciones** con relación al sector de tarjetas de pago.
 
 
 ## <a name="cloud-app-security-release-83"></a>Notas de la versión 83 de Cloud App Security
 Publicado el 30 de octubre de 2016
 
 **Nuevas características**
--    Para simplificar el filtrado en el [registro de actividad](activity-filters.md) y en el [registro de archivo](file-filters.md), se han consolidado filtros similares. Utilice los filtros de actividad: Objeto de actividad, Dirección IP y Usuario. Utilice el filtro de archivos Colaboradores para encontrar exactamente lo que necesita.
--    Desde el cajón del registro de actividades, bajo **Origen**, puede hacer clic en el vínculo de **ver los datos sin procesar** para descargar los datos sin procesar usados para generar el registro de actividades, para explorar en profundidad en los eventos de la aplicación. 
--    Compatibilidad agregada para las actividades de inicio de sesión adicionales en Okta. [Versión preliminar privada]
--    Compatibilidad agregada para las actividades de inicio de sesión adicionales en Salesforce. 
+-   Para simplificar el filtrado en el [registro de actividad](activity-filters.md) y en el [registro de archivo](file-filters.md), se han consolidado filtros similares. Utilice los filtros de actividad: Objeto de actividad, Dirección IP y Usuario. Utilice el filtro de archivos Colaboradores para encontrar exactamente lo que necesita.
+-   Desde el cajón del registro de actividades, bajo **Origen**, puede hacer clic en el vínculo de **ver los datos sin procesar** para descargar los datos sin procesar usados para generar el registro de actividades, para explorar en profundidad en los eventos de la aplicación. 
+-   Compatibilidad agregada para las actividades de inicio de sesión adicionales en Okta. [Versión preliminar privada]
+-   Compatibilidad agregada para las actividades de inicio de sesión adicionales en Salesforce. 
 
 **Mejoras**
--    Facilidad de uso mejorada para informes y solución de problemas de instantáneas de Cloud Discovery.
--    Visibilidad mejorada en la lista de alertas de varias aplicaciones.
--    Facilidad de uso mejorada al crear nuevos informes continuos de Cloud Discovery.
--    Facilidad de uso mejorada en el registro de gobierno.
+-   Facilidad de uso mejorada para informes y solución de problemas de instantáneas de Cloud Discovery.
+-   Visibilidad mejorada en la lista de alertas de varias aplicaciones.
+-   Facilidad de uso mejorada al crear nuevos informes continuos de Cloud Discovery.
+-   Facilidad de uso mejorada en el registro de gobierno.
 
 
 
