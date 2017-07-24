@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 7/9/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 104f44cb4dc890753551d23682a77b75bba510b1
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: 8899715f7da9433646e3b007ca971b191b602a3a
+ms.sourcegitcommit: cfbfd9103406c69505eb6273f9bb97bd57bb5a44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/09/2017
 ---
 # <a name="activities"></a>Actividades
 Cloud App Security le ofrece visibilidad en todas las actividades de las aplicaciones conectadas. Después de conectar Cloud App Security con una aplicación mediante el conector de aplicaciones, Cloud App Security examina todas las actividades que se han producido (el período de tiempo de examen retroactivo varía según la aplicación) y después se actualiza constantemente con nuevas actividades. 
@@ -156,8 +156,9 @@ Para ver la información de usuario:
     - **ISP**: número de ISP desde los que se ha conectado el usuario durante los últimos 30 días.
     - **Direcciones IP**: número de direcciones IP desde las que se ha conectado el usuario durante los últimos 30 días.
 
+![información de usuario en Cloud App Security](./media/user-insights.png)
 
-## <a name="see-also"></a>Consulte también  
+## <a name="see-also"></a>Véase también  
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 [Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  

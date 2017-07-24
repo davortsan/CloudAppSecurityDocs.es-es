@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4918b2765be87cb4090c6a55351f6fb0afe07339
-ms.sourcegitcommit: 83d3c800e268091a69e5dc2a229e6453d3243a62
+ms.openlocfilehash: 893f06d222c52e5e39231378062c3742b81f655f
+ms.sourcegitcommit: cfbfd9103406c69505eb6273f9bb97bd57bb5a44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/04/2017
+ms.lasthandoff: 07/09/2017
 ---
 # <a name="release-notes"></a>Notas de la versión
 
@@ -44,6 +44,10 @@ Publicado el 3 de julio de 2017
     - **Notas personalizadas**: ahora, a medida que revise y evalúe las diferentes aplicaciones detectadas en el entorno, puede guardar las conclusiones y la información en notas.
     - **Puntuación de riesgo personalizada**: ahora puede reemplazar la puntuación de riesgo de una aplicación. Por ejemplo, si la puntuación de riesgo de una aplicación es 8 y es una aplicación autorizada en la organización, puede cambiar la puntuación de riesgo a 10 para la organización. También puede agregar notas para que el motivo de este cambio le quede claro a los usuarios que revisen la aplicación.
 -   **Nuevo modo de implementación del recopilador de registros:** hemos empezado a aplicar un nuevo modo de implementación para el recopilador de registros. Además de la implementación actual basada en el dispositivo virtual, el nuevo recopilador de registros basado en Docker (contenedor) puede instalarse como un paquete en equipos Windows y Ubuntu locales y en Azure. Cuando se usa Docker, el cliente es el propietario del equipo host y puede aplicarle revisiones y supervisarlo libremente.
+
+### <a name="announcements"></a>Anuncios: 
+-   El Catálogo de aplicaciones en la nube ahora admite más de 15 000 aplicaciones reconocibles
+-   Cumplimiento: Azure concede oficialmente certificación SOC1/2/3 a Cloud App Security. Para obtener la lista completa de certificaciones, consulte [Ofertas de Microsoft Compliance](https://www.microsoft.com/trustcenter/compliance/complianceofferings) y filtre los resultados para Cloud App Security.
 
 ### <a name="other-improvements"></a>Otras mejoras: 
 -   **Análisis mejorado:** se ha mejorado el mecanismo de análisis de registros de Cloud Discovery. Es mucho menos probable que se produzcan errores internos.
@@ -170,7 +174,7 @@ Fecha de publicación: 20 de marzo de 2017
 -   El conector de la aplicación de Cloud App Security para ServiceNow se ha expandido para incluir compatibilidad con tokens de OAuth (tal como se presenta en Ginebra, Helsinki y Estambul). Esto proporciona una conexión más sólida de la API con ServiceNow, que no se basa en el usuario de implementación. Para más información, vea [Conectar ServiceNow con Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security.md). Los clientes existentes pueden actualizar su configuración en la página del conector de ServiceNow App.
 -   Si configura escáneres DLP adicionales de terceros, el estado del examen DLP ahora mostrará el estado de cada conector de forma independiente para mejorar la visibilidad.
 -   Cloud App Security ahora incluye compatibilidad para las actividades de Microsoft Teams que se admiten en el registro de auditoría de Office 365. Esta característica se está implantando gradualmente.
--   Para los eventos de suplantación Exchange Online, ahora puede filtrar por nivel de permiso: usado-delegado, administrador o administrador delegado. Puede buscar eventos que muestran el nivel de suplantación que le interese en el ** registro de actividad** buscando **Elemento de** > **objetos de actividad**.
+-   Para los eventos de suplantación Exchange Online, ahora puede filtrar por nivel de permiso: usado-delegado, administrador o administrador delegado. Puede buscar eventos que muestran el nivel de suplantación que le interese en el  **registro de actividad** buscando **Elemento de** > **objetos de actividad**.
 -   En el cajón de aplicación en la ficha Permisos de la aplicación ahora puede ver el **publicador** de cada aplicación. También puede utilizar el publicador como un filtro para la investigación de las aplicaciones adicionales del mismo publicador.
 -   Las direcciones IP de riesgo aparecen ahora como un factor de riesgo independiente en lugar de ponderado en el factor de riesgo de la **ubicación** general. 
 -   Cuando las etiquetas de Azure Information Protection están deshabilitadas en un archivo, las etiquetas deshabilitadas aparecerán como deshabilitadas en Cloud App Security. No se mostrarán las etiquetas eliminadas.

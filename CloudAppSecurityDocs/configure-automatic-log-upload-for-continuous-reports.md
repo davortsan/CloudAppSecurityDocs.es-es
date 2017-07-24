@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 7/9/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,22 +13,13 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 11d3a78803c2a22f7d08bdab9d70aec73124ff8b
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: ac5720bf4dd571d56bf7c41631d2a0f866146a56
+ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/16/2017
 ---
-# <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurar la carga de registros automática para informes continuos
-Los recopiladores de registros permiten automatizar fácilmente la carga de registros desde la red. El recopilador de registros se ejecuta en la red y recibe los registros a través de Syslog o FTP. Cada registro se procesa, se comprime y se transmite automáticamente al portal. Los registros de FTP se cargan en Cloud App Security una vez que el archivo haya finalizado la transferencia FTP al recopilador de registros. En el caso de Syslog, el recopilador de registros escribe los registros recibidos en el disco y carga el archivo en Cloud App Security cuando el tamaño de archivo sea superior a 40 KB.
-
-Una vez que se ha cargado un registro en Cloud App Security, se mueve a un directorio de copia de seguridad que almacena los últimos 20 registros en un momento dado. Cuando llegan los nuevos registros, se eliminan los antiguos. Cuando el espacio en disco del recopilador de registros esté lleno, el recopilador descartará los nuevos registros hasta que tenga más espacio libre en disco.
-
-Antes de configurar la recopilación automática de archivos de registros, compruebe que el registro coincide con el tipo de registro esperado, para asegurarse de que Cloud App Security puede analizar el archivo específico. 
-
->[!NOTE]
->Cloud App Security permite el reenvío de registros desde el servidor SIEM al recopilador de registros siempre que estos se reenvíen en su formato original. Sin embargo, se recomienda encarecidamente integrar el recopilador de registros directamente con el firewall o proxy.
-
+# <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>Configurar la carga de registros automática para informes continuos en una aplicación virtual
 
 ## <a name="technical-requirements"></a>Requisitos técnicos
 - Hipervisor: Hyper-V o VMware
@@ -144,7 +135,7 @@ Configure los firewalls y los servidores proxy de la red de modo que exporten pe
   
      `London Zscaler - Destination path: 614`  
   
-     `SF Blue Coat - Destination path: \\CloudAppSecurityCollector01\BlueCoat\`  
+     BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\  
   
 ### <a name="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Paso 5: Comprobación de la implementación correcta en el portal Cloud App Security
 
