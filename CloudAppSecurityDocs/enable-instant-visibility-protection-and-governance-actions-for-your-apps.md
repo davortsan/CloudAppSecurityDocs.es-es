@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 96f6aeb2ec67175bde4ed94199405d6457797659
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 9ed4b87b3665509a4e842d985e02d414bfa532bf
+ms.sourcegitcommit: b39c171da0f2df49a9293b343b404d26574d78ef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 07/23/2017
 ---
 # <a name="connect-apps"></a>Conectar aplicaciones 
 Los conectores de aplicaciones aprovechan las API de los proveedores de aplicaciones para permitir mediante Cloud App Security una mayor visibilidad y control de las aplicaciones a las que se conecta.  
@@ -66,6 +66,7 @@ En función de la aplicación a la que se conecte (consulte la tabla siguiente),
   
 En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades son compatibles con los conectores de aplicaciones:  
 
+> [!div class="mx-tableFixed"]
 ||**Office 365**|**Box**|**Okta**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|  
 |-|-|-|-|-|-|-|-|-|  
 |**Cuentas de lista**|✔|✔|✔|✔|✔|✔|✔|✔|  
