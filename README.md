@@ -1,7 +1,7 @@
-## <a name="microsoft-open-source-code-of-conduct"></a>Código de conducta del código abierto de Microsoft
+## <a name="microsoft-open-source-code-of-conduct"></a>Código de conducta del Código Abierto de Microsoft
 
-Este proyecto ha adoptado el [código de conducta del código abierto de Microsoft](https://opensource.microsoft.com/codeofconduct/).
-Para obtener más información, vea las [preguntas más frecuentes sobre el código de conducta](https://opensource.microsoft.com/codeofconduct/faq/) o póngase en contacto con [opencode@microsoft.com](mailto:opencode@microsoft.com) si tiene preguntas o comentarios adicionales.
+Este proyecto adoptó el [Código de conducta del Código Abierto de Microsoft](https://opensource.microsoft.com/codeofconduct/).
+Para obtener más información, consulte las [Preguntas Frecuentes del Código de conducta](https://opensource.microsoft.com/codeofconduct/faq/) o póngase en contacto con [opencode@microsoft.com](mailto:opencode@microsoft.com) si tiene más preguntas o comentarios.
 
 # <a name="docsmicrosoftcom-github-repository"></a>Repositorio de Github de docs.microsoft.com
 
