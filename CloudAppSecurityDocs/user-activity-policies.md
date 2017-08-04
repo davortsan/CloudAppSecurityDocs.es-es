@@ -41,7 +41,7 @@ Para crear una nueva directiva de actividad, siga este procedimiento:
 4.  Para establecer qué acciones o qué otras métricas desencadenan esta directiva, trabaje con **filtros de actividad**.  
   
 5.  En **Parámetros de coincidencia de actividad**, seleccione si se desencadenará una infracción de directiva cuando una sola actividad coincida con los filtros o si solo se detectará una infracción cuando se detecte un número especificado de **actividades repetidas**.  
-    Si elige **Actividad repetida**, puede establecer ** Actividades de grupo coincidentes por aplicación**. Esto desencadenará una coincidencia de directiva solo cuando se producen las actividades repetidas en la misma aplicación (por ejemplo, 5 descargas desde Box).  
+    Si elige **Actividad repetida**, puede establecer  **Actividades de grupo coincidentes por aplicación**. Esto desencadenará una coincidencia de directiva solo cuando se producen las actividades repetidas en la misma aplicación (por ejemplo, 5 descargas desde Box).  
   
 6.  Configure las **acciones** que deben realizarse cuando se encuentra una coincidencia.  
   
