@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,30 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7fe4b327e3f90bf98f4796d1b9b3149435b0ccd5
-ms.sourcegitcommit: b39c171da0f2df49a9293b343b404d26574d78ef
+ms.openlocfilehash: 29df61beb80e931d9d4b0c90a3e89a2b9f496740
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="whats-new-with-cloud-app-security"></a>Novedades de Cloud App Security
+
+## <a name="cloud-app-security-release-102"></a>Versión 102 de Cloud App Security 
+Publicada el 30 de julio de 2017
+ 
+-   Debido a que la información de dirección IP es fundamental para casi todas las investigaciones, ahora puede ver información detallada sobre las direcciones IP en el cajón de actividades. Desde una actividad específica, ahora puede hacer clic en la pestaña de dirección IP para ver los datos consolidados sobre la dirección IP, incluido el número de alertas abiertas para la dirección IP específica, un gráfico de tendencias de la actividad reciente y un mapa de ubicación. Esto permite explorar en profundidad; por ejemplo, cuando se investigan alertas de viajes imposibles, puede comprender fácilmente dónde se usó la dirección IP y si participó o no en actividades sospechosas. También puede realizar acciones directamente en el cajón de direcciones IP que le permiten etiquetar una dirección IP como riesgosa, VPN o corporativa para facilitar una investigación futura y la creación de directivas. Para más información, consulte el artículo sobre [información de dirección IP](activity-filters.md#ip-address-insights)
+
+-   En Cloud Discovery, ahora puede usar [formatos de registros personalizados](custom-log-parser.md) también para [cargas de registros automatizadas](discovery-docker.md). Esto le permite automatizar fácilmente la carga de registros desde SIEM como servidores Splunk o cualquier otro formato no compatible. 
+ 
+-   Las nuevas acciones de investigación de usuario permiten un nivel agregado de exploración en las investigaciones de usuario. En las páginas **Investigación**, ahora puede hacer clic con el botón derecho de una actividad, usuario o cuenta y aplicar uno de los siguientes filtros nuevos para una investigación y filtración avanzadas: **Ver actividad relacionada**, **Ver gobierno relacionado**, **Ver alertas relacionadas**, **Ver archivos con propietario**, **Ver archivos compartidos con este usuario**.
+
+-   El Catálogo de aplicaciones en la nube ahora contiene un campo nuevo de retención de datos después de la terminación de la cuenta. El factor de riesgo le permite asegurarse de que los datos se quitan completamente una vez que da término a una cuenta dentro de una aplicación de nube.
+
+-   Cloud App Security ahora cuenta con mayor visibilidad de las actividades relativas a objetos de Salesforce, como clientes potenciales, cuentas, campañas, oportunidades, perfiles y casos. Por ejemplo, la visibilidad sobre el acceso de las páginas de cuentas le permite configurar una directiva que le envía una alerta si un usuario ve una cantidad inusualmente grande de páginas de cuentas. Esto está disponible a través del conector de aplicaciones de Salesforce si tiene habilitada la supervisión de eventos de Salesforce en Salesforce (parte de Salesforce Shield).
+
+- No realizar seguimiento ahora está disponible para los clientes de la versión preliminar privada. Ahora puede controlar qué datos de actividad de los usuarios se procesan. Esto le permite establecer grupos específicos de Cloud App Security como "No realizar seguimiento". Por ejemplo, ahora puede decidir no procesar ningún dato de actividad de usuarios ubicados en Alemania ni ningún país que no esté sometido a ninguna ley de cumplimiento específica. Esto se puede implementar en todas las aplicaciones en Cloud App Security para una aplicación específica e, incluso, para una subaplicación específica. Además, esta característica se puede usar para facilitar la implementación gradual de Cloud App Security. Para más información sobre la versión preliminar privada de esta característica o para unirse a ella, póngase en contacto con el soporte técnico o con su representante de cuenta. 
+
+
 
 ## <a name="cloud-app-security-release-100"></a>Notas de la versión 100 de Cloud App Security 
 Publicado el 3 de julio de 2017
@@ -47,7 +64,7 @@ Publicado el 3 de julio de 2017
 
 ### <a name="announcements"></a>Anuncios: 
 -   El Catálogo de aplicaciones en la nube ahora admite más de 15 000 aplicaciones reconocibles
--   Cumplimiento: Azure concede oficialmente certificación SOC1/2/3 a Cloud App Security. Para obtener la lista completa de certificaciones, consulte [Ofertas de Microsoft Compliance](https://www.microsoft.com/trustcenter/compliance/complianceofferings) y filtre los resultados para Cloud App Security.
+-   Cumplimiento: Cloud App Security cuenta oficialmente con la certificación SOC1/2/3 de Azure. Si desea consultar la lista completa de certificaciones, consulte [Ofertas de Compliance](https://www.microsoft.com/trustcenter/compliance/complianceofferings) y filtre los resultados para ver Cloud App Security.
 
 ### <a name="other-improvements"></a>Otras mejoras: 
 -   **Análisis mejorado:** se ha mejorado el mecanismo de análisis de registros de Cloud Discovery. Es mucho menos probable que se produzcan errores internos.
@@ -175,7 +192,7 @@ Fecha de publicación: 20 de marzo de 2017
 -   Si configura escáneres DLP adicionales de terceros, el estado del examen DLP ahora mostrará el estado de cada conector de forma independiente para mejorar la visibilidad.
 -   Cloud App Security ahora incluye compatibilidad para las actividades de Microsoft Teams que se admiten en el registro de auditoría de Office 365. Esta característica se está implantando gradualmente.
 -   Para los eventos de suplantación Exchange Online, ahora puede filtrar por nivel de permiso: usado-delegado, administrador o administrador delegado. Puede buscar eventos que muestran el nivel de suplantación que le interese en el  **registro de actividad** buscando **Elemento de** > **objetos de actividad**.
--   En el cajón de aplicación en la ficha Permisos de la aplicación ahora puede ver el **publicador** de cada aplicación. También puede utilizar el publicador como un filtro para la investigación de las aplicaciones adicionales del mismo publicador.
+-   En el cajón de aplicaciones de la pestaña **Permisos de la aplicación** de aplicaciones Office 365, ahora puede ver el **publicador** de cada aplicación. También puede utilizar el publicador como un filtro para la investigación de las aplicaciones adicionales del mismo publicador.
 -   Las direcciones IP de riesgo aparecen ahora como un factor de riesgo independiente en lugar de ponderado en el factor de riesgo de la **ubicación** general. 
 -   Cuando las etiquetas de Azure Information Protection están deshabilitadas en un archivo, las etiquetas deshabilitadas aparecerán como deshabilitadas en Cloud App Security. No se mostrarán las etiquetas eliminadas.
  

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/9/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ac5720bf4dd571d56bf7c41631d2a0f866146a56
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: d5f618feb038083dd9140a1c53d301788f561a4e
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 08/03/2017
 ---
-# <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>Configurar la carga de registros automática para informes continuos en una aplicación virtual
+# <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>Configuración de la carga de registros automática para informes continuos en una aplicación virtual
 
 ## <a name="technical-requirements"></a>Requisitos técnicos
 - Hipervisor: Hyper-V o VMware
@@ -43,7 +43,7 @@ El recopilador de registros tiene un mecanismo de seguridad integrado que superv
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Paso 1: Configuración del portal web: definición de orígenes de datos y vinculación a un recopilador de registros  
   
 1.  Vaya a la página de configuración de carga automatizada:  
-    En el portal de Cloud App Security, haga clic en el ![icono de configuración](./media/settings-icon.png "settings icon") y, después, en **Recopiladores de registros**.  
+    En el portal de Cloud App Security, haga clic en el icono de configuración ![icono de configuración](./media/settings-icon.png "icono de configuración") y, después, en **Recopiladores de registros**.  
   
 3.  Cree un origen de datos coincidente para cada firewall o servidor proxy desde el que quiera cargar registros:  
   
@@ -51,7 +51,7 @@ El recopilador de registros tiene un mecanismo de seguridad integrado que superv
   
     b.  **Ponga nombre** al servidor proxy o firewall.  
   
-    c.  Seleccione el dispositivo en la lista **Origen**.  
+    c.  Seleccione el dispositivo en la lista **Origen**. Si selecciona **Formato de registro personalizado** para trabajar con un dispositivo de red que no aparezca específicamente en la lista, consulte el artículo sobre cómo [trabajar con el analizador de registro personalizado](custom-log-parser.md) para ver las instrucciones de configuración.
   
     d.  Compare el registro con el ejemplo del formato de registro esperado. Si el formato del archivo de registro no coincide con este ejemplo, debe agregar el origen de datos como **Otro**.  
   
@@ -81,7 +81,7 @@ El recopilador de registros tiene un mecanismo de seguridad integrado que superv
 1.  Abra el Administrador de Hyper-V.  
   
 2.  Seleccione **Nuevo** y luego **Máquina virtual** y haga clic en **Siguiente**.  
- ![detección de máquina virtual de hyper-v](./media/discovery-hyperv-virtual-machine.png "discovery hyperv virtual machine")  
+ ![detección de máquina virtual de hyper-v](./media/discovery-hyperv-virtual-machine.png "detección de máquina virtual de hyper-v")  
   
 3.  Proporcione un **Nombre** para la nueva máquina virtual, por ejemplo, CloudAppSecurityLogCollector01. Luego haga clic en **Siguiente**.  
   

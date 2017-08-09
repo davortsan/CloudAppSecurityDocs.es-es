@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/7/2017
+ms.date: 7/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,23 +13,15 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d12fa44f42c5545464c7e8ba9da366a2302f73c1
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.openlocfilehash: 5d8a60d15ae730cfa3fb1a851bf588d291f5287e
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: es-ES
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar Cloud Discovery
-Cloud Discovery analiza los registros de tráfico del catálogo de aplicaciones en la nube de Cloud App Security de más de 13 000 aplicaciones en la nube que se clasifican y se puntúan en función de más de 50 atributos, a fin de proporcionar visibilidad continua del uso de la nube, Shadow IT y el riesgo que Shadow IT supone para la organización.
-El **catálogo de aplicaciones en la nube** evalúa el riesgo de las aplicaciones en la nube en función de certificaciones normativas, estándares del sector y procedimientos recomendados. En el catálogo de aplicaciones en la nube se ejecutan cuatro procesos complementarios para mantenerlo actualizado:
-1.    Extracción de datos automatizada directamente desde la aplicación en la nube (para atributos como el cumplimiento de SOC 2).
-2.    Extracción de datos automatizada avanzada mediante algoritmos de Cloud App Security (para atributos como encabezados de seguridad HTTP).
-3.    Análisis continuo por parte del equipo de analistas de la nube de Cloud App Security (para atributos como el cifrado en reposo).
-4.    Solicitudes de revisión de los clientes, según las solicitudes de envío de clientes para realizar cambios en el catálogo de aplicaciones en la nube. Todas las solicitudes se someten al examen del equipo de analistas de la nube y se actualizan en función de sus conclusiones.
-  
-## <a name="cloud-discovery-data-anonymization"></a>Anonimización de datos de Cloud Discovery
-
-La anonimización de datos de Cloud Discovery le permite proteger la privacidad del usuario. Una vez que el registro de datos se ha cargado en el portal de Cloud App Security, se depura el registro y se reemplaza toda la información de nombres de usuario con nombres de usuario cifrados. De este modo, todas las actividades de la nube se mantienen anónimas. Para más información, vea [Cloud Discovery anonymization](cloud-discovery-anonymizer.md) (Anonimización de Cloud Discovery).
-
+Cloud Discovery analiza los registros de tráfico del catálogo de aplicaciones en la nube de Cloud App Security de más de 15 000 aplicaciones en la nube que se clasifican y se puntúan en función de más de 60 factores de riesgo, a fin de proporcionar visibilidad continua del uso de la nube, Shadow IT y el riesgo que Shadow IT supone para la organización.
+ 
 ## <a name="snapshot-and-continuous-risk-assessment-reports"></a>Informes de instantáneas y de evaluación continua de riesgos 
 
 Se pueden generar dos tipos de informes: 
@@ -44,7 +36,7 @@ El proceso de generación de una evaluación de riesgos consta de los siguientes
   
 -   **Redistribuir**: Cloud App Security redistribuye y extrae datos de tráfico de los registros de tráfico con un analizador dedicado para cada origen de datos.  
   
--   **Analizar**: se analizan los datos de tráfico con el catálogo de aplicaciones en la nube para identificar más de 13.000 aplicaciones en la nube y evaluar su puntuación de riesgo. También se identifican los usuarios activos y las direcciones IP como parte del análisis.  
+-   **Analizar**: se analizan los datos de tráfico con el catálogo de aplicaciones en la nube para identificar más de 15 000 aplicaciones en la nube y evaluar su puntuación de riesgo. También se identifican los usuarios activos y las direcciones IP como parte del análisis.  
   
 -   **Generar informe**: se genera un informe de evaluación de riesgos de los datos extraídos de los archivos de registro.   
  
@@ -74,6 +66,8 @@ Para generar correctamente un informe de Cloud Discovery, los registros de tráf
 3.  Los eventos no tienen más de 90 días.
 4.  El archivo de registro es válido e incluye información sobre el tráfico saliente.
  
+
+
 ## <a name="supported-firewalls-and-proxies"></a>Firewalls y servidores proxy compatibles
 
 - Barracuda - Web App Firewall (W3C)
@@ -99,6 +93,8 @@ Para generar correctamente un informe de Cloud Discovery, los registros de tráf
 - Websense - Web Security Solutions - Internet activity log (CEF)
 - Zscaler
 
+> [!NOTE]
+> Cloud Discovery admite tanto direcciones IPv4 como IPv6.
 
 Si el registro no es compatible, seleccione **Otro** como **Origen de datos** y especifique el dispositivo y el registro que está intentando cargar. El equipo de analistas de la nube de Cloud App Security examinará el registro y se le notificará si se ha agregado compatibilidad con el tipo de registro. También puede definir un analizador personalizado que coincida con el formato. Para obtener más información, consulte [Uso del analizador de registros personalizado](custom-log-parser.md).
 
@@ -117,17 +113,19 @@ Atributos de datos (según la documentación del proveedor):
 |Clavister NGFW (Syslog)|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
 |Dell SonicWall|**Sí**|**Sí**|No|**Sí**|**Sí**|**Sí**|
 |FortiGate|No|**Sí**|No|**Sí**|**Sí**|**Sí**|
-|Juniper SRX|No|**Sí**|No|**Sí**\**|**Sí**|**Sí**|
+|Juniper SRX|No|**Sí**|No|**Sí**|**Sí**|**Sí**|
 |Juniper SSG|No|**Sí**|No|**Sí**|**Sí**|**Sí**|
 |McAfee SWG|**Sí**|No|No|**Sí**|**Sí**|**Sí**|
 |MS TMG|**Sí**|No|**Sí**|**Sí**|**Sí**|**Sí**|
-|Palo Alto Networks|**Sí**|**Sí**|**Sí**|**Sí**\*|**Sí**|**Sí**|
+|Palo Alto Networks|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
 |Sophos|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|No|
-|Websense: informe de detalle de investigación (CSV)|**Sí**|No|No|**Sí**|No|No|
+|Squid (Common)|**Sí**|No|**Sí**|**Sí**|No|**Sí**|
+|Squid (Native)|**Sí**|No|**Sí**|**Sí**|No|**Sí**|
+|Websense: informe de detalle de investigación (CSV)|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
 |Websense: registro de actividad de Internet (CEF)|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
 |Zscaler|**Sí**|No|**Sí**|No|**Sí**|**Sí**|
 
-\* Cloud Discovery es compatible con IPv6.
+
 
 ## <a name="see-also"></a>Vea también
  
