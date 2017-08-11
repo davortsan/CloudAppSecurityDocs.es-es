@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2017
+ms.date: 8/8/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 75b5a6fb3707872f0455da1a1856b55adb17c597
-ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
+ms.openlocfilehash: b418663d21653b1393999f50cc620a230d0b97dc
+ms.sourcegitcommit: b446a82c945de6452813aac7780f6a3a264495e1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>Conectar Azure con Microsoft Cloud App Security
 
@@ -27,7 +27,7 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
 
 Cloud App Security se conecta a Azure mediante centros de eventos. En esta sección se proporcionan instrucciones para transmitir mediante streaming todos los registros de actividad a un único centro de eventos de la suscripción. 
 
-### <a name="step-1-stream-your-azure-activity"></a>Paso 1: transmitir mediante streaming la actividad de Azure
+### <a name="step-1-stream-your-azure-activity-logs-to-event-hubs"></a>Paso 1: Transmitir mediante streaming los registros de actividad de Azure a centros de eventos
 
 1.  Transmita mediante streaming el registro de actividad de Azure de la suscripción de Azure a un centro de eventos. Siga la guía oficial de la documentación de Azure: https://docs.microsoft.com/es-es/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs
 
@@ -35,10 +35,13 @@ Cloud App Security se conecta a Azure mediante centros de eventos. En esta secci
  > Si tiene más de una suscripción a Azure, repita este paso para cada suscripción, pero use un único centro de eventos que compartan las suscripciones.
 
  Después de completar las instrucciones, se creará un centro de eventos en el espacio de nombres seleccionado.
+ 
+ > [!NOTE]
+ > Si se produce un error después de intentar exportar los registros de actividad, vaya a la hoja **Proveedores de recursos** de Azure y asegúrese de que “microsoft.insights” está registrado.
 
 ### <a name="step-2-get-a-connection-string-to-your-event-hub"></a>Paso 2: obtener una cadena de conexión para el centro de eventos
 
-1.  Vaya la hoja Centros de eventos.
+1.  Vaya la hoja **Centros de eventos**.
   
    ![Hoja Centros de eventos](media/azure-event-hubs.png "Centros de eventos de Azure")
 
@@ -53,6 +56,9 @@ Cloud App Security se conecta a Azure mediante centros de eventos. En esta secci
 4.  Seleccione el nuevo centro de eventos creado por Azure Monitor. Se denomina **insights-operational-logs**.
   
     ![Registros operativos de información](media/azure-insight-operational-logs.png "Registros operativos de información de Azure")
+  
+  > [!NOTE]
+  > Pueden pasar unos minutos hasta que se cree el centro de eventos.
 
 5. Cree una directiva de acceso que conceda permiso a Cloud App Security para leer en el centro de eventos. Para ello, haga clic en **Directivas de acceso compartido** y en **Agregar**.
   
@@ -78,7 +84,10 @@ Cloud App Security se conecta a Azure mediante centros de eventos. En esta secci
   
 4.  En el campo **Cadena de conexión**, pegue la cadena de conexión que ha copiado en el paso anterior.  
   
-5.  En el campo **Grupo de consumidores** escriba $Default, a menos que haya creado un grupo de consumidores diferente para su uso.
+5.  En el campo **Grupo de consumidores**, escriba: `$Default`
+    
+   >[!NOTE] 
+   > Si ha creado un grupo de consumidores diferente, use el nombre de ese **grupo de consumidores**.
   
 6.  Haga clic en **Conectar**.
 8.  Haga clic en **Probar API** para confirmar que la conexión se ha realizado correctamente.  
