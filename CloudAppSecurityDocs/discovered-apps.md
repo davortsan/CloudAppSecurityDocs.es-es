@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/5/2017
+ms.date: 8/6/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7e0287543014e7bc1807d0ccceb302a75cbaa91b
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 683815d0db528ac65b0d547cd8e5ab09ea64321f
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="working-with-discovered-apps"></a>Trabajar con aplicaciones detectadas
 
@@ -52,8 +52,13 @@ En la página **Aplicaciones detectadas**, en **Buscar por categoría**, selecci
 
 Una vez que se han filtrado los resultados, puede [no autorizar y bloquear](governance-discovery.md) las aplicaciones. Para ello, active la casilla de acción masiva para no autorizarlas en una sola acción. Después de no autorizarlas, puede usar un script de bloqueo para impedir que se usen en su entorno.
 
-Para profundizar aún más, puede investigar las aplicaciones detectadas en el nivel de subdominio e identificar instancias específicas que estén en uso. 
+Cloud Discovery permite profundizar incluso más en el uso de la nube de su organización e identificar instancias específicas que están en uso mediante la investigación de los subdominios detectados.
 
+Por ejemplo, puede diferenciar entre los distintos sitios de SharePoint.
+
+Esto solo se admite en los firewalls y servidores proxy que contienen datos de dirección URL de destino. Consulte la lista de dispositivos compatibles en [Firewalls y servidores proxy compatibles](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+
+![información de subdominio](./media/discovery-domains.png)  
 
 ## <a name="discovered-app-filters"></a>Filtros de aplicaciones detectadas
 
