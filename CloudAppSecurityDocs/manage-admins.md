@@ -13,17 +13,19 @@ ms.technology:
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4035cbaa331470cd762550470e9543b8fa256fe0
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 83a89f9d916a1a95394993e9d95fb7988ec85a4b
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/13/2017
 ---
 ## <a name="managing-admin-access"></a>Administración del acceso de administrador
 
 Cloud App Security es compatible con el control de acceso basado en rol. De forma predeterminada, los siguientes roles de administrador de Office 365 y Azure AD tienen acceso a Cloud App Security:
 
 - Administrador global y administrador de seguridad: los administradores con **Acceso completo** tendrán todos los permisos de Cloud App Security para agregar administradores, directivas y parámetros de configuración, cargar registros y realizar acciones de gobierno.
+
+- Administrador de cumplimiento: tiene permisos de solo lectura y puede administrar alertas. Puede crear y modificar directivas de archivo, permitir acciones de control de archivos y ver todos los informes integrados en Administración de datos. 
 
 - Lector de seguridad: tiene permisos de solo lectura y puede administrar alertas. El lector de seguridad no puede realizar las siguientes acciones:
       - Crear directivas o editar y cambiar las existentes 

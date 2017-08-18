@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,30 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 29df61beb80e931d9d4b0c90a3e89a2b9f496740
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: c0fead3fc70636ad96c365ec89060006124024b5
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="whats-new-with-cloud-app-security"></a>Novedades de Cloud App Security
+
+
+## <a name="cloud-app-security-release-103"></a>Notas de la versión 103 de Cloud App Security 
+Publicado el 13 de agosto de 2017
+
+- Cloud App Security ahora incluye compatibilidad de protección nativa de Azure Information Protection con los siguientes archivos de Office: .docm, .docx, .dotm, .dotx, .xlam, .xlsb, .xlsm, .xlsx, .xltx, .xps, .potm, .potx, .ppsx, .ppsm, .pptm, .pptx, .thmx, .vsdx, .vsdm, .vssx, .vssm, .vstx, .vstm (en lugar de protección genérica).
+
+- A cualquier administrador de cumplimiento de Azure Active Directory se le otorgarán automáticamente permisos similares en Cloud App Security, incluida la capacidad de solo lectura y de administrar alertas, crear y modificar directivas de archivo, permitir acciones de control de archivos y ver todos los informes integrados en Administración de datos. 
+
+- Se ha ampliado el contexto de infracción de DLP de 40 a 100 caracteres para ayudarle a entender mejor el contexto de la infracción.
+
+- Se incluyen mensajes de error detallados en la herramienta de carga de registros personalizados de Cloud Discovery para permitirle solucionar fácilmente los errores en la carga de registros.
+
+- El script del bloque de Cloud Discovery se ha ampliado para admitir el formato de Zscaler.
+
+- Nuevo factor de riesgo del Catálogo de aplicaciones en la nube: retención de datos después de la finalización de la cuenta. Esto le permite asegurarse de que los datos se quitan completamente una vez que finaliza una cuenta dentro de una aplicación en la nube.
+
 
 ## <a name="cloud-app-security-release-102"></a>Versión 102 de Cloud App Security 
 Publicada el 30 de julio de 2017
