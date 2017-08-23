@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/8/2017
+ms.date: 8/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b418663d21653b1393999f50cc620a230d0b97dc
-ms.sourcegitcommit: b446a82c945de6452813aac7780f6a3a264495e1
+ms.openlocfilehash: d2c5dff92c790a9ad27c872ebbd09769eef9898d
+ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>Conectar Azure con Microsoft Cloud App Security
 
@@ -41,7 +41,7 @@ Cloud App Security se conecta a Azure mediante centros de eventos. En esta secci
 
 ### <a name="step-2-get-a-connection-string-to-your-event-hub"></a>Paso 2: obtener una cadena de conexión para el centro de eventos
 
-1.  Vaya la hoja **Centros de eventos**.
+1.  Vaya la hoja **Event Hubs - Versión preliminar**.
   
    ![Hoja Centros de eventos](media/azure-event-hubs.png "Centros de eventos de Azure")
 
@@ -54,12 +54,12 @@ Cloud App Security se conecta a Azure mediante centros de eventos. En esta secci
     ![Entidades de Centros de eventos](media/azure-event-hubs-entities.png "Entidades del centro de eventos de Azure")
 
 4.  Seleccione el nuevo centro de eventos creado por Azure Monitor. Se denomina **insights-operational-logs**.
-  
-    ![Registros operativos de información](media/azure-insight-operational-logs.png "Registros operativos de información de Azure")
-  
   > [!NOTE]
   > Pueden pasar unos minutos hasta que se cree el centro de eventos.
 
+   ![Registros operativos de información](media/azure-insight-operational-logs.png "Registros operativos de información de Azure")
+  
+  
 5. Cree una directiva de acceso que conceda permiso a Cloud App Security para leer en el centro de eventos. Para ello, haga clic en **Directivas de acceso compartido** y en **Agregar**.
   
     ![Directivas de acceso compartido](media/azure-shared-access-policies.png "Directiva de acceso compartido de Azure")
@@ -90,15 +90,8 @@ Cloud App Security se conecta a Azure mediante centros de eventos. En esta secci
    > Si ha creado un grupo de consumidores diferente, use el nombre de ese **grupo de consumidores**.
   
 6.  Haga clic en **Conectar**.
-8.  Haga clic en **Probar API** para confirmar que la conexión se ha realizado correctamente.  
+     Esta acción probará la conexión y puede tardar unos minutos en completarse. Cuando reciba la notificación de que se ha realizado correctamente, haga clic en **Cerrar**.  
   
-     La prueba puede tardar unos minutos. Cuando reciba la notificación de que se ha realizado correctamente, haga clic en **Cerrar**.  
-  
-
-
-
-
-
 ## <a name="see-also"></a>Consulte también  
 [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)   
 [Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
