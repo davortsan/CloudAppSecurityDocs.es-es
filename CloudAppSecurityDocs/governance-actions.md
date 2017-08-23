@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ed24b4020cd96db0bcb84378110499b289d583da
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: db600c90983cc90ad55b994a22af0ed8bb6f288a
+ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="governing-connected-apps"></a>Control de aplicaciones conectadas
 El gobierno le permite controlar qué hacen los usuarios en tiempo real en varias aplicaciones. Para las aplicaciones conectadas, puede aplicar acciones de gobierno a archivos o actividades.
@@ -85,7 +85,7 @@ Las siguientes acciones de gobierno pueden realizarse para aplicaciones conectad
     > [!NOTE] 
     > Si Azure Active Directory está establecido de modo que se sincronice automáticamente con los usuarios del entorno local de Active Directory, la configuración del entorno local reemplazará la configuración de Azure AD y esta acción de gobierno se revertirá. 
   
-    -   Revocar contraseña: se revoca la contraseña del usuario y se le obliga a establecer una contraseña nueva en su siguiente inicio de sesión.  
+    -   Revocar contraseña: se revoca la contraseña del usuario y se le obliga a establecer una nueva en el siguiente inicio de sesión.  
   
      ![Acciones de gobierno de la directiva de actividad de seguridad de Cloud App Security](./media/activity-policy-ref6.png "Ref6 de directiva de actividad")  
   
@@ -138,7 +138,7 @@ Para obtener información sobre cómo se tratan las acciones de control cuando h
 |Archivos|Archivo|Restaurar de la cuarentena de usuario|Se restaura un usuario que estaba en cuarentena.|Cuadro|
 |Archivos|Archivo|Concederme permisos de lectura|Se concede permisos de lectura para el archivo a sí mismo con el fin de tener acceso al archivo y saber si existe o no una infracción en él.|G Suite|
 |Archivos|Archivo|Permitir que los editores compartan|En Google Drive, los permisos de editor predeterminados de un archivo permiten también compartir ese archivo. Esta acción de gobierno hace lo contrario de “Quitar la capacidad de compartir de los editores” y permite que el editor comparta el archivo.|G Suite|
-|Archivos|Archivo|Proteger|Proteja un archivo con Microsoft Rights Management aplicando una plantilla de la organización.|Office 365|
+|Archivos|Archivo|Proteger|Proteja un archivo con Azure Information Protection aplicando una plantilla de la organización.|Office 365 (SharePoint y OneDrive)|
 |Archivos|Archivo|Revocar mis propios permisos de lectura|Se revocan los permisos de lectura para el archivo de uno mismo. Esto es útil después de haberse concedido permisos manualmente para saber si un archivo tiene o no una infracción.|G Suite|
 |Archivos, Directiva de archivo|Archivo|Transferir la propiedad de los archivos|Se cambia el propietario: en la directiva se elige un propietario específico.|G Suite|
 |Archivos, Directiva de archivo|Archivo|Quitar un colaborador|Se quita un colaborador específico de un archivo.|G Suite, Box, One Drive, SharePoint|

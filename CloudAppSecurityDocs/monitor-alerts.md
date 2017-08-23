@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 8/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b3d0aacdef885ba89638628b6d485ef81c3b26f3
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: b5027699862a6cfe4b8dd8037f26d569b788a412
+ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="alerts"></a>Alertas
 Para ver alertas:
@@ -27,6 +27,11 @@ En el portal de Cloud App Security, haga clic en Alertas.
 
 ![Menú Alertas](./media/alert-menu.png)
 
+Para administrar las alertas, haga clic en una alerta de la tabla y seleccione una de las siguientes opciones:
+- **Resolver alerta**: después de investigar y tomar medidas para mitigarla, haga clic en **Resolver alerta**. Puede escribir un comentario para tener como referencia qué acciones se realizaron, así como decidir **enviar comentarios al equipo de Cloud App Security** relacionados con la alerta. Después de resolver una alerta, ya no volverá a mostrarse en la tabla correspondiente.
+- Resolver alerta y **Marcar como leída**: puede dejar abierta la alerta, pero marcarla como leída.
+- Resolver alerta y **Ajustar directiva**: puede modificar la directiva correspondiente a la alerta.
+- **Descartar**: puede descartar la alerta; dejará de aparecer en la tabla, pero no se mostrará como resuelta. Esta es la opción más utilizada cuando la alerta es benigna o un falso positivo.
 
 Se mostrarán los siguientes tipos de alertas. 
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3ac136b06c0debfc42a1b4d5ece6cd6ce53f57af
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: f3bb5b1618f9bc872f1171f73c2dc529b3679aec
+ms.sourcegitcommit: 9111960557afb30ea2d6c155afd4885a7ca1b278
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="what-is-cloud-app-security"></a>Descripción de Cloud App Security
 
@@ -80,6 +80,9 @@ Cloud App Security utiliza las API proporcionadas por el proveedor de la nube. C
 ### <a name="policy-control"></a>Control de directivas  
 
 Puede utilizar directivas para definir el comportamiento de los usuarios en la nube. Utilice directivas para detectar comportamiento arriesgado, infracciones o actividades y puntos de datos sospechosos en su entorno de la nube. Si es necesario, puede utilizar directivas para integrar los procesos de corrección con el fin de lograr la mitigación total de los riesgos. Varios tipos de directivas se correlacionan con los diferentes tipos de información que puede querer recopilar sobre el entorno de la nube y los tipos de acciones correctoras que quizás quiera realizar.  
+
+## <a name="related-videos"></a>Vídeos relacionados
+- [Joining the security community](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community) (Unirse a la comunidad de seguridad)
 
 ## <a name="see-also"></a>Consulte también  
 
