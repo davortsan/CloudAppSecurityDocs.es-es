@@ -1,6 +1,7 @@
 # Conceptos básicos y exploración
 ## [¿Qué es la CAS?](what-is-cloud-app-security.md)
 ## [Novedades](release-notes.md)
+## [CAS ediciones](editions-cloud-app-security.md)
 # Implementar
 ## [Introducción](getting-started-with-cloud-app-security.md)
 ## [Configuración básica](general-setup.md)
