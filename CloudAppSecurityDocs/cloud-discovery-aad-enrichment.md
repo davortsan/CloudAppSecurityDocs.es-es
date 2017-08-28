@@ -35,7 +35,7 @@ Ahora es posible mejorar los datos de Cloud Discovery con datos de nombre de usu
     
 1. En el engranaje Configuración, seleccione **Configuración de Cloud Discovery**.
      
-2. Para permitir que Cloud App Security use datos de Azure Active Directory para enriquecer los nombres de usuario de forma predeterminada, en la pestaña **Enriquecimiento de usuarios**, seleccione **Enriquezca los identificadores de los usuarios detectados con los nombres de usuario de Azure Active Directory.**.
+2. Para permitir que Cloud App Security use datos de Azure Active Directory para enriquecer los nombres de usuario de forma predeterminada, en la pestaña **Enriquecimiento de usuarios**, seleccione **Enriquezca los identificadores de los usuarios detectados con los nombres de usuario de Azure Active Directory**.
 
 3. Haga clic en **Guardar**.
  
