@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/21/2017
+ms.date: 8/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 038d3c12a63f12d6b0b506de439a91e4d2d027f2
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 00534bda0a515099a486f731e0297b9fd6dec8e3
+ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/27/2017
 ---
 # <a name="policy-templates"></a>Plantillas de directiva
 
@@ -49,7 +49,7 @@ La lista siguiente contiene todas las plantillas de directiva que existen en Clo
 |Detección de amenazas|Actividad administrativa desde una dirección IP no corporativa|Cuando un usuario administrador realiza una actividad administrativa desde una dirección IP que no está incluida en la categoría de intervalo de direcciones IP corporativas, se puede optar por enviar o recibir una alerta. Primero debe configurar las direcciones IP corporativas en la página Configuración y establecer los **intervalos de direcciones IP**.|
 |Detección de amenazas|Detección de anomalías generales|Alerta cuando se detecta una sesión anómala en una de las aplicaciones autorizadas, como viaje imposible, patrón de inicio de sesión o cuenta inactiva.|
 |Detección de amenazas|Inicio de sesión desde una dirección IP de riesgo|Alerta cuando un usuario inicia sesión en las aplicaciones autorizadas desde una dirección IP de riesgo. De forma predeterminada, la categoría de direcciones IP de riesgo contiene direcciones que tienen etiquetas de dirección IP de proxy anónimo, Tor o red de robots (botnet). Puede agregar más direcciones IP a esta categoría en la página de configuración de intervalos de direcciones IP.|
-|Detección de amenazas|Descarga masiva de un solo usuario|Alerta cuando un solo usuario realiza más de 30 descargas en 5 minutos.|
+|Detección de amenazas|Descarga masiva de un solo usuario|Alerta cuando un solo usuario realiza más de 50 descargas en 1 minutos.|
 |Detección de amenazas|Varios intentos de inicio de sesión de usuario erróneos en una aplicación|Alerta cuando un usuario intenta iniciar sesión en una única aplicación y se produce un error más de 10 veces en 5 minutos.|
 |Detección de amenazas|Actividad potencial de ransomware|Alerta cuando un usuario carga en la nube archivos que podrían estar infectados con ransomware.|
 |Detección de amenazas|Inicio de sesión de usuario desde una dirección IP no categorizada|Alerta cuando un usuario inicia sesión desde una dirección IP que no está incluida en una categoría específica de intervalos IP. Puede categorizar direcciones IP. Para ello, vaya a la página de configuración y seleccione los intervalos de direcciones IP.|

@@ -5,6 +5,7 @@
 # Implementar
 ## [Introducción](getting-started-with-cloud-app-security.md)
 ## [Configuración básica](general-setup.md)
+### [Requisitos de red](network-requirements.md)
 ### [Administrar los administradores](manage-admins.md)
 #### [Configuración de administrador](admin-settings.md)
 ### [Configuración de correo](mail-settings.md)
