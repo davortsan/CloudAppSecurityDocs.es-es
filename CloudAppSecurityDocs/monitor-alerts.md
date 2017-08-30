@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b5027699862a6cfe4b8dd8037f26d569b788a412
-ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
+ms.openlocfilehash: 91a1ea2434b90207701a01bd8087b38c1c0f864b
+ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 08/27/2017
 ---
 # <a name="alerts"></a>Alertas
 Para ver alertas:
@@ -27,11 +27,11 @@ En el portal de Cloud App Security, haga clic en Alertas.
 
 ![Menú Alertas](./media/alert-menu.png)
 
-Para administrar las alertas, haga clic en una alerta de la tabla y seleccione una de las siguientes opciones:
-- **Resolver alerta**: después de investigar y tomar medidas para mitigarla, haga clic en **Resolver alerta**. Puede escribir un comentario para tener como referencia qué acciones se realizaron, así como decidir **enviar comentarios al equipo de Cloud App Security** relacionados con la alerta. Después de resolver una alerta, ya no volverá a mostrarse en la tabla correspondiente.
-- Resolver alerta y **Marcar como leída**: puede dejar abierta la alerta, pero marcarla como leída.
-- Resolver alerta y **Ajustar directiva**: puede modificar la directiva correspondiente a la alerta.
-- **Descartar**: puede descartar la alerta; dejará de aparecer en la tabla, pero no se mostrará como resuelta. Esta es la opción más utilizada cuando la alerta es benigna o un falso positivo.
+Tras consultar una alerta, puede **descartarla** si no le resulta relevante. Puede escribir un comentario para explicar por qué motivo ha descartado la alerta. También puede **enviar sus comentarios al equipo de Cloud App Security**. Estos comentarios los revisa nuestro equipo de investigación de seguridad para seguir mejorando el mecanismo de alertas. 
+
+Si investiga la alerta y mitiga el riesgo, podrá **resolverla**. La alerta ya no se mostrará en la tabla de alertas. Si empieza a investigar un problema y quiere asegurarse de que no se olvide de continuar trabajando en él, puede **marcarlo como no leído**. También puede **ajustar la directiva** que coincida con la alerta para mejorar las coincidencias de próximas alertas. Al resolver una alerta, también puede escribir un comentario y **enviarlo al equipo de Cloud App Security**.
+
+
 
 Se mostrarán los siguientes tipos de alertas. 
 

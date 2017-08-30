@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/11/2017
+ms.date: 8/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: db600c90983cc90ad55b994a22af0ed8bb6f288a
-ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
+ms.openlocfilehash: c0c3487980cdd5c1a3dad08e280de43ea714fadd
+ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 08/27/2017
 ---
 # <a name="governing-connected-apps"></a>Control de aplicaciones conectadas
 El gobierno le permite controlar qué hacen los usuarios en tiempo real en varias aplicaciones. Para las aplicaciones conectadas, puede aplicar acciones de gobierno a archivos o actividades.
@@ -33,7 +33,7 @@ Las siguientes acciones de gobierno pueden realizarse para aplicaciones conectad
   
     -   Notificación de correo electrónico de usuario: es posible personalizar los mensajes de correo electrónico y enviarlos a todos los propietarios de archivos infractores.  
   
-    -   Administrador de CC: según la integración de directorios del usuario, también se pueden enviar notificaciones de correo electrónico al administrador de la persona que haya infringido una directiva.  
+    -   Administrador de CC: según la integración de directorios del usuario, también se pueden enviar notificaciones de correo electrónico al administrador de la persona que haya infringido una directiva. (Solo Salesforce)
   
 -   Enviar una notificación a usuarios concretos: lista específica de direcciones de correo electrónico que recibirán las notificaciones.  
   
@@ -73,7 +73,7 @@ Las siguientes acciones de gobierno pueden realizarse para aplicaciones conectad
   
     -   Notificación de correo electrónico de usuario: es posible personalizar los mensajes de correo electrónico y enviarlos a todos los propietarios de archivos infractores.  
   
-    -   Administrador de CC: según la integración de directorios del usuario, también se pueden enviar notificaciones de correo electrónico al administrador de la persona que haya infringido una directiva.  
+    -   Administrador de CC: según la integración de directorios del usuario, también se pueden enviar notificaciones de correo electrónico al administrador de la persona que haya infringido una directiva. (Solo Salesforce)
   
     -   Enviar una notificación a usuarios adicionales: lista específica de direcciones de correo electrónico que recibirán las notificaciones.  
   
@@ -128,8 +128,8 @@ Para obtener información sobre cómo se tratan las acciones de control cuando h
 |Detectar > Aplicaciones detectadas/Direcciones IP/Usuarios|Cloud Discovery|Exportar datos de detección|Se crea un archivo CSV a partir de los datos de detección.|Detección|
 |Directiva de archivo|Archivo|Enviar a la papelera|Coloca el archivo en la papelera del usuario.|One Drive, SharePoint|
 |Directiva de archivo|Archivo|Enviar una notificación al último editor del archivo|Se envía un correo para informar a la última persona que editó el archivo de que este infringe una directiva.|G Suite, Box|
-|Directiva de archivo|Archivo|Enviar una notificación al propietario del archivo|Se envía un correo al propietario del archivo (con la posibilidad de agregar en copia a su administrador) cuando un archivo infringe una directiva. En Dropbox, si no hay ningún propietario asociado a un archivo, la notificación se enviará al usuario específico que establezca.|Todas las aplicaciones|
-|Directiva de archivo, Directiva de actividad|Archivo, Actividad|CC del administrador del propietario o del usuario|Cuando el propietario del archivo recibe una notificación por correo en la que se le informa de que su archivo infringe una directiva, opcionalmente se notifica también al administrador del propietario o usuario del archivo.|Todas las aplicaciones excepto ServiceNow|
+|Directiva de archivo|Archivo|Enviar una notificación al propietario del archivo|Envía un correo electrónico al propietario del archivo cuando se infringe una directiva. En Dropbox, si no hay ningún propietario asociado a un archivo, la notificación se enviará al usuario específico que establezca.|Todas las aplicaciones|
+|Directiva de archivo, Directiva de actividad|Archivo, Actividad|CC del administrador del propietario o del usuario|Cuando el propietario del archivo recibe una notificación por correo en la que se le informa de que su archivo infringe una directiva, opcionalmente se notifica también al administrador del propietario o usuario del archivo.|Salesforce|
 |Directiva de archivo, Directiva de actividad|Archivo, Actividad|Enviar una notificación a usuarios concretos|Se envía un correo para informar a determinados usuarios de que un archivo infringe una directiva.|Todas las aplicaciones|
 |Directiva de archivo y Directiva de actividad|Archivo, Actividad|Enviar notificación al usuario|Se envía un correo a los usuarios para informarles de que algo que han hecho o un archivo que poseen infringe una directiva. Se puede agregar una notificación personalizada que indique en qué consistió la infracción.|Todos|
 |Directiva de archivo y archivos|Archivo|Quitar la capacidad de compartir de los editores|En Google Drive, los permisos de editor predeterminados de un archivo permiten también compartir ese archivo. Esta acción de gobierno restringe esta opción y limita el uso compartido del archivo al propietario.|G Suite|
