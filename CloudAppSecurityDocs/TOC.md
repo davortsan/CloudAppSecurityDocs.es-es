@@ -33,6 +33,7 @@
 ## [Trabajar con el panel](daily-activities-to-protect-your-cloud-environment.md)
 ## Escenarios
 ### [Proteger la organización frente a ransomware](use-case-ransomware.md)
+### [Proteger los archivos con la cuarentena de administrador](use-case-admin-quarantine.md)
 ## Detectar
 ### [Trabajar con aplicaciones detectadas](discovered-apps.md)
 ### [Trabajar con la puntuación de riesgo](risk-score.md)
