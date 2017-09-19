@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2017
+ms.date: 9/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 291a9bf9a0c45a7ef2667b5a4266ebb582d3a23b
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: a4d882791554344926b99320bf6d7fd4678af0b5
+ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="api-tokens"></a>Tokens de API
     
@@ -30,7 +30,7 @@ La API de Cloud App Security proporciona acceso mediante programación a Cloud A
 
 Para ver la documentación completa de la API, en el portal de Cloud App Security, vaya a Ayuda > **Documentación de la API**.
 
-Para tener acceso a la API, tendrá que crear un token de API y usarlo en el software para conectar con la API de Cloud App Security.
+Si quiere acceder a la API, deberá crear un token de API y usarlo en el software para conectar con la API de Cloud App Security.
 
 La pestaña de tokens de API ayuda a administrar todos los tokens de API del inquilino. 
 
@@ -49,7 +49,11 @@ La pestaña de tokens de API ayuda a administrar todos los tokens de API del inq
   - Los tokens generados son los que no se han usado nunca. 
   - Los tokens activos son los que se han generado y usado durante los últimos 7 días. 
   - Los tokens inactivos se han usado, pero no ha habido ninguna actividad durante los últimos 7 días.
+5. Después de generar un nuevo token, se le proporcionará una nueva dirección URL para que pueda acceder al portal de Cloud App Security. 
 
+ ![Token de la API de Cloud App Security](./media/generate-api-token.png)
+
+La dirección URL del portal genérico continuará funcionando, pero será notablemente más lenta que la dirección URL personalizada que reciba junto a su token. Si alguna vez olvida la dirección URL, puede consultarla en el icono de interrogante (**?**) del menú seleccionando **Acerca de**.
 
 ## <a name="api-token-management"></a>Administración de tokens de API
 
@@ -63,6 +67,14 @@ Después de que se haya revocado un token, se quitará de la tabla y el software
 
 > [!NOTE]
 > Los conectores SIEM y los recopiladores de registros también usan tokens de API. Estos tokens deben administrarse desde los recopiladores de registros y las secciones de los agentes SIEM y no aparecerán en esta tabla. 
+
+
+## <a name="view-your-data-center"></a>Consultar el centro de datos
+
+Para consultar con qué centro de datos tiene conexión en el portal de Cloud App Security, haga clic en el icono de interrogante (**?**) en la barra de menú y seleccione **Acerca de**. 
+
+En la pantalla de versión de Cloud App Security, podrá ver el centro de datos.
+
 
 ## <a name="see-also"></a>Consulte también  
 [Solución de problemas de integración de SIEM](troubleshooting-siem.md)   

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/27/2017
+ms.date: 9/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,52 +13,64 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dac230e191c7c2d8159a2f373e6ef939fdd841a4
-ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
+ms.openlocfilehash: 82bdda2ab26fa1c954edb5186eeb37d909d65e64
+ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="network-requirements"></a>Requisitos de red
 
-En este tema se incluye una lista de los puertos y las direcciones IP que debe permitir e incluir en la lista de admitidos para trabajar con Cloud App Security. 
+En este tema se incluye una lista de los puertos y las direcciones IP que debe permitir e incluir en la lista blanca para trabajar con Cloud App Security. 
+
+Para obtener información sobre cómo consultar con qué centros de datos de Cloud App Security tiene conexión, consulte [Tokens de API](api-tokens.md).
 
 
-## <a name="portal-access"></a>Acceso al portal
 
-Para acceder al portal de Cloud App Security, debe agregar las direcciones IP siguientes a la lista de admitidas del firewall:  
-  
-104.42.231.28  
+## <a name="portal-access-siem-agent-authentication-gateway-and-log-collector"></a>Acceso al portal, agente SIEM, puerta de enlace de autenticación y recopilador de registros
+
+Para acceder al portal y a la puerta de enlace de autenticación y permitir que Cloud App Security se conecte a su SIEM, así como para ejecutar el recopilador de registros de Cloud App Security, debe agregar el **puerto de salida 443** para las direcciones IP siguientes a la lista blanca de su firewall:  
 
 
-## <a name="app-connector-access"></a>Acceso al conector de la aplicación
+> [!div class="mx-tableFixed"]
+|Centro de datos|Direcciones IP|  
+|----|----|
+|Estados Unidos 1|13.91.91.243<br></br>52.183.75.62|
+|Unión Europea 1|52.174.56.180<br></br>13.80.125.22|
 
-Si quiere que Cloud App Security pueda acceder a ciertas aplicaciones de terceros, es posible que deba agregar las direcciones IP siguientes a la lista de admitidas para que Cloud App Security recopile registros y proporcione acceso a su consola:  
-  
-104.209.35.177  
-13.91.98.185 40.118.211.172 13.93.216.68 13.91.61.249 13.93.233.42 13.64.196.27 13.64.198.97 13.64.199.41 13.64.198.19
+## <a name="app-connector-access-and-external-dlp-integration"></a>Acceso del conector de la aplicación e integración de DLP externa
+
+Para conectar aplicaciones de terceros e integrar soluciones de DLP externas, habilite la conexión de Cloud App Security a estas direcciones IP:
+
+
+> [!div class="mx-tableFixed"]
+|Centro de datos|Direcciones IP|  
+|----|----|
+|Estados Unidos 1|104.209.35.177<br></br>13.91.98.185<br></br>40.118.211.172<br></br>13.93.216.68<br></br>13.91.61.249<br></br>13.93.233.42<br></br>13.64.196.27<br></br>13.64.198.97<br></br>13.64.199.41<br></br>13.64.198.19|
+|Unión Europea 1|13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+
+
+### <a name="app-connector"></a>Conector de la aplicación
+Si quiere que Cloud App Security pueda acceder a ciertas aplicaciones de terceros, es posible que se usen las direcciones IP siguientes para que Cloud App Security recopile registros y proporcione acceso a su consola. 
 
 > [!NOTE]
 >Puede que vea estas direcciones IP en los registros de actividad del proveedor, ya que Cloud App Security realiza acciones de gobierno y exámenes desde ellas. 
   
 
-## <a name="siem-agent-and-log-collector"></a>Agente SIEM y recopilador de registros
+### <a name="dlp-integration"></a>Integración de DLP
 
-Para permitir que Cloud App Security pueda conectarse a su SIEM y que su recopilador de registros pueda ejecutarse, debe abrir los elementos siguientes:
+Para que Cloud App Security envíe datos a través de Stunnel al servidor ICAP, abra el firewall de red perimetral a estas direcciones IP con un número de puerto de origen dinámico. 
 
-- Puerto de salida 443 para 104.42.231.28
-
-## <a name="external-dlp-integration"></a>Integración de DLP externa
-
-Para que Cloud App Security envíe datos a través de Stunnel al servidor ICAP, abra el firewall de red perimetral a las direcciones IP externas que usa Cloud App Security con un número de puerto de origen dinámico. 
-
-1.  Direcciones de origen: estas direcciones deben incluirse en la lista de admitidas como se detalla anteriormente para las aplicaciones de conector de la API de terceros
+1.  Direcciones de origen: estas direcciones deben incluirse en la lista blanca como se detalla anteriormente para las aplicaciones de conector de la API de terceros
 2.  Puerto TCP de origen: dinámico
 3.  Direcciones de destino: una o dos direcciones IP del servidor Stunnel conectado al servidor ICAP externo
 4.  Puerto TCP de destino: según se defina en su red
 
 > [!NOTE] 
 > El número de puerto de Stunnel está establecido de forma predeterminada en 11344. Si es necesario, puede cambiarlo y usar otro, pero no olvide anotar el número de puerto nuevo.
+
+
+    
 
 
 
