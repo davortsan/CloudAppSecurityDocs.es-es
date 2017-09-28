@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 9/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d3fd3426cc32250a2c4104292ac418b38e1d4581
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: f0b2463a034a99a8f0e4a605efea65f596afc1d9
+ms.sourcegitcommit: 1c4e2d6a8488ef01bea52f5c600f606c84724857
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 09/19/2017
 ---
-## <a name="cloud-discovery-data-anonymization"></a>Anonimización de datos de Cloud Discovery
+# <a name="cloud-discovery-data-anonymization"></a>Anonimización de datos de Cloud Discovery
 
 La anonimización de datos de Cloud Discovery le permite proteger la privacidad del usuario. Una vez que el registro de datos se ha cargado en el portal de Cloud App Security, se depura el registro y se reemplaza toda la información de nombres de usuario con nombres de usuario cifrados. De este modo, todas las actividades de la nube se mantienen anónimas. Cuando sea necesario, para una investigación de seguridad específica (por ejemplo, debido a una infracción de seguridad o una actividad sospechosa del usuario), los administradores pueden resolver el nombre de usuario real. Si un administrador tiene un motivo para sospechar de un usuario específico, puede buscar el nombre de usuario cifrado de un nombre de usuario conocido y, después, comenzar la investigación usando el nombre de usuario cifrado. En el **Registro de gobierno** del portal se audita cada conversión de nombre de usuario.
 
