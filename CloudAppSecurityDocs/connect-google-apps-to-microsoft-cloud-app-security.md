@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/4/2017
+ms.date: 9/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: af60110859b027a9e9d58443f202752d6044d1a2
-ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
+ms.openlocfilehash: 1b33f8bcb27cc303463ac83b46098bf82d66d25c
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Conectar G Suite con Microsoft Cloud App Security
 En esta sección se proporcionan instrucciones para conectar Cloud App Security con una cuenta de G Suite existente mediante las API del conector.
@@ -71,19 +71,19 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
   
     -   Haga clic en **Guardar**.  
   
-     ![nombre del producto de Google](./media/google6.png "google6")  
+     ![Nombre del producto de Google](./media/google6.png "google6")  
   
 9. En la pantalla **API Credentials** (Credenciales de API), haga clic en la flecha situada junto a **Crear credenciales**.  
   
-     ![credenciales de Google](./media/google7.png "google7")  
+     ![Credenciales de Google](./media/google7.png "google7")  
 
 10. Seleccione **Service account key** (Clave de la cuenta del servicio).
 
-     ![clave de la cuenta del servicio de Google](./media/google8.png "google8")  
+     ![Clave de cuenta de servicio de Google](./media/google8.png "google8")  
   
-11. En **Create service account key** (Crear clave de la cuenta del servicio), seleccione **New service account** (Nueva cuenta de servicio) y escriba cualquier nombre, por ejemplo, **Cuenta de servicio 1**. En **Rol** seleccione **Proyecto** y **Editor**, y en **Tipo de clave** seleccione **P12** y haga clic en **Crear**. Active la casilla **Enable G Suite Domain-wide Delegation** (Habilitar delegación de todo el dominio de G Suite) y haga clic en **Guardar**.  
+11. En **Crear clave de cuenta de servicio**, elija **Nueva cuenta de servicio** y escriba cualquier nombre (por ejemplo, **Cuenta de servicio 1**). En **Función**, elija **Project** (Proyecto) y después **Editor**. En **Tipo de clave**, elija **P12** y haga clic en **Crear**. Active la casilla **Enable G Suite Domain-wide Delegation** (Habilitar delegación de todo el dominio de G Suite) y haga clic en **Guardar**.  
   
-     ![crear clave de la cuenta del servicio de Google](./media/google9.png "google9")  
+     ![Crear clave de la cuenta del servicio de Google en Google](./media/google9.png "google9")  
   
 12.  Se guardará un archivo de certificado P12 en el equipo.  
         
@@ -94,16 +94,16 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
   
      ![edición de Google](./media/google11.png "edición de Google")  
   
-15. Copie el **identificador de la cuenta del servicio** asignado a su servicio, ya que lo necesitará más adelante.  
+15. Copie el **identificador de la cuenta de servicio** asignado a su servicio, ya que lo necesitará más adelante.  
   
      ![identificador de la cuenta del servicio de Google](./media/google13.png "google13")  
   
-16. Abra el menú de Google (para ello, haga clic en las tres líneas horizontales situadas junto a Google Cloud Platform en la barra de herramientas) y seleccione **API manager** (Administrador de API) seguido de **Panel**.  
+16. Abra el menú de Google; para ello, haga clic en las tres líneas horizontales junto a Google Cloud Platform en la barra de título. Seleccione el **administrador de API** seguido del **panel**.  
     
 17. Desplácese a la lista de API habilitadas y haga clic en el engranaje de configuración situado junto a **API de Google Drive**.   
-       ![Selección de Google Drive](./media/google14.png "google14")  
+       ![Seleccionar Google Drive](./media/google14.png "google14")  
 
-18. Proporcione la información siguiente:
+18. Proporcione la siguiente información:
 
     -   **Nombre de la aplicación**: Microsoft Cloud App Security.  
   
@@ -111,14 +111,14 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
   
     -   Google requiere que se cargue al menos un icono de aplicación. Vaya a [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip) para descargar un archivo ZIP que contiene los iconos de Cloud App Security. Después, en **Icono de la aplicación**, arrastre y coloque las imágenes de 128x128 y 32x32.  
   
-    -   En **Drive Integration** (Integración de unidades), escriba lo siguiente en **Abrir dirección URL**:  
+    -   En **Drive Integration** (Integración de unidades), escriba la siguiente dirección URL en **Abrir dirección URL:**  
   
          https://portal.cloudappsecurity.com/#/services/11770?tab=files  
      
-         ![configuración de Google Drive](./media/google15.png "googledriveconfig")  
+         ![Configuración de Google Drive](./media/google15.png "Configuración de Google Drive")  
   
 19. En la lista **Enabled APIs** (API habilitadas), haga clic en el engranaje de configuración situado junto a **Google Apps Marketplace SDK**. 
-         ![configuración de Marketplace SDK de Google](./media/google16.png "googledriveconfig")  
+         ![Configuración de Google Marketplace SDK](./media/google16.png "Configuración de Google Drive")  
 
        >[!NOTE]
        > Si el engranaje aparece deshabilitado, puede hacer clic en **Google Apps Marketplace SDK** en su lugar. 
@@ -144,7 +144,7 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
   
         -   **URL de la política de privacidad**: http://go.microsoft.com/fwlink/?LinkId=512132  
   
-    -   En **OAuth 2.0 scopes** (Ámbitos de OAuth 2.0), copie y pegue lo siguiente. Debe copiarlos de uno en uno y presionar ENTRAR después de cada uno:  
+    -   En **OAuth 2.0 scopes** (Ámbitos de OAuth 2.0), copie y pegue las siguientes direcciones URL (cópielas una a una y presione ENTRAR después de cada una):  
   
            https://www.googleapis.com/auth/admin.reports.audit.readonly  
   
@@ -212,7 +212,7 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
   
     2.  **Número de proyecto (identificador de la aplicación)** que ha copiado en el paso 21.  
   
-    3.  Cargue el archivo P12 de **certificado** que ha guardado en el paso 12. Para hacerlo, necesitará la contraseña que ha guardado.  
+    3.  Cargue el archivo P12 de **certificado** que ha guardado en el paso 12. Para hacerlo, necesita la contraseña que ha guardado.  
   
     4.  Escriba un **correo electrónico de la cuenta de administrador** de su administrador de G Suite.  
   
@@ -231,7 +231,7 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
   
 Después de conectar G Suite, recibirá eventos de 60 días anteriores a la conexión.
   
-Después de conectar G Suite, Cloud App Security realiza un examen completo. En función del número de archivos y los usuarios que tenga, el examen podría tardar en completarse. Para habilitar el examen prácticamente en tiempo real, los archivos en los que se detecta actividad se mueven al principio de la cola de examen. Por ejemplo, si un archivo se está editando, actualizando o compartiendo, se analiza de inmediato y no espera a que lo alcance el proceso de examen normal. Esto no se aplica a los archivos que no se modifican de forma intrínseca, por ejemplo, los archivos que se ven, se consultan en vista previa, se imprimen o se exportan.
+Después de conectar G Suite, Cloud App Security realiza un examen completo. En función del número de archivos y los usuarios que tenga, el examen podría tardar en completarse. Para habilitar el análisis casi en tiempo real, los archivos en los que se detecta actividad se mueven al principio de la cola de análisis. Por ejemplo, una archivo editado, actualizado o compartido se analiza inmediatamente. Esto no se aplica a los archivos que no se modifican de forma inherente. Por ejemplo, los archivos que se visualizan, previsualizan, imprimen o exportan se analizan durante un análisis normal.
   
   
 ## <a name="see-also"></a>Consulte también  

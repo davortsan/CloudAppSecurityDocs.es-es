@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2017
+ms.date: 9/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ad1b3e4c94458a35aa3f4230fe48d29e5f2f8461
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: c909125b57f2ee341f6621f33b43c522cfc6d32c
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="cloud-discovery-policies"></a>Directivas de Cloud Discovery
     
@@ -48,7 +48,7 @@ Si, por ejemplo, está interesado en detectar las aplicaciones de hospedaje de r
   
 Establezca los filtros de directiva para detectar los servicios que se encuentren en la categoría **Servicios de hospedaje** y que tengan una puntuación baja, lo que indica que entrañan riesgos.   
    
-En la parte inferior, establezca los umbrales que deben activar una alerta para una determinada aplicación detectada: solo si hay más de 100 usuarios en el entorno que han usado la aplicación y solo si han descargado una determinada cantidad de datos desde el servicio.   
+En la parte inferior, establezca los umbrales que deben activar una alerta para una determinada aplicación detectada: solo si hay más de cien usuarios en el entorno que han usado la aplicación y solo si han descargado una determinada cantidad de datos desde el servicio.   
 También puede establecer el límite de alertas diarias que quiere recibir.  
   
 ![Ejemplo de directiva de detección de aplicaciones](./media/app-discovery-policy-example.png "Ejemplo de directiva de detección de aplicaciones")  

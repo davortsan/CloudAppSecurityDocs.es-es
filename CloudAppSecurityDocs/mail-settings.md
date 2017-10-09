@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/23/2017
+ms.date: 9/27/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,16 @@ ms.technology:
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ce24e4c25ab4d8b85e4ddb6d6d574dd29b8c2003
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: b48266e4cddbb61c13df5f361d50bc4931e77258
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 09/28/2017
 ---
 ##  <a name="mailsettings"></a> Establecimiento de preferencias de notificación de correo electrónico  
 En la barra de menús, haga clic en el icono de configuración ![icono de configuración](./media/settings-icon.png "icono de configuración") y seleccione **Configuración de correo** para establecer los parámetros de las notificaciones de correo enviadas desde Cloud App Security a los administradores que solicitan alertas, así como de las notificaciones enviadas a los usuarios finales sobre infracciones en las que puedan haber participado.  
+
+Para obtener información sobre la dirección IP del servidor de correo electrónico de Cloud App Security que debe incluir en la lista blanca del servicio de correo electrónico no deseado, consulte los [requisitos de red](network-requirements.md). 
   
 ![menú de configuración de correo](./media/mail-setting-menu.png "menú de configuración de correo")  
   
