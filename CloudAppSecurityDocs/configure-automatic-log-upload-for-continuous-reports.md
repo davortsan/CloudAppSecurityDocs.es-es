@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 9/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f6475c66a8786d3d9f39c70d460453aeed352feb
-ms.sourcegitcommit: 13148ac82e496e8d4e0d10851e5d6e4f231229e4
+ms.openlocfilehash: bf434c9f9ed1cc4c2d0edd375e0f51b45fdf6571
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>Configuración de la carga de registros automática para informes continuos en una aplicación virtual
 
@@ -33,7 +33,9 @@ ms.lasthandoff: 09/24/2017
     - Permitir que el recopilador de registros reciba tráfico entrante de FTP y Syslog
     - Permitir que el recopilador de registros inicie tráfico saliente al portal (por ejemplo, contoso.cloudappsecurity.com) en el puerto 443
 
-  
+> [!NOTE]
+> Si el firewall requiere una lista de acceso de dirección IP estática y no admite la creación de listas blancas basada en direcciones URL, permita que el recopilador de registros enrute el tráfico saliente hacia los [intervalos IP del centro de datos de Microsoft Azure a través del puerto 443](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
+
 ## <a name="log-collector-performance"></a>Rendimiento del recopilador de registros
 El recopilador de registros puede manejar correctamente una capacidad de registros de hasta 50 GB por hora.
 Los principales cuellos de botella del proceso de recopilación de registros son:
@@ -54,7 +56,7 @@ El recopilador de registros tiene un mecanismo de seguridad integrado que superv
   
     b.  **Ponga nombre** al servidor proxy o firewall.  
   
-    c.  Seleccione el dispositivo en la lista **Origen**. Si selecciona **Formato de registro personalizado** para trabajar con un dispositivo de red que no aparezca específicamente en la lista, consulte el artículo sobre cómo [trabajar con el analizador de registro personalizado](custom-log-parser.md) para ver las instrucciones de configuración.
+    c.  Seleccione el dispositivo en la lista **Origen**. Si selecciona **Formato de los registros personalizados** para trabajar con un dispositivo de red que no aparezca en la lista, consulte el artículo sobre cómo [trabajar con el analizador de registro personalizado](custom-log-parser.md) para ver las instrucciones de configuración.
   
     d.  Compare el registro con el ejemplo del formato de registro esperado. Si el formato del archivo de registro no coincide con este ejemplo, debe agregar el origen de datos como **Otro**.  
   
@@ -73,8 +75,8 @@ El recopilador de registros tiene un mecanismo de seguridad integrado que superv
   
   > [!NOTE] 
   > - Un único recopilador de registros puede administrar varios orígenes de datos.
-  > - Copie el contenido de la pantalla, ya que necesitará la información al configurar el recopilador de registros para comunicarse con Cloud App Security. Si ha seleccionado Syslog, esta información incluirá información sobre el puerto en el que escucha el agente de escucha de Syslog.
-4.  **Descargue** una nueva máquina virtual del recopilador de registros. Para ello, haga clic en Hyper-V o VMware y descomprima el archivo con la contraseña que ha recibido en el portal.  
+  > - Copie el contenido de la pantalla, ya que lo usará al configurar el recopilador de registros para comunicarse con Cloud App Security. Si ha seleccionado Syslog, esta información incluye los datos sobre el puerto en el que escucha el agente de escucha de Syslog.
+4.  **Descargue** una nueva máquina virtual del recopilador de registros; para ello, haga clic en Hyper-V o VMWare. A continuación, descomprima el archivo con la contraseña que ha recibido en el portal.  
   
 ### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>Paso 2: Implementación local de la máquina virtual y la configuración de red   
 
@@ -84,7 +86,7 @@ El recopilador de registros tiene un mecanismo de seguridad integrado que superv
 1.  Abra el Administrador de Hyper-V.  
   
 2.  Seleccione **Nuevo** y luego **Máquina virtual** y haga clic en **Siguiente**.  
- ![detección de máquina virtual de hyper-v](./media/discovery-hyperv-virtual-machine.png "detección de máquina virtual de hyper-v")  
+ ![detección de máquina virtual de Hyper-V](./media/discovery-hyperv-virtual-machine.png "detección de máquina virtual de Hyper-V")  
   
 3.  Proporcione un **Nombre** para la nueva máquina virtual, por ejemplo, CloudAppSecurityLogCollector01. Luego haga clic en **Siguiente**.  
   
@@ -96,14 +98,14 @@ El recopilador de registros tiene un mecanismo de seguridad integrado que superv
   
 7.  Si está disponible, seleccione la red **Conexión** y haga clic en **Siguiente**.  
   
-8.  Seleccione **Usar un disco duro virtual existente** y luego el archivo .**vhd** incluido en el archivo ZIP que ha descargado.  
+8.  Seleccione **Usar un disco duro virtual existente** y luego el archivo **.vhd** incluido en el archivo ZIP que ha descargado.  
   
 9.  Haga clic en **Siguiente** y, después, en **Finalizar**.  
-    La máquina se agregará al entorno de HyperV.  
+    La máquina se agrega al entorno de Hyper-V.  
   
 9. Haga clic en la máquina en la tabla **Máquinas virtuales** y luego en **Iniciar**.   
   
-10. Conéctese a la máquina virtual del recopilador de registros para ver si se le ha asignado una dirección DHCP. Para ello, haga clic en la máquina virtual y seleccione **Conectar**. Debería ver el mensaje de inicio de sesión. Si ve una dirección IP, puede conectarse a la máquina virtual mediante una herramienta SSH o terminal.  Si no ve una dirección IP, inicie sesión mediante las herramientas de conexión de Hyper-V o VMware con las credenciales que copió al crear el recopilador de registros más arriba. Puede cambiar la contraseña y configurar la máquina virtual con la utilidad de configuración de red mediante la ejecución del comando siguiente:
+10. Conéctese a la máquina virtual del recopilador de registros para ver si se le ha asignado una dirección DHCP. Para ello, haga clic en la máquina virtual y seleccione **Conectar**. Debería ver el mensaje de inicio de sesión. Si ve una dirección IP, puede conectarse a la máquina virtual mediante una herramienta SSH o terminal.  Si no ve una dirección IP, inicie sesión mediante las herramientas de conexión de Hyper-V o VMware con las credenciales que copió al crear el recopilador de registros anteriormente. Puede cambiar la contraseña y configurar la máquina virtual con la utilidad de configuración de red mediante la ejecución del comando siguiente:
 ```
 sudo network_config
 ```
@@ -114,11 +116,11 @@ sudo network_config
 En este punto, el recopilador de registros debería estar conectado a la red y ser capaz de acceder al portal de Cloud App Security.  
 
 ### <a name="step-3--on-premises-configuration-of-the-log-collection"></a>Paso 3: Configuración local de la recopilación de registros 
-Para iniciar sesión por primera vez en el recopilador de registros e importar la configuración del recopilador de registros desde el portal, debe hacer lo siguiente. 
+Para iniciar sesión por primera vez en el recopilador de registros e importar la configuración de dicho recopilador desde el portal, debe hacer lo siguiente. 
 
-1.  Inicie sesión en el recopilador de registros a través de SSH con las credenciales de administrador interactivas proporcionadas en el portal. (Si es la primera vez que inicia sesión en la consola, deberá cambiar la contraseña y volver a iniciar sesión después de cambiar la contraseña. Si está usando una sesión de terminal, podría tener que reiniciar la sesión. )
+1.  Inicie sesión en el recopilador de registros a través de SSH con las credenciales de administrador interactivas proporcionadas en el portal. (Si es la primera vez que inicia sesión en la consola, deberá cambiar la contraseña y volver a iniciar sesión después de cambiarla. Si está usando una sesión de terminal, podría tener que reiniciar la sesión ).
 2.  Ejecute la utilidad de configuración del recopilador con el token de acceso que se le proporcionó al crear el recopilador de registros.```sudo collector_config <access token> ```
-3. Escriba el dominio de la consola, por ejemplo: ```contoso.portal.cloudappsecurity.com``` Está disponible en la dirección URL que aparece después de iniciar sesión en el portal de Cloud App Security. 
+3. Escriba el dominio de la consola, por ejemplo: ```contoso.portal.cloudappsecurity.com```. Está disponible en la dirección URL que aparece después de iniciar sesión en el portal de Cloud App Security. 
 
 4. Escriba el nombre del recopilador de registros que quiere configurar, por ejemplo: **CloudAppSecurityLogCollector01** o **NewYork** en la imagen anterior.
 
@@ -157,6 +159,9 @@ Después de comprobar que los registros se cargan en Cloud App Security y que se
 1. En el portal de Cloud App Security, en el engranaje de configuración, seleccione **Cloud Discovery settings** (Configuración de Cloud Discovery) y **Administrar informes continuos**. 
 2. Haga clic en el botón **Crear informe** y rellene los campos.
 3. En **Filtros**, puede filtrar los datos por origen de datos, por [grupo de usuarios importados](user-groups.md) o por [etiquetas e intervalos de direcciones IP](ip-tags.md). 
+
+> [!NOTE]
+> Todos los informes personalizados se limitan a un máximo de 1 GB de datos sin comprimir. Si hay más de 1 GB de datos, se exportará el primer GB de datos en el informe.
 
 ![Informe continuo personalizado](./media/custom-continuous-report.png)
 

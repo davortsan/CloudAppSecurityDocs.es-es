@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/16/2017
+ms.date: 9/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5033a66c976775c512c0f5f0d3ebd3d9aee89b5a
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 9e6b47d61464e2a8b7fb95d8a7fdad9873d09d0b
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="accounts"></a>Cuentas
 Cloud App Security le ofrece la posibilidad de supervisar las cuentas de sus aplicaciones conectadas. Después de conectar Cloud App Security a una aplicación mediante el conector de aplicaciones, Cloud App Security lee la información de la cuenta asociada a las aplicaciones conectadas. La página Cuentas permite investigar esas cuentas, los permisos, los grupos a los que pertenecen, sus alias y las aplicaciones que usan. Además, cuando Cloud App Security detecta una cuenta nueva que no se había detectado previamente en ninguna de las aplicaciones conectadas (por ejemplo, en la actividad o el uso compartido de archivos), la cuenta se agrega a la lista de cuentas de la aplicación en cuestión. Esto le permite supervisar la actividad de los usuarios externos que interactúan con sus aplicaciones en la nube.
@@ -25,7 +25,7 @@ Cloud App Security le ofrece la posibilidad de supervisar las cuentas de sus apl
 
 La página **Cuentas** se puede filtrar para que se puedan buscar cuentas concretas y para profundizar en diferentes tipos de cuentas. Por ejemplo, puede filtrar por todas las cuentas externas a las que no se haya accedido desde el año pasado. 
 
-La página **Cuentas** le permite investigar fácilmente las cuentas para detectar problemas como los siguientes:  
+La página **Cuentas** permite investigar fácilmente las cuentas, incluidos los problemas siguientes:  
 
 -   Compruebe si alguna cuenta ha estado inactiva en un servicio determinado durante mucho tiempo, ya que quizás se deba revocar la licencia de ese usuario en ese servicio.  
 -   Puede filtrar por la lista de usuarios con permisos de administrador.  
@@ -42,11 +42,11 @@ La página **Cuentas** le permite investigar fácilmente las cuentas para detect
 ![pantalla cuentas](./media/accounts-page.png)
 
 ## <a name="account-filters"></a>Filtros de cuenta
-A continuación se muestra una lista de los filtros de cuenta que se pueden aplicar. La mayoría de los filtros admiten varios valores, así como NOT, para proporcionarle una herramienta muy eficaz para la creación de directivas.  
+A continuación, se muestra una lista de los filtros de cuenta que se pueden aplicar. La mayoría de los filtros admiten varios valores, así como NOT, para proporcionarle una herramienta eficaz para la creación de directivas.  
   
 - **Nombre de cuenta**: el nombre de cuenta es el alias principal del usuario, pero se admiten otros identificadores de otras cuentas Microsoft (Office 365 y Azure Active Directory), como direcciones proxy, alias o SID, que se consolidan bajo el alias principal.
 
-- **Afiliación**: la afiliación será **Interna** o **Externa**. Para establecer qué usuarios y cuentas son internos, en **Configuración** asegúrese de establecer el **intervalo de direcciones IP** de la organización interna. En caso de que la cuenta tenga permisos de administrador, el icono de la tabla Cuentas, el correspondiente al de ![administrador de cuenta](./media/accounts-admin-icon.png), aparecerá con un lazo rojo.
+- **Afiliación**: la afiliación es **Interna** o **Externa**. Para establecer qué usuarios y cuentas son internos, en **Configuración** asegúrese de establecer el **intervalo de direcciones IP** de la organización interna. En caso de que la cuenta tenga permisos de administrador, el icono de la tabla Cuentas, el correspondiente al de ![administrador de cuenta](./media/accounts-admin-icon.png), aparece con un lazo rojo.
 
 - **Aplicación**: puede filtrar por cualquier aplicación conectada a la API y que esté en uso en las cuentas de la organización.
 

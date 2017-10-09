@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/17/2017
+ms.date: 9/27/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 82bdda2ab26fa1c954edb5186eeb37d909d65e64
-ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
+ms.openlocfilehash: a43adb2dfbfce0164384bd9fccb87d602e9eb7b7
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="network-requirements"></a>Requisitos de red
 
@@ -69,7 +69,13 @@ Para que Cloud App Security envíe datos a través de Stunnel al servidor ICAP, 
 > [!NOTE] 
 > El número de puerto de Stunnel está establecido de forma predeterminada en 11344. Si es necesario, puede cambiarlo y usar otro, pero no olvide anotar el número de puerto nuevo.
 
+## <a name="email-server"></a>Servidor de correo electrónico
 
+La dirección IP de correo electrónico dedicada de Cloud App Security es: 
+
+198.2.134.139 (mail1.cloudappsecurity.com)
+
+Asegúrese de incluir esta dirección IP en la lista blanca del servicio de correo electrónico no deseado para habilitar el envío de notificaciones.
     
 
 

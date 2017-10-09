@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2017
+ms.date: 9/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7e2b6d0f02d49eaa4354f5344d0555fc3f503fb8
-ms.sourcegitcommit: 5688d3916a54deada225f7a83c34a7c501953960
+ms.openlocfilehash: 7497a52a48a7cb3b943da847b85144d0ce78ca84
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/04/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>Conectar Azure con Microsoft Cloud App Security
 
@@ -37,13 +37,13 @@ Cloud App Security se conecta a Azure mediante centros de eventos. En esta secci
  Después de completar las instrucciones, se creará un centro de eventos en el espacio de nombres seleccionado.
  
  > [!NOTE]
- > Si se produce un error después de intentar exportar los registros de actividad, vaya a la hoja **Proveedores de recursos** de Azure y asegúrese de que “microsoft.insights” está registrado.
+ > Si se produce un error después de intentar exportar los registros de actividad, vaya a la hoja **Proveedores de recursos** de Azure en el menú izquierdo y asegúrese de que "microsoft.insights" está registrado.
 
 ### <a name="step-2-get-a-connection-string-to-your-event-hub"></a>Paso 2: obtener una cadena de conexión para el centro de eventos
 
-1.  Vaya la hoja **Event Hubs - Versión preliminar**.
+1.  Vaya a **Event Hubs - Versión preliminar** en el menú izquierdo.
   
-   ![Hoja Centros de eventos](media/azure-event-hubs.png "Centros de eventos de Azure")
+   ![Menú Event Hubs](media/azure-event-hubs.png "Azure Event Hubs")
 
 2.  Seleccione el espacio de nombres de su centro de eventos.
   
@@ -66,11 +66,11 @@ Cloud App Security se conecta a Azure mediante centros de eventos. En esta secci
 
 6.  Escriba un nombre para la nueva directiva y asegúrese de incluir por lo menos la **notificación Escuchar**. Cuando termine, haga clic en **Crear**.
   
-    ![Nueva directiva de Azure](media/azure-new-policy.png "Crear directiva de Azure")
+    ![Nueva directiva de Azure](media/azure-new-policy.png "Nueva directiva de Azure")
 
-7.  En **Configuración** y en **Directivas de acceso compartido**, haga clic en la directiva de acceso que acaba de crear.   
+7.  En **Configuración** y en **Directivas de acceso compartido**, haga clic en la directiva de acceso que ha creado.   
   
-    ![Seleccionar directiva de Azure](media/azure-select-policy.png "Seleccionar directiva de Azure")
+    ![Directiva de Azure](media/azure-select-policy.png "Directiva de Azure")
 
 8. En la ventana de la directiva, copie una de las cadenas de conexión. Para ello, haga clic en el botón situado junto a **Cadena de conexión: clave principal** o **Cadena de conexión: clave secundaria**.
 
@@ -89,8 +89,7 @@ Cloud App Security se conecta a Azure mediante centros de eventos. En esta secci
    >[!NOTE] 
    > Si ha creado un grupo de consumidores diferente, use el nombre de ese **grupo de consumidores**.
   
-6.  Haga clic en **Conectar**.
-     Esta acción probará la conexión y puede tardar unos minutos en completarse. Cuando reciba la notificación de que se ha realizado correctamente, haga clic en **Cerrar**.  
+6.  Haga clic en **Conectar** para conectarse y probar la conexión. Puede tardar unos minutos. Cuando reciba la notificación de que se ha realizado correctamente, haga clic en **Cerrar**.  
 
 
 > [!NOTE]

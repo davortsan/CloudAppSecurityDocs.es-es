@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/19/2017
+ms.date: 9/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d6c1851b1903159d40c0daa256fbb28bdb1268bd
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 5ffc6d748e8a4050a40cfadc81d5b2267eae934d
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="anomaly-detection-policy"></a>Directiva de detección de anomalías
 En este artículo se proporciona información de referencia sobre directivas, se ofrecen explicaciones sobre cada tipo de directiva y se detallan los campos que se pueden configurar para cada directiva.  
 
 Cuando la organización está protegida mediante Cloud App Security, todas las actividades en la nube se puntúan según diversos factores de riesgo predefinidos. Cloud App Security examina todas las sesiones de los usuarios en la nube y toma en consideración los factores de riesgo que se establezcan aquí para emitir alertas cuando ocurra algo diferente de la línea de base de la organización o de la actividad normal del usuario. La página de la directiva de detección de anomalías permite configurar y personalizar qué familias de factores de riesgo se tendrán en cuenta en el proceso de puntuación de riesgo. Las directivas se pueden aplicar de manera diferente a distintos usuarios, ubicaciones y sectores de la organización. Por ejemplo, puede crear una directiva que le avise cuando los miembros del equipo de TI estén activos fuera de la oficina.  
 
-Cloud App Security tiene un período de aprendizaje inicial de 7 días, durante el cual no marca ningún usuario nuevo, actividad, dispositivos o ubicaciones como erróneos. Transcurrido este tiempo, cada sesión se compara con la actividad, los momentos en que los usuarios estaban activos, las direcciones IP, los dispositivos, etc., que se detectaron durante el mes anterior y la puntuación de riesgo de estas actividades. Use el control de sensibilidad de la directiva para establecer la puntuación de riesgo mínima a partir de la cual se desencadenarán las alertas. Se recomienda que, al crear una directiva de anomalías, se use el umbral de sensibilidad predeterminado durante una semana, antes de cambiarlo en función del número de alertas que se hayan recibido. Cloud App Security le enviará más o menos alertas para las diversas puntuaciones de riesgo cuando cambie la sensibilidad.
+Cloud App Security tiene un período de aprendizaje inicial de siete días, durante el cual no marca ningún usuario nuevo, actividad, dispositivos o ubicaciones como erróneos. Transcurrido este tiempo, cada sesión se compara con la actividad, los momentos en que los usuarios estaban activos, las direcciones IP, los dispositivos, etc., que se detectaron durante el mes anterior y la puntuación de riesgo de estas actividades. Use el control de sensibilidad de la directiva para establecer la puntuación de riesgo mínima a partir de la cual se desencadenarán las alertas. Se recomienda que, al crear una directiva de anomalías, se use el umbral de sensibilidad predeterminado durante una semana, antes de cambiarlo en función del número de alertas que se hayan recibido. Cloud App Security le enviará más o menos alertas para las diversas puntuaciones de riesgo cuando cambie la sensibilidad.
   
 ![control de sensibilidad](./media/sensitivity-slider.png)
 
@@ -72,7 +72,7 @@ Para configurar una directiva de detección de anomalías:
   
 7.  En **Sensibilidad**, seleccione la frecuencia con la que quiere recibir alertas.  
   
-     El valor de sensibilidad determinará cuántas alertas semanales se desencadenarán por término medio por cada 1000 usuarios.  
+     El valor de sensibilidad determina cuántas alertas semanales se desencadenan por término medio por cada mil usuarios.  
   
      ![IP de detección de anomalías](./media/anomaly-detection-ips.png "IP de detección de anomalías")  
   
@@ -93,7 +93,7 @@ Cada directiva se compone de las siguientes partes:
 Para obtener una lista de filtros de actividad, consulte [escribir aquí la descripción del vínculo](activity-filters.md).  
   
 ### <a name="risk-factors"></a>Factores de riesgo  
-A continuación se proporciona una lista de los factores de riesgo que se tienen en cuenta a la hora de evaluar el riesgo de la actividad del usuario. Cada factor de riesgo se puede activar o desactivar. En el campo **Aplicar a** de cada factor de riesgo hay dos opciones que determinan si se incluye en la evaluación del riesgo de la actividad del usuario:  
+A continuación, se proporciona una lista de los factores de riesgo que se tienen en cuenta a la hora de evaluar el riesgo de la actividad del usuario. Cada factor de riesgo se puede activar o desactivar. En el campo **Aplicar a** de cada factor de riesgo hay dos opciones que determinan si se incluye en la evaluación del riesgo de la actividad del usuario:  
   
 -   Toda la actividad supervisada: se incluye para toda la actividad de usuario que pasa el filtro de actividad de directiva.  
   

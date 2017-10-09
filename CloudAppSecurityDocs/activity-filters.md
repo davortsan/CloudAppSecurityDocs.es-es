@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 9/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7d74bb482f44e2845d348dd18777d72910b7e18b
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 835ffc05fb84117bf9bbf848d5718de4557e5e15
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="activities"></a>Actividades
 Cloud App Security le ofrece visibilidad en todas las actividades de las aplicaciones conectadas. Después de conectar Cloud App Security con una aplicación mediante el conector de aplicaciones, Cloud App Security examina todas las actividades que se han producido (el período de tiempo de examen retroactivo varía según la aplicación) y después se actualiza constantemente con nuevas actividades. 
@@ -45,9 +45,9 @@ Para profundizar en actividades más específicas, puede ampliar el filtro bási
  ![filtro de registro de actividad avanzada](media/activity-log-filter-advanced.png)
 
 ## <a name="activity-filters"></a>Filtros de actividad
-A continuación se muestra una lista de los filtros de actividad que se pueden aplicar. La mayoría de los filtros admiten varios valores, así como NOT, para proporcionarle una herramienta muy eficaz para la creación de directivas.  
+A continuación, se muestra una lista de los filtros de actividad que se pueden aplicar. La mayoría de los filtros admiten varios valores, así como NOT, para proporcionarle una herramienta eficaz para la creación de directivas.  
   
--   Identificador de actividad: busca solo actividades específicas por su identificador. Este filtro es muy útil cuando se conecta Cloud App Security con SIEM (mediante el agente SIEM) y se quiere investigar más las alertas del portal Cloud App Security.  
+-   Identificador de actividad: busca solo actividades específicas por su identificador. Este filtro es útil cuando se conecta Cloud App Security con SIEM (mediante el agente SIEM) y se quieren investigar más las alertas del portal Cloud App Security.  
   
 -   Objetos de actividad: busca los objetos en los que se ha realizado la actividad. Este filtro se aplica a objetos de archivo, carpeta, usuario o aplicación. 
     - Identificador de objeto de actividad: el identificador del objeto (identificador del archivo, carpeta, usuario o aplicación).
@@ -107,7 +107,7 @@ A continuación se muestra una lista de los filtros de actividad que se pueden a
     -   Dominio del usuario: busca un dominio de usuario específico.
     -   Organización de usuario: unidad organizativa del usuario que ha realizado la actividad, por ejemplo, todas las actividades realizadas por usuarios de marketing o EMEA.  
     -   Grupo de usuarios: grupos de usuarios específicos que puede importar de aplicaciones conectadas, como administradores de Office 365.  
-    -   Nombre de usuario: busca por un nombre de usuario específico. Para ver una lista de los usuarios de un grupo de usuarios específico, en el **Cajón de actividades**, haga clic en el nombre del grupo de usuarios. Esto le llevará a la página de cuentas, en la que se enumeran todos los usuarios del grupo. Desde ahí puede profundizar en los detalles de las cuentas de usuarios específicos del grupo.
+    -   Nombre de usuario: busca por un nombre de usuario específico. Para ver una lista de los usuarios de un grupo de usuarios específico, en el **Cajón de actividades**, haga clic en el nombre del grupo de usuarios. Esto lo remite a la página de cuentas, en la que se enumeran todos los usuarios del grupo. Desde ahí puede profundizar en los detalles de las cuentas de usuarios específicos del grupo.
        -  Los filtros **Grupo de usuarios** y **Nombre de usuario** se pueden filtrar aún más si se usa el filtro **Como** y se selecciona el rol del usuario, que puede ser uno de los siguientes:
             - Objeto de actividad solo: esto significa que el usuario o grupo de usuarios seleccionado no ha realizado la actividad en cuestión, sino que era el objeto de la actividad.
             - Solo actor: esto significa que el usuario o grupo de usuarios ha realizado la actividad.
@@ -159,7 +159,7 @@ Para ver la información de usuario:
 
 #### <a name="ip-address-insights"></a>Información de dirección IP
 
-Debido a que la información de dirección IP es fundamental para casi todas las investigaciones, puede ver información detallada sobre las direcciones IP en el cajón de actividades. Desde una actividad específica, puede hacer clic en la pestaña de dirección IP para ver los datos consolidados sobre la dirección IP, incluido el número de alertas abiertas para la dirección IP específica, un gráfico de tendencias de la actividad reciente y un mapa de ubicación. Esto permite explorar en profundidad; por ejemplo, cuando se investigan alertas de viajes imposibles, puede comprender fácilmente dónde se usó la dirección IP y si participó o no en actividades sospechosas. También puede realizar acciones directamente en el cajón de direcciones IP que le permiten etiquetar una dirección IP como riesgosa, VPN o corporativa para facilitar una investigación futura y la creación de directivas.
+Debido a que la información de dirección IP es fundamental para casi todas las investigaciones, puede ver información detallada sobre las direcciones IP en el cajón de actividades. Desde una actividad específica, puede hacer clic en la pestaña de dirección IP para ver los datos consolidados sobre la dirección IP, incluido el número de alertas abiertas para la dirección IP específica, un gráfico de tendencias de la actividad reciente y un mapa de ubicación. Esto permite explorar en profundidad; por ejemplo, cuando se investigan alertas de viajes imposibles, puede comprender fácilmente dónde se usó la dirección IP y si participó o no en actividades sospechosas. También puede realizar acciones directamente en el cajón de direcciones IP que le permiten etiquetar una dirección IP como de riesgo, VPN o corporativa para facilitar una investigación futura y la creación de directivas.
 
 Para ver la información de dirección IP:
 
