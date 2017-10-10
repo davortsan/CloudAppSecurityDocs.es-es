@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/20/2017
+ms.date: 10/1/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bd396f4e4f7158dfe1500d85431ef0643e6816a3
-ms.sourcegitcommit: 9111960557afb30ea2d6c155afd4885a7ca1b278
+ms.openlocfilehash: f13b48876c91f88143ecb9bb846a654fe9fa34f8
+ms.sourcegitcommit: 55f06262640332e5c02c5fa1c6db74789dbdd552
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="siem-integration"></a>Integración de SIEM
     
@@ -83,6 +83,7 @@ Puede hacer clic en **Editar y obtener vista previa de resultados** para comprob
 > [!NOTE]
 > - El nombre de archivo puede diferir dependiendo de la versión del agente SIEM.
 > - Los parámetros entre corchetes [] son opcionales y solo deben usarse si procede.
+> - Cuando se ejecuta en Windows, se recomienda configurar una tarea programada para ejecutar el comando. Esto asegurará que el servicio siempre esté activo.
 
 Se usan las variables siguientes:
 - NOMBRE_DIRECTORIO es la ruta de acceso al directorio que quiere usar para los registros de depuración del agente local.
