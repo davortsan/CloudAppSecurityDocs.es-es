@@ -274,7 +274,7 @@ Publicado el 22 de enero de 2017
  
 **Mejoras**  
 -   Se ha agregado una nueva acción de gobierno para Office 365 que permite quitar todos los usuarios externos de un archivo. Por ejemplo, esto permite implementar directivas que **quitan recursos compartidos externos de los archivos que tienen una clasificación solo interna**.
--   Se ha mejorado la identificación de los usuarios externos en SharePoint Online. Cuando se filtra el grupo de "usuarios externos", no se muestra la cuenta del sistema app@sharepoint.
+-   Se ha mejorado la identificación de los usuarios externos en SharePoint Online. Cuando se filtra el grupo de "usuarios externos", no se muestra la cuenta del sistema app@sharepoint .
 
 
 
