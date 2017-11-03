@@ -31,10 +31,13 @@
 ### [Conectar Okta](connect-okta-to-microsoft-cloud-app-security.md)
 ### [Conectar ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md)
 ### [Conectar Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
+## [Protección de aplicaciones con proxy](proxy-intro-aad.md)
+### [Implementación del proxy para las aplicaciones de Azure AD](proxy-deployment-aad.md)
 # Use
 ## [Trabajar con el panel](daily-activities-to-protect-your-cloud-environment.md)
 ## Escenarios
 ### [Proteger la organización frente a ransomware](use-case-ransomware.md)
+### [Bloqueo de las descargas de información confidencial](use-case-proxy-block-session-aad.md)
 ### [Proteger los archivos con la cuarentena de administrador](use-case-admin-quarantine.md)
 ## Detectar
 ### [Trabajar con aplicaciones detectadas](discovered-apps.md)
@@ -56,6 +59,7 @@
 #### [Directivas de archivos](data-protection-policies.md)
 ##### [Inspección de contenido](content-inspection.md)
 ##### [Trabajar con el motor de RegEx](working-with-the-regex-engine.md)
+#### [Directivas de sesión](session-policy-aad.md)
 #### [Referencia de plantillas de directiva](policy-template-reference.md)
 ### [Control de aplicaciones conectadas](governance-actions.md)
 ### [Control de aplicaciones detectadas](governance-discovery.md)
