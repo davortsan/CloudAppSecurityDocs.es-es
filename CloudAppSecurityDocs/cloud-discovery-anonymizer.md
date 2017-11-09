@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e6f9377942a969137fe766b4b146662d359b0224
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: f3d710cabf1477ea248182a994dee8c00e2c4536
+ms.sourcegitcommit: f9c6bd3c629cc48ce771fec47dd6e40bc4c7a197
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/30/2017
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Anonimización de datos de Cloud Discovery
 
@@ -34,10 +34,12 @@ Cómo funciona la anonimización de datos:
 1.  Hay tres formas de aplicar la anonimización de datos: 
     
     - Puede configurar los datos para anonimizar desde un archivo de registro específico, mediante la [creación de un nuevo informe de instantáneas](create-snapshot-cloud-discovery-reports.md) y seleccionando **Anonimización de la información privada**.
- ![Anonimización de datos de instantáneas](./media/anonymize-log.png)
+
+      ![Anonimizar datos de instantánea](./media/anonymize-log.png)
 
     - Puede establecer los datos para anonimizar desde una [carga automatizada para un nuevo origen de datos](configure-automatic-log-upload-for-continuous-reports.md) seleccionando **Anonymize private information** (Anonimizar información privada) al agregar el nuevo origen de datos.  
- ![Anonimización de datos de registro](./media/anonymize-autolog.png)
+  
+      ![Anonimizar datos de registro](./media/anonymize-autolog.png)
 
     - Puede establecer el valor predeterminado en Cloud App Security para anonimizar todos los datos de los informes de instantáneas de los archivos de registro cargados y de los informes continuados de recopiladores de registros como se muestra a continuación:
      
@@ -47,24 +49,27 @@ Cómo funciona la anonimización de datos:
 
         3. En la clave de cifrado, seleccione si desea **utilizar la clave dedicada generada para el portal** o **utilizar una clave personalizada**. Si opta por **utilizar una clave personalizada**, escriba una clave de cifrado UTF8 de 16 bytes.
         4. Haga clic en **Guardar**.
-  ![Anonimización](./media/anonymizer1.png)
+ 
+       ![Anonimización](./media/anonymizer1.png)
   
 
 2.  Cuando se selecciona la anonimización, Cloud App Security analiza el registro del tráfico y extrae los atributos de datos específicos.
 3.  Cloud App Security reemplaza el nombre de usuario por un nombre de usuario cifrado.
 4.  Después, analiza los datos de uso de la nube y genera informes de Cloud Discovery basados en los datos anónimos.
- ![Anonimización del panel de Cloud Discovery](./media/anonymize-dashboard.png)
  
-
+    ![Anonimizar el panel de Cloud Discovery](./media/anonymize-dashboard.png)
+ 
 5.  Para una investigación específica, como la investigación de una alerta de uso erróneo, puede resolver el nombre de usuario específico en el portal y proporcionar una justificación comercial. Esta página también se puede usar para buscar el nombre de usuario cifrado de un nombre de usuario conocido. 
 
     1. En el engranaje Configuración, seleccione **Configuración de Cloud Discovery**.
     2. En la pestaña **Anonymization** (Anonimización), en **Anonymize and resolve usernames** (Anonimizar y resolver nombres de usuario), escriba una justificación de por qué se realiza la resolución.
     3. En **Enter username to resolve** (Escriba el nombre de usuario para resolver), seleccione **From anonymized** (De anónimo) y escriba el nombre de usuario anónimo, o seleccione **To anonymized** (Para anónimo) y escriba el nombre de usuario original para resolver. Haga clic en **Resolver**. 
-![Anonimización](./media/anonymizer.png)
+
+   ![Anonimización](./media/anonymizer.png)
 
 6.  La acción se audita en el **Registro de gobierno** del portal. 
-![Anonimización](./media/anonymize-gov-log.png)
+
+     ![Anonimización](./media/anonymize-gov-log.png)
 
 
 

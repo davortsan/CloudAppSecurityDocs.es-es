@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,40 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bacc5264d36e0948b0e802b2fbb9e04d9a058af9
-ms.sourcegitcommit: de133f251ceab10d9c2306dd76e75a68db206743
+ms.openlocfilehash: 9e8cba61d9046c341675a736c718bbcd0ad34e2c
+ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2017
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="whats-new-with-cloud-app-security"></a>Novedades de Cloud App Security
+# <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
+
+## <a name="cloud-app-security-releases-109"></a>Versiones 109 de Cloud App Security
+Publicado el 29 de octubre de 2017 
+
+- La implantación de la característica de proxy de Microsoft Cloud App Security ha comenzado. El proxy de Microsoft Cloud App Security proporciona las herramientas que necesita para tener visibilidad en tiempo real y control del acceso al entorno en la nube y a las actividades realizadas en él. Por ejemplo:
+    -   Bloquee las descargas antes de que se realicen para evitar la pérdida de datos.
+    -   Establezca reglas que obliguen a proteger con cifrado los datos almacenados y descargados de la nube.
+    -   Obtenga visibilidad de los puntos de conexión no protegidos para que pueda supervisar lo que se hace en los dispositivos no administrados.
+    -   Controle el acceso desde redes no corporativas o direcciones IP de riesgo.
+  
+  Para más información, vea [Protección de aplicaciones con proxy](proxy-intro-aad.md).
+
+-   Implementaremos gradualmente la capacidad para aplicar filtros a partir de nombres de actividad de servicio específicos. Este nuevo filtro Tipo de actividad es más granular y le permite supervisar actividades de la aplicación concretas, en lugar de los tipos de actividad más generales habituales. Por ejemplo, antes se podía filtrar por el **Comando Ejecutar**, mientras que ahora se puede filtrar por cmdlets de EXO específicos. El nombre de actividad también se puede ver en el cajón de actividades, en **Tipo (en la aplicación)**. Esta capacidad acabará reemplazando al filtro Tipo de actividad.  
+
+-   Cloud Discovery ya admite Cisco ASA con FirePOWER. 
+
+-   Se han realizado mejoras de rendimiento en las páginas de IP y usuario de Discovery para mejorar la experiencia del usuario.
+
+
+## <a name="cloud-app-security-releases-105-106-107-108"></a>Versiones 105, 106, 107, 108 de Cloud App Security
+Publicado en septiembre/octubre de 2017
+ 
+-   Ahora, Cloud App Security incluye un centro de datos en la Unión Europea. Así, aparte de nuestro centro de datos en Estados Unidos, el centro de datos de la UE permitirá a los clientes de Cloud App Security cumplir plenamente con las nuevas normas y certificaciones europeas y las que están por venir. 
+-   Se han agregado nuevos filtros a la página **Conectores de aplicaciones** que permiten un filtrado más sencillo y obtener más información.
+-   Se ha mejorado Cloud Discovery en los archivos de registro que contienen solo información de las direcciones IP de destino.
+ 
 
 ## <a name="cloud-app-security-release-104"></a>Notas de la versión 104 de Cloud App Security 
 Fecha de publicación: 27 de agosto de 2017
@@ -274,7 +300,7 @@ Publicado el 22 de enero de 2017
  
 **Mejoras**  
 -   Se ha agregado una nueva acción de gobierno para Office 365 que permite quitar todos los usuarios externos de un archivo. Por ejemplo, esto permite implementar directivas que **quitan recursos compartidos externos de los archivos que tienen una clasificación solo interna**.
--   Se ha mejorado la identificación de los usuarios externos en SharePoint Online. Cuando se filtra el grupo de "usuarios externos", no se muestra la cuenta del sistema app@sharepoint .
+-   Se ha mejorado la identificación de los usuarios externos en SharePoint Online. Cuando se filtra el grupo de "usuarios externos", no se muestra la cuenta del sistema app@sharepoint.
 
 
 

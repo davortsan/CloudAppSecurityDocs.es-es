@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: edf852bf90a0d4b9345f1beb675ef5ee3c4f941d
-ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
+ms.openlocfilehash: 8076ba72f8e431145be3df8e9b371cd1175a5c4d
+ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2017
+ms.lasthandoff: 10/09/2017
 ---
 #  <a name="IPtagsandRanges"></a> Trabajar con etiquetas e intervalos IP
 
@@ -69,14 +69,15 @@ En la barra de menús, haga clic en el icono de configuración ![icono de config
   
     -   **Administrativo**: deben ser todas las direcciones IP de los administradores.  
   
-    -   **Interno**: deben ser todas las direcciones IP de la red interna, las sucursales y las direcciones de itinerancia de Wi-Fi.  
+    -  **Proveedor de nube**: deben ser las direcciones IP usadas por el proveedor de nube.
+  
+    -   **Coporativo**: deben ser todas las direcciones IP de la red interna, las sucursales y las direcciones de itinerancia de Wi-Fi.  
   
     -   **De riesgo**: deben ser todas las direcciones IP que se consideran que entrañan riesgos. Puede englobar direcciones IP sospechosas detectadas en el pasado, direcciones IP en las redes de la competencia, etc.  
   
     -   **VPN**: deben ser las direcciones IP que se usan en los trabajos remotos.  
-  
-    -   **Proxy en la nube**: debe ser la dirección IP del proxy en la nube.  
-  
+ 
+
 7.  Haga clic en **Crear** cuando acabe.  
   
      ![nuevo intervalo de direcciones IP](./media/newipaddress-range.png "nuevo intervalo de direcciones IP")  

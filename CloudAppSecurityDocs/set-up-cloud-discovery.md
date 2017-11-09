@@ -1,11 +1,11 @@
 ---
-title: Implementar Cloud Discovery con Cloud App Security | Microsoft Docs
+title: Implementar Cloud Discovery con Microsoft Cloud App Security | Microsoft Docs
 description: "En este tema se describe el procedimiento de configuración de Cloud Discovery para que entre en funcionamiento."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/03/2017
+ms.date: 10/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: be08317610ec1f32c78be9c942c64bba7bbdcd0f
-ms.sourcegitcommit: de133f251ceab10d9c2306dd76e75a68db206743
+ms.openlocfilehash: 0fa9125b611574d4f4fafb18c8bc649de82b1ad6
+ms.sourcegitcommit: 1c9ed4923cb6b761aebd13a6caa3a6605412419a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2017
+ms.lasthandoff: 10/29/2017
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar Cloud Discovery
 Cloud Discovery analiza los registros de tráfico del catálogo de aplicaciones en la nube de Cloud App Security de más de 15 000 aplicaciones en la nube que se clasifican y se puntúan en función de más de 60 factores de riesgo, a fin de proporcionar visibilidad continua del uso de la nube, Shadow IT y el riesgo que Shadow IT supone para la organización.
@@ -75,6 +75,7 @@ Para generar correctamente un informe de Cloud Discovery, los registros de tráf
 - Blue Coat Proxy SG - registros de acceso (W3C)
 - Check Point
 - Firewall de Cisco ASA (en el caso de los firewalls de Cisco ASA, es necesario establecer el nivel de información en 6)
+- Cisco ASA con FirePOWER
 - Cisco IronPort WSA
 - Cisco ScanSafe
 - Cisco Meraki – Registro de direcciones URL
@@ -108,6 +109,7 @@ Atributos de datos (según la documentación del proveedor):
 |Blue Coat|**Sí**|No|**Sí**|**Sí**|**Sí**|**Sí**|
 |Checkpoint|No|**Sí**|No|**Sí**|No|No|
 |Cisco ASA|No|**Sí**|No|**Sí**|**Sí**|No|
+|Cisco ASA con FirePOWER|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
 |Cisco FWSM|No|**Sí**|No|**Sí**|**Sí**|No|
 |Cisco Ironport WSA|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
 |Cisco Meraki|**Sí**|**Sí**|No|**Sí**|No|No||Cisco Scansafe|**Sí**|No|**Sí**|**Sí**|**Sí**|**Sí**|

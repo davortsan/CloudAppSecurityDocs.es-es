@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/27/2017
+ms.date: 10/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,30 +13,52 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a43adb2dfbfce0164384bd9fccb87d602e9eb7b7
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: f67e363f9b6cdb866124960037ecb81e07756d8a
+ms.sourcegitcommit: 9eb5c9c43629329a081f970b480956975e424ecb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/30/2017
 ---
 # <a name="network-requirements"></a>Requisitos de red
 
 En este tema se incluye una lista de los puertos y las direcciones IP que debe permitir e incluir en la lista blanca para trabajar con Cloud App Security. 
 
-Para obtener información sobre cómo consultar con qué centros de datos de Cloud App Security tiene conexión, consulte [Tokens de API](api-tokens.md).
 
+## <a name="view-your-data-center"></a>Consultar el centro de datos
 
+Algunos de los siguientes requisitos dependen del centro de datos al que esté conectado. 
 
-## <a name="portal-access-siem-agent-authentication-gateway-and-log-collector"></a>Acceso al portal, agente SIEM, puerta de enlace de autenticación y recopilador de registros
+Para saber a qué centro de datos se está conectando:
 
-Para acceder al portal y a la puerta de enlace de autenticación y permitir que Cloud App Security se conecte a su SIEM, así como para ejecutar el recopilador de registros de Cloud App Security, debe agregar el **puerto de salida 443** para las direcciones IP siguientes a la lista blanca de su firewall:  
+1. En el portal de Cloud App Security, haga clic en **?** en la barra de menú y seleccione **Acerca de**. 
+
+    ![clic en Acerca de](./media/about-menu.png)
+
+2. En la pantalla de versión de Cloud App Security, podrá ver la región y el centro de datos.
+
+    ![Consultar el centro de datos](./media/data-center.png)
+
+## <a name="portal-access"></a>Acceso al portal
+
+Para tener acceso al portal de Cloud App Security, agregue a la lista de permitidos del firewall el **puerto de salida 443** de las siguientes direcciones IP:  
 
 
 > [!div class="mx-tableFixed"]
 |Centro de datos|Direcciones IP|  
 |----|----|
-|Estados Unidos 1|13.91.91.243<br></br>52.183.75.62|
-|Unión Europea 1|52.174.56.180<br></br>13.80.125.22|
+|Estados Unidos 1|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|
+|Unión Europea 1|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|
+
+## <a name="siem-agent-connection"></a>Conexión del agente SIEM
+
+Para permitir que Cloud App Security se conecte a su SIEM, agregue a la lista de permitidos del firewall el **puerto de salida 443** de las siguientes direcciones IP:  
+
+
+> [!div class="mx-tableFixed"]
+|Centro de datos|Direcciones IP|  
+|----|----|
+|Estados Unidos 1|13.91.91.243|
+|Unión Europea 1|52.174.56.180|
 
 ## <a name="app-connector-access-and-external-dlp-integration"></a>Acceso del conector de la aplicación e integración de DLP externa
 
@@ -77,10 +99,20 @@ La dirección IP de correo electrónico dedicada de Cloud App Security es:
 
 Asegúrese de incluir esta dirección IP en la lista blanca del servicio de correo electrónico no deseado para habilitar el envío de notificaciones.
     
+## <a name="log-collector"></a>Recopilador de registros 
+
+Para habilitar características de Cloud Discovery por medio de un recopilador de registros y detectar Shadow TI en la organización, es necesario abrir lo siguiente:
+
+- Permita que el recopilador de registros reciba tráfico entrante de FTP y Syslog.
+- Permita que el recopilador de registros inicie tráfico saliente al portal (por ejemplo, contoso.cloudappsecurity.com) en el puerto 443.
+- Permita que el recopilador de registros inicie tráfico saliente al almacenamiento de blobs de Azure (https://adaprodconsole.blob.core.windows.net/) en los puertos 80 y 443.
+
+> [!NOTE]
+> Si el firewall requiere una lista de acceso de dirección IP estática y no admite la creación de listas de permitidos basadas en direcciones URL, permita que el recopilador de registros enrute el tráfico saliente hacia los intervalos IP del centro de datos de Microsoft Azure a través del puerto 443.
 
 
 
-  
+
 ## <a name="see-also"></a>Consulte también  
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 [Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
