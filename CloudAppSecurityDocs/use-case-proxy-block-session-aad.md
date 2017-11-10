@@ -70,7 +70,7 @@ Tras completar esta tarea, vaya al portal de Cloud App Security y cree una direc
 
  ![Tipo de control de directiva de sesión](./media/session-policy-control-type.png)
 
-5.  En la sección **Activities matching all of the following** (Actividades que coinciden con todo lo siguiente) de **Origen de la actividad**, seleccione estos filtros: 
+5.  En la sección **Actividades que coinciden con todo lo siguiente** de **Origen de la actividad**, seleccione estos filtros: 
     
     - **Etiqueta de dispositivo**: seleccione **No es igual a** y, después, seleccione **Compatible**, **Unido a dominio** o **Certificado de cliente válido**, según cuál sea el método empleado en su organización para identificar dispositivos administrados. 
     
@@ -78,7 +78,7 @@ Tras completar esta tarea, vaya al portal de Cloud App Security y cree una direc
 
     - **Usuarios**: seleccione los usuarios que quiera supervisar.  
     
-7. Si lo que quiere es bloquear las descargas en ubicaciones que no formen parte de su red corporativa, establezca los siguientes filtros en la sección **Activities matching all of the following** (Actividades que coincidan con todo lo siguiente) de **Origen de la actividad**: 
+7. Si lo que quiere es bloquear las descargas en ubicaciones que no formen parte de su red corporativa, establezca los siguientes filtros en la sección **Actividades que coinciden con todo lo siguiente** de **Origen de la actividad**: 
 
   - **Dirección IP** o **Ubicación**: puede usar cualquiera de estos dos parámetros para identificar las ubicaciones desconocidas o no corporativas desde las que un usuario podría estar intentando tener acceso a datos confidenciales.
 
@@ -89,7 +89,7 @@ Tras completar esta tarea, vaya al portal de Cloud App Security y cree una direc
    
    - **Usuarios**: seleccione los usuarios que quiera supervisar.  
 
-6. Establezca los siguientes filtros en la sección **Files matching all of the following** (Archivos que coinciden con todo lo siguiente) de **Origen de la actividad**: 
+6. Establezca los siguientes filtros en la sección **Archivos que coinciden con todo lo siguiente** de **Origen de la actividad**: 
    
     - **Etiquetas de clasificación**: le servirá si usa etiquetas de clasificación de Azure Information Protection y quiere filtrar los archivos por una etiqueta de clasificación concreta de Azure Information Protection.
    

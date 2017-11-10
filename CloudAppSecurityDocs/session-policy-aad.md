@@ -69,7 +69,7 @@ Haga lo siguiente para crear una directiva de sesión:
 
     ![Tipo de control de directiva de sesión](./media/session-policy-control-type.png)
 
-6. En la sección **Activities matching all of the following** (Actividades que coinciden con todo lo siguiente) de **Origen de la actividad**, seleccione más filtros de actividad para aplicarlos a la directiva. Las opciones son las siguientes: 
+6. En la sección **Actividades que coinciden con todo lo siguiente** de **Origen de la actividad**, seleccione más filtros de actividad para aplicarlos a la directiva. Las opciones son las siguientes: 
 
      - **Etiqueta de dispositivo**: use este filtro para identificar los dispositivos no administrados.
 
@@ -88,7 +88,7 @@ Haga lo siguiente para crear una directiva de sesión:
 
 7. Si ha seleccionado la opción **Supervisión de todas las actividades y control de la descarga de archivos**:
 
-    1. En la sección **Files matching all of the following** (Archivos que coinciden con todo lo siguiente) de **Origen de la actividad**, seleccione más filtros de archivo para aplicarlos a la directiva. Las opciones son las siguientes:
+    1. En la sección **Archivos que coinciden con todo lo siguiente** de **Origen de la actividad**, seleccione más filtros de archivo para aplicarlos a la directiva. Las opciones son las siguientes:
 
         - **Etiqueta de clasificación**: use este filtro si la organización usa Azure Information Protection y los datos están protegidos con etiquetas de clasificación. Si es así, aquí podrá filtrar los archivos por la etiqueta de clasificación que tengan aplicada. Para más información sobre la integración entre Cloud App Security y Azure Information Protection, vea [Integración de Azure Information Protection](azip-integration.md).
 

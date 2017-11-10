@@ -43,7 +43,7 @@ Haga lo siguiente para configurar aplicaciones de Azure AD de forma que estén c
 
     3. En la sección **Usuarios y grupos** de la directiva de prueba, asigne un usuario de prueba o un usuario que se pueda usar para un inicio de sesión inicial.
     
-    4. En la sección **Cloud app** (Aplicación en la nube) de la directiva de prueba, asigne las aplicaciones que quiera controlar con el proxy. 
+    4. En la sección **Aplicaciones en la nube** de la directiva de prueba, asigne las aplicaciones que quiera controlar con el proxy. 
 
      > [!NOTE]
      >Procure elegir aplicaciones que sean compatibles con el proxy. El proxy admite aplicaciones configuradas con un inicio de sesión único en SAML en Azure AD. Por ejemplo, las aplicaciones de Office 365 no están configuradas con SAML, por lo que no son compatibles actualmente.
