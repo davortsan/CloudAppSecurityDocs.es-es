@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e7b4fbb7ed71e1a49de93447c3c00dbff43f2894
-ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
+ms.openlocfilehash: 64fd889e309be254d5aa99320e040129a5de8e1d
+ms.sourcegitcommit: fbeb299e8c41fc57b50d491b1becbf488fdd3642
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="azure-information-protection-integration"></a>Integración de Azure Information Protection
 
@@ -61,6 +61,7 @@ Después de habilitar Azure Information Protection, podrá ver los archivos que 
 
 ### <a name="set-internal-and-external-tags"></a>Establecer etiquetas internas y externas
 De forma predeterminada, Cloud App Security examina las etiquetas de clasificación que se han definido en su organización, así como las externas que han definido otras organizaciones. 
+
 
 Para ignorar las etiquetas de clasificación establecidas por una persona externa a la organización, en el portal de Cloud App Security, vaya a **Configuración general** y, después, a **Configuración de seguridad de Azure** y seleccione **Ignorar las etiquetas de clasificación de Azure Information Protection de otros inquilinos**.
  
@@ -118,7 +119,7 @@ Obtenga más información sobre [Azure Information Protection](https://docs.micr
 
 ## <a name="integration-with-azure-rights-management"></a>Integración con Azure Rights Management
 
-Su organización debe tener Azure Rights Management con licencia y activado para integrar entre Cloud App Security y Azure RMS.  Estos dos pasos independientes se pueden encontrar en [Activar Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/activate-service).
+Su organización debe tener Azure Rights Management con licencia y activado para integrar entre Cloud App Security y Azure RMS. Estos dos pasos independientes se pueden encontrar en [Activar Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/activate-service).
 
 Actualmente, Cloud App Security admite la protección nativa para archivos de Office (2016 y versiones posteriores). Los archivos PDF y de imagen estarán disponibles en versiones futuras. 
 
@@ -133,7 +134,7 @@ Después de que Cloud App Security se conecte al servicio de Office 365, podrá 
 
 2. Se le pide que elija una de las etiquetas de clasificación de su organización para usarla para proteger el archivo; luego, haga clic en **Proteger**. 
 ![etiqueta de clasificación de protección](./media/protect-template.png)
-3. Después de elegir una etiqueta de clasificación y hacer clic en Proteger, Cloud App Security aplicará la etiqueta de clasificación y protegerá el archivo original. T
+3. Después de elegir una etiqueta de clasificación y hacer clic en Proteger, Cloud App Security aplicará la etiqueta de clasificación y protegerá el archivo original.
 > [!NOTE]
 >   Se recomienda aplicar etiquetas de clasificación de RMS que abarquen toda la compañía en los archivos, de forma que todos los usuarios de la organización puedan acceder a estos archivos, incluido el propietario original del archivo. El propietario del archivo, la directiva de uso compartido del archivo y la lista de usuarios que ya tienen acceso a él no cambian cuando el archivo pasa a estar protegido.
 
