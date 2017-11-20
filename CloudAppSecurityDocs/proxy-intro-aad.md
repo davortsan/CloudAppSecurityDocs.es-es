@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology:
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 764428c87317d5b4ab706b5a9d4b3c83147628b3
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: 6174cfe5fc0c5ba1bbde2b1f68234f727c7db223
+ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-proxy"></a>Proteger aplicaciones con el proxy de Microsoft Cloud App Security
 
 > [!NOTE]
-> La implantación de la característica de proxy de Microsoft Cloud App Security ha comenzado.
+> Se trata de una característica en vista previa.
+
 
 En el ámbito laboral actual, a menudo no basta con saber lo que ocurre en el entorno de nube después de los hechos, sino que también se requiere tener la posibilidad de detener brechas y fugas en tiempo real antes de que los empleados pongan en riesgo su organización y los datos, ya sea de manera intencional como por accidente. Es importante permitir que los usuarios de la organización tengan a su disposición la mayoría de los servicios y las herramientas en aplicaciones de nube, y lleven al trabajo sus propios dispositivos. Al mismo tiempo, se necesitan herramientas que permitan proteger la organización de fugas o robos de datos en tiempo real. Junto con Azure Active Directory, el proxy de Cloud App Security proporciona estas funcionalidades en una experiencia integrada y holística.
 
@@ -79,6 +80,7 @@ En cuanto a los clientes, el control de sesión está disponible para cualquier 
 
 > [!NOTE]
 > Las aplicaciones de Office 365 no están configuradas con SAML, por lo que no son compatibles actualmente.
+
 
 ## <a name="see-also"></a>Consulte también  
 [Implementar el proxy de Cloud App Security](proxy-deployment-aad.md)   

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,14 @@ ms.technology:
 ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c84cadea48fb131c4602cbaa5377827236764690
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: 5d49c04f6ddfda778bc3775805a42383a41f88c4
+ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="blocking-downloads-of-sensitive-information-using-the-microsoft-cloud-app-security-proxy"></a>Bloqueo de descargas de información confidencial con el proxy de Microsoft Cloud App Security
 
-> [!NOTE]
-> La implantación de la característica de proxy de Microsoft Cloud App Security ha comenzado.
 
 Hoy día, los administradores de TI se encuentran entre la espada y la pared: los empleados deben ser productivos. Para ello, hay que permitirles el acceso a aplicaciones, de forma que puedan trabajar en cualquier momento y desde cualquier dispositivo. Por otra parte, quiere proteger los activos de la empresa, y eso incluye la información propietaria y con privilegios. ¿Cómo se puede permitir el acceso de los empleados a las aplicaciones en la nube y, al mismo tiempo, proteger los datos? **En este caso de uso se describe cómo bloquear las descargas de los usuarios que tienen acceso a los datos confidenciales en las aplicaciones en la nube de la empresa desde dispositivos no administrados o ubicaciones de red no corporativas.**
 
@@ -127,7 +125,9 @@ Tras completar esta tarea, vaya al portal de Cloud App Security y cree una direc
 
 4. En el informe de directiva puede ver los inicios de sesión que se han redirigido al proxy para someterlos a un control de sesión, así como los archivos que se han descargado o bloqueado en las sesiones supervisadas.
 
-  
+
+
+
 ## <a name="see-also"></a>Consulte también  
 [Creación de directivas de sesión](session-policy-aad.md)   
 [Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
