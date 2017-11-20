@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2e762f9f4a90a9777ef1782c1c12305ea7d065ef
-ms.sourcegitcommit: 4f87ebd072c54232692483dcf07ccc2ac5daf445
+ms.openlocfilehash: 1e7596ff9bb62f998a98fe9ff09e37ef0f93a906
+ms.sourcegitcommit: 938c799a13a81f3289229ea883c65bd1669b2ec4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Configuración en Ubuntu
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 11/06/2017
 
     -   Permita que el recopilador de registros reciba tráfico entrante de FTP y Syslog.
 
-    -   Permita que el recopilador de registros inicie tráfico saliente al portal (por ejemplo, contoso.cloudappsecurity.com) en el puerto 443.
+    -   Permita que el recopilador de registros inicie tráfico saliente al portal (por ejemplo, portal.contoso.cloudappsecurity.com) en el puerto 443.
 
     - Permita que el recopilador de registros inicie tráfico saliente al almacenamiento de blobs de Azure (https://adaprodconsole.blob.core.windows.net/) en los puertos 80 y 443.
 

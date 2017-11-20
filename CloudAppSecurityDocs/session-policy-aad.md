@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology:
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 97ebb7db49fcf5ed524a05943557d616487294f8
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: c955e20b4abd506f5e44659fbdd921bb54def131
+ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="session-policies"></a>Directivas de sesión 
 
 > [!NOTE]
-> La implantación de la característica de proxy de Microsoft Cloud App Security ha comenzado.
+> Se trata de una característica en vista previa.
 
 Las directivas de sesión de Cloud App Security permiten las supervisiones en tiempo real y en el nivel de sesión, lo que le proporciona una visibilidad granular de las aplicaciones en la nube, así como la posibilidad de realizar distintas acciones según la directiva establecida para una sesión de usuario. En lugar de permitir o bloquear el acceso por completo, con el control de sesión puede permitir el acceso mientras supervisa la sesión y/o limitar determinadas actividades de la sesión. 
 
@@ -69,7 +69,7 @@ Haga lo siguiente para crear una directiva de sesión:
 
     ![Tipo de control de directiva de sesión](./media/session-policy-control-type.png)
 
-6. En la sección **Activities matching all of the following** (Actividades que coinciden con todo lo siguiente) de **Origen de la actividad**, seleccione más filtros de actividad para aplicarlos a la directiva. Las opciones son las siguientes: 
+6. En la sección **Actividades que coinciden con todo lo siguiente** de **Origen de la actividad**, seleccione más filtros de actividad para aplicarlos a la directiva. Las opciones son las siguientes: 
 
      - **Etiqueta de dispositivo**: use este filtro para identificar los dispositivos no administrados.
 
@@ -88,7 +88,7 @@ Haga lo siguiente para crear una directiva de sesión:
 
 7. Si ha seleccionado la opción **Supervisión de todas las actividades y control de la descarga de archivos**:
 
-    1. En la sección **Files matching all of the following** (Archivos que coinciden con todo lo siguiente) de **Origen de la actividad**, seleccione más filtros de archivo para aplicarlos a la directiva. Las opciones son las siguientes:
+    1. En la sección **Archivos que coinciden con todo lo siguiente** de **Origen de la actividad**, seleccione más filtros de archivo para aplicarlos a la directiva. Las opciones son las siguientes:
 
         - **Etiqueta de clasificación**: use este filtro si la organización usa Azure Information Protection y los datos están protegidos con etiquetas de clasificación. Si es así, aquí podrá filtrar los archivos por la etiqueta de clasificación que tengan aplicada. Para más información sobre la integración entre Cloud App Security y Azure Information Protection, vea [Integración de Azure Information Protection](azip-integration.md).
 
@@ -159,7 +159,7 @@ Cuando **Bloquear** es la **Acción** establecida que quiere realizar en la dire
 
 Cuando **Proteger** es la **Acción** establecida que va a realizarse en la directiva de sesión del proxy de Cloud App Security, el proxy exige que el archivo se etiquete y proteja de acuerdo con los filtros de archivos de la directiva. Las etiquetas se configuran en la consola de Azure Information Protection en Azure, y **Proteger** debe estar seleccionado en la etiqueta para que dicha etiqueta aparezca como una opción en la directiva de Cloud App Security. Cuando se selecciona una etiqueta y se descarga un archivo que cumple los criterios de la directiva de Cloud App Security, tanto la etiqueta como la protección correspondiente (con permisos) se aplican al archivo de descarga. El archivo original permanece tal cual en la aplicación en la nube, mientras que el archivo descargado ahora está protegido. Los usuarios que traten de tener acceso al archivo deben cumplir los requisitos de permiso establecidos por la protección aplicada.  
  
-  
+ 
 ## <a name="see-also"></a>Consulte también  
 [Bloqueo de descargas de información confidencial con el proxy de Microsoft Cloud App Security](use-case-proxy-block-session-aad.md)   
 [Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
