@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,24 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9e8cba61d9046c341675a736c718bbcd0ad34e2c
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: f8b50bd5b3524a782888dcd73f0f6690a2b13a89
+ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
 
-## <a name="cloud-app-security-releases-109"></a>Versiones 109 de Cloud App Security
+## <a name="cloud-app-security-release-110"></a>Notas de la versión 110 de Cloud App Security
+Publicado el 12 de noviembre de 2017
+ 
+-   Ahora disponible con carácter general: hemos empezado a aplicar un nuevo modo de implementación para el recopilador de registros. Además de la implementación actual basada en el dispositivo virtual, el nuevo recopilador de registros basado en Docker (contenedor) puede instalarse como un paquete en [máquinas Ubuntu](discovery-docker.md), tanto locales como en Azure. Cuando se usa Docker, el cliente es el propietario del equipo host y puede aplicarle revisiones y supervisarlo libremente.
+-   Con el nuevo signo de interrogación azul en la esquina, ahora puede acceder a la página de documentación pertinente de Cloud App Security en docs.microsoft.com desde las páginas del portal. Cada vínculo es contextual y le redirige a la información que necesita en función de la página en que se encuentra.
+-   Ahora puede enviar comentarios desde cada página del portal de Cloud App Security. Esto le permite informar sobre errores, solicitar nuevas características y compartir su experiencia directamente con el equipo de Cloud App Security.
+-   Se han realizado mejoras en la capacidad de detección en la nube para que reconozca los subdominios en las investigaciones en profundidad sobre el uso de la nube de su organización. Para más información, consulte [Trabajar con aplicaciones detectadas](discovered-apps.md).
+
+## <a name="cloud-app-security-release-109"></a>Notas de la versión 109 de Cloud App Security
 Publicado el 29 de octubre de 2017 
 
 - La implantación de la característica de proxy de Microsoft Cloud App Security ha comenzado. El proxy de Microsoft Cloud App Security proporciona las herramientas que necesita para tener visibilidad en tiempo real y control del acceso al entorno en la nube y a las actividades realizadas en él. Por ejemplo:

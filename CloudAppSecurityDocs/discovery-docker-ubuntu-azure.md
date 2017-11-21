@@ -1,6 +1,6 @@
 ---
 title: "Configurar la carga de registros automática para informes continuos | Microsoft Docs"
-description: "En este tema se describe el proceso de configuración de carga de registros automática para informes continuos en Cloud App Security con Docker en Ubuntu en un servidor local."
+description: "En este tema se describe el proceso de configuración de carga de registros automática para informes continuos en Cloud App Security con Docker en Ubuntu en Azure."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
@@ -10,10 +10,10 @@ ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
+ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 660857c34b6a8ff7dccffc581901e52061df937f
+ms.openlocfilehash: b75fbd49bb55160b66ad028cbd68ef5eb61c5d9f
 ms.sourcegitcommit: ab552b8e663033f4758b6a600f6d620a80c1c7e0
 ms.translationtype: HT
 ms.contentlocale: es-ES
@@ -97,42 +97,56 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 
    ![Crear un recopilador de registros](./media/windows7.png)
 
-### <a name="step-2--on-premises-deployment-of-your-machine"></a>Paso 2: Implementación local de la máquina
+### <a name="step-2--deployment-of-your-machine-in-azure"></a>Paso 2: Implementación de la máquina en Azure
 
-> [!Note]
+> [!NOTE]
 > En los pasos siguientes se describe la implementación de Ubuntu. Los pasos de implementación en otras plataformas son ligeramente diferentes.
 
-1.  Abra un terminal en la máquina Ubuntu.
 
-2.  Cambie a los privilegios raíz con el comando: `sudo -i`
-
-3. Para omitir a un servidor proxy en la red, ejecute los dos comandos siguientes:
-        
-        export http_proxy='<IP>:<PORT>' (e.g. 168.192.1.1:8888)
-        export https_proxy='<IP>:<PORT>'
-
-3.  Si acepta los [términos de licencia del software](https://go.microsoft.com/fwlink/?linkid=862492), desinstale las versiones anteriores e instale Docker CE con el comando siguiente:
-
-    `curl -o /tmp/MCASInstallDocker.sh
-    https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
-    && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh`
-
-     > [!NOTE] 
-     > Si se produce un error en este comando al validar el certificado de servidor proxy, ejecute el comando con `curl -k` al principio.
+1.  Cree una nueva máquina Ubuntu en el entorno Azure. 
+2.  Cuando la máquina esté en funcionamiento, abra los puertos mediante:
+    1.  En la vista de la máquina, vaya a **Redes** y seleccione la interfaz adecuada haciendo doble clic en ella.
+    2.  Vaya a **Grupo de seguridad de red** y seleccione el grupo de seguridad de red pertinente.
+    3.  Vaya a **Reglas de seguridad de entrada** y haga clic en **Agregar**.
+      
+      ![Ubuntu en Azure](./media/ubuntu-azure.png)
     
-    ![ubuntu5](./media/ubuntu5.png)
+    4. Agregue las siguientes reglas (en modo **Avanzado**):
 
-4.  Implemente la imagen del recopilador en la máquina host al importar la configuración del recopilador. Esto se realiza copiando el comando de ejecución generado en el portal. Si necesita configurar un proxy, agregue la dirección IP del proxy y el número de puerto. Por ejemplo, si los detalles de proxy son 192.168.10.1:8080, el comando de ejecución actualizado es:
+    |Nombre|Rangos de puertos de destino|Protocolo|Origen|Destination|
+    |----|----|----|----|----|
+    |caslogcollector_ftp|21|TCP|Cualquiera|Cualquiera|
+    |caslogcollector_ftp_passive|20000-20099|TCP|Cualquiera|Cualquiera|
+    |caslogcollector_syslogs_tcp|601-700|TCP|Cualquiera|Cualquiera|
+    |caslogcollector_syslogs_tcp|514-600|UDP|Cualquiera|Cualquiera|
+      
+      ![Reglas de Ubuntu en Azure](./media/ubuntu-azure-rules.png)
 
-            sudo (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+3.  Vuelva a la máquina y haga clic en **Conectar** para abrir un terminal en ella.
 
-   ![Crear un recopilador de registros](./media/windows7.png)
+4.  Cambie a los privilegios raíz con `sudo -i`.
 
-5.  Ejecute el comando siguiente para comprobar si el recopilador se ejecuta correctamente: `docker logs \<collector_name\>`
+5.  Si acepta los [términos de licencia del software](https://go.microsoft.com/fwlink/?linkid=862492), desinstale las versiones anteriores e instale Docker CE con el comando siguiente:
+        
+        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh
 
-Debería ver el mensaje: **Finalizó correctamente**.
+6. En el portal de Cloud App Security, en la ventana **Create new log collector** (Crear nuevo recopilador de registros), copie el comando para importar la configuración del recopilador en la máquina host:
 
-  ![ubuntu8](./media/ubuntu8.png)
+      ![Ubuntu en Azure](./media/ubuntu-azure.png)
+
+7. Ejecute el comando para implementar el recopilador de registros.
+
+      ![Comando de Ubuntu en Azure](./media/ubuntu-azure-command.png)
+
+>[!NOTE]
+>Para configurar un proxy, agregue la dirección IP del proxy y el puerto. Por ejemplo, si los detalles de proxy son 192.168.10.1:8080, el comando de ejecución actualizado será: 
+
+        (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | sudo docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+
+         ![Ubuntu proxy](./media/ubuntu-proxy.png)
+
+8. Para comprobar si el recopilador de registros se ejecuta correctamente, ejecute el comando siguiente: `Docker logs <collector_name>`. Debe obtener los resultados: **Finalizado correctamente.**
+
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Paso 3: Configuración local de los dispositivos de red
 
