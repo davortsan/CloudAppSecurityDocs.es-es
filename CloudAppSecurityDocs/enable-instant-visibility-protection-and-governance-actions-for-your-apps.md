@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 11/22/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 437504a73f9b3ae4a8a21b379356934b76d2430b
-ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
+ms.openlocfilehash: a87855be812c7f4228cb78eda2a023faad436011
+ms.sourcegitcommit: 6e4eac42e553fd288da7de9c67eb79f11a420245
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="connect-apps"></a>Conectar aplicaciones 
 Los conectores de aplicaciones aprovechan las API de los proveedores de aplicaciones para permitir mediante Cloud App Security una mayor visibilidad y control de las aplicaciones a las que se conecta.  
@@ -76,7 +76,7 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
 |**Actividad de inicio de sesión**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**Actividad del usuario**|✔*|✔|✔|✔ (requiere Google Unlimited)|Parcial|Compatible con Salesforce Shield|✔|No disponible|  
 |**Actividad administrativa**|✔|✔|✔|✔|Parcial|✔|✔|✔|  
-|**Examen periódico de archivos**|✔|✔|No disponible|✔|✔|✔|✔|Próximamente|  
+|**Examen periódico de archivos**|✔|✔|No disponible|✔|✔|✔|✔|No disponible|  
 |**Examen de archivos prácticamente en tiempo real**|✔|✔|No disponible|✔ (requiere Google Unlimited)|||Próximamente||  
 |**Control de uso compartido**|✔|✔|No disponible|✔|No disponible||✔||  
 |**Cuarentena**|✔|✔|No disponible|Próximamente|||Próximamente||  
