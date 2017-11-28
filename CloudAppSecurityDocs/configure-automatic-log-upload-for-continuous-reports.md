@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/12/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 057de59d0688b28ca9f9265ff7b4010ae9b3c3aa
-ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
+ms.openlocfilehash: c5c8f7a8a6203f23be30ea160d8867163d8f360b
+ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>Configuración de la carga de registros automática para informes continuos en una aplicación virtual
 
@@ -29,12 +29,8 @@ ms.lasthandoff: 11/13/2017
 - Espacio en disco: 250 GB
 - CPU: 2
 - RAM: 4 GB 
-- Configuración del firewall: 
-    - Permitir que el recopilador de registros reciba tráfico entrante de FTP y Syslog
-    - Permitir que el recopilador de registros inicie tráfico saliente al portal (por ejemplo, contoso.cloudappsecurity.com) en el puerto 443
+- Configuración del firewall, tal como se describe en [Requisitos de red](network-requirements#log-collector)
 
-> [!NOTE]
-> Si el firewall requiere una lista de acceso de dirección IP estática y no admite la creación de listas blancas basada en direcciones URL, permita que el recopilador de registros enrute el tráfico saliente hacia los [intervalos IP del centro de datos de Microsoft Azure a través del puerto 443](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
 
 ## <a name="log-collector-performance"></a>Rendimiento del recopilador de registros
 El recopilador de registros puede manejar correctamente una capacidad de registros de hasta 50 GB por hora.

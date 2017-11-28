@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/30/2017
+ms.date: 12/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f67e363f9b6cdb866124960037ecb81e07756d8a
-ms.sourcegitcommit: 9eb5c9c43629329a081f970b480956975e424ecb
+ms.openlocfilehash: 4b681ef0cd982b79ae096f257f793920607669a2
+ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="network-requirements"></a>Requisitos de red
 
@@ -47,6 +47,7 @@ Para tener acceso al portal de Cloud App Security, agregue a la lista de permiti
 |Centro de datos|Direcciones IP|  
 |----|----|
 |Estados Unidos 1|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|
+|US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|
 |Unión Europea 1|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|
 
 ## <a name="siem-agent-connection"></a>Conexión del agente SIEM
@@ -58,6 +59,7 @@ Para permitir que Cloud App Security se conecte a su SIEM, agregue a la lista de
 |Centro de datos|Direcciones IP|  
 |----|----|
 |Estados Unidos 1|13.91.91.243|
+|US2|52.184.165.82|
 |Unión Europea 1|52.174.56.180|
 
 ## <a name="app-connector-access-and-external-dlp-integration"></a>Acceso del conector de la aplicación e integración de DLP externa
@@ -68,8 +70,9 @@ Para conectar aplicaciones de terceros e integrar soluciones de DLP externas, ha
 > [!div class="mx-tableFixed"]
 |Centro de datos|Direcciones IP|  
 |----|----|
-|Estados Unidos 1|104.209.35.177<br></br>13.91.98.185<br></br>40.118.211.172<br></br>13.93.216.68<br></br>13.91.61.249<br></br>13.93.233.42<br></br>13.64.196.27<br></br>13.64.198.97<br></br>13.64.199.41<br></br>13.64.198.19|
-|Unión Europea 1|13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+|Estados Unidos 1|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
+|US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
+|Unión Europea 1|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
 
 
 ### <a name="app-connector"></a>Conector de la aplicación
@@ -105,7 +108,13 @@ Para habilitar características de Cloud Discovery por medio de un recopilador d
 
 - Permita que el recopilador de registros reciba tráfico entrante de FTP y Syslog.
 - Permita que el recopilador de registros inicie tráfico saliente al portal (por ejemplo, contoso.cloudappsecurity.com) en el puerto 443.
-- Permita que el recopilador de registros inicie tráfico saliente al almacenamiento de blobs de Azure (https://adaprodconsole.blob.core.windows.net/) en los puertos 80 y 443.
+- Permita que el recopilador de registros inicie tráfico saliente al almacenamiento de blobs de Azure en los puertos 80 y 443:
+   
+    |Centro de datos|Dirección URL|
+    |----|----|
+    |Estados Unidos 1|https://adaprodconsole.blob.core.windows.net/|
+    |US2|https://prod03use2console1.blob.core.windows.net/|
+    |Unión Europea 1|https://prod02euwconsole1.blob.core.windows.net/|
 
 > [!NOTE]
 > Si el firewall requiere una lista de acceso de dirección IP estática y no admite la creación de listas de permitidos basadas en direcciones URL, permita que el recopilador de registros enrute el tráfico saliente hacia los intervalos IP del centro de datos de Microsoft Azure a través del puerto 443.

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/14/2017
+ms.date: 12/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b75fbd49bb55160b66ad028cbd68ef5eb61c5d9f
-ms.sourcegitcommit: ab552b8e663033f4758b6a600f6d620a80c1c7e0
+ms.openlocfilehash: 139d848936def3e97d8270027a3e288196e96f90
+ms.sourcegitcommit: f23705ee51c6cb0113191aef9545e7ec3111f75d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Configuración en Ubuntu
 
@@ -32,16 +32,7 @@ ms.lasthandoff: 11/14/2017
 
 -   RAM: 4 GB
 
--   Configuración del firewall:
-
-    -   Permita que el recopilador de registros reciba tráfico entrante de FTP y Syslog.
-
-    -   Permita que el recopilador de registros inicie tráfico saliente al portal (por ejemplo, portal.contoso.cloudappsecurity.com) en el puerto 443.
-
-    - Permita que el recopilador de registros inicie tráfico saliente al almacenamiento de blobs de Azure (https://adaprodconsole.blob.core.windows.net/) en los puertos 80 y 443.
-
-> [!NOTE]
-> Si el firewall requiere una lista de acceso de dirección IP estática y no admite la creación de listas blancas basada en direcciones URL, permita que el recopilador de registros enrute el tráfico saliente hacia los [intervalos IP del centro de datos de Microsoft Azure a través del puerto 443](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
+-   Configuración del firewall, tal como se describe en [Requisitos de red](network-requirements#log-collector)
 
 ## <a name="log-collector-performance"></a>Rendimiento del recopilador de registros
 
@@ -118,7 +109,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
     |caslogcollector_ftp|21|TCP|Cualquiera|Cualquiera|
     |caslogcollector_ftp_passive|20000-20099|TCP|Cualquiera|Cualquiera|
     |caslogcollector_syslogs_tcp|601-700|TCP|Cualquiera|Cualquiera|
-    |caslogcollector_syslogs_tcp|514-600|UDP|Cualquiera|Cualquiera|
+    |caslogcollector_syslogs_udp|514-600|UDP|Cualquiera|Cualquiera|
       
       ![Reglas de Ubuntu en Azure](./media/ubuntu-azure-rules.png)
 
@@ -128,7 +119,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 
 5.  Si acepta los [términos de licencia del software](https://go.microsoft.com/fwlink/?linkid=862492), desinstale las versiones anteriores e instale Docker CE con el comando siguiente:
         
-        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh
+        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
 6. En el portal de Cloud App Security, en la ventana **Create new log collector** (Crear nuevo recopilador de registros), copie el comando para importar la configuración del recopilador en la máquina host:
 
@@ -138,12 +129,12 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 
       ![Comando de Ubuntu en Azure](./media/ubuntu-azure-command.png)
 
->[!NOTE]
->Para configurar un proxy, agregue la dirección IP del proxy y el puerto. Por ejemplo, si los detalles de proxy son 192.168.10.1:8080, el comando de ejecución actualizado será: 
+     >[!NOTE]
+     >Para configurar un proxy, agregue la dirección IP del proxy y el puerto. Por ejemplo, si los detalles de proxy son 192.168.10.1:8080, el comando de ejecución actualizado será: 
 
-        (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | sudo docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+        (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
-         ![Ubuntu proxy](./media/ubuntu-proxy.png)
+     ![Proxy Ubuntu](./media/ubuntu-proxy.png)
 
 8. Para comprobar si el recopilador de registros se ejecuta correctamente, ejecute el comando siguiente: `Docker logs <collector_name>`. Debe obtener los resultados: **Finalizado correctamente.**
 

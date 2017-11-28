@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/14/2017
+ms.date: 12/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 660857c34b6a8ff7dccffc581901e52061df937f
-ms.sourcegitcommit: ab552b8e663033f4758b6a600f6d620a80c1c7e0
+ms.openlocfilehash: 64f37fe71c89a4a9f57542255d7d044164d7d3f3
+ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Configuración en Ubuntu
 
@@ -32,16 +32,8 @@ ms.lasthandoff: 11/14/2017
 
 -   RAM: 4 GB
 
--   Configuración del firewall:
+-   Configuración del firewall, tal como se describe en [Requisitos de red](network-requirements#log-collector)
 
-    -   Permita que el recopilador de registros reciba tráfico entrante de FTP y Syslog.
-
-    -   Permita que el recopilador de registros inicie tráfico saliente al portal (por ejemplo, portal.contoso.cloudappsecurity.com) en el puerto 443.
-
-    - Permita que el recopilador de registros inicie tráfico saliente al almacenamiento de blobs de Azure (https://adaprodconsole.blob.core.windows.net/) en los puertos 80 y 443.
-
-> [!NOTE]
-> Si el firewall requiere una lista de acceso de dirección IP estática y no admite la creación de listas blancas basada en direcciones URL, permita que el recopilador de registros enrute el tráfico saliente hacia los [intervalos IP del centro de datos de Microsoft Azure a través del puerto 443](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
 
 ## <a name="log-collector-performance"></a>Rendimiento del recopilador de registros
 
@@ -115,7 +107,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 
     `curl -o /tmp/MCASInstallDocker.sh
     https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
-    && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh`
+    && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh`
 
      > [!NOTE] 
      > Si se produce un error en este comando al validar el certificado de servidor proxy, ejecute el comando con `curl -k` al principio.
@@ -124,7 +116,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 
 4.  Implemente la imagen del recopilador en la máquina host al importar la configuración del recopilador. Esto se realiza copiando el comando de ejecución generado en el portal. Si necesita configurar un proxy, agregue la dirección IP del proxy y el número de puerto. Por ejemplo, si los detalles de proxy son 192.168.10.1:8080, el comando de ejecución actualizado es:
 
-            sudo (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+            (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
    ![Crear un recopilador de registros](./media/windows7.png)
 
