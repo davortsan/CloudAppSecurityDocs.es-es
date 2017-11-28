@@ -18,6 +18,9 @@
 ### [Configurar la carga de registros automática para informes continuos](discovery-docker.md)
 #### [Docker en Ubuntu local](discovery-docker-ubuntu.md)
 #### [Docker en Ubuntu en Azure](discovery-docker-ubuntu-azure.md)
+##### Modificación de la Configuración de Docker
+###### [Personalización de archivos de certificado](discovery-docker-custom-cert.md)
+###### [Cambio de la contraseña FTP](discovery-docker-change-ftp.md)
 #### [Uso de dispositivos virtuales](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Uso del analizador de registros personalizado](custom-log-parser.md)
 ### [Enriquecimiento de Cloud Discovery](cloud-discovery-aad-enrichment.md)
