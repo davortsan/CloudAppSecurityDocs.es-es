@@ -13,13 +13,26 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f8b50bd5b3524a782888dcd73f0f6690a2b13a89
-ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
+ms.openlocfilehash: c40d24a20e6a05a0cec29cd99f66d7937f10e73d
+ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/27/2017
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
+
+## <a name="cloud-app-security-release-111"></a>Notas de la versión 111 de Cloud App Security
+Publicado el 26 de noviembre de 2017
+
+-   Las directivas de detección ahora admiten etiquetas de la aplicación como condición y acción de gobierno. Esto le permite etiquetar automáticamente las aplicaciones recién detectadas con etiquetas personalizadas, tales como **Tendencias en aplicaciones**. También puede utilizar la etiqueta de la aplicación como filtro, por ejemplo "Alertarme cuando una aplicación de la 'Lista de reproducción' tiene más de 100 usuarios en un solo día".
+
+-   El filtro **Tiempo** se ha mejorado para hacerlo más fácil de usar.
+
+-   La inspección de contenido ahora permite distinguir entre contenido, metadatos y nombre de archivo, lo que permite seleccionar lo que se desea inspeccionar.
+
+-   Se agregó una nueva acción de gobierno para G Suite. Ahora puede **reducir el acceso público** a los archivos compartidos. Esto le permite establecer que los archivos disponibles públicamente solo estén disponibles con un vínculo compartido.
+
+-   Todas las actividades de inicio de sesión de OKTA en otras aplicaciones se mostrarán ahora en Cloud App Security como originadas desde OKTA. Puede ver y filtrar en función de la aplicación de destino a la que se ha realizado el inicio de sesión en el campo **Objetos de actividad** de la actividad.
 
 
 ## <a name="cloud-app-security-release-110"></a>Notas de la versión 110 de Cloud App Security

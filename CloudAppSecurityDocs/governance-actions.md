@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 11/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 76066e4747630b1aa7cb5c3301c8053c8254a8a0
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: c0de0f106ce5505edcc437b1d94084759eac2838
+ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 11/27/2017
 ---
 # <a name="governing-connected-apps"></a>Control de aplicaciones conectadas
 El gobierno le permite controlar qué hacen los usuarios en tiempo real en varias aplicaciones. Para las aplicaciones conectadas, puede aplicar acciones de gobierno a archivos o actividades.
@@ -52,6 +52,8 @@ Las siguientes acciones de gobierno pueden realizarse para aplicaciones conectad
         -   Convertir en privado: solo el propietario puede tener acceso al archivo. Se quitan todos los recursos compartidos.  
   
         -   Quitar un colaborador: quita un colaborador específico del archivo.  
+
+        - Reducir el acceso público: permite establecer que los archivos disponibles públicamente solo estén disponibles con un vínculo compartido.
   
     -   Cuarentena  
   
@@ -141,6 +143,7 @@ Para obtener información sobre cómo se tratan las acciones de control cuando h
 |Archivos|Archivo|Proteger|Proteja un archivo con Azure Information Protection aplicando una plantilla de la organización.|Office 365 (SharePoint y OneDrive)|
 |Archivos|Archivo|Revocar mis propios permisos de lectura|Se revocan los permisos de lectura para el archivo de uno mismo. Esto es útil después de haberse concedido permisos manualmente para saber si un archivo tiene o no una infracción.|G Suite|
 |Archivos, Directiva de archivo|Archivo|Transferir la propiedad de los archivos|Se cambia el propietario: en la directiva se elige un propietario específico.|G Suite|
+|Archivos, Directiva de archivo|Archivo|Reducir el acceso público|Esto le permite establecer que los archivos disponibles públicamente solo estén disponibles con un vínculo compartido.|G Suite|
 |Archivos, Directiva de archivo|Archivo|Quitar un colaborador|Se quita un colaborador específico de un archivo.|G Suite, Box, One Drive, SharePoint|
 |Archivos, Directiva de archivo|Archivo|Convertir en privado|El archivo se convierte en privado: no hay más colaboradores ni vínculos públicos, ni se comparte con nadie.|G Suite, One Drive, SharePoint|
 |Archivos, Directiva de archivo|Archivo|Quitar usuarios externos|Se quitan todos los colaboradores externos de los dominios configurados como internos en la configuración.|G Suite, Box |
