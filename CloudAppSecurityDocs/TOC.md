@@ -18,10 +18,7 @@
 ### [Configurar la carga de registros automática para informes continuos](discovery-docker.md)
 #### [Docker en Ubuntu local](discovery-docker-ubuntu.md)
 #### [Docker en Ubuntu en Azure](discovery-docker-ubuntu-azure.md)
-##### Modificación de la Configuración de Docker
-###### [Personalización de archivos de certificado](discovery-docker-custom-cert.md)
-###### [Cambio de la contraseña FTP](discovery-docker-change-ftp.md)
-#### [Uso de dispositivos virtuales](configure-automatic-log-upload-for-continuous-reports.md)
+#### [Uso de aplicaciones virtuales (en desuso)](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Uso del analizador de registros personalizado](custom-log-parser.md)
 ### [Enriquecimiento de Cloud Discovery](cloud-discovery-aad-enrichment.md)
 ### [Anonimización de datos de Cloud Discovery](cloud-discovery-anonymizer.md)
@@ -76,3 +73,5 @@
 ## [Solución de problemas de conectores de API mediante mensajes de error](troubleshooting-api-connectors-using-error-messages.md)
 ## [Solucionar problemas relacionados con la inspección de contenido](troubleshooting-content-inspection.md)
 ## [Solución de problemas de integración de SIEM](troubleshooting-siem.md)
+## [Solución de problemas de implementación de Docker para Cloud Discovery](troubleshoot-docker.md)
+## [Solución de problemas de directivas](troubleshoot-policies.md)
