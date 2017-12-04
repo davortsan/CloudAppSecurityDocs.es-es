@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/11/2017
+ms.date: 29/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 139d848936def3e97d8270027a3e288196e96f90
-ms.sourcegitcommit: f23705ee51c6cb0113191aef9545e7ec3111f75d
+ms.openlocfilehash: 2f17135950b24bf6132ae09a132e557f42dcff14
+ms.sourcegitcommit: 48cc077576b04dfc1cc75af9fafbdc60ed7992c9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Configuración en Ubuntu
 
 
 ## <a name="technical-requirements"></a>Requisitos técnicos
 
--   SO: Ubuntu 14.04 o superior
+-   Sistema operativo: Ubuntu 14.04 o superior (no hay ninguna versión estable de Docker que sea compatible con Ubuntu 17.10)
 
 -   Espacio en disco: 250 GB
 
@@ -111,7 +111,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
     |caslogcollector_syslogs_tcp|601-700|TCP|Cualquiera|Cualquiera|
     |caslogcollector_syslogs_udp|514-600|UDP|Cualquiera|Cualquiera|
       
-      ![Reglas de Ubuntu en Azure](./media/ubuntu-azure-rules.png)
+      ![Reglas de Ubuntu en Azure](./media/inbound-rule.png)
 
 3.  Vuelva a la máquina y haga clic en **Conectar** para abrir un terminal en ella.
 
@@ -121,23 +121,21 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
         
         curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
-6. En el portal de Cloud App Security, en la ventana **Create new log collector** (Crear nuevo recopilador de registros), copie el comando para importar la configuración del recopilador en la máquina host:
-
-      ![Ubuntu en Azure](./media/ubuntu-azure.png)
-
-7. Ejecute el comando para implementar el recopilador de registros.
-
       ![Comando de Ubuntu en Azure](./media/ubuntu-azure-command.png)
 
-     >[!NOTE]
-     >Para configurar un proxy, agregue la dirección IP del proxy y el puerto. Por ejemplo, si los detalles de proxy son 192.168.10.1:8080, el comando de ejecución actualizado será: 
+6. En el portal de Cloud App Security, en la ventana **Create new log collector** (Crear nuevo recopilador de registros), copie el comando para importar la configuración del recopilador en la máquina host:
 
+      ![Ubuntu en Azure](./media/windows7.png)
+
+7. Ejecute el comando para implementar el recopilador de registros.
+     
         (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
      ![Proxy Ubuntu](./media/ubuntu-proxy.png)
 
 8. Para comprobar si el recopilador de registros se ejecuta correctamente, ejecute el comando siguiente: `Docker logs <collector_name>`. Debe obtener los resultados: **Finalizado correctamente.**
 
+   ![ubuntu8](./media/ubuntu8.png)
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Paso 3: Configuración local de los dispositivos de red
 
@@ -166,7 +164,7 @@ Después de comprobar que los registros se cargan en Cloud App Security y que se
 ![Informe continuo personalizado](./media/custom-continuous-report.png)
 
 ## <a name="see-also"></a>Consulte también
-[Trabajar con datos de Cloud Discovery](working-with-cloud-discovery-data.md)  
-[Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031)  
+[Solución de problemas de implementación de Docker de Cloud Discovery](troubleshoot-docker.md)
+[Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)  
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier](https://premier.microsoft.com/)
 
