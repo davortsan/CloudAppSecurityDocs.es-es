@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 148884c2709658d53b658e3b3a7d9f33daf18771
-ms.sourcegitcommit: 2b8965381d94a5bb6349d8e25e1dc29b092a88b0
+ms.openlocfilehash: b13f7c6270b79050e8ba0f871f2096f420bf6691
+ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2017
+ms.lasthandoff: 12/10/2017
 ---
 # <a name="activities"></a>Actividades
 Cloud App Security le ofrece visibilidad en todas las actividades de las aplicaciones conectadas. Después de conectar Cloud App Security con una aplicación mediante el conector de aplicaciones, Cloud App Security examina todas las actividades que se han producido (el período de tiempo de examen retroactivo varía según la aplicación) y después se actualiza constantemente con nuevas actividades. 
@@ -134,7 +134,13 @@ Para ver más información sobre cada actividad, haga clic en la misma actividad
 
  Los campos del cajón de actividades proporcionan vínculos contextuales a actividades adicionales y exploran en profundidad lo que desea realizar desde el cajón directamente. Por ejemplo, si mueve el cursor junto a la categoría de dirección IP, puede utilizar el icono Filtrar ![Agregar a filtro](./media/add-to-filter-icon.png) para agregar la dirección IP inmediatamente al filtro de la página actual. También puede utilizar el icono de engranaje de configuración ![icono de configuración](./media/contextual-settings-icon.png) que aparece para llegar directamente a la página de configuración necesaria para modificar la configuración de uno de los campos, como **Grupos de usuarios**.
 
-
+ También puede usar los iconos de la parte superior de la pestaña para:
+ - Ver las actividades del mismo tipo
+ - Ver todas las actividades del mismo usuario
+ - Ver las actividades de la misma dirección IP
+ - Ver las actividades de la misma ubicación geográfica
+ - Ver las actividades del mismo período (48 horas)
+ 
 ![cajón de actividades](./media/activity-drawer.png "cajón de actividades")  
   
 Para obtener una lista de las acciones de control disponibles, vea [Acciones de control de actividades](governance-actions.md#activity-governance-actions).
@@ -165,7 +171,7 @@ Para ver la información de dirección IP:
 
 1. Haga clic en la actividad en el **Registro de actividades**.
 
-2. Luego haga clic en la pestaña **Dirección IP**. <br></br> Se abrirá la pestaña **Dirección IP** del cajón de actividades, que contiene la información siguiente sobre la dirección IP:
+2. Luego haga clic en la pestaña **Dirección IP**. <br></br> Se abrirá la pestaña **Dirección IP** del espacio de actividades, que ofrece la información siguiente sobre la dirección IP:
     - **Alertas abiertas**: número de alertas abiertas relacionadas con la dirección IP.
     - **Actividades**: número de actividades realizadas por la dirección IP durante los últimos 30 días.
     - **Ubicación de IP**: ubicaciones geográficas desde las cuales se conectó la dirección IP durante los últimos 30 días.
@@ -175,6 +181,7 @@ Para ver la información de dirección IP:
         - Etiquetar como riesgosa 
         - Etiquetar como dirección IP de VPN
         - Etiquetar como dirección IP riesgosa y agregar al grupo bloqueado
+
 
 ![Información de dirección IP en Cloud App Security](./media/ip-address-insights.png)
 

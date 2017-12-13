@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 12/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2b82ea305209555d48d3b47489a28f19249b29c3
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 758605fddf97c0f35cbc0c3029d20e536fc9dee1
+ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 12/10/2017
 ---
 #  <a name="IPtagsandRanges"></a> Trabajar con etiquetas e intervalos IP
 
@@ -40,7 +40,7 @@ Cloud App Security está configurado previamente con etiquetas integradas para l
 Para usar estas etiquetas integradas como parte de una búsqueda, consulte su identificador en la documentación de API de Cloud App Security. 
 
 > [!NOTE]
-> Para agregar intervalos de direcciones IP de forma masiva, puede crear un script mediante la [API de intervalos de direcciones IP](https://portal.cloudappsecurity.com/api-docs/).
+> Puede agregar intervalos de direcciones IP de forma masiva mediante la creación de un script con la **API de intervalos de direcciones IP**, que se puede encontrar en la barra de menús del portal de Cloud App Security, haciendo clic en el signo de interrogación y, a continuación, en **Documentación de la API**.
 
 
 Las etiquetas de dirección IP integradas y las etiquetas IP personalizadas se consideran de forma jerárquica, y las etiquetas IP personalizadas tienen prioridad sobre las etiquetas IP integradas. Por ejemplo, si una dirección IP se etiqueta como **De riesgo** en función de la información disponible sobre las amenazas pero hay una etiqueta IP personalizada que la identifica como **Corporativa**, la categoría y las etiquetas personalizadas tendrán prioridad.
