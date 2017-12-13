@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 12/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,22 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c40d24a20e6a05a0cec29cd99f66d7937f10e73d
-ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
+ms.openlocfilehash: e3426172efe25f641af4757a1bc77d6aec3624d2
+ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 12/10/2017
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
+
+## <a name="cloud-app-security-release-112"></a>Versión 112 de Cloud App Security
+Fecha de publicación: 10 de diciembre de 2017
+
+-   Ahora puede tener acceso al espacio de información relevante haciendo clic en un nombre de usuario o la dirección IP en el registro de actividad. 
+-   Al investigar actividades, ahora puede ver fácilmente todas las actividades del mismo período de tiempo desde el espacio de información haciendo clic en el icono de reloj, que le permite ver todas las actividades realizadas en un período de 48 horas en relación con la actividad que está viendo.
+-   Se han realizado mejoras en el analizador de registros de Cloud Discovery para Juniper SRX.
+-   En el caso de las actividades supervisadas por el proxy, el **objeto de actividad** se expandió para incluir información pertinente para los exámenes de DLP, y las directivas coincidentes se expandieron para incluir las infracciones de DLP (si existen).
+
 
 ## <a name="cloud-app-security-release-111"></a>Notas de la versión 111 de Cloud App Security
 Publicado el 26 de noviembre de 2017
@@ -72,7 +81,7 @@ Publicado en septiembre/octubre de 2017
 ## <a name="cloud-app-security-release-104"></a>Notas de la versión 104 de Cloud App Security 
 Fecha de publicación: 27 de agosto de 2017
 
--   Ahora puede agregar intervalos de direcciones IP de forma masiva creando un script mediante la [API de intervalos de direcciones IP](https://portal.cloudappsecurity.com/api-docs/). 
+-   Ahora puede agregar intervalos de direcciones IP de forma masiva mediante la creación de un script con la **API de intervalos de direcciones IP**, que se puede encontrar en la barra de menús del portal de Cloud App Security, haciendo clic en el signo de interrogación y, a continuación, en **Documentación de la API**. 
 -   Cloud Discovery ahora ofrece una visibilidad mejorada de las transacciones bloqueadas. Para ello, presenta tanto las transacciones totales como las bloqueadas.
 -   Ahora puede filtrar aplicaciones en la nube según si tiene la certificación **ISO 27017** o no. Este nuevo factor de riesgo del catálogo de aplicaciones en la nube determina si el proveedor de la aplicación tiene esta certificación, que establece los controles y las directrices comúnmente aceptados para el procesamiento y la protección de la información de los usuarios en un entorno público de computación en la nube.
 - Para ayudarle a prepararse para el cumplimiento de RGPD, hemos recopilado las instrucciones de preparación de RGPD desde las aplicaciones en la nube del catálogo de aplicaciones en la nube. Aún no afecta a la puntuación de riesgo de la aplicación, pero ofrece un vínculo a la página de preparación de RGPD del editor de la aplicación, cuando se proporciona. Microsoft no ha comprobado el contenido y no es responsable de su validez.
