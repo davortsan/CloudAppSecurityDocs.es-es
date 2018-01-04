@@ -41,9 +41,11 @@
 ### [Proteger los archivos con la cuarentena de administrador](use-case-admin-quarantine.md)
 ## Detectar
 ### [Trabajar con aplicaciones detectadas](discovered-apps.md)
+#### [Filtros y consultas de aplicaciones detectadas](discovered-app-queries.md)
 ### [Trabajar con la puntuación de riesgo](risk-score.md)
 ## [Investigación](investigate.md)
 ### [Actividades](activity-filters.md)
+#### [Filtros y consultas de actividades](activity-filters-queries.md)
 ### [Archivos](file-filters.md)
 ### [Cuentas](accounts.md)
 ### [Referencia de informes integrados](built-in-report-reference.md)
@@ -69,6 +71,7 @@
 ### [Integración de DLP externa](icap-stunnel.md)
 ### [Tokens de API](api-tokens.md)
 # Solución de problemas
+## [Solución de problemas relativos al estado del servicio](troubleshooting-status.md)
 ## [Solución de problemas de Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Solución de problemas de conectores de API mediante mensajes de error](troubleshooting-api-connectors-using-error-messages.md)
 ## [Solucionar problemas relacionados con la inspección de contenido](troubleshooting-content-inspection.md)
