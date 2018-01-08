@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/5/2017
+ms.date: 1/3/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b13f7c6270b79050e8ba0f871f2096f420bf6691
-ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
+ms.openlocfilehash: 9e69481693e961c759f6d3bfd09f2e70a345576f
+ms.sourcegitcommit: bbf4a2715d1ea3fd21c1a1b87c7f5a2947d2ca68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="activities"></a>Actividades
 Cloud App Security le ofrece visibilidad en todas las actividades de las aplicaciones conectadas. Después de conectar Cloud App Security con una aplicación mediante el conector de aplicaciones, Cloud App Security examina todas las actividades que se han producido (el período de tiempo de examen retroactivo varía según la aplicación) y después se actualiza constantemente con nuevas actividades. 
@@ -44,81 +44,6 @@ Para profundizar en actividades más específicas, puede ampliar el filtro bási
 
  ![filtro de registro de actividad avanzada](media/activity-log-filter-advanced.png)
 
-## <a name="activity-filters"></a>Filtros de actividad
-A continuación, se muestra una lista de los filtros de actividad que se pueden aplicar. La mayoría de los filtros admiten varios valores, así como NOT, para proporcionarle una herramienta eficaz para la creación de directivas.  
-  
--   Identificador de actividad: busca solo actividades específicas por su identificador. Este filtro es útil cuando se conecta Cloud App Security con SIEM (mediante el agente SIEM) y se quieren investigar más las alertas del portal Cloud App Security.  
-  
--   Objetos de actividad: busca los objetos en los que se ha realizado la actividad. Este filtro se aplica a objetos de archivo, carpeta, usuario o aplicación. 
-    - Identificador de objeto de actividad: el identificador del objeto (identificador del archivo, carpeta, usuario o aplicación).
-    - Elemento: permite buscar por el nombre o por el identificador de cualquier objeto de actividad (por ejemplo, nombres de usuario, archivos, parámetros, sitios). Para el filtro **Elemento de objetos de actividad**, puede seleccionar filtrar elementos que **contengan**, **sean iguales** o **comiencen por** el elemento específico.
-    
--   Tipo de actividad: busca la actividad de la aplicación.
-
--   Tipo de actividad (versión preliminar): se está implantando en estos momentos. Permite buscar la actividad de la aplicación con mayor granularidad, ya sea por medio de la categoría de actividad o del nombre de la actividad suministrado directamente por la aplicación.
-
--   Actividad administrativa: busca solo actividades administrativas.  
-  
--   Id. de alerta: busca por identificador de alerta.
-
--   Aplicación: busca solo las actividades en aplicaciones específicas.  
-  
--   Acción aplicada: busca por la acción de control aplicada: Bloqueado, No usar proxy, Descrifrado, Cifrado, Error de cifrado, Ninguna acción.
-
--   Fecha: fecha en que se ha producido la actividad. El filtro admite fechas antes y después e intervalos de fechas.  
-  
--   Descripción: palabra clave concreta en la descripción de la actividad, por ejemplo, todas las actividades que contienen la cadena **usuario** en su descripción.  
-  
--   Etiqueta de dispositivo: busca por dispositivo compatible, administrado o comprobado.
-
--   Tipo de dispositivo: busca solo las actividades realizadas con un tipo de dispositivo concreto, por ejemplo, todas las actividades desde dispositivos móviles, PC o tabletas.  
-  
--   Dirección IP: dirección IP sin procesar, categoría o etiqueta desde la que se ha realizado la actividad.  
-    - Dirección IP sin procesar: le permite realizar búsquedas de actividades que se realizaron en direcciones IP sin formato, o por dichas direcciones, que sean iguales, diferentes o que comiencen con o no por una secuencia determinada o por direcciones IP sin procesar que están o no establecidas. 
-    - Categoría IP: categoría de la dirección IP desde la que se ha realizado la actividad, por ejemplo, todas las actividades desde el intervalo administrativo de direcciones IP. Las categorías deben configurarse para incluir las direcciones IP correspondientes, excepto para la categoría de "De riesgo" que está preconfigurada e incluye dos etiquetas IP: proxy anónimo y Tor. Para más información sobre cómo configurar las categorías IP, vea [Organizar los datos de acuerdo a las necesidades](ip-tags.md).  
-    - Etiqueta IP: etiqueta de la dirección IP desde la que se ha realizado la actividad, por ejemplo, todas las actividades desde direcciones IP de servidores proxy anónimos. Cloud App Security crea un conjunto de etiquetas IP integradas que no son configurables. Además, puede configurar sus propias etiquetas IP. Para más información sobre cómo configurar sus propias etiquetas IP, vea [Organizar los datos de acuerdo a las necesidades](ip-tags.md).
-   Las etiquetas IP integradas incluyen:
-    - Aplicaciones de Microsoft (14)
-    - Proxy anónimo
-    - Botnet (verá que una red de robots (botnet) ha realizado la actividad, con un vínculo para obtener más información sobre el botnet específico)
-    - IP de análisis de Darknet
-    - Servidor de malware C&C
-    - Analizador de conectividad remota
-    - Proveedores de satélite
-    - Proxy inteligente y proxy de acceso (excluido a propósito)
-    - Nodos de salida tor
-    - Zscaler
-
-
--   Actividad suplantada: busca solo las actividades realizadas en nombre de otro usuario.  
-
--   Ubicación: país desde el que se ha realizado la actividad.  
-
--   Directiva coincidente: busca las actividades que coinciden con una directiva específica que se ha establecido en el portal.  
-
--   ISP registrado: ISP desde el que se ha realizado la actividad.   
-
--  Origen: busque el origen desde el que se detectó la actividad. El origen podría ser cualquiera de los siguientes:
-  - Conector de aplicaciones: los registros provienen directamente del conector de la API de la aplicación.
-  - Análisis del conector de aplicaciones: enriquecimientos de Cloud App Security basados en la obtención de información del conector de la API.
-  
-
--   Usuario: el usuario que realizó la actividad, que se puede filtrar en el dominio, grupo, nombre u organización. Para filtrar las actividades sin un usuario específico, puede usar el operador 'no establecido'.  
-    -   Dominio del usuario: busca un dominio de usuario específico.
-    -   Organización de usuario: unidad organizativa del usuario que ha realizado la actividad, por ejemplo, todas las actividades realizadas por usuarios de marketing o EMEA.  
-    -   Grupo de usuarios: grupos de usuarios específicos que puede importar de aplicaciones conectadas, como administradores de Office 365.  
-    -   Nombre de usuario: busca por un nombre de usuario específico. Para ver una lista de los usuarios de un grupo de usuarios específico, en el **Cajón de actividades**, haga clic en el nombre del grupo de usuarios. Esto lo remite a la página de cuentas, en la que se enumeran todos los usuarios del grupo. Desde ahí puede profundizar en los detalles de las cuentas de usuarios específicos del grupo.
-       -  Los filtros **Grupo de usuarios** y **Nombre de usuario** se pueden filtrar aún más si se usa el filtro **Como** y se selecciona el rol del usuario, que puede ser uno de los siguientes:
-            - Objeto de actividad solo: esto significa que el usuario o grupo de usuarios seleccionado no ha realizado la actividad en cuestión, sino que era el objeto de la actividad.
-            - Solo actor: esto significa que el usuario o grupo de usuarios ha realizado la actividad.
-            - Cualquier rol: esto significa que el usuario o grupo de usuarios ha participado en la actividad, como la persona que ha realizado la actividad o como objeto de la actividad.
-
--   Agente de usuario: agente de usuario desde el que se ha realizado la actividad.  
-  
--   Etiqueta de agente de usuario: etiqueta de agente de usuario integrada, por ejemplo, todas las actividades desde exploradores o sistemas operativos obsoletos.  
-    
->[!NOTE]
-> Para borrar los filtros, haga clic en el icono de borrar filtros ![icono de borrar filtros](./media/clear-filters.png).
 
 ## <a name="the-activity-drawer"></a>El cajón de actividades
 
