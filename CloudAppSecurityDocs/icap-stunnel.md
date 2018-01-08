@@ -271,7 +271,7 @@ El servidor de detección que Cloud App Security usa es un servidor estándar de
     
       ![deshabilitar el modo de prueba](./media/icap-disable-trial-mode.png)
     
-2. En **ICAP** > **Filtrado de respuesta**, cambie el valor **Ignore Responses Smaller Than** (Omitir respuestas menores que) a 1.
+2. En **ICAP** > **Filtrado de respuesta**, cambie el valor **Omitir respuestas menores que** a 1.
 
 3. Agregue "application/*" a la lista **Inspect Content Type** (Inspeccionar tipo de contenido).
      ![inspeccionar tipo de contenido](./media/icap-inspect-content-type.png)
