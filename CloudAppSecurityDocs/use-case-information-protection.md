@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 12/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6e6c7365be26dc379bcf0269812931387972bc8f
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: 6ef94215cbb07dd35e9353e3a63b9e575905b16b
+ms.sourcegitcommit: c0c0612cdf6805c8e92d7929be0f12f33660b2d2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/25/2017
 ---
 # <a name="automatically-apply-azure-information-protection-classification-labels"></a>Aplicar automáticamente etiquetas de clasificación de Azure Information Protection  
 
@@ -41,16 +41,16 @@ Este elevado nivel de protección se conserva en el archivo esté donde esté; e
 Un usuario de la organización guarda archivos con información confidencial de los clientes en Box y los configura para que se puedan compartir con todos los usuarios de la organización. Este usuario no es consciente de que, además del equipo que trabaje directamente con esos archivos, todo el personal de soporte técnico, como los proveedores, los colaboradores y los visitantes que accedan a la oficina ocasionalmente, puede acceder a la cuenta de Box. Cualquier persona con acceso a la cuenta de Box de la organización podrá acceder a la información. Aparte de representar un peligro para la organización, puede ir en contra de la legislación sobre información personal de varios países, lo que expone a la organización a problemas legales.
 
 ## <a name="the-solution"></a>La solución
-Use Cloud App Security con Azure Information Protection para insertar información de clasificación y protección para proteger los datos de manera persistente, asegurándose además de que sigan estando protegidos independientemente de dónde estén almacenados o con quién se compartan. Esto también permite compartir los datos de forma segura con los compañeros de trabajo, así como con los clientes y partners. Defina quién puede tener acceso a los datos y lo que se puede hacer con ellos (como permitir a los usuarios ver y editar archivos, pero no imprimirlos ni reenviarlos), además de otras [acciones de gobierno](governance-actions.md) compatibles con Cloud App Security (como quitar colaboradores o quitar funcionalidades de uso compartido).
+Use Cloud App Security con Azure Information Protection para insertar información de clasificación y protección para proteger los datos de manera persistente, asegurándose además de que sigan estando protegidos independientemente de dónde estén almacenados o con quién se compartan. Esto también permite compartir los datos de forma segura con los compañeros de trabajo, así como con los clientes y partners. Defina quién puede tener acceso a los datos y lo que se puede hacer con ellos (como permitir a los usuarios ver y editar archivos, pero no imprimirlos ni reenviarlos), además de otras [acciones de gobierno](governance-actions.md) compatibles con Cloud App Security (como quitar colaboradores y funcionalidades de uso compartido).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- Tener habilitados Cloud App Security y Azure Information Protection en el inquilino.
+- [Habilite Cloud App Security y Azure Information Protection](azip-integration.md) en el inquilino.
 - [Conecte Box](connect-box-to-microsoft-cloud-app-security.md) a Cloud App Security.
 
 ## <a name="setting-up-data-protection"></a>Configuración de la protección de datos
 
-Vamos a configurar una directiva que busque números de tarjeta de crédito en los archivos almacenados en su cuenta de Box y, cuando los encuentre, .
+Vamos a configurar una directiva que comprueba si hay números de tarjeta de crédito en los archivos almacenados en su cuenta de Box y, cuando los encuentra, aplica automáticamente una etiqueta de Azure Information Protection y, después, controla lo que ocurre con todos los archivos con esa etiqueta.
 
 1. Empiece a proteger los datos que guarda en Box mediante una directiva que cifre todos los datos confidenciales de Box:
 

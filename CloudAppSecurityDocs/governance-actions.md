@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/26/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c0de0f106ce5505edcc437b1d94084759eac2838
-ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
+ms.openlocfilehash: 167593985fcf88e87cce4e524dd0d91d06de0cbf
+ms.sourcegitcommit: 3d943dbb0e0850af0dc390a78d8feca2f3fde61b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 12/20/2017
 ---
 # <a name="governing-connected-apps"></a>Control de aplicaciones conectadas
 El gobierno le permite controlar qué hacen los usuarios en tiempo real en varias aplicaciones. Para las aplicaciones conectadas, puede aplicar acciones de gobierno a archivos o actividades.
@@ -136,6 +136,8 @@ Para obtener información sobre cómo se tratan las acciones de control cuando h
 |Directiva de archivo y Directiva de actividad|Archivo, Actividad|Enviar notificación al usuario|Se envía un correo a los usuarios para informarles de que algo que han hecho o un archivo que poseen infringe una directiva. Se puede agregar una notificación personalizada que indique en qué consistió la infracción.|Todos|
 |Directiva de archivo y archivos|Archivo|Quitar la capacidad de compartir de los editores|En Google Drive, los permisos de editor predeterminados de un archivo permiten también compartir ese archivo. Esta acción de gobierno restringe esta opción y limita el uso compartido del archivo al propietario.|G Suite|
 |Directiva de archivo y archivos|Archivo|[Poner en cuarentena de administrador](use-case-admin-quarantine.md)|Se quitan todos los permisos del archivo y el archivo se mueve a una carpeta de cuarentena en una ubicación para el administrador. De este modo, el administrador puede revisar el archivo y quitarlo.|Office 365 SharePoint, OneDrive para la Empresa, Box|
+|Directiva de archivo y archivos|Archivo|Aplicar etiqueta de clasificación|Se aplica una etiqueta de clasificación de Azure Information Protection a los archivos de forma automática en función de las condiciones establecidas en la directiva.|Box, One Drive, SharePoint|
+|Directiva de archivo y archivos|Archivo|Quitar etiqueta de clasificación|Se quita una etiqueta de clasificación de Azure Information Protection de los archivos de forma automática en función de las condiciones establecidas en la directiva.|Box, One Drive, SharePoint|
 |Directiva de archivo, Directiva de actividad, Alertas|Aplicación|Requerir a los usuarios que inicien sesión de nuevo|Puede requerir a los usuarios que inicien sesión de nuevo en todas las aplicaciones de Office 365 y Azure AD como una solución rápida y eficaz en el caso de alertas de actividad sospechosa del usuario y cuentas en peligro. Encontrará la nueva acción de gobierno en la configuración de directiva y las páginas de alertas, junto a la opción Suspender usuario.|Office 365, Azure AD|
 |Archivos|Archivo|Restaurar de la cuarentena de usuario|Se restaura un usuario que estaba en cuarentena.|Cuadro|
 |Archivos|Archivo|Concederme permisos de lectura|Se concede permisos de lectura para el archivo a sí mismo con el fin de tener acceso al archivo y saber si existe o no una infracción en él.|G Suite|

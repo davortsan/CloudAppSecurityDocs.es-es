@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2017
+ms.date: 1/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,29 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e3426172efe25f641af4757a1bc77d6aec3624d2
-ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
+ms.openlocfilehash: 183b62579184fb1dfba96efb16b4ffc241c4e0bc
+ms.sourcegitcommit: 06517c2828ecfd1f4f4ab3e31c02d80e27388a4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2017
+ms.lasthandoff: 01/07/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
+
+## <a name="cloud-app-security-release-114"></a>Notas de la versión 114 de Cloud App Security
+Fecha de publicación: 7 de enero de 2018
+
+- A partir de la versión 114, estamos implementando de forma gradual la capacidad de crear y guardar las consultas personalizadas en las páginas Registro de actividad y Aplicaciones detectadas. Las consultas personalizadas le permiten crear plantillas de filtro que se pueden volver a usar para investigar en profundidad. Además, se han agregado **consultas sugeridas** para proporcionar plantillas de investigación predeterminadas para filtrar las actividades y aplicaciones detectadas. Las **consultas sugeridas** incluyen filtros personalizados para identificar los riesgos, como las actividades de suplantación, las actividades de administrador, las aplicaciones de almacenamiento en la nube no conformes que implican un riesgo, las aplicaciones empresariales con cifrado débil y los riesgos de seguridad. Puede usar las **consultas sugeridas** como punto de partida, modificarlas según considere y después guardarlas como una nueva consulta. Para obtener más información, consulte [Filtros y consultas de actividad](activity-filters-queries.md) y [Filtros y consultas de aplicaciones detectadas](discovered-app-queries.md).
+ 
+- Ahora puede comprobar el estado actual del servicio de Cloud App Security si va a [status.cloudappsecurity.com](https://status.cloudappsecurity.com) o directamente desde el portal al hacer clic en **Ayuda**>**Estado del sistema**. 
+ 
+
+## <a name="cloud-app-security-release-113"></a>Notas de la versión 113 de Cloud App Security
+Fecha de publicación: 25 de diciembre de 2017
+
+-   Nos complace anunciar que Cloud App Security ahora permite una mayor integración con Azure Information Protection. Esta característica de versión preliminar pública permite examinar y clasificar archivos en aplicaciones en la nube y aplicar de forma automática las etiquetas de protección de Azure Information Protection. Esta característica está disponible en Box, SharePoint y OneDrive. Para obtener más información, consulte [Integración de Azure Information Protection](azip-integration.md).
+
+-   Los analizadores de registros de Cloud Discovery ahora admiten formatos genéricos: LEEF, CEF y WC3.
+
 
 ## <a name="cloud-app-security-release-112"></a>Versión 112 de Cloud App Security
 Fecha de publicación: 10 de diciembre de 2017

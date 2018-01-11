@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 29/11/2017
+ms.date: 12/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c09c0204028f3c6be91950be4780646cbc0ac077
-ms.sourcegitcommit: 48cc077576b04dfc1cc75af9fafbdc60ed7992c9
+ms.openlocfilehash: b1155fa6ade88636f2dac575bfaa84db0f7bdd8b
+ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Configuración en Ubuntu
 
@@ -62,8 +62,9 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
     d. Compare el registro con el ejemplo del formato de registro esperado. Si el formato del archivo de registro no coincide con este ejemplo, debe agregar el origen de datos como **Otro**.
 
     e. Establezca el **tipo de receptor** en **FTP**, **FTPS**, **Syslog – UDP**, **Syslog – TCP** o **Syslog – TLS**.
-    >[!NOTE]
-    >La integración con protocolos de transferencia segura (FTPS y Syslog – TLS) a menudo requiere una configuración adicional o firewall/proxy.
+    
+     >[!NOTE]
+     >La integración con protocolos de transferencia segura (FTPS y Syslog – TLS) a menudo requiere una configuración adicional o firewall/proxy.
 
     f. Repita este proceso para cada servidor proxy y firewall cuyos registros se puedan usar para detectar tráfico en la red.
 
@@ -73,15 +74,18 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 
     b. Ponga **nombre** al recopilador de registros.
 
-    c. Escriba la **dirección IP de host** de la máquina que usará para implementar Docker.
+    c. Escriba la **dirección IP de host** de la máquina que usará para implementar Docker. 
+       
+       > [!NOTE]
+       > La dirección IP del host puede reemplazarse con el nombre del equipo si un servidor DNS (o equivalente) resolverá el nombre de host.
 
     d. Seleccione todos los **orígenes de datos** que desea conectar al recopilador y haga clic en **Actualizar** para guardar la configuración. Luego, consulte los pasos de implementación siguientes.
 
     ![ubuntu2](./media/ubuntu2.png)
 
-    >  [!NOTE]
-    > - Un único recopilador de registros puede administrar varios orígenes de datos.
-    >- Copie el contenido de la pantalla, ya que necesitará la información al configurar el recopilador de registros para comunicarse con Cloud App Security. Si ha seleccionado Syslog, esta información incluirá información sobre el puerto en el que escucha el agente de escucha de Syslog.
+     >  [!NOTE]
+     > - Un único recopilador de registros puede administrar varios orígenes de datos.
+     > - Copie el contenido de la pantalla, ya que necesitará la información al configurar el recopilador de registros para comunicarse con Cloud App Security. Si ha seleccionado Syslog, esta información incluirá información sobre el puerto en el que escucha el agente de escucha de Syslog.
 
 4.  Aparecerá más información de implementación. **Copie** el comando de ejecución desde el cuadro de diálogo. Puede usar el icono Copiar al Portapapeles ![icono Copiar al Portapapeles](./media/copy-icon.png).
 
@@ -91,7 +95,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>Paso 2: Implementación local de la máquina
 
-> [!Note]
+> [!NOTE]
 > En los pasos siguientes se describe la implementación de Ubuntu. Los pasos de implementación en otras plataformas son ligeramente diferentes.
 
 1.  Abra un terminal en la máquina Ubuntu.
@@ -153,7 +157,10 @@ Después de comprobar que los registros se cargan en Cloud App Security y que se
 ![Informe continuo personalizado](./media/custom-continuous-report.png)
 
 ## <a name="see-also"></a>Consulte también
-[Solución de problemas de implementación de Docker para Cloud Discovery](troubleshoot-docker.md)  
+
+[Solución de problemas de implementación de Docker para Cloud Discovery](troubleshoot-docker.md)
+
 [Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031)  
+
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier](https://premier.microsoft.com/)
 

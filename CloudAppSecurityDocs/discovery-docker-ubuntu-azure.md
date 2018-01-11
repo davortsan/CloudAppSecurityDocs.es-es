@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ce0a16c3f02c4a39b36766c532ea4e50868c3425
-ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
+ms.openlocfilehash: 161fbf275bfea2ceafbb36e56b1ba91fcd564543
+ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Configuración en Ubuntu
 
@@ -72,7 +72,10 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 
     b. Ponga **nombre** al recopilador de registros.
 
-    c. Escriba la **dirección IP de host** de la máquina que usará para implementar Docker.
+    c. Escriba la **dirección IP de host** de la máquina que usará para implementar Docker. 
+
+     > [!NOTE]
+     > La dirección IP del host puede reemplazarse con el nombre del equipo si un servidor DNS (o equivalente) resolverá el nombre de host.
 
     d. Seleccione todos los **orígenes de datos** que desea conectar al recopilador y haga clic en **Actualizar** para guardar la configuración. Luego, consulte los pasos de implementación siguientes.
 
@@ -111,8 +114,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
     |caslogcollector_syslogs_tcp|601-700|TCP|<Subred de la dirección IP del dispositivo>|Cualquiera|
     |caslogcollector_syslogs_udp|514-600|UDP|<Subred de la dirección IP del dispositivo>|Cualquiera|
       
-    
-      ![Reglas de Ubuntu en Azure](./media/inbound-rule.png)
+     ![Reglas de Ubuntu en Azure](./media/inbound-rule.png)
 
 3.  Vuelva a la máquina y haga clic en **Conectar** para abrir un terminal en ella.
 
