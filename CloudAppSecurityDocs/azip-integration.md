@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/25/2017
+ms.date: 1/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4bc6716b469962e1196b76ab7d55652d2081af51
-ms.sourcegitcommit: c0c0612cdf6805c8e92d7929be0f12f33660b2d2
+ms.openlocfilehash: ec5fbb7ee06a8b57374fb5f36efeecea4413191e
+ms.sourcegitcommit: 09eabb9b69a01790476641d6e672d125ea057fbd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/25/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="azure-information-protection-integration"></a>Integración de Azure Information Protection
 
@@ -51,7 +51,7 @@ Actualmente, Cloud App Security no puede examinar ni cambiar archivos etiquetado
 ## <a name="how-it-works"></a>Cómo funciona
 Probablemente esté familiarizado con las etiquetas de clasificación de archivos de [Azure Information Protection](https://docs.microsoft.com/information-protection/). Puede ver las etiquetas de clasificación de Azure Information Protection en Cloud App Security. Al integrar Cloud App Security con Azure Information Protection, Cloud App Security examina los archivos del modo siguiente:
 1. Cloud App Security recupera la lista de todas las etiquetas de clasificación que se hayan usado en su inquilino. Esta acción se realiza cada hora para mantener la lista actualizada.
-2. Después, Cloud App Security examina los archivos en busca de etiquetas de clasificación de la manera siguiente: a. Si ha habilitado el examen automático (consulte la información a continuación), todos los archivos nuevos o modificados se agregan a la cola de examen.
+2. Después, Cloud App Security examina los archivos en busca de etiquetas de clasificación de la manera siguiente: a. Si ha habilitado el examen automático (vea lo que hay a continuación), todos los archivos nuevos o modificados se agregan a la cola de examen y, después, todos los archivos y repositorios existentes se examinan, clasifican y protegen.
     b. Si ha establecido una directiva de archivo (consulte la información a continuación) para buscar etiquetas de clasificación, estos archivos se agregan a la cola de examen de etiquetas de clasificación.
 3. Como se mencionó anteriormente, estos exámenes son para las etiquetas de clasificación detectadas en el examen inicial que Cloud App Security lleva a cabo para ver qué etiquetas de clasificación se usan en el inquilino. Las etiquetas externas, es decir, las etiquetas de clasificación establecidas por una persona externa al inquilino, se agregan a la lista de etiquetas de clasificación. Si no quiere que se examinen, seleccione la casilla **Buscar únicamente las etiquetas de clasificación de Azure Information Protection de este inquilino en los archivos** (consulte la información a continuación).
 4. Después de habilitar Azure Information Protection en Cloud App Security, también se examinarán en busca de etiquetas de clasificación todos los archivos nuevos que se agreguen a Office 365.
