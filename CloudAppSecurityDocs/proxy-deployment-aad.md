@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 12/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3717d7358b3b869dca918fcaa60a2b2b465df367
-ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
+ms.openlocfilehash: a784b9e935bfa3396a64edb12202b50be17a7319
+ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="deploy-proxy-for-azure-ad-apps"></a>Implementar el proxy para aplicaciones de Azure AD
 
@@ -78,7 +78,7 @@ Haga lo siguiente para configurar aplicaciones de Azure AD de forma que estén c
 
         ![Identificación de dispositivos](./media/device-identification.png)
  
-       Tras cargar el certificado, puede crear directivas de sesión basadas en la configuración de la opción **Etiqueta de dispositivo** como igual a o no igual a **Certificado de cliente válido**.
+       Tras cargar el certificado, puede crear directivas de acceso y sesión basadas en la configuración de la opción **Etiqueta de dispositivo** como igual a o no igual a **Certificado de cliente válido**.
  
       > [!NOTE]
       >Solo se solicitará un certificado a un usuario si la sesión coincide con una directiva que usa el filtro de certificado de cliente válido. 
@@ -99,7 +99,7 @@ Para confirmar que la actividad se captura correctamente, haga clic en un regist
  ![Comprobar la etiqueta de agente de usuario](./media/domain-joined.png)
 
 
-Ya está listo para crear [directivas sesión](session-policy-aad.md) para controlar las aplicaciones de proxy.
+Ya está listo para crear [directivas de acceso](access-policy-aad.md) y [de sesión](session-policy-aad.md) para controlar las aplicaciones proxy.
 
 
 

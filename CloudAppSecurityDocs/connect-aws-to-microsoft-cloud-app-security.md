@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/25/2017
+ms.date: 12/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bb0703442d3568556dc54df5e1bd7901906ca9b3
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: ed30e0b0e3d49db23e404ef87454e48361996443
+ms.sourcegitcommit: 2544faf07c6373ac5505bbdf4ebd5d184daf68db
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/31/2017
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>Conectar AWS con Microsoft Cloud App Security
 En esta sección se proporcionan instrucciones para conectar Cloud App Security con una cuenta de Amazon Web Services existente mediante las API del conector.  
@@ -36,20 +36,12 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
 
      ![Crear usuario en AWS](./media/aws-create-user.png "Crear usuario en AWS")
 
-5. En el paso **Permisos**, seleccione **Attach existing policies directly** (Adjuntar las directivas existentes directamente) y haga clic en **Crear directiva**.
+5. Haga clic en la pestaña JSON:
 
-   ![Adjuntar usuario en AWS](./media/aws-attach-user-policy.png "Adjuntar directiva de usuario en AWS")
+     ![JSON de AWS](./media/aws-json.png "Pestaña JSON de AWS")
 
-6.  En **Crear directiva**, seleccione **Create Your Own Policy** (Crear su propia directiva).
- 
-    ![Crear su propia directiva en AWS](./media/aws-create-own-policy.png "Crear directiva en AWS")
- 
-7.  En **Revisar directiva**, proporcione un **Nombre de directiva**, por ejemplo, CloudAppSecurityPolicy.
+6. Pegue el siguiente script en el área proporcionada:
 
-    ![Revisar directiva en AWS](./media/aws-review-policy.png "Revisara directiva en AWS")
-
-8. Después, pegue el siguiente script en el campo **Policy Document** (Documento de directiva) y haga clic en **Crear directiva**:
-  
     ```     
     {  
       "Version" : "2012-10-17",  
@@ -71,7 +63,15 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
      }  
   
     ```  
-  
+
+     ![Código de AWS](./media/aws-code.png "Código de AWS")
+    
+6. Haga clic en **Revisar directiva**.
+
+7. Proporcione un **Nombre** y haga clic en **Crear directiva**.
+
+     ![Directiva de nombre de AWS](./media/aws-create-policy.png "Crear directiva de AWS")
+
 9. De nuevo en la pantalla **Agregar usuario**, actualice la lista si es necesario, seleccione el usuario que ha creado y haga clic en **Next Review** (Revisión siguiente).
 
    ![Revisar directiva de usuario en AWS](./media/aws-review-user.png "Revisar usuario en AWS")

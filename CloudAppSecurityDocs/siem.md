@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2acabcc195b8496f0a9bda812cc11b289911b81a
-ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
+ms.openlocfilehash: beaf31d7c365f62fb9c9dc7b79b0d89f31ee694d
+ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="siem-integration"></a>Integración de SIEM
     
@@ -130,57 +130,25 @@ Este es un ejemplo de archivo de registro de alertas:
 #### <a name="sample-cloud-app-security-alerts-in-cef-format"></a>Alertas de Cloud App Security de ejemplo en formato CEF
 
 
-##### <a name="activity-logs"></a>Registros de actividad
+|Aplicable a|Nombre del campo CEF|Descripción|
+|----|-----|----|
+|Actividades y alertas|start| Marca de tiempo de actividad o alerta|
+|Actividades y alertas|end|Marca de tiempo de actividad o alerta|
+|Actividades y alertas|rt|Marca de tiempo de actividad o alerta|
+|Actividades y alertas|msg |Descripción de la actividad o alerta, tal como se muestra en el portal|
+|Actividades y alertas|suser| Usuario asunto de la actividad o alerta|
+|Actividades y alertas|destinationServiceName| Aplicación que origina la actividad o alerta, por ejemplo, Office 365, SharePoint, Box.|
+|Actividades y alertas|cs<X>Label|Cada etiqueta tiene un significado diferente, pero la misma etiqueta lo explica, por ejemplo, targetObjects.|
+|Actividades y alertas|cs<X>|La información correspondiente a la etiqueta (el usuario de destino de la actividad o alerta según el ejemplo de etiqueta).|
+|Actividades|EVENT_CATEGORY_* |Categoría general de la actividad|
+|Actividades|<ACTION> |Tipo de actividad, tal como se muestra en el portal|
+|Actividades|externalId| Identificador de evento|
+|Actividades|dvc| Dirección IP del dispositivo del cliente|
+|Actividades|requestClientApplication|Agente de usuario del dispositivo del cliente|
+|Alertas|<alert type>|Por ejemplo “ALERT_CABINET_EVENT_MATCH_AUDIT”|
+|Alertas|<name>|Nombre de la directiva coincidente|
+|Alertas|externalId|Id. de alerta|
 
--   EVENT_CATEGORY_*: categoría de nivel superior de la actividad
-
--   <ACTION>: el tipo de actividad, tal como se muestra en el portal
-
--   externalId: identificador del evento
-
--   start: marca de tiempo de actividad
-
--   end: marca de tiempo de actividad
-
--   rt: marca de tiempo de actividad
-
--   msg: descripción del evento, tal como se muestra en el portal
-
--   suser: actividad del usuario
-
--   destinationServiceName: actividad que origina la aplicación, por ejemplo, Office 365, Sharepoint, Box.
-
--   dvc: dirección IP del dispositivo del cliente
-
--   requestClientApplication: agente de usuario del dispositivo del cliente
-
--   cs<X>Label: cada etiqueta tiene un significado diferente, pero la misma etiqueta lo explica, por ejemplo, targetObjects.
-
--   cs<X>: la información correspondiente a la etiqueta (el usuario de destino de la actividad o alerta según el ejemplo de etiqueta).
-
-##### <a name="alerts"></a>Alertas
-
--   <alert type>: por ejemplo “ALERT_CABINET_EVENT_MATCH_AUDIT”
-
--   <name>: el nombre de la directiva coincidente
-
--   externalId: identificador de la alerta
-
--   start: marca de tiempo de la alerta
-
--   end: marca de tiempo de la alerta
-
--   rt: marca de tiempo de la alerta
-
--   msg: descripción de la alerta, tal como se muestra en el portal
-
--   suser: usuario asunto de la alerta
-
--   destinationServiceName: actividad que origina la alerta, por ejemplo, Office 365, Sharepoint, Box
-
--   cs<X>Label: cada etiqueta tiene un significado diferente, pero la misma etiqueta lo explica, por ejemplo, targetObjects.
-
--   cs<X>: la información correspondiente a la etiqueta (el usuario de destino de la actividad o alerta según el ejemplo de etiqueta).
 
 
 ### <a name="step-3-validate-that-the-siem-agent-is-working"></a>Paso 3: validación del correcto funcionamiento del agente SIEM
