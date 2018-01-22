@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/22/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dc4a82602aabb8b493edefd1cb1456b81fff9d13
-ms.sourcegitcommit: 6e4eac42e553fd288da7de9c67eb79f11a420245
+ms.openlocfilehash: cfe5f1170793249290e0785c99bd94548dbef92f
+ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 01/21/2018
 ---
 # <a name="what-are-the-differences-between-microsoft-cloud-app-security-and-office-365-cloud-app-security"></a>¿Cuáles son las diferencias entre Microsoft Cloud App Security y Office 365 Cloud App Security?
 
@@ -38,7 +38,7 @@ Office 365 Cloud App Security es un subconjunto de Microsoft Cloud App Security 
 |----|----|----|----|
 |Cloud Discovery|Aplicaciones detectadas |Más de 15.000 aplicaciones en la nube  |Más de 750 aplicaciones en la nube con una funcionalidad similar a Office 365|
 ||Implementación para el análisis de detección|Carga de registros automática y manual|Carga de registros manual|
-||Anonimización de registros para la privacidad del usuario|Sí|No|
+||Anonimización de registros para la privacidad del usuario|Sí||
 ||Acceso al catálogo completo de aplicaciones en la nube|Sí||
 ||Evaluación de riesgos de la aplicación en la nube|Sí||
 ||Análisis de uso en la nube por aplicación, usuario y dirección IP|Sí||
@@ -60,6 +60,6 @@ Office 365 Cloud App Security es un subconjunto de Microsoft Cloud App Security 
 ## <a name="see-also"></a>Consulte también  
 
 Consulte los aspectos básicos en [Introducción a Cloud App Security](getting-started-with-cloud-app-security.md).    
-Para obtener soporte técnico, visite la página de [soporte técnico asistido de Cloud App Security](http://support.microsoft.com/oas/default.aspx?prid=16031).   
+
 Los clientes Premier también pueden elegir Cloud App Security directamente desde el [Portal Premier](https://premier.microsoft.com/).   
 
