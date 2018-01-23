@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b75e0c1cc4d91cfcbb8631170a0adfbde9349dee
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 6d6daa74269057595a34db7813d0cd6ba5eaf947
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="manage-app-permissions"></a>Administrar permisos de aplicación
 Muchas aplicaciones de productividad de terceros que puedan instalar los usuarios profesionales de su organización solicitan permiso para acceder a datos e información del usuario e iniciar sesión en nombre de este o en otras aplicaciones en la nube, como Office 365, G Suite y Salesforce.  Cuando los usuarios instalan estas aplicaciones, a menudo hacen clic en Aceptar sin revisar detenidamente los detalles en el mensaje, incluyendo la concesión de permisos a la aplicación.  Este problema se agrava por el hecho de que es posible que el departamento de TI no tenga suficiente información para evaluar el riesgo de seguridad que supone una aplicación frente a la ventaja de productividad que ofrece. Dado que aceptar permisos de aplicación de terceros es un riesgo de seguridad potencial para la organización, supervisar los permisos de aplicación que conceden los usuarios le ofrece la visibilidad y el control necesarios para proteger a los usuarios y las aplicaciones. Los permisos de aplicación de Cloud App Security le permiten ver qué aplicaciones que han instalado los usuarios tienen acceso a los datos de Office 365, G Suite y Salesforce, los permisos que tienen y qué usuarios les concedieron acceso a sus cuentas de Office 365, G Suite y Salesforce. Los permisos de aplicación le ayudan a decidir a qué aplicaciones permite que los usuarios tengan acceso y cuáles quiere prohibir.
@@ -55,7 +55,7 @@ La página Permisos de aplicación proporciona la siguiente información sobre c
 ## <a name="ban-or-approve-an-app"></a>Prohibir o aprobar una aplicación
 1. En la página Permisos de aplicación, haga clic en la aplicación para abrir el cajón de la aplicación y obtener más información sobre ella y los permisos que se le han concedido. Puede hacer clic en el vínculo Permisos para ver una lista completa de los permisos concedidos a la aplicación. En Uso de la comunidad, puede ver la frecuencia de uso de la aplicación entre otras organizaciones. También puede hacer clic en el vínculo Actividad relacionada para ver las actividades que se muestran en el registro de gobierno relacionadas con esta aplicación.
 2. Para prohibir la aplicación, haga clic en el icono Prohibir al final de la fila de la aplicación en la tabla. <br></br>
- ![icono Prohibir aplicación](./media/ban-app-icon.png) <br></br>
+ ![Icono Prohibir una aplicación](./media/ban-app-icon.png) <br></br>
 Cuando prohíbe una aplicación, puede elegir si quiere que los usuarios sepan que la aplicación que han instalado y autorizado anteriormente se ha prohibido, que estará deshabilitada y que no tendrán acceso a la aplicación conectada. Si no quiere que lo sepan, anule la selección de Enviar una notificación a los usuarios que hayan concedido permiso a esta aplicación prohibida en el cuadro de diálogo Prohibir la aplicación.
 
     ![prohibir aplicación](./media/ban-app.png)
@@ -91,7 +91,7 @@ Puede consultar los permisos de la aplicación en la vista **Básica** o la vist
 
 ## <a name="see-also"></a>Consulte también  
 [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)   
-[Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   
   

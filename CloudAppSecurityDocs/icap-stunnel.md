@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6277f0789780a2ae4fe9a4978af970f7ad961503
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: eeda929ecc4bc029f0fd292f4276ba55f202d314
+ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/21/2018
 ---
 # <a name="external-dlp-integration"></a>Integración de DLP externa
 
@@ -254,7 +254,9 @@ En Forcepoint, configure el dispositivo con estos pasos:
 
 ## Apéndice B: Guía de implementación de Symantec <a name="symantec"></a>
 
-Las versiones de Symantec DLP compatibles son la 11 y las versiones posteriores. Como se mencionó anteriormente, debe implementar un servidor de detección en el mismo centro de datos de Azure en que reside el inquilino de Cloud App Security. El servidor de detección se sincroniza con el servidor de cumplimiento a través de un túnel IPsec dedicado. 
+Las versiones de Symantec DLP compatibles son la 11 y las versiones posteriores. 
+
+Como se mencionó anteriormente, debe implementar un servidor de detección en el mismo centro de datos de Azure en que reside el inquilino de Cloud App Security. El servidor de detección se sincroniza con el servidor de cumplimiento a través de un túnel IPsec dedicado. 
  
 ### <a name="detection-server-installation"></a>Instalación del servidor de detección 
 El servidor de detección que Cloud App Security usa es un servidor estándar de Network Prevent for Web. Hay varias opciones de configuración que se deben modificar:
@@ -271,7 +273,7 @@ El servidor de detección que Cloud App Security usa es un servidor estándar de
     
       ![deshabilitar el modo de prueba](./media/icap-disable-trial-mode.png)
     
-2. En **ICAP** > **Filtrado de respuesta**, cambie el valor **Omitir respuestas menores que** a 1.
+2. En **ICAP** > **Filtrado de respuesta**, cambie el valor **Ignore Responses Smaller Than** (Omitir respuestas menores que) a 1.
 
 3. Agregue "application/*" a la lista **Inspect Content Type** (Inspeccionar tipo de contenido).
      ![inspeccionar tipo de contenido](./media/icap-inspect-content-type.png)
@@ -279,7 +281,10 @@ El servidor de detección que Cloud App Security usa es un servidor estándar de
 
 
 ### <a name="policy-configuration"></a>Configuración de directivas
-Cloud App Security admite sin problemas todos los tipos de reglas de detección que se incluyen con Symantec DLP, por lo que no es necesario modificar las reglas existentes. Sin embargo, hay un cambio de configuración que se debe aplicar a todas las directivas nuevas y existentes para permitir la integración total. Este cambio implica agregar una regla de respuesta específica a todas las directivas. Agregue el cambio de configuración a Vontu:
+Cloud App Security admite sin problemas todos los tipos de reglas de detección que se incluyen con Symantec DLP, por lo que no es necesario modificar las reglas existentes. Sin embargo, hay un cambio de configuración que se debe aplicar a todas las directivas nuevas y existentes para permitir la integración total. Este cambio implica agregar una regla de respuesta específica a todas las directivas. 
+
+Agregue el cambio de configuración a Vontu:
+
 1.  Vaya a **Administrar** > **Directivas** > **Reglas de respuesta** y haga clic en **Agregar regla de respuesta**.
     
     ![agregar regla de respuesta](./media/icap-add-response-rule.png)
@@ -293,13 +298,22 @@ Cloud App Security admite sin problemas todos los tipos de reglas de detección 
     ![bloquear http](./media/icap-block-http.png)
 
 Agregue la regla que creó a cualquier directiva existente:
+
 1. En cada directiva, vaya a la pestaña **Respuesta**.
+
 2. En la lista desplegable **Regla de respuesta**, seleccione la regla de respuesta de bloqueo que creó anteriormente.
+
 3. Guardar la directiva.
    
     ![deshabilitar el modo de prueba](./media/icap-add-policy.png)
 
 Esta regla se debe agregar a todas las directivas existentes.
 
+>[!NOTE]
+> Si utiliza Symantec vontu para escanear archivos desde Dropbox, CAS mostrará automáticamente el archivo como originario de la siguiente dirección URL: http://misc/filename. Esta dirección URL del marcador de posición no lleva a ninguna parte, pero se utiliza para fines de registro.
 
 
+## <a name="see-also"></a>Consulte también  
+[Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)   
+
+[Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  

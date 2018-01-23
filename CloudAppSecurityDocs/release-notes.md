@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/7/2017
+ms.date: 1/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,23 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 183b62579184fb1dfba96efb16b4ffc241c4e0bc
-ms.sourcegitcommit: 06517c2828ecfd1f4f4ab3e31c02d80e27388a4e
+ms.openlocfilehash: e47525f2a84b2c0515cb87010ce20681b9519a3b
+ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2018
+ms.lasthandoff: 01/21/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
+
+## <a name="cloud-app-security-release-115"></a>Notas de la versión 115 de Cloud App Security
+Fecha de publicación: 21 de enero de 2018
+
+-   En esta versión se proporciona una experiencia mejorada al seleccionar carpetas específicas en las directivas de archivo. Ahora puede ver y seleccionar fácilmente varias carpetas para incluirlas en una directiva. 
+-   En la página **Aplicaciones detectadas**: 
+   - La característica de etiquetado masivo le permite aplicar etiquetas personalizadas (además de etiquetas autorizadas y no autorizadas). 
+   - Cuando se **genera un informe de dirección IP**, los informes exportados ahora incluyen la información sobre si el tráfico provenía de aplicaciones autorizadas o no autorizadas. 
+-   Ahora puede solicitar un nuevo conector de aplicación de API del equipo de Microsoft Cloud App Security directamente en el portal, desde la página **Conectar una aplicación**. 
+
 
 ## <a name="cloud-app-security-release-114"></a>Notas de la versión 114 de Cloud App Security
 Fecha de publicación: 7 de enero de 2018
@@ -34,7 +44,7 @@ Fecha de publicación: 25 de diciembre de 2017
 
 -   Nos complace anunciar que Cloud App Security ahora permite una mayor integración con Azure Information Protection. Esta característica de versión preliminar pública permite examinar y clasificar archivos en aplicaciones en la nube y aplicar de forma automática las etiquetas de protección de Azure Information Protection. Esta característica está disponible en Box, SharePoint y OneDrive. Para obtener más información, consulte [Integración de Azure Information Protection](azip-integration.md).
 
--   Los analizadores de registros de Cloud Discovery ahora admiten formatos genéricos: LEEF, CEF y WC3.
+-   Los analizadores de registros de Cloud Discovery ahora admiten formatos genéricos: LEEF, CEF y W3C.
 
 
 ## <a name="cloud-app-security-release-112"></a>Versión 112 de Cloud App Security
@@ -629,7 +639,7 @@ Fecha de publicación: 15 de mayo de 2016
 * Al configurar una alerta para que se envíe cuando se infrinja una directiva, ahora se puede establecer un nivel de gravedad mínimo a partir del cual se recibirán las alertas. Puede elegir usar la configuración predeterminada de la organización para esto o establecer una configuración de alerta específica como valor predeterminado de la organización.
 
 ## <a name="see-also"></a>Consulte también  
-[Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   
   
