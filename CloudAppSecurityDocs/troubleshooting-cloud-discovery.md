@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ae08c4e39fa01b1007dc0e14d8235558d2180372
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 0e3ed6adf784f1252e02c4abe847a7b3741d11ca
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Solución de problemas de Cloud Discovery
 ## <a name="log-parsing-errors"></a>Errores de análisis de registro
@@ -28,7 +28,6 @@ Puede realizar un seguimiento del procesamiento de registros de Cloud Discovery 
 |ERROR|DESCRIPCIÓN|SOLUCIÓN|
 |----|----|----|
 |Tipo de archivo no admitido|El archivo cargado no es un archivo de registro válido (por ejemplo, un archivo de imagen).|Cargue un archivo de **texto**, **zip** o **gzip** que se haya exportado directamente desde el firewall o el proxy.|
-|Error interno.|Se ha detectado un error de recurso interno.|Haga clic en **Reintentar** para volver a ejecutar la tarea.|
 |El formato del registro no coincide|El formato del registro que ha cargado no coincide con el formato esperado para este origen de datos.|1. Compruebe que el registro no está dañado. <br /> 2. Compare y haga coincidir el registro con el formato de ejemplo que se muestra en la página de carga.|
 |Las transacciones tienen más de 90 días|Todas las transacciones tienen más de 90 días y, por lo tanto, se omitirán.|Exporte un registro nuevo con eventos recientes y vuelva a cargarlo.|
 |No hay transacciones con las aplicaciones de nube catalogadas|No se ha encontrado en el registro ninguna transacción con las aplicaciones de nube reconocidas.|Compruebe que el registro contiene información sobre el tráfico saliente.|
