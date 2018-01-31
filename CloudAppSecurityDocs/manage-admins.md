@@ -13,17 +13,17 @@ ms.technology:
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 635535c0089a7c1dc8c1505c302b4e5245449029
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: af4552c9ffac66fae14b3fc5f84860e2d3761f88
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
 ## <a name="managing-admin-access"></a>Administración del acceso de administrador
 
 Cloud App Security es compatible con el control de acceso basado en rol. De forma predeterminada, los siguientes roles de administrador de Office 365 y Azure AD tienen acceso a Cloud App Security:
 
-- Administrador global y administrador de seguridad: los administradores con **Acceso completo** tendrán todos los permisos de Cloud App Security para agregar administradores, directivas y parámetros de configuración, cargar registros y realizar acciones de gobierno.
+- Administrador global y administrador de seguridad: los administradores con **acceso total** tienen todos los permisos de Cloud App Security para agregar administradores, directivas y parámetros de configuración, cargar registros y realizar acciones de gobierno.
 
 - Administrador de cumplimiento: tiene permisos de solo lectura y puede administrar alertas. Puede crear y modificar directivas de archivo, permitir acciones de control de archivos y ver todos los informes integrados en Administración de datos. 
 
@@ -31,7 +31,7 @@ Cloud App Security es compatible con el control de acceso basado en rol. De form
       - Crear directivas o editar y cambiar las existentes 
       - Desempeñar acciones de control 
       - Cargar registros de detección
-      - Prohibir o aprobar aplicaciones de terceros
+      - Prohibición o aprobación de aplicaciones de terceros
       - Obtener acceso a la página de configuración del intervalo de direcciones IP ni verla
       - Obtener acceso a cualquier página de configuración ni verla 
       - Obtener acceso a la configuración de detección ni verla 
@@ -39,16 +39,16 @@ Cloud App Security es compatible con el control de acceso basado en rol. De form
       - Obtener acceso al registro de gobierno ni verlo 
       - Obtener acceso a la página de informes de instantáneas de administración ni verla 
 
-Para obtener más información, consulte [Asignación de roles de administrador en Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).
+Para obtener más información, vea [Asignación de roles de administrador en Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).
 
-También puede agregar más administradores a Cloud App Security sin agregar usuarios a los roles administrativos de Azure Active Directory haciendo lo siguiente:
+También puede agregar más administradores a Cloud App Security sin agregar usuarios a los roles administrativos de Azure Active Directory siguiendo estos pasos:
 
 1. Haga clic en el engranaje de configuración ![icono de configuración](./media/settings-icon.png "icono de configuración") y luego en **Administrar acceso de administrador**. 
 
 2. Agregue los administradores que deben tener acceso a Cloud App Security.
   
       
-3. A continuación, haga clic en la lista desplegable para establecer el tipo de acceso que tendrá el administrador: **Acceso completo** o **Solo lectura y administración de alertas**.
+3. A continuación, haga clic en la lista desplegable para establecer el tipo de acceso que tendrá el administrador: **Acceso total** o **Solo lectura y administración de alertas**.
 
      >[!NOTE]
       >Si un administrador cuyo acceso esté limitado a **Solo lectura y administración de alertas** intenta obtener acceso a una página restringida o realizar una acción restringida, recibirá un error por el que se notifica que no tiene permiso para obtener acceso a la página o realizar la acción.
@@ -69,7 +69,7 @@ Por ejemplo, si desea que Stephanie, una usuaria que tiene el rol de Lector de s
 Para agregar administradores adicionales a Cloud App Security:
 1. Haga clic en el engranaje de configuración ![icono de configuración](./media/settings-icon.png "icono de configuración") y luego en **Administrar acceso de administrador**. 
 
-2. Agregue los administradores que deben tener acceso a Cloud App Security, seleccione su nivel de acceso y haga clic en **Cerrar**.
+2. Agregue los administradores que deben tener acceso a Cloud App Security. Seleccione su nivel de acceso y haga clic en **Cerrar**.
 
 
 

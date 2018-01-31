@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 354beea33a126b676e379b54d05989f87a0a9910
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 89a71f9274d5005a93576dfc4ef6436870b9bd4b
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="control-cloud-apps-with-policies"></a>Controlar las aplicaciones en la nube con directivas
 
@@ -26,7 +26,7 @@ Las directivas permiten definir la forma en que quiere que los usuarios se compo
 Por ejemplo, si hay una amenaza de infracción de datos que quiere poner en cuarentena, necesitará un tipo de directiva distinto que si quiere bloquear el uso de una aplicación de riesgo en la nube en la organización.  
   
 ## <a name="policy-types"></a>Tipos de directivas  
-Cuando consulta la página **Directiva**, se pueden distinguir las distintas políticas y plantillas por tipo e icono para ver las directivas que estarán disponibles. Las directivas disponibles dependen del origen de datos y de lo que se ha habilitado en Cloud App Security para su organización, por ejemplo, si se cargan registros de Cloud Discovery, se mostrarán las directivas relativas a Cloud .
+Cuando consulta la página **Directiva**, se pueden distinguir las distintas políticas y plantillas por tipo e icono para ver las directivas que estarán disponibles. Las directivas disponibles dependen del origen de datos y de lo que se ha habilitado en Cloud App Security para su organización; por ejemplo, si se cargan registros de Cloud Discovery, se mostrarán las directivas relativas a Cloud.
 
 Pueden crearse los siguientes tipos de directivas:  
   
@@ -58,8 +58,7 @@ Cloud App Security ayuda a mitigar los distintos riesgos en la nube. Puede confi
   
 -   **Cloud Discovery:** ¿se están usando nuevas aplicaciones en la organización? ¿Tiene un problema de uso de aplicaciones de TI en la sombra del que no es consciente?  
   
-     La valoración del riesgo general de cada aplicación en la nube en función de las certificaciones normativas y del sector y  
-    los procedimientos recomendados permite supervisar el número de usuarios, actividades, volumen de tráfico y horas de uso típicas de  
+     La valoración del riesgo general de cada aplicación en la nube, de acuerdo con las certificaciones normativas y del sector y los procedimientos recomendados, le permite supervisar el número de usuarios, las actividades, el volumen de tráfico y las horas de uso habituales de  
     cada aplicación en la nube.  
   
 -   **DLP:** ¿se están compartiendo públicamente archivos de su propiedad? ¿Es necesario poner archivos en cuarentena?  
@@ -90,9 +89,9 @@ Siga este proceso para controlar el riesgo con directivas:
 ### <a name="create-a-policy"></a>Crear una directiva  
 Puede usar plantillas de directiva de Cloud App Security como base para todas las directivas o crear directivas a partir de una consulta.  
   
-La plantillas de directiva ayudan a establecer los filtros correctos y las configuraciones necesarias para detectar eventos específicos de interés en el entorno. Las plantillas incluyen directivas de todos los tipos y se pueden aplicar a diversos servicios.  
+Las plantillas de directiva le ayudan a establecer los filtros correctos y las configuraciones necesarias para detectar eventos específicos de interés en el entorno. Las plantillas incluyen directivas de todos los tipos y se pueden aplicar a diversos servicios.  
   
-Para crear una directiva a partir de una **plantilla de directiva**, haga lo siguiente:  
+Para crear una directiva a partir de una **plantilla de directiva**, siga los pasos siguientes:  
   
 1.  En la consola, haga clic en **Control** y luego en **Plantillas**.  
   
@@ -102,9 +101,9 @@ Para crear una directiva a partir de una **plantilla de directiva**, haga lo sig
   
 3.  Modifique la plantilla según sea necesario para la directiva personalizada. Cada propiedad y campo de esta nueva directiva basada en plantilla se puede modificar según las propias necesidades.  
 > [!NOTE] 
->Al usar filtros de directiva, **Contiene** solo buscará palabras completas separadas por comas, puntos, espacios o caracteres de subrayado. Por ejemplo, si busca **malware** o **virus**, encontrará virus_malware_file.exe, pero no encontrará malwarevirusfile.exe. Si busca **malware.exe**, encontrará TODOS los archivos que contengan malware o exe en el nombre de archivo, mientras que si busca **"malware.exe"** (con comillas) solo encontrará los archivos que contengan exactamente "malware.exe". 
-     **Es igual a** solo buscará la cadena completa. Por ejemplo, si busca **malware.exe**, encontrará malware.exe pero no malware.exe.txt.  
-4.  Después de crear la nueva directiva basada en plantilla, aparece un vínculo a la nueva directiva en la columna **Directivas vinculadas** de la tabla de plantillas de directivas situada junto a la plantilla a partir de la que se ha creado la directiva.  
+>Al usar filtros de directiva, **Contiene** solo buscará palabras completas separadas por comas, puntos, espacios o caracteres de subrayado. Por ejemplo, si busca **malware** o **virus**, encontrará virus_malware_file.exe, pero no encontrará malwarevirusfile.exe. Si busca *malware.exe*, encontrará TODOS los archivos que contengan malware o exe en el nombre de archivo, mientras que si busca **"malware.exe"** (con comillas) solo encontrará los archivos que contengan exactamente "malware.exe". 
+     **Es igual a** solo buscará la cadena completa. Por ejemplo, si busca *malware.exe*, encontrará malware.exe pero no malware.exe.txt.  
+4.  Después de crear la nueva directiva basada en plantilla, aparece un vínculo a la nueva directiva en la columna **Directivas vinculadas** de la tabla de plantillas de directivas situada junto a la plantilla a partir de la que se ha creado la directiva.   
      Puede crear tantas directivas como quiera a partir de cada plantilla y todas estarán vinculadas a la plantilla original, lo que permite realizar un seguimiento de todas las directivas creadas con la misma plantilla.  
   
 También puede **crear una directiva durante la investigación**. Si está investigando el **Registro de actividades**, los **Archivos** o las **Cuentas** y los explora en profundidad en busca de algo concreto, puede crear una nueva directiva basada en los resultados de la investigación en cualquier momento.  
@@ -112,9 +111,9 @@ También puede **crear una directiva durante la investigación**. Si está inves
 Por ejemplo, si está consultando el **registro de actividad** y observa una actividad de administrador que no proviene de la dirección IP de su oficina.
 
   
-Para crear una directiva basada en los resultados de la investigación, haga lo siguiente:  
+Para crear una directiva basada en los resultados de la investigación, siga los pasos siguientes:  
   
-1.  En la consola, haga clic en **Investigar** y luego en **Registro de actividades**, **Archivos** o **Cuentas**.  
+1.  En la consola, haga clic en **Investigar** y en **Registro de actividades**, **Archivos** o **Cuentas**.  
   
 2.  Use los filtros de la parte superior de la página para limitar los resultados de búsqueda al área sospechosa. Por ejemplo, en la página del registro de actividad, haga clic en **Actividad** y seleccione **Inicio de sesión de administrador**. A continuación, en **Dirección IP**, seleccione **Categoría** y establezca el valor para que no incluya categorías de dirección IP que haya creado para los dominios reconocidos, como las direcciones IP de administrador, corporativas o de VPN.  
   
@@ -137,7 +136,7 @@ Para crear una directiva basada en los resultados de la investigación, haga lo 
  
   
 > [!NOTE]  
->  Para obtener más información sobre la configuración de los campos de la directiva, consulte la documentación correspondiente de la directiva:  
+>  Para obtener más información sobre la configuración de los campos de la directiva, vea la documentación correspondiente de la directiva:  
 >   
 >  [Directivas de actividad de usuario](user-activity-policies.md)  
 >   
@@ -155,12 +154,12 @@ También puede configurar la directiva para que recibir una alerta por correo el
 Para establecer las preferencias de notificación, vaya a [Personalizar el portal](general-setup.md). 
   
 > [!NOTE] 
-> El número máximo de alertas que se enviarán por mensaje de texto es de 10 al día por número de teléfono. Tenga en cuenta que el día se calcula según la zona horaria UTC. 
+> El número máximo de alertas que se enviarán por mensaje de texto es de diez al día por número de teléfono. El día se calcula según la zona horaria UTC. 
 
 
 ## <a name="enable-and-disable-policies"></a>Habilitar y deshabilitar directivas
 
-Después de crear una directiva, puede habilitarla o deshabilitarla. Esto evita tener que eliminar una directiva después de crearla para detenerla. En su lugar, si por algún motivo quiere detener la directiva, solo tiene que deshabilitarla hasta que decida volver a habilitarla.
+Después de crear una directiva, puede habilitarla o deshabilitarla. Esto evita tener que eliminar una directiva después de crearla para detenerla. En su lugar, si por algún motivo quiere detener la directiva, tendrá que deshabilitarla hasta que decida volver a habilitarla.
 
 - Para habilitar una directiva, en la página **Directiva**, haga clic en los tres puntos al final de la fila de la directiva que quiera habilitar y seleccione **Habilitar**. 
 

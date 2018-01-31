@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/21/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,15 +13,15 @@ ms.technology:
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dad7bc9194fd8c064e57ef0466f2fdb40f08d154
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: dc032e1e5b560a8f6550a091c6694d0f63ff5822
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
 #  <a name="IPtagsandRanges"></a> Trabajar con etiquetas e intervalos IP
 
-Para identificar fácilmente las direcciones IP conocidas, como las direcciones IP de la oficina física, es necesario establecer los intervalos de direcciones IP que permiten etiquetar y clasificar adecuadamente, así como personalizar la forma en que los registros y alertas se muestran e investigan.   
+Para identificar fácilmente las direcciones IP conocidas, como las direcciones IP de la oficina física, es necesario establecer los intervalos de direcciones IP que permiten etiquetar y clasificar adecuadamente, así como personalizar la forma en que los registros y alertas se muestran e investigan. <br></br>  
 Cada grupo de intervalos IP se puede clasificar en función de una lista predeterminada de categorías IP o etiquetarse con etiquetas IP de creación propia. Además, esta configuración permite invalidar la información de geolocalización pública según su conocimiento de la red interna.  
   
 Se admite tanto IPv4 como IPv6.  
@@ -31,7 +31,7 @@ Cloud App Security está configurado previamente con etiquetas integradas para l
 - Sistema operativo obsoleto
 - Dispositivos administrados
 - Proxy anónimo
-- Botnet (cuando una red de robots (botnet) realice una actividad, recibirá un vínculo para obtener más información sobre el botnet específico)
+- Botnet (cuando una red de robots [botnet] realice una actividad, recibirá un vínculo para obtener más información sobre el botnet específico)
 - Tor
 - Dispositivo compatible
 - Dispositivo comprobado
@@ -45,13 +45,13 @@ Para usar estas etiquetas integradas como parte de una búsqueda, consulte su id
 
 Las etiquetas de dirección IP integradas y las etiquetas IP personalizadas se consideran de forma jerárquica, y las etiquetas IP personalizadas tienen prioridad sobre las etiquetas IP integradas. Por ejemplo, si una dirección IP se etiqueta como **De riesgo** en función de la información disponible sobre las amenazas pero hay una etiqueta IP personalizada que la identifica como **Corporativa**, la categoría y las etiquetas personalizadas tendrán prioridad.
 
-En la barra de menús, haga clic en el icono de configuración ![icono de configuración](./media/settings-icon.png "icono de configuración") y seleccione **Intervalos de direcciones IP**. Haga clic en **+Agregar intervalo de direcciones IP** y configure lo siguiente:  
+En la barra de menús, haga clic en el icono de configuración ![icono de configuración](./media/settings-icon.png "icono de configuración") y seleccione **Intervalos de direcciones IP**. Haga clic en **+Agregar intervalo de direcciones IP** y configure los campos siguientes:  
   
 > [!NOTE]  
->  La ubicación y el ISP registrado invalidarán los valores predeterminados.   
-> Las etiquetas IP, por contra, se agregan a la actividad sin invalidar datos.  
+> - La ubicación y el ISP registrado invalidarán los valores predeterminados.   
+> - Las etiquetas IP, por contra, se agregan a la actividad sin invalidar datos.  
   
-1.  Dé un **nombre** al intervalo IP. El nombre no aparecerá en el registro de actividades, sino que solo se usará para administrar el intervalo IP.  
+1.  Dé un **nombre** al intervalo IP. El nombre no se mostrará en el registro de actividades, sino que solo se usará para administrar el intervalo IP.  
   
      Para incluir el intervalo IP en una categoría IP, seleccione una categoría del menú desplegable.  
   
@@ -59,9 +59,9 @@ En la barra de menús, haga clic en el icono de configuración ![icono de config
   
 3.  Escriba un nuevo valor para **invalidar los campos de ubicación** u organización (ISP) de estas direcciones. Por ejemplo, si tiene una dirección IP que se considera públicamente como perteneciente a Irlanda, pero sabe que está en Estados Unidos, puede invalidar esta configuración.  
   
-4.  Escriba un **ISP registrado**. Esto invalidará los datos de sus actividades.  
+4.  Escriba un **ISP registrado**. Esto invalidará los datos de las actividades.  
   
-5.  Especifique una etiqueta para **etiquetar** las actividades de estas direcciones IP. La etiqueta se creará si escribe una palabra en el cuadro. Con la etiqueta ya configurada, puede agregarla a más intervalos IP seleccionándola de la lista. Puede agregar tantas etiquetas IP como quiera para cada intervalo. Las etiquetas IP se pueden usar al crear directivas.  Además de configurar las etiquetas IP, Cloud App Security tiene etiquetas integradas que no son configurables. Puede ver la lista de etiquetas en el [Filtro de etiquetas IP](activity-filters.md).  
+5.  Especifique una etiqueta para **etiquetar** las actividades de estas direcciones IP. La etiqueta se creará si escribe una palabra en el cuadro. Con la etiqueta ya configurada, puede agregarla a más intervalos IP seleccionándola en la lista. Puede agregar tantas etiquetas IP como quiera para cada intervalo. Las etiquetas IP se pueden usar al crear directivas.  Además de configurar las etiquetas IP, Cloud App Security tiene etiquetas integradas que no son configurables. Puede ver la lista de etiquetas en el [Filtro de etiquetas IP](activity-filters.md).  
   
 6.  Las **categorías IP** sirven para reconocer fácilmente las actividades de las direcciones IP interesantes. Las categorías están disponibles en el portal, pero requieren una configuración de usuario para saber qué direcciones IP están incluidas en cada categoría, excepto la categoría de "De riesgo", que incluye dos etiquetas IP: proxy anónimo y Tor.  
   
@@ -71,7 +71,7 @@ En la barra de menús, haga clic en el icono de configuración ![icono de config
   
     -  **Proveedor de nube**: deben ser las direcciones IP usadas por el proveedor de nube.
   
-    -   **Coporativo**: deben ser todas las direcciones IP de la red interna, las sucursales y las direcciones de itinerancia de Wi-Fi.  
+    -   **Corporativa**: deben ser todas las direcciones IP de la red interna, las sucursales y las direcciones de itinerancia de Wi-Fi.  
   
     -   **De riesgo**: deben ser todas las direcciones IP que se consideran que entrañan riesgos. Puede englobar direcciones IP sospechosas detectadas en el pasado, direcciones IP en las redes de la competencia, etc.  
   
