@@ -21,7 +21,7 @@
     "live-oldev",
     "live"
   ],
-  "git_repository_url_open_to_public_contributors": "\thttps://github.com/MicrosoftDocs/CloudAppSecurityDocs.es-es",
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/CloudAppSecurityDocs.es-es",
   "git_repository_branch_open_to_public_contributors": "live",
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
