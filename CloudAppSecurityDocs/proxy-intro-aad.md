@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/20/2017
+ms.date: 2/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d180fce8789fa20bea7135ce3fba437db996dcce
-ms.sourcegitcommit: 3d943dbb0e0850af0dc390a78d8feca2f3fde61b
+ms.openlocfilehash: 850436b8cb0c7a8e63a67a408ba51b6fecd9ac19
+ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-proxy"></a>Proteger aplicaciones con el proxy de Microsoft Cloud App Security
 
@@ -84,14 +84,42 @@ Actualmente, el proxy admite aplicaciones configuradas con un inicio de sesión 
 > - El proxy también admite aplicaciones que están configuradas con proveedores de identidades que no sean Azure AD en Private Preview. Para obtener más información sobre Private Preview, envíe un correo electrónico a mcaspreview@microsoft.com.
 > - Las aplicaciones de Office 365 no están configuradas con SAML, por lo que no son compatibles actualmente.
 
-De igual modo, el control de sesión no está automáticamente disponible para todas las aplicaciones. El equipo de Cloud App Security ha comprobado muchas aplicaciones populares con control de sesión. Otras aplicaciones pueden requerir un proceso de incorporación, que se realizará junto con el cliente.
-En cuanto a los clientes, el control de sesión está disponible para cualquier explorador en las principales plataformas, pero no admite aplicaciones de escritorio ni móviles. 
+El control de sesiones está disponible para todos los exploradores de cualquier plataforma principal. En estos momentos no se admiten aplicaciones móviles ni de escritorio. Gracias a la integración nativa, Azure AD admite cualquier aplicación configurada con el inicio de sesión único de SAML, incluidas las siguientes, que son las más populares:
+
+-   Salesforce
+
+-   Cuadro
+
+-   G Suite
+
+-   Workday
+
+-   Slack
+
+-   Workplace de Facebook
+
+-   ServiceNow
+
+-   JIRA/Confluence
+
+-   AWS
+
+-   Workiva
+
+-   CornerStone on Demand
+
+-   DocuSign
+
+-   HighQ 
+
+Continuamente se inscriben más aplicaciones al control de sesiones. Si está interesado en alguna aplicación específica que no figure aquí, [envíenos los detalles](mailto:casfeedback@microsoft.com) y el caso de uso que le interese, y la inscribiremos.
+
 
 
 
 ## <a name="see-also"></a>Consulte también  
-[Implementar el proxy de Cloud App Security](proxy-deployment-aad.md)   
-[Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Implementación del proxy de Cloud App Security](proxy-deployment-aad.md)   
+
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   
 

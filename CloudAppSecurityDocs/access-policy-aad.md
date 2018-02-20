@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/20/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b91c48262dbf85b133433b9d16615cab934dcddd
-ms.sourcegitcommit: 3d943dbb0e0850af0dc390a78d8feca2f3fde61b
+ms.openlocfilehash: 421dae3f71ca26f167dbb4a53a28a466baf8b2a6
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="access-policies"></a>Directivas de acceso 
 
@@ -89,8 +89,8 @@ Para crear una directiva de acceso, siga este procedimiento:
 
  
 ## <a name="see-also"></a>Consulte también  
-[Bloqueo de descargas de información confidencial con el proxy de Microsoft Cloud App Security](use-case-proxy-block-session-aad.md)   
-[Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Bloqueo de descargas en dispositivos no administrados mediante las funcionalidades de proxy de Azure AD](use-case-proxy-block-session-aad.md)   
+
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   
   

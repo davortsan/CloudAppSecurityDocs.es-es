@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/31/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 39c2bc972ea09eb9297711aee7bafdd7dc9d1242
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: e5b3647abff4edfb5dbc2c1d38ce322011da901a
+ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 02/05/2018
 ---
-# <a name="basic-set-up"></a>Configuración básica
+# <a name="basic-setup"></a>Configuración básica
 En el siguiente procedimiento se proporcionan instrucciones para personalizar el portal de Cloud App Security.
 
 ## <a name="prerequisites"></a>Requisitos previos 
-Para proporcionar acceso al portal de Cloud App Security, es necesario agregar las siguientes direcciones IP a la lista blanca del firewall:  
+Para acceder al portal de Cloud App Security, deberá agregar las direcciones IP siguientes a la lista de admitidas del firewall:  
   
 - 104.42.231.28  
   
@@ -44,24 +44,22 @@ Para proporcionar acceso al portal de Cloud App Security, es necesario agregar l
 
 4.  Asegúrese de incluir una lista de los **dominios administrados**. Este paso es fundamental porque Cloud App Security usa los dominios administrados para determinar qué usuarios son internos y cuáles son externos, así como dónde se deben compartir archivos y dónde no. Esto se usa en los informes y de cara a las alertas.  
 > [!NOTE] 
-> - Los usuarios de dominios que no están configurados como internos se marcarán como externos y no se examinarán en busca de actividades o archivos.
+> - Los usuarios de dominios que no estén configurados como internos se marcarán como externos y no se examinarán en busca de actividades o archivos.
 
 5. Si está integrando mediante la integración de Azure Information Protection, vea [Integración de Azure Information Protection](azip-integration.md) para obtener información. 
-  
+
+ >[!NOTE]
+ > Para trabajar con la integración de Azure Information Protection, primero debe habilitar el [conector de aplicaciones para Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
   
 6.  Si, en un momento determinado, quiere hacer una copia de seguridad de la configuración del portal, puede hacerlo en esta pantalla. Haga clic en **Exportar configuración del portal** para crear un archivo .json con todas las opciones de configuración del portal, incluidas las reglas de directivas, los grupos de usuarios y los intervalos de direcciones IP.  
   
-       
-
-
-
+   
 > [!NOTE] 
-> Si utiliza ExpressRoute, Cloud App Security se ha implementado en Azure y está totalmente integrado con [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Todas las interacciones con las aplicaciones de Cloud App Security y el tráfico enviado a Cloud App Security, incluida la carga de registros de detección, se enrutan a través del **emparejamiento público** de ExpressRoute para mejorar la latencia, el rendimiento y la seguridad. No hay ningún paso de configuración necesario en el lado cliente.  
-    Para obtener más información sobre el emparejamiento público, vea [Circuitos ExpressRoute y dominios de enrutamiento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
+> Si utiliza ExpressRoute, Cloud App Security se ha implementado en Azure y está totalmente integrado con [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Todas las interacciones con las aplicaciones de Cloud App Security y el tráfico enviado a Cloud App Security, incluida la carga de registros de detección, se enrutan a través del **emparejamiento público** de ExpressRoute para mejorar la latencia, el rendimiento y la seguridad. No hay ningún paso de configuración necesario en el lado cliente. <br></br>Para obtener más información sobre el emparejamiento público, vea [Circuitos ExpressRoute y dominios de enrutamiento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
     
 ## <a name="see-also"></a>Consulte también  
 [Configurar Cloud Discovery](set-up-cloud-discovery.md)   
-[Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   
   

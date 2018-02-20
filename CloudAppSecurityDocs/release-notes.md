@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/7/2017
+ms.date: 2/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,36 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 183b62579184fb1dfba96efb16b4ffc241c4e0bc
-ms.sourcegitcommit: 06517c2828ecfd1f4f4ab3e31c02d80e27388a4e
+ms.openlocfilehash: ae784655539e62358aabf7094f7b6b1634e6386d
+ms.sourcegitcommit: e1868428958901c51091b23fa032a989b3059b4b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
+
+## <a name="cloud-app-security-release-116"></a>Cloud App Security versión 116
+Publicado el 4 de febrero de 2018
+
+- La directiva de detección de anomalías de Cloud App Security se ha mejorado con nuevas **detecciones basadas en escenarios** entre las que se incluyen viaje imposible, actividad desde una dirección IP sospechosa y varios intentos incorrectos de inicio de sesión. Las nuevas directivas se habilitan automáticamente, lo que proporciona la detección de amenazas desde el primer momento en todo el entorno de nube. Además, las nuevas directivas exponen más datos a partir del motor de detección de Cloud App Security, lo que le ayuda a agilizar el proceso de investigación y contener las amenazas en curso. Para obtener más información, vea [Obtención de análisis de comportamiento y detección de anomalías instantáneos](https://docs.microsoft.com/en-us/cloud-app-security/anomaly-detection-policy).
+
+- Despliegue gradual: Cloud App Security ahora se pone en correlación entre los usuarios y sus cuentas en aplicaciones de SaaS. Esto le permite investigar fácilmente todas las actividades de los usuarios, en todas sus diferentes aplicaciones de SaaS correlacionadas, con independencia de qué aplicación o cuenta utilizan.  
+
+-   Despliegue gradual: Cloud App Security ahora admite varias instancias de la misma aplicación conectada. Si tiene varias instancias de, por ejemplo, Salesforce (una para venta y otra para marketing) podrá conectarlas a Cloud App Security y administrarlas desde la misma consola para crear directivas granulares y una investigación más a fondo. 
+
+- Los analizadores de Cloud Discovery ahora admiten dos formatos adicionales de punto de control: XML y KPC.
+
+
+
+## <a name="cloud-app-security-release-115"></a>Notas de la versión 115 de Cloud App Security
+Fecha de publicación: 21 de enero de 2018
+
+-   En esta versión se proporciona una experiencia mejorada al seleccionar carpetas específicas en las directivas de archivo. Ahora puede ver y seleccionar fácilmente varias carpetas para incluirlas en una directiva. 
+-   En la página **Aplicaciones detectadas**: 
+   - La característica de etiquetado masivo le permite aplicar etiquetas personalizadas (además de etiquetas autorizadas y no autorizadas). 
+   - Cuando se **genera un informe de direcciones IP** o se **genera un informe de usuarios**, los informes exportados ahora incluyen la información sobre si el tráfico provenía de aplicaciones autorizadas o no autorizadas. 
+-   Ahora puede solicitar un nuevo conector de aplicación de API del equipo de Microsoft Cloud App Security directamente en el portal, desde la página **Conectar una aplicación**. 
+
 
 ## <a name="cloud-app-security-release-114"></a>Notas de la versión 114 de Cloud App Security
 Fecha de publicación: 7 de enero de 2018
@@ -34,7 +57,7 @@ Fecha de publicación: 25 de diciembre de 2017
 
 -   Nos complace anunciar que Cloud App Security ahora permite una mayor integración con Azure Information Protection. Esta característica de versión preliminar pública permite examinar y clasificar archivos en aplicaciones en la nube y aplicar de forma automática las etiquetas de protección de Azure Information Protection. Esta característica está disponible en Box, SharePoint y OneDrive. Para obtener más información, consulte [Integración de Azure Information Protection](azip-integration.md).
 
--   Los analizadores de registros de Cloud Discovery ahora admiten formatos genéricos: LEEF, CEF y WC3.
+-   Los analizadores de registros de Cloud Discovery ahora admiten formatos genéricos: LEEF, CEF y W3C.
 
 
 ## <a name="cloud-app-security-release-112"></a>Versión 112 de Cloud App Security
@@ -629,7 +652,7 @@ Fecha de publicación: 15 de mayo de 2016
 * Al configurar una alerta para que se envíe cuando se infrinja una directiva, ahora se puede establecer un nivel de gravedad mínimo a partir del cual se recibirán las alertas. Puede elegir usar la configuración predeterminada de la organización para esto o establecer una configuración de alerta específica como valor predeterminado de la organización.
 
 ## <a name="see-also"></a>Consulte también  
-[Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   
   

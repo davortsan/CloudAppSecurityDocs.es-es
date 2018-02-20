@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2017
+ms.date: 2/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: beaf31d7c365f62fb9c9dc7b79b0d89f31ee694d
-ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
+ms.openlocfilehash: 3c75bc2fe08a969f9a3f63cfff913f4c6f462f8c
+ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="siem-integration"></a>Integración de SIEM
     
@@ -74,6 +74,10 @@ Puede hacer clic en **Editar y obtener vista previa de resultados** para comprob
   ![Configuración de tipos de datos](./media/siem3.png)
 
 7. Copie el token y guárdelo para más adelante. Después de hacer clic en Finalizar y salir del asistente, en la página SIEM, en la tabla podrá ver al agente SIEM que ha agregado. Mostrará que está **Creado** hasta que se conecte más adelante.
+
+> [!NOTE]
+> Los tokens que se creen se enlazan al administrador que los haya creado. Esto significa que, si se elimina al usuario administrador de Cloud App Security, el token dejará de ser válido.
+
 
 ### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>Paso 2: descarga del archivo JAR y ejecución en el servidor
 
@@ -185,7 +189,7 @@ El agente SIEM es un punto de conexión que permite recuperar hasta dos días de
 
 ## <a name="see-also"></a>Consulte también  
 [Solución de problemas de integración de SIEM](troubleshooting-siem.md)   
-[Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   
   

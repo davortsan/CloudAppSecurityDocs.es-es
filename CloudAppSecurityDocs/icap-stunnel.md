@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6277f0789780a2ae4fe9a4978af970f7ad961503
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 6d0de456770d06967db07bb0d145908405196968
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="external-dlp-integration"></a>Integración de DLP externa
 
@@ -31,7 +31,7 @@ En este tema se proporcionan los pasos necesarios para configurar la conexión I
 >Esta característica está en versión preliminar pública.
 
 ## <a name="architecture"></a>Arquitectura
-Cloud App Security examina el entorno de nube y, en función de la configuración de la directiva de archivo, decide si debe examinar el archivo con el motor DLP interno o la DLP externa. Si se examina mediante la DLP externa, el archivo se envía a través del túnel seguro al entorno del cliente, donde se retransmite al dispositivo ICAP para obtener el veredicto de la DLP: permitido o bloqueado. Las respuestas se envían a Cloud App Security a través de Stunnel, donde la directiva las usa para determinar las acciones posteriores, como las notificaciones, la cuarentena y el control de uso compartido.
+Cloud App Security examina el entorno de nube y, en función de la configuración de la directiva de archivo, decide si debe examinar el archivo con el motor DLP interno o la DLP externa. Si se examina mediante la DLP externa, el archivo se envía a través del túnel seguro al entorno del cliente, donde se retransmite al dispositivo ICAP para obtener el veredicto de la DLP: permitido o bloqueado. Las respuestas se envían de vuelta a Cloud App Security a través de Stunnel, donde la directiva las usa para determinar las acciones posteriores, como las notificaciones, la cuarentena y el control de uso compartido.
 
 ![Arquitectura de Stunnel](./media/icap-architecture-stunnel.png)
 
@@ -50,13 +50,13 @@ Para que Cloud App Security envíe datos a través de Stunnel al servidor ICAP, 
 
 ## <a name="step-1--set-up-icap-server"></a>PASO 1: Configurar el servidor ICAP
 
-Configure un servidor ICAP, anote el número de puerto y asegúrese de que establece **Modo** en **Bloqueo**. El modo de bloqueo establece el servidor ICAP para que retransmita el veredicto de clasificación a Cloud App Security.
+Configure un servidor ICAP, anote el número de puerto y asegúrese de establecer **Modo** en **Bloqueo**. El modo de bloqueo establece el servidor ICAP para que retransmita el veredicto de clasificación a Cloud App Security.
 
 Vea la documentación del producto de DLP externa para obtener instrucciones sobre cómo hacerlo. Por ejemplo, vea [Apéndice A: Instalación del servidor ICAP de Forcepoint](#forcepoint) y [Apéndice B: Guía de implementación de Symantec](#symantec).
 
 ## <a name="step-2--set-up-your-stunnel-server"></a>PASO 2: Configurar el servidor de Stunnel 
 
-En este paso configurará la aplicación Stunnel conectada al servidor ICAP. 
+En este paso, configurará la aplicación Stunnel conectada al servidor ICAP. 
 
 >[!NOTE]
 > Aunque se recomienda encarecidamente que lo haga, este paso es opcional y puede omitirse en las cargas de trabajo de prueba. 
@@ -232,7 +232,7 @@ Si el proceso todavía no se está ejecutando, vea la [documentación de Stunnel
    ![Conexión ICAP de Cloud App Security](./media/icap-wizard2.png)
 6. Haga clic en **Siguiente**. Cloud App Security probará la conectividad con el servidor que ha configurado. Si recibe un error, revise las instrucciones y la configuración de red. Cuando lo haya conectado correctamente, haga clic en **Salir**.
 
-7. Ahora, para dirigir el tráfico a este servidor de DLP externa, cuando cree una **directiva de archivo**, seleccione en **Método de inspección de contenido** la conexión que acaba de crear. Obtenga más información sobre cómo [crear una directiva de archivo](data-protection-policies.md).
+7. Ahora, para dirigir el tráfico a este servidor de DLP externa, cuando cree una **directiva de archivo**, seleccione en **Método de inspección de contenido** la conexión que ha creado. Obtenga más información sobre cómo [crear una directiva de archivo](data-protection-policies.md).
 
 
 ## Apéndice A: Instalación del servidor ICAP de Forcepoint<a name="forcepoint"></a>
@@ -254,7 +254,9 @@ En Forcepoint, configure el dispositivo con estos pasos:
 
 ## Apéndice B: Guía de implementación de Symantec <a name="symantec"></a>
 
-Las versiones de Symantec DLP compatibles son la 11 y las versiones posteriores. Como se mencionó anteriormente, debe implementar un servidor de detección en el mismo centro de datos de Azure en que reside el inquilino de Cloud App Security. El servidor de detección se sincroniza con el servidor de cumplimiento a través de un túnel IPsec dedicado. 
+Las versiones de Symantec DLP compatibles son la 11 y las versiones posteriores. 
+
+Como se mencionó anteriormente, debe implementar un servidor de detección en el mismo centro de datos de Azure en que reside el inquilino de Cloud App Security. El servidor de detección se sincroniza con el servidor de cumplimiento a través de un túnel IPsec dedicado. 
  
 ### <a name="detection-server-installation"></a>Instalación del servidor de detección 
 El servidor de detección que Cloud App Security usa es un servidor estándar de Network Prevent for Web. Hay varias opciones de configuración que se deben modificar:
@@ -271,7 +273,7 @@ El servidor de detección que Cloud App Security usa es un servidor estándar de
     
       ![deshabilitar el modo de prueba](./media/icap-disable-trial-mode.png)
     
-2. En **ICAP** > **Filtrado de respuesta**, cambie el valor **Omitir respuestas menores que** a 1.
+2. En **ICAP** > **Filtrado de respuesta**, cambie el valor **Ignore Responses Smaller Than** (Omitir respuestas menores que) a 1.
 
 3. Agregue "application/*" a la lista **Inspect Content Type** (Inspeccionar tipo de contenido).
      ![inspeccionar tipo de contenido](./media/icap-inspect-content-type.png)
@@ -279,7 +281,10 @@ El servidor de detección que Cloud App Security usa es un servidor estándar de
 
 
 ### <a name="policy-configuration"></a>Configuración de directivas
-Cloud App Security admite sin problemas todos los tipos de reglas de detección que se incluyen con Symantec DLP, por lo que no es necesario modificar las reglas existentes. Sin embargo, hay un cambio de configuración que se debe aplicar a todas las directivas nuevas y existentes para permitir la integración total. Este cambio implica agregar una regla de respuesta específica a todas las directivas. Agregue el cambio de configuración a Vontu:
+Cloud App Security admite sin problemas todos los tipos de reglas de detección que se incluyen con Symantec DLP, por lo que no es necesario modificar las reglas existentes. Sin embargo, hay un cambio de configuración que se debe aplicar a todas las directivas nuevas y existentes para permitir la integración total. Este cambio implica agregar una regla de respuesta específica a todas las directivas. 
+
+Agregue el cambio de configuración a Vontu:
+
 1.  Vaya a **Administrar** > **Directivas** > **Reglas de respuesta** y haga clic en **Agregar regla de respuesta**.
     
     ![agregar regla de respuesta](./media/icap-add-response-rule.png)
@@ -293,13 +298,22 @@ Cloud App Security admite sin problemas todos los tipos de reglas de detección 
     ![bloquear http](./media/icap-block-http.png)
 
 Agregue la regla que creó a cualquier directiva existente:
+
 1. En cada directiva, vaya a la pestaña **Respuesta**.
+
 2. En la lista desplegable **Regla de respuesta**, seleccione la regla de respuesta de bloqueo que creó anteriormente.
+
 3. Guardar la directiva.
    
     ![deshabilitar el modo de prueba](./media/icap-add-policy.png)
 
 Esta regla se debe agregar a todas las directivas existentes.
 
+>[!NOTE]
+> Si utiliza Symantec vontu para examinar archivos desde Dropbox, CAS mostrará automáticamente el archivo como originario de la siguiente dirección URL: http://misc/filename. Esta dirección URL del marcador de posición no lleva a ninguna parte, pero se utiliza para fines de registro.
 
 
+## <a name="see-also"></a>Consulte también  
+[Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)   
+
+[Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  

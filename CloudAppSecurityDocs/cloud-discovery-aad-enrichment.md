@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 45295c2c-3e4d-4482-bf95-2e47072f9236
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 897211ce4e43a65d2c4783f1e5ca22ba80662731
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 0ba0dc559bd2d1e1c91ef44e9bcbec828dec6a9f
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="cloud-discovery-enrichment"></a>Enriquecimiento de Cloud Discovery
 
@@ -35,7 +35,7 @@ Ahora es posible mejorar los datos de Cloud Discovery con datos de nombre de usu
     
 1. En el engranaje Configuración, seleccione **Configuración de Cloud Discovery**.
      
-2. Para permitir que Cloud App Security use datos de Azure Active Directory para enriquecer los nombres de usuario de forma predeterminada, en la pestaña **Enriquecimiento de usuarios**, seleccione **Enriquezca los identificadores de los usuarios detectados con los nombres de usuario de Azure Active Directory.**.
+2. Para permitir que Cloud App Security use datos de Azure Active Directory para enriquecer los nombres de usuario de forma predeterminada, en la pestaña **Enriquecimiento de usuarios**, seleccione **Enriquezca los identificadores de los usuarios detectados con los nombres de usuario de Azure Active Directory**.
 
 3. Haga clic en **Guardar**.
  
@@ -46,7 +46,7 @@ Ahora es posible mejorar los datos de Cloud Discovery con datos de nombre de usu
       
 ## <a name="see-also"></a>Consulte también  
 [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)   
-[Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
     
       

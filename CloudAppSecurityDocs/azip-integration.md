@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/11/2017
+ms.date: 1/31/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ec5fbb7ee06a8b57374fb5f36efeecea4413191e
-ms.sourcegitcommit: 09eabb9b69a01790476641d6e672d125ea057fbd
+ms.openlocfilehash: 9682c7badb19365ea74ffc78a7a2a38152f84669
+ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="azure-information-protection-integration"></a>Integración de Azure Information Protection
 
@@ -35,6 +35,8 @@ Al integrar Azure Information Protection en Cloud App Security, puede aprovechar
 
 
 ## <a name="prerequisites"></a>Requisitos previos
+
+- Para trabajar con la integración de Azure Information Protection, primero debe habilitar el [conector de aplicaciones para Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
 Actualmente, Cloud App Security permite aplicar etiquetas de clasificación de Azure Information Protection a los siguientes tipos de archivo:
 
@@ -91,7 +93,7 @@ Para ignorar las etiquetas de clasificación establecidas por una persona extern
  ![protección de la aplicación](./media/protect-app.png)
   
   >[!NOTE]
-  >Azure Information Protection protege los archivos con un tamaño máximo de 50 MB. 
+  > Cloud App Security puede aplicar Azure Information Protection en archivos que tengan un tamaño de hasta 50 MB.  
 
 2. Se le pide que elija una de las etiquetas de clasificación de su organización para aplicarla al archivo; luego, haga clic en **Aplicar**. 
 ![etiqueta de clasificación de protección](./media/protect-template.png)
@@ -169,6 +171,6 @@ Obtenga más información sobre [Azure Information Protection](https://docs.micr
 
 ## <a name="see-also"></a>Consulte también  
 [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)   
-[Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   

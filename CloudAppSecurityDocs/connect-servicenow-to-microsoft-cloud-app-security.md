@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/21/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5d6482e08bff4ea98d5bc1bc30a20cf3b2477903
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 9988a610e9768173f0c89458974997647cabceaa
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Conectar ServiceNow con Microsoft Cloud App Security
 
@@ -44,7 +44,7 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
 
    ![Tipo de OAuth de ServiceNow](./media/servicenow-oauth-app-type.png)
 
-5. En **Nuevo registro de registros de aplicación**, proporcione la información siguiente:
+5. En **Nuevo registro de registros de aplicación**, rellene los campos siguientes:
     
     - En el campo **Nombre** escriba el nombre del nuevo perfil de OAuth, por ejemplo, CloudAppSecurity. 
     
@@ -64,7 +64,7 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
   
      ![conectar ServiceNow](./media/connect-servicenow.png "conectar ServiceNow")  
   
-8.  En el elemento emergente, agregue el id. de usuario de ServiceNow, la contraseña, la dirección URL de la instancia, el identificador de cliente y el secreto de cliente en los cuadros correspondientes. Para encontrar el identificador de usuario de ServiceNow, en el portal de ServiceNow, vaya a **Usuarios** y, luego, busque su nombre en la tabla (aparecerá junto a su identificador de usuario).
+8.  En el elemento emergente, agregue el identificador de usuario de ServiceNow, la contraseña, la dirección URL de la instancia, el identificador de cliente y el secreto de cliente en los cuadros correspondientes. Para encontrar el identificador de usuario de ServiceNow, en el portal de ServiceNow, vaya a **Usuarios** y, luego, busque su nombre en la tabla (se mostrará junto a su identificador de usuario).
 
     ![Identificador de usuario de ServiceNow](./media/servicenow-userid.png)
   
@@ -96,7 +96,7 @@ Para conectar ServiceNow con Cloud App Security, debe tener permisos de administ
 
     ![conectar ServiceNow](./media/connect-servicenow.png "conectar ServiceNow")   
 
-6.  En la página de configuración de ServiceNow, en la pestaña API, agregue el id. de usuario, la contraseña y la dirección URL de la instancia de ServiceNow en los cuadros correspondientes.   
+6.  En la página de configuración de ServiceNow, en la pestaña API, agregue el identificador de usuario, la contraseña y la dirección URL de la instancia de ServiceNow en los cuadros correspondientes.   
 
 7.  Haga clic en **Conectar**.   
 
@@ -104,12 +104,12 @@ Para conectar ServiceNow con Cloud App Security, debe tener permisos de administ
 
 8.  Haga clic en **Probar API** para confirmar que la conexión se ha realizado correctamente.   
   
-   La prueba puede tardar unos minutos. Cuando reciba la notificación de que se ha realizado correctamente, haga clic en **Cerrar**.   
+   La prueba puede tardar unos minutos. Cuando reciba la notificación de que se ha realizado correctamente, haga clic en **Cerrar**.    
  Después de conectar ServiceNow, recibirá eventos de 60 días anteriores a la conexión. 
 
 
 ## <a name="see-also"></a>Consulte también  
 [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)   
-[Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   

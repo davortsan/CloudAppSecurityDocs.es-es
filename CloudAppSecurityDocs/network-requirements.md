@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/30/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ad089d71975a83c2f41fb9a9694acb8d01defdc7
-ms.sourcegitcommit: c4b40afff6a66b101fadfc1bd221c10186bad71a
+ms.openlocfilehash: 939e5c13f786adff59db189b1e54cc414f61c1b5
+ms.sourcegitcommit: 8d137c4ee27819cde6fb966d71b7809818347e5f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="network-requirements"></a>Requisitos de red
 
@@ -84,7 +84,7 @@ Para conectarse a aplicaciones de terceros, habilite Cloud App Security para per
 |EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
  
 
-## <a name="dlp-integration"></a>Integración de DLP
+## <a name="third-party-dlp-integration"></a>Integración de DLP de terceros
 
 Para que Cloud App Security envíe datos a través de Stunnel al servidor ICAP, abra el firewall de red perimetral a estas direcciones IP con un número de puerto de origen dinámico. 
 
@@ -129,14 +129,14 @@ Para habilitar características de Cloud Discovery por medio de un recopilador d
     |EU|https://prod02euwconsole1.blob.core.windows.net/|
 
 > [!NOTE]
-> Si el firewall requiere una lista de acceso de dirección IP estática y no admite la creación de listas de permitidos basadas en direcciones URL, permita que el recopilador de registros enrute el tráfico saliente hacia los [intervalos IP del centro de datos de Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653) a través del puerto 443.
-
+> - Si el firewall requiere una lista de acceso de dirección IP estática y no admite la creación de listas de permitidos basadas en direcciones URL, permita que el recopilador de registros enrute el tráfico saliente hacia los [intervalos IP del centro de datos de Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653) a través del puerto 443.
+>- Permita que el recopilador de registros inicie tráfico saliente al portal de Cloud App Security.
 
 
 
 ## <a name="see-also"></a>Consulte también  
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
-[Para obtener soporte técnico, visite la página de soporte técnico asistido de Cloud App Security.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   
 
