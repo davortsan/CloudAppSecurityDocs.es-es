@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/12/2018
+ms.date: 2/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,25 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ae784655539e62358aabf7094f7b6b1634e6386d
-ms.sourcegitcommit: e1868428958901c51091b23fa032a989b3059b4b
+ms.openlocfilehash: a8b6d36419d1553dcc5f3257a3dee22944f60d41
+ms.sourcegitcommit: 79cdf84f6fd60a57b771a7fd4e5a37d4cc8d9aed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
+## <a name="cloud-app-security-release-117"></a>Notas de la versión 117 de Cloud App Security
+Publicado el 20 de febrero de 2018
+
+-   La mejor integración de Cloud App Security con Azure Information Protection ahora le permite proteger archivos en G Suite. Esta característica de versión preliminar pública permite examinar y clasificar archivos en G Suite y aplicar de forma automática las etiquetas de protección de Azure Information Protection. Para obtener más información, consulte [Integración de Azure Information Protection](azip-integration.md).
+
+-   Ahora, Cloud Discovery es compatible con i-FILTER.
+
+-   La tabla de agentes SIEM ahora incluye más detalles para facilitar la administración.
+
 ## <a name="cloud-app-security-release-116"></a>Cloud App Security versión 116
 Publicado el 4 de febrero de 2018
-
 - La directiva de detección de anomalías de Cloud App Security se ha mejorado con nuevas **detecciones basadas en escenarios** entre las que se incluyen viaje imposible, actividad desde una dirección IP sospechosa y varios intentos incorrectos de inicio de sesión. Las nuevas directivas se habilitan automáticamente, lo que proporciona la detección de amenazas desde el primer momento en todo el entorno de nube. Además, las nuevas directivas exponen más datos a partir del motor de detección de Cloud App Security, lo que le ayuda a agilizar el proceso de investigación y contener las amenazas en curso. Para obtener más información, vea [Obtención de análisis de comportamiento y detección de anomalías instantáneos](https://docs.microsoft.com/en-us/cloud-app-security/anomaly-detection-policy).
 
 - Despliegue gradual: Cloud App Security ahora se pone en correlación entre los usuarios y sus cuentas en aplicaciones de SaaS. Esto le permite investigar fácilmente todas las actividades de los usuarios, en todas sus diferentes aplicaciones de SaaS correlacionadas, con independencia de qué aplicación o cuenta utilizan.  
@@ -185,7 +193,7 @@ Publicado el 3 de julio de 2017
 
 ### <a name="announcements"></a>Anuncios: 
 -   El Catálogo de aplicaciones en la nube ahora admite más de 15 000 aplicaciones reconocibles
--   Cumplimiento: Cloud App Security cuenta oficialmente con la certificación SOC1/2/3 de Azure. Si desea consultar la lista completa de certificaciones, consulte [Ofertas de Compliance](https://www.microsoft.com/trustcenter/compliance/complianceofferings) y filtre los resultados para ver Cloud App Security.
+-   Cumplimiento: Azure concede oficialmente certificación SOC1/2/3 a Cloud App Security. Para obtener la lista completa de certificaciones, consulte [Ofertas de Microsoft Compliance](https://www.microsoft.com/trustcenter/compliance/complianceofferings) y filtre los resultados para Cloud App Security.
 
 ### <a name="other-improvements"></a>Otras mejoras: 
 -   **Análisis mejorado:** se ha mejorado el mecanismo de análisis de registros de Cloud Discovery. Es mucho menos probable que se produzcan errores internos.
