@@ -1,5 +1,6 @@
 # Conceptos básicos y exploración
 ## [¿Qué es Cloud App Security?](what-is-cloud-app-security.md)
+## [Privacidad, seguridad de datos, confianza y cumplimiento de Cloud App Security](cas-compliance-trust.md)
 ## [Novedades](release-notes.md)
 ## Comparar
 ### [Office 365](editions-cloud-app-security-o365.md)
@@ -16,7 +17,7 @@
 ## [Implementar Cloud Discovery](set-up-cloud-discovery.md)
 ### [Crear informes de instantáneas de Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 ### [Configurar la carga de registros automática para informes continuos](discovery-docker.md)
-#### [Docker en Ubuntu local](discovery-docker-ubuntu.md)
+#### [Docker en Ubuntu y RHEL local](discovery-docker-ubuntu.md)
 #### [Docker en Ubuntu en Azure](discovery-docker-ubuntu-azure.md)
 #### [Uso de aplicaciones virtuales (en desuso)](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Uso del analizador de registros personalizado](custom-log-parser.md)
@@ -61,6 +62,7 @@
 #### [Directivas de archivos](data-protection-policies.md)
 ##### [Inspección de contenido](content-inspection.md)
 ##### [Trabajar con el motor de RegEx](working-with-the-regex-engine.md)
+#### [Directivas de acceso](access-policy-aad.md)
 #### [Directivas de sesión](session-policy-aad.md)
 #### [Referencia de plantillas de directiva](policy-template-reference.md)
 ### [Control de aplicaciones conectadas](governance-actions.md)
