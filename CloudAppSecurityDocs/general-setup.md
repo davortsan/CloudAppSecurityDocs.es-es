@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/31/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e5b3647abff4edfb5dbc2c1d38ce322011da901a
-ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
+ms.openlocfilehash: ff8f123a1bab8831071865422f8afa34e20e416b
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="basic-setup"></a>Configuración básica
 En el siguiente procedimiento se proporcionan instrucciones para personalizar el portal de Cloud App Security.
@@ -32,10 +32,8 @@ Para acceder al portal de Cloud App Security, deberá agregar las direcciones IP
   
 ## <a name="set-up-the-portal"></a>Configurar el portal  
   
-1.  En la barra de menús del portal de Cloud App Security, haga clic en el icono de configuración ![icono de configuración](./media/settings-icon.png "icono de configuración") y seleccione **Configuración general** para configurar lo siguiente:  
-     
-     ![configuración general](./media/general-settings.png "configuración general")  
-  
+1.  En la barra de menús del portal de Cloud App Security, haga clic en el icono de configuración ![icono de configuración](./media/settings-icon.png "settings icon") y seleccione **Configuración** para configurar los detalles de la organización.     
+
 3.  En **Detalles de la organización**, es importante que indique un **nombre para mostrar de la organización** para su organización. Este nombre se mostrará en los correos electrónicos y páginas web enviados desde el sistema.  
   
 4. Proporcione un **Nombre del entorno** (inquilino). Esto es especialmente importante si administra varios inquilinos.  

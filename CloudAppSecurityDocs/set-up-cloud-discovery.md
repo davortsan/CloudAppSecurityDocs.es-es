@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2017
+ms.date: 3/5/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0fa9125b611574d4f4fafb18c8bc649de82b1ad6
-ms.sourcegitcommit: 1c9ed4923cb6b761aebd13a6caa3a6605412419a
+ms.openlocfilehash: f8dabfd6a7e5d246c1c36dd29e023e294a266f5d
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar Cloud Discovery
 Cloud Discovery analiza los registros de tráfico del catálogo de aplicaciones en la nube de Cloud App Security de más de 15 000 aplicaciones en la nube que se clasifican y se puntúan en función de más de 60 factores de riesgo, a fin de proporcionar visibilidad continua del uso de la nube, Shadow IT y el riesgo que Shadow IT supone para la organización.
@@ -69,7 +69,7 @@ Para generar correctamente un informe de Cloud Discovery, los registros de tráf
  
 
 
-## <a name="supported-firewalls-and-proxies"></a>Firewalls y servidores proxy compatibles
+## Firewalls y servidores proxy compatibles <a name="supported-firewalls-and-proxies"></a>
 
 - Barracuda - Web App Firewall (W3C)
 - Blue Coat Proxy SG - registros de acceso (W3C)
@@ -81,6 +81,7 @@ Para generar correctamente un informe de Cloud Discovery, los registros de tráf
 - Cisco Meraki – Registro de direcciones URL
 - Clavister NGFW (Syslog)
 - Dell Sonicwall
+- Digital Arts i-FILTER
 - Fortinet Fortigate
 - Juniper SRX
 - Juniper SSG
@@ -108,19 +109,20 @@ Atributos de datos (según la documentación del proveedor):
 |Barracuda|**Sí**|**Sí**|**Sí**|**Sí**|No|No|
 |Blue Coat|**Sí**|No|**Sí**|**Sí**|**Sí**|**Sí**|
 |Checkpoint|No|**Sí**|No|**Sí**|No|No|
-|Cisco ASA|No|**Sí**|No|**Sí**|**Sí**|No|
+|Cisco ASA (Syslog)|No|**Sí**|No|**Sí**|**Sí**|No|
 |Cisco ASA con FirePOWER|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
 |Cisco FWSM|No|**Sí**|No|**Sí**|**Sí**|No|
 |Cisco Ironport WSA|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
 |Cisco Meraki|**Sí**|**Sí**|No|**Sí**|No|No||Cisco Scansafe|**Sí**|No|**Sí**|**Sí**|**Sí**|**Sí**|
 |Clavister NGFW (Syslog)|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
 |Dell SonicWall|**Sí**|**Sí**|No|**Sí**|**Sí**|**Sí**|
+|Digital Arts i-FILTER|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
 |FortiGate|No|**Sí**|No|**Sí**|**Sí**|**Sí**|
 |Juniper SRX|No|**Sí**|No|**Sí**|**Sí**|**Sí**|
-|Juniper SSG|No|**Sí**|No|**Sí**|**Sí**|**Sí**|
+|Juniper SSG|No|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
 |McAfee SWG|**Sí**|No|No|**Sí**|**Sí**|**Sí**|
 |MS TMG|**Sí**|No|**Sí**|**Sí**|**Sí**|**Sí**|
-|Palo Alto Networks|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
+|Palo Alto Networks|No|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
 |Sophos|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|No|
 |Squid (Common)|**Sí**|No|**Sí**|**Sí**|No|**Sí**|
 |Squid (Native)|**Sí**|No|**Sí**|**Sí**|No|**Sí**|
@@ -130,7 +132,7 @@ Atributos de datos (según la documentación del proveedor):
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
  
 [Crear informes de instantáneas de Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 
