@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/20/2018
+ms.date: 3/3/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,22 +13,36 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a8b6d36419d1553dcc5f3257a3dee22944f60d41
-ms.sourcegitcommit: 79cdf84f6fd60a57b771a7fd4e5a37d4cc8d9aed
+ms.openlocfilehash: c2e6d6b3b31c93d69f366b93a7426f62518b948c
+ms.sourcegitcommit: c5533d66b8e037d6221c48bdbad81574f25f2817
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
-## <a name="cloud-app-security-release-117"></a>Notas de la versión 117 de Cloud App Security
-Publicado el 20 de febrero de 2018
 
--   La mejor integración de Cloud App Security con Azure Information Protection ahora le permite proteger archivos en G Suite. Esta característica de versión preliminar pública permite examinar y clasificar archivos en G Suite y aplicar de forma automática las etiquetas de protección de Azure Information Protection. Para obtener más información, consulte [Integración de Azure Information Protection](azip-integration.md).
+## <a name="cloud-app-security-release-118"></a>Cloud App Security versión 118
+Fecha de publicación: 4 de marzo de 2018
 
--   Ahora, Cloud Discovery es compatible con i-FILTER.
+- Ahora puede aprovechar las funcionalidades de detección y supervisión de Shadow IT de Microsoft Cloud App Security en sus propias aplicaciones personalizadas exclusivas. La nueva posibilidad de agregar aplicaciones personalizadas a Cloud Discovery permite supervisar el uso de la aplicación y recibir alertas sobre cambios en el patrón de uso. Para obtener más información, vea [Protecting your custom apps](cloud-discovery-custom-apps.md) (Protección de las aplicaciones personalizadas). Esta característica se está implantando gradualmente.
 
--   La tabla de agentes SIEM ahora incluye más detalles para facilitar la administración.
+- Las páginas de **configuración** del portal de Cloud App Security se han rediseñado. El nuevo diseño consolida todas las páginas de configuración, proporciona la funcionalidad de búsqueda y un mejor diseño. 
+
+- Cloud Discovery admite ahora Barracuda F-Series Firewalls y Barracuda F-Series Firewall Web Log Streaming.
+
+- La funcionalidad de búsqueda en las páginas de dirección IP y de usuario habilita ahora Autocompletar para que le resulte más fácil encontrar lo que busca.
+
+- Ahora puede realizar acciones en masa en las páginas de configuración de exclusión de entidades y de exclusión de direcciones IP. Esto hace que le resulte más fácil seleccionar varios usuarios y grupos o direcciones IP y excluirlos de la supervisión como parte de Cloud Discovery en su organización. 
+
+## <a name="cloud-app-security-release-117"></a>Cloud App Security versión 117
+Fecha de publicación: 20 de febrero de 2018
+
+-   La mayor integración de Cloud App Security con Azure Information Protection permite ahora proteger archivos de G Suite. Esta característica de versión preliminar pública permite examinar y clasificar archivos de G Suite y aplicar automáticamente etiquetas de protección de Azure Information Protection para protegerlos. Para obtener más información, consulte [Integración de Azure Information Protection](azip-integration.md).
+
+-   Cloud Discovery admite ahora [Digital Arts i-FILTER](http://www.daj.jp/en/products/if/).
+
+-   La tabla Agentes SIEM incluye ahora más detalles que facilitan la administración.
 
 ## <a name="cloud-app-security-release-116"></a>Cloud App Security versión 116
 Publicado el 4 de febrero de 2018
@@ -193,7 +207,7 @@ Publicado el 3 de julio de 2017
 
 ### <a name="announcements"></a>Anuncios: 
 -   El Catálogo de aplicaciones en la nube ahora admite más de 15 000 aplicaciones reconocibles
--   Cumplimiento: Azure concede oficialmente certificación SOC1/2/3 a Cloud App Security. Para obtener la lista completa de certificaciones, consulte [Ofertas de Microsoft Compliance](https://www.microsoft.com/trustcenter/compliance/complianceofferings) y filtre los resultados para Cloud App Security.
+-   Cumplimiento: Cloud App Security cuenta oficialmente con la certificación SOC1/2/3 de Azure. Si desea consultar la lista completa de certificaciones, consulte [Ofertas de Compliance](https://www.microsoft.com/trustcenter/compliance/complianceofferings) y filtre los resultados para ver Cloud App Security.
 
 ### <a name="other-improvements"></a>Otras mejoras: 
 -   **Análisis mejorado:** se ha mejorado el mecanismo de análisis de registros de Cloud Discovery. Es mucho menos probable que se produzcan errores internos.

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/5/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 54dd79b76386eda64e06936801849089c5f7d438
-ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
+ms.openlocfilehash: 2b9239b43d2f104f6e54c519ba089346c7672456
+ms.sourcegitcommit: c5533d66b8e037d6221c48bdbad81574f25f2817
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Conectar Box con Microsoft Cloud App Security
 En esta sección se proporcionan instrucciones para conectar Cloud App Security con una cuenta de Box existente mediante las API del conector de aplicaciones.  
@@ -29,7 +29,7 @@ En esta sección se proporcionan instrucciones para conectar Cloud App Security 
   
 1.  Si restringe el acceso de permisos de la aplicación, siga estos pasos. De lo contrario, vaya al paso 2.  
   
-    -   En la consola de administrador de Box, haga clic en el icono de configuración y luego en **Configuración empresarial**.  
+    -   En la consola de administrador de Box, haga clic en el icono de configuración y luego en **Business settings** (Configuración de Business) o **Enterprise settings** (Configuración de Enterprise).  
   
          ![configuración empresarial de Box](./media/box-business-settings.png "configuración empresarial de Box")  
   
