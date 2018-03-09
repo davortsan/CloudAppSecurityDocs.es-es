@@ -2,6 +2,7 @@
 ## [¿Qué es Cloud App Security?](what-is-cloud-app-security.md)
 ## [Privacidad, seguridad de datos, confianza y cumplimiento de Cloud App Security](cas-compliance-trust.md)
 ## [Novedades](release-notes.md)
+### [Archivo de versión anterior](release-note-archive.md)
 ## Comparar
 ### [Office 365](editions-cloud-app-security-o365.md)
 ### [Azure AD](editions-cloud-app-security-aad.md)
