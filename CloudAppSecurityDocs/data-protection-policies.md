@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7b8fad0013cc645d380a0c967049937a479b344d
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: 63024ea9395c6f765928076a8d6eb9861fa35238
+ms.sourcegitcommit: 2f1ccff60194573325afa01f1634eea373c829b6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="file-policies"></a>Directivas de archivo  
 Las directivas de archivo permiten aplicar una amplia gama de procesos automatizados, con lo que se aprovechan las API del proveedor en la nube. Las directivas se pueden establecer para proporcionar análisis de conformidad constantes, tareas de exhibición de documentos electrónicos legales, DLP para el contenido confidencial compartido públicamente y otros muchos casos de uso.  <br></br>
@@ -105,8 +105,7 @@ Cada directiva se compone de las siguientes partes:
 -   Extensions  
    
     -  Es posible realizar una inspección del contenido mediante motores de terceros para DLP mejorada o funcionalidades antimalware.  
-  
-    -  Es posible realizar [acciones de gobierno](governance-actions.md) mediante motores de terceros para aplicar un control de cifrado personalizado u otros tipos de procesamiento de archivos (por ejemplo, marcas de agua personalizadas).  
+
   
 ## <a name="see-also"></a>Consulte también  
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
