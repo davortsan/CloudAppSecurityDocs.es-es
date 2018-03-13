@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/7/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a61579877c230849ef721a923d4148ea4950c8d3
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: a010bdab8d58ca3454ab3a47d181fe999e3bee54
+ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="governing-connected-apps"></a>Control de aplicaciones conectadas
 El gobierno le permite controlar qué hacen los usuarios en tiempo real en varias aplicaciones. Para las aplicaciones conectadas, puede aplicar acciones de gobierno a archivos o actividades.
@@ -87,7 +87,7 @@ Las siguientes acciones de gobierno pueden realizarse para aplicaciones conectad
     > [!NOTE] 
     > Si Azure Active Directory está establecido de modo que se sincronice automáticamente con los usuarios del entorno local de Active Directory, la configuración del entorno local reemplazará la configuración de Azure AD y esta acción de gobierno se revertirá. 
   
-    -   Revocar contraseña: se revoca la contraseña del usuario y se le obliga a establecer una nueva en el siguiente inicio de sesión.  
+    -   Requerir que el usuario vuelva a iniciar sesión: se cierra la sesión del usuario y se le requiere que vuelva a iniciarla.  
   
      ![Acciones de gobierno de la directiva de actividad de seguridad de Cloud App Security](./media/activity-policy-ref6.png "Ref6 de directiva de actividad")  
   
@@ -119,7 +119,7 @@ Para obtener información sobre cómo se tratan las acciones de control cuando h
 |Cuentas|Cuenta|Configuración de la cuenta|Le lleva a la página de configuración de la cuenta de la aplicación específica (por ejemplo, Salesforce).|Todas las aplicaciones (la configuración de One Drive y SharePoint se establece en Office).|
 |Cuentas |Archivo|Transferir la propiedad de todos los archivos|En una cuenta, todos los archivos de un usuario se transfieren para pasar a pertenecer a una nueva persona de su elección. El propietario anterior se convierte en editor y ya no podrá cambiar la configuración de uso compartido. El nuevo propietario recibirá una notificación por correo relativa al cambio de propiedad.|G Suite|
 |Cuentas, Directiva de actividad|Cuenta|Suspender usuario|El usuario se configura de forma que no tiene acceso ni la posibilidad de iniciar sesión. Si este usuario ya ha iniciado sesión cuando define esta opción, se le bloqueará inmediatamente.|G Suite, Box, Office, Salesforce|
-|Directiva de actividad, Cuentas|Cuenta|Revocar contraseña|Se revoca la contraseña de una cuenta de usuario; por ejemplo, establecer una directiva de actividad que revoca una contraseña tras 10 intentos de inicio de sesión infructuosos.|G Suite|
+|Directiva de actividad, Cuentas|Cuenta|Requerir que el usuario vuelva a iniciar sesión|Revoca todos los tokens de actualización y los problemas de cookies de sesión a las aplicaciones por parte del usuario. Esto impedirá el acceso a cualquiera de los datos de la organización y obligará al usuario a iniciar sesión en todas las aplicaciones de nuevo.|G Suite|
 |Directiva de actividad, Cuentas|Cuenta|Revocar privilegios de administrador|Se revocan los privilegios de una cuenta de administrador; por ejemplo, establecer una directiva de actividad que revoca los privilegios de administrador tras 10 intentos de inicio de sesión infructuosos.|G Suite|
 |Panel de la aplicación > Permisos de aplicación|Permisos|Eliminar la prohibición de una aplicación|En Google y Salesforce: quite la prohibición de una aplicación y permita que los usuarios concedan permisos a la aplicación de terceros con Google o Salesforce. En Office 365: se restauran los permisos de la aplicación de terceros para acceder a Office.|G Suite, Salesforce, Office|
 |Panel de la aplicación > Permisos de aplicación|Permisos|Deshabilitar permisos de aplicación|Revoque los permisos de una aplicación de terceros para acceder a Google, Salesforce u Office. Se trata de una acción única que se producirá en todos los permisos existentes, pero no impedirá las conexiones futuras. |G Suite, Salesforce, Office|

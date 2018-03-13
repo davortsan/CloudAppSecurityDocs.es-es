@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology:
 ms.assetid: 85cae50d-f571-4907-9600-da4cc187b43b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cc5f5896a8a4abb69efff6deab94f7e55108eeff
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: eee24bc5079fd187f5515f96cdba760c507b1465
+ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/08/2018
 ---
 ##  <a name="Adminsettings"></a> Personalizar la configuración de administración  
 Para configurar sus preferencias como un administrador de Cloud App Security, haga clic en su nombre en la barra de menús del portal y seleccione **Configuración de usuario** para establecer lo siguiente:  
   
-1.  Haga clic en **Configuración de la cuenta**. Aquí puede personalizar el idioma del portal para verlo según su elección. Se puede establecer para mostrar el portal en el idioma predeterminado o bien en un idioma diferente de su preferencia.  
+1.  Haga clic en **Configuración de la cuenta**. Aquí puede configurar y renovar la contraseña para acceder al portal de Cloud App Security.  
   
      ![configuración de usuario personalizada](./media/custom-user-settings.png "configuración de usuario personalizada")  
   

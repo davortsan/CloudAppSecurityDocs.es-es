@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,26 +13,24 @@ ms.technology:
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 50bf7a8bb69e20b1f4f8e54b22dfad47d2a81690
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: de4e7025f046f15e0aa36f2cf45d17a3502a0644
+ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/08/2018
 ---
 ##  <a name="mailsettings"></a> Establecimiento de preferencias de notificación de correo electrónico  
-En la barra de menús, haga clic en el icono de configuración ![icono de configuración](./media/settings-icon.png "icono de configuración") y seleccione **Configuración de correo** para establecer los parámetros de las notificaciones de correo enviadas desde Cloud App Security a los administradores que solicitan alertas, así como de las notificaciones enviadas a los usuarios finales sobre infracciones en las que puedan haber participado.  
 
-Para obtener información sobre la dirección IP del servidor de correo electrónico de Cloud App Security que debe incluir en la lista blanca del servicio de correo electrónico no deseado, consulte los [requisitos de red](network-requirements.md). 
+Para establecer los parámetros de las notificaciones de correo enviadas desde Cloud App Security a los administradores que solicitan alertas, así como de las notificaciones enviadas a los usuarios finales sobre infracciones en las que puedan haber participado, siga este procedimiento. Para obtener información sobre la dirección IP del servidor de correo electrónico de Cloud App Security que debe incluir en la lista blanca del servicio de correo electrónico no deseado, consulte los [requisitos de red](network-requirements.md). 
+
+
+1. En la barra de menús, haga clic en el engranaje de configuración ![icono de configuración](./media/settings-icon.png "settings icon"), seleccione **Configuración** y, después, seleccione la pestaña **Configuración de correo electrónico**.  
+
+2. **Dirección de correo electrónico del campo Desde**: cuenta de correo que quiere usar para enviar la notificación.  
+   
+   **Nombre para mostrar del campo Desde**: nombre que quiere que aparezca en el campo **Desde** del mensaje de correo.  
   
-![menú de configuración de correo](./media/mail-setting-menu.png "menú de configuración de correo")  
-  
-Configura lo siguiente:  
-  
-1.  **Dirección de correo electrónico del campo Desde**: cuenta de correo que quiere usar para enviar la notificación.  
-  
-     **Nombre para mostrar del campo Desde**: nombre que quiere que aparezca en el campo **Desde** del mensaje de correo.  
-  
-     **Dirección de correo electrónico del campo Responder a**: cuenta de correo que se usará para las respuestas al mensaje.  
+   **Dirección de correo electrónico del campo Responder a**: cuenta de correo que se usará para las respuestas al mensaje.  
   
      ![configuración de las opciones de correo](./media/mail-settings-config.png "configuración de las opciones de correo")  
 
@@ -41,7 +39,7 @@ Configura lo siguiente:
   
 2.  Puede usar **Diseño del correo electrónico** para usar un archivo .html para personalizar y diseñar los mensajes de correo electrónico enviados desde el sistema. El archivo .html que use como plantilla debe incluir lo siguiente:  
   
-    -   Todas las CSS de plantilla deben estar alineadas en la plantilla.  
+    -   Todos los archivos CSS de plantilla deben estar alineados en la plantilla.  
   
     -   La plantilla debe tener tres marcadores de posición no modificables:  
   
