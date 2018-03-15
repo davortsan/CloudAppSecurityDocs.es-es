@@ -43,6 +43,7 @@
 ### [Proteger los archivos con la cuarentena de administrador](use-case-admin-quarantine.md)
 ## Detectar
 ### [Trabajar con aplicaciones detectadas](discovered-apps.md)
+#### [Incorporación de aplicaciones personalizadas a Cloud Discovery](cloud-discovery-custom-apps.md)
 #### [Filtros y consultas de aplicaciones detectadas](discovered-app-queries.md)
 ### [Trabajar con la puntuación de riesgo](risk-score.md)
 ## [Investigación](investigate.md)
