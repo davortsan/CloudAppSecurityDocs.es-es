@@ -1,23 +1,23 @@
 ---
-title: "Establecimiento de preferencias de notificación de correo electrónico | Microsoft Docs"
-description: "En este artículo se proporciona información sobre cómo personalizar las notificaciones de correo electrónico que Cloud App Security envía."
-keywords: 
+title: Establecimiento de preferencias de notificación de correo electrónico | Microsoft Docs
+description: En este artículo se proporciona información sobre cómo personalizar las notificaciones de correo electrónico que Cloud App Security envía.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: de4e7025f046f15e0aa36f2cf45d17a3502a0644
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 1c15a5ca97ecf130d8202975d6ddcba1e1d69d0e
+ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 ##  <a name="mailsettings"></a> Establecimiento de preferencias de notificación de correo electrónico  
 
@@ -29,7 +29,9 @@ Para establecer los parámetros de las notificaciones de correo enviadas desde C
 2. **Dirección de correo electrónico del campo Desde**: cuenta de correo que quiere usar para enviar la notificación.  
    
    **Nombre para mostrar del campo Desde**: nombre que quiere que aparezca en el campo **Desde** del mensaje de correo.  
-  
+   > [!NOTE]
+   > Solo se admiten caracteres Unicode en el nombre para mostrar de acuerdo con el [protocolo rfc822](http://www.rfc-editor.org/rfc/rfc822.txt).
+
    **Dirección de correo electrónico del campo Responder a**: cuenta de correo que se usará para las respuestas al mensaje.  
   
      ![configuración de las opciones de correo](./media/mail-settings-config.png "configuración de las opciones de correo")  

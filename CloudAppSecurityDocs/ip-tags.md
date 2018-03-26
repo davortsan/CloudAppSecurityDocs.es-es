@@ -1,23 +1,23 @@
 ---
 title: Establecer etiquetas e intervalos IP | Microsoft Docs
-description: "En este tema se proporcionan instrucciones para trabajar con etiquetas IP y categorías IP."
-keywords: 
+description: En este tema se proporcionan instrucciones para trabajar con etiquetas IP y categorías IP.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/7/2018
+ms.date: 3/18/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d05b1151383526ff37821c7d15abbd9b0f4f4f41
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: f066e17f8b4f2e54a65abb5c58095c0917e4e985
+ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 #  <a name="IPtagsandRanges"></a> Trabajar con etiquetas e intervalos IP
 
@@ -26,16 +26,7 @@ Cada grupo de intervalos IP se puede clasificar en función de una lista predete
   
 Se admite tanto IPv4 como IPv6.  
   
-Cloud App Security está configurado previamente con etiquetas integradas para las siguientes direcciones IP: 
-- Cliente nativo
-- Sistema operativo obsoleto
-- Dispositivos administrados
-- Proxy anónimo
-- Botnet (cuando una red de robots [botnet] realice una actividad, recibirá un vínculo para obtener más información sobre el botnet específico)
-- Tor
-- Dispositivo compatible
-- Dispositivo comprobado
-- Suplantación
+Cloud App Security está preconfigurado con intervalos IP integrados de proveedores populares de servicios en la nube como Azure y Office 365. También hay etiquetas integradas basadas en la inteligencia sobre amenazas de Microsoft, incluidos proxy anónimos, redes de robots (botnet) y Tor. Puede ver la lista completa en la lista desplegable de la página de intervalos de direcciones IP.
 
 Para usar estas etiquetas integradas como parte de una búsqueda, consulte su identificador en la documentación de API de Cloud App Security. 
 
