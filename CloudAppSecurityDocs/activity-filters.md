@@ -1,23 +1,23 @@
 ---
 title: Visibilidad de las actividades de aplicaciones en la nube | Microsoft Docs
-description: "En este tema se proporciona una lista de actividades, filtros y parámetros de coincidencia que se pueden aplicar a directivas de actividad."
-keywords: 
+description: En este tema se proporciona una lista de actividades, filtros y parámetros de coincidencia que se pueden aplicar a directivas de actividad.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b2880e9cb1569f018f0e9234e2ff75ec872f5470
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: b628b06e5e5c26ec153d7a4b1a9ef9483c15618a
+ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="activities"></a>Actividades
 Cloud App Security le ofrece visibilidad en todas las actividades de las aplicaciones conectadas. Después de conectar Cloud App Security con una aplicación mediante el conector de aplicaciones, Cloud App Security examina todas las actividades que se han producido (el período de tiempo de examen retroactivo varía según la aplicación) y después se actualiza constantemente con nuevas actividades. 
@@ -30,11 +30,6 @@ Se puede filtrar el **registro de actividades** para que pueda buscar actividade
 Por ejemplo, puede usar el **registro de actividades** para buscar usuarios de la organización que usan sistemas operativos o exploradores que no están actualizados de la siguiente forma: después de conectar una aplicación a Cloud App Security en la página del **registro de actividades**, use el filtro avanzado y seleccione **User agent tag** (Etiqueta de agente de usuario). Después, seleccione **Outdated browser** (Explorador obsoleto) u **Outdated operating system** (Sistema operativo obsoleto).
 
  ![Ejemplo de actividad de explorador obsoleto](media/activity-example-outdated.png)
-
-Si quiere comprobar si se tiene acceso a archivos **confidenciales** fuera de su organización, establezca el filtro **Objeto de actividad** para buscar **Etiqueta de clasificación** y seleccione la etiqueta **Confidencial**. Establezca el filtro **Dirección IP** para buscar **Categoría** y excluir las direcciones IP de la oficina (en el menú **Configuración** se pueden configurar categorías IP). Puede hacer clic en **New policy from search** (Nueva directiva de búsqueda) para crear una directiva de actividad basada en los filtros definidos y notificar automáticamente a los usuarios.
-
- ![Ejemplo de archivos confidenciales de actividad externos](media/activity-example-ip.png)
-
  
 El filtro básico proporciona excelentes herramientas para empezar a filtrar sus actividades.
 
