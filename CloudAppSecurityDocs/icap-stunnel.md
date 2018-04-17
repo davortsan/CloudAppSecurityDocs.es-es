@@ -1,23 +1,23 @@
 ---
-title: "Integración de DLP externa de seguridad de Cloud App Security a través de ICAP seguro | Microsoft Docs"
-description: "En este tema se proporcionan los pasos necesarios para configurar la conexión ICAP en Cloud App Security y la instalación de Stunnel."
-keywords: 
+title: Integración de DLP externa de seguridad de Cloud App Security a través de ICAP seguro | Microsoft Docs
+description: En este tema se proporcionan los pasos necesarios para configurar la conexión ICAP en Cloud App Security y la instalación de Stunnel.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6d0de456770d06967db07bb0d145908405196968
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: 2e27bc333a5fa193c42d6e61fd6517cdfbdcf1f2
+ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="external-dlp-integration"></a>Integración de DLP externa
 
@@ -72,7 +72,7 @@ Visite el [sitio web de Stunnel](https://www.stunnel.org/index.html) para obtene
 #### <a name="install-stunnel-on-windows"></a>Instalar Stunnel en Windows
 
 1. [Descargue la instalación más reciente de Windows Server](https://www.stunnel.org/downloads.html) (debería funcionar en todas las ediciones recientes de Windows Server)
-(instalación predeterminada).
+   (instalación predeterminada).
 
 2. Durante la instalación, no cree un nuevo certificado autofirmado, ya que creará un certificado más adelante.
 
@@ -80,34 +80,34 @@ Visite el [sitio web de Stunnel](https://www.stunnel.org/index.html) para obtene
 
 4. Cree un certificado de una de las siguientes maneras:
 
-   -    Use el servidor de administración de certificados para crear un certificado SSL en el servidor ICAP y, después, copie las claves en el servidor que ha preparado para la instalación de Stunnel.
-   -    O bien, en el servidor de Stunnel, use los siguientes comandos de OpenSSL para generar una clave privada y un certificado autofirmado. Reemplace estas variables:
-       -    **key.pem** por el nombre de la clave privada
-       -    **cert.pem** por el nombre del certificado
-       -    **stunnel-key** por el nombre de la clave recién creada
+   - Use el servidor de administración de certificados para crear un certificado SSL en el servidor ICAP y, después, copie las claves en el servidor que ha preparado para la instalación de Stunnel.
+   - O bien, en el servidor de Stunnel, use los siguientes comandos de OpenSSL para generar una clave privada y un certificado autofirmado. Reemplace estas variables:
+     -    **key.pem** por el nombre de la clave privada
+     -    **cert.pem** por el nombre del certificado
+     -    **stunnel-key** por el nombre de la clave recién creada
 
 5. En la ruta de instalación de Stunnel, abra el directorio de configuración. De forma predeterminada es c:\Archivos de programa (x86)\stunnel\config\
 6. Ejecute la línea de comandos con permisos de administrador: `..\bin\openssl.exe genrsa -out key.pem 2048 `
       
      ` ..\bin\openssl.exe  req -new -x509 -config ".\openssl.cnf" -key key.pem -out .\cert.pem -days 1095`
 
-8. Concatene cert.pem y key.pem y guárdelos en el archivo: `type cert.pem key.pem >> stunnel-key.pem`
+7. Concatene cert.pem y key.pem y guárdelos en el archivo: `type cert.pem key.pem >> stunnel-key.pem`
 
-9. [Descargue la clave pública](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem) y guárdela en esta ubicación **C:\Archivos de programa (x86)\stunnel\config\MCASca.pem**.
+8. [Descargue la clave pública](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem) y guárdela en esta ubicación **C:\Archivos de programa (x86)\stunnel\config\MCASca.pem**.
 
-10. Agregue las reglas siguientes para abrir el puerto en el firewall de Windows:
+9. Agregue las reglas siguientes para abrir el puerto en el firewall de Windows:
 
-        rem Open TCP Port 11344 inbound and outbound
-        netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=in action=allow protocol=TCP localport=11344
-        netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=out action=allow protocol=TCP localport=11344
+       rem Open TCP Port 11344 inbound and outbound
+       netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=in action=allow protocol=TCP localport=11344
+       netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=out action=allow protocol=TCP localport=11344
 
-11. Ejecute `c:\Program Files (x86)\stunnel\bin\stunnel.exe` para abrir la aplicación Stunnel. 
+10. Ejecute `c:\Program Files (x86)\stunnel\bin\stunnel.exe` para abrir la aplicación Stunnel. 
 
-12. Haga clic en **Configuración** y en **Editar configuración**.
+11. Haga clic en **Configuración** y en **Editar configuración**.
 
-   ![Editar la configuración de Windows Server](./media/stunnel-windows.png)
+    ![Editar la configuración de Windows Server](./media/stunnel-windows.png)
  
-13. Abra el archivo y pegue las siguientes líneas de configuración del servidor, donde **DLP Server IP** es la dirección IP del servidor ICAP, **stunnel-key** es la clave creada en el paso anterior y **MCASCAfile** es el certificado público del cliente de Stunnel de Cloud App Security. Además, elimine todo el texto de ejemplo que vea (en el ejemplo se muestra texto de Gmail) y copie lo siguiente en el archivo:
+12. Abra el archivo y pegue las siguientes líneas de configuración del servidor, donde **DLP Server IP** es la dirección IP del servidor ICAP, **stunnel-key** es la clave creada en el paso anterior y **MCASCAfile** es el certificado público del cliente de Stunnel de Cloud App Security. Además, elimine todo el texto de ejemplo que vea (en el ejemplo se muestra texto de Gmail) y copie lo siguiente en el archivo:
 
         [microsoft-Cloud App Security]
         accept = 0.0.0.0:11344
@@ -116,9 +116,9 @@ Visite el [sitio web de Stunnel](https://www.stunnel.org/index.html) para obtene
         CAfile = C:\Program Files (x86)\stunnel\config\**MCASCAfile**.pem
         TIMEOUTclose = 0
         client = no
-12. Guarde el archivo y haga clic en **Volver a cargar configuración**.
+13. Guarde el archivo y haga clic en **Volver a cargar configuración**.
 
-13. Para asegurarse de que todo funciona según lo esperado, desde un símbolo del sistema, ejecute `netstat -nao  | findstr 11344`
+14. Para asegurarse de que todo funciona según lo esperado, desde un símbolo del sistema, ejecute `netstat -nao  | findstr 11344`
  
 
 #### <a name="install-stunnel-on-ubuntu"></a>Instalar Stunnel en Ubuntu
@@ -151,7 +151,7 @@ Puede crear los certificados de una de las maneras siguientes:
 
 ### <a name="download-the-cloud-app-security-stunnel-client-public-key"></a>Descargar la clave pública del cliente de Stunnel de Cloud App Security
 
-Descargue la clave pública desde esta ubicación: https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem y guárdela en la siguiente ubicación: **/etc/ssl/certs/MCASCAfile.pem**
+Descargue la clave pública de https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem y guárdela en **/etc/ssl/certs/MCASCAfile.pem**.
 
 ### <a name="configure-stunnel"></a>Configurar Stunnel 
 
@@ -260,23 +260,25 @@ Como se mencionó anteriormente, debe implementar un servidor de detección en e
  
 ### <a name="detection-server-installation"></a>Instalación del servidor de detección 
 El servidor de detección que Cloud App Security usa es un servidor estándar de Network Prevent for Web. Hay varias opciones de configuración que se deben modificar:
-1.  Deshabilite **Modo de prueba**:
-    1. En **Sistema** > **Servidores y detectores**, haga clic en el destino de ICAP. 
+1. Deshabilite **Modo de prueba**:
+   1. En **Sistema** > **Servidores y detectores**, haga clic en el destino de ICAP. 
     
       ![Destino de ICAP](./media/icap-target.png)
     
-    2. Haga clic en **Configurar**. 
+   2. Haga clic en **Configurar**. 
     
       ![Configuración del destino de ICAP](./media/configure-icap-target.png)
     
-    3. Deshabilite el **Modo de prueba**.
+   3. Deshabilite el **Modo de prueba**.
     
       ![deshabilitar el modo de prueba](./media/icap-disable-trial-mode.png)
     
-2. En **ICAP** > **Filtrado de respuesta**, cambie el valor **Ignore Responses Smaller Than** (Omitir respuestas menores que) a 1.
+2. En **ICAP** > **Filtrado de respuesta**, cambie el valor **Omitir respuestas menores que** a 1.
 
-3. Agregue "application/*" a la lista **Inspect Content Type** (Inspeccionar tipo de contenido).
+
+3. Agregue "application/<em>" a la lista **Inspect Content Type</em>** (Inspeccionar tipo de contenido).
      ![inspeccionar tipo de contenido](./media/icap-inspect-content-type.png)
+
 4. Haga clic en **Guardar**.
 
 
@@ -310,7 +312,7 @@ Agregue la regla que creó a cualquier directiva existente:
 Esta regla se debe agregar a todas las directivas existentes.
 
 >[!NOTE]
-> Si utiliza Symantec vontu para examinar archivos desde Dropbox, CAS mostrará automáticamente el archivo como originario de la siguiente dirección URL: http://misc/filename. Esta dirección URL del marcador de posición no lleva a ninguna parte, pero se utiliza para fines de registro.
+> Si utiliza Symantec Vontu para examinar archivos desde Dropbox, CAS mostrará automáticamente el archivo como originario de la siguiente dirección URL: http://misc/filename. Esta dirección URL del marcador de posición no lleva a ninguna parte, pero se utiliza para fines de registro.
 
 
 ## <a name="see-also"></a>Consulte también  

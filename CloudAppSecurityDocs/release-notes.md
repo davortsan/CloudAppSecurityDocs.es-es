@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/7/2018
+ms.date: 4/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,13 +13,21 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 887745913039d7e94930bdf8b30000bdfeea90ff
-ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
+ms.openlocfilehash: 9f76d43ab9bda33632502ea2acd7491d8ec7b32a
+ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
+
+## <a name="cloud-app-security-release-120"></a>Notas de la versión 120 de Cloud App Security
+Publicada el 8 de abril de 2018
+
+-   Para Office 365 y Azure AD, implementaremos de forma gradual la posibilidad de identificar las aplicaciones internas como actividades de cuenta de usuario llevadas a cabo por las aplicaciones de Office 365 y Azure AD (tanto internas como externas). Ello le permite crear directivas que le enviarán una alerta si una aplicación realiza actividades inesperadas y no autorizadas. 
+-   Al exportar la lista de permisos de una aplicación a un archivo .csv, los campos adicionales, como el anunciante, el nivel de permisos y el uso de la comunidad, se incluyen para asistir durante el proceso de investigación y cumplimiento.
+-   La aplicación conectada ServiceNow se ha mejorado para que las actividades de servicio internas dejen de registrarse como si las hubiese llevado a cabo un invitado y dejen de activar alertas de falsos positivos. Ahora, dichas actividades constan como N/A, igual que el resto de las aplicaciones conectadas.
+
 
 ## <a name="cloud-app-security-release-119"></a>Notas de la versión 119 de Cloud App Security
 Fecha de publicación: 18 de marzo de 2018
@@ -64,11 +72,11 @@ Publicado el 4 de febrero de 2018
 ## <a name="cloud-app-security-release-115"></a>Notas de la versión 115 de Cloud App Security
 Fecha de publicación: 21 de enero de 2018
 
--   En esta versión se proporciona una experiencia mejorada al seleccionar carpetas específicas en las directivas de archivo. Ahora puede ver y seleccionar fácilmente varias carpetas para incluirlas en una directiva. 
--   En la página **Aplicaciones detectadas**: 
-   - La característica de etiquetado masivo le permite aplicar etiquetas personalizadas (además de etiquetas autorizadas y no autorizadas). 
-   - Cuando se **genera un informe de direcciones IP** o se **genera un informe de usuarios**, los informes exportados ahora incluyen la información sobre si el tráfico provenía de aplicaciones autorizadas o no autorizadas. 
--   Ahora puede solicitar un nuevo conector de aplicación de API del equipo de Microsoft Cloud App Security directamente en el portal, desde la página **Conectar una aplicación**. 
+- En esta versión se proporciona una experiencia mejorada al seleccionar carpetas específicas en las directivas de archivo. Ahora puede ver y seleccionar fácilmente varias carpetas para incluirlas en una directiva. 
+- En la página **Aplicaciones detectadas**: 
+  - La característica de etiquetado masivo le permite aplicar etiquetas personalizadas (además de etiquetas autorizadas y no autorizadas). 
+  - Cuando se **genera un informe de direcciones IP** o se **genera un informe de usuarios**, los informes exportados ahora incluyen la información sobre si el tráfico provenía de aplicaciones autorizadas o no autorizadas. 
+- Ahora puede solicitar un nuevo conector de aplicación de API del equipo de Microsoft Cloud App Security directamente en el portal, desde la página **Conectar una aplicación**. 
 
 
 ## <a name="cloud-app-security-release-114"></a>Notas de la versión 114 de Cloud App Security
