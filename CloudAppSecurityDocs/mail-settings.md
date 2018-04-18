@@ -21,7 +21,7 @@ ms.lasthandoff: 03/22/2018
 ---
 ##  <a name="mailsettings"></a> Establecimiento de preferencias de notificación de correo electrónico  
 
-Para establecer los parámetros de las notificaciones de correo enviadas desde Cloud App Security a los administradores que solicitan alertas, así como de las notificaciones enviadas a los usuarios finales sobre infracciones en las que puedan haber participado, siga este procedimiento. Para obtener información sobre la dirección IP del servidor de correo electrónico de Cloud App Security que debe incluir en la lista blanca del servicio de correo electrónico no deseado, consulte los [requisitos de red](network-requirements.md). 
+Para establecer los parámetros de las notificaciones de correo enviadas desde Cloud App Security a los administradores que solicitan alertas, así como de las notificaciones enviadas a los usuarios finales sobre infracciones en las que puedan haber participado, siga este procedimiento. Para obtener información sobre la dirección IP del servidor de correo electrónico de Cloud App Security que debe incluir en la lista de permitidos del servicio de correo electrónico no deseado, consulte los [requisitos de red](network-requirements.md). 
 
 
 1. En la barra de menús, haga clic en el engranaje de configuración ![icono de configuración](./media/settings-icon.png "settings icon"), seleccione **Configuración** y, después, seleccione la pestaña **Configuración de correo electrónico**.  
