@@ -1,15 +1,15 @@
 ---
 title: Requisitos de red de Cloud App Security | Microsoft Docs
 description: En este tema se describen las direcciones IP y los puertos que debe abrir para trabajar con Cloud App Security.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/30/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
@@ -21,7 +21,7 @@ ms.lasthandoff: 01/30/2018
 ---
 # <a name="network-requirements"></a>Requisitos de red
 
-En este tema se incluye una lista de los puertos y las direcciones IP que debe permitir e incluir en la lista blanca para trabajar con Cloud App Security. 
+En este tema se incluye una lista de los puertos y las direcciones IP que debe permitir e incluir en la lista de permitidos para trabajar con Cloud App Security. 
 
 
 ## <a name="view-your-data-center"></a>Consultar el centro de datos
@@ -88,7 +88,7 @@ Para conectarse a aplicaciones de terceros, habilite Cloud App Security para per
 
 Para que Cloud App Security envíe datos a través de Stunnel al servidor ICAP, abra el firewall de red perimetral a estas direcciones IP con un número de puerto de origen dinámico. 
 
-1.  Direcciones de origen: estas direcciones deben incluirse en la lista blanca como se detalla anteriormente para las aplicaciones de conector de la API de terceros
+1.  Direcciones de origen: estas direcciones deben incluirse en la lista de permitidos como se detalla anteriormente para las aplicaciones de conector de la API de terceros
 2.  Puerto TCP de origen: dinámico
 3.  Direcciones de destino: una o dos direcciones IP del servidor Stunnel conectado al servidor ICAP externo
 4.  Puerto TCP de destino: según se defina en su red
@@ -112,7 +112,7 @@ La dirección IP de correo electrónico dedicada de Cloud App Security es:
 
 198.2.134.139 (mail1.cloudappsecurity.com)
 
-Asegúrese de incluir esta dirección IP en la lista blanca del servicio de correo electrónico no deseado para habilitar el envío de notificaciones.
+Asegúrese de incluir esta dirección IP en la lista de permitidos del servicio de correo electrónico no deseado para habilitar el envío de notificaciones.
     
 ## <a name="log-collector"></a>Recopilador de registros 
 

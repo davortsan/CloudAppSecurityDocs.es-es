@@ -90,7 +90,7 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
   
 ## <a name="prerequisites"></a>Requisitos previos  
 
-- En el caso de algunas aplicaciones, puede que sea necesario agregar las direcciones IP a la lista blanca para habilitar Cloud App Security de modo que recopile registros y proporcione acceso a la consola de Cloud App Security. Para obtener más información, consulte [Requisitos de red](network-requirements.md).
+- En el caso de algunas aplicaciones, puede que sea necesario agregar las direcciones IP a la lista de permitidos para habilitar Cloud App Security de modo que recopile registros y proporcione acceso a la consola de Cloud App Security. Para obtener más información, consulte [Requisitos de red](network-requirements.md).
 
 - Se recomienda crear una cuenta de servicio de administración dedicada a Cloud App Security por cada aplicación que quiera conectar con la integración de la API de Cloud App Security.  
   
