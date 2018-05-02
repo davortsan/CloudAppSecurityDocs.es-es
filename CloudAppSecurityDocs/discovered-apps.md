@@ -1,24 +1,27 @@
 ---
 title: Trabajar con aplicaciones detectadas en Cloud App Security | Microsoft Docs
-description: "En este tema se describe el proceso de identificación y corrección de aplicaciones de riesgo de Cloud Discovery en Cloud App Security."
-keywords: 
+description: En este tema se describe el proceso de identificación y corrección de aplicaciones de riesgo de Cloud Discovery en Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/5/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 276af05cd289496c277a5ab0709e7fca3453d469
-ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
+ms.openlocfilehash: abec8d49559c7ff29476a5a5291f1920db877b88
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
+
 # <a name="working-with-discovered-apps"></a>Trabajar con aplicaciones detectadas
 
 ## <a name="review-the-cloud-discovery-dashboard"></a>Revisar el panel de Cloud Discovery
@@ -56,7 +59,7 @@ Cloud Discovery permite profundizar incluso más en el uso de la nube de su orga
      
 Por ejemplo, puede diferenciar entre los distintos sitios de SharePoint.
 
-Esto solo se admite en los firewalls y servidores proxy que contienen datos de dirección URL de destino. Consulte la lista de dispositivos compatibles en [Firewalls y servidores proxy compatibles](set-up-cloud-discovery#supported-firewalls-and-proxies).
+Esto solo se admite en los firewalls y servidores proxy que contienen datos de dirección URL de destino. Consulte la lista de dispositivos compatibles en [Firewalls y servidores proxy compatibles](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
  ![información de subdominio](./media/discovery-domains.png) 
 
@@ -113,15 +116,15 @@ Hay una serie de razones por las que puede que quiera eliminar los datos de Clou
   
 Para eliminar datos de Cloud Discovery:  
   
-1.  En el portal, en el icono de configuración, seleccione **Configuración de Cloud Discovery**.  
+1. En el portal, en el icono de configuración, seleccione **Configuración de Cloud Discovery**.  
   
-2.  Haga clic en la pestaña **Eliminar datos**.  
+2. Haga clic en la pestaña **Eliminar datos**.  
   
-     Es importante estar seguro de querer eliminar los datos antes de continuar, ya que no se puede deshacer y elimina **todos** los datos de Cloud Discovery del sistema.  
+    Es importante estar seguro de querer eliminar los datos antes de continuar, ya que no se puede deshacer y elimina **todos** los datos de Cloud Discovery del sistema.  
   
-3.  Haga clic en el botón **Eliminar**.  
+3. Haga clic en el botón **Eliminar**.  
   
-     ![eliminar datos](./media/delete-data.png "eliminar datos")  
+    ![eliminar datos](./media/delete-data.png "eliminar datos")  
   
    > [!NOTE]  
    >  El proceso de eliminación tarda unos minutos y no es inmediato.  

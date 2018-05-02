@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/11/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,15 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0f16ff050ca5a3e73077a907dbf11cf3e9cf2b03
-ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
+ms.openlocfilehash: 067709747631e18fbc88de165127d89be8fef068
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
+
 # <a name="microsoft-cloud-app-security-compliance-trust-data-security-and-privacy"></a>Privacidad, seguridad de datos, confianza y cumplimiento de Microsoft Cloud App Security
 
 Microsoft Cloud App Security es un componente crítico de la pila de Microsoft Cloud Security. Se trata de una completa solución que ayuda a que su organización aproveche todas las ventajas de la promesa de aplicaciones en la nube, pero le mantienen al mando a través de visibilidad completa, funcionalidades de auditoría y controles detallados sobre los datos confidenciales.
@@ -110,7 +113,7 @@ Microsoft usa tecnología de cifrado para proteger los datos mientras están en 
 
 ### <a name="identity-and-access-management"></a>Administración de identidad y acceso
 
-Microsoft Cloud App Security permite limitar el acceso de los administradores al portal en función de la geolocalización con el uso de Azure Active Directory para limitar el acceso. Es posible exigir autenticación multifactor para el acceso al portal de Microsoft Cloud App Security mediante Azure Active Directory.
+Microsoft Cloud App Security permite limitar el acceso de los administradores al portal en función del geolocalización con el uso de Azure Active Directory para limitar el acceso. Es posible exigir autenticación multifactor para el acceso al portal de Microsoft Cloud App Security mediante Azure Active Directory.
 
 ### <a name="permissions"></a>Permisos
 

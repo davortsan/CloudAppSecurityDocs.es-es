@@ -1,31 +1,34 @@
 ---
 title: Proteger con el proxy de Microsoft Cloud App Security | Microsoft Docs
-description: "En este tema encontrará información sobre el funcionamiento del proxy de Cloud App Security."
-keywords: 
+description: En este tema encontrará información sobre el funcionamiento del proxy de Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/6/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 850436b8cb0c7a8e63a67a408ba51b6fecd9ac19
-ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
+ms.openlocfilehash: 94e92c75aab62216d8eb374d584ff369e7cb6a2f
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
+
 # <a name="protect-apps-with-microsoft-cloud-app-security-proxy"></a>Proteger aplicaciones con el proxy de Microsoft Cloud App Security
 
 > [!NOTE]
 > Se trata de una característica en vista previa.
 
 
-En el ámbito laboral actual, a menudo no basta con saber lo que ocurre en el entorno de nube después de los hechos, sino que también se requiere tener la posibilidad de detener brechas y fugas en tiempo real antes de que los empleados pongan en riesgo su organización y los datos, ya sea de manera intencional como por accidente. Es importante permitir que los usuarios de la organización tengan a su disposición la mayoría de los servicios y las herramientas en aplicaciones de nube, y lleven al trabajo sus propios dispositivos. Al mismo tiempo, se necesitan herramientas que permitan proteger la organización de fugas o robos de datos en tiempo real. Junto con Azure Active Directory, el proxy de Cloud App Security proporciona estas funcionalidades en una experiencia integrada y holística.
+En el ámbito laboral actual, a menudo no basta con saber lo que ocurre en el entorno de nube después de los hechos, sino que también se requiere tener la posibilidad de detener brechas y fugas en tiempo real antes de que los empleados pongan en riesgo su organización y los datos, ya sea de manera intencional como por accidente. Es importante permitir que los usuarios de la organización tengan a su disposición la mayoría de los servicios y las herramientas en aplicaciones de nube, y lleven al trabajo sus propios dispositivos. Al mismo tiempo, se necesitan herramientas que permitan proteger la organización de fugas o robos de datos en tiempo real. Junto con Azure Active Directory, el proxy de Microsoft Cloud App Security proporciona estas funcionalidades en una experiencia integrada y holística.
 
 ## <a name="how-it-works"></a>Cómo funciona
 

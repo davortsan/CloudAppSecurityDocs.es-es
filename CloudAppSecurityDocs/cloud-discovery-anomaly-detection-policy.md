@@ -1,24 +1,27 @@
 ---
-title: "Crear una directiva de detección de anomalías de Cloud Discovery en Cloud App Security | Microsoft Docs"
-description: "En este tema se proporciona información sobre cómo trabajar con directivas de detección de anomalías de Cloud Discovery."
-keywords: 
+title: Crear una directiva de detección de anomalías de Cloud Discovery en Cloud App Security | Microsoft Docs
+description: En este tema se proporciona información sobre cómo trabajar con directivas de detección de anomalías de Cloud Discovery.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: eaf73af0-7610-4903-b656-8d90b1d2b18c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 408b136764fd5e16f47772fb73ff6588d9b5bc8e
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 49e7dadb3d179e70c04decccdc8ab11aeefc3241
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
+
 # <a name="cloud-discovery-anomaly-detection-policy"></a>Directiva de detección de anomalías de Cloud Discovery
 En este artículo se proporciona información de referencia sobre directivas, se ofrecen explicaciones sobre cada tipo de directiva y se detallan los campos que se pueden configurar para cada directiva.  
   
@@ -33,7 +36,8 @@ Para cada directiva, establezca los siguientes parámetros:
  
 2. Proporcione un **Nombre de la directiva** y una **Descripción**.  
 
-3. Cree un filtro para las aplicaciones que quiere supervisar haciendo clic en **Agregar filtro**. Puede seleccionar una aplicación específica, una **Categoría** de aplicación o filtrar por **Nombre**, **Dominio y **Factor de riesgo**, y hacer clic en **Guardar**.
+3. Cree un filtro para las aplicaciones que quiere supervisar haciendo clic en <strong>Agregar filtro</strong>. 
+   Puede seleccionar una aplicación específica o una <strong>Categoría</strong> de aplicación, o bien filtrar por <strong>Nombre</strong>, <strong>Dominio y **Factor de riesgo</strong>, y hacer clic en <strong>Guardar</strong>.
 
 4. En **Apply to** (Aplicar a), establezca cómo quiere que se filtre el uso. El uso que se está supervisando se puede filtrar de dos maneras diferentes:  
   

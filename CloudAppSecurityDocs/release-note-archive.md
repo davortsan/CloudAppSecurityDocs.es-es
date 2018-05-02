@@ -1,24 +1,27 @@
 ---
 title: Archivado de actualizaciones anteriores en Cloud App Security | Microsoft Docs
 description: Este tema es un archivo que describe las actualizaciones realizadas en versiones anteriores de Cloud App Security.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/7/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 185c3a46-ede8-4d58-b232-111807845c8f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: eccb23c10641517090c9fead2231eb5ebceb2000
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: f17cf637569007ea3a83e2b360f4e0516f4fe461
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
+
 # <a name="past-release-archive-of-microsoft-cloud-app-security"></a>Archivo de versiones anteriores de Microsoft Cloud App Security
 
 Para ver la lista de novedades más reciente, consulte [Novedades de Microsoft Cloud App Security](release-notes.md).
@@ -173,16 +176,16 @@ Publicado el 18 de junio de 2017
 
 #### <a name="new-features"></a>Nuevas características
 
--   Ahora puede requerir a los usuarios que inicien sesión de nuevo en todas las aplicaciones de Office 365 y Azure AD como una solución rápida y eficaz en el caso de alertas de actividad sospechosa del usuario y cuentas en peligro. Encontrará la nueva acción de gobierno en la configuración de directiva y las páginas de alertas, junto a la opción Suspender usuario.
--   Ahora puede filtrar las actividades para **agregar asignación de roles de suplantación** en el registro de actividades. Esta actividad permite detectar si un administrador ha concedido un rol de **suplantación de aplicación** a una cuenta de usuario o del sistema, mediante el cmdlet **New-ManagementRoleAssignment**. Este rol permite al suplantador realizar operaciones con los permisos asociados a la cuenta suplantada, en lugar de con los permisos asociados a la cuenta del suplantador.
-Mejoras de Cloud Discovery:
--   Ahora es posible mejorar los datos de Cloud Discovery con datos de nombre de usuario de Azure Active Directory. Cuando se habilita esta característica, el nombre de usuario que se recibe en los registros de tráfico de detección se hace coincidir con el nombre de usuario de Azure AD y se reemplaza por este, con lo que se habilitan las siguientes características nuevas:
+- Ahora puede requerir a los usuarios que inicien sesión de nuevo en todas las aplicaciones de Office 365 y Azure AD como una solución rápida y eficaz en el caso de alertas de actividad sospechosa del usuario y cuentas en peligro. Encontrará la nueva acción de gobierno en la configuración de directiva y las páginas de alertas, junto a la opción Suspender usuario.
+- Ahora puede filtrar las actividades para **agregar asignación de roles de suplantación** en el registro de actividades. Esta actividad permite detectar si un administrador ha concedido un rol de **suplantación de aplicación** a una cuenta de usuario o del sistema, mediante el cmdlet **New-ManagementRoleAssignment**. Este rol permite al suplantador realizar operaciones con los permisos asociados a la cuenta suplantada, en lugar de con los permisos asociados a la cuenta del suplantador.
+  Mejoras de Cloud Discovery:
+- Ahora es posible mejorar los datos de Cloud Discovery con datos de nombre de usuario de Azure Active Directory. Cuando se habilita esta característica, el nombre de usuario que se recibe en los registros de tráfico de detección se hace coincidir con el nombre de usuario de Azure AD y se reemplaza por este, con lo que se habilitan las siguientes características nuevas:
   - Puede investigar el uso de Shadow IT por parte del usuario de Azure Active Directory.
   - Puede correlacionar el uso de las aplicaciones en la nube detectadas con las actividades de API recopiladas.
   - Después, puede crear registros personalizados en función de los grupos de usuarios de Azure AD. Por ejemplo, un informe de Shadow IT para un departamento de marketing específico.
--   Se han realizado mejoras en el analizador de Syslog de Juniper. Ahora admite los formatos welf y sd-syslog.
--   Se han realizado mejoras en el analizador de Palo Alto para optimizar la detección de aplicaciones.
--   Para comprobar que los registros se están cargando correctamente, ahora puede ver el estado de los recopiladores de registros en el portal de Cloud App Security. 
+- Se han realizado mejoras en el analizador de Syslog de Juniper. Ahora admite los formatos welf y sd-syslog.
+- Se han realizado mejoras en el analizador de Palo Alto para optimizar la detección de aplicaciones.
+- Para comprobar que los registros se están cargando correctamente, ahora puede ver el estado de los recopiladores de registros en el portal de Cloud App Security. 
 
 #### <a name="general-improvements"></a>Mejoras generales:
 -   Las etiquetas de dirección IP integradas y las etiquetas IP personalizadas ahora se consideran de forma jerárquica, y las etiquetas IP personalizadas tienen prioridad sobre las etiquetas IP integradas. Por ejemplo, si una dirección IP se etiqueta como **De riesgo** en función de la información disponible sobre las amenazas pero hay una etiqueta IP personalizada que la identifica como **Corporativa**, la categoría y las etiquetas personalizadas tendrán prioridad.
@@ -256,8 +259,7 @@ Publicado el 24 de abril de 2017
 
 - En el caso de las cuentas Microsoft profesionales (Office 365 y Azure Active Directory), Cloud App Security agrupa distintos identificadores de usuario como direcciones proxy, alias, SID, etc. en una sola cuenta. Todos los alias relacionados con una cuenta aparecen en la dirección de correo electrónico principal. Basándose en la lista de identificadores de usuario, en las actividades cuyo actor sea un identificador de usuario, dicho actor se mostrará como UPN (nombre principal de usuario). Se asignarán los grupos y se aplicarán las directivas de acuerdo con el UPN. Esto mejorará la investigación de actividades y fusionará todas las relacionadas con la misma sesión para detectar anomalías y directivas basadas en grupos. Esta característica se implementará de forma gradual durante el próximo mes.
 
-- Se ha agregado la etiqueta Robot como un posible factor de riesgo en el informe integrado de uso del explorador. Ahora, además de etiquetar como obsoleto el uso del explorador, puede ver si ha sido un robot el que ha usado el explorador. Obtenga más información sobre los [informes integrados](built-in-report-reference.md).
-
+- Se ha agregado la etiqueta Robot como un posible factor de riesgo en el informe integrado de uso del explorador. Ahora, además de etiquetar como obsoleto el uso del explorador, puede ver si ha sido un robot el que ha usado el explorador. 
 - Al crear una directiva de archivo de inspección de contenido, ahora puede establecer el filtro para incluir solo los archivos con un mínimo de 50 coincidencias.
 
 
@@ -343,8 +345,8 @@ Publicado el 22 de enero de 2017
 -   Se han mejorado las descripciones de las actividades para una mayor claridad y coherencia. Ahora, cada actividad incluye un botón de comentarios, por lo que si no entiende algo o tiene una pregunta, puede hacérnoslo saber. 
  
 **Mejoras**  
--   Se ha agregado una nueva acción de gobierno para Office 365 que permite quitar todos los usuarios externos de un archivo. Por ejemplo, esto permite implementar directivas que **quitan recursos compartidos externos de los archivos que tienen una clasificación solo interna**.
--   Se ha mejorado la identificación de los usuarios externos en SharePoint Online. Cuando se filtra el grupo de "usuarios externos", no se muestra la cuenta del sistema app@sharepoint.
+- Se ha agregado una nueva acción de gobierno para Office 365 que permite quitar todos los usuarios externos de un archivo. Por ejemplo, esto permite implementar directivas que **quitan recursos compartidos externos de los archivos que tienen una clasificación solo interna**.
+- Se ha mejorado la identificación de los usuarios externos en SharePoint Online. Cuando se filtra el grupo de "usuarios externos", no se muestra la cuenta del sistema @"sharepoint" .
 
 
 
@@ -427,11 +429,11 @@ Publicado el 13 de noviembre de 2016
 -   Cloud App Security ahora admite Microsoft Azure Information Protection, que incluye una integración mejorada y autoaprovisionamiento. Puede filtrar los archivos y establecer directivas de archivo mediante la clasificación segura de etiquetas y, después, establecer la etiqueta de clasificación que quiere ver. Las etiquetas también indican si la clasificación la estableció alguien de su organización o un usuario de otro inquilino (externo). También puede establecer directivas de actividad, en función de las etiquetas de clasificación de Azure Information Protection y habilitar la detección automática de etiquetas de clasificación en Office 365. Para obtener más información acerca de cómo sacar partido a esta nueva característica increíble, consulte [Integración con Azure Information Protection](azip-integration.md).
  
 **Mejoras**
--   Se realizaron mejoras en el registro de actividad de Cloud App Security: 
-   -    Los eventos de Office 365 del Centro de seguridad y cumplimiento de Office 365 ahora se integran con Cloud App Security y se ven en el **Registro de actividades**.
-   -    Toda la actividad de Cloud App Security se registra en el registro de actividades de Cloud App Security como actividad administrativa.
--   Para ayudarle a investigar alertas relacionadas con archivos, en cada alerta derivada de una directiva de archivo, ahora puede ver la lista de actividades que se realizaron en el archivo coincidente.
--   El algoritmo de viaje imposible del motor de detección de anomalías se ha mejorado para proporcionar una mayor compatibilidad para inquilinos pequeños. 
+- Se realizaron mejoras en el registro de actividad de Cloud App Security: 
+  -    Los eventos de Office 365 del Centro de seguridad y cumplimiento de Office 365 ahora se integran con Cloud App Security y se ven en el **Registro de actividades**.
+  -    Toda la actividad de Cloud App Security se registra en el registro de actividades de Cloud App Security como actividad administrativa.
+- Para ayudarle a investigar alertas relacionadas con archivos, en cada alerta derivada de una directiva de archivo, ahora puede ver la lista de actividades que se realizaron en el archivo coincidente.
+- El algoritmo de viaje imposible del motor de detección de anomalías se ha mejorado para proporcionar una mayor compatibilidad para inquilinos pequeños. 
  
 **Mejoras menores**
 -   El **Activity export limit** (Límite de exportación de actividades) se elevó a 10 000. 

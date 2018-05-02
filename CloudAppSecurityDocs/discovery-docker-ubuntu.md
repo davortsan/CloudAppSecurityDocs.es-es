@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/22/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,15 @@ ms.technology: ''
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a2ee6fc6e54daa84414565dbb7a61fa2e169a7a0
-ms.sourcegitcommit: 1a445f6c5cbfbeb3adbbaff85909c35de949918c
+ms.openlocfilehash: 5db98a5c9d8c5d3a9ce27f498b8237ed110289ad
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
+
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Docker en Ubuntu y RHEL locales
 
 
@@ -32,7 +35,7 @@ ms.lasthandoff: 03/22/2018
 
 -   RAM: 4 GB
 
--   Configuración del firewall, tal como se describe en [Requisitos de red](network-requirements#log-collector)
+-   Configuración del firewall, tal como se describe en [Requisitos de red](network-requirements.md#log-collector)
 
 
 ## <a name="log-collector-performance"></a>Rendimiento del recopilador de registros
@@ -47,49 +50,49 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Paso 1: Configuración del portal web: definición de orígenes de datos y vinculación a un recopilador de registros
 
-1.  Vaya a la página de configuración de carga automatizada:  <br></br>En el portal de Cloud App Security, haga clic en el ![icono de configuración](./media/settings-icon.png) y, después, en **Recopiladores de registros**.
+1. Vaya a la página de configuración de carga automatizada:  <br></br>En el portal de Cloud App Security, haga clic en el ![icono de configuración](./media/settings-icon.png) y, después, en **Recopiladores de registros**.
 
-2.  Cree un origen de datos coincidente para cada firewall o servidor proxy desde el que quiera cargar registros:
+2. Cree un origen de datos coincidente para cada firewall o servidor proxy desde el que quiera cargar registros:
 
-    ![ubuntu1](./media/ubuntu1.png)
+   ![ubuntu1](./media/ubuntu1.png)
 
-    a. Haga clic en **Agregar origen de datos**.
+   a. Haga clic en **Agregar origen de datos**.
 
-    b. **Ponga nombre** al servidor proxy o firewall.
+   b. **Ponga nombre** al servidor proxy o firewall.
 
-    c. Seleccione el dispositivo en la lista **Origen**. Si selecciona **Formato de registro personalizado** para trabajar con un dispositivo de red que no aparezca específicamente en la lista, consulte el artículo sobre cómo [trabajar con el analizador de registro personalizado](custom-log-parser.md) para ver las instrucciones de configuración.
+   c. Seleccione el dispositivo en la lista **Origen**. Si selecciona **Formato de registro personalizado** para trabajar con un dispositivo de red que no aparezca específicamente en la lista, consulte el artículo sobre cómo [trabajar con el analizador de registro personalizado](custom-log-parser.md) para ver las instrucciones de configuración.
 
-    d. Compare el registro con el ejemplo del formato de registro esperado. Si el formato del archivo de registro no coincide con este ejemplo, debe agregar el origen de datos como **Otro**.
+   d. Compare el registro con el ejemplo del formato de registro esperado. Si el formato del archivo de registro no coincide con este ejemplo, debe agregar el origen de datos como **Otro**.
 
-    e. Establezca el **tipo de receptor** en **FTP**, **FTPS**, **Syslog – UDP**, **Syslog – TCP** o **Syslog – TLS**.
+   e. Establezca el **tipo de receptor** en **FTP**, **FTPS**, **Syslog – UDP**, **Syslog – TCP** o **Syslog – TLS**.
     
-     >[!NOTE]
-     >La integración con protocolos de transferencia segura (FTPS y Syslog – TLS) a menudo requiere una configuración adicional o firewall/proxy.
+    >[!NOTE]
+    >La integración con protocolos de transferencia segura (FTPS y Syslog – TLS) a menudo requiere una configuración adicional o firewall/proxy.
 
-    f. Repita este proceso para cada servidor proxy y firewall cuyos registros se puedan usar para detectar tráfico en la red.
+   f. Repita este proceso para cada servidor proxy y firewall cuyos registros se puedan usar para detectar tráfico en la red.
 
-3.  Vaya a la pestaña **Recopiladores de registros** de la parte superior.
+3. Vaya a la pestaña **Recopiladores de registros** de la parte superior.
 
-    a. Haga clic en **Agregar recopilador de registros**.
+   a. Haga clic en **Agregar recopilador de registros**.
 
-    b. Ponga **nombre** al recopilador de registros.
+   b. Ponga **nombre** al recopilador de registros.
 
-    c. Escriba la **dirección IP de host** de la máquina que usará para implementar Docker. 
+   c. Escriba la **dirección IP de host** de la máquina que usará para implementar Docker. 
        
-       > [!NOTE]
-       > La dirección IP del host puede reemplazarse con el nombre del equipo si un servidor DNS (o equivalente) resolverá el nombre de host.
+      > [!NOTE]
+      > La dirección IP del host puede reemplazarse con el nombre del equipo si un servidor DNS (o equivalente) resolverá el nombre de host.
 
-    d. Seleccione todos los **orígenes de datos** que desea conectar al recopilador y haga clic en **Actualizar** para guardar la configuración. Luego, consulte los pasos de implementación siguientes.
+   d. Seleccione todos los **orígenes de datos** que desea conectar al recopilador y haga clic en **Actualizar** para guardar la configuración. Luego, consulte los pasos de implementación siguientes.
 
-    ![ubuntu2](./media/ubuntu2.png)
+   ![ubuntu2](./media/ubuntu2.png)
 
-     >  [!NOTE]
-     > - Un único recopilador de registros puede administrar varios orígenes de datos.
-     > - Copie el contenido de la pantalla, ya que necesitará la información al configurar el recopilador de registros para comunicarse con Cloud App Security. Si ha seleccionado Syslog, esta información incluirá información sobre el puerto en el que escucha el agente de escucha de Syslog.
+   > [!NOTE]
+   > - Un único recopilador de registros puede administrar varios orígenes de datos.
+   > - Copie el contenido de la pantalla, ya que necesitará la información al configurar el recopilador de registros para comunicarse con Cloud App Security. Si ha seleccionado Syslog, esta información incluirá información sobre el puerto en el que escucha el agente de escucha de Syslog.
 
-4.  Aparecerá más información de implementación. **Copie** el comando de ejecución desde el cuadro de diálogo. Puede usar el icono Copiar al Portapapeles ![icono Copiar al Portapapeles](./media/copy-icon.png).
+4. Aparecerá más información de implementación. **Copie** el comando de ejecución desde el cuadro de diálogo. Puede usar el icono Copiar al Portapapeles ![icono Copiar al Portapapeles](./media/copy-icon.png).
 
-6.  **Exporte** la configuración de origen de datos esperada. Esta configuración describe cómo debe establecer la exportación de registro en los dispositivos.
+5. **Exporte** la configuración de origen de datos esperada. Esta configuración describe cómo debe establecer la exportación de registro en los dispositivos.
 
    ![Crear un recopilador de registros](./media/windows7.png)
 
@@ -98,33 +101,33 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 > [!NOTE]
 > En los pasos siguientes se describe la implementación de Ubuntu. Los pasos de implementación en otras plataformas son ligeramente diferentes.
 
-1.  Abra un terminal en la máquina Ubuntu.
+1. Abra un terminal en la máquina Ubuntu.
 
-2.  Cambie a los privilegios raíz con el comando: `sudo -i`
+2. Cambie a los privilegios raíz con el comando: `sudo -i`
 
 3. Para omitir a un servidor proxy en la red, ejecute los dos comandos siguientes:
         
         export http_proxy='<IP>:<PORT>' (e.g. 168.192.1.1:8888)
         export https_proxy='<IP>:<PORT>'
 
-3.  Si acepta los [términos de licencia del software](https://go.microsoft.com/fwlink/?linkid=862492), desinstale las versiones anteriores e instale Docker CE con el comando siguiente:
+4. Si acepta los [términos de licencia del software](https://go.microsoft.com/fwlink/?linkid=862492), desinstale las versiones anteriores e instale Docker CE con el comando siguiente:
 
-    `curl -o /tmp/MCASInstallDocker.sh
-    https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
-    && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh`
+   `curl -o /tmp/MCASInstallDocker.sh
+   https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
+   && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh`
 
-     > [!NOTE] 
-     > Si se produce un error en este comando al validar el certificado de servidor proxy, ejecute el comando con `curl -k` al principio.
+    > [!NOTE] 
+    > Si se produce un error en este comando al validar el certificado de servidor proxy, ejecute el comando con `curl -k` al principio.
     
-    ![ubuntu5](./media/ubuntu5.png)
+   ![ubuntu5](./media/ubuntu5.png)
 
-4.  Implemente la imagen del recopilador en la máquina host al importar la configuración del recopilador. Esto se realiza copiando el comando de ejecución generado en el portal. Si necesita configurar un proxy, agregue la dirección IP del proxy y el número de puerto. Por ejemplo, si los detalles de proxy son 192.168.10.1:8080, el comando de ejecución actualizado es:
+5. Implemente la imagen del recopilador en la máquina host al importar la configuración del recopilador. Esto se realiza copiando el comando de ejecución generado en el portal. Si necesita configurar un proxy, agregue la dirección IP del proxy y el número de puerto. Por ejemplo, si los detalles de proxy son 192.168.10.1:8080, el comando de ejecución actualizado es:
 
-            (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+           (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
    ![Crear un recopilador de registros](./media/windows7.png)
 
-5.  Ejecute el comando siguiente para comprobar si el recopilador se ejecuta correctamente: `docker logs \<collector_name\>`
+6. Ejecute el comando siguiente para comprobar si el recopilador se ejecuta correctamente: `docker logs \<collector_name\>`
 
 Debería ver el mensaje: **Finalizó correctamente**.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/21/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,15 +13,19 @@ ms.technology: ''
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2e27bc333a5fa193c42d6e61fd6517cdfbdcf1f2
-ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
+ms.openlocfilehash: 517a468e0ff1b64f3f24e2791b576f7249451c9e
+ms.sourcegitcommit: d43a0f5c17e1961348dcbf315120046bb83305c8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
+
+
 # <a name="external-dlp-integration"></a>Integración de DLP externa
 
-Cloud App Security puede integrarse con las soluciones DLP existentes para ampliar estos controles a la nube y, al mismo tiempo, conservar una directiva coherente y unificada en las actividades locales y en la nube. La plataforma exporta interfaces fáciles de usar, como API de REST e ICAP, y permite la integración con sistemas de clasificación de contenido, como Symantec Data Loss Prevention (antes conocida como Vontu Data Loss Prevention) o Forcepoint DLP. 
+Microsoft Cloud App Security puede integrarse con las soluciones DLP existentes para ampliar estos controles a la nube y, al mismo tiempo, conservar una directiva coherente y unificada en las actividades locales y en la nube. La plataforma exporta interfaces fáciles de usar, como API de REST e ICAP, y permite la integración con sistemas de clasificación de contenido, como Symantec Data Loss Prevention (antes conocida como Vontu Data Loss Prevention) o Forcepoint DLP. 
 
 La integración se lleva a cabo mediante el protocolo ICAP estándar, un protocolo semejante a HTTP que se describe en [RFC 3507](https://tools.ietf.org/html/rfc3507). Para proteger ICAP para la transmisión de los datos, es necesario configurar un túnel SSL seguro (Stunnel) entre la solución DLP y Cloud App Security. La instalación de Stunnel proporciona la funcionalidad de cifrado TLS de los datos durante su transmisión entre el servidor DLP y Cloud App Security. 
 
@@ -276,7 +280,7 @@ El servidor de detección que Cloud App Security usa es un servidor estándar de
 2. En **ICAP** > **Filtrado de respuesta**, cambie el valor **Omitir respuestas menores que** a 1.
 
 
-3. Agregue "application/<em>" a la lista **Inspect Content Type</em>** (Inspeccionar tipo de contenido).
+3. Agregue "application/" a la lista **Inspect Content Type</em>** (Inspeccionar tipo de contenido).
      ![inspeccionar tipo de contenido](./media/icap-inspect-content-type.png)
 
 4. Haga clic en **Guardar**.
