@@ -33,8 +33,8 @@
 ### [Conectar Okta](connect-okta-to-microsoft-cloud-app-security.md)
 ### [Conectar ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md)
 ### [Conectar Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
-## [Protección de aplicaciones con proxy](proxy-intro-aad.md)
-### [Implementación del proxy para las aplicaciones de Azure AD](proxy-deployment-aad.md)
+## [Proteger las aplicaciones con el control de la aplicación de acceso condicional](proxy-intro-aad.md)
+### [Implementar el control de la aplicación de acceso condicional para aplicaciones de Azure AD](proxy-deployment-aad.md)
 # Use
 ## [Trabajar con el panel](daily-activities-to-protect-your-cloud-environment.md)
 ## Escenarios
