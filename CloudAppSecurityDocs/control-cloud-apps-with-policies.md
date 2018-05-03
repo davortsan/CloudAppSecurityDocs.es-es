@@ -1,24 +1,27 @@
 ---
-title: "Controlar el uso de aplicaciones en la nube mediante la creación de directivas en Cloud App Security | Microsoft Docs"
-description: "En este tema se proporciona información sobre cómo se usan las directivas y cómo se configuran para controlar el uso de aplicaciones en la nube."
-keywords: 
+title: Controlar el uso de aplicaciones en la nube mediante la creación de directivas en Cloud App Security | Microsoft Docs
+description: En este tema se proporciona información sobre cómo se usan las directivas y cómo se configuran para controlar el uso de aplicaciones en la nube.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 89a71f9274d5005a93576dfc4ef6436870b9bd4b
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: 578cedd1f499f91ae2e740a7e0e0f1495d86f3cb
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
+
 # <a name="control-cloud-apps-with-policies"></a>Controlar las aplicaciones en la nube con directivas
 
 Las directivas permiten definir la forma en que quiere que los usuarios se comporten en la nube. Permiten detectar comportamientos de riesgo, infracciones o puntos de datos y actividades sospechosos en el entorno de nube y, si fuera necesario, integrar flujos de trabajo de corrección para lograr una mitigación de riesgos completa. Hay varios tipos de directivas que se correlacionan con los diferentes tipos de información que quiere recopilar sobre el entorno de nube y los tipos de acciones correctoras que quizás quiera realizar.  
@@ -93,18 +96,18 @@ Las plantillas de directiva le ayudan a establecer los filtros correctos y las c
   
 Para crear una directiva a partir de una **plantilla de directiva**, siga los pasos siguientes:  
   
-1.  En la consola, haga clic en **Control** y luego en **Plantillas**.  
+1. En la consola, haga clic en **Control** y luego en **Plantillas**.  
   
-     ![](./media/create-policy-from-template.png)  
+    ![](./media/create-policy-from-template.png)  
   
-2.  Haga clic en **+** en el extremo derecho de la fila de la plantilla que quiere usar. Se abre una página de creación de directivas que contiene la configuración predefinida de la plantilla.  
+2. Haga clic en **+** en el extremo derecho de la fila de la plantilla que quiere usar. Se abre una página de creación de directivas que contiene la configuración predefinida de la plantilla.  
   
-3.  Modifique la plantilla según sea necesario para la directiva personalizada. Cada propiedad y campo de esta nueva directiva basada en plantilla se puede modificar según las propias necesidades.  
-> [!NOTE] 
->Al usar filtros de directiva, **Contiene** solo buscará palabras completas separadas por comas, puntos, espacios o caracteres de subrayado. Por ejemplo, si busca **malware** o **virus**, encontrará virus_malware_file.exe, pero no encontrará malwarevirusfile.exe. Si busca *malware.exe*, encontrará TODOS los archivos que contengan malware o exe en el nombre de archivo, mientras que si busca **"malware.exe"** (con comillas) solo encontrará los archivos que contengan exactamente "malware.exe". 
-     **Es igual a** solo buscará la cadena completa. Por ejemplo, si busca *malware.exe*, encontrará malware.exe pero no malware.exe.txt.  
-4.  Después de crear la nueva directiva basada en plantilla, aparece un vínculo a la nueva directiva en la columna **Directivas vinculadas** de la tabla de plantillas de directivas situada junto a la plantilla a partir de la que se ha creado la directiva.   
-     Puede crear tantas directivas como quiera a partir de cada plantilla y todas estarán vinculadas a la plantilla original, lo que permite realizar un seguimiento de todas las directivas creadas con la misma plantilla.  
+3. Modifique la plantilla según sea necesario para la directiva personalizada. Cada propiedad y campo de esta nueva directiva basada en plantilla se puede modificar según las propias necesidades.  
+   > [!NOTE] 
+   >Al usar filtros de directiva, **Contiene** solo buscará palabras completas separadas por comas, puntos, espacios o caracteres de subrayado. Por ejemplo, si busca **malware** o **virus**, encontrará virus_malware_file.exe, pero no encontrará malwarevirusfile.exe. Si busca *malware.exe*, encontrará TODOS los archivos que contengan malware o exe en el nombre de archivo, mientras que si busca **"malware.exe"** (con comillas) solo encontrará los archivos que contengan exactamente "malware.exe". 
+    **Es igual a** solo buscará la cadena completa. Por ejemplo, si busca *malware.exe*, encontrará malware.exe pero no malware.exe.txt.  
+4. Después de crear la nueva directiva basada en plantilla, aparece un vínculo a la nueva directiva en la columna **Directivas vinculadas** de la tabla de plantillas de directivas situada junto a la plantilla a partir de la que se ha creado la directiva.   
+    Puede crear tantas directivas como quiera a partir de cada plantilla y todas estarán vinculadas a la plantilla original, lo que permite realizar un seguimiento de todas las directivas creadas con la misma plantilla.  
   
 También puede **crear una directiva durante la investigación**. Si está investigando el **Registro de actividades**, los **Archivos** o las **Cuentas** y los explora en profundidad en busca de algo concreto, puede crear una nueva directiva basada en los resultados de la investigación en cualquier momento.  
   

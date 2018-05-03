@@ -1,67 +1,70 @@
 ---
-title: "Administración de alertas activadas en el portal de Cloud App Security | Microsoft Docs"
-description: "En este artículo se explica cómo trabajar con alertas generadas en el portal de Cloud App Security."
-keywords: 
+title: Administración de alertas activadas en el portal de Cloud App Security | Microsoft Docs
+description: En este artículo se explica cómo trabajar con alertas generadas en el portal de Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a674379eea455c1a7f384c56f1c3a6013f8aac6e
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 7de4cb2a78032f253cc2ec68ffbc9f1d12a2bc83
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
+
 ## <a name="manage-your-alerts"></a>Administración de alertas  
 Las alertas son los puntos de entrada para comprender el entorno de nube en más profundidad. Es posible que quiera crear nuevas directivas según lo que encuentre. Por ejemplo, es posible que vea un administrador iniciando sesión desde Groenlandia y nadie en su organización nunca inició sesión desde Groenlandia antes. Puede crear una directiva que suspende automáticamente una cuenta de administrador cuando se utiliza para iniciar sesión desde esa ubicación.  
 
 Es buena idea revisar todas las alertas y usarlas como herramientas para modificar las directivas. Si hay eventos inofensivos que las directivas existentes consideran como infracciones, perfeccione las directivas para recibir menos alertas innecesarias.  
 
-1.   En **Alertas abiertas**, haga clic en **Ver todas las alertas**.  
+1. En **Alertas abiertas**, haga clic en **Ver todas las alertas**.  
 
-     En esta sección del panel se proporciona visibilidad completa de cualquier actividad sospechosa o infracción de las políticas establecidas. A continuación, le ayuda a proteger la postura de seguridad que ha definido para su entorno de la nube.  
+   En esta sección del panel se proporciona visibilidad completa de cualquier actividad sospechosa o infracción de las políticas establecidas. A continuación, le ayuda a proteger la postura de seguridad que ha definido para su entorno de la nube.  
 
-     ![Alertas](./media/alerts.png "Alertas")  
+   ![Alertas](./media/alerts.png "Alertas")  
 
-2.   Debe investigar y determinar la naturaleza de la infracción y la respuesta necesaria en cada alerta.  
+2. Debe investigar y determinar la naturaleza de la infracción y la respuesta necesaria en cada alerta.  
 
-     Puede filtrar las alertas por Tipo de alerta o Gravedad para procesar primero las más importantes.  
+   Puede filtrar las alertas por Tipo de alerta o Gravedad para procesar primero las más importantes.  
 
-     Seleccione una alerta específica. Según el tipo de alerta del que se trate, verá varias acciones que pueden realizarse antes de resolver la alerta.  
+   Seleccione una alerta específica. Según el tipo de alerta del que se trate, verá varias acciones que pueden realizarse antes de resolver la alerta.  
 
-     Hay tres tipos de infracciones con los que deberá tratar al investigar alertas:  
+   Hay tres tipos de infracciones con los que deberá tratar al investigar alertas:  
 
-    #### <a name="serious-violations"></a>Infracciones graves
-     Infracciones graves que exigen una respuesta inmediata.
+   #### <a name="serious-violations"></a>Infracciones graves
+   Infracciones graves que exigen una respuesta inmediata.
 
-         Examples:  
+       Examples:  
 
-         For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
+       For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
 
-         For a data leak you might want to restrict permissions or quarantine the file.  
+       For a data leak you might want to restrict permissions or quarantine the file.  
 
-         If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
+       If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
 
-    #### <a name="questionable-violations"></a>Infracciones cuestionables
-    Infracciones cuestionables que exigen más investigación.  
+   #### <a name="questionable-violations"></a>Infracciones cuestionables
+   Infracciones cuestionables que exigen más investigación.  
 
-         You can contact the  user or the user's manager about the nature of the activity.  
+       You can contact the  user or the user's manager about the nature of the activity.  
 
-         Leave the activity open until you have more information.  
+       Leave the activity open until you have more information.  
 
- #### <a name="authorized-violations-or-anomalous-behavior"></a>Infracciones autorizadas o comportamientos anómalos
- Infracciones autorizadas o comportamientos anómalos que pueden deberse a un uso legítimo.  
+   #### <a name="authorized-violations-or-anomalous-behavior"></a>Infracciones autorizadas o comportamientos anómalos
+   Infracciones autorizadas o comportamientos anómalos que pueden deberse a un uso legítimo.  
 
-         Dismiss the alert.  
+       Dismiss the alert.  
 
-3.   Cuando finalice este proceso, marque la alerta como resuelta.  
+3. Cuando finalice este proceso, marque la alerta como resuelta.  
 
 En la tabla siguiente se proporciona una lista de los tipos de alertas que pueden activarse y se recomiendan formas para resolverlas.  
 

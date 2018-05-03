@@ -1,24 +1,27 @@
 ---
-title: "Cómo usar acciones de gobierno para controlar el uso de las aplicaciones en la nube | Microsoft Docs"
-description: "En este artículo se proporciona información sobre las acciones de gobierno que se pueden realizar en Cloud App Security para controlar el uso de aplicaciones en la nube de la organización."
-keywords: 
+title: Cómo usar acciones de gobierno para controlar el uso de las aplicaciones en la nube | Microsoft Docs
+description: En este artículo se proporciona información sobre las acciones de gobierno que se pueden realizar en Cloud App Security para controlar el uso de aplicaciones en la nube de la organización.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b7586c32819f106e563eddf5bcda2af805f89310
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 12b360be1e4490b15d61f9e49ef411970e11e9d1
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
+
 # <a name="control"></a>Control
 Puede aplicar acciones de gobierno a los archivos de los usuarios en el entorno de la nube. Después de haber investigado exhaustivamente y aprendido sobre la nube, puede utilizar las acciones de gobierno para ayudar a proteger la organización.  
 
@@ -74,13 +77,13 @@ Cloud App Security le ayuda a implementar las migraciones, ya que le informa de 
 ### <a name="migrate-your-users-to-a-new-app"></a>Migrar a los usuarios a una nueva aplicación  
 Imagínese esta situación: hace poco adquirió Office 365 y quiere que todos los usuarios de la organización dejen de usar todas las demás aplicaciones de almacenamiento en la nube y empiecen a usar OneDrive. Esto es lo que puede hacer:  
 
-1.   Vaya al **panel de Cloud Discovery** y, en **Categorías**, filtre las aplicaciones por **Almacenamiento en la nube**. Luego ordene los resultados por **Usuarios** o **Direcciones IP** y compruebe qué aplicación es la más popular.  
+1. Vaya al **panel de Cloud Discovery** y, en **Categorías**, filtre las aplicaciones por **Almacenamiento en la nube**. Luego ordene los resultados por **Usuarios** o **Direcciones IP** y compruebe qué aplicación es la más popular.  
 
-2.   Puede ver qué usuarios están usando otras aplicaciones. También puede explorar en profundidad esas aplicaciones y notificar a los usuarios que las utilizan que quiere que migren a OneDrive, de la siguiente forma:
+2. Puede ver qué usuarios están usando otras aplicaciones. También puede explorar en profundidad esas aplicaciones y notificar a los usuarios que las utilizan que quiere que migren a OneDrive, de la siguiente forma:
 
-    1.  En el **panel de Cloud Discovery**, elija **Dropbox** y luego la ficha **Dirección IP** o **Usuarios**.  
+   1.  En el **panel de Cloud Discovery**, elija **Dropbox** y luego la ficha **Dirección IP** o **Usuarios**.  
 
-    2.  Elija la flecha ![Icono de flecha](./media/arrow-icon.png "icono de flecha") y seleccione **Exportar**.  
+   2.  Elija la flecha ![Icono de flecha](./media/arrow-icon.png "icono de flecha") y seleccione **Exportar**.  
 
 ### <a name="find-more-secure-alternatives"></a>Buscar alternativas más seguras  
 El catálogo de servicios de Cloud App Security puede ayudarle a encontrar alternativas adecuadas para la organización en sustitución de las aplicaciones de riesgo que los usuarios puedan estar utilizando.  

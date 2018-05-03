@@ -1,27 +1,30 @@
 ---
 title: Referencia de plantillas de directiva en Cloud App Security | Microsoft Docs
-description: "En este tema se proporciona información sobre cómo se usan las directivas y cómo se configuran para controlar el uso de aplicaciones en la nube."
-keywords: 
+description: En este tema se proporciona información sobre cómo se usan las directivas y cómo se configuran para controlar el uso de aplicaciones en la nube.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8e6d318be12d776c2bf399f4aec07be92b0a7128
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 6dbfa26443bf1b05c689aec563b8ee71599076c9
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
+
 # <a name="policy-templates"></a>Plantillas de directiva
 
-La lista siguiente contiene todas las plantillas de directiva que existen en Cloud App Security. Se recomienda empezar la creación de directivas basándose en una plantilla existente, siempre que sea posible, para mejorar la facilidad de uso.
+La lista siguiente contiene todas las plantillas de directiva que existen en Microsoft Cloud App Security. Se recomienda empezar la creación de directivas basándose en una plantilla existente, siempre que sea posible, para mejorar la facilidad de uso.
 
 |Categoría de riesgo|Nombre de plantilla|Descripción|
 |-----|----|----|

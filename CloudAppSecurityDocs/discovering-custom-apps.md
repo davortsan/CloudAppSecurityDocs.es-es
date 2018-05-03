@@ -1,24 +1,27 @@
 ---
 title: Trabajar con aplicaciones detectadas en Cloud App Security | Microsoft Docs
-description: "En este tema se describe el proceso de identificación y corrección de aplicaciones de riesgo de Cloud Discovery en Cloud App Security."
-keywords: 
+description: En este tema se describe el proceso de identificación y corrección de aplicaciones de riesgo de Cloud Discovery en Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 23fe601cba94ad58f4baceb0df461faafbe7a974
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: 24fb4cd0d7b4c927081e07ef4a35d18582af1135
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
+
 # <a name="working-with-discovered-apps"></a>Trabajar con aplicaciones detectadas
 
 ## <a name="review-the-cloud-discovery-dashboard"></a>Revisar el panel de Cloud Discovery
@@ -106,15 +109,15 @@ Hay una serie de razones por las que puede que quiera eliminar los datos de Clou
   
 Para eliminar datos de Cloud Discovery:  
   
-1.  En el portal, en el icono de configuración, seleccione **Configuración de Cloud Discovery**.  
+1. En el portal, en el icono de configuración, seleccione **Configuración de Cloud Discovery**.  
   
-2.  Haga clic en la pestaña **Eliminar datos**.  
+2. Haga clic en la pestaña **Eliminar datos**.  
   
-     Es importante estar seguro de querer eliminar los datos antes de continuar, ya que no se puede deshacer y elimina **todos** los datos de Cloud Discovery del sistema.  
+    Es importante estar seguro de querer eliminar los datos antes de continuar, ya que no se puede deshacer y elimina **todos** los datos de Cloud Discovery del sistema.  
   
-3.  Haga clic en el botón **Eliminar**.  
+3. Haga clic en el botón **Eliminar**.  
   
-     ![eliminar datos](./media/delete-data.png "eliminar datos")  
+    ![eliminar datos](./media/delete-data.png "eliminar datos")  
   
    > [!NOTE]  
    >  El proceso de eliminación tarda unos minutos y no es inmediato.  

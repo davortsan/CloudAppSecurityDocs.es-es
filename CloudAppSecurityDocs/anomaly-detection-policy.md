@@ -1,27 +1,30 @@
 ---
-title: "Crear directivas de detección de anomalías en Cloud App Security | Microsoft Docs"
-description: "En este tema se proporciona una descripción de las directivas de detección de anomalías, así como información de referencia sobre los bloques de creación de una directiva de detección de anomalías."
-keywords: 
+title: Crear directivas de detección de anomalías en Cloud App Security | Microsoft Docs
+description: En este tema se proporciona una descripción de las directivas de detección de anomalías, así como información de referencia sobre los bloques de creación de una directiva de detección de anomalías.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/5/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9ac466a721a9e5eef13d868d2eae2ce1c2df58c8
-ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
+ms.openlocfilehash: 3fec0cf5ed6139ecdfc6b4e33b5a6e054e3d62ce
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
+ 
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtención de análisis de comportamiento y detección de anomalías instantáneos
 
-Las directivas de detección de anomalías de Cloud App Security proporcionan análisis de comportamiento de usuarios y entidades (UEBA) y aprendizaje automático (ML) al instante para que pueda ejecutar inmediatamente la detección de amenazas avanzada en el entorno de nube. Dado que se habilitan automáticamente, las nuevas directivas de detección de anomalías ofrecen resultados al instante proporcionando detecciones inmediatas, dirigidas a numerosas anomalías de comportamientos entre los usuarios, las máquinas y los dispositivos conectados a la red.  Además, las nuevas directivas exponen más datos a partir del motor de detección de Cloud App Security, lo que le ayuda a agilizar el proceso de investigación y contener las amenazas en curso. 
+Las directivas de detección de anomalías de Microsoft Cloud App Security ofrecen análisis de comportamiento de usuarios y entidades (UEBA) y aprendizaje automático (ML) de serie para que pueda ejecutar inmediatamente la detección de amenazas avanzada en el entorno en la nube. Dado que se habilitan automáticamente, las nuevas directivas de detección de anomalías ofrecen resultados al instante proporcionando detecciones inmediatas, dirigidas a numerosas anomalías de comportamientos entre los usuarios, las máquinas y los dispositivos conectados a la red.  Además, las nuevas directivas exponen más datos a partir del motor de detección de Cloud App Security, lo que le ayuda a agilizar el proceso de investigación y contener las amenazas en curso. 
 
 Las directivas de detección de anomalías se habilitan automáticamente, pero Cloud App Security tiene un período de aprendizaje inicial de siete días durante el cual no todas las alertas de detección de anomalías se generan. Transcurrido este tiempo, cada sesión se compara con la actividad, los momentos en que los usuarios estaban activos, las direcciones IP, los dispositivos, etc., que se detectaron durante el mes anterior y la puntuación de riesgo de estas actividades.  Estas detecciones son parte del motor de detección de anomalías heurístico, que genera perfiles a partir de su entorno y desencadena alertas con respecto a una línea base que se define en función de la actividad de su organización. Estas detecciones también aprovechan los algoritmos de aprendizaje automático diseñados para generar perfiles de los usuarios y el patrón de inicio de sesión para reducir los falsos positivos.
 
@@ -56,6 +59,14 @@ Están disponibles las directivas de detección de anomalías siguientes:
 **Actividad desde direcciones IP anónimas**
 - Se identifica la actividad de los usuarios desde una dirección IP considerada como dirección IP anónima de proxy. Los usuarios que quieren ocultar la dirección IP de sus dispositivos usan estos servidores proxy, a veces de forma malintencionada. Esta detección usa un algoritmo de aprendizaje automático que reduce los falsos positivos, como las direcciones IP no etiquetadas que los usuarios de la organización usan habitualmente.
 
+**Actividad de ransomware**
+-  Cloud App Security ha ampliado sus funcionalidades de detección de ransomware con la detección de anomalías para garantizar una cobertura más completa frente a ataques de ransomware sofisticados. Con nuestra experiencia en investigación de seguridad para identificar patrones de comportamiento que reflejan la actividad de ransomware, Cloud App Security garantiza una protección integral y sólida. Puede que represente un proceso de cifrado adverso si Cloud App Security identifica, por ejemplo, una alta tasa de cargas de archivos o de actividades de eliminación de archivos. Estos datos se recopilan en los registros procedentes de las API conectadas y luego se combinan con los patrones de comportamiento aprendidos y la inteligencia sobre amenazas, por ejemplo, extensiones de ransomware conocidas. Para obtener más información sobre cómo Cloud App Security detecta ransomware, vea [Proteger la organización frente a ransomware](use-case-ransomware.md).
+
+**Actividad de usuarios dados de baja**
+
+- Esta detección le permite identificar cuando un empleado que ya no trabaja en la compañía sigue realizando acciones en las aplicaciones SaaS. Dado que los datos muestran que el mayor riesgo de una amenaza interna procede de empleados que se fueron en malos términos, es importante estar atento a la actividad en las cuentas de empleados dados de baja. A veces, cuando los empleados dejan una compañía, sus cuentas se desaprovisionan de las aplicaciones corporativas, pero en muchos casos sigue conservando el acceso a determinados recursos corporativos. Esto es incluso más importante si se tienen en cuenta las cuentas con privilegios, ya que el daño potencial que un ex administrador puede infligir es intrínsecamente mayor.
+Esta detección aprovecha las ventajas de capacidad de Cloud App Security para supervisar el comportamiento de usuario entre las aplicaciones, lo que permite la identificación de la actividad normal del usuario, el hecho de que la cuenta se ha cerrado y la actividad real en otras aplicaciones. Por ejemplo, un empleado cuya cuenta de Azure AD se ha cerrado, pero aún tiene acceso a la infraestructura AWS corporativa, tiene el potencial de causar daños a gran escala.  
+
 **Actividad desde direcciones IP sospechosas**
 - Se identifica la actividad de los usuarios desde una dirección IP considerada como de riesgo en Microsoft Threat Intelligence. Estas direcciones IP están implicadas en actividades malintencionadas como Botnet C&C y pueden indicar que la cuenta está en peligro. Esta detección usa un algoritmo de aprendizaje automático que reduce los falsos positivos, como las direcciones IP no etiquetadas que los usuarios de la organización usan habitualmente.
 
@@ -82,14 +93,14 @@ Puede evaluar la prioridad de las diversas alertas desencadenadas por las nuevas
 
 1. En el **registro de actividades**, puede abrir una actividad para mostrar el cajón de actividades. Haga clic en **Usuario** para ver la pestaña de información del usuario. Esto incluye información como el número de alertas, las actividades y desde dónde se han conectado, lo que es importante en una investigación. 
 
- ![alerta1 de detección de anomalías](./media/anomaly-alert-user1.png)
- ![alerta1 de detección de anomalías](./media/anomaly-alert-user2.png)
+   ![alerta1 de detección de anomalías](./media/anomaly-alert-user1.png)
+   ![alerta1 de detección de anomalías](./media/anomaly-alert-user2.png)
 
  
 2. Esto le permite comprender qué actividades sospechosas realizó el usuario y aumentar la confianza en cuanto a si la cuenta se vio comprometida. Por ejemplo, una alerta sobre varios inicios de sesión erróneos realmente puede ser sospechosa y puede indicar posibles ataques por fuerza bruta, pero también puede ser un error de configuración de aplicación, haciendo que la alerta resulte ser verdadera. Sin embargo, si ve una alerta de varios inicios de sesión erróneos con actividades sospechosas adicionales, entonces hay una mayor probabilidad de que la cuenta se vea comprometida. En el ejemplo siguiente, puede ver que, después de la alerta de los **diversos intentos de inicio de sesión erróneos**, hubo **actividad desde una dirección IP TOR** y **actividad de viaje imposible**, ambas buenos indicadores de riesgo (IOC) por sí mismas. Si esto no fue suficientemente sospechoso, puede ver que el mismo usuario realizó una **actividad de descarga masiva**, que suele ser un indicador de que el atacante está realizando exfiltración de datos. 
 
-  ![alerta1 de detección de anomalías](./media/anomaly-alert-user3.png)
-  ![alerta1 de detección de anomalías](./media/anomaly-alert-user4.png)
+   ![alerta1 de detección de anomalías](./media/anomaly-alert-user3.png)
+   ![alerta1 de detección de anomalías](./media/anomaly-alert-user4.png)
 
  
 

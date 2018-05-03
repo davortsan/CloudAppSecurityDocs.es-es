@@ -1,28 +1,30 @@
 ---
 title: Uso de alertas en Cloud App Security | Microsoft Docs
-description: "En este tema se proporciona una lista y una descripción de todas las alertas."
-keywords: 
+description: En este tema se proporciona una lista y una descripción de todas las alertas.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d160d0dd0ac1103fb84788c632f3569c5109a1a6
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: c680c2061474148989aeb687142b708a27315ad8
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
 # <a name="alerts"></a>Alertas
 Para ver alertas:
 
-En el portal de Cloud App Security, haga clic en Alertas.
+En el portal de Microsoft Cloud App Security, haga clic en Alertas.
 
 
 ![Menú Alertas](./media/alert-menu.png)

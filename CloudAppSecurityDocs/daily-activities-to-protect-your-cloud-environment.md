@@ -1,26 +1,28 @@
 ---
 title: Trabajo con el panel de Cloud App Security | Microsoft Docs
-description: "En este artículo se proporcionan los conceptos básicos para usar el panel de Cloud App Security."
-keywords: 
+description: En este artículo se proporcionan los conceptos básicos para usar el panel de Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 23962681e54706002322edeab3166d1a09e12f2f
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 59810d24a51241f6c323a072565beb22d79feca0
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
 # <a name="working-with-the-dashboard"></a>Trabajo con el panel
-Después de tener Cloud App Security configurado y en funcionamiento tendrá que configurar secuencias de datos, autorizar las aplicaciones que quiera permitir que utilicen los usuarios y configurar directivas para supervisar el entorno de la nube. A continuación, puede utilizar Cloud App Security para controlar y proteger la nube, y para administrar los riesgos.  
+Después de tener Microsoft Cloud App Security configurado y en funcionamiento tendrá que configurar flujos de datos, autorizar las aplicaciones que quiera permitir que utilicen los usuarios y configurar directivas para supervisar el entorno en la nube. A continuación, puede utilizar Cloud App Security para controlar y proteger la nube, y para administrar los riesgos.  
 
 En este tema se explica lo que hacer a diario con Cloud App Security.  
 

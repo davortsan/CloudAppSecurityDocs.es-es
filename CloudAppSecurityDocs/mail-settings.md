@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,15 +13,18 @@ ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1c15a5ca97ecf130d8202975d6ddcba1e1d69d0e
-ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
+ms.openlocfilehash: fe6d3794a19f7223df263a941e097f365c275ea1
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
+
 ##  <a name="mailsettings"></a> Establecimiento de preferencias de notificación de correo electrónico  
 
-Para establecer los parámetros de las notificaciones de correo enviadas desde Cloud App Security a los administradores que solicitan alertas, así como de las notificaciones enviadas a los usuarios finales sobre infracciones en las que puedan haber participado, siga este procedimiento. Para obtener información sobre la dirección IP del servidor de correo electrónico de Cloud App Security que debe incluir en la lista de permitidos del servicio de correo electrónico no deseado, consulte los [requisitos de red](network-requirements.md). 
+Para establecer los parámetros de las notificaciones de correo enviadas desde Microsoft Cloud App Security a los administradores que solicitan alertas, así como de las notificaciones enviadas a los usuarios finales sobre infracciones en las que puedan haber participado, siga este procedimiento. Para obtener información sobre la dirección IP del servidor de correo electrónico de Microsoft Cloud App Security que debe incluir en la lista de permitidos del servicio de correo electrónico no deseado, vea [Requisitos de red](network-requirements.md). 
 
 
 1. En la barra de menús, haga clic en el engranaje de configuración ![icono de configuración](./media/settings-icon.png "settings icon"), seleccione **Configuración** y, después, seleccione la pestaña **Configuración de correo electrónico**.  
@@ -30,30 +33,30 @@ Para establecer los parámetros de las notificaciones de correo enviadas desde C
    
    **Nombre para mostrar del campo Desde**: nombre que quiere que aparezca en el campo **Desde** del mensaje de correo.  
    > [!NOTE]
-   > Solo se admiten caracteres Unicode en el nombre para mostrar de acuerdo con el [protocolo rfc822](http://www.rfc-editor.org/rfc/rfc822.txt).
+   > Solo se admiten caracteres Unicode en el nombre para mostrar y la dirección de correo electrónico de conformidad con el [estándar rfc822](http://www.rfc-editor.org/rfc/rfc822.txt).
 
    **Dirección de correo electrónico del campo Responder a**: cuenta de correo que se usará para las respuestas al mensaje.  
   
      ![configuración de las opciones de correo](./media/mail-settings-config.png "configuración de las opciones de correo")  
 
-  >[!NOTE]
-  >Para cambiar el campo **Desde la dirección de correo** a un dominio propio, siga las instrucciones que se indican [aquí](https://mandrill.zendesk.com/hc/articles/205582277-How-do-I-add-DNS-records-for-my-sending-domains-).
+   >[!NOTE]
+   >Para cambiar el campo **Desde la dirección de correo** a un dominio propio, siga las instrucciones que se indican [aquí](https://mandrill.zendesk.com/hc/articles/205582277-How-do-I-add-DNS-records-for-my-sending-domains-).
   
-2.  Puede usar **Diseño del correo electrónico** para usar un archivo .html para personalizar y diseñar los mensajes de correo electrónico enviados desde el sistema. El archivo .html que use como plantilla debe incluir lo siguiente:  
+3. Puede usar **Diseño del correo electrónico** para usar un archivo .html para personalizar y diseñar los mensajes de correo electrónico enviados desde el sistema. El archivo .html que use como plantilla debe incluir lo siguiente:  
   
-    -   Todos los archivos CSS de plantilla deben estar alineados en la plantilla.  
+   -   Todos los archivos CSS de plantilla deben estar alineados en la plantilla.  
   
-    -   La plantilla debe tener tres marcadores de posición no modificables:  
+   -   La plantilla debe tener tres marcadores de posición no modificables:  
   
-         %%logo%%: dirección URL que lleva al logotipo de la empresa que se ha cargado en la página de configuración General.  
+        %%logo%%: dirección URL que lleva al logotipo de la empresa que se ha cargado en la página de configuración General.  
   
-         %%title%%: marcador de posición del título del correo electrónico, según lo establecido por la directiva.  
+        %%title%%: marcador de posición del título del correo electrónico, según lo establecido por la directiva.  
 
-         %%content%%: marcador de posición del contenido que se incluirá para los usuarios finales, según lo establecido por la directiva.  
+        %%content%%: marcador de posición del contenido que se incluirá para los usuarios finales, según lo establecido por la directiva.  
      
-3.  Haga clic en **Cargar una plantilla...** y seleccione el archivo que ha creado. 
+4. Haga clic en **Cargar una plantilla...** y seleccione el archivo que ha creado. 
 
-4. Luego, haga clic en **Enviar un correo electrónico de prueba** para enviarse a sí mismo un mensaje de prueba para ver un ejemplo de la plantilla creada. El correo se enviará a la cuenta usada para iniciar sesión en el portal. En el correo de prueba podrá ver los campos de metadatos, la plantilla, el asunto del correo, el título en el cuerpo del correo y el contenido.  Esta es una plantilla de correo de ejemplo: 
+5. Luego, haga clic en **Enviar un correo electrónico de prueba** para enviarse a sí mismo un mensaje de prueba para ver un ejemplo de la plantilla creada. El correo se enviará a la cuenta usada para iniciar sesión en el portal. En el correo de prueba podrá ver los campos de metadatos, la plantilla, el asunto del correo, el título en el cuerpo del correo y el contenido.  Esta es una plantilla de correo de ejemplo: 
 
 
 

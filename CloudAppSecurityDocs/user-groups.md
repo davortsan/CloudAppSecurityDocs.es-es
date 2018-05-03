@@ -1,29 +1,31 @@
 ---
 title: Importar grupos de usuarios de aplicaciones conectadas | Microsoft Docs
 description: En este tema se proporcionan instrucciones para importar grupos de usuarios en Cloud App Security.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 87b831ef-5977-4df8-bed3-3ee54a8adbb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dd1263d164751133e8c50e13b003c68f43926b8d
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: aa151c383f1121fe20ef485660ab42dab8c395a1
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+   
 # <a name="import-user-groups"></a>Importar grupos de usuarios
 
-Al conectar aplicaciones mediante conectores de API, Cloud App Security permite importar grupos de usuarios , por ejemplo, de Office 365 y Azure Active Directory.
+Al conectar aplicaciones mediante conectores de API, Microsoft Cloud App Security permite importar grupos de usuarios de, por ejemplo, Office 365 y Azure Active Directory.
 Hay dos tipos de grupos de usuarios: 
-- Grupos automáticos </br>Cloud App Security crea de manera predeterminada grupos automáticos. Por ejemplo, hay un grupo automático de usuarios denominado **Externos** que combina todos los usuarios de todas las aplicaciones que son externos a la organización y que tienen acceso a archivos o que se encontraban en las actividades de usuario en el inquilino.
+- Grupos automáticos </br>Microsoft Cloud App Security crea de manera predeterminada grupos automáticos. Por ejemplo, hay un grupo automático de usuarios denominado **Externos** que combina todos los usuarios de todas las aplicaciones que son externos a la organización y que tienen acceso a archivos o que se encontraban en las actividades de usuario en el inquilino.
  En Cloud App Security existen los siguientes grupos automáticos:
   - External
   - Administrador de Dropbox
@@ -39,12 +41,12 @@ Puede aprovechar la existencia de grupos de usuarios importados para investigar 
 1. En la barra de menús, haga clic en el icono de configuración ![icono de configuración](./media/settings-icon.png "icono de configuración") y seleccione **Grupos de usuarios**.
 2. Haga clic en **Importar grupo de usuarios**.
 
-  ![Importar grupos de usuarios](./media/user-groups-add.png)
+   ![Importar grupos de usuarios](./media/user-groups-add.png)
 
 3. Seleccione la aplicación de la que va a importar el grupo de usuarios. La lista de aplicaciones dependerá de los conectores de aplicaciones implementados.
 4. Seleccione el grupo que quiere importar. La lista de grupos disponibles incluirá todos los grupos de usuarios existentes en la aplicación. Si quiere agregar un grupo nuevo, deberá hacerlo directamente en la propia aplicación, y cuando aparezca aquí, deberá seleccionarlo.
-4. En función del tamaño del grupo, la importación puede tardar hasta una hora. Puede seleccionar la opción de recibir una notificación por correo electrónico cuando finalice el proceso de importación.
-5. Haga clic en **Importar**. Después de importar un grupo, Cloud App Security sincroniza automáticamente los miembros del grupo, igual que Active Directory Connect.
+5. En función del tamaño del grupo, la importación puede tardar hasta una hora. Puede seleccionar la opción de recibir una notificación por correo electrónico cuando finalice el proceso de importación.
+6. Haga clic en **Importar**. Después de importar un grupo, Cloud App Security sincroniza automáticamente los miembros del grupo, igual que Active Directory Connect.
 7. Una vez finalizada la importación, en la página **Grupos de usuarios** puede hacer clic en un grupo específico para ver una lista de todos los miembros del grupo. También puede hacer clic en cualquier miembro del grupo para consultar los detalles de una cuenta específica y para ver qué aplicaciones usan y un resumen de la cuenta con gráficos del usuario y su actividad, entre otras cosas.
 
 La importación de grupos le permite seleccionar esos grupos como filtros cuando examine el **registro de actividad** y cuando cree directivas. 

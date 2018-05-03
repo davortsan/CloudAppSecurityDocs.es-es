@@ -1,26 +1,29 @@
 ---
-title: "Controlar qué aplicaciones en la nube de terceros obtienen permisos | Microsoft Docs"
-description: "Este artículo proporciona información sobre cómo puede controlar, prohibir y permitir permisos de aplicación de terceros."
-keywords: 
+title: Controlar qué aplicaciones en la nube de terceros obtienen permisos | Microsoft Docs
+description: Este artículo proporciona información sobre cómo puede controlar, prohibir y permitir permisos de aplicación de terceros.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6d6daa74269057595a34db7813d0cd6ba5eaf947
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 74ca53c1b25d73383d034fdb4d50425202e39859
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
+
 # <a name="manage-app-permissions"></a>Administrar permisos de aplicación
-Muchas aplicaciones de productividad de terceros que puedan instalar los usuarios profesionales de su organización solicitan permiso para acceder a datos e información del usuario e iniciar sesión en nombre de este o en otras aplicaciones en la nube, como Office 365, G Suite y Salesforce.  Cuando los usuarios instalan estas aplicaciones, a menudo hacen clic en Aceptar sin revisar detenidamente los detalles en el mensaje, incluyendo la concesión de permisos a la aplicación.  Este problema se agrava por el hecho de que es posible que el departamento de TI no tenga suficiente información para evaluar el riesgo de seguridad que supone una aplicación frente a la ventaja de productividad que ofrece. Dado que aceptar permisos de aplicación de terceros es un riesgo de seguridad potencial para la organización, supervisar los permisos de aplicación que conceden los usuarios le ofrece la visibilidad y el control necesarios para proteger a los usuarios y las aplicaciones. Los permisos de aplicación de Cloud App Security le permiten ver qué aplicaciones que han instalado los usuarios tienen acceso a los datos de Office 365, G Suite y Salesforce, los permisos que tienen y qué usuarios les concedieron acceso a sus cuentas de Office 365, G Suite y Salesforce. Los permisos de aplicación le ayudan a decidir a qué aplicaciones permite que los usuarios tengan acceso y cuáles quiere prohibir.
+Muchas aplicaciones de productividad de terceros que puedan instalar los usuarios profesionales de su organización solicitan permiso para acceder a datos e información del usuario e iniciar sesión en nombre de este o en otras aplicaciones en la nube, como Office 365, G Suite y Salesforce.  Cuando los usuarios instalan estas aplicaciones, a menudo hacen clic en Aceptar sin revisar detenidamente los detalles en el mensaje, incluyendo la concesión de permisos a la aplicación.  Este problema se agrava por el hecho de que es posible que el departamento de TI no tenga suficiente información para evaluar el riesgo de seguridad que supone una aplicación frente a la ventaja de productividad que ofrece. Dado que aceptar permisos de aplicación de terceros es un riesgo de seguridad potencial para la organización, supervisar los permisos de aplicación que conceden los usuarios le ofrece la visibilidad y el control necesarios para proteger a los usuarios y las aplicaciones. Los permisos de aplicación de Microsoft Cloud App Security le permiten ver qué aplicaciones que han instalado los usuarios tienen acceso a los datos de Office 365, de G Suite y de Salesforce, los permisos que tienen y qué usuarios les concedieron acceso a sus cuentas de Office 365, G Suite y Salesforce. Los permisos de aplicación le ayudan a decidir a qué aplicaciones permite que los usuarios tengan acceso y cuáles quiere prohibir.
 
 
 ## <a name="working-with-the-app-permissions-page"></a>Trabajar con la página de permisos de aplicación
@@ -55,30 +58,30 @@ La página Permisos de aplicación proporciona la siguiente información sobre c
 ## <a name="ban-or-approve-an-app"></a>Prohibir o aprobar una aplicación
 1. En la página Permisos de aplicación, haga clic en la aplicación para abrir el cajón de la aplicación y obtener más información sobre ella y los permisos que se le han concedido. Puede hacer clic en el vínculo Permisos para ver una lista completa de los permisos concedidos a la aplicación. En Uso de la comunidad, puede ver la frecuencia de uso de la aplicación entre otras organizaciones. También puede hacer clic en el vínculo Actividad relacionada para ver las actividades que se muestran en el registro de gobierno relacionadas con esta aplicación.
 2. Para prohibir la aplicación, haga clic en el icono Prohibir al final de la fila de la aplicación en la tabla. <br></br>
- ![Icono Prohibir una aplicación](./media/ban-app-icon.png) <br></br>
-Cuando prohíbe una aplicación, puede elegir si quiere que los usuarios sepan que la aplicación que han instalado y autorizado anteriormente se ha prohibido, que estará deshabilitada y que no tendrán acceso a la aplicación conectada. Si no quiere que lo sepan, anule la selección de Enviar una notificación a los usuarios que hayan concedido permiso a esta aplicación prohibida en el cuadro de diálogo Prohibir la aplicación.
+   ![Icono Prohibir una aplicación](./media/ban-app-icon.png) <br></br>
+   Cuando prohíbe una aplicación, puede elegir si quiere que los usuarios sepan que la aplicación que han instalado y autorizado anteriormente se ha prohibido, que estará deshabilitada y que no tendrán acceso a la aplicación conectada. Si no quiere que lo sepan, anule la selección de Enviar una notificación a los usuarios que hayan concedido permiso a esta aplicación prohibida en el cuadro de diálogo Prohibir la aplicación.
 
     ![prohibir aplicación](./media/ban-app.png)
-> [!Note]
-> Se recomienda permitir que los usuarios de la aplicación sepan que se ha prohibido el uso de la aplicación.
+   > [!Note]
+   > Se recomienda permitir que los usuarios de la aplicación sepan que se ha prohibido el uso de la aplicación.
 
 3. Para aprobar la aplicación, haga clic en el icono Aprobar al final de la fila en la tabla. <br></br>
- ![Aprobar aplicación](./media/approve-app.png) <br></br>
-El icono se vuelve verde y se aprueba la aplicación para todos los usuarios de la aplicación conectada.
-> [!Note]
-> Marcar una aplicación como aprobada no tiene efecto para el usuario final. Solo sirve para ayudarle a marcar visualmente las aplicaciones que se han aprobado y distinguirlas de las que todavía no se han revisado.
+   ![Aprobar aplicación](./media/approve-app.png) <br></br>
+   El icono se vuelve verde y se aprueba la aplicación para todos los usuarios de la aplicación conectada.
+   > [!Note]
+   > Marcar una aplicación como aprobada no tiene efecto para el usuario final. Solo sirve para ayudarle a marcar visualmente las aplicaciones que se han aprobado y distinguirlas de las que todavía no se han revisado.
 
-3. Escriba el mensaje que quiere enviar a los usuarios de la aplicación en el cuadro Escriba un mensaje de notificación personalizado y actualice la dirección de respuesta del correo electrónico de notificación si es necesario. 
- Haga clic en **Prohibir aplicación** para enviar el correo y prohibir que los usuarios de la aplicación conectada la usen.
+4. Escriba el mensaje que quiere enviar a los usuarios de la aplicación en el cuadro Escriba un mensaje de notificación personalizado y actualice la dirección de respuesta del correo electrónico de notificación si es necesario. 
+   Haga clic en **Prohibir aplicación** para enviar el correo y prohibir que los usuarios de la aplicación conectada la usen.
 
 ## <a name="revoke-app-and-notify-user"></a>Revocar la aplicación y enviar una notificación al usuario
 
 En el caso de G Suite y Salesforce, es posible revocar el permiso de una aplicación o notificarle al usuario que debería hacerlo. 
 
-1. En la página Permisos de aplicación, haga clic en los tres puntos situados al final de la fila de la aplicación y seleccione **Enviar notificación al usuario**. De forma predeterminada, se enviará la siguiente notificación al usuario: *Autorizó que la aplicación Adallom Google Protector accediera a su cuenta de G Suite. Esta aplicación está en conflicto con la directiva de seguridad de la organización. Vuelva a considerar la posibilidad de conceder o revocar los permisos que otorgó a esta aplicación en su cuenta de G Suite. Para revocar el acceso de la aplicación, vaya a: https://security.google.com/settings/security/permissions?hl=en&pli=1 Seleccione la aplicación y haga clic en "Revocar acceso" en la barra de menús derecha*. Puede personalizar el mensaje que se envía.
+1. En la página Permisos de aplicación, haga clic en los tres puntos situados al final de la fila de la aplicación y seleccione **Enviar notificación al usuario**. De forma predeterminada, se enviará la siguiente notificación al usuario: *Autorizó que la aplicación Adallom Google Protector accediera a su cuenta de G Suite. Esta aplicación está en conflicto con la directiva de seguridad de la organización. Vuelva a considerar la posibilidad de conceder o revocar los permisos que otorgó a esta aplicación en su cuenta de G Suite. Para revocar el acceso, vaya a: https://security.google.com/settings/security/permissions?hl=en&pli=1: seleccione la aplicación y haga clic en "Revocar aplicación" en la barra de menús de la derecha.* Puede personalizar el mensaje que se envía.
 2. También puede revocar permisos para usar la aplicación para el usuario. Para ello, haga clic en el icono situado al final de la fila de la aplicación en la tabla y seleccione **Revocar aplicación**. 
 
- ![revocar aplicación](./media/revoke-app.png)
+   ![revocar aplicación](./media/revoke-app.png)
 
 ## <a name="query-app-permissions"></a>Permisos de aplicación de consulta
 

@@ -1,26 +1,30 @@
 ---
-title: "Cómo realiza Cloud App Security la inspección de contenido | Microsoft Docs"
-description: "En este artículo se describe el proceso que Cloud App Security sigue al realizar la inspección de contenido de DLP en los datos en la nube."
-keywords: 
+title: Cómo realiza Cloud App Security la inspección de contenido | Microsoft Docs
+description: En este artículo se describe el proceso que Cloud App Security sigue al realizar la inspección de contenido de DLP en los datos en la nube.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 755db0fc6e61b974daec549a8ffbdfcf119ceaae
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 3d2deb0cda5a2414fba046e0a99760b533e7d9b4
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
+
+
 # <a name="content-inspection"></a>Inspección de contenido
-En este artículo se describe el proceso que Cloud App Security sigue al realizar la inspección de contenido de DLP en los datos en la nube. 
+En este artículo se describe el proceso que Microsoft Cloud App Security sigue al realizar la inspección de contenido de DLP en los datos en la nube. 
 
 
 La inspección de contenido de Cloud App Security funciona de la manera siguiente:

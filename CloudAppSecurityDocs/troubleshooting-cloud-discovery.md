@@ -1,30 +1,34 @@
 ---
-title: "Solución de errores de Cloud Discovery en Cloud App Security | Microsoft Docs"
-description: "En este tema se proporciona una lista de errores frecuentes de Cloud Discovery y recomendaciones para la solución de cada uno de ellos."
-keywords: 
+title: Solución de errores de Cloud Discovery en Cloud App Security | Microsoft Docs
+description: En este tema se proporciona una lista de errores frecuentes de Cloud Discovery y recomendaciones para la solución de cada uno de ellos.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0e3ed6adf784f1252e02c4abe847a7b3741d11ca
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: 6be5193ffd749de8a809f620e9b44d56935499e1
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
+
 # <a name="troubleshooting-cloud-discovery"></a>Solución de problemas de Cloud Discovery
 ## <a name="log-parsing-errors"></a>Errores de análisis de registro
 
 Puede realizar un seguimiento del procesamiento de registros de Cloud Discovery mediante el registro de gobierno. En este artículo se proporcionan las acciones para resolver cada uno de los errores que se pueden mostrar allí.
 
 ### <a name="governance-log-errors"></a>Errores del registro de gobierno
+
 |ERROR|DESCRIPCIÓN|SOLUCIÓN|
 |----|----|----|
 |Tipo de archivo no admitido|El archivo cargado no es un archivo de registro válido (por ejemplo, un archivo de imagen).|Cargue un archivo de **texto**, **zip** o **gzip** que se haya exportado directamente desde el firewall o el proxy.|
@@ -35,15 +39,13 @@ Puede realizar un seguimiento del procesamiento de registros de Cloud Discovery 
 
 ## <a name="log-collector-errors"></a>Errores del recopilador de registros
 
-|PROBLEMA|SOLUCIÓN|
-|----|----|
-|No se pudo conectar al recopilador de registros a través de FTP|1. Compruebe que está usando credenciales de FTP y no credenciales de SSH. <br />2. Compruebe que el cliente de FTP que está usando no está establecido en SFTP.|
-|No se pudo actualizar la configuración del recopilador|1. Compruebe que ha especificado el token de acceso más reciente. <br />2. En el firewall, compruebe que el recopilador de registros tiene permiso para iniciar tráfico saliente en el puerto 443.|
-|Los registros enviados al recopilador no aparecen en el portal|1.  Compruebe si hay tareas de análisis con errores en el registro de gobierno.  <br />  &nbsp;&nbsp;&nbsp;&nbsp;En caso de que las haya, use la anterior tabla Errores de análisis de registro para solucionar el error.<br /> 2. En caso de que no las haya, compruebe los orígenes de datos y la configuración del recopilador de registros en el portal. <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. En la página Origen de datos, compruebe que el origen de datos que está usando está configurado de forma precisa. <br />&nbsp;&nbsp;&nbsp;&nbsp;b. En la página Recopiladores de registros, compruebe que el origen de datos está vinculado al recopilador de registros correcto. <br /> 3. Compruebe la configuración local de la máquina del recopilador de registros local.  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. Inicie sesión en el recopilador de registros mediante SSH y ejecute la utilidad collector_config.<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. Confirme que el firewall o proxy envía los registros al recopilador de registros mediante el protocolo definido (Syslog/TCP, Syslog/UDP o FTP) y que los envía al puerto y directorio correctos.<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. Ejecute netstat en la máquina y compruebe que recibe las conexiones entrantes del firewall o proxy. <br /> 4.   Compruebe que el recopilador de registros tiene permiso para iniciar tráfico saliente en el puerto 443.|
-|Estado del recopilador de registros: Creado|No se ha completado la implementación del recopilador de registros. Complete los pasos de implementación local indicados en la guía de implementación.|
-|Estado del recopilador de registros: Desconectado|No se han recibido datos durante las últimas 24 horas de ninguno de los orígenes de datos vinculados.|Compruebe la configuración de exportación del registro del dispositivo y asegúrese de que es correcta.|
-
-
+|                         PROBLEMA                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     SOLUCIÓN                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|--------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    No se pudo conectar al recopilador de registros a través de FTP     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    1. Compruebe que está usando credenciales de FTP y no credenciales de SSH. <br />2. Compruebe que el cliente de FTP que está usando no está establecido en SFTP.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|        No se pudo actualizar la configuración del recopilador         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          1. Compruebe que ha especificado el token de acceso más reciente. <br />2. En el firewall, compruebe que el recopilador de registros tiene permiso para iniciar tráfico saliente en el puerto 443.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Los registros enviados al recopilador no aparecen en el portal | 1.  Compruebe si hay tareas de análisis con errores en el registro de gobierno.  <br />  &nbsp;&nbsp;&nbsp;&nbsp;En caso de que las haya, use la anterior tabla Errores de análisis de registro para solucionar el error.<br /> 2. En caso de que no las haya, compruebe los orígenes de datos y la configuración del recopilador de registros en el portal. <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. En la página Origen de datos, compruebe que el origen de datos que está usando está configurado de forma precisa. <br />&nbsp;&nbsp;&nbsp;&nbsp;b. En la página Recopiladores de registros, compruebe que el origen de datos está vinculado al recopilador de registros correcto. <br /> 3. Compruebe la configuración local de la máquina del recopilador de registros local.  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. Inicie sesión en el recopilador de registros mediante SSH y ejecute la utilidad collector_config.<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. Confirme que el firewall o proxy envía los registros al recopilador de registros mediante el protocolo definido (Syslog/TCP, Syslog/UDP o FTP) y que los envía al puerto y directorio correctos.<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. Ejecute netstat en la máquina y compruebe que recibe las conexiones entrantes del firewall o proxy. <br /> 4.   Compruebe que el recopilador de registros tiene permiso para iniciar tráfico saliente en el puerto 443. |
+|             Estado del recopilador de registros: Creado              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            No se ha completado la implementación del recopilador de registros. Complete los pasos de implementación local indicados en la guía de implementación.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|           Estado del recopilador de registros: Desconectado           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     No se han recibido datos durante las últimas 24 horas de ninguno de los orígenes de datos vinculados.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
 ## <a name="discovery-dashboard-errors"></a>Errores del panel de detección
 
@@ -55,5 +57,4 @@ Puede realizar un seguimiento del procesamiento de registros de Cloud Discovery 
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
-  
-  
+

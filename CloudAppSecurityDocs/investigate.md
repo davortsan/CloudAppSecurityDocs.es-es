@@ -1,26 +1,29 @@
 ---
 title: Investigar los riesgos y las actividades sospechosas de las aplicaciones en la nube con Cloud App Security | Microsoft Docs
-description: "En este tema se proporciona un esquema del proceso de investigación de alertas, problemas y actividades sospechosas mediante Cloud App Security."
-keywords: 
+description: En este tema se proporciona un esquema del proceso de investigación de alertas, problemas y actividades sospechosas mediante Cloud App Security.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e0d61fcd3147b25b84c7e5071ba8e7a02bc05f67
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 0187adc2115e835c246b31c8412a359a4d3e2bc3
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
+
 # <a name="investigate"></a>Investigar
-Después de que Cloud App Security se ejecute en su entorno en la nube, será necesaria una fase de aprendizaje e investigación sobre el uso de las herramientas de Cloud App Security para adquirir un mayor conocimiento de lo que ocurre en su entorno en la nube. Luego, y según su entorno concreto y su uso, puede identificar los requisitos para proteger su organización de posibles riesgos.
+Después de que Microsoft Cloud App Security se ejecute en su entorno en la nube, será necesaria una fase de aprendizaje e investigación sobre el uso de las herramientas de Microsoft Cloud App Security para adquirir un mayor conocimiento de lo que ocurre en su entorno en la nube. Luego, y según su entorno concreto y su uso, puede identificar los requisitos para proteger su organización de posibles riesgos.
 
 En este tema se describe cómo realizar una investigación para comprender mejor lo que está ocurriendo en su entorno en la nube.  
 
@@ -115,13 +118,6 @@ Marcar aplicaciones como autorizadas o no autorizadas es un paso importante para
     -   Para soluciones alternativas, ¿quiere no autorizar algunas aplicaciones en su organización?  
 
     -   ¿Hay aplicaciones en la nube que se usan, pero no en conformidad con la directiva de su organización?  
-
-## <a name="use-reports-to-investigate-risk"></a>Utilizar los informes para investigar riesgos  
-Cuando se empieza a tener control sobre el entorno de nube, se realizan determinadas suposiciones en función de lo que se espera encontrar. Realmente, aún no conoce la nube. Y, según esas suposiciones, se crean directivas.
-
-Después de que Cloud App Security se ejecute en su entorno de nube, utilice los informes integrados (y los informes personalizados) para ver qué está ocurriendo en la nube. Atendiendo a ello, ajuste las directivas de nuevo para incluir las excepciones; de tal modo que la directiva detecta finalmente muy pocos falsos positivos.  
-
-Los informes integrados proporcionan vistas agregadas de cara a la investigación. Para utilizar los informes integrados, vaya a **Investigar** y, luego, a **Informes integrados**. Para obtener más información sobre los distintos informes integrados, consulte [Referencia de informes integrados](built-in-report-reference.md).  
 
 ## <a name="sample-investigation"></a>Ejemplo de investigación  
 Imaginemos que, en teoría, ninguna dirección IP de riesgo puede tener acceso a su entorno en la nube (por ejemplo, servidores proxy anónimos y Tor). Pero crearemos una directiva para las IP de riesgo solo para asegurarnos de ello:  

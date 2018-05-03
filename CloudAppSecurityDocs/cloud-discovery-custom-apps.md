@@ -1,24 +1,26 @@
 ---
-title: "Incorporación de aplicaciones personalizadas a Cloud Discovery en Cloud App Security | Microsoft Docs"
-description: "En este tema se ofrece información sobre cómo agregar aplicaciones personalizadas a Cloud Discovery en Cloud App Security para supervisar Shadow IT."
-keywords: 
+title: Incorporación de aplicaciones personalizadas a Cloud Discovery en Cloud App Security | Microsoft Docs
+description: En este tema se ofrece información sobre cómo agregar aplicaciones personalizadas a Cloud Discovery en Cloud App Security para supervisar Shadow IT.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/27/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 98b0d841-b33d-4ae9-b48b-d9ee77785eaa
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d8ccd44e3c488b9adb0d4cd9df96b29b6bcc3e2d
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: 4eeaca599a51e110773555d1c6862d34f8fd99a2
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
 # <a name="add-custom-apps-to-cloud-discovery"></a>Incorporación de aplicaciones personalizadas a Cloud Discovery
     
 Cloud Discovery analiza los registros de tráfico en el catálogo de aplicaciones en la nube de Microsoft Cloud App Security de más de 15 000 aplicaciones en la nube. El catálogo solo contiene aplicaciones en la nube disponibles públicamente sobre las que Cloud App Security ofrece información de visibilidad y riesgo.
@@ -29,20 +31,20 @@ Al agregar una nueva aplicación personalizada en la nube, Cloud App Security pu
 
 Para agregar una nueva aplicación personalizada en la nube:
 
-1.  En el portal de Cloud App Security, haga clic en **Detectar** y luego en **Cloud Discovery dashboard** (Panel de Cloud Discovery). 
+1. En el portal de Cloud App Security, haga clic en **Detectar** y luego en **Cloud Discovery dashboard** (Panel de Cloud Discovery). 
   
- ![menú del panel de Cloud Discovery](./media/cloud-discovery-dashboard-menu.png)
+   ![menú del panel de Cloud Discovery](./media/cloud-discovery-dashboard-menu.png)
 
-2.  En la esquina superior derecha, haga clic en los tres puntos y seleccione **Agregar nueva aplicación personalizada**. 
+2. En la esquina superior derecha, haga clic en los tres puntos y seleccione **Agregar nueva aplicación personalizada**. 
 
- ![menú agregar aplicación personalizada](./media/add-custom-app-menu.png)
+   ![menú agregar aplicación personalizada](./media/add-custom-app-menu.png)
 
-3.  Rellene los campos para definir el registro de la nueva aplicación que se mostrará en el catálogo de aplicaciones en la nube y en Cloud Discovery una vez detectada en los registros de firewall.
+3. Rellene los campos para definir el registro de la nueva aplicación que se mostrará en el catálogo de aplicaciones en la nube y en Cloud Discovery una vez detectada en los registros de firewall.
 
-  ![aplicación personalizada](./media/add-custom-app.png)
+   ![aplicación personalizada](./media/add-custom-app.png)
 
 4. En **Dominios**, rellene los dominios únicos que se utilizan al obtener acceso a la aplicación personalizada. Estos dominios se usan para establecer coincidencias entre los mensajes de registro de tráfico y la aplicación. Si el origen de datos que usa no contiene información de dirección URL de la aplicación, asegúrese de rellenar los campos de direcciones **IPv4** y **IPv6**.
-4.  Se recomienda agregar notas que le permitan realizar un seguimiento de cambios de este registro.
+5. Se recomienda agregar notas que le permitan realizar un seguimiento de cambios de este registro.
 
 Una vez creada la aplicación, está disponible para usted en el catálogo de aplicaciones en la nube.
 

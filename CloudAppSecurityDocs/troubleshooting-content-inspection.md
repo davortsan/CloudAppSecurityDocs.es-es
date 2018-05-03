@@ -1,31 +1,35 @@
 ---
-title: "Solución de errores de inspección de contenido en Cloud App Security | Microsoft Docs"
-description: "En este tema se proporciona una lista de los estados de inspección de contenido, así como el significado de estos."
-keywords: 
+title: Solución de errores de inspección de contenido en Cloud App Security | Microsoft Docs
+description: En este tema se proporciona una lista de los estados de inspección de contenido, así como el significado de estos.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 359eb77f-e719-4c50-9b62-6ef64149a5a5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: be49af4df563d4aa2a05dd4830d2dd8835fa90d3
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 58a3a202c7c31ec3fa063a5067821a657d47d836
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
+
 # <a name="troubleshooting-content-inspection"></a>Solucionar problemas relacionados con la inspección de contenido
+
 |Estado de la inspección de contenido|Descripción|
 |----|----|
 |Completed|La inspección de contenido se completó correctamente.|
 |No disponible|La inspección de contenido no es aplicable para este archivo. Esto podría pasar porque no hay ninguna directiva que requiera la inspección de contenido de este archivo o porque no se admite el tipo de archivo.|
 |Pending|El archivo está actualmente en la cola de inspección de contenido.|
-|Error: Error de descarga|Cloud App Security no pudo descargar el archivo para la inspección.|
+|Error: Error de descarga|Microsoft Cloud App Security no pudo descargar el archivo para la inspección.|
 |Error: Archivo cifrado|El archivo no se pudo descifrar.|
 |Error: El archivo está dañado|El archivo está dañado de algún modo y no se pudo inspeccionar.|
 |Error: Error interno.|Se produjo un problema indeterminado al intentar inspeccionar el archivo.|
@@ -42,5 +46,4 @@ ms.lasthandoff: 01/16/2018
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
-  
-  
+

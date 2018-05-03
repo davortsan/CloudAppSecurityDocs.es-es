@@ -1,24 +1,26 @@
 ---
-title: "Configurar la carga de registros automática para informes continuos | Microsoft Docs"
-description: "En este tema se describe el proceso de configuración de carga de registros automática para informes continuos en Cloud App Security con Docker en Ubuntu en Azure."
-keywords: 
+title: Configurar la carga de registros automática para informes continuos | Microsoft Docs
+description: En este tema se describe el proceso de configuración de carga de registros automática para informes continuos en Cloud App Security con Docker en Ubuntu en Azure.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 03ace8d5bf61ed623ad90b3717c4d35b767498a3
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 59eb0ca7813a96f2ac2face66fba96d50851fd97
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
 # <a name="set-up-and-configuration-on-ubuntu"></a>Configuración en Ubuntu
 
 
@@ -32,7 +34,7 @@ ms.lasthandoff: 01/16/2018
 
 -   RAM: 4 GB
 
--   Configuración del firewall, tal como se describe en [Requisitos de red](network-requirements#log-collector)
+-   Configuración del firewall, tal como se describe en [Requisitos de red](network-requirements.md#log-collector)
 
 ## <a name="log-collector-performance"></a>Rendimiento del recopilador de registros
 
@@ -46,48 +48,48 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Paso 1: Configuración del portal web: definición de orígenes de datos y vinculación a un recopilador de registros
 
-1.  Vaya a la página de configuración de carga automatizada:  <br></br>En el portal de Cloud App Security, haga clic en el ![icono de configuración](./media/settings-icon.png) y, después, en **Recopiladores de registros**.
+1. Vaya a la página de configuración de carga automatizada:  <br></br>En el portal de Cloud App Security, haga clic en el ![icono de configuración](./media/settings-icon.png) y, después, en **Recopiladores de registros**.
 
-2.  Cree un origen de datos coincidente para cada firewall o servidor proxy desde el que quiera cargar registros:
+2. Cree un origen de datos coincidente para cada firewall o servidor proxy desde el que quiera cargar registros:
 
-    ![ubuntu1](./media/ubuntu1.png)
+   ![ubuntu1](./media/ubuntu1.png)
 
-    a. Haga clic en **Agregar origen de datos**.
+   a. Haga clic en **Agregar origen de datos**.
 
-    b. **Ponga nombre** al servidor proxy o firewall.
+   b. **Ponga nombre** al servidor proxy o firewall.
 
-    c. Seleccione el dispositivo en la lista **Origen**. Si selecciona **Formato de registro personalizado** para trabajar con un dispositivo de red que no aparezca específicamente en la lista, consulte el artículo sobre cómo [trabajar con el analizador de registro personalizado](custom-log-parser.md) para ver las instrucciones de configuración.
+   c. Seleccione el dispositivo en la lista **Origen**. Si selecciona **Formato de registro personalizado** para trabajar con un dispositivo de red que no aparezca específicamente en la lista, consulte el artículo sobre cómo [trabajar con el analizador de registro personalizado](custom-log-parser.md) para ver las instrucciones de configuración.
 
-    d. Compare el registro con el ejemplo del formato de registro esperado. Si el formato del archivo de registro no coincide con este ejemplo, debe agregar el origen de datos como **Otro**.
+   d. Compare el registro con el ejemplo del formato de registro esperado. Si el formato del archivo de registro no coincide con este ejemplo, debe agregar el origen de datos como **Otro**.
 
-    e. Establezca el **tipo de receptor** en **FTP**, **FTPS**, **Syslog – UDP**, **Syslog – TCP** o **Syslog – TLS**.
-    >[!NOTE]
-    >La integración con protocolos de transferencia segura (FTPS y Syslog – TLS) a menudo requiere una configuración adicional o firewall/proxy.
+   e. Establezca el **tipo de receptor** en **FTP**, **FTPS**, **Syslog – UDP**, **Syslog – TCP** o **Syslog – TLS**.
+   >[!NOTE]
+   >La integración con protocolos de transferencia segura (FTPS y Syslog – TLS) a menudo requiere una configuración adicional o firewall/proxy.
 
-    f. Repita este proceso para cada servidor proxy y firewall cuyos registros se puedan usar para detectar tráfico en la red.
+   f. Repita este proceso para cada servidor proxy y firewall cuyos registros se puedan usar para detectar tráfico en la red.
 
-3.  Vaya a la pestaña **Recopiladores de registros** de la parte superior.
+3. Vaya a la pestaña **Recopiladores de registros** de la parte superior.
 
-    a. Haga clic en **Agregar recopilador de registros**.
+   a. Haga clic en **Agregar recopilador de registros**.
 
-    b. Ponga **nombre** al recopilador de registros.
+   b. Ponga **nombre** al recopilador de registros.
 
-    c. Escriba la **dirección IP de host** de la máquina que usará para implementar Docker. 
+   c. Escriba la **dirección IP de host** de la máquina que usará para implementar Docker. 
 
-     > [!NOTE]
-     > La dirección IP del host puede reemplazarse con el nombre del equipo si un servidor DNS (o equivalente) resolverá el nombre de host.
+    > [!NOTE]
+    > La dirección IP del host puede reemplazarse con el nombre del equipo si un servidor DNS (o equivalente) resolverá el nombre de host.
 
-    d. Seleccione todos los **orígenes de datos** que desea conectar al recopilador y haga clic en **Actualizar** para guardar la configuración. Luego, consulte los pasos de implementación siguientes.
+   d. Seleccione todos los **orígenes de datos** que desea conectar al recopilador y haga clic en **Actualizar** para guardar la configuración. Luego, consulte los pasos de implementación siguientes.
 
-    ![ubuntu2](./media/ubuntu2.png)
+   ![ubuntu2](./media/ubuntu2.png)
 
-    >  [!NOTE]
-    > - Un único recopilador de registros puede administrar varios orígenes de datos.
-    >- Copie el contenido de la pantalla, ya que necesitará la información al configurar el recopilador de registros para comunicarse con Cloud App Security. Si ha seleccionado Syslog, esta información incluirá información sobre el puerto en el que escucha el agente de escucha de Syslog.
+   > [!NOTE]
+   > - Un único recopilador de registros puede administrar varios orígenes de datos.
+   > - Copie el contenido de la pantalla, ya que necesitará la información al configurar el recopilador de registros para comunicarse con Cloud App Security. Si ha seleccionado Syslog, esta información incluirá información sobre el puerto en el que escucha el agente de escucha de Syslog.
 
-4.  Aparecerá más información de implementación. **Copie** el comando de ejecución desde el cuadro de diálogo. Puede usar el icono Copiar al Portapapeles ![icono Copiar al Portapapeles](./media/copy-icon.png).
+4. Aparecerá más información de implementación. **Copie** el comando de ejecución desde el cuadro de diálogo. Puede usar el icono Copiar al Portapapeles ![icono Copiar al Portapapeles](./media/copy-icon.png).
 
-6.  **Exporte** la configuración de origen de datos esperada. Esta configuración describe cómo debe establecer la exportación de registro en los dispositivos.
+5. **Exporte** la configuración de origen de datos esperada. Esta configuración describe cómo debe establecer la exportación de registro en los dispositivos.
 
    ![Crear un recopilador de registros](./media/windows7.png)
 
@@ -97,34 +99,34 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 > En los pasos siguientes se describe la implementación de Ubuntu. Los pasos de implementación en otras plataformas son ligeramente diferentes.
 
 
-1.  Cree una nueva máquina Ubuntu en el entorno Azure. 
-2.  Cuando la máquina esté en funcionamiento, abra los puertos mediante:
-    1.  En la vista de la máquina, vaya a **Redes** y seleccione la interfaz adecuada haciendo doble clic en ella.
-    2.  Vaya a **Grupo de seguridad de red** y seleccione el grupo de seguridad de red pertinente.
-    3.  Vaya a **Reglas de seguridad de entrada** y haga clic en **Agregar**.
+1. Cree una nueva máquina Ubuntu en el entorno Azure. 
+2. Cuando la máquina esté en funcionamiento, abra los puertos mediante:
+   1. En la vista de la máquina, vaya a **Redes** y seleccione la interfaz adecuada haciendo doble clic en ella.
+   2. Vaya a **Grupo de seguridad de red** y seleccione el grupo de seguridad de red pertinente.
+   3. Vaya a **Reglas de seguridad de entrada** y haga clic en **Agregar**.
       
       ![Ubuntu en Azure](./media/ubuntu-azure.png)
     
-    4. Agregue las siguientes reglas (en modo **Avanzado**):
+   4. Agregue las siguientes reglas (en modo **Avanzado**):
 
-    |Nombre|Rangos de puertos de destino|Protocolo|Origen|Destination|
-    |----|----|----|----|----|
-    |caslogcollector_ftp|21|TCP|<Subred de la dirección IP del dispositivo>|Cualquiera|
-    |caslogcollector_ftp_passive|20000-20099|TCP|<Subred de la dirección IP del dispositivo>|Cualquiera|
-    |caslogcollector_syslogs_tcp|601-700|TCP|<Subred de la dirección IP del dispositivo>|Cualquiera|
-    |caslogcollector_syslogs_udp|514-600|UDP|<Subred de la dirección IP del dispositivo>|Cualquiera|
+   |Nombre|Rangos de puertos de destino|Protocolo|Origen|Destination|
+   |----|----|----|----|----|
+   |caslogcollector_ftp|21|TCP|<Subred de la dirección IP del dispositivo>|Cualquiera|
+   |caslogcollector_ftp_passive|20000-20099|TCP|<Subred de la dirección IP del dispositivo>|Cualquiera|
+   |caslogcollector_syslogs_tcp|601-700|TCP|<Subred de la dirección IP del dispositivo>|Cualquiera|
+   |caslogcollector_syslogs_udp|514-600|UDP|<Subred de la dirección IP del dispositivo>|Cualquiera|
       
-     ![Reglas de Ubuntu en Azure](./media/inbound-rule.png)
+    ![Reglas de Ubuntu en Azure](./media/inbound-rule.png)
 
-3.  Vuelva a la máquina y haga clic en **Conectar** para abrir un terminal en ella.
+3. Vuelva a la máquina y haga clic en **Conectar** para abrir un terminal en ella.
 
-4.  Cambie a los privilegios raíz con `sudo -i`.
+4. Cambie a los privilegios raíz con `sudo -i`.
 
-5.  Si acepta los [términos de licencia del software](https://go.microsoft.com/fwlink/?linkid=862492), desinstale las versiones anteriores e instale Docker CE con el comando siguiente:
+5. Si acepta los [términos de licencia del software](https://go.microsoft.com/fwlink/?linkid=862492), desinstale las versiones anteriores e instale Docker CE con el comando siguiente:
         
-        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
+       curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
-      ![Comando de Ubuntu en Azure](./media/ubuntu-azure-command.png)
+     ![Comando de Ubuntu en Azure](./media/ubuntu-azure-command.png)
 
 6. En el portal de Cloud App Security, en la ventana **Create new log collector** (Crear nuevo recopilador de registros), copie el comando para importar la configuración del recopilador en la máquina host:
 

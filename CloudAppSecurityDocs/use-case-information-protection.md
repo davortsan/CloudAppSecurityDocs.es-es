@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,19 +13,23 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dbbab2b59c8e44433e3895fc63fefff562a44a29
-ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
+ms.openlocfilehash: b4d507b5fb3a646b31ba3c380b170c2abca18ddf
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
+
+
 # <a name="automatically-apply-azure-information-protection-classification-labels"></a>Aplicar automáticamente etiquetas de clasificación de Azure Information Protection  
 
 En un mundo perfecto, todos los empleados serían plenamente conscientes de la importancia que tiene proteger la información y trabajar respetando las directivas. Pero, en el mundo real, puede suceder que un partner que trabaja en contabilidad cargue un documento en su repositorio de Box con los permisos incorrectos y que, a la semana, se dé cuenta de que se ha filtrado a la competencia información confidencial de su empresa. 
 
 Microsoft Cloud App Security sirve para evitar este tipo de desastres antes de que ocurran.
 
-Cloud App Security identifica que hay permisos públicos en un documento guardado en su cuenta de Box y usa un motor de clasificación para determinar que hay información confidencial en el documento compartido públicamente. Cloud App Security le envía una alerta para avisarle de lo ocurrido y, además, aplica automáticamente la etiqueta de clasificación **Confidencial** de Azure Information Protection para proporcionar un mayor cifrado al archivo. 
+Microsoft Cloud App Security identifica que hay permisos públicos en un documento guardado en su cuenta de Box y usa un motor de clasificación para determinar que hay información confidencial en el documento compartido públicamente. Cloud App Security le envía una alerta para avisarle de lo ocurrido y, además, aplica automáticamente la etiqueta de clasificación **Confidencial** de Azure Information Protection para proporcionar un mayor cifrado al archivo. 
 
 >[!NOTE]
 > - Aplicar una etiqueta de Azure Information Protection es solo una de las [acciones de gobierno](governance-actions.md) disponibles en una larga lista.

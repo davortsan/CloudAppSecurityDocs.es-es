@@ -1,26 +1,29 @@
 ---
 title: Conectar Dropbox con Cloud App Security para la visibilidad y el control del uso | Microsoft Docs
-description: "En este tema se proporciona información sobre cómo conectar la aplicación Dropbox con Cloud App Security mediante el conector de API."
-keywords: 
+description: En este tema se proporciona información sobre cómo conectar la aplicación Dropbox con Cloud App Security mediante el conector de API.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bf26515a37f4471b03235df63eef564326976229
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 69fb2d1969b2b9acba8516d95cd8965f01721f96
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
+
 # <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>Conectar Dropbox con Microsoft Cloud App Security
-En esta sección se proporcionan instrucciones para conectar Cloud App Security con una cuenta de Dropbox existente mediante las API del conector.  
+En esta sección se proporcionan instrucciones para conectar Microsoft Cloud App Security con una cuenta de Dropbox existente mediante las API del conector.  
  
  
 Dado que Dropbox permite el acceso a archivos desde vínculos compartidos sin iniciar sesión, Cloud App Security registra estos usuarios como usuarios no autenticados. Si ve usuarios de Dropbox no autenticados, puede tratarse de usuarios ajenos a la organización, o bien pueden ser usuarios reconocidos de la organización que no han iniciado sesión.

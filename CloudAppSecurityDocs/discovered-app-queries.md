@@ -1,24 +1,26 @@
 ---
 title: Trabajar con filtros y consultas de aplicaciones detectadas de Cloud App Security | Microsoft Docs
-description: "En este tema, se proporciona una lista de filtros y consultas de aplicaciones detectadas de Cloud App Security y se explica cómo trabajar con ellos."
-keywords: 
+description: En este tema, se proporciona una lista de filtros y consultas de aplicaciones detectadas de Cloud App Security y se explica cómo trabajar con ellos.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ea1b0b150f1028e8a8d4edac32aa6d8a4f59b564
-ms.sourcegitcommit: bbf4a2715d1ea3fd21c1a1b87c7f5a2947d2ca68
+ms.openlocfilehash: d92a0b86424ef94fcb58cd50b6c4e8bde04e5f33
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
 # <a name="discovered-app-filters-and-queries"></a>Filtros y consultas de aplicaciones detectadas
 
 ## <a name="discovered-app-filters"></a>Filtros de aplicaciones detectadas
@@ -64,11 +66,11 @@ Para que la investigación sea incluso más sencilla, ahora puede crear consulta
 
 3. En la ventana emergente **Guardar consulta**, escriba el nombre de la consulta.
 
- ![nueva consulta](./media/new-query.png)
+   ![nueva consulta](./media/new-query.png)
 
 4. Para volver a usar esta consulta en el futuro, en **Consultas**, desplácese hacia abajo hasta **Consultas guardadas** y seleccione la consulta. 
 
- ![abrir consulta](./media/open-query.png)
+   ![abrir consulta](./media/open-query.png)
 
 
 Cloud App Security también le proporciona **consultas sugeridas** y le permite guardar las consultas personalizadas que usa a menudo. Las consultas sugeridas le proporcionan vías de investigación recomendadas que filtran las aplicaciones detectadas mediante las siguientes consultas sugeridas opcionales:

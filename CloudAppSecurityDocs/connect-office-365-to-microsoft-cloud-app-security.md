@@ -1,26 +1,30 @@
 ---
 title: Conectar Office 365 con Cloud App Security para la visibilidad y el control del uso | Microsoft Docs
-description: "En este tema se proporciona información sobre cómo conectar la aplicación Office 365 con Cloud App Security mediante el conector de API."
-keywords: 
+description: En este tema se proporciona información sobre cómo conectar la aplicación Office 365 con Cloud App Security mediante el conector de API.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 08f7aba84ab68e583f267717ba42ee1b1adf7922
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: ce67a75ee0fe62bec21660c87ce4a7d213aba1bf
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*Se aplica a: Microsoft Cloud App Security*
+
+
+
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Conectar Office 365 con Microsoft Cloud App Security
-En esta sección se proporcionan instrucciones para conectar Cloud App Security con una cuenta de Microsoft Office 365 existente mediante la API del conector de aplicaciones.  
+En esta sección se proporcionan instrucciones para conectar Microsoft Cloud App Security con una cuenta de Microsoft Office 365 existente mediante la API del conector de aplicaciones.  
   
 Cloud App Security es compatible con la plataforma dedicada de Office 365 heredada, así como con las últimas ofertas de los servicios de Office 365 (conocidos comúnmente como la familia de versiones de vNext de Office 365).  Cloud App Security no es compatible con Microsoft Business Productivity Online Standard Suite heredado. 
 
