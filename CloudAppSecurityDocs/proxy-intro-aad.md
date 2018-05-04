@@ -1,11 +1,11 @@
 ---
-title: Proteger con el proxy de Microsoft Cloud App Security | Microsoft Docs
-description: En este tema encontrará información sobre el funcionamiento del proxy de Cloud App Security.
+title: Proteger con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security | Microsoft Docs
+description: En este tema encontrará información sobre el funcionamiento del proxy inverso de control de aplicaciones de acceso condicional de Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,28 +13,28 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 94e92c75aab62216d8eb374d584ff369e7cb6a2f
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: ebc88634d6a4b83effe598c45f8da62338cebf53
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
 
-# <a name="protect-apps-with-microsoft-cloud-app-security-proxy"></a>Proteger aplicaciones con el proxy de Microsoft Cloud App Security
+# <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicaciones con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security
 
 > [!NOTE]
 > Se trata de una característica en vista previa.
 
 
-En el ámbito laboral actual, a menudo no basta con saber lo que ocurre en el entorno de nube después de los hechos, sino que también se requiere tener la posibilidad de detener brechas y fugas en tiempo real antes de que los empleados pongan en riesgo su organización y los datos, ya sea de manera intencional como por accidente. Es importante permitir que los usuarios de la organización tengan a su disposición la mayoría de los servicios y las herramientas en aplicaciones de nube, y lleven al trabajo sus propios dispositivos. Al mismo tiempo, se necesitan herramientas que permitan proteger la organización de fugas o robos de datos en tiempo real. Junto con Azure Active Directory, el proxy de Microsoft Cloud App Security proporciona estas funcionalidades en una experiencia integrada y holística.
+En el ámbito laboral actual, a menudo no basta con saber lo que ocurre en el entorno de nube después de los hechos, sino que también se requiere tener la posibilidad de detener brechas y fugas en tiempo real antes de que los empleados pongan en riesgo su organización y los datos, ya sea de manera intencional como por accidente. Es importante permitir que los usuarios de la organización tengan a su disposición la mayoría de los servicios y las herramientas en aplicaciones de nube, y lleven al trabajo sus propios dispositivos. Al mismo tiempo, se necesitan herramientas que permitan proteger la organización de fugas o robos de datos en tiempo real. Junto con Azure Active Directory, Microsoft Cloud App Security proporciona estas funcionalidades en una experiencia integrada y holística con el control de aplicaciones de acceso condicional.
 
 ## <a name="how-it-works"></a>Cómo funciona
 
-El proxy de Cloud App Security se integra con el acceso condicional de Azure AD. El acceso condicional de Azure AD permite exigir el uso de controles de acceso en las aplicaciones de la organización según determinadas condiciones. Las condiciones definen *quién* (por ejemplo, un usuario o un grupo de usuarios), *qué* (qué aplicaciones en la nube) y *dónde* (qué ubicaciones y redes) se aplica una directiva de acceso condicional. Tras establecer las condiciones, puede enrutar a los usuarios al proxy de Cloud App Security, donde puede aplicar controles de sesión y acceso.
+El control de aplicaciones de acceso condicional usa una arquitectura de proxy inverso y se integra de forma única con el acceso condicional de Azure AD. El acceso condicional de Azure AD permite exigir el uso de controles de acceso en las aplicaciones de la organización según determinadas condiciones. Las condiciones definen *quién* (por ejemplo, un usuario o un grupo de usuarios), *qué* (qué aplicaciones en la nube) y *dónde* (qué ubicaciones y redes) se aplica una directiva de acceso condicional. Tras establecer las condiciones, puede enrutar los usuarios a Microsoft Cloud App Security, donde podrá proteger los datos con el control de aplicaciones de acceso condicional, aplicando para ello controles de sesión y acceso.
 
-Cuando un usuario se enruta al proxy de Cloud App Security, sus sesiones y acceso a la aplicación se pueden supervisar y controlar en tiempo real según las directivas de sesión y acceso definidas. Las directivas de sesión y acceso se usan en el portal de Cloud App Security para perfeccionar los filtros y establecer las medidas que hay que tomar con respecto a un usuario. Con las directivas de acceso y sesión, puede:
+Gracias al control de aplicaciones de acceso condicional, las sesiones y el acceso a la aplicación de los usuarios se pueden supervisar y controlar en tiempo real según las directivas de sesión y acceso definidas. Las directivas de sesión y acceso se usan en el portal de Cloud App Security para perfeccionar los filtros y establecer las medidas que hay que tomar con respecto a un usuario. Con las directivas de acceso y sesión, puede:
 
 -   **Bloquear descargas**: puede bloquear la descarga de documentos confidenciales. Por ejemplo, en los dispositivos no administrados.
 
@@ -49,22 +49,22 @@ Cuando un usuario se enruta al proxy de Cloud App Security, sus sesiones y acces
 
 ### <a name="how-session-control-works"></a>Funcionamiento del control de sesión
 
-El control de sesión del proxy se basa en el acceso condicional. Después de controlar el acceso a una aplicación, puede redirigir las sesiones de usuario al control de sesión del proxy, en lugar de directamente a la aplicación. A partir de ese momento, las solicitudes y respuestas del usuario pasarán por el proxy en lugar de ir directamente a la aplicación.
+Al crear una directiva de sesión con control de aplicaciones de acceso condicional, podrá controlar las sesiones de usuario redirigiendo al usuario en cuestión a través de un proxy inverso, en lugar de directamente a la aplicación. A partir de ese momento, las solicitudes y respuestas del usuario pasarán por Microsoft Cloud App Security en lugar de ir directamente a la aplicación.
 
-Para mantener al usuario dentro de la sesión, el proxy reemplaza todas las direcciones URL, scripts de Java y cookies pertinentes de la sesión de aplicación por direcciones URL del proxy. Por ejemplo, si la aplicación devuelve una página con vínculos cuyos dominios terminan en myapp.com, el proxy reemplazará esos vínculos por dominios que terminan en algo parecido a myapp.com.us.cas.ms. 
+Para mantener al usuario dentro de la sesión, todas las direcciones URL, scripts de Java y cookies pertinentes de la sesión de aplicación se reemplazan por direcciones URL de Microsoft Cloud App Security. Por ejemplo, si la aplicación devuelve una página con vínculos cuyos dominios terminan en myapp.com, el vínculo se reemplazará por dominios que acaben en algo parecido a myapp.com.us.cas.ms. 
 
 Este método no requiere que se instale nada en el dispositivo, lo cual es ideal para supervisar sesiones desde dispositivos no administrados. 
 
-Después de que una sesión pase por el proxy, este puede realizar lo siguiente:
+Después de que una sesión se dirija a través de Microsoft Cloud App Security, se pueden realizar las siguientes acciones:
 1. Inspeccionar el tráfico en busca de actividades de usuario
-3. Mostrar las actividades detectadas en el portal de proxy de Cloud App
-2. Guardar los registros de tráfico y analizarlos
-3. Permitir que el administrador exporte los registros de tráfico
-4. Exigir la aplicación de directivas en la sesión
+2. Mostrar las actividades detectadas en el registro de actividades de Microsoft Cloud App Security
+3. Guardar los registros de tráfico y analizarlos
+4. Permitir que el administrador exporte los registros de tráfico
+5. Exigir la aplicación de directivas en la sesión
 
 ## <a name="managed-device-identification"></a>Identificación de dispositivos administrados
 
-El proxy permite crear directivas que tienen en cuenta si un dispositivo está administrado o no. Para saber si un dispositivo está administrado o no, el proxy consulta lo siguiente:
+El control de aplicaciones de acceso condicional permite crear directivas que tienen en cuenta si un dispositivo está administrado o no. Para saber si un dispositivo está administrado o no, esta característica consulta lo siguiente:
 
 -   Dispositivos compatibles 
 -   Dispositivos unidos a dominio 
@@ -72,19 +72,19 @@ El proxy permite crear directivas que tienen en cuenta si un dispositivo está a
  
  
 ### <a name="compliant-and-domain-joined-devices"></a>Dispositivos compatibles y unidos a dominio
-El acceso condicional de Azure AD permite pasar información sobre los dispositivos compatibles y unidos a un dominio directamente al proxy de Cloud App Security. Desde allí, se puede desarrollar una directiva de sesión o acceso que use el estado del dispositivo como filtro.
+El acceso condicional de Azure AD permite pasar información sobre los dispositivos compatibles y unidos a un dominio directamente a Microsoft Cloud App Security. Desde allí, se puede desarrollar una directiva de sesión o acceso que use el estado del dispositivo como filtro.
 Para más información, vea [Introducción a la administración de dispositivos en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction). 
 
 ### <a name="client-certificate-authenticated-devices"></a>Dispositivos autenticados con certificado de cliente
 
-El mecanismo de identificación de dispositivos de proxy puede solicitar la autenticación de los dispositivos que usan certificados de cliente. Esto permite aprovechar los certificados de cliente existentes ya implementados en la organización o implantar nuevos certificados de cliente en los dispositivos administrados y, después, usar la existencia de tales certificados para definir directivas de acceso y de sesión. Para más información sobre cómo implementar certificados de cliente, vea [Implementar el proxy para aplicaciones de Azure AD](proxy-deployment-aad.md).
+El mecanismo de identificación de dispositivos puede solicitar la autenticación de los dispositivos que usan certificados de cliente. Esto permite aprovechar los certificados de cliente existentes ya implementados en la organización o implantar nuevos certificados de cliente en los dispositivos administrados y, después, usar la existencia de tales certificados para definir directivas de acceso y de sesión. Para más información sobre cómo implementar certificados de cliente, vea [Implementar el control de la aplicación de acceso condicional para aplicaciones de Azure AD](proxy-deployment-aad.md).
  
 ## <a name="supported-apps-and-clients"></a>Aplicaciones y clientes compatibles
 
-Actualmente, el proxy admite aplicaciones configuradas con un inicio de sesión único en SAML en Azure AD. 
+Actualmente, el control de aplicaciones de acceso condicional admite aplicaciones configuradas con un inicio de sesión único en SAML en Azure AD. 
 
 > [!NOTE]
-> - El proxy también admite aplicaciones que están configuradas con proveedores de identidades que no sean Azure AD en Private Preview. Para obtener más información sobre Private Preview, envíe un correo electrónico a mcaspreview@microsoft.com.
+> - El control de aplicaciones de acceso condicional también admite aplicaciones que están configuradas con proveedores de identidades que no sean Azure AD en Private Preview. Para obtener más información sobre Private Preview, envíe un correo electrónico a mcaspreview@microsoft.com.
 > - Las aplicaciones de Office 365 no están configuradas con SAML, por lo que no son compatibles actualmente.
 
 El control de sesiones está disponible para todos los exploradores de cualquier plataforma principal. En estos momentos no se admiten aplicaciones móviles ni de escritorio. Gracias a la integración nativa, Azure AD admite cualquier aplicación configurada con el inicio de sesión único de SAML, incluidas las siguientes, que son las más populares:
@@ -121,7 +121,7 @@ Continuamente se inscriben más aplicaciones al control de sesiones. Si está in
 
 
 ## <a name="see-also"></a>Consulte también  
-[Implementación del proxy de Cloud App Security](proxy-deployment-aad.md)   
+[Implementar el control de la aplicación de acceso condicional para aplicaciones de Azure AD](proxy-deployment-aad.md)   
 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   

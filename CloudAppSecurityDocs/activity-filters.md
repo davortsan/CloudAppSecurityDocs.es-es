@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 10f8c4bef7e62c6a3e6f90c5df1f67e050f6c589
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 6f34fbcf5c268518c269f98838321e134c6e7279
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -42,7 +42,9 @@ Para profundizar en actividades más específicas, puede ampliar el filtro bási
 
  ![filtro de registro de actividad avanzada](media/activity-log-filter-advanced.png)
 
-
+> [!NOTE] 
+> La etiqueta Heredado se agrega a cualquier directiva de actividad que use el filtro de "usuario" anterior. Este filtro seguirá funcionando como de costumbre. Si quiere quitar la etiqueta Heredado, puede quitar el filtro y volver a agregarlo con el nuevo filtro **Nombre de usuario**.
+ 
 ## <a name="the-activity-drawer"></a>El cajón de actividades
 
 ### <a name="working-with-the-activity-drawer"></a>Trabajo con el cajón de actividades

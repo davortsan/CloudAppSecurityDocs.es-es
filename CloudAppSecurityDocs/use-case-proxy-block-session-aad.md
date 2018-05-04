@@ -1,11 +1,11 @@
 ---
-title: Cómo bloquear las descargas de datos confidenciales en dispositivos no administrados con el proxy de Cloud App Security | Microsoft Docs
-description: En este tema se describe el escenario donde usar las capacidades del proxy de Azure AD para proteger la organización de descargas de datos confidenciales con dispositivos no administrados.
+title: Cómo bloquear las descargas de datos confidenciales en dispositivos no administrados usando el control de aplicaciones de acceso condicional de Cloud App Security | Microsoft Docs
+description: En este tema se describe el escenario donde usar las funciones de proxy inverso de Azure AD para proteger la organización de descargas de datos confidenciales con dispositivos no administrados.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology: ''
 ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: eb0e0eef92181f14d83f6c4c5eaf30023b5d80da
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 72d43369ca7f8405463bbe66f7df80b8f5797149
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
 
-# <a name="blocking-downloads-of-sensitive-information-using-the-microsoft-cloud-app-security-proxy"></a>Bloqueo de descargas de información confidencial con el proxy de Microsoft Cloud App Security
+# <a name="blocking-downloads-of-sensitive-information-using-microsoft-cloud-app-security-conditional-access-app-control"></a>Bloqueo de descargas de información confidencial con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security
 
 
 Hoy día, los administradores de TI se encuentran entre la espada y la pared: los empleados deben ser productivos. Para ello, hay que permitirles el acceso a aplicaciones, de forma que puedan trabajar en cualquier momento y desde cualquier dispositivo. Por otra parte, quiere proteger los activos de la empresa, y eso incluye la información propietaria y con privilegios. ¿Cómo se puede permitir el acceso de los empleados a las aplicaciones en la nube y, al mismo tiempo, proteger los datos? **En este caso de uso se describe cómo bloquear las descargas de los usuarios que tienen acceso a los datos confidenciales en las aplicaciones en la nube de la empresa desde dispositivos no administrados o ubicaciones de red no corporativas.**
@@ -32,7 +32,7 @@ Hoy día, los administradores de TI se encuentran entre la espada y la pared: lo
 Un administrador de cuentas de la organización quiere consultar algo en Salesforce desde casa durante el fin de semana en su portátil personal. Esos datos de Salesforce pueden ser desde información de la tarjeta de crédito de un cliente a información de carácter personal. El equipo doméstico no está administrado, lo que significa que, si descarga los documentos de Salesforce en él, puede estar infectado con malware o, si se pierde o lo roban, puede no estar protegido por contraseña y cualquier persona que lo encuentre tendrá acceso a información confidencial. 
 
 ## <a name="the-solution"></a>La solución
-Para proteger la organización, supervise y controle el uso de la aplicación en la nube usando el acceso condicional de Azure AD y el proxy de Cloud App Security.  
+Para proteger la organización, supervise y controle el uso de la aplicación en la nube usando el acceso condicional de Azure AD y el control de aplicaciones de acceso condicional de Microsoft Cloud App Security.  
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -47,7 +47,7 @@ Las directivas de sesión de Cloud App Security permiten restringir aún más un
 ### <a name="step-1-create-an-azure-ad-conditional-access-policy"></a>Paso 1: Crear una directiva de acceso condicional de Azure AD
 
 1. Cree una directiva de acceso condicional de Azure AD con usuarios asignados y una aplicación.
-2. Active **Usar las restricciones que exige el proxy** en los controles de sesión de la directiva de acceso condicional.   
+2. Active **Use Conditional Access App Control enforced restrictions** (Usar las restricciones que exige el control de aplicaciones de acceso condicional) en los controles de sesión de la directiva de acceso condicional.   
 
    ![Acceso condicional de Azure AD](./media/proxy-deploy-restrictions-aad.png)
 
@@ -126,7 +126,7 @@ Tras completar esta tarea, vaya al portal de Cloud App Security y cree una direc
  
    ![Informe de directiva de sesión](./media/session-policy-report.png)
 
-4. En el informe de directiva puede ver los inicios de sesión que se han redirigido al proxy para someterlos a un control de sesión, así como los archivos que se han descargado o bloqueado en las sesiones supervisadas.
+4. En el informe de directiva puede ver los inicios de sesión que se han redirigido a Microsoft Cloud App Security para someterlos a un control de sesión, así como los archivos que se han descargado o bloqueado en las sesiones supervisadas.
 
 
 

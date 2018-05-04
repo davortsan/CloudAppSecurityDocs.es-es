@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/29/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 220f25083ad4b1589b75a8ce17f40e80ebfd7ece
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 82df91691ec5543075a9b3c11dfef1e11eb4fae9
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -42,23 +42,33 @@ Microsoft Cloud App Security es compatible con el control de acceso basado en ro
       - Obtener acceso al registro de gobierno ni verlo 
       - Obtener acceso a la página de informes de instantáneas de administración ni verla 
 
+- Administrador de aplicaciones/instancias: tiene permisos en todos los datos en Microsoft Cloud App Security que tengan que ver exclusivamente con la aplicación o instancia específica de una aplicación seleccionada aquí. Por ejemplo, si concede un permiso de administración de usuarios a la instancia europea de Cuadro, el administrador podrá ver solo los datos relativos a esta instancia de la aplicación, ya sean archivos, actividades, directivas o alertas, del siguiente modo:
+      - Página de actividades (solo actividades relacionadas con las entidades etiquetadas)
+      - Alertas (solo alertas relacionadas con la aplicación específica)
+      - Directivas (puede ver todas las directivas y editar o crear solo directivas que tengan que ver exclusivamente con la instancia o aplicación)
+      - Cuenta (solo cuentas de la aplicación/instancia específica)
+      - Permisos de la aplicación (solo permisos de la aplicación/instancia específica)
+      - Página de archivos (solo archivos de la aplicación/instancia específica)
+      - Control de aplicaciones de acceso condicional (sin permisos)
+      - Actividad de Cloud Discovery (sin permisos)
+      - Extensiones de seguridad (permisos únicamente para el token de API con permisos de usuario)
+      - Acciones de gobierno (solo para la aplicación/instancia específica) 
+
 Para obtener más información, vea [Asignación de roles de administrador en Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).
 
 También puede agregar más administradores a Cloud App Security sin agregar usuarios a los roles administrativos de Azure Active Directory siguiendo estos pasos:
 
 1. Haga clic en el engranaje de configuración ![icono de configuración](./media/settings-icon.png "settings icon") y luego en **Administrar los administradores**. 
 
-2. Agregue los administradores que deben tener acceso a Cloud App Security.
+2. Haga clic en el signo más para agregar los administradores que deben tener acceso a Cloud App Security.
   
-      
-3. A continuación, haga clic en la lista desplegable para establecer el tipo de acceso que tendrá el administrador: **Acceso total** o **Solo lectura y administración de alertas**.
+  ![agregar administradores](./media/add-admin.png)
+    
+3. Después, haga clic en la lista desplegable para establecer qué tipo de rol tiene el administrador, a saber, **Administrador global**, **Lector de seguridad**, **Administrador de cumplimiento** o **Administrador de aplicación/instancia**. Si selecciona **Administrador de aplicación/instancia**, seleccione la aplicación y la instancia en las que el administrador va a tener permisos.
 
      >[!NOTE]
-      >Si un administrador cuyo acceso esté limitado a **Solo lectura y administración de alertas** intenta obtener acceso a una página restringida o realizar una acción restringida, recibirá un error por el que se notifica que no tiene permiso para obtener acceso a la página o realizar la acción.
-
-   ![administrar el acceso de administrador](./media/manage-admin-access.png "administrar el acceso de administrador")  
-
-4. Haga clic en **Cerrar**.  
+      >Si un administrador cuyo acceso está limitado intenta obtener acceso a una página restringida o realizar una acción restringida, recibirá un error por el que se notifica que no tiene permiso para obtener acceso a la página o realizar la acción.
+4. Haga clic en **Agregar administrador**.  
 
    >[!NOTE]
     >Solo los administradores globales o de seguridad pueden conceder acceso a otros usuarios a Cloud App Security.
@@ -73,8 +83,6 @@ Para agregar administradores adicionales a Cloud App Security:
 1. Haga clic en el engranaje de configuración ![icono de configuración](./media/settings-icon.png "icono de configuración") y luego en **Administrar acceso de administrador**. 
 
 2. Agregue los administradores que deben tener acceso a Cloud App Security. Seleccione su nivel de acceso y haga clic en **Cerrar**.
-
-
 
 ## <a name="see-also"></a>Consulte también  
 [Configurar Cloud Discovery](set-up-cloud-discovery.md)   

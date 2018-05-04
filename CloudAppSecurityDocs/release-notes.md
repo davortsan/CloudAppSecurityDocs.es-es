@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,24 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f5c1d986648aef00b605f32d5c0a986d316604ed
-ms.sourcegitcommit: d43a0f5c17e1961348dcbf315120046bb83305c8
+ms.openlocfilehash: 0cae8e65e5dea1c0a661959ea99ec19cfbc0da94
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/30/2018
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
+
+
+## <a name="cloud-app-security-release-122"></a>Notas de la versión 122 de Cloud App Security
+Fecha de publicación: 29 de abril de 2018
+
+-   Implementación gradual: ahora puede establecer los permisos administrativos de los administradores de Microsoft Cloud App Security por cada aplicación. Por ejemplo, puede establecer un usuario concreto como administrador de únicamente G Suite. Esto permitiría al usuario ver y modificar la información en Microsoft Cloud App Security relativa únicamente a G Suite. Para más información, vea [Administración del acceso de administrador](manage-admins.md).
+- Implementación gradual: ahora, los roles de administrador de Okta aparecen en Microsoft Cloud App Security y están disponibles para cada rol como una etiqueta en **Configuración** > **grupos de usuarios**.
+
 
 ## <a name="cloud-app-security-release-121"></a>Notas de la versión 121 de Cloud App Security
 Fecha de publicación: 22 de abril de 2018

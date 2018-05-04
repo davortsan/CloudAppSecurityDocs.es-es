@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 185c3a46-ede8-4d58-b232-111807845c8f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f17cf637569007ea3a83e2b360f4e0516f4fe461
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 64d6d4b2c1d7eb27995d006c890d20590f3df06c
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -78,7 +78,7 @@ Publicado el 29 de octubre de 2017
     -   Obtenga visibilidad de los puntos de conexión no protegidos para que pueda supervisar lo que se hace en los dispositivos no administrados.
     -   Controle el acceso desde redes no corporativas o direcciones IP de riesgo.
   
-  Para más información, vea [Protección de aplicaciones con proxy](proxy-intro-aad.md).
+  Para más información, vea [Proteger las aplicaciones con el control de la aplicación de acceso condicional](proxy-intro-aad.md).
 
 -   Implementaremos gradualmente la capacidad para aplicar filtros a partir de nombres de actividad de servicio específicos. Este nuevo filtro Tipo de actividad es más granular y le permite supervisar actividades de la aplicación concretas, en lugar de los tipos de actividad más generales habituales. Por ejemplo, antes se podía filtrar por el **Comando Ejecutar**, mientras que ahora se puede filtrar por cmdlets de EXO específicos. El nombre de actividad también se puede ver en el cajón de actividades, en **Tipo (en la aplicación)**. Esta capacidad acabará reemplazando al filtro Tipo de actividad.  
 

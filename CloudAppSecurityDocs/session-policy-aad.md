@@ -1,11 +1,11 @@
 ---
 title: Crear directivas de sesión para obtener visibilidad detallada de las actividades de la sesión del usuario y bloquear las descargas | Microsoft Docs
-description: En este tema, se describe el procedimiento para configurar una directiva de sesión del proxy de Cloud App Security para obtener visibilidad detallada de las actividades de la sesión del usuario y bloquear las descargas.
+description: En este tema se describe el procedimiento para configurar una directiva de sesión de control de aplicaciones de acceso condicional de Cloud App Security para obtener visibilidad detallada de las actividades de la sesión del usuario y bloquear descargas por medio de las funciones de proxy inverso.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b414597e499919d9d6251777c9bdbea160cac430
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 7ae1fa26f818fa652570dc6752028c3addbd3b2a
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 04/23/2018
 > [!NOTE]
 > Se trata de una característica en vista previa.
 
-Las directivas de sesión de Microsoft Cloud App Security permiten las supervisiones en tiempo real y en el nivel de sesión, lo que le proporciona una visibilidad granular de las aplicaciones en la nube, así como la posibilidad de realizar distintas acciones según la directiva establecida para una sesión de usuario. En lugar de [permitir o bloquear el acceso por completo](access-policy-aad.md), con el control de sesión puede permitir el acceso mientras supervisa la sesión o limitar determinadas actividades de la sesión. 
+Las directivas de sesión de Microsoft Cloud App Security permiten las supervisiones en tiempo real y en el nivel de sesión, lo que le proporciona una visibilidad granular de las aplicaciones en la nube, así como la posibilidad de realizar distintas acciones según la directiva establecida para una sesión de usuario. En lugar de [permitir o bloquear el acceso por completo](access-policy-aad.md), con el control de sesión, puede permitir el acceso mientras supervisa la sesión o limita determinadas actividades de la sesión usando las funciones de proxy inverso de control de aplicaciones de acceso condicional. 
 
 Por ejemplo, puede decidir que, desde cualquier dispositivo no administrado o en sesiones que provienen de ubicaciones específicas, quiere permitir el acceso del usuario a la aplicación, pero también limitar la descarga de archivos confidenciales o requerir que algunos documentos estén protegidos al descargarse. Las directivas de sesión permiten establecer estos controles de sesión de usuario, ademas del acceso, y le permite realizar lo siguiente:
 
@@ -39,8 +39,8 @@ Por ejemplo, puede decidir que, desde cualquier dispositivo no administrado o en
 ## <a name="prerequisites-to-using-session-policies"></a>Requisitos previos para usar directivas de sesión
 
 - Tener una licencia de Azure AD Premium P2.
-- Las aplicaciones en cuestión deben estar [implementadas con proxy](proxy-deployment-aad.md).
-- Debe haber aplicada una [directiva de acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) que redirija a los usuarios al proxy de Cloud App Security, tal y como se describe aquí.
+- Las aplicaciones en cuestión deben estar [implementadas con control de aplicaciones de acceso condicional](proxy-deployment-aad.md).
+- Debe haber aplicada una [directiva de acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) que redirija a los usuarios Microsoft Cloud App Security, tal y como se describe aquí.
 
 > [!NOTE]
 > - Las directivas de sesión también admiten aplicaciones que están configuradas con proveedores de identidades que no sean Azure AD en Private Preview. Para obtener más información sobre Private Preview, envíe un correo electrónico a mcaspreview@microsoft.com.
@@ -49,14 +49,14 @@ Por ejemplo, puede decidir que, desde cualquier dispositivo no administrado o en
 
 Las directivas de acceso condicional de Azure Active Directory y las directivas de sesión de Cloud App Security funcionan conjuntamente para examinar cada sesión de usuario y tomar decisiones de directiva relativas a cada aplicación. Haga lo siguiente para configurar una directiva de acceso condicional en Azure AD:
 
-1. Configure una [directiva de acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) con asignaciones de usuario o de grupo de usuarios y la aplicación SAML que quiere controlar con el proxy de Cloud App Security. 
+1. Configure una [directiva de acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) con asignaciones de usuario o de grupo de usuarios y la aplicación SAML que quiere controlar con el control de aplicaciones de acceso condicional. 
 
    > [!NOTE]
-   > Esta directiva afectará únicamente a las aplicaciones que se hayan [implementado con proxy](proxy-deployment-aad.md).
+   > Esta directiva afectará únicamente a las aplicaciones que se hayan [implementado con control de aplicaciones de acceso condicional](proxy-deployment-aad.md).
 
-2. Enrute usuarios al proxy de Cloud App Security; para ello, active **Usar las restricciones que exige el proxy** en la hoja **Sesión**.
+2. Enrute usuarios a Microsoft Cloud App Security; para ello, active **Use Conditional Access App Control enforced restrictions** (Usar las restricciones que exige el control de aplicaciones de acceso condicional) en la hoja **Sesión**.
 
-   ![Acceso condicional de Azure AD con restricciones de proxy](./media/proxy-deploy-restrictions-aad.png)
+   ![Acceso condicional de Azure AD con restricciones de control de aplicaciones de acceso condicional](./media/proxy-deploy-restrictions-aad.png)
 
 ## <a name="create-a-cloud-app-security-session-policy"></a>Crear una directiva de sesión de Cloud App Security 
 
@@ -132,7 +132,7 @@ Haga lo siguiente para crear una directiva de sesión:
 
 ## Supervisión de todas las actividades <a name="monitor-session"></a>
 
-Cuando se crea una directiva de sesión, cada sesión de usuario que coincida con la directiva se redirige al control de sesión de proxy, y no directamente a la aplicación. El usuario verá una notificación de supervisión que le avisa de que sus sesiones se están supervisando.
+Cuando se crea una directiva de sesión, cada sesión de usuario que coincida con la directiva se redirige al control de sesión, y no directamente a la aplicación. El usuario verá una notificación de supervisión que le avisa de que sus sesiones se están supervisando.
 
    ![Aviso de supervisión de sesión](./media/session-monitoring-notice.png)
 
@@ -140,32 +140,32 @@ Si prefiere no avisar al usuario de que se le está supervisando, puede deshabil
 
 1. En el engranaje Configuración, seleccione **Configuración general**. 
 
-2. Después, en Configuración del proxy de Cloud App Security, desactive la casilla **Notificar a los usuarios**.
+2. Después, en la configuración de control de aplicaciones de acceso condicional, desactive la casilla **Notificar a los usuarios**.
 
     ![Deshabilitar el aviso de supervisión de sesión](./media/disable-session-monitoring-notice.png)
 
-Para mantener al usuario dentro de la sesión, el proxy reemplaza todas las direcciones URL, scripts de Java y cookies pertinentes de la sesión de aplicación por direcciones URL del proxy. Por ejemplo, si la aplicación devuelve una página con vínculos cuyos dominios terminan en myapp.com, el proxy reemplazará esos vínculos por dominios que terminan en algo parecido a myapp.com.us.cas.ms. De esta forma, la sesión completa se supervisa por medio del proxy.
+Para mantener al usuario dentro de la sesión, el control de aplicaciones de acceso condicional reemplaza todas las direcciones URL, scripts de Java y cookies pertinentes de la sesión de aplicación por direcciones URL de Microsoft Cloud App Security. Por ejemplo, si la aplicación devuelve una página con vínculos cuyos dominios terminan en myapp.com, el control de aplicaciones de acceso condicional reemplazará esos vínculos por dominios que acaben en algo parecido a myapp.com.us.cas.ms. De esta forma, la sesión completa se supervisa por medio de Microsoft Cloud App Security.
 
-El proxy registra los registros de tráfico de cada sesión de usuario que pasa a través de él. Los registros de tráfico reflejan la hora, la dirección IP, los agentes de usuario, las direcciones URL visitadas y el número de bytes cargados y descargados. Estos registros se analizan, mientras que un informe constantemente activo denominado **Proxy de Cloud App Security** se agrega a la lista de informes de Cloud Discovery en el panel de Cloud Discovery.
+El control de aplicaciones de acceso condicional crea registros de tráfico de cada sesión de usuario que pasa a través de él. Los registros de tráfico reflejan la hora, la dirección IP, los agentes de usuario, las direcciones URL visitadas y el número de bytes cargados y descargados. Estos registros se analizan, mientras que un informe constantemente activo denominado **Cloud App Security Conditional Access App Control** (Control de aplicaciones de acceso condicional de Cloud App Security) se agrega a la lista de informes de Cloud Discovery en el panel de Cloud Discovery.
 
-![Informe de proxy](./media/proxy-report.png)
+![Informe de control de aplicaciones de acceso condicional](./media/proxy-report.png)
 
 
 Para exportar estos registros, haga lo siguiente:
 
-1. Vaya al engranaje Configuración y haga clic en **Proxy**.
+1. Vaya al engranaje Configuración y haga clic en **Conditional Access App Control** (Control de aplicaciones de acceso condicional).
 2. En el lado derecho de la tabla, haga clic en el botón de exportación. ![Botón de exportación](./media/export-button.png). 
 3. Seleccione el intervalo del informe y haga clic en **Exportar**. Este proceso puede tardar en completarse.
 
 Para descargar el registro exportado:
 
 1. Cuando el informe esté listo, vaya a **Investigar** y, luego, a **Informes personalizados**.
-2. En la tabla, seleccione el informe que proceda en la lista de **registros de tráfico del proxy** y haga clic en el ![botón de descarga](./media/download-button.png). 
+2. En la tabla, seleccione el informe que proceda en la lista de **registros de tráfico del control de aplicaciones de acceso condicional** y haga clic en el ![botón de descarga](./media/download-button.png). 
 
 
 ## <a name="block-download">Bloqueo de todas las descargas</a>
 
-Cuando **Bloquear** es la **Acción** establecida que quiere realizar en la directiva de sesión del proxy de Cloud App Security, el proxy impedirá al usuario descargar un archivo de acuerdo con los filtros de archivos de la directiva. El proxy identifica un evento de descarga de cada aplicación SAML y, cuando un usuario inicia este evento, el proxy interviene en tiempo real para evitar que se ejecute. Cuando se recibe la señal de que un usuario ha iniciado una descarga, el proxy devuelve al usuario un mensaje que indica que la **descarga está restringida**, y reemplaza el archivo descargado por un archivo de texto que contiene un mensaje personalizable para el usuario, que se puede configurar en la directiva de sesión del proxy.  
+Cuando **Bloquear** es la **Acción** establecida que quiere realizar en la directiva de sesión de Cloud App Security, el control de aplicaciones de acceso condicional impedirá al usuario descargar un archivo de acuerdo con los filtros de archivos de la directiva. Microsoft Cloud App Security identifica un evento de descarga de cada aplicación SAML y, cuando un usuario inicia este evento, el control de aplicaciones de acceso condicional interviene en tiempo real para evitar que se ejecute. Cuando se recibe la señal de que un usuario ha iniciado una descarga, el control de aplicaciones de acceso condicional devuelve al usuario un mensaje que indica que la **descarga está restringida**, y reemplaza el archivo descargado por un archivo de texto que contiene un mensaje personalizable para el usuario, que se puede configurar en la directiva de sesión.  
 
 ## <a name="block-activities">Bloqueo de actividades específicas</a>
 
@@ -173,11 +173,11 @@ Cuando **Bloquear actividades** se establece como **Tipo de actividad**, pueden 
 
 ## <a name="protect-download">Protección de archivos en la descarga</a>
 Seleccione **Bloquear actividades** para bloquear actividades específicas que se pueden seleccionar con el filtro **Tipo de actividad**. Todas las actividades de las aplicaciones seleccionadas se supervisarán (y notificarán en el registro de actividad). Las actividades específicas que seleccione se bloquearán si selecciona la acción **Bloquear** y las actividades específicas que seleccione generarán alertas si selecciona la acción **Probar** y hay alertas activadas.
-Cuando **Proteger** es la **Acción** establecida que va a realizarse en la directiva de sesión del proxy de Cloud App Security, el proxy exige que el archivo se etiquete y proteja de acuerdo con los filtros de archivos de la directiva. Las etiquetas se configuran en la consola de Azure Information Protection en Azure, y **Proteger** debe estar seleccionado en la etiqueta para que dicha etiqueta aparezca como una opción en la directiva de Cloud App Security. Cuando se selecciona una etiqueta y se descarga un archivo que cumple los criterios de la directiva de Cloud App Security, tanto la etiqueta como la protección correspondiente (con permisos) se aplican al archivo de descarga. El archivo original permanece tal cual en la aplicación en la nube, mientras que el archivo descargado ahora está protegido. Los usuarios que traten de tener acceso al archivo deben cumplir los requisitos de permiso establecidos por la protección aplicada.  
+Cuando **Proteger** es la **Acción** establecida que va a realizarse en la directiva de sesión de Cloud App Security, el control de aplicaciones de acceso condicional exige que el archivo se etiquete y proteja de acuerdo con los filtros de archivos de la directiva. Las etiquetas se configuran en la consola de Azure Information Protection en Azure, y **Proteger** debe estar seleccionado en la etiqueta para que dicha etiqueta aparezca como una opción en la directiva de Cloud App Security. Cuando se selecciona una etiqueta y se descarga un archivo que cumple los criterios de la directiva de Cloud App Security, tanto la etiqueta como la protección correspondiente (con permisos) se aplican al archivo de descarga. El archivo original permanece tal cual en la aplicación en la nube, mientras que el archivo descargado ahora está protegido. Los usuarios que traten de tener acceso al archivo deben cumplir los requisitos de permiso establecidos por la protección aplicada.  
  
  
 ## <a name="see-also"></a>Consulte también  
-[Bloqueo de descargas en dispositivos no administrados mediante las funcionalidades de proxy de Azure AD](use-case-proxy-block-session-aad.md)   
+[Blocking downloads on unmanaged devices using Azure AD Conditional Access App Control capabilities](use-case-proxy-block-session-aad.md) (Bloqueo de descargas en dispositivos no administrados con las funciones de control de aplicaciones de acceso condicional de Azure AD)   
 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   
