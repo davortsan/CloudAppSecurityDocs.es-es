@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c8fb1c11fb522b826f7106798f2583e5fa4c6be6
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 7bda3cc88e28d8a8a99252556360cc57d36dd02f
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -46,7 +46,7 @@ Cloud App Security integra visibilidad con la nube de las siguientes formas:
 -   Utilizando Cloud Discovery para asignar e identificar el entorno de nube y las aplicaciones en la nube que utiliza su organización.
 -   Autorizando o no aplicaciones en la nube.  
 -   Utilizando conectores de aplicaciones fáciles de implementar que aprovechan las API del proveedor, para lograr visibilidad y administración de las aplicaciones a las que se conecte.  
--   Usando la protección de proxy para obtener visibilidad en tiempo real y control del acceso y las actividades realizadas dentro de las aplicaciones en la nube.
+-   Usando la protección del control de aplicaciones de acceso condicional para obtener visibilidad en tiempo real y control del acceso y las actividades realizadas dentro de las aplicaciones en la nube.
 -   Ayudándole a tener un control continuo al establecer y luego ajustar las directivas de forma continua.  
 
 ![Diagrama de la arquitectura de Cloud App Security](./media/proxy-architecture.png)  
@@ -81,8 +81,8 @@ Para conectar una aplicación y ampliar la protección, el administrador de apli
 
 Cloud App Security utiliza las API proporcionadas por el proveedor de la nube. Cada aplicación tiene su propio marco de trabajo y limitaciones de API. Cloud App Security funciona con los proveedores de aplicaciones para optimizar el uso de las API y garantizar el máximo rendimiento. Teniendo en cuenta las diferentes limitaciones que las aplicaciones imponen a las API (como la limitación de peticiones, los límites de API y las ventanas de API dinámicas de tiempo cambiante), los motores de Cloud App Security utilizan la capacidad permitida. Algunas operaciones, como el análisis de todos los archivos del inquilino, requieren numerosas API y, por lo tanto, se reparten a lo largo de un período de tiempo mayor. Tenga en cuenta que algunas directivas pueden ejecutarse durante varias horas o varios días.  
 
-### <a name="proxy-protection"></a>Protección de proxy
-El proxy de Cloud App Security proporciona las herramientas que necesita para tener visibilidad en tiempo real y control del acceso y las actividades realizadas en el entorno en la nube. Con el proxy, puede proteger su organización con las siguientes medidas: 
+### <a name="conditional-access-app-control-protection"></a>Protección de control de aplicaciones de acceso condicional
+El control de aplicaciones de acceso condicional de Microsoft Cloud App Security proporciona la arquitectura de proxy inverso que necesita para tener visibilidad en tiempo real y control del acceso al entorno en la nube y a las actividades realizadas en él. Con el control de aplicaciones de acceso condicional puede proteger su organización: 
 -   Bloquee las descargas antes de que se realicen para evitar las fugas de datos
 -   Establezca reglas que obliguen a proteger cifrados los datos almacenados y descargados de la nube
 -   Obtenga visibilidad de los puntos de conexión no protegidos para que pueda supervisar lo que se hace en los dispositivos no administrados

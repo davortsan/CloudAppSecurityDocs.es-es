@@ -1,11 +1,11 @@
 ---
 title: Crear directivas de acceso de Cloud App Security para permitir y bloquear el acceso | Microsoft Docs
-description: En este tema, se describe el procedimiento para configurar una directiva de acceso a proxy de Cloud App Security para permitir y bloquear el acceso a las aplicaciones conectadas a través de Azure AD.
+description: En este tema, se describe el procedimiento para configurar una directiva de acceso al control de aplicaciones de acceso condicional de Cloud App Security para permitir y bloquear el acceso a las aplicaciones conectadas a través de Azure AD mediante las funcionalidades de proxy inverso.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4cf6ab04f91b2b834ba494870a62691d882ee556
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 402cf7ad80c0421218dd5de9a61c9bf40fde709e
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -34,8 +34,8 @@ Las directivas de acceso de Microsoft Cloud App Security permiten la supervisió
 ## <a name="prerequisites-to-using-access-policies"></a>Requisitos previos para usar las directivas de acceso
 
 - Tener una licencia de Azure AD Premium P2.
-- Las aplicaciones en cuestión deben estar [implementadas con proxy](proxy-deployment-aad.md).
-- Debe haber aplicada una [directiva de acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) que redirija a los usuarios al proxy de Cloud App Security, tal y como se describe aquí.
+- Las aplicaciones en cuestión deben estar [implementadas con control de aplicaciones de acceso condicional](proxy-deployment-aad.md).
+- Debe haber aplicada una [directiva de acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) que redirija a los usuarios a Microsoft Cloud App Security, tal y como se describe aquí.
 
 > [!NOTE]
 > - Las directivas de acceso también admiten aplicaciones que estén configuradas con proveedores de identidades que no sean Azure AD en Private Preview. Para obtener más información sobre Private Preview, envíe un correo electrónico a mcaspreview@microsoft.com.
@@ -44,14 +44,14 @@ Las directivas de acceso de Microsoft Cloud App Security permiten la supervisió
 
 Las directivas de acceso condicional de Azure Active Directory y las directivas de sesión de Cloud App Security funcionan conjuntamente para examinar cada sesión de usuario y tomar decisiones de directiva relativas a cada aplicación. Haga lo siguiente para configurar una directiva de acceso condicional en Azure AD:
 
-1. Configure una [directiva de acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) con asignaciones de usuario o de grupo de usuarios y la aplicación SAML que quiere controlar con el proxy de Cloud App Security. 
+1. Configure una [directiva de acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) con asignaciones de usuario o de grupo de usuarios y la aplicación SAML que quiere controlar con el control de aplicaciones de acceso condicional. 
 
    > [!NOTE]
-   > Esta directiva afectará únicamente a las aplicaciones que se hayan [implementado con proxy](proxy-deployment-aad.md).
+   > Esta directiva afectará únicamente a las aplicaciones que se hayan [implementado con control de aplicaciones de acceso condicional](proxy-deployment-aad.md).
 
-2. Enrute usuarios al proxy de Cloud App Security; para ello, active **Usar las restricciones que exige el proxy** en la hoja **Sesión**.
+2. Enrute usuarios a Microsoft Cloud App Security; para ello, active **Use Conditional Access App Control enforced restrictions** (Usar las restricciones que exige el control de aplicaciones de acceso condicional) en la hoja **Sesión**.
 
-   ![Acceso condicional de Azure AD con restricciones de proxy](./media/proxy-deploy-restrictions-aad.png)
+   ![Acceso condicional de Azure AD con restricciones de control de aplicaciones de acceso condicional](./media/proxy-deploy-restrictions-aad.png)
 
 ## <a name="create-a-cloud-app-security-access-policy"></a>Crear una directiva de acceso de Cloud App Security 
 
@@ -91,7 +91,7 @@ Para crear una directiva de acceso, siga este procedimiento:
 
  
 ## <a name="see-also"></a>Consulte también  
-[Bloqueo de descargas en dispositivos no administrados mediante las funcionalidades de proxy de Azure AD](use-case-proxy-block-session-aad.md)   
+[Bloqueo de descargas en dispositivos no administrados con las funciones de control de aplicaciones de acceso condicional de Azure AD](use-case-proxy-block-session-aad.md)   
 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   
