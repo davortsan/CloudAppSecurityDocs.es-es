@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2018
+ms.date: 5/9/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7ae1fa26f818fa652570dc6752028c3addbd3b2a
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: cf13b7439baafa11a94aa8420ec050781fde88fc
+ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/09/2018
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -25,6 +25,12 @@ ms.lasthandoff: 04/30/2018
 
 > [!NOTE]
 > Se trata de una característica en vista previa.
+
+
+>[!div class="step-by-step"]
+[«ANTERIOR: Implementación del control de aplicaciones de acceso condicional](proxy-deployment-aad.md)
+[SIGUIENTE: Directivas de acceso»](access-policy-aad.md)
+
 
 Las directivas de sesión de Microsoft Cloud App Security permiten las supervisiones en tiempo real y en el nivel de sesión, lo que le proporciona una visibilidad granular de las aplicaciones en la nube, así como la posibilidad de realizar distintas acciones según la directiva establecida para una sesión de usuario. En lugar de [permitir o bloquear el acceso por completo](access-policy-aad.md), con el control de sesión, puede permitir el acceso mientras supervisa la sesión o limita determinadas actividades de la sesión usando las funciones de proxy inverso de control de aplicaciones de acceso condicional. 
 
@@ -40,7 +46,7 @@ Por ejemplo, puede decidir que, desde cualquier dispositivo no administrado o en
 
 - Tener una licencia de Azure AD Premium P2.
 - Las aplicaciones en cuestión deben estar [implementadas con control de aplicaciones de acceso condicional](proxy-deployment-aad.md).
-- Debe haber aplicada una [directiva de acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) que redirija a los usuarios Microsoft Cloud App Security, tal y como se describe aquí.
+- Debe haber aplicada una [directiva de acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) que redirija a los usuarios a Microsoft Cloud App Security, tal y como se describe aquí.
 
 > [!NOTE]
 > - Las directivas de sesión también admiten aplicaciones que están configuradas con proveedores de identidades que no sean Azure AD en Private Preview. Para obtener más información sobre Private Preview, envíe un correo electrónico a mcaspreview@microsoft.com.
@@ -175,9 +181,13 @@ Cuando **Bloquear actividades** se establece como **Tipo de actividad**, pueden 
 Seleccione **Bloquear actividades** para bloquear actividades específicas que se pueden seleccionar con el filtro **Tipo de actividad**. Todas las actividades de las aplicaciones seleccionadas se supervisarán (y notificarán en el registro de actividad). Las actividades específicas que seleccione se bloquearán si selecciona la acción **Bloquear** y las actividades específicas que seleccione generarán alertas si selecciona la acción **Probar** y hay alertas activadas.
 Cuando **Proteger** es la **Acción** establecida que va a realizarse en la directiva de sesión de Cloud App Security, el control de aplicaciones de acceso condicional exige que el archivo se etiquete y proteja de acuerdo con los filtros de archivos de la directiva. Las etiquetas se configuran en la consola de Azure Information Protection en Azure, y **Proteger** debe estar seleccionado en la etiqueta para que dicha etiqueta aparezca como una opción en la directiva de Cloud App Security. Cuando se selecciona una etiqueta y se descarga un archivo que cumple los criterios de la directiva de Cloud App Security, tanto la etiqueta como la protección correspondiente (con permisos) se aplican al archivo de descarga. El archivo original permanece tal cual en la aplicación en la nube, mientras que el archivo descargado ahora está protegido. Los usuarios que traten de tener acceso al archivo deben cumplir los requisitos de permiso establecidos por la protección aplicada.  
  
+>[!div class="step-by-step"]
+[«ANTERIOR: Implementación del control de aplicaciones de acceso condicional](proxy-deployment-aad.md)
+[SIGUIENTE: Directivas de acceso»](access-policy-aad.md)
+
  
 ## <a name="see-also"></a>Consulte también  
-[Blocking downloads on unmanaged devices using Azure AD Conditional Access App Control capabilities](use-case-proxy-block-session-aad.md) (Bloqueo de descargas en dispositivos no administrados con las funciones de control de aplicaciones de acceso condicional de Azure AD)   
+[Bloqueo de descargas en dispositivos no administrados con las funciones de control de aplicaciones de acceso condicional de Azure AD](use-case-proxy-block-session-aad.md)   
 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
   

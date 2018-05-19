@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3fec0cf5ed6139ecdfc6b4e33b5a6e054e3d62ce
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 9fdc726b65d404ad0bc3aeb7296ac2c82dc54208
+ms.sourcegitcommit: aebd4dd970465a7f5818329f344c24fe73f616dd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/13/2018
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -86,8 +86,20 @@ Estas directivas buscan actividades dentro de una única sesión según la líne
 **Varios intentos incorrectos de inicio de sesión**
 - Se identifica a los usuarios que intentan iniciar sesión varias veces sin éxito en una única sesión según la línea base establecida, lo que podría indicar un intento de vulneración. 
 
+## <a name="scope-anomaly-detection-policies"></a>Ámbito de directivas de detección de anomalías
 
-## <a name="triaging-anomaly-detection-alerts"></a>Evaluación de las alertas de detección de anomalías
+Se puede establecer un ámbito para cada directiva de detección de anomalías por separado para que se aplique solo a los usuarios y grupos que desea incluir y excluir en la directiva.
+Por ejemplo, puede establecer la actividad desde la detección de condado poco frecuente hasta omitir un usuario específico que viaja con frecuencia. 
+
+Para establecer el ámbito de una directiva de detección de anomalías:
+1. Haga clic en **Control** > **Directivas** y establezca el filtro **Tipo** en **Directiva de detección de anomalías**.
+2. Haga clic en la directiva cuyo ámbito desea establecer.
+3. En **Ámbito**, cambie la lista desplegable de la configuración predeterminada de **Todos los usuarios y grupos** a **Usuarios y grupos específicos**.
+4. Seleccione **Incluir** para especificar los usuarios y grupos para los que se aplicará esta directiva. Cualquier usuario o grupo que no se seleccione aquí no se considerará una amenaza y no generará una alerta.
+5. Seleccione **Excluir** para especificar los usuarios para los que no se aplicará esta directiva. Cualquier usuario que seleccione aquí no se considerará una amenaza y no generará una alerta, incluso si es miembro de los grupos seleccionados en **Incluir**.
+
+ ![ámbito de detección de anomalías](./media/anomaly-detection-scoping.png)
+## <a name="triage-anomaly-detection-alerts"></a>Evaluación de las alertas de detección de anomalías
 
 Puede evaluar la prioridad de las diversas alertas desencadenadas por las nuevas directivas de detección de anomalías rápidamente y decidir cuáles es necesario atender primero. Para ello, necesita el contexto de la alerta, de forma que pueda ver la imagen más grande y comprender si realmente está ocurriendo algo malintencionado.  
 

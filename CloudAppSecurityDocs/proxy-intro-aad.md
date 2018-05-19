@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2018
+ms.date: 5/9/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ebc88634d6a4b83effe598c45f8da62338cebf53
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: 88e201e498ae4bf6369996be682d1d91bc324b04
+ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/09/2018
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -26,6 +26,10 @@ ms.lasthandoff: 04/30/2018
 
 > [!NOTE]
 > Se trata de una característica en vista previa.
+
+
+>[!div class="step-by-step"]
+[SIGUIENTE: Implementación del control de aplicaciones de acceso condicional »](proxy-deployment-aad.md)
 
 
 En el ámbito laboral actual, a menudo no basta con saber lo que ocurre en el entorno de nube después de los hechos, sino que también se requiere tener la posibilidad de detener brechas y fugas en tiempo real antes de que los empleados pongan en riesgo su organización y los datos, ya sea de manera intencional como por accidente. Es importante permitir que los usuarios de la organización tengan a su disposición la mayoría de los servicios y las herramientas en aplicaciones de nube, y lleven al trabajo sus propios dispositivos. Al mismo tiempo, se necesitan herramientas que permitan proteger la organización de fugas o robos de datos en tiempo real. Junto con Azure Active Directory, Microsoft Cloud App Security proporciona estas funcionalidades en una experiencia integrada y holística con el control de aplicaciones de acceso condicional.
@@ -115,10 +119,14 @@ El control de sesiones está disponible para todos los exploradores de cualquier
 
 -   HighQ 
 
+-   Concur
+
 Continuamente se inscriben más aplicaciones al control de sesiones. Si está interesado en alguna aplicación específica que no figure aquí, [envíenos los detalles](mailto:casfeedback@microsoft.com) y el caso de uso que le interese, y la inscribiremos.
 
 
 
+>[!div class="step-by-step"]
+[SIGUIENTE: Implementación del control de aplicaciones de acceso condicional »](proxy-deployment-aad.md)
 
 ## <a name="see-also"></a>Consulte también  
 [Implementar el control de la aplicación de acceso condicional para aplicaciones de Azure AD](proxy-deployment-aad.md)   

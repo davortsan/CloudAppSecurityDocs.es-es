@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2018
+ms.date: 5/9/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 402cf7ad80c0421218dd5de9a61c9bf40fde709e
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: dbf878e3dee283c6d200008b414fb062f9e79723
+ms.sourcegitcommit: aefbc9e0a381f0b7b6ef70c4a74b4b31d8bd9c62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/09/2018
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -25,6 +25,12 @@ ms.lasthandoff: 04/30/2018
 
 > [!NOTE]
 > Se trata de una característica en vista previa.
+
+
+>[!div class="step-by-step"]
+[« Directiva de sesión](session-policy-aad.md)<br>
+[Caso de uso »](use-case-proxy-block-session-aad.md)
+
 
 Las directivas de acceso de Microsoft Cloud App Security permiten la supervisión en tiempo real y el control del acceso a aplicaciones en la nube en función del usuario, la ubicación, el dispositivo y la aplicación. Puede crear directivas de acceso para cualquier dispositivo, incluidos aquellos que no están unidos al dominio y que no administra Windows Intune. Para ello, implemente certificados de cliente en dispositivos administrados o aproveche los certificados existentes, por ejemplo, los certificados de MDM de terceros. Por ejemplo, puede implementar certificados de cliente en dispositivos administrados y después bloquear el acceso desde dispositivos que no tengan ningún certificado. 
 
@@ -88,7 +94,9 @@ Para crear una directiva de acceso, siga este procedimiento:
 
 
 
-
+>[!div class="step-by-step"]
+[« ANTERIOR: Directivas de sesión](session-policy-aad.md)
+[SIGUIENTE: Bloqueo de descargas de información confidencial con el control de aplicaciones de acceso condicional »](use-case-proxy-block-session-aad.md)
  
 ## <a name="see-also"></a>Consulte también  
 [Bloqueo de descargas en dispositivos no administrados con las funciones de control de aplicaciones de acceso condicional de Azure AD](use-case-proxy-block-session-aad.md)   
