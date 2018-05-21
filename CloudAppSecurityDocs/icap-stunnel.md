@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 517a468e0ff1b64f3f24e2791b576f7249451c9e
-ms.sourcegitcommit: d43a0f5c17e1961348dcbf315120046bb83305c8
+ms.openlocfilehash: 214bc10092765ff2470c258765b8adcf0cce5a9f
+ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/14/2018
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -280,7 +280,7 @@ El servidor de detección que Cloud App Security usa es un servidor estándar de
 2. En **ICAP** > **Filtrado de respuesta**, cambie el valor **Omitir respuestas menores que** a 1.
 
 
-3. Agregue "application/" a la lista **Inspect Content Type</em>** (Inspeccionar tipo de contenido).
+3. Agregue "application/\*" a la lista **Inspect Content Type</em>** (Inspeccionar tipo de contenido).
      ![inspeccionar tipo de contenido](./media/icap-inspect-content-type.png)
 
 4. Haga clic en **Guardar**.
