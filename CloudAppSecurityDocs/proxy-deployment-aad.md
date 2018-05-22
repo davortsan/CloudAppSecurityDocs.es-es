@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2018
+ms.date: 5/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d82e0e1d46e3927d0488dc525fa9c6bea42dd791
-ms.sourcegitcommit: aefbc9e0a381f0b7b6ef70c4a74b4b31d8bd9c62
+ms.openlocfilehash: a89c20e728d852ee3220be861e3e0f5988418a21
+ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/14/2018
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -29,8 +29,8 @@ ms.lasthandoff: 05/09/2018
 
 
 >[!div class="step-by-step"]
-[« Anterior](proxy-intro-aad.md)
-[Siguiente »](session-policy-aad.md)
+[« Anterior: Introducción a Control de aplicación de acceso condicional](proxy-intro-aad.md)<br>
+[Siguiente: Cómo crear una directiva de sesión »](session-policy-aad.md)
 
 
 Haga lo siguiente para configurar aplicaciones de Azure AD de forma que estén controladas por el control de aplicaciones de acceso condicional de Microsoft Cloud App Security.
@@ -112,9 +112,8 @@ Ya está listo para crear [directivas de acceso](access-policy-aad.md) y [de ses
 
 
 >[!div class="step-by-step"]
-[« ANTERIOR: Proteger las aplicaciones con el control de la aplicación de acceso condicional](proxy-intro-aad.md)
-[SIGUIENTE: Directivas de sesión »](session-policy-aad.md)
-
+[« Anterior: Introducción a Control de aplicación de acceso condicional](proxy-intro-aad.md)<br>
+[Siguiente: Cómo crear una directiva de sesión »](session-policy-aad.md)
 
 
 ## <a name="see-also"></a>Consulte también  

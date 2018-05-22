@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2018
+ms.date: 5/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cf13b7439baafa11a94aa8420ec050781fde88fc
-ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
+ms.openlocfilehash: 2cf378e8490ebf1e0cb7d35fe3842800a08290e2
+ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/14/2018
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -28,8 +28,8 @@ ms.lasthandoff: 05/09/2018
 
 
 >[!div class="step-by-step"]
-[«ANTERIOR: Implementación del control de aplicaciones de acceso condicional](proxy-deployment-aad.md)
-[SIGUIENTE: Directivas de acceso»](access-policy-aad.md)
+[« ANTERIOR: Implementación del control de aplicaciones de acceso condicional](proxy-deployment-aad.md)<br>
+[SIGUIENTE: Cómo crear una directiva de acceso »](access-policy-aad.md)
 
 
 Las directivas de sesión de Microsoft Cloud App Security permiten las supervisiones en tiempo real y en el nivel de sesión, lo que le proporciona una visibilidad granular de las aplicaciones en la nube, así como la posibilidad de realizar distintas acciones según la directiva establecida para una sesión de usuario. En lugar de [permitir o bloquear el acceso por completo](access-policy-aad.md), con el control de sesión, puede permitir el acceso mientras supervisa la sesión o limita determinadas actividades de la sesión usando las funciones de proxy inverso de control de aplicaciones de acceso condicional. 
@@ -182,8 +182,8 @@ Seleccione **Bloquear actividades** para bloquear actividades específicas que s
 Cuando **Proteger** es la **Acción** establecida que va a realizarse en la directiva de sesión de Cloud App Security, el control de aplicaciones de acceso condicional exige que el archivo se etiquete y proteja de acuerdo con los filtros de archivos de la directiva. Las etiquetas se configuran en la consola de Azure Information Protection en Azure, y **Proteger** debe estar seleccionado en la etiqueta para que dicha etiqueta aparezca como una opción en la directiva de Cloud App Security. Cuando se selecciona una etiqueta y se descarga un archivo que cumple los criterios de la directiva de Cloud App Security, tanto la etiqueta como la protección correspondiente (con permisos) se aplican al archivo de descarga. El archivo original permanece tal cual en la aplicación en la nube, mientras que el archivo descargado ahora está protegido. Los usuarios que traten de tener acceso al archivo deben cumplir los requisitos de permiso establecidos por la protección aplicada.  
  
 >[!div class="step-by-step"]
-[«ANTERIOR: Implementación del control de aplicaciones de acceso condicional](proxy-deployment-aad.md)
-[SIGUIENTE: Directivas de acceso»](access-policy-aad.md)
+[« ANTERIOR: Implementación del control de aplicaciones de acceso condicional](proxy-deployment-aad.md)<br>
+[SIGUIENTE: Cómo crear una directiva de acceso »](access-policy-aad.md)
 
  
 ## <a name="see-also"></a>Consulte también  

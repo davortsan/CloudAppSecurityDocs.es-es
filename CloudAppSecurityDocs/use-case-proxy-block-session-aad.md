@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2018
+ms.date: 5/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: df7fa13ece4f375751152db48114d0f2edd04362
-ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
+ms.openlocfilehash: 8686ebcddd2d2eef02970facfddca65fde3f02ae
+ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/14/2018
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 05/09/2018
 # <a name="blocking-downloads-of-sensitive-information-using-microsoft-cloud-app-security-conditional-access-app-control"></a>Bloqueo de descargas de información confidencial con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security
 
 >[!div class="step-by-step"]
-[« ANTERIOR: Directivas de acceso](access-policy-aad.md)
+[« ANTERIOR: Cómo crear una directiva de acceso](access-policy-aad.md)
 
 Hoy día, los administradores de TI se encuentran entre la espada y la pared: los empleados deben ser productivos. Para ello, hay que permitirles el acceso a aplicaciones, de forma que puedan trabajar en cualquier momento y desde cualquier dispositivo. Por otra parte, quiere proteger los activos de la empresa, y eso incluye la información propietaria y con privilegios. ¿Cómo se puede permitir el acceso de los empleados a las aplicaciones en la nube y, al mismo tiempo, proteger los datos? **En este caso de uso se describe cómo bloquear las descargas de los usuarios que tienen acceso a los datos confidenciales en las aplicaciones en la nube de la empresa desde dispositivos no administrados o ubicaciones de red no corporativas.**
 
@@ -133,7 +133,7 @@ Tras completar esta tarea, vaya al portal de Cloud App Security y cree una direc
 
 
 >[!div class="step-by-step"]
-[« ANTERIOR: Directivas de acceso](access-policy-aad.md)
+[« ANTERIOR: Cómo crear una directiva de acceso](access-policy-aad.md)
 
 
 

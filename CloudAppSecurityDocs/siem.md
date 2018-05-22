@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: becfce9773460020b4188e65c69d257f3d1b2b53
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: b981a885d36f5a6aee8c605c049894d3f07a64e2
+ms.sourcegitcommit: de99734dd98ac36b56ee6a759b45a12f007eff80
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/16/2018
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -106,6 +106,10 @@ Se usan las variables siguientes:
 - TOKEN es el token del agente SIEM que ha copiado en el paso anterior.
 
 Puede escribir -h en cualquier momento para obtener ayuda.
+
+
+## Ejemplo de registros de actividad<a name="siem-samples"></a>
+
 
 Estos son registros de actividad de ejemplo que se envían al servidor SIEM:
 ```
