@@ -1,6 +1,6 @@
 # Conceptos básicos y exploración
 ## [¿Qué es Cloud App Security?](what-is-cloud-app-security.md)
-## [Privacidad, seguridad de datos, confianza y cumplimiento de Cloud App Security](cas-compliance-trust.md)
+## [Seguridad y privacidad de datos de Cloud App Security](cas-compliance-trust.md)
 ## [Novedades](release-notes.md)
 ### [Archivo de versión anterior](release-note-archive.md)
 ## Comparar
