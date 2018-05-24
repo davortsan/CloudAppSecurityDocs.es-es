@@ -169,15 +169,15 @@ Para descargar el registro exportado:
 2. En la tabla, seleccione el informe que proceda en la lista de **registros de tráfico del control de aplicaciones de acceso condicional** y haga clic en el ![botón de descarga](./media/download-button.png). 
 
 
-## <a name="block-download">Bloqueo de todas las descargas</a>
+## Bloqueo de todas las descargas<a name="block-download"></a>
 
 Cuando **Bloquear** es la **Acción** establecida que quiere realizar en la directiva de sesión de Cloud App Security, el control de aplicaciones de acceso condicional impedirá al usuario descargar un archivo de acuerdo con los filtros de archivos de la directiva. Microsoft Cloud App Security identifica un evento de descarga de cada aplicación SAML y, cuando un usuario inicia este evento, el control de aplicaciones de acceso condicional interviene en tiempo real para evitar que se ejecute. Cuando se recibe la señal de que un usuario ha iniciado una descarga, el control de aplicaciones de acceso condicional devuelve al usuario un mensaje que indica que la **descarga está restringida**, y reemplaza el archivo descargado por un archivo de texto que contiene un mensaje personalizable para el usuario, que se puede configurar en la directiva de sesión.  
 
-## <a name="block-activities">Bloqueo de actividades específicas</a>
+## Bloqueo de actividades específicas<a name="block-activities"></a>
 
 Cuando **Bloquear actividades** se establece como **Tipo de actividad**, pueden seleccionarse determinadas actividades para bloquear aplicaciones específicas. Todas las actividades de las aplicaciones seleccionadas se supervisarán (y notificarán en el registro de actividad) y las actividades específicas que seleccione se bloquearán si selecciona la acción **Bloquear**. Además, las actividades específicas que seleccione generarán alertas si selecciona la acción **Probar** y hay alertas activadas.
 
-## <a name="protect-download">Protección de archivos en la descarga</a>
+## Protección de archivos en la descarga<a name="protect-download"></a>
 Seleccione **Bloquear actividades** para bloquear actividades específicas que se pueden seleccionar con el filtro **Tipo de actividad**. Todas las actividades de las aplicaciones seleccionadas se supervisarán (y notificarán en el registro de actividad). Las actividades específicas que seleccione se bloquearán si selecciona la acción **Bloquear** y las actividades específicas que seleccione generarán alertas si selecciona la acción **Probar** y hay alertas activadas.
 Cuando **Proteger** es la **Acción** establecida que va a realizarse en la directiva de sesión de Cloud App Security, el control de aplicaciones de acceso condicional exige que el archivo se etiquete y proteja de acuerdo con los filtros de archivos de la directiva. Las etiquetas se configuran en la consola de Azure Information Protection en Azure, y **Proteger** debe estar seleccionado en la etiqueta para que dicha etiqueta aparezca como una opción en la directiva de Cloud App Security. Cuando se selecciona una etiqueta y se descarga un archivo que cumple los criterios de la directiva de Cloud App Security, tanto la etiqueta como la protección correspondiente (con permisos) se aplican al archivo de descarga. El archivo original permanece tal cual en la aplicación en la nube, mientras que el archivo descargado ahora está protegido. Los usuarios que traten de tener acceso al archivo deben cumplir los requisitos de permiso establecidos por la protección aplicada.  
  
