@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 72850e76d653de3b9d355782d78254567e50aa91
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 97aeddd863ce34da0ebe5f6a5b74606212ef8f54
+ms.sourcegitcommit: f34a20a079863dd916343dd59aeff8a221831866
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/25/2018
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -168,7 +168,7 @@ Siga estas instrucciones para crear la directiva de archivo:
 También puede establecer alertas, notificaciones al usuario o emprender acciones inmediatas para estas directivas.
 Obtenga más información sobre [acciones de gobierno](governance-actions.md).
 
-Obtenga más información sobre [Azure Information Protection](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-information-protection) y consulte su [Tutorial de inicio rápido](https://docs.microsoft.com/en-us/information-protection/get-started/infoprotect-quick-start-tutorial).
+Obtenga más información sobre [Azure Information Protection](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection) y consulte su [Tutorial de inicio rápido](https://docs.microsoft.com/information-protection/get-started/infoprotect-quick-start-tutorial).
 
 
  

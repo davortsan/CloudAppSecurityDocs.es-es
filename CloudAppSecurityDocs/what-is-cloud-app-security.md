@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7bda3cc88e28d8a8a99252556360cc57d36dd02f
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: e7531650e17fb7cca2a187bece484e48fe406aae
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/27/2018
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 04/30/2018
 # <a name="what-is-microsoft-cloud-app-security"></a>Descripción de Microsoft Cloud App Security
 
 > [!NOTE]
-> Para obtener información sobre la administración de seguridad avanzada de Cloud App Security en Office 365, consulte [Introducción a la administración de seguridad avanzada](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
+> Para obtener información sobre Office 365 Cloud App Security, consulte [Introducción a Office 365 Cloud App Security](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
 
 Migrar a la nube aumenta la flexibilidad de cara a los empleados y reduce los costes de TI, pero también plantea nuevos retos y dificultades a la hora de mantener la seguridad de las organizaciones. Para aprovechar todas las ventajas de las aplicaciones en la nube, los equipos de TI deben encontrar el equilibrio adecuado entre admitir el acceso y no perder el control para proteger datos esenciales.  
 
