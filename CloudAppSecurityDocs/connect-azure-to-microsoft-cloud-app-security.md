@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 417e5eb128e5ec351369d8703a3c220117031f32
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: f93a78e35c76e9dd76e1264fb11d6046ed2b6d18
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34558947"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -32,7 +33,7 @@ Cloud App Security se conecta a Azure mediante centros de eventos. En esta secci
 
 ### <a name="step-1-stream-your-azure-activity-logs-to-event-hubs"></a>Paso 1: Transmitir mediante streaming los registros de actividad de Azure a centros de eventos
 
-1. Transmita mediante streaming el registro de actividad de Azure de la suscripción de Azure a un centro de eventos. Siga a la guía oficial en la documentación de Azure: https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs
+1. Transmita mediante streaming el registro de actividad de Azure de la suscripción de Azure a un centro de eventos. Siga a la guía oficial en la documentación de Azure: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs
 
    > [!NOTE]
    > Si tiene más de una suscripción a Azure, repita este paso para cada suscripción, pero use un único centro de eventos que compartan las suscripciones.
@@ -48,9 +49,7 @@ Cloud App Security se conecta a Azure mediante centros de eventos. En esta secci
   
    ![Menú Event Hubs](media/azure-event-hubs.png "Azure Event Hubs")
 
-2. Seleccione el espacio de nombres de su centro de eventos.
-  
-   ![Espacio de nombres del centro de eventos](media/azure-namespace.png "Espacio de nombres de Azure")
+2.  En el menú emergente de Azure, haga clic en **Conectar con Microsoft Azure**.
 
 3. En el menú, en **Entidades**, haga clic en **Centros de eventos**. 
   

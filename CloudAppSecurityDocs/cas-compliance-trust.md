@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/22/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,19 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 067709747631e18fbc88de165127d89be8fef068
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 6db4518feb2c212feaece9bcd216a8ed25f7af2f
+ms.sourcegitcommit: 4952c6368978f435df9e184ec885b200b70dd854
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/23/2018
+ms.locfileid: "34470668"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
 
-# <a name="microsoft-cloud-app-security-compliance-trust-data-security-and-privacy"></a>Privacidad, seguridad de datos, confianza y cumplimiento de Microsoft Cloud App Security
+# <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Seguridad y privacidad de datos de Microsoft Cloud App Security
+
+[!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
 Microsoft Cloud App Security es un componente crítico de la pila de Microsoft Cloud Security. Se trata de una completa solución que ayuda a que su organización aproveche todas las ventajas de la promesa de aplicaciones en la nube, pero le mantienen al mando a través de visibilidad completa, funcionalidades de auditoría y controles detallados sobre los datos confidenciales.
 
@@ -60,6 +63,9 @@ Para obtener más información, vaya a [Ofertas de Microsoft Compliance](https:/
 ## <a name="privacy"></a>Privacidad
 
 ### <a name="you-are-the-owner-of-your-data"></a>Es el propietario de los datos
+- En Microsoft Cloud App Security, los administradores pueden ver los datos personales identificables almacenados en el servicio del portal con la barra de búsqueda.
+- 
+- Los administradores pueden buscar los metadatos de un usuario específico o su actividad. Al hacer clic en una entidad se abre [**Usuarios y cuentas**](accounts.md). La página **Usuarios y cuentas** proporciona detalles completos acerca de la entidad extraídos de aplicaciones en la nube conectadas. También presenta el historial de la actividad de un usuario y sus alertas de seguridad.
 
 -   Tiene la propiedad de sus datos y puede cancelar las suscripciones y solicitar la eliminación de los datos cuando quiera. Si no renueva su suscripción, los datos se eliminarán dentro de la escala de tiempo especificada en el apartado [Términos de Online Services](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
@@ -74,6 +80,10 @@ Para obtener más información, vaya a [Ofertas de Microsoft Compliance](https:/
 ### <a name="privacy-controls"></a>Controles de privacidad
 
 -   Los controles de privacidad le ayudan a configurar qué usuarios de la organización tienen acceso al servicio y a qué pueden tener acceso.
+
+## <a name="updating-personal-data"></a>Actualización de datos personales
+Los datos personales acerca de los usuarios se derivan del objeto del usuario en las aplicaciones de SaaS utilizadas. Por este motivo, cualquier cambio realizado en el perfil de usuario en estas aplicaciones se refleja en Microsoft Cloud App Security.
+
 
 ## <a name="data-location"></a>Ubicación de los datos
 
@@ -104,6 +114,12 @@ Cloud App Security conserva los datos de la manera siguiente:
 Para obtener más información sobre las prácticas de datos de Microsoft, consulte el apartado [Términos de Online Services](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
 [Más información sobre transparencia](https://www.microsoft.com/en-us/trustcenter/about/transparency) 
+
+### <a name="deleting-personal-data"></a>Eliminación de los datos personales
+Una vez que se eliminan datos de una aplicación en la nube conectada, Microsoft Cloud App Security eliminará automáticamente la copia de los datos transcurrido un plazo de 2 años.
+
+### <a name="exporting-personal-data"></a>Exportación de datos personales
+Microsoft Cloud App Security proporciona la posibilidad de [exportar](activity-filters.md#export) a CSV toda la actividad del usuario y la información de alertas de seguridad.
 
 ## <a name="security"></a>Seguridad
 

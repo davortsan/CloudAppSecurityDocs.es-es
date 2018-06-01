@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6f34fbcf5c268518c269f98838321e134c6e7279
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: c80a67b0daa9191764528c0fcc2ed8fe5795541a
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34559083"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -109,6 +110,15 @@ Para ver la información de dirección IP:
 
 
 ![Información de dirección IP en Cloud App Security](./media/ip-address-insights.png)
+
+## Exportar actividades <a name="export"></a>
+
+Puede exportar todas las actividades de usuario a un archivo CSV. 
+
+En el **registro de actividad**, en la esquina superior derecha, haga clic en el botón **exportar** ![botón exportar](./media/export-button.png).
+
+[!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
+
 
 
 ## <a name="see-also"></a>Consulte también  

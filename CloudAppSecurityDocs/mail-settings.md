@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fe6d3794a19f7223df263a941e097f365c275ea1
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 6b9ec2fca122bfdfdea4e6ad298a689dd79bcaf6
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34558896"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -29,18 +30,13 @@ Para establecer los parámetros de las notificaciones de correo enviadas desde M
 
 1. En la barra de menús, haga clic en el engranaje de configuración ![icono de configuración](./media/settings-icon.png "settings icon"), seleccione **Configuración** y, después, seleccione la pestaña **Configuración de correo electrónico**.  
 
-2. **Dirección de correo electrónico del campo Desde**: cuenta de correo que quiere usar para enviar la notificación.  
+ ![configuración de correo](./media/mail-settings-config.png)
+
+2. En **Identidad del emisor de correo electrónico**: si va a utilizar la configuración de correo electrónico predeterminada, no necesita cambiar nada en esta sección. Si desea personalizar la identidad del emisor de correo electrónico, puede configurar el **Nombre para mostrar del campo Desde**, la **Dirección de correo electrónico del remitente** y la **Dirección de correo electrónico del campo Responder a**. Microsoft Cloud App Security lo realiza automáticamente mediante el uso de un servicio de correo de terceros llamado MailChimp®. Asegúrese de revisar y aceptar los términos de servicio y la declaración de privacidad de MailChimp para permitirlo; en caso contrario, Microsoft Cloud App Security enviará las notificaciones con la configuración predeterminada.
    
-   **Nombre para mostrar del campo Desde**: nombre que quiere que aparezca en el campo **Desde** del mensaje de correo.  
    > [!NOTE]
    > Solo se admiten caracteres Unicode en el nombre para mostrar y la dirección de correo electrónico de conformidad con el [estándar rfc822](http://www.rfc-editor.org/rfc/rfc822.txt).
 
-   **Dirección de correo electrónico del campo Responder a**: cuenta de correo que se usará para las respuestas al mensaje.  
-  
-     ![configuración de las opciones de correo](./media/mail-settings-config.png "configuración de las opciones de correo")  
-
-   >[!NOTE]
-   >Para cambiar el campo **Desde la dirección de correo** a un dominio propio, siga las instrucciones que se indican [aquí](https://mandrill.zendesk.com/hc/articles/205582277-How-do-I-add-DNS-records-for-my-sending-domains-).
   
 3. Puede usar **Diseño del correo electrónico** para usar un archivo .html para personalizar y diseñar los mensajes de correo electrónico enviados desde el sistema. El archivo .html que use como plantilla debe incluir lo siguiente:  
   
