@@ -1,23 +1,24 @@
 ---
-title: "¿En qué se diferencian las capacidades de detección de Microsoft Cloud App Security y de Azure AD? | Microsoft Docs"
-description: "En este tema se explican las diferencias entre las capacidades de detección de Microsoft Cloud App Security y Azure AD."
-keywords: 
+title: ¿En qué se diferencian las capacidades de detección de Microsoft Cloud App Security y de Azure AD? | Microsoft Docs
+description: En este tema se explican las diferencias entre las capacidades de detección de Microsoft Cloud App Security y Azure AD.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 5/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4422e847-9a87-4d60-ad55-346ea50a768c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5f4fd69cc11e5e7a3659b342c7c043f2a1eff5ae
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 9e4ba6be74994f097cbe225815a71b58b268e65f
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34567550"
 ---
 # <a name="what-are-the-differences-discovery-capabilities-in-azure-active-directory-and-microsoft-cloud-app-security"></a>¿En qué se diferencian las capacidades de detección de Azure Active Directory y Microsoft Cloud App Security?
 
@@ -35,7 +36,7 @@ A continuación compararemos las capacidades de detección de Microsoft Cloud Ap
 
 |Capacidad|Característica|Microsoft Cloud App Security|Azure AD Cloud App Discovery|
 |----|----|----|----|
-|Cloud Discovery|Aplicaciones detectadas|Más de 15.000 aplicaciones en la nube|Más de 15.000 aplicaciones en la nube|
+|Cloud Discovery|Aplicaciones detectadas|Más de 16 000 aplicaciones en la nube|Más de 16 000 aplicaciones en la nube|
 ||Implementación para el análisis de detección|Carga de registros automática y manual|Carga de registros automática y manual|
 ||Anonimización de registros para la privacidad del usuario|Sí|Sí|
 ||Acceso al catálogo completo de aplicaciones en la nube|Sí||
@@ -49,4 +50,3 @@ A continuación compararemos las capacidades de detección de Microsoft Cloud Ap
 Consulte los aspectos básicos en [Introducción a Cloud App Security](getting-started-with-cloud-app-security.md).    
 
 Los clientes Premier también pueden elegir Cloud App Security directamente desde el [Portal Premier](https://premier.microsoft.com/).   
-

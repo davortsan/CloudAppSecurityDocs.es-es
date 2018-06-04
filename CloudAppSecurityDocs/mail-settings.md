@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 5/29/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6b9ec2fca122bfdfdea4e6ad298a689dd79bcaf6
-ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
+ms.openlocfilehash: 6d19e90b8eda14868f1b25e6d9a776b030aeedbd
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2018
-ms.locfileid: "34558896"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568431"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -30,9 +30,9 @@ Para establecer los parámetros de las notificaciones de correo enviadas desde M
 
 1. En la barra de menús, haga clic en el engranaje de configuración ![icono de configuración](./media/settings-icon.png "settings icon"), seleccione **Configuración** y, después, seleccione la pestaña **Configuración de correo electrónico**.  
 
- ![configuración de correo](./media/mail-settings-config.png)
+   ![configuración de correo](./media/mail-settings-config.png)
 
-2. En **Identidad del emisor de correo electrónico**: si va a utilizar la configuración de correo electrónico predeterminada, no necesita cambiar nada en esta sección. Si desea personalizar la identidad del emisor de correo electrónico, puede configurar el **Nombre para mostrar del campo Desde**, la **Dirección de correo electrónico del remitente** y la **Dirección de correo electrónico del campo Responder a**. Microsoft Cloud App Security lo realiza automáticamente mediante el uso de un servicio de correo de terceros llamado MailChimp®. Asegúrese de revisar y aceptar los términos de servicio y la declaración de privacidad de MailChimp para permitirlo; en caso contrario, Microsoft Cloud App Security enviará las notificaciones con la configuración predeterminada.
+2. En **Identidad del emisor de correo electrónico**: si va a utilizar la configuración de correo electrónico predeterminada, no necesita cambiar nada en esta sección. Si quiere personalizar la identidad del remitente de correo electrónico, puede aplicar cualquiera de las opciones que se indican a continuación para personalizar el campo que quiera modificar. Puede cambiar todas estas opciones o alguna de ellas: **Nombre para mostrar del campo Desde**, **Dirección de correo electrónico del campo Desde**, **Dirección de correo electrónico del campo Responder a**. Microsoft Cloud App Security lo realiza automáticamente mediante el uso de un servicio de correo de terceros llamado MailChimp®. Asegúrese de revisar y aceptar los términos de servicio y la declaración de privacidad de MailChimp para permitirlo; en caso contrario, Microsoft Cloud App Security enviará las notificaciones con la configuración predeterminada.
    
    > [!NOTE]
    > Solo se admiten caracteres Unicode en el nombre para mostrar y la dirección de correo electrónico de conformidad con el [estándar rfc822](http://www.rfc-editor.org/rfc/rfc822.txt).

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 6/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e6db675140d808b6dc8f7cd0d742a6745591e913
-ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
+ms.openlocfilehash: 5e8e98ce2ea00f834a59e4e472911d2f70e4b6e4
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2018
-ms.locfileid: "34558930"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568635"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -123,9 +123,9 @@ Para conectar aplicaciones de terceros e integrar soluciones de DLP externas, ha
 > |EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
 > |EU2|40.81.156.155<br>40.81.156.153|
 
-## <a name="email-server"></a>Servidor de correo electrónico
+## <a name="mail-server"></a>Servidor de correo
 
-Para que las notificaciones se puedan enviar mediante la plantilla y la configuración predeterminadas, agregue estas direcciones IP a la lista blanca contra el correo no deseado. Las direcciones IP de correo electrónico dedicadas de Cloud App Security son: 
+Para que las notificaciones se puedan enviar desde la plantilla y la configuración predeterminadas, agregue estas direcciones IP a la lista de permitidos contra el correo no deseado. Las direcciones IP de correo electrónico dedicadas de Cloud App Security son: 
 
 - 65.55.234.192/26
 - 207.46.200.0/27
@@ -134,13 +134,12 @@ Para que las notificaciones se puedan enviar mediante la plantilla y la configur
 - 111.221.26.0/27
 - 207.46.50.192/26
 
-Si desea personalizar sus notificaciones, Microsoft Cloud App Security lo hace posible mediante MailChimp®, un servicio de correo electrónico de terceros. Para que funcione, en el portal de Microsoft Cloud App Security, en **Configuración**, seleccione **Configuración de correo** y revise la declaración de privacidad y los términos de servicio de MailChimp, y conceda a Microsoft permiso para utilizar MailChimp en su nombre.
+Si quiere personalizar la identidad del remitente de correo electrónico, Microsoft Cloud App Security lo hace posible mediante MailChimp®, un servicio de correo electrónico de terceros. Para que funcione, en el portal de Microsoft Cloud App Security, en **Configuración**, seleccione **Configuración de correo**, lea la declaración de privacidad y los términos de servicio de MailChimp y conceda a Microsoft permiso para utilizar MailChimp en su nombre.
 
 Si no lo hace, las notificaciones de correo electrónico se enviarán con todos los valores predeterminados.
 
 Para trabajar con MailChimp, agregue esta dirección IP a la lista blanca contra el correo no deseado para habilitar el envío de notificaciones: 198.2.134.139 (mail1.cloudappsecurity.com)
 
-Asegúrese de incluir esta dirección IP en la lista de permitidos del servicio de correo electrónico no deseado para habilitar el envío de notificaciones.
 
 ## <a name="log-collector"></a>Recopilador de registros 
 
@@ -169,5 +168,4 @@ Para habilitar características de Cloud Discovery por medio de un recopilador d
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
-
 

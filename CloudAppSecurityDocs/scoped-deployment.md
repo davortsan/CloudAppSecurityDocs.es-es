@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 5/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: fe2ce27b-1020-45e9-ad72-fad93d197169
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0b9a5ccee5fed0df3ebe29f8549473ffbb36a0b3
-ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
+ms.openlocfilehash: d7148854286218172fdbeb7c9e651a49cb721980
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2018
-ms.locfileid: "34559102"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568669"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -45,7 +45,7 @@ Es posible que no desee usar Microsoft Cloud App Security para todos los usuario
      
      ![regla de inclusión](./media/include-rule.png)
 
-4. Para establecer determinados grupos o usuarios que desea excluir de la supervisión, en la pestaña **Excluir**, haga clic en el signo más ![icono](./media/plus-icon.png). <br>En el cuadro de diálogo **Crear nueva regla de inclusión**, establezca los parámetros siguientes:
+4. Si quiere establecer determinados grupos para excluirlos de la supervisión, en la pestaña **Excluir**, haga clic en el ![icono](./media/plus-icon.png) de signo más. <br>En el cuadro de diálogo **Crear nueva regla de inclusión**, establezca los parámetros siguientes:
 
     1. En **Escriba el nombre de la regla**, asigne un nombre descriptivo a la regla.
     En **Seleccionar grupos de usuarios**, seleccione todos los grupos que no desea que supervise Cloud App Security.
@@ -62,6 +62,7 @@ Si crea las reglas siguientes:
 - Excluir el grupo de usuarios "Todos los usuarios de Alemania"
 - Incluir para el grupo de usuarios "Ventas globales" solo las actividades de Office 365
 - Incluir para el grupo de usuarios "Directores de ventas" solo las actividades de Power BI
+- Salesforce está conectado con Microsoft Cloud App Security, y no se establece ninguna regla para dicha plataforma.
 
 Se supervisan las actividades de usuario siguientes:
 
@@ -72,6 +73,9 @@ Se supervisan las actividades de usuario siguientes:
 |Cornel|Ventas globales<br>Directores de ventas|Office 365 y todas las subaplicaciones|
 |Raymond|Directores de ventas|Solo Power BI|
 
+> [!NOTE] 
+> Las otras aplicaciones no se verán afectadas por el ámbito de los grupos con estas reglas.
+> En el ejemplo, para Salesforce, se supervisan todas las actividades de todos los grupos de usuarios.
 
   
     
