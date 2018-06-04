@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b0f009770d16f7d801df637e1ba632cc6f82f1ac
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 8e9fb2a64417d68e64b2b37088fcb5baae3e6fe2
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568980"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -90,7 +91,7 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
 > |**Cuarentena**|✔|✔|No disponible|Próximamente|||Próximamente||  
 > |**Ver permisos de aplicación**|✔|No es compatible con el proveedor|No disponible|✔||✔|No es compatible con el proveedor||  
 > |**Revocar permisos de aplicación**|✔||No disponible|✔||✔|No disponible||  
-> |**Aplicación de etiquetas de Azure Information Protection**|✔|✔|||||||  
+> |**Aplicación de etiquetas de Azure Information Protection**|✔|✔||✔|||||  
 
 ## <a name="prerequisites"></a>Requisitos previos  
 

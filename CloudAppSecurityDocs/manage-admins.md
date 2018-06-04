@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/29/2018
+ms.date: 5/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 82df91691ec5543075a9b3c11dfef1e11eb4fae9
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: 1d7d73fcc4dd31874613cb0e31e21b1bb21060db
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568397"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -31,28 +32,39 @@ Microsoft Cloud App Security es compatible con el control de acceso basado en ro
 - Administrador de cumplimiento: tiene permisos de solo lectura y puede administrar alertas. Puede crear y modificar directivas de archivo, permitir acciones de control de archivos y ver todos los informes integrados en Administración de datos. 
 
 - Lector de seguridad: tiene permisos de solo lectura y puede administrar alertas. El lector de seguridad no puede realizar las siguientes acciones:
-      - Crear directivas o editar y cambiar las existentes 
-      - Desempeñar acciones de control 
-      - Cargar registros de detección
-      - Prohibición o aprobación de aplicaciones de terceros
-      - Obtener acceso a la página de configuración del intervalo de direcciones IP ni verla
-      - Obtener acceso a cualquier página de configuración ni verla 
-      - Obtener acceso a la configuración de detección ni verla 
-      - Obtener acceso a la página de conectores de aplicaciones ni verla
-      - Obtener acceso al registro de gobierno ni verlo 
-      - Obtener acceso a la página de informes de instantáneas de administración ni verla 
+
+   - Crear directivas o editar y cambiar las existentes 
+
+   - Desempeñar acciones de control 
+
+   - Cargar registros de detección
+
+   - Prohibición o aprobación de aplicaciones de terceros
+
+   - Obtener acceso a la página de configuración del intervalo de direcciones IP ni verla
+
+   - Obtener acceso a cualquier página de configuración ni verla 
+
+   - Obtener acceso a la configuración de detección ni verla 
+
+   - Obtener acceso a la página de conectores de aplicaciones ni verla
+
+   - Obtener acceso al registro de gobierno ni verlo 
+
+   - Obtener acceso a la página de informes de instantáneas de administración ni verla 
 
 - Administrador de aplicaciones/instancias: tiene permisos en todos los datos en Microsoft Cloud App Security que tengan que ver exclusivamente con la aplicación o instancia específica de una aplicación seleccionada aquí. Por ejemplo, si concede un permiso de administración de usuarios a la instancia europea de Cuadro, el administrador podrá ver solo los datos relativos a esta instancia de la aplicación, ya sean archivos, actividades, directivas o alertas, del siguiente modo:
-      - Página de actividades (solo actividades relacionadas con las entidades etiquetadas)
-      - Alertas (solo alertas relacionadas con la aplicación específica)
-      - Directivas (puede ver todas las directivas y editar o crear solo directivas que tengan que ver exclusivamente con la instancia o aplicación)
-      - Cuenta (solo cuentas de la aplicación/instancia específica)
-      - Permisos de la aplicación (solo permisos de la aplicación/instancia específica)
-      - Página de archivos (solo archivos de la aplicación/instancia específica)
-      - Control de aplicaciones de acceso condicional (sin permisos)
-      - Actividad de Cloud Discovery (sin permisos)
-      - Extensiones de seguridad (permisos únicamente para el token de API con permisos de usuario)
-      - Acciones de gobierno (solo para la aplicación/instancia específica) 
+- 
+  - Página de actividades (solo actividades relacionadas con las entidades etiquetadas)
+  - Alertas (solo alertas relacionadas con la aplicación específica)
+  - Directivas (puede ver todas las directivas y editar o crear solo directivas que tengan que ver exclusivamente con la instancia o aplicación)
+  - Cuenta (solo cuentas de la aplicación/instancia específica)
+  - Permisos de la aplicación (solo permisos de la aplicación/instancia específica)
+  - Página de archivos (solo archivos de la aplicación/instancia específica)
+  - Control de aplicaciones de acceso condicional (sin permisos)
+  - Actividad de Cloud Discovery (sin permisos)
+  - Extensiones de seguridad (permisos únicamente para el token de API con permisos de usuario)
+  - Acciones de gobierno (solo para la aplicación/instancia específica) 
 
 Para obtener más información, vea [Asignación de roles de administrador en Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).
 
