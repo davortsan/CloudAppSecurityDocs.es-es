@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2cf378e8490ebf1e0cb7d35fe3842800a08290e2
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: cf8f0230b2316646b49bd2f80f688d47229625c6
+ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34759870"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -146,7 +147,7 @@ Si prefiere no avisar al usuario de que se le está supervisando, puede deshabil
 
 1. En el engranaje Configuración, seleccione **Configuración general**. 
 
-2. Después, en la configuración de control de aplicaciones de acceso condicional, desactive la casilla **Notificar a los usuarios**.
+2. Después, en **Control de aplicación de acceso condicional**, active **Supervisión de usuarios** y desactive la casilla **Notificar a los usuarios**.
 
     ![Deshabilitar el aviso de supervisión de sesión](./media/disable-session-monitoring-notice.png)
 

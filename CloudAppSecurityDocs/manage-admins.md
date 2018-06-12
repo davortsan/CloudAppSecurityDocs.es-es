@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/30/2018
+ms.date: 6/10/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1d7d73fcc4dd31874613cb0e31e21b1bb21060db
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 6e9a2f9466352296caea57ee3219fa6a5151f1c8
+ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34568397"
+ms.lasthandoff: 06/10/2018
+ms.locfileid: "35251776"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -54,8 +54,8 @@ Microsoft Cloud App Security es compatible con el control de acceso basado en ro
    - Obtener acceso a la página de informes de instantáneas de administración ni verla 
 
 - Administrador de aplicaciones/instancias: tiene permisos en todos los datos en Microsoft Cloud App Security que tengan que ver exclusivamente con la aplicación o instancia específica de una aplicación seleccionada aquí. Por ejemplo, si concede un permiso de administración de usuarios a la instancia europea de Cuadro, el administrador podrá ver solo los datos relativos a esta instancia de la aplicación, ya sean archivos, actividades, directivas o alertas, del siguiente modo:
-- 
-  - Página de actividades (solo actividades relacionadas con las entidades etiquetadas)
+
+  - Página de actividades (solo actividades relacionadas con la aplicación específica)
   - Alertas (solo alertas relacionadas con la aplicación específica)
   - Directivas (puede ver todas las directivas y editar o crear solo directivas que tengan que ver exclusivamente con la instancia o aplicación)
   - Cuenta (solo cuentas de la aplicación/instancia específica)
@@ -65,6 +65,21 @@ Microsoft Cloud App Security es compatible con el control de acceso basado en ro
   - Actividad de Cloud Discovery (sin permisos)
   - Extensiones de seguridad (permisos únicamente para el token de API con permisos de usuario)
   - Acciones de gobierno (solo para la aplicación/instancia específica) 
+
+- Administrador de grupo: tiene permisos en todos los datos en Microsoft Cloud App Security que tengan que ver exclusivamente con el grupo específico seleccionado aquí. Por ejemplo, si concede permiso a un administrador de usuarios para el grupo "Alemania: todos los usuarios", el administrador podrá ver y modificar información en Microsoft Cloud App Security solo para ese grupo de usuarios, de la manera siguiente:
+
+  - Página de actividades (solo actividades relacionadas con los usuarios del grupo)
+  -     Alertas (solo alertas relacionadas con los usuarios del grupo)
+  -     Directivas (puede ver todas las directivas y editar o crear solo directivas que tengan que ver exclusivamente con usuarios del grupo)
+  -     Cuenta (solo cuentas de los usuarios del grupo específicos)
+  -     Permisos de aplicación (sin permisos)
+  -     Página Archivos (sin permisos)
+  -     Control de aplicaciones de acceso condicional (sin permisos)
+  -     Actividad de Cloud Discovery (sin permisos)
+  -     Extensiones de seguridad (permisos únicamente para el token de API con usuarios del grupo)
+  -     Acciones de gobierno (solo para los usuarios del grupo específicos)
+
+
 
 Para obtener más información, vea [Asignación de roles de administrador en Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).
 

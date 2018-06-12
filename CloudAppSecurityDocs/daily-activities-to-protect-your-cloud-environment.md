@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 6/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 59810d24a51241f6c323a072565beb22d79feca0
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: fd7eae955e91b9df5cf067386023041d71fe3a27
+ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/10/2018
+ms.locfileid: "35251742"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -29,11 +30,12 @@ En este tema se explica lo que hacer a diario con Cloud App Security.
 ## <a name="check-the-dashboard"></a>Comprobar el panel  
 En el panel de Cloud App Security se proporciona una visión general de las actividades y características, entre ellas:
 
-- Alertas abiertas.
-- Infracciones de la actividad.
-- Infracciones del contenido.
-- Un mapa de actividad que traza el origen de la actividad del usuario.
-- Tendencias de uso de aplicaciones conectadas en su entorno de la nube.  
+- Alertas abiertas
+- Infracciones de la actividad
+- Infracciones del contenido
+- Un mapa de actividad que traza el origen de la actividad del usuario
+- Tendencias de uso de aplicaciones conectadas en su entorno de la nube
+- Usuarios principales según la detección de amenazas
 
 Es recomendable que consulte el panel a diario para ver qué nuevas alertas se han activado. También es un buen lugar para vigilar el estado del entorno de la nube para hacerse una idea de lo que está ocurriendo en él.  
 

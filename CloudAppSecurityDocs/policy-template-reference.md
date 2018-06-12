@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 6/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,19 @@ ms.technology: ''
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6dbfa26443bf1b05c689aec563b8ee71599076c9
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: feab5ecc5705fe0d0f43c2b49a15e970c8f54f67
+ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/10/2018
+ms.locfileid: "35251803"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
 
 # <a name="policy-templates"></a>Plantillas de directiva
 
-La lista siguiente contiene todas las plantillas de directiva que existen en Microsoft Cloud App Security. Se recomienda empezar la creación de directivas basándose en una plantilla existente, siempre que sea posible, para mejorar la facilidad de uso.
+Esta es la lista de plantillas de directiva que existen en Microsoft Cloud App Security. Se recomienda empezar la creación de directivas basándose en una plantilla existente, siempre que sea posible, para mejorar la facilidad de uso.
 
 |Categoría de riesgo|Nombre de plantilla|Descripción|
 |-----|----|----|
@@ -46,10 +47,10 @@ La lista siguiente contiene todas las plantillas de directiva que existen en Mic
 |Cloud Discovery|Nueva aplicación de ventas|Alerta cuando se detectan nuevas aplicaciones de ventas que tienen más de 50 usuarios, con un uso diario total superior a 50 MB.|
 |Cloud Discovery|Nuevas aplicaciones de sistema de administración de proveedores|Alerta cuando se detectan nuevas aplicaciones de sistema de administración de proveedores que tienen más de 50 usuarios, con un uso diario total superior a 50 MB.|
 |DLP|Código fuente compartido externamente|Alerta cuando se comparte un archivo con código fuente fuera de la organización.|
-|DLP|Archivo con información de tarjeta de pago detectado en la nube (motor DLP integrado)|Alerta cuando nuestro motor de prevención de pérdida de datos (DLP) integrado detecta un archivo que contiene información de tarjeta de pago en una aplicación de nube autorizada.|
-|DLP|Archivo con información sanitaria protegida detectado en la nube (motor DLP integrado)|Alerta cuando nuestro motor de prevención de pérdida de datos (DLP) integrado detecta un archivo que contiene información sanitaria protegida en una aplicación de nube autorizada.|
-|DLP|Archivo con información de identificación personal detectado en la nube (motor DLP integrado)|Alerta cuando nuestro motor de prevención de pérdida de datos (DLP) integrado detecta un archivo que contiene información de identificación personal en una aplicación de nube autorizada.|
-|Detección de amenazas|Actividad administrativa desde una dirección IP no corporativa|Cuando un usuario administrador realiza una actividad administrativa desde una dirección IP que no está incluida en la categoría de intervalo de direcciones IP corporativas, se puede optar por enviar o recibir una alerta. Primero debe configurar las direcciones IP corporativas en la página Configuración y establecer los **intervalos de direcciones IP**.|
+|DLP|Archivo con información de tarjeta de pago detectado en la nube (motor DLP integrado)|Alerta cuando nuestro motor de prevención de pérdida de datos (DLP) integrado de Microsoft Cloud App Security detecta un archivo que contiene información de tarjeta de pago en una aplicación de nube autorizada.|
+|DLP|Archivo con información sanitaria protegida detectado en la nube (motor DLP integrado)|Alerta cuando nuestro motor de prevención de pérdida de datos (DLP) integrado de Microsoft Cloud App Security detecta un archivo que contiene información sanitaria protegida en una aplicación de nube autorizada.|
+|DLP|Archivo con información privada detectado en la nube (motor DLP integrado)|Alerta cuando nuestro motor de prevención de pérdida de datos (DLP) integrado de Microsoft Cloud App Security detecta un archivo que contiene información de identificación personal en una aplicación de nube autorizada.|
+|Detección de amenazas|Actividad administrativa desde una dirección IP no corporativa|Cuando un usuario administrador realiza una actividad administrativa desde una dirección IP que no está incluida en la categoría de intervalo de direcciones IP corporativas, se puede optar por enviar o recibir una alerta. Primero configure las direcciones IP corporativas en la página Configuración y establezca los **intervalos de direcciones IP**.|
 |Detección de amenazas|Detección de anomalías generales|Alerta cuando se detecta una sesión anómala en una de las aplicaciones autorizadas, como viaje imposible, patrón de inicio de sesión o cuenta inactiva.|
 |Detección de amenazas|Inicio de sesión desde una dirección IP de riesgo|Alerta cuando un usuario inicia sesión en las aplicaciones autorizadas desde una dirección IP de riesgo. De forma predeterminada, la categoría de direcciones IP de riesgo contiene direcciones que tienen etiquetas de dirección IP de proxy anónimo, Tor o red de robots (botnet). Puede agregar más direcciones IP a esta categoría en la página de configuración de intervalos de direcciones IP.|
 |Detección de amenazas|Descarga masiva de un solo usuario|Alerta cuando un solo usuario realiza más de 50 descargas en 1 minutos.|
@@ -58,7 +59,8 @@ La lista siguiente contiene todas las plantillas de directiva que existen en Mic
 |Detección de amenazas|Inicio de sesión de usuario desde una dirección IP no categorizada|Alerta cuando un usuario inicia sesión desde una dirección IP que no está incluida en una categoría específica de intervalos IP. Puede categorizar direcciones IP. Para ello, vaya a la página de configuración y seleccione los intervalos de direcciones IP.|
 |Control de uso compartido|Archivo compartido con direcciones de correo electrónico personales|Alerta cuando se comparte un archivo que contiene la dirección de correo electrónico personal de un usuario.|
 |Control de uso compartido|Archivo compartido con un dominio no autorizado|Alerta cuando se comparte un archivo con un dominio no autorizado (por ejemplo, la competencia).|
-|Control de uso compartido|Certificados digitales compartidos (extensiones de archivo)|Alerta cuando se comparte públicamente un archivo que contiene certificados digitales.|
+|Control de uso compartido|Certificados digitales compartidos (extensiones de archivo)|Alerta cuando se comparte públicamente un archivo que contiene certificados digitales. Use esta plantilla para ayudar a regular su almacenamiento de AWS.|
+|Control de uso compartido|Cubos de S3 accesibles públicamente (AWS)|Alerta cuando un cubo de AWS S3 se comparte públicamente.|
 |Control de uso compartido|Archivos compartidos externamente obsoletos|Busca archivos compartidos externamente que no se han abierto o modificado durante 6 meses y los quita de la unidad.|
 
 
