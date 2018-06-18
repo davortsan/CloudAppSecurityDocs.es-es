@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 214bc10092765ff2470c258765b8adcf0cce5a9f
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: f72ec05e044f6c14aa9336ee80cd9bc6a344cc7b
+ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2018
-ms.locfileid: "34152749"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35259730"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -32,8 +32,6 @@ La integración se lleva a cabo mediante el protocolo ICAP estándar, un protoco
 
 En este tema se proporcionan los pasos necesarios para configurar la conexión ICAP en Cloud App Security y la instalación de Stunnel para proteger la comunicación a través de él.
 
-> [!NOTE]
->Esta característica está en versión preliminar pública.
 
 ## <a name="architecture"></a>Arquitectura
 Cloud App Security examina el entorno de nube y, en función de la configuración de la directiva de archivo, decide si debe examinar el archivo con el motor DLP interno o la DLP externa. Si se examina mediante la DLP externa, el archivo se envía a través del túnel seguro al entorno del cliente, donde se retransmite al dispositivo ICAP para obtener el veredicto de la DLP: permitido o bloqueado. Las respuestas se envían de vuelta a Cloud App Security a través de Stunnel, donde la directiva las usa para determinar las acciones posteriores, como las notificaciones, la cuarentena y el control de uso compartido.
