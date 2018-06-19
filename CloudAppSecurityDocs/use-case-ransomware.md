@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 7a06a243-9ec2-4a11-8db2-bc065cdfef64
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 747199b758fb5bee40cc7ec036280c16416d0372
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 23579135df9c26953b2a950fdd661fbac83da603
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
+ms.locfileid: "32298748"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -46,38 +47,6 @@ Detecte el posible ransomware en el entorno en la nube. Para ello, cree una dire
 
 2. Las [directivas de detección de amenazas](anomaly-detection-policy.md) automatizadas de Cloud App Security inician su ejecución en segundo plano desde el momento en que se conecta. Una de estas directivas busca actividad de ransomware para garantizar la cobertura más completa frente a ataques de ransomware sofisticados. Con nuestra experiencia en investigación de seguridad para identificar patrones de comportamiento que reflejan la actividad de ransomware, Cloud App Security garantiza una protección integral y sólida. Puede que represente un proceso de cifrado adverso si Cloud App Security identifica, por ejemplo, una alta tasa de cargas de archivos o de actividades de eliminación de archivos. Estos datos se recopilan en los registros procedentes de las API conectadas y luego se combinan con los patrones de comportamiento aprendidos y la inteligencia sobre amenazas, por ejemplo, extensiones de ransomware conocidas. 
 
-## <a name="legacy-policy-creation"></a>Creación de directivas heredadas
-
-2. Además, es importante empezar a supervisar las aplicaciones en la nube mediante la configuración de una directiva que detecte descargas masivas en las aplicaciones en la nube y le avise si sucede algo inusual:
-
-    1. En la pestaña **Control**, haga clic en [**Plantillas**](policy-template-reference.md). 
-   
-    2. En la lista [**Plantilla de directiva**](policy-template-reference.md), seleccione **Actividad potencial de ransomware**. 
-       ![plantilla de ransomware](./media/ransomware-template.png)
-    3. Esta plantilla está diseñada para que busque de forma predeterminada la actividad típica de los ataques de ransomware, así como los archivos y las carpetas asociados al ransomware conocido. Opcionalmente, puede establecer el tipo de alerta que recibirá (correo electrónico y mensaje de texto) cuando se produce una coincidencia con la directiva.
-        ![plantilla de ransomware](./media/ransomware-template-fields.png)
-    4. Haga clic en **Crear**. 
-   
-     
-2. Investigación de las coincidencias
-    
-    1. En la página **Directivas**, haga clic en el nombre de directiva para ir a **Informe la directiva** y revise las coincidencias que se activaron para la directiva.
-
-    2. Puede investigar la coincidencia haciendo clic en una específica para abrir el cajón de actividad. En el cajón, puede ver las otras directivas que coinciden con esta actividad. 
-     
-## <a name="remediating-attacks-and-preventing-risk"></a>Corregir ataques y evitar el riesgo
-
-Una vez validada y perfeccionada la directiva, quite posibles falsos positivos que puedan haber coincidido con la directiva. Luego, haga lo siguiente: 
-1. Cuando se produce una coincidencia con una directiva de ransomware, puede corregirlo mediante el establecimiento de [acciones de gobierno](governance-actions.md) automatizadas.
-
-2. Para evitar ataques futuros, establezca la directiva de modo que realice acciones de gobierno automáticas. Por ejemplo, en SharePoint y OneDrive, puede establecer la directiva de modo que se **suspenda el usuario** automáticamente.
- 
- 
-## <a name="validating-ransomeware-protection"></a>Validación de la protección de ransomeware
-
-1. Para simular una alerta, cambie la extensión de 30 archivos a .wncry y cárguelos en el sitio de SharePoint.
-3. Vaya al informe de directiva. Al cabo de poco tiempo, debería mostrarse una coincidencia de directiva de actividad. 
-4. Puede hacer clic en la coincidencia para ver qué archivos se han descargado. La propia coincidencia se enmascarará para proteger los datos confidenciales. 
 
 
 
