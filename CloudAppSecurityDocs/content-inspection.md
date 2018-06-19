@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 6/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,20 @@ ms.technology: ''
 ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3d2deb0cda5a2414fba046e0a99760b533e7d9b4
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 0f4a97d719c409987bc5b3df268338b562c3da67
+ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35259586"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
 
 
-# <a name="content-inspection"></a>Inspección de contenido
-En este artículo se describe el proceso que Microsoft Cloud App Security sigue al realizar la inspección de contenido de DLP en los datos en la nube. 
+# <a name="built-in-content-inspection"></a>Inspección de contenido integrada
+
+En este artículo se describe el proceso que Microsoft Cloud App Security sigue al ejecutar la inspección de contenido de DLP integrada en los datos en la nube. 
 
 
 La inspección de contenido de Cloud App Security funciona de la manera siguiente:
