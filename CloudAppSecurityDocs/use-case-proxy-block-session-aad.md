@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8686ebcddd2d2eef02970facfddca65fde3f02ae
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: 4c4a78501732282f7ff3885e0662afa05c161f0b
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36746949"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -52,8 +53,6 @@ Las directivas de sesión de Cloud App Security permiten restringir aún más un
 1. Cree una directiva de acceso condicional de Azure AD con usuarios asignados y una aplicación.
 2. Active **Use Conditional Access App Control enforced restrictions** (Usar las restricciones que exige el control de aplicaciones de acceso condicional) en los controles de sesión de la directiva de acceso condicional.   
 
-   ![Acceso condicional de Azure AD](./media/proxy-deploy-restrictions-aad.png)
-
 Tras completar esta tarea, vaya al portal de Cloud App Security y cree una directiva de sesión para supervisar y controlar las descargas de archivos en la sesión.
 
 ### <a name="step-2-create-a-session-policy"></a>Paso 2: Crear una directiva de sesión
@@ -62,17 +61,11 @@ Tras completar esta tarea, vaya al portal de Cloud App Security y cree una direc
 
 2. En la página **Directivas**, haga clic en **Crear directiva** y, después, en **Directiva de sesión**.
  
-   ![Creación de directivas de sesión](./media/create-session-policy.png)
-
 3. En la página **Creación de directivas de sesión**, especifique un nombre y una descripción para la directiva. Por ejemplo, **Bloquear descargas desde Salesforce con dispositivos no administrados**.
 
 4. Asigne una **Gravedad de directiva** y una **Categoría**.
 
-   ![Nueva directiva de sesión](./media/new-session-policy.png)
-
 5. En **Tipo de control de sesión**, seleccione **Controlar la descarga de archivos (con DLP)**. Esto le confiere la capacidad de supervisar todo lo que hacen los usuarios en una sesión de Salesforce, así como control para bloquear y proteger las descargas en tiempo real.
-
-   ![Tipo de control de directiva de sesión](./media/session-policy-control-type.png)
 
 6. En la sección **Actividades que coinciden con todo lo siguiente** de **Origen de la actividad**, seleccione estos filtros: 
     
@@ -98,21 +91,11 @@ Tras completar esta tarea, vaya al portal de Cloud App Security y cree una direc
    - **Etiquetas de clasificación**: le servirá si usa etiquetas de clasificación de Azure Information Protection y quiere filtrar los archivos por una etiqueta de clasificación concreta de Azure Information Protection.
    
    - Seleccione **Nombre de archivo** o **Tipo de archivo** para aplicar restricciones basadas en alguna de estas cuestiones.
- 
-     ![Filtros de archivo de directiva de sesión](./media/session-policy-file-filters.png)
-
 9. Habilite **Inspección de contenido** para permitir que la DLP interna examine los archivos en busca de contenido confidencial. 
-
-   ![Inspección de contenido de directiva de sesión](./media/session-policy-content-inspection.png)
 
 10. En **Acciones**, seleccione **bloquear**. Personalice el mensaje de bloqueo que los usuarios verán cuando no puedan descargar archivos.  
 
-    ![Acciones de directiva de sesión](./media/session-policy-actions.png)
-
 11. Establezca las alertas que quiera recibir cuando coincida la directiva. Puede establecer un límite para no recibir demasiadas alertas y seleccionar si quiere recibirlas como un mensaje de correo electrónico, un mensaje de texto o ambos.
-
-    ![Alertas de directiva de sesión](./media/session-policy-alert.png)
-
 
 12. Haga clic en **Crear**.  
  
@@ -123,11 +106,7 @@ Tras completar esta tarea, vaya al portal de Cloud App Security y cree una direc
 
 2. El archivo debería estar bloqueado y debería recibir el mensaje que configuró en **Personalizar el mensaje de bloqueo**. 
 
-   ![Mensaje de bloqueo de descarga](./media/block-download-message.png)
-
 3. En el portal de Cloud App Security, haga clic en **Control** y **Directivas** y, después, en la directiva que ha creado para ver el informe de directiva. Una coincidencia de directiva de sesión debe aparecer en breve. 
- 
-   ![Informe de directiva de sesión](./media/session-policy-report.png)
 
 4. En el informe de directiva puede ver los inicios de sesión que se han redirigido a Microsoft Cloud App Security para someterlos a un control de sesión, así como los archivos que se han descargado o bloqueado en las sesiones supervisadas.
 
