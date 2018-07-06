@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,20 +13,17 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4ef6f91c13e2dc997efe51856d53775e124e0b4d
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: 8b3aea5db6a56efc94ed165f540519a5e7de22f3
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36747041"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
 
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicaciones con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security
-
-> [!NOTE]
-> Se trata de una característica en vista previa.
-
 
 >[!div class="step-by-step"]
 [SIGUIENTE: Implementación del control de aplicaciones de acceso condicional »](proxy-deployment-aad.md)
@@ -44,12 +41,13 @@ Gracias al control de aplicaciones de acceso condicional, las sesiones y el acce
 
 -   **Proteger las descargas**: en lugar de bloquear la descarga de documentos confidenciales, puede requerir que los documentos se protejan con cifrado. Esto garantiza que el documento está protegido y el acceso de usuario debe autenticarse si se descargan datos en un dispositivo que no es de confianza. 
 
--   **Restringir las sesiones de usuario desde redes no corporativas**: los usuarios que tienen acceso a una aplicación protegida desde una ubicación que no forma parte de la red corporativa tienen un acceso restringido y la descarga de material confidencial está bloqueado o protegido.
-
 -   **Supervisar las sesiones de usuario con un nivel de confianza bajo**: los usuarios que entrañen riesgo se supervisan cuando inician sesión en aplicaciones e, igualmente, sus acciones se registran en la sesión. Puede investigar y analizar el comportamiento de los usuarios para entender dónde (y en qué condiciones) se deben aplicar directivas de sesión en el futuro. 
 
 - **Bloquear el acceso**: puede bloquear por completo el acceso a aplicaciones específicas a usuarios de dispositivos no administrados o de redes no corporativas.
 
+- **Crear modo de solo lectura**: mediante la supervisión y el bloqueo de actividades personalizadas dentro de la aplicación, puede crear un modo de solo lectura en aplicaciones específicas para usuarios específicos.  
+
+- **Restringir las sesiones de usuario desde redes no corporativas**: los usuarios que tienen acceso a una aplicación protegida desde una ubicación que no forma parte de la red corporativa tienen un acceso restringido y la descarga de material confidencial está bloqueado o protegido.
 
 ### <a name="how-session-control-works"></a>Funcionamiento del control de sesión
 
@@ -88,10 +86,10 @@ El mecanismo de identificación de dispositivos puede solicitar la autenticació
 Actualmente, el control de aplicaciones de acceso condicional admite aplicaciones configuradas con un inicio de sesión único en SAML en Azure AD. 
 
 > [!NOTE]
-> - El control de aplicaciones de acceso condicional también admite aplicaciones que están configuradas con proveedores de identidades que no sean Azure AD en Private Preview. Para obtener más información sobre Private Preview, envíe un correo electrónico a mcaspreview@microsoft.com.
+> - El Control de aplicaciones de acceso condicional también admite aplicaciones configuradas con proveedores de identidades que no sean Azure AD. Para obtener más información sobre este escenario, envíe un correo electrónico a mcaspreview@microsoft.com.
 > - Las aplicaciones de Office 365 no están configuradas con SAML, por lo que no son compatibles actualmente.
 
-El control de sesiones está disponible para todos los exploradores de cualquier plataforma principal. En estos momentos no se admiten aplicaciones móviles ni de escritorio. Gracias a la integración nativa, Azure AD admite cualquier aplicación configurada con el inicio de sesión único de SAML, incluidas las siguientes, que son las más populares:
+El control de sesiones está disponible para todos los exploradores de cualquier plataforma principal. Asimismo, las aplicaciones móviles y de escritorio también se pueden bloquear o permitir. Gracias a la integración nativa, Azure AD admite cualquier aplicación configurada con el inicio de sesión único de SAML, incluidas las siguientes, que son las más populares:
 
 -   Salesforce
 
@@ -120,6 +118,8 @@ El control de sesiones está disponible para todos los exploradores de cualquier
 -   HighQ 
 
 -   Concur
+
+-   Tableau
 
 Continuamente se inscriben más aplicaciones al control de sesiones. Si está interesado en alguna aplicación específica que no figure aquí, [envíenos los detalles](mailto:casfeedback@microsoft.com) y el caso de uso que le interese, y la inscribiremos.
 

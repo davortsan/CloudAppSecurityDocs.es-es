@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2018
+ms.date: 6/24/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6e9a2f9466352296caea57ee3219fa6a5151f1c8
-ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
+ms.openlocfilehash: 7153b1361f7192a51763355bccc055017834e229
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2018
-ms.locfileid: "35251776"
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36747151"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
 
-## <a name="managing-admin-access"></a>Administración del acceso de administrador
+# <a name="manage-admin-access"></a>Administrar el acceso de administrador
 
 Microsoft Cloud App Security es compatible con el control de acceso basado en roles. De forma predeterminada, los siguientes roles de administrador de Office 365 y Azure AD tienen acceso a Microsoft Cloud App Security:
 
@@ -33,25 +33,16 @@ Microsoft Cloud App Security es compatible con el control de acceso basado en ro
 
 - Lector de seguridad: tiene permisos de solo lectura y puede administrar alertas. El lector de seguridad no puede realizar las siguientes acciones:
 
-   - Crear directivas o editar y cambiar las existentes 
-
-   - Desempeñar acciones de control 
-
-   - Cargar registros de detección
-
-   - Prohibición o aprobación de aplicaciones de terceros
-
-   - Obtener acceso a la página de configuración del intervalo de direcciones IP ni verla
-
-   - Obtener acceso a cualquier página de configuración ni verla 
-
-   - Obtener acceso a la configuración de detección ni verla 
-
-   - Obtener acceso a la página de conectores de aplicaciones ni verla
-
-   - Obtener acceso al registro de gobierno ni verlo 
-
-   - Obtener acceso a la página de informes de instantáneas de administración ni verla 
+  - Crear directivas o editar y cambiar las existentes 
+  - Desempeñar acciones de control 
+  - Cargar registros de detección
+  - Prohibición o aprobación de aplicaciones de terceros
+  - Obtener acceso a la página de configuración del intervalo de direcciones IP ni verla
+  - Obtener acceso a cualquier página de configuración ni verla 
+  - Obtener acceso a la configuración de detección ni verla 
+  - Obtener acceso a la página de conectores de aplicaciones ni verla
+  - Obtener acceso al registro de gobierno ni verlo 
+  - Obtener acceso a la página de informes de instantáneas de administración ni verla 
 
 - Administrador de aplicaciones/instancias: tiene permisos en todos los datos en Microsoft Cloud App Security que tengan que ver exclusivamente con la aplicación o instancia específica de una aplicación seleccionada aquí. Por ejemplo, si concede un permiso de administración de usuarios a la instancia europea de Cuadro, el administrador podrá ver solo los datos relativos a esta instancia de la aplicación, ya sean archivos, actividades, directivas o alertas, del siguiente modo:
 
@@ -69,15 +60,15 @@ Microsoft Cloud App Security es compatible con el control de acceso basado en ro
 - Administrador de grupo: tiene permisos en todos los datos en Microsoft Cloud App Security que tengan que ver exclusivamente con el grupo específico seleccionado aquí. Por ejemplo, si concede permiso a un administrador de usuarios para el grupo "Alemania: todos los usuarios", el administrador podrá ver y modificar información en Microsoft Cloud App Security solo para ese grupo de usuarios, de la manera siguiente:
 
   - Página de actividades (solo actividades relacionadas con los usuarios del grupo)
-  -     Alertas (solo alertas relacionadas con los usuarios del grupo)
-  -     Directivas (puede ver todas las directivas y editar o crear solo directivas que tengan que ver exclusivamente con usuarios del grupo)
-  -     Cuenta (solo cuentas de los usuarios del grupo específicos)
-  -     Permisos de aplicación (sin permisos)
-  -     Página Archivos (sin permisos)
-  -     Control de aplicaciones de acceso condicional (sin permisos)
-  -     Actividad de Cloud Discovery (sin permisos)
-  -     Extensiones de seguridad (permisos únicamente para el token de API con usuarios del grupo)
-  -     Acciones de gobierno (solo para los usuarios del grupo específicos)
+  - Alertas (solo alertas relacionadas con los usuarios del grupo)
+  - Directivas (puede ver todas las directivas y editar o crear solo directivas que tengan que ver exclusivamente con usuarios del grupo)
+  - Cuenta (solo cuentas de los usuarios del grupo específicos)
+  - Permisos de aplicación (sin permisos)
+  - Página Archivos (sin permisos)
+  - Control de aplicaciones de acceso condicional (sin permisos)
+  - Actividad de Cloud Discovery (sin permisos)
+  - Extensiones de seguridad (permisos únicamente para el token de API con usuarios del grupo)
+  - Acciones de gobierno (solo para los usuarios del grupo específicos)
 
 
 
@@ -87,7 +78,7 @@ También puede agregar más administradores a Cloud App Security sin agregar usu
 
 1. Haga clic en el engranaje de configuración ![icono de configuración](./media/settings-icon.png "settings icon") y luego en **Administrar los administradores**. 
 
-2. Haga clic en el signo más para agregar los administradores que deben tener acceso a Cloud App Security.
+2. Haga clic en el signo más para agregar los administradores que deben tener acceso a Cloud App Security. Puede escribir una dirección de correo electrónico interno o externo para permitir que los administradores de la organización o los proveedores de servicios de seguridad administrada (MSSP) externos administren las alertas de seguridad.
   
   ![agregar administradores](./media/add-admin.png)
     
@@ -99,17 +90,28 @@ También puede agregar más administradores a Cloud App Security sin agregar usu
 
    >[!NOTE]
     >Solo los administradores globales o de seguridad pueden conceder acceso a otros usuarios a Cloud App Security.
-  
-**Para invalidar los permisos de administrador:**
+
+
+## <a name="override-admin-permissions"></a>Invalidación de los permisos de administrador
 
 Si quiere invalidar un permiso de administrador de Azure Active Directory u Office 365, puede hacerlo manualmente agregando el usuario a Cloud App Security y asignándole permisos.
 Por ejemplo, si desea que Stephanie, una usuaria que tiene el rol de Lector de seguridad en Azure Active Directory, tenga **Acceso completo** en Cloud App Security, puede agregarla manualmente a Cloud App Security y asignarle **Acceso completo** a fin de invalidar su rol y concederle los permisos deseados en Cloud App Security. 
 
+## <a name="add-additional-admins"></a>Agregar administradores adicionales
 
 Para agregar administradores adicionales a Cloud App Security:
 1. Haga clic en el engranaje de configuración ![icono de configuración](./media/settings-icon.png "icono de configuración") y luego en **Administrar acceso de administrador**. 
 
 2. Agregue los administradores que deben tener acceso a Cloud App Security. Seleccione su nivel de acceso y haga clic en **Cerrar**.
+
+  
+## <a name="invite-external-admins"></a>Invitar a administradores externos
+
+Microsoft Cloud App Security permite invitar a proveedores de servicios de seguridad administrada (MSSP) externos como administradores del portal de Microsoft Cloud App Security. Ahora es posible configurar a usuarios externos como administradores y asignarles cualquiera de los roles disponibles actualmente en Microsoft Cloud App Security. Además, para permitir que los MSSP proporcionen servicios en varios inquilinos de clientes, los administradores que tienen derechos de acceso a más de un inquilino ahora pueden cambiar de inquilino fácilmente en el portal. 
+
+Para cambiar de inquilino, una vez que tenga permisos para varios inquilinos, haga clic en el icono de usuario ![icono usuario](./media/user-icon.png "icono usuario"). Debería ver una lista con los inquilinos para los que dispone de permisos. Seleccione el inquilino que quiera administrar.
+
+![seleccionar inquilino](./media/choose-tenant.png "seleccionar inquilino")
 
 ## <a name="see-also"></a>Consulte también  
 [Configurar Cloud Discovery](set-up-cloud-discovery.md)   

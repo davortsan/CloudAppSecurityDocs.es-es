@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/13/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9fdc726b65d404ad0bc3aeb7296ac2c82dc54208
-ms.sourcegitcommit: aebd4dd970465a7f5818329f344c24fe73f616dd
+ms.openlocfilehash: c182ea9cfebd7161e637cbd1460ac6b56b17362d
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2018
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36747007"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -55,7 +56,9 @@ Están disponibles las directivas de detección de anomalías siguientes:
 **Actividad desde un país poco frecuente**
 - Esta detección tiene en cuenta las ubicaciones de actividad anteriores para determinar ubicaciones nuevas e infrecuentes. El motor de detección de anomalías almacena información sobre las ubicaciones anteriores que usan los usuarios de la organización. Se desencadena una alerta cuando una actividad se produce en una ubicación que el usuario (o cualquier usuario de la organización) no ha visitado recientemente o nunca. 
 
-
+**Detección de malware**
+- Esta detección identifica los archivos maliciosos en el almacenamiento en nube, tanto si proceden de aplicaciones de Microsoft como de aplicaciones de terceros. Microsoft Cloud App Security usa la inteligencia sobre amenazas de Microsoft para reconocer si determinados archivos están asociados a ataques de malware conocidos y son potencialmente maliciosos. Esta directiva integrada está deshabilitada de forma predeterminada. No se analizan todos los archivos, pero se usa la heurística para buscar archivos potencialmente peligrosos. Una vez que se han detectado archivos, puede ver una lista de **archivos infectados**. Haga clic en el nombre de archivo de malware en el cajón de archivos para abrir un informe de malware con información sobre el tipo de malware con el que está infectado el archivo.
+    
 **Actividad desde direcciones IP anónimas**
 - Se identifica la actividad de los usuarios desde una dirección IP considerada como dirección IP anónima de proxy. Los usuarios que quieren ocultar la dirección IP de sus dispositivos usan estos servidores proxy, a veces de forma malintencionada. Esta detección usa un algoritmo de aprendizaje automático que reduce los falsos positivos, como las direcciones IP no etiquetadas que los usuarios de la organización usan habitualmente.
 
@@ -86,6 +89,15 @@ Estas directivas buscan actividades dentro de una única sesión según la líne
 **Varios intentos incorrectos de inicio de sesión**
 - Se identifica a los usuarios que intentan iniciar sesión varias veces sin éxito en una única sesión según la línea base establecida, lo que podría indicar un intento de vulneración. 
 
+## Habilitación del gobierno automatizado<a name="adp-automated-gov"></a>
+
+Puede habilitar acciones de corrección automatizadas en las alertas generadas por directivas de detección de anomalías. 
+
+1. Haga clic en el nombre de la directiva de detección en la página **Directiva**.
+2. En la ventana **Editar directiva de detección de anomalías** que se abre, en **Gobierno**, establezca las acciones de corrección que quiera para cada aplicación conectada o para todas las aplicaciones. 
+3. Haga clic en **Actualizar**.
+
+ 
 ## <a name="scope-anomaly-detection-policies"></a>Ámbito de directivas de detección de anomalías
 
 Se puede establecer un ámbito para cada directiva de detección de anomalías por separado para que se aplique solo a los usuarios y grupos que desea incluir y excluir en la directiva.
@@ -107,14 +119,13 @@ Puede evaluar la prioridad de las diversas alertas desencadenadas por las nuevas
 
    ![alerta1 de detección de anomalías](./media/anomaly-alert-user1.png)
    ![alerta1 de detección de anomalías](./media/anomaly-alert-user2.png)
-
  
 2. Esto le permite comprender qué actividades sospechosas realizó el usuario y aumentar la confianza en cuanto a si la cuenta se vio comprometida. Por ejemplo, una alerta sobre varios inicios de sesión erróneos realmente puede ser sospechosa y puede indicar posibles ataques por fuerza bruta, pero también puede ser un error de configuración de aplicación, haciendo que la alerta resulte ser verdadera. Sin embargo, si ve una alerta de varios inicios de sesión erróneos con actividades sospechosas adicionales, entonces hay una mayor probabilidad de que la cuenta se vea comprometida. En el ejemplo siguiente, puede ver que, después de la alerta de los **diversos intentos de inicio de sesión erróneos**, hubo **actividad desde una dirección IP TOR** y **actividad de viaje imposible**, ambas buenos indicadores de riesgo (IOC) por sí mismas. Si esto no fue suficientemente sospechoso, puede ver que el mismo usuario realizó una **actividad de descarga masiva**, que suele ser un indicador de que el atacante está realizando exfiltración de datos. 
 
    ![alerta1 de detección de anomalías](./media/anomaly-alert-user3.png)
    ![alerta1 de detección de anomalías](./media/anomaly-alert-user4.png)
 
- 
+3.  En el caso de los archivos infectados con malware, una vez que se han detectado, puede ver una lista de **archivos infectados**. Haga clic en el nombre de archivo de malware en el cajón de archivos para abrir un informe de malware con información sobre el tipo de malware con el que está infectado el archivo. 
 
 
   

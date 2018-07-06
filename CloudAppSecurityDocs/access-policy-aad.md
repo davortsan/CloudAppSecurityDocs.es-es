@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,17 @@ ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 06a78107b33613fe8d947ed55e057990268c7026
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: f25b827c7b0ff635789a4ef721b538598729d0e9
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36746922"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
 # <a name="access-policies"></a>Directivas de acceso 
 
-> [!NOTE]
-> Se trata de una característica en vista previa.
 
 
 >[!div class="step-by-step"]
@@ -44,7 +43,7 @@ Las directivas de acceso de Microsoft Cloud App Security permiten la supervisió
 - Debe haber aplicada una [directiva de acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) que redirija a los usuarios a Microsoft Cloud App Security, tal y como se describe aquí.
 
 > [!NOTE]
-> - Las directivas de acceso también admiten aplicaciones que estén configuradas con proveedores de identidades que no sean Azure AD en Private Preview. Para obtener más información sobre Private Preview, envíe un correo electrónico a mcaspreview@microsoft.com.
+> - Las directivas de acceso también admiten aplicaciones que estén configuradas con proveedores de identidades que no sean Azure AD. Para obtener más información, envíe un correo electrónico a mcaspreview@microsoft.com.
 
 ## <a name="create-an-azure-ad-conditional-access-policy"></a>Crear una directiva de acceso condicional de Azure AD
 
@@ -56,9 +55,7 @@ Las directivas de acceso condicional de Azure Active Directory y las directivas 
    > Esta directiva afectará únicamente a las aplicaciones que se hayan [implementado con control de aplicaciones de acceso condicional](proxy-deployment-aad.md).
 
 2. Enrute usuarios a Microsoft Cloud App Security; para ello, active **Use Conditional Access App Control enforced restrictions** (Usar las restricciones que exige el control de aplicaciones de acceso condicional) en la hoja **Sesión**.
-
-   ![Acceso condicional de Azure AD con restricciones de control de aplicaciones de acceso condicional](./media/proxy-deploy-restrictions-aad.png)
-
+ 
 ## <a name="create-a-cloud-app-security-access-policy"></a>Crear una directiva de acceso de Cloud App Security 
 
 Para crear una directiva de acceso, siga este procedimiento:
@@ -66,11 +63,7 @@ Para crear una directiva de acceso, siga este procedimiento:
 1. En el portal, seleccione **Control** y, después, **Directivas**.
 2. En la página **Directivas**, haga clic en **Crear directiva** y seleccione **Directiva de acceso**.  
 
-   ![Crear directiva de acceso](./media/access-policy-menu.png)
-
 3. En la ventana **Directiva de acceso**, asigne un nombre a la directiva, por ejemplo, *Bloquear el acceso desde dispositivos no administrados*.
-
-   ![Nueva directiva de acceso](./media/access-policy-screen.png)
 
 4. En la sección **Actividades que coinciden con todo lo siguiente** de **Origen de la actividad**, seleccione más filtros de actividad para aplicarlos a la directiva. Las opciones son las siguientes: 
      
@@ -82,8 +75,6 @@ Para crear una directiva de acceso, siga este procedimiento:
 
    - **Etiqueta de agente de usuario**: use este filtro para habilitar la heurística que permite identificar las aplicaciones de escritorio y móviles. Este filtro se puede establecer como igual o no igual a **Cliente nativo**, y conviene comprobarlo con las aplicaciones de escritorio y móviles de cada aplicación en la nube.
   
-       ![Compatibilidad de cliente nativo](./media/user-agent-tag.png)
-
 5. En **Acciones**, seleccione una de las siguientes opciones: 
 
     - **Permitir**: establezca esta acción para permitir expresamente el acceso según los filtros de directiva que haya establecido.

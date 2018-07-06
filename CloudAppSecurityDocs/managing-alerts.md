@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 6/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7de4cb2a78032f253cc2ec68ffbc9f1d12a2bc83
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: fc9832d9eb41be007edc213e457bc9fe00ffb115
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36746983"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -41,28 +42,24 @@ Es buena idea revisar todas las alertas y usarlas como herramientas para modific
 
    Hay tres tipos de infracciones con los que deberá tratar al investigar alertas:  
 
-   #### <a name="serious-violations"></a>Infracciones graves
-   Infracciones graves que exigen una respuesta inmediata.
+   - **Infracciones graves**<br>
+     Infracciones graves que exigen una respuesta inmediata. <br>
+     Ejemplos:<br>
+     En el caso de una alerta de actividad sospechosa, es posible que quiera suspender la cuenta hasta que el usuario cambie la contraseña.  
 
-       Examples:  
+     En el caso de una filtración de datos, es posible que le interese restringir los permisos o poner el archivo en cuarentena.  
 
-       For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
+     Si se detecta una aplicación nueva, es posible que quiera bloquear el acceso al servicio en el servidor proxy o el firewall.  
 
-       For a data leak you might want to restrict permissions or quarantine the file.  
+   - **Infracciones cuestionables**<br>
+     Infracciones cuestionables que exigen más investigación.  <br>
+     Puede ponerse en contacto con el usuario o su administrador para hablar sobre la naturaleza de la actividad. <br>  
+     Deje la actividad abierta hasta que disponga de más información.  
 
-       If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
+   - **Infracciones autorizadas o comportamientos anómalos**<br>
+     Infracciones autorizadas o comportamientos anómalos que pueden deberse a un uso legítimo.  
 
-   #### <a name="questionable-violations"></a>Infracciones cuestionables
-   Infracciones cuestionables que exigen más investigación.  
-
-       You can contact the  user or the user's manager about the nature of the activity.  
-
-       Leave the activity open until you have more information.  
-
-   #### <a name="authorized-violations-or-anomalous-behavior"></a>Infracciones autorizadas o comportamientos anómalos
-   Infracciones autorizadas o comportamientos anómalos que pueden deberse a un uso legítimo.  
-
-       Dismiss the alert.  
+     Descarte la alerta.  
 
 3. Cuando finalice este proceso, marque la alerta como resuelta.  
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2018
+ms.date: 6/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7405d04251b148bde65b8fe502ef727dc7925dea
-ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
+ms.openlocfilehash: bec87e3db09ee14320371cfbffba0d3d9a2cd55a
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2018
-ms.locfileid: "35251861"
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36747058"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -26,19 +26,45 @@ ms.locfileid: "35251861"
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
 
+## <a name="cloud-app-security-release-126"></a>Versión 126 de Cloud App Security
+
+Publicado el 24 de junio de 2018
+
+-   **Disponibilidad general del Control de aplicaciones de acceso condicional**<br>El Control de aplicaciones de acceso condicional (proxy inverso) de Microsoft Cloud App Security ahora está disponible para todas las aplicaciones de SAML. El Control de aplicaciones de acceso condicional se integra directamente con las directivas de acceso condicional de Azure AD para **supervisar y controlar las sesiones de los usuarios en tiempo real** sin impedirles ser productivos. Desde la primera versión preliminar de la característica, se han agregado muchas funciones y mejoras, incluidas las siguientes: 
+    -   Se ha agregado la funcionalidad para crear una [directiva de acceso](access-policy-aad.md) para administrar el acceso a las mismas aplicaciones desde clientes nativos, además de crear una directiva de sesión para el tráfico del explorador.
+    -   Se ha simplificado el proceso de incorporación de aplicaciones para admitir aplicaciones de SAML personalizadas en la organización.
+    -   Como parte de la red internacional de Azure, se han mejorado la integración y la interfaz para que los usuarios ubicados en cualquier lugar del mundo puedan disfrutar de una experiencia sin problemas.
+ 
+
+-   **Disponibilidad general de la inspección de contenido con el Servicio de clasificación de datos de Microsoft**<br>La integración de Microsoft Cloud App Security con los Servicios de clasificación de datos de Microsoft ahora está disponible con carácter general. Esta integración le permite usar el Servicio de clasificación de datos de Microsoft de forma nativa para clasificar los archivos de las aplicaciones en la nube. Para obtener más información, vea [Integración de los servicios de clasificación de datos de Microsoft](dcs-inspection.md).
+
+- **Informe ejecutivo de Cloud Discovery**<br>Microsoft Cloud App Security está implementando gradualmente la funcionalidad para generar un informe ejecutivo en PDF de Cloud Discovery. En este informe se proporciona información general sobre el uso de shadow IT que se ha identificado en la organización. Para ello, se resaltan las aplicaciones y los usuarios principales en uso en general y en las categorías principales, y se hace hincapié en el riesgo que shadow IT supone en la organización. Además, el informe proporciona una lista de recomendaciones sobre cómo mejorar la visibilidad y el control de shadow IT en la organización. Use este informe para asegurarse de eliminar los posibles riesgos y amenazas, y que la organización siga siendo segura.
+
+-   **Detección de malware**<br>La funcionalidad de detección de malware se está implantando de forma gradual para **detectar automáticamente los archivos maliciosos en el almacenamiento en la nube**, con independencia del tipo de archivo. Microsoft Cloud App Security usa la inteligencia sobre amenazas de Microsoft para reconocer si determinados archivos están asociados a ataques de malware conocidos o son potencialmente maliciosos. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).
+ 
+-   **Corrección automatizada de actividades sospechosas**<br>Ahora puede establecer acciones de corrección automática para una sesión sospechosa desencadenadas por las directivas de detección de anomalías. Gracias a esta mejora, se le avisará al instante cuando se produzca una infracción y **se aplicarán automáticamente las acciones de gobierno**, por ejemplo, la suspensión del usuario. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md#adp-automated-gov). 
+ 
+-   **Evaluación de la configuración de seguridad para Azure**<br>Microsoft Cloud App Security está implementando de forma gradual la funcionalidad de obtener una evaluación de la configuración de seguridad del entorno de Azure, y proporciona recomendaciones para el control de la seguridad y los valores de configuración que falten. Por ejemplo, le permitirá saber si falta MFA para los usuarios administrativos. Para obtener más información, vea [Cloud Security Posture Management integration](security-config.md) (Integración de la administración de posiciones de seguridad en la nube).  
+  
+-   **Detección automática de aplicaciones OAuth peligrosas**<br>Además de la investigación existente de aplicaciones de OAuth conectadas al entorno, ahora Microsoft Cloud App Security está implementando de forma gradual la funcionalidad para establecer notificaciones automatizadas que avisen cuando una aplicación de OAuth cumple determinados criterios. Por ejemplo, puede recibir alertas automáticamente cuando haya aplicaciones que requieran un alto nivel de permisos y las hayan autorizado más de 50 usuarios. Para obtener más información, vea [Directivas de permisos de la aplicación](app-permission-policy.md).
+ 
+-   **Compatibilidad con la administración de proveedores de servicios de seguridad administrada (MSSP)**<br>Microsoft Cloud App Security ahora proporciona una mejor experiencia de administración para MSSP. Ahora es posible configurar a usuarios externos como administradores y asignarles cualquiera de los [roles disponibles actualmente en Microsoft Cloud App Security](manage-admins.md). Además, para permitir que los MSSP proporcionen servicios en varios inquilinos de clientes, los administradores que tienen derechos de acceso a más de un inquilino ahora pueden cambiar de inquilino fácilmente en el portal. Para información sobre cómo administrar los administradores, vea [Administración de los administradores](manage-admins.md).
+  
+-   **Disponibilidad general de la integración con DLP externa**<br>Microsoft Cloud App Security permite [aprovechar las inversiones existentes en sistemas de clasificación de terceros](icap-stunnel.md), como soluciones de prevención de pérdida de datos (DLP), y permite examinar el contenido de aplicaciones en la nube mediante las implementaciones que se ejecutan en el entorno. Para obtener más información, vea [Integración de DLP externa](icap-stunnel.md).
+
+
 ## <a name="cloud-app-security-release-125"></a>Notas de la versión 125 de Cloud App Security
 
 Publicado el 10 de junio de 2018
 
 
-### <a name="new-investigation-capability-by-top-users"></a>Nueva capacidad de investigación de los usuarios principales: 
+- **Nueva funcionalidad de investigación de los usuarios principales:**<br>
 Microsoft Cloud App Security agregó un nuevo widget de investigación al panel donde aparecen los usuarios principales según el número de alertas de detección de amenazas abiertas. Este widget de investigación le permite centrar su investigación de amenazas en aquellos usuarios que cuentan con el mayor número de sesiones sospechosas.
 
-### <a name="support-for-aws-s3-buckets"></a>Compatibilidad con los cubos de AWS S3:
+- **Compatibilidad con los cubos de AWS S3:**<br>
 Microsoft Cloud App Security puede detectar ahora cubos de AWS S3 y sus niveles de uso compartido. Esto proporciona alertas y visibilidad en cubos de AWS accesibles públicamente. También permite crear directivas basadas en cubos y aplicar la regulación automática. Además, hay una nueva plantilla de directiva disponible llamada **Publicly accessible S3 buckets (AWS)** (Cubos de S3 accesibles públicamente (AWS)) que puede usar para crear fácilmente una directiva que regule su almacenamiento de AWS. Para habilitar estas nuevas funcionalidades, asegúrese de actualizar sus aplicaciones conectadas mediante AWS agregando los nuevos permisos descritos en [Conectar AWS](connect-aws-to-microsoft-cloud-app-security.md).
 
-### <a name="admin-privileges-based-on-user-groups"></a>Privilegios de administración basados en grupos de usuarios:
-Ahora puede establecer los permisos administrativos de los administradores de Microsoft Cloud App Security por cada grupo de usuarios. Por ejemplo, puede establecer un usuario concreto como administrador de únicamente los usuarios de Alemania. Esto permitiría al usuario ver y modificar la información en Microsoft Cloud App Security relativa únicamente al grupo de usuarios "Alemania: todos los usuarios". Para más información, vea [Administración del acceso de administrador](manage-admins.md).
+- **Privilegios de administración basados en grupos de usuarios:** ahora puede establecer los permisos administrativos de los administradores de Microsoft Cloud App Security por cada grupo de usuarios. Por ejemplo, puede establecer un usuario concreto como administrador de únicamente los usuarios de Alemania. Esto permitiría al usuario ver y modificar la información en Microsoft Cloud App Security relativa únicamente al grupo de usuarios "Alemania: todos los usuarios". Para más información, vea [Administración del acceso de administrador](manage-admins.md).
 
 
 ## <a name="cloud-app-security-release-124"></a>Notas de la versión 124 de Cloud App Security
