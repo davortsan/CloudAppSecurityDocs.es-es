@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 7/2/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e34ff5bd2e25b4c25f314c35f2ffc3ab4b41c24a
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: ea0eaa4831dce2ba19b434e6ebc91c8b59661834
+ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37339971"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -86,7 +87,7 @@ A continuación se muestra una lista de los filtros de archivo que se pueden apl
   
 -   Id. de archivo: busca identificadores de archivo específicos. Se trata de una característica avanzada que permite hacer un seguimiento de determinados archivos de gran valor sin depender de su propietario/ubicación/nombre.  
   
--   Nombre de archivo: nombre de archivo o subcadena del nombre tal como se define en la aplicación en la nube, por ejemplo, Todos los archivos con una contraseña en su nombre.   
+-   Nombre de archivo: nombre de archivo o subcadena del nombre tal como se define en la aplicación en la nube, por ejemplo, todos los archivos con una contraseña en su nombre.   
   
 -   Etiqueta de clasificación: busca archivos con etiquetas específicas. Son las siguientes:
     - Etiquetas de Azure Information Protection. Esto requiere la integración con Azure Integration Protection.
@@ -103,7 +104,7 @@ A continuación se muestra una lista de los filtros de archivo que se pueden apl
   
 -   En la papelera: excluye/incluye archivos que se encuentran en la carpeta de la papelera. Estos archivos siguen pudiendo compartirse y suponen un riesgo.  
   
--   Última modificación: hora de modificación del archivo. El filtro admite valores de fecha Antes de/Después de, intervalos de fechas y expresiones de tiempo relativo, por ejemplo, Todos los archivos que no se han modificado en los últimos 6 meses.  
+-   Última modificación: hora de modificación del archivo. El filtro admite valores de fecha Antes de/Después de, intervalos de fechas y expresiones de tiempo relativo, por ejemplo, todos los archivos que no se han modificado en los últimos 6 meses.  
 
 -   Directiva coincidente: archivos que coinciden gracias a una directiva de Cloud App Security.
 

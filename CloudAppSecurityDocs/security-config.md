@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/27/2018
+ms.date: 7/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: c6d8f8af-867b-43ab-adee-f06520577fe7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0d21df4cac9ca31207b94061d5bb18ec857668ac
-ms.sourcegitcommit: c7e4351345d55cfeb0517651446490ce5f208651
+ms.openlocfilehash: e5d95b5b1e97eb1758c8f62b238ef1bdbb9f8a9c
+ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2018
-ms.locfileid: "37140778"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37339954"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -36,7 +36,7 @@ De forma predeterminada, el rol de administrador global de Azure AD no proporcio
 
 Para habilitar las recomendaciones de configuración de seguridad en Microsoft Cloud App Security:
 
-1. <a href="https://docs.microsoft.com/azure/security-center/security-center-management-groups" target="_blank">Obtenga visibilidad de todos los inquilinos en Azure Security Center</a>. Para ello, concédase a usted mismo, así como a los demás administradores de Microsoft Cloud App Security a los que quiere dar acceso a esta página, el rol de lector para todas las suscripciones, asigne el rol en el grupo de administración raíz en Azure Security Center y eleve el administrador global de Azure AD para conceder acceso a suscripciones de Azure. 
+1. <a href="https://docs.microsoft.com/azure/security-center/security-center-management-groups" target="_blank">Obtenga visibilidad de todos los inquilinos en Azure Security Center</a>. Este proceso incluye la concesión a usted mismo, así como a los demás administradores de Microsoft Cloud App Security a los que quiere dar acceso a esta página, del rol de lector para todas las suscripciones y la asignación del rol en el grupo de administración raíz en Azure Security Center, así como la elevación del administrador global de Azure AD para conceder acceso a suscripciones de Azure. 
 
    > [!NOTE]
    > En el artículo se describe el proceso para convertirse en un administrador de seguridad. Para que esta integración funcione, los permisos mínimos que necesita son de lector.
