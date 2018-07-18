@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 7/15/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d7a3d2670a8c4ccabc96807304545b85ee43cbd2
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: a9a89450ed04b21159b7f4323f2e4b01a8e81d28
+ms.sourcegitcommit: 70e685dc53c70b719b707e685d5ef45cec445891
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 07/15/2018
+ms.locfileid: "39063952"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -40,7 +41,17 @@ En esta sección se ofrecen instrucciones para conectar Microsoft Cloud App Secu
   
          ![aplicaciones de Box](./media/box-apps.png "aplicaciones de Box")  
   
-    -   Si ha seleccionado **Aplicaciones no publicadas**, en el cuadro de texto **Excepto**, agregue el número de serie de la aplicación Cloud App Security:<br></br>Centro de datos de Estados Unidos 1: `nduj1o3yavu30dii7e03c3n7p49cj2qh` <br></br>Centro de datos de Estados Unidos 2: `w0ouf1apiii9z8o0r6kpr4nu1pvyec75`<br></br>Centro de datos de la Unión Europea 1: `me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`<br></br>Después, haga clic en **Guardar**. Para obtener información sobre cómo consultar con qué centros de datos de Cloud App Security tiene conexión, consulte [Tokens de API](api-tokens.md). 
+    -   Si ha seleccionado **Aplicaciones no publicadas**, en el cuadro de texto **Excepto**, agregue el número de serie de la aplicación Cloud App Security:
+     
+         |Centro de datos|Número de serie de Microsoft Cloud App Security|
+         |----|----|    
+         |Estados Unidos 1| `nduj1o3yavu30dii7e03c3n7p49cj2qh`|
+         |US2|`w0ouf1apiii9z8o0r6kpr4nu1pvyec75`|
+         |US3|`dmcyvu1s9284i2u6gw9r2kb0hhve4a0r`|
+         |Unión Europea 1|`me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`|
+         |EU2|`uwdy5r40t7jprdlzo85v8suw1l4cdsbf`|
+
+        Después, haga clic en **Guardar**. Para obtener información sobre cómo consultar con qué centros de datos de Cloud App Security tiene conexión, consulte [Tokens de API](api-tokens.md). 
   
          ![configuración del cuadro Excepto de Box](./media/box-settings-except-for.png "configuración del cuadro Excepto de Box")  
   

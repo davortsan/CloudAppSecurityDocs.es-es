@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/18/2018
+ms.date: 7/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c182ea9cfebd7161e637cbd1460ac6b56b17362d
-ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
+ms.openlocfilehash: b0662b428a902c28f1908e6e978e3256aa45f6af
+ms.sourcegitcommit: 70e685dc53c70b719b707e685d5ef45cec445891
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2018
-ms.locfileid: "36747007"
+ms.lasthandoff: 07/15/2018
+ms.locfileid: "39063935"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -54,7 +54,7 @@ Están disponibles las directivas de detección de anomalías siguientes:
 
 
 **Actividad desde un país poco frecuente**
-- Esta detección tiene en cuenta las ubicaciones de actividad anteriores para determinar ubicaciones nuevas e infrecuentes. El motor de detección de anomalías almacena información sobre las ubicaciones anteriores que usan los usuarios de la organización. Se desencadena una alerta cuando una actividad se produce en una ubicación que el usuario (o cualquier usuario de la organización) no ha visitado recientemente o nunca. 
+- Esta detección tiene en cuenta las ubicaciones de actividad anteriores para determinar ubicaciones nuevas e infrecuentes. El motor de detección de anomalías almacena información sobre las ubicaciones anteriores que usan los usuarios de la organización. Se desencadena una alerta cuando se produce una actividad desde una ubicación que ningún usuario de la organización ha visitado recientemente o nunca. 
 
 **Detección de malware**
 - Esta detección identifica los archivos maliciosos en el almacenamiento en nube, tanto si proceden de aplicaciones de Microsoft como de aplicaciones de terceros. Microsoft Cloud App Security usa la inteligencia sobre amenazas de Microsoft para reconocer si determinados archivos están asociados a ataques de malware conocidos y son potencialmente maliciosos. Esta directiva integrada está deshabilitada de forma predeterminada. No se analizan todos los archivos, pero se usa la heurística para buscar archivos potencialmente peligrosos. Una vez que se han detectado archivos, puede ver una lista de **archivos infectados**. Haga clic en el nombre de archivo de malware en el cajón de archivos para abrir un informe de malware con información sobre el tipo de malware con el que está infectado el archivo.
