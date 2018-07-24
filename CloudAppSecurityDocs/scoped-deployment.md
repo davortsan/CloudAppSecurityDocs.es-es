@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: fe2ce27b-1020-45e9-ad72-fad93d197169
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d7148854286218172fdbeb7c9e651a49cb721980
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 26f6314dd1a3285049b4bf2bbd46467e63fca8ac
+ms.sourcegitcommit: 92ffce1e6067b087732f617cf56ca904ee3691de
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34568669"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175424"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -45,7 +45,7 @@ Es posible que no desee usar Microsoft Cloud App Security para todos los usuario
      
      ![regla de inclusión](./media/include-rule.png)
 
-4. Si quiere establecer determinados grupos para excluirlos de la supervisión, en la pestaña **Excluir**, haga clic en el ![icono](./media/plus-icon.png) de signo más. <br>En el cuadro de diálogo **Crear nueva regla de inclusión**, establezca los parámetros siguientes:
+4. Si quiere establecer determinados grupos para excluirlos de la supervisión, en la pestaña **Excluir**, haga clic en el ![icono](./media/plus-icon.png) de signo más. <br>En el cuadro de diálogo **Crear nueva regla de exclusión**, establezca los parámetros siguientes:
 
     1. En **Escriba el nombre de la regla**, asigne un nombre descriptivo a la regla.
     En **Seleccionar grupos de usuarios**, seleccione todos los grupos que no desea que supervise Cloud App Security.
