@@ -16,7 +16,7 @@
 ### [Grupos de usuarios](user-groups.md)
 ### [Implementación con ámbito](scoped-deployment.md)
 ### [Etiquetas e intervalos IP](ip-tags.md)
-## [Implementar Cloud Discovery](set-up-cloud-discovery.md)
+## [Configurar Cloud Discovery](set-up-cloud-discovery.md)
 ### [Crear informes de instantáneas de Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 ### [Configurar la carga de registros automática para informes continuos](discovery-docker.md)
 #### [Docker en Ubuntu y RHEL local](discovery-docker-ubuntu.md)
