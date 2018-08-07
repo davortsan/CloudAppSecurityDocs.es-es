@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/4/2018
+ms.date: 8/5/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c16e44132ec7047e5f1624907c184a0e03c6bf73
-ms.sourcegitcommit: 2862ebeb9e886bea16e62eb87dfdace638cf67bb
+ms.openlocfilehash: 082128a4a2b1130c14b2af770327f0f2bb956e4f
+ms.sourcegitcommit: b4bc20170a97e4fedc47cf67906a13aa0b70bcb6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/04/2018
-ms.locfileid: "37799168"
+ms.lasthandoff: 08/05/2018
+ms.locfileid: "39518268"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -31,10 +31,19 @@ ms.locfileid: "37799168"
 
 Haga lo siguiente para configurar aplicaciones de Azure AD de forma que estén controladas por el control de aplicaciones de acceso condicional de Microsoft Cloud App Security.
 
+**Paso 1: [vaya al portal de Azure AD, cree una directiva de acceso condicional para las aplicaciones y distribuya la sesión a Cloud App Security](#add-azure-ad).**
+
+**Paso 2: [inicie sesión con un usuario con ámbito en la directiva en la aplicaciones](#sign-in-scoped).**
+
+**Paso 3: [vuelva al portal de Cloud App Security y seleccione la notificación de mensaje emergente para agregar las aplicaciones](#banner-notification).**
+
+**Paso 4: [cree una directiva de acceso](access-policy-aad.md) o [cree una directiva de sesión](session-policy-aad.md) para las aplicaciones en Cloud App Security.**
+
+
 > [!NOTE]
 > Para implementar el control de aplicaciones de acceso condicional para aplicaciones de Azure AD, necesita una [licencia válida de Azure AD Premium P1](https://docs.microsoft.com/azure/active-directory/license-users-groups).
 
-## <a name="step-1-add-azure-ad-apps-in-cloud-app-security"></a>Paso 1: Agregar aplicaciones de Azure AD en Cloud App Security  
+## Paso 1: agregue aplicaciones de Azure AD en Cloud App Security <a name="add-azure-ad"></a>  
 
 1. Cree una directiva de acceso condicional de Azure AD de prueba.
 
@@ -53,29 +62,32 @@ Haga lo siguiente para configurar aplicaciones de Azure AD de forma que estén c
       > [!NOTE]
       >Procure elegir aplicaciones que sean compatibles con el control de aplicaciones de acceso condicional. El control de aplicaciones de acceso condicional admite aplicaciones configuradas con un inicio de sesión único en SAML en Azure AD. Por ejemplo, las aplicaciones de Office 365 no están configuradas con SAML, por lo que no son compatibles actualmente.
 
+## Paso 2: inicie sesión con un usuario con ámbito en la directiva en las aplicaciones <a name="sign-in-scoped"></a>
 
-2. Una vez creada la directiva, inicie sesión en cada aplicación configurada en ella con un usuario también configurado en ella. Asegúrese de cerrar antes cualquier sesión existente.
+Una vez creada la directiva, inicie sesión en cada aplicación configurada en ella con un usuario también configurado en ella. Asegúrese de cerrar antes cualquier sesión existente.
 
-3. En el portal de Cloud App Security, vaya al engranaje Configuración y elija **Control de aplicaciones de acceso condicional**. 
+## Paso 3: vuelva al portal de Cloud App Security y seleccione la notificación de mensaje emergente para agregar las aplicaciones <a name="banner-notification"></a>
+
+1. En el portal de Cloud App Security, vaya al engranaje Configuración y elija **Control de aplicaciones de acceso condicional**. 
     
      ![Menú Proxy](./media/proxy-menu.png)
 
-4. Debería ver un mensaje que informa de que el control de aplicaciones de acceso condicional ha detectado nuevas aplicaciones de Azure AD. Haga clic en el vínculo **Vea las aplicaciones nuevas**.
+2. Debería ver un mensaje que informa de que el control de aplicaciones de acceso condicional ha detectado nuevas aplicaciones de Azure AD. Haga clic en el vínculo **Vea las aplicaciones nuevas**.
 
    ![Vista de nuevas aplicaciones de control de aplicaciones de acceso condicional](./media/proxy-view-new-apps.png)
 
-5. En el cuadro de diálogo que se abre verá todas las aplicaciones en las que inició sesión en el paso anterior. En cada aplicación, haga clic en el signo + y, después, haga clic en **Agregar**.
+3. En el cuadro de diálogo que se abre verá todas las aplicaciones en las que inició sesión en el paso anterior. En cada aplicación, haga clic en el signo + y, después, haga clic en **Agregar**.
 
    ![Nuevas aplicaciones de control de aplicaciones de acceso condicional](./media/proxy-new-app.png)
 
    > [!NOTE]
    > Si una aplicación no aparece en el catálogo de aplicaciones de Cloud App Security, aparecerá en la sección Aplicación no identificada del cuadro de diálogo junto con la dirección URL de inicio de sesión. Si hace clic en el signo + de estas aplicaciones, tendrá la oportunidad de sugerir que la aplicación se incluya en el catálogo. Una vez que la aplicación esté incluida en el catálogo, vuelva a realizar los pasos para implementarla. 
 
-6. En la tabla de aplicaciones de control de aplicaciones de acceso condicional, fíjese en la columna **Controles disponibles** y confirme que figuran en ella Acceso condicional de Azure AD y Control de sesión. <br></br>Si Control de sesión no aparece para una aplicación, significa que aún no está disponible para esa aplicación específica y, en su lugar, verá el vínculo **Solicitar control de la sesión**. Haga clic en él para abrir un cuadro de diálogo y solicitar la incorporación de la aplicación al control de la sesión. En este escenario, el equipo de Microsoft Cloud App Security procederá a realizar el proceso de incorporación de la aplicación junto con usted.
+4. En la tabla de aplicaciones de control de aplicaciones de acceso condicional, fíjese en la columna **Controles disponibles** y confirme que figuran en ella Acceso condicional de Azure AD y Control de sesión. <br></br>Si Control de sesión no aparece para una aplicación, significa que aún no está disponible para esa aplicación específica y, en su lugar, verá el vínculo **Solicitar control de la sesión**. Haga clic en él para abrir un cuadro de diálogo y solicitar la incorporación de la aplicación al control de la sesión. En este escenario, el equipo de Microsoft Cloud App Security procederá a realizar el proceso de incorporación de la aplicación junto con usted.
   
    ![Solicitar control de la sesión](./media/proxy-view-new-apps.png)
 
-7. Opcional: identifique los dispositivos que usan certificados de cliente:
+5. Opcional: identifique los dispositivos que usan certificados de cliente:
 
    1. Vaya al engranaje Configuración y elija **Identificación de dispositivos**.
 
@@ -88,7 +100,7 @@ Haga lo siguiente para configurar aplicaciones de Azure AD de forma que estén c
       > [!NOTE]
       >Solo se solicitará un certificado a un usuario si la sesión coincide con una directiva que usa el filtro de certificado de cliente válido. 
 
-## <a name="step-2-test-the-deployment"></a>Paso 2: Probar la implementación
+## <a name="test-the-deployment"></a>Probar la implementación
 
 1. Primero, cierre cualquier sesión existente. Luego, pruebe a iniciar sesión en cada aplicación implementada correctamente con un usuario que coincida con la directiva configurada en Azure AD. 
 

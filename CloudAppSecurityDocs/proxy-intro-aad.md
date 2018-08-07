@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/18/2018
+ms.date: 8/5/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8b3aea5db6a56efc94ed165f540519a5e7de22f3
-ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
+ms.openlocfilehash: 94b44acb3335df4c1dceaa59308faa9fba20806e
+ms.sourcegitcommit: b4bc20170a97e4fedc47cf67906a13aa0b70bcb6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2018
-ms.locfileid: "36747041"
+ms.lasthandoff: 08/05/2018
+ms.locfileid: "39518166"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -120,6 +120,12 @@ El control de sesiones está disponible para todos los exploradores de cualquier
 -   Concur
 
 -   Tableau
+
+-  Dropbox
+
+-  Egnyte
+
+-  Github
 
 Continuamente se inscriben más aplicaciones al control de sesiones. Si está interesado en alguna aplicación específica que no figure aquí, [envíenos los detalles](mailto:casfeedback@microsoft.com) y el caso de uso que le interese, y la inscribiremos.
 
