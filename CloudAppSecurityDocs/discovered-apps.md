@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 8/6/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: abec8d49559c7ff29476a5a5291f1920db877b88
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 9c9cae44e8ecbd3856495723f951c050fa8f50e3
+ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39519064"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -62,6 +63,14 @@ Por ejemplo, puede diferenciar entre los distintos sitios de SharePoint.
 Esto solo se admite en los firewalls y servidores proxy que contienen datos de dirección URL de destino. Consulte la lista de dispositivos compatibles en [Firewalls y servidores proxy compatibles](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
  ![información de subdominio](./media/discovery-domains.png) 
+
+## <a name="generate-cloud-discovery-executive-report"></a>Generación de un informe ejecutivo de Cloud Discovery
+
+La mejor manera de obtener información general sobre el uso de Shadow IT en la organización es generar un informe ejecutivo de Cloud Discovery. Este informe permite identificar los principales riesgos posibles y ayuda a planificar un flujo de trabajo para mitigarlos y administrarlos hasta que se resuelvan.
+
+Para generar un informe ejecutivo de Cloud Discovery: 
+
+En el panel de Cloud Discovery, haga clic en los puntos suspensivos que encontrará en la esquina superior derecha del menú y seleccione **Generar informe ejecutivo de Cloud Discovery**.
 
 ## <a name="exclude-entities"></a>Excluir entidades  
 Si tiene usuarios o direcciones IP del sistema que son especialmente ruidosos y no interesantes o aplicaciones que no son relevantes, es posible que quiera excluir sus datos de los datos de Cloud Discovery que se analizan. Por ejemplo, puede excluir toda la información que se origina en 127.0.0.1 o el host local.  

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/5/2018
+ms.date: 8/6/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 40b477b3618e39473fe09568b3da761ce4d3b898
-ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
+ms.openlocfilehash: 6820e8340a7316f826ff437f168b3db8cc5ec773
+ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34759923"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39519183"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -36,7 +36,7 @@ El **catálogo de aplicaciones en la nube** evalúa el riesgo de las aplicacione
   
 ![El Catálogo de aplicaciones en la nube](./media/cloud-app-catalog.png)  
 
-Cada vez es mayor la demanda de aplicaciones en la nube por parte de las unidades de negocio, como solución para sus necesidades en constante evolución. El Catálogo de aplicaciones en la nube permite elegir con criterio qué aplicaciones se adaptan mejor a los requisitos de seguridad de la organización y a la necesidad de mantenerse al día de los estándares de seguridad, las vulnerabilidades y las infracciones más recientes. Por ejemplo, si quiere comparar las aplicaciones CRM y asegurarse de que están bien protegidas, puede usar la página del Catálogo de aplicaciones en la nube para filtrar las aplicaciones que le interesan. En la página del **Catálogo de aplicaciones en la nube**, en **Buscar por categoría**, seleccione **CRM**. 
+Cada vez es mayor la demanda de aplicaciones en la nube por parte de las unidades de negocio, como solución para sus necesidades en constante evolución. El Catálogo de aplicaciones en la nube permite elegir con criterio qué aplicaciones se adaptan mejor a los requisitos de seguridad de la organización y a la necesidad de mantenerse al día con los estándares de seguridad, las vulnerabilidades y las infracciones más recientes. Por ejemplo, si quiere comparar las aplicaciones CRM y asegurarse de que están bien protegidas, puede usar la página del Catálogo de aplicaciones en la nube para filtrar las aplicaciones que le interesan. En la página del **Catálogo de aplicaciones en la nube**, en **Buscar por categoría**, seleccione **CRM**. 
 
 Después, use los filtros **Avanzados** y establezca **Factor de riesgo de cumplimiento** > **SOC 2** en igual a **True**; **Factor de riesgo de cumplimiento** > **ISO 27001** en igual a **True**; **Factor de riesgo para la seguridad** > **Cifrado de datos en reposo** en igual a **True**; **Factor de riesgo para la seguridad** > **Cifrado de datos en reposo** en igual a **True**; **Factor de riesgo para la seguridad** > **Pista de auditoría de administración** en igual a **True**; y **Factor de riesgo para la seguridad** > **Pista de auditoría de usuario** en igual a **True**.
 
@@ -46,17 +46,18 @@ Una vez que se hayan filtrado los resultados, puede revisar las aplicaciones cor
 
 ## <a name="cloud-app-catalog-filters"></a>Filtros del Catálogo de aplicaciones en la nube
 
-Hay filtros básicos y avanzados en el Catálogo de aplicaciones en la nube. Para aplicar un filtro complejo, use la opción avanzada, que incluye lo siguiente:
+Hay filtros básicos y avanzados en el Catálogo de aplicaciones en la nube. Para aplicar un filtro complejo, use la opción avanzada, que incluye los siguientes filtros:
 
 - **Etiquetas de aplicación**: las etiquetas le permiten personalizar el Catálogo de aplicaciones en la nube. 
   Puede seleccionar la etiqueta **Autorizada** o **No autorizada**, o bien puede crear etiquetas personalizadas para las aplicaciones. Estas etiquetas pueden usarse como filtros para profundizar un poco más en los tipos de aplicaciones específicos que quiere investigar. 
 - **Aplicaciones y dominios**: permite buscar aplicaciones específicas o aplicaciones usadas en dominios concretos. 
 - **Categorías**: el filtro de categorías, que se encuentra a la izquierda de la página, permite buscar tipos de aplicaciones en función de categorías de aplicaciones, como aplicaciones de redes sociales, aplicaciones de almacenamiento en la nube, etc. Puede seleccionar varias categorías a la vez o una sola categoría y, después, aplicarles los filtros básicos y avanzados.
-- **Factor de riesgo de cumplimiento**: permite buscar normas, certificaciones y compatibilidades específicas que puede cumplir la aplicación (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
+- **Factor de riesgo de cumplimiento**: permite buscar normas, certificaciones y elementos de conformidad específicos que puede cumplir la aplicación (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
 - **Factor de riesgo general**: permite buscar factores de riesgo generales, como la popularidad entre los consumidores, la configuración regional del centro de datos, etc.
 - **Puntuación de riesgo**: permite filtrar las aplicaciones según su puntuación de riesgo, de modo que pueda centrarse, por ejemplo, en revisar únicamente las aplicaciones de mucho riesgo.
 - **Factor de riesgo para la seguridad**: permite filtrar en función de medidas de seguridad específicas (por ejemplo, cifrado en reposo, autenticación multifactor, etc.).
-
+- **Legal**: permite filtrar en función de las regulaciones y directivas en vigor para garantizar la protección y la privacidad de los datos de los usuarios de la aplicación, por ejemplo, el RGPD, el DMCA y la directiva de retención de datos.
+ 
 ## <a name="suggesting-a-change"></a>Sugerir un cambio
 
 Si encuentra una nueva aplicación en el entorno que Cloud App Security todavía no ha puntuado, un nuevo factor de riesgo, una actualización de puntuación o datos de la aplicación que no están actualizados, puede solicitar una revisión de la aplicación:

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2018
+ms.date: 8/6/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3a89faa350a35d7b5bfd5b2cfe7fdc0263bb2566
-ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
+ms.openlocfilehash: 2032d5fbfc78e734abd747dc6f6f84fca1f95f95
+ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39519013"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -25,7 +26,7 @@ ms.lasthandoff: 05/09/2018
 
 ## <a name="discovered-app-filters"></a>Filtros de aplicaciones detectadas
 
-Hay filtros de aplicaciones detectadas básicos y avanzados. Para aplicar un filtro complejo (como en el ejemplo anterior), use la opción avanzada, que incluye lo siguiente:
+Hay filtros de aplicaciones detectadas básicos y avanzados. Para aplicar un filtro complejo, como en el ejemplo anterior, use la opción avanzada, que incluye los siguientes filtros:
 
 ![Aplicaciones detectadas](./media/discovered-apps.png)  
 
@@ -33,11 +34,12 @@ Hay filtros de aplicaciones detectadas básicos y avanzados. Para aplicar un fil
 - **Etiqueta de aplicación**: seleccione si la aplicación se ha autorizado o no y si no está etiquetada. Además, puede crear una etiqueta personalizada para la aplicación y usarla para filtrar tipos específicos de aplicaciones. 
 - **Aplicaciones y dominios**: permite buscar aplicaciones específicas o aplicaciones usadas en dominios concretos. 
 - **Categorías**: el filtro de categorías, que se encuentra a la izquierda de la página, permite buscar tipos de aplicaciones en función de categorías de aplicaciones, como aplicaciones de redes sociales, aplicaciones de almacenamiento en la nube, etc. Puede seleccionar varias categorías a la vez o una sola categoría y, después, aplicarles los filtros básicos y avanzados.
-- **Factor de riesgo de cumplimiento**: permite buscar normas, certificaciones y compatibilidades específicas que puede cumplir la aplicación (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
+- **Factor de riesgo de cumplimiento**: permite buscar normas, certificaciones y elementos de conformidad específicos que puede cumplir la aplicación (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
 - **Factor de riesgo general**: permite buscar factores de riesgo generales, como la popularidad entre los consumidores, la configuración regional del centro de datos, etc.
 - **Puntuación de riesgo**: permite filtrar las aplicaciones según su puntuación de riesgo, de modo que pueda centrarse, por ejemplo, en revisar únicamente las aplicaciones de mucho riesgo. También puede reemplazar la puntuación de riesgo establecida por Cloud App Security. Para obtener más información, vea [Trabajo con la puntuación de riesgo](risk-score.md).
 - **Factor de riesgo para la seguridad**: permite filtrar en función de medidas de seguridad específicas (por ejemplo, cifrado en reposo, autenticación multifactor, etc.).
-- **Uso**: permite filtrar en función de las estadísticas de uso de la aplicación, como aplicaciones con menos o más **cargas de datos** que la cantidad especificada, o aplicaciones con menos o más de un número específico de **usuarios**.
+- **Uso**: permite filtrar en función de las estadísticas de uso de la aplicación, como aplicaciones con menos o más **cargas de datos** de las especificadas, o aplicaciones con menos o más **usuarios** de los especificados.
+- **Legal**: permite filtrar en función de las regulaciones y directivas en vigor para garantizar la protección y la privacidad de los datos de los usuarios de la aplicación, por ejemplo, el RGPD, el DMCA y la directiva de retención de datos.
 
 ### <a name="creating-and-managing-custom-app-tags"></a>Crear y administrar etiquetas de aplicación personalizadas
 
@@ -45,7 +47,7 @@ Puede crear etiquetas de aplicación personalizadas. Estas etiquetas pueden usar
 
 Para crear una etiqueta de aplicación personalizada:
 
-1. En el engranaje de **Configuración** seleccione **Cloud Discovery** y en la pestaña **Manage app tags** (Administrar etiquetas de aplicación) haga clic en el icono ![icono más](./media/plus-icon.png). 
+1. En el engranaje **Configuración** seleccione **Cloud Discovery** y en la pestaña **Administrar etiquetas de aplicación** haga clic en el icono ![icono Más](./media/plus-icon.png). 
 
 ![Crear una etiqueta de aplicación personalizada](./media/create-app-tag.png)
 
@@ -77,9 +79,9 @@ Cloud App Security también le proporciona **consultas sugeridas** y le permite 
 
  - Aplicaciones en la nube que permiten el uso anónimo: filtra todas las aplicaciones detectadas para mostrar solo aquellas que implican riesgos de seguridad porque no requieren la autenticación del usuario y permiten que los usuarios carguen datos.
 
- - Aplicaciones en la nube que tienen el certificado CSA STAR: filtra todas las aplicaciones detectadas para mostrar solo aquellas que tienen la certificación CSA STAR, ya sea por evaluación automática, certificación, autenticación o supervisión continua.
+ - Aplicaciones en la nube que tienen el certificado CSA STAR: filtra todas las aplicaciones detectadas para mostrar solo aquellas que tengan la certificación CSA STAR, ya sea por evaluación automática, certificación, autenticación o supervisión continua.
 
- - Aplicaciones en la nube que cumplen el programa FedRAMP: filtra todas las aplicaciones detectadas para mostrar solo aquellas cuyo factor de riesgo de cumplimiento de FedRAMP es alto, medio o bajo. 
+ - Aplicaciones en la nube que cumplen el programa FedRAMP: filtra todas las aplicaciones detectadas para mostrar solo aquellas cuyo factor de riesgo de cumplimiento de FedRAMP sea alto, medio o bajo. 
 
  - Aplicaciones de colaboración y almacenamiento en la nube que tienen datos de usuario: filtra todas las aplicaciones detectadas para mostrar solo aquellas que implican un riesgo porque no le permiten ser el propietario de los datos, a pesar de que sí los conservan.
 
@@ -89,6 +91,8 @@ Cloud App Security también le proporciona **consultas sugeridas** y le permite 
 
  - Aplicaciones en la nube de la empresa que tienen un cifrado débil: filtra todas las aplicaciones detectadas para mostrar solo aquellas que implican un riesgo porque no cifran datos en reposo y no admiten ningún protocolo de cifrado.
 
+- Preparación para el RGPD: filtra todas las aplicaciones detectadas para mostrar solo las que estén preparadas para el RGPD. Dado que el cumplimiento del RGPD es una prioridad principal, esta consulta permite identificar fácilmente las aplicaciones que están preparadas para el RGPD y mitigar las posibles amenazas mediante una evaluación del riesgo de las que no lo están.
+ 
 ![consultar aplicaciones detectadas](./media/queries-discovered-apps.png)
 
  

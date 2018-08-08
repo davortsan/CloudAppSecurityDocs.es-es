@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3e477e1551f9004e31a5743b67a99ecef4e95d7f
-ms.sourcegitcommit: b4bc20170a97e4fedc47cf67906a13aa0b70bcb6
+ms.openlocfilehash: 266af546cd795c3675676b43f0830818af10ebab
+ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2018
-ms.locfileid: "39518183"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39519115"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -29,7 +29,7 @@ ms.locfileid: "39518183"
 
 ## <a name="cloud-app-security-release-129"></a>Notas de la versión 129 de Cloud App Security
 
-Publicada el 22 de julio de 2018
+Fecha de publicación: 5 de agosto de 2018
 
 - **Nuevas directivas de detección de anomalías: reglas de correo electrónico sospechosas**<br>Se agregaron nuevas directivas de detección de anomalías que detectan reglas de reenvío de correo electrónico sospechosas, por ejemplo, si un usuario creó una regla de bandeja de entrada sospechosa que reenvía una copia de todos los correos electrónicos a una dirección externa. 
 - Esta versión incluye correcciones y mejoras para varios problemas. 
