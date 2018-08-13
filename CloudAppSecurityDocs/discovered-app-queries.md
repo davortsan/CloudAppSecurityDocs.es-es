@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2018
+ms.date: 8/8/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2032d5fbfc78e734abd747dc6f6f84fca1f95f95
-ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
+ms.openlocfilehash: a2b5ec778ef7e9cd5968353b247f117f3019d3be
+ms.sourcegitcommit: 96f82381a17b89f9aef384f760ebf142695a6051
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39519013"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39653288"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -39,7 +39,7 @@ Hay filtros de aplicaciones detectadas básicos y avanzados. Para aplicar un fil
 - **Puntuación de riesgo**: permite filtrar las aplicaciones según su puntuación de riesgo, de modo que pueda centrarse, por ejemplo, en revisar únicamente las aplicaciones de mucho riesgo. También puede reemplazar la puntuación de riesgo establecida por Cloud App Security. Para obtener más información, vea [Trabajo con la puntuación de riesgo](risk-score.md).
 - **Factor de riesgo para la seguridad**: permite filtrar en función de medidas de seguridad específicas (por ejemplo, cifrado en reposo, autenticación multifactor, etc.).
 - **Uso**: permite filtrar en función de las estadísticas de uso de la aplicación, como aplicaciones con menos o más **cargas de datos** de las especificadas, o aplicaciones con menos o más **usuarios** de los especificados.
-- **Legal**: permite filtrar en función de las regulaciones y directivas en vigor para garantizar la protección y la privacidad de los datos de los usuarios de la aplicación, por ejemplo, el RGPD, el DMCA y la directiva de retención de datos.
+- **Factor de riesgo legal**: permite filtrar en función de las regulaciones y directivas en vigor para garantizar la protección y la privacidad de los datos de los usuarios de la aplicación, por ejemplo, aplicaciones en la nube preparadas para el RGPD, el DMCA y la directiva de retención de datos.
 
 ### <a name="creating-and-managing-custom-app-tags"></a>Crear y administrar etiquetas de aplicación personalizadas
 
@@ -91,7 +91,7 @@ Cloud App Security también le proporciona **consultas sugeridas** y le permite 
 
  - Aplicaciones en la nube de la empresa que tienen un cifrado débil: filtra todas las aplicaciones detectadas para mostrar solo aquellas que implican un riesgo porque no cifran datos en reposo y no admiten ningún protocolo de cifrado.
 
-- Preparación para el RGPD: filtra todas las aplicaciones detectadas para mostrar solo las que estén preparadas para el RGPD. Dado que el cumplimiento del RGPD es una prioridad principal, esta consulta permite identificar fácilmente las aplicaciones que están preparadas para el RGPD y mitigar las posibles amenazas mediante una evaluación del riesgo de las que no lo están.
+- Aplicaciones en la nube preparadas para el RGPD: filtra todas las aplicaciones detectadas para mostrar solo las que estén preparadas para el RGPD. Dado que el cumplimiento del RGPD es una prioridad principal, esta consulta permite identificar fácilmente las aplicaciones que están preparadas para el RGPD y mitigar las posibles amenazas mediante una evaluación del riesgo de las que no lo están.
  
 ![consultar aplicaciones detectadas](./media/queries-discovered-apps.png)
 
