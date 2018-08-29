@@ -22,6 +22,7 @@
 #### [Docker en Ubuntu y RHEL local](discovery-docker-ubuntu.md)
 #### [Docker en Ubuntu en Azure](discovery-docker-ubuntu-azure.md)
 #### [Uso de aplicaciones virtuales (en desuso)](configure-automatic-log-upload-for-continuous-reports.md)
+### [Integración con Zscaler](zscaler-integration.md)
 ### [Uso del analizador de registros personalizado](custom-log-parser.md)
 ### [Enriquecimiento de Cloud Discovery](cloud-discovery-aad-enrichment.md)
 ### [Anonimización de datos de Cloud Discovery](cloud-discovery-anonymizer.md)
