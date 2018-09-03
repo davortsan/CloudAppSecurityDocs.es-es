@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/5/2018
+ms.date: 8/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 94b44acb3335df4c1dceaa59308faa9fba20806e
-ms.sourcegitcommit: b4bc20170a97e4fedc47cf67906a13aa0b70bcb6
+ms.openlocfilehash: 4bb0a02b9577470ae35fb79d4cc74b1c6ad48d66
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2018
-ms.locfileid: "39518166"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016721"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -91,41 +91,25 @@ Actualmente, el control de aplicaciones de acceso condicional admite aplicacione
 
 El control de sesiones está disponible para todos los exploradores de cualquier plataforma principal. Asimismo, las aplicaciones móviles y de escritorio también se pueden bloquear o permitir. Gracias a la integración nativa, Azure AD admite cualquier aplicación configurada con el inicio de sesión único de SAML, incluidas las siguientes, que son las más populares:
 
--   Salesforce
+- AWS
+- Cuadro
+- Concur
+- CornerStone on Demand
+- DocuSign
+- Dropbox
+- Egnyte
+- G Suite
+- Github
+- HighQ
+- JIRA/Confluence
+- Salesforce
+- ServiceNow
+- Slack
+- Tableau
+- Workday
+- Workiva
+- Workplace de Facebook
 
--   Cuadro
-
--   G Suite
-
--   Workday
-
--   Slack
-
--   Workplace de Facebook
-
--   ServiceNow
-
--   JIRA/Confluence
-
--   AWS
-
--   Workiva
-
--   CornerStone on Demand
-
--   DocuSign
-
--   HighQ 
-
--   Concur
-
--   Tableau
-
--  Dropbox
-
--  Egnyte
-
--  Github
 
 Continuamente se inscriben más aplicaciones al control de sesiones. Si está interesado en alguna aplicación específica que no figure aquí, [envíenos los detalles](mailto:casfeedback@microsoft.com) y el caso de uso que le interese, y la inscribiremos.
 
