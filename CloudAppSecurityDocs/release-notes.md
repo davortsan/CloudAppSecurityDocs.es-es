@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/22/2018
+ms.date: 9/3/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9d64ca397930ba2f93e36c6689e32bda11218486
-ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
+ms.openlocfilehash: c966c33a1ed31c1e5981600750760493133c8493
+ms.sourcegitcommit: 9ae2e002db44ed8a808351cec5eda305e4c0bd92
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43017044"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43486458"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -26,6 +26,16 @@ ms.locfileid: "43017044"
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
 
+## <a name="cloud-app-security-release-131"></a>Notas de la versión 131 de Cloud App Security
+
+Publicado el 2 de septiembre de 2018
+
+- **Revocar permisos de forma automática en las aplicaciones de riesgo de OAuth**<br>
+Ahora puede controlar a qué aplicaciones de OAuth tienen acceso los usuarios, revocando el permiso de la aplicación para las aplicaciones de OAuth en Office, Google o Salesforce. Al crear una **directiva de permisos de aplicaciones**, ahora puede establecer la directiva para revocar el permiso de una aplicación. 
+
+- **Analizador integrado adicional de Cloud Discovery compatible**<br>Cloud Discovery ahora admite el formato de registro de Forcepoint Web Security Cloud.
+
+ 
 ## <a name="cloud-app-security-release-130"></a>Notas de la versión 130 de Cloud App Security
 
 Publicado el 22 de agosto de 2018
