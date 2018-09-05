@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/05/2018
+ms.date: 8/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,32 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 266af546cd795c3675676b43f0830818af10ebab
-ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
+ms.openlocfilehash: 9d64ca397930ba2f93e36c6689e32bda11218486
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39519115"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43017044"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
+
+## <a name="cloud-app-security-release-130"></a>Notas de la versión 130 de Cloud App Security
+
+Publicado el 22 de agosto de 2018
+
+
+- **Nueva barra de menús**<br>
+Para proporcionar una experiencia administrativa más coherente en todos los productos de Microsoft 365 y poder cambiar más fácilmente entre las soluciones de seguridad de Microsoft, la barra de menús del portal de Cloud App Security se ha movido al lado izquierdo de la pantalla. Esta experiencia de navegación coherente le ayuda a orientarse al pasar de un portal de seguridad de Microsoft a otro.
+
+- **Impacto en la puntuación de la aplicación OAuth**<br>
+Ahora puede enviar comentarios al equipo de Cloud App Security para hacernos saber si se detecta una aplicación OAuth en su organización que parece malintencionada. Esta nueva característica le permite formar parte de nuestra comunidad de seguridad y mejorar el análisis y la puntuación de riesgo de las aplicaciones OAuth. Para más información, vea [Administrar permisos de aplicación](manage-app-permissions.md).
+
+- **Nuevos analizadores de Cloud Discovery**<br>
+Los analizadores de Cloud Discovery ahora admiten iboss Secure Cloud Gateway y Sophos XG.
 
 
 ## <a name="cloud-app-security-release-129"></a>Notas de la versión 129 de Cloud App Security

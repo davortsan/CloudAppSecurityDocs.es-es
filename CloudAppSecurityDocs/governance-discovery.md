@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 8/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3fbbf979dddb96db69e57c86758c6c1a699c8a51
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 394a6db8cc79ab5c52cb6775394f7b939b02f9d5
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016832"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -26,6 +27,7 @@ ms.lasthandoff: 04/23/2018
 
 Después de revisar la lista de aplicaciones detectadas en el entorno, puede protegerlo contra el uso de aplicaciones no deseadas de las maneras que se indican a continuación.
 
+
 ### <a name="sanctioningunsanctioning-an-app"></a>Autorizar o no autorizar una aplicación 
 
 Puede no autorizar una aplicación de riesgo específica. Para ello, haga clic en los tres puntos situados al final de la fila y seleccione **No autorizar**.
@@ -33,10 +35,12 @@ El hecho de no autorizar una aplicación no impide que se use, pero le permite s
 
 ![Etiquetar como no autorizada](./media/tag-as-unsanctioned.png)  
 
-
 Si tiene una lista de aplicaciones que quiere autorizar o no autorizar, puede activar la casilla de todas las aplicaciones que quiere administrar y, después, seleccionar la acción.
 
 Para consultar una lista de las aplicaciones no autorizadas, puede [generar un script de bloque mediante las API de Cloud App Security](https://mod636914.us.portal.cloudappsecurity.com/api-docs/#generate-block-script).
+
+> [!NOTE]
+> Si su inquilino usa Zscaler NSS, Cloud App Security bloquea cualquier aplicación que usted marque como no autorizada y las siguientes secciones relacionadas con la creación de scripts de bloqueo son innecesarias. Para obtener más información, consulte [Integrate Cloud App Security with Zscaler](zscaler-integration.md) (Integración de Cloud App Security con Zscaler).
 
 ## <a name="export-a-block-script-to-govern-discovered-apps"></a>Exportar un script de bloque para controlar aplicaciones detectadas
 

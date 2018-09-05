@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 8/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0187adc2115e835c246b31c8412a359a4d3e2bc3
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 27d13ace0f278a8191f99e0436c056d90948bf8a
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016917"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -87,9 +88,7 @@ Marcar aplicaciones como autorizadas o no autorizadas es un paso importante para
     
     -   Puede también profundizar en la cuenta de usuario haciendo clic en el engranaje al final de la fila de cuenta de usuario y seleccionando la acción que realizar, como **Suspender usuario** o **Quitar las colaboraciones del usuario**. Si el usuario se ha importado desde Azure Active Directory, también puede hacer clic en **Configuración de la cuenta de Azure AD** para obtener acceso fácil a las características de administración de usuario avanzadas como la administración de grupos, MFA, detalles sobre inicios de sesión del usuario y la capacidad de bloquear el inicio de sesión.
 
-4.  Vaya a **Investigar** y, luego, seleccione una aplicación. El panel de la aplicación se abre y le presenta información y datos. Puede usar las fichas de la parte superior para comprobar lo siguiente:  
-
-     ![Panel de la aplicación](./media/investigate-app.png "Investigar aplicación")  
+4.  Vaya a **Investigar**, seguido de **Aplicaciones conectadas** y seleccione una aplicación. El panel de la aplicación se abre y le presenta información y datos. Puede usar las pestañas de la parte superior para comprobar:  
 
     -   ¿Qué tipo de dispositivos usan los usuarios para conectarse a la aplicación?  
 
@@ -104,6 +103,8 @@ Marcar aplicaciones como autorizadas o no autorizadas es un paso importante para
     -   ¿Tienen autorización para el nivel de acceso para el que tienen permiso?  
 
     -   ¿Cuántos usuarios las han implementado? ¿Cómo son de comunes estas aplicaciones en general?  
+ 
+    ![Panel de la aplicación](./media/investigate-app.png "Investigar aplicación")  
 
 5.  Vaya al **panel de Cloud Discovery** y compruebe lo siguiente:  
 

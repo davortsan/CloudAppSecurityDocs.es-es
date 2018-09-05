@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2018
+ms.date: 8/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: feab5ecc5705fe0d0f43c2b49a15e970c8f54f67
-ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
+ms.openlocfilehash: 85985a9ad83cff0bb68b3d1fd310e98bbea09181
+ms.sourcegitcommit: 1744ef45b9c5ac8e08b3489bb9b73fc1347587ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2018
-ms.locfileid: "35251803"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43115733"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -61,7 +61,7 @@ Esta es la lista de plantillas de directiva que existen en Microsoft Cloud App S
 |Control de uso compartido|Archivo compartido con un dominio no autorizado|Alerta cuando se comparte un archivo con un dominio no autorizado (por ejemplo, la competencia).|
 |Control de uso compartido|Certificados digitales compartidos (extensiones de archivo)|Alerta cuando se comparte públicamente un archivo que contiene certificados digitales. Use esta plantilla para ayudar a regular su almacenamiento de AWS.|
 |Control de uso compartido|Cubos de S3 accesibles públicamente (AWS)|Alerta cuando un cubo de AWS S3 se comparte públicamente.|
-|Control de uso compartido|Archivos compartidos externamente obsoletos|Busca archivos compartidos externamente que no se han abierto o modificado durante 6 meses y los quita de la unidad.|
+|Control de uso compartido|Archivos compartidos externamente obsoletos|Busca archivos compartidos externamente que no se han abierto o modificado durante 6 meses.|
 
 
 

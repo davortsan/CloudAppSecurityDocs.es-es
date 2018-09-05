@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 8/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 36798d23961f34a0c97fbe6a1547c558668640e6
-ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
+ms.openlocfilehash: f391b886783934a07aa295e882ec845fdf74f149
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35259494"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016996"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -79,7 +79,7 @@ La página Permisos de aplicación proporciona la siguiente información sobre c
 
 En el caso de G Suite y Salesforce, es posible revocar el permiso de una aplicación o notificarle al usuario que debería hacerlo. 
 
-1. En la página Permisos de aplicación, haga clic en los tres puntos situados al final de la fila de la aplicación y seleccione **Enviar notificación al usuario**. De forma predeterminada, se enviará la siguiente notificación al usuario: *Autorizó que la aplicación Adallom Google Protector accediera a su cuenta de G Suite. Esta aplicación está en conflicto con la directiva de seguridad de la organización. Vuelva a considerar la posibilidad de conceder o revocar los permisos que otorgó a esta aplicación en su cuenta de G Suite. Para revocar el acceso, vaya a: https://security.google.com/settings/security/permissions?hl=en&pli=1: seleccione la aplicación y haga clic en "Revocar aplicación" en la barra de menús de la derecha.* Puede personalizar el mensaje que se envía.
+1. En la página **Permisos de aplicación**, haga clic en los tres puntos situados al final de la fila de la aplicación y seleccione **Enviar notificación al usuario**. De forma predeterminada, se enviará la siguiente notificación al usuario: *Autorizó que la aplicación Adallom Google Protector accediera a su cuenta de G Suite. Esta aplicación está en conflicto con la directiva de seguridad de la organización. Vuelva a considerar la posibilidad de conceder o revocar los permisos que otorgó a esta aplicación en su cuenta de G Suite. Para revocar el acceso, vaya a: https://security.google.com/settings/security/permissions?hl=en&pli=1: seleccione la aplicación y haga clic en "Revocar aplicación" en la barra de menús de la derecha.* Puede personalizar el mensaje que se envía.
 2. También puede revocar permisos para usar la aplicación para el usuario. Para ello, haga clic en el icono situado al final de la fila de la aplicación en la tabla y seleccione **Revocar aplicación**. 
 
    ![revocar aplicación](./media/revoke-app.png)
@@ -92,7 +92,15 @@ Puede consultar los permisos de la aplicación en la vista **Básica** o la vist
 
 - Elija el icono **Quitar un filtro** junto al filtro para quitar los filtros.
 
+## <a name="send-feedback"></a>Enviar comentarios
 
+Si se detecta una aplicación OAuth en su organización que parece malintencionada, puede enviar comentarios al equipo de Cloud App Security para hacérnoslo saber. Esta nueva característica le permite formar parte de nuestra comunidad de seguridad y mejorar el análisis y la puntuación de riesgo de las aplicaciones OAuth.
+1. En la página **Permisos de aplicación**, haga clic en los tres puntos situados al final de la fila de la aplicación y seleccione **Informar de aplicación**.  
+
+   ![informar de aplicación](./media/report-app.png)
+2. En la pantalla **Informar de esta aplicación**, puede seleccionar si va a informar de la aplicación como malintencionada o va a notificar algún otro problema con la manera con la que Cloud App Security percibe la aplicación, por ejemplo, **Publicador incorrecto** o **Permisos incorrectos**. Los datos que envíe se usarán para actualizar la puntuación de riesgo de la aplicación, así como otros análisis acerca de la aplicación.
+
+ 
 ## <a name="see-also"></a>Consulte también  
 [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)   
 
