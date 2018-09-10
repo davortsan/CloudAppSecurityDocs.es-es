@@ -6,19 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 4/22/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: 3fc04cfb-ad4c-4ac2-980a-ee9f4c740d88
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 38faca2d4d8da2802ca0043bf53564d840645523
-ms.sourcegitcommit: 1744ef45b9c5ac8e08b3489bb9b73fc1347587ac
+ms.openlocfilehash: b61244a1c611355cf5ce9b0ca4f073c1ebccb765
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "31773100"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44144047"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -51,26 +51,28 @@ Las [directivas de archivo](data-protection-policies.md) son una herramienta exc
    1. El archivo original se mueve a la carpeta de cuarentena de administrador que haya establecido.
    2. Se elimina el archivo original.
    3. Se carga un archivo de marcador de exclusión en la ubicación original del archivo.
-
+      
       ![marcador de exclusión de cuarentena](./media/quarantine-tombstone.png)
-
+      
    4. El usuario tiene acceso únicamente al marcador de exclusión, donde puede leer las instrucciones personalizadas proporcionadas por el departamento de TI y el identificador de correlación para ponerse en contacto con los profesionales de TI para liberar el archivo.
 
 4. Cuando aparezca la alerta que indica que un archivo se ha puesto en cuarentena, investigue el archivo en la página **Alertas** de Cloud App Security:
-
+   
    ![alertas de cuarentena](./media/quarantine-alerts.png)
- 
+   
 5. También en el **Informe de la directiva** en la pestaña **En cuarentena**:
-
+   
    ![informe de cuarentena](./media/quarantine-report.png)
     
 6. Una vez que un archivo se ha puesto en cuarentena, siga el proceso siguiente para corregir la situación de amenaza:
-       
+    
     1. Inspeccione el archivo en la carpeta en cuarentena en SharePoint Online.
-    3. También puede consultar los registros de auditoría para profundizar en las propiedades del archivo.
-    4. Si se descubre que el archivo va contra la directiva corporativa, ejecute el proceso de Respuesta a incidentes (IR) de la organización.
-    5. Si se descubre que el archivo es inofensivo, puede restaurarlo de la cuarentena, con lo que se libera el archivo original, es decir, se copia de nuevo en la ubicación original, se elimina el marcador de exclusión y el usuario puede tener acceso al archivo.
+    2. También puede consultar los registros de auditoría para profundizar en las propiedades del archivo.
+    3. Si se descubre que el archivo va contra la directiva corporativa, ejecute el proceso de Respuesta a incidentes (IR) de la organización.
+    4. Si se descubre que el archivo es inofensivo, puede restaurarlo de la cuarentena, con lo que se libera el archivo original, es decir, se copia de nuevo en la ubicación original, se elimina el marcador de exclusión y el usuario puede tener acceso al archivo.
+       
        ![restauración de la cuarentena](./media/quarantine-restore.png)
+       
 7. Una vez que haya comprobado que la directiva se ejecuta sin problemas, puede usar las acciones de gobierno automáticas de la directiva para evitar más fugas y aplicar automáticamente la cuarentena de administrador cuando se produzca una coincidencia con la directiva.
 
 > [!NOTE]
