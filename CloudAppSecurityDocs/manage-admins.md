@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 623c2c5e89da95f550c35f346a27dede245195b1
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 0e3c2ed7397f1c233955ea59c6c8be8f0d9c06e3
+ms.sourcegitcommit: bb44de2ebaf2526cc04e08c3737f77f73f219310
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144404"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45561191"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -72,7 +72,7 @@ Microsoft Cloud App Security es compatible con el control de acceso basado en ro
 
 
 
-Para obtener más información, vea [Asignación de roles de administrador en Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).
+Para obtener más información, vea [Asignación de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
 
 También puede agregar más administradores a Cloud App Security sin agregar usuarios a los roles administrativos de Azure Active Directory siguiendo estos pasos:
 
