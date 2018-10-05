@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0735a00693c1f744867d577ae46e1709b4f24cc9
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 9d86355440c92ab832257de1876be5653ae1db8d
+ms.sourcegitcommit: 13bdf7cc2df122d42e6d66ce2ffb58de3796accd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144217"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45683390"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -74,8 +74,11 @@ Esta detección aprovecha las ventajas de capacidad de Cloud App Security para s
 - Se identifica la actividad de los usuarios desde una dirección IP considerada como de riesgo en Microsoft Threat Intelligence. Estas direcciones IP están implicadas en actividades malintencionadas como Botnet C&C y pueden indicar que la cuenta está en peligro. Esta detección usa un algoritmo de aprendizaje automático que reduce los falsos positivos, como las direcciones IP no etiquetadas que los usuarios de la organización usan habitualmente.
 
 
-**Actividades inusuales (realizadas por un usuario)**
+**Reglas de correo electrónico sospechosas**
 
+- Esta detección busca reglas de reenvío de correo electrónico sospechosas, por ejemplo, si un usuario creó una regla de bandeja de entrada que reenvía una copia de todos los correos electrónicos a una dirección externa. 
+
+**Actividades inusuales (realizadas por un usuario)**<br>
 Estas detecciones identifican a los usuarios que realizan:
 
  - Varias actividades inusuales de descarga de archivos
