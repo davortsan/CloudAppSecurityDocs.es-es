@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/22/2018
+ms.date: 10/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e6976c39a644fe96f1d9ec431df08c9737026ffd
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: e0e616914ce44ca28938298a5a0f3951b83454dc
+ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143046"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881796"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -37,7 +37,7 @@ El hecho de no autorizar una aplicación no impide que se use, pero le permite s
 
 Si tiene una lista de aplicaciones que quiere autorizar o no autorizar, puede activar la casilla de todas las aplicaciones que quiere administrar y, después, seleccionar la acción.
 
-Para consultar una lista de las aplicaciones no autorizadas, puede [generar un script de bloque mediante las API de Cloud App Security](https://mod636914.us.portal.cloudappsecurity.com/api-docs/#generate-block-script).
+Para consultar una lista de las aplicaciones no autorizadas, puede [generar un script de bloque mediante las API de Cloud App Security](https://us.portal.cloudappsecurity.com/api-docs/#generate-block-script).
 
 > [!NOTE]
 > Si su inquilino usa Zscaler NSS, Cloud App Security bloquea cualquier aplicación que usted marque como no autorizada y las siguientes secciones relacionadas con la creación de scripts de bloqueo son innecesarias. Para obtener más información, consulte [Integrate Cloud App Security with Zscaler](zscaler-integration.md) (Integración de Cloud App Security con Zscaler).
