@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/2/2018
+ms.date: 10/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 17aed7570f5f0cb68c89bfebe25969b0bf713aba
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: d477439e05f8c6a9a29b8ad28fa4381b5e93274c
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144064"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349600"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -112,7 +112,7 @@ A continuación se muestra una lista de los filtros de archivo que se pueden apl
   
 -   Propietario: incluye/excluye propietarios de archivo específicos, por ejemplo, Realizar un seguimiento de todos los archivos compartidos por rogue_employee_#100.  
   
--   UO del propietario: incluye/excluye los propietarios de archivos que pertenecen a determinado grupo de la organización, por ejemplo, Todos los archivos públicos excepto los compartidos por EMEA_marketing.  
+-   UO del propietario: incluye/excluye los propietarios de archivos que pertenecen a determinado grupo de la organización, por ejemplo, Todos los archivos públicos excepto los compartidos por EMEA_marketing. Esta opción solo se aplica a los archivos almacenados en Google Drive.
   
 -   Carpeta principal: incluye/excluye en función de la carpeta principal, por ejemplo, Todos los archivos compartidos públicamente excepto los archivos de esta carpeta.  
   

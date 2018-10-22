@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/18/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,19 +13,19 @@ ms.technology: ''
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f1dbc607d0ea5f1242874e4c5744dfabdce4a234
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 73ac9c91bae7c5fa9f59aafe3b52293099e9797c
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143809"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349446"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
 
 # <a name="cloud-discovery-data-anonymization"></a>Anonimización de datos de Cloud Discovery
 
-La anonimización de datos de Cloud Discovery le permite proteger la privacidad del usuario. Cuando se haya cargado el registro de datos en el portal de Microsoft Cloud App Security, se depura el registro y se reemplaza toda la información de nombres de usuario con nombres de usuario cifrados. De este modo, todas las actividades de la nube se mantienen anónimas. Cuando sea necesario, para una investigación de seguridad específica (por ejemplo, debido a una infracción de seguridad o una actividad sospechosa del usuario), los administradores pueden resolver el nombre de usuario real. Si un administrador tiene un motivo para sospechar de un usuario específico, puede buscar el nombre de usuario cifrado de un nombre de usuario conocido y, después, comenzar la investigación usando el nombre de usuario cifrado. En el **Registro de gobierno** del portal se audita cada conversión de nombre de usuario.
+La anonimización de datos de Cloud Discovery le permite proteger la privacidad del usuario. Cuando se haya cargado el registro de datos en el portal de Microsoft Cloud App Security, se depura el registro y se reemplaza toda la información de nombres de usuario con nombres de usuario cifrados. De este modo, todas las actividades de la nube se mantienen anónimas. Cuando sea necesario, para una investigación de seguridad específica (por ejemplo, una infracción de seguridad o una actividad sospechosa del usuario), los administradores pueden resolver el nombre de usuario real. Si un administrador tiene un motivo para sospechar de un usuario específico, puede buscar el nombre de usuario cifrado de un nombre de usuario conocido y, después, comenzar la investigación usando el nombre de usuario cifrado. En el **Registro de gobierno** del portal se audita cada conversión de nombre de usuario.
 
 Puntos clave:
 -   No se almacena ni se muestra ninguna información privada. Solo información cifrada.
@@ -33,7 +33,7 @@ Puntos clave:
 -   La resolución de nombres de usuario se realiza ad hoc, por nombre de usuario descifrando un nombre de usuario cifrado determinado.
 
 
-Cómo funciona la anonimización de datos:
+## <a name="how-data-anonymization-works"></a>Cómo funciona la anonimización de datos
 
 1. Hay tres formas de aplicar la anonimización de datos: 
     
@@ -49,7 +49,7 @@ Cómo funciona la anonimización de datos:
      
      1. En el engranaje de configuración, seleccione **Configuración de Cloud Discovery**.
      
-     2. En la pestaña Anonymization (Anonimización), para ocultar los nombres de usuario de forma predeterminada, seleccione **Anonymize private information by default in new reports and data sources** (Anonimizar información privada de forma predeterminada en los nuevos informes y orígenes de datos).
+     2. En la pestaña Anonymization (Anonimización), para ocultar los nombres de usuario de forma predeterminada, seleccione **Anonymize private information by default in new reports and data sources** (Anonimizar información privada de forma predeterminada en los nuevos informes y orígenes de datos). También puede seleccionar **Anonimizar información de la máquina de forma predeterminada en el informe "Usuarios del punto de conexión Win10"**.
 
      3. En la clave de cifrado, seleccione si desea **utilizar la clave dedicada generada para el portal** o **utilizar una clave personalizada**. Si opta por **utilizar una clave personalizada**, escriba una clave de cifrado UTF8 de 16 bytes.
      4. Haga clic en **Guardar**.

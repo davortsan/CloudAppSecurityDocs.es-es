@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,22 +13,22 @@ ms.technology: ''
 ms.assetid: 45295c2c-3e4d-4482-bf95-2e47072f9236
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0bf959510ac5daf87c421ed9977479a7e037d6d7
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 02c09c05ca89e58bc45648fc592c8b5a79aaf4f3
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144591"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349532"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
 
 # <a name="cloud-discovery-enrichment"></a>Enriquecimiento de Cloud Discovery
 
-Ahora es posible mejorar los datos de Cloud Discovery con datos de nombre de usuario de Azure Active Directory. Cuando se habilita esta característica, el nombre de usuario que se recibe en los registros de tráfico de detección se hace coincidir con el nombre de usuario de Azure AD y se reemplaza por este, con lo que se habilitan las siguientes características nuevas:
--   Puede investigar el uso de Shadow IT por parte del usuario de Azure Active Directory.
--   Puede correlacionar el uso de las aplicaciones en la nube detectadas con las actividades de API recopiladas.
--   Después, puede crear registros personalizados en función de los grupos de usuarios de Azure AD. Por ejemplo, un informe de Shadow IT para un departamento de marketing específico.
+Ahora es posible mejorar los datos de Cloud Discovery con datos de nombre de usuario de Azure Active Directory. Cuando se habilita esta característica, el nombre de usuario que se recibe en los registros de tráfico de detección se hace coincidir con el nombre de usuario de Azure AD y se reemplaza por este. Enriquecimiento de Cloud Discovery ofrece estas características:
+- Puede investigar el uso de Shadow IT por parte del usuario de Azure Active Directory.
+- Puede correlacionar el uso de las aplicaciones en la nube detectadas con las actividades de API recopiladas.
+- Después, puede crear registros personalizados en función de los grupos de usuarios de Azure AD. Por ejemplo, un informe de Shadow IT para un departamento de marketing específico.
 
 
 ## <a name="prerequisites"></a>Requisitos previos:
@@ -39,7 +39,7 @@ Ahora es posible mejorar los datos de Cloud Discovery con datos de nombre de usu
     
 1. En el engranaje Configuración, seleccione **Configuración de Cloud Discovery**.
      
-2. Para permitir que Cloud App Security use datos de Azure Active Directory para enriquecer los nombres de usuario de forma predeterminada, en la pestaña **Enriquecimiento de usuarios**, seleccione **Enriquezca los identificadores de los usuarios detectados con los nombres de usuario de Azure Active Directory**.
+2. En la pestaña **Enriquecimiento de usuarios**, seleccione **Enriquezca los identificadores de los usuarios detectados con los nombres de usuario de Azure Active Directory**. Esta opción permite a Cloud App Security usar datos de Azure Active Directory para mejorar los nombres de usuarios de forma predeterminada.
 
 3. Haga clic en **Guardar**.
  
@@ -48,7 +48,8 @@ Ahora es posible mejorar los datos de Cloud Discovery con datos de nombre de usu
 
   
       
-## <a name="see-also"></a>Consulte también  
+## <a name="next-steps"></a>Pasos siguientes
+  
 [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)   
 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  

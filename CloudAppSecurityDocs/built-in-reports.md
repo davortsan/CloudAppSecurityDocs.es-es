@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2018
+ms.date: 10/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 0dcc3c35-f787-4822-84c6-d4dff897dd6c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 41129ee4329c17b6a87aac367ff91708c5a382f3
-ms.sourcegitcommit: e500101377562f4432a5a3c21b97e67a8b788e88
+ms.openlocfilehash: 7684e6e3172076d8f7e8a4d69b1ddd70d322a200
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46563133"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349515"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -33,22 +33,27 @@ Para generar estos informes, siga estos pasos:
 1. Vaya a **Archivos**. 
 2. En la esquina superior derecha, haga clic en los tres puntos y, en **Informes de administración de datos**, seleccione uno de los informes que se indican a continuación.
 
-   ![Informes](./media/reports.png)
+ ![informes](./media/reports.png)
+
 ## <a name="data-sharing-overview"></a>Información general sobre el uso compartido de datos 
 
-Se muestra el número de archivos almacenados en las aplicaciones en la nube, divididos en función de los permisos de acceso. El uso compartido se ha convertido en un proceso fácil con las aplicaciones en la nube debido a la facilidad de acceso y la ubicuidad. Los archivos que no se comparten con nadie más que el propietario se denominan archivos privados. Si se comparte un archivo, Cloud App Security distingue cuatro tipos de estados: <br> - Un archivo compartido públicamente (web) es aquel al que se puede tener acceso sin autenticación, incluso a través de los resultados de un motor de búsqueda.<br> - Un archivo compartido públicamente es aquel al que se puede tener acceso sin autenticación a través de un enlace.<br> - Un archivo compartido externamente es aquel al que pueden tener acceso usuarios ajenos a la organización después de autenticarse en la aplicación en la nube.<br> - Un archivo compartido internamente es aquel al que pueden tener acceso todos o algunos de los usuarios de la organización.
+En este informe se muestra el número de archivos (por permisos de acceso) almacenados en cada aplicación en la nube. El uso compartido de archivos se ha convertido en un proceso fácil con las aplicaciones en la nube debido a la facilidad de acceso y la ubicuidad. Los archivos **privados** no se comparten con nadie más que su propietario. Si se comparte un archivo, Cloud App Security distingue cuatro tipos de estados:
+- Los archivos **compartidos públicamente (Internet)** son aquellos a los que se puede acceder sin autenticación, incluso a través de los resultados de un motor de búsqueda.
+ - Los archivos **compartidos públicamente** son aquellos a los que se puede acceder sin autenticación a través de un vínculo.
+ - Los archivos **compartidos externamente** son aquellos a los que pueden acceder los usuarios ajenos a la organización después de autenticarse en la aplicación en la nube.
+- Los archivos **compartidos internamente** son aquellos a los que pueden acceder todos o algunos de los usuarios de la organización.
 
 ## <a name="outbound-sharing-by-domain"></a>Uso compartido externo por dominio
 
-Se muestran los dominios con los que los empleados comparten archivos corporativos. En el informe se indica para cada dominio qué usuarios corporativos comparten archivos con qué dominio, qué archivos se comparten y quiénes son los colaboradores con los que se comparten los archivos. Se recomienda que administre el uso compartido con estos dominios a través de la pestaña Archivos de la página de cada aplicación en cuestión.
+En este informe se muestran los dominios con los que los empleados comparten archivos corporativos. Para cada dominio, el informe muestra qué usuarios comparten archivos con ese dominio. El informe también muestra qué archivos se comparten y con quién se comparten los archivos de colaboradores. Es recomendable que usted administre el uso compartido con estos dominios. Puede hacerlo mediante la pestaña Archivos de la página de cada aplicación en cuestión.
 
 ## <a name="owners-of-shared-files"></a>Propietarios de archivos compartidos
 
-Se muestran los usuarios que comparten archivos corporativos con el exterior. Los archivos compartidos externamente se comparten con colaboradores externos específicos. Los archivos compartidos públicamente son accesibles para cualquier usuario de Internet, a través de un vínculo privado, y solo los pueden encontrar aquellos que están expuestos explícitamente al vínculo. Los archivos compartidos públicamente (Internet) son accesibles para cualquier usuario de Internet, incluso a través de los resultados de un motor de búsqueda. Si detecta usuarios que comparten un número excesivo de archivos, es recomendable que investigue la naturaleza de este exceso de permisos de uso compartido mediante la pestaña Archivos y que se ponga en contacto con dichos usuarios para comprender mejor este uso compartido externo.
+Se muestran los usuarios que comparten archivos corporativos con el exterior. Los archivos compartidos externamente son aquellos que se comparten con colaboradores externos específicos. Todos los usuarios de Internet pueden acceder mediante un vínculo a los archivos compartidos públicamente. Estos archivos solo los pueden encontrar las personas que tienen el vínculo correspondiente. Los archivos compartidos públicamente (Internet) son accesibles para cualquier usuario de Internet, incluso a través de los resultados de un motor de búsqueda. Si detecta usuarios que comparten una cantidad excesiva de archivos, le recomendamos que investigue por qué. Para investigarlo, puede utilizar la pestaña Archivos y, después, ponerse en contacto con esos usuarios para obtener más información sobre su uso compartido externo.
 
 
   
-## <a name="see-also"></a>Consulte también 
+## <a name="next-steps"></a>Pasos siguientes 
 [Control](control.md)   
 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
