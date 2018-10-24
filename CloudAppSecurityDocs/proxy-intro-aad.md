@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/15/2018
+ms.date: 10/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e6007579b9c83b83a1fa24502249437f645aeb94
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 629e1133b57a9d2aef7e83390aee156b71c53b8e
+ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144455"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881829"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -30,6 +30,10 @@ ms.locfileid: "44144455"
 
 
 En el ámbito laboral actual, a menudo no basta con saber lo que ocurre en el entorno de nube después de los hechos, sino que también se requiere tener la posibilidad de detener brechas y fugas en tiempo real antes de que los empleados pongan en riesgo su organización y los datos, ya sea de manera intencional como por accidente. Es importante permitir que los usuarios de la organización tengan a su disposición la mayoría de los servicios y las herramientas en aplicaciones de nube, y lleven al trabajo sus propios dispositivos. Al mismo tiempo, se necesitan herramientas que permitan proteger la organización de fugas o robos de datos en tiempo real. Junto con Azure Active Directory, Microsoft Cloud App Security proporciona estas funcionalidades en una experiencia integrada y holística con el control de aplicaciones de acceso condicional.
+
+> [!NOTE]
+> Para usar Control de aplicaciones de acceso condicional de Cloud App, necesita una [licencia P1 de Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/) y una suscripción activa de Microsoft Cloud App Security.
+>
 
 ## <a name="how-it-works"></a>Cómo funciona
 
@@ -83,13 +87,12 @@ El mecanismo de identificación de dispositivos puede solicitar la autenticació
  
 ## <a name="supported-apps-and-clients"></a>Aplicaciones y clientes compatibles
 
-Actualmente, el control de aplicaciones de acceso condicional admite aplicaciones configuradas con un inicio de sesión único en SAML en Azure AD. 
+Actualmente, el control de aplicaciones de acceso condicional admite aplicaciones configuradas con SAML y aplicaciones Open ID Connect con inicio de sesión único en Azure AD. 
 
 > [!NOTE]
-> - El Control de aplicaciones de acceso condicional también admite aplicaciones configuradas con proveedores de identidades que no sean Azure AD. Para obtener más información sobre este escenario, envíe un correo electrónico a mcaspreview@microsoft.com.
-> - Las aplicaciones de Office 365 no están configuradas con SAML, por lo que no son compatibles actualmente.
+> El Control de aplicaciones de acceso condicional también admite aplicaciones configuradas con proveedores de identidades que no sean Azure AD. Para obtener más información sobre este escenario, envíe un correo electrónico a mcaspreview@microsoft.com.
 
-El control de sesiones está disponible para todos los exploradores de cualquier plataforma principal. Asimismo, las aplicaciones móviles y de escritorio también se pueden bloquear o permitir. Gracias a la integración nativa, Azure AD admite cualquier aplicación configurada con el inicio de sesión único de SAML, incluidas las siguientes, que son las más populares:
+El control de sesiones está disponible para todos los exploradores de cualquier plataforma principal. Asimismo, las aplicaciones móviles y de escritorio también se pueden bloquear o permitir. Gracias a la integración nativa con Azure AD, se admiten aplicaciones que estén configuradas con SAML o aplicaciones Open ID Connect con inicio de sesión único en Azure AD, incluidas estas aplicaciones destacadas:
 
 - AWS
 - Cuadro
@@ -109,6 +112,13 @@ El control de sesiones está disponible para todos los exploradores de cualquier
 - Workday
 - Workiva
 - Workplace de Facebook
+- Exchange Online (versión preliminar)
+- OneDrive para la Empresa (versión preliminar)
+- Power BI (versión preliminar)
+- SharePoint Online (versión preliminar)
+- Azure DevOps (Visual Studio Team Services) (versión preliminar)
+- Yammer (versión preliminar)
+
 
 
 Continuamente se inscriben más aplicaciones al control de sesiones. Si está interesado en alguna aplicación específica que no figure aquí, [envíenos los detalles](mailto:casfeedback@microsoft.com) y el caso de uso que le interese, y la inscribiremos.

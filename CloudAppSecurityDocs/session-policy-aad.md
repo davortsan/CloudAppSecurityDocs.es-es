@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f241033fc56cb1c9adea4cb2c9c8facd95c82d73
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 6614c845fad94880883dccff14f5f7f9d110dfa1
+ms.sourcegitcommit: da651fb36d26d0dfe796b988e86205f41f7dc5de
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144506"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48251411"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -53,7 +53,7 @@ Por ejemplo, puede decidir que, desde cualquier dispositivo no administrado o en
 
 Las directivas de acceso condicional de Azure Active Directory y las directivas de sesión de Cloud App Security funcionan conjuntamente para examinar cada sesión de usuario y tomar decisiones de directiva relativas a cada aplicación. Haga lo siguiente para configurar una directiva de acceso condicional en Azure AD:
 
-1. Configure una [directiva de acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) con asignaciones de usuario o de grupo de usuarios y la aplicación SAML que quiere controlar con el control de aplicaciones de acceso condicional. 
+1. Configure una [directiva de acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) con asignaciones de usuario o de grupo de usuarios y la aplicación que quiere controlar con el control de aplicaciones de acceso condicional. 
 
    > [!NOTE]
    > Esta directiva afectará únicamente a las aplicaciones que se hayan [implementado con control de aplicaciones de acceso condicional](proxy-deployment-aad.md).
@@ -142,7 +142,7 @@ Para descargar el registro exportado:
 
 ## Bloqueo de todas las descargas<a name="block-download"></a>
 
-Cuando **Bloquear** es la **Acción** establecida que quiere realizar en la directiva de sesión de Cloud App Security, el control de aplicaciones de acceso condicional impedirá al usuario descargar un archivo de acuerdo con los filtros de archivos de la directiva. Microsoft Cloud App Security identifica un evento de descarga de cada aplicación SAML y, cuando un usuario inicia este evento, el control de aplicaciones de acceso condicional interviene en tiempo real para evitar que se ejecute. Cuando se recibe la señal de que un usuario ha iniciado una descarga, el control de aplicaciones de acceso condicional devuelve al usuario un mensaje que indica que la **descarga está restringida**, y reemplaza el archivo descargado por un archivo de texto que contiene un mensaje personalizable para el usuario, que se puede configurar en la directiva de sesión.  
+Cuando **Bloquear** es la **Acción** establecida que quiere realizar en la directiva de sesión de Cloud App Security, el control de aplicaciones de acceso condicional impedirá al usuario descargar un archivo de acuerdo con los filtros de archivos de la directiva. Microsoft Cloud App Security identifica un evento de descarga de cada aplicación y, cuando un usuario inicia este evento, el control de aplicaciones de acceso condicional interviene en tiempo real para evitar que se ejecute. Cuando se recibe la señal de que un usuario ha iniciado una descarga, el control de aplicaciones de acceso condicional devuelve al usuario un mensaje que indica que la **descarga está restringida**, y reemplaza el archivo descargado por un archivo de texto que contiene un mensaje personalizable para el usuario, que se puede configurar en la directiva de sesión.  
 
 ## Bloqueo de actividades específicas<a name="block-activities"></a>
 

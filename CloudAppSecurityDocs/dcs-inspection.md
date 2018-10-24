@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2018
+ms.date: 9/21/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: bf25d1e6-e5dc-449f-b50e-1cd4a21b6d3d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9d3abbd87822d97b0c72f20ff42f3aa18b6e57db
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 46f948064bfea4aa921fd5b269f6576ec0f75d97
+ms.sourcegitcommit: da651fb36d26d0dfe796b988e86205f41f7dc5de
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143367"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48251478"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -26,8 +26,7 @@ ms.locfileid: "44143367"
 
 # <a name="microsoft-data-classification-services-integration"></a>Integración de los servicios de clasificación de datos de Microsoft
 
-Microsoft Cloud App Security le permite utilizar el servicio de clasificación de datos de Microsoft de forma nativa, para clasificar los archivos de las aplicaciones en la nube.
-El servicio de clasificación de datos de Microsoft proporciona una experiencia de protección de información unificada en Office 365, Azure Information Protection y Microsoft Cloud App Security y le permite llevar las medidas de clasificación de datos a aplicaciones en la nube de terceros que están protegidas por Microsoft Cloud App Security, aprovechando las decisiones ya adoptadas en un número incluso mayor de aplicaciones.
+Microsoft Cloud App Security le permite utilizar el servicio de clasificación de datos de Microsoft de forma nativa, para clasificar los archivos de las aplicaciones en la nube. El servicio de clasificación de datos de Microsoft proporciona una experiencia unificada de protección de la información en Office 365, Azure Information Protection y Microsoft Cloud App Security, y permite ampliar las medidas de clasificación de datos a aplicaciones en la nube de terceros que están protegidas por Microsoft Cloud App Security, aprovechando las decisiones ya adoptadas en un número incluso mayor de aplicaciones.
 
 >[!NOTE]
 > Esta característica solo está disponible en Estados Unidos y Europa (excepto en Francia).

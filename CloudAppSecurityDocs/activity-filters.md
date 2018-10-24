@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2018
+ms.date: 10/5/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 15dc221b188aa2c72d8791ac511e7216c896861d
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 55427fdfa73893fae763304eda6b73d19dac3f93
+ms.sourcegitcommit: c80c584c444b12dc8c788208cf973b46192b0cf0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144149"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49072895"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -29,7 +29,7 @@ Microsoft Cloud App Security le ofrece visibilidad de todas las actividades de l
 > [!NOTE] 
 > Para obtener una lista completa de las actividades de Office 365 supervisadas por Cloud App Security, consulte [Buscar en el registro de auditoría del Centro de seguridad y cumplimiento de Office 365](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US#ID0EABAAA=Audited_activities).
 
-Se puede filtrar el **registro de actividades** para que pueda buscar actividades específicas. Puede crear directivas basadas en las actividades y después definir sobre qué quiere recibir alertas y actuar en consecuencia. También puede buscar actividades realizadas en determinados archivos. El tipo de actividades y la información que obtenemos de cada actividad dependen de la aplicación y de qué tipo de datos puede proporcionar la aplicación. 
+Se puede filtrar el **registro de actividades** para que pueda buscar actividades específicas. Cree directivas basadas en las actividades y después definir sobre qué quiere recibir alertas y actuar en consecuencia. También puede buscar actividades realizadas en determinados archivos. El tipo de actividades y la información que obtenemos de cada actividad dependen de la aplicación y de qué tipo de datos puede proporcionar la aplicación. 
 
 Por ejemplo, puede usar el **registro de actividades** para buscar usuarios de la organización que usan sistemas operativos o exploradores que no están actualizados de la siguiente forma: después de conectar una aplicación a Cloud App Security en la página del **registro de actividades**, use el filtro avanzado y seleccione **User agent tag** (Etiqueta de agente de usuario). Después, seleccione **Outdated browser** (Explorador obsoleto) u **Outdated operating system** (Sistema operativo obsoleto).
 
@@ -79,15 +79,16 @@ Para obtener una lista de las acciones de control disponibles, vea [Acciones de 
 
 #### <a name="user-insights"></a>Información de usuario
 
-La experiencia de investigación incluye información predeterminada sobre el usuario activo. Con un solo clic, puede obtener una descripción detallada del usuario, incluida la ubicación desde la que se ha conectado, con cuántas alertas abiertas está relacionado e información sobre sus metadatos.
+La experiencia de investigación incluye conclusiones sobre el usuario activo. Con un solo clic, puede obtener una descripción detallada del usuario, incluida la ubicación desde la que se ha conectado, con cuántas alertas abiertas está relacionado e información sobre sus metadatos.
 
 Para ver la información de usuario:
 
 1. Haga clic en la actividad en el **Registro de actividades**.
 
-2. Después, haga clic en la pestaña **Usuario**. <br></br> Se abrirá la pestaña **Usuario** del cajón de actividades, que contiene la información siguiente sobre el usuario:
+2. Después, haga clic en la pestaña **Usuario**. <br></br> Al hacer clic se abre la pestaña **Usuario** del cajón de actividades, que contiene estas conclusiones sobre el usuario:
     - **Alertas abiertas**: número de alertas abiertas relacionadas con el usuario.
-    - **Infracción de archivos**: número de infracciones de archivo relacionadas con archivos que posee el usuario.
+    - **Coincidencias**: número de coincidencias de directa para archivos que pertenecen al usuario. 
+   <!-- - **File violation**: The number of file violations for files owned by the user. -->
     - **Actividades**: número de actividades realizadas por el usuario durante los últimos 30 días.
     - **Países**: número de países desde los que se ha conectado el usuario durante los últimos 30 días.
     - **ISP**: número de ISP desde los que se ha conectado el usuario durante los últimos 30 días.
@@ -97,7 +98,7 @@ Para ver la información de usuario:
 
 #### <a name="ip-address-insights"></a>Información de dirección IP
 
-Debido a que la información de dirección IP es fundamental para casi todas las investigaciones, puede ver información detallada sobre las direcciones IP en el cajón de actividades. Desde una actividad específica, puede hacer clic en la pestaña de dirección IP para ver los datos consolidados sobre la dirección IP, incluido el número de alertas abiertas para la dirección IP específica, un gráfico de tendencias de la actividad reciente y un mapa de ubicación. Esto permite explorar en profundidad; por ejemplo, cuando se investigan alertas de viajes imposibles, puede comprender fácilmente dónde se usó la dirección IP y si participó o no en actividades sospechosas. También puede realizar acciones directamente en el cajón de direcciones IP que le permiten etiquetar una dirección IP como de riesgo, VPN o corporativa para facilitar una investigación futura y la creación de directivas.
+Debido a que la información de dirección IP es fundamental para casi todas las investigaciones, puede ver información detallada sobre las direcciones IP en el cajón de actividades. Desde una actividad específica, puede hacer clic en la pestaña de dirección IP para ver los datos consolidados sobre la dirección IP, incluido el número de alertas abiertas para la dirección IP específica, un gráfico de tendencias de la actividad reciente y un mapa de ubicación. Esto permite explorar en profundidad al investigar alertas de viajes imposibles, por ejemplo. Puede comprender fácilmente dónde se usó la dirección IP y si participó en actividades sospechosas o no. También puede realizar acciones directamente en el cajón de direcciones IP que le permiten etiquetar una dirección IP como de riesgo, VPN o corporativa para facilitar una investigación futura y la creación de directivas.
 
 Para ver la información de dirección IP:
 
@@ -110,9 +111,9 @@ Para ver la información de dirección IP:
     - **Actividades**: número de actividades realizadas desde esta dirección IP durante los últimos 30 días.
     - **Actividades administrativas**: número de actividades administrativas realizadas desde esta dirección IP durante los últimos 30 días.
     - Puede realizar las siguientes acciones en la dirección IP:
-        - Etiquetar como riesgosa 
-        - Etiquetar como dirección IP de VPN
-        - Etiquetar como dirección IP riesgosa y agregar al grupo bloqueado
+        - Etiquetar como IP de empresa y agregar a la lista de permitidas
+        - Etiquetar como dirección IP de VPN y agregar a la lista de permitidas
+        - Etiquetar como IP de riesgo y agregar a la lista de bloqueadas
 
 
 ![Información de dirección IP en Cloud App Security](./media/ip-address-insights.png)
@@ -121,13 +122,13 @@ Para ver la información de dirección IP:
 
 Puede exportar todas las actividades de usuario a un archivo CSV. 
 
-En el **registro de actividad**, en la esquina superior derecha, haga clic en el botón **exportar** ![botón exportar](./media/export-button.png).
+En el **Registro de actividad**, en la esquina superior derecha, haga clic en el botón **Exportar**. ![botón de exportar](./media/export-button.png)
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
 
 
-## <a name="see-also"></a>Consulte también  
+## <a name="next-steps"></a>Pasos siguientes  
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9ba5c7d3-c733-4048-9b99-bf41a0f46695
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6d8eb8dd128645df1811ab8125096c7ddf77e0a1
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: c3e0231d2b4f289ec460adc2d4d90e56443bb10f
+ms.sourcegitcommit: c80c584c444b12dc8c788208cf973b46192b0cf0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144098"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49072844"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -27,15 +27,15 @@ ms.locfileid: "44144098"
 
 ## <a name="activity-filters"></a>Filtros de actividad
 
-A continuación se muestra una lista de los filtros de actividad que se pueden aplicar. La mayoría de los filtros admiten varios valores, así como NOT, para proporcionarle una herramienta muy eficaz para la creación de directivas.  
+A continuación se muestra una lista de los filtros de actividad que se pueden aplicar. La mayoría de los filtros admiten varios valores, así como NOT, para proporcionarle una herramienta eficaz para la creación de directivas.  
   
-- Identificador de actividad: busca solo actividades específicas por su identificador. Este filtro resulta muy útil cuando se conecta Microsoft Cloud App Security con SIEM (mediante el agente SIEM) y se quiere investigar más las alertas del portal Cloud App Security.  
+- Identificador de actividad: busca solo actividades específicas por su identificador. Este filtro resulta útil al conectar Microsoft Cloud App Security con SIEM (mediante el agente SIEM), si se quiere investigar más las alertas del portal de Cloud App Security.  
   
 - Objetos de actividad: busca los objetos en los que se ha realizado la actividad. Este filtro se aplica a objetos de archivo, carpeta, usuario o aplicación. 
   - Identificador de objeto de actividad: el identificador del objeto (identificador del archivo, carpeta, usuario o aplicación).
-  - URL del archivo, carpeta o sitio: permite seleccionar direcciones URL de archivos, carpetas y direcciones que comienzan con una cadena específica.
-  - Objeto de destino (archivo/carpeta): permite seleccionar un archivo o carpeta específicos. 
-  - Elemento: permite buscar por el nombre o por el identificador de cualquier objeto de actividad (por ejemplo, nombres de usuario, archivos, parámetros, sitios). Para el filtro **Elemento de objetos de actividad**, puede seleccionar filtrar elementos que **contengan**, **sean iguales** o **comiencen por** el elemento específico.
+  <!-- - File, folder or site URL - Enables you to select files, folders and URLs that start with a specific string.-->
+  <!-- - Target object (file/folder) - Enables you to select a specific file or folder. -->
+  - Elemento: permite buscar por el nombre o por el identificador de cualquier objeto de actividad (por ejemplo, nombres de usuario, archivos, parámetros, sitios). En el filtro **Elemento de objetos de actividad**, puede optar por filtrar elementos que **contengan**, **sean iguales que o **comiencen por** el elemento específico.
     
 - Tipo de actividad: busca la actividad de la aplicación.
 
@@ -47,18 +47,23 @@ A continuación se muestra una lista de los filtros de actividad que se pueden a
   
 - Acción aplicada: busca por la acción de control aplicada: Bloqueado, No usar proxy, Descrifrado, Cifrado, Error de cifrado, Ninguna acción.
 
-- Fecha: fecha en que se ha producido la actividad. El filtro admite fechas antes y después e intervalos de fechas.  
+- Fecha: fecha en que se ha producido la actividad. El filtro admite fechas antes o después e intervalos de fechas.  
   
-- Descripción: palabra clave concreta en la descripción de la actividad, por ejemplo, todas las actividades que contienen la cadena **usuario** en su descripción.  
+<!--- Description – Specific keyword in the activity description, for example, all activities that include the string **user** in their description.  -->
   
 - Etiqueta de dispositivo: busca por dispositivo compatible, administrado o comprobado.
 
-- Tipo de dispositivo: busca solo las actividades realizadas con un tipo de dispositivo concreto, por ejemplo, todas las actividades desde dispositivos móviles, PC o tabletas.  
+- Tipo de dispositivo: busca solo las actividades realizadas con un tipo de dispositivo concreto. Por ejemplo, busca todas las actividades de dispositivos móviles, equipos de escritorio o tabletas.  
+
+- Archivos y carpetas: busca archivos y carpetas en los que se ha realizado la actividad.
+    - Id. de archivo: permite buscar por el Id. de archivo en el que se ha realizado la actividad. 
+    - Nombre: filtra por el nombre de archivos o carpetas. Puede seleccionar si el nombre **termina por**, **es igual que** o **comienza por** el valor de búsqueda.
+    - Archivos o carpetas específicos: permite incluir o excluir determinados archivos o carpetas. Al seleccionar archivos o carpetas, puede filtrar la lista por **Aplicación**, **Propietario** o **Nombre de archivo** parcial. 
   
 - Dirección IP: dirección IP sin procesar, categoría o etiqueta desde la que se ha realizado la actividad.  
-  - Dirección IP sin procesar: le permite realizar búsquedas de actividades que se realizaron en direcciones IP sin formato, o por dichas direcciones, que sean iguales, diferentes o que comiencen con o no por una secuencia determinada o por direcciones IP sin procesar que están o no establecidas. 
-  - Categoría IP: categoría de la dirección IP desde la que se ha realizado la actividad, por ejemplo, todas las actividades desde el intervalo administrativo de direcciones IP. Las categorías deben configurarse para incluir las direcciones IP correspondientes, excepto para la categoría de "De riesgo" que está preconfigurada e incluye dos etiquetas IP: proxy anónimo y Tor. Para más información sobre cómo configurar las categorías IP, vea [Organizar los datos de acuerdo a las necesidades](ip-tags.md).  
-  - Etiqueta IP: etiqueta de la dirección IP desde la que se ha realizado la actividad, por ejemplo, todas las actividades desde direcciones IP de servidores proxy anónimos. Cloud App Security crea un conjunto de etiquetas IP integradas que no son configurables. Además, puede configurar sus propias etiquetas IP. Para más información sobre cómo configurar sus propias etiquetas IP, vea [Organizar los datos de acuerdo a las necesidades](ip-tags.md).
+  - Dirección IP sin procesar: permite buscar actividades que se realizaron en direcciones IP sin procesar, o por dichas direcciones, que sean iguales, diferentes o que comiencen por o no empiecen por una secuencia determinada o por direcciones IP sin procesar. 
+  - Categoría IP: categoría de la dirección IP desde la que se ha realizado la actividad, por ejemplo, todas las actividades desde el intervalo administrativo de direcciones IP. Las categorías deben configurarse para incluir las direcciones IP correspondientes, excepto la categoría de "De riesgo", que está preconfigurada e incluye dos etiquetas IP: Proxy anónimo y Tor. Para más información sobre cómo configurar las categorías IP, vea [Organizar los datos de acuerdo a las necesidades](ip-tags.md).  
+  - Etiqueta IP: etiqueta de la dirección IP desde la que se ha realizado la actividad, por ejemplo, todas las actividades desde direcciones IP de servidores proxy anónimos. Cloud App Security crea un conjunto de etiquetas IP integradas que no se pueden configurar. Además, puede configurar sus propias etiquetas IP. Para más información sobre cómo configurar sus propias etiquetas IP, vea [Organizar los datos de acuerdo a las necesidades](ip-tags.md).
   Las etiquetas IP integradas incluyen:
   - Aplicaciones de Microsoft (14)
   - Proxy anónimo
@@ -74,11 +79,13 @@ A continuación se muestra una lista de los filtros de actividad que se pueden a
 
 - Actividad suplantada: busca solo las actividades realizadas en nombre de otro usuario.  
 
+- Instancia: la instancia de aplicación donde la actividad se ha realizado o no.
+
 - Ubicación: país desde el que se ha realizado la actividad.  
 
 - Directiva coincidente: busca las actividades que coinciden con una directiva específica que se ha establecido en el portal.  
 
-- ISP registrado: ISP desde el que se ha realizado la actividad.   
+- ISP registrado: ISP desde el que se ha realizado la actividad.
 
 - Origen: busque el origen desde el que se detectó la actividad. El origen podría ser cualquiera de los siguientes:
   - Conector de aplicaciones: los registros provienen directamente del conector de la API de la aplicación.
@@ -89,18 +96,19 @@ A continuación se muestra una lista de los filtros de actividad que se pueden a
   - Dominio del usuario: busca un dominio de usuario específico.
   - Organización de usuario: unidad organizativa del usuario que ha realizado la actividad, por ejemplo, todas las actividades realizadas por usuarios de marketing o EMEA.  
   - Grupo de usuarios: grupos de usuarios específicos que puede importar de aplicaciones conectadas, como administradores de Office 365.  
-  - Nombre de usuario: busca por un nombre de usuario específico. Para ver una lista de los usuarios de un grupo de usuarios específico, en el **Cajón de actividades**, haga clic en el nombre del grupo de usuarios. Esto le llevará a la página de cuentas, en la que se enumeran todos los usuarios del grupo. Desde ahí puede profundizar en los detalles de las cuentas de usuarios específicos del grupo.
+  - Nombre de usuario: busca por un nombre de usuario específico. Para ver una lista de los usuarios de un grupo de usuarios específico, en el **Cajón de actividades**, haga clic en el nombre del grupo de usuarios. Al hacer clic se le lleva a la página Cuentas, en la que se enumeran todos los usuarios del grupo. Desde ahí puede profundizar en los detalles de las cuentas de usuarios específicos del grupo.
     -  Los filtros **Grupo de usuarios** y **Nombre de usuario** se pueden filtrar aún más si se usa el filtro **Como** y se selecciona el rol del usuario, que puede ser uno de los siguientes:
-        - Objeto de actividad solo: esto significa que el usuario o grupo de usuarios seleccionado no ha realizado la actividad en cuestión, sino que era el objeto de la actividad.
-        - Solo actor: esto significa que el usuario o grupo de usuarios ha realizado la actividad.
-        - Cualquier rol: esto significa que el usuario o grupo de usuarios ha participado en la actividad, como la persona que ha realizado la actividad o como objeto de la actividad.
+        - Objeto de actividad solo: significa que el usuario o grupo de usuarios seleccionado no ha realizado la actividad en cuestión, sino que era el objeto de la actividad.
+        - Solo actor: significa que el usuario o grupo de usuarios ha realizado la actividad.
+        - Cualquier rol: significa que el usuario o grupo de usuarios ha participado en la actividad, ya sea como la persona que ha realizado la actividad o como el objeto de esta.
 
 - Agente de usuario: agente de usuario desde el que se ha realizado la actividad.  
   
 - Etiqueta de agente de usuario: etiqueta de agente de usuario integrada, por ejemplo, todas las actividades desde exploradores o sistemas operativos obsoletos.  
-    
+
+<!--
 >[!NOTE]
-> Para borrar los filtros, haga clic en el icono de borrar filtros ![icono de borrar filtros](./media/clear-filters.png).
+> If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon](./media/clear-filters.png). -->
 
 
 ## <a name="activity-queries"></a>Consultas de actividad
@@ -109,7 +117,7 @@ Para que la investigación sea incluso más sencilla, ahora puede crear consulta
 
 1. En la página **Registro de actividad**, use los filtros como se ha descrito anteriormente para explorar las aplicaciones en profundidad según sea necesario. 
 
-2. Una vez que haya conseguido los resultados deseados, haga clic en el botón **Guardar como** situado en la esquina superior derecha de los filtros. 
+2. Una vez que haya terminado de compilar la consulta, haga clic en el botón **Guardar como** situado en la esquina superior derecha de los filtros. 
 
 3. En la ventana emergente **Guardar consulta**, escriba el nombre de la consulta.
 
@@ -120,7 +128,7 @@ Para que la investigación sea incluso más sencilla, ahora puede crear consulta
    ![abrir consulta](./media/select-activity-query.png)
 
 
-Cloud App Security también le proporciona **consultas sugeridas** y le permite guardar las consultas personalizadas que usa a menudo. Las consultas sugeridas le proporcionan vías de investigación recomendadas que filtran las actividades mediante las siguientes consultas sugeridas opcionales:
+Cloud App Security además proporciona **consultas sugeridas** Las consultas sugeridas le proporcionan vías de investigación recomendadas que filtran las actividades. Puede modificar estas consultas y guardarlas como consultas personalizadas. Las siguientes son consultas sugeridas opcionales:
 
  - Actividades administrativas: filtra todas las actividades para mostrar solo aquellas que implican a administradores.
 
@@ -134,7 +142,7 @@ Cloud App Security también le proporciona **consultas sugeridas** y le permite 
 
  - Actividades de buzón: filtra todas las actividades para mostrar solo las actividades de Microsoft Exchange Online, por ejemplo, crear un elemento, purgar mensajes del buzón, actualizar el mensaje y enviar el mensaje con permisos de Enviar como (suplantación).
 
- - Cambios de contraseña y solicitudes de restablecimiento: filtra todas las actividades para mostrar solo aquellas relacionadas con el restablecimiento de contraseña, cambiar la contraseña y forzar al usuario para que cambie la contraseña al iniciar sesión la próxima vez.
+ - Cambios de contraseña y solicitudes de restablecimiento: filtra todas las actividades para mostrar solo aquellas que, al conllevar el restablecimiento de la contraseña, cambian la contraseña y fuerzan al usuario a cambiarla al iniciar sesión la siguiente vez.
 
  - Riesgos de seguridad: filtra todas las actividades para mostrar solo aquellas que coinciden con directivas DLP.
 
@@ -147,7 +155,7 @@ Cloud App Security también le proporciona **consultas sugeridas** y le permite 
 Además, puede usar las consultas sugeridas como punto de partida para una nueva consulta. En primer lugar, seleccione una de las consultas sugeridas. Después, realice los cambios necesarios y, por último, haga clic en **Guardar como** para crear una **Consulta guardada**.
 
 
-## <a name="see-also"></a>Consulte también  
+## <a name="next-steps"></a>Pasos siguientes 
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  

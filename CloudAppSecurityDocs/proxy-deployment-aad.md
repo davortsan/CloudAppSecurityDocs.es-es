@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 636c0e407db3a7460cf64a76dc82133e7febf4c9
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 39b9a5554e326e2d1a9237b1999e316949aad607
+ms.sourcegitcommit: da651fb36d26d0dfe796b988e86205f41f7dc5de
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143350"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48251512"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -60,7 +60,7 @@ Haga lo siguiente para configurar aplicaciones de Azure AD de forma que estén c
    4. En la sección **Aplicaciones en la nube** de la directiva de PRUEBA, asigne las aplicaciones que quiera controlar con el control de aplicaciones de acceso condicional. 
 
       > [!NOTE]
-      >Procure elegir aplicaciones que sean compatibles con el control de aplicaciones de acceso condicional. El control de aplicaciones de acceso condicional admite aplicaciones configuradas con un inicio de sesión único en SAML en Azure AD. Por ejemplo, las aplicaciones de Office 365 no están configuradas con SAML, por lo que no son compatibles actualmente.
+      >Procure elegir aplicaciones que sean compatibles con el control de aplicaciones de acceso condicional. El control de aplicaciones de acceso condicional admite aplicaciones configuradas con SAML y aplicaciones Open ID Connect con inicio de sesión único en Azure AD. 
 
 ## Paso 2: inicie sesión con un usuario con ámbito en la directiva en las aplicaciones <a name="sign-in-scoped"></a>
 

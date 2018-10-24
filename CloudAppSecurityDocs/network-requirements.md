@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/30/2018
+ms.date: 10/5/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9bc1064b28a8d7781718f121a0f64bd9cfa97395
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 64796d808134b20164761d13f26cebd8e544bd27
+ms.sourcegitcommit: 96ff394dd75c98a783ac196f312048a963717155
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144319"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48584499"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -46,16 +46,31 @@ Para saber a qué centro de datos se está conectando:
 
 Para tener acceso al portal de Cloud App Security, agregue a la lista de permitidos del firewall el **puerto de salida 443** de los siguientes nombres DNS y direcciones IP:  
 
+    portal.cloudappsecurity.com
+    *.portal.cloudappsecurity.com
+    cdn.cloudappsecurity.com
+    https://adaproddiscovery.azureedge.net 
+    *.s-microsoft.com
+    cdn.cloudappsecurity.com
+    cloudappsecurity-rs.azureedge.net
+    *.msecnd.net
+    dev.virtualearth.net
+    *.cloudappsecurity.com
+    flow.microsoft.com
+    static2.sharepointonline.com
+    dc.services.visualstudio.com
+    *.blob.core.windows.net
 
+Además, estos deben estar en una lista blanca, según el centro de datos que use:
 > [!div class="mx-tableFixed"]
 > 
 > |Centro de datos|Direcciones IP|Nombre DNS|
 > |----|----|----|
-> |EE.UU.|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us.portal.cloudappsecurity.com<br></br>cdn.cloudappsecurity.com|
-> |US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us2.portal.cloudappsecurity.com<br></br>cdn.cloudappsecurity.com|
-> |US3|13.80.125.22<br></br>52.183.75.62<br></br>40.90.218.198<br></br>40.90.218.196|portal.cloudappsecurity.com<br></br>*.portal.cloudappsecurity.com <br></br>*.us3.portal.cloudappsecurity.com<br></br>cdn.cloudappsecurity.com|
-> |EU|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.eu.portal.cloudappsecurity.com<br></br>cdn.cloudappsecurity.com|
-> |EU2|13.80.125.22<br></br>52.183.75.62<br></br>40.81.156.154<br></br>40.81.156.156|portal.cloudappsecurity.com<br></br>*.portal.cloudappsecurity.com <br></br>*.eu2.portal.cloudappsecurity.com<br></br>cdn.cloudappsecurity.com|
+> |EE.UU.|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|\*.us.portal.cloudappsecurity.com|
+> |US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|\*.us2.portal.cloudappsecurity.com<br></br>|
+> |US3|13.80.125.22<br></br>52.183.75.62<br></br>40.90.218.198<br></br>40.90.218.196|*.us3.portal.cloudappsecurity.com<br></br>|
+> |EU|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|\*.eu.portal.cloudappsecurity.com<|
+> |EU2|13.80.125.22<br></br>52.183.75.62<br></br>40.81.156.154<br></br>40.81.156.156|*.eu2.portal.cloudappsecurity.com|
 
 
 > 
@@ -147,7 +162,7 @@ Para habilitar características de Cloud Discovery por medio de un recopilador d
 
 - Permita que el recopilador de registros reciba tráfico entrante de FTP y Syslog.
 - Permita que el recopilador de registros inicie tráfico saliente al portal (por ejemplo, contoso.cloudappsecurity.com) en el puerto 443.
-- Permita que el recopilador de registros inicie tráfico saliente al almacenamiento de blobs de Azure en los puertos 80 y 443:
+- Permita que el recopilador de registros inicie tráfico saliente a Azure Blog Storage en el puerto 443:
 
 
   | Centro de datos |                        Dirección URL                        |

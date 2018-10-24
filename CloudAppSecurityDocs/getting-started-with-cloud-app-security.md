@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cc2099958c64448931c1211fa9a5fe76d82f1422
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 066618c4e1096df0436a3b1bd40eb2563a35ae59
+ms.sourcegitcommit: c80c584c444b12dc8c788208cf973b46192b0cf0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144387"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49072861"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -61,24 +61,7 @@ También puede acceder al portal a través del **Centro de administración de Of
 
  
 
-### <a name="step-1-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>Paso 1. [Configure Cloud Discovery](set-up-cloud-discovery.md).
-Tarea necesaria: cargar registros de tráfico **para crear un informe continuo de Cloud Discovery**
-
- 1. En el engranaje de configuración, seleccione **Configuración de Cloud Discovery**.
- 2. Elija **Carga automática del registro**.
- 3. En la ficha **Orígenes de datos**, agregue los orígenes.
- 4. En la pestaña **Recopiladores de registros**, configure el recopilador de registros.
- 
-**Para crear un informe de instantáneas de Cloud Discovery**
-
- 1. Vaya a **Detectar** > **Informe de instantáneas** y siga los pasos indicados.
-
-**¿Por qué se deben configurar los informes de Cloud Discovery?**
-Tener visibilidad de la TI en la sombra de la organización es algo esencial.
-Después de analizar los registros, podrá detectar fácilmente qué aplicaciones en la nube se usan, qué usuarios lo hacen y en qué dispositivos.
-
-
-### <a name="step-2-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>Paso 2. [Establezca la visibilidad, la protección y las acciones de gobierno instantáneas para las aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+### <a name="step-1-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>Paso 1. [Establezca la visibilidad, la protección y las acciones de gobierno instantáneas para las aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 Tarea necesaria: conectar aplicaciones
 
 1. En el engranaje de configuración, seleccione **Conectores de aplicaciones**.
@@ -89,7 +72,7 @@ Tarea necesaria: conectar aplicaciones
 Después de conectar una aplicación, puede obtener una mayor visión para que pueda investigar actividades, archivos y cuentas para las aplicaciones en su entorno de la nube.
 
 
-### <a name="step-3-control-cloud-apps-with-policiescontrol-cloud-apps-with-policiesmd"></a>Paso 3. [Controle las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).
+### <a name="step-2-control-cloud-apps-with-policiescontrol-cloud-apps-with-policiesmd"></a>Paso 2. [Controle las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).
 Tarea necesaria: crear directivas
 
 **Para crear directivas**
@@ -103,6 +86,27 @@ Tarea necesaria: crear directivas
 **¿Cómo pueden las directivas ayudar a la organización?**
 Puede utilizar directivas para ayudarle a supervisar tendencias, ver amenazas de seguridad y generar alertas e informes personalizados. Con las directivas se pueden crear acciones de gobierno y establecer controles de uso compartido de archivos y de prevención de pérdida de datos.
 
+
+### <a name="step-3-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>Paso 3. [Configure Cloud Discovery](set-up-cloud-discovery.md).
+
+Tarea necesaria: Habilitar Cloud App Security ver el uso de la aplicación en la nube
+
+1. [Integración con ATP de Windows Defender](wdatp-integration.md) para habilitar automáticamente Cloud App Security para que supervise los dispositivos Windows 10 dentro y fuera de la corporación.
+2. Si usa [Zscaler](zscaler-integration.md), intégrelo con Cloud App Security.
+3. Para lograr cobertura completa, cree un informe continuo de Cloud Discovery
+
+   1. En el engranaje de configuración, seleccione **Configuración de Cloud Discovery**.
+   2. Elija **Carga automática del registro**.
+   3. En la ficha **Orígenes de datos**, agregue los orígenes.
+   4. En la pestaña **Recopiladores de registros**, configure el recopilador de registros.
+ 
+**Para crear un informe de instantáneas de Cloud Discovery**
+
+ Vaya a **Detectar** > **Informe de instantáneas** y siga los pasos indicados.
+
+**¿Por qué se deben configurar los informes de Cloud Discovery?**
+Tener visibilidad de la TI en la sombra de la organización es algo esencial.
+Después de analizar los registros, podrá detectar fácilmente qué aplicaciones en la nube se usan, qué usuarios lo hacen y en qué dispositivos.
 
 ### <a name="step-4-personalize-your-experiencemail-settingsmd"></a>Paso 4. [Personalice la experiencia](mail-settings.md).
 Tarea necesaria: agregar detalles de su organización

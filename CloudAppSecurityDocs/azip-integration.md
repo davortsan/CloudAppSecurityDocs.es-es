@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/21/2018
+ms.date: 10/08/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 443243443480d1b8302b9f05c2a620b619df61f0
-ms.sourcegitcommit: 13bdf7cc2df122d42e6d66ce2ffb58de3796accd
+ms.openlocfilehash: c68426af8eb0f12bc0157c3b24841e381dd119ce
+ms.sourcegitcommit: c80c584c444b12dc8c788208cf973b46192b0cf0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45683373"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49072878"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -55,7 +55,7 @@ Actualmente, Cloud App Security no puede examinar ni cambiar archivos etiquetado
 
 
 ## <a name="how-it-works"></a>Cómo funciona
-Probablemente esté familiarizado con las etiquetas de clasificación de archivos de [Azure Information Protection](https://docs.microsoft.com/information-protection/). Puede ver las etiquetas de clasificación de Azure Information Protection en Cloud App Security. Al integrar Cloud App Security con Azure Information Protection, Cloud App Security examina los archivos del modo siguiente:
+Probablemente esté familiarizado con las etiquetas de clasificación de archivos de [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection). Puede ver las etiquetas de clasificación de Azure Information Protection en Cloud App Security. Al integrar Cloud App Security con Azure Information Protection, Cloud App Security examina los archivos del modo siguiente:
 
 1. Cloud App Security recupera la lista de todas las etiquetas de clasificación que se hayan usado en su inquilino. Esta acción se realiza cada hora para mantener la lista actualizada.
 
@@ -74,7 +74,7 @@ Probablemente esté familiarizado con las etiquetas de clasificación de archivo
   
 ### <a name="enable-azure-information-protection"></a>Habilitar Azure Information Protection
 
-Lo único que debe hacer para integrar Azure Information Protection con Cloud App Security es habilitar el examen automático para permitir la búsqueda de etiquetas de clasificación de Azure Information Protection en los archivos de Office 365 sin necesidad de crear una directiva. Después de habilitarlo, si tiene archivos en su entorno de nube con etiquetas de clasificación de Azure Information Protection, los verá en Cloud App Security.
+Lo único que tiene que hacer para integrar Azure Information Protection con Cloud App Security es activar una casilla. Habilite el examen automático para buscar etiquetas de clasificación de Azure Information Protection en los archivos de Office 365 sin necesidad de crear una directiva. Después de habilitarlo, si tiene archivos en su entorno de nube con etiquetas de clasificación de Azure Information Protection, los verá en Cloud App Security.
 
 Para permitir que Cloud App Security examine archivos que tengan la inspección de contenido habilitada en busca de etiquetas de clasificación:
 
@@ -183,7 +183,7 @@ Obtenga más información sobre [Azure Information Protection](https://docs.micr
 ## <a name="related-videos"></a>Vídeos relacionados  
 [Cloud App Security + Azure Information Protection Integrations](https://channel9.msdn.com/Shows/Microsoft-Security/MCAS--AIP-Integrations) (Integraciones de Cloud App Security y Azure Information Protection)  
 
-## <a name="see-also"></a>Consulte también  
+## <a name="next-steps"></a>Pasos siguientes 
 [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)   
 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
