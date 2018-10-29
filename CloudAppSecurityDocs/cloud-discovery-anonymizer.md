@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 73ac9c91bae7c5fa9f59aafe3b52293099e9797c
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: 0330128447be0de3c9b3c8419a241f665c3038fd
+ms.sourcegitcommit: 9c314d566a1dd35e32650928052b8a817dd20d9d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349446"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990671"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -81,7 +81,7 @@ Puntos clave:
 
   
       
-## <a name="see-also"></a>Consulte también  
+## <a name="next-steps"></a>Pasos siguientes 
 [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)   
 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
