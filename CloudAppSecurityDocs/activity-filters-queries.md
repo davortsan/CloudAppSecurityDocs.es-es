@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 10/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9ba5c7d3-c733-4048-9b99-bf41a0f46695
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c3e0231d2b4f289ec460adc2d4d90e56443bb10f
-ms.sourcegitcommit: c80c584c444b12dc8c788208cf973b46192b0cf0
+ms.openlocfilehash: 6b2028a8b62413cccefdab0fb529fb42fa57c221
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49072844"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349651"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -35,7 +35,7 @@ A continuación se muestra una lista de los filtros de actividad que se pueden a
   - Identificador de objeto de actividad: el identificador del objeto (identificador del archivo, carpeta, usuario o aplicación).
   <!-- - File, folder or site URL - Enables you to select files, folders and URLs that start with a specific string.-->
   <!-- - Target object (file/folder) - Enables you to select a specific file or folder. -->
-  - Elemento: permite buscar por el nombre o por el identificador de cualquier objeto de actividad (por ejemplo, nombres de usuario, archivos, parámetros, sitios). En el filtro **Elemento de objetos de actividad**, puede optar por filtrar elementos que **contengan**, **sean iguales que o **comiencen por** el elemento específico.
+  - Elemento: permite buscar por el nombre o por el identificador de cualquier objeto de actividad (por ejemplo, nombres de usuario, archivos, parámetros, sitios). Para el filtro **Elemento de objetos de actividad**, puede seleccionar filtrar elementos que **contengan**, **sean iguales** o **comiencen por** el elemento específico.
     
 - Tipo de actividad: busca la actividad de la aplicación.
 
@@ -61,7 +61,7 @@ A continuación se muestra una lista de los filtros de actividad que se pueden a
     - Archivos o carpetas específicos: permite incluir o excluir determinados archivos o carpetas. Al seleccionar archivos o carpetas, puede filtrar la lista por **Aplicación**, **Propietario** o **Nombre de archivo** parcial. 
   
 - Dirección IP: dirección IP sin procesar, categoría o etiqueta desde la que se ha realizado la actividad.  
-  - Dirección IP sin procesar: permite buscar actividades que se realizaron en direcciones IP sin procesar, o por dichas direcciones, que sean iguales, diferentes o que comiencen por o no empiecen por una secuencia determinada o por direcciones IP sin procesar. 
+  - Dirección IP sin procesar: le permite buscar las actividades realizadas por direcciones IP sin procesar. Las direcciones IP sin procesar pueden ser iguales o no iguales a una secuencia determinada, o comenzar o no comenzar por ella. 
   - Categoría IP: categoría de la dirección IP desde la que se ha realizado la actividad, por ejemplo, todas las actividades desde el intervalo administrativo de direcciones IP. Las categorías deben configurarse para incluir las direcciones IP correspondientes, excepto la categoría de "De riesgo", que está preconfigurada e incluye dos etiquetas IP: Proxy anónimo y Tor. Para más información sobre cómo configurar las categorías IP, vea [Organizar los datos de acuerdo a las necesidades](ip-tags.md).  
   - Etiqueta IP: etiqueta de la dirección IP desde la que se ha realizado la actividad, por ejemplo, todas las actividades desde direcciones IP de servidores proxy anónimos. Cloud App Security crea un conjunto de etiquetas IP integradas que no se pueden configurar. Además, puede configurar sus propias etiquetas IP. Para más información sobre cómo configurar sus propias etiquetas IP, vea [Organizar los datos de acuerdo a las necesidades](ip-tags.md).
   Las etiquetas IP integradas incluyen:
@@ -128,7 +128,7 @@ Para que la investigación sea incluso más sencilla, ahora puede crear consulta
    ![abrir consulta](./media/select-activity-query.png)
 
 
-Cloud App Security además proporciona **consultas sugeridas** Las consultas sugeridas le proporcionan vías de investigación recomendadas que filtran las actividades. Puede modificar estas consultas y guardarlas como consultas personalizadas. Las siguientes son consultas sugeridas opcionales:
+Cloud App Security también le proporciona **consultas sugeridas**. Las consultas sugeridas ofrecen vías recomendadas de investigación que filtran las actividades. Puede modificar estas consultas y guardarlas como consultas personalizadas. Las siguientes son consultas sugeridas opcionales:
 
  - Actividades administrativas: filtra todas las actividades para mostrar solo aquellas que implican a administradores.
 
@@ -136,13 +136,13 @@ Cloud App Security además proporciona **consultas sugeridas** Las consultas sug
 
  - Error al iniciar sesión: filtra todas las actividades para mostrar solo los errores al iniciar sesión a través de SSO. 
 
- - Actividades de archivo y carpeta: filtra todas las actividades para mostrar solo aquellas que implicaron archivos y carpetas, entre las que se incluyen las siguientes: cargar y descargar carpetas, obtener acceso a carpetas; crear, eliminar, cargar, descargar, poner en cuarentena y obtener acceso a archivos; y transferir contenido. 
+ - Actividades de archivo y carpeta: filtra todas las actividades para mostrar solo aquellas en las que intervienen archivos y carpetas. El filtro incluye la carga y descarga de carpetas y el acceso a estas, junto con la creación, eliminación, carga, descarga y puesta en cuarentena de los archivos, el acceso a estos y la transferencia de contenido. 
 
  - Actividades de suplantación: filtra todas las actividades para mostrar solo las de suplantación.
 
  - Actividades de buzón: filtra todas las actividades para mostrar solo las actividades de Microsoft Exchange Online, por ejemplo, crear un elemento, purgar mensajes del buzón, actualizar el mensaje y enviar el mensaje con permisos de Enviar como (suplantación).
 
- - Cambios de contraseña y solicitudes de restablecimiento: filtra todas las actividades para mostrar solo aquellas que, al conllevar el restablecimiento de la contraseña, cambian la contraseña y fuerzan al usuario a cambiarla al iniciar sesión la siguiente vez.
+ - Cambios de contraseña y solicitudes de restablecimiento: filtra todas las actividades para mostrar solo aquellas que suponen restablecer la contraseña, cambiar la contraseña y forzar al usuario a cambiarla en el siguiente inicio de sesión.
 
  - Riesgos de seguridad: filtra todas las actividades para mostrar solo aquellas que coinciden con directivas DLP.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/09/2018
+ms.date: 10/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9f312f02b6fa24b7726ebbd927fc8b272a2359b3
-ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
+ms.openlocfilehash: dc77a77b8a72192bc7b588b758d68136c7a2399b
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881846"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349566"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -26,7 +26,7 @@ ms.locfileid: "48881846"
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurar la carga de registros automática para informes continuos
 
 
-Los recopiladores de registros permiten automatizar fácilmente la carga de registros desde la red. El recopilador de registros se ejecuta en la red y recibe los registros a través de Syslog o FTP. Cada registro se procesa, se comprime y se transmite automáticamente al portal. Los registros de FTP se cargan en Microsoft Cloud App Security una vez que el archivo haya finalizado la transferencia FTP al recopilador de registros.  En el caso de Syslog, el recopilador de registros escribe los registros recibidos en el disco y carga el archivo en Cloud App Security una vez que el tamaño de archivo sea superior a 40 KB. 
+Los recopiladores de registros permiten automatizar fácilmente la carga de registros desde la red. El recopilador de registros se ejecuta en la red y recibe los registros a través de Syslog o FTP. Cada registro se procesa, se comprime y se transmite automáticamente al portal. Los registros de FTP se cargan en Microsoft Cloud App Security una vez que el archivo haya finalizado la transferencia FTP al recopilador de registros. En el caso de Syslog, el recopilador de registros escribe los registros recibidos en el disco y carga el archivo en Cloud App Security una vez que el tamaño de archivo sea superior a 40 KB. 
 
 Una vez que se ha cargado un registro en Cloud App Security, se mueve a un directorio de copia de seguridad que almacena los últimos 20 registros en un momento dado. Cuando llegan los nuevos registros, se eliminan los antiguos. Cuando el espacio en disco del recopilador de registros esté lleno, el recopilador descartará los nuevos registros hasta que tenga más espacio libre en disco. Cuando esto ocurra, recibirá una advertencia en la pestaña **Recopiladores de registros** de la configuración **Cargar registros automáticamente**.
 
@@ -36,6 +36,8 @@ Antes de configurar la recopilación automática de archivos de registros, compr
 > [!NOTE]
 >-  Cloud App Security permite el reenvío de registros desde el servidor SIEM al recopilador de registros siempre que estos se reenvíen en su formato original. Aun así, se recomienda encarecidamente integrar el recopilador de registros directamente en el firewall o proxy.
 >- El recopilador de registros comprime los datos antes de que se carguen. El tráfico saliente en el recopilador de registros constituirá un 10 % del tamaño de los registros de tráfico que recibe. 
+>-  Si el recopilador de registros detecta problemas, recibirá una alerta después de que no se hayan recibido datos durante 48 horas.
+>
 
 ## <a name="deployment-modes"></a>Modos de implementación
 
