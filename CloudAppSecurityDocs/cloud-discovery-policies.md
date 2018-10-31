@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/17/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,77 +13,89 @@ ms.technology: ''
 ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d95e99bd1702b523c9947a35465bccba178d36ec
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: a7f39372953b49f4e220c0350f8912421449b825
+ms.sourcegitcommit: 9c314d566a1dd35e32650928052b8a817dd20d9d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143690"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990722"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
 
 # <a name="cloud-discovery-policies"></a>Directivas de Cloud Discovery
-    
+Puede crear directivas de detección de aplicaciones para que se le envíen alertas cuando se detecten nuevas aplicaciones. Cloud App Security también busca en todos los registros de Cloud Discovery para comprobar si hay anomalías. 
+
 ## <a name="creating-an-app-discovery-policy"></a>Crear una directiva de detección de aplicaciones  
 Las directivas de detección permiten establecer alertas que avisan cuando se detectan nuevas aplicaciones en la organización.  
   
-1.  En la consola, haga clic en **Control**, seguido de **Directivas**.  
+1. En la consola, haga clic en **Control**, seguido de **Directivas**.  
   
-2.  Haga clic en **Crear directiva** y seleccione **Directiva de detección de aplicaciones**.  
+2. Haga clic en **Crear directiva** y seleccione **Directiva de detección de aplicaciones**.  
   
      ![Menú de directiva de detección de aplicaciones](./media/app-discovery-policy-menu.png "Menú de directiva de detección de aplicaciones")  
   
-3.  Asigne un nombre y una descripción a la directiva. Si quiere, puede basarla en una plantilla. Para obtener más información sobre las plantillas de directiva, vea [Controlar aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).  
+3. Proporcione un nombre y una descripción para la directiva. Si quiere, puede basarse en una plantilla. Para obtener más información sobre las plantillas de directiva, vea [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).  
   
-4.  Establezca la **gravedad** de la directiva.
+4. Establezca la **gravedad** de la directiva.
 
 5. Agregue filtros para definir qué aplicaciones detectadas van a activar esta directiva.  
   
-6.  Puede establecer el umbral de sensibilidad de la directiva. Después de habilitar la opción **Desencadenar una coincidencia de directiva si todo lo siguiente sucede en el mismo día**, puede establecer un valor mínimo para **Número de usuarios**, **Número de direcciones IP**, **Tráfico diario**, **Datos descargados**, **Datos cargados** y **Número de transacciones** que la aplicación debe cumplir para que coincida con la directiva.  
-  
-7.  Establezca un **Límite de alertas diarias** y seleccione si la alerta se enviará como un correo, como un mensaje de texto o como ambos, y proporcione detalles según sea necesario. Puede hacer clic en Guardar la configuración de la alerta como predeterminada para permitir que las directivas futuras guarden esta configuración de alertas (número de teléfono y direcciones de correo incluidos) como valores predeterminados.  
-  
-8. Seleccione las posibles acciones de **Gobierno** que se aplicarán cuando una aplicación coincida con esta directiva. Es posible etiquetar automáticamente las directivas como **autorizadas** o **no autorizadas** 
+6. Puede establecer el umbral de sensibilidad de la directiva. Habilite la opción **Desencadenar una coincidencia de directiva si todo lo siguiente sucede en el mismo día**. Puede establecer los criterios que la aplicación debe superar diariamente para que coincida con la directiva. Seleccione uno de estos criterios: 
+     - Tráfico diario
+     - Datos descargados
+     - Número de direcciones IP
+     - Número de transacciones
+     - Número de usuarios
+     - Datos cargados
 
-8.  Haga clic en **Crear**.  
   
-Si, por ejemplo, está interesado en detectar las aplicaciones de hospedaje de riesgo que hay en su entorno en la nube, establezca la directiva así:  
+7. Establezca un **límite de alertas diarias** en **Alertas**. Seleccione si quiere que la alerta se envíe como mensaje de correo electrónico, de texto o ambos. A continuación, proporcione números de teléfono y direcciones de correo electrónico según sea necesario.
+     - Al hacer clic en **Guardar configuración de alertas como valor predeterminado para la organización**, permitirá que se use la configuración para futuras directivas.
+     - Si tiene una configuración predeterminada, puede seleccionar **Usar la configuración predeterminada de la organización**.
   
-Establezca los filtros de directiva para detectar los servicios que se encuentren en la categoría **Servicios de hospedaje** y que tengan una puntuación baja, lo que indica que entrañan riesgos.   
-   
-En la parte inferior, establezca los umbrales que deben activar una alerta para una determinada aplicación detectada: solo si hay más de cien usuarios en el entorno que han usado la aplicación y solo si han descargado una determinada cantidad de datos desde el servicio.   
+8. Seleccione las acciones de **Gobierno** que se aplicarán cuando una aplicación coincida con esta directiva. Es posible etiquetar las directivas como **autorizadas** o **no autorizadas**, o bien una etiqueta personalizada. 
+
+9. Haga clic en **Crear**.  
+  
+Si, por ejemplo, le interesa detectar las aplicaciones de hospedaje de riesgo que hay en su entorno en la nube, establezca la directiva de la siguiente forma:  
+  
+Establezca los filtros de directiva para detectar los servicios que se encuentren en la categoría **Servicios de hospedaje** y que tengan una puntuación de riesgo de 1, lo que indica un riesgo elevado.
+
+ Establezca los umbrales que deben desencadenar una alerta para una determinada aplicación detectada en la parte inferior. Por ejemplo, defina que se envíe una alerta solo si más de 100 usuarios del entorno han usado la aplicación y si han descargado una cantidad determinada de datos del servicio.
 También puede establecer el límite de alertas diarias que quiere recibir.  
   
 ![Ejemplo de directiva de detección de aplicaciones](./media/app-discovery-policy-example.png "Ejemplo de directiva de detección de aplicaciones")  
   
-## <a name="cloud-discovery-anomaly-detection"></a>Detección de anomalías de Cloud Discovery  
-Cloud App Security busca en todos los registros de Cloud Discovery para encontrar anomalías. Por ejemplo, cuando un usuario que nunca ha usado Dropbox de repente carga 600 GB o cuando hay muchas más transacciones de lo habitual en una aplicación determinada. La directiva de detección de anomalías está habilitada de forma predeterminada, por lo que no es necesario configurar una nueva directiva para que funcione. Con todo, puede ajustar aún más los tipos de anomalías de los que quiere que se le alerte en la directiva predeterminada.  
+## <a name="cloud-discovery-anomaly-detection"></a>Detección de anomalías de Cloud Discovery
+
+Cloud App Security busca en todos los registros de Cloud Discovery para encontrar anomalías. Por ejemplo, cuando un usuario que nunca ha usado Dropbox de repente carga 600 GB o cuando hay muchas más transacciones de lo habitual en una aplicación determinada. La directiva de detección de anomalías está habilitada de forma predeterminada. No es necesario configurar ninguna directiva nueva para que funcione. Pero puede ajustar los tipos de anomalías sobre los que quiere que se le envíen alertas en la directiva predeterminada.  
   
-1.  En la consola, haga clic en **Control**, seguido de **Directivas**.  
+1. En la consola, haga clic en **Control**, seguido de **Directivas**.  
   
-2.  Haga clic en **Crear directiva** y seleccione la directiva **Detección de anomalías de Cloud Discovery**.  
+2. Haga clic en **Crear directiva** y seleccione la directiva **Detección de anomalías de Cloud Discovery**.  
   
      ![Menú de directiva de detección de anomalías de Cloud Discovery](./media/cloud-discovery-anomaly-detection-policy-menu.png "Menú de directiva de detección de anomalías de Cloud Discovery")  
   
-3.  Asigne un nombre y una descripción a la directiva. Si quiere, puede basarla en una plantilla. Para obtener más información sobre las plantillas de directiva, vea [Controlar aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).  
+3. Proporcione un nombre y una descripción para la directiva. Si quiere, puede basarse en una plantilla. Para obtener más información sobre las plantillas de directiva, vea [Controlar aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).  
   
-4.  Haga clic en **Agregar filtros** para definir qué aplicaciones detectadas van a activar esta directiva.  
+4. Haga clic en **Agregar filtros** para definir qué aplicaciones detectadas van a activar esta directiva.  
   
-     Los filtros se eligen en el lado izquierdo de la página de la ventana emergente de filtro. Se puede filtrar por nombre de servicio, dominio, factor de riesgo, puntuación de riesgo y categoría. En el lado derecho de la página se muestran los resultados de los filtros seleccionados del catálogo de servicios actual. Tras elegir los filtros, guarde y confirme que las etiquetas correspondientes aparecen en el cuadro de filtros.  
+     Los filtros se eligen en las listas desplegables. Para agregar filtros, haga clic en el botón del signo más. Para quitar un filtro, haga clic en la "X". 
   
-5.  En **Aplicar a**, decida si esto se aplica a **Todas las vistas de datos** o a **Vistas específicas de datos**, y si se aplica a **Usuarios**, a **Direcciones IP** o a ambos.  
+5. En **Aplicar a**, elija si esta directiva se aplica a **Todos los informes continuos** o a **Informes continuos específicos**. Seleccione si la directiva se aplica a **Usuarios**, **Direcciones IP** o a ambos.  
   
-6.  Seleccione las fechas en las que se ha producido la actividad anómala para activar la alerta en **Generar alertas solo para las actividades sospechosas que se produzcan después de la fecha**.  
+6. Seleccione las fechas en las que se ha producido la actividad anómala para activar la alerta en **Generar alertas solo para las actividades sospechosas que se produzcan después de la fecha**.  
   
-7.  En **Alertas**, puede establecer la sensibilidad de la detección de anomalías de baja a alta para configurar la frecuencia de las alertas que quiere recibir.  
-Establezca un **Límite de alertas diarias** y seleccione si la alerta se enviará como un correo, como un mensaje de texto o como ambos, y proporcione detalles según sea necesario. Puede hacer clic en Guardar la configuración de la alerta como predeterminada para permitir que las directivas futuras guarden esta configuración de alertas (número de teléfono y direcciones de correo incluidos) como valores predeterminados. También puede hacer clic en **Usar los valores predeterminados de la organización** para establecer estos valores según los valores predeterminados de su organización.  
+7. Establezca un **límite de alertas diarias** en **Alertas**. Seleccione si quiere que la alerta se envíe como mensaje de correo electrónico, de texto o ambos. A continuación, proporcione números de teléfono y direcciones de correo electrónico según sea necesario.
+     - Al hacer clic en **Guardar configuración de alertas como valor predeterminado para la organización**, permitirá que se use la configuración para futuras directivas.
+     - Si tiene una configuración predeterminada, puede seleccionar **Usar la configuración predeterminada de la organización**.
   
-9. Haga clic en **Crear**.  
+8. Haga clic en **Crear**.  
   
 ![Nueva directiva de detección de anomalías](./media/new-discovery-anomaly-policy.png "Nueva directiva de detección de anomalías")  
   
-## <a name="see-also"></a>Consulte también  
+## <a name="next-steps"></a>Pasos siguientes 
 [Directivas de actividad de usuario](user-activity-policies.md)   
 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
