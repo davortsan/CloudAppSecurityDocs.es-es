@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/30/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c547241190d4b51731f3c8b063624135d243d5ce
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: d6c3e680ec17d8a62977e4c25af5b9163244afea
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143996"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217295"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -105,7 +105,7 @@ En esta sección se ofrecen instrucciones para conectar Microsoft Cloud App Secu
   
 11. En el portal de Cloud App Security, haga clic en **Investigar** y, después, en **Aplicaciones conectadas**.  
   
-12. En la página **Conectores de aplicaciones**, haga clic en el botón del signo más y, después, en **AWS**.  
+12. En la página **Conectores de aplicaciones**, haga clic en el botón del signo más seguido de **Amazon Web Services**.  
   
      ![conectar AWS](./media/connect-aws.png "conectar AWS")  
   
@@ -116,9 +116,9 @@ En esta sección se ofrecen instrucciones para conectar Microsoft Cloud App Secu
   
      La prueba puede tardar unos minutos. Cuando haya finalizado, recibirá una notificación que le indicará si se ha realizado correcta o incorrectamente. Cuando reciba la notificación de que se ha realizado correctamente, haga clic en **Listo**.  
   
-Después de conectar AWS, recibirá eventos de siete días anteriores a la conexión. Si solo ha habilitado CloudTrail, en cuyo caso recibirá los eventos desde el momento en que habilitó CloudTrail.
+Después de conectarse a AWS, recibirá eventos de siete días anteriores a la conexión. Si solo ha habilitado CloudTrail, en cuyo caso recibirá los eventos desde el momento en que habilitó CloudTrail.
   
-## <a name="see-also"></a>Consulte también  
+## <a name="next-steps"></a>Pasos siguientes  
 [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)   
 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  

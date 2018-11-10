@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 10/28/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dc5249ae183da37293920aade12346aaca46eb32
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: a6ac7a6f8fcfbcde01dbcdcb9eaaaac82da3c8bc
+ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349634"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50745738"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -78,6 +78,9 @@ Esta detección aprovecha las ventajas de capacidad de Cloud App Security para s
 **Reenvío sospechoso de la bandeja de entrada**
 
 - Esta detección busca reglas de reenvío de correo electrónico sospechosas, por ejemplo, si un usuario creó una regla de bandeja de entrada que reenvía una copia de todos los correos electrónicos a una dirección externa. 
+ 
+> [!NOTE]
+> Cloud App Security le avisa solo para cada regla de reenvío que se identifica como sospechosa, en función del comportamiento típico para el usuario. 
 
 **Actividades inusuales (realizadas por un usuario)**<br>
 Estas detecciones identifican a los usuarios que realizan:
@@ -92,6 +95,13 @@ Estas directivas buscan actividades dentro de una única sesión según la líne
 
 **Varios intentos incorrectos de inicio de sesión**
 - Se identifica a los usuarios que intentan iniciar sesión varias veces sin éxito en una única sesión según la línea base establecida, lo que podría indicar un intento de vulneración. 
+
+**Filtración de datos a aplicaciones no autorizadas**
+- Esta directiva se habilita automáticamente para enviarle una alerta cada vez que un usuario o una dirección IP usan una aplicación que no tiene permitido realizar una actividad que parezca un intento de filtrar información de la organización.
+
+**Varias actividades de eliminación de VM**
+- Esta directiva crea un perfil del entorno y activa alertas cuando los usuarios eliminan varias máquinas virtuales en una única sesión, en relación con la línea base de la organización. Esto podría indicar un intento de infracción de seguridad.
+
 
 ## Habilitación del gobierno automatizado<a name="adp-automated-gov"></a>
 

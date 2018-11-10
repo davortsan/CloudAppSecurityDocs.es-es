@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f9a1bd913c139b7af83aa210bc185c83a5b4bd0a
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 3d70d71364157d6e3eca2a97574a2cbd82020e78
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143263"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217193"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
 
 # <a name="use-a-custom-log-parser"></a>Uso del analizador de registros personalizado
-Cloud App Security le permite configurar un analizador personalizado para satisfacer y procesar el formato de los registros de modo que se puedan usar para Cloud Discovery, incluso si proceden de un firewall o un dispositivo que no se admite explícitamente por Cloud App Security. 
+Cloud App Security le permite configurar un analizador personalizado para satisfacer y procesar el formato de los registros de modo que se puedan usar para Cloud Discovery. Normalmente usaría un analizador personalizado si Cloud App Security no admite explícitamente el firewall o el dispositivo. 
 
 El analizador personalizado le permite utilizar registros de firewalls no admitidos siguiendo este proceso. 
 
@@ -43,7 +43,7 @@ Para configurar un analizador CSV personalizado:
 
 4. Recopile archivos del firewall y el servidor proxy a través de los cuales los usuarios de la organización obtienen acceso a Internet. Asegúrese de recopilar registros durante períodos de tráfico pico que sean representativos de toda la actividad de usuario de la organización. 
 
-5. Abra los registros que desea procesar en un editor de texto y revise su formato, asegurándose de que los nombres de columna del registro se correspondan con los campos de la pantalla **Custom log format** (Formato de registro personalizado).
+5. Abra los registros que quiere procesar en un editor de texto. Revise su formato, asegurándose de que los nombres de columna del registro se correspondan con los campos de la pantalla **Custom log format** (Formato de registro personalizado).
 
    ![analizador de registro personalizado](./media/log-data.png) 
 
@@ -67,8 +67,8 @@ Para configurar un analizador CSV personalizado:
 11. Después de cargar los archivos de registro, pasará algún tiempo hasta que se redistribuyan y se analicen.  
     Una vez completado el procesamiento de los archivos de registro, recibirá un correo electrónico que le notificará que ya está listo. 
   
-12. En la barra de estado de la parte superior del portal aparecerá un banner de notificación para mantenerlo informado del estado de procesamiento de los archivos de registro.  
-    ![barra de menú del procesamiento del archivo de registro](./media/processing-log-file-menu-bar.png) 
+12. Aparecerá un banner de notificación en la barra de estado en la parte superior del **panel de Cloud Discovery**. El banner actualiza el estado de procesamiento de los archivos de registro.  
+    ![barra de menús del archivo de registro de procesamiento](./media/processing-log-file-menu-bar.png) 
    
 13. Una vez cargados correctamente los registros, verá una notificación informándole de que el procesamiento de los archivos de registro se ha completado correctamente. En este punto, puede ver el informe. Para ello, haga clic en el vínculo de la barra de estado o vaya al icono de engranaje de configuración y seleccione **Cloud Discovery settings** (Configuración de Cloud Discovery).   
   
@@ -83,7 +83,7 @@ Para configurar un analizador CSV personalizado:
 
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="next-steps"></a>Pasos siguientes
  
 [Crear informes de instantáneas de Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 

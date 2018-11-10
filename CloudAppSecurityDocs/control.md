@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,27 +13,27 @@ ms.technology: ''
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b6d426b1b59dc8f62322d404b1cd18e829611ba6
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: e67ba01b00af1f8af9bdd5e282f0fac74afa0183
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143979"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217346"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
 
 # <a name="control"></a>Control
-Puede aplicar acciones de gobierno a los archivos de los usuarios en el entorno de la nube. Después de haber investigado exhaustivamente y aprendido sobre la nube, puede utilizar las acciones de gobierno para ayudar a proteger la organización.  
+Puede aplicar acciones de gobierno a los archivos de los usuarios en el entorno de la nube. Después de haber investigado exhaustivamente y aprendido sobre la nube, puede usar las acciones de gobierno para ayudar a proteger la organización.  
 
 ## <a name="use-policies-to-assess-risk"></a>Usar directivas para evaluar el riesgo  
 Después de echar un vistazo a las alertas abiertas, vaya al centro de directivas para revisar las infracciones de directivas que no han activado alertas.  
 
 -   En el panel de Cloud App Security, haga clic en **Control** y, luego, en **Directivas**.  
 
--   Seleccione una directiva específica para ver la lista **Infringiendo ahora** de coincidencias de directivas que no han activado alertas.  
+-   Seleccione una directiva específica para ver la lista **Coincidiendo ahora** de coincidencias de directivas que no han activado alertas.  
 
--   Haga clic en las infracciones de una en una y decida qué hacer con cada una. Para obtener más información sobre las acciones de gobierno, consulte las imágenes que aparecen a continuación.  
+-   Haga clic en las infracciones de una en una y decida qué hacer con cada una. Para más información sobre las acciones de gobierno, vea las imágenes que aparecen aquí.  
 
      Si la directiva está establecida para detectar infracciones de cumplimiento normativo y alguien guarda números de tarjetas de crédito en archivos en OneDrive, tendrá una coincidencia en la directiva.  
 
@@ -49,7 +49,7 @@ Después de echar un vistazo a las alertas abiertas, vaya al centro de directiva
 
      Puede hacer clic en **Coincidencias** para ver los números de tarjeta de crédito reales.  
 
-     ![Coincidencias de contenido de números de tarjetas de crédito](./media/content-matches-ccn.png "Coincidencias de contenido de números de tarjetas de crédito")  
+     ![Coincidencias de contenido de números de tarjeta de crédito](./media/content-matches-ccn.png "coincidencias de contenido de números de tarjeta de crédito")  
 
 ## <a name="apply-governance-actions"></a>Aplicar acciones de gobierno  
 Puede aplicar acciones de gobierno desde las directivas, desde las alertas y desde el registro **Archivo**.  
@@ -78,13 +78,13 @@ Cloud App Security le ayuda a implementar las migraciones, ya que le informa de 
 ### <a name="migrate-your-users-to-a-new-app"></a>Migrar a los usuarios a una nueva aplicación  
 Imagínese esta situación: hace poco adquirió Office 365 y quiere que todos los usuarios de la organización dejen de usar todas las demás aplicaciones de almacenamiento en la nube y empiecen a usar OneDrive. Esto es lo que puede hacer:  
 
-1. Vaya al **panel de Cloud Discovery** y, en **Categorías**, filtre las aplicaciones por **Almacenamiento en la nube**. Luego ordene los resultados por **Usuarios** o **Direcciones IP** y compruebe qué aplicación es la más popular.  
+1. Vaya al **panel de Cloud Discovery** y, en **Categorías de aplicaciones**, filtre las aplicaciones por **Almacenamiento en la nube**. Ordene los resultados por **Usuarios** o **Direcciones IP** y compruebe qué aplicación es la más popular.  
 
 2. Puede ver qué usuarios están usando otras aplicaciones. También puede explorar en profundidad esas aplicaciones y notificar a los usuarios que las utilizan que quiere que migren a OneDrive, de la siguiente forma:
 
-   1.  En el **panel de Cloud Discovery**, elija **Dropbox** y luego la ficha **Dirección IP** o **Usuarios**.  
+   1. En el **panel de Cloud Discovery**, elija **Dropbox** y luego la ficha **Dirección IP** o **Usuarios**.  
 
-   2.  Elija la flecha ![Icono de flecha](./media/arrow-icon.png "icono de flecha") y seleccione **Exportar**.  
+   2. Elija el icono de flecha **Exportar**![Icono de flecha](./media/arrow-icon.png "icono de flecha") y elija las opciones de exportación.  
 
 ### <a name="find-more-secure-alternatives"></a>Buscar alternativas más seguras  
 El catálogo de servicios de Cloud App Security puede ayudarle a encontrar alternativas adecuadas para la organización en sustitución de las aplicaciones de riesgo que los usuarios puedan estar utilizando.  
@@ -99,7 +99,7 @@ Imagínese esta situación: está pensando en comprar una herramienta de product
 
 4.   Si decide que desea comprar una licencia empresarial para toda la organización, quizás desee observar también la columna **Usuarios**. Allí puede ver las aplicaciones más populares entre los usuarios, comprobar si son de confianza y ver las características de seguridad que tienen antes de tomar una decisión.  
 
-## <a name="see-also"></a>Consulta también  
+## <a name="next-steps"></a>Pasos siguientes
 Para obtener información sobre cómo usar y configurar directivas para controlar el uso de la aplicación de la nube, consulte [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).   
 
 Los clientes Premier también pueden elegir Cloud App Security directamente desde el [Portal Premier](https://premier.microsoft.com/).  

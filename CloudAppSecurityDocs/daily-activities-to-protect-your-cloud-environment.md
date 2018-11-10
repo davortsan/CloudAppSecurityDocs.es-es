@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2018
+ms.date: 10/31/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,19 +13,25 @@ ms.technology: ''
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b71ff344dc6d1e821a3462ff36f302d49d90b281
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 71fe930881b792661b782b9d88782c9272216702
+ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143435"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50745687"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
 # <a name="working-with-the-dashboard"></a>Trabajo con el panel
-Después de tener Microsoft Cloud App Security configurado y en funcionamiento tendrá que configurar flujos de datos, autorizar las aplicaciones que quiera permitir que utilicen los usuarios y configurar directivas para supervisar el entorno en la nube. A continuación, puede utilizar Cloud App Security para controlar y proteger la nube, y para administrar los riesgos.  
+En este tema se describen las tareas diarias que debe realizar con Cloud App Security.  Después de tener Microsoft Cloud App Security configurado y ejecutándose, tendrá que:
 
-En este tema se explica lo que hacer a diario con Cloud App Security.  
+- Configurar flujos de datos
+- Autorizar las aplicaciones que quiera permitir que usen los usuarios 
+- Configurar directivas para supervisar el entorno de nube. 
+
+A continuación, puede utilizar Cloud App Security para controlar y proteger la nube, y para administrar los riesgos.  
+
+
 
 ## <a name="check-the-dashboard"></a>Comprobar el panel  
 En el panel de Cloud App Security se proporciona una visión general de las actividades y características, entre ellas:
@@ -37,7 +43,7 @@ En el panel de Cloud App Security se proporciona una visión general de las acti
 - Tendencias de uso de aplicaciones conectadas en su entorno de la nube
 - Usuarios principales según la detección de amenazas
 
-Es recomendable que consulte el panel a diario para ver qué nuevas alertas se han activado. También es un buen lugar para vigilar el estado del entorno de la nube para hacerse una idea de lo que está ocurriendo en él.  
+Es recomendable que eche un vistazo al panel a diario para ver qué nuevas alertas se han activado. Es un buen lugar para vigilar el estado de su entorno de nube. Con el panel puede hacerse una idea de lo que sucede.  
 
 ![Panel de Cloud App Security](./media/dashboard.png "Panel de Cloud App Security")  
 

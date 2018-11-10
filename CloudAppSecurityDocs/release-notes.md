@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2018
+ms.date: 10/28/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,32 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 84db548efef74a84e2b97419eb6f5d213512b6c7
-ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
+ms.openlocfilehash: 2c82311bacf965d12e7f23aa4769862aba6d3207
+ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881914"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50745755"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
+
+## <a name="cloud-app-security-release-133-134-135"></a>Cloud App Security, versión 133, 134 y 135
+
+Publicado en octubre de 2018
+
+**Se están implantando gradualmente nuevas directivas de detección de anomalías**
+- La nueva directiva Filtración de datos a aplicaciones no autorizadas se habilita automáticamente para enviarle una alerta cada vez que un usuario o una dirección IP usan una aplicación que no tiene permitido realizar una actividad que parezca un intento de filtrar información de la organización.
+- La nueva directiva Varias actividades de eliminación de VM crea un perfil del entorno y activa alertas cuando los usuarios eliminan varias máquinas virtuales en una única sesión, en relación con la línea base de la organización.
+
+**Servicio de clasificación de datos disponible para APAC**
+- La inspección de contenido del servicio de clasificación de datos ya está disponible para clientes de APAC. Para obtener una lista de compatibilidad regional completa, vea [Integración de los servicios de clasificación de datos de Microsoft](dcs-inspection.md).
+
+**Compatibilidad de Cloud Discovery para i-Filter**
+-  La característica Cloud App Security Cloud Discovery ahora tiene compatibilidad mejorada para el analizador de syslog de i-Filter.
 
 ## <a name="cloud-app-security-release-132"></a>Cloud App Security versión 132
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9c3673b9-99bd-400c-9da1-5bf809ea5892
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c03400dc2bf0840736125b5080fbf8783a4da1db
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: bd32bbeddd7eae593ffe1ee21fe0d2f2aab08df1
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144336"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217227"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -43,21 +43,21 @@ En esta sección se ofrecen instrucciones para conectar Microsoft Cloud App Secu
   
     -   Haga clic en **Crear token**.  
   
-         ![crear token de Okta](./media/okta-createtoken.jpg "crear token de Okta")  
+         ![Crear token de Okta](./media/okta-createtoken.jpg "Crear token de Okta")  
   
     -   En el menú emergente **Crear token**, asigne un nombre al token de Cloud App Security y haga clic en **Crear token**.  
   
-         ![menú emergente de token de Okta](./media/okta-token-popup.png "menú emergente de token de Okta")  
+         ![Menú emergente de token de Okta](./media/okta-token-popup.png "Menú emergente de token de Okta")  
   
     -   En el elemento emergente **Token created successfully** (Token creado correctamente), copie el **Token value** (Valor de token).  
   
-         ![valor de token de Okta](./media/okta-token-value.png "valor de token de Okta")  
+         ![Valor de token de Okta](./media/okta-token-value.png "Valor de token de Okta")  
   
 3.  En la consola de Cloud App Security, haga clic en **Investigar** y, después, en **Aplicaciones conectadas**.  
   
 4.  En la página **Conectores de aplicaciones**, haga clic en el botón del signo más y, después, en **Okta**.  
   
-     ![conectar Okta](./media/connect-okta.png "conectar Okta")  
+     ![Conectar Okta](./media/connect-okta.png "Conectar Okta")  
   
 5.  En el elemento emergente que se muestra, en el campo **Dominio**, escriba el dominio de Okta y pegue el token en el campo **Token**.  
   
@@ -69,9 +69,8 @@ En esta sección se ofrecen instrucciones para conectar Microsoft Cloud App Secu
   
 Después de conectar Okta, recibirá eventos de 60 días anteriores a la conexión.
   
-## <a name="see-also"></a>Consulte también  
+## <a name="next-steps"></a>Pasos siguientes  
 [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)   
 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
-  
   

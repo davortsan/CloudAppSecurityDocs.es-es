@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 52b24a6aa80ee3283a5f2f6b96a3b1b51ce07d8b
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 1a2830cb7813eb5b86fc56751f628b6b9d5a630e
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143945"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217312"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -35,7 +35,7 @@ En esta sección se ofrecen instrucciones para conectar Microsoft Cloud App Secu
   
      **Performance**, **Enterprise**, **Unlimited** o **Developer**.  
   
-     La edición **Professional** no tiene la API de REST de forma predeterminada, pero se puede agregar a petición.  
+     La edición **Professional** no tiene la API REST de forma predeterminada, pero se puede agregar a petición.  
   
      Compruebe que la edición tiene disponible la API de REST y que está habilitada de la manera siguiente:  
   
@@ -43,10 +43,10 @@ En esta sección se ofrecen instrucciones para conectar Microsoft Cloud App Secu
   
     -   En **Administrar usuarios**, vaya a la página **Perfiles de usuario**.  
   
-         ![perfiles de Administrar usuarios en Salesforce](./media/salesforce-manageusers-profiles.png "perfiles de Administrar usuarios en Salesforce")  
+         ![Salesforce administra perfiles de usuarios](./media/salesforce-manageusers-profiles.png "Salesforce administra perfiles de usuarios")  
   
     -   Haga clic en **Nuevo** para crear un perfil nuevo. 
-    - Elija el perfil que acaba de crear para implementar Cloud App Security y haga clic en **Editar**. Este es el perfil que se usará para la cuenta de servicio de Cloud App Security con la que se configurará el conector de aplicaciones.  
+    - Elija el perfil que acaba de crear para implementar Cloud App Security y haga clic en **Editar**.  Este es el perfil que se usará para la cuenta de servicio de Cloud App Security con la que se configurará el conector de aplicaciones.  
   
          ![editar perfil en Salesforce](./media/salesforce-edit-profile.png "editar perfil en Salesforce")  
   
@@ -56,7 +56,7 @@ En esta sección se ofrecen instrucciones para conectar Microsoft Cloud App Secu
         - **Manage Salesforce CRM Content** (Administrar contenido CRM de Salesforce)
         - **Administrar usuarios**
         
-        Si no están seleccionadas, es posible que deba ponerse en contacto con Salesforce para agregarlas a su cuenta.  
+        Si estas casillas no están activadas, es posible que deba ponerse en contacto con Salesforce para agregarlas a su cuenta.  
              
 3.  Si su organización tiene habilitada la opción **Salesforce CRM Content** (Contenido CRM de Salesforce), asegúrese de que la cuenta administrativa actual también la tenga habilitada.  
   
@@ -72,7 +72,7 @@ En esta sección se ofrecen instrucciones para conectar Microsoft Cloud App Secu
   
     4.  Asegúrese de que está seleccionada la casilla **Salesforce CRM Content User** (Usuario de contenido CRM de Salesforce).  
   
-         Si no está seleccionada, haga clic en **Editar** y después active la casilla.  
+         Si no está activada, haga clic en **Editar** y después active la casilla.  
   
          ![usuario de contenido CRM de Salesforce](./media/salesforce-crm-content-user.png "usuario de contenido CRM de Salesforce")  
   
@@ -101,7 +101,7 @@ En esta sección se ofrecen instrucciones para conectar Microsoft Cloud App Secu
      La prueba puede tardar unos minutos. Cuando reciba la notificación de que se ha realizado correctamente, haga clic en **Listo**.  
   
   
-Después de conectarse a Salesforce, recibirá eventos como se indica a continuación: desencadenadores en el momento de la conexión, eventos de inicio de sesión y traza de auditoría de configuración de los 60 días anteriores a la conexión, y supervisión de eventos de los 30 días anteriores o del día anterior, en función de su licencia de supervisión de eventos de Salesforce. La API de Cloud App Security se comunica directamente con las API disponibles de Salesforce. Dado que Salesforce limita el número de llamadas API que puede recibir, Cloud App Security lo tiene en cuenta y respeta la limitación. Las API de Salesforce envían cada respuesta con un campo para los contadores de API, incluido el total disponible y restante. Cloud App Security lo calcula como un porcentaje y siempre se asegura de que quede como restante un 10 % de las llamadas de API disponibles. 
+Después de conectarse a Salesforce, recibirá eventos de este modo: desencadenadores en el momento de la conexión, eventos de inicio de sesión y traza de auditoría de configuración de los 60 días anteriores a la conexión, y supervisión de eventos de los 30 días anteriores o del día anterior, en función de su licencia de supervisión de eventos de Salesforce. La API de Cloud App Security se comunica directamente con las API disponibles de Salesforce. Dado que Salesforce limita el número de llamadas API que puede recibir, Cloud App Security lo tiene en cuenta y respeta la limitación. Las API de Salesforce envían cada respuesta con un campo para los contadores de API, incluido el total disponible y restante. Cloud App Security lo calcula como un porcentaje y siempre se asegura de que quede como restante un 10 % de las llamadas de API disponibles. 
 
 > [!NOTE]
 > La limitación de Cloud App Security se calcula únicamente según sus propias llamadas API con Salesforce, no según las de otras aplicaciones que realizan llamadas API con Salesforce.
@@ -110,12 +110,12 @@ Después de conectarse a Salesforce, recibirá eventos como se indica a continua
 
 Cloud App Security procesa los eventos de Salesforce de la manera siguiente: 
   
-- Registro de eventos cada 15 minutos
-- Configuración de la traza de auditoría cada 15 minutos
+- Eventos de inicio de sesión cada 15 minutos
+- Configuración de registros de auditoría cada 15 minutos
 - Salesforce registra la actividad de uso durante un período de 24 horas, desde las 12:00 a.m. a las 11:59 p.m. hora UTC. Los eventos de Salesforce generan datos de registro en tiempo real. Sin embargo, Salesforce genera archivos de registro el día después de un evento, fuera de horas punta. Por lo tanto, los datos de archivos de registro no están disponibles durante al menos un día después de un evento. Para más información sobre los eventos de Salesforce, consulte el artículo sobre el [uso de supervisión de eventos](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm).
 
 
-## <a name="see-also"></a>Consulte también  
+## <a name="next-steps"></a>Pasos siguientes  
 [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)   
 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  

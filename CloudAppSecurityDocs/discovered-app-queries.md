@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/8/2018
+ms.date: 10/31/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9663e2c6948565f1a9f7118d88a4d85087588811
-ms.sourcegitcommit: da651fb36d26d0dfe796b988e86205f41f7dc5de
+ms.openlocfilehash: 65dfb8411910747db2d12f6757218fca93b362f2
+ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48251563"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50745772"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
 # <a name="discovered-app-filters-and-queries"></a>Filtros y consultas de aplicaciones detectadas
+Cuando haya un gran número de aplicaciones detectadas, le resultará útil filtrarlas y realizar consultas en ellas. En este artículo se describe qué filtros están disponibles y cómo realizar consultas en las aplicaciones detectadas.  
 
 ## <a name="discovered-app-filters"></a>Filtros de aplicaciones detectadas
 
@@ -33,13 +34,13 @@ Hay filtros de aplicaciones detectadas básicos y avanzados. Para aplicar un fil
 
 - **Etiqueta de aplicación**: seleccione si la aplicación se ha autorizado o no y si no está etiquetada. Además, puede crear una etiqueta personalizada para la aplicación y usarla para filtrar tipos específicos de aplicaciones. 
 - **Aplicaciones y dominios**: permite buscar aplicaciones específicas o aplicaciones usadas en dominios concretos. 
-- **Categorías**: el filtro de categorías, que se encuentra a la izquierda de la página, permite buscar tipos de aplicaciones en función de categorías de aplicaciones, como aplicaciones de redes sociales, aplicaciones de almacenamiento en la nube, etc. Puede seleccionar varias categorías a la vez o una sola categoría y, después, aplicarles los filtros básicos y avanzados.
-- **Factor de riesgo de cumplimiento**: permite buscar normas, certificaciones y elementos de conformidad específicos que puede cumplir la aplicación (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
-- **Factor de riesgo general**: permite buscar factores de riesgo generales, como la popularidad entre los consumidores, la configuración regional del centro de datos, etc.
+- **Categorías**: el filtro de categorías, que se encuentra a la izquierda de la página, permite buscar tipos de aplicaciones en función de categorías de aplicaciones. Las categorías de ejemplo incluyen aplicaciones de redes sociales, aplicaciones de almacenamiento en la nube y servicios de hospedaje. Puede seleccionar varias categorías a la vez o una sola categoría y, después, aplicarles los filtros básicos y avanzados.
+- **Factor de riesgo de cumplimiento**: permite buscar normas, certificaciones y elementos de conformidad específicos que puede cumplir la aplicación (HIPAA, ISO 27001, SOC 2, PCI-DSS, entre otros).
+- **Factor de riesgo general**: permite buscar factores de riesgo generales, como la popularidad entre los consumidores, la configuración regional del centro de datos y muchos más.
 - **Puntuación de riesgo**: permite filtrar las aplicaciones según su puntuación de riesgo, de modo que pueda centrarse, por ejemplo, en revisar únicamente las aplicaciones de mucho riesgo. También puede reemplazar la puntuación de riesgo establecida por Cloud App Security. Para obtener más información, vea [Trabajo con la puntuación de riesgo](risk-score.md).
 - **Factor de riesgo para la seguridad**: permite filtrar en función de medidas de seguridad específicas (por ejemplo, cifrado en reposo, autenticación multifactor, etc.).
-- **Uso**: permite filtrar en función de las estadísticas de uso de la aplicación, como aplicaciones con menos o más **cargas de datos** de las especificadas, o aplicaciones con menos o más **usuarios** de los especificados.
-- **Factor de riesgo legal**: permite filtrar en función de las regulaciones y directivas en vigor para garantizar la protección y la privacidad de los datos de los usuarios de la aplicación, por ejemplo, aplicaciones en la nube preparadas para el RGPD, el DMCA y la directiva de retención de datos.
+- **Uso**: permite filtrar en función de las estadísticas de uso de esta aplicación. Uso, como por ejemplo, como aplicaciones con menos o más **cargas de datos** de las especificadas, o aplicaciones con menos o más **usuarios** de los especificados.
+- **Factor de riesgo legal**: permite filtrar en función de las regulaciones y directivas en vigor para garantizar la protección y la privacidad de los datos de los usuarios de la aplicación. Algunos ejemplos son las aplicaciones en la nube preparadas para el RGPD, DMCA y la directiva de retención de datos.
 
 ### <a name="creating-and-managing-custom-app-tags"></a>Crear y administrar etiquetas de aplicación personalizadas
 
@@ -47,24 +48,25 @@ Puede crear etiquetas de aplicación personalizadas. Estas etiquetas pueden usar
 
 Para crear una etiqueta de aplicación personalizada:
 
-1. En el engranaje **Configuración** seleccione **Cloud Discovery** y en la pestaña **Administrar etiquetas de aplicación** haga clic en el icono ![icono Más](./media/plus-icon.png). 
+1. En el engranaje de **configuración**, seleccione **Cloud Discovery settings** (Configuración de Cloud Discovery) y elija la pestaña **Etiquetas de aplicación**. Haga clic en el icono de signo más. ![icono de signo más](./media/plus-icon.png)
 
-![Crear una etiqueta de aplicación personalizada](./media/create-app-tag.png)
+   ![Crear una etiqueta de aplicación personalizada](./media/create-app-tag.png)
 
-2. Puede usar la tabla **Manage app tags** (Administrar etiquetas de aplicación) para ver qué aplicaciones están etiquetadas con cada etiqueta de aplicación y puede eliminar las etiquetas de aplicación que no se usan.
+2. Puede usar la tabla **Etiquetas de aplicación** para ver qué aplicaciones están etiquetadas con cada etiqueta de aplicación y puede eliminar las etiquetas de aplicación que no se usan.
 
-3. Para aplicar una etiqueta de aplicación, en la pestaña **Aplicaciones detectadas**, haga clic en los tres puntos situados a la derecha de la tabla y seleccione la etiqueta de aplicación que quiere aplicar. 
+3. Para aplicar una etiqueta de aplicación, en la pestaña **Aplicaciones detectadas**, haga clic en los tres puntos situados a la derecha del nombre de aplicación. Seleccione la etiqueta de aplicación que se aplicará. 
 
 > [!NOTE]
->También puede crear una etiqueta de aplicación directamente en la tabla **Aplicaciones detectadas**. Para ello, haga clic en **Create app tag** (Crear etiqueta de aplicación) después de seleccionar los tres puntos situados a la derecha de cualquier aplicación seleccionada. También puede tener acceso a la pantalla **Manage app tags** (Administrar etiquetas de aplicación). Para ello, haga clic en el vínculo situado en la esquina de la ventana emergente **Create app tag** (Crear etiqueta de aplicación).
+>También puede crear una etiqueta de aplicación directamente en la tabla **Aplicaciones detectadas**. Para ello, haga clic en **Create app tag** (Crear etiqueta de aplicación) después de seleccionar los tres puntos situados a la derecha de cualquier aplicación seleccionada. Cuando se crea la etiqueta desde la aplicación detectada, se puede aplicar a la aplicación. También puede acceder a la pantalla **Etiquetas de aplicación**si hace clic en el vínculo **Administrar etiquetas** de la esquina.
+> ![Crear una etiqueta de aplicación desde la aplicación](./media/create-app-tag-from-app.png)
 
 ## <a name="discovered-app-queries"></a>Consultas de aplicaciones detectadas
 
-Para que la investigación sea incluso más sencilla, ahora puede crear consultas personalizadas y guardarlas para usar más adelante. 
+Para que la investigación sea incluso más sencilla, puede crear consultas personalizadas y guardarlas para usar más adelante. 
 
 1. En la página **Aplicaciones detectadas**, use los filtros como se ha descrito anteriormente para explorar las aplicaciones en profundidad según sea necesario. 
 
-2. Una vez que haya conseguido los resultados deseados, haga clic en el botón **Guardar como** situado en la esquina superior derecha de los filtros. 
+2. Una vez que haya conseguido los resultados que buscaba, haga clic en el botón **Guardar como** situado en la esquina superior derecha de los filtros. 
 
 3. En la ventana emergente **Guardar consulta**, escriba el nombre de la consulta.
 
@@ -99,7 +101,7 @@ Cloud App Security también le proporciona **consultas sugeridas** y le permite 
 Además, puede usar las consultas sugeridas como punto de partida para una nueva consulta. En primer lugar, seleccione una de las consultas sugeridas. Después, realice los cambios necesarios y, por último, haga clic en **Guardar como** para crear una **Consulta guardada**.
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="next-steps"></a>Pasos siguientes
  
 [Crear informes de instantáneas de Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 
