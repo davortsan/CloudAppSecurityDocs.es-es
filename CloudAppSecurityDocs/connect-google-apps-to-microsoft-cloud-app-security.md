@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/22/2018
+ms.date: 11/08/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bf1a10466deb59ca06a88674993c628b8b744563
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 834f444831e2024d9a29ace710e7e2c35fb6f1ce
+ms.sourcegitcommit: b8e75cefeffe3ae160830f3bf384f05db985e0d3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144625"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51285850"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -38,7 +38,7 @@ En esta sección se ofrecen instrucciones para conectar Microsoft Cloud App Secu
    **Microsoft Cloud App Security** y haga clic en **Crear**.  
           ![google2](./media/google2.png "google2")  
   
-4. Cuando haya creado el proyecto, haga clic en **Google Cloud Platform** en la barra de herramientas y asegúrese de que el proyecto correcto está seleccionado en el menú desplegable de arriba.
+4. Una vez creado el proyecto, en la barra de herramientas, haga clic en **Google Cloud Platform**. Asegúrese de que el proyecto correcto está seleccionado en la lista desplegable en la parte superior.
        
       ![Proyecto de Google](./media/googleverify-project.png "Verificación de proyecto de Google")  
 
@@ -46,7 +46,7 @@ En esta sección se ofrecen instrucciones para conectar Microsoft Cloud App Secu
   
      ![google3](./media/google3.png "google3")  
    
-7. Haga clic en **Biblioteca** y habilite las siguientes API (use la línea de búsqueda si la API no figura en la lista **Popular APIs** (API populares)):  
+7. Haga clic en **Biblioteca** y habilite estas API [use la línea de búsqueda si la API no figura en la lista **Popular APIs** (API populares)]:  
      
    -   Admin SDK  
   
@@ -54,7 +54,7 @@ En esta sección se ofrecen instrucciones para conectar Microsoft Cloud App Secu
   
    -   API de Google Drive  
   
-   -   SDK de Marketplace de aplicaciones  
+   -   SDK de G Suite Marketplace  
   
    -   Gmail API  
             
@@ -77,7 +77,7 @@ En esta sección se ofrecen instrucciones para conectar Microsoft Cloud App Secu
   
     - Haga clic en **Guardar**.  
   
-      ![Nombre del producto de Google](./media/google6.png "google6")  
+      ![Consentimiento de OAuth de Google](./media/google-oauth-consent.png "consentimiento de OAuth de Google")  
   
 11. En la pestaña **Credenciales**, haga clic en la flecha situada junto a **Crear credenciales**.  
   
@@ -126,7 +126,7 @@ En esta sección se ofrecen instrucciones para conectar Microsoft Cloud App Secu
 
 21. Haga clic en **Guardar cambios**.
 
-22. Vuelva a la lista **Enabled APIs** (API habilitadas). Haga clic en **Apps Marketplace SDK** (SDK de Marketplace de Apps). 
+22. Vuelva a la lista **Enabled APIs** (API habilitadas). Haga clic en **SDK de G Suite Marketplace**. 
       
 23. Seleccione la pestaña **Configuración**. 
   
@@ -134,8 +134,11 @@ En esta sección se ofrecen instrucciones para conectar Microsoft Cloud App Secu
   
     -   En **Nombre de la aplicación**, escriba **Microsoft Cloud App Security**.
   
-         En **Descripción de la aplicación**, escriba "Microsoft Cloud App Security proporciona visibilidad de las aplicaciones en la nube, lo que sirve para controlar, investigar y gobernar el uso de esas aplicaciones en la nube; para proteger los datos corporativos, y para detectar actividades sospechosas en cualquier aplicación en la nube".  
-  
+         En **Descripción de la aplicación**, escriba "Microsoft Cloud App Security proporciona visibilidad de las aplicaciones en la nube, lo que sirve para controlar, investigar y gobernar el uso de esas aplicaciones en la nube; para proteger los datos corporativos, y para detectar actividades sospechosas en cualquier aplicación en la nube". 
+    - Asegúrese de hacer clic en **Listo** en la ventana **Nuevo elemento**.      
+     
+       ![nuevo elemento de Google](./media/google-new-item.png "nuevo elemento de Google")  
+
     -   Desactive la casilla **Enable individual install** (Habilitar la instalación individual).  
   
     -   Configure las cuatro imágenes necesarias en **Iconos de la aplicación**.  
@@ -240,7 +243,7 @@ Después de conectar G Suite, recibirá eventos de 60 días anteriores a la cone
 Después de conectar G Suite, Cloud App Security realiza un examen completo. En función del número de archivos y los usuarios que tenga, el examen podría tardar en completarse. Para habilitar el análisis casi en tiempo real, los archivos en los que se detecta actividad se mueven al principio de la cola de análisis. Por ejemplo, una archivo editado, actualizado o compartido se analiza inmediatamente. Esto no se aplica a los archivos que no se modifican de forma inherente. Por ejemplo, los archivos que se visualizan, previsualizan, imprimen o exportan se analizan durante un análisis normal.
   
   
-## <a name="see-also"></a>Consulte también  
+## <a name="next-steps"></a>Pasos siguientes 
 [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)   
 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3e0a56c9c174765660dfd19cad0c3cced1d74cd7
-ms.sourcegitcommit: 6069639ae538cc23831bbcaf61f18d92c6a5117d
+ms.openlocfilehash: a3c955a037f7ea81e0a06e673fd18030c0cbbf9b
+ms.sourcegitcommit: 3253c98f1bf2fafc2578a87ee2db9698caa05c5b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2018
-ms.locfileid: "50982078"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51265331"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -89,6 +89,8 @@ Para permitir que Cloud App Security se conecte a su SIEM, agregue a la lista de
 > |US3|40.90.218.198<br>40.90.218.196|
 > |EU|52.174.56.180|
 > |EU2|40.81.156.154<br>40.81.156.156|
+
+Si no ha especificado ningún proxy al configurar el agente SIEM de Cloud App Security, debe permitir las conexiones HTTP a http://ocsp.msocsp.com/ en el puerto 80. Esto sirve para comprobar el estado de revocación de certificado al conectarse al portal de Cloud App Security.
 
 ## <a name="app-connector"></a>Conector de la aplicación
 
@@ -174,6 +176,7 @@ Para habilitar características de Cloud Discovery por medio de un recopilador d
 > [!NOTE]
 > - Si el firewall requiere una lista de acceso de dirección IP estática y no admite la creación de listas de permitidos basadas en direcciones URL, permita que el recopilador de registros enrute el tráfico saliente hacia los [intervalos IP del centro de datos de Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653) a través del puerto 443.
 >- Permita que el recopilador de registros inicie tráfico saliente al portal de Cloud App Security.
+>- Si no ha especificado ningún proxy al configurar el recopilador de registros, debe permitir las conexiones HTTP a http://ocsp.msocsp.com/ en el puerto 80. Esto sirve para comprobar el estado de revocación de certificado al conectarse al portal de Cloud App Security.
 
 
 
