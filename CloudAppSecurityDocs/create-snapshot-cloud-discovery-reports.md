@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 82193845bffa1f88f69eef035dbcc20dbb2da40b
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: ff22c10cdbb1736fde90922c7dc36b81f26558cc
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217397"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597449"
 ---
+# <a name="create-snapshot-cloud-discovery-reports"></a>Crear informes de instantáneas de Cloud Discovery
+
 *Se aplica a: Microsoft Cloud App Security*
 
-
-# <a name="create-snapshot-cloud-discovery-reports"></a>Crear informes de instantáneas de Cloud Discovery
 Es importante cargar un registro manualmente y dejar que Microsoft Cloud App Security lo analice antes de intentar usar el recopilador de registros automáticos. Para información sobre cómo funciona el recopilador de registros y el formato de registro esperado, vea [Uso de registros de tráfico para Cloud Discovery](#log-format).
 
 Si aún no tiene un registro y quiere ver un ejemplo del aspecto de su registro, descargue un archivo de registro de ejemplo. Siga este procedimiento para ver el aspecto que debería tener el registro.

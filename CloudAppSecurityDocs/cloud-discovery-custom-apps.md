@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/18/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology: ''
 ms.assetid: 98b0d841-b33d-4ae9-b48b-d9ee77785eaa
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ed32435d0add14f1db3ef8457e54a628d9b26747
-ms.sourcegitcommit: 9c314d566a1dd35e32650928052b8a817dd20d9d
+ms.openlocfilehash: 4cbe1ab46596f55283b0aa86390674e048c45216
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49990688"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597398"
 ---
-*Se aplica a: Microsoft Cloud App Security*
-
 # <a name="add-custom-apps-to-cloud-discovery"></a>Incorporación de aplicaciones personalizadas a Cloud Discovery
+
+*Se aplica a: Microsoft Cloud App Security*
     
 Cloud Discovery analiza los registros de tráfico en el catálogo de aplicaciones en la nube de Microsoft Cloud App Security. Más de 16 000 aplicaciones de la nube se encuentran en el catálogo de aplicaciones en la nube. El catálogo solo contiene aplicaciones en la nube disponibles públicamente sobre las que Cloud App Security ofrece información de visibilidad y riesgo.
 

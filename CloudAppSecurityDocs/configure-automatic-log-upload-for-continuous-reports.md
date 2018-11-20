@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/23/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology: ''
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6bc011f2e5d42f49d679260a2c36f977ba1b004f
-ms.sourcegitcommit: 9c314d566a1dd35e32650928052b8a817dd20d9d
+ms.openlocfilehash: 014bc198a0033b86f5a4c07d01dab3f76724b75d
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49990705"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597008"
 ---
-*Se aplica a: Microsoft Cloud App Security*
-
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Configuración de la carga de registros automática para informes continuos en una aplicación virtual: en desuso
+
+*Se aplica a: Microsoft Cloud App Security*
 
 > [!WARNING] 
 > Es muy recomendable configurar la carga de registros mediante [Docker](discovery-docker.md) para una implementación más flexible.
@@ -117,7 +117,7 @@ En este punto, el recopilador de registros debería estar conectado a la red y s
 ### <a name="step-3--on-premises-configuration-of-the-log-collection"></a>Paso 3: Configuración local de la recopilación de registros 
 Para iniciar sesión por primera vez en el recopilador de registros e importar la configuración de dicho recopilador desde el portal, debe hacer lo siguiente. 
 
-1.  Inicie sesión en el recopilador de registros a través de SSH con las credenciales de administrador interactivas que se le han proporcionado en el portal. Si es la primera vez que inicia sesión en la consola, deberá cambiar la contraseña y volver a iniciar sesión después de cambiarla. Si está usando una sesión de terminal, podría tener que volver a iniciarla .
+1.  Inicie sesión en el recopilador de registros a través de SSH con las credenciales de administrador interactivas que se le han proporcionado en el portal. Si es la primera vez que inicia sesión en la consola, deberá cambiar la contraseña y volver a iniciar sesión después de cambiarla. Si está usando una sesión de terminal, podría tener que volver a iniciarla )
 2.  Ejecute la utilidad de configuración del recopilador con el token de acceso que se le proporcionó al crear el recopilador de registros.```sudo collector_config <access token> ```
 3. Escriba el dominio de la consola, por ejemplo: ```contoso.portal.cloudappsecurity.com```. Está disponible en la dirección URL que aparece después de iniciar sesión en el portal de Cloud App Security. 
 

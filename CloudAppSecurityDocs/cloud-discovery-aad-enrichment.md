@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,16 @@ ms.technology: ''
 ms.assetid: 45295c2c-3e4d-4482-bf95-2e47072f9236
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 02c09c05ca89e58bc45648fc592c8b5a79aaf4f3
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: 66bf3a348a14dc6bc0fa8d3da481540493b7acbf
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349532"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597058"
 ---
-*Se aplica a: Microsoft Cloud App Security*
-
-
 # <a name="cloud-discovery-enrichment"></a>Enriquecimiento de Cloud Discovery
+
+*Se aplica a: Microsoft Cloud App Security*
 
 Ahora es posible mejorar los datos de Cloud Discovery con datos de nombre de usuario de Azure Active Directory. Cuando se habilita esta característica, el nombre de usuario que se recibe en los registros de tráfico de detección se hace coincidir con el nombre de usuario de Azure AD y se reemplaza por este. Enriquecimiento de Cloud Discovery ofrece estas características:
 - Puede investigar el uso de Shadow IT por parte del usuario de Azure Active Directory.
