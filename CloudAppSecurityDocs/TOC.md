@@ -56,7 +56,7 @@
 ### [Archivos](file-filters.md)
 #### [Generar informes de administración de datos](built-in-reports.md)
 ### [Cuentas](accounts.md)
-### [Administración de permisos de aplicación](manage-app-permissions.md)
+### [Administrar aplicaciones de OAuth](manage-app-permissions.md)
 ### [Configuración de seguridad](security-config.md)
 ### [Supervisión de aplicaciones](monitor-alerts.md)
 #### [Administrar alertas](managing-alerts.md)
@@ -66,7 +66,7 @@
 ##### [Directiva de detección de anomalías de Cloud Discovery](cloud-discovery-anomaly-detection-policy.md)
 #### [Directivas de actividad](user-activity-policies.md)
 #### [Directivas de detección de anomalías](anomaly-detection-policy.md)
-#### [Directivas de permiso de aplicaciones](app-permission-policy.md)
+#### [Directivas de OAuth](app-permission-policy.md)
 #### [Directivas de archivos](data-protection-policies.md)
 ##### Inspección de contenido
 ###### [Inspección de contenido integrada](content-inspection.md)
