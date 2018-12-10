@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/28/2018
+ms.date: 11/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,43 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2c82311bacf965d12e7f23aa4769862aba6d3207
-ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
+ms.openlocfilehash: 16d39803071d000e6394caaef94787182c82cea0
+ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50745755"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52743699"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
+
+## <a name="cloud-app-security-release-137"></a>Notas de la versión 137 de Cloud App Security
+
+Publicado el 25 de noviembre de 2018
+
+-   **Se ha agregado compatibilidad para Dynamics**<br>
+Cloud App Security ahora incluye compatibilidad para las actividades de Microsoft Dynamics que se admiten en el registro de auditoría de Office 365. 
+-   **Análisis de contenido cifrado (versión preliminar)**<br>
+Cloud App Security ahora permite analizar el contenido protegido por etiquetas de protección de Azure Information Protection. Esto le permitirá encontrar contenido confidencial, incluso en los archivos que ya se han cifrado con Azure Information Protection. 
+-   **Aviso: nueva terminología**<br>
+Se cambió el nombre de las capacidades de los permisos de aplicación para mayor claridad: ahora se denomina **aplicaciones OAuth**. 
+
+## <a name="cloud-app-security-release-136"></a>Notas de la versión 136 de Cloud App Security
+
+Publicado el 11 de noviembre de 2018
+
+
+- **Actualizaciones de Cloud Discovery**<br>
+El analizador de registros personalizado se ha mejorado para admitir formatos de los registros de tráfico web adicionales y más complejos. Como parte de estas mejoras los usuarios ahora pueden introducir encabezados personalizados para los archivos de registro CSV sin encabezado, usar delimitadores especiales para los archivos de pares clave-valor, procesar el formato de archivo Syslog y mucho más.
+- **Nuevas directivas de detección de anomalías**<br>
+Reglas de manipulación de bandeja de entrada sospechosa: esta directiva crea perfiles de su entorno y activa alertas cuando se establecen reglas sospechosas que eliminan o mueven los mensajes o carpetas en la Bandeja de entrada del usuario. Esto puede indicar que la cuenta del usuario está en peligro, que se están ocultando mensajes intencionadamente y que el buzón se está usando para enviar correo no deseado o malware en la organización.
+- **Compatibilidad con grupos de directivas de permisos de aplicación**<br>
+Cloud App Security ahora le permite definir directivas de permisos de aplicación de forma más detallada, según la pertenencia a grupos de los usuarios que autorizaron las aplicaciones. Por ejemplo, un administrador puede decidir establecer una directiva que revoca aplicaciones poco habituales si solicitan permisos de nivel alto, solo si el usuario que autorizó los permisos es un miembro del grupo Administradores.
+- **El Control de aplicaciones de acceso condicional ahora se integra con las aplicaciones locales mediante Azure Active Directory Application Proxy**
+  - [Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy) proporciona inicio de sesión único y acceso remoto seguro para aplicaciones web hospedadas en el entorno local.
+  - Ahora se pueden enrutar estas aplicaciones web locales a Microsoft Cloud App Security a través de acceso condicional de Azure AD para proporcionar supervisión en tiempo real y controles, a través de directivas de [acceso](access-policy-aad.md) y [sesión](session-policy-aad.md).
 
 
 ## <a name="cloud-app-security-release-133-134-135"></a>Cloud App Security, versión 133, 134 y 135
@@ -73,7 +99,7 @@ Publicado el 22 de agosto de 2018
 Para proporcionar una experiencia administrativa más coherente en todos los productos de Microsoft 365 y poder cambiar más fácilmente entre las soluciones de seguridad de Microsoft, la barra de menús del portal de Cloud App Security se ha movido al lado izquierdo de la pantalla. Esta experiencia de navegación coherente le ayuda a orientarse al pasar de un portal de seguridad de Microsoft a otro.
 
 - **Impacto en la puntuación de la aplicación OAuth**<br>
-Ahora puede enviar comentarios al equipo de Cloud App Security para hacernos saber si se detecta una aplicación OAuth en su organización que parece malintencionada. Esta nueva característica le permite formar parte de nuestra comunidad de seguridad y mejorar el análisis y la puntuación de riesgo de las aplicaciones OAuth. Para más información, vea [Administrar permisos de aplicación](manage-app-permissions.md).
+Ahora puede enviar comentarios al equipo de Cloud App Security para hacernos saber si se detecta una aplicación OAuth en su organización que parece malintencionada. Esta nueva característica le permite formar parte de nuestra comunidad de seguridad y mejorar el análisis y la puntuación de riesgo de las aplicaciones OAuth. Para obtener más información, vea [Administrar permisos de aplicación](manage-app-permissions.md).
 
 - **Nuevos analizadores de Cloud Discovery**<br>
 Los analizadores de Cloud Discovery ahora admiten iboss Secure Cloud Gateway y Sophos XG.
@@ -90,8 +116,8 @@ Fecha de publicación: 5 de agosto de 2018
 
 Publicada el 22 de julio de 2018
 
--   **Acciones de permisos de aplicación en varias aplicaciones**<br>
-Para las aplicaciones a las que se han concedido permisos de aplicación, ahora puede prohibir o aprobar varias aplicaciones con una sola acción. Por ejemplo, puede revisar todas las aplicaciones a las que los usuarios de su organización han concedido un permiso, seleccionar todas las que quiera prohibir y, después, hacer clic en la opción correspondiente para revocar todos los permisos concedidos. Así, ya no se permitirá a los usuarios conceder permisos a esas aplicaciones.  Para más información, vea [Administrar permisos de aplicación](manage-app-permissions.md).
+-   **Acciones de aplicaciones de OAuth en varias aplicaciones**<br>
+Para las aplicaciones de OAuth a las que se han concedido permisos de aplicación, ahora puede prohibir o aprobar varias aplicaciones con una sola acción. Por ejemplo, puede revisar todas las aplicaciones a las que los usuarios de su organización han concedido un permiso, seleccionar todas las que quiera prohibir y, después, hacer clic en la opción correspondiente para revocar todos los permisos concedidos. Así, ya no se permitirá a los usuarios conceder permisos a esas aplicaciones.  Para obtener más información, vea [Administrar aplicaciones de OAuth](manage-app-permissions.md).
 -   **Compatibilidad mejorada para las aplicaciones de Azure**<br>
 Para Azure, implementaremos de forma gradual la posibilidad de identificar las aplicaciones como actividades de cuenta de usuario llevadas a cabo por las aplicaciones de Azure (tanto internas como externas). Ello le permite crear directivas que le enviarán una alerta si una aplicación realiza actividades inesperadas y no autorizadas. Para obtener más información, vea [Conectar Azure con Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md).
 -   **Motor de clasificación de datos actualizado con los tipos de datos confidenciales que estipula el RGPD**<br>

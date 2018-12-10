@@ -1,11 +1,11 @@
 ---
 title: Requisitos de red de Cloud App Security | Microsoft Docs
-description: En este tema se describen las direcciones IP y los puertos que debe abrir para trabajar con Cloud App Security.
+description: En este artículo se describen las direcciones IP y los puertos que debe abrir para trabajar con Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 11/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,28 +13,26 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 38c2e52118cd896f9cfe148647b43d72a154647f
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: 25ebeff05dc6fc7afd5e16de2076534c7f5070a3
+ms.sourcegitcommit: b0b3e6c6f150fff8c286185826ce099601a12679
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597466"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52280602"
 ---
-*Se aplica a: Microsoft Cloud App Security*
-
-
 # <a name="network-requirements"></a>Requisitos de red
 
-En este tema se incluye una lista de los puertos y las direcciones IP que debe permitir e incluir en la lista de permitidos para trabajar con Microsoft Cloud App Security. 
+*Se aplica a: Microsoft Cloud App Security*
 
+En este artículo se incluye una lista de los puertos y las direcciones IP que debe permitir e incluir en la lista de permitidos para trabajar con Microsoft Cloud App Security. 
 
 ## <a name="view-your-data-center"></a>Consultar el centro de datos
 
 Algunos de los siguientes requisitos dependen del centro de datos al que esté conectado. 
 
-Para saber a qué centro de datos se está conectando:
+Para ver el centro de datos al que se está conectando, siga estos pasos:
 
-1. En el portal de Cloud App Security, haga clic en **?** en la barra de menú y seleccione **Acerca de**. 
+1. En el portal de Cloud App Security, haga clic en el **icono de signo de interrogación** en la barra de menús. Después, seleccione **Acerca de**. 
 
     ![clic en Acerca de](./media/about-menu.png)
 
@@ -59,7 +57,7 @@ Para tener acceso al portal de Cloud App Security, agregue a la lista de permiti
     dc.services.visualstudio.com
     *.blob.core.windows.net
 
-Además, estos deben estar en una lista blanca, según el centro de datos que use:
+Además, estos elementos deben estar en una lista blanca, según el centro de datos que use:
 > [!div class="mx-tableFixed"]
 > 
 > |Centro de datos|Direcciones IP|Nombre DNS|
@@ -95,7 +93,7 @@ Para permitir que Cloud App Security se conecte a su SIEM, agregue a la lista de
 
 ## <a name="app-connector"></a>Conector de la aplicación
 
-Si quiere que Cloud App Security pueda acceder a ciertas aplicaciones de terceros, es posible que se usen las direcciones IP siguientes para que Cloud App Security recopile registros y proporcione acceso a su consola. 
+Se pueden usar estas direcciones IP para que Cloud App Security pueda acceder a algunas aplicaciones de terceros. Las direcciones IP permiten a Cloud App Security recopilar registros y proporcionan acceso a la consola de Cloud App Security. 
 
 > [!NOTE]
 >Puede que vea estas direcciones IP en los registros de actividad del proveedor, ya que Cloud App Security realiza acciones de gobierno y exámenes desde ellas. 
@@ -116,12 +114,12 @@ Para conectarse a aplicaciones de terceros, habilite Cloud App Security para per
 
 ## <a name="third-party-dlp-integration"></a>Integración de DLP de terceros
 
-Para que Cloud App Security envíe datos a través de Stunnel al servidor ICAP, abra el firewall de red perimetral a estas direcciones IP con un número de puerto de origen dinámico. 
+Para permitir que Cloud App Security envíe datos a través de Stunnel al servidor ICAP, abra el firewall de red perimetral a estas direcciones IP con un número de puerto de origen dinámico. 
 
-1.  Direcciones de origen: estas direcciones deben incluirse en la lista de permitidos como se detalla anteriormente para las aplicaciones de conector de la API de terceros
-2.  Puerto TCP de origen: dinámico
-3.  Direcciones de destino: una o dos direcciones IP del servidor Stunnel conectado al servidor ICAP externo
-4.  Puerto TCP de destino: según se defina en su red
+1. **Direcciones de origen**: estas direcciones deben incluirse en la lista de admitidas como se detalla anteriormente para las aplicaciones de conector de la API de terceros
+2. **Puerto TCP de origen**: dinámico
+3. **Direcciones de destino**: una o dos direcciones IP del servidor Stunnel conectado al servidor ICAP externo
+4. **Puerto TCP de destino**: según se defina en la red
 
 > [!NOTE] 
 > -  El número de puerto de Stunnel está establecido de forma predeterminada en 11344. Si es necesario, puede cambiarlo y usar otro, pero no olvide anotar el número de puerto nuevo.
@@ -150,16 +148,16 @@ Para que las notificaciones se puedan enviar desde la plantilla y la configuraci
 - 111.221.26.0/27
 - 207.46.50.192/26
 
-Si quiere personalizar la identidad del remitente de correo electrónico, Microsoft Cloud App Security lo hace posible mediante MailChimp®, un servicio de correo electrónico de terceros. Para que funcione, en el portal de Microsoft Cloud App Security, en **Configuración**, seleccione **Configuración de correo**, lea la declaración de privacidad y los términos de servicio de MailChimp y conceda a Microsoft permiso para utilizar MailChimp en su nombre.
+Si quiere personalizar la identidad del remitente de correo electrónico, Microsoft Cloud App Security permite la personalización mediante MailChimp®, un servicio de correo electrónico de terceros. Para facilitar el trabajo en el portal de Microsoft Cloud App Security, vaya a **Configuración**. Seleccione **Configuración de correo** y revise la declaración de privacidad y los términos de servicio de MailChimp. Después, conceda permiso a Microsoft para usar MailChimp en su nombre.
 
-Si no lo hace, las notificaciones de correo electrónico se enviarán con todos los valores predeterminados.
+Si no personaliza la identidad del remitente, las notificaciones de correo electrónico se enviarán con todos los valores predeterminados.
 
 Para trabajar con MailChimp, agregue esta dirección IP a la lista blanca contra el correo no deseado para habilitar el envío de notificaciones: 198.2.134.139 (mail1.cloudappsecurity.com)
 
 
 ## <a name="log-collector"></a>Recopilador de registros 
 
-Para habilitar características de Cloud Discovery por medio de un recopilador de registros y detectar Shadow TI en la organización, es necesario abrir lo siguiente:
+Para habilitar características de Cloud Discovery por medio de un recopilador de registros y detectar Shadow TI en la organización, abra los siguientes elementos:
 
 - Permita que el recopilador de registros reciba tráfico entrante de FTP y Syslog.
 - Permita que el recopilador de registros inicie tráfico saliente al portal (por ejemplo, contoso.cloudappsecurity.com) en el puerto 443.
@@ -179,9 +177,8 @@ Para habilitar características de Cloud Discovery por medio de un recopilador d
 >- Permita que el recopilador de registros inicie tráfico saliente al portal de Cloud App Security.
 >- Si no ha especificado ningún proxy al configurar el recopilador de registros, debe permitir las conexiones HTTP a http://ocsp.msocsp.com/ en el puerto 80. Esto sirve para comprobar el estado de revocación de certificado al conectarse al portal de Cloud App Security.
 
-
-
-## <a name="see-also"></a>Consulte también  
+## <a name="next-steps"></a>Pasos siguientes
+ 
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  

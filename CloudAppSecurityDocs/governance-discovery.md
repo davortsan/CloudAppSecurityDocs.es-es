@@ -1,11 +1,11 @@
 ---
 title: Bloqueo de aplicaciones detectadas | Documentos de Microsoft
-description: En este tema se describe el procedimiento para exportar scripts de bloqueo para aplicaciones detectadas.
+description: En este artículo se describe el procedimiento para exportar scripts de bloqueo para aplicaciones detectadas.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2018
+ms.date: 11/15/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,29 +13,27 @@ ms.technology: ''
 ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e0e616914ce44ca28938298a5a0f3951b83454dc
-ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
+ms.openlocfilehash: 7664ad859d0fb069c524b8fa61f5e7c2cbd3b3ec
+ms.sourcegitcommit: 79e5aa5a5f90223a5963eb8f6df81a80578e9ce9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881796"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644304"
 ---
+# <a name="govern-discovered-apps"></a>Controlar las aplicaciones detectadas
+
 *Se aplica a: Microsoft Cloud App Security*
-
-
-## <a name="govern-discovered-apps"></a>Controlar las aplicaciones detectadas
 
 Después de revisar la lista de aplicaciones detectadas en el entorno, puede protegerlo contra el uso de aplicaciones no deseadas de las maneras que se indican a continuación.
 
 
-### <a name="sanctioningunsanctioning-an-app"></a>Autorizar o no autorizar una aplicación 
+## <a name="BKMK_SanctionApp"></a> Autorizar o no autorizar una aplicación 
 
-Puede no autorizar una aplicación de riesgo específica. Para ello, haga clic en los tres puntos situados al final de la fila y seleccione **No autorizar**.
-El hecho de no autorizar una aplicación no impide que se use, pero le permite supervisar más fácilmente su uso con los filtros de Cloud Discovery. Después, puede notificar a los usuarios que la aplicación no está autorizada y sugerir una aplicación segura alternativa.
+Puede no autorizar una aplicación de riesgo específica. Para ello, haga clic en los tres puntos situados al final de la fila. Después seleccione **No autorizar**. El hecho de no autorizar una aplicación no impide que se use, pero le permite supervisar más fácilmente su uso con los filtros de Cloud Discovery. Después, puede notificar a los usuarios de la aplicación que no está autorizada y sugerir una aplicación segura alternativa.
 
 ![Etiquetar como no autorizada](./media/tag-as-unsanctioned.png)  
 
-Si tiene una lista de aplicaciones que quiere autorizar o no autorizar, puede activar la casilla de todas las aplicaciones que quiere administrar y, después, seleccionar la acción.
+Si tiene una lista de aplicaciones que quiere autorizar o no autorizar, active la casilla de todas las aplicaciones que quiere administrar y después seleccione la acción.
 
 Para consultar una lista de las aplicaciones no autorizadas, puede [generar un script de bloque mediante las API de Cloud App Security](https://us.portal.cloudappsecurity.com/api-docs/#generate-block-script).
 
@@ -44,8 +42,7 @@ Para consultar una lista de las aplicaciones no autorizadas, puede [generar un s
 
 ## <a name="export-a-block-script-to-govern-discovered-apps"></a>Exportar un script de bloque para controlar aplicaciones detectadas
 
-Cloud App Security permite bloquear el acceso a aplicaciones no autorizadas con el uso de sus aplicaciones locales de seguridad. Puede generar un script de bloqueo dedicado e importarlo en su aplicación.
-Esta solución no requiere redireccionar todo el tráfico web de la organización a un proxy.
+Cloud App Security permite bloquear el acceso a aplicaciones no autorizadas con el uso de sus aplicaciones locales de seguridad. Puede generar un script de bloqueo dedicado e importarlo al la aplicación. Esta solución no requiere redireccionar todo el tráfico web de la organización a un proxy.
 
 1. En el panel de Cloud Discovery, etiquete las aplicaciones que quiere bloquear como **No autorizada**.
 
@@ -57,9 +54,9 @@ Esta solución no requiere redireccionar todo el tráfico web de la organizació
 
 3. En **Generar script de bloque**, seleccione la aplicación para la que quiere generar el script de bloque. 
 
-   ![Ventana emergente de Generar script de bloque](./media/generate-block-script-popup.png)  
+   ![Ventana emergente de Generar script de bloqueo](./media/generate-block-script-popup.png)  
 
-4. A continuación, haga clic en el botón Generar script. Esto creará un script de bloque para todas sus aplicaciones no autorizadas. De forma predeterminada, se asignará un nombre al archivo con la fecha en la que se haya exportado y el tipo de aplicación que haya seleccionado, por ejemplo *2017-02-19_CAS_Fortigate_block_script.txt* 
+4. Después, haga clic en el botón Generar script para crear un script de bloqueo para todas las aplicaciones no autorizadas. De forma predeterminada, se asignará un nombre al archivo con la fecha en la que se haya exportado y el tipo de aplicación que haya seleccionado. *2017-02-19_CAS_Fortigate_block_script.txt* sería un nombre de archivo de ejemplo 
 
    ![Botón Generar script de bloque](./media/generate-block-script-button.png)  
 
@@ -67,7 +64,7 @@ Esta solución no requiere redireccionar todo el tráfico web de la organizació
 
 
 
-## <a name="see-also"></a>Consulte también  
+## <a name="next-steps"></a>Pasos siguientes  
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  

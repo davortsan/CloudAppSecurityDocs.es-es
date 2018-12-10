@@ -1,11 +1,11 @@
 ---
 title: Administración de tokens de API en Cloud App Security | Microsoft Docs
-description: En este tema se proporciona información sobre cómo generar tokens de API para Cloud App Security.
+description: En este artículo se proporciona información sobre cómo generar tokens de API para Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,17 @@ ms.technology: ''
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 772c140ac178f65f1d558c69b732de6925ce0d51
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: 849669dc659d3abfb4787d3a94edadc170db485e
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349498"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597075"
 ---
+# <a name="api-tokens"></a>Tokens de API
+
 *Se aplica a: Microsoft Cloud App Security*
 
-
-# <a name="api-tokens"></a>Tokens de API
-    
 La API de Microsoft Cloud App Security proporciona acceso mediante programación a Cloud App Security a través de puntos de conexión de API de REST. Las aplicaciones pueden usar la API para realizar operaciones de lectura y actualización en objetos y datos de Cloud App Security. Por ejemplo, la API de Cloud App Security admite las siguientes operaciones comunes para un objeto de usuario:
 
 - Cargar archivos de registro para Cloud Discovery
@@ -76,7 +75,7 @@ Después de que se haya revocado un token, se quitará de la tabla y el software
 
 
 
-## <a name="see-also"></a>Consulte también  
+## <a name="next-steps"></a>Pasos siguientes
 [Solución de problemas de integración de SIEM](troubleshooting-siem.md)   
 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  

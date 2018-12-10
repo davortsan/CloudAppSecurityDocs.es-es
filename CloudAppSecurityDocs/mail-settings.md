@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/29/2018
+ms.date: 11/16/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,48 +13,57 @@ ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 682d3e7a988e7662f393b20296322ee590d85315
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 2d1621dd7a1e082631b941ecfb711a686a69991a
+ms.sourcegitcommit: 851ff017c226435d38bed18dbece640a632cd2a0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143214"
+ms.lasthandoff: 11/18/2018
+ms.locfileid: "51943708"
 ---
+# <a name="email-notification-preferences"></a>Preferencias de notificación de correo electrónico
+
 *Se aplica a: Microsoft Cloud App Security*
 
+En este artículo se proporciona información sobre cómo personalizar las notificaciones de correo electrónico que Cloud App Security envía.
 
-##  <a name="mailsettings"></a> Establecimiento de preferencias de notificación de correo electrónico  
+## <a name="mailsettings"></a> Establecimiento de preferencias de notificación de correo electrónico  
 
-Para establecer los parámetros de las notificaciones de correo enviadas desde Microsoft Cloud App Security a los administradores que solicitan alertas, así como de las notificaciones enviadas a los usuarios finales sobre infracciones en las que puedan haber participado, siga este procedimiento. Para obtener información sobre la dirección IP del servidor de correo electrónico de Microsoft Cloud App Security que debe incluir en la lista de permitidos del servicio de correo electrónico no deseado, vea [Requisitos de red](network-requirements.md). 
+ Microsoft Cloud App Security envía notificaciones por correo electrónico a los administradores que solicitan alertas y a los usuarios finales implicados en las infracciones. Para establecer los parámetros para las notificaciones de correo electrónico, siga este procedimiento. Para obtener información sobre la dirección IP del servidor de correo electrónico de Microsoft Cloud App Security que debe incluir en la lista de permitidos del servicio de correo electrónico no deseado, vea [Requisitos de red](network-requirements.md).
 
-
-1. En la barra de menús, haga clic en el engranaje de configuración ![icono de configuración](./media/settings-icon.png "settings icon"), seleccione **Configuración** y, después, seleccione la pestaña **Configuración de correo electrónico**.  
+1. En la barra de menús, haga clic en el engranaje de configuración, seleccione **Configuración** y después la pestaña **Configuración de correo electrónico**.  
 
    ![configuración de correo](./media/mail-settings-config.png)
 
-2. En **Identidad del emisor de correo electrónico**: si va a utilizar la configuración de correo electrónico predeterminada, no necesita cambiar nada en esta sección. Si quiere personalizar la identidad del remitente de correo electrónico, puede aplicar cualquiera de las opciones que se indican a continuación para personalizar el campo que quiera modificar. Puede cambiar todas estas opciones o alguna de ellas: **Nombre para mostrar del campo Desde**, **Dirección de correo electrónico del campo Desde**, **Dirección de correo electrónico del campo Responder a**. Microsoft Cloud App Security lo realiza automáticamente mediante el uso de un servicio de correo de terceros llamado MailChimp®. Asegúrese de revisar y aceptar los términos de servicio y la declaración de privacidad de MailChimp para permitirlo; en caso contrario, Microsoft Cloud App Security enviará las notificaciones con la configuración predeterminada.
-   
+2. En **Identidad del emisor de correo electrónico**: si va a usar la configuración de correo electrónico predeterminada, no necesita cambiar nada en esta sección. Si quiere personalizar la identidad del remitente de correo electrónico, puede aplicar cualquiera de las opciones que se indican a continuación para personalizar el campo que quiera modificar. Puede cambiar todas estas opciones o alguna de ellas: **Nombre para mostrar del campo Desde**, **Dirección de correo electrónico del campo Desde**, **Dirección de correo electrónico del campo Responder a**. Microsoft Cloud App Security realiza la personalización mediante el uso de un servicio de correo de terceros llamado MailChimp®. Asegúrese de revisar y aceptar los Términos de servicio y la Declaración de privacidad de MailChimp para habilitar la personalización. En caso contrario, Microsoft Cloud App Security enviará las notificaciones mediante la configuración predeterminada.
+ 
    > [!NOTE]
    > Solo se admiten caracteres Unicode en el nombre para mostrar y la dirección de correo electrónico de conformidad con el [estándar rfc822](http://www.rfc-editor.org/rfc/rfc822.txt).
 
   
-3. Puede usar **Diseño del correo electrónico** para usar un archivo .html para personalizar y diseñar los mensajes de correo electrónico enviados desde el sistema. El archivo .html que use como plantilla debe incluir lo siguiente:  
+3. Puede usar **Diseño del correo electrónico** para usar un archivo .html para personalizar y diseñar los mensajes de correo electrónico enviados desde el sistema. El archivo .html que use como plantilla debe incluir los siguientes elementos:  
   
-   -   Todos los archivos CSS de plantilla deben estar alineados en la plantilla.  
+   - Todos los archivos CSS de plantilla deben estar alineados en la plantilla.  
   
-   -   La plantilla debe tener tres marcadores de posición no modificables:  
+   - La plantilla debe tener tres marcadores de posición no modificables:  
   
-        %%logo%%: dirección URL que lleva al logotipo de la empresa que se ha cargado en la página de configuración General.  
+        - **%%logo%%**: dirección URL que lleva al logotipo de la empresa que se ha cargado en la página de configuración General.  
   
-        %%title%%: marcador de posición del título del correo electrónico, según lo establecido por la directiva.  
+        - **%%title%%**: marcador de posición del título del correo electrónico, según lo establecido por la directiva.  
 
-        %%content%%: marcador de posición del contenido que se incluirá para los usuarios finales, según lo establecido por la directiva.  
-     
+        - **%%content%%**: marcador de posición del contenido que se incluirá para los usuarios finales, según lo establecido por la directiva.  
+
 4. Haga clic en **Cargar una plantilla...** y seleccione el archivo que ha creado. 
 
-5. Luego, haga clic en **Enviar un correo electrónico de prueba** para enviarse a sí mismo un mensaje de prueba para ver un ejemplo de la plantilla creada. El correo se enviará a la cuenta usada para iniciar sesión en el portal. En el correo de prueba podrá ver los campos de metadatos, la plantilla, el asunto del correo, el título en el cuerpo del correo y el contenido.  Esta es una plantilla de correo de ejemplo: 
+5. Haga clic en **Enviar un correo electrónico de prueba** para enviarse a su propia dirección un correo para ver un ejemplo de la plantilla creada. El correo se enviará a la cuenta usada para iniciar sesión en el portal. En el correo electrónico de prueba, verá y comprobará los siguientes elementos:
+    - Los campos de metadatos
+    - La plantilla
+    - El asunto del correo electrónico
+    - El título en el cuerpo del correo electrónico
+    - El contenido
 
+## <a name="sample-email-template"></a>Plantilla de correo electrónico de ejemplo
 
+A continuación se muestra una plantilla de correo electrónico de ejemplo:
 
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -108,15 +117,10 @@ Para establecer los parámetros de las notificaciones de correo enviadas desde M
           </table>  
             </body>  
           </html>  
-   ```
-  
+```
 
-  
-  
+## <a name="next-steps"></a>Pasos siguientes
 
-  
-    
-## <a name="see-also"></a>Consulte también  
 [Configurar Cloud Discovery](set-up-cloud-discovery.md)   
 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  

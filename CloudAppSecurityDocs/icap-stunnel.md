@@ -1,11 +1,11 @@
 ---
 title: Integración de DLP externa de seguridad de Cloud App Security a través de ICAP seguro | Microsoft Docs
-description: En este tema se proporcionan los pasos necesarios para configurar la conexión ICAP en Cloud App Security y la instalación de Stunnel.
+description: En este artículo se proporcionan los pasos necesarios para configurar la conexión ICAP en Cloud App Security y la instalación de Stunnel.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 11/15/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,16 @@ ms.technology: ''
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c893c5411201c2f40863d6f49602a694a915e2d5
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 6898bfa943129fb32cae1f587e88dfd478c355d6
+ms.sourcegitcommit: 79e5aa5a5f90223a5963eb8f6df81a80578e9ce9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144438"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644355"
 ---
-*Se aplica a: Microsoft Cloud App Security*
-
-
-
 # <a name="external-dlp-integration"></a>Integración de DLP externa
+
+*Se aplica a: Microsoft Cloud App Security*
 
 Microsoft Cloud App Security puede integrarse con las soluciones DLP existentes para ampliar estos controles a la nube y, al mismo tiempo, conservar una directiva coherente y unificada en las actividades locales y en la nube. La plataforma exporta interfaces fáciles de usar, como API de REST e ICAP, y permite la integración con sistemas de clasificación de contenido, como Symantec Data Loss Prevention (antes conocida como Vontu Data Loss Prevention) o Forcepoint DLP. 
 
@@ -74,20 +72,20 @@ Visite el [sitio web de Stunnel](https://www.stunnel.org/index.html) para obtene
 
 #### <a name="install-stunnel-on-windows"></a>Instalar Stunnel en Windows
 
-1. [Descargue la instalación más reciente de Windows Server](https://www.stunnel.org/downloads.html) (debería funcionar en todas las ediciones recientes de Windows Server)
+1. [Descargue la instalación más reciente de Windows Server](https://www.stunnel.org/downloads.html) (esta aplicación debería funcionar en todas las ediciones recientes de Windows Server).
    (instalación predeterminada).
 
-2. Durante la instalación, no cree un nuevo certificado autofirmado, ya que creará un certificado más adelante.
+2. Durante la instalación, no cree un certificado autofirmado. Creará un certificado en un paso posterior.
 
 3. Haga clic en **Start server after installation** (Iniciar el servidor después de la instalación).
 
 4. Cree un certificado de una de las siguientes maneras:
 
-   - Use el servidor de administración de certificados para crear un certificado SSL en el servidor ICAP y, después, copie las claves en el servidor que ha preparado para la instalación de Stunnel.
+   - Use el servidor de administración de certificados para crear un certificado SSL en el servidor ICAP. Después, copie las claves en el servidor que ha preparado para la instalación de Stunnel.
    - O bien, en el servidor de Stunnel, use los siguientes comandos de OpenSSL para generar una clave privada y un certificado autofirmado. Reemplace estas variables:
-     -    **key.pem** por el nombre de la clave privada
-     -    **cert.pem** por el nombre del certificado
-     -    **stunnel-key** por el nombre de la clave recién creada
+     - **key.pem** por el nombre de la clave privada
+     - **cert.pem** por el nombre del certificado
+     - **stunnel-key** por el nombre de la clave recién creada
 
 5. En la ruta de instalación de Stunnel, abra el directorio de configuración. De forma predeterminada es c:\Archivos de programa (x86)\stunnel\config\
 6. Ejecute la línea de comandos con permisos de administrador: `..\bin\openssl.exe genrsa -out key.pem 2048 `
@@ -110,7 +108,7 @@ Visite el [sitio web de Stunnel](https://www.stunnel.org/index.html) para obtene
 
     ![Editar la configuración de Windows Server](./media/stunnel-windows.png)
  
-12. Abra el archivo y pegue las siguientes líneas de configuración del servidor, donde **DLP Server IP** es la dirección IP del servidor ICAP, **stunnel-key** es la clave creada en el paso anterior y **MCASCAfile** es el certificado público del cliente de Stunnel de Cloud App Security. Además, elimine todo el texto de ejemplo que vea (en el ejemplo se muestra texto de Gmail) y copie lo siguiente en el archivo:
+12. Abra el archivo y pegue las siguientes líneas de configuración de servidor. **DLP Server IP** es la dirección IP del servidor ICAP, **stunnel-key** es la clave creada en el paso anterior y **MCASCAfile** es el certificado público del cliente de Stunnel de Cloud App Security. Elimine todo el texto de ejemplo que vea (en el ejemplo se muestra texto de Gmail) y copie el siguiente texto en el archivo:
 
         [microsoft-Cloud App Security]
         accept = 0.0.0.0:11344
@@ -128,11 +126,12 @@ Visite el [sitio web de Stunnel](https://www.stunnel.org/index.html) para obtene
 
 El siguiente ejemplo se basa en una instalación del servidor Ubuntu cuando se inicia sesión como usuario raíz. En el caso de otros servidores, use comandos paralelos. 
 
-En el servidor preparado, descargue e instale la versión más reciente de Stunnel. Para ello, ejecute el comando siguiente en el servidor Ubuntu, lo que instalará Stunnel y OpenSSL:
+En el servidor preparado, descargue e instale la versión más reciente de Stunnel. Ejecute el siguiente comando en el servidor de Ubuntu para instalar Stunnel y OpenSSL:
 
     apt-get update
     apt-get install openssl -y
     apt-get install stunnel4 -y
+
 Ejecute el siguiente comando desde una consola para comprobar que Stunnel está instalado. Debería obtener el número de versión y una lista de opciones de configuración:
 
     stunnel-version
@@ -142,8 +141,8 @@ Ejecute el siguiente comando desde una consola para comprobar que Stunnel está 
 El servidor ICAP y Cloud App Security usan una clave privada y un certificado público para cifrar y autenticar el servidor en Stunnel. Asegúrese de que crea la clave privada sin una frase de contraseña para que Stunnel se pueda ejecutar como un servicio en segundo plano. Además, establezca el permiso de los archivos en **lectura** para el propietario del túnel de SSL y en **ninguno** para todos los demás usuarios.
 
 Puede crear los certificados de una de las maneras siguientes:
--   Use el servidor de administración de certificados para crear un certificado SSL en el servidor ICAP y, después, copie las claves en el servidor que ha preparado para la instalación de Stunnel. 
--   O bien, en el servidor de Stunnel, use los siguientes comandos de OpenSSL para generar una clave privada y un certificado autofirmado. Reemplace estas variables:
+- Use el servidor de administración de certificados para crear un certificado SSL en el servidor ICAP. Después, copie las claves en el servidor que ha preparado para la instalación de Stunnel. 
+- O bien, en el servidor de Stunnel, use los siguientes comandos de OpenSSL para generar una clave privada y un certificado autofirmado. Reemplace estas variables:
     - **"key.pem"** por el nombre de la clave privada
     - **"cert.pem"** por el nombre del certificado
     - **"stunnel-key"** por el nombre de la clave recién creada
@@ -162,7 +161,7 @@ La configuración de Stunnel se establece en el archivo stunnel.conf.
 
 1. Cree el archivo stunnel.conf en el directorio siguiente: **vim /etc/stunnel/stunnel.conf**.
 
-3.  Abra el archivo y pegue las siguientes líneas de configuración del servidor, donde **DLP Server IP** es la dirección IP del servidor ICAP, **stunnel-key** es la clave creada en el paso anterior y **MCASCAfile** es el certificado público del cliente de Stunnel de Cloud App Security:
+2. Abra el archivo y pegue las siguientes líneas de configuración de servidor.  **DLP Server IP** es la dirección IP del servidor ICAP, **stunnel-key** es la clave creada en el paso anterior y **MCASCAfile** es el certificado público del cliente de Stunnel de Cloud App Security:
 
         [microsoft-Cloud App Security]
         accept = 0.0.0.0:11344
@@ -178,26 +177,26 @@ Actualice la tabla de direcciones IP con la siguiente regla de enrutamiento:
    
     iptables -I INPUT -p tcp --dport 11344 -j ACCEPT
 
-Para que la actualización en la tabla de direcciones IP sea persistente, use los siguientes comandos:
+Use los siguientes comandos para que la actualización en la tabla de direcciones IP sea persistente:
 
      sudo apt-get install iptables-persistent
      sudo /sbin/iptables-save > /etc/iptables/rules.v4
  
 
 ### <a name="run-stunnel"></a>Ejecutar Stunnel
-1.  En el servidor de Stunnel, ejecute lo siguiente:
+1. En el servidor de Stunnel, ejecute el siguiente comando:
 
         vim /etc/default/stunnel4
 
-2.  Cambie la variable ENABLED a 1:
+2. Cambie la variable ENABLED a 1:
 
         ENABLED=1
 
-3.  Reinicie el servicio para que la configuración tenga efecto:
+3. Reinicie el servicio para que la configuración tenga efecto:
 
         /etc/init.d/stunnel4 restart
 
-4.  Ejecute los comandos siguientes para comprobar que Stunnel se ejecuta correctamente:
+4. Ejecute los comandos siguientes para comprobar que Stunnel se ejecuta correctamente:
 
         ps -A | grep stunnel
 
@@ -219,13 +218,13 @@ Si el proceso todavía no se está ejecutando, vea la [documentación de Stunnel
 3. En el asistente para **agregar nueva DLP externa**, proporcione un **nombre de conexión** (por ejemplo, Mi conector de Forcepoint), que se usará para identificar el conector.
 
 4. Seleccione el **tipo de conexión**:
-    - **Symantec Vontu**: seleccione esta opción para usar la integración personalizada para dispositivos Vontu DLP.
-    - **Forcepoint DLP**: seleccione esta opción para usar la integración personalizada para dispositivos Forcepoint DLP.
-    - **Generic ICAP – REQMOD** (ICAP genérico: REQMOD): seleccione esta opción para otros dispositivos DLP que usan la [modificación de solicitudes](https://tools.ietf.org/html/rfc3507).
-    - **Generic ICAP – RESPMOD** (ICAP genérico: RESPMOD): seleccione esta opción para otros dispositivos DLP que usan la [modificación de respuestas](https://tools.ietf.org/html/rfc3507).
-    ![conexión ICAP de Cloud App Security](./media/icap-wizard1.png)
+    - **Symantec Vontu**: use la integración personalizada para dispositivos Vontu DLP.
+    - **Forcepoint DLP**: use la integración personalizada para dispositivos Forcepoint DLP.
+    - **Generic ICAP – REQMOD**: use otros dispositivos DLP que usan la [modificación de solicitudes](https://tools.ietf.org/html/rfc3507).
+    - **Generic ICAP – RESPMOD**: use otros dispositivos DLP que usan la [modificación de respuestas](https://tools.ietf.org/html/rfc3507).
+    ![Conexión ICAP de Cloud App Security](./media/icap-wizard1.png)
 
-5. Vaya al certificado público que generó en los pasos anteriores, "cert.pem" para conectarse con Stunnel, y haga clic en **Siguiente**.
+5. Vaya al certificado público que generó en los pasos anteriores ("cert.pem") para conectarse con Stunnel. Haga clic en **Siguiente**.
 
    > [!NOTE]
    > Se recomienda encarecidamente que active la casilla **Use secure ICAP** (Usar ICAP seguro) para configurar una puerta de enlace cifrada de Stunnel. Si va a realizar pruebas o si no dispone de un servidor de Stunnel, puede desactivar esta opción para realizar la integración directamente con el servidor DLP. 
@@ -286,7 +285,7 @@ El servidor de detección que Cloud App Security usa es un servidor estándar de
 
 
 ### <a name="policy-configuration"></a>Configuración de directivas
-Cloud App Security admite sin problemas todos los tipos de reglas de detección que se incluyen con Symantec DLP, por lo que no es necesario modificar las reglas existentes. Sin embargo, hay un cambio de configuración que se debe aplicar a todas las directivas nuevas y existentes para permitir la integración total. Este cambio implica agregar una regla de respuesta específica a todas las directivas. 
+Cloud App Security admite sin problemas todos los tipos de reglas de detección que se incluyen con Symantec DLP, por lo que no es necesario modificar las reglas existentes. Pero hay un cambio de configuración que se debe aplicar a todas las directivas nuevas y existentes para permitir la integración total. Este cambio implica agregar una regla de respuesta específica a todas las directivas. 
 
 Agregue el cambio de configuración a Vontu:
 
@@ -318,7 +317,7 @@ Esta regla se debe agregar a todas las directivas existentes.
 > Si utiliza Symantec Vontu para examinar archivos desde Dropbox, CAS mostrará automáticamente el archivo como originario de la siguiente dirección URL: http://misc/filename. Esta dirección URL del marcador de posición no lleva a ninguna parte, pero se utiliza para fines de registro.
 
 
-## <a name="see-also"></a>Consulte también  
+## <a name="next-steps"></a>Pasos siguientes 
 [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)   
 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  

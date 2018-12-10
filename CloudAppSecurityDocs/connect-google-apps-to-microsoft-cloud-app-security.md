@@ -1,11 +1,11 @@
 ---
 title: Conectar G Suite con Cloud App Security para la visibilidad y el control del uso | Microsoft Docs
-description: En este tema se proporciona información sobre cómo conectar G Suite con Cloud App Security mediante el conector de API.
+description: En este artículo se proporciona información sobre cómo conectar G Suite con Cloud App Security mediante el conector de API.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/08/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,19 +13,19 @@ ms.technology: ''
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 834f444831e2024d9a29ace710e7e2c35fb6f1ce
-ms.sourcegitcommit: b8e75cefeffe3ae160830f3bf384f05db985e0d3
+ms.openlocfilehash: e5d70f17437e2fb195fdc1555340dc29f8cfb436
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51285850"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596939"
 ---
+# <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Conectar G Suite con Microsoft Cloud App Security
+
 *Se aplica a: Microsoft Cloud App Security*
 
-# <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Conectar G Suite con Microsoft Cloud App Security
-En esta sección se ofrecen instrucciones para conectar Microsoft Cloud App Security con una cuenta de G Suite existente mediante las API del conector.
-  
-  
+En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Security con una cuenta de G Suite existente mediante las API del conector.
+    
 ## <a name="configure-g-suite"></a>Configurar G Suite  
   
 1. Como superadministrador de G Suite, inicie sesión en <a href="https://cloud.google.com/console/project" target="_blank">https://cloud.google.com/console/project</a>.  

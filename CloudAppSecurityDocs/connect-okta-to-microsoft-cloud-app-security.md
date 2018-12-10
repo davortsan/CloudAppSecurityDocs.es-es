@@ -1,11 +1,11 @@
 ---
 title: Conectar Okta con Cloud App Security para la visibilidad y el control del uso | Microsoft Docs
-description: En este tema se proporciona información sobre cómo conectar la aplicación Okta con Cloud App Security mediante el conector de API.
+description: En este artículo se proporciona información sobre cómo conectar la aplicación Okta con Cloud App Security mediante el conector de API.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,19 +13,18 @@ ms.technology: ''
 ms.assetid: 9c3673b9-99bd-400c-9da1-5bf809ea5892
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bd32bbeddd7eae593ffe1ee21fe0d2f2aab08df1
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: 5f3f6113e48ea1db2261786d54a2edc9f320663e
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217227"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597228"
 ---
+# <a name="connect-okta-to-microsoft-cloud-app-security"></a>Conectar Okta con Microsoft Cloud App Security
+
 *Se aplica a: Microsoft Cloud App Security*
 
-
-
-# <a name="connect-okta-to-microsoft-cloud-app-security"></a>Conectar Okta con Microsoft Cloud App Security
-En esta sección se ofrecen instrucciones para conectar Microsoft Cloud App Security con una cuenta de Okta existente mediante las API del conector.  
+En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Security con una cuenta de Okta existente mediante las API del conector.  
   
 ## <a name="how-to-connect-okta-to-cloud-app-security"></a>Cómo conectar Okta con Cloud App Security  
   

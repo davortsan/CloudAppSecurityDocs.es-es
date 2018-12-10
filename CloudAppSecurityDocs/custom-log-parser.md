@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 11/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,31 +13,31 @@ ms.technology: ''
 ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d8b15a5ce0deebb90b40d5a4bcd7c1aefd9bfc8a
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: 593c54aa44b2345e1c0b7e3ad7dab9b6e50e774a
+ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51596820"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52743648"
 ---
 # <a name="use-a-custom-log-parser"></a>Uso del analizador de registros personalizado
 
 *Se aplica a: Microsoft Cloud App Security*
 
-Cloud App Security le permite configurar un analizador personalizado para satisfacer y procesar el formato de los registros de modo que se puedan usar para Cloud Discovery. Normalmente usaría un analizador personalizado si Cloud App Security no admite explícitamente el firewall o el dispositivo. 
+Cloud App Security le permite configurar un analizador personalizado para satisfacer y procesar el formato de los registros de modo que se puedan usar para Cloud Discovery. Normalmente usaría un analizador personalizado si Cloud App Security no admite explícitamente el firewall o el dispositivo. Puede tratarse de un analizador CSV o un analizador de clave-valor personalizado.
 
 El analizador personalizado le permite utilizar registros de firewalls no admitidos siguiendo este proceso. 
 
 
  
-Para configurar un analizador CSV personalizado:
+Para configurar un analizador personalizado:
 1. En el portal de Cloud App Security, haga clic en **Detectar** y, después, en **Crear nuevo informe de instantáneas**.  
   
    ![Crear nuevo informe de instantáneas](./media/create-new-snapshot-report.png)
      
 2. Escriba un **nombre de informe** y una **descripción**
   
-3. En **Origen de datos**, seleccione **Custom log format...**  (Formato de registro personalizado...).  
+3. En **Origen de datos**, seleccione **Custom log format...** (Formato de registro personalizado...).  
 
     ![Nuevo informe de instantáneas](./media/custom-log-upload.png)   
 
@@ -55,7 +55,7 @@ Para configurar un analizador CSV personalizado:
    ![analizador de registro personalizado](./media/custom-log-parser.png) 
 
 
-7. Haga clic en **Guardar**. El formato de registro personalizado que ha configurado se guardará como analizador personalizado de forma predeterminada. Puede editarlo en cualquier momento haciendo clic en Editar.
+7. Haga clic en **Guardar**. El formato de registro personalizado que ha configurado se guardará como analizador personalizado de forma predeterminada. Puede editarlo en cualquier momento si hace clic en **Editar**.
 
 8. En **Elija los registros de tráfico**, seleccione el archivo de registro que se ha modificado y cárguelo. Puede cargar hasta 20 archivos a la vez. También se admiten los archivos comprimidos.  
   

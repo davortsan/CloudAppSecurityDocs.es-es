@@ -1,11 +1,11 @@
 ---
 title: Trabajar con aplicaciones detectadas en Cloud App Security | Microsoft Docs
-description: En este tema se describe el proceso de identificación y corrección de aplicaciones de riesgo de Cloud Discovery en Cloud App Security.
+description: En este artículo se describe el proceso de identificación y corrección de aplicaciones de riesgo de Cloud Discovery en Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,23 +13,22 @@ ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8cc854e387cb563ca488c299f17b6553905ac6d7
-ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
+ms.openlocfilehash: 403eb991a33fd8f0deda7212b0ec180fe23f8551
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50745704"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53122843"
 ---
-*Se aplica a: Microsoft Cloud App Security*
-
-
 # <a name="working-with-discovered-apps"></a>Trabajar con aplicaciones detectadas
 
-## <a name="review-the-cloud-discovery-dashboard"></a>Revisar el panel de Cloud Discovery
+*Se aplica a: Microsoft Cloud App Security*
 
 El panel de Cloud Discovery está diseñado para proporcionar más información sobre cómo se usan las aplicaciones en la nube en la organización. Proporciona una visión general de un vistazo sobre los tipos de aplicaciones que se usan, las alertas abiertas y los niveles de riesgo de las aplicaciones de la organización. También muestra quiénes son los usuarios que más usan las aplicaciones y proporciona un mapa de ubicación de la sede central de la aplicación. El panel de Cloud Discovery tiene muchas opciones para filtrar los datos. Con el filtrado se pueden generar vistas específicas en función de lo que más le interese y gráficos fáciles de entender para que se haga una idea general de un vistazo.
 
 ![panel de Cloud Discovery](./media/cloud-discovery-dashboard.png)
+
+## <a name="review-the-cloud-discovery-dashboard"></a>Revisar el panel de Cloud Discovery
 
 Lo primero que debe hacer para obtener una visión general de sus aplicaciones de Cloud Discovery es ir al panel de Cloud Discovery y revisar esta información:
  
@@ -42,7 +41,7 @@ Lo primero que debe hacer para obtener una visión general de sus aplicaciones d
 4. Puede ver los **principales usuarios y las direcciones IP de origen** para identificar los usuarios predominantes de aplicaciones en la nube de la organización.
 5. Compruebe cómo se extienden las aplicaciones detectadas según la ubicación geográfica (de acuerdo con su sede central) en el **mapa de la sede central de la aplicación**.
 
-6. Por último, no olvide revisar la puntuación de riesgo de la aplicación detectada en el **App risk overview** (Información general sobre el riesgo de la aplicación).  Compruebe el **estado de alertas de detección** para ver cuántas alertas abiertas se deben investigar.
+6. Por último, no olvide revisar la puntuación de riesgo de la aplicación detectada en el **App risk overview** (Información general sobre el riesgo de la aplicación). Compruebe el **estado de alertas de detección** para ver cuántas alertas abiertas se deben investigar.
 
 ## <a name="deep-dive-into-discovered-apps"></a>Análisis detallado de las aplicaciones detectadas
 Si quiere profundizar en los datos proporcionados por Cloud Discovery, use los filtros para revisar qué aplicaciones entrañan riesgos y cuáles se usan habitualmente.
@@ -109,7 +108,7 @@ Para crear un informe continuo:
   
 5. Seleccione los orígenes de datos que quiere incluir (todos u orígenes específicos).  
   
-6. Establezca los filtros que quiera sobre los datos. Estos filtros pueden ser **Grupos de usuarios**, **etiquetas de dirección IP o **Intervalos de direcciones IP**. Para obtener más información sobre el trabajo con etiquetas de dirección IP e intervalos de direcciones IP, consulte [Organize the data according to your needs](ip-tags.md) (Organizar los datos de acuerdo a las necesidades).  
+6. Establezca los filtros que quiera sobre los datos. Estos filtros pueden ser **Grupos de usuarios**, **Etiquetas de dirección IP** o **Intervalos de direcciones IP**. Para obtener más información sobre el trabajo con etiquetas de dirección IP e intervalos de direcciones IP, consulte [Organize the data according to your needs](ip-tags.md) (Organizar los datos de acuerdo a las necesidades).  
   
     ![crear informe continuo personalizado](./media/create-custom-continuous-report.png) 
 

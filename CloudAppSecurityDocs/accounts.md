@@ -1,11 +1,11 @@
 ---
 title: Visibilidad de las cuentas de aplicaciones en la nube | Microsoft Docs
-description: 'En este tema:'
+description: En este artículo se proporciona información sobre la revisión de las cuentas de las aplicaciones conectadas.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 06662cea3c0712fb26f6afdab1e83ab330b076e1
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: 7785b9ea4e9f9d6dbc164ec7636e4f7a8ec79121
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349549"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596701"
 ---
+# <a name="accounts"></a>Cuentas
+
 *Se aplica a: Microsoft Cloud App Security*
 
-
-# <a name="accounts"></a>Cuentas
 Microsoft Cloud App Security le ofrece la posibilidad de supervisar las cuentas de sus aplicaciones conectadas. Después de conectar Cloud App Security a una aplicación mediante el conector de aplicaciones, Cloud App Security lee la información de la cuenta asociada a las aplicaciones conectadas. La página Cuentas permite investigar esas cuentas, los permisos, los grupos a los que pertenecen, sus alias y las aplicaciones que usan. Además, cuando Cloud App Security detecta una cuenta nueva que no se había detectado previamente en ninguna de las aplicaciones conectadas (por ejemplo, en la actividad o el uso compartido de archivos), la cuenta se agrega a la lista de cuentas de la aplicación en cuestión. Esto le permite supervisar la actividad de los usuarios externos que interactúan con sus aplicaciones en la nube.
 
 Los administradores pueden buscar los metadatos de un usuario específico o su actividad. La página **Usuarios y cuentas** proporciona detalles completos acerca de la entidad extraídos de aplicaciones en la nube conectadas. También presenta el historial de la actividad de un usuario y sus alertas de seguridad.

@@ -1,6 +1,6 @@
 ---
 title: Conectar ServiceNow con Cloud App Security para la visibilidad y el control del uso | Microsoft Docs
-description: En este tema se proporciona información sobre cómo conectar la aplicación ServiceNow con Cloud App Security mediante el conector de API.
+description: En este artículo se proporciona información sobre cómo conectar la aplicación ServiceNow con Cloud App Security mediante el conector de API.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 75e22bb5ff151ea71ea2a48e5aef45f22fc4b5f8
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: f81623e718d9cf4329f3e738c1b585cb6b33b102
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217329"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597279"
 ---
-*Se aplica a: Microsoft Cloud App Security*
-
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Conectar ServiceNow con Microsoft Cloud App Security
 
-En esta sección se ofrecen instrucciones para conectar Microsoft Cloud App Security con una cuenta de ServiceNow existente mediante la API del conector de aplicaciones. 
+*Se aplica a: Microsoft Cloud App Security*
+
+En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Security con una cuenta de ServiceNow existente mediante la API del conector de aplicaciones. 
 
 > [!NOTE]
 >  Se recomienda implementar ServiceNow mediante tokens de aplicación OAuth, que están disponibles para Fuji y versiones posteriores. Consulte la [documentación de ServiceNow](http://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0) correspondiente. En el caso de versiones anteriores, está disponible un [modo de conexiones heredadas](#legacy-servicenow-connection) según el usuario y la contraseña. El nombre de usuario y la contraseña proporcionados solo se usan para la generación de tokens de API y no se guardan después del proceso de conexión inicial.

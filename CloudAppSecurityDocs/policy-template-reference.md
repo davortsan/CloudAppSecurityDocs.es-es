@@ -1,11 +1,11 @@
 ---
 title: Referencia de plantillas de directiva en Cloud App Security | Microsoft Docs
-description: En este tema se proporciona información sobre cómo se usan las directivas y cómo se configuran para controlar el uso de aplicaciones en la nube.
+description: En este artículo se proporciona información sobre cómo se usan las directivas y cómo se configuran para controlar el uso de las aplicaciones en la nube.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/30/2018
+ms.date: 11/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,31 +13,34 @@ ms.technology: ''
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e0f70c9eebfd6180424316deef402bc8d9c6c1e3
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 1985b581f7ea350938a780414f02b0c6f4aad5fb
+ms.sourcegitcommit: b0b3e6c6f150fff8c286185826ce099601a12679
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144421"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52280636"
 ---
+# <a name="policy-template-reference"></a>Referencia de plantillas de directiva
+
 *Se aplica a: Microsoft Cloud App Security*
 
+En este artículo se proporciona información sobre las plantillas de directiva incluidas en Microsoft Cloud App Security. 
 
-# <a name="policy-templates"></a>Plantillas de directiva
+## <a name="policy-templates"></a>Plantillas de directiva
 
-Esta es la lista de plantillas de directiva que existen en Microsoft Cloud App Security. Se recomienda empezar la creación de directivas basándose en una plantilla existente, siempre que sea posible, para mejorar la facilidad de uso.
+Se recomienda empezar la creación de directivas basándose en una plantilla existente, siempre que sea posible, para mejorar la facilidad de uso. En esta tabla se enumeran las plantillas de directiva que existen en Microsoft Cloud App Security.
 
 |Categoría de riesgo|Nombre de plantilla|Descripción|
 |-----|----|----|
 |Cloud Discovery|Comportamiento anómalo en los usuarios detectados|Alerta cuando se detecta un comportamiento anómalo en los usuarios y aplicaciones detectados, como grandes cantidades de datos cargados en comparación con otros usuarios o grandes transacciones del usuario en comparación con su historial.|
 |Cloud Discovery|Comportamiento anómalo de direcciones IP detectadas|Alerta cuando se detecta un comportamiento anómalo en las direcciones IP y las aplicaciones detectadas, como grandes cantidades de datos cargados en comparación con otras direcciones IP o grandes transacciones de aplicaciones en comparación con el historial de la dirección IP.|
-|Cloud Discovery|Comprobación de cumplimiento de aplicaciones de colaboración|Alerta cuando se detectan nuevas aplicaciones de colaboración que no son compatibles con SOC2 y SSAE 16 y que tienen más de 50 usuarios, con un uso diario total superior a 50 MB.|
-|Cloud Discovery|Comprobación de cumplimiento de aplicación de almacenamiento en la nube|Alerta cuando se detectan nuevas aplicaciones de almacenamiento en la nube que no son compatibles con SOC2, SSAE 16, ISAE 3402 y PCI DSS y que tienen más de 50 usuarios, con un uso diario total superior a 50 MB.|
-|Cloud Discovery|Comprobación de cumplimiento de aplicaciones CRM|Alerta cuando se detectan nuevas aplicaciones CRM que no son compatibles con SOC2, SSAE 16, ISAE 3402, ISO 27001 e HIPAA y que tienen más de 50 usuarios, con un uso diario total superior a 50 MB.|
+|Cloud Discovery|Comprobación de cumplimiento de aplicaciones de colaboración|Alerta cuando se detectan nuevas aplicaciones de colaboración que no son compatibles con SOC2 y SSAE 16, y que tienen más de 50 usuarios, con un uso diario total superior a 50 MB.|
+|Cloud Discovery|Comprobación de cumplimiento de aplicación de almacenamiento en la nube|Alerta cuando se detectan nuevas aplicaciones de almacenamiento en la nube que no son compatibles con SOC2, SSAE 16, ISAE 3402 y PCI DSS, y que tienen más de 50 usuarios, con un uso diario total superior a 50 MB.|
+|Cloud Discovery|Comprobación de cumplimiento de aplicaciones CRM|Alerta cuando se detectan nuevas aplicaciones CRM que no son compatibles con SOC2, SSAE 16, ISAE 3402, ISO 27001 e HIPAA, y que tienen más de 50 usuarios, con un uso diario total superior a 50 MB.|
 |Cloud Discovery|Nueva aplicación de almacenamiento en nube|Alerta cuando se detectan nuevas aplicaciones de almacenamiento en nube que tienen más de 50 usuarios, con un uso diario total superior a 50 MB.|
 |Cloud Discovery|Nueva aplicación de hospedaje de código|Alerta cuando se detectan nuevas aplicaciones de hospedaje de código que tienen más de 50 usuarios, con un uso diario total superior a 50 MB.|
 |Cloud Discovery|Nueva aplicación de colaboración|Alerta cuando se detectan nuevas aplicaciones de colaboración que tienen más de 50 usuarios, con un uso diario total superior a 50 MB.|
-|Cloud Discovery|Nueva aplicación CRM|Alerta cuando se detectan nuevas aplicaciones CRM que tienen más de 50 usuarios, con un uso diario total superior a 50 MB.|
+|Cloud Discovery|Nueva aplicación CRM|Envía una alerta cuando se detectan aplicaciones de CRM nuevas con más de 50 usuarios activos y un uso diario total superior a 50 MB.|
 |Cloud Discovery|Nueva aplicación de gran volumen|Alerta cuando se detectan aplicaciones nuevas con un tráfico diario total superior a 500 MB.|
 |Cloud Discovery|Nueva aplicación con volumen de carga alto|Alerta cuando se detectan nuevas aplicaciones cuyo total de tráfico de carga diario es superior a 500 MB.|
 |Cloud Discovery|Nueva aplicación de administración de recursos humanos|Alerta cuando las aplicaciones de administración de recursos humanos recientemente detectadas tienen más de 50 usuarios, con un uso diario total superior a 50 MB.|
@@ -47,9 +50,9 @@ Esta es la lista de plantillas de directiva que existen en Microsoft Cloud App S
 |Cloud Discovery|Nueva aplicación de ventas|Alerta cuando se detectan nuevas aplicaciones de ventas que tienen más de 50 usuarios, con un uso diario total superior a 50 MB.|
 |Cloud Discovery|Nuevas aplicaciones de sistema de administración de proveedores|Alerta cuando se detectan nuevas aplicaciones de sistema de administración de proveedores que tienen más de 50 usuarios, con un uso diario total superior a 50 MB.|
 |DLP|Código fuente compartido externamente|Alerta cuando se comparte un archivo con código fuente fuera de la organización.|
-|DLP|Archivo con información de tarjeta de pago detectado en la nube (motor DLP integrado)|Alerta cuando nuestro motor de prevención de pérdida de datos (DLP) integrado de Microsoft Cloud App Security detecta un archivo que contiene información de tarjeta de pago en una aplicación de nube autorizada.|
-|DLP|Archivo con información sanitaria protegida detectado en la nube (motor DLP integrado)|Alerta cuando nuestro motor de prevención de pérdida de datos (DLP) integrado de Microsoft Cloud App Security detecta un archivo que contiene información sanitaria protegida en una aplicación de nube autorizada.|
-|DLP|Archivo con información privada detectado en la nube (motor DLP integrado)|Alerta cuando nuestro motor de prevención de pérdida de datos (DLP) integrado de Microsoft Cloud App Security detecta un archivo que contiene información de identificación personal en una aplicación de nube autorizada.|
+|DLP|Archivo con información de tarjeta de pago detectado en la nube (motor DLP integrado)|Alerta cuando nuestro motor de prevención de pérdida de datos (DLP) integrado de Microsoft Cloud App Security detecta un archivo que contiene información de tarjeta de pago (PCI) en una aplicación de nube autorizada.|
+|DLP|Archivo con información sanitaria protegida detectado en la nube (motor DLP integrado)|Alerta cuando nuestro motor de prevención de pérdida de datos (DLP) integrado de Microsoft Cloud App Security detecta un archivo que contiene información de estado protegida (PHI) en una aplicación de nube autorizada.|
+|DLP|Archivo con información privada detectado en la nube (motor DLP integrado)|Alerta cuando nuestro motor de prevención de pérdida de datos (DLP) integrado de Microsoft Cloud App Security detecta un archivo que contiene datos personales en una aplicación de nube autorizada.|
 |Detección de amenazas|Actividad administrativa desde una dirección IP no corporativa|Cuando un usuario administrador realiza una actividad administrativa desde una dirección IP que no está incluida en la categoría de intervalo de direcciones IP corporativas, se puede optar por enviar o recibir una alerta. Primero configure las direcciones IP corporativas en la página Configuración y establezca los **intervalos de direcciones IP**.|
 |Detección de amenazas|Detección de anomalías generales|Alerta cuando se detecta una sesión anómala en una de las aplicaciones autorizadas, como viaje imposible, patrón de inicio de sesión o cuenta inactiva.|
 |Detección de amenazas|Inicio de sesión desde una dirección IP de riesgo|Alerta cuando un usuario inicia sesión en las aplicaciones autorizadas desde una dirección IP de riesgo. De forma predeterminada, la categoría de direcciones IP de riesgo contiene direcciones que tienen etiquetas de dirección IP de proxy anónimo, Tor o red de robots (botnet). Puede agregar más direcciones IP a esta categoría en la página de configuración de intervalos de direcciones IP.|
@@ -65,7 +68,7 @@ Esta es la lista de plantillas de directiva que existen en Microsoft Cloud App S
 
 
 
-## <a name="see-also"></a>Consulte también  
+## <a name="next-steps"></a>Pasos siguientes 
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  

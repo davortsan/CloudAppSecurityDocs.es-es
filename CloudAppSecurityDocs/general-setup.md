@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 11/15/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: be1254ef4e4f623e898e3e94b713a924e493476a
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 0321ecc91cc6dc420e44a323cdef37f34c19556a
+ms.sourcegitcommit: 79e5aa5a5f90223a5963eb8f6df81a80578e9ce9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143453"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644287"
 ---
+# <a name="basic-setup"></a>Configuración básica
+
 *Se aplica a: Microsoft Cloud App Security*
 
-# <a name="basic-setup"></a>Configuración básica
 En el siguiente procedimiento se proporcionan instrucciones para personalizar el portal de Microsoft Cloud App Security.
 
 ## <a name="prerequisites"></a>Requisitos previos 
@@ -39,18 +40,17 @@ Para acceder al portal de Cloud App Security, deberá agregar las direcciones IP
 
 2. En **Detalles de la organización**, es importante que indique un **nombre para mostrar de la organización** para su organización. Este nombre se mostrará en los correos electrónicos y páginas web enviados desde el sistema.  
   
-3. Proporcione un **Nombre del entorno** (inquilino). Esto es especialmente importante si administra varios inquilinos.  
+3. Proporcione un **Nombre del entorno** (inquilino). Esta información es especialmente importante si administra más de un inquilino.  
   
 4. También se puede proporcionar un **logotipo**, que se mostrará en las notificaciones de correo electrónico y en las páginas web enviadas desde el sistema. El logotipo tiene que ser un archivo .png con un tamaño máximo de 150x50 píxeles con fondo transparente.  
 
-5. Asegúrese de incluir una lista de los **dominios administrados**. Este paso es fundamental porque Cloud App Security usa los dominios administrados para determinar qué usuarios son internos y cuáles son externos, así como dónde se deben compartir archivos y dónde no. Esto se usa en los informes y de cara a las alertas.  
-   > [!NOTE] 
-   > - Los usuarios de dominios que no estén configurados como internos se marcarán como externos y no se examinarán en busca de actividades o archivos.
+5. Asegúrese de incluir una lista de los **dominios administrados**. La adición de dominios administrados es un paso fundamental. Cloud App Security usa los dominios administrados para determinar qué usuarios son internos y cuáles son externos, así como dónde se deben compartir archivos y dónde no. Esta información se usa para los informes y las alertas.  
+   
+    - Los usuarios en dominios que no están configurados como internos se marcan como externos. Los usuarios externos no se analizan en busca de actividades o archivos.
 
 6. Si está integrando mediante la integración de Azure Information Protection, vea [Integración de Azure Information Protection](azip-integration.md) para obtener información. 
 
-   >[!NOTE]
-   > Para trabajar con la integración de Azure Information Protection, primero debe habilitar el [conector de aplicaciones para Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
+    - Para trabajar con la integración de Azure Information Protection, primero debe habilitar el [conector de aplicaciones para Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
   
 7. Si, en un momento determinado, quiere hacer una copia de seguridad de la configuración del portal, puede hacerlo en esta pantalla. Haga clic en **Exportar configuración del portal** para crear un archivo .json con todas las opciones de configuración del portal, incluidas las reglas de directivas, los grupos de usuarios y los intervalos de direcciones IP.  
   
@@ -58,7 +58,7 @@ Para acceder al portal de Cloud App Security, deberá agregar las direcciones IP
 > [!NOTE] 
 > Si utiliza ExpressRoute, Cloud App Security se ha implementado en Azure y está totalmente integrado con [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Todas las interacciones con las aplicaciones de Cloud App Security y el tráfico enviado a Cloud App Security, incluida la carga de registros de detección, se enrutan a través del **emparejamiento público** de ExpressRoute para mejorar la latencia, el rendimiento y la seguridad. No hay ningún paso de configuración necesario en el lado cliente. <br></br>Para obtener más información sobre el emparejamiento público, vea [Circuitos ExpressRoute y dominios de enrutamiento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
     
-## <a name="see-also"></a>Consulte también  
+## <a name="next-steps"></a>Pasos siguientes  
 [Configurar Cloud Discovery](set-up-cloud-discovery.md)   
 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  

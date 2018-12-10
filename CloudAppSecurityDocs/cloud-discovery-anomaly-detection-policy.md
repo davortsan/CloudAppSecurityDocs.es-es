@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,27 +13,28 @@ ms.technology: ''
 ms.assetid: eaf73af0-7610-4903-b656-8d90b1d2b18c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 016d2862e122da72330fd98a61194442b71c7892
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 0c7758414d537dd0ee055ba3f9dc1dd15bb0c566
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144251"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597415"
 ---
+# <a name="cloud-discovery-anomaly-detection-policy"></a>Directiva de detección de anomalías de Cloud Discovery
+
 *Se aplica a: Microsoft Cloud App Security*
 
-
-# <a name="cloud-discovery-anomaly-detection-policy"></a>Directiva de detección de anomalías de Cloud Discovery
-En este artículo se proporciona información de referencia sobre directivas, se ofrecen explicaciones sobre cada tipo de directiva y se detallan los campos que se pueden configurar para cada directiva.  
+En este artículo se proporciona información de referencia sobre las directivas. Se muestran las explicaciones de cada tipo de directiva y los campos que se pueden configurar para cada directiva.  
   
-## <a name="cloud-discovery-anomaly-detection-policy-reference"></a>Referencia de directiva de detección de anomalías de Cloud Discovery  
-Una directiva de detección de anomalías de Cloud Discovery permite instalar y configurar la supervisión continua de incrementos poco habituales en el uso de la aplicación en la nube. Para ello, se tienen en cuenta los aumentos de datos descargados, los datos cargados, el número de transacciones y el número de usuarios de cada aplicación en la nube. Cada incremento se compara con el patrón de uso normal de la aplicación, según se desprende de usos anteriores. Los aumentos más acusados desencadenan alertas de seguridad.  
+## <a name="cloud-discovery-anomaly-detection-policy-reference"></a>Referencia de directiva de detección de anomalías de Cloud Discovery
   
-Para cada directiva puede establecer filtros que permitan supervisar selectivamente el uso de la aplicación según un filtro de aplicación, las vistas de datos seleccionadas y una fecha de inicio seleccionada. También puede establecer la sensibilidad, que le permite establecer cuántas alertas debe activar la directiva.  
+Una directiva de detección de anomalías de Cloud Discovery permite instalar y configurar la supervisión continua de incrementos poco habituales en el uso de la aplicación en la nube. Para ello, se tienen en cuenta los aumentos de datos descargados, los datos cargados, las transacciones y el número de usuarios de cada aplicación en la nube. Cada incremento se compara con el patrón de uso normal de la aplicación, según se desprende de usos anteriores. Los aumentos más acusados desencadenan alertas de seguridad.  
+ 
+Para cada directiva, se establecen filtros que permiten supervisar selectivamente el uso de la aplicación. Los filtros incluyen un filtro de aplicación, vistas de datos seleccionadas y una fecha de inicio seleccionada. También puede establecer la sensibilidad, que le permite establecer cuántas alertas debe activar la directiva.  
 
 Para cada directiva, establezca los siguientes parámetros:
 
-1. Decida si quiere basar la directiva en una plantilla, las plantillas de directiva correspondientes son la plantilla **Comportamiento anómalo de los usuarios detectados**, que envía una alerta cuando se detectan comportamientos anómalos en los usuarios y aplicaciones detectados, como grandes cantidades de datos cargados en comparación con otros usuarios, grandes transacciones de usuario en comparación con el historial del usuario. También puede seleccionar la plantilla **Comportamiento erróneo de direcciones IP detectadas**, que envía una alerta cuando se detectan comportamientos anómalos en las direcciones IP y las aplicaciones detectadas, como grandes cantidades de datos cargados en comparación con otras direcciones IP, grandes transacciones de aplicaciones en comparación con el historial de la dirección IP. 
+1. Decida si quiere basar la directiva en una plantilla. Una plantilla de directiva relevante es **Comportamiento anómalo en usuarios detectados**. Alerta cuando se detecta un comportamiento anómalo en los usuarios y aplicaciones detectados, como grandes cantidades de datos cargados en comparación con otros usuarios o grandes transacciones del usuario en comparación con su historial. También puede seleccionar la plantilla **Comportamiento anómalo de direcciones IP detectadas**. Esta plantilla alerta cuando se detecta un comportamiento anómalo en las direcciones IP y las aplicaciones detectadas, como grandes cantidades de datos cargados en comparación con otras direcciones IP o grandes transacciones de aplicaciones en comparación con el historial de la dirección IP. 
  
 2. Proporcione un **Nombre de la directiva** y una **Descripción**.  
 
@@ -42,34 +43,34 @@ Para cada directiva, establezca los siguientes parámetros:
 
 4. En **Apply to** (Aplicar a), establezca cómo quiere que se filtre el uso. El uso que se está supervisando se puede filtrar de dos maneras diferentes:  
   
-    -   Informes continuados: seleccione si quiere supervisar **All continuous reports** (Todos los informes continuados), el valor predeterminado, o elija **Specific continuous reports** (Informes continuados específicos) para supervisar.  
+    - **Informes continuados**: seleccione si quiere supervisar **Todos los informes continuados**, el valor predeterminado, o elija **Informes continuados específicos** para supervisar.  
   
-        -   Al seleccionar **All continuous reports** (Todos los informes continuados), cada aumento del uso se compara con el patrón de uso normal, según se desprende de todas las vistas de datos.  
+        - Al seleccionar **All continuous reports** (Todos los informes continuados), cada aumento del uso se compara con el patrón de uso normal, según se desprende de todas las vistas de datos.  
+        - Al seleccionar **Informes continuados específicos**, cada aumento del uso se compara con el patrón de uso normal. El patrón se desprende de la misma vista de datos en la que se ha observado el aumento.  
   
-        -   Al seleccionar **Specific continuous reports** (Informes continuados específicos), cada aumento del uso se compara con el patrón de uso normal, según se desprende de la misma vista de datos en la que se ha observado el aumento.  
+    - **Usuarios y direcciones IP**: cada uso de la aplicación en la nube está asociado con un usuario, con una dirección IP o con ambos.  
   
-    -   **Usuarios y direcciones IP**: cada uso de la aplicación en la nube está asociado con un usuario, con una dirección IP o con ambos.  
+        - Si se selecciona **Usuarios**, se ignora la asociación de uso de la aplicación con direcciones IP.  
   
-        -   Si se selecciona **Usuarios**, se ignora la asociación de uso de la aplicación con direcciones IP, si la hay.  
+        - Si se selecciona **Direcciones IP**, se ignora la asociación de uso de la aplicación con usuarios.  
   
-        -   Si se selecciona **Direcciones IP**, se ignora la asociación de uso de la aplicación con usuarios, si la hay.  
-  
-        -   Si se selecciona **Usuarios y direcciones IP** (el valor predeterminado), se tienen en cuenta ambas asociaciones, pero se pueden generar alertas duplicadas cuando haya una correspondencia estricta entre usuarios y direcciones IP.
-    -   Desencadenar alertas solo para detectar actividades sospechosas ocurridas tras una fecha: se ignora cualquier aumento en el uso de la aplicación antes de la fecha seleccionada. En cambio, la actividad previa a la fecha seleccionada se tiene en cuenta para establecer el patrón de uso normal.  
+        - Si se selecciona **Usuarios y direcciones IP** (el valor predeterminado), se tienen en cuenta ambas asociaciones, pero se pueden generar alertas duplicadas cuando haya una correspondencia estricta entre usuarios y direcciones IP.
+
+    - **Desencadenar alertas solo para detectar actividades sospechosas ocurridas tras una fecha**: se ignora cualquier aumento en el uso de la aplicación antes de la fecha seleccionada. En cambio, la actividad previa a la fecha seleccionada se tiene en cuenta para establecer el patrón de uso normal.  
   
 5. En **Alertas** puede establecer la sensibilidad de la alerta. Hay varias formas de controlar el número de alertas activadas por la directiva:  
   
-    -   El control deslizante **Select anomaly detection sensitivity** (Seleccionar la sensibilidad de la detección de anomalías): desencadena alertas para las X actividades anómalas superiores por cada 1.000 usuarios por semana. Se activarán las alertas de las actividades con el riesgo más alto.  
+    - El control deslizante **Select anomaly detection sensitivity** (Seleccionar la sensibilidad de la detección de anomalías): desencadena alertas para las X actividades anómalas superiores por cada 1.000 usuarios por semana. Se activarán las alertas de las actividades con el riesgo más alto.  
   
-    -   **Límite de alertas diarias**: restrinja el número de alertas activadas en un solo día. Puede seleccionar si quiere **Enviar alerta por correo electrónico**, **Enviar alerta como mensaje de texto** o ambas opciones. Los mensajes enviados por mensaje de texto se limitan a diez por día para la zona horaria UTC, lo que significa que el límite de diez mensajes se restablece a medianoche en la zona horaria UTC.
+    - **Límite de alertas diarias**: restrinja el número de alertas activadas en un solo día. Puede seleccionar si quiere **Enviar alerta por correo electrónico**, **Enviar alerta como mensaje de texto** o ambas opciones. Los mensajes enviados por mensaje de texto se limitan a diez por día para la zona horaria UTC, lo que significa que el límite de diez mensajes se restablece a medianoche en la zona horaria UTC.
 
-    - También puede seleccionar la opción de **Usar la configuración predeterminada de la organización**, que rellena el correo electrónico **Límite de alertas diarias**, y la configuración de mensajes de texto de la configuración predeterminada de la organización. Para establecer el valor predeterminado, rellene la **Configuración de alerta** y haga clic en **Guardar esta configuración de alerta como el valor predeterminado para su organización**.
+    - También puede seleccionar la opción de **Usar configuración predeterminada de la organización**. Esta opción rellena la configuración de **Límite de alertas diarias**, correo electrónico y mensaje de texto de la configuración predeterminada de la organización. Para establecer el valor predeterminado, rellene la **Configuración de alerta** y haga clic en **Guardar esta configuración de alerta como el valor predeterminado para su organización**.
 
 6. Haga clic en **Crear**.
 
 7. Como con todas las directivas, puede **Editar**, **Deshabilitar** y **Habilitar** la directiva haciendo clic en los tres puntos al final de la fila en la página **Directivas**. De forma predeterminada, la directiva está habilitada después de crearla.
 
-## <a name="see-also"></a>Consulte también  
+## <a name="next-steps"></a>Pasos siguientes  
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  

@@ -1,11 +1,11 @@
 ---
 title: Controlar el uso de aplicaciones en la nube mediante la creación de directivas en Cloud App Security | Microsoft Docs
-description: En este tema se proporciona información sobre cómo se usan las directivas y cómo se configuran para controlar el uso de aplicaciones en la nube.
+description: En este artículo se proporciona información sobre cómo se usan las directivas y cómo se configuran para controlar el uso de las aplicaciones en la nube.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,16 @@ ms.technology: ''
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 24b3148a5de7e0367076b740242a583f68e4856f
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: a1d79ec9dffe5e0b60a71106d4b4907ed8c5ee0d
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217363"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597126"
 ---
-*Se aplica a: Microsoft Cloud App Security*
-
-
 # <a name="control-cloud-apps-with-policies"></a>Controlar las aplicaciones en la nube con directivas
+
+*Se aplica a: Microsoft Cloud App Security*
 
 Las directivas permiten definir la forma en que quiere que los usuarios se comporten en la nube. Con ellas se puede detectar comportamientos arriesgados, infracciones o actividades y puntos de datos sospechosos en su entorno de la nube. Si es necesario, puede integrar flujos de trabajo de corrección para lograr una mitigación de riesgos completa. Hay varios tipos de directivas que se correlacionan con los diferentes tipos de información que quiere recopilar sobre el entorno de nube y los tipos de acciones correctoras que quizás quiera realizar.  
   
@@ -122,7 +121,9 @@ Para crear una directiva basada en los resultados de la investigación, siga est
   
      ![Crear archivo de investigación](./media/create-file-from-investigation.png)  
   
-3. En la esquina superior derecha de la consola, haga clic en **Nueva directiva a partir de búsqueda**.![Botón Nueva directiva a partir de búsqueda](./media/new-policy-from-search-button.png)  
+3. En la esquina superior derecha de la consola, haga clic en **Nueva directiva a partir de búsqueda**.
+
+     ![Botón Nueva directiva a partir de búsqueda](./media/new-policy-from-search-button.png)
   
 4. Se abre una página de creación de directivas que contiene los filtros usados en la investigación.  
   

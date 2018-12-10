@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e67ba01b00af1f8af9bdd5e282f0fac74afa0183
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: ad88c9d224426a73687ae972a58617ae5800221a
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217346"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597093"
 ---
+# <a name="control"></a>Control
+
 *Se aplica a: Microsoft Cloud App Security*
 
-
-# <a name="control"></a>Control
 Puede aplicar acciones de gobierno a los archivos de los usuarios en el entorno de la nube. Después de haber investigado exhaustivamente y aprendido sobre la nube, puede usar las acciones de gobierno para ayudar a proteger la organización.  
 
 ## <a name="use-policies-to-assess-risk"></a>Usar directivas para evaluar el riesgo  
@@ -54,9 +54,9 @@ Después de echar un vistazo a las alertas abiertas, vaya al centro de directiva
 ## <a name="apply-governance-actions"></a>Aplicar acciones de gobierno  
 Puede aplicar acciones de gobierno desde las directivas, desde las alertas y desde el registro **Archivo**.  
 
-Puede revisar y ver en cualquier momento el estado de todas las acciones de gobierno aplicadas anteriormente si va al icono de engranaje **Configuración** ![icono de configuración](./media/settings-icon.png "icono de configuración") y elije **Registro de gobierno**.  
+Puede revisar y ver el estado de todas las acciones de gobierno aplicadas anteriormente en cualquier momento si va al icono de engranaje **Configuración** y selecciona **Registro de gobierno**. ![icono de configuración](./media/settings-icon.png "settings icon")
 
-Para volver a aplicar cualquier acción de gobierno errónea, elija el icono **Reintentar** ![icono de reintento](./media/retry-icon.png "icono de reintento") para aplicarla de nuevo.  
+Para volver a aplicar cualquier acción de gobierno errónea, haga clic en el icono **Reintentar** para aplicarla de nuevo. ![Icono Reintentar](./media/retry-icon.png "retry icon")   
 
 Hay acciones de gobierno distintas según el tipo de directiva, de infracción y de aplicación.  
 
@@ -84,7 +84,7 @@ Imagínese esta situación: hace poco adquirió Office 365 y quiere que todos lo
 
    1. En el **panel de Cloud Discovery**, elija **Dropbox** y luego la ficha **Dirección IP** o **Usuarios**.  
 
-   2. Elija el icono de flecha **Exportar**![Icono de flecha](./media/arrow-icon.png "icono de flecha") y elija las opciones de exportación.  
+   2. Haga clic en el icono de flecha **Exportar** y elija las opciones de exportación. ![Icono de flecha](./media/arrow-icon.png "arrow icon")
 
 ### <a name="find-more-secure-alternatives"></a>Buscar alternativas más seguras  
 El catálogo de servicios de Cloud App Security puede ayudarle a encontrar alternativas adecuadas para la organización en sustitución de las aplicaciones de riesgo que los usuarios puedan estar utilizando.  

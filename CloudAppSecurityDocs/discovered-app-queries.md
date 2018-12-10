@@ -1,11 +1,11 @@
 ---
 title: Trabajar con filtros y consultas de aplicaciones detectadas de Cloud App Security | Microsoft Docs
-description: En este tema, se proporciona una lista de filtros y consultas de aplicaciones detectadas de Cloud App Security y se explica cómo trabajar con ellos.
+description: En este artículo se proporciona una lista de filtros y consultas de aplicaciones detectadas de Cloud App Security y se explica cómo trabajar con ellos.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 65dfb8411910747db2d12f6757218fca93b362f2
-ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
+ms.openlocfilehash: f72d5e96d5013684f163a645fbf3e5795cc7639c
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50745772"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597296"
 ---
+# <a name="discovered-app-filters-and-queries"></a>Filtros y consultas de aplicaciones detectadas
+
 *Se aplica a: Microsoft Cloud App Security*
 
-# <a name="discovered-app-filters-and-queries"></a>Filtros y consultas de aplicaciones detectadas
 Cuando haya un gran número de aplicaciones detectadas, le resultará útil filtrarlas y realizar consultas en ellas. En este artículo se describe qué filtros están disponibles y cómo realizar consultas en las aplicaciones detectadas.  
 
 ## <a name="discovered-app-filters"></a>Filtros de aplicaciones detectadas
@@ -79,21 +80,21 @@ Para que la investigación sea incluso más sencilla, puede crear consultas pers
 
 Cloud App Security también le proporciona **consultas sugeridas** y le permite guardar las consultas personalizadas que usa a menudo. Las consultas sugeridas le proporcionan vías de investigación recomendadas que filtran las aplicaciones detectadas mediante las siguientes consultas sugeridas opcionales:
 
- - Aplicaciones en la nube que permiten el uso anónimo: filtra todas las aplicaciones detectadas para mostrar solo aquellas que implican riesgos de seguridad porque no requieren la autenticación del usuario y permiten que los usuarios carguen datos.
+ - **Aplicaciones en la nube que permiten el uso anónimo**: filtra todas las aplicaciones detectadas para mostrar solo aquellas que implican riesgos de seguridad porque no requieren la autenticación del usuario y permiten que los usuarios carguen datos.
 
- - Aplicaciones en la nube que tienen el certificado CSA STAR: filtra todas las aplicaciones detectadas para mostrar solo aquellas que tengan la certificación CSA STAR, ya sea por evaluación automática, certificación, autenticación o supervisión continua.
+ - **Aplicaciones en la nube que tienen el certificado CSA STAR**: filtra todas las aplicaciones detectadas para mostrar solo aquellas que tengan la certificación CSA STAR, ya sea por evaluación automática, certificación, autenticación o supervisión continua.
 
- - Aplicaciones en la nube que cumplen el programa FedRAMP: filtra todas las aplicaciones detectadas para mostrar solo aquellas cuyo factor de riesgo de cumplimiento de FedRAMP sea alto, medio o bajo. 
+ - **Aplicaciones en la nube que cumplen el programa FedRAMP**: filtra todas las aplicaciones detectadas para mostrar solo aquellas cuyo factor de riesgo de cumplimiento de FedRAMP sea alto, medio o bajo. 
 
- - Aplicaciones de colaboración y almacenamiento en la nube que tienen datos de usuario: filtra todas las aplicaciones detectadas para mostrar solo aquellas que implican un riesgo porque no le permiten ser el propietario de los datos, a pesar de que sí los conservan.
+ - **Aplicaciones de colaboración y almacenamiento en la nube que tienen datos de usuario**: filtra todas las aplicaciones detectadas para mostrar solo aquellas que implican un riesgo porque no le permiten ser el propietario de los datos, a pesar de que sí los conservan.
 
- - Aplicaciones de almacenamiento en la nube que implican un riesgo y no son conformes: filtra todas las aplicaciones detectadas para mostrar solo aquellas que no cumplen las normativas SOC 2 o HIPAA, no admiten la versión de PCI DSS y tienen una puntuación de riesgo de 5 o inferior.
+ - **Aplicaciones de almacenamiento en la nube que implican un riesgo y no son conformes**: filtra todas las aplicaciones detectadas para mostrar solo aquellas que no cumplen las normativas SOC 2 o HIPAA, no admiten la versión de PCI DSS y tienen una puntuación de riesgo de 5 o inferior.
 
- - Aplicaciones en la nube de la empresa que tienen una autenticación débil: filtra todas las aplicaciones detectadas para mostrar solo aquellas que no son compatibles con SAML, no tienen ninguna directiva de contraseñas y no habilitan MFA.
+ - **Aplicaciones en la nube empresariales que tienen autenticación débil**: filtra todas las aplicaciones detectadas para mostrar solo aquellas que no son compatibles con SAML, no tienen ninguna directiva de contraseñas y no habilitan MFA.
 
- - Aplicaciones en la nube de la empresa que tienen un cifrado débil: filtra todas las aplicaciones detectadas para mostrar solo aquellas que implican un riesgo porque no cifran datos en reposo y no admiten ningún protocolo de cifrado.
+ - **Aplicaciones en la nube empresariales que tienen cifrado débil**: filtra todas las aplicaciones detectadas para mostrar solo aquellas que implican un riesgo porque no cifran datos en reposo y no admiten ningún protocolo de cifrado.
 
-- Aplicaciones en la nube preparadas para el RGPD: filtra todas las aplicaciones detectadas para mostrar solo las que estén preparadas para el RGPD. Dado que el cumplimiento del RGPD es una prioridad principal, esta consulta permite identificar fácilmente las aplicaciones que están preparadas para el RGPD y mitigar las posibles amenazas mediante una evaluación del riesgo de las que no lo están.
+- **Aplicaciones en la nube preparadas para el RGPD**: filtra todas las aplicaciones detectadas para mostrar solo las que estén preparadas para el RGPD. Dado que el cumplimiento del RGPD es una prioridad principal, esta consulta permite identificar fácilmente las aplicaciones que están preparadas para el RGPD y mitigar las posibles amenazas mediante una evaluación del riesgo de las que no lo están.
  
 ![consultar aplicaciones detectadas](./media/queries-discovered-apps.png)
 

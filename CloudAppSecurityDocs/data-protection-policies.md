@@ -1,11 +1,11 @@
 ---
 title: Crear directivas para supervisar y proteger los archivos de las aplicaciones en la nube | Microsoft Docs
-description: En este tema se describe el procedimiento para configurar una directiva de datos para supervisar y controlar los datos y los archivos durante el uso de aplicaciones en la nube de la organización.
+description: En este artículo se describe el procedimiento para configurar una directiva de datos para supervisar y controlar los datos y los archivos durante el uso de aplicaciones en la nube de la organización.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,53 +13,49 @@ ms.technology: ''
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2445c88a6fae504b51b5d4a0cb32ba00c936681e
-ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
+ms.openlocfilehash: 388fca467f4ef83f2494caab411d242a8a273e36
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50745789"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597381"
 ---
+# <a name="file-policies"></a>Directivas de archivo  
+
 *Se aplica a: Microsoft Cloud App Security*
 
-# <a name="file-policies"></a>Directivas de archivo  
-Las directivas de archivo permiten aplicar toda una serie de procesos automatizados que usan las API del proveedor en la nube. Las directivas se pueden establecer para proporcionar análisis de conformidad constantes, tareas de exhibición de documentos electrónicos legales, DLP para el contenido confidencial compartido públicamente y otros muchos casos de uso.  <br></br>
-
-Cloud App Security puede supervisar cualquier tipo de archivo basado en más de 20 filtros de metadatos (por ejemplo, nivel de acceso o tipo de archivo). 
+Las directivas de archivo permiten aplicar toda una serie de procesos automatizados que usan las API del proveedor en la nube. Las directivas se pueden establecer para proporcionar análisis de conformidad constantes, tareas de exhibición de documentos electrónicos legales, DLP para el contenido confidencial compartido públicamente y otros muchos casos de uso. Cloud App Security puede supervisar cualquier tipo de archivo basado en más de 20 filtros de metadatos (por ejemplo, nivel de acceso o tipo de archivo). 
  
-**Tipos de archivo compatibles** 
+**Tipos de archivo compatibles**
 
 Los motores de DLP integrados de Cloud App Security realizan la inspección de contenido mediante la extracción de texto de todos los tipos de archivo comunes (más de 100), incluidos los de Office, Open Office, archivos comprimidos, varios formatos de texto enriquecido, XML, HTML y muchos más.
 
+## <a name="policies"></a>Directivas 
 El motor combina tres aspectos en cada directiva:  
   
--   Análisis de contenido basado en plantillas preestablecidas o expresiones personalizadas.  
+- Análisis de contenido basado en plantillas preestablecidas o expresiones personalizadas.  
   
--   Filtros de contexto, incluidos roles de usuario, metadatos de archivos, nivel de uso compartido, integración de grupos organizativos, contexto de colaboración y otros atributos personalizables.  
+- Filtros de contexto, incluidos roles de usuario, metadatos de archivos, nivel de uso compartido, integración de grupos organizativos, contexto de colaboración y otros atributos personalizables.  
   
--   Acciones automatizadas de gobierno y corrección. Para obtener más información, vea [Control](control.md).  
+- Acciones automatizadas de gobierno y corrección. Para obtener más información, vea [Control](control.md).  
   
 Una vez habilitada, la directiva analizará continuamente su entorno en la nube e identificará los archivos que coincidan con los filtros de contenido y el contexto y, después, aplicará las acciones automatizadas solicitadas. Estas directivas detectarán y corregirán cualquier infracción de la información en reposo o al crear contenido. Las directivas se pueden supervisar con alertas en tiempo real o con informes generados por la consola.  
   
 Estos son algunos ejemplos de las directivas de archivo que se pueden crear:  
   
--   Archivos compartidos públicamente: <br></br>
-    Reciba una alerta sobre cualquier archivo en la nube que se comparta públicamente; para ello, seleccione todos los archivos cuyo nivel de uso compartido sea público.  
+-  **Archivos compartidos públicamente**: reciba una alerta sobre cualquier archivo en la nube que se comparta públicamente; para ello, seleccione todos los archivos cuyo nivel de uso compartido sea público.  
   
--   Nombre de archivo compartido públicamente que contiene el nombre de la organización: <br></br> Reciba una alerta sobre cualquier archivo compartido públicamente que contenga el nombre de la organización. Seleccione los archivos compartidos públicamente cuyo nombre de archivo contenga el nombre de la organización.  
+- **Publicly shared filename contains the organization’s name** (Archivo compartido públicamente contiene el nombre de la organización): reciba una alerta sobre cualquier archivo compartido públicamente que contenga el nombre de la organización. Seleccione los archivos compartidos públicamente cuyo nombre de archivo contenga el nombre de la organización.  
   
--   Uso compartido con dominios externos:  <br></br>
-    Reciba una alerta sobre cualquier archivo compartido con cuentas propiedad de determinados dominios externos. Por ejemplo, los archivos compartidos con un dominio de la competencia. Seleccione el dominio externo con el que quiera limitar el uso compartido.  
+- **Sharing with external domains** (Uso compartido con dominios externos): reciba una alerta sobre cualquier archivo compartido con cuentas propiedad de determinados dominios externos. Por ejemplo, los archivos compartidos con un dominio de la competencia. Seleccione el dominio externo con el que quiera limitar el uso compartido.  
   
--   Poner en cuarentena archivos compartidos que no se han modificado durante el último período:  <br></br>
-    Reciba una alerta sobre los archivos compartidos que nadie haya modificado recientemente, para ponerlos en cuarentena u optar por activar una acción automatizada. Excluir todos los archivos privados que no se han modificado durante un intervalo de fechas especificado. En G Suite, puede poner en cuarentena estos archivos si activa la casilla para poner archivos en cuarentena de la página de creación de directivas.  
+- **Quarantine shared files not modified during the last period** (Archivos compartidos en cuarentena no modificados durante el último período): reciba una alerta sobre los archivos compartidos que nadie haya modificado recientemente, para ponerlos en cuarentena u optar por activar una acción automatizada. Excluir todos los archivos privados que no se han modificado durante un intervalo de fechas especificado. En G Suite, puede poner en cuarentena estos archivos si activa la casilla para poner archivos en cuarentena de la página de creación de directivas.  
   
--   Uso compartido con usuarios no autorizados:  <br></br>
-    Reciba una alerta sobre los archivos que se comparten con un grupo de usuarios no autorizado de la organización. Seleccione los usuarios para los que el uso compartido no está autorizado.  
+- **Sharing with unauthorized users** (Uso compartido con usuarios no autorizados): reciba una alerta sobre los archivos que se comparten con un grupo de usuarios no autorizado de la organización. Seleccione los usuarios para los que el uso compartido no está autorizado.  
   
--   Extensión de archivo confidencial:  <br></br>
-    Reciba una alerta sobre los archivos con extensiones específicas que puedan tener un nivel de exposición muy elevado. Seleccione el nombre de archivo o la extensión particular (por ejemplo, crt en el caso de los certificados) y excluya los archivos que tengan un nivel de uso compartido privado.  
-  
+- **Sensitive file extension** (Extensión de archivo confidencial): reciba una alerta sobre los archivos con extensiones específicas que puedan tener un nivel de exposición muy elevado. Seleccione el nombre de archivo o la extensión particular (por ejemplo, crt en el caso de los certificados) y excluya los archivos que tengan un nivel de uso compartido privado.  
+
+## <a name="create-a-new-file-policy"></a>Crear una directiva de archivo  
 Haga lo siguiente para crear una directiva de archivo:  
   
 1. En la consola, haga clic en **Control**, seguido de **Directivas**.  
@@ -99,15 +95,13 @@ Una **directiva de archivo** es una directiva basada en API que permite controla
   
 Cada directiva se compone de las siguientes partes:  
   
--   Filtros de archivo: permiten crear condiciones pormenorizadas basadas en metadatos.  
+- **Filtros de archivo**: permiten crear condiciones pormenorizadas basadas en metadatos.  
   
--   Inspección del contenido: permite restringir la directiva en función de los resultados del motor DLP. Puede incluir una expresión personalizada o una expresión preestablecida. Se pueden establecer exclusiones y puede elegir el número de coincidencias. También puede usar el anonimato para enmascarar el nombre de usuario. 
+- **Inspección del contenido**: permite restringir la directiva en función de los resultados del motor DLP. Puede incluir una expresión personalizada o una expresión preestablecida. Se pueden establecer exclusiones y puede elegir el número de coincidencias. También puede usar el anonimato para enmascarar el nombre de usuario. 
   
--   Acciones: la directiva proporciona un conjunto de acciones de gobierno que se pueden aplicar automáticamente cuando se detectan infracciones.  Estas acciones se dividen en acciones de colaboración, de seguridad y de investigación.
+- **Acciones**: la directiva proporciona un conjunto de acciones de gobierno que se pueden aplicar automáticamente cuando se detectan infracciones.  Estas acciones se dividen en acciones de colaboración, de seguridad y de investigación.
 
--   Extensions  
-   
-    -  Es posible realizar una inspección del contenido mediante motores de terceros para DLP mejorada o funcionalidades antimalware.  
+- **Extensiones**: es posible realizar una inspección del contenido mediante motores de terceros para DLP mejorada o funcionalidades antimalware.  
 
   
 ## <a name="next-steps"></a>Pasos siguientes 

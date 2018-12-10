@@ -21,6 +21,7 @@
 ### [Integración con Zscaler](zscaler-integration.md)
 ### [Crear informes de instantáneas de Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 ### [Configurar la carga de registros automática para informes continuos](discovery-docker.md)
+#### [Docker en Windows](discovery-docker-windows.md)
 #### [Docker en Ubuntu y RHEL local](discovery-docker-ubuntu.md)
 #### [Docker en Ubuntu en Azure](discovery-docker-ubuntu-azure.md)
 #### [Uso de aplicaciones virtuales (en desuso)](configure-automatic-log-upload-for-continuous-reports.md)

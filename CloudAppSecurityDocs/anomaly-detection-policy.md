@@ -1,11 +1,11 @@
 ---
 title: Crear directivas de detección de anomalías en Cloud App Security | Microsoft Docs
-description: En este tema se proporciona una descripción de las directivas de detección de anomalías, así como información de referencia sobre los bloques de creación de una directiva de detección de anomalías.
+description: En este artículo se proporciona una descripción de las directivas de detección de anomalías, así como información de referencia sobre los bloques de creación de una directiva de detección de anomalías.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/28/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,16 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a6ac7a6f8fcfbcde01dbcdcb9eaaaac82da3c8bc
-ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
+ms.openlocfilehash: e29456add1796ea13c67b44f61c628cdb924f0dc
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50745738"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596956"
 ---
-*Se aplica a: Microsoft Cloud App Security*
-
- 
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtención de análisis de comportamiento y detección de anomalías instantáneos
+
+*Se aplica a: Microsoft Cloud App Security*
 
 Las directivas de detección de anomalías de Microsoft Cloud App Security ofrecen análisis de comportamiento de usuarios y entidades (UEBA) y aprendizaje automático (ML) de serie para que pueda ejecutar inmediatamente la detección de amenazas avanzada en el entorno en la nube. Dado que se habilitan automáticamente, las nuevas directivas de detección de anomalías ofrecen resultados al instante proporcionando detecciones inmediatas, dirigidas a numerosas anomalías de comportamientos entre los usuarios, las máquinas y los dispositivos conectados a la red.  Además, las nuevas directivas exponen más datos a partir del motor de detección de Cloud App Security, lo que le ayuda a agilizar el proceso de investigación y contener las amenazas en curso. 
 
@@ -81,6 +80,9 @@ Esta detección aprovecha las ventajas de capacidad de Cloud App Security para s
  
 > [!NOTE]
 > Cloud App Security le avisa solo para cada regla de reenvío que se identifica como sospechosa, en función del comportamiento típico para el usuario. 
+
+**Reglas de manipulación de bandeja de entrada sospechosa**
+- Esta detección crea perfiles de su entorno y activa alertas cuando se establecen reglas sospechosas que eliminan o mueven los mensajes o carpetas en la Bandeja de entrada del usuario. Esto puede indicar que la cuenta del usuario está en peligro, que se están ocultando mensajes intencionadamente y que el buzón se está usando para enviar correo no deseado o malware en la organización.
 
 **Actividades inusuales (realizadas por un usuario)**<br>
 Estas detecciones identifican a los usuarios que realizan:

@@ -1,11 +1,11 @@
 ---
 title: ¿Cuáles son las diferencias entre Cloud App Security y Office 365 Cloud App Security? | Microsoft Docs
-description: En este tema se describen las diferencias entre Cloud App Security y Office 365 Cloud App Security.
+description: En este artículo se describen las diferencias entre Cloud App Security y Office 365 Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/21/2018
+ms.date: 11/12/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,25 +13,26 @@ ms.technology: ''
 ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0ece617169af47eeaa83ec626667d81ea8a394ad
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: fa11ebe67ddf86995a404ec386d0c601fd4dc021
+ms.sourcegitcommit: e424807015f33aa359d9e29e13cc2faac5adcb92
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44142903"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561128"
 ---
 # <a name="what-are-the-differences-between-microsoft-cloud-app-security-and-office-365-cloud-app-security"></a>¿Cuáles son las diferencias entre Microsoft Cloud App Security y Office 365 Cloud App Security?
 
-> [!NOTE]
-> Para obtener información sobre Office 365 Cloud App Security, consulte [Introducción a Office 365 Cloud App Security](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
+*Se aplica a: Microsoft Cloud App Security*
+
+En este artículo se describen las diferencias entre Cloud App Security y Office 365 Cloud App Security. Para obtener información sobre Office 365 Cloud App Security, consulte [Introducción a Office 365 Cloud App Security](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security 
 
-Cloud App Security es una solución completa entre SaaS que proporciona visibilidad detallada, controles de datos seguros y protección contra amenazas mejorada a las aplicaciones en la nube. Con este servicio, puede obtener visibilidad de Shadow IT al detectar las aplicaciones en la nube que se están usando y puede controlar y proteger los datos en las aplicaciones una vez que les autoriza el acceso al servicio. 
+Microsoft Cloud App Security es una solución completa entre SaaS que proporciona visibilidad detallada, controles de datos seguros y protección contra amenazas mejorada a las aplicaciones en la nube. Con este servicio, puede obtener visibilidad de Shadow IT mediante la detección de aplicaciones en la nube en uso. Puede controlar y proteger los datos en las aplicaciones una vez que las autorice para el servicio.
 
 ## <a name="office-365-cloud-app-security"></a>Office 365 Cloud App Security
 
-Office 365 Cloud App Security es un subconjunto de Microsoft Cloud App Security que ofrece una visibilidad y un control mejorados en Office 365. Incluye detección de amenazas basada en registros de actividad de usuario, Shadow IT Discovery para aplicaciones con funcionalidades similares a las ofertas de Office 365 y permisos de aplicaciones de control para Office 365.
+Office 365 Cloud App Security es un subconjunto de Microsoft Cloud App Security que ofrece una visibilidad y un control mejorados en Office 365. Office 365 Cloud App Security incluye detección de amenazas basada en registros de actividad de usuario, Shadow IT Discovery para aplicaciones con funcionalidades similares a las ofertas de Office 365 y permisos de aplicaciones de control para Office 365.
 
 ### <a name="feature-support"></a>Compatibilidad de las características
 
@@ -58,7 +59,7 @@ Office 365 Cloud App Security es un subconjunto de Microsoft Cloud App Security 
 
 
 
-## <a name="see-also"></a>Consulte también  
+## <a name="next-steps"></a>Pasos siguientes  
 
 Consulte los aspectos básicos en [Introducción a Cloud App Security](getting-started-with-cloud-app-security.md).    
 
