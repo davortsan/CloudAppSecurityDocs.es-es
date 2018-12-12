@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 87b831ef-5977-4df8-bed3-3ee54a8adbb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bb209535c6969a3177ea5a638425eedabda1bba1
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: d952746375c18730b92f7629ac4978c61ebfbfa9
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143476"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123795"
 ---
 *Se aplica a: Microsoft Cloud App Security*
    
@@ -53,7 +53,8 @@ Puede aprovechar la existencia de grupos de usuarios importados para investigar 
 La importación de grupos le permite seleccionar esos grupos como filtros cuando examine el **registro de actividad** y cuando cree directivas. 
 
 > [!NOTE]
-> Para que las actividades se etiqueten como realizadas por un miembro del grupo de usuarios, deberán llevarse a cabo después de la importación de un grupo.
+> - Para que las actividades se etiqueten como realizadas por un miembro del grupo de usuarios, deberán llevarse a cabo después de la importación de un grupo.
+> - Después de la sincronización inicial, los grupos se actualizan cada hora.
 
 Para obtener más información sobre el uso de los filtros de grupo de usuario, vea [Actividades](activity-filters.md).
 
@@ -62,6 +63,6 @@ Para obtener más información sobre el uso de los filtros de grupo de usuario, 
 ## <a name="see-also"></a>Consulte también  
 [Configurar Cloud Discovery](set-up-cloud-discovery.md)   
 
-[Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
+[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
   
   

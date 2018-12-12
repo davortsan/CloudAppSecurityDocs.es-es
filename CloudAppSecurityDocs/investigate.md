@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/16/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 980a6aba1c9c566e74a9c54be50c198b8bd3516d
-ms.sourcegitcommit: 851ff017c226435d38bed18dbece640a632cd2a0
+ms.openlocfilehash: a285943125d3973089f21e522924e4e2b428d753
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2018
-ms.locfileid: "51943756"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123948"
 ---
 # <a name="investigate"></a>Investigar
 
@@ -152,4 +152,4 @@ Con la directiva en marcha, le sorprenderá ver que recibe una alerta que indica
  
 Para obtener información sobre cómo controlar la aplicación de la nube de su organización, consulte [Control](control.md).   
 
-Los clientes Premier también pueden elegir Cloud App Security directamente desde el [Portal Premier](https://premier.microsoft.com/).  
+[Los clientes Premier también pueden crear una nueva solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  

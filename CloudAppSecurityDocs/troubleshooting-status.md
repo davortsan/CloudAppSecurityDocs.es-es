@@ -1,11 +1,11 @@
 ---
 title: Solución de problemas de estado del servicio de Cloud App Security | Microsoft Docs
-description: En este tema, se proporciona un vínculo a la página de estado de Cloud App Security
+description: En este artículo se proporciona un vínculo a la página de estado de Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,23 +13,30 @@ ms.technology: ''
 ms.assetid: 0eac8ac2-c8bc-4719-b45d-30a1da4e3424
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b5dfe2df5d6fcc12be5a1e447d8e5619b1b32d76
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 138790d8a6aed062b0ada67f1bc60b1a0d5ebc09
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144489"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123438"
 ---
+# <a name="troubleshooting-microsoft-cloud-app-security-status"></a>Solución de problemas de estado de Microsoft Cloud App Security
+
 *Se aplica a: Microsoft Cloud App Security*
 
+En este artículo se proporcionan instrucciones y un vínculo a la página de estado de Cloud App Security.
 
-# <a name="troubleshooting-microsoft--cloud-app-security-status"></a>Solución de problemas de estado de Microsoft Cloud App Security | Microsoft Docs
+## <a name="microsoft-cloud-app-security-status"></a>Estado de Microsoft Cloud App Security
 
-Ahora puede comprobar el estado actual del servicio de Microsoft Cloud App Security si va a [status.cloudappsecurity.com](https://status.cloudappsecurity.com) o directamente desde el portal haciendo clic en **Ayuda**>**Estado del sistema**. 
+Para comprobar el estado actual del servicio Microsoft Cloud App Security, haga lo siguiente:
 
-## <a name="see-also"></a>Consulte también  
+- Vaya a [status.cloudappsecurity.com](https://status.cloudappsecurity.com).
+- Haga clic en **Ayuda**>**Estado del sistema** directamente desde el portal.
+
+## <a name="next-steps"></a>Pasos siguientes
+ 
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
+[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
   
   

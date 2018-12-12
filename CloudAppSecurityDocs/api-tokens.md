@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 849669dc659d3abfb4787d3a94edadc170db485e
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: a2b20d5bd3f2379c26e0e1262c9a5f57295ec939
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597075"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123455"
 ---
 # <a name="api-tokens"></a>Tokens de API
 
@@ -78,7 +78,7 @@ Después de que se haya revocado un token, se quitará de la tabla y el software
 ## <a name="next-steps"></a>Pasos siguientes
 [Solución de problemas de integración de SIEM](troubleshooting-siem.md)   
 
-[Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
+[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
 
 ## <a name="check-out-this-video"></a>Eche un vistazo a este vídeo.
 [Microsoft Cloud App Security: API de REST y tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)  
