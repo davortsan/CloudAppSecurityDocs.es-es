@@ -121,8 +121,8 @@ Para generar correctamente un informe de Cloud Discovery, los registros de tráf
 - Sophos Cyberoam
 - Squid (Common)
 - Squid (Native)
-- Websense - Web Security Solutions - Investigative detail report (CSV)
-- Websense - Web Security Solutions - Internet activity log (CEF)
+- Websense - soluciones de seguridad Web - informe de detalle de investigación (CSV)
+- Websense - soluciones de seguridad Web - registro de actividad de Internet (CEF)
 - Zscaler
 
 > [!NOTE]
