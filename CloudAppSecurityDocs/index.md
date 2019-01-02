@@ -2,12 +2,12 @@
 layout: LandingPage
 ms.service: cloud-app-security
 description: Aprenda a utilizar Microsoft Cloud App Security.
-ms.openlocfilehash: 56cfd3dec462b7923a42bd9a48466f3e5bd60a66
-ms.sourcegitcommit: e500101377562f4432a5a3c21b97e67a8b788e88
+ms.openlocfilehash: e20b05641584380c387715c4ae4800d32a9ca2ed
+ms.sourcegitcommit: 96fabfedfe747bb02379876d34f0f5ac8019c1a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46563150"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53587824"
 ---
 # <a name="microsoft-cloud-app-security-documentation"></a>Documentación de Microsoft Cloud App Security
 
@@ -106,7 +106,7 @@ Aunque puede que usted no use la nube, sus empleados sí lo hacen. Proteja las a
         </a>
     </li>
     <li>
-        <a href="https://support.microsoft.com/en-us/assistedsupportproducts"> 
+        <a href="/cloud-app-security/troubleshooting-status"> 
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
