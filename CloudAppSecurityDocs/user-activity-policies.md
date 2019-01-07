@@ -1,11 +1,11 @@
 ---
-title: Crear directivas para controlar actividades en Cloud App Security | Microsoft Docs
-description: En este tema se proporcionan instrucciones para crear y trabajar con directivas de actividad.
+title: Creación de directivas para controlar actividades en Cloud App Security
+description: En este artículo se proporcionan instrucciones para crear directivas de actividad y trabajar con ellas.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/14/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,75 +13,86 @@ ms.technology: ''
 ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8b9d6c4b3fa20846153706230daaaf7243978b80
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: c98b01083b964901d3ff2823fff35c9702ddcd17
+ms.sourcegitcommit: 420a0119513e3f4a8651f6a9e66c56fe442a31c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123778"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53347303"
 ---
+# <a name="activity-policies"></a>Directivas de actividad
+
 *Se aplica a: Microsoft Cloud App Security*
 
-
-# <a name="activity-policies"></a>Directivas de actividad
-Las directivas de actividad permiten aplicar una amplia gama de procesos automatizados, con lo que se aprovechan las API del proveedor de aplicaciones. Estas directivas permiten supervisar actividades concretas realizadas por distintos usuarios o seguir niveles inesperadamente altos de un determinado tipo de actividad.  
+Las directivas de actividad permiten aplicar toda una variedad de procesos automatizados usando las API del proveedor de aplicaciones. Estas directivas permiten supervisar actividades concretas realizadas por distintos usuarios o seguir niveles inesperadamente altos de un determinado tipo de actividad.  
   
 Una vez que se ha establecido una directiva de detección de actividad, empieza a generar alertas, pero únicamente para las actividades que se producen después de haber creado la directiva.
   
   
 ## <a name="custom-alerts"></a>Alertas personalizadas  
-Las directivas de actividad permiten establecer el envío de alertas personalizadas o la realización de acciones cuando se detecta actividad del usuario. Por ejemplo, si quiere que se le notifique si un usuario intenta iniciar sesión y se producen 70 errores en un minuto, o si un usuario descarga 7000 archivos o inicia sesión en Afganistán, puede establecer que se envíen alertas de actividad al usuario o a usted mismo cada vez que se produzcan estas situaciones. Incluso puede suspender el usuario hasta que tenga tiempo de investigar lo sucedido.  
+
+Las directivas de actividad permiten enviar alertas personalizadas o realizar acciones cuando se detecta actividad del usuario. Por ejemplo, quiere saber cada vez que ocurre lo siguiente:
+
+- Un usuario intenta iniciar sesión y se produce un error 70 veces durante un minuto.
+- Un usuario descarga 7000 archivos.
+- Un usuario inicia sesión desde Afganistán.
+
+Puede establecer que se le envíen alertas de actividad a usted o al usuario cuando se producen estos eventos. Incluso puede suspender el usuario hasta que haya terminado de investigar lo sucedido.  
   
 Para crear una nueva directiva de actividad, siga este procedimiento:  
   
-1.  En la consola, haga clic en **Control** seguido de **Directivas**.  
+1. En la consola, haga clic en **Control** seguido de **Directivas**.  
   
-2.  Haga clic en **Crear directiva** y seleccione **Directiva de actividad**.  
+2. Haga clic en **Crear directiva** y seleccione **Directiva de actividad**.  
   
      ![menú de directiva de actividad](./media/activity-policy-menu.png "menú de directiva de actividad")  
   
-3.  Asigne un nombre y una descripción a la directiva. Si quiere, puede basarla en una plantilla. Para obtener más información sobre las plantillas de directiva, vea [Controlar aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).  
+3. Asigne un nombre y una descripción a la directiva. Si quiere, puede basarla en una plantilla. Para obtener más información sobre las plantillas de directiva, vea [Controlar aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).  
   
-4.  Para establecer qué acciones o qué otras métricas desencadenan esta directiva, trabaje con **filtros de actividad**.  
+4. Para establecer qué acciones o qué otras métricas desencadenan esta directiva, trabaje con **filtros de actividad**.  
   
-5.  En **Parámetros de coincidencia de actividad**, seleccione si se desencadenará una infracción de directiva cuando una sola actividad coincida con los filtros o si solo se detectará una infracción cuando se detecte un número especificado de **actividades repetidas**.  
-    Si elige **Actividad repetida**, puede establecer  **Actividades de grupo coincidentes por aplicación**. Esto desencadenará una coincidencia de directiva solo cuando se producen las actividades repetidas en la misma aplicación (por ejemplo, 5 descargas desde Box).  
+5. En **Activity match parameters** (Parámetros de coincidencia de actividad), seleccione cuándo se desencadenará una infracción de la directiva. Elija que se desencadene cuando una única actividad coincida con los filtros o solo cuando se detecte un número especificado de **actividades repetidas**.  
+    - Si elige **Actividad repetida**, puede establecer **En una única aplicación**. Esta configuración desencadenará una coincidencia de directiva solo cuando se producen las actividades repetidas en la misma aplicación. Por ejemplo, cinco descargas en 30 minutos desde Box desencadenan una coincidencia de directiva.  
   
-6.  Configure las **acciones** que deben realizarse cuando se encuentra una coincidencia.  
+6. Configure las **acciones** que deben realizarse cuando se encuentra una coincidencia.  
   
 Observe estos ejemplos:  
   
--   Varios inicios de sesión erróneos  
+- Varios inicios de sesión erróneos  
   
-     Puede establecer la directiva de modo que reciba una alerta cuando se produzca un gran número de intentos de inicio de sesión erróneos durante un período de tiempo determinado relativamente corto. Para configurar una directiva de este tipo, elija el filtro de actividad apropiado en la página **Nueva directiva de actividad**.  
+     Puede establecer la directiva de forma que reciba una alerta cuando se produce un gran número de inicios de sesión erróneos durante un breve período de tiempo. Para configurar este tipo de directiva, elija el filtro de actividad adecuado en la página **New Activity Policy** (Nueva directiva de actividad).  
   
      Bajo el campo **Filtros de actividad**, configure los parámetros para los que se desencadenará la alerta.  
   
-     ![ejemplo de directiva de varios intentos de inicio de sesión erróneos](./media/multiple-failed-log-on-attempts-policy-example.png "ejemplo de directiva de varios intentos de inicio de sesión erróneos")  
+     ![Ejemplo de directiva de varios intentos de inicio de sesión erróneos](./media/multiple-failed-log-on-attempts-policy-example.png "ejemplo de directiva de varios intentos de inicio de sesión erróneos")  
   
--   Frecuencia de descarga alta  
+- Frecuencia de descarga alta  
   
-     Puede establecer la directiva de modo que reciba una alerta cuando se produzca un nivel de actividad de descarga inesperado o inusitado. Para configurar una directiva de este tipo, en el parámetro **Frecuencia**, elija los parámetros que desencadenen la alerta.  
+     Puede establecer la directiva de modo que reciba una alerta cuando se produzca un nivel de actividad de descarga inesperado o inusitado. Para configurar este tipo de directiva, en el parámetro **Frecuencia**, elija los parámetros que desencadenen la alerta.  
   
      ![ejemplo de frecuencia de descarga alta](./media/high-download-rate-example.png "ejemplo de frecuencia de descarga alta")  
   
   
 ## <a name="activity-policy-reference"></a>Referencia de directiva de actividad  
-En esta sección se proporciona información de referencia sobre directivas, se ofrecen explicaciones sobre cada tipo de directiva y se detallan los campos que se pueden configurar para cada directiva.  
+
+En esta sección se proporciona información de referencia sobre directivas, se ofrecen explicaciones sobre cada tipo de directiva y se detallan los campos que se pueden configurar en cada directiva.  
   
-Una **directiva de actividad** es una directiva basada en API que permite supervisar las actividades de la organización en la nube en función de más de 20 filtros de metadatos de archivo (incluidos el tipo de dispositivo y la ubicación). Basándose en los resultados de la directiva, se pueden generar notificaciones y se puede suspender a usuarios de la aplicación en la nube.   
+Una **directiva de actividad** es una directiva basada en API que le permite supervisar las actividades de la organización en la nube. La directiva tiene en cuenta más de 20 filtros de metadatos de archivo, incluidos el tipo de dispositivo y la ubicación. Basándose en los resultados de la directiva, se pueden generar notificaciones y se puede suspender a usuarios de la aplicación en la nube.
 Cada directiva se compone de las siguientes partes:  
   
-- Filtros de actividad: permiten crear condiciones muy granulares basadas en metadatos.  
+- Filtros de actividad: permiten crear condiciones pormenorizadas basadas en metadatos.  
   
-- Parámetros de coincidencia de actividad: permiten establecer un umbral de número de veces que se repite una actividad para que se considere que coincide con la directiva.  Especifique el número de actividades repetidas necesarias para que haya coincidencia con la directiva, por ejemplo, el establecimiento de una directiva para alertar cuando un usuario realice diez intentos de inicio de sesión incorrectos en un período de tiempo de dos minutos.  De forma predeterminada, **Parámetros de coincidencia de actividad**, genera una coincidencia para cada actividad única que cumple todos los filtros de la actividad.   
-  Con **Actividad repetida** puede establecer el número de actividades repetidas, la duración del período en el que se cuentan las actividades e incluso especificar que todas las actividades las debe realizar el mismo usuario y en la misma aplicación en la nube.  
+- Parámetros de coincidencia de actividad: permiten establecer un umbral de número de veces que se repite una actividad para que se considere que coincide con la directiva.  Especifique el número de actividades repetidas necesarias para que coincida con la directiva. Por ejemplo, establezca una directiva para que alerte cuando un usuario intente iniciar sesión incorrectamente diez veces en un período de tiempo de dos minutos. De forma predeterminada, **Activity match parameter (Parámetro de coincidencia de actividad) genera una coincidencia para cada actividad única que cumple todos los filtros de la actividad.
+
+  - Si usa **Actividad repetida**, puede establecer el número de actividades repetidas y el período de tiempo durante el que se cuentan las actividades. También puede especificar que todas las actividades debe realizarlas el mismo usuario y en la misma aplicación en la nube.  
   
   
 - Acciones: la directiva proporciona un conjunto de acciones de gobierno que se pueden aplicar automáticamente cuando se detectan infracciones.  
-  ## <a name="see-also"></a>Consulte también  
-  [Directivas de protección de datos](data-protection-policies.md)   
+  
+## <a name="next-steps"></a>Pasos siguientes
+  
+[Directivas de protección de datos](data-protection-policies.md)
 
 [Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
-  
   

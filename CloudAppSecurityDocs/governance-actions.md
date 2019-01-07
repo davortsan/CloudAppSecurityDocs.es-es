@@ -1,11 +1,11 @@
 ---
-title: Cómo aplicar acciones de gobierno para controlar las aplicaciones conectadas | Microsoft Docs
+title: 'Acciones de gobierno para controlar las aplicaciones conectadas: Cloud App Security | Microsoft Docs'
 description: En este artículo se enumeran y se describen todas las acciones de gobierno que se pueden realizar en Cloud App Security, así como los mensajes de registro asociados.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 39022433ffb09410d883728a3f0ce2cae4d30d88
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 48708ea18227a68a780c6ed02905cda51cea48e0
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124645"
+ms.locfileid: "53177477"
 ---
 # <a name="governing-connected-apps"></a>Control de aplicaciones conectadas
 
@@ -50,7 +51,7 @@ Las siguientes acciones de gobierno pueden realizarse para aplicaciones conectad
 
      - **Cambio del uso compartido** 
 
-        - **Quitar el uso compartido público**: permite el acceso únicamente a los colaboradores con nombre, por ejemplo, Quitar el acceso público a G Suite y Quitar el vínculo compartido directo a Box. 
+        - **Quitar el uso compartido público**: permita el acceso únicamente a los colaboradores con nombre, por ejemplo, Quitar el acceso público a G Suite y Quitar el vínculo compartido directo a Box. 
 
        - **Quitar usuarios externos**: permite el acceso únicamente a los usuarios de la empresa. 
 

@@ -1,11 +1,11 @@
 ---
-title: Solución de problemas de directivas de Cloud App Security | Microsoft Docs
+title: Solución de problemas de directivas de Cloud App Security
 description: En este artículo se describe el proceso que hay que seguir para solucionar problemas relacionados con la creación de directivas en Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 828cc94a-248b-44f6-a1ba-c28c0a135f8c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 31c07ffe1f19de86ce23cad099bd238d254c0bab
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: cd309d6997486dcd84c072c28aedba1ef75d4284
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123183"
+ms.locfileid: "53175726"
 ---
 # <a name="troubleshooting-microsoft-cloud-app-security-policies"></a>Solución de problemas de directivas de Microsoft Cloud App Security | Microsoft Docs
 

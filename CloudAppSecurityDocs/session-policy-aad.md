@@ -1,11 +1,11 @@
 ---
-title: Crear directivas de sesión para obtener visibilidad detallada de las actividades de la sesión del usuario y bloquear las descargas | Microsoft Docs
+title: Creación de directivas de sesión en Cloud App Security
 description: En este artículo se describe el procedimiento para configurar una directiva de sesión de control de aplicaciones de acceso condicional de Cloud App Security para obtener visibilidad detallada de las actividades de la sesión del usuario y bloquear descargas por medio de las funciones de proxy inverso.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0019609036b222da25eede8b1ca3a34d0617ebe4
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 50230751efbc9dfcbd203d130c6e1d3e7489eb03
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124543"
+ms.locfileid: "53177001"
 ---
 # <a name="session-policies"></a>Directivas de sesión 
 
@@ -77,9 +78,9 @@ Haga lo siguiente para crear una directiva de sesión:
 
 5. En la sección **Actividades que coinciden con todo lo siguiente** de **Origen de la actividad**, seleccione más filtros de actividad para aplicarlos a la directiva. Los filtros incluyen las siguientes opciones: 
 
-   - **Etiqueta de dispositivo**: use este filtro para identificar los dispositivos no administrados.
+   - **Etiquetas de dispositivo**: use este filtro para identificar los dispositivos no administrados.
 
-   - **Ubicación**: use este filtro para identificar las ubicaciones desconocidas (por tanto, que entrañan riesgo). 
+   - **Ubicación**: use este filtro para identificar las ubicaciones desconocidas y que, por tanto, entrañan riesgo. 
 
    - **Dirección IP**: use este filtro para filtrar por direcciones IP o usar las etiquetas de dirección IP previamente asignadas. 
 
@@ -103,11 +104,11 @@ Haga lo siguiente para crear una directiva de sesión:
  
    3. En **Acciones**, seleccione uno de los siguientes elementos: 
 
-      - **Test (Monitor all activities)** (Probar [supervisar todas las actividades]): establezca esta acción para permitir expresamente las descargas según los filtros de directiva que haya establecido.
+      - **Test (Monitor all activities)** [Probar (Supervisión de todas las actividades)]: establezca esta acción para permitir expresamente las descargas según los filtros de directiva que haya establecido.
 
-      - **Block (Block file download and monitor all activities)** (Bloquear [bloquear descargas de archivos y supervisar todas las actividades]): establezca esta acción para bloquear expresamente las descargas según los filtros de directiva que haya establecido. Para más información, vea [Cómo funciona el bloqueo de descargas](#block-download).
+      - **Block (Block file download and monitor all activities)** [Bloquear (Bloquear la descarga de archivos y supervisar todas las actividades)]: establezca esta acción para bloquear expresamente las descargas según los filtros de directiva que haya establecido. Para más información, vea [Cómo funciona el bloqueo de descargas](#block-download).
 
-      - **Protect (Apply classification label to download and monitor all activities)** (Proteger [aplicar etiqueta de clasificación para descargar y supervisar todas las actividades]): esta opción solo está disponible si seleccionó **Controlar la descarga de archivos (con DLP)** en **Directiva de sesión**. Si la organización usa Azure Information Protection, puede establecer una **acción** que aplique al archivo una etiqueta de clasificación establecida en Azure Information Protection. Para más información, vea [Cómo funciona la protección de descargas](#protect-download).
+      - **Protect (Apply classification label to download and monitor all activities)** [Proteger (Aplicar una etiqueta de clasificación a las descargas y supervisar todas las actividades)]: esta opción solo está disponible si ha seleccionado **Controlar la descarga de archivos (con DLP)** en **Directiva de sesión**. Si la organización usa Azure Information Protection, puede establecer una **acción** que aplique al archivo una etiqueta de clasificación establecida en Azure Information Protection. Para más información, vea [Cómo funciona la protección de descargas](#protect-download).
 
 7. Puede **Crear una alerta para cada evento coincidente con la gravedad de la directiva** y establecer un límite de alerta. Seleccione si quiere que la alerta se envíe como mensaje de correo electrónico, de texto o ambos.
 

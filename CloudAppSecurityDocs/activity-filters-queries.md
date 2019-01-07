@@ -1,11 +1,11 @@
 ---
-title: Trabajar con filtros y consultas de actividad de Cloud App Security | Microsoft Docs
+title: Trabajo con filtros y consultas de actividad de Cloud App Security
 description: En este artículo se proporciona una lista de filtros y consultas de actividad de Cloud App Security y se explica cómo trabajar con ellos.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 9ba5c7d3-c733-4048-9b99-bf41a0f46695
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 404095a7c688a1e077bc11703c737697b5311a59
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 4e10adf4b059728e45d9a87ebefcf1f1707566a7
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124679"
+ms.locfileid: "53177188"
 ---
 # <a name="activity-filters-and-queries"></a>Filtros y consultas de actividad
 
@@ -46,7 +47,7 @@ A continuación se muestra una lista de los filtros de actividad que se pueden a
 
 - Aplicación: busca solo las actividades en aplicaciones específicas.  
   
-- Acción aplicada: busca por la acción de control aplicada: Bloqueado, No usar proxy, Descrifrado, Cifrado, Error de cifrado, Ninguna acción.
+- Acción aplicada: busca por la acción de control aplicada: Bloqueado, Omitir proxy, Descifrada, Cifrada, No se pudo realizar el cifrado, Ninguna acción.
 
 - Fecha: fecha en que se ha producido la actividad. El filtro admite fechas antes o después e intervalos de fechas.  
   

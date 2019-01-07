@@ -1,11 +1,11 @@
 ---
-title: Solución de errores de Cloud Discovery en Cloud App Security | Microsoft Docs
+title: 'Solución de errores de Cloud Discovery: Cloud App Security | Microsoft Docs'
 description: En este artículo se proporciona una lista de errores frecuentes de Cloud Discovery y recomendaciones para la solución de cada uno de ellos.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8229eec0452cbb6c34a9c16ab7711455e63f01af
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 17890e4b54b4ed6447b274dc7e266011f8be236d
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124662"
+ms.locfileid: "53176933"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Solución de problemas de Cloud Discovery
 
@@ -48,7 +49,7 @@ Puede realizar un seguimiento del procesamiento de registros de Cloud Discovery 
 |No se pudo actualizar la configuración del recopilador | 1. Compruebe que ha especificado el token de acceso más reciente. <br />2. En el firewall, compruebe que el recopilador de registros tiene permiso para iniciar tráfico saliente en el puerto 443.|
 |Los registros enviados al recopilador no aparecen en el portal | 1.  Compruebe si hay tareas de análisis con errores en el registro de gobierno.  <br />  &nbsp;&nbsp;&nbsp;&nbsp;En caso de que las haya, use la anterior tabla Errores de análisis de registro para solucionar el error.<br /> 2. En caso de que no las haya, compruebe los orígenes de datos y la configuración del recopilador de registros en el portal. <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. En la página Origen de datos, compruebe que el origen de datos que está usando está configurado de forma precisa. <br />&nbsp;&nbsp;&nbsp;&nbsp;b. En la página Recopiladores de registros, compruebe que el origen de datos está vinculado al recopilador de registros correcto. <br /> 3. Compruebe la configuración local de la máquina del recopilador de registros local.  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. Inicie sesión en el recopilador de registros mediante SSH y ejecute la utilidad collector_config.<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. Confirme que el firewall o proxy envía los registros al recopilador de registros mediante el protocolo definido (Syslog/TCP, Syslog/UDP o FTP) y que los envía al puerto y directorio correctos.<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. Ejecute netstat en la máquina y compruebe que recibe las conexiones entrantes del firewall o proxy. <br /> 4.   Compruebe que el recopilador de registros tiene permiso para iniciar tráfico saliente en el puerto 443. |
 |Estado del recopilador de registros: Creado | No se ha completado la implementación del recopilador de registros. Complete los pasos de implementación local indicados en la guía de implementación.|
-|Estado del recopilador de registros: Desconectado | No se han recibido datos durante las últimas 24 horas de ninguno de los orígenes de datos vinculados. |
+|Estado del recopilador de registros: Disconnected | No se han recibido datos durante las últimas 24 horas de ninguno de los orígenes de datos vinculados. |
 
 
 ## <a name="discovery-dashboard-errors"></a>Errores del panel de detección

@@ -1,11 +1,11 @@
 ---
-title: Establecer las preferencias de administración | Microsoft Docs
+title: 'Establecimiento de las preferencias de administración: Cloud App Security | Microsoft Docs'
 description: En este artículo se proporcionan instrucciones para configurar las preferencias de administración en Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 85cae50d-f571-4907-9600-da4cc187b43b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7b975907e6a2d1b78a61fd5e1960496b44ade234
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 09b9be9508f6dcb1f76bed691695050ab7d43a66
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53122826"
+ms.locfileid: "53176815"
 ---
 # <a name="admin-user-settings"></a>Configuración de usuario de administración
 

@@ -1,11 +1,11 @@
 ---
-title: Inspección de contenido de Cloud App Security mediante el servicio de clasificación de datos de Microsoft | Microsoft Docs
+title: Inspección de contenido de Cloud App Security mediante el servicio de clasificación de datos de Microsoft
 description: En este artículo se describe el proceso que Cloud App Security sigue al realizar la inspección de contenido de DLP mediante el servicio de clasificación de datos de Microsoft.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,24 +13,26 @@ ms.technology: ''
 ms.assetid: bf25d1e6-e5dc-449f-b50e-1cd4a21b6d3d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: df9e1c91efd5120168fcc918b949dad7519578f4
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: d060980768426cbabe0f3c7cb976aadf88037b7d
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123625"
+ms.locfileid: "53174995"
 ---
 # <a name="microsoft-data-classification-services-integration"></a>Integración de los servicios de clasificación de datos de Microsoft
 
 *Se aplica a: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security permite usar el servicio de clasificación de datos de Microsoft de forma nativa, para clasificar los archivos de las aplicaciones en la nube. El servicio de clasificación de datos de Microsoft proporciona una experiencia de protección de información unificada en Office 365, Azure Information Protection y Microsoft Cloud App Security. Este servicio de clasificación permite ampliar el trabajo de clasificación de datos a las aplicaciones en la nube de terceros que están protegidas por Microsoft Cloud App Security, aprovechando las decisiones ya adoptadas en un número aún mayor de aplicaciones.
+Microsoft Cloud App Security le permite usar el servicio de clasificación de datos de Microsoft de forma nativa para clasificar los archivos de las aplicaciones en la nube. El servicio de clasificación de datos de Microsoft proporciona una experiencia de protección de información unificada en Office 365, Azure Information Protection y Microsoft Cloud App Security. Este servicio de clasificación permite ampliar el trabajo de clasificación de datos a las aplicaciones en la nube de terceros que están protegidas por Microsoft Cloud App Security, aprovechando las decisiones ya adoptadas en un número aún mayor de aplicaciones.
 
 >[!NOTE]
 > Esta característica solo está disponible en Estados Unidos y Europa (excepto en Francia) y APAC.
 
 
 ## <a name="enable-content-inspection-with-data-classification-services"></a>Habilitar la inspección de contenido con los servicios de clasificación de datos
+
 Tiene la opción para establecer el **método de inspección** para que use el **servicio de clasificación de datos de Microsoft** sin ninguna configuración adicional necesaria. Esta opción es útil al crear una directiva de prevención de pérdida de datos para los archivos en Microsoft Cloud App Security.
 
 

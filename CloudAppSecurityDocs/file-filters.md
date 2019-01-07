@@ -1,11 +1,11 @@
 ---
-title: Descripción de los datos y los filtros de archivo disponibles en Cloud App Security | Microsoft Docs
+title: Descripción de los datos y los filtros de archivo disponibles en Cloud App Security
 description: En este artículo de referencia se proporciona información sobre los tipos de archivo y filtros de archivo que usa Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5136b75dd45836cc8493b1021d598567ef858a73
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: dad41edad096f56349dbd729756151499ffecbb4
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124424"
+ms.locfileid: "53176950"
 ---
 # <a name="files"></a>Archivos
 
@@ -28,11 +29,11 @@ Para proporcionar protección de datos, Microsoft Cloud App Security le ofrece v
 
 ## <a name="file-filter-examples"></a>Ejemplos de filtros de archivo
 
-Por ejemplo, use la página **Archivos** para proteger de forma externa archivos compartidos etiquetados como **confidenciales** de la siguiente manera: después de conectar una aplicación a Cloud App Security, intégrela con Azure Information Protection. Luego, en la página **Archivos**, filtre los archivos etiquetados con **confidencial** y excluya su dominio en el filtro **Colaboradores**. Si ve que hay archivos confidenciales compartidos fuera de la organización, puede crear una directiva de archivo para detectarlos. Puede aplicar acciones de gobierno automáticas a estos archivos, tales como **Quitar colaboradores externos** y **Enviar un resumen de coincidencias de directiva al propietario del archivo** para evitar la pérdida de datos a la organización.
+Por ejemplo, use la página **Archivos** para proteger archivos compartidos de forma externa etiquetados como **confidenciales**, de la siguiente forma: después de conectar una aplicación a Cloud App Security, intégrela con Azure Information Protection. Luego, en la página **Archivos**, filtre los archivos etiquetados con **confidencial** y excluya su dominio en el filtro **Colaboradores**. Si ve que hay archivos confidenciales compartidos fuera de la organización, puede crear una directiva de archivo para detectarlos. Puede aplicar acciones de gobierno automáticas a estos archivos, tales como **Quitar colaboradores externos** y **Enviar un resumen de coincidencias de directiva al propietario del archivo** para evitar la pérdida de datos a la organización.
 
  ![Filtro de archivos confidenciales](media/file-filter-confidential.png)
 
-Este es otro ejemplo de cómo puede usar la página **Archivos**. Asegúrese de que nadie en la organización está compartiendo de forma pública o externa archivos que no se han modificado en los últimos seis meses: conecte una aplicación a Cloud App Security y vaya a la página **Archivos**. Filtre los archivos cuyo nivel de acceso es **Externo** o **Público**, y establezca la fecha de **Última modificación** en hace seis meses. Cree una directiva de archivo que detecte estos archivos obsoletos públicos haciendo clic en **Nueva directiva de búsqueda**. Aplique acciones de gobierno automáticas, como **Quitar usuarios externos**, para evitar la pérdida de datos a la organización.
+Este es otro ejemplo de cómo puede usar la página **Archivos**. Asegúrese de que nadie de la organización comparte de forma pública o externa archivos que no se han modificado en los últimos seis meses: conecte una aplicación a Cloud App Security y vaya a la página **Archivos**. Filtre los archivos cuyo nivel de acceso es **Externo** o **Público**, y establezca la fecha de **Última modificación** en hace seis meses. Cree una directiva de archivo que detecte estos archivos obsoletos públicos haciendo clic en **Nueva directiva de búsqueda**. Aplique acciones de gobierno automáticas, como **Quitar usuarios externos**, para evitar la pérdida de datos a la organización.
 
  ![Filtro de archivo obsoleto externo](media/file-example-stale-external.png)
 

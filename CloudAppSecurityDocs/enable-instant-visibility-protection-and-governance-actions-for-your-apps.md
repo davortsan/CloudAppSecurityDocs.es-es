@@ -1,11 +1,11 @@
 ---
-title: Conectar aplicaciones para obtener una mayor visibilidad y control con Cloud App Security | Microsoft Docs
+title: 'Conexión de aplicaciones para obtener visibilidad y control: Cloud App Security | Microsoft Docs'
 description: En este artículo se describe el proceso para conectar aplicaciones con las aplicaciones en la nube de la organización mediante conectores de API.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1d6f5e998959abf670d282297b2d7ca61706610d
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 1a0d83ff6d3231d641843f5f7400fe6ba21813dc
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123999"
+ms.locfileid: "53177103"
 ---
 # <a name="connect-apps"></a>Conectar aplicaciones 
 
@@ -87,7 +88,7 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
 - Se recomienda crear una cuenta de servicio de administración dedicada a Cloud App Security por cada aplicación que quiera conectar con la integración de la API de Cloud App Security.  
 
 > [!NOTE]  
->  Para obtener actualizaciones cuando las direcciones URL y las direcciones IP cambien, suscríbase al RSS como se explica en: [URL de Office 365 e intervalos de direcciones IP](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).  
+>  Para obtener actualizaciones cuando las direcciones URL y las direcciones IP cambien, suscríbase al RSS como se explica en: [Intervalos de direcciones IP y URL de Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).  
 
 Para usar los conectores de aplicaciones, debe asegurarse de que tiene lo siguiente para cada aplicación específica:  
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/16/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 37eab4a159d0791f5cc84a42eb7db3da4797ff92
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.openlocfilehash: 44cea3dcb50132a79db54d6b741ade1784014e09
+ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124407"
+ms.lasthandoff: 12/16/2018
+ms.locfileid: "53450654"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker en Windows local
 
@@ -28,9 +28,9 @@ Puede configurar la carga de registros automática para los informes continuos d
 
 ## <a name="technical-requirements"></a>Requisitos técnicos
 
-- Sistema operativo: Windows 10 (Fall Creators Update ) y Windows Server, versión 1709 o superior 
+- Sistema operativo: Windows 10 (Fall Creators Update) y Windows Server, versión 1709 o superior 
 
-- Espacio en disco: 250 GB
+- Espacio en disco 250 GB
 
 - CPU: 2
 
@@ -126,7 +126,7 @@ Se instalará el cliente de Docker en la máquina. Durante la instalación del c
    ![Crear un recopilador de registros](./media/windows7.png)
 8. Ejecute el comando siguiente para comprobar si el recopilador se ejecuta correctamente: `docker logs <collector_name>`
 
-Debería ver el mensaje: **Finalizó correctamente**.
+Debería ver el mensaje: **Finished successfully!** (Finalizado correctamente).
 
   ![ubuntu8](./media/ubuntu8.png)
 
@@ -160,12 +160,12 @@ Compruebe que se cargan los registros de Cloud App Security y que se generan los
 
 Para asegurarse de que el programa de instalación de Docker está firmado por Microsoft:
 1. Haga clic con el botón derecho en el archivo y seleccione **Propiedades**.
-2. Haga clic en **General** y asegúrese de que dice **Esta firma digital es correcta**.  
-3. Haga clic en **Firmas digitales** y asegúrese de que Microsoft esté en la **Lista de firmas**.  
+2. Haga clic en **Firmas digitales** y asegúrese de que indica **Esta firma digital es correcta**.  
+3. Asegúrese de que **Microsoft Corporation** aparece como la única entrada en **Nombre del firmante**.  
 
 ![Firma digital válida](./media/digital-signature-successful.png)
 
-Si la firma digital no es válida, aparecerá el mensaje siguiente:
+Si la firma digital no es válida, se indicará **La firma digital no es válida**:
 
 ![Firma digital no válida](./media/digital-signature-unsuccessful.png)
 

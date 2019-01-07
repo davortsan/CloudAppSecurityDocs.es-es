@@ -1,11 +1,11 @@
 ---
-title: Controlar qué aplicaciones de OAuth en la nube de terceros obtienen permisos | Microsoft Docs
+title: 'Control de qué aplicaciones de OAuth en la nube de terceros obtienen permisos: Cloud App Security | Microsoft Docs'
 description: Este artículo proporciona información sobre cómo puede controlar, prohibir y permitir aplicaciones de OAuth de terceros.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5984b4c7067086d11f2504f7bd1cdb186ccc8788
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: d4b6911ac508d9b52fd54c3afe3b33ede4ffdc45
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124611"
+ms.locfileid: "53175648"
 ---
 # <a name="manage-oauth-apps"></a>Administrar aplicaciones de OAuth
 
@@ -88,7 +89,7 @@ La página Aplicaciones de OAuth de aplicación proporciona la siguiente informa
 
 En el caso de G Suite y Salesforce, es posible revocar el permiso de una aplicación o notificarle al usuario que deberían cambiar el permiso. 
 
-1. En la página **Aplicaciones de OAuth**, haga clic en los tres puntos situados al final de la fila de la aplicación y seleccione **Enviar notificación al usuario**. De forma predeterminada, se enviará la siguiente notificación al usuario: *Autorizó que la aplicación accediera a su cuenta de G Suite. Esta aplicación está en conflicto con la directiva de seguridad de la organización. Vuelva a considerar la posibilidad de conceder o revocar los permisos que otorgó a esta aplicación en su cuenta de G Suite. Para revocar el acceso, vaya a: https://security.google.com/settings/security/permissions?hl=en&pli=1: seleccione la aplicación y haga clic en "Revocar aplicación" en la barra de menús de la derecha.* Puede personalizar el mensaje que se envía.
+1. En la página **Aplicaciones de OAuth**, haga clic en los tres puntos situados al final de la fila de la aplicación y seleccione **Enviar notificación al usuario**. De forma predeterminada, el usuario recibirá la siguiente notificación: *Autorizó que la aplicación accediera a su cuenta de G Suite. Esta aplicación está en conflicto con la directiva de seguridad de la organización. Vuelva a considerar la posibilidad de conceder o revocar los permisos que otorgó a esta aplicación en su cuenta de G Suite. Para revocar el acceso de la aplicación, vaya a: https://security.google.com/settings/security/permissions?hl=en&pli=1 Seleccione la aplicación y haga clic en "Revocar acceso" en la barra de menús derecha.* Puede personalizar el mensaje que se envía.
 2. También puede revocar permisos para usar la aplicación para el usuario. Haga clic en el icono al final de la fila de la aplicación en la tabla y seleccione **Revocar aplicación**. 
 
    ![revocar aplicación](./media/revoke-app.png)

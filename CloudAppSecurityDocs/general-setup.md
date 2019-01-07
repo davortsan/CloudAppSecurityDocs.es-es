@@ -1,11 +1,11 @@
 ---
-title: Proporcionar la configuración de la organización en el portal de Cloud App Security para obtener los mejores resultados | Microsoft Docs
+title: Definición de la configuración de la organización en Cloud App Security
 description: En este artículo se explica cómo proporcionar información sobre su organización en Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,14 +13,15 @@ ms.technology: ''
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5262c51e18ba46bd6a5b41da5a41b2a73deecfba
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 74816bcdd872d000e56f61431bfb26cc04386901
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123740"
+ms.locfileid: "53176661"
 ---
-# <a name="basic-setup"></a>Configuración básica
+# <a name="basic-setup-for-cloud-app-security"></a>Configuración básica de Cloud App Security
 
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -32,7 +33,7 @@ Para acceder al portal de Cloud App Security, deberá agregar las direcciones IP
 - 104.42.231.28  
   
 > [!NOTE]  
->  Para obtener actualizaciones cuando las direcciones URL y las direcciones IP cambien, suscríbase al RSS como se explica en: [URL de Office 365 e intervalos de direcciones IP](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).  
+>  Para obtener actualizaciones cuando las direcciones URL y las direcciones IP cambien, suscríbase al RSS como se explica en: [Intervalos de direcciones IP y URL de Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).  
   
 ## <a name="set-up-the-portal"></a>Configurar el portal  
   

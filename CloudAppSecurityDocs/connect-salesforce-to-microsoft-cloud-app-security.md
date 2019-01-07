@@ -1,11 +1,11 @@
 ---
-title: Conectar Salesforce con Cloud App Security para la visibilidad y el control del uso | Microsoft Docs
-description: En este artículo se proporciona información sobre cómo conectar la aplicación Salesforce con Cloud App Security mediante el conector de API.
+title: Conexión de Salesforce con Cloud App Security
+description: En este artículo se proporciona información sobre cómo conectar Salesforce con Cloud App Security mediante el conector de API para la visibilidad y el control del uso.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,19 @@ ms.technology: ''
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 83b2f4572c2e5714867ed529c6199e441da5234f
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 322e5d0564e70ff4e8ff85bdd3f798f43aacf235
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124696"
+ms.locfileid: "53176746"
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Conectar Salesforce con Microsoft Cloud App Security
 
 *Se aplica a: Microsoft Cloud App Security*
 
-En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Security con una cuenta de Salesforce existente mediante la API del conector de aplicaciones.  
+En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Security con una cuenta de Salesforce existente mediante la API del conector de aplicaciones. Esta conexión le ofrece visibilidad y control del uso de Salesforce. 
   
 ## <a name="how-to-connect-salesforce-to-cloud-app-security"></a>Cómo conectar Salesforce con Cloud App Security  
   
@@ -102,7 +103,7 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
      La prueba puede tardar unos minutos. Cuando reciba la notificación de que se ha realizado correctamente, haga clic en **Listo**.  
   
   
-Después de conectarse a Salesforce, recibirá eventos de este modo: desencadenadores en el momento de la conexión, eventos de inicio de sesión y traza de auditoría de configuración de los 60 días anteriores a la conexión, y supervisión de eventos de los 30 días anteriores o del día anterior, en función de su licencia de supervisión de eventos de Salesforce. La API de Cloud App Security se comunica directamente con las API disponibles de Salesforce. Dado que Salesforce limita el número de llamadas API que puede recibir, Cloud App Security lo tiene en cuenta y respeta la limitación. Las API de Salesforce envían cada respuesta con un campo para los contadores de API, incluido el total disponible y restante. Cloud App Security lo calcula como un porcentaje y siempre se asegura de que quede como restante un 10 % de las llamadas de API disponibles. 
+Después de conectarse a Salesforce, recibirá eventos de la siguiente manera: desencadenadores en el momento de la conexión, eventos de inicio de sesión, traza de auditoría de configuración de los 60 días anteriores a la conexión y supervisión de eventos de los 30 días anteriores o del día anterior, en función de su licencia de supervisión de eventos de Salesforce. La API de Cloud App Security se comunica directamente con las API disponibles de Salesforce. Dado que Salesforce limita el número de llamadas API que puede recibir, Cloud App Security lo tiene en cuenta y respeta la limitación. Las API de Salesforce envían cada respuesta con un campo para los contadores de API, incluido el total disponible y restante. Cloud App Security lo calcula como un porcentaje y siempre se asegura de que quede como restante un 10 % de las llamadas de API disponibles. 
 
 > [!NOTE]
 > La limitación de Cloud App Security se calcula únicamente según sus propias llamadas API con Salesforce, no según las de otras aplicaciones que realizan llamadas API con Salesforce.

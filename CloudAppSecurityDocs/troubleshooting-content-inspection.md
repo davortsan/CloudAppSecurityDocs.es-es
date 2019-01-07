@@ -1,11 +1,11 @@
 ---
-title: Solución de errores de inspección de contenido en Cloud App Security | Microsoft Docs
+title: 'Solución de errores de inspección de contenido: Cloud App Security | Microsoft Docs'
 description: En este artículo se proporciona una lista de los estados de inspección de contenido, así como el significado de estos.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 359eb77f-e719-4c50-9b62-6ef64149a5a5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5656b08aa4a15161fa57c6584dac15b978396997
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 5ace5a7288caea8bad9fbda0e5ac3e524a6210e5
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124033"
+ms.locfileid: "53177307"
 ---
 # <a name="troubleshooting-content-inspection"></a>Solucionar problemas relacionados con la inspección de contenido
 
@@ -37,7 +38,7 @@ En la tabla se enumera cada estado de inspección de contenido y su descripción
 |Pending|El archivo está actualmente en la cola de inspección de contenido.|
 |Error: Error de descarga|Microsoft Cloud App Security no ha podido descargar el archivo para la inspección.|
 |Error: Archivo cifrado|El archivo no se ha podido descifrar.|
-|Error: El archivo está dañado|El archivo está dañado de algún modo y no se ha podido inspeccionar.|
+|Error: Archivo dañado|El archivo está dañado de algún modo y no se ha podido inspeccionar.|
 |Error: Error interno.|Se produjo un problema indeterminado al intentar inspeccionar el archivo.|
 |Error: Error de DLP externo|Se produjo un error en la DLP externa y Cloud App Security no pudo inspeccionar el contenido.|
 |Error: Se ha excedido el tamaño de archivo|El límite de archivo varía según el tamaño del archivo y el número de caracteres.|

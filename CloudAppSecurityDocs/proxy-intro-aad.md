@@ -1,11 +1,11 @@
 ---
-title: Proteger con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security | Microsoft Docs
+title: Protección con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security
 description: En este artículo encontrará información sobre el funcionamiento del proxy inverso de control de aplicaciones de acceso condicional de Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/18/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 620bcbc8751ac782c947b2a761e8250ddc0f5807
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: a9f3b2282d4a62706e72500db9bb3c57f7598029
+ms.sourcegitcommit: 96fabfedfe747bb02379876d34f0f5ac8019c1a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124271"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53587841"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicaciones con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security
 
@@ -40,17 +41,17 @@ El Control de aplicaciones de acceso condicional usa una arquitectura de proxy i
 
 Gracias al control de aplicaciones de acceso condicional, las sesiones y el acceso a la aplicación de los usuarios se pueden supervisar y controlar en tiempo real según las directivas de sesión y acceso definidas. Las directivas de sesión y acceso se usan en el portal de Cloud App Security para perfeccionar los filtros y establecer las medidas que hay que tomar con respecto a un usuario. Con las directivas de acceso y sesión, puede:
 
-- **Bloquear descargas**: puede bloquear la descarga de documentos confidenciales. Por ejemplo, en los dispositivos no administrados.
+- **Bloquear las descargas**: puede bloquear la descarga de documentos confidenciales. Por ejemplo, en los dispositivos no administrados.
 
-- **Proteger las descargas**: en lugar de bloquear la descarga de documentos confidenciales, puede requerir que los documentos se protejan con cifrado. Este cifrado garantiza que el documento está protegido y el acceso de usuario debe autenticarse si se descargan datos en un dispositivo que no es de confianza. 
+- **Proteger las descargas**: en lugar de bloquear la descarga de documentos confidenciales, puede requerir que los documentos se protejan con cifrado al descargarse. Este cifrado garantiza que el documento está protegido y el acceso de usuario debe autenticarse si se descargan datos en un dispositivo que no es de confianza. 
 
-- **Supervisar las sesiones de usuario con un nivel de confianza bajo**: los usuarios que entrañen riesgo se supervisan cuando inician sesión en aplicaciones e, igualmente, sus acciones se registran en la sesión. Puede investigar y analizar el comportamiento de los usuarios para entender dónde (y en qué condiciones) se deben aplicar directivas de sesión en el futuro. 
+- **Supervisar las sesiones de usuario con un nivel de confianza bajo**: los usuarios que entrañen riesgo se supervisan cuando inician sesión en aplicaciones y sus acciones se registran en la sesión. Puede investigar y analizar el comportamiento de los usuarios para entender dónde (y en qué condiciones) se deben aplicar directivas de sesión en el futuro. 
 
 - **Bloquear el acceso**: puede bloquear por completo el acceso a aplicaciones específicas a usuarios de dispositivos no administrados o de redes no corporativas.
 
-- **Crear modo de solo lectura**: mediante la supervisión y el bloqueo de actividades personalizadas dentro de la aplicación, puede crear un modo de solo lectura en aplicaciones específicas para usuarios específicos.  
+- **Crear modo de solo lectura**: mediante la supervisión y el bloqueo de actividades personalizadas dentro de la aplicación, puede crear un modo de solo lectura en aplicaciones específicas para usuarios concretos.  
 
-- **Restringir las sesiones de usuario desde redes no corporativas**: los usuarios que tienen acceso a una aplicación protegida desde una ubicación que no forma parte de la red corporativa tienen un acceso restringido. La descarga de material confidencial está bloqueada o protegida.
+- **Restringir las sesiones de usuario desde redes no corporativas**: los usuarios que acceden a una aplicación protegida desde una ubicación que no forma parte de la red corporativa tienen un acceso restringido. La descarga de material confidencial está bloqueada o protegida.
 
 ### <a name="how-session-control-works"></a>Funcionamiento del control de sesión
 
@@ -117,6 +118,7 @@ El control de sesión está disponible para cualquier explorador en las principa
 - SharePoint Online (versión preliminar)
 - Azure DevOps (Visual Studio Team Services) (versión preliminar)
 - Yammer (versión preliminar)
+- Microsoft Flow (versión preliminar)
 
 
 

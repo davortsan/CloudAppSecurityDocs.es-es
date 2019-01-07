@@ -1,11 +1,11 @@
 ---
-title: Crear informes de instantánea del uso de aplicaciones en la nube de Cloud Discovery | Microsoft Docs
+title: Creación de informes de instantánea del uso de aplicaciones en la nube de Cloud Discovery
 description: En este artículo se proporciona información sobre cómo cargar registros manualmente para crear un informe de instantáneas de las aplicaciones de Cloud Discovery.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4704f4ccf93fe369efce5e53d3cf99986ed31eff
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: f92e8707c742ae36b5e9e018b3a1ba707f206046
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124798"
+ms.locfileid: "53177467"
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Crear informes de instantáneas de Cloud Discovery
 

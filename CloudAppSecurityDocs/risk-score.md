@@ -1,11 +1,11 @@
 ---
-title: Trabajo con la puntuación de riesgo | Microsoft Docs
+title: 'Trabajo con la puntuación de riesgo: Cloud App Security | Microsoft Docs'
 description: En este artículo se proporcionan instrucciones sobre cómo usar y personalizar la puntuación de riesgo de la aplicación de Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bb6539d5e80f4918d1e6b49bc244c0e58a94b092
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 8427aa87af9b986b482901cf3671e54a6aa6fac3
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124509"
+ms.locfileid: "53177449"
 ---
 # <a name="working-with-the-risk-score"></a>Trabajo con la puntuación de riesgo
 
@@ -57,13 +58,13 @@ Hay filtros básicos y avanzados en el Catálogo de aplicaciones en la nube. Par
 
 - **Etiquetas de aplicación**: las etiquetas le permiten personalizar el Catálogo de aplicaciones en la nube. 
   Puede seleccionar la etiqueta **Autorizada** o **No autorizada**, o bien crear etiquetas personalizadas para las aplicaciones. Después, estas etiquetas pueden usarse como filtros. Los filtros son útiles para profundizar un poco más en los tipos de aplicaciones específicos que quiere investigar. 
-- **Aplicaciones y dominios**: permite buscar aplicaciones específicas o aplicaciones usadas en dominios concretos. 
-- **Categorías**: el filtro de categorías, que se encuentra a la izquierda de la página, permite buscar tipos de aplicaciones en función de categorías de aplicaciones. Por ejemplo, aplicaciones de redes sociales, aplicaciones de almacenamiento en la nube y más tipos de aplicaciones. Puede seleccionar más de una categoría a la vez o una única categoría. Después, aplique los filtros básicos o avanzados sobre las categorías.
-- **Factor de riesgo de cumplimiento**: permite buscar normas, certificaciones y elementos de conformidad específicos que puede cumplir la aplicación. Por ejemplo, HIPAA, ISO 27001, SOC 2 y PCI-DSS.
-- **Factor de riesgo general**: permite buscar factores de riesgo generales, como la popularidad entre los consumidores, la configuración regional del centro de datos y muchos más.
-- **Factor de riesgo legal**: permite filtrar en función de las regulaciones y directivas en vigor. Usar factores de riesgo legal ayuda a garantizar la protección y la privacidad de los datos de los usuarios de la aplicación, como RGPD, DMCA y directivas de retención de datos.
-- **Puntuación de riesgo**: permite filtrar las aplicaciones mediante una puntuación de riesgo en la que puede centrarse. Por ejemplo, revisar solo las aplicaciones de riesgo.
-- **Factor de riesgo para la seguridad**: permite filtrar en función de medidas de seguridad específicas. Las medidas incluyen entre otras el cifrado en reposo y la autenticación multifactor.
+- **Aplicaciones y dominios**: le permite buscar aplicaciones específicas o aplicaciones usadas en dominios concretos. 
+- **Categorías**: el filtro de categorías, que se encuentra a la izquierda de la página, le permite buscar tipos de aplicaciones en función de categorías de aplicaciones. Por ejemplo, aplicaciones de redes sociales, aplicaciones de almacenamiento en la nube y más tipos de aplicaciones. Puede seleccionar más de una categoría a la vez o una única categoría. Después, aplique los filtros básicos o avanzados sobre las categorías.
+- **Factor de riesgo de cumplimiento**: le permite buscar normas, certificaciones y elementos de conformidad específicos que puede cumplir la aplicación. Por ejemplo, HIPAA, ISO 27001, SOC 2 y PCI-DSS.
+- **Factor de riesgo general**: le permite buscar factores de riesgo generales, como la popularidad entre los consumidores, la configuración regional del centro de datos y muchos más.
+- **Factor de riesgo legal**: le permite filtrar en función de las regulaciones y directivas en vigor. Usar factores de riesgo legal ayuda a garantizar la protección y la privacidad de los datos de los usuarios de la aplicación, como RGPD, DMCA y directivas de retención de datos.
+- **Puntuación de riesgo**: le permite filtrar las aplicaciones mediante una puntuación de riesgo en la que puede centrarse. Por ejemplo, revisar solo las aplicaciones de riesgo.
+- **Factor de riesgo para la seguridad**: le permite filtrar en función de medidas de seguridad específicas. Las medidas incluyen entre otras el cifrado en reposo y la autenticación multifactor.
 
 ## <a name="suggesting-a-change"></a>Sugerir un cambio
 
@@ -103,7 +104,7 @@ Cloud Discovery proporciona datos importantes sobre la credibilidad y la confian
   
 - **Cumplimiento normativo**: esta categoría muestra qué estándares comunes de cumplimiento de procedimientos recomendados cumple la empresa que produce la aplicación. La lista de especificaciones incluye estándares tales como HIPAA, CSA y PCI-DSS.  
 
-- **Factor de riesgo legal**: permite filtrar en función de las regulaciones y directivas en vigor para garantizar la protección y la privacidad de los datos de los usuarios de la aplicación, por ejemplo, el RGPD, el DMCA y la directiva de retención de datos.
+- **Legal**: esta categoría permite filtrar en función de las regulaciones y directivas en vigor para garantizar la protección y la privacidad de los datos de los usuarios de la aplicación, por ejemplo, el RGPD, el DMCA y la directiva de retención de datos.
   
 Cada una de las categorías se compone de muchas propiedades específicas. Según el algoritmo de puntuación de Cloud App Security, cada propiedad recibe una puntuación preliminar de entre 0 y 10, en función del valor. Los valores True y False recibirán 10 o 0 en consecuencia. Pero las propiedades continuas como la antigüedad del dominio recibirán un valor determinado del espectro. La puntuación de cada propiedad se pondera con todos los demás campos existentes en la categoría para crear la subpuntuación de esta. Si encuentra una aplicación sin puntuar, eso normalmente indica que sus propiedades son desconocidas y que, por lo tanto, no se ha puntuado.  
   

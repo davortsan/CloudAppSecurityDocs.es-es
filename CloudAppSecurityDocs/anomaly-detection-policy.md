@@ -1,11 +1,11 @@
 ---
-title: Crear directivas de detección de anomalías en Cloud App Security | Microsoft Docs
+title: Creación de directivas de detección de anomalías en Cloud App Security
 description: En este artículo se proporciona una descripción de las directivas de detección de anomalías, así como información de referencia sobre los bloques de creación de una directiva de detección de anomalías.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 91733a1219befb3aac5ac48a4a3fe19368ea4d10
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 6c0e3ac17aa5bc8d3cb5d7b32d4556c3d5cd0a33
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124713"
+ms.locfileid: "53176806"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtención de análisis de comportamiento y detección de anomalías instantáneos
 

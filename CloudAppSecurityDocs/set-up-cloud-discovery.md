@@ -1,11 +1,11 @@
 ---
-title: Implementar Cloud Discovery con Microsoft Cloud App Security | Microsoft Docs
+title: 'Implementación de Cloud Discovery: Cloud App Security | Microsoft Docs'
 description: En este artículo se describe el procedimiento de configuración de Cloud Discovery para que entre en funcionamiento.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f751968094b2605dea2477345324f9825346feba
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 0ad041c73f1bb8871e08357e6d85269ef20f3903
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124781"
+ms.locfileid: "53175913"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar Cloud Discovery
 
@@ -34,9 +35,9 @@ Se pueden generar dos tipos de informes:
 
 - **Informes continuos**: analizan todos los registros que se reenvían desde la red mediante Cloud App Security. Proporcionan una mejor visibilidad de todos los datos e identifican automáticamente los usos erróneos, ya sea mediante el motor de detección de anomalías de aprendizaje automático o mediante las directivas personalizadas que haya definido. Estos informes pueden crearse conectándose de varias maneras:
 
-  - [Integración de ATP de Windows Defender](wdatp-integration.md): Cloud App Security se integra con Protección contra amenazas avanzada de Windows Defender (ATP) de forma nativa, para simplificar la implementación de Cloud Discovery, ampliar las capacidades de Cloud Discovery más allá de la red corporativa, y habilitar la investigación en el equipo.
-  - [Recopilador de registros](discovery-docker.md): los recopiladores de registros permiten automatizar fácilmente la carga de registros desde la red. El recopilador de registros se ejecuta en la red y recibe los registros a través de Syslog o FTP.
-  - [Integración de Zscaler](zscaler-integration.md): si trabaja con Cloud App Security y Zscaler, puede integrar los dos productos para mejorar la seguridad de la experiencia de Cloud Discovery. Juntos, Cloud App Security y Zscaler proporcionan una implementación fluida de Cloud Discovery, bloqueo automático de aplicaciones no autorizadas y evaluación de riesgos directamente en el portal de Zscaler.
+  - [Integración con ATP de Windows Defender](wdatp-integration.md): Cloud App Security se integra con Protección contra amenazas avanzada de Windows Defender (ATP) de forma nativa, para simplificar la implementación de Cloud Discovery, ampliar las funcionalidades de Cloud Discovery más allá de la red corporativa y habilitar la investigación en el equipo.
+  - [Recopilador de registros](discovery-docker.md): Los recopiladores de registros permiten automatizar fácilmente la carga de registros desde la red. El recopilador de registros se ejecuta en la red y recibe los registros a través de Syslog o FTP.
+  - [Integración de Zscaler](zscaler-integration.md): Si trabaja con Cloud App Security y Zscaler, puede integrar los dos productos para mejorar la seguridad de la experiencia de Cloud Discovery. Juntos, Cloud App Security y Zscaler proporcionan una implementación fluida de Cloud Discovery, bloqueo automático de aplicaciones no autorizadas y evaluación de riesgos directamente en el portal de Zscaler.
 
 ## <a name="log-process-flow-from-raw-data-to-risk-assessment"></a>Flujo del proceso de registro: de datos sin procesar a evaluación de riesgos
 

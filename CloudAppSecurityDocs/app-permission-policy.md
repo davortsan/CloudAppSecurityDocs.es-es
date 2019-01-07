@@ -1,11 +1,11 @@
 ---
-title: Creación de directivas para controlar las aplicaciones de OAuth en Cloud App Security | Microsoft Docs
+title: Creación de directivas para controlar las aplicaciones de OAuth en Cloud App Security
 description: En este artículo se proporcionan instrucciones para crear directivas de permisos de la aplicación y trabajar con ellas en Microsoft Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 9f68302c-bb3d-450c-bbf5-f8130cb163e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 76278a51608ca12f1091514d8fdfef29aa304b1f
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 49ef099623e23454c6699f40b8b2178bb8ebb784
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124458"
+ms.locfileid: "53176712"
 ---
 # <a name="oauth-app-policies"></a>Directivas de aplicación de OAuth
 

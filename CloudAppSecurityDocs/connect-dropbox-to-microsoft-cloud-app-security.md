@@ -1,11 +1,11 @@
 ---
-title: Conectar Dropbox con Cloud App Security para la visibilidad y el control del uso | Microsoft Docs
-description: En este artículo se proporciona información sobre cómo conectar la aplicación de Dropbox con Cloud App Security mediante el conector de API.
+title: Conexión de Dropbox con Cloud App Security
+description: En este artículo se proporciona información sobre cómo conectar la aplicación de Dropbox con Cloud App Security mediante el conector de API para la visibilidad y el control del uso.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,19 @@ ms.technology: ''
 ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 045ba61f4621bc82be7743098b43ccbc96f2085a
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: afb9ac560478bda35d2556cd9382a99478aa91d2
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124237"
+ms.locfileid: "53176508"
 ---
 # <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>Conectar Dropbox con Microsoft Cloud App Security
 
 *Se aplica a: Microsoft Cloud App Security*
 
-En este artículo se proporcionan instrucciones para conectar Microsoft Cloud App Security con una cuenta de Dropbox existente mediante las API del conector.  
+En este artículo se proporcionan instrucciones para conectar Microsoft Cloud App Security con una cuenta de Dropbox existente mediante las API del conector. Esta conexión le ofrece visibilidad y control del uso de Dropbox. 
  
  
 Dado que Dropbox permite el acceso a archivos desde vínculos compartidos sin iniciar sesión, Cloud App Security registra estos usuarios como usuarios no autenticados. Si ve usuarios de Dropbox no autenticados, puede tratarse de usuarios ajenos a la organización, o bien pueden ser usuarios reconocidos de la organización que no han iniciado sesión.

@@ -1,11 +1,11 @@
 ---
-title: Configurar la carga de registros automática para informes continuos | Microsoft Docs
+title: Configuración de la carga de registros automática para informes continuos en Cloud App Security
 description: En este artículo se describe el proceso de configuración de la carga de registros automática para informes continuos en Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0b62a5b7b3270076efd3763488d87b14b8c78632
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: e1f5023c31d5f2d33573ee99c2b363535c87e085
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123761"
+ms.locfileid: "53176729"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurar la carga de registros automática para informes continuos
 
@@ -41,9 +42,9 @@ Antes de configurar la recopilación de archivos de registro, compruebe que el r
 
 El recopilador de registros admite dos modos de implementación:
 
--   **Contenedor**: se ejecuta como imagen Docker en [Ubuntu local](discovery-docker-ubuntu.md), [Ubuntu en Azure](discovery-docker-ubuntu-azure.md) o en [RHEL local](discovery-docker-ubuntu.md). 
+-   **Contenedor**: se ejecuta como imagen Docker en [Ubuntu local](discovery-docker-ubuntu.md), [Ubuntu en Azure](discovery-docker-ubuntu-azure.md) o [RHEL local](discovery-docker-ubuntu.md). 
 
--   **Aplicación virtual**: [se ejecuta como una imagen a través del hipervisor de Hyper-V o de VMware](configure-automatic-log-upload-for-continuous-reports.md)
+-   **Aplicación virtual**:  [se ejecuta como una imagen a través del hipervisor de Hyper-V o de VMware](configure-automatic-log-upload-for-continuous-reports.md)
 
 
 

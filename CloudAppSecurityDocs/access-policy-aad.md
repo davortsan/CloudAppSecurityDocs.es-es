@@ -1,11 +1,11 @@
 ---
-title: Crear directivas de acceso de Cloud App Security para permitir y bloquear el acceso | Microsoft Docs
+title: Creación de directivas de acceso de Cloud App Security para permitir y bloquear el acceso
 description: En este artículo se describe el procedimiento para configurar una directiva de acceso al control de aplicaciones de acceso condicional de Cloud App Security para permitir y bloquear el acceso a las aplicaciones conectadas a través de Azure AD mediante las funcionalidades de proxy inverso.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,21 +13,21 @@ ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 60d85d25400386161dacd09e359353e96dac6b94
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 8252c3ec83dd2e37663c5c13df8fa56e333af19c
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124135"
+ms.locfileid: "53176185"
 ---
-# <a name="access-policies"></a>Directivas de acceso 
+# <a name="access-policies"></a>Directivas de acceso
 
 *Se aplica a: Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
 [« ANTERIOR: Cómo crear una directiva de sesión](session-policy-aad.md)<br>
 [SIGUIENTE: Explorar casos de uso populares »](use-case-proxy-block-session-aad.md)
-
 
 Las directivas de acceso de Microsoft Cloud App Security permiten la supervisión en tiempo real y el control del acceso a aplicaciones en la nube en función del usuario, la ubicación, el dispositivo y la aplicación. Puede crear directivas de acceso para cualquier dispositivo, incluidos aquellos que no están unidos al dominio y que no administra Windows Intune. Para ello, implemente certificados de cliente en dispositivos administrados o aproveche los certificados existentes, por ejemplo, los certificados de MDM de terceros. Por ejemplo, puede implementar certificados de cliente en dispositivos administrados y después bloquear el acceso desde dispositivos que no tengan ningún certificado. 
 
@@ -65,9 +65,9 @@ Para crear una directiva de acceso, siga este procedimiento:
 
 4. En la sección **Actividades que coinciden con todo lo siguiente** de **Origen de la actividad**, seleccione más filtros de actividad para aplicarlos a la directiva. Los filtros incluyen las siguientes opciones: 
      
-   - **Etiqueta de dispositivo**: use este filtro para identificar los dispositivos no administrados.
+   - **Etiquetas de dispositivo**: use este filtro para identificar los dispositivos no administrados.
 
-   - **Ubicación**: use este filtro para identificar las ubicaciones desconocidas (por tanto, que entrañan riesgo). 
+   - **Ubicación**: use este filtro para identificar las ubicaciones desconocidas y que, por tanto, entrañan riesgo. 
 
    - **Dirección IP**: use este filtro para filtrar por direcciones IP o usar las etiquetas de dirección IP previamente asignadas. 
 

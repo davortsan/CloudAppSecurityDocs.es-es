@@ -1,11 +1,11 @@
 ---
-title: Incorporación de aplicaciones personalizadas a Cloud Discovery en Cloud App Security | Microsoft Docs
+title: Incorporación de aplicaciones personalizadas a Cloud Discovery en Cloud App Security
 description: En este tema se ofrece información sobre cómo agregar aplicaciones personalizadas a Cloud Discovery en Cloud App Security para supervisar Shadow IT.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 98b0d841-b33d-4ae9-b48b-d9ee77785eaa
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 12d7d295db014a34fc8cce847f722867580b744b
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 8a55110ceaaf4ad1a512714e5d93a2de0d207384
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123473"
+ms.locfileid: "53176525"
 ---
 # <a name="add-custom-apps-to-cloud-discovery"></a>Incorporación de aplicaciones personalizadas a Cloud Discovery
 

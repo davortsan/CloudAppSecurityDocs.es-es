@@ -1,11 +1,11 @@
 ---
-title: Información general sobre el escenario de protección contra amenazas | Microsoft Docs
+title: 'Introducción al escenario de protección contra amenazas: Cloud App Security | Microsoft Docs'
 description: En este tema se describe el escenario para proteger su organización contra amenazas en su entorno en la nube.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/14/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,22 +13,22 @@ ms.technology: ''
 ms.assetid: 7a06a243-9ec2-4a11-8db2-bc065cdfef64
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cf9da01f896b1f9509918bca73c3d189e9d4557e
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 65135d0afa0074b9cd3ac944e62de15eb030e17e
+ms.sourcegitcommit: 420a0119513e3f4a8651f6a9e66c56fe442a31c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123591"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53347291"
 ---
-*Se aplica a: Microsoft Cloud App Security*
-
-
 # <a name="protecting-your-organization-from-ransomware"></a>Proteger la organización frente a ransomware
 
-En el ataque de ransomware masivo más reciente, WannaCry asestó un duro golpe al mundo cibernético, ya que infectó aproximadamente 200 000 equipos en 150 países. Con el aumento de los ataques de ransomware en los últimos años, con una media de 25 000 ataques al mes en 2015 y 56 000 en 2016, es imprescindible para la ciberseguridad ser proactivos a la hora de asegurarse de que la red y la nube no están en peligro. En este artículo se explica cómo se puede usar Cloud App Security para supervisar la nube, detectar y mitigar las amenazas y aplicar los procedimientos recomendados para proteger el entorno contra el ransomware.
+*Se aplica a: Microsoft Cloud App Security*
+
+En el ataque de ransomware masivo más reciente, WannaCry asestó un duro golpe al mundo cibernético, ya que infectó aproximadamente 200 000 equipos en 150 países. Con el aumento de los ataques de ransomware en los últimos años, con una media de 25 000 ataques al mes en 2015 y 56 000 en 2016, es imprescindible para la ciberseguridad ser proactivos a la hora de asegurarse de que la red y la nube no están en peligro. En este artículo se explica cómo se puede usar Cloud App Security para supervisar la nube, detectar y mitigar las amenazas, y aplicar los procedimientos recomendados para proteger el entorno contra el ransomware.
 
 ## <a name="what-is-ransomware"></a>¿Qué es el ransomware?
-El ransomware es un ataque cibernético en el que el atacante envía un archivo que puede bloquear el acceso al equipo y cifrar los archivos. A menudo, el atacante conserva los archivos para pedir un rescate y no los descifra hasta que recibe el pago, tras lo cual restaura el acceso al equipo, los archivos o aplicaciones LOB críticas. Los ataques de ransomware pueden afectar a cualquier equipo, hogar, oficina, red o servidor. De hecho, dado que las grandes organizaciones están integradas por numerosos usuarios que pueden abrir accidentalmente un archivo que libera ransomware en la red, son estas las que corren un mayor riesgo de tener que pagar al atacante para detener el ransomware y restaurar el acceso a los archivos o los equipos.
+El ransomware es un ataque cibernético en el que el atacante envía un archivo que puede bloquear el acceso al equipo y cifrar los archivos. A menudo, el atacante conserva los archivos para pedir un rescate y no los descifra hasta que recibe el pago, tras lo cual restaura el acceso al equipo, los archivos o aplicaciones de LOB críticas. Los ataques de ransomware pueden afectar a cualquier equipo, hogar, oficina, red o servidor. De hecho, dado que las grandes organizaciones están integradas por numerosos usuarios que pueden abrir accidentalmente un archivo que libera ransomware en la red, son estas las que corren un mayor riesgo de tener que pagar al atacante para detener el ransomware y restaurar el acceso a los archivos o los equipos.
 
 >[!NOTE]
 > Este caso de uso se aplica a Office 365, G Suite, Box y Dropbox.
@@ -50,8 +50,9 @@ Detecte el posible ransomware en el entorno en la nube. Para ello, cree una dire
 
 
 
-   ## <a name="see-also"></a>Consulte también  
-   [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
+## <a name="next-steps"></a>Pasos siguientes 
+
+[Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
   

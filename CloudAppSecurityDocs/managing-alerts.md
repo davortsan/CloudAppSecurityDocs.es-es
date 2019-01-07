@@ -1,11 +1,11 @@
 ---
-title: Administración de alertas activadas en el portal de Cloud App Security | Microsoft Docs
+title: Administración de alertas generadas en Cloud App Security
 description: En este artículo se explica cómo trabajar con alertas generadas en el portal de Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 97cc1a6bee2c8264b7dfc430f555219ccd40ffd9
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 34fe83d4d6300037d31f577029f0b4887c7108e2
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124492"
+ms.locfileid: "53176844"
 ---
 # <a name="manage-alerts"></a>Administrar alertas
 
@@ -58,11 +59,17 @@ Es buena idea revisar todas las alertas y usarlas como herramientas para modific
          - Puede ponerse en contacto con el usuario o su administrador para hablar sobre la naturaleza de la actividad.
          - Deje la actividad abierta hasta que disponga de más información.  
 
-       - **Authorized violations or anomalous behavior** (Infracciones autorizadas o comportamientos anómalos): infracciones autorizadas o comportamientos anómalos que pueden deberse a un uso legítimo.  
+       - **Authorized violations or anomalous behavior** (Infracciones autorizadas o comportamientos anómalos): infracciones autorizadas o comportamientos anómalos que pueden deberse a un uso legítimo. <br>
+         - Puede descartar la alerta.
 
-   - Descarte la alerta.  
 
-3. Cuando finalice este proceso, marque la alerta como resuelta.  
+3. Es importante que, siempre que se descarte una alerta, envíe comentarios sobre por qué la descarta. El equipo de Cloud App Security usa estos comentarios como indicación de la precisión de la alerta. Esta información se usa después para ajustar los modelos de Machine Learning para futuras alertas. Puede seguir estas directrices para decidir cómo clasificar la alerta:
+   - Si la alerta se ha desencadenado por un uso legítimo y no es un problema de seguridad, podría ser uno de los siguientes tipos: 
+
+     - Positivo inofensivo: la alerta es precisa, pero la actividad es legítima. Puede descartar la alerta y establecer el motivo en **La gravedad real es inferior** o **No es interesante**.
+     -  Falso positivo: la alerta es inexacta. Descarte la alerta y establezca el motivo en **La alerta no es precisa**.
+   - Si hay demasiado ruido para determinar la legitimidad y la precisión de una alerta, descártela y establezca el motivo en **Demasiadas alertas similares**.
+   - Verdadero positivo: si la alerta está relacionada con un evento de riesgo real que ha realizado de forma malintencionada o involuntaria un usuario interno o externo, debe establecer el evento en **Resolver** después de que se hayan tomado las medidas adecuadas para corregir el evento.
 
 ## <a name="alert-types"></a>Tipos de alerta
 

@@ -1,11 +1,11 @@
 ---
-title: Conectar G Suite con Cloud App Security para la visibilidad y el control del uso | Microsoft Docs
-description: En este artículo se proporciona información sobre cómo conectar G Suite con Cloud App Security mediante el conector de API.
+title: Conexión de G Suite con Cloud App Security
+description: En este artículo se proporciona información sobre cómo conectar G Suite con Cloud App Security mediante el conector de API para la visibilidad y el control del uso.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,19 @@ ms.technology: ''
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: df026fdf654703e61c87419df5dfd31558319e7a
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 48be91b9bcdd6689f5e0af138176a8bbd8033301
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124560"
+ms.locfileid: "53177273"
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Conectar G Suite con Microsoft Cloud App Security
 
 *Se aplica a: Microsoft Cloud App Security*
 
-En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Security con una cuenta de G Suite existente mediante las API del conector.
+En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Security con una cuenta de G Suite existente mediante las API del conector. Esta conexión le ofrece visibilidad y control del uso de G Suite. 
     
 ## <a name="configure-g-suite"></a>Configurar G Suite  
   
@@ -147,9 +148,9 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
   
     -   Rellene lo siguiente en **Admitir URLs**:  
   
-        -   **URL de las condiciones del servicio**: http://go.microsoft.com/fwlink/?LinkID=733268  
+        -   **URL de las condiciones del servicio**: https://go.microsoft.com/fwlink/?LinkID=733268  
   
-        -   **URL de la directiva de privacidad**: http://go.microsoft.com/fwlink/?LinkId=512132  
+        -   **URL de la directiva de privacidad**: https://go.microsoft.com/fwlink/?LinkId=512132  
   
     -   En **OAuth 2.0 scopes** (Ámbitos de OAuth 2.0), copie y pegue las siguientes direcciones URL (cópielas una a una y presione ENTRAR después de cada una):  
   

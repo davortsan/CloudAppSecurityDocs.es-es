@@ -1,11 +1,11 @@
 ---
-title: Implementar Cloud App Security para la información de uso y el control de aplicaciones en la nube | Microsoft Docs
-description: En este artículo se describe el proceso para que Cloud App Security entre en funcionamiento.
+title: Implementar Cloud App Security
+description: En este artículo se describe el proceso para preparar Cloud App Security, de forma que tenga información y control sobre el uso de las aplicaciones en la nube.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ba1b2af9267595bfed88d34a280774aa47411786
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 240a2831ca31945cff4b957c21096d2ed0a64b42
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124101"
+ms.locfileid: "53177256"
 ---
 # <a name="deploy-microsoft-cloud-app-security"></a>Implementación de Microsoft Cloud App Security
 
@@ -57,7 +58,7 @@ También puede acceder al portal a través del **Centro de administración de Of
  
 
 ### <a name="step-1-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>Paso 1. [Establezca la visibilidad, la protección y las acciones de gobierno instantáneas para las aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
-Tarea necesaria: conectar aplicaciones
+Tarea necesaria: Conectar aplicaciones
 
 1. En el engranaje de configuración, seleccione **Conectores de aplicaciones**.
 2. Haga clic en el signo más para agregar una aplicación y seleccione una aplicación.
@@ -68,7 +69,7 @@ Después de conectar una aplicación, puede obtener una mayor visión para que p
 
 
 ### <a name="step-2-control-cloud-apps-with-policiescontrol-cloud-apps-with-policiesmd"></a>Paso 2. [Controle las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).
-Tarea necesaria: crear directivas
+Tarea necesaria: Crear las directivas
 
 **Para crear directivas**
 
@@ -76,7 +77,7 @@ Tarea necesaria: crear directivas
 2. Seleccione una plantilla de directiva de la lista y elija (+) **Crear directiva**.
 3. Personalice la directiva (seleccione filtros, acciones y otras configuraciones) y luego elija **Crear**.
 4. En la ficha **Directivas**, elija la directiva para ver las coincidencias relevantes (actividades, archivos y alertas).
- Sugerencia: a fin de cubrir todos los escenarios de seguridad del entorno de la nube, cree una política para cada **categoría de riesgo**.
+ Sugerencia: A fin de cubrir todos los escenarios de seguridad del entorno de la nube, cree una política para cada **categoría de riesgo**.
 
 **¿Cómo pueden las directivas ayudar a la organización?**
 Puede utilizar directivas para ayudarle a supervisar tendencias, ver amenazas de seguridad y generar alertas e informes personalizados. Con las directivas se pueden crear acciones de gobierno y establecer controles de uso compartido de archivos y de prevención de pérdida de datos.
@@ -84,7 +85,7 @@ Puede utilizar directivas para ayudarle a supervisar tendencias, ver amenazas de
 
 ### <a name="step-3-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>Paso 3. [Configure Cloud Discovery](set-up-cloud-discovery.md).
 
-Tarea necesaria: Habilitar Cloud App Security ver el uso de la aplicación en la nube
+Tarea necesaria: Habilitar Cloud App Security para ver el uso de la aplicación en la nube
 
 1. [Integración con ATP de Windows Defender](wdatp-integration.md) para habilitar automáticamente Cloud App Security para que supervise los dispositivos Windows 10 dentro y fuera de la corporación.
 2. Si usa [Zscaler](zscaler-integration.md), intégrelo con Cloud App Security.
@@ -104,7 +105,7 @@ Tener visibilidad de la TI en la sombra de la organización es algo esencial.
 Después de analizar los registros, podrá detectar fácilmente qué aplicaciones en la nube se usan, qué usuarios lo hacen y en qué dispositivos.
 
 ### <a name="step-4-personalize-your-experiencemail-settingsmd"></a>Paso 4. [Personalice la experiencia](mail-settings.md).
-Tarea necesaria: agregar detalles de su organización
+Tarea recomendada: Agregar detalles de la organización
 
 **Para especificar la configuración de correo electrónico**
 
@@ -132,7 +133,7 @@ Algunas características funcionan mejor si se personalizan de acuerdo a las nec
 
 
 ### <a name="step-5-organize-the-data-according-to-your-needsip-tagsmd"></a>Paso 5. [Organice los datos de acuerdo a las necesidades](ip-tags.md).
-Tarea necesaria: configurar opciones importantes
+Tarea recomendada: Configurar valores de configuración importantes
 
 **Para crear etiquetas de dirección IP**
 

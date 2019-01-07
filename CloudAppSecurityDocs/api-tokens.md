@@ -1,11 +1,11 @@
 ---
-title: Administración de tokens de API en Cloud App Security | Microsoft Docs
+title: Administración de tokens de API en Cloud App Security
 description: En este artículo se proporciona información sobre cómo generar tokens de API para Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a2b20d5bd3f2379c26e0e1262c9a5f57295ec939
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 871ad62cf4daf7a84bfc65724fb61413d70fafa3
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123455"
+ms.locfileid: "53176355"
 ---
 # <a name="api-tokens"></a>Tokens de API
 
@@ -47,7 +48,7 @@ La pestaña de tokens de API ayuda a administrar todos los tokens de API del inq
 
 3. Copie el valor del token y guárdelo para poder recuperarlo en caso necesario. Si lo pierde, deberá regenerar el token. El token tiene los privilegios del usuario que lo emitió. Por ejemplo, un lector de seguridad no puede emitir un token que modifique datos.
 
-4. Puede filtrar los tokens por estado Activo, Inactivo o Generado. 
+4. Puede filtrar los tokens por estado: Activo, Inactivo o Generado. 
 
    - Los tokens generados son los que no se han usado nunca. 
    - Los tokens activos son los que se han generado y usado durante los siete últimos días. 

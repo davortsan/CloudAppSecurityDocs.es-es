@@ -1,11 +1,11 @@
 ---
-title: Controlar el uso de aplicaciones en la nube mediante la creación de directivas en Cloud App Security | Microsoft Docs
+title: 'Control del uso de aplicaciones en la nube mediante la creación de directivas: Cloud App Security | Microsoft Docs'
 description: En este artículo se proporciona información sobre cómo se usan las directivas y cómo se configuran para controlar el uso de las aplicaciones en la nube.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b15e3f54b8aabe4dff37597fa78465d34ad6c144
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: e73f9e3ab8de86bd2ea7a010435b93e860cf54a4
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124815"
+ms.locfileid: "53177069"
 ---
 # <a name="control-cloud-apps-with-policies"></a>Controlar las aplicaciones en la nube con directivas
 
@@ -47,15 +48,15 @@ Pueden crearse los siguientes tipos de directivas:
 ## <a name="identifying-risk"></a>La identificación de riesgos  
 Cloud App Security ayuda a mitigar los distintos riesgos en la nube. Puede configurar cualquier directiva y alerta de modo que esté asociada con uno de los siguientes riesgos:  
   
--   **Control de acceso:** ¿quién accede a qué desde dónde?  
+-   **Control de acceso**: ¿quién accede a qué desde dónde?  
   
      Se supervisa el comportamiento en todo momento, se detectan actividades anómalas (incluidos ataques internos y externos de alto riesgo) y se aplica una directiva para alertar, bloquear o exigir verificación de identidad para cualquier aplicación o acción concreta dentro una aplicación. Se habilitan directivas de control de acceso locales y móviles basadas en el usuario, el dispositivo y la geografía con bloqueo general y vista, edición y bloqueo pormenorizados. Se detectan eventos de inicio de sesión sospechosos, incluidos errores de autenticación multifactor, errores de inicio de sesión de cuentas deshabilitadas y eventos de suplantación.  
   
--   **Cumplimiento normativo:** ¿se infringen los requisitos de cumplimiento normativo?  
+-   **Cumplimiento normativo**: ¿se infringen los requisitos de cumplimiento normativo?  
   
      Se catalogan y se identifican los datos confidenciales o regulados, incluidos los permisos de uso compartido de cada archivo, almacenados en servicios de sincronización de archivos para garantizar el cumplimiento de normas como PCI, SOX e HIPAA.  
   
--   **Control de configuración:** ¿se están realizando cambios no autorizados en la configuración?  
+-   **Control de configuración**: ¿se están realizando cambios no autorizados en la configuración?  
   
      Se supervisan los cambios de configuración, incluida la manipulación de la configuración remota.  
   
@@ -67,15 +68,15 @@ Cloud App Security ayuda a mitigar los distintos riesgos en la nube. Puede confi
   
      La integración DLP local proporciona integración y corrección de bucle cerrado con soluciones DLP locales existentes.  
   
--   **Cuentas con privilegios:** ¿es necesario supervisar cuentas de administrador?  
+-   **Cuentas con privilegios**: ¿es necesario supervisar cuentas de administrador?  
   
      Supervisión de actividad en tiempo real e informes de usuarios con privilegios y administradores.  
   
--   **Control de uso compartido:** ¿cómo se comparten los datos en el entorno de nube?  
+-   **Control de uso compartido**: ¿cómo se comparten los datos en el entorno de nube?  
   
      Inspeccione el contenido de archivos y el contenido en la nube y aplique directivas de uso compartido internas y externas. Supervise la colaboración y aplique directivas de uso compartido, por ejemplo el bloqueo del uso compartido de los archivos fuera de la organización.  
   
--   **Detección de amenazas:** ¿hay actividades sospechosas que amenacen el entorno de nube?  
+-   **Detección de amenazas**: ¿hay actividades sospechosas que amenacen el entorno de nube?  
   
      Reciba notificaciones en tiempo real de cualquier umbral de actividad o infracción de una directiva a través del correo electrónico o un mensaje de texto. La aplicación de algoritmos de aprendizaje automático de Cloud App Security permite detectar comportamientos que podrían indicar que un usuario está haciendo un uso indebido de los datos.  
   
@@ -97,7 +98,7 @@ Para crear una directiva a partir de una **plantilla de directiva**, siga los pa
   
 1. En la consola, haga clic en **Control** y luego en **Plantillas**.  
   
-    ![](./media/create-policy-from-template.png)  
+    ![Creación de la directiva desde una plantilla](./media/create-policy-from-template.png)  
   
 2. Haga clic en **+** en el extremo derecho de la fila de la plantilla que quiere usar. Se abre una página de creación de directivas con la configuración predefinida de la plantilla.  
   

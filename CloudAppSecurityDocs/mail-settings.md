@@ -1,11 +1,11 @@
 ---
-title: Establecimiento de preferencias de notificación de correo electrónico | Microsoft Docs
+title: 'Establecimiento de preferencias de notificación de correo electrónico: Cloud App Security | Microsoft Docs'
 description: En este artículo se proporciona información sobre cómo personalizar las notificaciones de correo electrónico que Cloud App Security envía.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 686ea1838ea0f034e48ef320d106149ad51db5b0
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: f51db980e6a30f0e2c0f21c25982f6c95b51ea2c
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123557"
+ms.locfileid: "53177052"
 ---
 # <a name="email-notification-preferences"></a>Preferencias de notificación de correo electrónico
 
@@ -34,10 +35,10 @@ En este artículo se proporciona información sobre cómo personalizar las notif
 
    ![configuración de correo](./media/mail-settings-config.png)
 
-2. En **Identidad del emisor de correo electrónico**: si va a usar la configuración de correo electrónico predeterminada, no necesita cambiar nada en esta sección. Si quiere personalizar la identidad del remitente de correo electrónico, puede aplicar cualquiera de las opciones que se indican a continuación para personalizar el campo que quiera modificar. Puede cambiar todas estas opciones o alguna de ellas: **Nombre para mostrar del campo Desde**, **Dirección de correo electrónico del campo Desde**, **Dirección de correo electrónico del campo Responder a**. Microsoft Cloud App Security realiza la personalización mediante el uso de un servicio de correo de terceros llamado MailChimp®. Asegúrese de revisar y aceptar los Términos de servicio y la Declaración de privacidad de MailChimp para habilitar la personalización. En caso contrario, Microsoft Cloud App Security enviará las notificaciones mediante la configuración predeterminada.
+2. En **Identidad del emisor de correo electrónico**: si va a usar la configuración de correo electrónico predeterminada, no necesita cambiar nada en esta sección. Si quiere personalizar la identidad del remitente de correo electrónico, puede aplicar cualquiera de las opciones que se indican a continuación para personalizar el campo que quiera modificar. Puede cambiar alguno o todos los elementos siguientes: **Nombre para mostrar del campo Desde**, **Dirección de correo electrónico del campo Desde** o **Dirección de correo electrónico del campo Responder a**. Microsoft Cloud App Security realiza la personalización mediante el uso de un servicio de correo de terceros llamado MailChimp®. Asegúrese de revisar y aceptar los Términos de servicio y la Declaración de privacidad de MailChimp para habilitar la personalización. En caso contrario, Microsoft Cloud App Security enviará las notificaciones mediante la configuración predeterminada.
  
    > [!NOTE]
-   > Solo se admiten caracteres Unicode en el nombre para mostrar y la dirección de correo electrónico de conformidad con el [estándar rfc822](http://www.rfc-editor.org/rfc/rfc822.txt).
+   > Solo se admiten caracteres Unicode en el nombre para mostrar y la dirección de correo electrónico de conformidad con el [estándar rfc822](https://www.rfc-editor.org/rfc/rfc822.txt).
 
   
 3. Puede usar **Diseño del correo electrónico** para usar un archivo .html para personalizar y diseñar los mensajes de correo electrónico enviados desde el sistema. El archivo .html que use como plantilla debe incluir los siguientes elementos:  
@@ -66,7 +67,7 @@ En este artículo se proporciona información sobre cómo personalizar las notif
 A continuación se muestra una plantilla de correo electrónico de ejemplo:
 
 ```html
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
   <html>  
        <head>  
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  

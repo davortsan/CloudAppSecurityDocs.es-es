@@ -1,11 +1,11 @@
 ---
-title: Trabajar con aplicaciones detectadas en Cloud App Security | Microsoft Docs
+title: Trabajo con aplicaciones detectadas en Cloud App Security
 description: En este artículo se describe el proceso de identificación y corrección de aplicaciones de riesgo de Cloud Discovery en Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 403eb991a33fd8f0deda7212b0ec180fe23f8551
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: a70dc1796304a32606e54d4e9e93f6cf3169c6a6
+ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53122843"
+ms.lasthandoff: 12/16/2018
+ms.locfileid: "53450600"
 ---
 # <a name="working-with-discovered-apps"></a>Trabajar con aplicaciones detectadas
 
@@ -44,6 +45,7 @@ Lo primero que debe hacer para obtener una visión general de sus aplicaciones d
 6. Por último, no olvide revisar la puntuación de riesgo de la aplicación detectada en el **App risk overview** (Información general sobre el riesgo de la aplicación). Compruebe el **estado de alertas de detección** para ver cuántas alertas abiertas se deben investigar.
 
 ## <a name="deep-dive-into-discovered-apps"></a>Análisis detallado de las aplicaciones detectadas
+
 Si quiere profundizar en los datos proporcionados por Cloud Discovery, use los filtros para revisar qué aplicaciones entrañan riesgos y cuáles se usan habitualmente.
 
 
@@ -58,11 +60,11 @@ Por ejemplo, si quiere identificar las aplicaciones de colaboración y de almace
 
 Una vez que se han filtrado los resultados, puede [no autorizar y bloquear](governance-discovery.md) las aplicaciones. Para ello, active la casilla de acción masiva para no autorizarlas en una sola acción. Después de no autorizarlas, puede usar un script de bloqueo para impedir que se usen en su entorno.
 
-Cloud Discovery permite profundizar incluso más en el uso de la nube de la organización. Puede identificar instancias específicas que se están usando mediante la investigación de los subdominios detectados.
+Cloud Discovery permite profundizar incluso más en el uso de la nube de la organización. Puede identificar instancias específicas que se están usando al investigar los subdominios detectados.
      
 Por ejemplo, puede diferenciar entre los distintos sitios de SharePoint.
 
-Esto solo se admite en los firewalls y servidores proxy que contienen datos de dirección URL de destino. Consulte la lista de dispositivos compatibles en [Firewalls y servidores proxy compatibles](create-snapshot-cloud-discovery-reports.md#supported-firewalls-and-proxies).
+Esto solo se admite en los firewalls y servidores proxy que contienen datos de dirección URL de destino. Para obtener más información, vea la lista de dispositivos compatibles en [Firewalls y servidores proxy compatibles](create-snapshot-cloud-discovery-reports.md#supported-firewalls-and-proxies).
 
  ![información de subdominio](./media/discovery-domains.png) 
 
@@ -75,21 +77,20 @@ Para generar un informe ejecutivo de Cloud Discovery:
 En el **panel de Cloud Discovery**, haga clic en los puntos suspensivos que encontrará en la esquina superior derecha del menú y seleccione **Generar informe ejecutivo de Cloud Discovery**.
 
 ## <a name="exclude-entities"></a>Excluir entidades
+
 Si tiene usuarios del sistema, direcciones IP o máquinas que son ruidosos y no interesantes, o aplicaciones que no son relevantes, es posible que quiera excluir sus datos de los datos de Cloud Discovery que se analizan. Por ejemplo, puede excluir toda la información que se origina en 127.0.0.1 o el host local.  
   
 Para crear una exclusión:  
   
 1. En el portal, en el icono de configuración, seleccione **Configuración de Cloud Discovery**.  
-  
 2. Haga clic en la pestaña **Excluir entidades**.  
-  
-3. Seleccione la pestaña **Usuarios excluidos**, **Direcciones IP excluidas** o **Máquinas excluidas** y haga clic en el botón + para agregar la exclusión.  
-  
-4. Agregue un alias de usuario, una dirección IP o un nombre de máquina. Se recomienda agregar información sobre por qué se ha realizado la exclusión.  
+3. Seleccione la pestaña **Usuarios excluidos**, **Direcciones IP excluidas** o **Máquinas excluidas** y haga clic en el botón + para agregar la exclusión.
+4. Agregue un alias de usuario, una dirección IP o un nombre de máquina. Se recomienda agregar información sobre por qué se ha realizado la exclusión.
   
      ![Excluir usuario](./media/exclude-user.png "excluir usuario")  
   
-## <a name="manage-continuous-reports"></a>Administrar informes continuos  
+## <a name="manage-continuous-reports"></a>Administrar informes continuos
+
 Los informes continuos personalizados proporcionan más granularidad al supervisar los datos de registro de Cloud Discovery de la organización. Al crear informes personalizados, es posible filtrar por ubicaciones geográficas concretas, redes y sitios o unidades organizativas. De forma predeterminada, solo aparecen los informes siguientes en el selector de informes de Cloud Discovery:  
   
 - El **informe global** consolida toda la información del portal de todos los orígenes de datos incluidos en los registros.  
@@ -116,7 +117,8 @@ Para crear un informe continuo:
 > Todos los informes personalizados se limitan a un máximo de 1 GB de datos sin comprimir. Si hay más de 1 GB de datos, se exportará el primer GB de datos en el informe.
 
 
-## <a name="deleting-cloud-discovery-data"></a>Eliminar datos de Cloud Discovery  
+## <a name="deleting-cloud-discovery-data"></a>Eliminar datos de Cloud Discovery
+
 Hay una serie de razones por las que puede que quiera eliminar los datos de Cloud Discovery. Se recomienda eliminarlos en los casos siguientes:  
   
 - Si cargó manualmente archivos de registro y ha pasado mucho tiempo desde que actualizó el sistema con nuevos archivos de registro y no quiere que los datos antiguos afecten a los resultados.  
@@ -138,10 +140,7 @@ Para eliminar datos de Cloud Discovery:
     ![eliminar datos](./media/delete-data.png "eliminar datos")  
   
    > [!NOTE]  
-   >  El proceso de eliminación tarda unos minutos y no es inmediato.  
-
-
-
+   >  El proceso de eliminación tarda unos minutos y no es inmediato.
 
 ## <a name="next-steps"></a>Pasos siguientes
  

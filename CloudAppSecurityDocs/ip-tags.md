@@ -1,11 +1,11 @@
 ---
-title: Establecer etiquetas e intervalos IP | Microsoft Docs
+title: 'Establecimiento de etiquetas e intervalos IP: Cloud App Security | Microsoft Docs'
 description: En este artículo se proporcionan instrucciones para trabajar con etiquetas IP y categorías IP.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/16/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2ab846dd42e668e947ec82d9e2b707adc4526e3d
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: beb18c3c79ba1c4da96982f93b290d324347303d
+ms.sourcegitcommit: a55a20b8613755068e52b5cf65ad333fddd29688
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123404"
+ms.lasthandoff: 12/16/2018
+ms.locfileid: "53450996"
 ---
 #  <a name="IPtagsandRanges"></a> Trabajar con etiquetas e intervalos IP
 
@@ -36,6 +37,11 @@ Cloud App Security está preconfigurado con intervalos IP integrados de proveedo
 
 Las etiquetas de dirección IP integradas y las etiquetas IP personalizadas se consideran de forma jerárquica. Las etiquetas IP personalizadas tienen prioridad sobre las etiquetas IP integradas. Por ejemplo, si una dirección IP se etiqueta como **De riesgo** en función de la información disponible sobre las amenazas pero hay una etiqueta IP personalizada que la identifica como **Corporativa**, la categoría y las etiquetas personalizadas tendrán prioridad.
 
+>[!NOTE]
+> Cuando una dirección IP se etiqueta como corporativa, esto se refleja en el portal y se excluyen las direcciones IP del desencadenamiento de detecciones específicas (por ejemplo, viaje imposible) ya que estas direcciones IP se consideran de confianza.
+>
+
+
 ## <a name="create-an-ip-address-range"></a>Crear un intervalo de direcciones IP 
 
 En la barra de menús, haga clic en el icono de configuración. Seleccione **Intervalo de direcciones IP**. Haga clic en el signo más para agregar intervalos de direcciones IP y configurar los campos siguientes:  
@@ -51,15 +57,15 @@ En la barra de menús, haga clic en el icono de configuración. Seleccione **Int
   
      Las siguientes categorías IP están disponibles:  
   
-    - **Administrativo**: estas direcciones IP deben ser todas las direcciones IP de los administradores.  
+    - **Administrativa**: estas direcciones IP deben ser todas las direcciones IP de los administradores.  
   
-    - **Proveedor de nube**: estas direcciones IP deben ser las direcciones IP usadas por el proveedor de nube.
+    - **Proveedor de nube**: estas direcciones IP deben ser las que use el proveedor de nube.
   
-    - **Corporativa**: estas direcciones IP deben ser todas las direcciones IP de la red interna, las sucursales y las direcciones de itinerancia de Wi-Fi.  
+    - **Corporativa**: estas direcciones IP deben ser todas las de la red interna, las sucursales y las direcciones de itinerancia de Wi-Fi.  
   
-    - **De riesgo**: estas direcciones IP deben ser todas las direcciones IP que se consideran que entrañan riesgos. Puede englobar direcciones IP sospechosas detectadas en el pasado, direcciones IP en las redes de la competencia y así sucesivamente.  
+    - **De riesgo**: estas direcciones IP deben ser todas las que se consideran que entrañan riesgos. Puede englobar direcciones IP sospechosas detectadas en el pasado, direcciones IP en las redes de la competencia y así sucesivamente.  
   
-    - **VPN**: estas direcciones IP deben ser las direcciones IP que se usan en los trabajos remotos.
+    - **VPN**: estas direcciones IP deben ser las que se usan en los trabajos remotos.
   
 4. Especifique una etiqueta para **etiquetar** las actividades de estas direcciones IP. La etiqueta se creará si escribe una palabra en el cuadro. Con la etiqueta ya configurada, puede agregarla a más intervalos IP seleccionándola en la lista. Puede agregar tantas etiquetas IP como quiera para cada intervalo. Las etiquetas IP se pueden usar al crear directivas.  Junto con las etiquetas IP que configure, Cloud App Security tiene etiquetas integradas que no son configurables. Puede ver la lista de etiquetas en el [Filtro de etiquetas IP](activity-filters.md).  
     > [!NOTE]  

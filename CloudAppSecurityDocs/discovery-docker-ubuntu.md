@@ -1,11 +1,11 @@
 ---
-title: Configurar la carga de registros automática para informes continuos | Microsoft Docs
+title: Configuración de la carga de registros automática con una instancia local de Docker
 description: En este artículo se describe el proceso de configuración de carga de registros automática para informes continuos en Cloud App Security con Docker en Ubuntu o RHEL en un servidor local.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9e20a02b3075a496e30c99d8ae3d0364b7e60d82
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: add574af2b6ff28191b4f6ecf5a21746913cd8d5
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124288"
+ms.locfileid: "53177120"
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Docker en Ubuntu y RHEL locales
 
@@ -30,7 +31,7 @@ Puede configurar la carga de registros automática para informes continuos en Cl
 
 - Sistema operativo: Ubuntu 14.04, 16.04 y 18.04; o RHEL 7.2 o posterior 
 
-- Espacio en disco: 250 GB
+- Espacio en disco 250 GB
 
 - CPU: 2
 
@@ -52,7 +53,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 
 1. Vaya a la página de configuración **Carga de registros automática**. 
 
-     a. En el portal de Cloud App Security, haga clic en el icono de configuración y después en **Recopiladores de registros**.
+     a. En el portal de Cloud App Security, haga clic en el icono de configuración y en **Recopiladores de registros**.
 
       ![icono de configuración](./media/settings-icon.png)
 
@@ -124,7 +125,7 @@ En los pasos siguientes se describe la implementación de Ubuntu. Los pasos de i
     
    ![ubuntu5](./media/ubuntu5.png)
 
-5. Implemente la imagen del recopilador en la máquina host al importar la configuración del recopilador. Importe la configuración copiando el comando de ejecución generado en el portal. Si necesita configurar un proxy, agregue la dirección IP del proxy y el número de puerto. Por ejemplo, si los detalles de proxy son 192.168.10.1:8080, el comando de ejecución actualizado es:
+5. Implemente la imagen del recopilador en la máquina host al importar la configuración del recopilador. Para importar la configuración, copie el comando de ejecución generado en el portal. Si necesita configurar un proxy, agregue la dirección IP del proxy y el número de puerto. Por ejemplo, si los detalles de proxy son 192.168.10.1:8080, el comando de ejecución actualizado es:
 
            (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
@@ -132,7 +133,7 @@ En los pasos siguientes se describe la implementación de Ubuntu. Los pasos de i
 
 6. Ejecute el comando siguiente para comprobar si el recopilador se ejecuta correctamente: `docker logs <collector_name>`
 
-Debería ver el mensaje: **Finalizó correctamente**.
+Debería ver el mensaje: **Finished successfully!** (Finalizado correctamente).
 
   ![ubuntu8](./media/ubuntu8.png)
 
@@ -144,7 +145,7 @@ Configure los firewalls y los servidores proxy de la red de modo que exporten pe
 
 ### <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Paso 4: Comprobación de la implementación correcta en el portal Cloud App Security
 
-Compruebe el estado del recopilador en la tabla  **Recopilador de registros**  y asegúrese de que el estado es  **Conectado**. Si es  **Creado**, es posible que la conexión y el análisis del recopilador de registros no se hayan completado.
+Compruebe el estado del recopilador en la tabla  **Recopilador de registros**  y asegúrese de que es  **Conectado**. Si es  **Creado**, es posible que la conexión y el análisis del recopilador de registros no se hayan completado.
 
  ![ubuntu9](./media/ubuntu9.png)
 

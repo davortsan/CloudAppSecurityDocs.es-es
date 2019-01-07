@@ -1,11 +1,11 @@
 ---
-title: Integración de DLP externa de seguridad de Cloud App Security a través de ICAP seguro | Microsoft Docs
+title: Integración de DLP externa de Cloud App Security a través de ICAP seguro
 description: En este artículo se proporcionan los pasos necesarios para configurar la conexión ICAP en Cloud App Security y la instalación de Stunnel.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 006d9eaa2bb7a71c6661931724344ca55166ba61
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 86ef20ca985213a369035505232d4bf594a47caf
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124475"
+ms.locfileid: "53177239"
 ---
 # <a name="external-dlp-integration"></a>Integración de DLP externa
 
@@ -42,20 +43,20 @@ Dado que Cloud App Security se ejecuta en Azure, las implementaciones en Azure t
 Para que Cloud App Security envíe datos a través de Stunnel al servidor ICAP, abra el firewall de red perimetral a las direcciones IP externas que usa Cloud App Security con un número de puerto de origen dinámico. 
 
 1.  Direcciones de origen: vea la sección [Requisitos previos en Conectar aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#prerequisites)
-2.  Puerto TCP de origen: dinámico
+2.  Puerto TCP de origen: Dinámico
 3.  Direcciones de destino: una o dos direcciones IP de Stunnel conectado al servidor ICAP externo que configurará en los pasos siguientes
-4.  Puerto TCP de destino: según se defina en su red
+4.  Puerto TCP de destino: según se defina en la red
 
 > [!NOTE] 
 > El número de puerto de Stunnel está establecido de forma predeterminada en 11344. Puede cambiarlo a otro puerto si es necesario, pero no olvide tomar nota del nuevo número de puerto, ya que deberá especificarlo en el paso siguiente.
 
-## <a name="step-1--set-up-icap-server"></a>PASO 1: Configurar el servidor ICAP
+## <a name="step-1--set-up-icap-server"></a>PASO 1:  Configurar el servidor ICAP
 
 Configure un servidor ICAP, anote el número de puerto y asegúrese de establecer **Modo** en **Bloqueo**. El modo de bloqueo establece el servidor ICAP para que retransmita el veredicto de clasificación a Cloud App Security.
 
 Vea la documentación del producto de DLP externa para obtener instrucciones sobre cómo hacerlo. Por ejemplo, vea [Apéndice A: Instalación del servidor ICAP de Forcepoint](#forcepoint) y [Apéndice B: Guía de implementación de Symantec](#symantec).
 
-## <a name="step-2--set-up-your-stunnel-server"></a>PASO 2: Configurar el servidor de Stunnel 
+## <a name="step-2--set-up-your-stunnel-server"></a>PASO 2:  Configurar el servidor de Stunnel 
 
 En este paso, configurará la aplicación Stunnel conectada al servidor ICAP. 
 
@@ -209,7 +210,7 @@ Use los siguientes comandos para que la actualización en la tabla de direccione
 Si el proceso todavía no se está ejecutando, vea la [documentación de Stunnel](https://www.stunnel.org/docs.html) para solucionar problemas.
 
 
-## <a name="step-3--connect-to-cloud-app-security"></a>PASO 3: Conectar con Cloud App Security
+## <a name="step-3--connect-to-cloud-app-security"></a>PASO 3:  Conectar con Cloud App Security
 
 1. En Cloud App Security, en **Configuración**, seleccione **Extensiones de seguridad** y vaya a la pestaña **DLP externa**.
 
@@ -237,7 +238,7 @@ Si el proceso todavía no se está ejecutando, vea la [documentación de Stunnel
 7. Ahora, para dirigir el tráfico a este servidor de DLP externa, cuando cree una **directiva de archivo**, seleccione en **Método de inspección de contenido** la conexión que ha creado. Obtenga más información sobre cómo [crear una directiva de archivo](data-protection-policies.md).
 
 
-## Apéndice A: Instalación del servidor ICAP de Forcepoint<a name="forcepoint"></a>
+## Apéndice A: Instalación del servidor ICAP de Forcepoint <a name="forcepoint"></a>
 
 En Forcepoint, configure el dispositivo con estos pasos:
 
@@ -314,7 +315,7 @@ Agregue la regla que creó a cualquier directiva existente:
 Esta regla se debe agregar a todas las directivas existentes.
 
 >[!NOTE]
-> Si utiliza Symantec Vontu para examinar archivos desde Dropbox, CAS mostrará automáticamente el archivo como originario de la siguiente dirección URL: http://misc/filename. Esta dirección URL del marcador de posición no lleva a ninguna parte, pero se utiliza para fines de registro.
+> Si usa Symantec Vontu para examinar archivos desde Dropbox, CAS indicará automáticamente que el archivo proviene de la siguiente dirección URL: http://misc/filename Esta URL de marcador de posición no lleva a ningún lugar, pero se usa para fines de registro.
 
 
 ## <a name="next-steps"></a>Pasos siguientes 

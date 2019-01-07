@@ -1,11 +1,11 @@
 ---
-title: Investigar los riesgos y las actividades sospechosas de las aplicaciones en la nube con Cloud App Security | Microsoft Docs
+title: 'Investigación de los riesgos y las actividades sospechosas de las aplicaciones en la nube: Cloud App Security | Microsoft Docs'
 description: En este artículo se proporciona un esquema del proceso de investigación de alertas, problemas y actividades sospechosas mediante Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a285943125d3973089f21e522924e4e2b428d753
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 12bb0604e776f9ff8df61c784d3d8597dc05ed32
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123948"
+ms.locfileid: "53176644"
 ---
 # <a name="investigate"></a>Investigar
 

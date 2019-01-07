@@ -1,11 +1,11 @@
 ---
-title: Configurar la carga de registros automática para informes continuos | Microsoft Docs
+title: Configuración de la carga de registros automática con Docker en Azure
 description: En este artículo se describe el proceso de configuración de carga de registros automática para informes continuos en Cloud App Security con Docker en Ubuntu en Azure.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2be66b030b7b46b55ab9c757a3ae036ebad14c5f
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: a6064660a869f30cf38d4ff3982fee8a7e2b0c3e
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124730"
+ms.locfileid: "53177358"
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Configuración en Ubuntu
 
@@ -30,7 +31,7 @@ Puede configurar la carga de registros automática para informes continuos en Cl
 
 - Sistema operativo: Ubuntu 14.04 y 16.04 (para versiones más recientes, póngase en contacto con el soporte técnico)
 
-- Espacio en disco: 250 GB
+- Espacio en disco 250 GB
 
 - CPU: 2
 
@@ -52,7 +53,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 
 1. Vaya a la página de configuración **Carga de registros automática**. 
 
-     a. En el portal de Cloud App Security, haga clic en el icono de configuración y después en **Recopiladores de registros**.
+     a. En el portal de Cloud App Security, haga clic en el icono de configuración y en **Recopiladores de registros**.
 
       ![icono de configuración](./media/settings-icon.png)
 
@@ -150,7 +151,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 
      ![Proxy Ubuntu](./media/ubuntu-proxy.png)
 
-8. Para comprobar si el recopilador de registros se ejecuta correctamente, ejecute el comando siguiente: `Docker logs <collector_name>`. Debe obtener los resultados: **Finalizado correctamente.**
+8. Para comprobar si el recopilador de registros se ejecuta correctamente, ejecute el comando siguiente: `Docker logs <collector_name>`. Debe obtener el resultado: **Finished successfully!** (Finalizado correctamente).
 
    ![ubuntu8](./media/ubuntu8.png)
 
@@ -162,7 +163,7 @@ Configure los firewalls y los servidores proxy de la red de modo que exporten pe
 
 ### <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Paso 4: Comprobación de la implementación correcta en el portal Cloud App Security
 
-Compruebe el estado del recopilador en la tabla  **Recopilador de registros**  y asegúrese de que el estado es  **Conectado**. Si es  **Creado**, es posible que la conexión y el análisis del recopilador de registros no se hayan completado.
+Compruebe el estado del recopilador en la tabla  **Recopilador de registros**  y asegúrese de que es  **Conectado**. Si es  **Creado**, es posible que la conexión y el análisis del recopilador de registros no se hayan completado.
 
  ![ubuntu9](./media/ubuntu9.png)
 

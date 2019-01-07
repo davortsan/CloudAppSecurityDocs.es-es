@@ -1,11 +1,11 @@
 ---
-title: Novedades de Cloud App Security | Microsoft Docs
-description: Este tema se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security.
+title: Novedades de Cloud App Security
+description: Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,19 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0c994ed22caae6daed57a6514c0ac6496abacf8d
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: e946e341d901be2f3facfd5a0d6118cfc7770a22
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124832"
+ms.locfileid: "53177428"
 ---
+# <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
+
 *Se aplica a: Microsoft Cloud App Security*
 
-
-# <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
+Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security.
 
 
 ## <a name="cloud-app-security-release-138"></a>Notas de la versión 138 de Cloud App Security
@@ -54,7 +56,7 @@ Publicado el 11 de noviembre de 2018
 - **Actualizaciones de Cloud Discovery**<br>
 El analizador de registros personalizado se ha mejorado para admitir formatos de los registros de tráfico web adicionales y más complejos. Como parte de estas mejoras los usuarios ahora pueden introducir encabezados personalizados para los archivos de registro CSV sin encabezado, usar delimitadores especiales para los archivos de pares clave-valor, procesar el formato de archivo Syslog y mucho más.
 - **Nuevas directivas de detección de anomalías**<br>
-Reglas de manipulación de bandeja de entrada sospechosa: esta directiva crea perfiles de su entorno y activa alertas cuando se establecen reglas sospechosas que eliminan o mueven los mensajes o carpetas en la Bandeja de entrada del usuario. Esto puede indicar que la cuenta del usuario está en peligro, que se están ocultando mensajes intencionadamente y que el buzón se está usando para enviar correo no deseado o malware en la organización.
+Reglas de manipulación sospechosa de la bandeja de entrada: esta directiva crea perfiles de su entorno y activa alertas cuando se establecen reglas sospechosas que eliminan o mueven los mensajes o las carpetas en la Bandeja de entrada del usuario. Esto puede indicar que la cuenta del usuario está en peligro, que se están ocultando mensajes intencionadamente y que el buzón se está usando para enviar correo no deseado o malware en la organización.
 - **Compatibilidad con grupos de directivas de permisos de aplicación**<br>
 Cloud App Security ahora le permite definir directivas de permisos de aplicación de forma más detallada, según la pertenencia a grupos de los usuarios que autorizaron las aplicaciones. Por ejemplo, un administrador puede decidir establecer una directiva que revoca aplicaciones poco habituales si solicitan permisos de nivel alto, solo si el usuario que autorizó los permisos es un miembro del grupo Administradores.
 - **El Control de aplicaciones de acceso condicional ahora se integra con las aplicaciones locales mediante Azure Active Directory Application Proxy**
@@ -82,7 +84,7 @@ Publicado el 25 de septiembre de 2018
 
 - **Control de aplicaciones de acceso condicional para Office 365 está ahora en versión preliminar pública**
     - Control de aplicaciones de acceso condicional ahora también es compatible con Office 365 y cualquier aplicación que esté configurada con Open ID Connect.
-    - Proporcionar comentarios desde dentro de una sesión: esta nueva herramienta permite enviar comentarios al equipo de Cloud App Security sobre el rendimiento de una aplicación bajo el control de sesión, directamente desde la sesión.
+    - Proporcionar comentarios desde dentro de una sesión: esta nueva herramienta le permite enviar comentarios al equipo de Cloud App Security sobre el rendimiento de una aplicación bajo el control de sesión, directamente desde la sesión.
 
 
 - **Integración nativa con ATP de Windows Defender para Shadow IT Discovery más allá de los límites de la empresa**
@@ -190,7 +192,7 @@ Microsoft Cloud App Security agregó un nuevo widget de investigación al panel 
 - **Compatibilidad con los cubos de AWS S3:**<br>
 Microsoft Cloud App Security puede detectar ahora cubos de AWS S3 y sus niveles de uso compartido. Esto proporciona alertas y visibilidad en cubos de AWS accesibles públicamente. También permite crear directivas basadas en cubos y aplicar la regulación automática. Además, hay una nueva plantilla de directiva disponible llamada **Publicly accessible S3 buckets (AWS)** (Cubos de S3 accesibles públicamente (AWS)) que puede usar para crear fácilmente una directiva que regule su almacenamiento de AWS. Para habilitar estas nuevas funcionalidades, asegúrese de actualizar sus aplicaciones conectadas mediante AWS agregando los nuevos permisos descritos en [Conectar AWS](connect-aws-to-microsoft-cloud-app-security.md).
 
-- **Privilegios de administración basados en grupos de usuarios:** ahora puede establecer los permisos administrativos de los administradores de Microsoft Cloud App Security por cada grupo de usuarios. Por ejemplo, puede establecer un usuario concreto como administrador de únicamente los usuarios de Alemania. Esto permitiría al usuario ver y modificar la información en Microsoft Cloud App Security relativa únicamente al grupo de usuarios "Alemania: todos los usuarios". Para más información, vea [Administración del acceso de administrador](manage-admins.md).
+- **Privilegios de administración basados en grupos de usuarios**: Ahora puede establecer los permisos administrativos de los administradores de Microsoft Cloud App Security por cada grupo de usuarios. Por ejemplo, puede establecer un usuario concreto como administrador de únicamente los usuarios de Alemania. Esto permitiría al usuario ver y modificar la información en Microsoft Cloud App Security relativa únicamente al grupo de usuarios "Alemania: todos los usuarios". Para más información, vea [Administración del acceso de administrador](manage-admins.md).
 
 
 ## <a name="cloud-app-security-release-124"></a>Notas de la versión 124 de Cloud App Security
@@ -227,7 +229,7 @@ Microsoft Cloud App Security ofrece a las empresas la capacidad de determinar de
  Ahora hemos integrado una alerta para notificarle cuando alguna de las aplicaciones detectadas de un inquilino se infringe. La alerta proporcionará información acerca de la fecha y hora de la infracción y los usuarios que usaron la aplicación, y se vinculará a los orígenes disponibles públicamente que proporcionan información acerca de la infracción.
 
 -   **Nuevo servidor de correo**<br>
- El servidor de correo de Cloud App Security ha cambiado y utiliza distintos intervalos de direcciones IP. Para asegurarse de que puede recibir notificaciones, agregue las nuevas direcciones IP a la lista blanca de direcciones de correo no deseado. Para los usuarios que personalizan sus notificaciones, Microsoft Cloud App Security lo hace posible mediante MailChimp®, un servicio de correo electrónico de terceros. Para obtener la lista de direcciones IP de servidor de correo electrónico e instrucciones para habilitar el trabajo con MailChimp, consulte [Requisitos de red](https://docs.microsoft.com/cloud-app-security/network-requirements#email-server) y [Establecimiento de preferencias de notificación de correo electrónico](mail-settings.md).
+ El servidor de correo de Cloud App Security ha cambiado y utiliza distintos intervalos de direcciones IP. Para asegurarse de que puede recibir notificaciones, agregue las nuevas direcciones IP a la lista blanca de direcciones de correo no deseado. Para los usuarios que personalizan sus notificaciones, Microsoft Cloud App Security lo hace posible mediante MailChimp®, un servicio de correo electrónico de terceros. Para obtener la lista de direcciones IP de servidor de correo electrónico e instrucciones para habilitar el trabajo con MailChimp, consulte [Requisitos de red](network-requirements.md#mail-server) y [Establecimiento de preferencias de notificación de correo electrónico](mail-settings.md).
 
 
 ## <a name="cloud-app-security-release-123"></a>Cloud App Security versión 123
@@ -249,7 +251,7 @@ Fecha de publicación: 29 de abril de 2018
 Fecha de publicación: 22 de abril de 2018
 
 -   La versión preliminar pública de **Conditional Access App Control (anteriormente denominado proxy de Cloud App Security)** se ha mejorado con funcionalidades que facilitan mayor visibilidad y control de las distintas aplicaciones. Ahora puede crear una directiva de sesión con un filtro *Tipo de actividad* para supervisar y bloquear diversas actividades específicas de la aplicación. Este nuevo filtro, que funciona conjuntamente con el acceso condicional de Azure Active Directory, aumenta las características de control de descarga de archivos existentes para proporcionarle control completo de las aplicaciones de su organización para ofrecer visibilidad en tiempo real y control de sesiones de usuario de riesgo: por ejemplo, las sesiones con usuarios de colaboración B2B o procedentes de un dispositivo no administrado. Para obtener más información, consulte [Directivas de sesión](session-policy-aad.md).
--   Despliegue gradual: **se han mejorado las directivas de detección de anomalías** de Cloud App Security para incluir dos nuevos tipos de detección de amenazas: Actividad de ransomware y Actividad del usuario cancelado. Cloud App Security ha ampliado sus funcionalidades de detección de ransomware con la detección de anomalías para garantizar una cobertura más completa frente a ataques de ransomware sofisticados. Con nuestra experiencia en investigación de seguridad para identificar patrones de comportamiento que reflejan la actividad de ransomware, Cloud App Security garantiza una protección integral y sólida. Actividad del usuario cancelado le permite supervisar las cuentas de usuarios cancelados, que es posible que se hayan desaprovisionado de aplicaciones corporativas, pero en muchos casos todavía conservan el acceso a ciertos recursos corporativos. Para obtener más información, vea [Obtención de análisis de comportamiento y detección de anomalías instantáneos](anomaly-detection-policy.md).
+-   Implementación gradual: **se han mejorado las directivas de detección de anomalías** de Cloud App Security para incluir dos nuevos tipos de detección de amenazas: Actividad de ransomware y Actividad del usuario cancelado. Cloud App Security ha ampliado sus funcionalidades de detección de ransomware con la detección de anomalías para garantizar una cobertura más completa frente a ataques de ransomware sofisticados. Con nuestra experiencia en investigación de seguridad para identificar patrones de comportamiento que reflejan la actividad de ransomware, Cloud App Security garantiza una protección integral y sólida. Actividad del usuario cancelado le permite supervisar las cuentas de usuarios cancelados, que es posible que se hayan desaprovisionado de aplicaciones corporativas, pero en muchos casos todavía conservan el acceso a ciertos recursos corporativos. Para obtener más información, vea [Obtención de análisis de comportamiento y detección de anomalías instantáneos](anomaly-detection-policy.md).
 
 
 ## <a name="cloud-app-security-release-120"></a>Notas de la versión 120 de Cloud App Security
@@ -284,7 +286,7 @@ Fecha de publicación: 20 de febrero de 2018
 
 -   La mayor integración de Cloud App Security con Azure Information Protection permite ahora proteger archivos de G Suite. Esta característica de versión preliminar pública permite examinar y clasificar archivos de G Suite y aplicar automáticamente etiquetas de protección de Azure Information Protection para protegerlos. Para obtener más información, consulte [Integración de Azure Information Protection](azip-integration.md).
 
--   Cloud Discovery admite ahora [Digital Arts i-FILTER](http://www.daj.jp/en/products/if/).
+-   Cloud Discovery admite ahora [Digital Arts i-FILTER](https://www.daj.jp/en/products/if/).
 
 -   La tabla Agentes SIEM incluye ahora más detalles que facilitan la administración.
 
@@ -292,9 +294,9 @@ Fecha de publicación: 20 de febrero de 2018
 Publicado el 4 de febrero de 2018
 - La directiva de detección de anomalías de Cloud App Security se ha mejorado con nuevas **detecciones basadas en escenarios** entre las que se incluyen viaje imposible, actividad desde una dirección IP sospechosa y varios intentos incorrectos de inicio de sesión. Las nuevas directivas se habilitan automáticamente, lo que proporciona la detección de amenazas desde el primer momento en todo el entorno de nube. Además, las nuevas directivas exponen más datos a partir del motor de detección de Cloud App Security, lo que le ayuda a agilizar el proceso de investigación y contener las amenazas en curso. Para obtener más información, vea [Obtención de análisis de comportamiento y detección de anomalías instantáneos](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy).
 
-- Despliegue gradual: Cloud App Security ahora se pone en correlación entre los usuarios y sus cuentas en aplicaciones de SaaS. Esto le permite investigar fácilmente todas las actividades de los usuarios, en todas sus diferentes aplicaciones de SaaS correlacionadas, con independencia de qué aplicación o cuenta utilizan.  
+- Implementación gradual: Cloud App Security ahora se pone en correlación entre los usuarios y sus cuentas en aplicaciones SaaS. Esto le permite investigar fácilmente todas las actividades de los usuarios, en todas sus diferentes aplicaciones de SaaS correlacionadas, con independencia de qué aplicación o cuenta utilizan.  
 
--   Despliegue gradual: Cloud App Security ahora admite varias instancias de la misma aplicación conectada. Si tiene varias instancias de, por ejemplo, Salesforce (una para venta y otra para marketing) podrá conectarlas a Cloud App Security y administrarlas desde la misma consola para crear directivas granulares y una investigación más a fondo. 
+-   Implementación gradual: Cloud App Security ahora admite varias instancias de la misma aplicación conectada. Si tiene varias instancias de, por ejemplo, Salesforce (una para venta y otra para marketing) podrá conectarlas a Cloud App Security y administrarlas desde la misma consola para crear directivas granulares y una investigación más a fondo. 
 
 - Los analizadores de Cloud Discovery ahora admiten dos formatos adicionales de punto de control: XML y KPC.
 

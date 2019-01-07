@@ -1,11 +1,11 @@
 ---
-title: Visibilidad de las cuentas de aplicaciones en la nube | Microsoft Docs
+title: 'Visibilidad de las cuentas de aplicaciones en la nube: Cloud App Security | Microsoft Docs'
 description: En este artículo se proporciona información sobre la revisión de las cuentas de las aplicaciones conectadas.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a48077187ace1980cf819a32514c9fbbb930c444
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 7b04724605eba07b2adbd952f634bd92496d772e
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123642"
+ms.locfileid: "53175675"
 ---
 # <a name="accounts"></a>Cuentas
 
@@ -56,25 +57,25 @@ A continuación, se muestra una lista de los filtros de cuenta que se pueden apl
 
 - **Afiliación**: la afiliación es **Interna** o **Externa**. Para establecer qué usuarios y cuentas son internos, en **Configuración** asegúrese de establecer el **intervalo de direcciones IP** de la organización interna. En caso de que la cuenta tenga permisos de administrador, el icono de la tabla Cuentas aparece con un lazo rojo. ![icono de administrador de cuentas](./media/accounts-admin-icon.png)
 
-- **Aplicación**: puede filtrar por cualquier aplicación conectada a la API y que esté en uso en las cuentas de la organización.
+- **Aplicación**: puede filtrar por cualquier aplicación conectada a la API que usen las cuentas de la organización.
 
-- **Dominio**: permite filtrar por usuarios de dominios concretos.
+- **Dominio**: le permite filtrar por usuarios de dominios concretos.
 
-- **Grupos**: permite filtrar por miembros de grupos de usuarios de Cloud App Security, tanto grupos de usuarios integrados como importados.
+- **Grupos**: le permite filtrar por miembros de grupos de usuarios de Cloud App Security, ya sean grupos de usuarios integrados o importados.
 
-- **Instancia**: permite filtrar por miembros de una instancia de una aplicación específica. 
+- **Instancia**: le permite filtrar por miembros de una instancia de una aplicación específica. 
 
-- **Visto por última vez**: el filtro **Visto por última vez** permite buscar cuentas que estén inactivas y cuyos usuarios no hayan tenido actividad durante un tiempo.
+- **Visto por última vez**: el filtro **Visto por última vez** le permite buscar cuentas que estén inactivas y cuyos usuarios no hayan tenido actividad durante un tiempo.
 
-- **Organización**: permite filtrar por miembros de determinados grupos organizativos definidos en sus aplicaciones conectadas.
+- **Organización**: le permite filtrar por miembros de determinados grupos organizativos definidos en sus aplicaciones conectadas.
 
-- **Show Admins only** (Mostrar solo administradores): filtra cuentas y usuarios que son administradores.
+- **Mostrar solo los administradores**: filtra por cuentas y usuarios que son administradores.
 
-- **Estado**: filtra según el estado de la cuenta de usuario de N/D, ensayo, activa, suspendida o eliminado.
+- **Estado**: filtra según el estado de la cuenta de usuario de No aplicable, Preconfigurado, Activas, Suspendidas o Eliminada.
 
-- **Tipo**: permite filtrar por el usuario o el tipo de cuenta.
+- **Tipo**: le permite filtrar por el usuario o el tipo de cuenta.
 
-- **Nombre de usuario**: permite filtrar a usuarios específicos. 
+- **Nombre de usuario**: le permite filtrar a usuarios específicos. 
 
 
 ## <a name="next-steps"></a>Pasos siguientes  

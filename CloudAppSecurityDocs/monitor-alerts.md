@@ -1,94 +1,81 @@
 ---
-title: Administración de alertas activadas en el portal de Cloud App Security | Microsoft Docs
-description: En este artículo se explica cómo trabajar con alertas generadas en el portal de Cloud App Security.
+title: Supervisión de alertas generadas en Cloud App Security
+description: En este artículo se proporcionan una lista y una descripción de todas las alertas.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
+ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dd54f1244e418e88edc35da53097eb20a5f28674
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 760ce0e680a0d2388adc80bf788b48b284b178f8
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124118"
+ms.locfileid: "53177154"
 ---
+# <a name="monitor-alerts-in-cloud-app-security"></a>Supervisión de alertas en Cloud App Security
+
 *Se aplica a: Microsoft Cloud App Security*
 
+Las alertas son los puntos de entrada para comprender el entorno de nube en más profundidad. En este artículo se proporcionan una lista y una descripción de todas las alertas.
 
-## <a name="manage-your-alerts"></a>Administración de alertas  
-Las alertas son los puntos de entrada para comprender el entorno de nube en más profundidad. Es posible que quiera crear nuevas directivas según lo que encuentre. Por ejemplo, es posible que vea un administrador iniciando sesión desde Groenlandia y nadie en su organización nunca inició sesión desde Groenlandia antes. Puede crear una directiva que suspende automáticamente una cuenta de administrador cuando se utiliza para iniciar sesión desde esa ubicación.  
+## <a name="monitoring-your-alerts"></a>Supervisión de las alertas
 
-Es buena idea revisar todas las alertas y usarlas como herramientas para modificar las directivas. Si hay eventos inofensivos que las directivas existentes consideran como infracciones, perfeccione las directivas para recibir menos alertas innecesarias.  
+Revisar todas las alertas es una buena idea. Comprender por qué se produce una alerta le permite usarlas como herramientas para modificar las directivas. 
 
-1. En **Alertas abiertas**, haga clic en **Ver todas las alertas**.  
+**Para ver las alertas:** en el portal de Microsoft Cloud App Security, haga clic en **Alertas**.
 
-   En esta sección del panel se proporciona visibilidad completa de cualquier actividad sospechosa o infracción de las políticas establecidas. A continuación, le ayuda a proteger la postura de seguridad que ha definido para su entorno de la nube.  
 
-   ![Alertas](./media/alerts.png "Alertas")  
+![Menú Alertas](./media/alert-menu.png)
 
-2. Debe investigar y determinar la naturaleza de la infracción y la respuesta necesaria en cada alerta.  
+ - **Descarte** una alerta después de verla y determinar que no es interesante. 
+     - Escriba un **comentario** para explicar por qué ha descartado la alerta. 
+     - **Envíenos sus comentarios sobre esta alerta** para que nuestro equipo de investigación de seguridad la revise para mejorar las alertas.
 
-   Puede filtrar las alertas por Tipo de alerta o Gravedad para procesar primero las más importantes.  
+- **Resuelva** la alerta si la ha investigado y ha mitigado el riesgo. 
 
-   Seleccione una alerta específica. Según el tipo de alerta del que se trate, verá varias acciones que pueden realizarse antes de resolver la alerta.  
-   
-   Puede filtrar en función de la aplicación: las aplicaciones que se muestran son aquellas para las que Cloud App Security detectó actividades.
-
-   Hay tres tipos de infracciones con los que deberá tratar al investigar alertas:  
-
-   - **Infracciones graves**<br>
-     Infracciones graves que exigen una respuesta inmediata. <br>
-     Ejemplos:<br>
-     En el caso de una alerta de actividad sospechosa, es posible que quiera suspender la cuenta hasta que el usuario cambie la contraseña.  
-
-     En el caso de una filtración de datos, es posible que le interese restringir los permisos o poner el archivo en cuarentena.  
-
-     Si se detecta una aplicación nueva, es posible que quiera bloquear el acceso al servicio en el servidor proxy o el firewall.  
-
-   - **Infracciones cuestionables**<br>
-     Infracciones cuestionables que exigen más investigación.  <br>
-     Puede ponerse en contacto con el usuario o su administrador para hablar sobre la naturaleza de la actividad. <br>  
-     Deje la actividad abierta hasta que disponga de más información.  
-
-   - **Infracciones autorizadas o comportamientos anómalos**<br>
-     Infracciones autorizadas o comportamientos anómalos que pueden deberse a un uso legítimo.  
-
-     Puede descartar la alerta.  
-
-3. Es importante que siempre que se descarte una alerta envíe comentarios sobre por qué la está descartando. El equipo de Cloud App Security usa estos comentarios como una indicación de la precisión de la alerta que se usa para ajustar los modelos para futuras alertas de aprendizaje automático. Puede seguir estas directrices para decidir cómo clasificar la alerta:
- - Si la alerta se desencadenó por uso legítimo y no es un problema de seguridad, podría ser uno de los siguientes: 
-    - Positivo inofensivo: la alerta es precisa, pero la actividad es legítima. Debe descartar la alerta y establecer el motivo en **La gravedad real es inferior** o **No es interesante**.
-    -   Falso positivo: la alerta es inexacta. Descarte la alerta y establezca el motivo en **La alerta no es precisa**.
- - Si hay demasiado ruido para determinar la legitimidad y la precisión de una alerta, descártela y establezca el motivo en **Demasiadas alertas similares**.
- - Verdadero positivo: si la alerta está relacionada con un evento de riesgo real que realizó de forma malintencionada o involuntaria un usuario interno o externo, debe establecer el evento en **Resolver** después de que se hayan tomado las medidas adecuadas para corregir el evento.
+     - La alerta ya no se mostrará en la tabla de alertas.
+     - **Márquela como no leída** si ha empezado a investigar un problema, pero quiere asegurarse de que no se olvida de continuar trabajando en él. 
+     -  **Ajuste la directiva** que coincidía con la alerta para mejorar las coincidencias de próximas alertas. 
+     - Al resolver una alerta, puede escribir un comentario y **enviarlo al equipo de Cloud App Security**.
  
+## <a name="built-in-alerts"></a>Alertas integradas
 
-En la tabla siguiente se proporciona una lista de los tipos de alertas que pueden activarse y se recomiendan formas para resolverlas.  
+Se mostrarán los siguientes tipos de alertas. 
 
-|Tipo de alerta|Descripción|Solución recomendada|  
-|----------------|-----------------|----------------------------|  
-|Infracción de directiva de actividad|Este tipo de alerta es el resultado de una directiva que ha creado.|Para trabajar con este tipo de alerta en masa, se recomienda que trabaje en el centro de directivas para mitigarlas.<br /><br /> Ajuste la directiva para excluir las entidades con ruido al agregar más filtros y controles más pormenorizados.<br /><br /> Si la directiva es precisa, la alerta está garantizada y es una infracción que quiere detener inmediatamente, considere la posibilidad de agregar una corrección automática en la directiva.|  
-|Infracción de directiva de archivo|Este tipo de alerta es el resultado de una directiva que ha creado.| Para trabajar con este tipo de alerta en masa, se recomienda que trabaje en el centro de directivas para mitigarlas.<br /><br /> Ajuste la directiva para excluir las entidades con ruido al agregar más filtros y controles más pormenorizados.<br /><br /> Si la directiva es precisa, la alerta está garantizada y es una infracción que quiere detener inmediatamente, considere la posibilidad de agregar una corrección automática en la directiva.|  
-|Cuenta en peligro|Este tipo de alerta se activa cuando Cloud App Security identifica una cuenta en peligro, lo cual significa que tiene una probabilidad muy alta de que la cuenta se usara de forma no autorizada.|Se recomienda suspender la cuenta hasta poder comunicarse con el usuario y asegurarse de que cambia la contraseña.|  
-|Cuenta inactiva|Esta alerta se activa cuando una cuenta no se ha usado en los últimos 60 días en ninguna de sus aplicaciones en la nube conectadas.|Póngase en contacto con el usuario y el administrador para determinar si la cuenta aún está activa. Si no es así, suspenda al usuario y finalice la licencia de la aplicación.|  
-|Nuevo usuario administrador|Advierte de cambios en las cuentas con privilegios de las aplicaciones conectadas.|Confirme que los nuevos permisos de administrador en realidad son necesarios para el usuario. Si no lo son, se recomienda revocar los privilegios de administrador para reducir la exposición.|  
-|Nueva ubicación de administrador|Advierte de cambios en las cuentas con privilegios de las aplicaciones conectadas.|Confirme que el inicio de sesión desde esta ubicación anómala era legítimo. Si no es así, se recomienda revocar los permisos de administrador o la suspensión de la cuenta para reducir la exposición.|  
-|Nueva ubicación|Esta es una alerta informativa sobre el acceso a una aplicación conectada desde una nueva ubicación y solo se activa una vez por país.|Investigue la actividad del usuario concreto.|  
-|Nuevo servicio detectado|Se trata de una alerta sobre Shadow IT. Cloud Discovery ha detectado una nueva aplicación.|<ul><li>Evalúe el riesgo del servicio según el catálogo de aplicaciones.</li><li>Explore la actividad en profundidad para entender los patrones de uso y la prevalencia.</li><li>Decida si quiere autorizar o no la aplicación.</li><br /></ul>En el caso de las aplicaciones sin autorización:<br /><br /><ul><li>Es posible que quiera bloquear el uso en el servidor proxy o el firewall.</li><li>Si tiene una aplicación sin autorización y una aplicación con autorización en la misma categoría, puede exportar una lista de usuarios de la aplicación sin autorización y luego ponerse en contacto con ellos para migrarlos a la aplicación autorizada.</li></ul></li>|  
-|Actividad sospechosa|Esta alerta permite saber que se ha detectado actividad anómala no alineada con actividades o usuarios esperados de la organización.|Investigue el comportamiento y confírmelo con el usuario.<br /><br /> Este tipo de alerta es un buen punto para empezar a aprender más sobre el entorno y a crear nuevas directivas con estas alertas. Por ejemplo, si alguien carga repentinamente una gran cantidad de datos en una de las aplicaciones conectadas, puede establecer una regla para controlar ese tipo de comportamiento anómalo.|  
-|Uso sospechoso de la nube|Esta alerta permite saber que se ha detectado actividad anómala no alineada con actividades o usuarios esperados de la organización.|Investigue el comportamiento y confírmelo con el usuario.<br /><br /> Este tipo de alerta es un buen punto para empezar a aprender más sobre el entorno y a crear nuevas directivas con estas alertas. Por ejemplo, si alguien carga repentinamente una gran cantidad de datos en una de las aplicaciones conectadas, puede establecer una regla para controlar ese tipo de comportamiento anómalo.|  
-|Uso de cuenta personal|Esta alerta permite saber que una nueva cuenta personal tiene acceso a recursos de las aplicaciones conectadas.|Quite las colaboraciones del usuario en la cuenta externa.|  
+|Nombre de alerta|Id. de alerta|Descripción|
+|----|----|----|
+|Nueva ubicación|ALERT_GEOLOCATION_NEW_COUNTRY|Se ha detectado una nueva ubicación desde que comenzó el examen (hasta 6 meses). Esta alerta solo se muestra una vez para cada país para toda la organización. |
+|Nuevo usuario administrador|ALERT_ADMIN_USER|Se ha detectado un nuevo administrador de una aplicación específica. Puede tratarse de una persona que es un administrador de una aplicación y ahora es un administrador de otra aplicación. Esta alerta está relacionada con el tipo de administrador específico, por lo que se mostrará cada vez que cambie el tipo de administrador. Si un usuario había perdido los privilegios de administrador y los ha recuperado, se mostrará esta alerta.|
+|Cuenta inactiva|ALERT_ZOMBIE_USER|Si un usuario está inactivo durante 60 días por aplicación (por ejemplo, si alguien está activo en Box pero no ha tocado G Suite durante 60 días), el usuario se considerará inactivo en G Suite. Se agrega una etiqueta a estos usuarios, por lo que se pueden buscar cuentas inactivas.|
+|Ubicación de administrador inesperada|ALERT_NEW_ADMIN_LOCATION|Se ha detectado una nueva ubicación de los administradores desde que comenzó el examen (hasta 6 meses). Esta alerta solo se muestra una vez para cada país para cualquier administrador de la organización. |
+|Cuenta en peligro|ALERT_COMPROMISED_ACCOUNT|Si se ha producido una infracción en una aplicación y se publica la lista de cuentas que se han infringido, Cloud App Security descarga la lista y la compara con la lista de usuarios, incluidos los usuarios internos, los usuarios externos y las cuentas personales. |
 
+## <a name="custom-alerts"></a>Alertas personalizadas
 
-## <a name="next-steps"></a>Pasos siguientes  
-Para obtener más información acerca de la investigación de alertas, consulte [Investigar](investigate.md).  
+Se mostrarán los siguientes tipos de alertas. 
+
+|Nombre de alerta|Id. de alerta|Descripción|
+|----|----|----|
+|Alerta de actividad sospechosa|ALERT_SUSPICIOUS_ACTIVITY|Las actividades sospechosas se puntúan según lo sospechosa que sea la actividad anómala (¿hay una cuenta inactiva implicada?, ¿se produce desde una nueva ubicación?). Todos estos criterios se calculan juntos para proporcionar una puntuación de riesgo en función de los siguientes factores de riesgo: <br>El usuario es un administrador <br>Usuario estrictamente remoto<br>Proxy anónimo<br> Todos los inicios de sesión son erróneos<br>Numerosos inicios de sesión fallidos<br>Nuevo (administrador)<br>IP/ISP/país/agente de usuario para usuario/inquilino<br> IP/ISP/país/agente de usuario usado solo por el usuario (administrador)<br>Primera actividad de usuario (administrador) tras un tiempo<br>Primera vez que se realiza esta actividad administrativa tras un tiempo<br>Esta actividad administrativa no es común o no se había realizado nunca<br>Esta dirección IP solo tuvo inicios de sesión erróneos en el pasado<br>Viaje imposible|
+|Alerta de uso sospechoso de la nube|ALERT_DISCOVERY_ANOMALY_DETECTION|La detección de anomalías de Cloud Discovery comprueba el patrón de comportamiento normal y busca los usuarios o las aplicaciones que se usan de manera inusual. |
+|Infracción de directiva de actividad|ALERT_CABINET_EVENT_MATCH_AUDIT|Esta alerta le informa cuando se detecta una coincidencia de directiva.|
+|Infracción de directiva de archivo|ALERT_CABINET_EVENT_MATCH_FILE|Esta alerta le informa cuando se detecta una coincidencia de directiva.|
+|Infracción de directiva de proxy|ALERT_CABINET_INLINE_EVENT_MATCH|Esta alerta le informa cuando se detecta una coincidencia de directiva.|
+|Infracción de directiva de campo|ALERT_CABINET_EVENT_MATCH_OBJECT|Esta alerta le informa cuando se detecta una coincidencia de directiva.|
+|Nuevo servicio detectado|ALERT_CABINET_DISCOVERY_NEW_SERVICE|Se ha detectado una nueva aplicación.|
+|Uso de cuenta personal|ALERT_PERSONAL_USER_SAGE|El motor de detección busca cuentas personales en función de los recursos compartidos de archivos y los nombres de usuario. |
+
+## <a name="next-steps"></a>Pasos siguientes 
+
+[Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
 
 [Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  

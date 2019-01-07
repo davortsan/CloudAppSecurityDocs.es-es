@@ -1,11 +1,11 @@
 ---
-title: Confianza, privacidad, seguridad de datos, confianza y cumplimiento de Cloud App Security | Microsoft Docs
-description: En este tema se describe la oferta de cumplimiento, el centro de confianza, la privacidad y la seguridad de datos de Cloud App Security.
+title: Confianza, privacidad, seguridad de datos y cumplimiento de Cloud App Security
+description: En este artículo se describe la oferta de cumplimiento, el centro de confianza, la privacidad y la seguridad de datos de Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 54b58aa5b8aa098addbb2f10b7615da91676befe
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 75480c8e243573922864845ffea617b49b22404c
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124016"
+ms.locfileid: "53177290"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Seguridad y privacidad de datos de Microsoft Cloud App Security
 
@@ -65,7 +66,7 @@ Para obtener más información, vaya a [Ofertas de Microsoft Compliance](https:/
 - En Microsoft Cloud App Security, los administradores pueden ver los datos personales identificables almacenados en el servicio del portal con la barra de búsqueda.
 - Los administradores pueden buscar los metadatos de un usuario específico o su actividad. Al hacer clic en una entidad se abre [**Usuarios y cuentas**](accounts.md). La página **Usuarios y cuentas** proporciona detalles completos acerca de la entidad extraídos de aplicaciones en la nube conectadas. También presenta el historial de la actividad de un usuario y sus alertas de seguridad.
 
-- Tiene la propiedad de sus datos y puede cancelar las suscripciones y solicitar la eliminación de los datos cuando quiera. Si no renueva la suscripción, los datos se eliminarán dentro de la escala de tiempo especificada en el apartado  [Términos de Online Services](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
+- Tiene la propiedad de sus datos y puede cancelar las suscripciones y solicitar la eliminación de los datos cuando quiera. Si no renueva la suscripción, los datos se eliminarán dentro de la escala de tiempo especificada en el apartado  [Términos de Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
 - Si decide finalizar el servicio, puede llevarse los datos consigo.
 
@@ -107,13 +108,13 @@ Microsoft Cloud App Security aplica la protección de datos durante la inspecci�
 
 Cloud App Security conserva los datos de la manera siguiente:
 
-- Registro de actividad: 180 días
+- Registro de actividades: 180 días
 
 - Datos de detección: 90 días
 
 - Alertas: 180 días
 
-Para obtener más información sobre las prácticas de datos de Microsoft, vea el apartado  [Términos de Online Services](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
+Para obtener más información sobre las prácticas de datos de Microsoft, vea el apartado  [Términos de Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
 [Más información sobre transparencia](https://www.microsoft.com/en-us/trustcenter/about/transparency) 
 

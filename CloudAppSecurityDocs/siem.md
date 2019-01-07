@@ -1,11 +1,11 @@
 ---
-title: Integración de SIEM con Cloud App Security | Microsoft Docs
+title: Integración de SIEM con Cloud App Security
 description: En este artículo se proporciona información sobre la integración de SIEM con Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b7eec71a7ed224f76830fa7387bdf5e320f61eb6
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 41143a1c953306d05f6a18f07d4083b565a77d93
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124220"
+ms.locfileid: "53177018"
 ---
 # <a name="siem-integration"></a>Integración de SIEM
 
@@ -54,7 +55,7 @@ La integración con SIEM se realiza en tres pasos:
 - El servidor debe ejecutar Java 8; no se admiten versiones anteriores.
 - Sistema operativo: Windows o Linux
 - CPU: 2
-- Espacio en disco: 20 GB
+- Espacio en disco 20 GB
 - RAM: 2 GB
 - El servidor debe ejecutar Java 8. No se admiten las versiones anteriores.
 - Configuración del firewall, tal como se describe en [Requisitos de red](network-requirements.md)
@@ -62,7 +63,7 @@ La integración con SIEM se realiza en tres pasos:
 
 ## <a name="integrating-with-your-siem"></a>Integración con su SIEM
 
-### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>Paso 1: configuración en el portal de Cloud App Security
+### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>Paso 1: Configuración en el portal de Cloud App Security
 
 1. En el portal de Cloud App Security, en el engranaje de configuración, haga clic en Extensiones de seguridad y después en la pestaña **Agentes SIEM**.
 
@@ -93,7 +94,7 @@ La integración con SIEM se realiza en tres pasos:
 > Los tokens que se creen se enlazan al administrador que los haya creado. Esto significa que, si se elimina al usuario administrador de Cloud App Security, el token dejará de ser válido.
 
 
-### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>Paso 2: descarga del archivo JAR y ejecución en el servidor
+### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>Paso 2: Descarga del archivo JAR y ejecución en el servidor
 
 1. En [Centro de descarga de Microsoft](https://go.microsoft.com/fwlink/?linkid=838596), después de aceptar los [términos de licencia del software](https://go.microsoft.com/fwlink/?linkid=862491), descargue el archivo .zip y descomprímalo.
 
@@ -171,12 +172,12 @@ El siguiente texto es un ejemplo de archivo de registro de alertas:
 |      Alertas       |          <name>          |                                             Nombre de la directiva coincidente                                             |
 |      Alertas       |        externalId        |                                                    Id. de alerta                                                     |
 
-### <a name="step-3-validate-that-the-siem-agent-is-working"></a>Paso 3: validación del correcto funcionamiento del agente SIEM
+### <a name="step-3-validate-that-the-siem-agent-is-working"></a>Paso 3: Validación de que el agente SIEM funcione
 
 1. Asegúrese de que el estado del agente SIEM en el portal de Cloud App Security no sea **Error de conexión** o **Desconectado**, y de que no haya ninguna notificación del agente. Se mostrará como **Error de conexión** si la conexión está inactiva durante más de dos horas. El estado se muestra como **Desconectado** si la conexión está inactiva durante más de 12 horas.
  ![SIEM desconectado](./media/siem-not-connected.png)
 
-   En su lugar, el estado debe ser Conectado, tal como se muestra aquí: ![SIEM conectado](./media/siem-connected.png).
+   En su lugar, el estado debe ser Conectado, tal como se muestra aquí:  ![SIEM conectado](./media/siem-connected.png)
 
 2. En el servidor Syslog o SIEM, asegúrese de que vea las alertas y actividades procedentes de Cloud App Security.
 

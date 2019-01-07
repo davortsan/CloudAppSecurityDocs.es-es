@@ -1,11 +1,11 @@
 ---
-title: Crear una directiva de detección de anomalías de Cloud Discovery en Cloud App Security | Microsoft Docs
+title: Creación de una directiva de detección de anomalías de Cloud Discovery en Cloud App Security
 description: En este tema se proporciona información sobre cómo trabajar con directivas de detección de anomalías de Cloud Discovery.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: eaf73af0-7610-4903-b656-8d90b1d2b18c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 871027dc667bcb83e904c512c6b21e7fb817cf36
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 2d4979204779192e784bd6a6159750f61fe37723
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123897"
+ms.locfileid: "53177035"
 ---
 # <a name="cloud-discovery-anomaly-detection-policy"></a>Directiva de detección de anomalías de Cloud Discovery
 

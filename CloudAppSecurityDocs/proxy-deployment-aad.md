@@ -1,11 +1,11 @@
 ---
-title: Implementación del control de aplicaciones de acceso condicional de Microsoft Cloud App Security para aplicaciones de Azure AD | Microsoft Docs
+title: Implementación del control de aplicaciones de acceso condicional para aplicaciones de Azure AD
 description: En este artículo se ofrece información sobre cómo implementar las características del proxy inverso de control de aplicaciones de acceso condicional de Microsoft Cloud App Security para aplicaciones de Azure AD.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,19 +13,20 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 890d5600ab97e66735b5db277755c5567ff494dc
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: d7f0041a385a60cde5bc714312435dd2cd6ac389
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124390"
+ms.locfileid: "53177137"
 ---
 # <a name="deploy-conditional-access-app-control-for-azure-ad-apps"></a>Implementación del control de aplicaciones de acceso condicional para aplicaciones de Azure AD
 
 *Se aplica a: Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
-[« Anterior: Introducción a Control de aplicación de acceso condicional](proxy-intro-aad.md)<br>
+[« Anterior: Introducción al control de aplicaciones de acceso condicional](proxy-intro-aad.md)<br>
 [Siguiente: Cómo crear una directiva de sesión »](session-policy-aad.md)
 
 
@@ -33,7 +34,7 @@ Haga lo siguiente para configurar aplicaciones de Azure AD de forma que estén c
 
 **Paso 1: [vaya al portal de Azure AD, cree una directiva de acceso condicional para las aplicaciones y distribuya la sesión a Cloud App Security](#add-azure-ad).**
 
-**Paso 2: [inicie sesión con un usuario con ámbito en la directiva en la aplicaciones](#sign-in-scoped).**
+**Paso 2: [inicie sesión con un usuario con ámbito en la directiva en las aplicaciones](#sign-in-scoped).**
 
 **Paso 3: [vuelva al portal de Cloud App Security y seleccione la notificación de mensaje emergente para agregar las aplicaciones](#banner-notification).**
 
@@ -120,7 +121,7 @@ Ya tiene todo listo para crear [directivas de acceso](access-policy-aad.md) y [d
 
 
 >[!div class="step-by-step"]
-[« Anterior: Introducción a Control de aplicación de acceso condicional](proxy-intro-aad.md)<br>
+[« Anterior: Introducción al control de aplicaciones de acceso condicional](proxy-intro-aad.md)<br>
 [Siguiente: Cómo crear una directiva de sesión »](session-policy-aad.md)
 
 
