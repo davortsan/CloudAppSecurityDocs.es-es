@@ -14,12 +14,12 @@ ms.assetid: 9ba5c7d3-c733-4048-9b99-bf41a0f46695
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4e10adf4b059728e45d9a87ebefcf1f1707566a7
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 4fb8d909ee8720d6b2610bfe6acc65a02666167e
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177188"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059312"
 ---
 # <a name="activity-filters-and-queries"></a>Filtros y consultas de actividad
 
@@ -160,6 +160,5 @@ Además, puede usar las consultas sugeridas como punto de partida para una nueva
 ## <a name="next-steps"></a>Pasos siguientes 
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Los clientes Premier también pueden crear un nuevo problema directamente desde el portal Premier.](https://premier.microsoft.com/)  
   
   

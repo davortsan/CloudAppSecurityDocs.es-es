@@ -14,12 +14,12 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7fff5cffcae418225af7f1f14e98bf0c42e6811c
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: c347b94688b070302de12651a75344213e4bcacc
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53175709"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059426"
 ---
 # <a name="manage-admin-access"></a>Administrar el acceso de administrador
 
@@ -111,7 +111,6 @@ Para cambiar de inquilino, una vez que tenga permisos para varios inquilinos, ha
 
 ## <a name="next-steps"></a>Pasos siguientes  
 [Configurar Cloud Discovery](set-up-cloud-discovery.md)   
-
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+  
   
   
