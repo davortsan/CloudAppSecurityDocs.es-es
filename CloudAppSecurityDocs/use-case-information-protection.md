@@ -1,12 +1,12 @@
 ---
 title: Aplicar automáticamente etiquetas de clasificación de Azure Information Protection
-description: En este artículo se describe cómo aplicar automáticamente etiquetas de clasificación de Azure Information Protection en Microsoft Cloud App Security.
+description: En este tutorial se describe cómo aplicar automáticamente etiquetas de clasificación de Azure Information Protection en Microsoft Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2018
-ms.topic: conceptual
+ms.date: 1/3/2019
+ms.topic: tutorial
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,27 +14,25 @@ ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 85dd32e95cfa866b7ac1f75f87685466b1bcb3db
-ms.sourcegitcommit: 420a0119513e3f4a8651f6a9e66c56fe442a31c0
+ms.openlocfilehash: 12c3e913a66813f234040272eba638c9dae5e9f5
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53347320"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059379"
 ---
-# <a name="automatically-apply-azure-information-protection-classification-labels"></a>Aplicar automáticamente etiquetas de clasificación de Azure Information Protection
+# <a name="tutorial-automatically-apply-azure-information-protection-classification-labels"></a>Tutorial: Aplicar automáticamente etiquetas de clasificación de Azure Information Protection
 
 *Se aplica a: Microsoft Cloud App Security*
 
-En un mundo perfecto, todos los empleados serían plenamente conscientes de la importancia que tiene proteger la información y trabajar respetando las directivas. Pero en el mundo real es probable que un asociado que trabaja en contabilidad cargue un documento en su repositorio de Box con los permisos incorrectos. Una semana más adelante se da cuenta de que se ha filtrado información confidencial de su empresa a la competencia.
+En un mundo perfecto, todos los empleados serían plenamente conscientes de la importancia que tiene proteger la información y trabajar respetando las directivas. Pero en el mundo real es probable que un asociado que trabaja en contabilidad cargue un documento en su repositorio de Box con los permisos incorrectos. Una semana más adelante se da cuenta de que se ha filtrado información confidencial de su empresa a la competencia. Microsoft Cloud App Security sirve para evitar este tipo de desastres antes de que ocurran. Esta característica está disponible en Box, SharePoint y OneDrive para la Empresa. Aplicar una etiqueta de Azure Information Protection es solo una de las [acciones de gobierno](governance-actions.md) disponibles en una larga lista.
 
-Microsoft Cloud App Security sirve para evitar este tipo de desastres antes de que ocurran.
+Este tutorial le ayudará a identificar qué permisos públicos se establecen en un documento guardado en el almacenamiento en la nube, de modo que reciba una alerta cuando se produzca una infracción. Además, puede aplicar automáticamente la etiqueta de clasificación **Confidencial** de Azure Information Protection para proporcionar un mayor cifrado a los archivos.
 
-Microsoft Cloud App Security identifica que los permisos públicos están en un documento guardado en su cuenta de Box y usa un motor de clasificación que identifica que hay información confidencial en él. Se envía una alerta para indicarle que se ha producido este problema. Después, Cloud App Security aplica automáticamente la etiqueta de clasificación **Confidencial** de Azure Information Protection para proporcionar un mayor cifrado al archivo.
+> [!div class="checklist"]
+> * Configuración de la protección de datos 
+> * Validar la directiva
 
->[!NOTE]
->
-> - Aplicar una etiqueta de Azure Information Protection es solo una de las [acciones de gobierno](governance-actions.md) disponibles en una larga lista.
-> - Esta característica está disponible en Box, SharePoint y OneDrive para la Empresa.
 
 ## <a name="enhanced-data-level-encryption-protection"></a>Mejor protección del cifrado de nivel de datos
 
@@ -55,7 +53,7 @@ Use Cloud App Security con Azure Information Protection para insertar informaci�
 - [Habilite Cloud App Security y Azure Information Protection](azip-integration.md) en el inquilino.
 - [Conecte Box](connect-box-to-microsoft-cloud-app-security.md) a Cloud App Security.
 
-## <a name="setting-up-data-protection"></a>Configuración de la protección de datos
+## <a name="set-up-data-protection"></a>Configuración de la protección de datos
 
 Vamos a configurar una directiva que busque números de tarjeta de crédito en los archivos almacenados en su cuenta de Box. Cuando se encuentran los archivos, se aplicará automáticamente una etiqueta de Azure Information Protection y se controlará lo que ocurre con todos los archivos que tengan esa etiqueta.
 
@@ -86,7 +84,7 @@ Vamos a configurar una directiva que busque números de tarjeta de crédito en l
 
     2. Puede investigar la coincidencia haciendo clic en una coincidencia específica para abrir el cajón de archivos. En el cajón, puede ver las otras directivas que coincidan con este archivo.
 
-## <a name="validating-your-policy"></a>Validación de la directiva
+## <a name="validate-your-policy"></a>Validar la directiva
 
 1. Para simular una alerta, vaya a su cuenta de Box e intente acceder a un archivo en la carpeta **Datos del cliente**.
 2. Vaya al informe de directiva. Una coincidencia de directiva de archivo debe aparecer en breve. 

@@ -1,12 +1,12 @@
 ---
 title: Bloqueo de las descargas desde dispositivos no administrados con el control de aplicaciones de acceso condicional de Cloud App Security
-description: En este artículo se describe el escenario donde usar las funciones de proxy inverso de Azure AD para proteger la organización de descargas de información confidencial con dispositivos no administrados.
+description: En este tutorial se describe cómo usar las funciones de proxy inverso de Azure AD para proteger la organización de descargas de datos confidenciales con dispositivos no administrados.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2018
-ms.topic: conceptual
+ms.date: 1/4/2019
+ms.topic: tutorial
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,21 +14,26 @@ ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: aab9063ad057abfe3dce3860494b1d20abe74f0f
-ms.sourcegitcommit: 420a0119513e3f4a8651f6a9e66c56fe442a31c0
+ms.openlocfilehash: 25f08416549e8dbcf5cdb4dc15f0e2412381366e
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53347345"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059276"
 ---
-# <a name="block-downloads-of-sensitive-information-using-microsoft-cloud-app-security-conditional-access-app-control"></a>Bloqueo de descargas de información confidencial con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security
+# <a name="tutorial-block-download-of-sensitive-information"></a>Tutorial: bloqueo de las descargas de información confidencial 
 
 *Se aplica a: Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
 [« ANTERIOR: Cómo crear una directiva de acceso](access-policy-aad.md)
 
-Los administradores de TI de hoy en día se encuentran entre la espada y la pared. Quiere permitir que los empleados sean productivos. Para ello, hay que permitirles el acceso a aplicaciones, de forma que puedan trabajar en cualquier momento y desde cualquier dispositivo. Pero quiere proteger los activos de la empresa, incluida la información propietaria y con privilegios. ¿Cómo se puede permitir el acceso de los empleados a las aplicaciones en la nube y, al mismo tiempo, proteger los datos? **En este caso de uso se describe cómo bloquear las descargas de los usuarios que tienen acceso a los datos confidenciales en las aplicaciones en la nube de la empresa desde dispositivos no administrados o ubicaciones de red no corporativas.**
+Los administradores de TI de hoy en día se encuentran entre la espada y la pared. Quiere permitir que los empleados sean productivos. Para ello, hay que permitirles el acceso a aplicaciones, de forma que puedan trabajar en cualquier momento y desde cualquier dispositivo. Pero quiere proteger los activos de la empresa, incluida la información propietaria y con privilegios. ¿Cómo se puede permitir el acceso de los empleados a las aplicaciones en la nube y, al mismo tiempo, proteger los datos? **En este tutorial se describe cómo bloquear las descargas de los usuarios que tienen acceso a datos confidenciales en las aplicaciones en la nube de la empresa desde dispositivos no administrados o ubicaciones de red no corporativas.**
+
+> [!div class="checklist"]
+> * Crear una directiva de bloqueo de descarga en dispositivos no administrados
+> * Validar la directiva
+
 
 ## <a name="the-threat"></a>La amenaza
 

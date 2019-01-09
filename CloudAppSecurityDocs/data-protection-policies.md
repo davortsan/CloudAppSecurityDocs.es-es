@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/6/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d4ab929752a0e90026104f0451932c6a89a50ad2
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 28a1e86586fd81f09d291d46395199df988c3032
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177375"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059321"
 ---
 # <a name="file-policies"></a>Directivas de archivo  
 
@@ -76,11 +76,14 @@ Haga lo siguiente para crear una directiva de archivo:
 
 8. En el segundo filtro **Aplicar a**, seleccione **todos los propietarios de archivos**, **los propietarios de archivos de los grupos seleccionados** o **todos los propietarios de archivos excepto los grupos seleccionados**. Después, seleccione los grupos de usuarios pertinentes para determinar qué usuarios y grupos deben incluirse en la directiva.
   
-9. Seleccione el **método de inspección de contenido**. El DLP integrado permite filtrar archivos por su contenido. Para examinar archivos en busca de contenido, seleccione **DLP integrado**. Una vez habilitada la inspección de contenido, puede optar entre usar expresiones preestablecidas o buscar otras expresiones personalizadas, como una subcadena o una [expresión regular](working-with-the-regex-engine.md) propia.  <br></br>
+9. Seleccione el **método de inspección de contenido**. Puede seleccionar un [**DLP integrado**](content-inspection-built-in.md) o uno de los [**Servicios de clasificación de datos**](content-inspection.md). Se recomienda usar los **Servicios de clasificación de datos**.
 
-   Además, puede especificar una expresión regular para excluir un archivo de los resultados. Esta opción es muy útil si tiene un estándar de palabra clave de clasificación interna que quiera excluir de la directiva. <br></br> También puede decidir cuál es el número mínimo de infracciones de contenido que debe producirse antes de que el archivo se considere una infracción. Por ejemplo, puede elegir 10 si quiere recibir alertas sobre archivos con al menos 10 números de tarjeta de crédito en su contenido.  <br></br>
-   Cuando el contenido se compare con la expresión seleccionada, el texto de la infracción se reemplazará por caracteres "X". De manera predeterminada, las infracciones se enmascaran y se muestran en su contexto mostrando 100 caracteres antes y después de la infracción. Los números del contexto de la expresión se reemplazan por caracteres "#" y nunca se almacenan en Cloud App Security. Puede seleccionar la opción de **quitar la máscara de los últimos cuatro caracteres de una infracción** para mostrarlos. Es necesario establecer qué tipos de datos buscará la expresión regular: contenido, metadatos o nombre de archivo. De forma predeterminada, buscará el contenido y los metadatos. Seleccione al menos un tipo de datos para buscar o la expresión regular no funcionará y no se podrá crear la directiva. 
-  
+Una vez habilitada la inspección de contenido, puede optar entre usar expresiones preestablecidas o buscar otras expresiones personalizadas.  <br></br>
+
+   Además, puede especificar una expresión regular para excluir un archivo de los resultados. Esta opción es muy útil si tiene un estándar de palabra clave de clasificación interna que quiera excluir de la directiva. <br></br> 
+   También puede decidir cuál es el número mínimo de infracciones de contenido que debe producirse antes de que el archivo se considere una infracción. Por ejemplo, puede elegir 10 si quiere recibir alertas sobre archivos con al menos 10 números de tarjeta de crédito en su contenido.  <br></br>
+   Cuando el contenido se compare con la expresión seleccionada, el texto de la infracción se reemplazará por caracteres "X". De manera predeterminada, las infracciones se enmascaran y se muestran en su contexto mostrando 100 caracteres antes y después de la infracción. Los números del contexto de la expresión se reemplazan por caracteres "#" y nunca se almacenan en Cloud App Security. Puede seleccionar la opción de **quitar la máscara de los últimos cuatro caracteres de una infracción** para mostrarlos. Es necesario establecer qué tipos de datos buscará la expresión regular: contenido, metadatos o nombre de archivo. De forma predeterminada, buscará el contenido y los metadatos. 
+   
 10. Elija las acciones de **gobierno** que quiera que Cloud App Security lleve a cabo cuando detecte una coincidencia.  
   
 11. Una vez creada la directiva, puede verla en la pestaña **Directiva de archivo**. Una directiva siempre se puede modificar. Del mismo modo, se pueden calibrar sus filtros o cambiar las acciones automatizadas. La directiva se habilita automáticamente tras crearse e iniciará inmediatamente el análisis de los archivos en la nube.  Tenga especial cuidado al definir acciones de gobierno, ya que podrían provocar la pérdida irreversible de permisos de acceso a los archivos. Se recomienda restringir los filtros para representar exactamente los archivos en los que quiere actuar por medio de varios campos de búsqueda. Cuanto más restringidos sean los filtros, mejor. Para obtener orientación, puede usar el botón **Editar y obtener vista previa de resultados** de la sección Filtros.  

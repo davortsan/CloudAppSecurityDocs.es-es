@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/3/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6c0e3ac17aa5bc8d3cb5d7b32d4556c3d5cd0a33
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 5c207fb951a1bd8120da694e07232c3851486b9c
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53176806"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059373"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtención de análisis de comportamiento y detección de anomalías instantáneos
 
@@ -71,6 +71,8 @@ Están disponibles las directivas de detección de anomalías siguientes:
 - Esta detección le permite identificar cuando un empleado que ya no trabaja en la compañía sigue realizando acciones en las aplicaciones SaaS. Dado que los datos muestran que el mayor riesgo de una amenaza interna procede de empleados que se fueron en malos términos, es importante estar atento a la actividad en las cuentas de empleados dados de baja. A veces, cuando los empleados dejan una compañía, sus cuentas se desaprovisionan de las aplicaciones corporativas, pero en muchos casos sigue conservando el acceso a determinados recursos corporativos. Esto es incluso más importante si se tienen en cuenta las cuentas con privilegios, ya que el daño potencial que un ex administrador puede infligir es intrínsecamente mayor.
 Esta detección aprovecha las ventajas de capacidad de Cloud App Security para supervisar el comportamiento de usuario entre las aplicaciones, lo que permite la identificación de la actividad normal del usuario, el hecho de que la cuenta se ha cerrado y la actividad real en otras aplicaciones. Por ejemplo, un empleado cuya cuenta de Azure AD se ha cerrado, pero aún tiene acceso a la infraestructura AWS corporativa, tiene el potencial de causar daños a gran escala.  
 
+La detección busca los usuarios cuya cuenta de Azure AD ha quedado suspendida, pero siguen realizando actividades en otras plataformas, como AWS o Salesforce. Esto es especialmente pertinente para los usuarios que usen otra cuenta (distinta al inicio de sesión único principal) para administrar los recursos, ya que a menudo estas cuentas no se suspenden cuando el usuario deja la empresa.
+
 **Actividad desde direcciones IP sospechosas**
 - Se identifica la actividad de los usuarios desde una dirección IP considerada como de riesgo en Microsoft Threat Intelligence. Estas direcciones IP están implicadas en actividades malintencionadas como Botnet C&C y pueden indicar que la cuenta está en peligro. Esta detección usa un algoritmo de aprendizaje automático que reduce los falsos positivos, como las direcciones IP no etiquetadas que los usuarios de la organización usan habitualmente.
 
@@ -114,7 +116,14 @@ Puede habilitar acciones de corrección automatizadas en las alertas generadas p
 2. En la ventana **Editar directiva de detección de anomalías** que se abre, en **Gobierno**, establezca las acciones de corrección que quiera para cada aplicación conectada o para todas las aplicaciones. 
 3. Haga clic en **Actualizar**.
 
- 
+## <a name="tune-anomaly-detection-policies"></a>Ajuste de las directivas de detección de anomalías
+
+Para influir en el motor de detección de anomalías con el fin de suprimir o exponer alertas de acuerdo con sus preferencias, haga lo siguiente:
+   - En la directiva correspondiente a un viaje imposible, puede establecer el control deslizante del nivel de confidencialidad para determinar el nivel de comportamiento anómalo necesario para que se desencadene una alerta. Por ejemplo, si lo establece en un nivel bajo, se suprimirán las alertas correspondientes a un viaje imposible desde las ubicaciones habituales de un usuario; si lo establece en un nivel alto, dichas alertas quedarán expuestas. 
+
+   - También puede configurar si las alertas de actividad desde un país no habitual, direcciones IP anónimas, direcciones IP sospechosas y viaje imposible deben analizar los inicios de sesión correctos y los erróneos, o bien solo los correctos. 
+   
+   
 ## <a name="scope-anomaly-detection-policies"></a>Ámbito de directivas de detección de anomalías
 
 Se puede establecer un ámbito para cada directiva de detección de anomalías por separado para que se aplique solo a los usuarios y grupos que desea incluir y excluir en la directiva.

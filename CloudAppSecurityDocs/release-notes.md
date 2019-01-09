@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/6/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e946e341d901be2f3facfd5a0d6118cfc7770a22
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: b7ac2458af007fa556cf7212281154174fe2276e
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177428"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059501"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
@@ -27,6 +27,29 @@ ms.locfileid: "53177428"
 
 Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security.
 
+
+## <a name="cloud-app-security-release-139-140"></a>Notas de la versión 139, 140 de Cloud App Security
+
+Fecha de publicación: 6 de enero de 2019
+
+- **Cambio en la detección de los archivos**<br>
+Los archivos compartidos con todos los usuarios de SharePoint y OneDrive ahora se consideran **internos** [debido a los cambios realizados en SharePoint y OneDrive](https://support.microsoft.com/help/4089534/how-to-grant-the-everyone-claim-to-external-users-in-office-365). Así pues, si se detecta un archivo que se comparte con todos los usuarios, ahora se tratará como interno. Esto afecta al modo de controlar el archivo mediante el uso de directivas y su visualización en la página de archivos.
+
+- **Cambio en la supervisión de los archivos**<br>
+El comportamiento predeterminado de supervisión de los archivos ha cambiado para los clientes nuevos e inactivos. Ahora deberá activar la supervisión de los archivos para habilitar la función, a través de **Configuración** > **Archivos**. Los clientes activos existentes no se verán afectados por este cambio. 
+
+- **Ajuste avanzado para directivas de detección de anomalías**<br>
+Ahora puede influir en el motor de detección de anomalías con el fin de suprimir o exponer alertas de acuerdo con sus preferencias. 
+   - En la directiva correspondiente a un viaje imposible, puede establecer el control deslizante del nivel de confidencialidad para determinar el nivel de comportamiento anómalo necesario para que se desencadene una alerta. 
+   - También puede configurar si las alertas de actividad desde un país no habitual, direcciones IP anónimas, direcciones IP sospechosas y viaje imposible deben analizar los inicios de sesión correctos y los erróneos, o bien solo los correctos. 
+
+-   **Compatibilidad con varias cadenas de confianza** El Control de aplicaciones de acceso condicional ahora permite agregar y usar varios certificados raíz o intermedios de confianza como forma de administración de dispositivos.
+
+- **Nuevo rol de Cloud Discovery** (implementación gradual) Cloud App Security ahora incluye un nuevo rol de administrador para los usuarios de Cloud Discovery. Este rol se puede usar para limitar el acceso de un usuario administrador a solo la configuración y los datos de Cloud Discovery en el portal de Cloud App Security.
+
+- **Compatibilidad con las etiquetas unificadas de Microsoft Information Protection** Cloud App Security ahora admite las etiquetas unificadas de Microsoft Information Protection. En el caso de los clientes que ya [hayan migrado sus etiquetas de clasificación del Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels), Cloud App Security las identificará y trabajará con ellas, tal como se describe en [Integración de Azure Information Protection](azip-integration.md). 
+
+**Compatibilidad con el etiquetado de archivos PDF** En el caso de los clientes que usen las etiquetas unificadas, Cloud App Security ahora admite el etiquetado automático para archivos PDF.
 
 ## <a name="cloud-app-security-release-138"></a>Notas de la versión 138 de Cloud App Security
 

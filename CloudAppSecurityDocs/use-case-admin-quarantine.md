@@ -1,12 +1,12 @@
 ---
 title: Protección de archivos con la cuarentena de administrador de Cloud App Security
-description: En este artículo se describe cómo usar la cuarentena de administrador para controlar las vulneraciones de datos.
+description: En este tutorial se describe cómo usar la cuarentena de administrador para controlar las infracciones de datos.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2018
-ms.topic: conceptual
+ms.date: 1/6/2019
+ms.topic: tutorial
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,24 +14,33 @@ ms.assetid: 3fc04cfb-ad4c-4ac2-980a-ee9f4c740d88
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 82398a5fad8f2d5b3da67a7932b9df6857dd9355
-ms.sourcegitcommit: 420a0119513e3f4a8651f6a9e66c56fe442a31c0
+ms.openlocfilehash: 825645f44ff2d7dd0d6ba289608f10a23ff62dea
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53347254"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059352"
 ---
-# <a name="protecting-your-files-with-admin-quarantine"></a>Proteger los archivos con la cuarentena de administrador
+# <a name="tutorial-protect-files-with-admin-quarantine"></a>Tutorial: protección de los archivos con la cuarentena de administrador
 
 *Se aplica a: Microsoft Cloud App Security*
 
-Las [directivas de archivo](data-protection-policies.md) son una excelente herramienta para buscar amenazas en las directivas de protección de la información. Por ejemplo, cree directivas de archivo que busquen los lugares en los que los usuarios almacenan información confidencial, números de tarjetas de crédito y archivos ICAP de terceros en la nube. Con Microsoft Cloud App Security, no solo puede detectar estos archivos no deseados almacenados en la nube que generan vulnerabilidad, sino que puede emprender acciones inmediatas para detenerlos de inmediato y bloquear los archivos que supongan una amenaza. Mediante la **cuarentena de administrador**, puede proteger los archivos en la nube y solucionar los problemas, así como evitar que se produzcan fugas en el futuro.
+Las [directivas de archivo](data-protection-policies.md) son una excelente herramienta para buscar amenazas en las directivas de protección de la información. Por ejemplo, cree directivas de archivo que busquen los lugares en los que los usuarios almacenan información confidencial, números de tarjetas de crédito y archivos ICAP de terceros en la nube. 
+
+En este tutorial obtendrá información sobre cómo usar Microsoft Cloud App Security para detectar archivos no deseados almacenados en la nube que le hagan vulnerable. También aprenderá a emprender acciones inmediatas para detenerlos y bloquear aquellos que supongan una amenaza mediante la **cuarentena de administrador**. De este modo, podrá proteger los archivos en la nube, solucionar los problemas y evitar que se produzcan vulneraciones en el futuro.
+
+
+
+> [!div class="checklist"]
+> * Funcionamiento de la cuarentena 
+> * Configuración de la cuarentena de administrador
+
+
+## <a name="understand-how-quarantine-works"></a>Funcionamiento de la cuarentena 
 
 >[!NOTE] 
 > - Se trata de una característica en vista previa.
 > - Para obtener una lista de las aplicaciones que admiten la cuarentena de administrador, vea la lista de [acciones de gobierno](governance-actions.md).
- 
-## <a name="how-quarantine-works"></a>Cómo funciona la cuarentena 
 
 1. Cuando un archivo coincida con una directiva, la opción de **cuarentena de administrador** estará disponible para el archivo.
 

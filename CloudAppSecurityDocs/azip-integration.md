@@ -14,18 +14,22 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 590027f7769637188fc77aad882cedbc41158012
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: bbe1bd310f7c661ba631f088a474baf536fb8d32
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177341"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059455"
 ---
 # <a name="azure-information-protection-integration"></a>Integración de Azure Information Protection
 
 *Se aplica a: Microsoft Cloud App Security*
 
 Microsoft Cloud App Security le permite aplicar etiquetas de clasificación de Azure Information Protection automáticamente, con o sin protección, a los archivos como acción de gobierno de directiva de archivo. También puede investigar archivos al filtrar la etiqueta de clasificación aplicada en el portal de Cloud App Security. El uso de clasificaciones permite mayor visibilidad y control de la información confidencial en la nube. La integración de Azure Information Protection con Cloud App Security es tan fácil como seleccionar una sola casilla. 
+
+> [!NOTE]
+> Si ya [ha migrado las etiquetas de clasificación del Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels), este artículo también le resultará pertinente, ya que abarca las etiquetas unificadas de Microsoft Information Protection. Si no ha migrado las etiquetas de clasificación existentes y empieza a crear nuevas en el Centro de seguridad y cumplimiento de Office 365, Cloud App Security solo utilizará las preexistentes configuradas en el portal de Azure Information Protection.
+
 
 Al integrar Azure Information Protection en Cloud App Security, puede aprovechar todas las funciones de ambos servicios y proteger los archivos en la nube, entre lo que se incluye lo siguiente:
 - La capacidad de aplicar etiquetas de clasificación como una acción de gobierno a archivos que coincidan con las directivas.

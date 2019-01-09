@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 44cea3dcb50132a79db54d6b741ade1784014e09
-ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
+ms.openlocfilehash: 37eed2eb11dfd3f77a1cf26281af6d867c9e9c4d
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/16/2018
-ms.locfileid: "53450654"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059465"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker en Windows local
 
@@ -146,7 +146,7 @@ También puede ir al **registro de gobierno** y comprobar que los registros se c
 
 Si tiene problemas durante la implementación, vea  [Solución de problemas de Cloud Discovery](troubleshooting-cloud-discovery.md).
 
-### <a name="optional---create-custom-continuous-reports"></a>Opcional: crear informes continuos personalizados
+### Opcional: cree informes continuos personalizados<a name="continuous-reports">.</a>
 
 Compruebe que se cargan los registros de Cloud App Security y que se generan los informes. Después de la comprobación, cree informes personalizados. Puede crear informes de detección personalizados en función de los grupos de usuarios de Azure Active Directory. Por ejemplo, si quiere ver el uso de la nube por parte del departamento de marketing, importe el grupo de marketing mediante la característica para importar grupos de usuarios. Después, cree un informe personalizado para este grupo. También puede personalizar un informe en función de la etiqueta de dirección IP o los intervalos de direcciones IP.
 

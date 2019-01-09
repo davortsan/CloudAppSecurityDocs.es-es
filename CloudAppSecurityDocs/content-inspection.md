@@ -5,76 +5,46 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/6/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
+ms.assetid: c67a387f-8c88-4018-9e80-0fb1455cf768
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 10af8ae009e425f2795818dd2d9089c76814685b
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 7af4c6f3cc82accdd231f4d02403948698dd67ee
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177173"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059266"
 ---
-# <a name="built-in-content-inspection"></a>Inspección de contenido integrada
+# <a name="content-inspection"></a>Inspección de contenido
 
 *Se aplica a: Microsoft Cloud App Security*
 
-En este artículo se describe el proceso que Microsoft Cloud App Security sigue al ejecutar la inspección de contenido de DLP integrada en los datos en la nube. 
+
+Si habilita la inspección de contenido, puede optar entre usar expresiones preestablecidas o buscar otras expresiones personalizadas.  
+
+Puede especificar una expresión regular para excluir un archivo de los resultados. Esta opción es muy útil si tiene un estándar de palabra clave de clasificación interna que quiera excluir de la directiva.  
+   
+También puede decidir cuál es el número mínimo de infracciones de contenido que debe producirse antes de que el archivo se considere una infracción. Por ejemplo, puede elegir 10 si quiere recibir alertas sobre archivos con al menos 10 números de tarjeta de crédito en su contenido.  
+
+Cuando el contenido se compare con la expresión seleccionada, el texto de la infracción se reemplazará por caracteres "X". De manera predeterminada, las infracciones se enmascaran y se muestran en su contexto mostrando 100 caracteres antes y después de la infracción. Los números del contexto de la expresión se reemplazan por caracteres "#" y nunca se almacenan en Cloud App Security. Puede seleccionar la opción de **quitar la máscara de los últimos cuatro caracteres de una infracción** para mostrarlos. Es necesario establecer qué tipos de datos buscará la expresión regular: contenido, metadatos o nombre de archivo. De forma predeterminada, buscará el contenido y los metadatos. 
 
 
-La inspección de contenido de Cloud App Security funciona de la manera siguiente:
-1. Primero, Cloud App Security realiza un examen prácticamente en tiempo real (NRT) de las unidades y los eventos que se identifican como nuevos o modificados.
-2. Después de completar un examen, Cloud App Security realiza un examen continuo de todos los archivos pertinentes de todas las unidades.  
+## <a name="content-inspection-for-protected-files"></a>Inspección de contenido para archivos protegidos
 
-Tanto los archivos del examen en tiempo real como los del examen continuo se agregan a la cola para su inspección. El orden de los archivos colocados en la cola para su examen se establece por actividad en los archivos y en el examen de las unidades. Los archivos se examinan únicamente si los metadatos de archivo muestran que es un tipo MIME admitido. Tenga en cuenta que este examen se aplica a archivos pertinentes para el examen de datos (documentos, imágenes, presentaciones, hojas de cálculo, texto y archivos de almacenamiento o zip).  
+Cloud App Security permite a los administradores conceder permiso a Cloud App Security para descifrar archivos cifrados y examinar su contenido en busca de infracciones.
 
-Después de examinar un archivo, ocurren las siguientes acciones:
+Para conceder los permisos necesarios a Cloud App Security, haga lo siguiente:
 
-1. Cloud App Security aplica todas las directivas personalizadas relacionadas con los metadatos y no con el propio contenido. Por ejemplo, una directiva que avisa cuando los archivos tienen un tamaño superior a 20 MB o una directiva que avisa cuando se guardan archivos docx en OneDrive. 
-
-2. Si hay una directiva que necesita la inspección de contenido y el archivo cumple los requisitos para la inspección de contenido, el contenido se pone en cola para su inspección. La longitud de la cola depende del tamaño del inquilino y del número de archivos que deban examinarse. 
-
-3. En este punto, puede ver el estado de la inspección de contenido. Para ello, vaya a **Investigar** > **Archivos** y haga clic en un archivo. En el cajón de archivos que se abre con los detalles del archivo en cuestión, la opción **Estado de inspección de contenido** mostrará los estados **Completado**, **Pendiente** o **No disponible**, en caso de que el tipo de archivo no se admita, o bien un mensaje de error. Para obtener más información sobre los mensajes de error relacionados con la inspección de contenido, consulte [Solucionar problemas relacionados con la inspección de contenido](troubleshooting-content-inspection.md).
-
-> [!NOTE]
-> Si observa un guión en el estado del examen, significará que el archivo no está en la cola de examen. Consulte las [directivas de archivos](data-protection-policies.md) para obtener más información sobre cómo establecer directivas de inspección de contenido.
-
-Las directivas de inspección de contenido integradas pueden buscar los siguientes elementos:
-
-- Direcciones de correo electrónico 
-- Números de tarjeta de crédito 
-  - Todas las compañías de tarjetas de crédito (Visa, MasterCard, American Express, Diners Club, Discover, JCB, Dankort, UnionPay, etc.) 
-  - Delimitadores de espacio, punto o guión
-  - Este examen también incluye la validación Luhn.
-- Códigos SWIFT
-- Números de pasaportes internacionales
-- Números de permisos de conducir
-- Fechas
-- Números de tránsito de enrutamiento bancario de ABA
-- Códigos de identificación bancarios
-- Números de reclamación de seguros de salud de HICN de la HIPAA
-- Números de identificación de proveedores nacionales de NPI de la HIPPA
-- Nombres completos y fechas de nacimiento de PHI
-- Documentos de identificación de California o números de permisos de conducir
-- Números de permisos de conducir
-- Direcciones particulares
-- Tarjetas de pasaporte
-- Números de la seguridad social
-
-## <a name="supported-languages"></a>Idiomas admitidos
-
-El motor de inspección de contenido de Cloud App Security:
--   Admite todos los caracteres Unicode
--   Contempla más de 1000 tipos de archivo
--   Se admiten varios idiomas, especialmente los archivos que utilizan juegos de caracteres Unicode. Asegúrese de definir las directivas para tener en cuenta esos lenguajes. Por ejemplo, si está buscando palabras clave, debe colocar las palabras clave en los idiomas que se vayan a usar.
--   En los tipos de archivo basados en texto que usan codificación distinta de Unicode, como por ejemplo, Chino GB2312, la comparación con palabras clave en chino Unicode no funcionará según lo esperado.
--   Para los tipos de archivo que se basan en bibliotecas de terceros, las cadenas y palabras coincidentes no siempre funcionen como se esperaba. Esto es muy habitual en archivos (como los tipos de archivo binarios) en los que la inspección de contenido se basa en bibliotecas de terceros que devuelven cadenas de Java para conjuntos de caracteres e idioma.
+1.  Vaya a **Configuración** y, a continuación, a **Azure Information Protection**.
+2.  Habilite **Inspeccionar archivos protegidos**.
+3. Siga las indicaciones para permitir los permisos requeridos en Azure Active Directory.
+4. Puede ajustar la configuración según la directiva de archivo para determinar qué directivas examinarán los archivos protegidos.
 
 
 
