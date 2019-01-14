@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: ccf52abaad217c257bbab14b886f6af120721c8c
-ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
+ms.openlocfilehash: 3e31313739befa39b11853df971dd0c490884e07
+ms.sourcegitcommit: 2a25d1af0560243d7f926c87bf56230bdf336ba9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54059580"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54142291"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -93,8 +93,9 @@ Eche un vistazo a la página de alertas y use el filtro de **Tipo de directiva**
 
 ### <a name="phase-4-control-sanctioned-apps"></a>Fase 4: control de las aplicaciones autorizadas
 
-    1. Para habilitar el control de aplicaciones a través de una API, [conecte las aplicaciones a través de una API](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).(enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) para su supervisión continua.
-    2. Proteja las aplicaciones con el [Control de aplicaciones de acceso condicional](proxy-intro-aad.md).
+1. Para habilitar el control de aplicaciones a través de una API, [conecte las aplicaciones a través de una API](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).(enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) para su supervisión continua.
+
+2. Proteja las aplicaciones con el [Control de aplicaciones de acceso condicional](proxy-intro-aad.md).
 
 
 La naturaleza de las aplicaciones en la nube implica que se actualizan diariamente y aparecen otras nuevas continuamente. Por este motivo, los empleados utilizan constantemente nuevas aplicaciones y es importante mantener un seguimiento, revisar y actualizar las directivas, comprobar qué aplicaciones usan los usuarios y analizar los patrones de uso y comportamiento. Siempre puede ir al panel de Cloud Discovery, consultar las nuevas aplicaciones que se usan y seguir las instrucciones de este artículo para asegurarse de que tanto su organización como los datos estén protegidos.
