@@ -1,12 +1,12 @@
 ---
 title: Implementar Cloud App Security
-description: En este artículo se describe el proceso para preparar Cloud App Security, de forma que tenga información y control sobre el uso de las aplicaciones en la nube.
+description: Este inicio rápido describe el proceso para preparar Cloud App Security, de forma que tenga información y control sobre el uso de las aplicaciones en la nube.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
-ms.topic: conceptual
+ms.date: 1/7/2019
+ms.topic: quickstart
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,18 +14,18 @@ ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 240a2831ca31945cff4b957c21096d2ed0a64b42
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: e30c4cf8b582bb0471ac4a90f39e7a5649a74ed0
+ms.sourcegitcommit: 076705cc9684fe5fb35c33a51e3319ba2ccfd24e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177256"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060231"
 ---
-# <a name="deploy-microsoft-cloud-app-security"></a>Implementación de Microsoft Cloud App Security
+#  <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Inicio rápido: Introducción a Microsoft Cloud App Security
 
 *Se aplica a: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security le puede ayudar a sacar partido de las ventajas de las aplicaciones en la nube a la vez que mantiene el control de los recursos corporativos. Funciona mejorando la visibilidad de la actividad en la nube y ayuda a aumentar la protección de los datos corporativos. En este artículo, le indicaremos los pasos que debe llevar a cabo para configurar y trabajar con Microsoft Cloud App Security.  
+Este inicio rápido proporciona los pasos para empezar a trabajar rápidamente con Cloud App Security. Microsoft Cloud App Security le puede ayudar a sacar partido de las ventajas de las aplicaciones en la nube a la vez que mantiene el control de los recursos corporativos. Funciona mejorando la visibilidad de la actividad en la nube y ayuda a aumentar la protección de los datos corporativos. En este artículo, le indicaremos los pasos que debe llevar a cabo para configurar y trabajar con Microsoft Cloud App Security.  
 
 Su organización debe tener una licencia para utilizar Cloud App Security. Para obtener más información, consulte la sección [Cómo comprar Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) en la página principal de Cloud App Security.  
 
@@ -53,11 +53,7 @@ También puede acceder al portal a través del **Centro de administración de Of
 
 
 
-## <a name="get-started-quickly-with-cloud-app-security"></a>Inicio rápido de Cloud App Security  
-
- 
-
-### <a name="step-1-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>Paso 1. [Establezca la visibilidad, la protección y las acciones de gobierno instantáneas para las aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+## <a name="step-1-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>Paso 1. [Establezca la visibilidad, la protección y las acciones de gobierno instantáneas para las aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 Tarea necesaria: Conectar aplicaciones
 
 1. En el engranaje de configuración, seleccione **Conectores de aplicaciones**.
@@ -68,7 +64,7 @@ Tarea necesaria: Conectar aplicaciones
 Después de conectar una aplicación, puede obtener una mayor visión para que pueda investigar actividades, archivos y cuentas para las aplicaciones en su entorno de la nube.
 
 
-### <a name="step-2-control-cloud-apps-with-policiescontrol-cloud-apps-with-policiesmd"></a>Paso 2. [Controle las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).
+## <a name="step-2-control-cloud-apps-with-policiescontrol-cloud-apps-with-policiesmd"></a>Paso 2. [Controle las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).
 Tarea necesaria: Crear las directivas
 
 **Para crear directivas**
@@ -83,7 +79,7 @@ Tarea necesaria: Crear las directivas
 Puede utilizar directivas para ayudarle a supervisar tendencias, ver amenazas de seguridad y generar alertas e informes personalizados. Con las directivas se pueden crear acciones de gobierno y establecer controles de uso compartido de archivos y de prevención de pérdida de datos.
 
 
-### <a name="step-3-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>Paso 3. [Configure Cloud Discovery](set-up-cloud-discovery.md).
+## <a name="step-3-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>Paso 3. [Configure Cloud Discovery](set-up-cloud-discovery.md).
 
 Tarea necesaria: Habilitar Cloud App Security para ver el uso de la aplicación en la nube
 
@@ -104,7 +100,7 @@ Tarea necesaria: Habilitar Cloud App Security para ver el uso de la aplicación 
 Tener visibilidad de la TI en la sombra de la organización es algo esencial.
 Después de analizar los registros, podrá detectar fácilmente qué aplicaciones en la nube se usan, qué usuarios lo hacen y en qué dispositivos.
 
-### <a name="step-4-personalize-your-experiencemail-settingsmd"></a>Paso 4. [Personalice la experiencia](mail-settings.md).
+## <a name="step-4-personalize-your-experiencemail-settingsmd"></a>Paso 4. [Personalice la experiencia](mail-settings.md).
 Tarea recomendada: Agregar detalles de la organización
 
 **Para especificar la configuración de correo electrónico**
@@ -132,7 +128,7 @@ Ahora las puntuaciones de riesgo otorgadas a las aplicaciones detectadas están 
 Algunas características funcionan mejor si se personalizan de acuerdo a las necesidades. Ofrezca una mejor experiencia a los usuarios con sus propias plantillas de correo electrónico. Decida qué notificaciones recibe y personalice las métricas de puntuación de riesgo de modo que se ajusten a las preferencias de la organización.
 
 
-### <a name="step-5-organize-the-data-according-to-your-needsip-tagsmd"></a>Paso 5. [Organice los datos de acuerdo a las necesidades](ip-tags.md).
+## <a name="step-5-organize-the-data-according-to-your-needsip-tagsmd"></a>Paso 5. [Organice los datos de acuerdo a las necesidades](ip-tags.md).
 Tarea recomendada: Configurar valores de configuración importantes
 
 **Para crear etiquetas de dirección IP**

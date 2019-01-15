@@ -1,12 +1,12 @@
 ---
 title: Trabajo con aplicaciones detectadas en Cloud App Security
-description: En este artículo se describe el proceso de identificación y corrección de aplicaciones de riesgo de Cloud Discovery en Cloud App Security.
+description: Este inicio rápido describe el proceso de identificación y corrección de aplicaciones de riesgo de Cloud Discovery en Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
-ms.topic: conceptual
+ms.date: 1/10/2019
+ms.topic: quickstart
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,18 +14,18 @@ ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a70dc1796304a32606e54d4e9e93f6cf3169c6a6
-ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
+ms.openlocfilehash: 589f0d11d7fac47a4080926f6aa4f654c17deb34
+ms.sourcegitcommit: 076705cc9684fe5fb35c33a51e3319ba2ccfd24e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/16/2018
-ms.locfileid: "53450600"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060180"
 ---
-# <a name="working-with-discovered-apps"></a>Trabajar con aplicaciones detectadas
+# <a name="quickstart-work-with-discovered-apps"></a>Inicio rápido: Trabajo con aplicaciones detectadas
 
 *Se aplica a: Microsoft Cloud App Security*
 
-El panel de Cloud Discovery está diseñado para proporcionar más información sobre cómo se usan las aplicaciones en la nube en la organización. Proporciona una visión general de un vistazo sobre los tipos de aplicaciones que se usan, las alertas abiertas y los niveles de riesgo de las aplicaciones de la organización. También muestra quiénes son los usuarios que más usan las aplicaciones y proporciona un mapa de ubicación de la sede central de la aplicación. El panel de Cloud Discovery tiene muchas opciones para filtrar los datos. Con el filtrado se pueden generar vistas específicas en función de lo que más le interese y gráficos fáciles de entender para que se haga una idea general de un vistazo.
+Este inicio rápido proporciona información introductoria sobre la supervisión y la administración de las aplicaciones detectadas. El panel de Cloud Discovery está diseñado para proporcionar más información sobre cómo se usan las aplicaciones en la nube en la organización. Proporciona una visión general de un vistazo sobre los tipos de aplicaciones que se usan, las alertas abiertas y los niveles de riesgo de las aplicaciones de la organización. También muestra quiénes son los usuarios que más usan las aplicaciones y proporciona un mapa de ubicación de la sede central de la aplicación. El panel de Cloud Discovery tiene muchas opciones para filtrar los datos. Con el filtrado se pueden generar vistas específicas en función de lo que más le interese y gráficos fáciles de entender para que se haga una idea general de un vistazo.
 
 ![panel de Cloud Discovery](./media/cloud-discovery-dashboard.png)
 
