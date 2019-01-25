@@ -35,6 +35,7 @@
 ## [Configurar Cloud Discovery](set-up-cloud-discovery.md)
 ### [Integración con ATP de Windows Defender](wdatp-integration.md)
 ### [Integración con Zscaler](zscaler-integration.md)
+### [Integración con Microsoft Flow](flow-integration.md)
 ### [Crear informes de instantáneas de Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 ### [Configurar la carga de registros automática para informes continuos](discovery-docker.md)
 #### [Docker en Windows](discovery-docker-windows.md)
@@ -91,7 +92,6 @@
 ### [Integración de Azure Information Protection](azip-integration.md)
 ### [Integración de SIEM](siem.md)
 ### [Integración de DLP externa](icap-stunnel.md)
-### [Integración con Microsoft Flow](flow-integration.md)
 ### [Tokens de API](api-tokens.md)
 # Referencia
 ## [Solución de problemas relativos al estado del servicio](troubleshooting-status.md)
