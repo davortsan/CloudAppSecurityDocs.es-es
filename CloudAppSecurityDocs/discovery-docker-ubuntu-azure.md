@@ -14,12 +14,12 @@ ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a6064660a869f30cf38d4ff3982fee8a7e2b0c3e
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 3b274bd8515fc893fb92af0c96f34d99d68d0bdc
+ms.sourcegitcommit: 900fce2575c39acda71ba42589f75d4c935fecb3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177358"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54460028"
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Configuración en Ubuntu
 
@@ -163,13 +163,13 @@ Configure los firewalls y los servidores proxy de la red de modo que exporten pe
 
 ### <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Paso 4: Comprobación de la implementación correcta en el portal Cloud App Security
 
-Compruebe el estado del recopilador en la tabla  **Recopilador de registros**  y asegúrese de que es  **Conectado**. Si es  **Creado**, es posible que la conexión y el análisis del recopilador de registros no se hayan completado.
+Compruebe el estado del recopilador en la tabla **Recopilador de registros** y asegúrese de que el estado es **Conectado**. Si es **Creado**, es posible que la conexión y el análisis del recopilador de registros no se hayan completado.
 
  ![ubuntu9](./media/ubuntu9.png)
 
 También puede ir al **registro de gobierno** y comprobar que los registros se carguen de manera periódica en el portal.
 
-Si tiene problemas durante la implementación, vea  [Solución de problemas de Cloud Discovery](troubleshooting-cloud-discovery.md).
+Si tiene problemas durante la implementación, consulte [Solución de problemas de Cloud Discovery](troubleshooting-cloud-discovery.md).
 
 ### <a name="optional---create-custom-continuous-reports"></a>Opcional: crear informes continuos personalizados
 

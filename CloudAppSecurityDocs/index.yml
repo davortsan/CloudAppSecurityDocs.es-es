@@ -1,0 +1,71 @@
+### YamlMime:YamlDocument
+ms.openlocfilehash: 380111c9dfac45ef74a796071231230f42f5c853
+ms.sourcegitcommit: f9f50480f5353b395e1c6b0dd8ac6b0c7243aa77
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55071213"
+documentType: LandingData
+title: Microsoft Cloud App Security
+metadata:
+  title: Microsoft Cloud App Security
+  description: Proporcione seguridad de nivel empresarial para sus aplicaciones en la nube con Microsoft Cloud App Security, que le ofrece una mayor visibilidad, controles exhaustivos y protección mejorada contra problemas de seguridad en la nube.
+  author: msmbaldwin
+  manager: mbaldwin
+  ms.prod: cloud-app-security
+  ms.tgt_pltfrm: na
+  ms.devlang: na
+  ms.topic: landing-page
+  ms.date: 01/22/2019
+  ms.author: mbaldwin
+  layout: LandingPage
+abstract:
+  description: Microsoft Cloud App Security (MCAS) proporciona seguridad de nivel empresarial para sus aplicaciones en la nube, llevando la seguridad de sus sistemas locales a las aplicaciones en la nube para disfrutar de mayor visibilidad, controles exhaustivos y protección mejorada contra problemas de seguridad en la nube.
+sections:
+- title: Más información
+  items:
+  - type: list
+    style: cards
+    className: cardsFTitle
+    items:
+    - title: Obtenga más información sobre Microsoft Cloud App Security.
+      href: what-is-cloud-app-security.md
+      image:
+        src: https://docs.microsoft.com/media/common/i_learn-about.svg
+        href: what-is-cloud-app-security.md
+    - title: Privacidad y seguridad de los datos de MCAS
+      href: cas-compliance-trust.md
+      image:
+        src: https://docs.microsoft.com/media/common/i_architecture.svg
+        href: cas-compliance-trust.md
+    - title: Novedades de MCAS
+      href: release-notes.md
+      image:
+        src: https://docs.microsoft.com/media/common/i_whats-new.svg
+        href: release-notes.md
+- title: Inicios rápidos en 5 minutos
+  items:
+  - type: paragraph
+    text: Conozca los aspectos básicos de Microsoft Cloud App Security.
+  - type: list
+    style: icon48
+    items:
+    - image:
+        src: https://docs.microsoft.com/media/common/i_design.svg
+      text: Introducción a Microsoft Cloud App Security
+      href: getting-started-with-cloud-app-security.md
+    - image:
+        src: https://docs.microsoft.com/media/common/i_event.svg
+      text: Trabajo con aplicaciones detectadas
+      href: discovered-apps.md
+- title: Tutoriales paso a paso
+  items:
+  - type: paragraph
+    text: Comprenda las alertas y realice investigaciones con estos tutoriales.
+  - type: list
+    style: unordered
+    items:
+    - html: <a href="/cloud-app-security/tutorial-shadow-it">Detección y administración de shadow IT en la red</a>
+    - html: <a href="/cloud-app-security/use-case-proxy-block-session-aad">Bloqueo de las descargas de información confidencial</a>
+    - html: <a href="/cloud-app-security/use-case-admin-quarantine">Protección de los archivos con la cuarentena de administrador</a>
+    - html: <a href="/cloud-app-security/use-case-information-protection">Aplicar etiquetas de clasificación de Azure Information Protection</a>
