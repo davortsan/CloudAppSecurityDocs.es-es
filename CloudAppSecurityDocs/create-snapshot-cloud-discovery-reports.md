@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f92e8707c742ae36b5e9e018b3a1ba707f206046
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 51df3ca47ab92da437772ee2d901be38699b5aea
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177467"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086318"
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Crear informes de instantáneas de Cloud Discovery
 
@@ -96,71 +96,6 @@ Para generar correctamente un informe de Cloud Discovery, los registros de tráf
 4. El archivo de registro es válido e incluye información sobre el tráfico saliente.
 
 
-
-## Firewalls y servidores proxy compatibles <a name="supported-firewalls-and-proxies"></a>
-
-- Barracuda - Web App Firewall (W3C)
-- Blue Coat Proxy SG - registros de acceso (W3C)
-- Check Point
-- Firewall de Cisco ASA (en el caso de los firewalls de Cisco ASA, es necesario establecer el nivel de información en 6)
-- Cisco ASA con FirePOWER
-- Cisco IronPort WSA
-- Cisco ScanSafe
-- Cisco Meraki – Registro de direcciones URL
-- Clavister NGFW (Syslog)
-- Digital Arts i-FILTER
-- Fortinet Fortigate
-- iboss Secure Cloud Gateway
-- Juniper SRX
-- Juniper SSG
-- McAfee Secure Web Gateway
-- Microsoft Forefront Threat Management Gateway (W3C)
-- Firewalls de la serie Palo Alto
-- Sonicwall (anteriormente Dell)
-- Sophos SG
-- Sophos XG
-- Sophos Cyberoam
-- Squid (Common)
-- Squid (Native)
-- Websense - soluciones de seguridad Web - informe de detalle de investigación (CSV)
-- Websense - soluciones de seguridad Web - registro de actividad de Internet (CEF)
-- Zscaler
-
-> [!NOTE]
-> Cloud Discovery admite tanto direcciones IPv4 como IPv6.
-
-Si el registro no es compatible, seleccione **Otro** como **Origen de datos** y especifique el dispositivo y el registro que está intentando cargar. El equipo de analistas de la nube de Cloud App Security examinará el registro y se le notificará si se ha agregado compatibilidad con el tipo de registro. También puede definir un analizador personalizado que coincida con el formato. Para obtener más información, vea [Uso del analizador de registros personalizado](custom-log-parser.md).
-
-
-Atributos de datos (según la documentación del proveedor):
-
-
-|                 Origen de datos                  |    Dirección URL de la aplicación de destino    |    IP de la aplicación de destino     |       Nombre de usuario       |      IP de origen       |    Tráfico total     |    Bytes cargados    |
-|----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
-|                  Barracuda                   | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |          No          |          No          |
-|                  Blue Coat                   | <strong>Sí</strong> |          No          | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-|                  Checkpoint                  |          No          | <strong>Sí</strong> |          No          | <strong>Sí</strong> |          No          |          No          |
-|              Cisco ASA (Syslog)              |          No          | <strong>Sí</strong> |          No          | <strong>Sí</strong> | <strong>Sí</strong> |          No          |
-|           Cisco ASA con FirePOWER           | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-|                  Cisco FWSM                  |          No          | <strong>Sí</strong> |          No          | <strong>Sí</strong> | <strong>Sí</strong> |          No          |
-|              Cisco Ironport WSA              | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-|                 Cisco Meraki                 | <strong>Sí</strong> | <strong>Sí</strong> |          No          | <strong>Sí</strong> |          No          |          No          |
-|           Clavister NGFW (Syslog)            | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-|                SonicWall (anteriormente Dell)                | <strong>Sí</strong> | <strong>Sí</strong> |          No          | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-|            Digital Arts i-FILTER             | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-|                  FortiGate                   |          No          | <strong>Sí</strong> |          No          | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-|                 Juniper SRX                  |          No          | <strong>Sí</strong> |          No          | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-|                 Juniper SSG                  |          No          | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-|                  McAfee SWG                  | <strong>Sí</strong> |          No          |          No          | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-|                    MS TMG                    | <strong>Sí</strong> |          No          | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-|              Palo Alto Networks              |          No          | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-|                    Sophos                    | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |          No          |
-|                Squid (Common)                | <strong>Sí</strong> |          No          | <strong>Sí</strong> | <strong>Sí</strong> |          No          | <strong>Sí</strong> |
-|                Squid (Native)                | <strong>Sí</strong> |          No          | <strong>Sí</strong> | <strong>Sí</strong> |          No          | <strong>Sí</strong> |
-| Websense: informe de detalle de investigación (CSV) | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-|    Websense: registro de actividad de Internet (CEF)    | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-|                   Zscaler                    | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-     
  
 ## <a name="next-steps"></a>Pasos siguientes  
 [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)   

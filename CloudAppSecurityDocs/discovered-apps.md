@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/10/2019
+ms.date: 1/27/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 589f0d11d7fac47a4080926f6aa4f654c17deb34
-ms.sourcegitcommit: 076705cc9684fe5fb35c33a51e3319ba2ccfd24e
+ms.openlocfilehash: 2fd3acfb60e65a75b0ce964a70c612330a79ff79
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060180"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086021"
 ---
 # <a name="quickstart-work-with-discovered-apps"></a>Inicio rápido: Trabajo con aplicaciones detectadas
 
@@ -64,7 +64,7 @@ Cloud Discovery permite profundizar incluso más en el uso de la nube de la orga
      
 Por ejemplo, puede diferenciar entre los distintos sitios de SharePoint.
 
-Esto solo se admite en los firewalls y servidores proxy que contienen datos de dirección URL de destino. Para obtener más información, vea la lista de dispositivos compatibles en [Firewalls y servidores proxy compatibles](create-snapshot-cloud-discovery-reports.md#supported-firewalls-and-proxies).
+Esto solo se admite en los firewalls y servidores proxy que contienen datos de dirección URL de destino. Para obtener más información, vea la lista de dispositivos compatibles en [Firewalls y servidores proxy compatibles](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
  ![información de subdominio](./media/discovery-domains.png) 
 
