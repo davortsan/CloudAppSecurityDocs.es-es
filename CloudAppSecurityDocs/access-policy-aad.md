@@ -14,12 +14,12 @@ ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8252c3ec83dd2e37663c5c13df8fa56e333af19c
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 9df20f08928d1745578bf9eab2a1718f0ee8831f
+ms.sourcegitcommit: f9f50480f5353b395e1c6b0dd8ac6b0c7243aa77
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53176185"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55071123"
 ---
 # <a name="access-policies"></a>Directivas de acceso
 
@@ -50,7 +50,7 @@ Las directivas de acceso condicional de Azure Active Directory y las directivas 
 1. Configure una [directiva de acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) con asignaciones de usuario o de grupo de usuarios y la aplicación que quiere controlar con Control de aplicaciones de acceso condicional. 
 
    > [!NOTE]
-   > Esta directiva afectará únicamente a las aplicaciones que se hayan [implementado con control de aplicaciones de acceso condicional](proxy-deployment-aad.md).
+   > Esta directiva afectará únicamente a las aplicaciones que se hayan [implementado con control de aplicaciones de acceso condicional](proxy-deployment-aad.md). 
 
 2. Enrute usuarios a Microsoft Cloud App Security mediante la selección de **Usar las restricciones que exige el control de aplicaciones de acceso condicional** en **Sesión**.
  
