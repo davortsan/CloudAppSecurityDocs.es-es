@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8427aa87af9b986b482901cf3671e54a6aa6fac3
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: b58ab490123824a0e0ba211cc1382a750985a0a0
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177449"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086352"
 ---
 # <a name="working-with-the-risk-score"></a>Trabajo con la puntuación de riesgo
 
@@ -104,7 +104,7 @@ Cloud Discovery proporciona datos importantes sobre la credibilidad y la confian
   
 - **Cumplimiento normativo**: esta categoría muestra qué estándares comunes de cumplimiento de procedimientos recomendados cumple la empresa que produce la aplicación. La lista de especificaciones incluye estándares tales como HIPAA, CSA y PCI-DSS.  
 
-- **Legal**: esta categoría permite filtrar en función de las regulaciones y directivas en vigor para garantizar la protección y la privacidad de los datos de los usuarios de la aplicación, por ejemplo, el RGPD, el DMCA y la directiva de retención de datos.
+- **Factor de riesgo legal**: permite filtrar en función de las regulaciones y directivas en vigor para garantizar la protección y la privacidad de los datos de los usuarios de la aplicación, por ejemplo, el RGPD, el DMCA y la directiva de retención de datos.
   
 Cada una de las categorías se compone de muchas propiedades específicas. Según el algoritmo de puntuación de Cloud App Security, cada propiedad recibe una puntuación preliminar de entre 0 y 10, en función del valor. Los valores True y False recibirán 10 o 0 en consecuencia. Pero las propiedades continuas como la antigüedad del dominio recibirán un valor determinado del espectro. La puntuación de cada propiedad se pondera con todos los demás campos existentes en la categoría para crear la subpuntuación de esta. Si encuentra una aplicación sin puntuar, eso normalmente indica que sus propiedades son desconocidas y que, por lo tanto, no se ha puntuado.  
   

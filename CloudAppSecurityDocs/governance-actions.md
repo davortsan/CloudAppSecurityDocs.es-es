@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 48708ea18227a68a780c6ed02905cda51cea48e0
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 037687d0883ed7a50eb4c27df1a551695c175c5f
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177477"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086573"
 ---
 # <a name="governing-connected-apps"></a>Control de aplicaciones conectadas
 
@@ -41,14 +41,16 @@ Las siguientes acciones de gobierno pueden realizarse para aplicaciones conectad
 
      - **Notificación de correo electrónico de usuario**: es posible personalizar los mensajes de correo electrónico y enviarlos a todos los propietarios de archivos infractores. 
 
-     - **Administrador de CC**: según la integración de directorios del usuario, también se pueden enviar notificaciones de correo electrónico al administrador de la persona que haya infringido una directiva. (Solo Salesforce)
-
      - **Enviar una notificación a usuarios concretos**: lista específica de direcciones de correo electrónico que recibirán las notificaciones. 
 
      - **Enviar una notificación al último editor del archivo**: se envían notificaciones a la última persona que ha modificado el archivo. 
 
 - **Acciones de control en aplicaciones**: se pueden aplicar acciones granulares por aplicación. Las acciones específicas varían según la terminología de la aplicación. 
 
+     
+     - **Etiquetado**
+         - **Aplicar etiqueta**: capacidad de agregar una etiqueta de clasificación de Azure Information Protection.
+         - **Quitar etiqueta**: capacidad de quitar una etiqueta de clasificación de Azure Information Protection.
      - **Cambio del uso compartido** 
 
         - **Quitar el uso compartido público**: permita el acceso únicamente a los colaboradores con nombre, por ejemplo, Quitar el acceso público a G Suite y Quitar el vínculo compartido directo a Box. 
@@ -59,7 +61,11 @@ Las siguientes acciones de gobierno pueden realizarse para aplicaciones conectad
 
        - **Quitar un colaborador**: quita un colaborador específico del archivo. 
 
-       - **Reducir el acceso público**: permite establecer que los archivos disponibles públicamente solo estén disponibles con un vínculo compartido.
+       - **Reducir el acceso público**: permite establecer que los archivos disponibles públicamente solo estén disponibles con un vínculo compartido. (Google)
+        
+       - **Expiración del vínculo compartido**: capacidad de establecer una fecha de expiración para un vínculo compartido después de la cual dejará de estar activo. (Box)
+
+       - **Cambiar el nivel de acceso de vínculo de uso compartido**: posibilidad de cambiar el nivel de acceso del vínculo compartido entre la empresa únicamente, solo colaboradores y público. (Box)
 
   - **Cuarentena** 
 
@@ -69,7 +75,7 @@ Las siguientes acciones de gobierno pueden realizarse para aplicaciones conectad
 
   - **Heredar permisos del primario**: esta acción de control permite quitar el conjunto de permisos específicos para un archivo o carpeta en Office 365. Después, los revierte a los permisos establecidos para la carpeta principal.
 
-  - **Enviar a la papelera**: el archivo se mueve a la carpeta de la Papelera.
+  - **Enviar a la papelera**: el archivo se mueve a la carpeta de la Papelera. (SharePoint y OneDrive)
 
    ![alertas de crear directiva](./media/policy_create-alerts.png "alertas de crear directiva") 
 
@@ -81,8 +87,6 @@ Las siguientes acciones de gobierno pueden realizarse para aplicaciones conectad
     - **Alertas**: las alertas pueden desencadenarse en el sistema y propagarse a través de mensajes de correo electrónico y de texto, según el nivel de gravedad. 
 
     - **Notificación de correo electrónico de usuario**: es posible personalizar los mensajes de correo electrónico y enviarlos a todos los propietarios de archivos infractores. 
-
-    - **Administrador de CC**: según la integración de directorios del usuario, también se pueden enviar notificaciones de correo electrónico al administrador de la persona que haya infringido una directiva. (Solo Salesforce)
 
     - **Enviar una notificación a usuarios adicionales**: lista específica de direcciones de correo electrónico que recibirán las notificaciones. 
 
@@ -137,13 +141,12 @@ Para obtener información sobre cómo se tratan las acciones de control cuando h
 |Directiva de archivo|Archivo |Enviar a la papelera|Coloca el archivo en la papelera del usuario.| One Drive, SharePoint |
 |Directiva de archivo|Archivo | Enviar una notificación al último editor del archivo |Se envía un correo para informar a la última persona que editó el archivo de que este infringe una directiva. |G Suite, Box|
 |Directiva de archivo|Archivo |Enviar una notificación al propietario del archivo|Envía un correo electrónico al propietario del archivo cuando se infringe una directiva. En Dropbox, si no hay ningún propietario asociado a un archivo, la notificación se enviará al usuario específico que establezca. | Todas las aplicaciones |
-|Directiva de archivo, Directiva de actividad | Archivo, Actividad |CC del administrador del propietario o del usuario| Cuando el propietario del archivo recibe una notificación por correo en la que se le informa de que su archivo infringe una directiva. Esta acción opcionalmente notifica al administrador del propietario del archivo o al usuario. | Salesforce |
 |Directiva de archivo, Directiva de actividad | Archivo, Actividad | Enviar una notificación a usuarios concretos |Se envía un correo para informar a determinados usuarios de que un archivo infringe una directiva.| Todas las aplicaciones |
 |Directiva de archivo y Directiva de actividad | Archivo, Actividad |Enviar notificación al usuario|Se envía un correo a los usuarios para informarles de que algo que han hecho o un archivo que poseen infringe una directiva. Se puede agregar una notificación personalizada que indique en qué consistió la infracción. |Todos |
 |Directiva de archivo y archivos|Archivo | Quitar la capacidad de compartir de los editores|En Google Drive, los permisos de editor predeterminados de un archivo permiten también compartir ese archivo. Esta acción de gobierno restringe esta opción y limita el uso compartido del archivo al propietario.| G Suite|
 |Directiva de archivo y archivos|Archivo | [Poner en cuarentena de administrador](use-case-admin-quarantine.md) |Se quitan todos los permisos del archivo y el archivo se mueve a una carpeta de cuarentena en una ubicación para el administrador. Esta acción permite al administrador revisar el archivo y quitarlo.| Office 365 SharePoint, OneDrive para la Empresa, Box|
 |Directiva de archivo y archivos|Archivo | Aplicar etiqueta de clasificación|Se aplica una etiqueta de clasificación de Azure Information Protection a los archivos de forma automática en función de las condiciones establecidas en la directiva.| Box, One Drive, G Suite, SharePoint |
-|Directiva de archivo y archivos|Archivo | Quitar etiqueta de clasificación | Se quita una etiqueta de clasificación de Azure Information Protection de los archivos de forma automática en función de las condiciones establecidas en la directiva. | Box, One Drive, G Suite, SharePoint |
+|Directiva de archivo y archivos|Archivo | Quitar etiqueta de clasificación | Se quita una etiqueta de clasificación de Azure Information Protection de los archivos de forma automática en función de las condiciones establecidas en la directiva. Solo puede quitar las etiquetas si no incluyen protección y se aplicaron desde Cloud App Security, no directamente desde Information Protection.| Box, One Drive, G Suite, SharePoint |
 |Directiva de archivo, Directiva de actividad, Alertas | Aplicación |Requerir a los usuarios que inicien sesión de nuevo| Puede requerir a los usuarios que inicien sesión de nuevo en todas las aplicaciones de Office 365 y Azure AD como una solución rápida y eficaz en el caso de alertas de actividad sospechosa del usuario y cuentas en peligro. Encontrará la nueva acción de gobierno en la configuración de directiva y las páginas de alertas, junto a la opción Suspender usuario. | Office 365, Azure AD |
 |Archivos |Archivo |Restaurar de la cuarentena de usuario |Se restaura un usuario que estaba en cuarentena. |Cuadro |
 |Archivos |Archivo | Concederme permisos de lectura| Se concede permisos de lectura para el archivo a sí mismo con el fin de tener acceso al archivo y saber si existe o no una infracción en él.| G Suite|
@@ -157,6 +160,8 @@ Para obtener información sobre cómo se tratan las acciones de control cuando h
 |Archivos, Directiva de archivo|Archivo | Quitar usuarios externos | Se quitan todos los colaboradores externos de los dominios configurados como internos en la configuración. |G Suite, Box|
 |Archivos, Directiva de archivo|Archivo |Conceder permisos de lectura para el dominio|Se conceden permisos de lectura para el archivo en el dominio especificado, ya sea en todo el dominio o en un dominio específico. Esta acción es útil si quiere quitar el acceso público tras conceder acceso al dominio a personas que necesitan trabajar en él.| G Suite|
 |Archivos, Directiva de archivo|Archivo | Poner en cuarentena de usuario | Se quitan todos los permisos del archivo y el archivo se mueve a una carpeta de cuarentena en la unidad raíz del usuario. Esta acción permite al usuario revisar el archivo y moverlo. Si se mueve de vuelta manualmente, no se restaura el uso compartido de archivos. | Box, One Drive, SharePoint |
+|Archivos|Archivo|Expiración del vínculo compartido| Establezca una fecha de expiración para un vínculo compartido después de la cual dejará de estar activo.|Cuadro|
+|Archivos|Archivo|Cambio del nivel de acceso del vínculo compartido|Cambia el nivel de acceso del vínculo compartido entre la empresa solo, solo los colaboradores y público.| Cuadro|
 |Archivos, Directiva de archivo|Archivo | Quitar el acceso público| Si pone un archivo suyo como de acceso público, pasa a ser accesible para quien esté configurado para tener acceso a él, según el tipo de acceso que tuviera el archivo. | G Suite|
 |Archivos, Directiva de archivo|Archivo |Quitar el vínculo compartido directo| Se quita un vínculo creado para un archivo que es público, pero que solo se comparte con personas específicas.|Cuadro |
 |Configuración > Configuración de Cloud Discovery| Cloud Discovery | Recalcular las puntuaciones de Cloud Discovery |Se recalculan las puntuaciones en el catálogo de aplicaciones de Cloud tras un cambio en la métrica de puntuación.| Detección |

@@ -1,11 +1,11 @@
 ---
 title: Configuración de la carga de registros automática con Docker en Azure
-description: En este artículo se describe el proceso de configuración de carga de registros automática para informes continuos en Cloud App Security con Docker en Ubuntu en Azure.
+description: En este artículo se describe el proceso de configuración de carga de registros automática para informes continuos en Cloud App Security con Docker en Ubuntu o RHEL en Azure.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,22 +14,22 @@ ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3b274bd8515fc893fb92af0c96f34d99d68d0bdc
-ms.sourcegitcommit: 900fce2575c39acda71ba42589f75d4c935fecb3
+ms.openlocfilehash: 9d3d0aad417050011a5a5780e5563ac3d040eb37
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54460028"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086454"
 ---
-# <a name="set-up-and-configuration-on-ubuntu"></a>Configuración en Ubuntu
+# <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Instalación y configuración en Ubuntu o RHEL en Azure
 
 *Se aplica a: Microsoft Cloud App Security*
 
-Puede configurar la carga de registros automática para informes continuos en Cloud App Security con Docker en Ubuntu en Azure. En este artículo se describe cómo configurar la carga de registros automática. 
+Puede configurar la carga de registros automática para informes continuos en Cloud App Security con Docker en Ubuntu o Red Hat Enterprise Linux (RHEL) en Azure. En este artículo se describe cómo configurar la carga de registros automática. 
 
 ## <a name="technical-requirements"></a>Requisitos técnicos
 
-- Sistema operativo: Ubuntu 14.04 y 16.04 (para versiones más recientes, póngase en contacto con el soporte técnico)
+- Sistema operativo: Ubuntu 14.04 y 16.04 (para versiones más recientes, póngase en contacto con el soporte técnico), o RHEL 7.2 o superior
 
 - Espacio en disco 250 GB
 

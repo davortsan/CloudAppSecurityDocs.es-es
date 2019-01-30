@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/18/2018
+ms.date: 1/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a9f3b2282d4a62706e72500db9bb3c57f7598029
-ms.sourcegitcommit: 96fabfedfe747bb02379876d34f0f5ac8019c1a8
+ms.openlocfilehash: 319fa2395e972d79b3d010a88b0758752103c345
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53587841"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086148"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicaciones con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security
 
@@ -92,33 +92,36 @@ El Control de aplicaciones de acceso condicional es compatible actualmente con a
 > [!NOTE]
 > El Control de aplicaciones de acceso condicional también admite aplicaciones configuradas con proveedores de identidades que no sean Azure AD. Para obtener más información sobre este escenario, envíe un correo electrónico a mcaspreview@microsoft.com.
 
-El control de sesión está disponible para cualquier explorador en las principales plataformas. Las aplicaciones móviles y de escritorio también pueden bloquearse o permitirse. Gracias a la integración nativa con Azure AD, se admiten aplicaciones que estén configuradas con SAML o aplicaciones Open ID Connect con inicio de sesión único en Azure AD, incluidas estas aplicaciones destacadas:
+**El control de sesión está disponible para cualquier explorador en las principales plataformas en cualquier sistema operativo**. Las aplicaciones móviles y de escritorio también pueden bloquearse o permitirse. Gracias a la integración nativa con Azure AD, se admiten aplicaciones que estén configuradas con SAML o aplicaciones Open ID Connect con inicio de sesión único en Azure AD, incluidas estas aplicaciones destacadas:
 
 - AWS
+- Azure DevOps (Visual Studio Team Services) (versión preliminar)
+- Azure Portal (versión preliminar)
 - Cuadro
 - Concur
 - CornerStone on Demand
 - DocuSign
 - Dropbox
 - Egnyte
+- Exchange Online (versión preliminar)
 - G Suite
 - Github
 - HighQ
 - JIRA/Confluence
+- OneDrive para la Empresa (versión preliminar)
+- Aprendizaje de LinkedIn
+- Power BI (versión preliminar)
 - Salesforce
 - ServiceNow
+- SharePoint Online (versión preliminar)
 - Slack
 - Tableau
+- Microsoft Teams (versión preliminar)
 - Workday
 - Workiva
 - Workplace de Facebook
-- Exchange Online (versión preliminar)
-- OneDrive para la Empresa (versión preliminar)
-- Power BI (versión preliminar)
-- SharePoint Online (versión preliminar)
-- Azure DevOps (Visual Studio Team Services) (versión preliminar)
 - Yammer (versión preliminar)
-- Microsoft Flow (versión preliminar)
+
 
 
 

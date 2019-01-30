@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/6/2019
+ms.date: 1/28/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 3e31313739befa39b11853df971dd0c490884e07
-ms.sourcegitcommit: 2a25d1af0560243d7f926c87bf56230bdf336ba9
+ms.openlocfilehash: 579359640f5c2e53f2267938620908be70ad617f
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54142291"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086624"
 ---
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -44,15 +44,15 @@ Siga este proceso para implementar Cloud Discovery de shadow IT en su organizaci
 ### <a name="phase-1-discover-and-identify-shadow-it"></a>Fase 1: detección de identificación de shadow IT
     
 1. **Detección de shadow IT**: Identifique el estado de su organización en lo que respecta a la seguridad mediante la ejecución de Cloud Discovery y descubra lo que sucede realmente en la red. Para obtener más información, consulte [Configurar Cloud Discovery](set-up-cloud-discovery.md). Esto puede hacerse mediante cualquiera de los métodos siguientes:
-  
-    - Integre Cloud App Security con su proxy. Cloud App Security se integra de forma nativa con algunos servidores proxy de terceros, incluido [Zscaler](zscaler-integration.md).
-    
+   
     - Para tenerlo todo a punto rápidamente, use Cloud Discovery e intégrelo con [ATP de Windows Defender](wdatp-integration.md). Esta integración nativa permite empezar a recopilar datos sobre el tráfico en la nube en sus dispositivos Windows 10, así como activar y desactivar la red.
    
     - Para abarcar todos los dispositivos conectados a la red, es importante implementar el [recopilador de registros de Cloud App Security](discovery-docker.md) en los firewalls y otros servidores proxy. De este modo, podrá recopilar datos de los puntos de conexión y enviarlos a Cloud App Security para su análisis.
 
-
-Dado que las directivas son diferentes entre los grupos de usuarios, regiones y grupos empresariales, es posible que quiera crear un informe de shadow IT específico de cada una de estas unidades. Para obtener más información, consulte (discovery-docker-windows#continuous-reports).
+   - Integre Cloud App Security con su proxy. Cloud App Security se integra de forma nativa con algunos servidores proxy de terceros, incluido [Zscaler](zscaler-integration.md).
+   
+ 
+Dado que las directivas son diferentes entre los grupos de usuarios, regiones y grupos empresariales, es posible que quiera crear un informe de shadow IT específico de cada una de estas unidades. Para más información, consulte [Docker en Windows local](discovery-docker-windows.md#continuous-reports).
 
 
 Ahora que Cloud Discovery se está ejecutando en la red, consulte los informes continuos que se generan y eche un vistazo al [panel de Cloud Discovery](working-with-cloud-discovery-data.md) para obtener una visión global de las aplicaciones que se usan en su organización. Es recomendable examinarlas por categoría, ya que a menudo se encontrará con que las aplicaciones no autorizadas se usan para fines legítimos relacionados con el trabajo que no pueden abordarse mediante una aplicación autorizada. 
@@ -79,10 +79,10 @@ Ahora que Cloud Discovery se está ejecutando en la red, consulte los informes c
     
 - **Administración de las aplicaciones en la nube**: Cloud App Security le ayuda con el proceso de administración del uso de las aplicaciones en su organización. Tras identificar los distintos patrones y los comportamientos presentes en su organización, puede crear nuevas etiquetas de aplicación personalizadas con el fin de clasificar cada una de ellas según su estado o justificación en la empresa.
 A continuación, las etiquetas pueden usarse para fines de supervisión específicos, por ejemplo, identificar un tráfico elevado en las aplicaciones etiquetadas como de almacenamiento en la nube de riesgo. Las etiquetas de aplicaciones pueden administrarse en **Configuración de Cloud Discovery** > **Etiquetas de aplicaciones**. Posteriormente, las etiquetas pueden usarse para filtrar contenido en las páginas de Cloud Discovery y crear directivas que las utilicen.
-    
-Ahora es el momento de crear directivas para que pueda recibir alertas automáticamente cuando ocurra algo que le preocupe. Por ejemplo, es posible que quiera crear una **Directiva de detección de aplicaciones** que le permita saber si hay un pico en las descargas o el tráfico de una aplicación que quiera supervisar. Puede establecer la directiva para recibir notificaciones por correo electrónico o mensaje de texto. Para obtener más información, consulte [Referencia de plantillas de directiva](policy-template-reference.md) y [Directivas de Cloud Discovery](cloud-discovery-policies.md).
 
 - **Supervisión continua**: Ahora que ya ha investigado exhaustivamente las aplicaciones, es posible que quiera establecer directivas que permitan supervisar las aplicaciones y proporcionen un control cuando sea necesario.
+
+Ahora es el momento de crear directivas para que pueda recibir alertas automáticamente cuando ocurra algo que le preocupe. Por ejemplo, es posible que quiera crear una **Directiva de detección de aplicaciones** que le permita saber si hay un pico en las descargas o el tráfico de una aplicación que quiera supervisar. Puede establecer la directiva para recibir notificaciones por correo electrónico o mensaje de texto. Para obtener más información, consulte [Referencia de plantillas de directiva](policy-template-reference.md) y [Directivas de Cloud Discovery](cloud-discovery-policies.md).
 
 
 Configure las [**Directivas de detección de aplicaciones**](cloud-discovery-policies.md). Por ejemplo, se recomienda habilitar las directivas **Comportamiento anómalo en usuarios detectados**, **Comprobación de cumplimiento de la aplicación de almacenamiento en la nube** y **Nueva aplicación de riesgo**.

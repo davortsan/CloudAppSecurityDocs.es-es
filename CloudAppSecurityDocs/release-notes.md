@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/9/2019
+ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,18 +14,33 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9955c7e88caffd83859dd404e1615384f9a05490
-ms.sourcegitcommit: 2a25d1af0560243d7f926c87bf56230bdf336ba9
+ms.openlocfilehash: d4372f4877a9c839b6cc75b374e742a61500f18c
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54142342"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086369"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
 *Se aplica a: Microsoft Cloud App Security*
 
 Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security.
+
+## <a name="cloud-app-security-release-141"></a>Notas de la versión 141 de Cloud App Security
+
+Fecha de publicación: 20 de enero de 2019
+
+**Mejoras de evaluación de riesgos en la nube**
+- Se ha mejorado la evaluación de riesgos de las aplicaciones en la nube con dos nuevas experiencias. 
+    - Un nuevo atributo **Tipo de datos** evalúa qué tipo de contenido pueden cargar los usuarios a la aplicación. Puede utilizar este atributo para evaluar una aplicación según la sensibilidad de cada tipo de datos de la organización. 
+    - Para obtener una información general más completa de los riesgos de una aplicación, puede pasar fácilmente de la evaluación de riesgos de la aplicación a la evaluación de riesgos de la empresa de hospedaje haciendo clic en el atributo **Empresa de hospedaje**.
+
+**Contexto de archivo mejorado para la investigación de alertas de detección de anomalías**
+- Se mejoró la investigación de detección de anomalías para permitirle ver información adicional asociada con los archivos que intervienen en una alerta. Cuando se desencadenan las alertas para alertas de actividad inusual relacionadas con archivos (descargar, compartir, eliminar), esta exploración en profundidad está disponible. Por ejemplo, si la mayoría de los archivos afectados proceden de la misma carpeta o comparten la misma extensión de archivo, verá esta información en la sección de riesgos adicionales de la alerta.
+
+**Consultas sobre la investigación de archivos**
+- La capacidad de Cloud App Security para crear y guardar consultas personalizadas se amplió a la página **Archivos**. Las consultas de la página **Archivo** le permiten crear plantillas de consulta que se pueden volver a usar para investigar en profundidad. 
 
 
 ## <a name="cloud-app-security-release-139-140"></a>Notas de la versión 139, 140 de Cloud App Security
