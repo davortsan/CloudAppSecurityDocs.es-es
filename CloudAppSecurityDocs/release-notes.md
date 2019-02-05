@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/27/2019
+ms.date: 2/4/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,18 +14,42 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d4372f4877a9c839b6cc75b374e742a61500f18c
-ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
+ms.openlocfilehash: 191664850596aad2ab4bc7ed0bc78600004382f0
+ms.sourcegitcommit: cd0500c7338917ce2a33fab5537966bb34544d19
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55086369"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55689218"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
 *Se aplica a: Microsoft Cloud App Security*
 
 Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security.
+
+- **Configuración de la directiva de sesión en Azure AD**<br>
+Ahora puede configurar las directivas de sesión para supervisar usuarios o bloquear descargas en tiempo real directamente en el acceso condicional de Azure AD. Puede seguir configurando las directivas de sesión avanzadas directamente en Cloud App Security. Para ver una guía paso a paso de esta implementación, consulte [Implementación del control de aplicaciones de acceso condicional para aplicaciones de Azure AD](proxy-deployment-aad.md). 
+
+- **Consultas sugeridas y guardadas para aplicaciones de OAuth** <br>
+Se han agregado consultas sugeridas a la página Aplicaciones de OAuth para proporcionar plantillas de investigación predeterminadas con el fin de filtrar las aplicaciones de OAuth. Las consultas sugeridas incluyen filtros personalizados para identificar las aplicaciones de riesgo, como las que autorizan los administradores. Las consultas guardadas permiten guardar las consultas personalizadas para usarlas en un futuro; son similares a las consultas guardadas disponibles actualmente en las páginas Registro de actividad y Detección. 
+
+- **Configuración predeterminada de auditoría de Office 365**<br>
+Si desea habilitar la supervisión de actividades de Office 365 en Cloud App Security, ahora debe habilitar la auditoría en el [Centro de seguridad y cumplimiento de Office]( https://support.microsoft.com/help/4026501/office-auditing-in-office-365-for-admins) como resultado de un [cambio en la auditoría de Office 365]( https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-faq#what-happens-if-i-disable-auditing-for-my-office-365-organization-will-i-still-get-events-via-the-management-activity-api). Este cambio solo debe realizarse si aún no ha habilitado la supervisión de actividades de Office 365 en Cloud App Security.
+
+- **Mayor compatibilidad con Box**<br>
+Cloud App Security ahora admite dos nuevas acciones de gobierno para Box:
+
+   - **Expiración del vínculo compartido**: esta acción de gobierno proporciona la opción de establecer una fecha de expiración para un vínculo compartido después de la cual dejará de estar activo. 
+
+   - **Cambio del nivel de acceso del vínculo compartido**: esta acción de gobierno ofrece la posibilidad de cambiar el nivel de acceso del vínculo compartido entre la empresa únicamente, solo colaboradores y público.
+
+- **Compatibilidad con varias ubicaciones en OneDrive**<br>
+Ahora, Cloud App Security proporciona visibilidad completa de los archivos de OneDrive, incluso si están dispersos en varias ubicaciones geográficas. Ahora los archivos localizados en las ubicaciones adicionales, además de en la principal, estarán protegidos.
+
+- **Mejora de la navegación por el portal**<br>
+El portal de Cloud App Security se ha mejorado para optimizar la navegación y para que Cloud App Security tenga un aspecto más similar a otros servicios de seguridad de Microsoft, para así facilitar su uso.
+
+
 
 ## <a name="cloud-app-security-release-141"></a>Notas de la versión 141 de Cloud App Security
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/3/2019
+ms.date: 2/4/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5c207fb951a1bd8120da694e07232c3851486b9c
-ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
+ms.openlocfilehash: 40b514ce50cf03bd111adcd615dff5616908d933
+ms.sourcegitcommit: cd0500c7338917ce2a33fab5537966bb34544d19
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54059373"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55689184"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtención de análisis de comportamiento y detección de anomalías instantáneos
 
@@ -51,7 +51,9 @@ Puede ver las directivas de detección de anomalías en el portal haciendo clic 
 Están disponibles las directivas de detección de anomalías siguientes:
 
 **Viaje imposible**
--  Esta detección identifica dos actividades de usuario (en una o varias sesiones) que se originan desde ubicaciones distantes geográficamente dentro de un período de tiempo menor que el que el usuario habría necesitado para desplazarse desde la primera hasta la segunda, lo que indica que otro usuario está usando las mismas credenciales. Esta detección usa un algoritmo de aprendizaje automático que omite falsos positivos obvios que contribuyan a la condición de viaje imposible, como las redes privadas virtuales y las ubicaciones que otros usuarios de la organización usen con frecuencia. La detección tiene un período de aprendizaje inicial de siete días durante el cual se memoriza el patrón de actividad de un usuario nuevo.
+-  Esta detección identifica dos actividades de usuario (en una o varias sesiones) que se originan desde ubicaciones distantes geográficamente dentro de un período de tiempo menor que el que el usuario habría necesitado para desplazarse desde la primera hasta la segunda, lo que indica que otro usuario está usando las mismas credenciales. Esta detección usa un algoritmo de aprendizaje automático que omite falsos positivos obvios que contribuyan a la condición de viaje imposible, como las redes privadas virtuales y las ubicaciones que otros usuarios de la organización usen con frecuencia. La detección tiene un período de aprendizaje inicial de siete días durante el cual se memoriza el patrón de actividad de un usuario nuevo. La detección de viaje imposible identifica actividad inusual e imposible de usuario entre dos ubicaciones. La actividad debe ser lo suficientemente inusual como para ser considerada un indicador de peligro y digna de una alerta. Para solucionar este problema, la lógica de detección incluye diferentes niveles de supresión para abordar escenarios que pueden desencadenar falsos positivos, como las actividades de VPN. El control deslizante de sensibilidad permite cambiar el algoritmo y definir cuán estricta es la lógica de detección.
+Cuanto mayor sea el nivel de confidencialidad, menor será la supresión que se aplica como parte de la lógica de detección. De este modo, puede adaptar la detección según sus necesidades de cobertura y destinos SNR.
+
 
 
 **Actividad desde un país poco frecuente**

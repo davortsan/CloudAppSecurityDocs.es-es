@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/29/2019
+ms.date: 2/2/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: 6bde2a6c-60cc-4a7d-9e83-e8b81ac229b0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d69444a4baa4e861c1ffa14c081f77a584911431
-ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
+ms.openlocfilehash: b256affd64705b874e68359c51af118b355330df
+ms.sourcegitcommit: 7b1b1e80f90bd12e38a2e14dfea6708341eb0f34
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55086590"
+ms.lasthandoff: 02/03/2019
+ms.locfileid: "55668935"
 ---
 # <a name="enable-the-log-collector-behind-a-proxy"></a>Habilitación del recopilador de registros tras un proxy
 
@@ -46,7 +46,7 @@ En el shell, compruebe que el contenedor se ha creado y se está ejecutando con 
 ### <a name="copy-proxy-root-ca-certificate-to-the-container"></a>Copia del certificado de entidad de certificación raíz del proxy en el contenedor
 
 Desde la máquina virtual, copie el certificado de entidad de certificación en el contenedor de Cloud App Security. En el ejemplo siguiente, el contenedor se denomina *Ubuntu LogCollector* y el certificado de entidad de certificación se denomina *Proxy-CA.crt*.
-Ejecute el comando en el host Ubuntu y copie el certificado en una carpeta del contenedor en ejecución:
+Ejecute el comando en el host de Ubuntu y copie el certificado en una carpeta del contenedor en ejecución:
 
     bash
     docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
