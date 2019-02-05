@@ -93,6 +93,7 @@
 ### [Integración de SIEM](siem.md)
 ### [Integración de DLP externa](icap-stunnel.md)
 ### [Integración con Microsoft Flow](flow-integration.md)
+### [Integración con iboss](iboss-integration.md)
 ### [Tokens de API](api-tokens.md)
 # Referencia
 ## [Solución de problemas de Cloud Discovery](troubleshooting-cloud-discovery.md)
