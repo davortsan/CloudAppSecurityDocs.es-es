@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 2/4/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,22 +14,25 @@ ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f51db980e6a30f0e2c0f21c25982f6c95b51ea2c
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: de5474e2fd65d21f3221dd562f63a8ddc3bd9566
+ms.sourcegitcommit: b32fb2c561108cf280cd9098da20b0cb9aab4273
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177052"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55740072"
 ---
 # <a name="email-notification-preferences"></a>Preferencias de notificación de correo electrónico
 
 *Se aplica a: Microsoft Cloud App Security*
 
-En este artículo se proporciona información sobre cómo personalizar las notificaciones de correo electrónico que Cloud App Security envía.
+En este artículo se proporciona información sobre cómo personalizar las notificaciones de correo electrónico que Cloud App Security envía a los usuarios cuando se detecta una infracción de seguridad.
+
+> [!NOTE]
+> Esta personalización solo afecta a las notificaciones enviadas a los usuarios finales, no a las que se envían a los administradores de Cloud App Security.
 
 ## <a name="mailsettings"></a> Establecimiento de preferencias de notificación de correo electrónico  
 
- Microsoft Cloud App Security envía notificaciones por correo electrónico a los administradores que solicitan alertas y a los usuarios finales implicados en las infracciones. Para establecer los parámetros para las notificaciones de correo electrónico, siga este procedimiento. Para obtener información sobre la dirección IP del servidor de correo electrónico de Microsoft Cloud App Security que debe incluir en la lista de permitidos del servicio de correo electrónico no deseado, vea [Requisitos de red](network-requirements.md).
+ Microsoft Cloud App Security permite personalizar las notificaciones de correo electrónico enviadas a los usuarios finales implicados en las infracciones de seguridad. Para establecer los parámetros para las notificaciones de correo electrónico, siga este procedimiento. Para obtener información sobre la dirección IP del servidor de correo electrónico de Microsoft Cloud App Security que debe incluir en la lista de permitidos del servicio de correo electrónico no deseado, vea [Requisitos de red](network-requirements.md).
 
 1. En la barra de menús, haga clic en el engranaje de configuración, seleccione **Configuración** y después la pestaña **Configuración de correo electrónico**.  
 
