@@ -4,9 +4,10 @@ description: En este artículo se proporciona una lista de los mensajes de error
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/10/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 58258c189c3e4c271a1ae4e60ab8f517d20344ab
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: abb1622c3cd88120dc9ad748ef8fa0c5fa2d9b43
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53176967"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56282093"
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>Solucionar problemas relacionados con conectores de aplicaciones a partir de los mensajes de error
 
@@ -48,7 +49,7 @@ Los errores de conectores de aplicaciones se pueden consultar en el cuadro de di
 > |SocketTimeoutException: Read timed out (SocketTimeoutException: Agotado el tiempo de espera de lectura)|Salesforce|Error interno.|Haga clic de nuevo en el vínculo Probar ahora para probar la conexión con Salesforce.|
 > |HttpRequestFailure: Server returned: 400 Bad Request (HttpRequestFailure: El servidor ha devuelto: 400 Solicitud incorrecta)|Salesforce|O bien la conexión con Salesforce no se ha completado, o bien ha expirado.|Siga el proceso para volver a conectar Salesforce con Cloud App Security.|
 > |HttpRequestFailure: Server returned: 401 Unauthorized (HttpRequestFailure: El servidor ha devuelto: 401 No autorizado)|Office 365|Problema interno.|Haga clic de nuevo en el vínculo Probar ahora.|
-> |TokenRefreshException: {"error":"invalid_grant","error_description":"AADSTS70002: Error validating credentials. AADSTS70008: The provided authorization code or refresh token is expired." (TokenRefreshException: {"error":"invalid_grant","error_description":"AADSTS70002: Error al validar las credenciales. AADSTS70008: El código de autorización proporcionado o token de actualización ha expirado)". Envíe una nueva solicitud de autorización interactiva para este usuario y recurso.|Office 365|El token ha expirado.|Siga el proceso para volver a conectar Office 365 con Cloud App Security.|
+> |TokenRefreshException: {"error":"invalid_grant","error_description":"AADSTS70002: Error validating credentials. AADSTS70008: The provided authorization code or refresh token is expired." (ContextManagerServiceException: com.adallom.adalib.httputils.exceptions.TokenRefreshException: {"error":"invalid_grant","error_description":"AADSTS70002: Error al validar las credenciales. AADSTS70008: El código de autorización proporcionado o token de actualización ha expirado)". Envíe una nueva solicitud de autorización interactiva para este usuario y recurso.|Office 365|El token ha expirado.|Siga el proceso para volver a conectar Office 365 con Cloud App Security.|
 > |SocketTimeoutException: Read timed out (SocketTimeoutException: Agotado el tiempo de espera de lectura)|Office 365|Error interno.|Haga clic de nuevo en el vínculo Probar ahora.|
 > |NullPointerException|Office 365|Error interno.|Póngase en contacto con el soporte técnico.|
 > |IgniteException|Office 365|El dominio o el usuario no son válidos.|Restablezca la configuración y siga el proceso para volver a conectar Office 365 con Cloud App Security.|

@@ -4,21 +4,22 @@ description: En este artículo se describe el proceso de configuración de la ca
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/29/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9e645becc555c73dc7403dc3075095f903e760f9
-ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
+ms.openlocfilehash: 1a4f5fdb9bfe807729bf29de370bca913b3409ce
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55086114"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56282246"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker en Windows local
 
@@ -140,13 +141,13 @@ Configure los firewalls y los servidores proxy de la red de modo que exporten pe
 
 ### <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Paso 4: Comprobación de la implementación correcta en el portal Cloud App Security
 
-Compruebe el estado del recopilador en la tabla  **Recopilador de registros**  y asegúrese de que es  **Conectado**. Si es  **Creado**, es posible que la conexión y el análisis del recopilador de registros no se hayan completado.
+Compruebe el estado del recopilador en la tabla **Recopilador de registros** y asegúrese de que el estado es **Conectado**. Si es **Creado**, es posible que la conexión y el análisis del recopilador de registros no se hayan completado.
 
  ![ubuntu9](./media/ubuntu9.png)
 
 También puede ir al **registro de gobierno** y comprobar que los registros se carguen de manera periódica en el portal.
 
-Si tiene problemas durante la implementación, vea  [Solución de problemas de Cloud Discovery](troubleshooting-cloud-discovery.md).
+Si tiene problemas durante la implementación, consulte [Solución de problemas de Cloud Discovery](troubleshooting-cloud-discovery.md).
 
 ### Opcional: cree informes continuos personalizados<a name="continuous-reports">.</a>
 
