@@ -15,12 +15,12 @@ ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bb8d8e4c8990b246e78679687e9b1bfd383b91dc
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: d6e6206b9d361ad9a5b47c3ec76ecc8dac4a1e20
+ms.sourcegitcommit: fd1bf30af3117d8ad6cf241f3e02ad5e4c4bc9a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282518"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56409620"
 ---
 #  <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Inicio rápido: Introducción a Microsoft Cloud App Security
 
@@ -161,7 +161,7 @@ Ahora puede ver datos detectados según sus propias preferencias, por ejemplo, u
 Estos valores le ayudan a controlar mejor las características de la consola. Con las etiquetas IP es más fácil crear directivas adaptadas a las propias necesidades, filtrar con precisión los datos, etc. Use vistas de datos para agrupar los datos en categorías lógicas.
   
 
-## <a name="see-also"></a>Consulte también
+## <a name="next-steps"></a>Pasos a seguir
 
 Establezca directivas: [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).    
 
