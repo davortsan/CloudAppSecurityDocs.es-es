@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 2/4/2019
+ms.date: 2/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,18 +15,34 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4d1e430469acb737a4f64884211c6e875c04cc59
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: 554983cb38a566c96f8232a614f44d0505a70c75
+ms.sourcegitcommit: fba10a43f04823e4de5050dc94328bf76940656d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282131"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56444062"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
 *Se aplica a: Microsoft Cloud App Security*
 
 Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security.
+
+## <a name="cloud-app-security-release-143"></a>Notas de la versión 143 de Cloud App Security
+
+Fecha de publicación: 17 de febrero de 2019
+
+- **Implementación con ámbito para las instancias de la aplicación**<br> La implementación con ámbito ahora puede configurarse en el nivel de instancia de la aplicación, lo que permite mayor granularidad y control.
+-  **Soporte de nuevos roles**
+   - Ahora se admiten los roles de administrador de datos y operador de seguridad de Office 365 en Cloud App Security. El rol de administrador de datos permite a los usuarios administrar todo lo que se relaciona con archivos, así como ver los informes de detección. Los operadores de seguridad tienen permiso para administrar las alertas y ver la configuración de directivas.
+    
+   - El rol de lector de seguridad ahora tiene la capacidad para configurar al agente de SIEM, lo que permite un mejor de ámbito de permiso.
+- **Soporte de Microsoft Flow**<br>Cloud App Security ahora incluye soporte para las actividades de Microsoft Flow que se admiten en el registro de auditoría de Office 365.
+-  **Agrupación de entidades de alertas** <br>La página **Alerta** ahora agrupa las entidades relacionadas que están involucradas en la alerta para ayudar en la investigación.
+
+## <a name="cloud-app-security-release-142"></a>Notas de la versión 142 de Cloud App Security
+
+Fecha de publicación: 3 de febrero de 2019
 
 - **Configuración de la directiva de sesión en Azure AD**<br>
 Ahora puede configurar las directivas de sesión para supervisar usuarios o bloquear descargas en tiempo real directamente en el acceso condicional de Azure AD. Puede seguir configurando las directivas de sesión avanzadas directamente en Cloud App Security. Para ver una guía paso a paso de esta implementación, consulte [Implementación del control de aplicaciones de acceso condicional para aplicaciones de Azure AD](proxy-deployment-aad.md). 
