@@ -9,9 +9,6 @@ items:
     href: cas-compliance-trust.md
   - name: Novedades
     href: release-notes.md
-    items:
-    - name: Archivo de notas de la versión
-      href: release-note-archive.md
   - name: Comparar
     items:
     - name: Office 365
@@ -93,7 +90,7 @@ items:
       href: cloud-discovery-aad-enrichment.md
     - name: Anonimización de datos de Cloud Discovery
       href: cloud-discovery-anonymizer.md
-  - name: Conexión de aplicaciones
+  - name: Conectar aplicaciones
     href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
     items:
     - name: Conexión de Azure
@@ -184,7 +181,7 @@ items:
         href: policy-template-reference.md
     - name: Control de aplicaciones conectadas
       href: governance-actions.md
-    - name: Control de aplicaciones detectadas
+    - name: Controlar las aplicaciones detectadas
       href: governance-discovery.md
     - name: Integrar mediante extensiones de seguridad
       items:
@@ -216,6 +213,8 @@ items:
     href: troubleshoot-policies.md
 - name: Recursos
   items:
+  - name: Archivo de notas de la versión
+    href: release-note-archive.md
   - name: Soporte técnico y solución de problemas
     href: support-and-ts.md
   - name: Portal de soporte técnico Premier
@@ -224,9 +223,9 @@ items:
     href: https://portal.cloudappsecurity.com
   - name: Cómo comprar Cloud App Security
     href: https://www.microsoft.com/cloud-platform/cloud-app-security
-ms.openlocfilehash: 564eaaa5992f0f212f23c8979e8db0fe4fc4972f
-ms.sourcegitcommit: fd1bf30af3117d8ad6cf241f3e02ad5e4c4bc9a1
+ms.openlocfilehash: 1e60193523c6b8c9b456f89c18d77a5de32a3352
+ms.sourcegitcommit: e096d06d92c4b2ab4f416c8c6cf956cc503380d3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56409644"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014845"
