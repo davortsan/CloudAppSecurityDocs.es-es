@@ -14,17 +14,16 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 748d4daa5f3ca47b652888ee382bc22eff0f340c
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: d2ddae1fe570b975a021ec882058465a53edac3e
+ms.sourcegitcommit: e096d06d92c4b2ab4f416c8c6cf956cc503380d3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281798"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014854"
 ---
-*Se aplica a: Microsoft Cloud App Security*
-
-
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutorial: detección y administración de shadow IT en la red
+
+*Se aplica a: Microsoft Cloud App Security*
 
 Al preguntar a los administradores de TI por el número de aplicaciones en la nube que creen que usan sus empleados, la respuesta es que la media ronda las 30 o 40, cuando en realidad es de más de 1000 aplicaciones distintas. Shadow IT le ayuda a conocer e identificar las aplicaciones que se usan y el nivel de riesgo al que se enfrenta. El 80 % de los empleados usa aplicaciones no autorizadas que no se han revisado y que puede que no sean conformes con las directivas de seguridad y cumplimiento. Además, dado que los empleados pueden acceder a los recursos y aplicaciones desde fuera de la red empresarial, ya no es suficiente disponer de reglas y directivas en los firewalls. 
 
