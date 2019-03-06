@@ -15,12 +15,12 @@ ms.assetid: b35ca44c-da8e-49ec-89d1-c076d123c14f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2312ee7cdb7ab7f7e4f9a132442fac397614189b
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: ea58971cfa8ca79d61bd6a660edf4d34cf38055a
+ms.sourcegitcommit: e88ec011088f7f6f4ccad58c86dc7e3aa908b05f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281328"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57254400"
 ---
 # <a name="windows-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Integración de Protección contra amenazas avanzada de Windows Defender con Microsoft Cloud App Security
 
@@ -44,7 +44,7 @@ Microsoft Cloud App Security usa la integración nativa con ATP de Windows Defen
 - Licencia de Microsoft Cloud App Security
 - Licencia de ATP de Windows Defender
 - Equipos con Windows 10 que ejecutan la versión 1809 o posterior
-
+- Pulse en **características en versión preliminar** para habilitar esta característica en Cloud App Security
 
 ## <a name="how-it-works"></a>Cómo funciona
 

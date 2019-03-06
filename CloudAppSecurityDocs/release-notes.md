@@ -6,7 +6,7 @@ author: rkarlin
 ms.author: rkarlin
 manager: barbkess
 ms.date: 2/17/2019
-ms.topic: conceptual
+ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -15,18 +15,30 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 554983cb38a566c96f8232a614f44d0505a70c75
-ms.sourcegitcommit: fba10a43f04823e4de5050dc94328bf76940656d
+ms.openlocfilehash: 75beec72a8d182e08334d51fc5654da3fc1cea32
+ms.sourcegitcommit: e096d06d92c4b2ab4f416c8c6cf956cc503380d3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56444062"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014871"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
 *Se aplica a: Microsoft Cloud App Security*
 
-Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security.
+Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security. Las actualizaciones más antiguas están disponibles en el [archivo de notas de la versión](release-note-archive.md).
+
+
+## <a name="cloud-app-security-release-144"></a>Notas de la versión 144 de Cloud App Security
+
+Fecha de publicación: 24 de febrero de 2019
+
+- **Implementación con ámbito para las instancias de la aplicación** La implementación con ámbito ahora puede configurarse en el nivel de instancia de la aplicación, lo que permite mayor granularidad y control.
+- **Mejoras de roles** 
+   - Ahora se admiten los roles de administrador de datos y operador de seguridad de Office 365 en Cloud App Security. El rol de administrador de datos permite a los usuarios administrar todo lo que se relaciona con archivos, así como ver los informes de Cloud Discovery. Los operadores de seguridad tienen permiso para administrar las alertas y ver la configuración de directivas.
+   - El rol de lector de seguridad ahora tiene la capacidad para configurar al agente de SIEM, lo que permite un mejor de ámbito de permiso.
+- **Soporte técnico de Microsoft Flow** Cloud App Security ahora supervisa las actividades del usuario en Microsoft Flow. Las actividades admitidas son las actividades notificadas por Flow en el registro de auditoría de Office 365.
+- **Agrupación de entidades de alertas** La página Alerta ahora agrupa las entidades relacionadas que están involucradas en la alerta para ayudar en la investigación.
 
 ## <a name="cloud-app-security-release-143"></a>Notas de la versión 143 de Cloud App Security
 

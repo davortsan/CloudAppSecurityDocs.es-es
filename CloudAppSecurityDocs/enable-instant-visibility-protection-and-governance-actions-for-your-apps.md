@@ -15,12 +15,12 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: db58f8d47b84cbf63321982c24759f060fd1ca07
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: 665deae5a23a81113b9d9c091fec14230e904b55
+ms.sourcegitcommit: e88ec011088f7f6f4ccad58c86dc7e3aa908b05f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281702"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57254402"
 ---
 # <a name="connect-apps"></a>Conectar aplicaciones 
 
@@ -72,10 +72,10 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
 > |**Privilegios**|✔|✔|No es compatible con el proveedor|✔|✔|✔|✔||  
 > |**Regulación de usuario**|✔|✔||✔|Próximamente|Próximamente|Próximamente||  
 > |**Actividad de inicio de sesión**|✔|✔|✔|✔|✔|✔|✔|✔|  
-> |**Actividad del usuario**|✔*|✔|✔|✔ (requiere Google Unlimited)|Parcial|Compatible con Salesforce Shield|✔|No disponible|  
+> |**Actividad del usuario**|✔*|✔|✔|✔ - requiere Google Business o Enterprise|Parcial|Compatible con Salesforce Shield|✔|No disponible|  
 > |**Actividad administrativa**|✔|✔|✔|✔|Parcial|✔|✔|✔|  
 > |**Examen periódico de archivos**|✔|✔|No disponible|✔|✔|✔|✔|No disponible|  
-> |**Examen de archivos prácticamente en tiempo real**|✔|✔|No disponible|✔ (requiere Google Unlimited)|||Próximamente||  
+> |**Examen de archivos prácticamente en tiempo real**|✔|✔|No disponible|✔ - requiere Google Business o Enterprise|||Próximamente||  
 > |**Control de uso compartido**|✔|✔|No disponible|✔|No disponible||✔||  
 > |**Cuarentena**|✔|✔|No disponible|Próximamente|||Próximamente||  
 > |**Ver permisos de aplicación**|✔|No es compatible con el proveedor|No disponible|✔||✔|No es compatible con el proveedor||  
@@ -96,7 +96,7 @@ Para usar los conectores de aplicaciones, debe asegurarse de que tiene lo siguie
 |Aplicación|Tipo de licencia|Usuario|  
 |---------|------------------|----------|  
 |Cuadro|Enterprise|Se recomienda encarecidamente que se conecte a Box como administrador. Si se conecta como coadministrador, la visibilidad de los datos será parcial. En caso de que se conecte como coadministrador, asegúrese de seleccionar todos los permisos.|  
-|G Suite|G Suite Unlimited (preferido)<br /><br /> G Suite Enterprise (como mínimo)|Superadministrador|  
+|G Suite|Se prefiere G Suite Business o Enterprise<br /><br /> G Suite Enterprise (como mínimo)|Superadministrador|  
 |Office 365||Administrador global|  
 |AWS||Usuario creado recientemente|  
 |Dropbox|Empresa/Enterprise|Administración|  
