@@ -1,6 +1,6 @@
 ---
-title: Cómo usar acciones de gobierno en Cloud App Security
-description: En este artículo se proporciona información sobre las acciones de gobierno que se pueden realizar en Cloud App Security para controlar el uso de aplicaciones en la nube de la organización.
+title: Cómo usar acciones de gobernanza en Cloud App Security
+description: En este artículo se proporciona información sobre las acciones de gobernanza que se pueden realizar en Cloud App Security para controlar el uso de aplicaciones en la nube de la organización.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
@@ -17,7 +17,7 @@ ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: b884901c044f55ce0868be4df495d81e823d597e
 ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/15/2019
 ms.locfileid: "56281362"
@@ -26,7 +26,7 @@ ms.locfileid: "56281362"
 
 *Se aplica a: Microsoft Cloud App Security*
 
-Puede aplicar acciones de gobierno a los archivos de los usuarios en el entorno de la nube. Después de haber investigado exhaustivamente y aprendido sobre la nube, puede usar las acciones de gobierno para ayudar a proteger la organización.  
+Puede aplicar acciones de gobernanza a los archivos de los usuarios en el entorno de la nube. Después de haber investigado exhaustivamente y aprendido sobre la nube, puede usar las acciones de gobernanza para ayudar a proteger la organización.  
 
 ## <a name="use-policies-to-assess-risk"></a>Usar directivas para evaluar el riesgo  
 Después de echar un vistazo a las alertas abiertas, vaya al centro de directivas para revisar las infracciones de directivas que no han activado alertas.  
@@ -35,7 +35,7 @@ Después de echar un vistazo a las alertas abiertas, vaya al centro de directiva
 
 -   Seleccione una directiva específica para ver la lista **Coincidiendo ahora** de coincidencias de directivas que no han activado alertas.  
 
--   Haga clic en las infracciones de una en una y decida qué hacer con cada una. Para más información sobre las acciones de gobierno, vea las imágenes que aparecen aquí.  
+-   Haga clic en las infracciones de una en una y decida qué hacer con cada una. Para más información sobre las acciones de gobernanza, vea las imágenes que aparecen aquí.  
 
      Si la directiva está establecida para detectar infracciones de cumplimiento normativo y alguien guarda números de tarjetas de crédito en archivos en OneDrive, tendrá una coincidencia en la directiva.  
 
@@ -53,21 +53,21 @@ Después de echar un vistazo a las alertas abiertas, vaya al centro de directiva
 
      ![Coincidencias de contenido de números de tarjeta de crédito](./media/content-matches-ccn.png "coincidencias de contenido de números de tarjeta de crédito")  
 
-## <a name="apply-governance-actions"></a>Aplicar acciones de gobierno  
-Puede aplicar acciones de gobierno desde las directivas, desde las alertas y desde el registro **Archivo**.  
+## <a name="apply-governance-actions"></a>Aplicar acciones de gobernanza  
+Puede aplicar acciones de gobernanza desde las directivas, desde las alertas y desde el registro **Archivo**.  
 
-Puede revisar y ver el estado de todas las acciones de gobierno aplicadas anteriormente en cualquier momento si va al icono de engranaje **Configuración** y selecciona **Registro de gobierno**. ![icono de configuración](./media/settings-icon.png "settings icon")
+Puede revisar y ver el estado de todas las acciones de gobernanza aplicadas anteriormente en cualquier momento si va al icono de engranaje **Configuración** y selecciona **Registro de gobernanza**. ![icono de configuración](./media/settings-icon.png "settings icon")
 
-Para volver a aplicar cualquier acción de gobierno errónea, haga clic en el icono **Reintentar** para aplicarla de nuevo. ![Icono Reintentar](./media/retry-icon.png "retry icon")   
+Para volver a aplicar cualquier acción de gobernanza errónea, haga clic en el icono **Reintentar** para aplicarla de nuevo. ![Icono Reintentar](./media/retry-icon.png "retry icon")   
 
-Hay acciones de gobierno distintas según el tipo de directiva, de infracción y de aplicación.  
+Hay acciones de gobernanza distintas según el tipo de directiva, de infracción y de aplicación.  
 
 ## <a name="move-from-detection-to-automatic-remediation"></a>Pasar de la detección a la corrección automática  
-Después de definir y personalizar los filtros de una directiva, puede seleccionar acciones de gobierno automatizadas que se producirán tras cada infracción de esa directiva.  
+Después de definir y personalizar los filtros de una directiva, puede seleccionar acciones de gobernanza automatizadas que se producirán tras cada infracción de esa directiva.  
 Puesto que las acciones correctoras utilizan las API del proveedor de la nube, pueden variar de una aplicación a otra.  
 
 > [!NOTE]  
->  Tenga especial cuidado al establecer las acciones de gobierno, ya que pueden dar lugar a la pérdida irreversible de permisos de acceso a los archivos.  
+>  Tenga especial cuidado al establecer las acciones de gobernanza, ya que pueden dar lugar a la pérdida irreversible de permisos de acceso a los archivos.  
 > Es recomendable restringir los filtros para representar exactamente los archivos en los que quiere actuar por medio de varios campos de búsqueda. Cuanto más restringidos sean los filtros, mejor.  
 >   
 >  Para obtener orientación, puede utilizar el botón **Editar y obtener vista previa de resultados** de la sección **Filtros**.  

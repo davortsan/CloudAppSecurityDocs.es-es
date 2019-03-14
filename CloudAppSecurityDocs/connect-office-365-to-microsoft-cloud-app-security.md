@@ -51,7 +51,7 @@ Cloud App Security admite las siguientes aplicaciones de Office 365:
 >- El registro de auditoría de buzones de Exchange debe estar activado para cada buzón de usuario antes de que se registre la actividad del usuario en Exchange Online. Consulte las [actividades de buzones de Exchange](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
 >- Si las aplicaciones de Office están habilitadas, también se importan los grupos que forman parte de Office 365 a Cloud App Security desde las aplicaciones de Office específicas. Por ejemplo, si SharePoint está habilitado, se importan también grupos de Office 365 como grupos de SharePoint.
 >- Debe [habilitar la auditoría en Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-auditing/) para obtener los registros desde ahí. Una vez habilitada, Cloud App Security empieza a obtener los registros (con un retraso de 24-72 horas).
-> Si Azure Active Directory está establecido de modo que se sincronice automáticamente con los usuarios del entorno local de Active Directory, la configuración del entorno local reemplaza la configuración de Azure AD y se revierte el uso de la acción de gobierno **Suspender usuario**. 
+> Si Azure Active Directory está establecido de modo que se sincronice automáticamente con los usuarios del entorno local de Active Directory, la configuración del entorno local reemplaza la configuración de Azure AD y se revierte el uso de la acción de gobernanza **Suspender usuario**. 
  
 1.  En la página **Conectores de aplicaciones**, haga clic en el botón del signo más y seleccione **Office 365**.  
 

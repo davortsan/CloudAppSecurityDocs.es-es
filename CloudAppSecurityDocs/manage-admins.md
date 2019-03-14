@@ -17,7 +17,7 @@ ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 90cc081f33b30ac3b4774c7292752d1c27dddd0c
 ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/15/2019
 ms.locfileid: "56281243"
@@ -32,7 +32,7 @@ Microsoft Cloud App Security es compatible con el control de acceso basado en ro
 
 De forma predeterminada, los siguientes roles de administrador de Office 365 y [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) tienen acceso a Microsoft Cloud App Security:
 
-- **Administrador global y Administrador de seguridad:** los administradores con **acceso completo** tienen permisos completos en Cloud App Security. Pueden agregar administradores, incorporar directivas y configuración, cargar registros y realizar acciones de gobierno.
+- **Administrador global y Administrador de seguridad:** los administradores con **acceso completo** tienen permisos completos en Cloud App Security. Pueden agregar administradores, incorporar directivas y configuración, cargar registros y realizar acciones de gobernanza.
 
 - **Administrador de cumplimiento**: tiene permisos de solo lectura y puede administrar alertas. Puede crear y modificar directivas de archivo, permitir acciones de control de archivos y ver todos los informes integrados en Administración de datos. 
 
@@ -46,7 +46,7 @@ De forma predeterminada, los siguientes roles de administrador de Office 365 y 
   - Obtener acceso a cualquier página de configuración ni verla 
   - Obtener acceso a la configuración de detección ni verla 
   - Obtener acceso a la página de conectores de aplicaciones ni verla
-  - Obtener acceso al registro de gobierno ni verlo 
+  - Obtener acceso al registro de gobernanza ni verlo 
   - Obtener acceso a la página de informes de instantáneas de administración ni verla 
 
 - **Administración de aplicaciones e instancias**: tiene permisos en todos los datos en Microsoft Cloud App Security que tengan que ver exclusivamente con la aplicación o instancia específica de una aplicación seleccionada. Por ejemplo, da a un usuario permiso de administrador para la instancia europea de Box. El administrador verá solo los datos que se relacionan con la instancia europea de Box, ya sean archivos, actividades, directivas o alertas:
@@ -60,7 +60,7 @@ De forma predeterminada, los siguientes roles de administrador de Office 365 y 
   - Control de aplicaciones de acceso condicional (sin permisos)
   - Actividad de Cloud Discovery (sin permisos)
   - Extensiones de seguridad (permisos únicamente para el token de API con permisos de usuario)
-  - Acciones de gobierno (solo para la aplicación o instancia específica) 
+  - Acciones de gobernanza (solo para la aplicación o instancia específica) 
 
 - **Administrador de grupo:** tiene permisos en todos los datos en Microsoft Cloud App Security que tengan que ver exclusivamente con el grupo específico seleccionado aquí. Por ejemplo, si concede permiso a un administrador de usuarios para el grupo "Alemania: todos los usuarios", el administrador podrá ver y modificar información en Microsoft Cloud App Security solo para ese grupo de usuarios:
 
@@ -73,7 +73,7 @@ De forma predeterminada, los siguientes roles de administrador de Office 365 y 
   - Control de aplicaciones de acceso condicional (sin permisos)
   - Actividad de Cloud Discovery (sin permisos)
   - Extensiones de seguridad (permisos únicamente para el token de API con usuarios del grupo)
-  - Acciones de gobierno (solo para los usuarios del grupo específicos)
+  - Acciones de gobernanza (solo para los usuarios del grupo específicos)
 
 - **Administrador de detección global:**  Tiene permiso para ver y editar todos los datos y la configuración de Cloud Discovery. El administrador de detección global tiene acceso de la siguiente manera:
 
@@ -89,7 +89,7 @@ De forma predeterminada, los siguientes roles de administrador de Office 365 y 
   - Página Archivos (sin permisos)
   - Control de aplicaciones de acceso condicional (sin permisos)
   - Extensiones de seguridad: sin permisos
-  - Acciones de gobierno: solo acciones relacionadas con Cloud Discovery
+  - Acciones de gobernanza: solo acciones relacionadas con Cloud Discovery
 
 ## <a name="override-admin-permissions"></a>Invalidación de los permisos de administrador
 

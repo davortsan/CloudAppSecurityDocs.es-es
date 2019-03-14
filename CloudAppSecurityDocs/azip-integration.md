@@ -17,7 +17,7 @@ ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 2d17d646479e9686c2ebbeb3c4675cf8dff2ee1d
 ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/15/2019
 ms.locfileid: "56281668"
@@ -26,14 +26,14 @@ ms.locfileid: "56281668"
 
 *Se aplica a: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security le permite aplicar etiquetas de clasificación de Azure Information Protection automáticamente, con o sin protección, a los archivos como acción de gobierno de directiva de archivo. También puede investigar archivos al filtrar la etiqueta de clasificación aplicada en el portal de Cloud App Security. El uso de clasificaciones permite mayor visibilidad y control de la información confidencial en la nube. La integración de Azure Information Protection con Cloud App Security es tan fácil como seleccionar una sola casilla. 
+Microsoft Cloud App Security le permite aplicar etiquetas de clasificación de Azure Information Protection automáticamente, con o sin protección, a los archivos como acción de gobernanza de directiva de archivo. También puede investigar archivos al filtrar la etiqueta de clasificación aplicada en el portal de Cloud App Security. El uso de clasificaciones permite mayor visibilidad y control de la información confidencial en la nube. La integración de Azure Information Protection con Cloud App Security es tan fácil como seleccionar una sola casilla. 
 
 > [!NOTE]
 > Si ya [ha migrado las etiquetas de clasificación del Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels), este artículo también le resultará pertinente, ya que abarca las etiquetas unificadas de Microsoft Information Protection. Si no ha migrado las etiquetas de clasificación existentes y empieza a crear nuevas en el Centro de seguridad y cumplimiento de Office 365, Cloud App Security solo utilizará las preexistentes configuradas en el portal de Azure Information Protection.
 
 
 Al integrar Azure Information Protection en Cloud App Security, puede aprovechar todas las funciones de ambos servicios y proteger los archivos en la nube, entre lo que se incluye lo siguiente:
-- La capacidad de aplicar etiquetas de clasificación como una acción de gobierno a archivos que coincidan con las directivas.
+- La capacidad de aplicar etiquetas de clasificación como una acción de gobernanza a archivos que coincidan con las directivas.
 - La capacidad de ver todos los archivos clasificados en una ubicación central.
 - La capacidad de investigar en función del nivel de clasificación y cuantificar la exposición de la información confidencial en las aplicaciones en la nube.
 - La capacidad de crear directivas para asegurarse de que los archivos clasificados se controlan correctamente.
@@ -88,7 +88,7 @@ Para permitir que Cloud App Security examine archivos que tengan la inspección 
 1. En **Azure Information Protection**, seleccione **Automatically scan files for Azure Information Protection classification labels** (Examinar automáticamente los archivos en busca de etiquetas de clasificación de Azure Information Protection). 
     ![Habilitación de Azure Information Protection](./media/enable-azip.png)
 
-Después de habilitar Azure Information Protection, podrá ver los archivos que tienen etiquetas de clasificación y filtrarlos por etiqueta en Cloud App Security. Una vez que Cloud App Security esté conectado a la aplicación en la nube, podrá usar las características de integración de Azure Information Protection para aplicar etiquetas de clasificación de Azure Information Protection (con o sin protección) en el portal de Cloud App Security. Para ello, puede agregarlas directamente a los archivos o configurar una directiva de archivo para aplicar de forma automática las etiquetas de clasificación como una acción de gobierno.
+Después de habilitar Azure Information Protection, podrá ver los archivos que tienen etiquetas de clasificación y filtrarlos por etiqueta en Cloud App Security. Una vez que Cloud App Security esté conectado a la aplicación en la nube, podrá usar las características de integración de Azure Information Protection para aplicar etiquetas de clasificación de Azure Information Protection (con o sin protección) en el portal de Cloud App Security. Para ello, puede agregarlas directamente a los archivos o configurar una directiva de archivo para aplicar de forma automática las etiquetas de clasificación como una acción de gobernanza.
 
 
 > [!NOTE] 
@@ -126,13 +126,13 @@ Para obtener más información sobre cómo funcionan conjuntamente Cloud App Sec
 
 ### <a name="automatically-label-files"></a>Etiquetar archivos automáticamente
 
-Para aplicar de forma automática etiquetas de clasificación a los archivos, cree una directiva de archivo y configure la opción **Aplicar etiqueta de clasificación** como la acción de gobierno.
+Para aplicar de forma automática etiquetas de clasificación a los archivos, cree una directiva de archivo y configure la opción **Aplicar etiqueta de clasificación** como la acción de gobernanza.
 
 Siga estas instrucciones para crear la directiva de archivo:
 
 1. Cree una directiva de archivo.
 2. Establezca la directiva para incluir el tipo de archivo que quiere detectar. Por ejemplo, establezca todos los archivos donde **Access level** (Nivel de acceso) no sea igual a **Internal** (Interna) y donde **Owner OU** (UO de propietario) sea igual al equipo financiero. 
-3. En las acciones de gobierno de la aplicación correspondiente, vaya a **Apply a classification label** (Aplicar una etiqueta de clasificación) y, luego, seleccione el tipo de etiqueta.
+3. En las acciones de gobernanza de la aplicación correspondiente, vaya a **Apply a classification label** (Aplicar una etiqueta de clasificación) y, luego, seleccione el tipo de etiqueta.
 
    ![Aplicar etiqueta](./media/aip-gov-action.png)
 
@@ -180,7 +180,7 @@ Siga estas instrucciones para crear la directiva de archivo:
 ![directiva de datos restringidos](./media/azip-restricted-data-policy.png) 
 
 También puede establecer alertas, notificaciones al usuario o emprender acciones inmediatas para estas directivas.
-Obtenga más información sobre [acciones de gobierno](governance-actions.md).
+Obtenga más información sobre [acciones de gobernanza](governance-actions.md).
 
 Obtenga más información sobre [Azure Information Protection](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection) y consulte su [Tutorial de inicio rápido](https://docs.microsoft.com/information-protection/get-started/infoprotect-quick-start-tutorial).
 

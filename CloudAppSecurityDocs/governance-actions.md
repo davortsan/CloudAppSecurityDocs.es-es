@@ -1,6 +1,6 @@
 ---
-title: 'Acciones de gobierno para controlar las aplicaciones conectadas: Cloud App Security | Microsoft Docs'
-description: En este artículo se enumeran y se describen todas las acciones de gobierno que se pueden realizar en Cloud App Security, así como los mensajes de registro asociados.
+title: 'Acciones de gobernanza para controlar las aplicaciones conectadas: Cloud App Security | Microsoft Docs'
+description: En este artículo se enumeran y se describen todas las acciones de gobernanza que se pueden realizar en Cloud App Security, así como los mensajes de registro asociados.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
@@ -17,7 +17,7 @@ ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 6bce6df97a83e6a0a8e65c4eed8d8ac955ab9a1f
 ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/15/2019
 ms.locfileid: "56282076"
@@ -26,15 +26,15 @@ ms.locfileid: "56282076"
 
 *Se aplica a: Microsoft Cloud App Security*
 
-El gobierno le permite controlar qué hacen los usuarios en tiempo real en varias aplicaciones. Para las aplicaciones conectadas, puede aplicar acciones de gobierno a archivos o actividades. Las acciones de gobierno son acciones que puede ejecutar en archivos o actividades directamente desde Microsoft Cloud App Security. Las acciones de gobierno controlan qué hacen los usuarios en tiempo real en las aplicaciones conectadas. 
+La gobernanza le permite controlar qué hacen los usuarios en tiempo real en varias aplicaciones. Para las aplicaciones conectadas, puede aplicar acciones de gobernanza a archivos o actividades. Las acciones de gobernanza son acciones que puede ejecutar en archivos o actividades directamente desde Microsoft Cloud App Security. Las acciones de gobernanza controlan qué hacen los usuarios en tiempo real en las aplicaciones conectadas. 
 
 > [!NOTE]
-> Cuando Microsoft Cloud App Security intenta ejecutar una acción de gobierno en un archivo, pero esta no se produce porque el archivo está bloqueado, se reintentará automáticamente la acción de gobierno. 
+> Cuando Microsoft Cloud App Security intenta ejecutar una acción de gobernanza en un archivo, pero esta no se produce porque el archivo está bloqueado, se reintentará automáticamente la acción de gobernanza. 
 
 
-## <a name="file-governance-actions"></a>Acciones de gobierno relacionadas con archivos 
+## <a name="file-governance-actions"></a>Acciones de gobernanza relacionadas con archivos 
 
-Las siguientes acciones de gobierno pueden realizarse para aplicaciones conectadas en un archivo o usuario específico o bien desde una directiva concreta.
+Las siguientes acciones de gobernanza pueden realizarse para aplicaciones conectadas en un archivo o usuario específico o bien desde una directiva concreta.
 
 - **Notificaciones:** 
 
@@ -95,16 +95,16 @@ Las siguientes acciones de gobierno pueden realizarse para aplicaciones conectad
 
     - **Suspender usuario**: se suspende al usuario de la aplicación. 
       > [!NOTE] 
-      > Si Azure Active Directory está establecido de modo que se sincronice automáticamente con los usuarios del entorno local de Active Directory, la configuración del entorno local reemplazará la configuración de Azure AD y esta acción de gobierno se revertirá. 
+      > Si Azure Active Directory está establecido de modo que se sincronice automáticamente con los usuarios del entorno local de Active Directory, la configuración del entorno local reemplazará la configuración de Azure AD y esta acción de gobernanza se revertirá. 
 
     - **Requerir que el usuario vuelva a iniciar sesión**: se cierra la sesión del usuario y se le requiere que vuelva a iniciarla. 
 
     ![Acciones de gobierno de la directiva de actividad de seguridad de Cloud App Security](./media/activity-policy-ref6.png "Ref6 de directiva de actividad") 
 
 
-## <a name="governance-conflicts"></a>Conflictos de gobierno
+## <a name="governance-conflicts"></a>Conflictos de gobernanza
 
-Después de crear varias directivas, puede darse el caso de que sus acciones de gobierno se superpongan. Si es así, Cloud App Security procesará las acciones de gobierno de la manera siguiente:
+Después de crear varias directivas, puede darse el caso de que sus acciones de gobernanza se superpongan. Si es así, Cloud App Security procesará las acciones de gobernanza de la manera siguiente:
 
 ### <a name="conflicts-between-policies"></a>Conflictos entre directivas
 
@@ -114,12 +114,12 @@ Después de crear varias directivas, puede darse el caso de que sus acciones de 
 
 ### <a name="conflicts-in-user-sync"></a>Conflictos en la sincronización de usuarios
 
-- Si Azure Active Directory está establecido de modo que se sincronice automáticamente con los usuarios del entorno local de Active Directory, la configuración del entorno local reemplazará la configuración de Azure AD y esta acción de gobierno se revertirá. 
+- Si Azure Active Directory está establecido de modo que se sincronice automáticamente con los usuarios del entorno local de Active Directory, la configuración del entorno local reemplazará la configuración de Azure AD y esta acción de gobernanza se revertirá. 
 
-## <a name="governance-log"></a>Registro de gobierno
-El registro de gobierno proporciona un registro del estado de cada tarea que Cloud App Security deba ejecutar, incluidas las tareas manuales y automáticas. Entre estas tareas se incluyen las definidas en las directivas, las acciones de gobierno establecidas en los archivos y los usuarios, y cualquier otra acción que haya determinado que debe realizar Cloud App Security. El registro de gobierno también proporciona información sobre el resultado correcto o incorrecto de estas acciones. Puede volver a intentar o revertir algunas de las acciones de gobierno en el registro de gobierno. 
+## <a name="governance-log"></a>Registro de gobernanza
+El registro de gobernanza proporciona un registro del estado de cada tarea que Cloud App Security deba ejecutar, incluidas las tareas manuales y automáticas. Entre estas tareas se incluyen las definidas en las directivas, las acciones de gobernanza establecidas en los archivos y los usuarios, y cualquier otra acción que haya determinado que debe realizar Cloud App Security. El registro de gobernanza también proporciona información sobre el resultado correcto o incorrecto de estas acciones. Puede volver a intentar o revertir algunas de las acciones de gobernanza en el registro de gobernanza. 
 
-En la tabla siguiente se muestra una lista completa de las acciones que Cloud App Security permite realizar. Estas acciones se habilitarán en varios lugares de la consola, como se describe en la columna **Ubicación**. Cada acción de gobierno realizada se incluye en el registro de gobierno.
+En la tabla siguiente se muestra una lista completa de las acciones que Cloud App Security permite realizar. Estas acciones se habilitarán en varios lugares de la consola, como se describe en la columna **Ubicación**. Cada acción de gobernanza realizada se incluye en el registro de gobernanza.
 Para obtener información sobre cómo se tratan las acciones de control cuando hay conflictos de directivas, vea [Policy Conflicts](control-cloud-apps-with-policies.md) (Conflictos de directivas).
 
 
@@ -144,14 +144,14 @@ Para obtener información sobre cómo se tratan las acciones de control cuando h
 |Directiva de archivo|Archivo |Enviar una notificación al propietario del archivo|Envía un correo electrónico al propietario del archivo cuando se infringe una directiva. En Dropbox, si no hay ningún propietario asociado a un archivo, la notificación se enviará al usuario específico que establezca. | Todas las aplicaciones |
 |Directiva de archivo, Directiva de actividad | Archivo, Actividad | Enviar una notificación a usuarios concretos |Se envía un correo para informar a determinados usuarios de que un archivo infringe una directiva.| Todas las aplicaciones |
 |Directiva de archivo y Directiva de actividad | Archivo, Actividad |Enviar notificación al usuario|Se envía un correo a los usuarios para informarles de que algo que han hecho o un archivo que poseen infringe una directiva. Se puede agregar una notificación personalizada que indique en qué consistió la infracción. |Todos |
-|Directiva de archivo y archivos|Archivo | Quitar la capacidad de compartir de los editores|En Google Drive, los permisos de editor predeterminados de un archivo permiten también compartir ese archivo. Esta acción de gobierno restringe esta opción y limita el uso compartido del archivo al propietario.| G Suite|
+|Directiva de archivo y archivos|Archivo | Quitar la capacidad de compartir de los editores|En Google Drive, los permisos de editor predeterminados de un archivo permiten también compartir ese archivo. Esta acción de gobernanza restringe esta opción y limita el uso compartido del archivo al propietario.| G Suite|
 |Directiva de archivo y archivos|Archivo | [Poner en cuarentena de administrador](use-case-admin-quarantine.md) |Se quitan todos los permisos del archivo y el archivo se mueve a una carpeta de cuarentena en una ubicación para el administrador. Esta acción permite al administrador revisar el archivo y quitarlo.| Office 365 SharePoint, OneDrive para la Empresa, Box|
 |Directiva de archivo y archivos|Archivo | Aplicar etiqueta de clasificación|Se aplica una etiqueta de clasificación de Azure Information Protection a los archivos de forma automática en función de las condiciones establecidas en la directiva.| Box, One Drive, G Suite, SharePoint |
 |Directiva de archivo y archivos|Archivo | Quitar etiqueta de clasificación | Se quita una etiqueta de clasificación de Azure Information Protection de los archivos de forma automática en función de las condiciones establecidas en la directiva. Solo puede quitar las etiquetas si no incluyen protección y se aplicaron desde Cloud App Security, no directamente desde Information Protection.| Box, One Drive, G Suite, SharePoint |
-|Directiva de archivo, Directiva de actividad, Alertas | Aplicación |Requerir a los usuarios que inicien sesión de nuevo| Puede requerir a los usuarios que inicien sesión de nuevo en todas las aplicaciones de Office 365 y Azure AD como una solución rápida y eficaz en el caso de alertas de actividad sospechosa del usuario y cuentas en peligro. Encontrará la nueva acción de gobierno en la configuración de directiva y las páginas de alertas, junto a la opción Suspender usuario. | Office 365, Azure AD |
+|Directiva de archivo, Directiva de actividad, Alertas | Aplicación |Requerir a los usuarios que inicien sesión de nuevo| Puede requerir a los usuarios que inicien sesión de nuevo en todas las aplicaciones de Office 365 y Azure AD como una solución rápida y eficaz en el caso de alertas de actividad sospechosa del usuario y cuentas en peligro. Encontrará la nueva acción de gobernanza en la configuración de directiva y las páginas de alertas, junto a la opción Suspender usuario. | Office 365, Azure AD |
 |Archivos |Archivo |Restaurar de la cuarentena de usuario |Se restaura un usuario que estaba en cuarentena. |Cuadro |
 |Archivos |Archivo | Concederme permisos de lectura| Se concede permisos de lectura para el archivo a sí mismo con el fin de tener acceso al archivo y saber si existe o no una infracción en él.| G Suite|
-|Archivos |Archivo | Permitir que los editores compartan | En Google Drive, los permisos de editor predeterminados de un archivo permiten también compartir ese archivo. Esta acción de gobierno hace lo contrario de “Quitar la capacidad de compartir de los editores” y permite que el editor comparta el archivo. | G Suite|
+|Archivos |Archivo | Permitir que los editores compartan | En Google Drive, los permisos de editor predeterminados de un archivo permiten también compartir ese archivo. Esta acción de gobernanza hace lo contrario de “Quitar la capacidad de compartir de los editores” y permite que el editor comparta el archivo. | G Suite|
 |Archivos |Archivo | Proteger | Proteja un archivo con Azure Information Protection aplicando una plantilla de la organización. | Office 365 (SharePoint y OneDrive) |
 |Archivos |Archivo | Revocar mis propios permisos de lectura | Se revocan los permisos de lectura para el archivo de uno mismo. Esto es útil después de haberse concedido permisos manualmente para saber si un archivo tiene o no una infracción.| G Suite|
 |Archivos, Directiva de archivo|Archivo | Transferir la propiedad de los archivos | Se cambia el propietario: en la directiva se elige un propietario específico. | G Suite|

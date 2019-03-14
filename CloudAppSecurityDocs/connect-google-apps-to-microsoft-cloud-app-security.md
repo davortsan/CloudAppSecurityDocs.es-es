@@ -17,7 +17,7 @@ ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 96237fe094b0c3f864f9ec4c0b27af95b2fa13ac
 ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/15/2019
 ms.locfileid: "56282178"
@@ -227,7 +227,7 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
   
     4.  Escriba un **correo electrónico de la cuenta de administrador** de su administrador de G Suite.  
   
-    5.  Si tiene una cuenta G Suite Business o Enterprise, active esta casilla. Para obtener información sobre las características que están disponibles en Cloud App Security para G Suite Business o Enterprise, vea [Enable instant visibility, protection and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) (Habilitar la visibilidad, la protección y las acciones de gobierno instantáneas para las aplicaciones).  
+    5.  Si tiene una cuenta G Suite Business o Enterprise, active esta casilla. Para obtener información sobre las características que están disponibles en Cloud App Security para G Suite Business o Enterprise, vea [Enable instant visibility, protection and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) (Habilitar la visibilidad, la protección y las acciones de gobernanza instantáneas para las aplicaciones).  
   
     6.  Haga clic en **Guardar configuración**.  
   

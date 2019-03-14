@@ -17,7 +17,7 @@ ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: cfb9e6fac64c82920d3daf31c359abef85d702a2
 ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/15/2019
 ms.locfileid: "56281447"
@@ -42,7 +42,7 @@ Pueden crearse los siguientes tipos de directivas:
 |![icono de directiva de detección de anomalías](./media/anomaly_detection_policy.png)|Directiva de detección de anomalías|Las directivas de detección de anomalías permiten buscar actividades inusuales en la nube. La detección se basa en los factores de riesgo que se configuran para avisarle cuando ocurre algo que es diferente de la línea base de la organización o de la actividad normal del usuario.|  
 |![icono de directivas de Cloud Discovery](./media/discovery_policy.png)|Directiva de detección de aplicaciones|Las directivas de detección de aplicaciones permiten establecer alertas que notifican cuando se detectan nuevas aplicaciones en la organización.|  
 |![icono de directiva de detección de anomalías](./media/anomaly_detection_policy.png)|Directiva de detección de anomalías de Cloud Discovery|Las directivas de detección de anomalías de Cloud Discovery examinan los registros que se usan para detectar aplicaciones en la nube y buscan apariciones inusuales. Por ejemplo, cuando un usuario que nunca ha usado Dropbox de repente carga 600 GB o cuando hay muchas más transacciones de lo habitual en una aplicación determinada.|  
-|![icono de directiva de archivo](./media/file_policy.png)|Directiva de archivo|Las directivas de archivo permiten examinar las aplicaciones en la nube para detectar tipos de archivo o archivos concretos (compartidos, compartidos con dominios externos), datos (información de propiedad, datos personales, información de tarjeta de crédito y otros tipos de datos) y aplicar acciones de gobierno a los archivos (las acciones de gobierno son específicas de la aplicación en la nube).|  
+|![icono de directiva de archivo](./media/file_policy.png)|Directiva de archivo|Las directivas de archivo permiten examinar las aplicaciones en la nube para detectar tipos de archivo o archivos concretos (compartidos, compartidos con dominios externos), datos (información de propiedad, datos personales, información de tarjeta de crédito y otros tipos de datos) y aplicar acciones de gobernanza a los archivos (las acciones de gobernanza son específicas de la aplicación en la nube).|  
 |![Icono de directiva de sesión](./media/proxy-policy.png)|Directiva de sesión|Las directivas de sesión proporcionan control de la actividad de los usuarios en sus aplicaciones de nube y supervisión en tiempo real.|
 
   

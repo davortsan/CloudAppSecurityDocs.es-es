@@ -17,7 +17,7 @@ ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 88573259fb2fd5296703fe18abf15c90eaa21e50
 ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/15/2019
 ms.locfileid: "56281839"
@@ -56,7 +56,7 @@ Las directivas de detección permiten establecer alertas que avisan cuando se de
      - Al hacer clic en **Guardar configuración de alertas como valor predeterminado para la organización**, permitirá que se use la configuración para futuras directivas.
      - Si tiene una configuración predeterminada, puede seleccionar **Usar la configuración predeterminada de la organización**.
   
-8. Seleccione las acciones de **Gobierno** que se aplicarán cuando una aplicación coincida con esta directiva. Es posible etiquetar las directivas como **autorizadas** o **no autorizadas**, o bien una etiqueta personalizada. 
+8. Seleccione las acciones de **gobernanza** que se aplicarán cuando una aplicación coincida con esta directiva. Es posible etiquetar las directivas como **autorizadas** o **no autorizadas**, o bien una etiqueta personalizada. 
 
 9. Haga clic en **Crear**.  
   

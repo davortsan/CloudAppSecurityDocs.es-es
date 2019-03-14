@@ -17,7 +17,7 @@ ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: ffb0a07daba385f000094273cb0afd9c85eda1f8
 ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/15/2019
 ms.locfileid: "56281651"
@@ -49,7 +49,7 @@ La página Aplicaciones de OAuth de aplicación proporciona la siguiente informa
 |Icono Exportar en la lista de aplicaciones  |Exporte un archivo CSV que contiene una lista de aplicaciones, el número de usuarios para cada aplicación, los permisos asociados a la aplicación, el nivel de permisos, el estado de la aplicación y el nivel de uso de la comunidad.|Office 365, G Suite y Salesforce|
 |Aplicación|Nombre de la aplicación. Seleccione el nombre para ver más información, incluida la descripción, el publicador (para Office 365), el sitio web de la aplicación y el identificador.|Office 365, G Suite y Salesforce|
 |Autorizado por|Número de usuarios que han autorizado esta aplicación para obtener acceso a sus cuentas de aplicación y han concedido permisos a la aplicación. Seleccione el número para ver más información, incluida una lista de correos electrónicos de usuario, y si un administrador ha aceptado previamente la aplicación.|Office 365, G Suite y Salesforce|
-|Nivel de permisos  |El icono y texto de nivel de permisos que indica Alto, Medio o Bajo. El nivel indica el grado de acceso que tiene esta aplicación a sus datos. Por ejemplo, Bajo podría indicar que la aplicación solo tiene acceso a los perfiles y nombres de usuario. Seleccione el nivel para obtener más información, incluidos los permisos concedidos a la aplicación, el uso de la comunidad o actividad relacionada en el [registro de gobierno](governance-actions.md).|Office 365 y G Suite|
+|Nivel de permisos  |El icono y texto de nivel de permisos que indica Alto, Medio o Bajo. El nivel indica el grado de acceso que tiene esta aplicación a sus datos. Por ejemplo, Bajo podría indicar que la aplicación solo tiene acceso a los perfiles y nombres de usuario. Seleccione el nivel para obtener más información, incluidos los permisos concedidos a la aplicación, el uso de la comunidad o actividad relacionada en el [registro de gobernanza](governance-actions.md).|Office 365 y G Suite|
 |Estado de la aplicación|Un administrador puede marcar una aplicación como Aprobada, Prohibida, o dejarla como Sin determinar.|Office 365, G Suite y Salesforce|
 |Uso de la comunidad|Muestra la popularidad de la aplicación entre los usuarios (conocida, poco conocida o desconocida)|Office 365, G Suite y Salesforce|
 |Última autorización|Fecha más reciente en la que un usuario concedió permisos a esta aplicación.|Office 365 y Salesforce|
@@ -63,7 +63,7 @@ La página Aplicaciones de OAuth de aplicación proporciona la siguiente informa
    
    - Haga clic en el vínculo **Permisos** para ver una lista completa de los permisos concedidos a la aplicación. 
    - En **Uso de la comunidad**, puede ver la frecuencia de uso de la aplicación entre otras organizaciones.  
-   - Haga clic en el vínculo **Actividad relacionada** para ver las actividades que se muestran en el registro de gobierno relacionadas con esta aplicación.
+   - Haga clic en el vínculo **Actividad relacionada** para ver las actividades que se muestran en el registro de gobernanza relacionadas con esta aplicación.
 
 2. Para prohibir la aplicación, haga clic en el icono Prohibir al final de la fila de la aplicación en la tabla.
    

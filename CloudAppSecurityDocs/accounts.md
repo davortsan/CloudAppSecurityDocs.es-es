@@ -17,7 +17,7 @@ ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: d4cc8da00f61fca4f483857c1d3e87cab5491760
 ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/15/2019
 ms.locfileid: "56282059"
@@ -42,7 +42,7 @@ La página **Usuarios y cuentas** permite investigar fácilmente las cuentas, in
 
 -   Puede buscar usuarios que ya no formen parte de su organización, pero que es posible que aún tengan cuentas activas.  
 
--   Puede realizar acciones de gobierno en la cuenta, como suspender una aplicación o ir a la página de configuración de la cuenta. Para obtener una lista completa de acciones de gobierno, vea el [registro de gobierno](governance-actions.md).
+-   Puede realizar acciones de gobernanza en la cuenta, como suspender una aplicación o ir a la página de configuración de la cuenta. Para obtener una lista completa de acciones de gobernanza, vea el [registro de gobernanza](governance-actions.md).
     
 -   Puede ver qué cuentas están incluidas en cada grupo de usuarios.  
 

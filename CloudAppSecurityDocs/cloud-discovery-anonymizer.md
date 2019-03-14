@@ -17,7 +17,7 @@ ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 3e4c3e002bba503f204ddb2e474db40a93dc6ad1
 ms.sourcegitcommit: e88ec011088f7f6f4ccad58c86dc7e3aa908b05f
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/04/2019
 ms.locfileid: "57254401"
@@ -26,7 +26,7 @@ ms.locfileid: "57254401"
 
 *Se aplica a: Microsoft Cloud App Security*
 
-La anonimización de datos de Cloud Discovery le permite proteger la privacidad del usuario. Cuando se haya cargado el registro de datos en el portal de Microsoft Cloud App Security, se depura el registro y se reemplaza toda la información de nombres de usuario con nombres de usuario cifrados. De este modo, todas las actividades de la nube se mantienen anónimas. Cuando sea necesario, para una investigación de seguridad específica (por ejemplo, una infracción de seguridad o una actividad sospechosa del usuario), los administradores pueden resolver el nombre de usuario real. Si un administrador tiene un motivo para sospechar de un usuario específico, puede buscar el nombre de usuario cifrado de un nombre de usuario conocido y, después, comenzar la investigación usando el nombre de usuario cifrado. En el **Registro de gobierno** del portal se audita cada conversión de nombre de usuario.
+La anonimización de datos de Cloud Discovery le permite proteger la privacidad del usuario. Cuando se haya cargado el registro de datos en el portal de Microsoft Cloud App Security, se depura el registro y se reemplaza toda la información de nombres de usuario con nombres de usuario cifrados. De este modo, todas las actividades de la nube se mantienen anónimas. Cuando sea necesario, para una investigación de seguridad específica (por ejemplo, una infracción de seguridad o una actividad sospechosa del usuario), los administradores pueden resolver el nombre de usuario real. Si un administrador tiene un motivo para sospechar de un usuario específico, puede buscar el nombre de usuario cifrado de un nombre de usuario conocido y, después, comenzar la investigación usando el nombre de usuario cifrado. En el **Registro de gobernanza** del portal se audita cada conversión de nombre de usuario.
 
 Puntos clave:
 -   No se almacena ni se muestra ninguna información privada. Solo información cifrada.
@@ -73,7 +73,7 @@ Puntos clave:
 
    ![Anonimización](./media/anonymizer.png)
 
-6. La acción se audita en el **Registro de gobierno** del portal. 
+6. La acción se audita en el **registro de gobernanza** del portal. 
 
     ![Anonimización](./media/anonymize-gov-log.png)
 

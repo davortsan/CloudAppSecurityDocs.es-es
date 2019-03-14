@@ -17,7 +17,7 @@ ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 74f912e7bffe544f6fd26434a72133e749b199c6
 ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/15/2019
 ms.locfileid: "56281974"
@@ -111,12 +111,12 @@ Estas directivas buscan actividades dentro de una única sesión según la líne
 - Esta directiva crea un perfil del entorno y activa alertas cuando los usuarios eliminan varias máquinas virtuales en una única sesión, en relación con la línea base de la organización. Esto podría indicar un intento de infracción de seguridad.
 
 
-## Habilitación del gobierno automatizado<a name="adp-automated-gov"></a>
+## Habilitación de la gobernanza automatizada<a name="adp-automated-gov"></a>
 
 Puede habilitar acciones de corrección automatizadas en las alertas generadas por directivas de detección de anomalías. 
 
 1. Haga clic en el nombre de la directiva de detección en la página **Directiva**.
-2. En la ventana **Editar directiva de detección de anomalías** que se abre, en **Gobierno**, establezca las acciones de corrección que quiera para cada aplicación conectada o para todas las aplicaciones. 
+2. En la ventana **Editar directiva de detección de anomalías** que se abre, en **Gobernanza**, establezca las acciones de corrección que quiera para cada aplicación conectada o para todas las aplicaciones. 
 3. Haga clic en **Actualizar**.
 
 ## <a name="tune-anomaly-detection-policies"></a>Ajuste de las directivas de detección de anomalías

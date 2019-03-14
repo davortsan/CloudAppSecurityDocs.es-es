@@ -17,7 +17,7 @@ ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 5acd24e9cd99abaed17c0bdb88f1a4e9825b0b16
 ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/15/2019
 ms.locfileid: "56282722"
@@ -168,7 +168,7 @@ Compruebe el estado del recopilador en la tabla **Recopilador de registros** y a
 
  ![ubuntu9](./media/ubuntu9.png)
 
-También puede ir al **registro de gobierno** y comprobar que los registros se carguen de manera periódica en el portal.
+También puede ir al **registro de gobernanza** y comprobar que los registros se están cargando periódicamente en el portal.
 
 Si tiene problemas durante la implementación, consulte [Solución de problemas de Cloud Discovery](troubleshooting-cloud-discovery.md).
 

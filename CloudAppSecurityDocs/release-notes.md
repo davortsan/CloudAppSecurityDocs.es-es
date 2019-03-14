@@ -54,7 +54,7 @@ Se han agregado consultas sugeridas a la página Aplicaciones de OAuth para prop
 Si desea habilitar la supervisión de actividades de Office 365 en Cloud App Security, ahora debe habilitar la auditoría en el [Centro de seguridad y cumplimiento de Office]( https://support.microsoft.com/help/4026501/office-auditing-in-office-365-for-admins) como resultado de un [cambio en la auditoría de Office 365]( https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-faq#what-happens-if-i-disable-auditing-for-my-office-365-organization-will-i-still-get-events-via-the-management-activity-api). Este cambio solo debe realizarse si aún no ha habilitado la supervisión de actividades de Office 365 en Cloud App Security.
 
 - **Mayor compatibilidad con Box**<br>
-Cloud App Security ahora admite dos nuevas acciones de gobierno para Box:
+Cloud App Security ahora admite dos nuevas acciones de gobernanza para Box:
 
    - **Expiración del vínculo compartido**: esta acción de gobierno proporciona la opción de establecer una fecha de expiración para un vínculo compartido después de la cual dejará de estar activo. 
 
@@ -249,7 +249,7 @@ Publicado el 24 de junio de 2018
 
 -   **Detección de malware**<br>La funcionalidad de detección de malware se está implantando de forma gradual para **detectar automáticamente los archivos maliciosos en el almacenamiento en la nube**, con independencia del tipo de archivo. Microsoft Cloud App Security usa la inteligencia sobre amenazas de Microsoft para reconocer si determinados archivos están asociados a ataques de malware conocidos o son potencialmente maliciosos. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).
  
--   **Corrección automatizada de actividades sospechosas**<br>Ahora puede establecer acciones de corrección automática para una sesión sospechosa desencadenadas por las directivas de detección de anomalías. Gracias a esta mejora, se le avisará al instante cuando se produzca una infracción y **se aplicarán automáticamente las acciones de gobierno**, por ejemplo, la suspensión del usuario. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md#adp-automated-gov). 
+-   **Corrección automatizada de actividades sospechosas**<br>Ahora puede establecer acciones de corrección automática para una sesión sospechosa desencadenadas por las directivas de detección de anomalías. Gracias a esta mejora, se le avisará al instante cuando se produzca una infracción y **se aplicarán automáticamente las acciones de gobernanza**, por ejemplo, la suspensión del usuario. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md#adp-automated-gov). 
  
 -   **Evaluación de la configuración de seguridad para Azure**<br>Microsoft Cloud App Security está implementando de forma gradual la funcionalidad de obtener una evaluación de la configuración de seguridad del entorno de Azure, y proporciona recomendaciones para el control de la seguridad y los valores de configuración que falten. Por ejemplo, le permitirá saber si falta MFA para los usuarios administrativos. Para obtener más información, vea [Cloud Security Posture Management integration](security-config.md) (Integración de la administración de posiciones de seguridad en la nube).  
   
@@ -345,7 +345,7 @@ Publicada el 8 de abril de 2018
 Fecha de publicación: 18 de marzo de 2018
 
 -   En la página de intervalos de direcciones IP se incluyen las direcciones IP integradas que ha detectado Cloud App Security. Esto incluye direcciones IP para los servicios en la nube identificados, como Azure y Office 365, así como la fuente de Inteligencia sobre amenazas que agrega automáticamente direcciones IP con información acerca de las direcciones IP peligrosas conocidas. 
--   Cuando Cloud App Security intenta ejecutar una acción de gobierno en un archivo, pero se produce un error porque el archivo está bloqueado, ahora se reintentará automáticamente la acción de gobierno. 
+-   Cuando Cloud App Security intenta ejecutar una acción de gobernanza en un archivo, pero se produce un error porque el archivo está bloqueado, ahora se reintentará automáticamente la acción de gobernanza. 
 
 ## <a name="cloud-app-security-release-118"></a>Cloud App Security versión 118
 Fecha de publicación: 4 de marzo de 2018

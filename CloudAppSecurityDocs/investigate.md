@@ -17,7 +17,7 @@ ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 7d6aaf79cca92da7e82d59c9f05049e77e406071
 ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/15/2019
 ms.locfileid: "56281634"
@@ -36,7 +36,7 @@ Los siguientes paneles están disponibles para ayudarle a investigar las aplicac
 |Panel principal|Información general sobre el estado en la nube (usuarios, archivos y actividades), así como las acciones necesarias (alertas, infracciones de actividad e infracciones de contenido)|  
 |Panel de la aplicación: general|Información general sobre el uso de las aplicaciones por ubicación, gráficos de uso por número de usuarios.|  
 |Panel de la aplicación: datos|Análisis de los datos almacenados en la aplicación; desglose por tipo de archivo y por nivel de uso compartido de archivos|  
-|Panel de la aplicación: archivos|Profundización en archivos, posibilidad de filtrar por propietario, nivel de uso compartido, y más, así como realización de acciones de gobierno como poner en cuarentena.|  
+|Panel de la aplicación: archivos|Profundización en archivos, posibilidad de filtrar por propietario, nivel de uso compartido, y más, así como realización de acciones de gobernanza como poner en cuarentena.|  
 |Panel de la aplicación: aplicaciones de terceros|Profundización en las aplicaciones de terceros implementadas actualmente, como G Suite, y definición de directivas para esas aplicaciones|  
 |Panel del usuario|Información general completa del perfil de usuario en la nube, incluidos grupos, ubicaciones, actividades recientes, alertas relacionadas y exploradores usados|  
 

@@ -17,7 +17,7 @@ ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 7e0db4b3ef6e8a77d420ebaacc7980bc7d45023c
 ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/15/2019
 ms.locfileid: "56282501"
@@ -47,7 +47,7 @@ Tiene la opción para establecer el **método de inspección** para que use el *
 
 5. Si lo desea, puede mostrar los cuatro últimos caracteres de una coincidencia. De manera predeterminada, las coincidencias se enmascaran y se muestran en su contexto, e incluyen los 40 caracteres antes y después de la coincidencia. Si activa esta casilla, se mostrarán los cuatro últimos caracteres de la propia coincidencia.
 
-6. También puede establecer alertas y acciones de gobierno para la directiva. Para obtener más información, consulte [Directivas de archivo](data-protection-policies.md) y [Acciones de gobierno](governance-actions.md).
+6. También puede establecer alertas y acciones de gobernanza para la directiva. Para obtener más información, consulte [Directivas de archivo](data-protection-policies.md) y [Acciones de gobernanza](governance-actions.md).
 
 Configurar estas directivas es una manera sencilla de llevar la eficacia de las capacidades de DLP de Office 365 al resto de las aplicaciones en la nube autorizadas, y de proteger los datos almacenados en ellas con el conjunto de herramientas completo suministrado por Microsoft Cloud App Security: por ejemplo, la capacidad de [aplicar automáticamente las etiquetas de clasificación de Azure Information Protection](azip-integration.md) y la capacidad para controlar permisos de uso compartido.
 

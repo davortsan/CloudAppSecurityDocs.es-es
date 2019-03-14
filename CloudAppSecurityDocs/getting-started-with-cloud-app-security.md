@@ -77,7 +77,7 @@ Tarea necesaria: Crear las directivas
  Sugerencia: A fin de cubrir todos los escenarios de seguridad del entorno de la nube, cree una política para cada **categoría de riesgo**.
 
 **¿Cómo pueden las directivas ayudar a la organización?**
-Puede utilizar directivas para ayudarle a supervisar tendencias, ver amenazas de seguridad y generar alertas e informes personalizados. Con las directivas se pueden crear acciones de gobierno y establecer controles de uso compartido de archivos y de prevención de pérdida de datos.
+Puede utilizar directivas para ayudarle a supervisar tendencias, ver amenazas de seguridad y generar alertas e informes personalizados. Con las directivas se pueden crear acciones de gobernanza y establecer controles de uso compartido de archivos y de prevención de pérdida de datos.
 
 
 ## <a name="step-3-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>Paso 3. [Configure Cloud Discovery](set-up-cloud-discovery.md).

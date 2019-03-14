@@ -39,7 +39,7 @@ El motor combina tres aspectos en cada directiva:
   
 - Filtros de contexto, incluidos roles de usuario, metadatos de archivos, nivel de uso compartido, integración de grupos organizativos, contexto de colaboración y otros atributos personalizables.  
   
-- Acciones automatizadas de gobierno y corrección. Para obtener más información, vea [Control](control.md).  
+- Acciones automatizadas de gobernanza y corrección. Para obtener más información, vea [Control](control.md).  
   
 Una vez habilitada, la directiva analizará continuamente su entorno en la nube e identificará los archivos que coincidan con los filtros de contenido y el contexto y, después, aplicará las acciones automatizadas solicitadas. Estas directivas detectarán y corregirán cualquier infracción de la información en reposo o al crear contenido. Las directivas se pueden supervisar con alertas en tiempo real o con informes generados por la consola.  
   
@@ -85,9 +85,9 @@ Una vez habilitada la inspección de contenido, puede optar entre usar expresion
    También puede decidir cuál es el número mínimo de infracciones de contenido que debe producirse antes de que el archivo se considere una infracción. Por ejemplo, puede elegir 10 si quiere recibir alertas sobre archivos con al menos 10 números de tarjeta de crédito en su contenido.  <br></br>
    Cuando el contenido se compare con la expresión seleccionada, el texto de la infracción se reemplazará por caracteres "X". De manera predeterminada, las infracciones se enmascaran y se muestran en su contexto mostrando 100 caracteres antes y después de la infracción. Los números del contexto de la expresión se reemplazan por caracteres "#" y nunca se almacenan en Cloud App Security. Puede seleccionar la opción de **quitar la máscara de los últimos cuatro caracteres de una infracción** para mostrarlos. Es necesario establecer qué tipos de datos buscará la expresión regular: contenido, metadatos o nombre de archivo. De forma predeterminada, buscará el contenido y los metadatos. 
    
-10. Elija las acciones de **gobierno** que quiera que Cloud App Security lleve a cabo cuando detecte una coincidencia.  
+10. Elija las acciones de **gobernanza** que quiera que Cloud App Security lleve a cabo cuando detecte una coincidencia.  
   
-11. Una vez creada la directiva, puede verla en la pestaña **Directiva de archivo**. Una directiva siempre se puede modificar. Del mismo modo, se pueden calibrar sus filtros o cambiar las acciones automatizadas. La directiva se habilita automáticamente tras crearse e iniciará inmediatamente el análisis de los archivos en la nube.  Tenga especial cuidado al definir acciones de gobierno, ya que podrían provocar la pérdida irreversible de permisos de acceso a los archivos. Se recomienda restringir los filtros para representar exactamente los archivos en los que quiere actuar por medio de varios campos de búsqueda. Cuanto más restringidos sean los filtros, mejor. Para obtener orientación, puede usar el botón **Editar y obtener vista previa de resultados** de la sección Filtros.  
+11. Una vez creada la directiva, puede verla en la pestaña **Directiva de archivo**. Una directiva siempre se puede modificar. Del mismo modo, se pueden calibrar sus filtros o cambiar las acciones automatizadas. La directiva se habilita automáticamente tras crearse e iniciará inmediatamente el análisis de los archivos en la nube.  Tenga especial cuidado al definir acciones de gobernanza, ya que podrían provocar la pérdida irreversible de permisos de acceso a los archivos. Se recomienda restringir los filtros para representar exactamente los archivos en los que quiere actuar por medio de varios campos de búsqueda. Cuanto más restringidos sean los filtros, mejor. Para obtener orientación, puede usar el botón **Editar y obtener vista previa de resultados** de la sección Filtros.  
   
     ![editar la directiva de archivo y obtener una vista previa de resultados](./media/file-policy-edit-and-preview-results.png "editar la directiva de archivo y obtener una vista previa de resultados")  
   
@@ -96,7 +96,7 @@ Una vez habilitada la inspección de contenido, puede optar entre usar expresion
 ## <a name="file-policy-reference"></a>Referencia de directiva de archivo  
 En esta sección se proporciona información de referencia sobre directivas, se ofrecen explicaciones sobre cada tipo de directiva y se detallan los campos que se pueden configurar para cada directiva. 
   
-Una **directiva de archivo** es una directiva basada en API que permite controlar contenido en la nube de la organización. Para ello, se tienen en cuenta más de 20 filtros de metadatos de archivo (incluido el nivel de propietario y de uso compartido) y los resultados de inspección de contenido. En función de los resultados de la directiva, se pueden aplicar acciones de gobierno. El motor de inspección de contenido puede ampliarse mediante motores de DLP de terceros, así como soluciones antimalware.  
+Una **directiva de archivo** es una directiva basada en API que permite controlar contenido en la nube de la organización. Para ello, se tienen en cuenta más de 20 filtros de metadatos de archivo (incluido el nivel de propietario y de uso compartido) y los resultados de inspección de contenido. En función de los resultados de la directiva, se pueden aplicar acciones de gobernanza. El motor de inspección de contenido puede ampliarse mediante motores de DLP de terceros, así como soluciones antimalware.  
   
 Cada directiva se compone de las siguientes partes:  
   

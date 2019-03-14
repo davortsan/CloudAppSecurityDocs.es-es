@@ -17,7 +17,7 @@ ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: b1ab9549e4bb4587137f8560b2ef997c7ee1218a
 ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/15/2019
 ms.locfileid: "56281906"
@@ -89,7 +89,7 @@ Cada directiva se compone de las siguientes partes:
   - Si usa **Actividad repetida**, puede establecer el número de actividades repetidas y el período de tiempo durante el que se cuentan las actividades. También puede especificar que todas las actividades debe realizarlas el mismo usuario y en la misma aplicación en la nube.  
   
   
-- Acciones: la directiva proporciona un conjunto de acciones de gobierno que se pueden aplicar automáticamente cuando se detectan infracciones.  
+- Acciones: la directiva proporciona un conjunto de acciones de gobernanza que se pueden aplicar automáticamente cuando se detectan infracciones.  
   
 ## <a name="next-steps"></a>Pasos siguientes
   

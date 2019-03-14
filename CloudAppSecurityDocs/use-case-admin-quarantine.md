@@ -41,7 +41,7 @@ En este tutorial obtendrá información sobre cómo usar Microsoft Cloud App Sec
 
 >[!NOTE] 
 > - Se trata de una característica en vista previa.
-> - Para obtener una lista de las aplicaciones que admiten la cuarentena de administrador, vea la lista de [acciones de gobierno](governance-actions.md).
+> - Para obtener una lista de las aplicaciones que admiten la cuarentena de administrador, vea la lista de [acciones de gobernanza](governance-actions.md).
 
 1. Cuando un archivo coincida con una directiva, la opción de **cuarentena de administrador** estará disponible para el archivo.
 
@@ -81,7 +81,7 @@ En este tutorial obtendrá información sobre cómo usar Microsoft Cloud App Sec
        
        ![restauración de la cuarentena](./media/quarantine-restore.png)
        
-7. Compruebe que la directiva se ejecuta sin problemas. Después, puede usar las acciones de gobierno automáticas de la directiva para evitar más fugas y aplicar automáticamente una cuarentena de administrador cuando se produzca una coincidencia con la directiva.
+7. Compruebe que la directiva se ejecuta sin problemas. Después, puede usar las acciones de gobernanza automáticas de la directiva para evitar más fugas y aplicar automáticamente una cuarentena de administrador cuando se produzca una coincidencia con la directiva.
 
 > [!NOTE]
 > Al restaurar un archivo:

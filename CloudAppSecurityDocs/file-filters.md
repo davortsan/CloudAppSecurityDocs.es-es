@@ -17,7 +17,7 @@ ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 298e3b042dfc7866622604f29b954c17a3f08bc5
 ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/15/2019
 ms.locfileid: "56281532"
@@ -30,11 +30,11 @@ Para proporcionar protección de datos, Microsoft Cloud App Security le ofrece v
 
 ## <a name="file-filter-examples"></a>Ejemplos de filtros de archivo
 
-Por ejemplo, use la página **Archivos** para proteger archivos compartidos de forma externa etiquetados como **confidenciales**, de la siguiente forma: después de conectar una aplicación a Cloud App Security, intégrela con Azure Information Protection. Luego, en la página **Archivos**, filtre los archivos etiquetados con **confidencial** y excluya su dominio en el filtro **Colaboradores**. Si ve que hay archivos confidenciales compartidos fuera de la organización, puede crear una directiva de archivo para detectarlos. Puede aplicar acciones de gobierno automáticas a estos archivos, tales como **Quitar colaboradores externos** y **Enviar un resumen de coincidencias de directiva al propietario del archivo** para evitar la pérdida de datos a la organización.
+Por ejemplo, use la página **Archivos** para proteger archivos compartidos de forma externa etiquetados como **confidenciales**, de la siguiente forma: después de conectar una aplicación a Cloud App Security, intégrela con Azure Information Protection. Luego, en la página **Archivos**, filtre los archivos etiquetados con **confidencial** y excluya su dominio en el filtro **Colaboradores**. Si ve que hay archivos confidenciales compartidos fuera de la organización, puede crear una directiva de archivo para detectarlos. Puede aplicar acciones de gobernanza automáticas a estos archivos, tales como **Quitar colaboradores externos** y **Enviar un resumen de coincidencias de directiva al propietario del archivo** para evitar la pérdida de datos a la organización.
 
  ![Filtro de archivos confidenciales](media/file-filter-confidential.png)
 
-Este es otro ejemplo de cómo puede usar la página **Archivos**. Asegúrese de que nadie de la organización comparte de forma pública o externa archivos que no se han modificado en los últimos seis meses: conecte una aplicación a Cloud App Security y vaya a la página **Archivos**. Filtre los archivos cuyo nivel de acceso es **Externo** o **Público**, y establezca la fecha de **Última modificación** en hace seis meses. Cree una directiva de archivo que detecte estos archivos obsoletos públicos haciendo clic en **Nueva directiva de búsqueda**. Aplique acciones de gobierno automáticas, como **Quitar usuarios externos**, para evitar la pérdida de datos a la organización.
+Este es otro ejemplo de cómo puede usar la página **Archivos**. Asegúrese de que nadie de la organización comparte de forma pública o externa archivos que no se han modificado en los últimos seis meses: conecte una aplicación a Cloud App Security y vaya a la página **Archivos**. Filtre los archivos cuyo nivel de acceso es **Externo** o **Público**, y establezca la fecha de **Última modificación** en hace seis meses. Cree una directiva de archivo que detecte estos archivos obsoletos públicos haciendo clic en **Nueva directiva de búsqueda**. Aplique acciones de gobernanza automáticas, como **Quitar usuarios externos**, para evitar la pérdida de datos a la organización.
 
  ![Filtro de archivo obsoleto externo](media/file-example-stale-external.png)
 
@@ -148,7 +148,7 @@ Los campos del cajón de archivos proporcionan vínculos contextuales a archivos
 
 ![cajón de archivo](./media/file-drawer.png "cajón de archivo")  
   
-Para obtener una lista de las acciones de gobierno disponibles, consulte [Acciones de gobierno de archivos](governance-actions.md#file-governance-actions).
+Para obtener una lista de las acciones de gobernanza disponibles, consulte [Acciones de gobernanza de archivos](governance-actions.md#file-governance-actions).
 
 ## <a name="next-steps"></a>Pasos siguientes
   

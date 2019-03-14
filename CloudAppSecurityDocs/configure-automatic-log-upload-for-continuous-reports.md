@@ -17,7 +17,7 @@ ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 88e84e64bb93d39f83296b77ce83bde4738ba715
 ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/15/2019
 ms.locfileid: "56282008"
@@ -149,7 +149,7 @@ Compruebe el estado del recopilador en la tabla **Recopilador de registros** y a
 
 ![estado del recopilador de registros](./media/log-collector-status.png)
 
-Vaya al registro de gobierno y comprobar que los registros se están cargando periódicamente en el portal.  
+Vaya al registro de gobernanza y comprobar que los registros se están cargando periódicamente en el portal.  
   
 Si tiene problemas durante la implementación, consulte [Solución de problemas de Cloud Discovery](troubleshooting-cloud-discovery.md).
 

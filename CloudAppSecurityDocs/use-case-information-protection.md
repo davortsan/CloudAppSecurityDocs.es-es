@@ -26,7 +26,7 @@ ms.locfileid: "56281855"
 
 *Se aplica a: Microsoft Cloud App Security*
 
-En un mundo perfecto, todos los empleados serían plenamente conscientes de la importancia que tiene proteger la información y trabajar respetando las directivas. Pero en el mundo real es probable que un asociado que trabaja en contabilidad cargue un documento en su repositorio de Box con los permisos incorrectos. Una semana más adelante se da cuenta de que se ha filtrado información confidencial de su empresa a la competencia. Microsoft Cloud App Security sirve para evitar este tipo de desastres antes de que ocurran. Esta característica está disponible en Box, SharePoint y OneDrive para la Empresa. Aplicar una etiqueta de Azure Information Protection es solo una de las [acciones de gobierno](governance-actions.md) disponibles en una larga lista.
+En un mundo perfecto, todos los empleados serían plenamente conscientes de la importancia que tiene proteger la información y trabajar respetando las directivas. Pero en el mundo real es probable que un asociado que trabaja en contabilidad cargue un documento en su repositorio de Box con los permisos incorrectos. Una semana más adelante se da cuenta de que se ha filtrado información confidencial de su empresa a la competencia. Microsoft Cloud App Security sirve para evitar este tipo de desastres antes de que ocurran. Esta característica está disponible en Box, SharePoint y OneDrive para la Empresa. Aplicar una etiqueta de Azure Information Protection es solo una de las [acciones de gobernanza](governance-actions.md) disponibles en una larga lista.
 
 Este tutorial le ayudará a identificar qué permisos públicos se establecen en un documento guardado en el almacenamiento en la nube, de modo que reciba una alerta cuando se produzca una infracción. Además, puede aplicar automáticamente la etiqueta de clasificación **Confidencial** de Azure Information Protection para proporcionar un mayor cifrado a los archivos.
 
@@ -47,7 +47,7 @@ Un usuario de la organización guarda archivos con información confidencial de 
 
 ## <a name="the-solution"></a>La solución
 
-Use Cloud App Security con Azure Information Protection para insertar información de clasificación y protección para proteger los datos de manera persistente, de forma que sigan estando protegidos independientemente de dónde estén almacenados o con quién se compartan. Esta protección también le permite compartir los datos de forma segura con sus compañeros de trabajo, clientes y asociados. Defina quién puede acceder a los datos y qué puede hacer con ellos. Por ejemplo, permita a los usuarios que vean y editen archivos, pero no que los impriman ni reenvíen. También puede agregar otras [acciones de gobierno](governance-actions.md) que admite Cloud App Security a los archivos, como quitar colaboradores y quitar las funcionalidades de uso compartido.
+Use Cloud App Security con Azure Information Protection para insertar información de clasificación y protección para proteger los datos de manera persistente, de forma que sigan estando protegidos independientemente de dónde estén almacenados o con quién se compartan. Esta protección también le permite compartir los datos de forma segura con sus compañeros de trabajo, clientes y asociados. Defina quién puede acceder a los datos y qué puede hacer con ellos. Por ejemplo, permita a los usuarios que vean y editen archivos, pero no que los impriman ni reenvíen. También puede agregar otras [acciones de gobernanza](governance-actions.md) que admite Cloud App Security a los archivos, como quitar colaboradores y quitar las funcionalidades de uso compartido.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -71,7 +71,7 @@ Vamos a configurar una directiva que busque números de tarjeta de crédito en l
 
     5. En esa carpeta, busque los archivos que contengan información de tarjetas de crédito. En **Método de inspección de contenido** seleccione **DLP integrado**, **Incluir los elementos archivos que coincidan con una expresión preestablecida** y **Todos los países: finanzas, número de tarjeta de crédito**.
 
-    6. En **Gobierno**, abra la sección **Box** y seleccione **Aplicar etiqueta de clasificación**. Seleccione la etiqueta que quiera aplicar.
+    6. En **Gobernanza**, abra la sección **Box** y seleccione **Aplicar etiqueta de clasificación**. Seleccione la etiqueta que quiera aplicar.
 
     7. Puesto que [Cloud App Security se integra con Azure Information Protection](azip-integration.md), puede seleccionar las opciones de su lista de etiquetas de clasificación para proteger los datos.
 

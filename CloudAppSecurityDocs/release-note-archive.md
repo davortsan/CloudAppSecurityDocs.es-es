@@ -17,7 +17,7 @@ ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 4e274776fce369037e3688c1ef66f0002ca121c6
 ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/15/2019
 ms.locfileid: "56282280"
@@ -53,13 +53,13 @@ Fecha de publicación: 10 de diciembre de 2017
 
 Publicado el 26 de noviembre de 2017
 
-- Las directivas de detección ahora admiten etiquetas de la aplicación como condición y acción de gobierno. Esta adición le permite etiquetar automáticamente las aplicaciones recién detectadas con etiquetas personalizadas, tales como **Tendencias en aplicaciones**. También puede usar la etiqueta de la aplicación como filtro. Por ejemplo "Alertarme cuando una aplicación de la "Lista de reproducción'' tiene más de 100 usuarios en un solo día".
+- Las directivas de detección ahora admiten etiquetas de la aplicación como condición y acción de gobernanza. Esta adición le permite etiquetar automáticamente las aplicaciones recién detectadas con etiquetas personalizadas, tales como **Tendencias en aplicaciones**. También puede usar la etiqueta de la aplicación como filtro. Por ejemplo "Alertarme cuando una aplicación de la "Lista de reproducción'' tiene más de 100 usuarios en un solo día".
 
 - El filtro **Tiempo** se ha mejorado para hacerlo más fácil de usar.
 
 - La inspección de contenido ahora permite distinguir entre contenido, metadatos y nombre de archivo, lo que permite seleccionar lo que se quiere inspeccionar.
 
-- Se agregó una nueva acción de gobierno para G Suite. Ahora puede **reducir el acceso público** a los archivos compartidos. Esta acción permite establecer que los archivos disponibles públicamente solo estén disponibles con un vínculo compartido.
+- Se agregó una nueva acción de gobernanza para G Suite. Ahora puede **reducir el acceso público** a los archivos compartidos. Esta acción permite establecer que los archivos disponibles públicamente solo estén disponibles con un vínculo compartido.
 
 - Todas las actividades de inicio de sesión de OKTA en otras aplicaciones se mostrarán ahora en Cloud App Security como originadas desde OKTA. Puede ver y filtrar en función de la aplicación de destino a la que se ha realizado el inicio de sesión en el campo **Objetos de actividad** de la actividad.
 
@@ -191,7 +191,7 @@ Publicado el 18 de junio de 2017
 
 **Nuevas características**
 
-- Ahora puede requerir a los usuarios que inicien sesión de nuevo en todas las aplicaciones de Office 365 y de Azure AD. Requerir el inicio de sesión es una solución rápida y eficaz en el caso de alertas de actividad sospechosa del usuario y cuentas en peligro. Encontrará la nueva acción de gobierno en la configuración de directiva y las páginas de alertas, junto a la opción Suspender usuario.
+- Ahora puede requerir a los usuarios que inicien sesión de nuevo en todas las aplicaciones de Office 365 y de Azure AD. Requerir el inicio de sesión es una solución rápida y eficaz en el caso de alertas de actividad sospechosa del usuario y cuentas en peligro. Encontrará la nueva acción de gobernanza en la configuración de directiva y las páginas de alertas, junto a la opción Suspender usuario.
 - Ahora puede filtrar las actividades para **agregar asignación de roles de suplantación** en el registro de actividades. Esta actividad permite detectar si un administrador ha concedido un rol de **suplantación de aplicación** a una cuenta de usuario o del sistema, mediante el cmdlet **New-ManagementRoleAssignment**. Este rol permite al suplantador realizar operaciones con los permisos asociados a la cuenta suplantada, en lugar de con los permisos asociados a la cuenta del suplantador.
   
 **Mejoras de Cloud Discovery:**
@@ -321,7 +321,7 @@ Fecha de publicación: 20 de marzo de 2017
  
 **Compatibilidad adicional de Salesforce:**
 
-- Ahora puede suspender y quitar la suspensión de los usuarios de Salesforce en Cloud App Security. Esta acción puede realizarse en la pestaña **Cuentas** del conector de Salesforce. Haga clic en el engranaje al final de la fila de un usuario específico y seleccione **Suspender** o **Anular suspensión**. La suspensión y la anulación de la suspensión también se pueden aplicar como una acción de gobierno como parte de una directiva. Todas las actividades de suspensión y de anulación de la suspensión realizadas en Cloud App Security se almacenarán en el [registro de control](governance-actions.md). 
+- Ahora puede suspender y quitar la suspensión de los usuarios de Salesforce en Cloud App Security. Esta acción puede realizarse en la pestaña **Cuentas** del conector de Salesforce. Haga clic en el engranaje al final de la fila de un usuario específico y seleccione **Suspender** o **Anular suspensión**. La suspensión y la anulación de la suspensión también se pueden aplicar como una acción de gobernanza como parte de una directiva. Todas las actividades de suspensión y de anulación de la suspensión realizadas en Cloud App Security se almacenarán en el [registro de control](governance-actions.md). 
 - Visibilidad mejorada del uso compartido de contenido de Salesforce: ahora puede ver qué archivos se comparten con quién, incluidos los archivos compartidos públicamente, compartidos con grupos y compartidos con todo el dominio de Salesforce. La visibilidad mejorada se extenderá retroactivamente a aplicaciones de Salesforce conectadas nuevas y actuales. Puede que esta información tarde en actualizarse la primera vez.
 - Mejoramos la cobertura de los siguientes eventos de Salesforce y los separamos de la actividad **Administrar usuarios**: 
   - Editar permisos
@@ -374,7 +374,7 @@ Publicado el 22 de enero de 2017
  
 **Mejoras**
 
-- Se ha agregado una nueva acción de gobierno para Office 365 que permite quitar todos los usuarios externos de un archivo. Por ejemplo, esta acción permite implementar directivas que **quitan recursos compartidos externos de los archivos que tienen una clasificación solo interna**.
+- Se ha agregado una nueva acción de gobernanza para Office 365 que permite quitar todos los usuarios externos de un archivo. Por ejemplo, esta acción permite implementar directivas que **quitan recursos compartidos externos de los archivos que tienen una clasificación solo interna**.
 - Se ha mejorado la identificación de los usuarios externos en SharePoint Online. Cuando se filtra el grupo de "usuarios externos", no se muestra la cuenta del sistema @"sharepoint".
 
 
@@ -477,7 +477,7 @@ Publicado el 13 de noviembre de 2016
 
 - El **Activity export limit** (Límite de exportación de actividades) se elevó a 10 000. 
 - Al crear un **Informe de instantáneas** en el proceso de carga del registro manual de Cloud Discovery, ahora recibirá una estimación precisa de cuánto tardará el procesamiento del registro. 
-- En una directiva de archivo, la acción de gobierno **Remove collaborator** (Quitar colaborador) ahora funciona en grupos.
+- En una directiva de archivo, la acción de gobernanza **Remove collaborator** (Quitar colaborador) ahora funciona en grupos.
 - Se realizaron mejoras menores en la página **Permisos de la aplicación**. 
 - Si había más de 10 000 usuarios que disponían de permisos para una aplicación que se conectaba a Office 365, la lista se cargaba lentamente. Se ha corregido esta carga lenta.
 - Se han agregado atributos adicionales al **Catálogo de aplicaciones** con relación al sector de tarjetas de pago.
@@ -499,7 +499,7 @@ Publicado el 30 de octubre de 2016
 - Facilidad de uso mejorada para informes y solución de problemas de instantáneas de Cloud Discovery.
 - Visibilidad mejorada en la lista de alertas de varias aplicaciones.
 - Facilidad de uso mejorada al crear nuevos informes continuos de Cloud Discovery.
-- Facilidad de uso mejorada en el registro de gobierno.
+- Facilidad de uso mejorada en el registro de gobernanza.
 
 ### <a name="cloud-app-security-release-82"></a>Notas de la versión 82 de Cloud App Security
 
@@ -514,7 +514,7 @@ Publicado el 9 de octubre de 2016
 - Mejora de la frecuencia de actualización del examen de aplicaciones de terceros de Office 365.
 - Mejoras en el panel de Cloud Discovery.
 - Se ha mejorado el analizador de Syslog de punto de control.
-- Mejoras en el registro de gobierno para prohibir aplicaciones de terceros y para eliminar la prohibición.
+- Mejoras en el registro de gobernanza para prohibir aplicaciones de terceros y para eliminar la prohibición.
  
 **Correcciones de errores**
  
@@ -528,7 +528,7 @@ Publicado el 18 de septiembre de 2016
 
 - Cloud App Security ya es una aplicación de origen en Office 365. De ahora en adelante, puede conectar Office 365 con Cloud App Security con un solo clic.
 
-- Nuevo aspecto del registro de gobierno: se ha actualizado para que tenga el mismo aspecto útil que el registro de actividad y la tabla de archivos. Use los nuevos filtros para encontrar fácilmente lo que necesita y supervisar las acciones de gobierno. 
+- Nuevo aspecto del registro de gobernanza: se ha actualizado para que tenga el mismo aspecto útil que el registro de actividad y la tabla de archivos. Use los nuevos filtros para encontrar fácilmente lo que necesita y supervisar las acciones de gobernanza. 
 - Se han realizado mejoras en el motor de detección de anomalías en lo que respecta a varios inicios de sesión erróneos y otros factores de riesgo.
 - Se han realizado mejoras en los informes de instantáneas de Cloud Discovery.
 - Se han realizado mejoras en las actividades administrativas del registro de actividades. Ahora, en Cambiar contraseña, Actualizar usuario y Restablecer contraseña se muestra si la actividad se realizó como una actividad administrativa.
@@ -612,7 +612,7 @@ Fecha de publicación: 10 de julio de 2016
 - Ahora se pueden exportar listas con los usuarios de los informes integrados.
 - Se ha mejorado la facilidad de uso de la directiva de actividad agregada.
 - Se ha mejorado la compatibilidad con el analizador de mensajes de registro de firewall de W3C de TMG.
-- Se ha mejorado la facilidad de uso del menú desplegable de la acción de gobierno de archivos, que ahora se divide en acciones de colaboración, seguridad e investigación.
+- Se ha mejorado la facilidad de uso del menú desplegable de la acción de gobernanza de archivos, que ahora se divide en acciones de colaboración, seguridad e investigación.
 - Se ha mejorado la detección de viaje imposible de la actividad de Exchange Online: Enviar correo electrónico.
 - Se ha agregado una nueva lista de títulos (rutas de navegación) en la parte superior de las páginas de alertas y de directiva para facilitar la navegación.
 
@@ -637,7 +637,7 @@ Fecha de publicación: 27 de junio de 2016
 
 Fecha de publicación: 13 de junio de 2016
 
-- Se ha actualizado la pantalla Alerta para proporcionar más información de un vistazo. Las actualizaciones incluyen la posibilidad de ver todas las actividades del usuario con una sola mirada, un mapa de actividades, registros de gobierno de usuarios relacionados, una descripción del motivo por el que se ha desencadenado la alerta y gráficos adicionales y mapas de la página del usuario. 
+- Se ha actualizado la pantalla Alerta para proporcionar más información de un vistazo. Las actualizaciones incluyen la posibilidad de ver todas las actividades del usuario con una sola mirada, un mapa de actividades, registros de gobernanza de usuarios relacionados, una descripción del motivo por el que se ha desencadenado la alerta y gráficos adicionales y mapas de la página del usuario. 
 - Los eventos generados por Cloud App Security ahora incluyen el tipo de evento, el formato, grupos de directivas, objetos relacionados y una descripción.
 - Se han agregado nuevas etiquetas de direcciones IP para Office 365 ProPlus, OneNote, Office Online y Exchange Online Protection.
 - Ahora tiene la opción de cargar registros desde el menú de detección principal.
@@ -656,7 +656,7 @@ Fecha de publicación: 29 de mayo de 2016
 - Ajustar directiva: ahora es posible desplazarse desde las opciones de resolución de alertas directamente a la página de configuración de directiva y, así, permitir un mejor ajuste basado en alertas.
 - Mejoras en el cálculo de la puntuación de riesgo de detección de anomalías y un menor índice de falsos positivos gracias a los comentarios de los clientes.
 - Ahora la exportación del registro de actividades incluye el identificador de evento, la categoría de evento y el nombre del tipo de evento.
-- Mejor apariencia y facilidad de uso de las acciones de gobierno de creación de directivas.
+- Mejor apariencia y facilidad de uso de las acciones de gobernanza de creación de directivas.
 - Investigación y control simplificados para Office 365: con la selección de Office 365 se seleccionan automáticamente todas las aplicaciones que forman parte del conjunto de aplicaciones de Office 365.
 - Ahora las notificaciones se envían a la dirección de correo configurada en la aplicación conectada. 
 - Tras un error de conexión, ahora la aplicación de nube proporciona una descripción detallada de ese error.
