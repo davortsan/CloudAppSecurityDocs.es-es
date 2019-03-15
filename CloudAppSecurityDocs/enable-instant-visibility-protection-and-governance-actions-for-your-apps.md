@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 12/10/2018
+ms.date: 3/10/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 665deae5a23a81113b9d9c091fec14230e904b55
-ms.sourcegitcommit: e88ec011088f7f6f4ccad58c86dc7e3aa908b05f
-ms.translationtype: HT
+ms.openlocfilehash: 1c0c01b0de154528413f05caed780b7995420ba1
+ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57254402"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57830479"
 ---
 # <a name="connect-apps"></a>Conectar aplicaciones 
 
@@ -33,6 +33,9 @@ Microsoft Cloud App Security usa las API proporcionadas por el proveedor de nube
 ## <a name="multi-instance-support"></a>Compatibilidad con varias instancias
 
 Cloud App Security admite varias instancias de la misma aplicación conectada. Por ejemplo, si tiene más de una instancia de Salesforce (una para venta y otra para marketing) puede conectarlas con Cloud App Security. Puede administrar las distintas instancias desde la misma consola para crear directivas pormenorizadas y una investigación más exhaustiva. Esta compatibilidad solo se aplica a las aplicaciones conectadas a API, no a aplicaciones conectadas por proxy ni detectadas por Cloud App Security.
+
+> [!NOTE]
+> No se admiten varias instancias para Office 365 y Azure.
 
 ## <a name="how-it-works"></a>Cómo funciona  
 Cloud App Security se implementa con privilegios de administrador del sistema para permitir el acceso total a todos los objetos del entorno.  
@@ -55,9 +58,9 @@ En función de la aplicación a la que se conecte, la conexión de API habilita 
 
 - **Permisos de aplicación**: ofrece visibilidad de los tokens emitidos y sus permisos.  
 
-- **Gobierno de cuenta**: permite suspender usuarios, revocar contraseñas, etc.  
+- **Gobernanza de cuenta**: permite suspender usuarios, revocar contraseñas, etc.  
 
-- **Gobierno de datos**: permite poner archivos en cuarentena, incluidos los de la Papelera, y sobrescribir archivos.  
+- **Gobernanza de datos**: permite poner archivos en cuarentena, incluidos los de la Papelera, y sobrescribir archivos.  
 
 - **Regulación de permisos de aplicación**: permite quitar los tokens.  
 

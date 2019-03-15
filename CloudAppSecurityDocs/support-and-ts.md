@@ -15,12 +15,12 @@ ms.assetid: 86204ff4-dc1d-489f-b5fd-a43930fd49d3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6269c121552a310646e02da21771bbea12aa1c18
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 85a9071abc625e580e27b2a01220ac76104bda45
+ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282161"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57830462"
 ---
 # <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Soporte técnico y solución de problemas de Microsoft Cloud App Security
 
@@ -30,7 +30,7 @@ En este artículo se describen las opciones de soporte técnico y de solución d
 
 ## <a name="manage-support-requests-for-cloud-app-security"></a>Administración de las solicitudes de soporte técnico para Cloud App Security
 
-Microsoft proporciona soporte técnico global, preventa, facturación y suscripción para Microsoft Cloud App Security. El soporte técnico está disponible tanto en línea como por teléfono para suscripciones pagadas y de prueba. El soporte técnico en línea está disponible en inglés y japonés. El soporte técnico telefónico y el soporte técnico de facturación en línea están disponibles en otros idiomas.
+Microsoft proporciona soporte técnico global, preventa, facturación y suscripción para Microsoft Cloud App Security. El soporte técnico está disponible tanto en línea como por teléfono para suscripciones pagadas y de prueba. El soporte técnico en línea está disponible en inglés y japonés. La asistencia telefónica y la asistencia de facturación en línea están disponibles en idiomas adicionales.
 
 Como administrador, puede usar la opción **Ayuda y soporte técnico** para presentar una solicitud de soporte técnico en línea para Cloud App Security desde Azure Portal. Para crear una solicitud de soporte técnico, la cuenta debe tener asignado uno de los siguientes [roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
 
@@ -64,11 +64,11 @@ Seleccione **Solicitud de soporte técnico** para crear una solicitud de soporte
 
     -   **Asunto**: Describa brevemente el problema que tiene.
 
-4.  En la pestaña **Detalles**, rellene los detalles de su problema, el método de soporte técnico, su información de contacto y, luego, haga clic en **Siguiente: Revisión y creación**.
+4.  En la pestaña **Detalles**, rellene los detalles de su problema, el método de soporte técnico, su información de contacto y, luego, haga clic en **Siguiente: Revisar y crear**.
 
 5.  Revise la información, compruebe que es correcta y, después, elija **Crear** para enviar la solicitud de soporte técnico.
 
-**Nota:** Si tiene una pregunta relativa a la facturación o la suscripción, puede abrir un caso para obtener soporte técnico mediante el [Centro de administración de Office](https://portal.office.com/Support/SupportEntry.aspx).
+**Nota:** Si tiene una pregunta de facturación o suscripción, puede abrir un caso para obtener soporte técnico a través de la [centro de administración de Microsoft 365](https://portal.office.com/Support/SupportEntry.aspx).
 
 ### <a name="view-open-support-requests"></a>Ver las solicitudes de soporte técnico abiertas
 

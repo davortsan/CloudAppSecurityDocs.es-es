@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/6/2019
+ms.date: 3/5/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2a0d2f550deb598fc565210bf0d1addf7b9cfad9
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 51d9c16f4a5946568bfbd13d364347bc3b2a81a2
+ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281022"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57830411"
 ---
 # <a name="file-policies"></a>Directivas de archivo  
 
@@ -104,11 +104,23 @@ Cada directiva se compone de las siguientes partes:
   
 - **Inspección del contenido**: permite restringir la directiva en función de los resultados del motor DLP. Puede incluir una expresión personalizada o una expresión preestablecida. Se pueden establecer exclusiones y puede elegir el número de coincidencias. También puede usar el anonimato para enmascarar el nombre de usuario. 
   
-- **Acciones**: la directiva proporciona un conjunto de acciones de gobierno que se pueden aplicar automáticamente cuando se detectan infracciones.  Estas acciones se dividen en acciones de colaboración, de seguridad y de investigación.
+- **Acciones**: la directiva proporciona un conjunto de acciones de gobernanza que se pueden aplicar automáticamente cuando se detectan infracciones.  Estas acciones se dividen en acciones de colaboración, de seguridad y de investigación.
 
 - **Extensiones**: es posible realizar una inspección del contenido mediante motores de terceros para DLP mejorada o funcionalidades antimalware.  
 
-  
+## <a name="file-queries"></a>Consultas de archivo
+
+Para que la investigación sea incluso más sencilla, ahora puede crear consultas personalizadas y guardarlas para usar más adelante. 
+
+1. En el **archivo** , utilice los filtros como se describió anteriormente para profundizar en sus aplicaciones según sea necesario. 
+
+2. Una vez que haya terminado de compilar la consulta, haga clic en el botón **Guardar como** situado en la esquina superior derecha de los filtros. 
+
+3. En la ventana emergente **Guardar consulta**, escriba el nombre de la consulta.
+
+4. Para volver a usar esta consulta en el futuro, en **Consultas**, desplácese hacia abajo hasta **Consultas guardadas** y seleccione la consulta. 
+
+ 
 ## <a name="next-steps"></a>Pasos siguientes 
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
