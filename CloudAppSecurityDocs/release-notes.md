@@ -15,18 +15,20 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 10b5b4d4402230aef2f9538b6e10a312248e430f
-ms.sourcegitcommit: e5c09b9f9da0354e6c25e4d325dbd1457c94e5d4
+ms.openlocfilehash: b8d55cfc5034048a3dbd4833f7d663f7d1f8dbce
+ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57346925"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57830513"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
 *Se aplica a: Microsoft Cloud App Security*
 
-Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security. Las actualizaciones más antiguas están disponibles en el [archivo de notas de la versión](release-note-archive.md).
+Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security.
+
+Fuente RSS: Reciba una notificación cuando se actualice esta página. Para ello, copie y pegue la siguiente dirección URL en su lector de fuentes: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+with+microsoft+cloud+app+security%3F+-+Azure%22&locale=en-us`
 
 
 ## <a name="cloud-app-security-release-143"></a>Notas de la versión 143 de Cloud App Security
@@ -56,9 +58,9 @@ Si desea habilitar la supervisión de actividades de Office 365 en Cloud App Sec
 - **Mayor compatibilidad con Box**<br>
 Cloud App Security ahora admite dos nuevas acciones de gobernanza para Box:
 
-   - **Expiración del vínculo compartido**: esta acción de gobierno proporciona la opción de establecer una fecha de expiración para un vínculo compartido después de la cual dejará de estar activo. 
+   - **Expiración del vínculo compartido**: esta acción de gobernanza proporciona la opción de establecer una fecha de expiración para un vínculo compartido después de la cual dejará de estar activo. 
 
-   - **Cambio del nivel de acceso del vínculo compartido**: esta acción de gobierno ofrece la posibilidad de cambiar el nivel de acceso del vínculo compartido entre la empresa únicamente, solo colaboradores y público.
+   - **Cambio del nivel de acceso del vínculo compartido**: esta acción de gobernanza ofrece la posibilidad de cambiar el nivel de acceso del vínculo compartido entre la empresa únicamente, solo colaboradores y público.
 
 - **Compatibilidad con varias ubicaciones en OneDrive**<br>
 Ahora, Cloud App Security proporciona visibilidad completa de los archivos de OneDrive, incluso si están dispersos en varias ubicaciones geográficas. Ahora los archivos localizados en las ubicaciones adicionales, además de en la principal, estarán protegidos.

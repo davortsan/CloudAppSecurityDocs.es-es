@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/27/2019
+ms.date: 3/5/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9da835fc1f1a9c3fc85035d83a0b2e8415ebc337
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: 9f5b07951f96481198244dbcdc9d7025d89cc845
+ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281855"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57830445"
 ---
 # <a name="tutorial-automatically-apply-azure-information-protection-classification-labels"></a>Tutorial: Aplicar automáticamente etiquetas de clasificación de Azure Information Protection
 
@@ -93,7 +93,7 @@ Vamos a configurar una directiva que busque números de tarjeta de crédito en l
 
 >[!NOTE]
 >
-> - Actualmente, Cloud App Security admite la aplicación automática de etiquetas de Azure Information Protection en Box, SharePoint y OneDrive para la Empresa.
+> - Actualmente, Cloud App Security admite la aplicación automática de etiquetas de Azure Information Protection en Box, GSuite, SharePoint y OneDrive para la Empresa.
 > - Cuando un documento se etiqueta con Cloud App Security, no se aplican inmediatamente marcas visuales, sino que se aplican cuando se abre ese documento en una aplicación de Office y se guarda por primera vez. Para obtener más información, consulte [Configuración de una etiqueta para marcas visuales de Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied).
 
 ## <a name="next-steps"></a>Pasos siguientes
