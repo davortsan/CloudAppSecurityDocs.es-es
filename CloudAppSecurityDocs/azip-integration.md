@@ -15,12 +15,12 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2d17d646479e9686c2ebbeb3c4675cf8dff2ee1d
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: cc861a9b9c655039bc9fa87298d553a7bf9a9294
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281668"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476678"
 ---
 # <a name="azure-information-protection-integration"></a>Integración de Azure Information Protection
 
@@ -92,7 +92,7 @@ Después de habilitar Azure Information Protection, podrá ver los archivos que 
 
 
 > [!NOTE] 
-> El examen automático no examina los archivos existentes hasta que se vuelvan a modificar. Para examinar los archivos existentes en busca de etiquetas de clasificación de Azure Information Protection, debe tener al menos una **directiva de archivos de inspección de contenido**. Si no tiene ninguna, cree una nueva **directiva de archivos**, elimine todos los filtros predeterminados, marque la opción **Inspección de contenido**. A continuación, en **Inspección de contenido**, haga clic en **Incluir archivos que coincidan con una expresión preestablecida** y seleccione un valor predefinido. Después, guarde la directiva. Esto habilita la inspección de contenido, que detecta automáticamente etiquetas de clasificación de Azure Information Protection.
+> El examen automático no examina los archivos existentes hasta que se vuelvan a modificar. Para examinar los archivos existentes para las etiquetas de clasificación de Azure Information Protection, debe tener al menos un **directiva de archivo** que incluye la inspección de contenido. Si no tiene ninguna, cree un nuevo **directiva de archivo**, elimine todos los filtros predeterminados, en **método de inspección** seleccione **DLP integrado**. En el **inspección de contenido** campos, seleccione **incluir archivos que coinciden con una expresión preestablecida** y seleccione un valor predefinido y guardar la directiva. Esto habilita la inspección de contenido, que detecta automáticamente etiquetas de clasificación de Azure Information Protection.
 
 #### <a name="set-internal-and-external-tags"></a>Establecer etiquetas internas y externas
 De forma predeterminada, Cloud App Security examina las etiquetas de clasificación que se han definido en su organización, así como las externas que han definido otras organizaciones. 
@@ -137,7 +137,7 @@ Siga estas instrucciones para crear la directiva de archivo:
    ![Aplicar etiqueta](./media/aip-gov-action.png)
 
 > [!NOTE]
-> La posibilidad de aplicar automáticamente una etiqueta de Azure Information Protection mediante la directiva de archivo resulta una funcionalidad eficaz. Para impedir que los clientes apliquen por error una etiqueta a gran cantidad de archivos, como medida de seguridad existe un límite diario de 100 acciones **Aplicar etiqueta** por aplicación y por inquilino. Cuando se alcanza el límite diario, la acción de aplicar etiqueta se detiene temporalmente y continúa automáticamente al día siguiente (después de 12:00 UTC). Para aumentar el límite del inquilino, [póngase en contacto con el soporte técnico de Cloud App Security](mailto:cascoresupport@microsoft.com).
+> La función de aplicar automáticamente una etiqueta de Azure Information Protection mediante la directiva de archivo resulta eficaz. Para impedir que los clientes apliquen por error una etiqueta a un gran número de archivos, existe como medida de seguridad un límite diario de 100 acciones **Aplicar etiqueta** por aplicación e inquilino. Cuando se alcanza el límite diario, la acción Aplicar etiqueta se detiene temporalmente y continúa automáticamente al día siguiente (después de las 12:00 UTC). Para aumentar el límite de su inquilino, [póngase en contacto con soporte técnico de Cloud App Security](mailto:cascoresupport@microsoft.com).
 
 ### <a name="control-file-exposure"></a>Controlar la exposición del archivo
 

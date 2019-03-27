@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 12/10/2018
+ms.date: 3/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7e0c1d5bc257c6f4c9586a607ccaf26b7c5d6aea
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: 4085cff828e8af6190bb0a46ff0306e2c64d87ab
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282025"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476610"
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Docker en Ubuntu y RHEL locales
 
@@ -30,9 +30,9 @@ Puede configurar la carga de registros automática para informes continuos en Cl
 
 ## <a name="technical-requirements"></a>Requisitos técnicos
 
-- Sistema operativo: Ubuntu 14.04, 16.04 y 18.04; o RHEL 7.2 o posterior 
+- Sistema operativo: Ubuntu 14.04, 16.04 y 18.04; RHEL 7.2 o superior, o CentOS 7.2 o superiores 
 
-- Espacio en disco 250 GB
+- Espacio en disco: 250 GB
 
 - CPU: 2
 
@@ -72,10 +72,10 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 
      d. Compare el registro con el ejemplo del formato de registro esperado. Si el formato de archivo del registro no coincide con este ejemplo, debe agregar el origen de datos como **Otro**.
 
-     e. Establezca el **tipo de receptor** en **FTP**, **FTPS**, **Syslog – UDP**, **Syslog – TCP** o **Syslog – TLS**.
+     e. Establezca el **Tipo de receptor** en **FTP**, **FTPS**, **Syslog: UDP**, o **Syslog: TCP** o **Syslog – TLS**.
      
      >[!NOTE]
-     >La integración con protocolos de transferencia segura (FTPS y Syslog – TLS) a menudo requiere una configuración adicional o firewall/proxy.
+     >La integración con los protocolos de transferencia segura (FTPS y Syslog – TLS) a menudo requiere una configuración adicional o el firewall o proxy.
 
       f. Repita este proceso para cada servidor proxy y firewall cuyos registros se puedan usar para detectar tráfico en la red. Se recomienda configurar un origen de datos dedicado por dispositivo de red para poder hacer lo siguiente:
      - Supervisar el estado de cada dispositivo por separado para fines de investigación.
@@ -89,7 +89,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 
    c. Escriba la **dirección IP de host** de la máquina que se va a usar para implementar Docker. La dirección IP del host puede reemplazarse con el nombre del equipo si un servidor DNS (o equivalente) resolverá el nombre de host.
 
-   d. Seleccione todos los **orígenes de datos** que desea conectar al recopilador y haga clic en **Actualizar** para guardar la configuración. Luego, consulte los pasos de implementación siguientes.
+   d. Seleccione todos los **Orígenes de datos** que quiere conectar al recopilador y haga clic en **Actualizar** para guardar la configuración. Vea los pasos de implementación siguientes.
 
    ![ubuntu2](./media/ubuntu2.png)
 
@@ -104,9 +104,9 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
    ![Crear un recopilador de registros](./media/windows7.png)
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>Paso 2: Implementación local de la máquina
-En los pasos siguientes se describe la implementación de Ubuntu. Los pasos de implementación en otras plataformas son ligeramente diferentes.
+En los pasos siguientes se describe la implementación en Ubuntu. Los pasos de implementación para otras plataformas son ligeramente diferentes.
 
-1. Abra un terminal en la máquina Ubuntu.
+1. Abra un terminal en su equipo Ubuntu.
 
 2. Cambie a los privilegios raíz con el comando: `sudo -i`
 

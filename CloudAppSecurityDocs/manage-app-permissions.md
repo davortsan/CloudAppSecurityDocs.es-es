@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/3/2019
+ms.date: 3/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ffb0a07daba385f000094273cb0afd9c85eda1f8
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: bba266d0e51748d3aab1e4d2e4a77b7e35e79998
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281651"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476627"
 ---
 # <a name="manage-oauth-apps"></a>Administrar aplicaciones de OAuth
 
@@ -88,7 +88,7 @@ La página Aplicaciones de OAuth de aplicación proporciona la siguiente informa
 
 ## <a name="revoke-app-and-notify-user"></a>Revocar la aplicación y enviar una notificación al usuario
 
-En el caso de G Suite y Salesforce, es posible revocar el permiso de una aplicación o notificarle al usuario que deberían cambiar el permiso. 
+En el caso de G Suite y Salesforce, es posible revocar el permiso de una aplicación o notificarle al usuario que deberían cambiar el permiso. Al revocar el permiso quita todos los permisos concedidos a la aplicación sometida a "Aplicaciones empresariales" en Azure AD.
 
 1. En la página **Aplicaciones de OAuth**, haga clic en los tres puntos situados al final de la fila de la aplicación y seleccione **Enviar notificación al usuario**. De forma predeterminada, el usuario recibirá la siguiente notificación: *Autorizó que la aplicación accediera a su cuenta de G Suite. Esta aplicación está en conflicto con la directiva de seguridad de la organización. Vuelva a considerar la posibilidad de conceder o revocar los permisos que otorgó a esta aplicación en su cuenta de G Suite. Para revocar el acceso de la aplicación, vaya a: https://security.google.com/settings/security/permissions?hl=en&pli=1 Seleccione la aplicación y haga clic en "Revocar acceso" en la barra de menús derecha.* Puede personalizar el mensaje que se envía.
 2. También puede revocar permisos para usar la aplicación para el usuario. Haga clic en el icono al final de la fila de la aplicación en la tabla y seleccione **Revocar aplicación**. 

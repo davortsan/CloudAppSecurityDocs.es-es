@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 3/17/2019
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,23 +15,25 @@ ms.assetid: 0f2f971d-10e3-496d-8004-96d9fad71cae
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 233df1cf7f01266bbca6c122a6908811e4c6649b
-ms.sourcegitcommit: 57bad4dc9b28326c93ee480d308d52ea23c42089
+ms.openlocfilehash: a4d91f196cb8d2bab51a2688c07f0654317765f3
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58163880"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476457"
 ---
 # <a name="investigate-activities-using-the-api"></a>Investigar las actividades mediante la API
 
 *Se aplica a: Microsoft Cloud App Security*
+
+Microsoft Cloud App Security proporciona una API de REST totalmente compatible para permitirle interactuar mediante programación con el servicio.
 
 Puede usar las API de Microsoft Cloud App Security para investigar las actividades realizadas por los usuarios en las aplicaciones conectadas en la nube. 
 
 El modo de API de las actividades de Cloud App Security está optimizado para la detección y recuperación de grandes cantidades de datos (más de 5.000 actividades). La API de analizar los datos de actividad de consultas repetidamente hasta que se han examinado todos los resultados. 
 
 > [!NOTE] 
-> Para grandes cantidades de actividades y las implementaciones a gran escala, nos recommendedthat usas el [agente SIEM](siem.md) para el análisis de actividad.
+> Para grandes cantidades de actividades y las implementaciones a gran escala, se recomienda que utilice el [agente SIEM](siem.md) para el análisis de actividad.
 
 **Para usar la API de detección de actividad:**
 
@@ -53,7 +55,7 @@ El modo de API de las actividades de Cloud App Security está optimizado para la
 - "hasNext": Valor booleano. Indica si se necesita otra iteración en los datos.
 - “nextQueryFilters”: Si se necesita otra iteración, contiene la consulta JSON consecutiva que se ejecutará. Utilícelo como el parámetro "filtros" en la siguiente solicitud.
 
-
+En el siguiente ejemplo de Python Obtiene todas las actividades desde el último día de Exchange Online.
 
       import requests
       import json

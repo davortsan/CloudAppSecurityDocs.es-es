@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 344f92e2-6b3b-46db-bfd0-3b1016e0bc34
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6a3ef4aaedb410c6c14d6068f2f7b63ae6504a81
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 337582af366aad63589f20362b2afb20ec80f11d
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56280971"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476559"
 ---
 # <a name="integrate-with-flow-for-custom-alert-automation---preview"></a>Integración de Flow para la automatización de alertas personalizadas: versión preliminar
 
@@ -35,7 +35,7 @@ Cloud App Security se integra con [Microsoft Flow](https://docs.microsoft.com/fl
 
 Por sí mismo, Cloud App Security proporciona opciones de control predefinidas como la suspensión de usuarios o hacer que los archivos sean privados al definir las directivas. Al crear un cuaderno de estrategias en Microsoft Flow mediante el conector de Cloud App Security, puede crear flujos de trabajo para habilitar las opciones de control personalizado para sus directivas. Después de crear el cuaderno de estrategias en Flow, solo tiene que asociarlo a una directiva de Cloud App Security para enviar alertas a Flow. Microsoft Flow ofrece varios conectores y condiciones para crear un flujo de trabajo personalizado para su organización. 
 
-El [conector de Cloud App Security](https://docs.microsoft.com/connectors/cloudappsecurity/#/providers/microsoft.powerapps/apis/shared_cloudappsecurity/apioperations/mcas_on_alert_generated) de Flow admite activaciones y acciones (próximamente) automatizadas. Flow se activa automáticamente cuando Cloud App Security genera una alerta. Una de las posibles acciones es cambiar el estado de alerta en Cloud App Security. 
+El [conector de Cloud App Security](https://docs.microsoft.com/connectors/cloudappsecurity/#/providers/microsoft.powerapps/apis/shared_cloudappsecurity/apioperations/mcas_on_alert_generated) en flujo automatizado admite desencadenadores y acciones. Flow se activa automáticamente cuando Cloud App Security genera una alerta. Una de las posibles acciones es cambiar el estado de alerta en Cloud App Security. 
 
 ## <a name="how-to-create-playbooks-with-microsoft-flow"></a>Cómo crear cuadernos de estrategias con Microsoft Flow
 
