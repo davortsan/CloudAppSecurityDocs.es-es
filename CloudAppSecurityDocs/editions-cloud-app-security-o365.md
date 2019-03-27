@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 02/28/2019
+ms.date: 03/6/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,18 +15,20 @@ ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f729b20ca88b204793fc28b40fc7249864bd9006
-ms.sourcegitcommit: e096d06d92c4b2ab4f416c8c6cf956cc503380d3
+ms.openlocfilehash: c0a8d0b119806522f46636a94d594322d516a8b0
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014820"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476695"
 ---
 # <a name="what-are-the-differences-between-microsoft-cloud-app-security-and-office-365-cloud-app-security"></a>¿Cuáles son las diferencias entre Microsoft Cloud App Security y Office 365 Cloud App Security?
 
 *Se aplica a: Microsoft Cloud App Security*
 
 En este artículo se describen las diferencias entre Cloud App Security y Office 365 Cloud App Security. Para obtener información sobre Office 365 Cloud App Security, consulte [Introducción a Office 365 Cloud App Security](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
+
+Para información sobre las licencias, consulte la [hoja de datos de licencias de Microsoft Cloud App Security](https://aka.ms/mcaslicensing).
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security 
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 2/17/2019
+ms.date: 3/17/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b8d55cfc5034048a3dbd4833f7d663f7d1f8dbce
-ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.openlocfilehash: 71e6de2b5894c3d0600f0fad6b4c1972868a1586
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57830513"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476661"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
@@ -28,7 +28,34 @@ ms.locfileid: "57830513"
 
 Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security.
 
-Fuente RSS: Reciba una notificación cuando se actualice esta página. Para ello, copie y pegue la siguiente dirección URL en su lector de fuentes: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+with+microsoft+cloud+app+security%3F+-+Azure%22&locale=en-us`
+Fuente RSS: Reciba una notificación cuando se actualice esta página. Para ello, copie y pegue la siguiente dirección URL en su lector de fuentes: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+
+## <a name="cloud-app-security-release-145"></a>Cloud App Security versión 145
+
+Fecha de publicación: 17 de marzo de 2019
+
+- **Integración con ATP de Windows Defender ahora está disponible para público general** <br>
+El año pasado anunciamos la [integración con Protección contra amenazas avanzada de Windows Defender](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Microsoft-Cloud-App-Security-and-Windows-Defender-ATP-better/ba-p/263265) que mejora Shadow IT Discovery en la organización y la extiende más allá de la red corporativa. [Habilitado con un solo clic](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWtNmG), nos complace anunciar que esta integración única ya tiene el carácter de disponibilidad general.
+- **Compatibilidad con Dynamics 365** <br>Cloud App Security agregó control y supervisión en tiempo real para Dynamics 365, lo que permite proteger las aplicaciones empresariales y el contenido confidencial almacenado en estas aplicaciones. 
+
+## <a name="cloud-app-security-release-144"></a>Notas de la versión 144 de Cloud App Security
+
+Fecha de publicación: 3 de marzo de 2019
+
+- **Investigación unificada de SecOps para entornos híbridos**<br> Como muchas organizaciones tienen entornos híbridos, los ataques empiezan en la nube y se dirigen al entorno local, lo que significa que los equipos de SecOps necesitan investigar estos ataques desde distintos lugares. Mediante la combinación de señales de orígenes locales y de la nube, como Microsoft Cloud App Security, Azure ATP y Azure AD Identity Protection, Microsoft fortalece a los analistas de seguridad al proporcionarles información de usuario e identidad unificada, en una sola consola, con lo que se termina la necesidad de alternar entre distintas soluciones de seguridad. Con esto, los equipos de SecOps tienen más tiempo y cuentan con la información correcta para tomar mejores decisiones y corregir activamente los riesgos y amenazas reales a la identidad. Para más información, consulte [Investigación unificada de SecOps para entornos híbridos](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Unified-SecOps-Investigation-for-Hybrid-Environments/ba-p/360850).
+
+
+- **Funcionalidades de espacio aislado para la detección de malware** (implementación gradual)<br>
+Las funcionalidades de detección de malware de Cloud App Security se están expandiendo para incluir la capacidad de identificar malware de día cero a través de la tecnología avanzada de espacio aislado.<br>
+Como parte de esta funcionalidad, Cloud App Security identifica automáticamente los archivos sospechosos y los detona para busca algún comportamiento sospechoso e indicadores de que se trata de un archivo malintencionado (malware). <br>
+Como parte de este cambio, las directivas de detección de malware ahora incluyen el campo Tipo de detección que le permite filtrar según la inteligencia de la amenaza, además de espacio aislado.
+- **Actualizaciones del acceso condicional**<br> El Control de aplicaciones de acceso condicional agregó la capacidad de supervisar y bloquear estas actividades:
+    - Cargas de archivo en cualquier aplicación, que permite escenarios en los que se impide la carga de extensiones conocidas de malware y garantiza a los usuarios la protección de sus archivos con AIP antes de la carga.
+    - Copiar y pegar en cualquier aplicación, que redondea los sólidos controles de filtración de datos que ya incluían el control de descargas, impresión y actividades personalizadas, como el uso compartido.
+    - Enviar mensajes, que garantiza que los datos de información de identificación personal como contraseñas no se compartan en herramientas de colaboración populares, como Slack, Salesforce y Workplace de Facebook.
+- Las directivas de sesión ahora incluyen plantillas integradas para permitir que la organización habilite sin problemas la supervisión popular en tiempo real y controlen las aplicaciones autorizadas, como **Bloquear carga según la inspección de contenido en tiempo real**.
+
 
 
 ## <a name="cloud-app-security-release-143"></a>Notas de la versión 143 de Cloud App Security
