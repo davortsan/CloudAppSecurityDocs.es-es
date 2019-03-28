@@ -15,12 +15,12 @@ ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fb693bfc58d74a64dd178e961f8d42ffd5ce1273
-ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.openlocfilehash: f432393c6e60a360f2acae6c35cc79a239469b41
+ms.sourcegitcommit: 099543494c94cc9c1fd62451580f794e538cd1c2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57830377"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58543644"
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Conectar Office 365 con Microsoft Cloud App Security
 
@@ -47,7 +47,7 @@ Cloud App Security admite las siguientes aplicaciones de Office 365:
   
 > [!NOTE]
 >- Debe tener al menos una licencia de Office 365 asignada para conectar Office 365 a Cloud App Security.
->- Para habilitar la supervisión de actividades de Office 365 en Cloud App Security, es necesarios para habilitar la auditoría en el [Office centro de seguridad y cumplimiento]( https://support.microsoft.com/help/4026501/office-auditing-in-office-365-for-admins).
+>- Para habilitar la supervisión de actividades de Office 365 en Cloud App Security, es necesarios para habilitar la auditoría en el [Office centro de seguridad y cumplimiento](https://support.microsoft.com/help/4026501/office-auditing-in-office-365-for-admins).
 >-  El registro de auditoría de administrador de Exchange, que está habilitado de forma predeterminada en Office 365, registra un evento en el registro de auditoría de Office 365 cuando un administrador (o un usuario al que se han asignado privilegios administrativos) realiza un cambio en la organización de Exchange Online. Los cambios realizados mediante el Centro de administración de Exchange o mediante la ejecución de un cmdlet en Windows PowerShell se registran en el registro de auditoría de administrador de Exchange. Para obtener más información sobre el registro de auditoría de administrador de Exchange, consulte [Registro de auditoría de administrador](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log).
 >- El registro de auditoría de buzones de Exchange debe estar activado para cada buzón de usuario antes de que se registre la actividad del usuario en Exchange Online. Consulte las [actividades de buzones de Exchange](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
 >- Si las aplicaciones de Office están habilitadas, también se importan los grupos que forman parte de Office 365 a Cloud App Security desde las aplicaciones de Office específicas. Por ejemplo, si SharePoint está habilitado, se importan también grupos de Office 365 como grupos de SharePoint.
