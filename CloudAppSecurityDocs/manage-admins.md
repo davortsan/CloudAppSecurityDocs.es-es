@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/27/2019
+ms.date: 04/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 90cc081f33b30ac3b4774c7292752d1c27dddd0c
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: 83e2adb5d0890c926843403a6bdf1d0087abb007
+ms.sourcegitcommit: 28b3ab878b1fc403d2c3b617e989f711320530d4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281243"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59233554"
 ---
 # <a name="manage-admin-access"></a>Administrar el acceso de administrador
 
@@ -62,7 +62,7 @@ De forma predeterminada, los siguientes roles de administrador de Office 365 y 
   - Extensiones de seguridad (permisos únicamente para el token de API con permisos de usuario)
   - Acciones de gobernanza (solo para la aplicación o instancia específica) 
 
-- **Administrador de grupo:** tiene permisos en todos los datos en Microsoft Cloud App Security que tengan que ver exclusivamente con el grupo específico seleccionado aquí. Por ejemplo, si concede permiso a un administrador de usuarios para el grupo "Alemania: todos los usuarios", el administrador podrá ver y modificar información en Microsoft Cloud App Security solo para ese grupo de usuarios:
+- **Administrador de grupo de usuarios:** tiene permisos en todos los datos en Microsoft Cloud App Security que tengan que ver exclusivamente con el grupo específico seleccionado aquí. Por ejemplo, si concede permiso a un administrador de usuarios para el grupo "Alemania: todos los usuarios", el administrador podrá ver y modificar información en Microsoft Cloud App Security solo para ese grupo de usuarios:
 
   - Página de actividades (solo actividades relacionadas con los usuarios del grupo)
   - Alertas (solo alertas relacionadas con los usuarios del grupo)
@@ -75,7 +75,7 @@ De forma predeterminada, los siguientes roles de administrador de Office 365 y 
   - Extensiones de seguridad (permisos únicamente para el token de API con usuarios del grupo)
   - Acciones de gobernanza (solo para los usuarios del grupo específicos)
 
-- **Administrador de detección global:**  Tiene permiso para ver y editar todos los datos y la configuración de Cloud Discovery. El administrador de detección global tiene acceso de la siguiente manera:
+- **Administrador global de cloud Discovery:**  Tiene permiso para ver y editar todos los datos y la configuración de Cloud Discovery. El administrador de detección global tiene acceso de la siguiente manera:
 
   - Configuración: 
      -  Configuración del sistema: solo ver
@@ -91,6 +91,11 @@ De forma predeterminada, los siguientes roles de administrador de Office 365 y 
   - Extensiones de seguridad: sin permisos
   - Acciones de gobernanza: solo acciones relacionadas con Cloud Discovery
 
+- **Administrador de informes de detección en la nube:** Tiene permisos para ver todos los datos en Microsoft Cloud App Security que se ocupa exclusivamente de los informes de Cloud Discovery específicos seleccionado. Por ejemplo, puedes usar alguien permiso de administrador para el informe continuo de ATP de Windows Defender. El Administrador de detección verán únicamente los datos de Cloud Discovery que correspondan a ese origen de datos y en el catálogo de aplicaciones.
+Este administrador no tendrán acceso a la **actividades** o **archivos** páginas y acceso limitado a las directivas.
+
+- **Lector global:** Tiene acceso completo de solo lectura a todos los aspectos de Microsoft Cloud App Security. No puede cambiar la configuración ni realizar ninguna acción.
+ 
 ## <a name="override-admin-permissions"></a>Invalidación de los permisos de administrador
 
 Si quiere invalidar un permiso de administrador de Azure Active Directory u Office 365, puede hacerlo manualmente agregando el usuario a Cloud App Security y asignándole permisos.

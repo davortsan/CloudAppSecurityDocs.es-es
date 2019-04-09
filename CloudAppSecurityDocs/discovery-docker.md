@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 12/10/2018
+ms.date: 04/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3f4971f72ddc81b932df5ed992ce706e5a64b502
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 99cca2a7a5fbc8bf57eb7a211bd32a28b102a78a
+ms.sourcegitcommit: 28b3ab878b1fc403d2c3b617e989f711320530d4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282688"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59233503"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurar la carga de registros automática para informes continuos
 
@@ -45,7 +45,7 @@ El recopilador de registros admite dos modos de implementación:
 
 -   **Contenedor**: se ejecuta como imagen Docker en [Ubuntu local](discovery-docker-ubuntu.md), [Ubuntu en Azure](discovery-docker-ubuntu-azure.md) o [RHEL local](discovery-docker-ubuntu.md). 
 
--   **Aplicación virtual**:  [se ejecuta como una imagen a través del hipervisor de Hyper-V o de VMware](configure-automatic-log-upload-for-continuous-reports.md)
+-   **Aplicación virtual**:  Se ejecuta como una imagen a través del hipervisor de Hyper-V o VMware (en desuso)
 
 
 
