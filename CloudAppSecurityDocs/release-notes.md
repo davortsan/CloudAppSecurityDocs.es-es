@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 3/31/2019
+ms.date: 04/15/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 277be79d2d9621f84b97c7fca84b56e0110d27ae
-ms.sourcegitcommit: 28b3ab878b1fc403d2c3b617e989f711320530d4
+ms.openlocfilehash: e2b22c35cfa72860689a89d149805eca7074fc55
+ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59233588"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59622446"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
@@ -29,6 +29,18 @@ ms.locfileid: "59233588"
 Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security.
 
 Fuente RSS: Reciba una notificación cuando se actualice esta página. Para ello, copie y pegue la siguiente dirección URL en su lector de fuentes: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-147"></a>Notas de la versión 147 de Cloud App Security
+
+Fecha de publicación: 14 de abril de 2019
+
+- **Nuevos analizadores de registro de Cloud Discovery**<br>Cloud Discovery de Cloud App Security ahora incluye un analizador de registros integrado para admitir el formato de registro LEEF de Palo Alto. 
+
+- **Actualizaciones de directivas de sesión**
+    - **Método de inspección de contenido adicional para las directivas de sesión**:<br>Al establecer una directiva de sesión, ahora tiene la opción de elegir el servicio de clasificación de datos como método de inspección de contenido de los archivos. El servicio de clasificación de datos ofrece al usuario un amplio rango de tipos de datos confidenciales integrados para utilizarlos en la identificación de información confidencial.
+    - **Control mejorado de los permisos de archivo en las directivas de sesión**:<br>Al crear una directiva de sesión para controlar las descargas mediante Cloud App Security, ahora puede aplicar automáticamente permisos por usuario, como por ejemplo de solo lectura, a los documentos una vez descargados desde las aplicaciones en la nube. Esto proporciona un nivel mucho mayor de flexibilidad y la capacidad de proteger la información más allá de las etiquetas corporativas configuradas previamente.
+    - **Control de descarga de archivos grandes**:<br>Cuando se habilita la inspección de contenido en las directivas de sesión, ahora puede controlar lo que sucede cuando un usuario intenta descargar un archivo muy grande. Si el archivo es demasiado grande para analizarlo durante la descarga, puede elegir si desea bloquear o permitir dicho análisis.
+
 
 ## <a name="cloud-app-security-release-146"></a>Notas de la versión 146 de Cloud App Security
 
