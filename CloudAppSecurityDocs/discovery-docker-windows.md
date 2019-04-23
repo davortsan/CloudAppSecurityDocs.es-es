@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/29/2019
+ms.date: 4/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1a4f5fdb9bfe807729bf29de370bca913b3409ce
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: 6f97426e1e1c18e2be3adb61ad5b3df95fb2c9c4
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282246"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904284"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker en Windows local
 
@@ -31,7 +31,7 @@ Puede configurar la carga de registros automática para los informes continuos d
 
 - Sistema operativo: **Windows 10** (Fall Creators Update) y Windows Server **versión 1709 o superior**
 
-- Espacio en disco 250 GB
+- Espacio en disco: 250 GB
 
 - CPU: 2
 
@@ -73,10 +73,10 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 
      d. Compare el registro con el ejemplo del formato de registro esperado. Si el formato de archivo del registro no coincide con este ejemplo, debe agregar el origen de datos como **Otro**.
 
-     e. Establezca el **tipo de receptor** en **FTP**, **FTPS**, **Syslog – UDP**, **Syslog – TCP** o **Syslog – TLS**.
+     e. Establezca el **Tipo de receptor** en **FTP**, **FTPS**, **Syslog: UDP**, o **Syslog: TCP** o **Syslog – TLS**.
      
      >[!NOTE]
-     >La integración con protocolos de transferencia segura (FTPS y Syslog – TLS) a menudo requiere una configuración adicional o firewall/proxy.
+     >La integración con los protocolos de transferencia segura (FTPS y Syslog – TLS) a menudo requiere una configuración adicional o el firewall o proxy.
 
       f. Repita este proceso para cada servidor proxy y firewall cuyos registros se puedan usar para detectar tráfico en la red. Se recomienda configurar un origen de datos dedicado por dispositivo de red para poder hacer lo siguiente:
      - Supervisar el estado de cada dispositivo por separado para fines de investigación.
@@ -90,7 +90,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 
    c. Escriba la **dirección IP de host** de la máquina que se va a usar para implementar Docker. La dirección IP del host puede reemplazarse con el nombre del equipo si un servidor DNS (o equivalente) resolverá el nombre de host.
 
-   d. Seleccione todos los **orígenes de datos** que desea conectar al recopilador y haga clic en **Actualizar** para guardar la configuración. Luego, consulte los pasos de implementación siguientes.
+   d. Seleccione todos los **Orígenes de datos** que quiere conectar al recopilador y haga clic en **Actualizar** para guardar la configuración. Vea los pasos de implementación siguientes.
 
    ![ubuntu2](./media/ubuntu2.png)
 
@@ -100,12 +100,12 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 
 4. Aparecerá más información de implementación. **Copie** el comando de ejecución desde el cuadro de diálogo. Puede usar el icono Copiar al portapapeles. ![Icono copiar al portapapeles](./media/copy-icon.png). Lo necesitará más adelante.
 
-5. **Exporte** la configuración de origen de datos esperada. Esta configuración describe cómo debe establecer la exportación de registro en los dispositivos.
+5. **Exporte** la configuración del origen de datos esperado. Esta configuración describe cómo debe establecer la exportación de registro en los dispositivos.
 
    ![Crear un recopilador de registros](./media/windows7.png)
 
-### <a name="step-2--on-premises-deployment-of-your-machine"></a>Paso 2: Implementación local de la máquina
-En los pasos siguientes se describe la implementación en Windows. Los pasos de implementación en otras plataformas son ligeramente diferentes.
+### <a name="step-2--on-premises-deployment-of-your-machine"></a>Paso 2: implementación local de la máquina
+En los pasos siguientes se describe la implementación en Windows. Los pasos de implementación para otras plataformas son ligeramente diferentes.
 
 1. Abra un terminal de PowerShell como administrador en la máquina Windows.
 
@@ -116,7 +116,7 @@ En los pasos siguientes se describe la implementación en Windows. Los pasos de 
 3. Para habilitar la ejecución del script de PowerShell, ejecute `Set-ExecutionPolicy RemoteSigned`.
 
 4. Ejecute: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`<br>
-Se instalará el cliente de Docker en la máquina. Durante la instalación del contenedor de recopilador de registros, la máquina se reiniciará dos veces y tendrá que volver a iniciar sesión.
+Se instalará el cliente de Docker en la máquina. Durante la instalación del contenedor de recopilador de registros, la máquina se reiniciará dos veces y tendrá que volver a iniciar sesión. **Asegúrese de que el cliente de Docker está configurado para usar contenedores de Linux.**
 
 5. Después de cada reinicio, desde el directorio en el que haya guardado el programa de instalación, vuelva a ejecutar `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`.<br>  
 

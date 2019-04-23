@@ -15,12 +15,12 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 83e2adb5d0890c926843403a6bdf1d0087abb007
-ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
+ms.openlocfilehash: ad619e9d8d1503fc91b4e52b0b11bfaf22b8124e
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59745990"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904318"
 ---
 # <a name="manage-admin-access"></a>Administrar el acceso de administrador
 
@@ -91,7 +91,7 @@ De forma predeterminada, los siguientes roles de administrador de Office 365 y 
   - Extensiones de seguridad: sin permisos
   - Acciones de gobernanza: solo acciones relacionadas con Cloud Discovery
 
-- **Administrador de informes de detección en la nube:** Tiene permisos para ver todos los datos en Microsoft Cloud App Security que se ocupa exclusivamente de los informes de Cloud Discovery específicos seleccionado. Por ejemplo, puedes usar alguien permiso de administrador para el informe continuo de ATP de Windows Defender. El Administrador de detección verán únicamente los datos de Cloud Discovery que correspondan a ese origen de datos y en el catálogo de aplicaciones.
+- **Administrador de informes de detección en la nube:** Tiene permisos para ver todos los datos en Microsoft Cloud App Security que se ocupa exclusivamente de los informes de Cloud Discovery específicos seleccionado. Por ejemplo, puede concede a alguien permisos de administrador para el informe continuo de Microsoft Defender ATP. El Administrador de detección verán únicamente los datos de Cloud Discovery que correspondan a ese origen de datos y en el catálogo de aplicaciones.
 Este administrador no tendrán acceso a la **actividades** o **archivos** páginas y acceso limitado a las directivas.
 
 - **Lector global:** Tiene acceso completo de solo lectura a todos los aspectos de Microsoft Cloud App Security. No puede cambiar la configuración ni realizar ninguna acción.

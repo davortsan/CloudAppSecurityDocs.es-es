@@ -15,12 +15,12 @@ ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 06668c75ad1629fb4047d353379a16c01c056632
-ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.openlocfilehash: 6cda4bebc6498a1cae886d8b1c8db10cf64ba74b
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476644"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904335"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar Cloud Discovery
 
@@ -36,7 +36,7 @@ Se pueden generar dos tipos de informes:
 
 - **Informes continuos**: analizan todos los registros que se reenvían desde la red mediante Cloud App Security. Proporcionan una mejor visibilidad de todos los datos e identifican automáticamente los usos erróneos, ya sea mediante el motor de detección de anomalías de aprendizaje automático o mediante las directivas personalizadas que haya definido. Estos informes pueden crearse conectándose de varias maneras:
 
-  - [Integración con ATP de Windows Defender](wdatp-integration.md): Cloud App Security se integra con Protección contra amenazas avanzada de Windows Defender (ATP) de forma nativa, para simplificar la implementación de Cloud Discovery, ampliar las funcionalidades de Cloud Discovery más allá de la red corporativa y habilitar la investigación en el equipo.
+  - [Integración de Microsoft Defender ATP](wdatp-integration.md): Cloud App Security se integra con Protección contra amenazas avanzada de Windows Defender (ATP) de forma nativa, para simplificar la implementación de Cloud Discovery, ampliar las funcionalidades de Cloud Discovery más allá de la red corporativa y habilitar la investigación en el equipo.
   - [Recopilador de registros](discovery-docker.md): Los recopiladores de registros permiten automatizar fácilmente la carga de registros desde la red. El recopilador de registros se ejecuta en la red y recibe los registros a través de Syslog o FTP.
   - [Integración de Zscaler](zscaler-integration.md): Si trabaja con Cloud App Security y Zscaler, puede integrar los dos productos para mejorar la seguridad de la experiencia de Cloud Discovery. Juntos, Cloud App Security y Zscaler proporcionan una implementación fluida de Cloud Discovery, bloqueo automático de aplicaciones no autorizadas y evaluación de riesgos directamente en el portal de Zscaler.
  - [integración de iboss](iboss-integration.md): Si trabaja con Cloud App Security y iboss, puede integrar los dos productos para mejorar la experiencia de seguridad de Cloud Discovery. Juntos, Cloud App Security y iboss proporcionan una implementación fluida de Cloud Discovery automáticos de bloqueo de aplicaciones no autorizadas y evaluación de riesgos directamente en el portal de iboss.

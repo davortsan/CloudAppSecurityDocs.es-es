@@ -1,11 +1,11 @@
 ---
-title: Solución de problemas de implementación de Docker para Cloud Discovery
+title: Modificar la configuración de FTP
 description: En este artículo se describe el proceso para modificar la configuración de Docker de Cloud Discovery para Cloud App Security.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 12/10/2018
+ms.date: 04/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,22 +15,18 @@ ms.assetid: 776e834f-3c20-4d5f-9fab-4c5b975edb06
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 01fa2f69422bd3c1c272a76c113254f819b90137
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 305281ec527f605951d4d0c7f720c054ac444cf3
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56280886"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904216"
 ---
-# <a name="troubleshooting-the-microsoft-cloud-app-security-cloud-discovery-deployment"></a>Solución de problemas de implementación de Cloud Discovery para Microsoft Cloud App Security
+# <a name="log-collector-ftp-configuration"></a>Configuración del registro FTP de recopilador
 
 *Se aplica a: Microsoft Cloud App Security*
 
 En este artículo se describe cómo modificar la configuración de Docker de Cloud Discovery para Cloud App Security.
-
-## <a name="windows-defender-atp-integration"></a>Integración con ATP de Windows Defender
-
-Si ha integrado ATP de Windows Defender con Cloud App Security y no ve los resultados de la integración (no hay ningún informe de **usuarios del punto de conexión de Win10**), debe asegurarse de que las máquinas que conecta son de Windows 10, versión 1809 o posterior. Además, tendrá que esperar dos horas para poder acceder a los datos.
 
 ## <a name="docker-deployment"></a>Implementación de Docker
 
@@ -40,7 +36,7 @@ Es posible que deba modificar la configuración de Docker de Cloud Discovery par
 
 1. Conéctese al host del recopilador de registros.
 
-2. Ejecute `docker exec -it <collector name> pure-pw passwd <ftp user>`
+2. Ejecute `docker exec -it <collector name> pure-pw passwd <ftp user>`:
 
     1. Escriba la nueva contraseña.
     2. Vuelva a escribir la nueva contraseña para confirmarla.
@@ -73,4 +69,4 @@ Siga este procedimiento para personalizar los archivos de certificado que utiliz
 
 [Implementar Cloud Discovery](set-up-cloud-discovery.md)
 
-[Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier](https://premier.microsoft.com/)
+[Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier](https://premier.microsoft.com/).
