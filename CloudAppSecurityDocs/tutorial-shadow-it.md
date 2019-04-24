@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/28/2019
+ms.date: 04/21/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,14 +14,14 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: d2ddae1fe570b975a021ec882058465a53edac3e
-ms.sourcegitcommit: e096d06d92c4b2ab4f416c8c6cf956cc503380d3
+ms.openlocfilehash: 48ec0ce810023dde3bd4866e23ec0c5078a158dc
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014854"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904267"
 ---
-# <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutorial: detección y administración de shadow IT en la red
+# <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutorial: detección y administración de shadow IT en la red 
 
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -41,11 +41,11 @@ Siga este proceso para implementar Cloud Discovery de shadow IT en su organizaci
 
 ![Ciclo de vida de shadow IT](./media/shadow-it-lifecycle.png)
 
-### <a name="phase-1-discover-and-identify-shadow-it"></a>Fase 1: detección de identificación de shadow IT
+### <a name="phase-1-discover-and-identify-shadow-it"></a>Fase 1: detección de identificación de shadow IT
     
 1. **Detección de shadow IT**: Identifique el estado de su organización en lo que respecta a la seguridad mediante la ejecución de Cloud Discovery y descubra lo que sucede realmente en la red. Para obtener más información, consulte [Configurar Cloud Discovery](set-up-cloud-discovery.md). Esto puede hacerse mediante cualquiera de los métodos siguientes:
    
-    - Para tenerlo todo a punto rápidamente, use Cloud Discovery e intégrelo con [ATP de Windows Defender](wdatp-integration.md). Esta integración nativa permite empezar a recopilar datos sobre el tráfico en la nube en sus dispositivos Windows 10, así como activar y desactivar la red.
+    - Para tenerlo todo a punto rápidamente, use Cloud Discovery e intégrelo con [Microsoft Defender ATP](wdatp-integration.md). Esta integración nativa permite empezar a recopilar datos sobre el tráfico en la nube en sus dispositivos Windows 10, así como activar y desactivar la red.
    
     - Para abarcar todos los dispositivos conectados a la red, es importante implementar el [recopilador de registros de Cloud App Security](discovery-docker.md) en los firewalls y otros servidores proxy. De este modo, podrá recopilar datos de los puntos de conexión y enviarlos a Cloud App Security para su análisis.
 
