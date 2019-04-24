@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e2b22c35cfa72860689a89d149805eca7074fc55
-ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
+ms.openlocfilehash: eecaede1b31fd6bebab6d877a81ec582328fff5b
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "59622446"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904352"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
@@ -59,7 +59,7 @@ Microsoft Cloud App Security ahora admite el rol de lector global de Azure AD. E
 
 Fecha de publicación: 17 de marzo de 2019
 
-- **Integración con ATP de Windows Defender ahora está disponible para público general** <br>
+- **Integración con Microsoft Defender ATP disponible para público general** <br>
 El año pasado anunciamos la [integración con Protección contra amenazas avanzada de Windows Defender](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Microsoft-Cloud-App-Security-and-Windows-Defender-ATP-better/ba-p/263265) que mejora Shadow IT Discovery en la organización y la extiende más allá de la red corporativa. [Habilitado con un solo clic](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWtNmG), nos complace anunciar que esta integración única ya tiene el carácter de disponibilidad general.
 - **Compatibilidad con Dynamics 365** <br>Cloud App Security agregó control y supervisión en tiempo real para Dynamics 365, lo que permite proteger las aplicaciones empresariales y el contenido confidencial almacenado en estas aplicaciones. 
 
@@ -219,7 +219,7 @@ Publicado el 25 de septiembre de 2018
     - Proporcionar comentarios desde dentro de una sesión: esta nueva herramienta le permite enviar comentarios al equipo de Cloud App Security sobre el rendimiento de una aplicación bajo el control de sesión, directamente desde la sesión.
 
 
-- **Integración nativa con ATP de Windows Defender para Shadow IT Discovery más allá de los límites de la empresa**
+- **Integración nativa con Microsoft Defender ATP para Shadow IT Discovery más allá de los límites de la empresa**
     - Microsoft Cloud App Security ahora se integra de forma nativa con Protección contra amenazas avanzada de Windows Defender (ATP) para proporcionar capacidades de detección de Shadow IT sin implementación para activar y desactivar el uso de la red corporativa de aplicaciones en la nube.  Esto le permite realizar Cloud Discovery en las máquinas, incluso cuando no estén dentro de la red corporativa. También permite realizar investigación por máquina: después de identificar un usuario peligroso, podrá comprobar todas las máquinas a las que el usuario accedió para detectar posibles riesgos; Si identifica una máquina en riesgo, puede comprobar todos los usuarios que la usaron para investigar posibles riesgos. Para más información, vea Protección contra amenazas avanzada de Windows Defender con [Microsoft Cloud App Security](wdatp-integration.md).
 - **Inspección de contenido de archivos cifrados**
     - Cloud App Security ahora admite la inspección de contenido de archivos protegidos que están cifrados y que se protegieron con Azure Information Protection. Ahora puede inspeccionar estos archivos cifrados para volver a clasificarlos e identificar infracciones adicionales de la directiva de seguridad y exposición de DLP. 
