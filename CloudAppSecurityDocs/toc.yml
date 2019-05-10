@@ -12,7 +12,7 @@
       items:
         - name: Office 365
           href: editions-cloud-app-security-o365.md
-        - name: "Azure\_AD"
+        - name: Azure AD
           href: editions-cloud-app-security-aad.md
 - name: Inicios rápidos
   expanded: true
@@ -203,6 +203,8 @@
               href: flow-integration.md
 - name: Referencia
   items:
+    - name: Comprobaciones sobre la aplicación
+      href: attest-your-app.md
     - name: Solución de problemas de Cloud Discovery
       href: troubleshooting-cloud-discovery.md
     - name: Solución de problemas de conectores de API mediante mensajes de error
