@@ -4,8 +4,8 @@ description: En este tema se proporcionan instrucciones sobre cómo trabajar con
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
-ms.date: 12/14/2018
+manager: angrobe
+ms.date: 06/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f760a9aa5bb80d1301cf6125eeeec22a8e9a8a7a
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: ffba8584bcd9b7521f3fc1ec8b8774e096a32854
+ms.sourcegitcommit: 9553aed06ebb2378d44bb5685439ae5cba605171
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282314"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65047777"
 ---
 # <a name="working-with-discovery-data"></a>Trabajo con datos de detección
 
@@ -62,7 +62,7 @@ Para crear una exclusión:
 
 Los informes continuos personalizados proporcionan más granularidad al supervisar los datos de registro de Cloud Discovery de la organización. Al crear informes personalizados, es posible filtrar por ubicaciones geográficas concretas, redes y sitios o unidades organizativas. De forma predeterminada, solo aparecen los informes siguientes en el selector de informes de Cloud Discovery:  
   
-- El **informe global** consolida toda la información del portal de todos los orígenes de datos incluidos en los registros.  
+- El **informe global** consolida toda la información del portal de todos los orígenes de datos incluidos en los registros.  El informe global no incluye datos de Microsoft Defender ATP.
   
 - El **informe específico de origen de datos** muestra únicamente la información de un origen de datos concreto.  
   
