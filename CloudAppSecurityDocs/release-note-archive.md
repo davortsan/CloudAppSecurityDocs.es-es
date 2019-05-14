@@ -4,7 +4,7 @@ description: Este artículo es un archivo que describe las actualizaciones reali
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 185c3a46-ede8-4d58-b232-111807845c8f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4e274776fce369037e3688c1ef66f0002ca121c6
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: 30cf7145006156cddce444fb2365f8691fe3eb07
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282280"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568595"
 ---
 # <a name="past-release-archive-of-microsoft-cloud-app-security"></a>Archivo de versiones anteriores de Microsoft Cloud App Security
 
@@ -134,7 +134,7 @@ Publicada el 30 de julio de 2017
 
 - En Cloud Discovery, ahora puede usar [formatos de registros personalizados](custom-log-parser.md) para [cargas de registros automatizadas](discovery-docker.md). Los formatos de registros personalizados le permiten automatizar fácilmente la carga de registros desde SIEM como servidores Splunk o cualquier otro formato no compatible.
 
-- Las nuevas acciones de investigación de usuario permiten un nivel agregado de exploración en las investigaciones de usuario. En las páginas de **Investigación**, ahora puede hacer clic con el botón derecho en una actividad, un usuario o una cuenta, y aplicar uno de los siguientes filtros nuevos para realizar una investigación y filtración avanzadas: **Ver actividad relacionada**, **Ver gobierno relacionado**, **Ver alertas relacionadas**, **Ver archivos propios** o **Ver archivos compartidos con este usuario**.
+- Las nuevas acciones de investigación de usuario permiten un nivel agregado de exploración en las investigaciones de usuario. En las páginas de **Investigación**, ahora puede hacer clic con el botón derecho en una actividad, un usuario o una cuenta, y aplicar uno de los siguientes filtros nuevos para realizar una investigación y filtración avanzadas: **Ver actividad relacionada**, **Ver gobernanza relacionada**, **Ver alertas relacionadas**, **Ver archivos propios** o **Ver archivos compartidos con este usuario**.
 
 - El Catálogo de aplicaciones en la nube ahora contiene un campo nuevo de retención de datos después de la terminación de la cuenta. El factor de riesgo le permite asegurarse de que los datos se quitan completamente una vez que da término a una cuenta dentro de una aplicación de nube.
 
@@ -177,7 +177,7 @@ Publicado el 3 de julio de 2017
 **Anuncios:**
 
 - El Catálogo de aplicaciones en la nube ahora admite más de 15 000 aplicaciones reconocibles
-- Cumplimiento normativo: Cloud App Security cuenta oficialmente con la certificación SOC1/2/3 de Azure. Para obtener la lista completa de certificaciones, vea [Ofertas de cumplimiento](https://www.microsoft.com/trustcenter/compliance/complianceofferings) y filtre los resultados para ver Cloud App Security.
+- Cumplimiento: Cloud App Security cuenta oficialmente con la certificación SOC1/2/3 de Azure. Para obtener la lista completa de certificaciones, vea [Ofertas de cumplimiento](https://www.microsoft.com/trustcenter/compliance/complianceofferings) y filtre los resultados para ver Cloud App Security.
 
 **Otras mejoras:** 
 

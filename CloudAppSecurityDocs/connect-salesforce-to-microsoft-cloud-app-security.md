@@ -4,7 +4,7 @@ description: En este artículo se proporciona información sobre cómo conectar 
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b3ac3ffcef0dfaaad492c0794eee9841a899b0eb
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 16e149d5b79d22c512cd1c318e69b89b2880cace
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281889"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567198"
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Conectar Salesforce con Microsoft Cloud App Security
 
@@ -115,7 +115,7 @@ Cloud App Security procesa los eventos de Salesforce de la manera siguiente:
   
 - Eventos de inicio de sesión cada 15 minutos
 - Configuración de registros de auditoría cada 15 minutos
-- Salesforce registra la actividad de uso durante un período de 24 horas, desde las 12:00 a.m. a las 11:59 p.m. hora UTC. Los eventos de Salesforce generan datos de registro en tiempo real. Sin embargo, Salesforce genera archivos de registro el día después de un evento, fuera de horas punta. Por lo tanto, los datos de archivos de registro no están disponibles durante al menos un día después de un evento. Para más información sobre los eventos de Salesforce, consulte el artículo sobre el [uso de supervisión de eventos](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm).
+- Salesforce registra la actividad de uso durante un período de 24 horas, desde las 12:00 a.m. hasta las 23:59. Hora UTC. Los eventos de Salesforce generan datos de registro en tiempo real. Sin embargo, Salesforce genera archivos de registro al día siguiente de producirse un evento, fuera de horas punta. Por consiguiente, los datos del archivo de registro no están disponibles durante al menos un día tras un evento. Para más información sobre los eventos de Salesforce, consulte el artículo sobre el [uso de supervisión de eventos](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm).
 
 
 ## <a name="next-steps"></a>Pasos siguientes  

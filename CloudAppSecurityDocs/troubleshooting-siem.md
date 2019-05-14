@@ -4,7 +4,7 @@ description: En este artículo se proporciona una lista de posibles problemas al
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: de64d9ca-eaed-4243-bcf7-adca5aff18c8
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cd9f5ffff1208a3fd6e24954c02b7ba1574d6022
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 47158a4fba1027f4e1ac3bfe0a73b2b1014375e8
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281549"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568805"
 ---
 # <a name="troubleshooting-the-siem-agent"></a>Solución de problemas del agente SIEM
 
@@ -28,7 +28,7 @@ ms.locfileid: "56281549"
 
 En este artículo se proporciona una lista de posibles problemas al conectar su SIEM con Cloud App Security, así como posibles soluciones.
 
-## <a name="troubleshooting"></a>Solucionar problemas
+## <a name="troubleshooting"></a>Solución de problemas
 
 Asegúrese de que el estado del agente SIEM en el portal de Microsoft Cloud App Security no sea **Error de conexión** ni **Desconectado** y de que no haya ninguna notificación del agente. El estado se muestra como **Error de conexión** si la conexión está inactiva durante más de dos horas. El estado cambia a **Desconectado** si la conexión está inactiva durante más de 12 horas.
 

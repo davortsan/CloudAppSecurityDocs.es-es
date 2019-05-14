@@ -4,7 +4,7 @@ description: En este artículo se proporcionan los pasos necesarios para configu
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5eb92181f0c05b0659b4e157c1e5188103ae680e
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 731a2593972754ac95dd39b16b0c7529783c2636
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281685"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568236"
 ---
 # <a name="external-dlp-integration"></a>Integración de DLP externa
 
@@ -260,20 +260,20 @@ En Forcepoint, configure el dispositivo con estos pasos:
 
 Las versiones de Symantec DLP compatibles son la 11 y las versiones posteriores. 
 
-Como se mencionó anteriormente, debe implementar un servidor de detección en el mismo centro de datos de Azure en que reside el inquilino de Cloud App Security. El servidor de detección se sincroniza con el servidor de cumplimiento a través de un túnel IPsec dedicado. 
+Como se mencionó anteriormente, debe implementar un servidor de detección en el mismo centro de datos de Azure en que reside el inquilino de Cloud App Security. El servidor de detección se sincroniza con el servidor de cumplimiento a través de un túnel IPSec dedicado. 
  
 ### <a name="detection-server-installation"></a>Instalación del servidor de detección 
-El servidor de detección que Cloud App Security usa es un servidor estándar de Network Prevent for Web. Hay varias opciones de configuración que se deben modificar:
-1. Deshabilite **Modo de prueba**:
-   1. En **Sistema** > **Servidores y detectores**, haga clic en el destino de ICAP. 
+El servidor de detección utilizado por Cloud App Security es un servidor estándar de prevención de red para la Web. Hay varias opciones de configuración que deben cambiarse:
+1. Deshabilite la opción **Trial Mode** (Modo de prueba):
+   1. En **System** (Sistema) > **Servers and Detectors (Servidores y detectores)**, haga clic en el destino ICAP. 
     
-      ![Destino de ICAP](./media/icap-target.png)
+      ![Destino ICAP](./media/icap-target.png)
     
    2. Haga clic en **Configurar**. 
     
-      ![Configuración del destino de ICAP](./media/configure-icap-target.png)
+      ![Configurar el destino ICAP](./media/configure-icap-target.png)
     
-   3. Deshabilite el **Modo de prueba**.
+   3. Deshabilite la opción **Trial Mode** (Modo de prueba).
     
       ![deshabilitar el modo de prueba](./media/icap-disable-trial-mode.png)
     
@@ -289,13 +289,13 @@ El servidor de detección que Cloud App Security usa es un servidor estándar de
 ### <a name="policy-configuration"></a>Configuración de directivas
 Cloud App Security admite sin problemas todos los tipos de reglas de detección que se incluyen con Symantec DLP, por lo que no es necesario modificar las reglas existentes. Pero hay un cambio de configuración que se debe aplicar a todas las directivas nuevas y existentes para permitir la integración total. Este cambio implica agregar una regla de respuesta específica a todas las directivas. 
 
-Agregue el cambio de configuración a Vontu:
+Agregue el cambio de configuración para su Vontu:
 
-1.  Vaya a **Administrar** > **Directivas** > **Reglas de respuesta** y haga clic en **Agregar regla de respuesta**.
+1.  Vaya a **Manage**(Administrar) > **Policies** (Directivas) > **Response Rules** (Reglas de respuesta) y haga clic en **Add Response Rule** (Agregar regla de respuesta).
     
     ![agregar regla de respuesta](./media/icap-add-response-rule.png)
 
-2.  Asegúrese de que se seleccionó **Respuesta automatizada** y haga clic en **Siguiente**.
+2.  Asegúrese de que la opción **Automated Response** (Respuesta automática) está seleccionada y haga clic en **Next** (Siguiente).
 
     ![respuesta automatizada](./media/icap-automated-response.png)
 
@@ -303,7 +303,7 @@ Agregue el cambio de configuración a Vontu:
 
     ![bloquear http](./media/icap-block-http.png)
 
-Agregue la regla que creó a cualquier directiva existente:
+Agregue la regla creada a todas las directivas existentes:
 
 1. En cada directiva, vaya a la pestaña **Respuesta**.
 
