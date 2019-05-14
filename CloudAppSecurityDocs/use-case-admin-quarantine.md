@@ -4,7 +4,7 @@ description: En este tutorial se describe cómo usar la cuarentena de administra
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/27/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 3fc04cfb-ad4c-4ac2-980a-ee9f4c740d88
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e7ccd9d5b818361889755137f088ba833fec24c8
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: b175cc1e6556289ecb4dc255d39e0ca733546cb0
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282484"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568694"
 ---
 # <a name="tutorial-protect-files-with-admin-quarantine"></a>Tutorial: protección de los archivos con la cuarentena de administrador
 
@@ -42,6 +42,7 @@ En este tutorial obtendrá información sobre cómo usar Microsoft Cloud App Sec
 >[!NOTE] 
 > - Se trata de una característica en vista previa.
 > - Para obtener una lista de las aplicaciones que admiten la cuarentena de administrador, vea la lista de [acciones de gobernanza](governance-actions.md).
+> - Si se detecta que un archivo en SharePoint o OneDrive es malware, no se pone en cuarentena en el portal de Cloud App Security. 
 
 1. Cuando un archivo coincida con una directiva, la opción de **cuarentena de administrador** estará disponible para el archivo.
 
@@ -104,7 +105,7 @@ En este tutorial obtendrá información sobre cómo usar Microsoft Cloud App Sec
       Para establecer la configuración de la cuarentena de administrador, en el engranaje de configuración, vaya a **Configuración**. Proporcione la ubicación de los archivos en cuarentena y la notificación que recibirá el usuario cuando su archivo se ponga en cuarentena. 
       ![configuración de cuarentena](./media/quarantine-settings.png)
 
-   2. En el caso de Box, no se pueden personalizar la ubicación de la carpeta de cuarentena ni el mensaje de usuario. La ubicación de la carpeta es la unidad del administrador que ha conectado Box con Cloud App Security y el mensaje de usuario es: "Este archivo se puso en cuarentena en la unidad del administrador porque es posible que infrinja las directivas de cumplimiento y de seguridad de la empresa. Póngase en contacto con el administrador de TI para obtener ayuda".
+   2. En el caso de Box, no se pueden personalizar la ubicación de la carpeta de cuarentena ni el mensaje de usuario. La ubicación de la carpeta es la unidad del administrador que ha conectado Box con Cloud App Security y el mensaje de usuario es: "Este archivo se puso en cuarentena en la unidad del administrador porque es posible que infrinja las directivas de cumplimiento y de seguridad de la empresa. Póngase en contacto con el administrador de TI para obtener ayuda.
 
 
 

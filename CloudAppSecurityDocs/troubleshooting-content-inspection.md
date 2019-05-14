@@ -4,7 +4,7 @@ description: En este artículo se proporciona una lista de los estados de inspec
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 359eb77f-e719-4c50-9b62-6ef64149a5a5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b3e3866b8cef8ae5b711145ffa104de88aed419e
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 8e7c4de4407c476282db832f6d4aa60b0e987e1c
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281379"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568431"
 ---
 # <a name="troubleshooting-content-inspection"></a>Solucionar problemas relacionados con la inspección de contenido
 
@@ -50,7 +50,7 @@ En la tabla se enumera cada estado de inspección de contenido y su descripción
 > [!NOTE]
 > Si observa un guión en el estado del examen, significará que el archivo no está en la cola de examen. Consulte las [directivas de archivos](data-protection-policies.md) para obtener más información sobre cómo establecer directivas de inspección de contenido.
 
-## <a name="see-also"></a>Consulte también  
+## <a name="see-also"></a>Vea también  
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  

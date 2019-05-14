@@ -4,7 +4,7 @@ description: En este artículo se proporciona una lista de los mensajes de error
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: abb1622c3cd88120dc9ad748ef8fa0c5fa2d9b43
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: acdb5bee55a296af2886c39010ce524a39de5f2d
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282093"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568495"
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>Solucionar problemas relacionados con conectores de aplicaciones a partir de los mensajes de error
 
@@ -28,7 +28,7 @@ ms.locfileid: "56282093"
 
 En este artículo se proporciona una lista de los mensajes de error de los conectores de aplicaciones de la API y recomendaciones para solucionarlos.
 
-## <a name="troubleshooting"></a>Solucionar problemas
+## <a name="troubleshooting"></a>Solución de problemas
 
 Los errores de conectores de aplicaciones se pueden consultar en el cuadro de diálogo del conector de aplicaciones después de intentar conectar una aplicación en la nube mediante el conector de aplicaciones de la API.
 
@@ -63,7 +63,7 @@ Los errores de conectores de aplicaciones se pueden consultar en el cuadro de di
 > |HttpRequestFailure: Server returned: 404 Not Found (HttpRequestFailure: El servidor ha devuelto: 404 No encontrado)|Exchange Online|El usuario que está usando para iniciar sesión en Exchange Online no tiene un buzón principal en Exchange Online (por ejemplo, un usuario que no existe en Azure AD o un usuario que existe en Azure AD pero no tiene una licencia de Exchange Online).|Siga el proceso para volver a conectar Exchange Online con Cloud App Security mediante una nueva cuenta de administrador.|
 > |NullPointerException|AWS|Error interno.|Póngase en contacto con el soporte técnico.|
 > |HttpRequestFailure: Server returned: 500 Internal server error (HttpRequestFailure: El servidor ha devuelto: 500 Error interno del servidor)|Todas las aplicaciones|Se ha producido un error en la aplicación.|Compruebe el estado de la aplicación.|
-> |El tiempo de servicio expiró.|Todas las aplicaciones|Se ha detectado un tiempo de espera en la conexión entre Cloud App Security y la aplicación. Esto podría deberse a un problema con la aplicación.|Inténtelo más tarde.|
+> |El tiempo de servicio expiró.|Todas las aplicaciones|Se ha detectado un tiempo de espera en la conexión entre Cloud App Security y la aplicación. Esto podría deberse a un problema con la aplicación.|Inténtelo de nuevo más tarde.|
 
 ## <a name="next-steps"></a>Pasos siguientes
 

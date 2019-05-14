@@ -4,7 +4,7 @@ description: En este artículo se proporciona una lista de actividades, filtros 
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/16/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3043de593036dc5f8eec0ac9be2aca9b195f32c9
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 1db651146978c187a043abce78b4d92d819df217
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281923"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65565722"
 ---
 # <a name="activities"></a>Actividades
 

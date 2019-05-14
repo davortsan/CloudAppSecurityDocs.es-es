@@ -4,7 +4,7 @@ description: En este artículo se enumeran y se describen todas las acciones de 
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6bce6df97a83e6a0a8e65c4eed8d8ac955ab9a1f
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: dfed20fd3b39395affce66098ebd0e7a16100a5e
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282076"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567826"
 ---
 # <a name="governing-connected-apps"></a>Control de aplicaciones conectadas
 
@@ -99,7 +99,7 @@ Las siguientes acciones de gobernanza pueden realizarse para aplicaciones conect
 
     - **Requerir que el usuario vuelva a iniciar sesión**: se cierra la sesión del usuario y se le requiere que vuelva a iniciarla. 
 
-    ![Acciones de gobierno de la directiva de actividad de seguridad de Cloud App Security](./media/activity-policy-ref6.png "Ref6 de directiva de actividad") 
+    ![Acciones de gobernanza de la directiva de actividad de seguridad de Cloud App Security](./media/activity-policy-ref6.png "Ref6 de directiva de actividad") 
 
 
 ## <a name="governance-conflicts"></a>Conflictos de gobernanza
@@ -123,7 +123,7 @@ En la tabla siguiente se muestra una lista completa de las acciones que Cloud Ap
 Para obtener información sobre cómo se tratan las acciones de control cuando hay conflictos de directivas, vea [Policy Conflicts](control-cloud-apps-with-policies.md) (Conflictos de directivas).
 
 
-|<strong>Ubicación</strong> | <strong>Tipo de objeto de destino</strong> | <strong>Acción de gobierno</strong> |<strong>Descripción</strong>| <strong>Conectores relacionados</strong>|
+|<strong>Ubicación</strong> | <strong>Tipo de objeto de destino</strong> | <strong>Acción de gobernanza</strong> |<strong>Descripción</strong>| <strong>Conectores relacionados</strong>|
 |-------------------|---------|-----|--------|-------|
 |Cuentas |Archivo |Quitar las colaboraciones del usuario | Se quitan todas las colaboraciones de un usuario específico en cualquiera de los archivos. Resulta conveniente cuando las personas dejan la empresa. |Box, G Suite|
 |Cuentas | Cuenta | Anular la suspensión del usuario |Se anula la suspensión del usuario. |G Suite, Box, Office, Salesforce|

@@ -4,7 +4,7 @@ description: En este artículo se proporciona información sobre cómo personali
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 2/4/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6066b40cd4de3695a9ed2f1fc0fbd6b460cdf187
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 5ad87ebe283aa5bdd6b19766bfa76a2424015291
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56280988"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568205"
 ---
 # <a name="email-notification-preferences"></a>Preferencias de notificación de correo electrónico
 

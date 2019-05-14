@@ -4,7 +4,7 @@ description: En este artículo se describe el proceso que hay que seguir para so
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 828cc94a-248b-44f6-a1ba-c28c0a135f8c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f3f5afee734799df65bd57c51a2fad46129caf71
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: bad9ddf835c4abd1dba339e8d413bd06097a5366
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56280903"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568830"
 ---
 # <a name="troubleshooting-microsoft-cloud-app-security-policies"></a>Solución de problemas de directivas de Microsoft Cloud App Security | Microsoft Docs
 
@@ -28,7 +28,7 @@ ms.locfileid: "56280903"
 
 En este artículo se describe el proceso que hay que seguir para solucionar problemas relacionados con la creación de directivas en Cloud App Security.
 
-## <a name="troubleshooting"></a>Solucionar problemas
+## <a name="troubleshooting"></a>Solución de problemas
 
 En el gráfico siguiente se incluyen la descripción y la solución de los errores que se le podrían mostrar para las directivas.
 
@@ -40,5 +40,5 @@ En el gráfico siguiente se incluyen la descripción y la solución de los error
 
 [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
 
-[Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier](https://premier.microsoft.com/)
+[Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier](https://premier.microsoft.com/).
 

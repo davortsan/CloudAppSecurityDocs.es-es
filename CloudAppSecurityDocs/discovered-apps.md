@@ -4,7 +4,7 @@ description: Este inicio rápido describe el proceso de identificación y correc
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/27/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 61e1c434c6726c58f4abffe190ce0911ec03730e
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: 8324b5584cc49edcb15f356e6d255333f153b5bc
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281277"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567925"
 ---
 # <a name="quickstart-work-with-discovered-apps"></a>Inicio rápido: Trabajo con aplicaciones detectadas
 
@@ -94,7 +94,7 @@ Para crear una exclusión:
 
 Los informes continuos personalizados proporcionan más granularidad al supervisar los datos de registro de Cloud Discovery de la organización. Al crear informes personalizados, es posible filtrar por ubicaciones geográficas concretas, redes y sitios o unidades organizativas. De forma predeterminada, solo aparecen los informes siguientes en el selector de informes de Cloud Discovery:  
   
-- El **informe global** consolida toda la información del portal de todos los orígenes de datos incluidos en los registros.  
+- El **informe global** consolida toda la información del portal de todos los orígenes de datos incluidos en los registros.  El informe global no incluye datos de Microsoft Defender ATP.
   
 - El **informe específico de origen de datos** muestra únicamente la información de un origen de datos concreto.  
   
