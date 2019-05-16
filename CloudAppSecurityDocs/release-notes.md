@@ -4,8 +4,8 @@ description: Este artículo se actualiza con frecuencia para informarle de las n
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: rkarlin
-ms.date: 04/15/2019
+manager: angrobe
+ms.date: 05/15/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ae0c0ee16c36127b124115917aa8640387835795
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 55a534b9c47f6db18cccc8f302d73deabda606ec
+ms.sourcegitcommit: fffdbcf52ac482f7f5180ab6a5911203a717af54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568711"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65629531"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
@@ -29,6 +29,23 @@ ms.locfileid: "65568711"
 Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security.
 
 Fuente RSS: Reciba una notificación cuando se actualice esta página. Para ello, copie y pegue la siguiente dirección URL en su lector de fuentes: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+
+## <a name="cloud-app-security-release-148-and-149"></a>Notas de la versión 148 y 149 de Cloud App Security
+
+Fecha de publicación: 12 de mayo de 2019
+
+- **Conector de la aplicación WebEx disponible**<br>Hay disponible un nuevo conector de aplicación web para Cisco WebEx Teams en versión preliminar pública. Ahora puede conectar Microsoft Cloud­ App Security a Cisco WebEx Teams para supervisar y proteger sus usuarios, actividades y archivos. Para obtener más información, consulte [Connect WebEx](connect-webex-to-microsoft-cloud-app-security.md).
+
+- **Nuevas ubicaciones del servicio de clasificación de datos de Microsoft**<br>El [servicio de clasificación de datos de Microsoft](dcs-inspection.md) ahora está disponible en 4 nuevas ubicaciones: Australia, India, Canadá y Japón. Si su inquilino de Office se encuentra en estas ubicaciones, ahora puede usar el servicio de clasificación de datos de Microsoft como método de inspección de contenido en las directivas de archivo de Microsoft Cloud­ App Security.
+
+- **Detección de PaaS e IaaS de Shadow**<br> Microsoft Cloud App Security ha ampliado sus capacidades de Cloud Discovery y ahora también proporciona Shadow IT para los recursos que se hospedan en soluciones de IaaS y PaaS, como Microsoft Azure, Amazon Web Services y Google Cloud Platform. Cloud Discovery ahora le ofrece visibilidad sobre qué aplicaciones personalizadas se ejecutan sobre IaaS y PaaS y las cuentas de almacenamiento que se están creando, entre otras cosas. Use esta nueva funcionalidad con el fin de detectar los recursos que existen, quién tiene acceso a cada uno de ellos y la cantidad de tráfico que se transmite.
+
+- **Certificación de aplicaciones**<br>La evaluación de cumplimiento y riesgo de Microsoft Cloud App Security ahora permite que los proveedores de la nube certifiquen que su aplicación está actualizada en el catálogo de aplicaciones de la nube. Este programa piloto permite a los proveedores de la nube completar un cuestionario de autocertificación basado en los atributos de riesgo del catálogo de aplicaciones de la nube para asegurarse de que su evaluación de riesgos en Cloud App Security es precisa y está actualizada. Luego, los usuarios pueden obtener una indicación de qué atributos de riesgo fueron certificados por el proveedor (en lugar de que sea el equipo de Cloud App Security quien los evalúe) y el momento en que el proveedor envió cada atributo. Para obtener más información, consulte [Comprobaciones sobre la aplicación](attest-your-app.md). 
+
+- **Granularidad de la carga de trabajo de Office 365**<br>Al conectar Office 365 con Microsoft Cloud App Security, ahora tiene control sobre qué cargas de trabajo desea conectar. Por ejemplo, los clientes interesados solo en conectar Office 365 para la supervisión de la actividad ahora pueden hacerlo durante el proceso de conexión, o mediante la edición de un conector de Office 365 existente. Los clientes con un conector de Office 365 existente no se ven afectados por este cambio.
+
+- **Compatibilidad mejorada con Teams**<br>Ahora puede supervisar y bloquear el envío de mensajes en la aplicación web de Teams en tiempo real, configurando una directiva de sesión basada en contenido confidencial. 
 
 ## <a name="cloud-app-security-release-147"></a>Notas de la versión 147 de Cloud App Security
 
