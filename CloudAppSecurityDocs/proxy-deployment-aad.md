@@ -4,8 +4,8 @@ description: En este artículo se ofrece información sobre cómo implementar la
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: rkarlin
-ms.date: 2/2/2019
+manager: angrobe
+ms.date: 05/15/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 14e5f822c5075f1d59dc7ecef350b46e3c8c0f0c
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 6a3b96a75bb76d548f0371fd9c98eff071312c67
+ms.sourcegitcommit: fffdbcf52ac482f7f5180ab6a5911203a717af54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568663"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65629539"
 ---
 # <a name="deploy-conditional-access-app-control-for-azure-ad-apps"></a>Implementación del control de aplicaciones de acceso condicional para aplicaciones de Azure AD
 
@@ -64,6 +64,8 @@ Haga lo siguiente para configurar aplicaciones de Azure AD de forma que estén c
       > [!NOTE]
       >El Control de aplicaciones de acceso condicional admite aplicaciones SAML u Open ID Connect configuradas con el inicio de sesión único en Azure AD, incluidas estas aplicaciones destacadas. Las aplicaciones no destacadas se pueden configurar con control de acceso en el portal de Cloud App Security mediante una solicitud para incorporarlas con control de sesión. 
 
+7. Haga clic en **habilitar** y **guardar**.
+ 
 ## Paso 2: inicie sesión con un usuario con ámbito en la directiva en las aplicaciones <a name="sign-in-scoped"></a>
 
 Después de crear la directiva, inicie sesión en cada aplicación configurada en esa directiva. Asegúrese de que inicia sesión con un usuario configurado en la directiva. Asegúrese de cerrar antes cualquier sesión existente.
