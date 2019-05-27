@@ -15,12 +15,12 @@ ms.assetid: b35ca44c-da8e-49ec-89d1-c076d123c14f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6a23a081ece3e6aa94995e688ec2163b36441e60
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: b49ab77b33548d6fd188eadde97294ceb6c62ca5
+ms.sourcegitcommit: 235b7d5f1f49075c199b154abc38e51326c0493e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568410"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66173516"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Integración de Microsoft Defender Advanced Threat Analytics con Microsoft Cloud App Security
 
@@ -92,6 +92,9 @@ Después de integrar Microsoft Defender ATP con Cloud App Security, puede invest
  
 Al igual que con cualquier otro origen de Cloud Discovery, puede exportar los datos del informe de usuarios del punto de conexión Win10 para fines de investigación. 
 
+> [!NOTE]
+> - Defender ATP reenvía los datos con Cloud App Security en fragmentos de ~ 4 MB (transacciones de punto de conexión de unas 4000)
+> - Si no se alcanza el límite de 4 MB en 1 hora, los informes de ATP de Defender todas las transacciones realizan durante la última hora.
 
 ## <a name="related-videos"></a>Vídeos relacionados
 
