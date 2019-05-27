@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: rkarlin
-ms.date: 1/27/2019
+ms.date: 05/23/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8324b5584cc49edcb15f356e6d255333f153b5bc
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: ac3ec9e33f017c655c174d7304b4de4ac364c0fa
+ms.sourcegitcommit: 235b7d5f1f49075c199b154abc38e51326c0493e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567925"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66173509"
 ---
 # <a name="quickstart-work-with-discovered-apps"></a>Inicio rápido: Trabajo con aplicaciones detectadas
 
@@ -68,6 +68,28 @@ Por ejemplo, puede diferenciar entre los distintos sitios de SharePoint.
 Esto solo se admite en los firewalls y servidores proxy que contienen datos de dirección URL de destino. Para obtener más información, vea la lista de dispositivos compatibles en [Firewalls y servidores proxy compatibles](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
  ![información de subdominio](./media/discovery-domains.png) 
+
+## <a name="discover-resources-and-custom-apps"></a>Detección de recursos y aplicaciones personalizadas
+
+Cloud Discovery también le permite sumergirse en sus recursos IaaS y PaaS. Puede detectar actividad entre plataformas en las que hospede recursos y consultar el acceso a los datos en aplicaciones y recursos autohospedados, como es el caso de las cuentas de almacenamiento, la infraestructura y las aplicaciones personalizadas hospedadas en Azure, Google Cloud Platform y AWS. No solo puede conocer el uso general de sus soluciones IaaS, sino también obtener visibilidad sobre recursos específicos hospedados en ellas y datos sobre el uso general de estos para mitigar el riesgo individual de cada recurso.
+
+Por ejemplo, desde Cloud App Security puede supervisar la actividad en un contexto en el que el volumen de datos es muy grande, así como detectar en qué recurso se efectúa la carga y realizar una exploración en profundidad para conocer el autor de la actividad.
+
+> [!NOTE]
+> Esto solo se admite en los firewalls y servidores proxy que contienen datos de dirección URL de destino. Para obtener más información, vea la lista de dispositivos compatibles en [Firewalls y servidores proxy compatibles](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+
+Para consultar los recursos detectados:
+
+1. En el portal de Cloud App Security, seleccione **Detectar** y, luego, **Recursos detectados**.
+
+  ![Menú de recursos detectados](./media/discovered-resources-menu.png) 
+
+2. En la página Recursos detectados, puede explorar en profundidad cada recurso y consultar los tipos de interacciones que han tenido lugar y los usuarios que han accedo a ellos. A partir de aquí, continuar con la exploración en profundidad para obtener más información concreta sobre los usuarios.
+ 
+  ![Recursos de la detección](./media/discovery-resources.png) 
+
+3. Para las aplicaciones personalizadas, puede hacer clic en los tres botones que verá al final de la fila y seleccionar **Agregar aplicación personalizada**. Esta acción abrirá la ventana **Agregar aplicación personalizada**, donde podrá asignar un nombre a la aplicación e identificarla para poder incluirla en el panel de Cloud Discovery.
+
 
 ## <a name="generate-cloud-discovery-executive-report"></a>Generación de un informe ejecutivo de Cloud Discovery
 
