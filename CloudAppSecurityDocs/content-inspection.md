@@ -15,12 +15,12 @@ ms.assetid: c67a387f-8c88-4018-9e80-0fb1455cf768
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b0fcd13550d62d5ff96462b7d3f9f4a7437c1a44
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 7b0cdcca52b8be95e146af09595849b7c9dc1129
+ms.sourcegitcommit: 0303627fb0ceb460c50071d0b20e33aa94ccff8d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568048"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66491583"
 ---
 # <a name="content-inspection"></a>Inspección de contenido
 
@@ -42,8 +42,8 @@ Cloud App Security permite a los administradores conceder permiso a Cloud App Se
 
 Para conceder los permisos necesarios a Cloud App Security, haga lo siguiente:
 
-1.  Vaya a **Configuración** y, a continuación, a **Azure Information Protection**.
-2.  Habilite **Inspeccionar archivos protegidos**.
+1. Vaya a **Configuración** y, a continuación, a **Azure Information Protection**.
+2. Habilite **Inspeccionar archivos protegidos**.
 3. Siga las indicaciones para permitir los permisos requeridos en Azure Active Directory.
 4. Puede ajustar la configuración según la directiva de archivo para determinar qué directivas examinarán los archivos protegidos.
 
