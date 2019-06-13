@@ -2,10 +2,10 @@
 title: Novedades de Cloud App Security
 description: Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: angrobe
-ms.date: 05/15/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 06/04/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 55a534b9c47f6db18cccc8f302d73deabda606ec
-ms.sourcegitcommit: fffdbcf52ac482f7f5180ab6a5911203a717af54
+ms.openlocfilehash: 958d005a9c2a34bb714fc5b2a4f17b04eb727df2
+ms.sourcegitcommit: 9f671d5dd5e5da023d598425442d8736546ca183
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65629531"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66837518"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
@@ -29,6 +29,13 @@ ms.locfileid: "65629531"
 Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security.
 
 Fuente RSS: Reciba una notificación cuando se actualice esta página. Para ello, copie y pegue la siguiente dirección URL en su lector de fuentes: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+
+## <a name="cloud-app-security-release-150"></a>Versión 150 de Cloud App Security
+
+Fecha de publicación: 26 de mayo de 2019
+
+- **Mejora en la exportación de alertas**<br> Ahora, al exportar las alertas a CSV desde la página **Alertas**, los resultados incluyen la fecha de la resolución o del descarte de la alerta.
 
 
 ## <a name="cloud-app-security-release-148-and-149"></a>Notas de la versión 148 y 149 de Cloud App Security
@@ -43,7 +50,7 @@ Fecha de publicación: 12 de mayo de 2019
 
 - **Certificación de aplicaciones**<br>La evaluación de cumplimiento y riesgo de Microsoft Cloud App Security ahora permite que los proveedores de la nube certifiquen que su aplicación está actualizada en el catálogo de aplicaciones de la nube. Este programa piloto permite a los proveedores de la nube completar un cuestionario de autocertificación basado en los atributos de riesgo del catálogo de aplicaciones de la nube para asegurarse de que su evaluación de riesgos en Cloud App Security es precisa y está actualizada. Luego, los usuarios pueden obtener una indicación de qué atributos de riesgo fueron certificados por el proveedor (en lugar de que sea el equipo de Cloud App Security quien los evalúe) y el momento en que el proveedor envió cada atributo. Para obtener más información, consulte [Comprobaciones sobre la aplicación](attest-your-app.md). 
 
-- **Granularidad de la carga de trabajo de Office 365**<br>Al conectar Office 365 con Microsoft Cloud App Security, ahora tiene control sobre qué cargas de trabajo desea conectar. Por ejemplo, los clientes interesados solo en conectar Office 365 para la supervisión de la actividad ahora pueden hacerlo durante el proceso de conexión, o mediante la edición de un conector de Office 365 existente. Los clientes con un conector de Office 365 existente no se ven afectados por este cambio.
+- **Granularidad de la carga de trabajo de Office 365**<br>Al conectar Office 365 con Microsoft Cloud App Security, ahora tiene control sobre qué cargas de trabajo desea conectar. Por ejemplo, los clientes interesados solo en conectar Office 365 para la supervisión de la actividad ahora pueden hacerlo durante el proceso de conexión, o mediante la edición de un conector de Office 365 existente. Como parte de este cambio, OneDrive y SharePoint Online ya no se mostrarán como conectores independientes, sino que se incluirán en el conector de Office 365 como la carga de trabajo de _archivos de Office 365_. Los clientes con un conector de Office 365 existente no se ven afectados por este cambio.
 
 - **Compatibilidad mejorada con Teams**<br>Ahora puede supervisar y bloquear el envío de mensajes en la aplicación web de Teams en tiempo real, configurando una directiva de sesión basada en contenido confidencial. 
 
@@ -78,7 +85,7 @@ Fecha de publicación: 17 de marzo de 2019
 
 - **Integración con Microsoft Defender ATP disponible para público general** <br>
 El año pasado anunciamos la [integración con Protección contra amenazas avanzada de Windows Defender](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Microsoft-Cloud-App-Security-and-Windows-Defender-ATP-better/ba-p/263265) que mejora Shadow IT Discovery en la organización y la extiende más allá de la red corporativa. [Habilitado con un solo clic](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWtNmG), nos complace anunciar que esta integración única ya tiene el carácter de disponibilidad general.
-- **Compatibilidad con Dynamics 365** <br>Cloud App Security agregó control y supervisión en tiempo real para Dynamics 365, lo que permite proteger las aplicaciones empresariales y el contenido confidencial almacenado en estas aplicaciones. 
+- **Soporte técnico de Dynamics 365 CRM** <br>Cloud App Security agregó control y supervisión en tiempo real para Dynamics 365 CRM, lo que permite proteger las aplicaciones empresariales y el contenido confidencial almacenado en estas aplicaciones. 
 
 ## <a name="cloud-app-security-release-144"></a>Notas de la versión 144 de Cloud App Security
 

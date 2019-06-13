@@ -25,6 +25,8 @@
   items:
     - name: Detección y administración de shadow IT
       href: tutorial-shadow-it.md
+    - name: Investigación de usuarios de riesgo
+      href: tutorial-ueba.md
     - name: Investigación de aplicaciones de riesgo de OAuth
       href: investigate-risky-oauth.md
     - name: Bloqueo de las descargas de información confidencial
@@ -208,18 +210,28 @@
   items:
     - name: Comprobaciones sobre la aplicación
       href: attest-your-app.md
-    - name: Solución de problemas de Cloud Discovery
-      href: troubleshooting-cloud-discovery.md
-    - name: Solución de problemas de conectores de API mediante mensajes de error
-      href: troubleshooting-api-connectors-using-error-messages.md
-    - name: Solucionar problemas relacionados con la inspección de contenido
-      href: troubleshooting-content-inspection.md
-    - name: Solución de problemas de integración de SIEM
-      href: troubleshooting-siem.md
-    - name: Solución de problemas de implementación de Docker para Cloud Discovery
-      href: troubleshoot-docker.md
-    - name: Solución de problemas de directivas
-      href: troubleshoot-policies.md
+    - name: Directivas comunes
+      items:
+        - name: Directivas de Cloud Discovery
+          href: policies-cloud-discovery.md
+        - name: Directivas de protección contra amenazas
+          href: policies-threat-protection.md
+        - name: Directivas de protección de la información
+          href: policies-information-protection.md
+    - name: Solucionar problemas
+      items:
+        - name: Solución de problemas de Cloud Discovery
+          href: troubleshooting-cloud-discovery.md
+        - name: Solución de problemas de conectores de API mediante mensajes de error
+          href: troubleshooting-api-connectors-using-error-messages.md
+        - name: Solucionar problemas relacionados con la inspección de contenido
+          href: troubleshooting-content-inspection.md
+        - name: Solución de problemas de integración de SIEM
+          href: troubleshooting-siem.md
+        - name: Solución de problemas de implementación de Docker para Cloud Discovery
+          href: troubleshoot-docker.md
+        - name: Solución de problemas de directivas
+          href: troubleshoot-policies.md
 - name: Recursos
   items:
     - name: Archivo de notas de la versión
