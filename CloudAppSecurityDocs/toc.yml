@@ -12,7 +12,7 @@
       items:
         - name: Office 365
           href: editions-cloud-app-security-o365.md
-        - name: Azure AD
+        - name: "Azure\_AD"
           href: editions-cloud-app-security-aad.md
 - name: Inicios rápidos
   expanded: true
@@ -25,8 +25,6 @@
   items:
     - name: Detección y administración de shadow IT
       href: tutorial-shadow-it.md
-    - name: Investigación de usuarios de riesgo
-      href: tutorial-ueba.md
     - name: Investigación de aplicaciones de riesgo de OAuth
       href: investigate-risky-oauth.md
     - name: Bloqueo de las descargas de información confidencial
