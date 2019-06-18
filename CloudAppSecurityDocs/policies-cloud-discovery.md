@@ -1,8 +1,8 @@
 ---
 title: Directivas de cloud Discovery - Cloud App Security | Microsoft Docs
-description: En este tema se describe los pasos para configurar muchas de las directivas de Cloud Discovery en Cloud App Security.
-author: rkarlin
-ms.author: rkarlin
+description: En este artículo se describe los pasos para configurar muchas de las directivas de Cloud Discovery en Cloud App Security.
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
 ms.date: 06/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -10,12 +10,12 @@ ms.service: cloud-app-security
 ms.assetid: 570da960-771d-484f-932d-b086f2ec2978
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4c9d90852f1dbdf18da285f63abbb46e91595655
-ms.sourcegitcommit: 9f671d5dd5e5da023d598425442d8736546ca183
+ms.openlocfilehash: f301e5796fe408b9c1fb00b859c848bf4b62ba5f
+ms.sourcegitcommit: 5c6d41aae2d9ac461917338f4a423f7a2683aca1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66837763"
+ms.lasthandoff: 06/16/2019
+ms.locfileid: "67149534"
 ---
 # <a name="cloud-discovery-policies"></a>Directivas de Cloud Discovery
 
@@ -60,7 +60,7 @@ Informa de configurar la carga de registros automática para la detección conti
 
 2.  En el **plantilla de directiva** campos, seleccione el **nueva aplicación de riesgo** plantilla y aplicar la plantilla.
 
-3.  En **App que coinciden con todo lo siguiente** establecer el [puntuación de riesgo](risk-score.md) control deslizante y y el factor de riesgo de cumplimiento para personalizar el nivel de riesgo que desee desencadenar una alerta y establezca los otros filtros de directiva para satisfacer requisitos de seguridad de su organización.
+3.  En **App que coinciden con todo lo siguiente** establecer el [puntuación de riesgo](risk-score.md) control deslizante y el factor de riesgo de cumplimiento para personalizar constituyen el nivel de riesgo que desee desencadenar una alerta y establezca los otros filtros de directiva para satisfacer requisitos de seguridad de su organización.
 
     1.  Opcional: Para obtener las detecciones más significativas, personalizar la cantidad de tráfico que desencadenará una alerta.
 
@@ -131,15 +131,15 @@ Informa de configurar la carga de registros automática para la detección conti
 
 3.  Seleccione la casilla de verificación **crear una alerta para cada evento que coincida con la gravedad de directiva**.
 
-4.  Configurar las acciones que se deben realizar cuando se desencadene una alerta.
+4.  Configurar las acciones que se realizará cuando se desencadena una alerta.
 
 ## <a name="detect-risky-oauth-apps"></a>Detectar las aplicaciones de riesgo de OAuth
 
-Obtenga visibilidad y control sobre [aplicaciones OAuth](investigate-risky-oauth.md) que se instalan dentro de aplicaciones como Salesforce, Office 365 y G Suite. Las aplicaciones de OAuth que solicitan permisos alta y tienen poco frecuente Comunidad use podrían considerarse arriesgadas.
+Obtenga visibilidad y control sobre [aplicaciones OAuth](investigate-risky-oauth.md) que se instalan dentro de las aplicaciones como Salesforce, Office 365 y G Suite. Las aplicaciones de OAuth que solicitan permisos alta y tienen poco frecuente Comunidad use podrían considerarse arriesgadas.
 
 ### <a name="prerequisites"></a>Requisitos previos
 
-Informa de configurar la carga de registros automática para la detección continua de la nube, como se describe en [configurar la carga de registros automática para informes continuos](configure-automatic-log-upload-for-continuous-reports.md).
+Debe tener la aplicación G Suite, Office 365 o Salesforce conectada mediante [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>Pasos
 
@@ -151,10 +151,10 @@ Informa de configurar la carga de registros automática para la detección conti
 
 4.  Agregue el filtro **uso de la Comunidad** es igual a **raras**.
 
-4.  Configurar las acciones que se deben realizar cuando se desencadene una alerta. Por ejemplo, para Office 365, consulte **revocar aplicación** para aplicaciones de OAuth detectadas por la directiva.
+4.  Configurar las acciones que se realizará cuando se desencadena una alerta. Por ejemplo, para Office 365, consulte **revocar aplicación** para aplicaciones de OAuth detectadas por la directiva.
 
 > [!NOTE]
->  Se admite para las tiendas de aplicaciones de Office 365, Salesforce y G Suite.
+>  Se admite para tiendas de aplicaciones de G Suite, Office 365 y Salesforce.
 
 ## <a name="next-steps"></a>Pasos siguientes 
 
