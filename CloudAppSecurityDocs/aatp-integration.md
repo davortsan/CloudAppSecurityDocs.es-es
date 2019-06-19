@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: rkarlin
-ms.date: 6/21/2019
+ms.date: 6/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,14 +15,14 @@ ms.assetid: 63e82b47-bb08-4614-af55-f85d04edfc5a
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4ca98ab0cb5655d774c6ee4e7f917a6e9456092a
-ms.sourcegitcommit: a25543c14c35f159dd06f7c0c89d6bc0e36a0413
+ms.openlocfilehash: 1f920a6cb1ddcc00930527b9ba22264d4b4637a6
+ms.sourcegitcommit: 62778bfbc010b95cdef4c8aed23b0f195f382242
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67031067"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67171484"
 ---
-# <a name="azure-information-protection-integration"></a>Integración de Azure Information Protection
+# <a name="azure-advanced-threat-protection-integration"></a>Integración de protección contra amenazas avanzada de Azure
 
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -60,6 +60,10 @@ Para habilitar Cloud App Security para integrarse con ATP de Azure:
     ![habilitar la protección contra amenazas avanzada de azure](./media/aatp-integration.png)
 
 3. Seleccione la casilla de verificación **datos conectar ATP de Azure como las alertas y actividades de Cloud App Security**.
+
+
+> [!NOTE]
+> Puede tardar hasta 12 horas hasta que la integración surte efecto.
  
 Después de habilitar la integración de protección contra amenazas avanzada de Azure, podrá ver las actividades en el entorno local para todos los usuarios de su organización. También se obtendrá avanzadas insights en los usuarios que combinen alertas y actividades sospechosas en los entornos de nube y locales.
 
