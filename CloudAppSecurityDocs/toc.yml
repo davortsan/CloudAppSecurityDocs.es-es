@@ -12,7 +12,7 @@
       items:
         - name: Office 365
           href: editions-cloud-app-security-o365.md
-        - name: "Azure\_AD"
+        - name: Azure AD
           href: editions-cloud-app-security-aad.md
 - name: Inicios rápidos
   expanded: true
@@ -23,6 +23,8 @@
       href: discovered-apps.md
 - name: Tutoriales
   items:
+    - name: Investigación de usuarios de riesgo
+      href: tutorial-ueba.md
     - name: Detección y administración de shadow IT
       href: tutorial-shadow-it.md
     - name: Investigación de aplicaciones de riesgo de OAuth
@@ -188,6 +190,8 @@
           href: governance-actions.md
         - name: Controlar las aplicaciones detectadas
           href: governance-discovery.md
+        - name: Integración de Azure ATP
+          href: aatp-integration.md
         - name: Integración de Azure Information Protection
           href: azip-integration.md
         - name: Integración con soluciones externas
