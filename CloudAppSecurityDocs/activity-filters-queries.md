@@ -15,12 +15,12 @@ ms.assetid: 9ba5c7d3-c733-4048-9b99-bf41a0f46695
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 098855853ea933e5319198978cb771c220ec22be
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 4f25b48ece9782e75c20cfa8516183c953d05bb3
+ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65565906"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67237141"
 ---
 # <a name="activity-filters-and-queries"></a>Filtros y consultas de actividad
 
@@ -68,16 +68,16 @@ A continuación se muestra una lista de los filtros de actividad que se pueden a
   - Categoría IP: categoría de la dirección IP desde la que se ha realizado la actividad, por ejemplo, todas las actividades desde el intervalo administrativo de direcciones IP. Las categorías deben configurarse para incluir las direcciones IP correspondientes, excepto la categoría de "De riesgo", que está preconfigurada e incluye dos etiquetas IP: Proxy anónimo y Tor. Para más información sobre cómo configurar las categorías IP, vea [Organizar los datos de acuerdo a las necesidades](ip-tags.md).  
   - Etiqueta IP: etiqueta de la dirección IP desde la que se ha realizado la actividad, por ejemplo, todas las actividades desde direcciones IP de servidores proxy anónimos. Cloud App Security crea un conjunto de etiquetas IP integradas que no se pueden configurar. Además, puede configurar sus propias etiquetas IP. Para más información sobre cómo configurar sus propias etiquetas IP, vea [Organizar los datos de acuerdo a las necesidades](ip-tags.md).
   Las etiquetas IP integradas incluyen:
-  - Aplicaciones de Microsoft (14)
-  - Proxy anónimo
-  - Botnet (verá que una red de robots (botnet) ha realizado la actividad, con un vínculo para obtener más información sobre el botnet específico)
-  - IP de análisis de Darknet
-  - Servidor de malware C&C
-  - Analizador de conectividad remota
-  - Proveedores de satélite
-  - Proxy inteligente y proxy de acceso (excluido a propósito)
-  - Nodos de salida tor
-  - Zscaler
+    - Aplicaciones de Microsoft (14)
+    - Proxy anónimo
+    - Botnet (verá que una red de robots (botnet) ha realizado la actividad, con un vínculo para obtener más información sobre el botnet específico)
+    - IP de análisis de Darknet
+    - Servidor de malware C&C
+    - Analizador de conectividad remota
+    - Proveedores de satélite
+    - Proxy inteligente y proxy de acceso (excluido a propósito)
+    - Nodos de salida tor
+    - Zscaler
 
 
 - Actividad suplantada: busca solo las actividades realizadas en nombre de otro usuario.  

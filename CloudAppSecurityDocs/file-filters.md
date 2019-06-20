@@ -15,12 +15,12 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 841255c2d313c510374458316184161359c7855f
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: ed441d1832ce9f6d0ce070fc58baa058a34bcadc
+ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567858"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67237219"
 ---
 # <a name="files"></a>Archivos
 
@@ -56,7 +56,7 @@ A continuación se muestra una lista de los filtros de archivo que se pueden apl
 > [!NOTE]
 > Al usar filtros de directiva de archivo, **Contiene** solo buscará **palabras completas** separadas por comas, puntos, espacios o caracteres de subrayado. 
 > - Los espacios entre palabras funcionan como el operador OR. Por ejemplo, si busca **malware** **virus**, se encontrarán todos los archivos con la palabra malware o virus en el nombre, como malware-virus.exe o virus.exe.  
-> - Si quiere buscar una cadena, escriba las palabras entre comillas. Se tratarán como si usaran el operador AND. Por ejemplo, si busca **"malware"** **"virus"**, se encontrará virus_malware_file.exe, pero no se encontrarán ni malwarevirus.exe ni malware.exe. En cambio, buscará la cadena exacta. Si busca **"malware virus"** no encontrará **"virus"** ni **"virus_malware"**.
+> - Si quiere buscar una cadena, escriba las palabras entre comillas. Se tratarán como si usaran el operador AND. Por ejemplo, si busca **"malware"** **"virus"** , se encontrará virus_malware_file.exe, pero no se encontrarán ni malwarevirus.exe ni malware.exe. En cambio, buscará la cadena exacta. Si busca **"malware virus"** no encontrará **"virus"** ni **"virus_malware"** .
 >
 > **Es igual a** solo buscará la cadena completa. Por ejemplo, si busca **malware.exe**, encontrará malware.exe pero no malware.exe.txt. 
 
@@ -136,7 +136,7 @@ También puede establecer la directiva para que se ejecute en determinados archi
 
 ## <a name="working-with-the-file-drawer"></a>Uso del cajón de archivos
 
-Puede ver más información sobre un archivo si hace clic en él en el registro de archivos. Al hacer clic se abre el **Cajón de archivos con las siguientes acciones adicionales relacionadas con el archivo en cuestión:
+Puede ver más información sobre un archivo si hace clic en él en el registro de archivos. Al hacer clic en abre la **cajón de archivos** que proporciona las siguientes acciones adicionales que puede realizar en el archivo:
 
 - **Dirección URL**: le lleva a la ubicación del archivo.
 - **Identificadores de archivos**: abre una ventana emergente con los datos sin procesar sobre el archivo, como su id. o las claves de cifrado.

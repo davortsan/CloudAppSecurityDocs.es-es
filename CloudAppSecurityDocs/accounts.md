@@ -15,12 +15,12 @@ ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 35b9bdf9e1b59bfecefe18f5fcaacd4ce6b73edf
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 86dad8f925f3ffd95a36787112482625c10c23d1
+ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65565887"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67237163"
 ---
 # <a name="accounts"></a>Cuentas
 
@@ -28,7 +28,7 @@ ms.locfileid: "65565887"
 
 Microsoft Cloud App Security le ofrece la posibilidad de supervisar las cuentas de sus aplicaciones conectadas. Después de conectar Cloud App Security a una aplicación mediante el conector de aplicaciones, Cloud App Security lee la información de la cuenta asociada a las aplicaciones conectadas. La página Cuentas permite investigar esas cuentas, los permisos, los grupos a los que pertenecen, sus alias y las aplicaciones que usan. Además, cuando Cloud App Security detecta una cuenta nueva que no se había detectado previamente en ninguna de las aplicaciones conectadas (por ejemplo, en la actividad o el uso compartido de archivos), la cuenta se agrega a la lista de cuentas de la aplicación en cuestión. Esto le permite supervisar la actividad de los usuarios externos que interactúan con sus aplicaciones en la nube.
 
-Los administradores pueden buscar los metadatos de un usuario específico o su actividad. La página **Usuarios y cuentas** proporciona detalles completos acerca de la entidad extraídos de aplicaciones en la nube conectadas. También presenta el historial de la actividad de un usuario y sus alertas de seguridad.
+Los administradores pueden buscar los metadatos de un usuario específico o su actividad. El **usuarios y cuentas** página le proporciona información completa sobre las entidades que se extrajeron de aplicaciones conectadas en la nube. También presenta el historial de la actividad de un usuario y sus alertas de seguridad.
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
