@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 29/04/2019
+ms.date: 04/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0799073e7bd82570fd298c1080960170648b7ac1
-ms.sourcegitcommit: 9553aed06ebb2378d44bb5685439ae5cba605171
+ms.openlocfilehash: e395e0ca1ee0fe0805a37e75a6201c6d9a224cdf
+ms.sourcegitcommit: ea1c0f7638eaf0601ae476fea0d40e01bf8a6f4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65048408"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67298872"
 ---
 # <a name="attest-your-app"></a>Comprobaciones sobre la aplicación
 

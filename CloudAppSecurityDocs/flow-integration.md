@@ -3,8 +3,8 @@ title: Integración de Flow con Cloud App Security para obtener la automatizaci�
 description: En este artículo se proporciona información sobre cómo obtener la automatización de alertas personalizadas mediante la integración de Flow con Cloud App Security.
 keywords: ''
 author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
-manager: ShlomoSagir-MS
+ms.author: shsagir
+manager: shsagir
 ms.date: 6/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 344f92e2-6b3b-46db-bfd0-3b1016e0bc34
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a9bdc83e18f82f60719e4080aacecdf4eea0580e
-ms.sourcegitcommit: 62778bfbc010b95cdef4c8aed23b0f195f382242
+ms.openlocfilehash: 965abb1f4fe68a7bfb4fc16818ced07b22dcda3f
+ms.sourcegitcommit: ea1c0f7638eaf0601ae476fea0d40e01bf8a6f4d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67171541"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67298817"
 ---
 # <a name="integrate-with-flow-for-custom-alert-automation"></a>Integrar con el flujo para la automatización de alerta personalizada
 
