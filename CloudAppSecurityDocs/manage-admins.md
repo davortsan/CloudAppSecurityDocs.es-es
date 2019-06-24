@@ -2,10 +2,10 @@
 title: Administración del acceso de administrador al portal de Cloud App Security
 description: En este artículo se ofrecen instrucciones para configurar el acceso al portal de Cloud App Security para los administradores.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 04/04/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 6/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9a086df199107c08481c464fd5a15769b6c00921
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: cea30130ec0f9f548b93fb09250ef8a6a8a3678a
+ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568649"
+ms.lasthandoff: 06/23/2019
+ms.locfileid: "67333639"
 ---
 # <a name="manage-admin-access"></a>Administrar el acceso de administrador
 
@@ -49,11 +49,11 @@ De forma predeterminada, los siguientes roles de administrador de Office 365 y 
   - Obtener acceso al registro de gobernanza ni verlo 
   - Obtener acceso a la página de informes de instantáneas de administración ni verla 
 
-- **Administración de aplicaciones e instancias**: tiene permisos en todos los datos en Microsoft Cloud App Security que tengan que ver exclusivamente con la aplicación o instancia específica de una aplicación seleccionada. Por ejemplo, da a un usuario permiso de administrador para la instancia europea de Box. El administrador verá solo los datos que se relacionan con la instancia europea de Box, ya sean archivos, actividades, directivas o alertas:
+- **Administración de aplicaciones e instancias**: Tiene permisos completos o de solo lectura a todos los datos en Microsoft Cloud App Security que se ocupa exclusivamente de la aplicación o instancia específica de una aplicación seleccionada. Por ejemplo, da a un usuario permiso de administrador para la instancia europea de Box. El administrador verá solo los datos que se relacionan con la instancia europea de Box, ya sean archivos, actividades, directivas o alertas:
 
   - Página de actividades (solo actividades relacionadas con la aplicación específica)
   - Alertas (solo alertas relacionadas con la aplicación específica)
-  - Directivas (puede ver todas las directivas y editar o crear solo directivas que tengan que ver exclusivamente con la instancia o aplicación)
+  - Directivas: puede ver todas las directivas y si asigna completa permisos pueden editar o crear solo directivas que se encargan exclusivamente la instancia de aplicación
   - Página Cuentas: solo cuentas de la aplicación o instancia específica
   - Permisos de la aplicación (solo permisos de la aplicación o instancia específica)
   - Página de archivos (solo archivos de la aplicación o instancia específica)
@@ -62,11 +62,11 @@ De forma predeterminada, los siguientes roles de administrador de Office 365 y 
   - Extensiones de seguridad (permisos únicamente para el token de API con permisos de usuario)
   - Acciones de gobernanza (solo para la aplicación o instancia específica) 
 
-- **Administrador de grupo de usuarios:** tiene permisos en todos los datos en Microsoft Cloud App Security que tengan que ver exclusivamente con el grupo específico seleccionado aquí. Por ejemplo, si concede permiso a un administrador de usuarios para el grupo "Alemania: todos los usuarios", el administrador podrá ver y modificar información en Microsoft Cloud App Security solo para ese grupo de usuarios:
+- **Administrador de grupo de usuarios:** Tiene permisos completos o de solo lectura a todos los datos en Microsoft Cloud App Security que ocupa exclusivamente el grupo específico seleccionado aquí. Por ejemplo, si concede permiso a un administrador de usuarios para el grupo "Alemania: todos los usuarios", el administrador podrá ver y modificar información en Microsoft Cloud App Security solo para ese grupo de usuarios:
 
   - Página de actividades (solo actividades relacionadas con los usuarios del grupo)
   - Alertas (solo alertas relacionadas con los usuarios del grupo)
-  - Directivas (puede ver todas las directivas y editar o crear solo directivas que tengan que ver exclusivamente con usuarios del grupo)
+  - Directivas: puede ver todas las directivas y si asigna completa permisos pueden editar o crear solo directivas que tratan exclusivamente con los usuarios del grupo
   - Pagina cuentas: solo cuentas de los usuarios del grupo específicos
   - Permisos de aplicación (sin permisos)
   - Página Archivos (sin permisos)

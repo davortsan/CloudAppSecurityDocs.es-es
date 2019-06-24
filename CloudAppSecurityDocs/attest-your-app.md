@@ -2,10 +2,10 @@
 title: 'Fe de sus aplicaciones: Cloud App Security | Microsoft Docs'
 description: Este artículo proporcionan instrucciones para la certificación de las aplicaciones en Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: barbkess
-ms.date: 04/29/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 6/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e395e0ca1ee0fe0805a37e75a6201c6d9a224cdf
-ms.sourcegitcommit: ea1c0f7638eaf0601ae476fea0d40e01bf8a6f4d
+ms.openlocfilehash: 6beaeba5c522aacb8a6d0c9612df318b267d2612
+ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298872"
+ms.lasthandoff: 06/23/2019
+ms.locfileid: "67333566"
 ---
 # <a name="attest-your-app"></a>Comprobaciones sobre la aplicación
 
@@ -47,6 +47,7 @@ Siga los atributos de servicio se describe a continuación para completar correc
 | Proveedor | General | String | Texto sin formato | El nombre del proveedor que ofrece esta aplicación. |
 | Tipos de datos | General | String | Cerrar lista - proporcionada en el cuestionario | ¿Qué tipos de datos se pueden cargar por el usuario a la aplicación?|
 | Página principal | General | Dirección URL | Texto sin formato | Dirección URL de página principal del proveedor. |
+| Plan de recuperación ante desastres | General | Boolean | True, False | ¿Esta aplicación tiene un plan de recuperación ante desastres que incluya una estrategia de copia de seguridad y restauración? |
 | Infracción más reciente | Seguridad | Fecha | MMM-dd-aaaa | Incidente más reciente en la que se ven, robados o utilizados por un individuo no autorizado a hacerlo, protegidos, datos confidenciales o que pertenecen a la aplicación. |
 | Método de cifrado de datos en reposo | Seguridad | String | Cerrar lista - proporcionada en el cuestionario | El tipo de cifrado de datos en reposo se realiza en la aplicación. |
 | Multi-factor Authentication | Seguridad | Boolean | True, False | ¿Admite esta aplicación soluciones de autenticación multifactor? |

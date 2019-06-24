@@ -15,12 +15,12 @@ ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b6f158408422a8b04dbabefe089d30b464ac4ac3
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 48488ef57ee48791eca3a05a061154d51777c577
+ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568587"
+ms.lasthandoff: 06/23/2019
+ms.locfileid: "67333650"
 ---
 # <a name="working-with-the-risk-score"></a>Trabajo con la puntuación de riesgo
 
@@ -58,8 +58,8 @@ Una vez que se hayan filtrado los resultados, puede revisar las aplicaciones cor
 Hay filtros básicos y avanzados en el Catálogo de aplicaciones en la nube. Para crear un filtro complejo, use la opción avanzada, que incluye los siguientes filtros:
 
 - **Etiquetas de aplicación**: las etiquetas le permiten personalizar el Catálogo de aplicaciones en la nube. 
-  Puede seleccionar la etiqueta **Autorizada** o **No autorizada**, o bien crear etiquetas personalizadas para las aplicaciones. Después, estas etiquetas pueden usarse como filtros. Los filtros son útiles para profundizar un poco más en los tipos de aplicaciones específicos que quiere investigar. 
-- **Aplicaciones y dominios**: le permite buscar aplicaciones específicas o aplicaciones usadas en dominios concretos. 
+  Puede seleccionar la etiqueta **Autorizada** o **No autorizada**, o bien crear etiquetas personalizadas para las aplicaciones. Después, estas etiquetas pueden usarse como filtros. Los filtros son útiles para profundizar un poco más en los tipos de aplicaciones específicos que quiere investigar.
+- **Aplicaciones y dominios**: le permite buscar aplicaciones específicas o aplicaciones usadas en dominios concretos.
 - **Categorías**: el filtro de categorías, que se encuentra a la izquierda de la página, le permite buscar tipos de aplicaciones en función de categorías de aplicaciones. Por ejemplo, aplicaciones de redes sociales, aplicaciones de almacenamiento en la nube y más tipos de aplicaciones. Puede seleccionar más de una categoría a la vez o una única categoría. Después, aplique los filtros básicos o avanzados sobre las categorías.
 - **Factor de riesgo de cumplimiento**: le permite buscar normas, certificaciones y elementos de conformidad específicos que puede cumplir la aplicación. Por ejemplo, HIPAA, ISO 27001, SOC 2 y PCI-DSS.
 - **Factor de riesgo general**: le permite buscar factores de riesgo generales, como la popularidad entre los consumidores, la configuración regional del centro de datos y muchos más.
