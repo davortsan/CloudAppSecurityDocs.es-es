@@ -2,10 +2,10 @@
 title: 'Conexión de aplicaciones para obtener visibilidad y control: Cloud App Security | Microsoft Docs'
 description: En este artículo se describe el proceso para conectar aplicaciones con las aplicaciones en la nube de la organización mediante conectores de API.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 3/10/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 6/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e03503727b6e79f652c9d3b4ef1df4df57aae816
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 688e14974f50b722d201220f561d7aa0fca15e54
+ms.sourcegitcommit: b89778c5c2919b0a861bb018db82083d0c339471
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567727"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67349579"
 ---
 # <a name="connect-apps"></a>Conectar aplicaciones 
 
@@ -68,22 +68,22 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
 
 > [!div class="mx-tableFixed"]
 > 
-> ||**Office 365**|**Box**|**Okta**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|  
-> |-|-|-|-|-|-|-|-|-|  
-> |**Cuentas de lista**|✔|✔|✔|✔|✔|✔|✔|✔|  
-> |**Grupo**|✔|✔|✔|✔|✔|✔|✔|✔|  
-> |**Privilegios**|✔|✔|No es compatible con el proveedor|✔|✔|✔|✔||  
-> |**Regulación de usuario**|✔|✔||✔|Próximamente|Próximamente|Próximamente||  
-> |**Actividad de inicio de sesión**|✔|✔|✔|✔|✔|✔|✔|✔|  
-> |**Actividad del usuario**|✔*|✔|✔|✔ - requiere Google Business o Enterprise|Parcial|Compatible con Salesforce Shield|✔|No disponible|  
-> |**Actividad administrativa**|✔|✔|✔|✔|Parcial|✔|✔|✔|  
-> |**Examen periódico de archivos**|✔|✔|No disponible|✔|✔|✔|✔|No disponible|  
-> |**Examen de archivos prácticamente en tiempo real**|✔|✔|No disponible|✔ - requiere Google Business o Enterprise|||Próximamente||  
-> |**Control de uso compartido**|✔|✔|No disponible|✔|No disponible||✔||  
-> |**Cuarentena**|✔|✔|No disponible|Próximamente|||Próximamente||  
-> |**Ver permisos de aplicación**|✔|No es compatible con el proveedor|No disponible|✔||✔|No es compatible con el proveedor||  
-> |**Revocar permisos de aplicación**|✔||No disponible|✔||✔|No disponible||  
-> |**Aplicación de etiquetas de Azure Information Protection**|✔|✔||✔|||||  
+> ||**Office 365**|**Box**|**Okta**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|**Webex**|
+> |-|-|-|-|-|-|-|-|-|-|
+> |**Cuentas de lista**|✔|✔|✔|✔|✔|✔|✔|✔|✔|
+> |**Grupo**|✔|✔|✔|✔|✔|✔|✔|✔|No disponible|
+> |**Privilegios**|✔|✔|No es compatible con el proveedor|✔|✔|✔|✔||✔|
+> |**Regulación de usuario**|✔|✔||✔|Próximamente|Próximamente|Próximamente||Próximamente|
+> |**Actividad de inicio de sesión**|✔|✔|✔|✔|✔|✔|✔|✔|✔|
+> |**Actividad del usuario**|✔*|✔|✔|✔ - requiere Google Business o Enterprise|Parcial|Compatible con Salesforce Shield|✔|No disponible|✔|
+> |**Actividad administrativa**|✔|✔|✔|✔|Parcial|✔|✔|✔|✔|
+> |**Examen periódico de archivos**|✔|✔|No disponible|✔|✔|✔|✔|No disponible||
+> |**Examen de archivos prácticamente en tiempo real**|✔|✔|No disponible|✔ - requiere Google Business o Enterprise|||Próximamente||✔|
+> |**Control de uso compartido**|✔|✔|No disponible|✔|No disponible||✔||✔|
+> |**Cuarentena**|✔|✔|No disponible|Próximamente|||Próximamente||No disponible|
+> |**Ver permisos de aplicación**|✔|No es compatible con el proveedor|No disponible|✔||✔|No es compatible con el proveedor||No disponible|
+> |**Revocar permisos de aplicación**|✔||No disponible|✔||✔|No disponible||No disponible|
+> |**Aplicación de etiquetas de Azure Information Protection**|✔|✔||✔|||||No disponible|
 
 ## <a name="prerequisites"></a>Requisitos previos  
 
@@ -96,18 +96,18 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
 
 Para usar los conectores de aplicaciones, debe asegurarse de que tiene lo siguiente para cada aplicación específica:  
 
-|Aplicación|Tipo de licencia|Usuario|  
-|---------|------------------|----------|  
-|Cuadro|Enterprise|Se recomienda encarecidamente que se conecte a Box como administrador. Si se conecta como coadministrador, la visibilidad de los datos será parcial. En caso de que se conecte como coadministrador, asegúrese de seleccionar todos los permisos.|  
-|G Suite|Se prefiere G Suite Business o Enterprise<br /><br /> G Suite Enterprise (como mínimo)|Superadministrador|  
-|Office 365||Administrador global|  
-|AWS||Usuario creado recientemente|  
-|Dropbox|Empresa/Enterprise|Administración|  
-|Okta|Enterprise (no versión de prueba)|Administración|  
-|Exchange||Administrador global|  
-|ServiceNow|Eureka o versión posterior|Administrador + rol de API de REST|  
-|Salesforce||Administración|  
-
+|Aplicación|Tipo de licencia|Usuario|
+|---------|------------------|----------|
+|Cuadro|Enterprise|Se recomienda encarecidamente que se conecte a Box como administrador. Si se conecta como coadministrador, la visibilidad de los datos será parcial. En caso de que se conecte como coadministrador, asegúrese de seleccionar todos los permisos.|
+|G Suite|Se prefiere G Suite Business o Enterprise<br /><br /> G Suite Enterprise (como mínimo)|Superadministrador|
+|Office 365||Administrador global|
+|AWS||Usuario creado recientemente|
+|Dropbox|Empresa/Enterprise|Administración|
+|Okta|Enterprise (no versión de prueba)|Administración|
+|Exchange||Administrador global|
+|ServiceNow|Eureka o versión posterior|Administrador + rol de la API de REST|
+|Salesforce||Administración|
+|Webex||Administrador + administrador de cumplimiento|
 
 **ExpressRoute**
 
