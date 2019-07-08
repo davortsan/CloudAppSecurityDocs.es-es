@@ -3,9 +3,9 @@ title: 'Acciones de gobernanza para controlar las aplicaciones conectadas: Cloud
 description: En este artículo se enumeran y se describen todas las acciones de gobernanza que se pueden realizar en Cloud App Security, así como los mensajes de registro asociados.
 keywords: ''
 author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
+ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 6/20/2019
+ms.date: 7/7/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 534ff73e8d68e2422dfb5bbf9a4d94a95026c288
-ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
+ms.openlocfilehash: b87b67df8e975bb6bf48d693aa11fcdf1018336f
+ms.sourcegitcommit: 0249f6e4a51240e6e37bc67430304e5a261e340a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2019
-ms.locfileid: "67333607"
+ms.lasthandoff: 07/07/2019
+ms.locfileid: "67610894"
 ---
 # <a name="governing-connected-apps"></a>Control de aplicaciones conectadas
 
@@ -76,7 +76,7 @@ Las siguientes acciones de gobernanza pueden realizarse para aplicaciones conect
 
   - **Heredar permisos del primario**: esta acción de control permite quitar el conjunto de permisos específicos para un archivo o carpeta en Office 365. Después, los revierte a los permisos establecidos para la carpeta principal.
 
-  - **Enviar a la papelera**: el archivo se mueve a la carpeta de la Papelera. (Cuadro, Google Drive, OneDrive, SharePoint)
+  - **Enviar a la papelera**: el archivo se mueve a la carpeta de la Papelera. (Box, Dropbox, Google unidad, OneDrive, SharePoint)
 
    ![alertas de crear directiva](./media/policy_create-alerts.png "alertas de crear directiva") 
 
@@ -139,7 +139,7 @@ Para obtener información sobre cómo se tratan las acciones de control cuando h
 |Panel de la aplicación > Permisos de aplicación |Permisos|Revocar aplicación|Revoque los permisos de una aplicación de terceros para acceder a Google o Salesforce. Se trata de una acción única que se producirá en todos los permisos existentes, pero no impedirá las conexiones futuras. | G Suite, Salesforce|
 |Panel de la aplicación > Permisos de aplicación | Cuenta | Revocar usuario de la aplicación|Se pueden revocar usuarios específicos al hacer clic en el número bajo Usuarios. La pantalla mostrará los usuarios específicos y puede usar la X para eliminar los permisos para cualquiera de ellos.| G Suite, Salesforce|
 |Detectar > Aplicaciones detectadas/Direcciones IP/Usuarios| Cloud Discovery | Exportar datos de detección | Se crea un archivo CSV a partir de los datos de detección. | Detección |
-|Directiva de archivo|Archivo |Enviar a la papelera|Mueve el archivo en la Papelera del usuario.| Cuadro, Google Drive, OneDrive, SharePoint |
+|Directiva de archivo|Archivo |Enviar a la papelera|Mueve el archivo en la Papelera del usuario.| Box, Dropbox, Google unidad, OneDrive, SharePoint |
 |Directiva de archivo|Archivo | Enviar una notificación al último editor del archivo |Se envía un correo para informar a la última persona que editó el archivo de que este infringe una directiva. |G Suite, Box|
 |Directiva de archivo|Archivo |Enviar una notificación al propietario del archivo|Envía un correo electrónico al propietario del archivo cuando se infringe una directiva. En Dropbox, si no hay ningún propietario asociado a un archivo, la notificación se enviará al usuario específico que establezca. | Todas las aplicaciones |
 |Directiva de archivo, Directiva de actividad | Archivo, Actividad | Enviar una notificación a usuarios concretos |Se envía un correo para informar a determinados usuarios de que un archivo infringe una directiva.| Todas las aplicaciones |

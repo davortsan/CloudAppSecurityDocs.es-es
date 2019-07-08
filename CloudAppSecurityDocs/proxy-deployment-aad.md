@@ -15,14 +15,14 @@ ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 13ec7114bc38cb44dab2f8728d38b9ba64e67455
-ms.sourcegitcommit: ee00e0033bf45a5f795bfd3e1d71fa1f70f97acb
+ms.openlocfilehash: 511512c6d615f1e0fe09640bb7b02b2df694c6de
+ms.sourcegitcommit: 8fd13c10c2f66a553a8a8fc413555ca837fc9c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67511392"
+ms.lasthandoff: 07/07/2019
+ms.locfileid: "67610740"
 ---
-# <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Implementar el Control de aplicaciones de acceso condicional para aplicaciones destacadas
+# <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Implementación del Control de aplicaciones de acceso condicional para aplicaciones destacadas
 
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -131,10 +131,9 @@ Para confirmar que la actividad se captura correctamente, haga clic en un regist
 > Después de implementarse, no se puede quitar una aplicación de la página Control de aplicaciones de acceso condicional. Mientras no establezca una sesión o una directiva de acceso en la aplicación, el Control de aplicaciones de acceso condicional no cambiará el comportamiento de la aplicación.
 
 >[!div class="step-by-step"]
-[« Anterior: Introducción al control de aplicaciones de acceso condicional](proxy-intro-aad.md)<br>
-[Siguiente: Cómo crear una directiva de sesión »](session-policy-aad.md)
+[« Anterior: Introducción al control de aplicaciones de acceso condicional](proxy-intro-aad.md)<br>[Siguiente: Incorporar e implementar el Control de aplicaciones de acceso condicional para cualquier aplicación»](proxy-deployment-any-app.md)
 
 ## <a name="next-steps"></a>Pasos siguientes 
-[Trabajo con el control de aplicaciones de acceso condicional de Cloud App Security](proxy-intro-aad.md)   
+[Trabajar con Control de aplicación de acceso condicional de Cloud App Security](proxy-intro-aad.md)
 
 [Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)

@@ -2,31 +2,30 @@
 title: 'Requisitos de red: Cloud App Security | Microsoft Docs'
 description: En este artículo se describen las direcciones IP y los puertos que debe abrir para trabajar con Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 3/17/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 7/4/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
-ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5602e0141b8c9251c0d76d4960361fbea62fb289
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 7dde86b3ee21ca25510cb7e30ed08452d753aa15
+ms.sourcegitcommit: 8fd13c10c2f66a553a8a8fc413555ca837fc9c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568684"
+ms.lasthandoff: 07/07/2019
+ms.locfileid: "67610737"
 ---
 # <a name="network-requirements"></a>Requisitos de red
 
 *Se aplica a: Microsoft Cloud App Security*
 
-En este artículo se incluye una lista de los puertos y las direcciones IP que debe permitir e incluir en la lista de permitidos para trabajar con Microsoft Cloud App Security. 
+En este artículo se proporciona una lista de puertos y direcciones IP que necesita para permitir y lista para trabajar con Microsoft Cloud App Security.
 
 ## <a name="view-your-data-center"></a>Consultar el centro de datos
 
@@ -44,7 +43,7 @@ Para ver el centro de datos al que se está conectando, siga estos pasos:
 
 ## <a name="portal-access"></a>Acceso al portal
 
-Para tener acceso al portal de Cloud App Security, agregue a la lista de permitidos del firewall el **puerto de salida 443** de los siguientes nombres DNS y direcciones IP:  
+Para tener acceso al portal de Cloud App Security, agregue **puerto de salida 443** para la siguiente dirección de IP direcciones y nombres DNS al firewall de la lista de permitidos:  
 
     portal.cloudappsecurity.com
     *.portal.cloudappsecurity.com
@@ -64,11 +63,11 @@ Además, estos elementos deben estar en una lista blanca, según el centro de da
 > 
 > |Centro de datos|Direcciones IP|Nombre DNS|
 > |----|----|----|
-> |Estados Unidos 1|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|\*.us.portal.cloudappsecurity.com|
-> |US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|\*.us2.portal.cloudappsecurity.com<br></br>|
-> |US3|13.80.125.22<br></br>52.183.75.62<br></br>40.90.218.198<br></br>40.90.218.196|*.us3.portal.cloudappsecurity.com<br></br>|
-> |Unión Europea 1|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|\*.eu.portal.cloudappsecurity.com<|
-> |EU2|13.80.125.22<br></br>52.183.75.62<br></br>40.81.156.154<br></br>40.81.156.156|*.eu2.portal.cloudappsecurity.com|
+> |Estados Unidos 1|13.80.125.22<br>52.183.75.62<br>13.91.91.243|\*.us.portal.cloudappsecurity.com|
+> |US2|13.80.125.22<br>52.183.75.62<br>52.184.165.82|\*.us2.portal.cloudappsecurity.com<br>|
+> |US3|13.80.125.22<br>52.183.75.62<br>40.90.218.198<br>40.90.218.196|*.us3.portal.cloudappsecurity.com<br>|
+> |Unión Europea 1|13.80.125.22<br>52.183.75.62<br>52.174.56.180|\*.eu.portal.cloudappsecurity.com<|
+> |EU2|13.80.125.22<br>52.183.75.62<br>40.81.156.154<br>40.81.156.156<br>40.81.152.172|*.eu2.portal.cloudappsecurity.com|
 
 
 > 
@@ -77,7 +76,7 @@ Además, estos elementos deben estar en una lista blanca, según el centro de da
 
 ## <a name="siem-agent-connection"></a>Conexión del agente SIEM
 
-Para permitir que Cloud App Security se conecte a su SIEM, agregue a la lista de permitidos del firewall el **puerto de salida 443** de las siguientes direcciones IP:  
+Para habilitar Cloud App Security se conecte a su SIEM, agregue **puerto de salida 443** para la dirección IP siguiente direcciones al firewall de la lista de permitidos:  
 
 
 > [!div class="mx-tableFixed"]
@@ -88,7 +87,7 @@ Para permitir que Cloud App Security se conecte a su SIEM, agregue a la lista de
 > |US2|52.184.165.82|
 > |US3|40.90.218.198<br>40.90.218.196|
 > |Unión Europea 1|52.174.56.180|
-> |EU2|40.81.156.154<br>40.81.156.156|
+> |EU2|40.81.156.154<br>40.81.156.156<br>40.81.152.172|
 
 > [!NOTE]
 > Si no ha especificado un servidor proxy al configurar el agente SIEM de Cloud App Security, deberá permitir las conexiones http a http://ocsp.msocsp.com/ y ocsp.digicert.com en el puerto 80. Esto sirve para comprobar el estado de revocación de certificado al conectarse al portal de Cloud App Security.
@@ -107,11 +106,11 @@ Para conectarse a aplicaciones de terceros, habilite Cloud App Security para per
 > 
 > |Centro de datos|Direcciones IP|  
 > |----|----|
-> |Estados Unidos 1|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
-> |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
+> |Estados Unidos 1|13.91.91.243 <br> 104.209.35.177 <br> 13.91.98.185 <br> 40.118.211.172 <br> 13.93.216.68 <br> 13.91.61.249 <br> 13.93.233.42 <br> 13.64.196.27 <br> 13.64.198.97 <br> 13.64.199.41 <br> 13.64.198.19|
+> |US2|52.184.165.82<br> 40.84.4.93 <br> 40.84.4.119 <br> 40.84.2.83 |
 > |US3|40.90.218.197<br>40.90.218.203|
-> |Unión Europea 1|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
-> |EU2|40.81.156.155<br>40.81.156.153|
+> |Unión Europea 1|52.174.56.180<br>13.80.22.71<br>13.95.29.177<br>13.95.30.46|
+> |EU2|40.81.156.155<br>40.81.156.153<br>40.81.152.172|
 
 
 ## <a name="third-party-dlp-integration"></a>Integración de DLP de terceros
@@ -125,7 +124,7 @@ Para permitir que Cloud App Security envíe datos a través de Stunnel al servid
 
 > [!NOTE] 
 > -  El número de puerto de Stunnel está establecido de forma predeterminada en 11344. Si es necesario, puede cambiarlo y usar otro, pero no olvide anotar el número de puerto nuevo.
-> - Puede que vea estas direcciones IP en los registros de actividad del proveedor, ya que Cloud App Security realiza acciones de gobernanza y exámenes desde ellas. 
+> - Puede que vea estas direcciones IP en los registros de actividad del proveedor, ya que Cloud App Security realiza acciones de gobernanza y exámenes desde ellas.
 
 Para conectar aplicaciones de terceros e integrar soluciones de DLP externas, habilite la conexión de Cloud App Security desde estas direcciones IP:
 
@@ -133,15 +132,15 @@ Para conectar aplicaciones de terceros e integrar soluciones de DLP externas, ha
 > 
 > |Centro de datos|Direcciones IP|  
 > |----|----|
-> |Estados Unidos 1|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
-> |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
+> |Estados Unidos 1|13.91.91.243 <br> 104.209.35.177 <br> 13.91.98.185 <br> 40.118.211.172 <br> 13.93.216.68 <br> 13.91.61.249 <br> 13.93.233.42 <br> 13.64.196.27 <br> 13.64.198.97 <br> 13.64.199.41 <br> 13.64.198.19|
+> |US2|52.184.165.82<br> 40.84.4.93 <br> 40.84.4.119 <br> 40.84.2.83 |
 > |US3|40.90.218.197<br>40.90.218.203|
-> |Unión Europea 1|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
-> |EU2|40.81.156.155<br>40.81.156.153|
+> |Unión Europea 1|52.174.56.180<br>13.80.22.71<br>13.95.29.177<br>13.95.30.46|
+> |EU2|40.81.156.155<br>40.81.156.153<br>40.81.152.172|
 
 ## <a name="mail-server"></a>Servidor de correo
 
-Para que las notificaciones se puedan enviar desde la plantilla y la configuración predeterminadas, agregue estas direcciones IP a la lista de permitidos contra el correo no deseado. Las direcciones IP de correo electrónico dedicadas de Cloud App Security son: 
+Para habilitar las notificaciones se envíen desde la plantilla predeterminada y la configuración, agregue la que lista de permitidos estas direcciones IP para el correo no deseado. Las direcciones IP de correo electrónico dedicadas de Cloud App Security son:
 
 - 65.55.234.192/26
 - 207.46.200.0/27
@@ -154,10 +153,9 @@ Si quiere personalizar la identidad del remitente de correo electrónico, Micros
 
 Si no personaliza la identidad del remitente, las notificaciones de correo electrónico se enviarán con todos los valores predeterminados.
 
-Para trabajar con MailChimp, agregue esta dirección IP a la lista de permitidos contra el correo no deseado para habilitar el envío de notificaciones: 198.2.134.139 (mail1.cloudappsecurity.com)
+Para trabajar con MailChimp, agregue esta dirección IP dirección a la basura Permitir lista habilitar el envío de notificaciones: 198.2.134.139 (mail1.cloudappsecurity.com)
 
-
-## <a name="log-collector"></a>Recopilador de registros 
+## <a name="log-collector"></a>Recopilador de registros
 
 Para habilitar características de Cloud Discovery por medio de un recopilador de registros y detectar Shadow TI en la organización, abra los siguientes elementos:
 

@@ -2,10 +2,10 @@
 title: Descripción de los datos y los filtros de archivo disponibles en Cloud App Security
 description: En este artículo de referencia se proporciona información sobre los tipos de archivo y filtros de archivo que usa Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/10/2018
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MSn
+ms.date: 7/7/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ed441d1832ce9f6d0ce070fc58baa058a34bcadc
-ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
+ms.openlocfilehash: 82332b70c58f81e5084b3d26394430e429490b54
+ms.sourcegitcommit: 0249f6e4a51240e6e37bc67430304e5a261e340a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67237219"
+ms.lasthandoff: 07/07/2019
+ms.locfileid: "67610896"
 ---
 # <a name="files"></a>Archivos
 
@@ -134,6 +134,23 @@ También puede establecer la directiva para que se ejecute en determinados archi
 > If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon](./media/clear-filters.png).
 -->
 
+## <a name="authorizing-files"></a>Autorización de archivos
+
+Después de que Cloud App Security ha identificado los archivos como que suponen un riesgo DLP o malware, es recomendable que investigue los archivos. Si determina que los archivos son seguros, se puede autorizar. Autorización de un archivo quita el informe de detección de malware y suprime a coincidencias futuras en este archivo.
+
+### <a name="to-authorize-files"></a>Para autorizar a los archivos
+
+1. En Cloud App Security, haga clic en **Control** y, a continuación, **directivas**.
+1. En la lista de directivas, en la fila en la que la directiva que desencadenó la investigación, en el **recuento** columna, haga clic en vinculan las coincidencias.
+    > [!TIP]
+    > Puede filtrar la lista de directivas por tipo. En la tabla siguiente se enumera por tipo de riesgo que filtrar el tipo que se usará:
+    >
+    > | Tipo de riesgo | Tipo de filtro |
+    > | --- | --- |
+    > | DLP | Directiva de archivo |
+    > | Malware | Directiva de detección de malware |
+1. En la lista de archivos coincidentes, en la fila en la que aparece el archivo está investigando, haga clic en **Authorize**.
+
 ## <a name="working-with-the-file-drawer"></a>Uso del cajón de archivos
 
 Puede ver más información sobre un archivo si hace clic en él en el registro de archivos. Al hacer clic en abre la **cajón de archivos** que proporciona las siguientes acciones adicionales que puede realizar en el archivo:
@@ -152,8 +169,6 @@ Para obtener una lista de las acciones de gobernanza disponibles, consulte [Acci
 
 ## <a name="next-steps"></a>Pasos siguientes
   
-[Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
+[Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
-  
-  
+[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)
