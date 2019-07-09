@@ -23,10 +23,10 @@
       href: discovered-apps.md
 - name: Tutoriales
   items:
-    - name: Investigación de usuarios de riesgo
-      href: tutorial-ueba.md
     - name: Detección y administración de shadow IT
       href: tutorial-shadow-it.md
+    - name: Investigación de usuarios de riesgo
+      href: tutorial-ueba.md
     - name: Investigación de aplicaciones de riesgo de OAuth
       href: investigate-risky-oauth.md
     - name: Bloqueo de las descargas de información confidencial
