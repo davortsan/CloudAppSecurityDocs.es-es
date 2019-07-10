@@ -3,9 +3,9 @@ title: Novedades de Cloud App Security
 description: Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security.
 keywords: ''
 author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
+ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 6/23/2019
+ms.date: 7/7/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 79f4a9c08b43f7b6d62ec1ead27103da3c820752
-ms.sourcegitcommit: ae617f23b36be665439dcedfbcf346715a526d7e
+ms.openlocfilehash: 01ad42b053b6a0cb482f59c7473fbb40ce49f2e8
+ms.sourcegitcommit: 0249f6e4a51240e6e37bc67430304e5a261e340a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67411846"
+ms.lasthandoff: 07/07/2019
+ms.locfileid: "67610864"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
@@ -29,6 +29,24 @@ ms.locfileid: "67411846"
 Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security.
 
 Fuente RSS: Reciba una notificación cuando se actualice esta página. Para ello, copie y pegue la siguiente dirección URL en su lector de fuentes: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-153"></a>Notas de la versión 153 de Cloud App Security
+
+Publicada el 7 de julio de 2019
+
+- **Compatibilidad mejorada con Dropbox**<br>
+Cloud App Security ahora admite la acción de gobernanza **Papelera** para Dropbox: esta acción de gobernanza se puede utilizar de forma manual o automática como parte de una directiva de archivo.
+- **Nuevas aplicaciones destacadas para el control de aplicaciones de acceso a la nube**<br>
+El control de aplicaciones de acceso condicional para las siguientes aplicaciones destacadas ahora está disponible con carácter general:
+
+    - OneDrive para la Empresa
+    - SharePoint Online
+    - Azure DevOps
+    - Exchange Online
+    - Power BI
+
+- **Autorización de archivos identificados como malware**<br>
+Cloud App Security examina todos los archivos de las aplicaciones conectadas para comprobar la exposición a DLP y la existencia de malware. Ahora puede autorizar los archivos identificados como malware cuya seguridad se confirmó después de una investigación. La autorización de un archivo quita el informe de detección de malware y suprime futuras coincidencias en este archivo.
 
 ## <a name="cloud-app-security-release-152"></a>Notas de la versión 152 de Cloud App Security
 
@@ -510,6 +528,4 @@ Fecha de publicación: 7 de enero de 2018
 
 Para obtener una descripción de las versiones anteriores a las mencionadas aquí, consulte [Past releases of Microsoft Cloud App Security](release-note-archive.md) (Versiones anteriores de Microsoft Cloud App Security).
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
-  
-  
+[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)
