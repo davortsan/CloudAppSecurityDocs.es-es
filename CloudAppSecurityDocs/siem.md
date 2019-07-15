@@ -2,10 +2,10 @@
 title: Integración de SIEM con Cloud App Security
 description: En este artículo se proporciona información sobre la integración de SIEM con Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/10/2018
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 7/11/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 25968245abd28b6a97cebda85c5092cd0a8d35fe
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 449be026e0c13723f886089cae3c9d2f7a181d78
+ms.sourcegitcommit: 1b6b827c149b195a241440929970a2ccbb136b83
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568852"
+ms.lasthandoff: 07/14/2019
+ms.locfileid: "67870233"
 ---
 # <a name="siem-integration"></a>Integración de SIEM
 
@@ -29,6 +29,11 @@ ms.locfileid: "65568852"
 Puede integrar Microsoft Cloud App Security con su servidor SIEM para habilitar la supervisión centralizada de alertas y actividades de aplicaciones conectadas. A medida que las aplicaciones conectadas admiten nuevos eventos y actividades, podrá supervisarlas en Microsoft Cloud App Security. La integración de un servicio SIEM le permite proteger mejor sus aplicaciones de nube a la vez que mantiene el flujo de trabajo de seguridad habitual, automatizando así los procedimientos de seguridad y estableciendo correlaciones entre eventos basados en la nube y eventos locales. El agente SIEM de Microsoft Cloud App Security se ejecuta en el servidor y extrae las alertas y las actividades de Microsoft Cloud App Security y las transmite al servidor SIEM.
 
 Cuando integre por primera vez su SIEM con Cloud App Security, las actividades y las alertas de los dos últimos días se reenviarán al SIEM, así como todas las actividades y alertas (en función del filtro seleccionado) que se produzcan a partir de entonces. Si deshabilita esta característica durante un período prolongado y la habilita de nuevo, se reenviarán las alertas y las actividades de los dos últimos días, así como las que se produzcan a partir de entonces.
+
+> [!IMPORTANT]
+> Si está integrando la protección contra amenazas avanzada de Azure en Cloud App Security y ambos servicios están configurados para enviar notificaciones de alerta a un SIEM, comenzará a recibir notificaciones SIEM duplicadas para la misma alerta. Se emitirá una alerta para todos los servicios y tendrán id. de alerta distintas. Para evitar la duplicación y la confusión, asegúrese de controlar el escenario. Por ejemplo, decida dónde desea realizar la administración de alertas y, a continuación, detenga las notificaciones de SIEM que se envían desde el otro servicio.
+
+
 
 ## <a name="siem-integration-architecture"></a>Arquitectura de integración de SIEM
 

@@ -2,10 +2,10 @@
 title: Lanzamiento de informes continuos de Cloud App Security con Docker en Windows | Microsoft Docs
 description: En este artículo se describe el proceso de configuración de la carga de registros automática para los informes continuos de Cloud App Security con Docker. Se utiliza un servidor local de Windows.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 4/19/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 7/10/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 31fba210aeee0796e7ba3e7386348888ce877a1c
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 470b1082a51568aed7018eae2d74afe83d94a071
+ms.sourcegitcommit: 1b6b827c149b195a241440929970a2ccbb136b83
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568470"
+ms.lasthandoff: 07/14/2019
+ms.locfileid: "67870214"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker en Windows local
 
@@ -27,7 +27,7 @@ ms.locfileid: "65568470"
 
 Puede configurar la carga de registros automática para los informes continuos de Cloud App Security con Docker y en Windows.
 
-## <a name="technical-requirements"></a>Requisitos técnicos
+## <a name="prerequisites"></a>Requisitos previos
 
 - Sistema operativo: **Windows 10** (Fall Creators Update) y Windows Server **versión 1709 o superior**
 
@@ -40,6 +40,9 @@ Puede configurar la carga de registros automática para los informes continuos d
 - Configuración del firewall, tal como se describe en [Requisitos de red](network-requirements.md#log-collector)
 
 - La virtualización en el sistema operativo debe estar habilitada con Hyper-V.
+
+> [!IMPORTANT]
+> Un usuario debe haber iniciado sesión en Docker para recopilar registros. Se recomienda que los usuarios de Docker se desconecten sin cerrar sesión.
 
 ## <a name="log-collector-performance"></a>Rendimiento del recopilador de registros
 

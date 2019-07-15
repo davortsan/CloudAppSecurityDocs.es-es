@@ -2,9 +2,9 @@
 title: Administración de tokens de API en Cloud App Security
 description: En este artículo se proporciona información sobre cómo generar tokens de API para Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d474035f1d47e7eb6a751bf79c4e3f948638d7b5
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: cfc1579d995f5aeaf2aba56c3b4072791d5d26c5
+ms.sourcegitcommit: 1b6b827c149b195a241440929970a2ccbb136b83
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567507"
+ms.lasthandoff: 07/14/2019
+ms.locfileid: "67870157"
 ---
 # <a name="api-tokens"></a>Tokens de API
 
@@ -38,7 +38,6 @@ Para ver la documentación completa de la API, en el portal de Cloud App Securit
 Si quiere acceder a la API, deberá crear un token de API y usarlo en el software para conectar con la API de Cloud App Security.
 
 La pestaña de tokens de API ayuda a administrar todos los tokens de API del inquilino. 
-
 
 ## <a name="generate-a-token"></a>Generar un token
 
@@ -58,7 +57,10 @@ La pestaña de tokens de API ayuda a administrar todos los tokens de API del inq
 
    ![Token de la API de Cloud App Security](./media/generate-api-token.png)
 
-La dirección URL del portal genérico continuará funcionando, pero será notablemente más lenta que la dirección URL personalizada que reciba junto al token. Si alguna vez olvida la dirección URL, puede consultarla en el icono de interrogante (**?**) del menú seleccionando **Acerca de**.
+    La dirección URL del portal genérico continuará funcionando, pero será notablemente más lenta que la dirección URL personalizada que reciba junto al token. Si alguna vez olvida la dirección URL, puede consultarla en el icono de interrogante ( **?** ) del menú seleccionando **Acerca de**.
+
+> [!NOTE]
+> Si usa la activación de rol de Azure Active Directory Privileged Identity Management, el token de API solo será efectivo una vez que se active el rol. Para obtener más información, consulte [activación de los roles de Azure ad en PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role).
 
 ## <a name="api-token-management"></a>Administración de tokens de API
 
