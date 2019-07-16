@@ -2,10 +2,10 @@
 title: Configuración de la carga de registros automática para informes continuos en Cloud App Security
 description: En este artículo se describe el proceso de configuración de la carga de registros automática para informes continuos en Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 04/04/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 15/7/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5802b6b9a4a467e4ffcc4882a5e1738ddac14f05
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 6b6be306035cf9ebf9ff74fce78795b8c74f436e
+ms.sourcegitcommit: 7a01493423369b663195277a2046a76393b44987
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567886"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67880921"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurar la carga de registros automática para informes continuos
 
@@ -43,9 +43,9 @@ Antes de configurar la recopilación de archivos de registro, compruebe que el r
 
 El recopilador de registros admite dos modos de implementación:
 
--   **Contenedor**: se ejecuta como imagen Docker en [Ubuntu local](discovery-docker-ubuntu.md), [Ubuntu en Azure](discovery-docker-ubuntu-azure.md) o [RHEL local](discovery-docker-ubuntu.md). 
+-   **Contenedor**: Se ejecuta como una imagen de Docker en [Windows](discovery-docker-windows.md), [Ubuntu local](discovery-docker-ubuntu.md), [Ubuntu en Azure](discovery-docker-ubuntu-azure.md) o [RHEL local](discovery-docker-ubuntu.md). 
 
--   **Aplicación virtual**:  Se ejecuta como una imagen a través del hipervisor de Hyper-V o VMware (en desuso)
+-   **Aplicación virtual**:  Se ejecuta como una imagen sobre el hipervisor de Hyper-V o VMware (desusado)
 
 
 
