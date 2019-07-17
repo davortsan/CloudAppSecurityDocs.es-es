@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 01ad42b053b6a0cb482f59c7473fbb40ce49f2e8
-ms.sourcegitcommit: 0249f6e4a51240e6e37bc67430304e5a261e340a
+ms.openlocfilehash: 96444fd79bebda2b7092e1dbae9a449f0be0bd06
+ms.sourcegitcommit: 1b6b827c149b195a241440929970a2ccbb136b83
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2019
-ms.locfileid: "67610864"
+ms.lasthandoff: 07/14/2019
+ms.locfileid: "67870183"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
@@ -46,13 +46,13 @@ El control de aplicaciones de acceso condicional para las siguientes aplicacione
     - Power BI
 
 - **Autorización de archivos identificados como malware**<br>
-Cloud App Security examina todos los archivos de las aplicaciones conectadas para comprobar la exposición a DLP y la existencia de malware. Ahora puede autorizar los archivos identificados como malware cuya seguridad se confirmó después de una investigación. La autorización de un archivo quita el informe de detección de malware y suprime futuras coincidencias en este archivo.
+Cloud App Security examina los archivos de las aplicaciones conectadas para comprobar la exposición a DLP y la existencia de malware. Ahora puede autorizar los archivos identificados como malware cuya seguridad se confirmó después de una investigación. La autorización de un archivo quita el informe de detección de malware y suprime futuras coincidencias en este archivo. Para obtener más información sobre la detección de malware, consulte el tema sobre la [detección de anomalías de Cloud App Security](anomaly-detection-policy.md).
 
 ## <a name="cloud-app-security-release-152"></a>Notas de la versión 152 de Cloud App Security
 
 Publicada el 23 de junio de 2019
 
-- **Implementación del Control de aplicaciones de acceso condicional para cualquier aplicación**<br>
+- **Implementación del Control de aplicaciones de acceso condicional para cualquier aplicación (versión preliminar)**<br>
 Nos complace anunciar que expandimos la compatibilidad con el Control de aplicaciones de acceso condicional a cualquier aplicación web, además de la amplia compatibilidad que ya ofrecemos para las [aplicaciones destacadas](proxy-intro-aad.md). Esta nueva funcionalidad permite implementar cualquier aplicación web para trabajar con directivas de sesión y acceso, con lo que se habilita la supervisión y el control eficaces en tiempo real. Por ejemplo, puede proteger las descargas con etiquetas de Azure Information Protection y bloquear la carga de documentos confidenciales, brindando auditoría, entre muchas otras acciones.
 - **Auditoría de la actividad del portal**<br>
 Cloud App Security hace una auditoría de toda la actividad del administrador del portal para ofrecer una supervisión e investigación integrales de las actividades realizadas. Ahora también puede exportar hasta 90 días de actividades para realizar más investigación y análisis como, por ejemplo, realizar una auditoría a un administrador que investiga a un usuario específico o ver alertas específicas. Para exportar el registro, vaya a la página de configuración **Administrar el acceso de administrador**.
