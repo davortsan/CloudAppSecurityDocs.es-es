@@ -2,10 +2,10 @@
 title: Configuración de la carga de registros automática con Docker en Azure
 description: En este artículo se describe el proceso de configuración de carga de registros automática para informes continuos en Cloud App Security con Docker en Ubuntu o RHEL en Azure.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 1/27/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 7/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4799b0f835960d8170d1305406418734b65185d6
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: b094682bc0f3b9ae6ebe6f0594a842a5e2e50458
+ms.sourcegitcommit: cad2ead82bb76e4749c75eb7a0594e97f40545db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567995"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68372309"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Instalación y configuración en Ubuntu o RHEL en Azure
 
@@ -28,9 +28,9 @@ ms.locfileid: "65567995"
 
 Puede configurar la carga de registros automática para informes continuos en Cloud App Security con Docker en Ubuntu o Red Hat Enterprise Linux (RHEL) en Azure. En este artículo se describe cómo configurar la carga de registros automática. 
 
-## <a name="technical-requirements"></a>Requisitos técnicos
+## <a name="prerequisites"></a>Requisitos previos
 
-- Sistema operativo: Ubuntu 14.04 y 16.04 (para versiones más recientes, póngase en contacto con el soporte técnico), o RHEL 7.2 o superior
+- Sistema operativo: Ubuntu 14,04 y 16,04 (para las versiones más recientes, póngase en contacto con el soporte técnico), RHEL 7,2 o superior, o bien la versión 7,2 o superior
 
 - Espacio en disco: 250 GB
 
@@ -63,9 +63,9 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
      a. Haga clic en **Agregar origen de datos**.
 
       ![Agregar un origen de datos](./media/add-data-source.png)
-          
+
      b. **Ponga nombre** al servidor proxy o firewall.
-      
+
       ![ubuntu1](./media/ubuntu1.png)
 
      c. Seleccione el dispositivo en la lista **Origen**. Si selecciona **Formato de los registros personalizados** para trabajar con un dispositivo de red que no aparezca en la lista, consulte el artículo sobre cómo [trabajar con el analizador de registros personalizados](custom-log-parser.md) para ver las instrucciones de configuración.

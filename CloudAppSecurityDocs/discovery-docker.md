@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 15/7/2019
+ms.date: 7/22/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6b6be306035cf9ebf9ff74fce78795b8c74f436e
-ms.sourcegitcommit: 7a01493423369b663195277a2046a76393b44987
+ms.openlocfilehash: 9fb6b01bfa9dbe54c219ef3ff2061e1470483e95
+ms.sourcegitcommit: cad2ead82bb76e4749c75eb7a0594e97f40545db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67880921"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68372305"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>Configurar la carga de registros automática para informes continuos
 
@@ -36,14 +36,14 @@ Antes de configurar la recopilación de archivos de registro, compruebe que el r
 > [!NOTE]
 >-  Cloud App Security permite el reenvío de registros desde el servidor SIEM al recopilador de registros siempre que estos se reenvíen en su formato original. Aun así, se recomienda encarecidamente integrar el recopilador de registros directamente en el firewall o proxy.
 >- El recopilador de registros comprime los datos antes de que se carguen. El tráfico saliente en el recopilador de registros constituirá un 10 % del tamaño de los registros de tráfico que recibe. 
->-  Si el recopilador de registros detecta problemas, recibirá una alerta después de que no se hayan recibido datos durante 48 horas.
+>- Si el recopilador de registros detecta problemas, recibirá una alerta después de que no se hayan recibido datos durante 48 horas.
 >
 
 ## <a name="deployment-modes"></a>Modos de implementación
 
 El recopilador de registros admite dos modos de implementación:
 
--   **Contenedor**: Se ejecuta como una imagen de Docker en [Windows](discovery-docker-windows.md), [Ubuntu local](discovery-docker-ubuntu.md), [Ubuntu en Azure](discovery-docker-ubuntu-azure.md) o [RHEL local](discovery-docker-ubuntu.md). 
+-   **Contenedor**: Se ejecuta como una imagen de Docker en [Windows](discovery-docker-windows.md), [Ubuntu en el entorno local](discovery-docker-ubuntu.md), [Ubuntu en Azure](discovery-docker-ubuntu-azure.md), [RHEL on local](discovery-docker-ubuntu.md) o en una instancia.
 
 -   **Aplicación virtual**:  Se ejecuta como una imagen sobre el hipervisor de Hyper-V o VMware (desusado)
 

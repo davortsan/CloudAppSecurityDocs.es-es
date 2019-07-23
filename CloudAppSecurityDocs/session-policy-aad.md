@@ -15,19 +15,19 @@ ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 428c36837a8162c94ca95afbdabe7a3d424d9c1e
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 9f5588893c39aab13c131ad76c89bc189a115b52
+ms.sourcegitcommit: cad2ead82bb76e4749c75eb7a0594e97f40545db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568935"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68372326"
 ---
 # <a name="session-policies"></a>Directivas de sesión 
 
 *Se aplica a: Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
-[« ANTERIOR: Implementación del control de aplicaciones de acceso condicional](proxy-deployment-aad.md)<br>
+[« ANTERIOR: Incorporación e implementación de Control de aplicaciones de acceso condicional para cualquier aplicación»](proxy-deployment-any-app.md)<br>
 [SIGUIENTE: Cómo crear una directiva de acceso »](access-policy-aad.md)
 
 
@@ -91,7 +91,7 @@ Haga lo siguiente para crear una directiva de sesión:
      >[!NOTE]
      >Las directivas de sesión no admiten aplicaciones de escritorio ni móviles. Las aplicaciones móviles y de escritorio también pueden bloquearse o permitirse con la creación de una directiva de acceso.
 
-6. Si ha seleccionado la opción **Controlar la descarga de archivos (con DLP)**:
+6. Si ha seleccionado la opción **Controlar la descarga de archivos (con DLP)** :
 
    1. En la sección **Archivos que coinciden con todo lo siguiente** de **Origen de la actividad**, seleccione más filtros de archivo para aplicarlos a la directiva. Los filtros incluyen las siguientes opciones:
 
@@ -161,7 +161,7 @@ Seleccione **Bloquear actividades** para bloquear actividades específicas que s
 Cuando **Proteger** es la **Acción** establecida que va a realizarse en la directiva de sesión de Cloud App Security, el control de aplicaciones de acceso condicional exige que el archivo se etiquete y proteja de acuerdo con los filtros de archivos de la directiva. Las etiquetas se configuran en la consola de Azure Information Protection y **Proteger** debe estar seleccionado en la etiqueta para que aparezca como una opción en la directiva de Cloud App Security. Cuando se selecciona una etiqueta y se descarga un archivo que cumple los criterios de la directiva de Cloud App Security, tanto la etiqueta como la protección correspondiente (con permisos) se aplican al archivo de descarga. El archivo original permanece tal cual en la aplicación en la nube, mientras que el archivo descargado ahora está protegido. Los usuarios que intenten acceder al archivo deben cumplir los requisitos de permiso establecidos por la protección aplicada.  
  
 >[!div class="step-by-step"]
-[« ANTERIOR: Implementación del control de aplicaciones de acceso condicional](proxy-deployment-aad.md)<br>
+[« ANTERIOR: Incorporación e implementación de Control de aplicaciones de acceso condicional para cualquier aplicación»](proxy-deployment-any-app.md)<br>
 [SIGUIENTE: Cómo crear una directiva de acceso »](access-policy-aad.md)
 
 ## <a name="next-steps"></a>Pasos siguientes
