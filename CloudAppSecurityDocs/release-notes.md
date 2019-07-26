@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/7/2019
+ms.date: 7/21/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 96444fd79bebda2b7092e1dbae9a449f0be0bd06
-ms.sourcegitcommit: 1b6b827c149b195a241440929970a2ccbb136b83
+ms.openlocfilehash: c903276df9f2c8bcbfa374cdcb571a26b1c26014
+ms.sourcegitcommit: 66dab812232ff95c67d2b17421ec91b0b1f67400
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2019
-ms.locfileid: "67870183"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68508156"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
@@ -29,6 +29,22 @@ ms.locfileid: "67870183"
 Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security.
 
 Fuente RSS: Reciba una notificación cuando se actualice esta página. Para ello, copie y pegue la siguiente dirección URL en su lector de fuentes: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-154"></a>Cloud App Security, versión 154
+
+Publicado el 21 de julio de 2019
+
+- **La incorporación y la implementación del Control de aplicaciones de acceso condicional para cualquier aplicación está ahora disponible con carácter general**<br>
+Desde que lanzamos la versión preliminar de Control de aplicaciones de acceso condicional para cualquier aplicación el mes pasado, hemos recibido comentarios muy positivos y nos complace anunciar que ya está disponible con carácter general. Esta nueva funcionalidad permite implementar cualquier aplicación web para trabajar con directivas de sesión y acceso, con lo que se habilita la supervisión y el control eficaces en tiempo real.
+
+<!-- **Workday app connector available (Preview)**<br>
+A new app connector is now available for Workday. You can now connect Microsoft Cloud App Security to Workday to monitor activities and protect its users. For more information, see [Connect Workday](connect-workday-to-microsoft-cloud-app-security.md).-->
+
+- **Evaluación de la configuración de seguridad para AWS**<br>
+Cloud App Security está implementando de forma gradual la funcionalidad de obtener una evaluación de la configuración de seguridad del entorno de Amazon Web Services para el cumplimiento de CIS, y proporciona recomendaciones para los controles de seguridad y los valores de configuración que falten. Esta capacidad proporciona a las organizaciones una única vista para supervisar el estado de cumplimiento de todas las cuentas de AWS conectadas.
+
+- **Detecciones de anomalías de aplicaciones de OAuth (implementación gradual)**<br>
+Hemos ampliado nuestra capacidad actual para detectar aplicaciones de OAuth sospechosas. Ya hay disponibles cuatro detecciones nuevas listas para usar que perfilan los metadatos de las aplicaciones de OAuth autorizadas de su organización para identificar cuáles son potencialmente maliciosas.
 
 ## <a name="cloud-app-security-release-153"></a>Notas de la versión 153 de Cloud App Security
 
@@ -485,9 +501,9 @@ Fecha de publicación: 4 de marzo de 2018
 - Ahora puede realizar acciones en masa en las páginas de configuración de exclusión de entidades y de exclusión de direcciones IP. Esto hace que le resulte más fácil seleccionar varios usuarios y grupos o direcciones IP y excluirlos de la supervisión como parte de Cloud Discovery en su organización. 
 
 ## <a name="cloud-app-security-release-117"></a>Cloud App Security versión 117
-Publicado el 20 de febrero de 2018
+Fecha de publicación: 20 de febrero de 2018
 
--   La mejor integración de Cloud App Security con Azure Information Protection ahora le permite proteger archivos en G Suite. Esta característica de versión preliminar pública permite examinar y clasificar archivos de G Suite y aplicar automáticamente etiquetas de protección de Azure Information Protection para protegerlos. Para obtener más información, consulte [Integración de Azure Information Protection](azip-integration.md).
+-   La mayor integración de Cloud App Security con Azure Information Protection permite ahora proteger archivos de G Suite. Esta característica de versión preliminar pública permite examinar y clasificar archivos de G Suite y aplicar automáticamente etiquetas de protección de Azure Information Protection para protegerlos. Para obtener más información, consulte [Integración de Azure Information Protection](azip-integration.md).
 
 -   Cloud Discovery admite ahora [Digital Arts i-FILTER](https://www.daj.jp/en/products/if/).
 
