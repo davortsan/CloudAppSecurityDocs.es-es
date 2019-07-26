@@ -3,9 +3,9 @@ title: 'Conexión de aplicaciones para obtener visibilidad y control: Cloud App 
 description: En este artículo se describe el proceso para conectar aplicaciones con las aplicaciones en la nube de la organización mediante conectores de API.
 keywords: ''
 author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
+ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 6/24/2019
+ms.date: 7/21/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 688e14974f50b722d201220f561d7aa0fca15e54
-ms.sourcegitcommit: b89778c5c2919b0a861bb018db82083d0c339471
+ms.openlocfilehash: baef4566b6ee972191e0bb36efa1ed3df0946d9e
+ms.sourcegitcommit: d1eb8ccf09840c659ba7170a2b92cd62d9d97a02
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67349579"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68494197"
 ---
 # <a name="connect-apps"></a>Conectar aplicaciones 
 
@@ -35,7 +35,7 @@ Microsoft Cloud App Security usa las API proporcionadas por el proveedor de nube
 Cloud App Security admite varias instancias de la misma aplicación conectada. Por ejemplo, si tiene más de una instancia de Salesforce (una para venta y otra para marketing) puede conectarlas con Cloud App Security. Puede administrar las distintas instancias desde la misma consola para crear directivas pormenorizadas y una investigación más exhaustiva. Esta compatibilidad solo se aplica a las aplicaciones conectadas a API, no a aplicaciones conectadas por proxy ni detectadas por Cloud App Security.
 
 > [!NOTE]
-> No se admiten varias instancias para Office 365 y Azure.
+> No se admiten instancias múltiples de Office 365 y Azure.
 
 ## <a name="how-it-works"></a>Cómo funciona  
 Cloud App Security se implementa con privilegios de administrador del sistema para permitir el acceso total a todos los objetos del entorno.  
@@ -68,22 +68,22 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
 
 > [!div class="mx-tableFixed"]
 > 
-> ||**Office 365**|**Box**|**Okta**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|**Webex**|
-> |-|-|-|-|-|-|-|-|-|-|
-> |**Cuentas de lista**|✔|✔|✔|✔|✔|✔|✔|✔|✔|
-> |**Grupo**|✔|✔|✔|✔|✔|✔|✔|✔|No disponible|
-> |**Privilegios**|✔|✔|No es compatible con el proveedor|✔|✔|✔|✔||✔|
-> |**Regulación de usuario**|✔|✔||✔|Próximamente|Próximamente|Próximamente||Próximamente|
-> |**Actividad de inicio de sesión**|✔|✔|✔|✔|✔|✔|✔|✔|✔|
-> |**Actividad del usuario**|✔*|✔|✔|✔ - requiere Google Business o Enterprise|Parcial|Compatible con Salesforce Shield|✔|No disponible|✔|
-> |**Actividad administrativa**|✔|✔|✔|✔|Parcial|✔|✔|✔|✔|
-> |**Examen periódico de archivos**|✔|✔|No disponible|✔|✔|✔|✔|No disponible||
-> |**Examen de archivos prácticamente en tiempo real**|✔|✔|No disponible|✔ - requiere Google Business o Enterprise|||Próximamente||✔|
-> |**Control de uso compartido**|✔|✔|No disponible|✔|No disponible||✔||✔|
-> |**Cuarentena**|✔|✔|No disponible|Próximamente|||Próximamente||No disponible|
-> |**Ver permisos de aplicación**|✔|No es compatible con el proveedor|No disponible|✔||✔|No es compatible con el proveedor||No disponible|
-> |**Revocar permisos de aplicación**|✔||No disponible|✔||✔|No disponible||No disponible|
-> |**Aplicación de etiquetas de Azure Information Protection**|✔|✔||✔|||||No disponible|
+> ||**Office 365**|**Box**|**Okta**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|**Webex**|**Laboral**|
+> |-|-|-|-|-|-|-|-|-|-|-|
+> |**Cuentas de lista**|✔|✔|✔|✔|✔|✔|✔|✔|✔|✔|
+> |**Grupo**|✔|✔|✔|✔|✔|✔|✔|✔|No disponible|No disponible|
+> |**Privilegios**|✔|✔|No es compatible con el proveedor|✔|✔|✔|✔||✔|No disponible|
+> |**Regulación de usuario**|✔|✔||✔|Próximamente|Próximamente|Próximamente||Próximamente|Próximamente|
+> |**Actividad de inicio de sesión**|✔|✔|✔|✔|✔|✔|✔|✔|✔|✔|
+> |**Actividad del usuario**|✔*|✔|✔|✔ - requiere Google Business o Enterprise|Parcial|Compatible con Salesforce Shield|✔|No disponible|✔|✔|
+> |**Actividad administrativa**|✔|✔|✔|✔|Parcial|✔|✔|✔|✔|✔|
+> |**Examen periódico de archivos**|✔|✔|No disponible|✔|✔|✔|✔|No disponible|||
+> |**Examen de archivos prácticamente en tiempo real**|✔|✔|No disponible|✔ - requiere Google Business o Enterprise|||Próximamente||✔||
+> |**Control de uso compartido**|✔|✔|No disponible|✔|No disponible||✔||✔||
+> |**Cuarentena**|✔|✔|No disponible|Próximamente|||Próximamente||No disponible|No disponible|
+> |**Ver permisos de aplicación**|✔|No es compatible con el proveedor|No disponible|✔||✔|No es compatible con el proveedor||No disponible|No disponible|
+> |**Revocar permisos de aplicación**|✔||No disponible|✔||✔|No disponible||No disponible|No disponible|
+> |**Aplicación de etiquetas de Azure Information Protection**|✔|✔||✔|||||No disponible|No disponible|
 
 ## <a name="prerequisites"></a>Requisitos previos  
 
@@ -96,18 +96,20 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
 
 Para usar los conectores de aplicaciones, debe asegurarse de que tiene lo siguiente para cada aplicación específica:  
 
-|Aplicación|Tipo de licencia|Usuario|
-|---------|------------------|----------|
-|Cuadro|Enterprise|Se recomienda encarecidamente que se conecte a Box como administrador. Si se conecta como coadministrador, la visibilidad de los datos será parcial. En caso de que se conecte como coadministrador, asegúrese de seleccionar todos los permisos.|
-|G Suite|Se prefiere G Suite Business o Enterprise<br /><br /> G Suite Enterprise (como mínimo)|Superadministrador|
-|Office 365||Administrador global|
-|AWS||Usuario creado recientemente|
-|Dropbox|Empresa/Enterprise|Administración|
-|Okta|Enterprise (no versión de prueba)|Administración|
-|Exchange||Administrador global|
-|ServiceNow|Eureka o versión posterior|Administrador + rol de la API de REST|
-|Salesforce||Administración|
-|Webex||Administrador + administrador de cumplimiento|
+| Aplicación        | Tipo de licencia                                                                        | Usuario                                                                                                                                                                                                  |
+|------------|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Cuadro        | Enterprise                                                                          | Se recomienda encarecidamente que se conecte a Box como administrador. Si se conecta como coadministrador, la visibilidad de los datos será parcial. En caso de que se conecte como coadministrador, asegúrese de seleccionar todos los permisos. |
+| G Suite    | Se prefiere G Suite Business o Enterprise<br /><br /> G Suite Enterprise (como mínimo) | Superadministrador                                                                                                                                                                                           |
+| Office 365 |                                                                                     | Administrador global                                                                                                                                                                                          |
+| AWS        |                                                                                     | Usuario creado recientemente                                                                                                                                                                                    |
+| Dropbox    | Empresa/Enterprise                                                                 | Administración                                                                                                                                                                                                 |
+| Okta       | Enterprise (no versión de prueba)                                                              | Administración                                                                                                                                                                                                 |
+| Exchange   |                                                                                     | Administrador global                                                                                                                                                                                          |
+| ServiceNow | Eureka o versión posterior                                                                       | Rol de administrador + RestAPI                                                                                                                                                                                  |
+| Salesforce |                                                                                     | Administración                                                                                                                                                                                                 |
+| Webex      |                                                                                     | Administrador + administrador de cumplimiento                                                                                                                                                                              |
+
+<!--| Workday      |                                                                                     | Admin                                                                                                                                                                              |-->
 
 **ExpressRoute**
 

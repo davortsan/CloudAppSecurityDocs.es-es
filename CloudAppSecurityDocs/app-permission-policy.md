@@ -2,10 +2,10 @@
 title: Creación de directivas para controlar las aplicaciones de OAuth en Cloud App Security
 description: En este artículo se proporcionan instrucciones para crear directivas de permisos de la aplicación y trabajar con ellas en Microsoft Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/10/2018
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 7/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 9f68302c-bb3d-450c-bbf5-f8130cb163e3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b765424ce19004b984a360d49193445f2a53a033
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 93d23f46dc5c0225d32f75876386375b402f3897
+ms.sourcegitcommit: d1eb8ccf09840c659ba7170a2b92cd62d9d97a02
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567936"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68494212"
 ---
 # <a name="oauth-app-policies"></a>Directivas de aplicación de OAuth
 
@@ -31,6 +31,7 @@ Además de la [investigación existente de aplicaciones OAuth](manage-app-permis
 Las directivas de aplicación de OAuth de la aplicación permiten investigar qué permisos ha solicitado cada aplicación y qué usuarios los han autorizado para Office 365, G Suite y Salesforce. También es posible marcar estos permisos como aprobados o prohibidos. Si se marcan como prohibidos, se revocarán los permisos de cada aplicación para cada usuario que la haya autorizado. 
 
 ## <a name="create-a-new-oauth-app-policy"></a>Crear una directiva de aplicación de OAuth
+
 Hay dos maneras de crear una directiva de aplicación de OAuth. La primera se encuentra en **Investigar** y la segunda en **Control**. 
 
 Para crear una directiva de aplicación de OAuth:
@@ -44,14 +45,23 @@ Para crear una directiva de aplicación de OAuth:
 
 Como alternativa, también puede crear la directiva, para lo que debe hacer clic en **Control** y en **Directivas**. Después, haga clic en **Crear directiva** y en **OAuth app policy** (Directiva de aplicación de OAuth).
 
-  
    ![Nueva directiva de aplicación de OAuth](./media/app-permissions-policy.png)
 
+## <a name="oauth-app-anomaly-detection-policies"></a>Directivas de detección de anomalías de aplicación de OAuth
 
+Además de las directivas de aplicación de OAuth que puede crear, hay las siguientes directivas de detección de anomalías integradas que perfilan los metadatos de las aplicaciones de OAuth para identificar las que son potencialmente malintencionadas:
+
+| Nombre de la directiva | Descripción de la directiva |
+| --- | --- |
+| Nombre de aplicación OAuth engañoso | Examina las aplicaciones de OAuth conectadas a su entorno y desencadena una alerta cuando se detecta una aplicación con un nombre engañoso. Los nombres engañosos, como letras extranjeras que se parecen a las letras latinas, podrían indicar un intento de disfrazar una aplicación malintencionada como una aplicación conocida y de confianza. |
+| Nombre de aplicación de OAuth sospechoso | Examina las aplicaciones de OAuth conectadas a su entorno y desencadena una alerta cuando se detecta una aplicación con un nombre sospechoso. Los nombres sospechosos, como los nombres de las aplicaciones conocidas publicadas por publicadores desconocidos, podrían indicar un intento de disfrazar una aplicación malintencionada como una aplicación conocida y de confianza. |
+| Una aplicación OAuth usa una dirección URL de redireccionamiento no segura | Examina las aplicaciones de OAuth conectadas a su entorno y desencadena una alerta cuando una aplicación usa una dirección URL de redireccionamiento no segura (por ejemplo, no usa el protocolo HTTPS), que expone datos confidenciales a la interceptación. |
+| Nombre de publicador engañoso para una aplicación de OAuth | Examina las aplicaciones de OAuth conectadas a su entorno y desencadena una alerta cuando se detecta una aplicación con un nombre de publicador engañoso. Los nombres de publicador engañosos, como letras extranjeras que se parecen a las letras latinas, podrían indicar un intento de disfrazar una aplicación malintencionada como una aplicación procedente de un editor conocido y de confianza. |
+
+> [!NOTE]
+> Las directivas de detección de anomalías solo están disponibles para las aplicaciones de OAuth autorizadas en el Azure Active Directory.
 
   ## <a name="next-steps"></a>Pasos siguientes 
-  [Directivas de protección de datos](data-protection-policies.md)   
+  [Directivas de protección de datos](data-protection-policies.md)
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
-  
-  
+[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)
