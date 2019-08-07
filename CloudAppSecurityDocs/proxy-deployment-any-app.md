@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: 1bb39de6eafda31df7df07d177050cbb0f02031a
-ms.sourcegitcommit: cad2ead82bb76e4749c75eb7a0594e97f40545db
+ms.openlocfilehash: 7b86bc5f344f097c4c4e45c9d25123c5b361ebb2
+ms.sourcegitcommit: e9c93f69f280a929b2802619d24f59ea830b783f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68372347"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68782876"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Incorporación e implementación de Control de aplicaciones de acceso condicional para cualquier aplicación
 
@@ -109,7 +109,7 @@ Siga estos pasos para configurar cualquier aplicación que se controlará Cloud 
     1. Haga clic en **Finalizar**
 
     > [!NOTE]
-    > Para que se reconozcan los certificados, una vez que haya instalado el certificado, debe reiniciar el explorador e ir a la misma página. Verá una marca de verificación por los vínculos de certificado que confirman que se ha instalado un certificado válido.
+    > Para que se reconozcan los certificados, una vez que haya instalado el certificado, debe reiniciar el explorador e ir a la misma página.<!-- You'll see a check-mark by the certificates links confirmation they are installed.-->
 
 1. Haga clic en **Continue**.
 
