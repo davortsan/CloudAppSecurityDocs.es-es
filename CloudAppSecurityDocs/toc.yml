@@ -85,8 +85,8 @@
               href: discovery-docker-ubuntu.md
             - name: Docker en Ubuntu en Azure
               href: discovery-docker-ubuntu-azure.md
-            - name: Solución de problemas de implementación de Docker para Cloud Discovery
-              href: troubleshoot-docker.md
+            - name: Configuración de FTP del recopilador de registros
+              href: log-collector-ftp.md
             - name: Recopilador de registros tras un proxy
               href: log-collector-proxy.md
             - name: Uso del analizador de registros personalizado
@@ -234,8 +234,6 @@
           href: troubleshooting-content-inspection.md
         - name: Solución de problemas de integración de SIEM
           href: troubleshooting-siem.md
-        - name: Solución de problemas de implementación de Docker para Cloud Discovery
-          href: troubleshoot-docker.md
         - name: Solución de problemas de directivas
           href: troubleshoot-policies.md
 - name: Recursos
