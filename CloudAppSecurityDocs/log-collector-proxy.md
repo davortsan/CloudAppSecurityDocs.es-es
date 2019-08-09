@@ -2,10 +2,10 @@
 title: Habilitación del recopilador de registros tras un proxy en Cloud App Security | Microsoft Docs
 description: En este artículo se proporciona información sobre cómo habilitar el recopilador de registros de Cloud Discovery en Cloud App Security Discovery desde detrás de un servidor proxy.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 2/2/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 8/6/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,19 +15,19 @@ ms.assetid: 6bde2a6c-60cc-4a7d-9e83-e8b81ac229b0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: affc3cf96644e6997aa2f49870d33fa93c1484f1
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 4b468fa4361ed6278845ffad33594bc5543f1a03
+ms.sourcegitcommit: 39faa183e7d781660d475c79c827adbb4cc635fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568222"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68861538"
 ---
 # <a name="enable-the-log-collector-behind-a-proxy"></a>Habilitación del recopilador de registros tras un proxy
 
 Después de configurar el recopilador de registros, si está ejecutando detrás de un proxy, es posible que el recopilador de registros tenga problemas para enviar datos a Cloud App Security. Esto puede deberse a que el recopilador de registros no confía en la entidad emisora de certificados raíz del proxy y no puede conectarse a Microsoft Cloud App Security para recuperar su configuración o cargar los registros recibidos.
 
->[!NOTE] 
-> Para más información sobre cómo cambiar los certificados utilizados por el recopilador de registros para Syslog o FTP, y para resolver problemas de conectividad desde los firewalls y los proxys al recopilador de registros, consulte [Solución de problemas de implementación de Cloud Discovery para Microsoft Cloud App Security](troubleshoot-docker.md).
+>[!NOTE]
+> Para obtener información sobre cómo cambiar los certificados utilizados por el compilador de registros para syslog o FTP, y para resolver problemas de conectividad de los firewalls y servidores proxy en el compilador de registros, consulte registro de la [configuración de FTP](log-collector-ftp.md)del recopilador de registros.
 >
 
 ## <a name="set-up-the-log-collector-behind-a-proxy"></a>Configuración del recopilador de registros tras un proxy
@@ -41,7 +41,6 @@ En el shell, compruebe que el contenedor se ha creado y se está ejecutando con 
     bash
     docker ps
 
-
 ![docker ps](./media/docker-1.png "docker ps")
 
 ### <a name="copy-proxy-root-ca-certificate-to-the-container"></a>Copia del certificado de entidad de certificación raíz del proxy en el contenedor
@@ -51,7 +50,6 @@ Ejecute el comando en el host de Ubuntu y copie el certificado en una carpeta de
 
     bash
     docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
-
 
 ### <a name="set-the-configuration-to-work-with-the-ca-certificate"></a>Establecimiento de la configuración para que funcione con el certificado de entidad de certificación
 
@@ -70,12 +68,10 @@ Ejecute el comando en el host de Ubuntu y copie el certificado en una carpeta de
        bash
        ./keytool --import --noprompt --trustcacerts --alias SelfSignedCert --file /var/adallom/ftp/discovery/Proxy-CA.crt --keystore ../lib/security/cacerts --storepass changeit
 
-
 4. Valide que el certificado se importó correctamente en el almacén de claves de la entidad de certificación, mediante el siguiente comando para buscar el alias que ha proporcionado durante la importación (*SelfSignedCert*):
 
        bash
        ./keytool --list --keystore ../lib/security/cacerts | grep self
-
 
 ![keytool](./media/docker-2.png "keytool")
 
@@ -83,7 +79,7 @@ Debería ver el certificado de entidad de certificación de proxy importado.
 
 ### <a name="set-the-log-collector-to-run-with-the-new-configuration"></a>Establecimiento del recopilador de registros para que se ejecute con la nueva configuración
 
-El contenedor ya está listo. 
+El contenedor ya está listo.
 
 Ejecute el comando **collector_config** mediante el token de la API que utilizó durante la creación del recopilador de registros:
 
@@ -104,13 +100,8 @@ El recopilador de registros ahora puede comunicarse con Cloud App Security. Desp
 >[!NOTE]
 > Si tiene que actualizar la configuración del recopilador de registros para, por ejemplo, agregar o eliminar un origen de datos, normalmente tiene que **eliminar** el contenedor y volver a realizar los pasos anteriores. Para evitar esto, puede volver a ejecutar la herramienta *collector_config* con el nuevo token de la API generado en el portal de Cloud App Security.
 
+## <a name="next-steps"></a>Pasos siguientes
 
+[Directivas de actividad de usuario](user-activity-policies.md)
 
- 
-  
-## <a name="next-steps"></a>Pasos siguientes 
-[Directivas de actividad de usuario](user-activity-policies.md)   
-
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
-  
-  
+[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)

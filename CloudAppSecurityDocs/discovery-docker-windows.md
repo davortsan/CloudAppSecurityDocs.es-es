@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/10/2019
+ms.date: 8/7/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 470b1082a51568aed7018eae2d74afe83d94a071
-ms.sourcegitcommit: 1b6b827c149b195a241440929970a2ccbb136b83
+ms.openlocfilehash: 4d9e8e8f4ba01dba7da8f792315d9aa2f033a157
+ms.sourcegitcommit: 39faa183e7d781660d475c79c827adbb4cc635fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2019
-ms.locfileid: "67870214"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68861591"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker en Windows local
 
@@ -67,9 +67,9 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
      a. Haga clic en **Agregar origen de datos**.
 
       ![Agregar un origen de datos](./media/add-data-source.png)
-          
+
      b. **Ponga nombre** al servidor proxy o firewall.
-      
+
       ![ubuntu1](./media/ubuntu1.png)
 
      c. Seleccione el dispositivo en la lista **Origen**. Si selecciona **Formato de los registros personalizados** para trabajar con un dispositivo de red que no aparezca en la lista, consulte el artículo sobre cómo [trabajar con el analizador de registros personalizados](custom-log-parser.md) para ver las instrucciones de configuración.
@@ -77,7 +77,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
      d. Compare el registro con el ejemplo del formato de registro esperado. Si el formato de archivo del registro no coincide con este ejemplo, debe agregar el origen de datos como **Otro**.
 
      e. Establezca el **Tipo de receptor** en **FTP**, **FTPS**, **Syslog: UDP**, o **Syslog: TCP** o **Syslog – TLS**.
-     
+
      >[!NOTE]
      >La integración con los protocolos de transferencia segura (FTPS y Syslog – TLS) a menudo requiere una configuración adicional o el firewall o proxy.
 
@@ -177,7 +177,6 @@ Si la firma digital no es válida, se indicará **La firma digital no es válida
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Solución de problemas de implementación de Docker para Cloud Discovery](troubleshoot-docker.md)
+[Configuración de FTP del recopilador de registros](log-collector-ftp.md)
 
 [Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)
-

@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/18/2019
+ms.date: 8/6/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,18 +15,18 @@ ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b094682bc0f3b9ae6ebe6f0594a842a5e2e50458
-ms.sourcegitcommit: cad2ead82bb76e4749c75eb7a0594e97f40545db
+ms.openlocfilehash: 9d094c35565b416a8a5c048c09abad90dacb425c
+ms.sourcegitcommit: 39faa183e7d781660d475c79c827adbb4cc635fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68372309"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68861578"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Instalación y configuración en Ubuntu o RHEL en Azure
 
 *Se aplica a: Microsoft Cloud App Security*
 
-Puede configurar la carga de registros automática para informes continuos en Cloud App Security con Docker en Ubuntu o Red Hat Enterprise Linux (RHEL) en Azure. En este artículo se describe cómo configurar la carga de registros automática. 
+Puede configurar la carga de registros automática para informes continuos en Cloud App Security con Docker en Ubuntu o Red Hat Enterprise Linux (RHEL) en Azure. En este artículo se describe cómo configurar la carga de registros automática.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -52,7 +52,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Paso 1: Configuración del portal web: definición de orígenes de datos y vinculación a un recopilador de registros
 
-1. Vaya a la página de configuración **Carga de registros automática**. 
+1. Vaya a la página de configuración **Carga de registros automática**.
 
      a. En el portal de Cloud App Security, haga clic en el icono de configuración y en **Recopiladores de registros**.
 
@@ -73,7 +73,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
      d. Compare el registro con el ejemplo del formato de registro esperado. Si el formato de archivo del registro no coincide con este ejemplo, debe agregar el origen de datos como **Otro**.
 
      e. Establezca el **Tipo de receptor** en **FTP**, **FTPS**, **Syslog: UDP**, o **Syslog: TCP** o **Syslog – TLS**.
-     
+
      >[!NOTE]
      >La integración con los protocolos de transferencia segura (FTPS y Syslog – TLS) a menudo requiere una configuración adicional o el firewall o proxy.
 
@@ -81,7 +81,6 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
      - Supervisar el estado de cada dispositivo por separado para fines de investigación.
      - Explorar Shadow IT Discovery de cada dispositivo, si cada uno de ellos lo usa un segmento de usuarios distinto.
 
-     
 3. Vaya a la pestaña **Recopiladores de registros** de la parte superior.
 
      a. Haga clic en **Agregar recopilador de registros**.
@@ -109,8 +108,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 > [!NOTE]
 > En los pasos siguientes se describe la implementación de Ubuntu. Los pasos de implementación en otras plataformas son ligeramente diferentes.
 
-
-1. Cree una nueva máquina Ubuntu en el entorno Azure. 
+1. Cree una nueva máquina Ubuntu en el entorno Azure.
 2. Cuando la máquina esté en funcionamiento, abra los puertos mediante:
 
      a. En la vista de la máquina, vaya a **Redes** y seleccione la interfaz adecuada haciendo doble clic en ella.
@@ -118,9 +116,9 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
      b. Vaya a **Grupo de seguridad de red** y seleccione el grupo de seguridad de red pertinente.
 
      c. Vaya a **Reglas de seguridad de entrada** y haga clic en **Agregar**.
-      
+
       ![Ubuntu en Azure](./media/ubuntu-azure.png)
-    
+
      d. Agregue las siguientes reglas (en modo **Avanzado**):
 
       |Nombre|Rangos de puertos de destino|Protocolo|Origen|Destination|
@@ -129,7 +127,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
       |caslogcollector_ftp_passive|20000-20099|TCP|<Subred de la dirección IP del dispositivo>|Cualquiera|
       |caslogcollector_syslogs_tcp|601-700|TCP|<Subred de la dirección IP del dispositivo>|Cualquiera|
       |caslogcollector_syslogs_udp|514-600|UDP|<Subred de la dirección IP del dispositivo>|Cualquiera|
-      
+
       ![Reglas de Ubuntu en Azure](./media/inbound-rule.png)
 
 3. Vuelva a la máquina y haga clic en **Conectar** para abrir un terminal en ella.
@@ -137,7 +135,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 4. Cambie a los privilegios raíz con `sudo -i`.
 
 5. Si acepta los [términos de licencia del software](https://go.microsoft.com/fwlink/?linkid=862492), desinstale las versiones anteriores e instale Docker CE con el comando siguiente:
-        
+
        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
      ![Comando de Ubuntu en Azure](./media/ubuntu-azure-command.png)
@@ -147,7 +145,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
       ![Ubuntu en Azure](./media/windows7.png)
 
 7. Ejecute el comando para implementar el recopilador de registros.
-     
+
         (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
      ![Proxy Ubuntu](./media/ubuntu-proxy.png)
@@ -183,7 +181,7 @@ Compruebe que se cargan los registros de Cloud App Security y que se generan los
      ![Informe continuo personalizado](./media/custom-continuous-report.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
-[Solución de problemas de implementación de Docker para Cloud Discovery](troubleshoot-docker.md)
 
-[Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier](https://premier.microsoft.com/)
+[Configuración de FTP del recopilador de registros](log-collector-ftp.md)
 
+[Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier](https://premier.microsoft.com/).

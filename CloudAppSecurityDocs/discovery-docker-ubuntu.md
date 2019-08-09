@@ -2,10 +2,10 @@
 title: Configuración de la carga de registros automática con una instancia local de Docker
 description: En este artículo se describe el proceso de configuración de carga de registros automática para informes continuos en Cloud App Security con Docker en Ubuntu o RHEL en un servidor local.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 3/19/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 8/6/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cac1c58bb8985065e4b99f179a544d08c3f31c6b
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 4832e73409e0c48a02bb0aff94236b45661acd06
+ms.sourcegitcommit: 39faa183e7d781660d475c79c827adbb4cc635fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567816"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68861555"
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Docker en Ubuntu y RHEL locales
 
@@ -30,7 +30,7 @@ Puede configurar la carga de registros automática para informes continuos en Cl
 
 ## <a name="technical-requirements"></a>Requisitos técnicos
 
-- Sistema operativo: Ubuntu 14.04, 16.04 y 18.04; RHEL 7.2 o superior, o CentOS 7.2 o superiores 
+- Sistema operativo: Ubuntu 14,04, 16,04 y 18,04; RHEL 7,2 o posterior, o de la versión 7,2 o superior 
 
 - Espacio en disco: 250 GB
 
@@ -52,7 +52,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Paso 1: Configuración del portal web: definición de orígenes de datos y vinculación a un recopilador de registros
 
-1. Vaya a la página de configuración **Carga de registros automática**. 
+1. Vaya a la página de configuración **Carga de registros automática**.
 
      a. En el portal de Cloud App Security, haga clic en el icono de configuración y en **Recopiladores de registros**.
 
@@ -63,9 +63,9 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
      a. Haga clic en **Agregar origen de datos**.
 
       ![Agregar un origen de datos](./media/add-data-source.png)
-          
+
      b. **Ponga nombre** al servidor proxy o firewall.
-      
+
       ![ubuntu1](./media/ubuntu1.png)
 
      c. Seleccione el dispositivo en la lista **Origen**. Si selecciona **Formato de los registros personalizados** para trabajar con un dispositivo de red que no aparezca en la lista, consulte el artículo sobre cómo [trabajar con el analizador de registros personalizados](custom-log-parser.md) para ver las instrucciones de configuración.
@@ -73,7 +73,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
      d. Compare el registro con el ejemplo del formato de registro esperado. Si el formato de archivo del registro no coincide con este ejemplo, debe agregar el origen de datos como **Otro**.
 
      e. Establezca el **Tipo de receptor** en **FTP**, **FTPS**, **Syslog: UDP**, o **Syslog: TCP** o **Syslog – TLS**.
-     
+
      >[!NOTE]
      >La integración con los protocolos de transferencia segura (FTPS y Syslog – TLS) a menudo requiere una configuración adicional o el firewall o proxy.
 
@@ -104,6 +104,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
    ![Crear un recopilador de registros](./media/windows7.png)
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>Paso 2: Implementación local de la máquina
+
 En los pasos siguientes se describe la implementación en Ubuntu. Los pasos de implementación para otras plataformas son ligeramente diferentes.
 
 1. Abra un terminal en su equipo Ubuntu.
@@ -111,7 +112,7 @@ En los pasos siguientes se describe la implementación en Ubuntu. Los pasos de i
 2. Cambie a los privilegios raíz con el comando: `sudo -i`
 
 3. Para omitir a un servidor proxy en la red, ejecute los dos comandos siguientes:
-        
+
         export http_proxy='<IP>:<PORT>' (e.g. 168.192.1.1:8888)
         export https_proxy='<IP>:<PORT>'
 
@@ -123,7 +124,7 @@ En los pasos siguientes se describe la implementación en Ubuntu. Los pasos de i
 
     > [!NOTE] 
     > Si se produce un error en este comando al validar el certificado de servidor proxy, ejecute el comando con `curl -k` al principio.
-    
+
    ![ubuntu5](./media/ubuntu5.png)
 
 5. Implemente la imagen del recopilador en la máquina host al importar la configuración del recopilador. Para importar la configuración, copie el comando de ejecución generado en el portal. Si necesita configurar un proxy, agregue la dirección IP del proxy y el número de puerto. Por ejemplo, si los detalles de proxy son 192.168.10.1:8080, el comando de ejecución actualizado es:
@@ -158,15 +159,14 @@ Si tiene problemas durante la implementación, consulte [Solución de problemas 
 
 Compruebe que se cargan los registros de Cloud App Security y que se generan los informes. Después de la comprobación, cree informes personalizados. Puede crear informes de detección personalizados en función de los grupos de usuarios de Azure Active Directory. Por ejemplo, si quiere ver el uso de la nube por parte del departamento de marketing, importe el grupo de marketing mediante la característica para importar grupos de usuarios. Después, cree un informe personalizado para este grupo. También puede personalizar un informe en función de la etiqueta de dirección IP o los intervalos de direcciones IP.
 
-1. En el portal de Cloud App Security, en el engranaje de configuración, seleccione Configuración de Cloud Discovery y después **Informes continuos**. 
+1. En el portal de Cloud App Security, en el engranaje de configuración, seleccione Configuración de Cloud Discovery y después **Informes continuos**.
 2. Haga clic en el botón **Crear informe** y rellene los campos.
-3. En **Filtros**, puede filtrar los datos por origen de datos, por [grupo de usuarios importados](user-groups.md) o por [etiquetas e intervalos de direcciones IP](ip-tags.md). 
+3. En **Filtros**, puede filtrar los datos por origen de datos, por [grupo de usuarios importados](user-groups.md) o por [etiquetas e intervalos de direcciones IP](ip-tags.md).
 
 ![Informe continuo personalizado](./media/custom-continuous-report.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Solución de problemas de implementación de Docker para Cloud Discovery](troubleshoot-docker.md)
+[Configuración de FTP del recopilador de registros](log-collector-ftp.md)
 
-[Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier](https://premier.microsoft.com/)
-
+[Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier](https://premier.microsoft.com/).
