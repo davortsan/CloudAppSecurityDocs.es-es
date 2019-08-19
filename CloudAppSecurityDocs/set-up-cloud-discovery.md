@@ -1,76 +1,70 @@
 ---
 title: 'Implementación de Cloud Discovery: Cloud App Security | Microsoft Docs'
 description: En este artículo se describe el procedimiento de configuración de Cloud Discovery para que entre en funcionamiento.
-keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 05/23/2019
-ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod: ''
+author: ShlomoSagir-MS
+ms.author: shsagir
 ms.service: cloud-app-security
-ms.technology: ''
-ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
+ms.topic: conceptual
+ms.date: 8/15/2019
+ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6f41d30f14f517e682e2535a908650c898ba13fa
-ms.sourcegitcommit: 235b7d5f1f49075c199b154abc38e51326c0493e
+ms.openlocfilehash: 296abe6a227d6ab6c72e09cc993d8cf413770cec
+ms.sourcegitcommit: 7eecf2f863c410abe0ba6eafd65777973de011cb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66173536"
+ms.lasthandoff: 08/18/2019
+ms.locfileid: "69573041"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar Cloud Discovery
 
 *Se aplica a: Microsoft Cloud App Security*
 
-Cloud Discovery analiza los registros de tráfico en el catálogo de aplicaciones en la nube de Microsoft Cloud App Security de más de 16 000 aplicaciones en la nube. Las aplicaciones se clasifican y se puntúan en función de más de 70 factores de riesgo para proporcionar visibilidad continua al uso de la nube, Shadow IT y el riesgo que Shadow IT supone para la organización.
+Cloud Discovery analiza los registros de tráfico en el catálogo de aplicaciones en la nube de Microsoft Cloud App Security de más de 16 000 aplicaciones en la nube. Las aplicaciones se clasifican y puntuan en función de más de 80 factores de riesgo para proporcionar visibilidad continua del uso de la nube, Shadow IT y el riesgo que Shadow IT supone para su organización.
 
-## <a name="snapshot-and-continuous-risk-assessment-reports"></a>Informes de instantáneas y de evaluación continua de riesgos 
+## <a name="snapshot-and-continuous-risk-assessment-reports"></a>Informes de instantáneas y de evaluación continua de riesgos
 
-Se pueden generar dos tipos de informes: 
+Se pueden generar dos tipos de informes:
 
 - **Informes de instantáneas**: proporcionan visibilidad ad hoc de un conjunto de registros de tráfico que puede cargar manualmente desde los firewalls y los servidores proxy.
 
 - **Informes continuos**: analizan todos los registros que se reenvían desde la red mediante Cloud App Security. Proporcionan una mejor visibilidad de todos los datos e identifican automáticamente los usos erróneos, ya sea mediante el motor de detección de anomalías de aprendizaje automático o mediante las directivas personalizadas que haya definido. Estos informes pueden crearse conectándose de varias maneras:
 
- - [Integración de Microsoft Defender ATP](wdatp-integration.md): Cloud App Security se integra con Defender Advanced Threat Protection (ATP) de Microsoft de forma nativa, para simplificar la implementación de Cloud Discovery, ampliar las capacidades de Cloud Discovery más allá de la red corporativa y habilitar en el equipo de investigación.
- - [Recopilador de registros](discovery-docker.md): Los recopiladores de registros permiten automatizar fácilmente la carga de registros desde la red. El recopilador de registros se ejecuta en la red y recibe los registros a través de Syslog o FTP.
- - [Integración de Zscaler](zscaler-integration.md): Si trabaja con Cloud App Security y Zscaler, puede integrar los dos productos para mejorar la seguridad de la experiencia de Cloud Discovery. Juntos, Cloud App Security y Zscaler proporcionan una implementación fluida de Cloud Discovery, bloqueo automático de aplicaciones no autorizadas y evaluación de riesgos directamente en el portal de Zscaler.
- - [integración de iboss](iboss-integration.md): Si trabaja con Cloud App Security y iboss, puede integrar los dos productos para mejorar la experiencia de seguridad de Cloud Discovery. Juntos, Cloud App Security y iboss proporcionan una implementación fluida de Cloud Discovery automáticos de bloqueo de aplicaciones no autorizadas y evaluación de riesgos directamente en el portal de iboss.
+     - [Integración de ATP de Microsoft defender](wdatp-integration.md): Cloud App Security se integra con protección contra amenazas avanzada (ATP) de Microsoft defender de forma nativa para simplificar el lanzamiento de Cloud Discovery, ampliar las funcionalidades de Cloud Discovery más allá de la red corporativa y habilitar la investigación basada en máquinas.
+     - [Recopilador de registros](discovery-docker.md): Los recopiladores de registros permiten automatizar fácilmente la carga de registros desde la red. El recopilador de registros se ejecuta en la red y recibe los registros a través de Syslog o FTP.
+     - [Integración de Zscaler](zscaler-integration.md): Si trabaja con Cloud App Security y Zscaler, puede integrar los dos productos para mejorar la seguridad de la experiencia de Cloud Discovery. Juntos, Cloud App Security y Zscaler proporcionan una implementación fluida de Cloud Discovery, bloqueo automático de aplicaciones no autorizadas y evaluación de riesgos directamente en el portal de Zscaler.
+     - [integración de iboss](iboss-integration.md): Si trabaja con Cloud App Security y iboss, puede integrar los dos productos para mejorar la experiencia de seguridad de Cloud Discovery. Juntos, Cloud App Security y iboss proporcionan una implementación sin problemas de Cloud Discovery, el bloqueo automático de aplicaciones no autorizadas y la evaluación de riesgos directamente en el portal de iboss.
 
 ## <a name="log-process-flow-from-raw-data-to-risk-assessment"></a>Flujo del proceso de registro: de datos sin procesar a evaluación de riesgos
 
-El proceso de generación de una evaluación de riesgos consta de los siguientes pasos. El proceso tarda desde unos minutos hasta varias horas según la cantidad de datos procesados. 
+El proceso de generación de una evaluación de riesgos consta de los siguientes pasos. El proceso tarda desde unos minutos hasta varias horas según la cantidad de datos procesados.
 
-- **Cargar**: se cargan los registros de tráfico web de la red en el portal. 
+- **Cargar**: se cargan los registros de tráfico web de la red en el portal.
 
-- **Redistribuir**: Cloud App Security redistribuye y extrae datos de tráfico de los registros de tráfico con un analizador dedicado para cada origen de datos. 
+- **Redistribuir**: Cloud App Security redistribuye y extrae datos de tráfico de los registros de tráfico con un analizador dedicado para cada origen de datos.
 
-- **Analizar**: se analizan los datos de tráfico con el catálogo de aplicaciones en la nube para identificar más de 16 000 aplicaciones en la nube y evaluar su puntuación de riesgo. También se identifican los usuarios activos y las direcciones IP como parte del análisis. 
+- **Analizar**: se analizan los datos de tráfico con el catálogo de aplicaciones en la nube para identificar más de 16 000 aplicaciones en la nube y evaluar su puntuación de riesgo. También se identifican los usuarios activos y las direcciones IP como parte del análisis.
 
 - **Generar informe**: se genera un informe de evaluación de riesgos de los datos extraídos de los archivos de registro.
 
-
 >[!NOTE]
 > Los datos de los informes continuos se analizan dos veces al día.
-
-
 
 ## Firewalls y servidores proxy compatibles <a name="supported-firewalls-and-proxies"></a>
 
 - Barracuda - Web App Firewall (W3C)
 - Blue Coat Proxy SG - registros de acceso (W3C)
 - Check Point
-- Firewall de Cisco ASA (en el caso de los firewalls de Cisco ASA, es necesario establecer el nivel de información en 6)
 - Cisco ASA con FirePOWER
+- Firewall de Cisco ASA (en el caso de los firewalls de Cisco ASA, es necesario establecer el nivel de información en 6)
+- Seguridad Web de Cisco Cloud
+- Cisco FWSM
 - Cisco IronPort WSA
-- Cisco ScanSafe
 - Cisco Meraki – Registro de direcciones URL
 - Clavister NGFW (Syslog)
 - Digital Arts i-FILTER
+- Forcepoint
 - Fortinet Fortigate
 - iboss Secure Cloud Gateway
 - Juniper SRX
@@ -84,6 +78,7 @@ El proceso de generación de una evaluación de riesgos consta de los siguientes
 - Sophos Cyberoam
 - Squid (Common)
 - Squid (Native)
+- Stormshield
 - Websense - soluciones de seguridad Web - informe de detalle de investigación (CSV)
 - Websense - soluciones de seguridad Web - registro de actividad de Internet (CEF)
 - Zscaler
@@ -93,41 +88,39 @@ El proceso de generación de una evaluación de riesgos consta de los siguientes
 
 Si el registro no es compatible, seleccione **Otro** como **Origen de datos** y especifique el dispositivo y el registro que está intentando cargar. El equipo de analistas de la nube de Cloud App Security examinará el registro y se le notificará si se ha agregado compatibilidad con el tipo de registro. También puede definir un analizador personalizado que coincida con el formato. Para obtener más información, vea [Uso del analizador de registros personalizado](custom-log-parser.md).
 
-
 Atributos de datos (según la documentación del proveedor):
-
 
 | Origen de datos | Dirección URL de la aplicación de destino | IP de la aplicación de destino | Nombre de usuario | IP de origen | Tráfico total | Bytes cargados |
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
-| Barracuda | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | No | No |
-| Blue Coat | <strong>Sí</strong> | No | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-| Checkpoint | No | <strong>Sí</strong> | No | <strong>Sí</strong> | No | No |
-| Cisco ASA (Syslog) | No | <strong>Sí</strong> | No | <strong>Sí</strong> | <strong>Sí</strong> | No |
-| Cisco ASA con FirePOWER | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-| Cisco FWSM | No | <strong>Sí</strong> | No | <strong>Sí</strong> | <strong>Sí</strong> | No |
-| Cisco Ironport WSA | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-| Cisco Meraki | <strong>Sí</strong> | <strong>Sí</strong> | No | <strong>Sí</strong> | No | No |
-|Cisco ScanSafe|<strong>Sí</strong>|<strong>Sí</strong>|<strong>Sí</strong>|<strong>Sí</strong>|<strong>Sí</strong>|<strong>Sí</strong>|
-| Clavister NGFW (Syslog) | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-| SonicWall (anteriormente Dell) | <strong>Sí</strong> | <strong>Sí</strong> | No | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-| Digital Arts i-FILTER | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-|Seguridad de ForcePoint Web en la nube|<strong>Sí</strong>|<strong>Sí</strong>|<strong>Sí</strong>|<strong>Sí</strong>|<strong>Sí</strong>|<strong>Sí</strong>|
-| FortiGate | No | <strong>Sí</strong> | No | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-|Fortinet FortiOS|<strong>Sí</strong>|<strong>Sí</strong>|No|<strong>Sí</strong>|<strong>Sí</strong>|<strong>Sí</strong>|
-|iboss|<strong>Sí</strong>|<strong>Sí</strong>|<strong>Sí</strong>|<strong>Sí</strong>|<strong>Sí</strong>|<strong>Sí</strong>|
-| Juniper SRX | No | <strong>Sí</strong> | No | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-| Juniper SSG | No | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-| McAfee SWG | <strong>Sí</strong> | No | No | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-| MS TMG | <strong>Sí</strong> | No | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-| Palo Alto Networks | No | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-| Sophos | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | No |
-| Squid (Common) | <strong>Sí</strong> | No | <strong>Sí</strong> | <strong>Sí</strong> | No | <strong>Sí</strong> |
-| Squid (Native) | <strong>Sí</strong> | No | <strong>Sí</strong> | <strong>Sí</strong> | No | <strong>Sí</strong> |
-| Websense: informe de detalle de investigación (CSV) | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-| Websense: registro de actividad de Internet (CEF) | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-| Zscaler | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-
-
+| Barracuda | **Sí** | **Sí** | **Sí** | **Sí** | Sin | Sin |
+| Blue Coat | **Sí** | Sin | **Sí** | **Sí** | **Sí** | **Sí** |
+| Checkpoint | Sin | **Sí** | Sin | **Sí** | Sin | Sin |
+| Cisco ASA (Syslog) | Sin | **Sí** | Sin | **Sí** | **Sí** | Sin |
+| Cisco ASA con FirePOWER | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
+| Seguridad Web de Cisco Cloud |**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
+| Cisco FWSM | Sin | **Sí** | Sin | **Sí** | **Sí** | Sin |
+| Cisco Ironport WSA | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
+| Cisco Meraki | **Sí** | **Sí** | Sin | **Sí** | Sin | Sin |
+| Clavister NGFW (Syslog) | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
+| SonicWall (anteriormente Dell) | **Sí** | **Sí** | Sin | **Sí** | **Sí** | **Sí** |
+| Digital Arts i-FILTER | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
+| ForcePoint LEEF |**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
+| Nube de seguridad Web de ForcePoint |**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
+| FortiGate | Sin | **Sí** | Sin | **Sí** | **Sí** | **Sí** |
+| Fortinet FortiOS |**Sí**|**Sí**|Sin|**Sí**|**Sí**|**Sí**|
+| iboss |**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
+| Juniper SRX | Sin | **Sí** | Sin | **Sí** | **Sí** | **Sí** |
+| Juniper SSG | Sin | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
+| McAfee SWG | **Sí** | Sin | Sin | **Sí** | **Sí** | **Sí** |
+| MS TMG | **Sí** | Sin | **Sí** | **Sí** | **Sí** | **Sí** |
+| Palo Alto Networks | Sin | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
+| Sophos | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** | Sin |
+| Squid (Common) | **Sí** | Sin | **Sí** | **Sí** | Sin | **Sí** |
+| Squid (Native) | **Sí** | Sin | **Sí** | **Sí** | Sin | **Sí** |
+| Stormshield | Sin | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
+| Websense: informe de detalle de investigación (CSV) | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
+| Websense: registro de actividad de Internet (CEF) | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
+| Zscaler | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
 
 ## <a name="next-steps"></a>Pasos siguientes
 
