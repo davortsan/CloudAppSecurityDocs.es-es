@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 669dad9c8ee0fc99f523fe43349ce6b5f2044398
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 19b505545afa1c3afea00c69cbe621b860e7f1db
+ms.sourcegitcommit: 7eecf2f863c410abe0ba6eafd65777973de011cb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568950"
+ms.lasthandoff: 08/18/2019
+ms.locfileid: "69573016"
 ---
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutorial: detección y administración de shadow IT en la red 
 
@@ -57,7 +57,7 @@ Dado que las directivas son diferentes entre los grupos de usuarios, regiones y 
 
 Ahora que Cloud Discovery se está ejecutando en la red, consulte los informes continuos que se generan y eche un vistazo al [panel de Cloud Discovery](working-with-cloud-discovery-data.md) para obtener una visión global de las aplicaciones que se usan en su organización. Es recomendable examinarlas por categoría, ya que a menudo se encontrará con que las aplicaciones no autorizadas se usan para fines legítimos relacionados con el trabajo que no pueden abordarse mediante una aplicación autorizada. 
 
-2. **Identificación de los niveles de riesgo de las aplicaciones**: Use el catálogo de aplicaciones en la nube de Cloud App Security para profundizar más en los riesgos relacionados con las aplicaciones detectadas. El catálogo de riesgo de Cloud App Security incluye más de 16 000 aplicaciones que se evalúan con más de 70 factores de riesgo. Los factores de riesgo parten de información general sobre la aplicación (ubicación de la sede central, editor de la aplicación, etc.) y abarcan medidas de seguridad y controles (compatibilidad con el cifrado en reposo, registro de auditoría de la actividad del usuario, etc.). Para obtener más información, consulte [Trabajo con la puntuación de riesgo](risk-score.md).
+2. **Identificación de los niveles de riesgo de las aplicaciones**: Use el catálogo de aplicaciones en la nube de Cloud App Security para profundizar más en los riesgos relacionados con las aplicaciones detectadas. El catálogo de riesgo de Cloud App Security incluye más de 16 000 aplicaciones que se evalúan con más de 80 factores de riesgo. Los factores de riesgo parten de información general sobre la aplicación (ubicación de la sede central, editor de la aplicación, etc.) y abarcan medidas de seguridad y controles (compatibilidad con el cifrado en reposo, registro de auditoría de la actividad del usuario, etc.). Para obtener más información, consulte [Trabajo con la puntuación de riesgo](risk-score.md).
     
    - En el portal de Cloud App Security, en la sección **Detectar**, haga clic en **Aplicaciones detectadas**. Filtre la lista de aplicaciones detectadas en uso en su organización según los factores de riesgo que quiera analizar. Por ejemplo, puede usar los filtros avanzados para buscar todas las aplicaciones con una puntuación de riesgo inferior a 8. 
 

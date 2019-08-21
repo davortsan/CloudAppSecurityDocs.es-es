@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 8099d38309703b4258d1b8234537d3b172df52b2
-ms.sourcegitcommit: d35baa4f55a3ab4cd8df478adaf10579a00f603d
+ms.openlocfilehash: 284470013b01b7af96f2e8b0b271b00bf7a7ff4b
+ms.sourcegitcommit: 7eecf2f863c410abe0ba6eafd65777973de011cb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67622469"
+ms.lasthandoff: 08/18/2019
+ms.locfileid: "69573010"
 ---
 # <a name="tutorial-investigate-risky-users"></a>Tutorial: Investigación de usuarios de riesgo
 
@@ -36,8 +36,7 @@ En este tutorial se proporcionan instrucciones para el uso de Cloud App Security
 > * 3: [Investigación en profundidad de los usuarios](#investigate)
 > * 4: [Protección de la organización](#protect)
 
-
-## Comprender la puntuación de prioridad de investigación <a name ="risk-score"></a>
+## Comprender la puntuación de prioridad de investigación<a name="risk-score"></a>
 
 La puntuación de prioridad de investigación es una puntuación que proporciona Cloud App Security a cada usuario para informarle de su nivel de riesgo con respecto a otros usuarios de la organización.
     

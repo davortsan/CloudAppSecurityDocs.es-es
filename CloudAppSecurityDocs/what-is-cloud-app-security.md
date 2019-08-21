@@ -3,9 +3,9 @@ title: Descripción de Cloud App Security
 description: En este artículo se describe Microsoft Cloud App Security y su funcionamiento.
 keywords: ''
 author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
+ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 6/17/2019
+ms.date: 8/15/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0271b75da9b9d8e18deb99503e4cfe78660ea704
-ms.sourcegitcommit: b679efee6d54931c6b5f123324b3b4dd791ddca6
+ms.openlocfilehash: bee3eb97503d4ce0da3d7fbe04ea9781d759c5c7
+ms.sourcegitcommit: 7eecf2f863c410abe0ba6eafd65777973de011cb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67157079"
+ms.lasthandoff: 08/18/2019
+ms.locfileid: "69572988"
 ---
 # <a name="microsoft-cloud-app-security-overview"></a>Introducción a Microsoft Cloud App Security
 
@@ -71,7 +71,7 @@ Para obtener más información sobre Cloud Discovery, consulte [Set up Cloud Dis
 
 ### <a name="sanctioning-and-unsanctioning-an-app"></a>Autorización o no autorización de una aplicación  
 
-Puede utilizar Cloud App Security para autorizar o no aplicaciones de la organización mediante el *catálogo de aplicaciones en la nube*. El equipo de analistas de Microsoft tiene un amplio catálogo en permanente aumento de más de 16 000 aplicaciones en la nube clasificadas y puntuadas según estándares del sector. Puede utilizar el catálogo de aplicaciones en la nube para evaluar el riesgo de las aplicaciones en la nube en función de certificaciones normativas, estándares del sector y procedimientos recomendados. A continuación puede personalizar las puntuaciones y la importancia de los distintos parámetros según las necesidades de la organización. Según estas puntuaciones, Cloud App Security le permite saber el nivel de riesgo de una aplicación. La puntuación se basa en más de 70 factores de riesgo que podrían afectar a su entorno.  
+Puede utilizar Cloud App Security para autorizar o no aplicaciones de la organización mediante el *catálogo de aplicaciones en la nube*. El equipo de analistas de Microsoft tiene un amplio catálogo en permanente aumento de más de 16 000 aplicaciones en la nube clasificadas y puntuadas según estándares del sector. Puede utilizar el catálogo de aplicaciones en la nube para evaluar el riesgo de las aplicaciones en la nube en función de certificaciones normativas, estándares del sector y procedimientos recomendados. A continuación puede personalizar las puntuaciones y la importancia de los distintos parámetros según las necesidades de la organización. Según estas puntuaciones, Cloud App Security le permite saber el nivel de riesgo de una aplicación. La puntuación se basa en más de 80 factores de riesgo que podrían afectar al entorno.  
 
 ### <a name="app-connectors"></a>Conectores de aplicaciones
 
