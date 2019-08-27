@@ -5,30 +5,29 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/21/2019
+ms.date: 8/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: baef4566b6ee972191e0bb36efa1ed3df0946d9e
-ms.sourcegitcommit: d1eb8ccf09840c659ba7170a2b92cd62d9d97a02
+ms.openlocfilehash: 5d6b659fd25e17e2c3e4ac22749057a9e2ec70ac
+ms.sourcegitcommit: 4179e4ad0fbabf08a24a176bbe21cad1f8cc35da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68494197"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70019473"
 ---
-# <a name="connect-apps"></a>Conectar aplicaciones 
+# <a name="connect-apps"></a>Conectar aplicaciones
 
 *Se aplica a: Microsoft Cloud App Security*
 
-Los conectores de aplicaciones usan las API de los proveedores de aplicaciones para permitir mediante Microsoft Cloud App Security una mayor visibilidad y control de las aplicaciones a las que se conecta.  
+Los conectores de aplicaciones usan las API de los proveedores de aplicaciones para permitir mediante Microsoft Cloud App Security una mayor visibilidad y control de las aplicaciones a las que se conecta.
 
-Microsoft Cloud App Security usa las API proporcionadas por el proveedor de nube. Cada servicio tiene su propio marco de trabajo y limitaciones de API como limitación, límites de API, ventanas de API de tiempo cambiante dinámicas, etc. Microsoft Cloud App Security funciona con los servicios para optimizar el uso de las API y proporcionar el máximo rendimiento. Los motores de Cloud App Security usan la capacidad permitida teniendo en cuenta las diferentes limitaciones que los servicios imponen a las API. Algunas operaciones, como el análisis de todos los archivos del inquilino, requieren numerosas API y, por tanto, se reparten a lo largo de un período de tiempo mayor. Tenga en cuenta que algunas directivas pueden ejecutarse durante varias horas o varios días.  
+Microsoft Cloud App Security usa las API proporcionadas por el proveedor de nube. Cada servicio tiene su propio marco de trabajo y limitaciones de API como limitación, límites de API, ventanas de API de tiempo cambiante dinámicas, etc. Microsoft Cloud App Security funciona con los servicios para optimizar el uso de las API y proporcionar el máximo rendimiento. Los motores de Cloud App Security usan la capacidad permitida teniendo en cuenta las diferentes limitaciones que los servicios imponen a las API. Algunas operaciones, como el análisis de todos los archivos del inquilino, requieren numerosas API y, por tanto, se reparten a lo largo de un período de tiempo mayor. Tenga en cuenta que algunas directivas pueden ejecutarse durante varias horas o varios días.
 
 ## <a name="multi-instance-support"></a>Compatibilidad con varias instancias
 
@@ -37,8 +36,9 @@ Cloud App Security admite varias instancias de la misma aplicación conectada. P
 > [!NOTE]
 > No se admiten instancias múltiples de Office 365 y Azure.
 
-## <a name="how-it-works"></a>Cómo funciona  
-Cloud App Security se implementa con privilegios de administrador del sistema para permitir el acceso total a todos los objetos del entorno.  
+## <a name="how-it-works"></a>Cómo funciona
+
+Cloud App Security se implementa con privilegios de administrador del sistema para permitir el acceso total a todos los objetos del entorno.
 
 El flujo del Conector de aplicaciones es como sigue:
 
@@ -46,82 +46,82 @@ El flujo del Conector de aplicaciones es como sigue:
 2. Cloud App Security solicita la lista de usuarios. La primera vez que se realiza la petición, el análisis puede tardar algún tiempo en completarse. Una vez terminado el análisis de los usuarios, Cloud App Security pasa a las actividades y los archivos. En cuanto se inicia el análisis, algunas actividades estarán disponibles en Cloud App Security.
 3. Una vez completada la solicitud del usuario, Cloud App Security analiza periódicamente los usuarios, los grupos, las actividades y los archivos. Todas las actividades estarán disponibles tras el primer análisis completo.
 
-Esta conexión puede tardar algún tiempo, en función del tamaño de los inquilinos, el número de usuarios y el tamaño y número de archivos que deben analizarse. 
+Esta conexión puede tardar algún tiempo, en función del tamaño de los inquilinos, el número de usuarios y el tamaño y número de archivos que deben analizarse.
 
-En función de la aplicación a la que se conecte, la conexión de API habilita los siguientes elementos:  
+En función de la aplicación a la que se conecte, la conexión de API habilita los siguientes elementos:
 
-- **Información de cuenta**: ofrece visibilidad sobre los usuarios, las cuentas, la información de perfil, el estado (suspendido, activo, deshabilitado), los grupos y los privilegios.  
+- **Información de cuenta**: ofrece visibilidad sobre los usuarios, las cuentas, la información de perfil, el estado (suspendido, activo, deshabilitado), los grupos y los privilegios.
 
-- **Pista de auditoría**: ofrece visibilidad de las actividades del usuario, las actividades del administrador y la actividad de inicio de sesión.  
+- **Pista de auditoría**: ofrece visibilidad de las actividades del usuario, las actividades del administrador y la actividad de inicio de sesión.
 
-- **Análisis de datos**: examen de datos no estructurados mediante dos procesos, periódicamente (cada 12 horas) y en tiempo real (se desencadena cada vez que se detecta un cambio).  
+- **Análisis de datos**: examen de datos no estructurados mediante dos procesos, periódicamente (cada 12 horas) y en tiempo real (se desencadena cada vez que se detecta un cambio).
 
-- **Permisos de aplicación**: ofrece visibilidad de los tokens emitidos y sus permisos.  
+- **Permisos de aplicación**: ofrece visibilidad de los tokens emitidos y sus permisos.
 
-- **Gobernanza de cuenta**: permite suspender usuarios, revocar contraseñas, etc.  
+- **Gobernanza de cuenta**: permite suspender usuarios, revocar contraseñas, etc.
 
-- **Gobernanza de datos**: permite poner archivos en cuarentena, incluidos los de la Papelera, y sobrescribir archivos.  
+- **Gobernanza de datos**: permite poner archivos en cuarentena, incluidos los de la Papelera, y sobrescribir archivos.
 
-- **Regulación de permisos de aplicación**: permite quitar los tokens.  
+- **Regulación de permisos de aplicación**: permite quitar los tokens.
 
-En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades son compatibles con los conectores de aplicaciones:  
+En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades son compatibles con los conectores de aplicaciones:
 
 > [!div class="mx-tableFixed"]
-> 
+>
 > ||**Office 365**|**Box**|**Okta**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|**Webex**|**Laboral**|
 > |-|-|-|-|-|-|-|-|-|-|-|
 > |**Cuentas de lista**|✔|✔|✔|✔|✔|✔|✔|✔|✔|✔|
-> |**Grupo**|✔|✔|✔|✔|✔|✔|✔|✔|No disponible|No disponible|
-> |**Privilegios**|✔|✔|No es compatible con el proveedor|✔|✔|✔|✔||✔|No disponible|
+> |**Grupo**|✔|✔|✔|✔|✔|✔|✔|✔|No aplicable|No aplicable|
+> |**Privilegios**|✔|✔|No es compatible con el proveedor|✔|✔|✔|✔||✔|No aplicable|
 > |**Regulación de usuario**|✔|✔||✔|Próximamente|Próximamente|Próximamente||Próximamente|Próximamente|
 > |**Actividad de inicio de sesión**|✔|✔|✔|✔|✔|✔|✔|✔|✔|✔|
 > |**Actividad del usuario**|✔*|✔|✔|✔ - requiere Google Business o Enterprise|Parcial|Compatible con Salesforce Shield|✔|No disponible|✔|✔|
 > |**Actividad administrativa**|✔|✔|✔|✔|Parcial|✔|✔|✔|✔|✔|
 > |**Examen periódico de archivos**|✔|✔|No disponible|✔|✔|✔|✔|No disponible|||
-> |**Examen de archivos prácticamente en tiempo real**|✔|✔|No disponible|✔ - requiere Google Business o Enterprise|||Próximamente||✔||
+> |**Examen de archivos prácticamente en tiempo real**|✔|✔|No aplicable|✔ - requiere Google Business o Enterprise|||Próximamente||✔||
 > |**Control de uso compartido**|✔|✔|No disponible|✔|No disponible||✔||✔||
-> |**Cuarentena**|✔|✔|No disponible|Próximamente|||Próximamente||No disponible|No disponible|
-> |**Ver permisos de aplicación**|✔|No es compatible con el proveedor|No disponible|✔||✔|No es compatible con el proveedor||No disponible|No disponible|
-> |**Revocar permisos de aplicación**|✔||No disponible|✔||✔|No disponible||No disponible|No disponible|
-> |**Aplicación de etiquetas de Azure Information Protection**|✔|✔||✔|||||No disponible|No disponible|
+> |**Cuarentena**|✔|✔|No disponible|Próximamente|||Próximamente||No aplicable|No aplicable|
+> |**Ver permisos de aplicación**|✔|No es compatible con el proveedor|No disponible|✔||✔|No es compatible con el proveedor||No aplicable|No aplicable|
+> |**Revocar permisos de aplicación**|✔||No disponible|✔||✔|No aplicable||No aplicable|No aplicable|
+> |**Aplicación de etiquetas de Azure Information Protection**|✔|✔||✔|||||No aplicable|No aplicable|
 
-## <a name="prerequisites"></a>Requisitos previos  
+## <a name="prerequisites"></a>Requisitos previos
 
 - En el caso de algunas aplicaciones, puede que sea necesario agregar las direcciones IP a la lista de permitidos para habilitar Cloud App Security de modo que recopile registros y proporcione acceso a la consola de Cloud App Security. Para obtener más información, vea [Requisitos de red](network-requirements.md).
 
-- Se recomienda crear una cuenta de servicio de administración dedicada a Cloud App Security por cada aplicación que quiera conectar con la integración de la API de Cloud App Security.  
+- Se recomienda crear una cuenta de servicio de administración dedicada a Cloud App Security por cada aplicación que quiera conectar con la integración de la API de Cloud App Security.
 
-> [!NOTE]  
->  Para obtener actualizaciones cuando las direcciones URL y las direcciones IP cambien, suscríbase al RSS como se explica en: [Intervalos de direcciones IP y URL de Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).  
+> [!NOTE]
+> Para obtener actualizaciones cuando las direcciones URL y las direcciones IP cambien, suscríbase al RSS como se explica en: [Intervalos de direcciones IP y URL de Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).
 
-Para usar los conectores de aplicaciones, debe asegurarse de que tiene lo siguiente para cada aplicación específica:  
+Para usar los conectores de aplicaciones, debe asegurarse de que tiene lo siguiente para cada aplicación específica:
 
-| Aplicación        | Tipo de licencia                                                                        | Usuario                                                                                                                                                                                                  |
-|------------|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cuadro        | Enterprise                                                                          | Se recomienda encarecidamente que se conecte a Box como administrador. Si se conecta como coadministrador, la visibilidad de los datos será parcial. En caso de que se conecte como coadministrador, asegúrese de seleccionar todos los permisos. |
-| G Suite    | Se prefiere G Suite Business o Enterprise<br /><br /> G Suite Enterprise (como mínimo) | Superadministrador                                                                                                                                                                                           |
-| Office 365 |                                                                                     | Administrador global                                                                                                                                                                                          |
-| AWS        |                                                                                     | Usuario creado recientemente                                                                                                                                                                                    |
-| Dropbox    | Empresa/Enterprise                                                                 | Administración                                                                                                                                                                                                 |
-| Okta       | Enterprise (no versión de prueba)                                                              | Administración                                                                                                                                                                                                 |
-| Exchange   |                                                                                     | Administrador global                                                                                                                                                                                          |
-| ServiceNow | Eureka o versión posterior                                                                       | Rol de administrador + RestAPI                                                                                                                                                                                  |
-| Salesforce |                                                                                     | Administración                                                                                                                                                                                                 |
-| Webex      |                                                                                     | Administrador + administrador de cumplimiento                                                                                                                                                                              |
+| Aplicación | Tipo de licencia | Usuario |
+|-----|--------------|------|
+| Azure | | Administrador global |
+| AWS | | Usuario creado recientemente |
+| Cuadro | Enterprise | Se recomienda encarecidamente que se conecte a Box como administrador. Si se conecta como coadministrador, la visibilidad de los datos será parcial. En caso de que se conecte como coadministrador, asegúrese de seleccionar todos los permisos. |
+| Dropbox | Empresa/Enterprise | Administración |
+| G Suite | Se prefiere G Suite Business o Enterprise<br /><br /> G Suite Enterprise (como mínimo) | Superadministrador |
+| Office 365 | | Administrador global |
+| Okta | Enterprise (no versión de prueba) | Administración |
+| Salesforce | | Administración |
+| ServiceNow | Eureka o versión posterior | Rol de administrador + RestAPI |
+| Webex | | Administrador + administrador de cumplimiento |
 
-<!--| Workday      |                                                                                     | Admin                                                                                                                                                                              |-->
+<!--| Workday | | Admin |-->
 
-**ExpressRoute**
+### <a name="expressroute"></a>ExpressRoute
 
-Cloud App Security se ha implementado en Azure y está totalmente integrado con [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Todas las interacciones con las aplicaciones de Cloud App Security y el tráfico enviado a Cloud App Security, incluida la carga de registros de detección, se enrutan a través del **emparejamiento público** de ExpressRoute para mejorar la latencia, el rendimiento y la seguridad. No hay ningún paso de configuración necesario en el lado cliente.  
-Para obtener más información sobre el emparejamiento público, vea [Circuitos ExpressRoute y dominios de enrutamiento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
+Cloud App Security se ha implementado en Azure y está totalmente integrado con [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Todas las interacciones con las aplicaciones de Cloud App Security y el tráfico enviado a Cloud App Security, incluida la carga de registros de detección, se enrutan a través del **emparejamiento público** de ExpressRoute para mejorar la latencia, el rendimiento y la seguridad. No hay ningún paso de configuración necesario en el lado cliente.
+Para obtener más información sobre el emparejamiento público, vea [Circuitos ExpressRoute y dominios de enrutamiento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).
 
 ## <a name="next-steps"></a>Pasos siguientes
- 
-[Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
+
+[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)
 
 ## <a name="check-out-this-video"></a>Eche un vistazo a este vídeo.
 
-[Microsoft Cloud App Security: API de REST y tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)  
+[Microsoft Cloud App Security: API de REST y tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)
