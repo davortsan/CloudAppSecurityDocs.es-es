@@ -81,7 +81,7 @@ Las siguientes acciones de gobernanza pueden realizarse para aplicaciones conect
    ![alertas de crear directiva](./media/policy_create-alerts.png "alertas de crear directiva") 
 
 
-## <a name="activity-governance-actions"></a>Acciones de control de actividades 
+## <a name="activity-governance-actions"></a>Acciones de gobernanza de actividades 
 
 - **Notificaciones**
 
@@ -120,7 +120,7 @@ Después de crear varias directivas, puede darse el caso de que sus acciones de 
 El registro de gobernanza proporciona un registro del estado de cada tarea que Cloud App Security deba ejecutar, incluidas las tareas manuales y automáticas. Entre estas tareas se incluyen las definidas en las directivas, las acciones de gobernanza establecidas en los archivos y los usuarios, y cualquier otra acción que haya determinado que debe realizar Cloud App Security. El registro de gobernanza también proporciona información sobre el resultado correcto o incorrecto de estas acciones. Puede volver a intentar o revertir algunas de las acciones de gobernanza en el registro de gobernanza. 
 
 En la tabla siguiente se muestra una lista completa de las acciones que Cloud App Security permite realizar. Estas acciones se habilitarán en varios lugares de la consola, como se describe en la columna **Ubicación**. Cada acción de gobernanza realizada se incluye en el registro de gobernanza.
-Para obtener información sobre cómo se tratan las acciones de control cuando hay conflictos de directivas, vea [Policy Conflicts](control-cloud-apps-with-policies.md) (Conflictos de directivas).
+Para obtener información sobre cómo se tratan las acciones de gobernanza cuando hay conflictos de directivas, vea [Policy Conflicts](control-cloud-apps-with-policies.md) (Conflictos de directivas).
 
 
 |<strong>Ubicación</strong> | <strong>Tipo de objeto de destino</strong> | <strong>Acción de gobernanza</strong> |<strong>Descripción</strong>| <strong>Conectores relacionados</strong>|

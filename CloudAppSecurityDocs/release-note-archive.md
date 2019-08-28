@@ -87,7 +87,7 @@ Publicado el 29 de octubre de 2017
   
   Para más información, vea [Proteger las aplicaciones con el control de la aplicación de acceso condicional](proxy-intro-aad.md).
 
-- Implementaremos gradualmente la capacidad para aplicar filtros a partir de nombres de actividad de servicio específicos. Este nuevo filtro Tipo de actividad es más granular y le permite supervisar actividades de la aplicación concretas, en lugar de los tipos de actividad más generales habituales. Por ejemplo, antes se podía filtrar por el **Comando Ejecutar**, mientras que ahora se puede filtrar por cmdlets de EXO específicos. El nombre de actividad también se puede ver en el cajón de actividades, en **Tipo (en la aplicación)**. Esta capacidad acabará reemplazando al filtro Tipo de actividad.  
+- Implementaremos gradualmente la capacidad para aplicar filtros a partir de nombres de actividad de servicio específicos. Este nuevo filtro Tipo de actividad es más granular y le permite supervisar actividades de la aplicación concretas, en lugar de los tipos de actividad más generales habituales. Por ejemplo, antes se podía filtrar por el **Comando Ejecutar**, mientras que ahora se puede filtrar por cmdlets de EXO específicos. El nombre de actividad también se puede ver en el cajón de actividades, en **Tipo (en la aplicación)** . Esta capacidad acabará reemplazando al filtro Tipo de actividad.  
 
 - Cloud Discovery ya admite Cisco ASA con FirePOWER. 
 
@@ -321,7 +321,7 @@ Fecha de publicación: 20 de marzo de 2017
  
 **Compatibilidad adicional de Salesforce:**
 
-- Ahora puede suspender y quitar la suspensión de los usuarios de Salesforce en Cloud App Security. Esta acción puede realizarse en la pestaña **Cuentas** del conector de Salesforce. Haga clic en el engranaje al final de la fila de un usuario específico y seleccione **Suspender** o **Anular suspensión**. La suspensión y la anulación de la suspensión también se pueden aplicar como una acción de gobernanza como parte de una directiva. Todas las actividades de suspensión y de anulación de la suspensión realizadas en Cloud App Security se almacenarán en el [registro de control](governance-actions.md). 
+- Ahora puede suspender y quitar la suspensión de los usuarios de Salesforce en Cloud App Security. Esta acción puede realizarse en la pestaña **Cuentas** del conector de Salesforce. Haga clic en el engranaje al final de la fila de un usuario específico y seleccione **Suspender** o **Anular suspensión**. La suspensión y la anulación de la suspensión también se pueden aplicar como una acción de gobernanza como parte de una directiva. Todas las actividades de suspensión y de anulación de la suspensión realizadas en Cloud App Security se almacenarán en el [registro de gobernanza](governance-actions.md). 
 - Visibilidad mejorada del uso compartido de contenido de Salesforce: ahora puede ver qué archivos se comparten con quién, incluidos los archivos compartidos públicamente, compartidos con grupos y compartidos con todo el dominio de Salesforce. La visibilidad mejorada se extenderá retroactivamente a aplicaciones de Salesforce conectadas nuevas y actuales. Puede que esta información tarde en actualizarse la primera vez.
 - Mejoramos la cobertura de los siguientes eventos de Salesforce y los separamos de la actividad **Administrar usuarios**: 
   - Editar permisos
@@ -409,7 +409,7 @@ Fecha de publicación 25 de diciembre de 2016
   - Juniper SRX
   - Palo Alto
   - Websense
-- Se ha agregado una nueva acción de control de archivos que le permite forzar a un archivo heredar permisos del elemento principal, eliminando así los permisos únicos que se hayan configurado para el archivo o carpeta. Esta acción de control de archivos le permite cambiar los permisos de la carpeta o el archivo para que se hereden de la carpeta principal. 
+- Se ha agregado una nueva acción de gobernanza de archivos que le permite forzar a un archivo heredar permisos del elemento principal, eliminando así los permisos únicos que se hayan configurado para el archivo o carpeta. Esta acción de gobernanza de archivos le permite cambiar los permisos de la carpeta o el archivo para que se hereden de la carpeta principal. 
 - Se ha agregado un nuevo grupo de usuarios con el nombre Externos. Este es un grupo de usuarios predeterminado configurado previamente por Cloud App Security para incluir todos los usuarios que no forman parte de los dominios internos. Puede usar este grupo de usuarios como filtro. Por ejemplo, puede buscar actividades realizadas por los usuarios externos.
 - La característica Cloud Discovery ahora admite dispositivos Sophos Cyberoam.
  

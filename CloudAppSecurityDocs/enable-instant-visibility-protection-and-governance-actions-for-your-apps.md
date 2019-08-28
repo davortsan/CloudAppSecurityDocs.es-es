@@ -73,7 +73,7 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
 > |**Cuentas de lista**|✔|✔|✔|✔|✔|✔|✔|✔|✔|✔|
 > |**Grupo**|✔|✔|✔|✔|✔|✔|✔|✔|No aplicable|No aplicable|
 > |**Privilegios**|✔|✔|No es compatible con el proveedor|✔|✔|✔|✔||✔|No aplicable|
-> |**Regulación de usuario**|✔|✔||✔|Próximamente|Próximamente|Próximamente||Próximamente|Próximamente|
+> |**Gobernanza de usuario**|✔|✔||✔|Próximamente|Próximamente|Próximamente||Próximamente|Próximamente|
 > |**Actividad de inicio de sesión**|✔|✔|✔|✔|✔|✔|✔|✔|✔|✔|
 > |**Actividad del usuario**|✔*|✔|✔|✔ - requiere Google Business o Enterprise|Parcial|Compatible con Salesforce Shield|✔|No disponible|✔|✔|
 > |**Actividad administrativa**|✔|✔|✔|✔|Parcial|✔|✔|✔|✔|✔|

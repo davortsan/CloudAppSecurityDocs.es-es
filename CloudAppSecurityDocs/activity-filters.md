@@ -77,7 +77,7 @@ Para ver más información sobre cada actividad, haga clic en la misma actividad
  
 ![cajón de actividades](./media/activity-drawer.png "cajón de actividades")  
   
-Para obtener una lista de las acciones de control disponibles, vea [Acciones de control de actividades](governance-actions.md#activity-governance-actions).
+Para obtener una lista de las acciones de gobernanza disponibles, vea [Acciones de control de actividades](governance-actions.md#activity-governance-actions).
 
 #### <a name="user-insights"></a>Información de usuario
 

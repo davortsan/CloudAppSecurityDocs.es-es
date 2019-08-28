@@ -39,7 +39,7 @@ De forma predeterminada, los siguientes roles de administrador de Office 365 y [
 - **Lector de seguridad**: tiene permisos de solo lectura y puede administrar alertas. El lector de seguridad no puede realizar las siguientes acciones:
 
   - Crear directivas o editar y cambiar las existentes
-  - Desempeñar acciones de control
+  - Desempeñar acciones de gobernanza
   - Cargar registros de detección
   - Prohibición o aprobación de aplicaciones de terceros
   - Obtener acceso a la página de configuración del intervalo de direcciones IP ni verla
