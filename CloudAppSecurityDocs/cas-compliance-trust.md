@@ -1,26 +1,20 @@
 ---
-title: Confianza, privacidad, seguridad de datos y cumplimiento de Cloud App Security
+title: Confianza, privacidad, seguridad de datos, confianza y cumplimiento de Cloud App Security | Microsoft Docs
 description: En este artículo se describe la oferta de cumplimiento, el centro de confianza, la privacidad y la seguridad de datos de Cloud App Security.
-keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 03/01/2019
-ms.topic: overview
-ms.collection: M365-security-compliance
-ms.prod: ''
+author: ShlomoSagir-MS
+ms.author: shsagir
 ms.service: cloud-app-security
-ms.technology: ''
-ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
-ms.reviewer: reutam
-ms.suite: ems
+ms.topic: overview
+ms.date: 8/21/2019
+ms.collection: M365-security-compliance
 ms.custom: seodec18
-ms.openlocfilehash: 0e85d167300c3102db74092cd4f52afe9c24a21e
-ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
+ms.suite: ems
+ms.openlocfilehash: be012da7233c021751d14f23d32d59c621bbf837
+ms.sourcegitcommit: 9b898458715af3b4056419c1e0df2dc0dc7385fa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2019
-ms.locfileid: "67333596"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69670905"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Seguridad y privacidad de datos de Microsoft Cloud App Security
 
@@ -41,7 +35,6 @@ Para ayudar a las organizaciones a cumplir con los requisitos nacionales, region
 ### <a name="compliance-framework-and-offerings"></a>Ofertas y marco de cumplimiento
 
 Microsoft Cloud App Security cumple muchos estándares de cumplimiento internacionales y específicos del sector, entre otros:
-
 
 | |Title|Descripción|
 |----|----|----|
@@ -64,6 +57,7 @@ Para obtener más información, vaya a [Ofertas de Microsoft Compliance](https:/
 ## <a name="privacy"></a>Privacidad
 
 ### <a name="youre-the-owner-of-your-data"></a>Usted tiene la propiedad de los datos
+
 - En Microsoft Cloud App Security, los administradores pueden ver los datos personales identificables almacenados en el servicio del portal con la barra de búsqueda.
 - Los administradores pueden buscar los metadatos de un usuario específico o su actividad. Al hacer clic en una entidad se abre [**Usuarios y cuentas**](accounts.md). La página **Usuarios y cuentas** proporciona detalles completos acerca de la entidad extraídos de aplicaciones en la nube conectadas. También presenta el historial de la actividad de un usuario y sus alertas de seguridad.
 
@@ -82,18 +76,21 @@ Para obtener más información, vaya a [Ofertas de Microsoft Compliance](https:/
 - Los controles de privacidad le ayudan a configurar qué usuarios de la organización tienen acceso al servicio y a qué pueden tener acceso.
 
 ## <a name="updating-personal-data"></a>Actualización de datos personales
-Los datos personales acerca de los usuarios se derivan del objeto del usuario en las aplicaciones de SaaS utilizadas. Por este motivo, cualquier cambio realizado en el perfil de usuario en estas aplicaciones se refleja en Microsoft Cloud App Security.
 
+Los datos personales acerca de los usuarios se derivan del objeto del usuario en las aplicaciones de SaaS utilizadas. Por este motivo, cualquier cambio realizado en el perfil de usuario en estas aplicaciones se refleja en Microsoft Cloud App Security.
 
 ## <a name="data-location"></a>Ubicación de los datos
 
-- Microsoft Cloud App Security funciona actualmente en centros de datos en los Estados Unidos y Europa (cada uno es una "geoárea"). Su cuenta de inquilino se creará en una geoárea en función del país que eligió al suscribirse. En concreto, los datos se almacenarán en un centro de datos en la geoárea más cercana a esa ubicación.
+Microsoft Cloud App Security funciona actualmente en centros de datos en los Estados Unidos y Europa (cada uno es una "geoárea"). Su cuenta de inquilino se creará en una geoárea en función del país que eligió al suscribirse. En concreto, los datos se almacenarán en un centro de datos en la geoárea más cercana a esa ubicación.
+
+> [!NOTE]
+> Cloud App Security aprovecha los Centros de datos de Azure de todo el mundo para proporcionar un rendimiento optimizado a través de la geolocalización. Esto significa que la sesión de un usuario se puede hospedar fuera de una región determinada, dependiendo de los patrones de tráfico y su ubicación. Sin embargo, para proteger su privacidad, no se almacenan datos de la sesión en estos centros de datos.
 
 [Más información sobre privacidad](https://www.microsoft.com/en-us/trustcenter/privacy)
 
 ## <a name="transparency"></a>Transparencia
 
-Microsoft proporciona transparencia sobre sus prácticas: 
+Microsoft proporciona transparencia sobre sus prácticas:
 
 - Uso compartido con usted donde se almacenan los datos.
 - Afirmar que los datos se usan solo para ofrecer servicios acordados.
@@ -119,12 +116,14 @@ Cloud App Security conserva los datos de la manera siguiente:
 
 Para obtener más información sobre las prácticas de datos de Microsoft, vea el apartado  [Términos de Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
-[Más información sobre transparencia](https://www.microsoft.com/en-us/trustcenter/about/transparency) 
+[Más información sobre transparencia](https://www.microsoft.com/en-us/trustcenter/about/transparency)
 
 ### <a name="deleting-personal-data"></a>Eliminación de los datos personales
+
 Una vez que se eliminan datos de una aplicación en la nube conectada, Microsoft Cloud App Security eliminará automáticamente la copia de los datos transcurrido un plazo de 2 años.
 
 ### <a name="exporting-personal-data"></a>Exportación de datos personales
+
 Microsoft Cloud App Security proporciona la posibilidad de [exportar](activity-filters.md#export) a CSV toda la actividad del usuario y la información de alertas de seguridad.
 
 ## <a name="security"></a>Seguridad
@@ -132,6 +131,9 @@ Microsoft Cloud App Security proporciona la posibilidad de [exportar](activity-f
 ### <a name="encryption"></a>Cifrado
 
 Microsoft usa tecnología de cifrado para proteger los datos mientras están en reposo en una base de datos de Microsoft y mientras se desplazan a los dispositivos de usuario y los centros de datos de Cloud App Security.
+
+> [!NOTE]
+> Cloud App Security aprovecha los protocolos de Seguridad de la capa de transporte (TLS) 1.2+ para proporcionar el mejor cifrado de la clase. No se podrá obtener acceso a las aplicaciones de cliente nativo y los exploradores que no admitan TLS 1.2+ al configurarse con el control de sesión. Sin embargo, las aplicaciones SaaS que usen TLS 1.1 o versiones anteriores aparecerán en el explorador como usuarias de TLS 1.2+ al configurarse con Cloud App Security.
 
 ### <a name="identity-and-access-management"></a>Administración de identidad y acceso
 
@@ -147,7 +149,7 @@ Microsoft Cloud App Security es compatible con el control de acceso basado en ro
 
 Microsoft Cloud App Security le permite establecer el ámbito de su implementación. Establecer el ámbito le permite controlar solo grupos específicos con Cloud App Security o excluir grupos concretos de la regulación de Cloud App Security. Para obtener más información, consulte [Scoped deployment](scoped-deployment.md) (Implementación con ámbito).
 
-### <a name="anonymization"></a>Anonimización 
+### <a name="anonymization"></a>Anonimización
 
 Puede conservar el anonimato de los informes de **Cloud Discovery**. Una vez cargados los archivos de registro en **Microsoft** Cloud App Security, toda la información de nombre de usuario se reemplaza por nombres de usuario cifrados. En el caso de investigaciones de seguridad concretas, puede resolver el nombre de usuario real. Los datos privados se cifran mediante AES-128 con una clave dedicada por inquilino. [Para obtener más información](https://docs.microsoft.com/cloud-app-security/cloud-discovery-anonymizer).
 
@@ -160,6 +162,3 @@ Puede conservar el anonimato de los informes de **Cloud Discovery**. Una vez car
 [Suscripción a Cloud App Security](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1)
 
 Obtenga una evaluación gratuita de Cloud App Security y vea cómo cumple con los desafíos de su negocio.
-
-
-   
