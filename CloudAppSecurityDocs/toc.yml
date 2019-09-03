@@ -35,7 +35,7 @@
       href: use-case-admin-quarantine.md
     - name: Aplicación automática de etiquetas de Azure Information Protection
       href: use-case-information-protection.md
-    - name: Automatización de alertas para proteger puntos de conexión
+    - name: Ampliación de la gobernanza a la corrección de puntos de conexión
       href: tutorial-flow.md
 - name: Conceptos
   items:
@@ -244,6 +244,10 @@
           href: troubleshoot-policies.md
 - name: Recursos
   items:
+    - name: Vea nuestros seminarios web
+      href: webinars.md
+    - name: Lea nuestros libros electrónicos
+      href: e-books.md
     - name: Archivo de notas de la versión
       href: release-note-archive.md
     - name: Hoja de datos de licencias
