@@ -2,25 +2,23 @@
 title: Diferencias en la funcionalidad de detección de Cloud App Security y Azure AD
 description: En este artículo se explican las diferencias entre las funciones de detección de Microsoft Cloud App Security y Azure AD.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 03/25/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 8/29/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: ''
-ms.assetid: 4422e847-9a87-4d60-ad55-346ea50a768c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ccae964e3d8dc264f5e6a8f1165c990a50320e9c
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 811bd97ea687d89032fed1e685e40bcf044d2564
+ms.sourcegitcommit: 36b330b0ac03ccc0ac5b04dbd0f65106b033bd2b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567756"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70134668"
 ---
 # <a name="what-are-the-differences-in-discovery-capabilities-for-azure-active-directory-and-microsoft-cloud-app-security"></a>¿En qué se diferencian las funciones de detección de Azure Active Directory y Microsoft Cloud App Security?
 
@@ -30,9 +28,9 @@ En este artículo se explican las diferencias entre las funciones de detección 
 
 Para información sobre las licencias, consulte la [hoja de datos de licencias de Microsoft Cloud App Security](https://aka.ms/mcaslicensing).
 
-## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security 
+## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
-Microsoft Cloud App Security es una solución completa entre SaaS que proporciona visibilidad detallada, controles de datos seguros y protección contra amenazas mejorada a las aplicaciones en la nube. Cloud Discovery es una de las características de Cloud App Security, que le permite obtener visibilidad de Shadow IT al detectar aplicaciones en la nube en uso. 
+Microsoft Cloud App Security es una solución completa entre SaaS que proporciona visibilidad detallada, controles de datos seguros y protección contra amenazas mejorada a las aplicaciones en la nube. Cloud Discovery es una de las características de Cloud App Security, que le permite obtener visibilidad de Shadow IT al detectar aplicaciones en la nube en uso.
 
 ## <a name="enhanced-cloud-app-discovery-in-azure-active-directory"></a>Cloud App Discovery mejorado en Azure Active Directory
 
@@ -52,9 +50,19 @@ La siguiente tabla compara las capacidades de detección de Microsoft Cloud App 
 ||Análisis de uso en la nube por aplicación, usuario y dirección IP|Sí|Sí|
 ||Informes y análisis en curso|Sí|Sí|
 ||Detección de anomalías de aplicaciones detectadas|Sí||
+|Protección de la información|Compatibilidad con la prevención de pérdida de datos (DLP)|Control de uso compartido de datos y DLP entre SaaS||
+||Permisos de la aplicación y capacidad de revocar el acceso|Sí||
+||Configuración y cumplimiento de directivas|Sí||
+||Integración con Azure Information Protection |Sí||
+||Integración con soluciones DLP de terceros|Sí||
+|Detección de amenazas|Detección de anomalías y análisis de comportamiento|Para aplicaciones entre SaaS||
+||Corrección manual y automática de alertas|Sí||
+||Conector SIEM|Sí. Alertas y registros de actividad para aplicaciones entre SaaS.||
+||Integración con Microsoft Intelligent Security Graph|Sí||
+||Directivas de actividad|Sí||
 
-## <a name="next-steps"></a>Pasos siguientes 
+## <a name="next-steps"></a>Pasos siguientes
 
-Consulte los aspectos básicos en [Introducción a Cloud App Security](getting-started-with-cloud-app-security.md).    
+Consulte los aspectos básicos en [Introducción a Cloud App Security](getting-started-with-cloud-app-security.md).
 
-[Los clientes Premier también pueden crear una nueva solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)   
+[Los clientes Premier también pueden crear una nueva solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)

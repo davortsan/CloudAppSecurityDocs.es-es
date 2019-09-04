@@ -4,19 +4,19 @@ description: Este artículo se actualiza con frecuencia para informarle de las n
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 8/18/2019
+ms.date: 9/1/2019
 ms.topic: overview
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 92caf80bb63f3285cfff3761e274ee6eb76b1041
-ms.sourcegitcommit: 850bf268bcb9fef0fe4870daa7341211d02776ad
+ms.openlocfilehash: 6fe0f633b55a718b9a4b2be8fef2de4be87cd0ca
+ms.sourcegitcommit: 0b78b13bc163bfcd6f2ae13b1f57acee05e5b423
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69577142"
+ms.lasthandoff: 09/01/2019
+ms.locfileid: "70209037"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
@@ -25,6 +25,28 @@ ms.locfileid: "69577142"
 Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security.
 
 Fuente RSS: Reciba una notificación cuando se actualice esta página. Para ello, copie y pegue la siguiente dirección URL en su lector de fuentes: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-157"></a>Cloud App Security, versión 157
+
+Publicada el 1 de septiembre de 2019
+
+- **Aviso: Fin de la compatibilidad con TLS 1.0 y 1.1 el 8 de septiembre**<br>
+Microsoft está moviendo todos sus servicios en línea a la Seguridad de la capa de transporte (TLS) 1.2+ para proporcionar el mejor cifrado de la clase. Por lo tanto, a partir del 8 de septiembre de 2019 Cloud App Security dejará de ser compatible con TLS 1.0 y 1.1, y no se admitirán las conexiones que usen estos protocolos. Para más información sobre cómo le afecta el cambio, consulte [nuestra entrada de blog](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/End-of-support-for-TLS-1-0-and-1-1-in-Microsoft-Cloud-App/ba-p/770507).
+
+- **Nueva detección: Uso compartido sospechoso en Microsoft Power BI (versión preliminar)**<br>
+La nueva directiva del informe de uso compartido sospechoso de Power BI está disponible de forma predeterminada y se habilita automáticamente para enviarle un aviso cuando un informe de Power BI que parezca confidencial se comparta de forma sospechosa fuera de su organización.
+
+- **Nueva característica de exportación para la auditoría de aplicaciones de OAuth**<br>
+Cloud App Security audita todas las actividades de autorización OAuth para ofrecerle funciones completas de supervisión e investigación de las actividades realizadas. Ahora también puede exportar los detalles de los usuarios que hayan autorizado una aplicación de OAuth específica, lo que le proporciona información adicional sobre los usuarios que podrá usar para un análisis más detallado.
+
+- **Auditoría mejorada de eventos de Okta**<br>
+Cloud App Security ahora admite la nueva API System Log publicada por Okta. Para obtener más información sobre cómo conectarse a Okta, vea [Conectar Okta con Microsoft Cloud App Security](connect-okta-to-microsoft-cloud-app-security.md).
+
+- **Conector de Workday (versión preliminar)**<br>
+Hay disponible un nuevo conector de aplicación para Workday. Ahora puede conectar Workday a Cloud App Security para supervisar actividades y proteger a sus usuarios y actividades. Para obtener más información, vea [Conexión de WorkDay a Microsoft Cloud App Security](connect-workday-to-microsoft-cloud-app-security.md).
+
+- **Evaluación mejorada para el factor de riesgo "Directiva de contraseñas"**<br>
+El Catálogo de aplicaciones en la nube ahora ofrece una evaluación granular para el factor de riesgo **Directiva de contraseñas**. Al mantener el mouse sobre el icono de información, se muestra un desglose de las directivas específicas exigidas por la aplicación.
 
 ## <a name="cloud-app-security-release-156"></a>Notas de la versión 156 de Cloud App Security
 
@@ -41,9 +63,6 @@ Cloud App Security ofrece la posibilidad de identificar a usuarios de riesgo en 
 
 - **Mejoras de la directiva de actividad**<br>
 Ahora puede crear alertas de directiva de actividad basadas en objetos de actividad. Por ejemplo, esta capacidad permite crear alertas sobre los cambios en los roles administrativos de Azure Active Directory. Para obtener más información sobre los objetos de actividad, vea [Filtros de actividad](activity-filters-queries.md#activity-filters).
-
-<!-- **Workday app connector available (Preview)**<br>
-A new app connector is now available for Workday. You can now connect Microsoft Cloud App Security to Workday to monitor activities and protect its users. For more information, see [Connect Workday](connect-workday-to-microsoft-cloud-app-security.md).-->
 
 ## <a name="cloud-app-security-release-155"></a>Notas de la versión 155 de Cloud App Security
 
