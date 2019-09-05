@@ -125,6 +125,8 @@
           href: connect-servicenow-to-microsoft-cloud-app-security.md
         - name: Conexión de WebEx
           href: connect-webex-to-microsoft-cloud-app-security.md
+        - name: Conexión de Workday
+          href: connect-workday-to-microsoft-cloud-app-security.md
     - name: Aplicaciones de implementación del Control de aplicaciones de acceso condicional
       items:
         - name: Implementación del Control de aplicaciones de acceso condicional para aplicaciones destacadas
