@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 9/1/2019
+ms.date: 9/5/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1b467600661209d299ca5f5f4079a572aa3016c2
-ms.sourcegitcommit: 0b78b13bc163bfcd6f2ae13b1f57acee05e5b423
+ms.openlocfilehash: fefff041971b65d27e4a3409034af0569894dc04
+ms.sourcegitcommit: 24c0dd16c7e8212f614fb6fd66c9f18ce75c0b45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2019
-ms.locfileid: "70208902"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70373126"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security"></a>Conexión de WorkDay a Microsoft Cloud App Security
 
@@ -29,13 +29,15 @@ En este artículo se proporcionan instrucciones para conectar Microsoft Cloud Ap
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-La cuenta de WorkDay usada para conectarse a Cloud App Security debe ser miembro de un grupo de seguridad que tenga habilitados los siguientes dominios:
+- La cuenta de WorkDay usada para conectarse a Cloud App Security debe ser miembro de un grupo de seguridad que tenga habilitados los siguientes dominios:
 
-- Administración de seguridad del sistema
-- Sistema-auditoría del sistema
-- Personalización de datos de trabajo: Informes de trabajo público
+  - Administración de seguridad del sistema
+  - Sistema-auditoría del sistema
+  - Personalización de datos de trabajo: Informes de trabajo público
 
-Se recomienda usar un usuario del sistema de integración de WorkDay.
+  Se recomienda usar un usuario del sistema de integración de WorkDay.
+
+- Si la implementación de WorkDay administra los intervalos de direcciones IP, debe incluir en la lista blanca todas Cloud App Security direcciones IP. Para ver la lista de direcciones IP, consulte [requisitos de red: conector de aplicaciones](network-requirements.md#app-connector).
 
 ## <a name="how-to-connect-workday-to-cloud-app-security-using-oauth"></a>Cómo conectar WorkDay a Cloud App Security mediante OAuth
 
@@ -51,7 +53,7 @@ Se recomienda usar un usuario del sistema de integración de WorkDay.
 
 1. En la página **registrar el cliente de API** , rellene la información siguiente y, a continuación, haga clic en **Aceptar**.
 
-    | Nombre del campo | Valor |
+    | Nombre del campo | Value |
     | ---- | ---- |
     | Nombre de cliente | Microsoft Cloud App Security |
     | Tipo de concesión de cliente | Concesión de código de autorización |
