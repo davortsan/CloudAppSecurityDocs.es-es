@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 9/5/2019
+ms.date: 9/8/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fefff041971b65d27e4a3409034af0569894dc04
-ms.sourcegitcommit: 24c0dd16c7e8212f614fb6fd66c9f18ce75c0b45
+ms.openlocfilehash: d22d5e20ca3ad8f8484fb22f16b595c91d27aa22
+ms.sourcegitcommit: 5929f232232f2c3cba460680d959b121dff1aa3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70373126"
+ms.lasthandoff: 09/08/2019
+ms.locfileid: "70803045"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security"></a>Conexión de WorkDay a Microsoft Cloud App Security
 
@@ -29,19 +29,22 @@ En este artículo se proporcionan instrucciones para conectar Microsoft Cloud Ap
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- La cuenta de WorkDay usada para conectarse a Cloud App Security debe ser miembro de un grupo de seguridad que tenga habilitados los siguientes dominios:
+La cuenta de WorkDay usada para conectarse a Cloud App Security debe ser miembro de un grupo de seguridad (nuevo o existente). El grupo de seguridad debe tener los siguientes permisos seleccionados para los siguientes dominios:
 
-  - Administración de seguridad del sistema
-  - Sistema-auditoría del sistema
-  - Personalización de datos de trabajo: Informes de trabajo público
+| Área funcional | Dominio | Subdominio | Permisos de informe/tarea | Permisos de integración |
+| --- | --- | --- | --- | --- |
+| System (Sistema) | Configurar: Configuración de inquilinos: General | Configurar: Configuración de inquilinos: seguridad | Ver, modificar | Get, Put |
+| System (Sistema) | Administración de seguridad | | Ver, modificar | Get, Put |
+| System (Sistema) | Auditoría del sistema | | Vista | Get |
+| Personal | Datos de trabajo: Personal | Datos de trabajo: Informes de trabajo público | Vista | Get |
 
-  Se recomienda usar un usuario del sistema de integración de WorkDay.
+Para obtener más información sobre la configuración de usuarios, grupos de seguridad y permisos de la integración de WorkDay, consulte los pasos del 1 al 4 de la guía de [concesión de acceso a la integración o el extremo externo a WorkDay](https://go.microsoft.com/fwlink/?linkid=2103212) (accesible con las credenciales de la comunidad o la documentación de WorkDay).
 
-- Si la implementación de WorkDay administra los intervalos de direcciones IP, debe incluir en la lista blanca todas Cloud App Security direcciones IP. Para ver la lista de direcciones IP, consulte [requisitos de red: conector de aplicaciones](network-requirements.md#app-connector).
+Se recomienda usar un usuario del sistema de integración de WorkDay.
 
 ## <a name="how-to-connect-workday-to-cloud-app-security-using-oauth"></a>Cómo conectar WorkDay a Cloud App Security mediante OAuth
 
-1. Inicie sesión con una cuenta de administrador en su cuenta de WorkDay.
+1. Inicie sesión en su cuenta de WorkDay con un usuario administrador que sea miembro del grupo de seguridad mencionado en los requisitos previos.
 
 1. Busque "Editar configuración de inquilino – sistema" y, en **registro de actividad de usuario**, seleccione **Habilitar registro de actividad de usuario**.
 
@@ -53,7 +56,7 @@ En este artículo se proporcionan instrucciones para conectar Microsoft Cloud Ap
 
 1. En la página **registrar el cliente de API** , rellene la información siguiente y, a continuación, haga clic en **Aceptar**.
 
-    | Nombre del campo | Value |
+    | Nombre del campo | Valor |
     | ---- | ---- |
     | Nombre de cliente | Microsoft Cloud App Security |
     | Tipo de concesión de cliente | Concesión de código de autorización |
