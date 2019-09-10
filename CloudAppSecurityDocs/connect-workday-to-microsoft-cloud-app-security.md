@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d22d5e20ca3ad8f8484fb22f16b595c91d27aa22
-ms.sourcegitcommit: 5929f232232f2c3cba460680d959b121dff1aa3a
+ms.openlocfilehash: 0530cfa93edd96bf805df3ac62b900b50fa5978b
+ms.sourcegitcommit: 6105add524e33adaa389bcf0f5baf4f1fdfd7f7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2019
-ms.locfileid: "70803045"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70804890"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security"></a>Conexión de WorkDay a Microsoft Cloud App Security
 
@@ -44,7 +44,7 @@ Se recomienda usar un usuario del sistema de integración de WorkDay.
 
 ## <a name="how-to-connect-workday-to-cloud-app-security-using-oauth"></a>Cómo conectar WorkDay a Cloud App Security mediante OAuth
 
-1. Inicie sesión en su cuenta de WorkDay con un usuario administrador que sea miembro del grupo de seguridad mencionado en los requisitos previos.
+1. Inicie sesión en WorkDay con una cuenta que sea miembro del grupo de seguridad mencionado en los requisitos previos.
 
 1. Busque "Editar configuración de inquilino – sistema" y, en **registro de actividad de usuario**, seleccione **Habilitar registro de actividad de usuario**.
 
