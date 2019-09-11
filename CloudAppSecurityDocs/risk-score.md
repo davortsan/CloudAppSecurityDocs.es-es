@@ -2,9 +2,9 @@
 title: 'Trabajo con la puntuación de riesgo: Cloud App Security | Microsoft Docs'
 description: En este artículo se proporcionan instrucciones sobre cómo usar y personalizar la puntuación de riesgo de la aplicación de Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
 ms.date: 1/27/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,14 +15,14 @@ ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 48488ef57ee48791eca3a05a061154d51777c577
-ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
+ms.openlocfilehash: 1edaddb80719527640308679d45f4b76b0e604bc
+ms.sourcegitcommit: 78693a57e608624cd5c9ad4d0a47f4d5be515858
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2019
-ms.locfileid: "67333650"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70862261"
 ---
-# <a name="working-with-the-risk-score"></a>Trabajo con la puntuación de riesgo
+# <a name="working-with-app-risk-scores"></a>Trabajo con puntuaciones de riesgo de la aplicación
 
 *Se aplica a: Microsoft Cloud App Security*
 
