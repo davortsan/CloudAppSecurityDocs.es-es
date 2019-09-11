@@ -5,21 +5,27 @@ author: ShlomoSagir-MS
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: tutorial
-ms.date: 8/22/2019
-ms.openlocfilehash: 8aad8262baf985c25b4443d90c1e6ac2ba3b4725
-ms.sourcegitcommit: 33257c7a1017ee0a4ff8f4f8cc7ef018c9be00e5
+ms.date: 9/8/2019
+ms.openlocfilehash: ab9ab1a0e616ec25f7316691e6f747b20226cc10
+ms.sourcegitcommit: e1b3e3b45d39e46734e3a994bd8d0d1459be585a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2019
-ms.locfileid: "70206538"
+ms.lasthandoff: 09/08/2019
+ms.locfileid: "70800871"
 ---
-# <a name="tutorial-extending-governance-to-endpoint-remediation"></a>Tutorial: Ampliación de la gobernanza a la corrección de puntos de conexión
+# <a name="tutorial-extend-governance-to-endpoint-remediation"></a>Tutorial: Ampliación de la gobernanza a la corrección de puntos de conexión
 
 Cloud App Security ofrece opciones de gobernanza predefinidas para directivas (por ejemplo, para suspender un usuario o convertir un archivo en privado). Mediante la integración nativa con Microsoft Flow, puede usar un amplio ecosistema de conectores de software como servicio (SaaS) para crear flujos de trabajo con el fin de automatizar procesos, incluidos procesos de corrección.
 
 Por ejemplo, al detectar una posible amenaza de malware, puede usar flujos de trabajo para iniciar acciones de corrección de Advanced Threat Protection (ATP) de Microsoft Defender, como la ejecución de un examen antivirus o aislar un punto de conexión.
 
 En este tutorial obtendrá información sobre cómo configurar una acción de gobernanza de directivas para usar un flujo de trabajo que ejecute un examen antivirus en un punto de conexión donde un usuario muestre signos de comportamiento sospechoso.
+
+> [!div class="checklist"]
+> * 1: [Generación de un token de la API Cloud App Security](#generate-token)
+> * 2: [Creación de un flujo para ejecutar un examen antivirus](#create-flow)
+> * 3: [Configuración del flujo](#configure-flow)
+> * 4: [Configuración de la directiva que ejecutará el flujo](#configure-policy)
 
 > [!NOTE]
 > Estos flujos de trabajo solo son pertinentes para directivas que contengan actividad de usuarios. Por ejemplo, no puede usar estos flujos de trabajo con directivas de detección o de OAuth.
@@ -32,9 +38,7 @@ Si no tiene un plan de Microsoft Flow, [regístrese para obtener una cuenta de 
 * Necesita un plan válido de ATP de Microsoft Defender.
 * El entorno de Microsoft Flow necesita estar sincronizado con Azure AD, supervisado por ATP de Defender y unido a un dominio.
 
-## <a name="to-configure-an-antivirus-scan-remediation-action"></a>Para configurar una acción de corrección de examen antivirus
-
-### <a name="step-1-generate-a-cloud-app-security-api-token"></a>Paso 1: Generación de un token de la API Cloud App Security
+## Fase 1: Generación de un token de la API Cloud App Security<a name="generate-token"></a>
 
 > [!NOTE]
 > Si ha creado anteriormente un flujo de trabajo mediante un conector de Cloud App Security, Microsoft Flow reutilizará automáticamente el token, por lo que puede omitir este paso.
@@ -49,7 +53,7 @@ Si no tiene un plan de Microsoft Flow, [regístrese para obtener una cuenta de 
 
     ![Captura de pantalla de la ventana del token, donde se muestran el token y el proceso de copia.](media/tutorial-flow-token-copy.png)
 
-### <a name="step-2-create-a-flow-to-run-an-antivirus-scan"></a>Paso 2: Crear un flujo para ejecutar un examen antivirus
+## Fase 2: Creación de un flujo para ejecutar un examen antivirus<a name="create-flow"></a>
 
 > [!NOTE]
 > Si ya ha creado un flujo con un conector de ATP de Defender, Flow vuelve a usar el conector automáticamente y se puede omitir el paso de **inicio de sesión**.
@@ -65,7 +69,7 @@ Si no tiene un plan de Microsoft Flow, [regístrese para obtener una cuenta de 
 
     ![Captura de pantalla de la página de plantillas de Microsoft Flow, donde se muestra el proceso de inicio de sesión.](media/tutorial-flow-templates-signin.png)
 
-### <a name="step-3-configure-the-flow"></a>Paso 3: Configurar el flujo
+## Fase 3: Configuración del flujo<a name="configure-flow"></a>
 
 > [!NOTE]
 > Si ya ha creado un flujo con un conector de Azure AD, Microsoft Flow volverá a usar el token automáticamente, por lo que puede omitir este paso.
@@ -92,7 +96,7 @@ Si no tiene un plan de Microsoft Flow, [regístrese para obtener una cuenta de 
 
     ![Captura de pantalla de la página del flujo, donde se muestra la sección de configuración del examen.](media/tutorial-flow-templates-scan.png)
 
-### <a name="step-4-configure-the-policy-to-run-the-flow"></a>Paso 4: Configuración de la directiva que ejecutará el flujo
+## Fase 4: Configuración de la directiva que ejecutará el flujo<a name="configure-policy"></a>
 
 1. En Cloud App Security, haga clic en **Control** y, después, seleccione **Directivas**.
 
@@ -106,7 +110,7 @@ Ahora todas las alertas generadas para esta directiva iniciarán el flujo para e
 
 Siga los pasos que se indican en este tutorial para crear una amplia variedad de acciones basadas en flujos de trabajo con el fin de ampliar las funciones de corrección de Cloud App Security, incluidas otras acciones de ATP de Defender. Para ver una lista de flujos de trabajo predefinidos de Cloud App Security, [busque "Cloud App Security"](https://go.microsoft.com/fwlink/?linkid=2102574) en Microsoft Flow.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="see-also"></a>Consulte también
 
 > [!div class="nextstepaction"]
 [Integración con Microsoft Flow para la automatización de alertas personalizadas](flow-integration.md)
