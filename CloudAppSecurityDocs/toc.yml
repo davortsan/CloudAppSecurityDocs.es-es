@@ -19,8 +19,6 @@
   items:
     - name: Introducción
       href: getting-started-with-cloud-app-security.md
-    - name: Trabajo con aplicaciones detectadas
-      href: discovered-apps.md
 - name: Tutoriales
   items:
     - name: Detección y administración de shadow IT
@@ -43,8 +41,10 @@
       href: proxy-intro-aad.md
     - name: Trabajo con el panel
       href: daily-activities-to-protect-your-cloud-environment.md
-    - name: Trabajo con la puntuación de riesgo
+    - name: Trabajar con la puntuación de riesgo de la aplicación
       href: risk-score.md
+    - name: Trabajar con aplicaciones detectadas
+      href: discovered-apps.md
 - name: Guías paso a paso
   items:
     - name: Configuración básica
