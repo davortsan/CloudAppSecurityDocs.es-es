@@ -1,10 +1,10 @@
 ---
-title: Configurar los valores de su organización en Cloud App Security
+title: Configure los valores de la organización en Cloud App Security
 description: En este artículo se explica cómo proporcionar información sobre su organización en Cloud App Security.
 keywords: ''
-author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
-manager: ShlomoSagir-MS
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 6/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a05ea9152c0071ee61b9e5037dd00cb1de328da5
-ms.sourcegitcommit: ae617f23b36be665439dcedfbcf346715a526d7e
+ms.openlocfilehash: 6ca87c02f9eed0bbba8383d46ebb621dc4be31b5
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67411809"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084463"
 ---
 # <a name="basic-setup-for-cloud-app-security"></a>Configuración básica de Cloud App Security
 
@@ -29,7 +29,7 @@ ms.locfileid: "67411809"
 En el siguiente procedimiento se proporcionan instrucciones para personalizar el portal de Microsoft Cloud App Security.
 
 ## <a name="prerequisites"></a>Requisitos previos 
-Para acceder al portal, es necesario agregar las siguientes direcciones IP al Firewall de la lista proporcionar acceso para el portal de Cloud App Security:  
+Para el acceso al portal, es necesario agregar las siguientes direcciones IP a la lista de permitidos del firewall para proporcionar acceso al portal de Cloud App Security:  
   
 - 104.42.231.28  
   
@@ -50,13 +50,13 @@ Para acceder al portal, es necesario agregar las siguientes direcciones IP al Fi
 
     - Los usuarios en dominios que no están configurados como internos se marcan como externos. Los usuarios externos no se analizan en busca de actividades o archivos.
 
-1. En **cerrar sesión automática**, especifique la cantidad de tiempo puede permanecer inactiva una sesión antes de la sesión se cerrará automáticamente.
+1. En **cierre de sesión automático**, especifique la cantidad de tiempo que una sesión puede permanecer inactiva antes de que se cierre la sesión automáticamente.
 
 1. Si está integrando mediante la integración de Azure Information Protection, vea [Integración de Azure Information Protection](azip-integration.md) para obtener información. 
 
     - Para trabajar con la integración de Azure Information Protection, primero debe habilitar el [conector de aplicaciones para Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
   
-1. Si está realizando la integración con la integración de protección contra amenazas avanzada de Azure, consulte [Azure Advanced Threat Protection Integration](azip-integration.md) para obtener información.
+1. Si está realizando la integración con la integración de protección contra amenazas avanzada de Azure, consulte [integración de protección contra amenazas avanzada de Azure](azip-integration.md) para obtener información.
 
 1. Si, en un momento determinado, quiere hacer una copia de seguridad de la configuración del portal, puede hacerlo en esta pantalla. Haga clic en **Exportar configuración del portal** para crear un archivo .json con todas las opciones de configuración del portal, incluidas las reglas de directivas, los grupos de usuarios y los intervalos de direcciones IP.  
   

@@ -2,9 +2,9 @@
 title: Implementar Control de aplicaciones de acceso condicional de Cloud App Security para las aplicaciones
 description: En este artículo se proporciona información sobre cómo implementar las características de Microsoft Cloud App Security Control de aplicaciones de acceso condicional proxy inverso para las aplicaciones.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 7/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: 7b86bc5f344f097c4c4e45c9d25123c5b361ebb2
-ms.sourcegitcommit: e9c93f69f280a929b2802619d24f59ea830b783f
+ms.openlocfilehash: 1621b8626c5c934bf607c652b6949b2b8a31ec0d
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68782876"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71085059"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Incorporación e implementación de Control de aplicaciones de acceso condicional para cualquier aplicación
 
@@ -84,7 +84,7 @@ Siga estos pasos para configurar cualquier aplicación que se controlará Cloud 
 
 ## Paso 2: Configurar los usuarios que van a implementar la aplicación<a name="conf-users"></a>
 
-1. En Cloud App Security, en la barra de menús, haga clic en el engranaje de configuración ![icono]de configuración icono de(./media/settings-icon.png "configuración") y seleccione **configuración**.
+1. En Cloud App Security, en la barra de menús, haga clic en el engranaje de configuración ![icono de configuración icono de](./media/settings-icon.png "configuración") y seleccione **configuración**.
 
 1. En **control de aplicaciones de acceso condicional**, seleccione **incorporación/mantenimiento**de la aplicación.
 
@@ -127,7 +127,7 @@ Por ejemplo, si ha configurado una directiva que bloquea la descarga de archivos
 1. En el panel dominios detectados, tome nota de los nombres de dominio o exporte la lista como archivo. csv.
     > [!NOTE]
     > El panel muestra una lista de dominios detectados que no están asociados en la aplicación. Los nombres de dominio son completos.
-1. Vaya a Cloud App Security, en la barra de menús, haga clic en el engranaje de configuración icono de configuración ![icono]de(./media/settings-icon.png "configuración") y seleccione **control de aplicaciones de acceso condicional**.
+1. Vaya a Cloud App Security, en la barra de menús, haga clic en el engranaje de configuración icono de configuración ![icono de](./media/settings-icon.png "configuración") y seleccione **control de aplicaciones de acceso condicional**.
 1. En la lista de aplicaciones, en la fila en la que aparece la aplicación que va a implementar, elija los tres puntos al final de la fila y, luego, en detalles de la **aplicación**, elija **Editar**.
     > [!TIP]
     > Para ver la lista de los dominios configurados en la aplicación, haga clic en **Ver dominios de aplicación**.

@@ -2,9 +2,9 @@
 title: Obtener recomendaciones de configuración de seguridad para AWS-Cloud App Security | Microsoft Docs
 description: En este artículo se proporciona información sobre cómo obtener recomendaciones de configuración de seguridad en Cloud App Security mediante la integración de con Amazon Web Services.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 8/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: c6d8f8af-867b-43ab-adee-f06520577fe7
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5464ad83485068d41e6930c31b057d2530622d85
-ms.sourcegitcommit: 3fe4489cbb2c7d7e8f26aa358511e9f738596e98
+ms.openlocfilehash: 40d8d1f578f826f1782cfbf643f8b2db136f24d2
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69013255"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71085001"
 ---
 # <a name="security-configuration-for-aws"></a>Configuración de seguridad para AWS
 

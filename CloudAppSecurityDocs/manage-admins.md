@@ -2,9 +2,9 @@
 title: Administración del acceso de administrador al portal de Cloud App Security
 description: En este artículo se ofrecen instrucciones para configurar el acceso al portal de Cloud App Security para los administradores.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 8/6/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: af713804974ee91b2f1a56b46ebe3d5b4ef3d1ce
-ms.sourcegitcommit: 39faa183e7d781660d475c79c827adbb4cc635fb
+ms.openlocfilehash: 820b75ae632cc1cc10a64c66125da01d77ff9b14
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68861518"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084167"
 ---
 # <a name="manage-admin-access"></a>Administrar el acceso de administrador
 

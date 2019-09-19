@@ -2,9 +2,9 @@
 title: Habilitación del recopilador de registros tras un proxy en Cloud App Security | Microsoft Docs
 description: En este artículo se proporciona información sobre cómo habilitar el recopilador de registros de Cloud Discovery en Cloud App Security Discovery desde detrás de un servidor proxy.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 8/6/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,19 +15,19 @@ ms.assetid: 6bde2a6c-60cc-4a7d-9e83-e8b81ac229b0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4b468fa4361ed6278845ffad33594bc5543f1a03
-ms.sourcegitcommit: 39faa183e7d781660d475c79c827adbb4cc635fb
+ms.openlocfilehash: 9b0b9380d3cc2780dd17e3c3a53c374bca38b6e9
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68861538"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084244"
 ---
 # <a name="enable-the-log-collector-behind-a-proxy"></a>Habilitación del recopilador de registros tras un proxy
 
 Después de configurar el recopilador de registros, si está ejecutando detrás de un proxy, es posible que el recopilador de registros tenga problemas para enviar datos a Cloud App Security. Esto puede deberse a que el recopilador de registros no confía en la entidad emisora de certificados raíz del proxy y no puede conectarse a Microsoft Cloud App Security para recuperar su configuración o cargar los registros recibidos.
 
 >[!NOTE]
-> Para obtener información sobre cómo cambiar los certificados utilizados por el compilador de registros para syslog o FTP, y para resolver problemas de conectividad de los firewalls y servidores proxy en el compilador de registros, consulte registro de la [configuración de FTP](log-collector-ftp.md)del recopilador de registros.
+> Para obtener información sobre cómo cambiar los certificados utilizados por el compilador de registros para syslog o FTP, y para resolver problemas de conectividad de los firewalls y servidores proxy en el compilador de registros, consulte registro de la [configuración de FTP del recopilador de registros](log-collector-ftp.md).
 >
 
 ## <a name="set-up-the-log-collector-behind-a-proxy"></a>Configuración del recopilador de registros tras un proxy

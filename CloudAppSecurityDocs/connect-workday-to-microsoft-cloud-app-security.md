@@ -2,9 +2,9 @@
 title: Conexión de WorkDay a Cloud App Security
 description: En este artículo se proporciona información sobre cómo conectar la aplicación WorkDay a Cloud App Security mediante el conector de API para la visibilidad y el control del uso.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 9/8/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0530cfa93edd96bf805df3ac62b900b50fa5978b
-ms.sourcegitcommit: 6105add524e33adaa389bcf0f5baf4f1fdfd7f7d
+ms.openlocfilehash: 13f9870d2e1fbb9a368510ce715b9bc5c3bfe7c8
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70804890"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71083878"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security"></a>Conexión de WorkDay a Microsoft Cloud App Security
 

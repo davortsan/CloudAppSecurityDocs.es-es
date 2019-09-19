@@ -1,10 +1,10 @@
 ---
-title: 'Fe de sus aplicaciones: Cloud App Security | Microsoft Docs'
-description: Este artículo proporcionan instrucciones para la certificación de las aplicaciones en Cloud App Security.
+title: 'Atestar las aplicaciones: Cloud App Security | Microsoft Docs'
+description: En este artículo se proporcionan instrucciones para la atestación de las aplicaciones en Cloud App Security.
 keywords: ''
-author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
-manager: ShlomoSagir-MS
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 6/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,118 +15,118 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6beaeba5c522aacb8a6d0c9612df318b267d2612
-ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
+ms.openlocfilehash: f14627f98786eb15689e254743cf09471165c2f0
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2019
-ms.locfileid: "67333566"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71083750"
 ---
 # <a name="attest-your-app"></a>Comprobaciones sobre la aplicación
 
-Microsoft Cloud App Security le permite dar fe de la aplicación, por lo que asegúrese de que el cumplimiento de normas y los detalles de seguridad que se usa para clasificar la aplicación en nuestro catálogo de aplicaciones de nube están actualizados.
+Microsoft Cloud App Security le permite atestiguar su aplicación para asegurarse de que los detalles de cumplimiento y seguridad que usamos para clasificar la aplicación en el catálogo de aplicaciones en la nube están actualizados.
 
-Si la aplicación ya aparece en el catálogo de aplicaciones en la nube, o que es nuevo, envíe un cuestionario de atestación automática. Para obtener más información sobre el proceso de atestación automática y a obtener el cuestionario, póngase en contacto con casfeedback@microsoft.com.
+Si la aplicación ya aparece en el catálogo de aplicaciones en la nube o es nueva, envíe un cuestionario de atestación automática. Para obtener más información sobre el proceso de atestación automática y para obtener el cuestionario casfeedback@microsoft.com, póngase en contacto con.
 
-Siga los atributos de servicio se describe a continuación para completar correctamente el envío del cuestionario:
+Siga los atributos de servicio que se describen a continuación para completar correctamente el envío del cuestionario:
 
-| Campo | Categoría de información | Tipo | Valores aceptados | Descripción |
+| Campo | Categoría de información | Type | Valores aceptados | DESCRIPCIÓN |
 |------|-------|------|---------|----------|
-| Nombre de la aplicación | General | String | Texto sin formato | El nombre de la aplicación tal y como debe aparecer en el catálogo de aplicaciones en la nube. |
-| Descripción | General | String | Texto sin formato | Breve explicación de lo que la aplicación permite a los usuarios ni alcanzar. |
-| Category| General | String | Cerrar lista - proporcionada en el cuestionario | Clasificación de la aplicación según el campo al que se relaciona. |
-| Oficina central | General | Código de país | Cerrar lista - proporcionada en el cuestionario | El país de la sede central del proveedor.|
-| Centro de datos| General | Matriz de código de país * | Cerrar lista - proporcionada en el cuestionario (selección múltiple) | El país en el que reside su centro de datos (puede ser varias ubicaciones) |
-| Empresa de hospedaje | General | String | Texto sin formato | El nombre de la compañía que proporciona hospedaje de servidor para la aplicación. |
-| Fundado | General | Entero | AAAA (posterior a 2019 no) | El año en el que se fundó el proveedor. |
-| Que contiene | General | String | Private, Public | Muestra si el proveedor es una empresa pública o privada |
-| Dominio de aplicación | General | Matriz de dirección URL *. | Texto sin formato | La lista de dominios que se usan para interactuar con el servicio (por ejemplo, ' teams.microsoft.com' para Microsoft Teams) |
-| Condiciones del servicio | General | Dirección URL | Texto sin formato | ¿Esta aplicación proporciona un conjunto de reglamentos que los usuarios deben aceptar cumplir para poder usar la aplicación? |
-| Directiva de privacidad | General | Dirección URL | Texto sin formato | Un vínculo a un legalmente documento relativo a cómo este proveedor controla la información de empleado, cliente o cliente recopilada como parte de la aplicación. |
-| Dirección URL de inicio de sesión | General | Matriz de dirección URL *. | Texto sin formato | La dirección URL a través de qué usuarios inician sesión en la aplicación. |
-| Proveedor | General | String | Texto sin formato | El nombre del proveedor que ofrece esta aplicación. |
-| Tipos de datos | General | String | Cerrar lista - proporcionada en el cuestionario | ¿Qué tipos de datos se pueden cargar por el usuario a la aplicación?|
-| Página principal | General | Dirección URL | Texto sin formato | Dirección URL de página principal del proveedor. |
-| Plan de recuperación ante desastres | General | Boolean | True, False | ¿Esta aplicación tiene un plan de recuperación ante desastres que incluya una estrategia de copia de seguridad y restauración? |
-| Infracción más reciente | Seguridad | Fecha | MMM-dd-aaaa | Incidente más reciente en la que se ven, robados o utilizados por un individuo no autorizado a hacerlo, protegidos, datos confidenciales o que pertenecen a la aplicación. |
-| Método de cifrado de datos en reposo | Seguridad | String | Cerrar lista - proporcionada en el cuestionario | El tipo de cifrado de datos en reposo se realiza en la aplicación. |
-| Multi-factor Authentication | Seguridad | Boolean | True, False | ¿Admite esta aplicación soluciones de autenticación multifactor? |
-| Restricción de direcciones IP | Seguridad | Boolean | True, False | ¿Admite esta aplicación la restricción de direcciones IP concretas por la aplicación? |
-| Traza de auditoría de usuario | Seguridad | Boolean | True, False | ¿Admite esta aplicación la disponibilidad de auditoría por cuenta de usuario? |
-| Pista de auditoría de administración | Seguridad | Boolean | True, False | ¿Admite esta aplicación la disponibilidad de una pista de auditoría de administración en la aplicación? |
-| Traza de auditoría de datos | Seguridad | Boolean | True, False | ¿Admite esta aplicación la disponibilidad de una pista de auditoría de datos en la aplicación? |
-| El usuario puede cargar datos | Seguridad | Boolean | True, False | ¿Esta aplicación admite datos de usuario cargado? |
-| Clasificación de datos | Seguridad | Boolean | True, False | ¿Habilita la opción para la clasificación de los datos cargados en la aplicación de esta aplicación? |
-| Recordar contraseña | Seguridad | Boolean | True, False | ¿Habilita la opción de recordar y guardar las contraseñas de usuario en la aplicación de esta aplicación? |
-| Compatibilidad con funciones de usuario | Seguridad | Boolean | True, False | ¿Admite esta aplicación la distribución de usuarios por roles y niveles de permiso? |
-| Uso compartido de archivos | Seguridad | Boolean | True, False | ¿Esta aplicación incluye características que permiten compartir archivos entre los usuarios? |
-| Nombre de certificado válido | Seguridad | Boolean | True, False | ¿Ofrece el servidor un certificado SSL que coincida con el nombre de dominio? |
-| Certificado de confianza | Seguridad | Boolean | True, False | ¿Ofrece el servidor un certificado SSL de confianza (cadena de firma no expirados, comprobado y de confianza, etcetera)? |
-| Protocolo de cifrado | Seguridad | String | Cerrar lista - proporcionada en el cuestionario | La última versión de protocolo de capa de transporte (TLS) cifrado compatible entre el proveedor de punto de conexión y la aplicación de usuario. Si el certificado del servidor que no existe o no es válido, el cifrado se considera no compatible.|
-| Heartbleed corregido | Seguridad | Boolean | True, False | ¿Es la implementación de SSL del servidor que se han revisado para el error heartbleed y así reducir la vulnerabilidad? |
-| Encabezados de seguridad HTTP: Strict-Transport-Security | Seguridad | Boolean | True, False | ¿Es HTTP Strict-Transport-Security encabezados implementados la aplicación en su sitio Web? |
-| Encabezados de seguridad HTTP: Content-Security-Policy | Seguridad | Boolean | True, False | ¿Es HTTP Content-Security-Policy encabezados implementados la aplicación en su sitio Web? |
-| Encabezados de seguridad HTTP: X-Frame-Options | Seguridad | Boolean | True, False | ¿Los encabezados HTTP X-Frame-Options implementados por la aplicación en su sitio Web? |
-| Encabezados de seguridad HTTP: X-Content-Type-Options | Seguridad | Boolean | True, False | ¿Los encabezados HTTP X-Content-Type-Options implementados por la aplicación en su sitio Web? |
-| Encabezados de seguridad HTTP: X-XSS-Protection | Seguridad | Boolean | True, False | ¿Es HTTP X-XSS-Protection encabezados implementados la aplicación en su sitio Web? |
-| Admite SAML | Seguridad | Boolean | True, False | ¿Admite esta aplicación el estándar SAML para intercambiar datos de autenticación y autorización? |
-| Protegido frente a DROWN | Seguridad | Boolean | True, False | ¿Los servidores de aplicaciones están protegidos frente a ataques DROWN? |
-| Pruebas de penetración | Seguridad | Boolean | True, False | ¿Esta aplicación realizar pruebas de penetración para detectar y evaluar las vulnerabilidades de red? |
-| Requiere autenticación del usuario | Seguridad | Boolean | True, False | ¿Esta aplicación requieren autenticación y deshabilita el uso anónimo? |
-| Directiva de contraseñas: Límite de longitud de contraseña | Seguridad | Boolean | True, False | ¿Esta aplicación exige un límite de longitud de la creación de contraseñas? |
-| Directiva de contraseñas: Combinación de caracteres | Seguridad | Boolean | True, False | ¿Esta aplicación aplica una combinación de caracteres en la creación de contraseñas? |
-| Directiva de contraseñas: Período de cambio de contraseñas | Seguridad | Boolean | True, False | ¿Esta aplicación exige a los usuarios para restablecer la contraseña periódicamente? |
-| Directiva de contraseñas: Reutilización y el historial de contraseñas | Seguridad | Boolean | True, False | ¿Esta aplicación impedir la reutilización de contraseñas anteriores? |
-| Directiva de contraseñas: Uso de información personal | Seguridad | Boolean | True, False | ¿Esta aplicación prohibir el uso de información personal en las contraseñas? |
-| Directiva de contraseñas | Seguridad | Boolean | True, False | ¿Esta aplicación aplica una directiva de contraseña que cumpla con los procedimientos recomendados? |
-| FINRA | Cumplimiento | Boolean | True, False, N/D | ¿Esta aplicación ofrece conforme a FINRA, un conjunto de estándares para organizaciones sin ánimo de lucro autorizado por el congreso que regula y exige la mejora de las medidas de seguridad de los inversores e integridad del mercado? |
-| FISMA | Cumplimiento | Boolean | True, False, N/D | ¿Esta aplicación se ofrece conforme a FISMA, la legislación estadounidense que define un marco completo para proteger información gubernamental, operaciones y recursos dentro de las agencias federales frente a amenazas? |
-| GAAP | Cumplimiento | Boolean | True, False, N/D | ¿Esta aplicación se ofrece conforme a GAAP, una colección de reglas de contabilidad normalmente seguido y estándares para los informes financieros? |
-| HIPAA | Cumplimiento | Boolean | True, False, N/D | ¿Cumple esta aplicación con HIPAA, la legislación estadounidense que establece estándares para proteger la confidencialidad y la seguridad de la información de mantenimiento identificable individualmente? |
-| ISAE 3402 | Cumplimiento | Boolean | True, False, N/D | ¿Esta aplicación se ofrece conforme a ISAE 3402, el estándar global que se garantice que una organización de servicio posee los controles adecuados en su lugar? |
-| ISO 27001 | Cumplimiento | Boolean | True, False, N/D | ¿Es esta aplicación certificada ISO 27001, un certificado que se concede a las empresas respetar reconocidas internacionalmente directrices y principios generales para iniciar, implementar, mantener y mejorar la administración de seguridad de información dentro de una organización? |
-| ITAR | Cumplimiento | Boolean | True, False, N/D | ¿Esta aplicación se ofrece conforme a ITAR, reglamentos que controlan la exportación e importación de artículos relacionados con la defensa y servicios que se encuentra en la lista militar de Estados Unidos de nosotros? |
-| SOC 1 | Cumplimiento | Boolean | True, False, N/D | ¿Esta aplicación se ofrece conforme a SOC 1, informar sobre los controles de una organización de servicio que son relevantes para el control interno de las entidades de usuario sobre informes financieros? |
-| SOC 2 | Cumplimiento | Boolean | True, False, N/D | ¿Esta aplicación se ofrece conforme a SOC 2, procesamiento no financiero según uno o varios de los criterios de servicio de confianza en seguridad, privacidad, disponibilidad, confidencialidad y la integridad de procesamiento de informes? |
-| SOC 3 | Cumplimiento | Boolean | True, False, N/D | ¿Esta aplicación se ofrece conforme a SOC 3, con informes según los criterios de servicio de confianza, que se pueden distribuir libremente y solo contienen la aserción de administración que se han cumplido los requisitos de los criterios seleccionados? |
-| SOX | Cumplimiento | Boolean | True, False, N/D | ¿Cumple esta aplicación con la ley SOX, la legislación de Estados Unidos cuyo objetivo es proteger accionistas y el público general frente a fraudes y errores de contabilidad, así como mejorar la exactitud de las divulgaciones corporativas? |
-| SP 800-53 | Cumplimiento | Boolean | True, False, N/D | ¿Esta aplicación se ofrece conforme a SP80053, se recomienda a los controles de seguridad para las organizaciones y sistemas de información federales? |
-| SSAE 16 | Cumplimiento | Boolean | True, False, N/D | ¿Cumple esta aplicación con el estándar SSAE 16 para la auditoría de los controles de cumplimiento internos de una organización de servicios y procesos de informes? |
-| Versión de PCI DSS | Cumplimiento | String | 1, 2, 3, 3.1, 3.2, N/A | La versión del protocolo PCI-DSS son compatible con esta aplicación. |
-| ISO 27018 | Cumplimiento | Boolean | True, False, N/D | ¿Cumple esta aplicación a la norma ISO 27018, que establece comúnmente aceptados controles y directrices para el procesamiento y la protección de información de identificación personal (PII) públicas entorno informático de nube? |
-| GLBA | Cumplimiento | Boolean | True, False, N/D | ¿Cumple esta aplicación con la ley de Gramm-Leach-Bliley (GLBA), lo que requiere que las instituciones financieras establezcan estándares para proteger la seguridad y confidencialidad de información personal de los clientes? |
-| Nivel de FedRAMP | Cumplimiento | String | Alto, moderado, bajo, N/D | El nivel de la solución conforme a FedRAMP proporcionado por esta aplicación. |
-| Nivel CSA STAR | Cumplimiento | String | Autoevaluación, certificación, atestación, evaluación C-STAR, supervisión continua, N/D | El nivel del programa CSA STAR en el que está certificada la aplicación |
-| entre la Unión Europea y Estados Unidos | Cumplimiento | Boolean | True, False, N/D | ¿Cumple esta aplicación con el marco del escudo de privacidad UE-EE. UU., que impone obligaciones más estrictas a las empresas estadounidenses para proteger datos personales europeos? |
-| ISO 27017 | Cumplimiento | Boolean | True, False, N/D | ¿Cumple esta aplicación con la norma ISO 27017, que establece los controles comúnmente aceptados y directrices para procesar y proteger la información de usuario en un entorno de informática en nube público? |
-| COBIT | Cumplimiento | Boolean | True, False, N/D | ¿Cumple esta aplicación con COBIT, que establece los procedimientos recomendados para el gobierno y el control de los sistemas de información y la tecnología y alinea la TI con los principios del negocio? |
-| COPPA | Cumplimiento | Boolean | True, False, N/D | ¿Cumple esta aplicación con COPPA, que define los requisitos en el sitio Web y los operadores de servicios en línea que proporcionan contenido a niños de menos de 13 años de edad? |
-| FERPA | Cumplimiento | Boolean | True, False, N/D | ¿Cumple esta aplicación con la ley FERPA, una ley federal que protege la privacidad de los expedientes académicos? |
-| GAPP | Cumplimiento | Boolean | True, False, N/D | ¿Cumple esta aplicación con GAPP, una colección de reglas seguido normalmente que abordan los riesgos de privacidad en una organización? |
-| CSF HITRUST | Cumplimiento | Boolean | True, False, N/D | ¿Cumple esta aplicación con CSF HITRUST, un conjunto de controles que armoniza los requisitos de los estándares y normativas de seguridad de información? |
-| Jericho foro mandamientos | Cumplimiento | Boolean | True, False, N/D | ¿Esta aplicación sigue Jericho foro mandamientos, un conjunto si la operación en entornos de desaprovisionamiento perimeterized segura de los principios que se deben observar al diseñar sistemas para? |
-| ISO 27002 | Cumplimiento | Boolean | True, False, N/D | ¿Esta aplicación se ofrece conforme a ISO 27002, que establece instrucciones comunes para los estándares de seguridad de información de la organización y prácticas de administración de seguridad de información? |
-| FFIEC | Cumplimiento | Boolean | True, False, N/D | ¿Cumple esta aplicación con instrucciones Federal financieros instituciones examen del Consejo sobre los controles de administración de riesgos necesarios para autenticar los servicios en un entorno de banca de Internet? |
-| Propiedad de los datos | Legal | Boolean | True, False | ¿Conserva esta aplicación completamente la propiedad del usuario de datos cargados? |
-| DMCA | Legal | Boolean | True, False | ¿Cumple esta aplicación con el Digital Millennium Copyright Act (DMCA), que criminaliza cualquier intento de acceder ilegalmente a material con derechos de autor? |
-| Directiva de retención de datos | Legal | Boolean | True, False | ¿Qué es Directiva de la aplicación para la retención de datos de usuario después de la terminación de la cuenta? |
-| Instrucción de preparación de RGPD | Legal | Dirección URL | Texto sin formato | Un vínculo a su sitio Web, cuando proceda, relacionado con cómo este proveedor tiene previsto controlar el cumplimiento del RGPD. |
-| GDPR: derecho a borrado | Legal | Boolean | True, False, N/D | ¿Esta aplicación deje de procesar y eliminar datos personales de un individuo a petición? |
-| GDPR - las infracciones de datos de informe | Legal | Boolean | True, False, N/D | ¿Hace que este las infracciones de datos de aplicación informes a las autoridades de supervisión y las personas afectadas por la infracción, dentro de 72 horas de detección de brechas? |
-| GDPR: evaluación del impacto | Legal | Boolean | True, False, N/D | ¿Esta aplicación realiza la valoración del impacto de protección de datos para identificar el riesgo a las personas? |
-| GDPR: control de datos segura borde cruzado | Legal | Boolean | True, False, N/D | ¿Esta aplicación de forma segura transferir datos entre distintos países? |
-| GDPR: responsable de la protección de datos | Legal | Boolean | True, False, N/D | ¿Esta aplicación designa a datos de un responsable de la protección para supervisar el cumplimiento del RGPD y la estrategia de seguridad de datos? |
-| GDPR - directamente al objeto | Legal | Boolean | True, False, N/D | ¿Esta aplicación ofrece a las personas con la capacidad de objeto para el procesamiento de sus datos personales en determinadas circunstancias? |
-| GDPR - derecho de acceso a | Legal | Boolean | True, False, N/D | ¿Esta aplicación ofrece a las personas con la capacidad, previa solicitud, saber qué datos personales que se está usando una empresa y cómo se usa? |
-| GDPR - directamente en datos fiabilidad | Legal | Boolean | True, False, N/D | ¿Esta aplicación ofrece a las personas con la capacidad de obtener y reutilizar sus datos personales para sus propios fines en distintos servicios tras la solicitud? |
-| GDPR: derecho para mantenerse informado | Legal | Boolean | True, False, N/D | ¿Esta aplicación informar a los individuos de las medidas de seguridad adecuados que toma cuando se transfieren datos personales a un país que no sea Europa o a una organización internacional? |
-| GDPR - directamente a la restricción de procesamiento | Legal | Boolean | True, False, N/D | ¿Esta aplicación ofrece a las personas con la capacidad de bloquear o suprimir el procesamiento de datos personales? |
-| Derechos de RGPD - relacionados con decisiones automatizadas | Legal | Boolean | True, False, N/D | ¿Esta aplicación ofrece a las personas con la posibilidad de optar por no estar sujeto a una decisión que se basa únicamente en el procesamiento automatizado? Esto incluye la generación de perfiles, que puede tener consecuencias legales. |
-| GDPR - lícita base para el procesamiento | Legal | Boolean | True, False, N/D | ¿Esta aplicación procese los datos personales legalmente de acuerdo con su consentimiento, contrato, obligaciones legales en materia, intereses esenciales, intereses legítimos, categoría especial, datos y datos delito? |
-| GDPR: derecho a rectificación | Legal | Boolean | True, False, N/D | ¿Esta aplicación ofrece a las personas con la capacidad de corregir sus datos personales? El controlador debe responder a todas las solicitudes de sus asuntos de datos dentro de un mes. |
+| Nombre de la aplicación | General | string | Texto libre | El nombre de la aplicación tal como debe aparecer en el catálogo de aplicaciones en la nube. |
+| DESCRIPCIÓN | General | string | Texto libre | Breve explicación de lo que la aplicación permite a los usuarios realizar o conseguir. |
+| Categoría| General | string | Cerrar lista: se proporciona en el cuestionario | Clasificación de la aplicación según el campo con el que se relaciona. |
+| Oficina central | General | Código de país | Cerrar lista: se proporciona en el cuestionario | El país de la sede del proveedor.|
+| Centro de datos| General | Matriz de código de país * | Cerrar lista: se proporciona en cuestionario (selección múltiple) | El país en el que reside el centro de datos (puede ser varias ubicaciones) |
+| Empresa de hospedaje | General | string | Texto libre | El nombre de la empresa que proporciona hospedaje de servidor para la aplicación. |
+| Constitución | General | Entero | AAAA (no posterior a 2019) | Año en el que se fundó el proveedor. |
+| Esa | General | string | Privado, público | Muestra si el proveedor es una empresa privada o públicamente |
+| Dominio de aplicación | General | Matriz de direcciones URL * | Texto libre | La lista de dominios que se usan para interactuar con el servicio (por ejemplo, "teams.microsoft.com" para Microsoft Teams) |
+| Condiciones del servicio | General | URL | Texto libre | ¿Esta aplicación proporciona un conjunto de normas que los usuarios deben aceptar para poder usar la aplicación? |
+| Directiva de privacidad | General | URL | Texto libre | Un vínculo a un documento de enlace legalmente relacionado con el modo en que este proveedor controla la información del cliente, el cliente o el empleado que se recopila como parte de la aplicación. |
+| URL de inicio de sesión | General | Matriz de direcciones URL * | Texto libre | La dirección URL a través de la que los usuarios inician sesión en la aplicación. |
+| Proveedor | General | string | Texto libre | Nombre del proveedor que proporciona esta aplicación. |
+| Tipos de datos | General | string | Cerrar lista: se proporciona en el cuestionario | ¿Qué tipos de datos puede cargar el usuario en la aplicación?|
+| Página principal | General | URL | Texto libre | Dirección URL de la Página principal del proveedor. |
+| Plan de recuperación ante desastres | General | Boolean | True, False | ¿Esta aplicación tiene un plan de recuperación ante desastres que incluye una estrategia de copia de seguridad y restauración? |
+| Última infracción | Seguridad | Date | MMM-DD-YYYY | Incidente más reciente en el que los datos confidenciales, protegidos o confidenciales que pertenecen a la aplicación se han visto, robado o utilizado por una persona no autorizada para ello. |
+| Método de cifrado de datos en reposo | Seguridad | string | Cerrar lista: se proporciona en el cuestionario | El tipo de cifrado de datos en reposo realizado en la aplicación. |
+| Multi-Factor Authentication | Seguridad | Boolean | True, False | ¿Admite esta aplicación soluciones de autenticación multifactor? |
+| Restricción de dirección IP | Seguridad | Boolean | True, False | ¿Esta aplicación admite la restricción de direcciones IP específicas de la aplicación? |
+| Seguimiento de auditoría de usuario | Seguridad | Boolean | True, False | ¿Esta aplicación admite la disponibilidad de la traza de auditoría por cuenta de usuario? |
+| Seguimiento de auditoría de administración | Seguridad | Boolean | True, False | ¿Esta aplicación admite la disponibilidad de una pista de auditoría de administrador en la aplicación? |
+| Traza de auditoría de datos | Seguridad | Boolean | True, False | ¿Esta aplicación admite la disponibilidad de una traza de auditoría de datos en la aplicación? |
+| El usuario puede cargar datos | Seguridad | Boolean | True, False | ¿Admite esta aplicación datos cargados por el usuario? |
+| Clasificación de datos | Seguridad | Boolean | True, False | ¿Esta aplicación habilita la opción para la clasificación de los datos cargados en la aplicación? |
+| Recordar contraseña | Seguridad | Boolean | True, False | ¿Esta aplicación habilita la opción para recordar y guardar contraseñas de usuario en la aplicación? |
+| Compatibilidad con roles de usuario | Seguridad | Boolean | True, False | ¿Esta aplicación admite la distribución de usuarios por roles y niveles de permiso? |
+| Uso compartido de archivos | Seguridad | Boolean | True, False | ¿Esta aplicación incluye características que permiten el uso compartido de archivos entre usuarios? |
+| Nombre del certificado válido | Seguridad | Boolean | True, False | ¿El servidor proporciona un certificado SSL que coincide con el nombre de dominio? |
+| Certificado de confianza | Seguridad | Boolean | True, False | ¿El servidor proporciona un certificado SSL de confianza (no ha expirado, comprobado y una cadena de firma de confianza, etc.)? |
+| Protocolo de cifrado | Seguridad | string | Cerrar lista: se proporciona en el cuestionario | La versión más reciente del Protocolo de cifrado de seguridad de la capa de transporte (TLS) compatible entre el punto de conexión de usuario y el proveedor de aplicaciones. Si el certificado del servidor no existe o no es válido, se considera que el cifrado no es compatible.|
+| Heartbleed revisado | Seguridad | Boolean | True, False | ¿La implementación de SSL del servidor revisado para el error de Heartbleed para reducir la vulnerabilidad? |
+| Encabezados de seguridad HTTP: STRICT-Transport-seguridad | Seguridad | Boolean | True, False | ¿Son los encabezados HTTP STRICT-Transport-Security implementados por la aplicación en su sitio web? |
+| Encabezados de seguridad HTTP: Directiva de seguridad de contenido | Seguridad | Boolean | True, False | ¿Son los encabezados HTTP Content-Security-Policy implementados por la aplicación en su sitio web? |
+| Encabezados de seguridad HTTP: X-Frame-Options | Seguridad | Boolean | True, False | ¿Son los encabezados HTTP X-Frame-Options implementados por la aplicación en su sitio web? |
+| Encabezados de seguridad HTTP: X-Content-Type-Options | Seguridad | Boolean | True, False | ¿Son los encabezados HTTP X-Content-Type-Options implementados por la aplicación en su sitio web? |
+| Encabezados de seguridad HTTP: Protección de X-XSS | Seguridad | Boolean | True, False | ¿Son los encabezados HTTP X-XSS-Protection implementados por la aplicación en su sitio web? |
+| Admite SAML | Seguridad | Boolean | True, False | ¿Esta aplicación admite el estándar SAML para intercambiar datos de autenticación y autorización? |
+| Protegido contra AHOGAdo | Seguridad | Boolean | True, False | ¿Los servidores de aplicaciones están protegidos frente a ataques dirigidos? |
+| Pruebas de penetración | Seguridad | Boolean | True, False | ¿Esta aplicación lleva a cabo pruebas de penetración para detectar y evaluar vulnerabilidades de red? |
+| Requiere autenticación de usuario | Seguridad | Boolean | True, False | ¿Esta aplicación requiere autenticación y no permite el uso anónimo? |
+| Directiva de contraseñas: Límite de longitud de la contraseña | Seguridad | Boolean | True, False | ¿Esta aplicación impone un límite de longitud en la creación de contraseñas? |
+| Directiva de contraseñas: Combinación de caracteres | Seguridad | Boolean | True, False | ¿Aplica esta aplicación una combinación de caracteres en la creación de contraseñas? |
+| Directiva de contraseñas: Cambiar el período de la contraseña | Seguridad | Boolean | True, False | ¿Esta aplicación exige a los usuarios que restablezcan su contraseña periódicamente? |
+| Directiva de contraseñas: Historial de contraseñas y reutilización | Seguridad | Boolean | True, False | ¿Esta aplicación no permite la reutilización de contraseñas antiguas? |
+| Directiva de contraseñas: Uso de la información personal | Seguridad | Boolean | True, False | ¿Esta aplicación no permite el uso de la información personal en las contraseñas? |
+| Directiva de contraseñas | Seguridad | Boolean | True, False | ¿Esta aplicación aplica una directiva de contraseñas que cumple con los procedimientos recomendados? |
+| FINRA | Cumplimiento normativo | Boolean | True, false, N/A | ¿Esta aplicación cumple con FINRA, un conjunto estándar para organizaciones sin ánimo de lucro autorizadas por el Congreso que regula y aplica la mejora de las medidas de seguridad del inversor y la integridad del mercado? |
+| FISMA | Cumplimiento normativo | Boolean | True, false, N/A | ¿Esta aplicación cumple con FISMA, la legislación estadounidense que define un marco integral para proteger la información de la administración pública, las operaciones y los activos dentro de las agencias federales, frente a las amenazas? |
+| CUMPLE | Cumplimiento normativo | Boolean | True, false, N/A | ¿Esta aplicación cumple con los GAAP, una colección de reglas y estándares de contabilidad seguidos para la elaboración de informes financieros? |
+| HIPAA | Cumplimiento normativo | Boolean | True, false, N/A | ¿Esta aplicación cumple con HIPAA, la legislación de EE. UU. que establece estándares para proteger la confidencialidad y la seguridad de la información de estado que se identifica de forma individual? |
+| ISAE 3402 | Cumplimiento normativo | Boolean | True, false, N/A | ¿Esta aplicación cumple con ISAE 3402, el estándar global que proporciona la garantía de que una organización de servicio tiene los controles adecuados en su lugar? |
+| ISO 27001 | Cumplimiento normativo | Boolean | True, false, N/A | ¿Se ha certificado esta aplicación ISO 27001, un certificado dado a las empresas que mantienen directrices y principios generales reconocidos internacionalmente para iniciar, implementar, mantener y mejorar la administración de la seguridad de la información dentro de una organización? |
+| ITAR | Cumplimiento normativo | Boolean | True, false, N/A | ¿Esta aplicación cumple con ITAR, las regulaciones que controlan la exportación y la importación de artículos y servicios relacionados con la defensa que se encuentran en la lista de municiones de EE. UU.? |
+| SOC 1 | Cumplimiento normativo | Boolean | True, false, N/A | ¿Esta aplicación cumple con SOC 1, informa sobre los controles de una organización de servicio que son relevantes para el control interno de las entidades de usuario sobre los informes financieros? |
+| SOC 2 | Cumplimiento normativo | Boolean | True, false, N/A | ¿Esta aplicación cumple con SOC 2, que informa sobre el procesamiento no financiero basado en uno o más de los criterios de servicio de confianza sobre seguridad, privacidad, disponibilidad, confidencialidad y integridad de procesamiento? |
+| SOC 3 | Cumplimiento normativo | Boolean | True, false, N/A | ¿Esta aplicación cumple con SOC 3, con informes basados en los criterios de servicio de confianza, que se pueden distribuir libremente y solo contienen aserciones de administración que han cumplido los requisitos de los criterios elegidos? |
+| LEY | Cumplimiento normativo | Boolean | True, false, N/A | ¿Esta aplicación cumple con las leyes SOX, EE. UU. dirigidas a proteger a los accionistas y al público general de los errores y fraudes de cuentas, así como a mejorar la precisión de las divulgaciones corporativas? |
+| SP 800-53 | Cumplimiento normativo | Boolean | True, false, N/A | ¿Esta aplicación cumple con SP80053, los controles de seguridad recomendados para las organizaciones y los sistemas de información federales? |
+| SSAE 16 | Cumplimiento normativo | Boolean | True, false, N/A | ¿Esta aplicación cumple con el estándar SSAE 16 para la auditoría de los controles de cumplimiento y los procesos de informes internos de una organización de servicio? |
+| Versión de PCI DSS | Cumplimiento normativo | string | 1, 2, 3, 3,1, 3,2, N/A | La versión del protocolo PCI-DSS compatible con esta aplicación. |
+| ISO 27018 | Cumplimiento normativo | Boolean | True, false, N/A | ¿Esta aplicación cumple con ISO 27018, que establece los controles y las directrices que se aceptan comúnmente para procesar y proteger la información de identificación personal (PII) en un entorno de informática en la nube pública? |
+| GLBA | Cumplimiento normativo | Boolean | True, false, N/A | ¿Esta aplicación cumple con la Ley Gramm-Leach-Bliley (GLBA), que requiere que las instituciones financieras establezcan estándares para proteger la seguridad y confidencialidad de la información personal de los clientes? |
+| Nivel de FedRAMP | Cumplimiento normativo | string | Alta, moderada, baja, N/A | Nivel de la solución compatible con FedRAMP proporcionada por esta aplicación. |
+| Nivel de estrella de CSA | Cumplimiento normativo | string | Evaluación automática, certificación, atestación, evaluación de C-STAR, supervisión continua, N/A | El nivel de programa CSA STAR en el que la aplicación está certificada |
+| entre la Unión Europea y Estados Unidos | Cumplimiento normativo | Boolean | True, false, N/A | ¿Esta aplicación cumple la plataforma de protección de la privacidad de la Unión Europea-EE. UU., que impone mayores obligaciones en las empresas de EE. UU. para proteger los datos personales de europeans? |
+| ISO 27017 | Cumplimiento normativo | Boolean | True, false, N/A | ¿Esta aplicación cumple con ISO 27017, que establece los controles y las directrices que se aceptan comúnmente para procesar y proteger la información de usuario en un entorno de informática en la nube pública? |
+| COBIT | Cumplimiento normativo | Boolean | True, false, N/A | ¿Esta aplicación cumple COBIT, que establece las prácticas recomendadas para el gobierno y el control de la tecnología y los sistemas de información, y la alinea con los principios empresariales? |
+| COPPA | Cumplimiento normativo | Boolean | True, false, N/A | ¿Esta aplicación cumple con COPPA, que define los requisitos en el sitio web y los operadores de servicios en línea que proporcionan contenido a los niños en menos de 13 años de edad? |
+| FERPA | Cumplimiento normativo | Boolean | True, false, N/A | ¿Esta aplicación cumple con FERPA, una ley federal que protege la privacidad de los registros educativos de estudiantes? |
+| SEPARACIÓN | Cumplimiento normativo | Boolean | True, false, N/A | ¿Esta aplicación cumple con ESPACIAdo, una colección de reglas seguidas que abordan riesgos de privacidad en una organización? |
+| HITRUST CSF | Cumplimiento normativo | Boolean | True, false, N/A | ¿Esta aplicación cumple con HITRUST CSF, un conjunto de controles que armoniza los requisitos de las normas y los estándares de seguridad de la información? |
+| Comandos del Foro de Jericho | Cumplimiento normativo | Boolean | True, false, N/A | ¿Sigue esta aplicación los comandos de foros de Jericho, un conjunto de principios que se deben observar al diseñar sistemas para una operación segura en entornos sin uso medido? |
+| ISO 27002 | Cumplimiento normativo | Boolean | True, false, N/A | ¿Esta aplicación cumple con ISO 27002, que establece directrices comunes para los estándares de seguridad de la información de la organización y las prácticas de administración de seguridad de la información? |
+| FFIEC | Cumplimiento normativo | Boolean | True, false, N/A | ¿Esta aplicación cumple con las instrucciones del Consejo de análisis de las instituciones financieras federales sobre los controles de administración de riesgos necesarios para autenticar servicios en un entorno de banca por Internet? |
+| Propiedad de los datos | Legal | Boolean | True, False | ¿Esta aplicación conserva por completo la propiedad del usuario de los datos cargados? |
+| DMCA | Legal | Boolean | True, False | ¿Esta aplicación cumple con la ley de derechos de propiedad intelectual de DMCA), que criminalizes cualquier intento de acceder ilegalmente a material protegido por copyright? |
+| Directiva de retención de datos | Legal | Boolean | True, False | ¿Cuál es la Directiva de la aplicación para la retención de datos de usuario después de la finalización de la cuenta? |
+| RGPD Readiness (instrucción) | Legal | URL | Texto libre | Un vínculo a su sitio web, si procede, relacionando el modo en que este proveedor tiene previsto controlar el cumplimiento de RGPD. |
+| RGPD: derecho a eliminación | Legal | Boolean | True, false, N/A | ¿Deja esta aplicación el procesamiento y elimina los datos personales de un individuo en el momento de la solicitud? |
+| RGPD: infracciones de datos del informe | Legal | Boolean | True, false, N/A | ¿La aplicación informa de las infracciones de datos a las autoridades de supervisión y a los individuos afectados por la infracción en 72 horas de detección de brechas? |
+| RGPD: evaluación del impacto | Legal | Boolean | True, false, N/A | ¿Esta aplicación realiza evaluaciones de impacto en la protección de datos para identificar el riesgo para los usuarios? |
+| RGPD: control de datos de borde cruzado seguro | Legal | Boolean | True, false, N/A | ¿Esta aplicación transfiere datos de forma segura a través de los bordes? |
+| RGPD: responsable de protección de datos | Legal | Boolean | True, false, N/A | ¿Esta aplicación designa un responsable de protección de datos para supervisar la estrategia de seguridad de los datos y el cumplimiento de RGPD? |
+| RGPD: derecho a objeto | Legal | Boolean | True, false, N/A | ¿Esta aplicación proporciona a los usuarios la capacidad de objeto de procesar sus datos personales en determinadas circunstancias? |
+| RGPD: derecho a acceder | Legal | Boolean | True, false, N/A | ¿Esta aplicación proporciona a los usuarios la capacidad de conocer, previa solicitud, qué datos personales usa una empresa y cómo se usa? |
+| RGPD: derecho a datos portablility | Legal | Boolean | True, false, N/A | ¿Esta aplicación proporciona a los usuarios la capacidad de obtener y reutilizar sus datos personales para sus propios propósitos a través de diferentes servicios a petición? |
+| RGPD: derecho a ser informado | Legal | Boolean | True, false, N/A | ¿Esta aplicación informa a los usuarios de las medidas de seguridad adecuadas que se aplican cuando los datos personales se transfieren a un país no perteneciente a la UE o a una organización internacional? |
+| RGPD: derecho a la restricción de procesamiento | Legal | Boolean | True, false, N/A | ¿Esta aplicación proporciona a los usuarios la capacidad de bloquear o suprimir el procesamiento de los datos personales? |
+| RGPD: derechos relacionados con la toma de decisiones automatizadas | Legal | Boolean | True, false, N/A | ¿Esta aplicación proporciona a los usuarios la capacidad de elegir no estar sujeta a una decisión basada únicamente en el procesamiento automatizado? Esto incluye la generación de perfiles, que puede tener consecuencias legales. |
+| RGPD: legal base de procesamiento | Legal | Boolean | True, false, N/A | ¿Esta aplicación procesa los datos personales legalmente de acuerdo con el consentimiento, el contrato, la obligación legal, los intereses vitales, los intereses legítimos, la categoría especial, los datos y los datos de ofensa Penal? |
+| RGPD: derecho a rectificación | Legal | Boolean | True, false, N/A | ¿Esta aplicación proporciona a los usuarios la capacidad de rectificar sus datos personales? El controlador debe responder a todas las solicitudes de sus asuntos de datos en un mes. |
 
 
-\* Los campos de tipo *matriz* deben separarse con punto y coma (;).
+\*Los campos de tipo *array* deben separarse con punto y coma (;).
 
 ## <a name="next-steps"></a>Pasos siguientes 
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)

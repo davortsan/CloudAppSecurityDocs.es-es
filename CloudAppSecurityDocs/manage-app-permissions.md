@@ -2,9 +2,9 @@
 title: 'Control de qué aplicaciones de OAuth en la nube de terceros obtienen permisos: Cloud App Security | Microsoft Docs'
 description: Este artículo proporciona información sobre cómo puede controlar, prohibir y permitir aplicaciones de OAuth de terceros.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 9/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d65c332cbf464a17fc3919d1a08fd7ff7a7a9493
-ms.sourcegitcommit: 0b78b13bc163bfcd6f2ae13b1f57acee05e5b423
+ms.openlocfilehash: 856acde6b2c0339921b8bd198b2e42cf4e5cfd1b
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2019
-ms.locfileid: "70208881"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084215"
 ---
 # <a name="manage-oauth-apps"></a>Administrar aplicaciones de OAuth
 
@@ -101,7 +101,7 @@ Puede consultar aplicaciones de OAuth en la vista **Básica** o la vista **Avanz
 
 ## <a name="oauth-app-auditing"></a>Auditoría de la aplicación OAuth
 
-Cloud App Security audita todas las actividades de autorización de OAuth para proporcionarle una supervisión e investigación completas de las actividades realizadas. También puede exportar los detalles de los usuarios que autorizaron una aplicación de OAuth específica, lo que le proporciona información adicional sobre los usuarios, que puede usar para realizar un análisis más exhaustivo.
+Cloud App Security audita todas las actividades de autorización OAuth para ofrecerle funciones completas de supervisión e investigación de las actividades realizadas. También puede exportar los detalles de los usuarios que autorizaron una aplicación de OAuth específica, lo que le proporciona información adicional sobre los usuarios, que puede usar para realizar un análisis más exhaustivo.
 
 Para exportar el registro, realice los pasos siguientes:
 

@@ -2,7 +2,7 @@
 title: Conexión de G Suite con Cloud App Security
 description: En este artículo se proporciona información sobre cómo conectar G Suite con Cloud App Security mediante el conector de API para la visibilidad y el control del uso.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 6/17/2019
@@ -15,12 +15,12 @@ ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c5b06f08452fb626ee7042ffc3ab6f79f6125604
-ms.sourcegitcommit: ea1c0f7638eaf0601ae476fea0d40e01bf8a6f4d
+ms.openlocfilehash: 94fb1fcb6f66e9abacffca884cb18f7da18a25b0
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298966"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084181"
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Conectar G Suite con Microsoft Cloud App Security
 
@@ -101,23 +101,23 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
   
      ![edición de Google](./media/google11.png "edición de Google")  
   
-16. Haga clic en **vista dominio Id. de cliente de delegación de todo**.
+16. Haga clic en **Ver ID**. de cliente de delegación en todo el dominio.
   
-     ![Id. de cliente de Google](./media/google12.png "google12") 
+     ![ID. de cliente de Google](./media/google12.png "google12") 
 
-    -   Copia el **Id. de cliente** -lo necesitará más adelante.
+    -   Copie el **ID** . de cliente (lo necesitará más adelante).
 
     -   Vaya a [admin.google.com](https://admin.google.com/) y haga clic en **Seguridad**.
 
-    -   Seleccione **mostrar más** y, a continuación, elija **configuración avanzada**.
+    -   Seleccione **Mostrar más** y, a continuación, **Configuración avanzada**.
 
-    -   En el **autenticación** sección, seleccione **acceso de cliente de administración de API**.
+    -   En la sección **autenticación** , seleccione **administrar acceso de cliente de API**.
 
-    -   En el **nombre cliente** , escriba el **Id. de cliente** que copió anteriormente.
+    -   En el cuadro **nombre de cliente** , escriba el identificador de **cliente** que copió anteriormente.
 
-          ![administrar el acceso de cliente de api](./media/google12-2.png "google12-2")
+          ![administrar el acceso de cliente de API](./media/google12-2.png "google12-2")
 
-    -   En el **uno o más ámbitos de API** , escriba la siguiente lista de ámbitos necesarios (copie el texto y péguelo en el cuadro):
+    -   En el cuadro **uno o más ámbitos** de la API, escriba la siguiente lista de ámbitos necesarios (Copie el texto y péguelo en el cuadro):
 
         `https://www.googleapis.com/auth/admin.reports.audit.readonly,https://www.googleapis.com/auth/admin.reports.usage.readonly,https://www.googleapis.com/auth/drive,https://www.googleapis.com/auth/drive.appdata,https://www.googleapis.com/auth/drive.apps.readonly,https://www.googleapis.com/auth/drive.file,https://www.googleapis.com/auth/drive.metadata.readonly,https://www.googleapis.com/auth/drive.readonly,https://www.googleapis.com/auth/drive.scripts,https://www.googleapis.com/auth/admin.directory.user.readonly,https://www.googleapis.com/auth/admin.directory.user.security,https://www.googleapis.com/auth/admin.directory.user.alias,https://www.googleapis.com/auth/admin.directory.orgunit,https://www.googleapis.com/auth/admin.directory.notifications,https://www.googleapis.com/auth/admin.directory.group.member,https://www.googleapis.com/auth/admin.directory.group,https://www.googleapis.com/auth/admin.directory.device.mobile.action,https://www.googleapis.com/auth/admin.directory.device.mobile,https://www.googleapis.com/auth/admin.directory.user`
 
@@ -237,7 +237,7 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
   
     1.  **Id. de la cuenta de servicio** que ha copiado en el paso 13.  
   
-    2.  **Número (Id. de aplicación) del proyecto** que ha copiado en el paso 22.  
+    2.  **Número de proyecto (identificador de la aplicación)** que ha copiado en el paso 22.  
   
     3.  Cargue el archivo P12 de **certificado** que ha guardado en el paso 12. Para hacerlo, necesita la contraseña que ha guardado.  
   

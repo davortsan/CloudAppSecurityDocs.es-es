@@ -2,9 +2,9 @@
 title: Integración de Azure Information Protection con Cloud App Security
 description: Este artículo proporciona información sobre cómo sacar provecho de las etiquetas de Azure Information Protection en Cloud App Security para tener un mayor control del uso de aplicaciones de nube de la organización.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 7/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 16ad39d89a0148d0be5db92f3c0a9d6df0f6a8ae
-ms.sourcegitcommit: 5c8678d44aa73375703fd54fc7e0386b704bd3bc
+ms.openlocfilehash: d9c8385efac05367213fed4bd484509a9ba76a25
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68633112"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71083786"
 ---
 # <a name="azure-information-protection-integration"></a>Integración de Azure Information Protection
 

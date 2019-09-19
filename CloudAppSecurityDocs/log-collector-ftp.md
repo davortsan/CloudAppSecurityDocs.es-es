@@ -2,9 +2,9 @@
 title: Configuración de FTP del recopilador de registros
 description: En este artículo se describe el proceso para modificar la configuración de Docker de Cloud Discovery para Cloud App Security.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 8/7/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 776e834f-3c20-4d5f-9fab-4c5b975edb06
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ab97993b283df9a6669fcb475bc60d6030accbae
-ms.sourcegitcommit: 39faa183e7d781660d475c79c827adbb4cc635fb
+ms.openlocfilehash: 457d2cfd0a5b1c25b8463a8d48e3172c044a673e
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68878832"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084138"
 ---
 # <a name="log-collector-ftp-configuration"></a>Configuración de FTP del recopilador de registros
 

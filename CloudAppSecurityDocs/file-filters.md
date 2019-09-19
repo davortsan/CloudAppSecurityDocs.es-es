@@ -2,9 +2,9 @@
 title: Descripción de los datos y los filtros de archivo disponibles en Cloud App Security
 description: En este artículo de referencia se proporciona información sobre los tipos de archivo y filtros de archivo que usa Cloud App Security.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MSn
+manager: shsagirn
 ms.date: 7/7/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 82332b70c58f81e5084b3d26394430e429490b54
-ms.sourcegitcommit: 0249f6e4a51240e6e37bc67430304e5a261e340a
+ms.openlocfilehash: c7c7912a0b9363ce7f5375038914ea62d4606262
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2019
-ms.locfileid: "67610896"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084661"
 ---
 # <a name="files"></a>Archivos
 
@@ -136,24 +136,24 @@ También puede establecer la directiva para que se ejecute en determinados archi
 
 ## <a name="authorizing-files"></a>Autorización de archivos
 
-Después de que Cloud App Security ha identificado los archivos como que suponen un riesgo DLP o malware, es recomendable que investigue los archivos. Si determina que los archivos son seguros, se puede autorizar. Autorización de un archivo quita el informe de detección de malware y suprime a coincidencias futuras en este archivo.
+Una vez que Cloud App Security ha identificado los archivos como un riesgo de malware o DLP, recomendamos que investigue los archivos. Si determina que los archivos son seguros, puede autorizarlos. La autorización de un archivo quita el informe de detección de malware y suprime futuras coincidencias en este archivo.
 
-### <a name="to-authorize-files"></a>Para autorizar a los archivos
+### <a name="to-authorize-files"></a>Para autorizar archivos
 
-1. En Cloud App Security, haga clic en **Control** y, a continuación, **directivas**.
-1. En la lista de directivas, en la fila en la que la directiva que desencadenó la investigación, en el **recuento** columna, haga clic en vinculan las coincidencias.
+1. En Cloud App Security, haga clic en **control** y luego en **directivas**.
+1. En la lista de directivas, en la fila en la que aparece la Directiva que desencadenó la investigación, en la columna **recuento** , haga clic en el vínculo coincidencias.
     > [!TIP]
-    > Puede filtrar la lista de directivas por tipo. En la tabla siguiente se enumera por tipo de riesgo que filtrar el tipo que se usará:
+    > Puede filtrar la lista de directivas por tipo. En la tabla siguiente se enumeran, por tipo de riesgo, el tipo de filtro que se va a usar:
     >
     > | Tipo de riesgo | Tipo de filtro |
     > | --- | --- |
     > | DLP | Directiva de archivo |
     > | Malware | Directiva de detección de malware |
-1. En la lista de archivos coincidentes, en la fila en la que aparece el archivo está investigando, haga clic en **Authorize**.
+1. En la lista de archivos coincidentes, en la fila en la que aparece el archivo en investigación, haga clic en **autorizar**.
 
 ## <a name="working-with-the-file-drawer"></a>Uso del cajón de archivos
 
-Puede ver más información sobre un archivo si hace clic en él en el registro de archivos. Al hacer clic en abre la **cajón de archivos** que proporciona las siguientes acciones adicionales que puede realizar en el archivo:
+Puede ver más información sobre un archivo si hace clic en él en el registro de archivos. Al hacer clic en se abre el **cajón de archivos** que proporciona las siguientes acciones adicionales que puede realizar en el archivo:
 
 - **Dirección URL**: le lleva a la ubicación del archivo.
 - **Identificadores de archivos**: abre una ventana emergente con los datos sin procesar sobre el archivo, como su id. o las claves de cifrado.

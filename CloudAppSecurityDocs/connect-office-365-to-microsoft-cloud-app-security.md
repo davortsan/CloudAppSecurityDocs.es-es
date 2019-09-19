@@ -2,9 +2,9 @@
 title: Conectar Office 365 con Cloud App Security
 description: En este artículo se proporciona información sobre cómo conectar Office 365 con Cloud App Security mediante el conector de API para la visibilidad y el control del uso.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 7/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 695432304872dc0f5f67623b2b6a8933cbc7d500
-ms.sourcegitcommit: 5c8678d44aa73375703fd54fc7e0386b704bd3bc
+ms.openlocfilehash: fc9c45a20e59c7dd4591cbeda53df6951c3cac44
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68633147"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084065"
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Conectar Office 365 con Microsoft Cloud App Security
 

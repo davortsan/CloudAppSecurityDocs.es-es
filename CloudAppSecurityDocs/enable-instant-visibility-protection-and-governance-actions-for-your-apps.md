@@ -2,9 +2,9 @@
 title: 'Conexión de aplicaciones para obtener visibilidad y control: Cloud App Security | Microsoft Docs'
 description: En este artículo se describe el proceso para conectar aplicaciones con las aplicaciones en la nube de la organización mediante conectores de API.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 9/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3c5847c321712b8dfb61aae13521dab1c4b17ce3
-ms.sourcegitcommit: 0b78b13bc163bfcd6f2ae13b1f57acee05e5b423
+ms.openlocfilehash: 9de8c36beed2ffb83152f2ff58da36b897c7026f
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2019
-ms.locfileid: "70208815"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084574"
 ---
 # <a name="connect-apps"></a>Conectar aplicaciones
 

@@ -2,9 +2,9 @@
 title: Trabajo con aplicaciones detectadas en Cloud App Security
 description: En este artículo se describe el proceso de identificación y corrección de aplicaciones de riesgo de Cloud Discovery en Cloud App Security.
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 9/3/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 67fafb736c6689c1a74f40523cbcc2f7ce70b190
-ms.sourcegitcommit: 78693a57e608624cd5c9ad4d0a47f4d5be515858
+ms.openlocfilehash: 58c35f83f20dbc81d051f488d70ecf64ccfd186f
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70862238"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71083694"
 ---
 # <a name="working-with-discovered-apps"></a>Trabajar con aplicaciones detectadas
 
