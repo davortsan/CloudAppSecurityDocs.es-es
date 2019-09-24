@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 8/25/2019
+ms.date: 9/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 10f17632f5b611b86b1555ff50be5237c103ea88
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: d26be7ba74d2eaf7d6f2baeb66ae9824a387ad02
+ms.sourcegitcommit: 37e7568ae5b78fb52bc7bd66261a2d2fbf50c1dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71085034"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185164"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicaciones con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security
 
@@ -71,6 +71,17 @@ El control de aplicaciones de acceso condicional permite crear directivas que ti
 - Dispositivos unidos a dominio
 - Implementación de certificados de cliente
 
+Para configurar una directiva para aprovechar la administración de dispositivos mediante certificados de cliente:
+
+1. Vaya al engranaje Configuración y elija **Identificación de dispositivos**.
+1. Cargue al menos un certificado raíz o intermedio.
+1. Una vez cargado el certificado, puede crear [directivas de acceso](access-policy-aad.md) y directivas de [sesión](session-policy-aad.md) basadas en la **etiqueta del dispositivo** y el certificado de **cliente válido**.
+
+    ![Id. de dispositivo del Control de aplicaciones de acceso condicional](./media/caac-device-id.png)
+
+> [!NOTE]
+> Solo se solicita un certificado a un usuario si la sesión coincide con una directiva que use el filtro de certificado de cliente válido.
+
 ### <a name="compliant-and-domain-joined-devices"></a>Dispositivos compatibles y unidos a dominio
 
 El acceso condicional de Azure AD permite pasar información sobre los dispositivos compatibles y unidos a un dominio directamente a Microsoft Cloud App Security. Desde allí, se puede desarrollar una directiva de sesión o acceso que use el estado del dispositivo como filtro. Para más información, vea [Introducción a la administración de dispositivos en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
@@ -106,11 +117,15 @@ El Control de aplicaciones de acceso condicional es compatible actualmente con a
 
 > [!NOTE]
 > El uso del filtro de la **aplicación cliente** en las directivas de acceso puede hacer que la sesión de usuario resultante sea proxy por Cloud App Security.
+>
+> En las directivas de acceso, cuando se usa el filtro de **aplicación cliente** , el valor predeterminado es **móvil y escritorio**. Esto puede hacer que la sesión de usuario resultante sea proxy mediante Cloud App Security. Para anular este comportamiento, establezca el valor en **Explorador**.
+>
+> De forma predeterminada, la evaluación de si una aplicación es móvil o de escritorio puede hacer que la sesión de usuario resultante sea proxy mediante Cloud App Security. Para evitar este comportamiento, establezca el filtro de la aplicación cliente en las directivas de acceso para que sea igual al **Explorador**.
 
 > [!NOTE]
 > Cloud App Security aprovecha los protocolos de Seguridad de la capa de transporte (TLS) 1.2+ para proporcionar el mejor cifrado de la clase. No se podrá obtener acceso a las aplicaciones de cliente nativo y los exploradores que no admitan TLS 1.2+ al configurarse con el control de sesión. Sin embargo, las aplicaciones SaaS que usen TLS 1.1 o versiones anteriores aparecerán en el explorador como usuarias de TLS 1.2+ al configurarse con Cloud App Security.
 
-Al integrar de forma nativa con Azure AD, cualquier aplicación configurada con SAML o Open ID Connect se puede incorporar por sí misma. Además, las siguientes aplicaciones se incluyen en Cloud App Security y ya se incorporan y están listas para usarse en cualquier inquilino:
+<a name="featured-apps"></a>Al integrar de forma nativa con Azure AD, cualquier aplicación configurada con SAML o Open ID Connect se puede incorporar por sí misma. Además, las siguientes aplicaciones se incluyen en Cloud App Security y ya se incorporan y están listas para usarse en cualquier inquilino:
 
 - AWS
 - Azure DevOps (Visual Studio Team Services)
@@ -129,7 +144,7 @@ Al integrar de forma nativa con Azure AD, cualquier aplicación configurada con 
 - JIRA/Confluence
 - OneDrive para la Empresa
 - Aprendizaje de LinkedIn
-- Power BI
+- Power BI
 - Salesforce
 - ServiceNow
 - SharePoint Online
