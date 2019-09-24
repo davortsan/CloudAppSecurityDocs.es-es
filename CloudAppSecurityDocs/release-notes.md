@@ -1,9 +1,9 @@
 ---
 title: Novedades de Cloud App Security
 description: Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security.
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 9/1/2019
 ms.topic: overview
 ms.service: cloud-app-security
@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6fe0f633b55a718b9a4b2be8fef2de4be87cd0ca
-ms.sourcegitcommit: 0b78b13bc163bfcd6f2ae13b1f57acee05e5b423
+ms.openlocfilehash: 4fa24ef9d5d6dae715eedbf9967b3c2251eb03a5
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2019
-ms.locfileid: "70209037"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084979"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
