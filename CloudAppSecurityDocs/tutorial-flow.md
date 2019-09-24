@@ -1,17 +1,17 @@
 ---
 title: Ampliación de la gobernanza a la corrección de puntos de conexión | Microsoft Docs
 description: En este tutorial se describe el proceso para configurar las alertas de las directivas de Microsoft Cloud App Security para desencadenar flujos de trabajo de Microsoft Flow y ejecutar acciones de corrección de Advanced Threat Protection de Microsoft Defender.
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: tutorial
 ms.date: 9/8/2019
-ms.openlocfilehash: ab9ab1a0e616ec25f7316691e6f747b20226cc10
-ms.sourcegitcommit: e1b3e3b45d39e46734e3a994bd8d0d1459be585a
+ms.openlocfilehash: df591023c15990ec4c00060c34a9d5671b5da3b1
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2019
-ms.locfileid: "70800871"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084946"
 ---
 # <a name="tutorial-extend-governance-to-endpoint-remediation"></a>Tutorial: Ampliación de la gobernanza a la corrección de puntos de conexión
 
