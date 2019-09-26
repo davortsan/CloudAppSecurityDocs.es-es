@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/3/2019
+ms.date: 09/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 58c35f83f20dbc81d051f488d70ecf64ccfd186f
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 4a9d504193061091352985a616893f2220c5d040
+ms.sourcegitcommit: 254d5be2b002c5658803923aa9ef97240dcdc917
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71083694"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71263272"
 ---
 # <a name="working-with-discovered-apps"></a>Trabajar con aplicaciones detectadas
 
@@ -97,7 +97,9 @@ La mejor manera de obtener información general sobre el uso de Shadow IT en la 
 
 Para generar un informe ejecutivo de Cloud Discovery:
 
-En el **panel de Cloud Discovery**, haga clic en los puntos suspensivos que encontrará en la esquina superior derecha del menú y seleccione **Generar informe ejecutivo de Cloud Discovery**.
+1. En el **Panel de Cloud Discovery**, haga clic en los tres puntos situados en la esquina superior derecha del panel y, a continuación, seleccione **generar Cloud Discovery Informe Ejecutivo**.
+1. Opcionalmente, cambie el nombre del informe.
+1. Haga clic en **generar**.
 
 ## <a name="exclude-entities"></a>Excluir entidades
 
