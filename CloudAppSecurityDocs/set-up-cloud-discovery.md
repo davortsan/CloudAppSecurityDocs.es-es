@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 838676a48aa92016f6ff3fc198423668f0ecaf77
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: f6c3408b7887ac35924ff647bbe67d8525bef9ed
+ms.sourcegitcommit: 2e8488efcc2253e0b5fa33db308e4986a9cdefd5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084911"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71997399"
 ---
 # <a name="set-up-cloud-discovery"></a>Configurar Cloud Discovery
 
@@ -63,6 +63,7 @@ El proceso de generación de una evaluación de riesgos consta de los siguientes
 - Cisco IronPort WSA
 - Cisco Meraki – Registro de direcciones URL
 - Clavister NGFW (Syslog)
+- ContentKeeper
 - Digital Arts i-FILTER
 - Forcepoint
 - Fortinet Fortigate
@@ -92,32 +93,33 @@ Atributos de datos (según la documentación del proveedor):
 
 | Origen de datos | Dirección URL de la aplicación de destino | IP de la aplicación de destino | Nombre de usuario | IP de origen | Tráfico total | Bytes cargados |
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
-| Barracuda | **Sí** | **Sí** | **Sí** | **Sí** | Sin | Sin |
-| Blue Coat | **Sí** | Sin | **Sí** | **Sí** | **Sí** | **Sí** |
-| Checkpoint | Sin | **Sí** | Sin | **Sí** | Sin | Sin |
-| Cisco ASA (Syslog) | Sin | **Sí** | Sin | **Sí** | **Sí** | Sin |
+| Barracuda | **Sí** | **Sí** | **Sí** | **Sí** | No | No |
+| Blue Coat | **Sí** | No | **Sí** | **Sí** | **Sí** | **Sí** |
+| Checkpoint | No | **Sí** | No | **Sí** | No | No |
+| Cisco ASA (Syslog) | No | **Sí** | No | **Sí** | **Sí** | No |
 | Cisco ASA con FirePOWER | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
 | Seguridad Web de Cisco Cloud |**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
-| Cisco FWSM | Sin | **Sí** | Sin | **Sí** | **Sí** | Sin |
+| Cisco FWSM | No | **Sí** | No | **Sí** | **Sí** | No |
 | Cisco Ironport WSA | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
-| Cisco Meraki | **Sí** | **Sí** | Sin | **Sí** | Sin | Sin |
+| Cisco Meraki | **Sí** | **Sí** | No | **Sí** | No | No |
 | Clavister NGFW (Syslog) | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
-| SonicWall (anteriormente Dell) | **Sí** | **Sí** | Sin | **Sí** | **Sí** | **Sí** |
+| ContentKeeper | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
+| SonicWall (anteriormente Dell) | **Sí** | **Sí** | No | **Sí** | **Sí** | **Sí** |
 | Digital Arts i-FILTER | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
 | ForcePoint LEEF |**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
 | Nube de seguridad Web de ForcePoint |**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
-| FortiGate | Sin | **Sí** | Sin | **Sí** | **Sí** | **Sí** |
-| Fortinet FortiOS |**Sí**|**Sí**|Sin|**Sí**|**Sí**|**Sí**|
+| FortiGate | No | **Sí** | No | **Sí** | **Sí** | **Sí** |
+| Fortinet FortiOS |**Sí**|**Sí**|No|**Sí**|**Sí**|**Sí**|
 | iboss |**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
-| Juniper SRX | Sin | **Sí** | Sin | **Sí** | **Sí** | **Sí** |
-| Juniper SSG | Sin | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
-| McAfee SWG | **Sí** | Sin | Sin | **Sí** | **Sí** | **Sí** |
-| MS TMG | **Sí** | Sin | **Sí** | **Sí** | **Sí** | **Sí** |
-| Palo Alto Networks | Sin | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
-| Sophos | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** | Sin |
-| Squid (Common) | **Sí** | Sin | **Sí** | **Sí** | Sin | **Sí** |
-| Squid (Native) | **Sí** | Sin | **Sí** | **Sí** | Sin | **Sí** |
-| Stormshield | Sin | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
+| Juniper SRX | No | **Sí** | No | **Sí** | **Sí** | **Sí** |
+| Juniper SSG | No | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
+| McAfee SWG | **Sí** | No | No | **Sí** | **Sí** | **Sí** |
+| MS TMG | **Sí** | No | **Sí** | **Sí** | **Sí** | **Sí** |
+| Palo Alto Networks | No | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
+| Sophos | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** | No |
+| Squid (Common) | **Sí** | No | **Sí** | **Sí** | No | **Sí** |
+| Squid (Native) | **Sí** | No | **Sí** | **Sí** | No | **Sí** |
+| Stormshield | No | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
 | Websense: informe de detalle de investigación (CSV) | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
 | Websense: registro de actividad de Internet (CEF) | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
 | Zscaler | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
