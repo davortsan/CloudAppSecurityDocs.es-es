@@ -4,19 +4,19 @@ description: Este artículo se actualiza con frecuencia para informarle de las n
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 09/25/2019
+ms.date: 10/06/2019
 ms.topic: overview
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6c78fc716caa1c43c0d0b1a24f5dfaa8adcd72e1
-ms.sourcegitcommit: be21e0f68f5e4d23bde661485bd9338e74bd6e45
+ms.openlocfilehash: 97d006399582e653322910803aaeec04f74582d0
+ms.sourcegitcommit: 2e8488efcc2253e0b5fa33db308e4986a9cdefd5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71307723"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71997424"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
@@ -25,6 +25,28 @@ ms.locfileid: "71307723"
 Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security.
 
 Fuente RSS: Reciba una notificación cuando se actualice esta página. Para ello, copie y pegue la siguiente dirección URL en su lector de fuentes: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-159"></a>Notas de la versión 159 de Cloud App Security
+
+Publicado el 6 de octubre de 2019
+
+- **Nuevo analizador de registros de ContentKeeper de Cloud Discovery**  
+Cloud Discovery de Cloud App Security analiza una amplia gama de registros de tráfico para clasificar y puntuar aplicaciones. Ahora Cloud Discovery incluye un analizador de registros integrado para admitir los formatos de registro de ContentKeeper. Para ver una lista de los analizadores de registros admitidos, vea [Firewalls y proxies admitidos](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+
+- **Nuevas detecciones**  
+Las siguientes nuevas directivas de detección de anomalías vienen integradas y habilitadas automáticamente:
+
+  - **Actividad de eliminación de correos electrónicos sospechosos (versión preliminar)**  
+    Le avisa cuando un usuario realiza actividades inusuales de eliminación de correos electrónicos. Esta directiva puede ayudarlo a detectar los buzones de usuario que pueden estar en peligro por posibles vectores de ataque, como la comunicación de comando y control (C&C/C2) por correo electrónico.
+
+  - **Varias actividades de uso compartido de informes de Power BI (versión preliminar)**  
+    Le avisa cuando un usuario realiza un número inusual de actividades de uso compartido de informes de Power BI, en comparación con la línea de base aprendida.
+
+  - **Varias actividades de creación de máquinas virtuales (versión preliminar)**  
+    Le avisa cuando un usuario realiza un número inusual de actividades de creación de máquinas virtuales, en comparación con la línea de base aprendida. Actualmente se aplica a Azure.
+
+  - **Varias actividades de eliminación de almacenamiento (versión preliminar)**  
+    Le avisa cuando un usuario realiza un número inusual de actividades de eliminación de almacenamiento, en comparación con la línea de base aprendida. Actualmente se aplica a Azure.
 
 ## <a name="cloud-app-security-release-158"></a>Notas de la versión 158 de Cloud App Security
 
@@ -431,7 +453,7 @@ Publicado el 24 de junio de 2018
 
 - **Detección automática de aplicaciones OAuth peligrosas**: además de la investigación existente de aplicaciones de OAuth conectadas al entorno, ahora Microsoft Cloud App Security está implementando de forma gradual la funcionalidad para establecer notificaciones automatizadas que avisen cuando una aplicación de OAuth cumple determinados criterios. Por ejemplo, puede recibir alertas automáticamente cuando haya aplicaciones que requieran un alto nivel de permisos y las hayan autorizado más de 50 usuarios. Para obtener más información, vea [Directivas de permisos de la aplicación](app-permission-policy.md).
 
-- **Compatibilidad con la administración de proveedores de servicios de seguridad administrada (MSSP)** : Microsoft Cloud App Security ahora proporciona una mejor experiencia de administración para MSSP. Ahora es posible configurar a usuarios externos como administradores y asignarles cualquiera de los [roles disponibles actualmente en Microsoft Cloud App Security](manage-admins.md). Además, para permitir que los MSSP proporcionen servicios en varios inquilinos de clientes, los administradores que tienen derechos de acceso a más de un inquilino ahora pueden cambiar de inquilino fácilmente en el portal. Para información sobre cómo administrar los administradores, vea [Administración de los administradores](manage-admins.md).
+- **Compatibilidad con la administración de proveedores de servicios de seguridad administrada (MSSP)**: Microsoft Cloud App Security ahora proporciona una mejor experiencia de administración para MSSP. Ahora es posible configurar a usuarios externos como administradores y asignarles cualquiera de los [roles disponibles actualmente en Microsoft Cloud App Security](manage-admins.md). Además, para permitir que los MSSP proporcionen servicios en varios inquilinos de clientes, los administradores que tienen derechos de acceso a más de un inquilino ahora pueden cambiar de inquilino fácilmente en el portal. Para información sobre cómo administrar los administradores, vea [Administración de los administradores](manage-admins.md).
 
 - **Disponibilidad general de la integración con DLP externa**: Microsoft Cloud App Security permite [aprovechar las inversiones existentes en sistemas de clasificación de terceros](icap-stunnel.md), como soluciones de prevención de pérdida de datos (DLP), y permite examinar el contenido de aplicaciones en la nube mediante las implementaciones que se ejecutan en el entorno. Para obtener más información, vea [Integración de DLP externa](icap-stunnel.md).
 
