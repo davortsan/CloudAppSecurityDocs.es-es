@@ -2,9 +2,9 @@
 title: Integre la protección contra amenazas avanzada de Azure con Cloud App Security
 description: En este artículo se proporciona información sobre cómo aprovechar la información sobre protección contra amenazas avanzada de Azure en Cloud App Security para la detección de riesgos híbridas.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 6/27/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,18 +15,18 @@ ms.assetid: 63e82b47-bb08-4614-af55-f85d04edfc5a
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 63da07db9a3fa29c49f08f8082b969adcbda6bca
-ms.sourcegitcommit: 4861a99debc71f266de738d5db78b711590b5e88
+ms.openlocfilehash: cd52e120f20e6b8ebaeacdd5a30a7c98d883fec9
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68431150"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72334882"
 ---
 # <a name="azure-advanced-threat-protection-integration"></a>Integración de protección contra amenazas avanzada de Azure
 
 *Se aplica a: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security se integra con protección contra amenazas avanzada de Azure (ATP de Azure) para proporcionar análisis del comportamiento de la entidad de usuario (UEBA) en un entorno híbrido, tanto en la aplicación en la nube [como en el entorno local, para obtener más información, consulte Tutorial: Investigue a los](tutorial-ueba.md) usuarios de riesgo para obtener más información sobre el aprendizaje automático y el análisis del comportamiento proporcionado por ATP de Azure, consulte [¿Qué es ATP de Azure?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
+Microsoft Cloud App Security se integra con la protección contra amenazas avanzada de Azure (ATP de Azure) para proporcionar análisis del comportamiento de la entidad de usuario (UEBA) en un entorno híbrido, tanto en la aplicación en la nube como en el entorno local, para obtener más información, consulte [Tutorial: investigación de riesgo para obtener](tutorial-ueba.md) más información sobre el aprendizaje automático y el análisis de comportamiento proporcionado por ATP de Azure, consulte [¿Qué es ATP de Azure?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
 
 ## <a name="prerequisites"></a>Requisitos previos
 

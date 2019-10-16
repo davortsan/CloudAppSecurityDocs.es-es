@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6f81cfa5dc504e8b88574a8bc72fb219ad85a95f
-ms.sourcegitcommit: 2e8488efcc2253e0b5fa33db308e4986a9cdefd5
+ms.openlocfilehash: f63c05f9584b960ee5ac7b01bd06a4971e02bfe0
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71997396"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72334814"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtención de análisis de comportamiento y detección de anomalías instantáneos
 
@@ -62,6 +62,14 @@ Cuanto mayor sea el nivel de confidencialidad, menor será la supresión que se 
 ### <a name="malware-detection"></a>Detección de malware
 
 * Esta detección identifica los archivos maliciosos en el almacenamiento en nube, tanto si proceden de aplicaciones de Microsoft como de aplicaciones de terceros. Microsoft Cloud App Security usa la inteligencia sobre amenazas de Microsoft para reconocer si determinados archivos están asociados a ataques de malware conocidos y son potencialmente maliciosos. Esta directiva integrada está deshabilitada de forma predeterminada. No se analizan todos los archivos, pero se usa la heurística para buscar archivos potencialmente peligrosos. Una vez que se han detectado archivos, puede ver una lista de **archivos infectados**. Haga clic en el nombre de archivo de malware en el cajón de archivos para abrir un informe de malware con información sobre el tipo de malware con el que está infectado el archivo.
+
+    > [!NOTE]
+    >- Para la detección de malware de Office 365, necesita una licencia válida para la protección contra amenazas avanzada de Office 365 P1.
+    >- Cloud App Security admite la detección de malware en las siguientes aplicaciones:
+    >    - Cuadro
+    >    - Dropbox
+    >    - G Suite
+    >    - Office 365
 
 ### <a name="activity-from-anonymous-ip-addresses"></a>Actividad desde direcciones IP anónimas
 
@@ -159,7 +167,7 @@ Para establecer el ámbito de una directiva de detección de anomalías:
 
 Puede evaluar la prioridad de las diversas alertas desencadenadas por las nuevas directivas de detección de anomalías rápidamente y decidir cuáles es necesario atender primero. Para ello, necesita el contexto de la alerta, de forma que pueda ver la imagen más grande y comprender si realmente está ocurriendo algo malintencionado.
 
-1. En el **registro de actividades**, puede abrir una actividad para mostrar el cajón de actividades. Haga clic en **Usuario** para ver la pestaña de información del usuario. Esta pestaña incluye información como el número de alertas, las actividades y desde dónde se han conectado, lo que es importante en una investigación.
+1. En el **registro de actividades**, puede abrir una actividad para mostrar el cajón de actividades. Haga clic en **usuario** para ver la pestaña información de usuario. Esta pestaña incluye información como el número de alertas, las actividades y el lugar desde el que se han conectado, lo que es importante en una investigación.
 
     ![anomaly Detection alert1 @ no__t-1 ![anomaly Detection alert1 @ no__t-3
 

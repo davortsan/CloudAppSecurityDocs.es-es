@@ -2,9 +2,9 @@
 title: 'Visibilidad de las actividades de aplicaciones en la nube: Cloud App Security | Microsoft Docs'
 description: En este artículo se proporciona una lista de actividades, filtros y parámetros de coincidencia que se pueden aplicar a directivas de actividad.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/16/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7104207cc15fa915b3e08bcfe130d5bd43702340
-ms.sourcegitcommit: 0ea0ea939df9f9367f10fc60908d4f9fb9b06de1
+ms.openlocfilehash: ce5cd7c341a6d255572763b879181ef2ca8f0cd6
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68601473"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72334967"
 ---
 # <a name="activities"></a>Actividades
 
@@ -33,7 +33,7 @@ Microsoft Cloud App Security le ofrece visibilidad de todas las actividades de l
 
 Se puede filtrar el **registro de actividades** para que pueda buscar actividades específicas. Cree directivas basadas en las actividades y después definir sobre qué quiere recibir alertas y actuar en consecuencia. También puede buscar actividades realizadas en determinados archivos. El tipo de actividades y la información que obtenemos de cada actividad dependen de la aplicación y de qué tipo de datos puede proporcionar la aplicación. 
 
-Por ejemplo, puede usar el **registro de actividad** para buscar usuarios en su organización que utilizan sistemas operativos o exploradores que no están actualizados, de la siguiente forma: después de conectar una aplicación a Cloud App Security en la página **Registro de actividad**, use el filtro avanzado y seleccione **Etiqueta de agente de usuario**. Después, seleccione **Outdated browser** (Explorador obsoleto) u **Outdated operating system** (Sistema operativo obsoleto).
+Por ejemplo, puede usar el **registro de actividades** para buscar usuarios de la organización que usan sistemas operativos o exploradores que no están actualizados de la siguiente forma: después de conectar una aplicación a Cloud App Security en la página del **registro de actividades**, use el filtro avanzado y seleccione **User agent tag** (Etiqueta de agente de usuario). Después, seleccione **Outdated browser** (Explorador obsoleto) u **Outdated operating system** (Sistema operativo obsoleto).
 
  ![Ejemplo de actividad de explorador obsoleto](media/activity-example-outdated.png)
  
@@ -56,15 +56,15 @@ Para ver más información sobre cada actividad, haga clic en la misma actividad
 
    - Directivas coincidentes: haga clic en el vínculo Directivas coincidentes para ver una lista de las directivas con las que coincide esta actividad.
 
-   - Ver los datos sin procesar: haga clic en la opción Ver los datos sin procesar para ver los datos reales recibidos desde la aplicación.
+   - Ver datos sin procesar: haga clic en la opción para ver los datos sin procesar para ver los datos reales recibidos desde la aplicación.
 
-   - Usuario: haga clic en el usuario para ver la página correspondiente al usuario que ha realizado la actividad. 
+   - Usuario: haga clic en el usuario para ver la página correspondiente al usuario que realizó la actividad. 
 
    - Tipo de dispositivo: haga clic en el tipo de dispositivo para ver los datos sin procesar del agente de usuario. 
 
    - Ubicación: haga clic en la ubicación para ver la ubicación en los mapas de Bing.
 
-   - Categoría y etiquetas de dirección IP: haga clic en la etiqueta IP para ver la lista de etiquetas IP que se encuentran en esta actividad. Después, puede filtrar por todas las actividades que coinciden con esta etiqueta.    
+   - Categoría y etiquetas de la dirección IP: haga clic en la etiqueta IP para ver la lista de etiquetas IP que se encuentran en esta actividad. Después, puede filtrar por todas las actividades que coinciden con esta etiqueta.    
 
  Los campos del cajón de actividades proporcionan vínculos contextuales a actividades adicionales y exploran en profundidad lo que desea realizar desde el cajón directamente. Por ejemplo, si mueve el cursor junto a la categoría de dirección IP, puede utilizar el icono Filtrar ![Agregar a filtro](./media/add-to-filter-icon.png) para agregar la dirección IP inmediatamente al filtro de la página actual. También puede utilizar el icono de engranaje de configuración ![icono de configuración](./media/contextual-settings-icon.png) que aparece para llegar directamente a la página de configuración necesaria para modificar la configuración de uno de los campos, como **Grupos de usuarios**.
 
@@ -77,7 +77,7 @@ Para ver más información sobre cada actividad, haga clic en la misma actividad
  
 ![cajón de actividades](./media/activity-drawer.png "cajón de actividades")  
   
-Para obtener una lista de las acciones de gobernanza disponibles, vea [Acciones de control de actividades](governance-actions.md#activity-governance-actions).
+Para obtener una lista de las acciones de control disponibles, vea [Acciones de control de actividades](governance-actions.md#activity-governance-actions).
 
 #### <a name="user-insights"></a>Información de usuario
 
@@ -89,7 +89,7 @@ Para ver la información de usuario:
 
 2. Después, haga clic en la pestaña **Usuario**. <br></br> Al hacer clic se abre la pestaña **Usuario** del cajón de actividades, que contiene estas conclusiones sobre el usuario:
     - **Alertas abiertas**: número de alertas abiertas relacionadas con el usuario.
-    - **Coincidencias**: número de coincidencias de directiva de archivos que pertenecen al usuario. 
+    - **Coincidencias**: número de coincidencias de directa para archivos que pertenecen al usuario. 
     - **Actividades**: número de actividades realizadas por el usuario durante los últimos 30 días.
     - **Países**: número de países desde los que se ha conectado el usuario durante los últimos 30 días.
     - **ISP**: número de ISP desde los que se ha conectado el usuario durante los últimos 30 días.
@@ -108,7 +108,7 @@ Para ver la información de dirección IP:
 2. Luego haga clic en la pestaña **Dirección IP**. <br></br> Se abrirá la pestaña **Dirección IP** del espacio de actividades, que ofrece la información siguiente sobre la dirección IP:
     - **Alertas abiertas**: número de alertas abiertas relacionadas con la dirección IP.
     - **Actividades**: número de actividades realizadas por la dirección IP durante los últimos 30 días.
-    - **Ubicación de la IP**: ubicaciones geográficas desde las que se ha conectado la dirección IP durante los últimos 30 días.
+    - **Ubicación de IP**: ubicaciones geográficas desde las cuales se conectó la dirección IP durante los últimos 30 días.
     - **Actividades**: número de actividades realizadas desde esta dirección IP durante los últimos 30 días.
     - **Actividades administrativas**: número de actividades administrativas realizadas desde esta dirección IP durante los últimos 30 días.
     - Puede realizar las siguientes acciones en la dirección IP:

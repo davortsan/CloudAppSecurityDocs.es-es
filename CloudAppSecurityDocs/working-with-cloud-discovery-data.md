@@ -2,8 +2,8 @@
 title: 'Uso de datos de Cloud Discovery para detectar comportamientos de riesgo: Cloud App Security | Microsoft Docs'
 description: En este tema se proporcionan instrucciones sobre cómo trabajar con datos de Cloud Discovery, lo que incluye trabajar con la puntuación de riesgo de la aplicación.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: shsagir
+ms.author: shsagir
 manager: angrobe
 ms.date: 05/06/2019
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8d3c5d1dc7c2f3a1b4d36db94198adc910879921
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 34127140ac088352b35ffedd03c53f9b046e07a7
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568375"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335946"
 ---
 # <a name="working-with-discovery-data"></a>Trabajo con datos de detección
 

@@ -2,9 +2,9 @@
 title: 'Establecimiento de etiquetas e intervalos IP: Cloud App Security | Microsoft Docs'
 description: En este artículo se proporcionan instrucciones para trabajar con etiquetas IP y categorías IP.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/16/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2fd5e509b9d7d75c93291833baeb06d1bee1a8f6
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: ef9645a99e7fde05b2bcc801744fb19489d26a29
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568265"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335821"
 ---
 #  <a name="IPtagsandRanges"></a> Trabajar con etiquetas e intervalos IP
 
@@ -58,15 +58,15 @@ En la barra de menús, haga clic en el icono de configuración. Seleccione **Int
   
      Las siguientes categorías IP están disponibles:  
   
-    - **Administrativa**: estas direcciones IP deben ser todas las direcciones IP de los administradores.  
+    - **Administrativo**: estas direcciones IP deben ser todas las direcciones IP de los administradores.  
   
-    - **Proveedor de nube**: estas direcciones IP deben ser las que use el proveedor de nube.
+    - **Proveedor de nube**: estas direcciones IP deben ser las direcciones IP usadas por el proveedor de nube.
   
-    - **Corporativa**: estas direcciones IP deben ser todas las de la red interna, las sucursales y las direcciones de itinerancia de Wi-Fi.  
+    - **Corporativa**: estas direcciones IP deben ser todas las direcciones IP de la red interna, las sucursales y las direcciones de itinerancia de Wi-Fi.  
   
-    - **De riesgo**: estas direcciones IP deben ser todas las que se consideran que entrañan riesgos. Puede englobar direcciones IP sospechosas detectadas en el pasado, direcciones IP en las redes de la competencia y así sucesivamente.  
+    - **De riesgo**: estas direcciones IP deben ser todas las direcciones IP que se consideran que entrañan riesgos. Puede englobar direcciones IP sospechosas detectadas en el pasado, direcciones IP en las redes de la competencia y así sucesivamente.  
   
-    - **VPN**: estas direcciones IP deben ser las que se usan en los trabajos remotos.
+    - **VPN**: estas direcciones IP deben ser las direcciones IP que se usan en los trabajos remotos.
   
 4. Especifique una etiqueta para **etiquetar** las actividades de estas direcciones IP. La etiqueta se creará si escribe una palabra en el cuadro. Con la etiqueta ya configurada, puede agregarla a más intervalos IP seleccionándola en la lista. Puede agregar tantas etiquetas IP como quiera para cada intervalo. Las etiquetas IP se pueden usar al crear directivas.  Junto con las etiquetas IP que configure, Cloud App Security tiene etiquetas integradas que no son configurables. Puede ver la lista de etiquetas en el [Filtro de etiquetas IP](activity-filters.md).  
     > [!NOTE]  

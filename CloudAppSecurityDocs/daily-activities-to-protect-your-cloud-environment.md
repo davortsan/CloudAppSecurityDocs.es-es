@@ -2,9 +2,9 @@
 title: Trabajo con el panel de Cloud App Security
 description: En este artículo se proporcionan los conceptos básicos para usar el panel de Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: de3223b5216935d8027c09017a3c143e84ed53ee
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: b5c87765b8a87beec784fb580b90d21d2c5e4596
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567949"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335713"
 ---
 # <a name="working-with-the-dashboard"></a>Trabajo con el panel
 

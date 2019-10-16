@@ -2,9 +2,9 @@
 title: 'Solución de errores de inspección de contenido: Cloud App Security | Microsoft Docs'
 description: En este artículo se proporciona una lista de los estados de inspección de contenido, así como el significado de estos.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 359eb77f-e719-4c50-9b62-6ef64149a5a5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8e7c4de4407c476282db832f6d4aa60b0e987e1c
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 6d2ffb878cc48c619a7e5026b2f51dd7407c038b
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568431"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336159"
 ---
 # <a name="troubleshooting-content-inspection"></a>Solucionar problemas relacionados con la inspección de contenido
 
@@ -39,7 +39,7 @@ En la tabla se enumera cada estado de inspección de contenido y su descripción
 |Pending|El archivo está actualmente en la cola de inspección de contenido.|
 |Error: Error de descarga|Microsoft Cloud App Security no ha podido descargar el archivo para la inspección.|
 |Error: Archivo cifrado|El archivo no se ha podido descifrar.|
-|Error: Archivo dañado|El archivo está dañado de algún modo y no se ha podido inspeccionar.|
+|Error: El archivo está dañado|El archivo está dañado de algún modo y no se ha podido inspeccionar.|
 |Error: Error interno.|Se produjo un problema indeterminado al intentar inspeccionar el archivo.|
 |Error: Error de DLP externo|Se produjo un error en la DLP externa y Cloud App Security no pudo inspeccionar el contenido.|
 |Error: Se ha excedido el tamaño de archivo|El límite de archivo varía según el tamaño del archivo y el número de caracteres.|
@@ -50,7 +50,7 @@ En la tabla se enumera cada estado de inspección de contenido y su descripción
 > [!NOTE]
 > Si observa un guión en el estado del examen, significará que el archivo no está en la cola de examen. Consulte las [directivas de archivos](data-protection-policies.md) para obtener más información sobre cómo establecer directivas de inspección de contenido.
 
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Véase también  
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  

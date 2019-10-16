@@ -2,9 +2,9 @@
 title: Información de soporte técnico y de solución de problemas para Cloud App Security
 description: En este artículo se describen las opciones de soporte técnico y de solución de problemas de Microsoft Cloud App Security
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 1/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 86204ff4-dc1d-489f-b5fd-a43930fd49d3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1a64f46730e5c9cec50acab6750305ce9004c410
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: a8a8570cfa27bdc9e05af3a8917bf0ce55a56be9
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568479"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336205"
 ---
 # <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Soporte técnico y solución de problemas de Microsoft Cloud App Security
 
@@ -30,7 +30,7 @@ En este artículo se describen las opciones de soporte técnico y de solución d
 
 ## <a name="manage-support-requests-for-cloud-app-security"></a>Administración de las solicitudes de soporte técnico para Cloud App Security
 
-Microsoft proporciona soporte técnico global, preventa, facturación y suscripción para Microsoft Cloud App Security. El soporte técnico está disponible tanto en línea como por teléfono para suscripciones pagadas y de prueba. El soporte técnico en línea está disponible en inglés y japonés. La asistencia telefónica y la asistencia de facturación en línea están disponibles en idiomas adicionales.
+Microsoft proporciona soporte técnico global, preventa, facturación y suscripción para Microsoft Cloud App Security. El soporte técnico está disponible tanto en línea como por teléfono para suscripciones pagadas y de prueba. El soporte técnico en línea está disponible en inglés y japonés. El soporte técnico telefónico y el soporte técnico de facturación en línea están disponibles en otros idiomas.
 
 Como administrador, puede usar la opción **Ayuda y soporte técnico** para presentar una solicitud de soporte técnico en línea para Cloud App Security desde Azure Portal. Para crear una solicitud de soporte técnico, la cuenta debe tener asignado uno de los siguientes [roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
 
@@ -56,19 +56,19 @@ Seleccione **Solicitud de soporte técnico** para crear una solicitud de soporte
 
     -   **Suscripción**: \<*su suscripción*\>
 
-    -   **Servicio**: **Cloud Application Security**
+    -   **Servicio**: **seguridad de aplicaciones en la nube**
 
-    -   **Tipo de problema**: Elija el tipo de problema en el menú desplegable.
+    -   **Tipo de problema**: elija el tipo de problema en el menú desplegable.
 
-    -   **Subtipo de problema**: Elija el subtipo del problema en el menú desplegable.
+    -   **Subtipo de problema**: elija el subtipo de problema en el menú desplegable.
 
-    -   **Asunto**: Describa brevemente el problema que tiene.
+    -   **Asunto**: Describa brevemente el problema que tiene
 
-4.  En la pestaña **Detalles**, rellene los detalles de su problema, el método de soporte técnico, su información de contacto y, luego, haga clic en **Siguiente: Revisar y crear**.
+4.  En la pestaña **detalles** , rellene los detalles del problema, el método de soporte técnico, su información de contacto y, a continuación, haga clic en **siguiente: revisar y crear**.
 
 5.  Revise la información, compruebe que es correcta y, después, elija **Crear** para enviar la solicitud de soporte técnico.
 
-**Nota:** Si tiene una pregunta de facturación o suscripción, puede abrir un caso para obtener soporte técnico a través de la [centro de administración de Microsoft 365](https://admin.microsoft.com/Support/SupportEntry.aspx).
+**Nota:** Si tiene una pregunta de facturación o suscripción, puede abrir un caso para obtener soporte técnico a través del [centro de administración de Microsoft 365](https://admin.microsoft.com/Support/SupportEntry.aspx).
 
 ### <a name="view-open-support-requests"></a>Ver las solicitudes de soporte técnico abiertas
 

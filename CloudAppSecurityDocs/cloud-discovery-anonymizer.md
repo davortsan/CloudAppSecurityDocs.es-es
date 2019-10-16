@@ -2,9 +2,9 @@
 title: Anonimización de datos de usuario en Cloud App Security
 description: En este artículo se proporciona información sobre cómo proteger la privacidad de los usuarios al anonimizar los nombres de usuario en los datos de Cloud Discovery.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 509373f5b63df5da2df0d75b8404c9963dcee186
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: b83aa653074e0b441634c8560821fc4cf4d71373
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567655"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335492"
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Anonimización de datos de Cloud Discovery
 
@@ -48,9 +48,9 @@ Puntos clave:
 
    - Puede establecer el valor predeterminado en Cloud App Security para anonimizar todos los datos de los informes de instantáneas de los archivos de registro cargados y de los informes continuados de recopiladores de registros como se muestra a continuación:
      
-     1. En el engranaje de configuración, seleccione **Configuración de Cloud Discovery**.
+     1. En el engranaje Configuración, seleccione **Configuración de Cloud Discovery**.
      
-     2. En la pestaña Anonymization (Anonimización), para ocultar los nombres de usuario de forma predeterminada, seleccione **Anonymize private information by default in new reports and data sources** (Anonimizar información privada de forma predeterminada en los nuevos informes y orígenes de datos). También puede seleccionar **Anonimizar información de la máquina de forma predeterminada en el informe "Usuarios del punto de conexión Win10"**.
+     2. En la pestaña Anonymization (Anonimización), para ocultar los nombres de usuario de forma predeterminada, seleccione **Anonymize private information by default in new reports and data sources** (Anonimizar información privada de forma predeterminada en los nuevos informes y orígenes de datos). También puede seleccionar **Anonimizar información de la máquina de forma predeterminada en el informe "Usuarios del punto de conexión Win10"** .
 
      3. En la clave de cifrado, seleccione si desea **utilizar la clave dedicada generada para el portal** o **utilizar una clave personalizada**. Si opta por **utilizar una clave personalizada**, escriba una clave de cifrado UTF8 de 16 bytes.
      4. Haga clic en **Guardar**.

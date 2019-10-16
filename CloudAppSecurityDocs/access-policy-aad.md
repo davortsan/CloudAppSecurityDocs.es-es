@@ -2,9 +2,9 @@
 title: Creación de directivas de acceso de Cloud App Security para permitir y bloquear el acceso
 description: En este artículo se describe el procedimiento para configurar una directiva de acceso al control de aplicaciones de acceso condicional de Cloud App Security para permitir y bloquear el acceso a las aplicaciones conectadas a través de Azure AD mediante las funcionalidades de proxy inverso.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7e490274493d09058f3252724e4ab1ce36b29b56
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 081ecac67dac14443a85bc103294974607e3e106
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65565742"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335444"
 ---
 # <a name="access-policies"></a>Directivas de acceso
 
@@ -39,7 +39,7 @@ Las directivas de acceso de Microsoft Cloud App Security permiten la supervisió
 
 - Tener una licencia de Azure AD Premium P1.
 - Las aplicaciones en cuestión deben estar [implementadas con control de aplicaciones de acceso condicional](proxy-deployment-aad.md).
-- Debe haber aplicada una [directiva de acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) que redirija a los usuarios a Microsoft Cloud App Security, tal y como se describe aquí.
+- Debe haber aplicada una [directiva de acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) que redirija a los usuarios Microsoft Cloud App Security, tal y como se describe aquí.
 
 > [!NOTE]
 > - Las directivas de acceso también admiten aplicaciones que estén configuradas con proveedores de identidades que no sean Azure AD. Para obtener más información, envíe un correo electrónico a mcaspreview@microsoft.com.
@@ -66,9 +66,9 @@ Para crear una directiva de acceso, siga este procedimiento:
 
 4. En la sección **Actividades que coinciden con todo lo siguiente** de **Origen de la actividad**, seleccione más filtros de actividad para aplicarlos a la directiva. Los filtros incluyen las siguientes opciones: 
      
-   - **Etiquetas de dispositivo**: use este filtro para identificar los dispositivos no administrados.
+   - **Etiqueta de dispositivo**: use este filtro para identificar los dispositivos no administrados.
 
-   - **Ubicación**: use este filtro para identificar las ubicaciones desconocidas y que, por tanto, entrañan riesgo. 
+   - **Ubicación**: use este filtro para identificar las ubicaciones desconocidas (por tanto, que entrañan riesgo). 
 
    - **Dirección IP**: use este filtro para filtrar por direcciones IP o usar las etiquetas de dirección IP previamente asignadas. 
 
@@ -90,7 +90,7 @@ Para crear una directiva de acceso, siga este procedimiento:
 
  
 ## <a name="next-steps"></a>Pasos siguientes  
-[Bloqueo de descargas en dispositivos no administrados con las funciones de control de aplicaciones de acceso condicional de Azure AD](use-case-proxy-block-session-aad.md)   
+[Blocking downloads on unmanaged devices using Azure AD Conditional Access App Control capabilities](use-case-proxy-block-session-aad.md) (Bloqueo de descargas en dispositivos no administrados con las funciones de control de aplicaciones de acceso condicional de Azure AD)   
 
 [Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
   

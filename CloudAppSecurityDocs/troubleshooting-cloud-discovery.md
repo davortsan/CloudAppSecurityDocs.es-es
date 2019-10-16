@@ -2,9 +2,9 @@
 title: 'Solución de errores de Cloud Discovery: Cloud App Security | Microsoft Docs'
 description: En este artículo se proporciona una lista de errores frecuentes de Cloud Discovery y recomendaciones para la solución de cada uno de ellos.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 04/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bc8e477cac15dc9b5bd3338360d7c3953db0e442
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 81555a0839090af293cc58ce1bde9c70a2a82aac
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568813"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336049"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Solución de problemas de Cloud Discovery
 
@@ -28,9 +28,9 @@ ms.locfileid: "65568813"
 
 En este artículo se proporciona una lista de errores de Cloud Discovery y recomendaciones para la solución de cada uno de ellos.
 
-## <a name="microsoft-defender-atp-integration"></a>Integración de Microsoft Defender ATP
+## <a name="microsoft-defender-atp-integration"></a>Integración de ATP de Microsoft defender
 
-Si integra Microsoft Defender ATP con Cloud App Security, y no ve los resultados de la integración: no hay un **los usuarios del extremo de Win10** report - Asegúrese de que las máquinas que se conecta a Windows 10 versión 1809 o más adelante, y que esperaron las dos horas es necesarias que se tarda antes de los datos son accesible.
+Si ha integrado ATP de Microsoft defender con Cloud App Security y no ve los resultados de la integración: no hay un informe de **usuarios del punto** de conexión de Win10, asegúrese de que las máquinas a las que se está conectando sean la versión 1809 o posterior de Windows 10 y que esperó las dos horas necesarias antes de que se pueda tener acceso a los datos.
 
 
 ## <a name="log-parsing-errors"></a>Errores de análisis de registro
@@ -39,7 +39,7 @@ Puede realizar un seguimiento del procesamiento de registros de Cloud Discovery 
 
 ### <a name="governance-log-errors"></a>Errores del registro de gobernanza
 
-|Error|Descripción|Solución|
+|Error de:|Descripción|Solución|
 |----|----|----|
 |Tipo de archivo no admitido|El archivo cargado no es un archivo de registro válido (por ejemplo, un archivo de imagen).|Cargue un archivo de **texto**, **zip o **gzip** que se haya exportado directamente desde el firewall o el proxy.|
 |El formato del registro no coincide|El formato del registro que ha cargado no coincide con el formato esperado para este origen de datos.|1. Compruebe que el registro no esté dañado. <br /> 2. Compare y haga coincidir el registro con el formato de ejemplo que se muestra en la página de carga.|
@@ -51,12 +51,12 @@ Puede realizar un seguimiento del procesamiento de registros de Cloud Discovery 
 
 |PROBLEMA | SOLUCIÓN |
 |--------|--|
-|No se pudo conectar al recopilador de registros a través de FTP| 1. Compruebe que está usando credenciales de FTP y no credenciales de SSH. <br />2. Compruebe que el cliente de FTP que está usando no está establecido en SFTP.  |
-|No se pudo actualizar la configuración del recopilador | 1. Compruebe que ha especificado el token de acceso más reciente. <br />2. En el firewall, compruebe que el recopilador de registros tiene permiso para iniciar tráfico saliente en el puerto 443.|
-|Los registros enviados al recopilador no aparecen en el portal | 1.  Compruebe si hay tareas de análisis con errores en el registro de gobernanza.  <br />  &nbsp;&nbsp;&nbsp;&nbsp;En caso de que las haya, use la anterior tabla Errores de análisis de registro para solucionar el error.<br /> 2. En caso de que no las haya, compruebe los orígenes de datos y la configuración del recopilador de registros en el portal. <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. En la página Origen de datos, compruebe que el origen de datos que está usando está configurado de forma precisa. <br />&nbsp;&nbsp;&nbsp;&nbsp;b. En la página Recopiladores de registros, compruebe que el origen de datos está vinculado al recopilador de registros correcto. <br /> 3. Compruebe la configuración local de la máquina del recopilador de registros local.  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. Inicie sesión en el recopilador de registros mediante SSH y ejecute la utilidad collector_config.<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. Confirme que el firewall o proxy envía los registros al recopilador de registros mediante el protocolo definido (Syslog/TCP, Syslog/UDP o FTP) y que los envía al puerto y directorio correctos.<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. Ejecute netstat en la máquina y compruebe que recibe las conexiones entrantes del firewall o proxy. <br /> 4.   Compruebe que el recopilador de registros tiene permiso para iniciar tráfico saliente en el puerto 443. |
+|No se pudo conectar al recopilador de registros a través de FTP| 1. Compruebe que está usando credenciales de FTP y no credenciales de SSH. <br />2. Compruebe que el cliente FTP que está utilizando no está establecido en SFTP.  |
+|No se pudo actualizar la configuración del recopilador | 1. Compruebe que ha escrito el token de acceso más reciente. <br />2. Compruebe en el firewall que el recopilador de registros puede iniciar el tráfico saliente en el puerto 443.|
+|Los registros enviados al recopilador no aparecen en el portal | 1. Compruebe si hay tareas de análisis erróneas en el registro de gobierno.  <br />  &nbsp;&nbsp;&nbsp;&nbsp;En caso de que las haya, use la anterior tabla Errores de análisis de registro para solucionar el error.<br /> 2. Si no es así, compruebe los orígenes de datos y la configuración del recopilador de registros en el portal. <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. En la página Origen de datos, compruebe que el origen de datos que está usando está configurado de forma precisa. <br />&nbsp;&nbsp;&nbsp;&nbsp;b. En la página Recopiladores de registros, compruebe que el origen de datos está vinculado al recopilador de registros correcto. <br /> 3. Compruebe la configuración local del equipo del recopilador de registros local.  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. Inicie sesión en el recopilador de registros mediante SSH y ejecute la utilidad collector_config.<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. Confirme que el firewall o proxy envía los registros al recopilador de registros mediante el protocolo definido (Syslog/TCP, Syslog/UDP o FTP) y que los envía al puerto y directorio correctos.<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. Ejecute netstat en la máquina y compruebe que recibe las conexiones entrantes del firewall o proxy. <br /> 4. Compruebe que el recopilador de registros tiene permiso para iniciar el tráfico saliente en el puerto 443. |
 |Estado del recopilador de registros: Creado | No se ha completado la implementación del recopilador de registros. Complete los pasos de implementación local indicados en la guía de implementación.|
-|Estado del recopilador de registros: Disconnected | No se han recibido datos durante las últimas 24 horas de ninguno de los orígenes de datos vinculados. |
-|No se pudo extraer la imagen más reciente del recopilador| Si recibe este error durante la implementación de Docker, es posible que no tiene suficiente memoria en el equipo host. Para comprobarlo, ejecute este comando en el host: `docker pull microsoft/caslogcollector`. Si devuelve este error: `failed to register layer: Error processing tar file(exist status 1): write /opt/jdk/jdk1.8.0_152/src.zip: no space left on device` póngase en contacto con el administrador del equipo host para proporcionar más espacio.|
+|Estado del recopilador de registros: Desconectado | No se han recibido datos durante las últimas 24 horas de ninguno de los orígenes de datos vinculados. |
+|Error al extraer la imagen del recopilador más reciente| Si recibe este error durante la implementación de Docker, podría deberse a que no tiene suficiente memoria en el equipo host. Para comprobarlo, ejecute este comando en el host: `docker pull microsoft/caslogcollector`. Si devuelve este error: `failed to register layer: Error processing tar file(exist status 1): write /opt/jdk/jdk1.8.0_152/src.zip: no space left on device` póngase en contacto con el administrador del equipo host para proporcionar más espacio.|
 
 ## <a name="discovery-dashboard-errors"></a>Errores del panel de detección
 

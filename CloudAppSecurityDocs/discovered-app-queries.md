@@ -2,9 +2,9 @@
 title: Filtros y consultas de aplicaciones detectadas de Cloud App Security
 description: En este artículo se proporciona una lista de filtros y consultas de aplicaciones detectadas de Cloud App Security y se explica cómo trabajar con ellos.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 66e895a2a711fe42cba203a4a369dac098b98623
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 39e3ac88cfbe2a2bf6e6186c601fe278fae2c1d2
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568361"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335739"
 ---
 # <a name="discovered-app-filters-and-queries"></a>Filtros y consultas de aplicaciones detectadas
 
@@ -35,15 +35,15 @@ Hay filtros de aplicaciones detectadas básicos y avanzados. Para aplicar un fil
 ![Aplicaciones detectadas](./media/discovered-apps.png)  
 
 
-- **Etiqueta de aplicación**: seleccione si la aplicación se ha autorizado o no, y si no está etiquetada. Además, puede crear una etiqueta personalizada para la aplicación y usarla para filtrar tipos específicos de aplicaciones. 
-- **Aplicaciones y dominios**: le permite buscar aplicaciones específicas o aplicaciones usadas en dominios concretos. 
-- **Categorías**: el filtro de categorías, que se encuentra a la izquierda de la página, le permite buscar tipos de aplicaciones en función de categorías de aplicaciones. Las categorías de ejemplo incluyen aplicaciones de redes sociales, aplicaciones de almacenamiento en la nube y servicios de hospedaje. Puede seleccionar varias categorías a la vez o una sola categoría y, después, aplicarles los filtros básicos y avanzados.
-- **Factor de riesgo de cumplimiento**: le permite buscar normas, certificaciones y elementos de conformidad específicos que puede cumplir la aplicación (HIPAA, ISO 27001, SOC 2, PCI-DSS, entre otros).
-- **Factor de riesgo general**: le permite buscar factores de riesgo generales, como la popularidad entre los consumidores, la configuración regional del centro de datos y muchos más.
-- **Puntuación de riesgo**: le permite filtrar las aplicaciones según su puntuación de riesgo, de modo que pueda centrarse, por ejemplo, en revisar únicamente las aplicaciones de mucho riesgo. También puede reemplazar la puntuación de riesgo establecida por Cloud App Security. Para obtener más información, vea [Trabajo con la puntuación de riesgo](risk-score.md).
-- **Factor de riesgo para la seguridad**: le permite filtrar en función de medidas de seguridad específicas (por ejemplo, cifrado en reposo, autenticación multifactor, etc.).
-- **Utilización**: le permite filtrar en función de las estadísticas de uso de esta aplicación. Uso, como por ejemplo, como aplicaciones con menos o más **cargas de datos** de las especificadas, o aplicaciones con menos o más **usuarios** de los especificados.
-- **Factor de riesgo legal**: le permite filtrar en función de las regulaciones y directivas en vigor para garantizar la protección y la privacidad de los datos de los usuarios de la aplicación. Algunos ejemplos son las aplicaciones en la nube preparadas para el RGPD, DMCA y la directiva de retención de datos.
+- **Etiqueta de aplicación**: seleccione si la aplicación se ha autorizado o no y si no está etiquetada. Además, puede crear una etiqueta personalizada para la aplicación y usarla para filtrar tipos específicos de aplicaciones. 
+- **Aplicaciones y dominios**: permite buscar aplicaciones específicas o aplicaciones usadas en dominios concretos. 
+- **Categorías**: el filtro de categorías, que se encuentra a la izquierda de la página, permite buscar tipos de aplicaciones en función de categorías de aplicaciones. Las categorías de ejemplo incluyen aplicaciones de redes sociales, aplicaciones de almacenamiento en la nube y servicios de hospedaje. Puede seleccionar varias categorías a la vez o una sola categoría y, después, aplicarles los filtros básicos y avanzados.
+- **Factor de riesgo de cumplimiento**: permite buscar normas, certificaciones y elementos de conformidad específicos que puede cumplir la aplicación (HIPAA, ISO 27001, SOC 2, PCI-DSS, entre otros).
+- **Factor de riesgo general**: permite buscar factores de riesgo generales, como la popularidad entre los consumidores, la configuración regional del centro de datos y muchos más.
+- **Puntuación de riesgo**: permite filtrar las aplicaciones según su puntuación de riesgo, de modo que pueda centrarse, por ejemplo, en revisar únicamente las aplicaciones de mucho riesgo. También puede reemplazar la puntuación de riesgo establecida por Cloud App Security. Para obtener más información, vea [Trabajo con la puntuación de riesgo](risk-score.md).
+- **Factor de riesgo para la seguridad**: permite filtrar en función de medidas de seguridad específicas (por ejemplo, cifrado en reposo, autenticación multifactor, etc.).
+- **Uso**: permite filtrar en función de las estadísticas de uso de esta aplicación. Uso, como por ejemplo, como aplicaciones con menos o más **cargas de datos** de las especificadas, o aplicaciones con menos o más **usuarios** de los especificados.
+- **Factor de riesgo legal**: permite filtrar en función de las regulaciones y directivas en vigor para garantizar la protección y la privacidad de los datos de los usuarios de la aplicación. Algunos ejemplos son las aplicaciones en la nube preparadas para el RGPD, DMCA y la directiva de retención de datos.
 
 ### <a name="creating-and-managing-custom-app-tags"></a>Crear y administrar etiquetas de aplicación personalizadas
 
@@ -51,7 +51,7 @@ Puede crear etiquetas de aplicación personalizadas. Estas etiquetas pueden usar
 
 Para crear una etiqueta de aplicación personalizada:
 
-1. En el engranaje de **configuración**, seleccione **Cloud Discovery settings** (Configuración de Cloud Discovery) y elija la pestaña **Etiquetas de aplicación**. Haga clic en el icono de signo más. ![icono de signo más](./media/plus-icon.png)
+1. En el engranaje de **configuración** , seleccione **configuración de Cloud Discovery**, luego la pestaña Etiquetas de la **aplicación** . Haga clic en el icono de signo más. ![icono de signo más](./media/plus-icon.png)
 
    ![Crear una etiqueta de aplicación personalizada](./media/create-app-tag.png)
 

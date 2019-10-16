@@ -2,9 +2,9 @@
 title: Conexión de Box con Cloud App Security
 description: En este artículo se proporciona información sobre cómo conectar la aplicación de Box con Cloud App Security mediante el conector de API para la visibilidad y el control del uso.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5d9a5835473eb6a6012c315a1313fbf05cd9ced5
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: bcef6b51eac8b9ddf0f348bfa42b2936a4ad85e8
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568121"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72334577"
 ---
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Conectar Box con Microsoft Cloud App Security
 
@@ -74,7 +74,7 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
   
 7.  De vuelta en el portal de Cloud App Security, debería recibir un mensaje que indica que Box se ha conectado correctamente.  
   
-8.  Haga clic en **Probar API** para confirmar que la conexión se ha realizado correctamente.  
+8.  Haga clic en **Probar API** para asegurarse de que la conexión se ha realizado correctamente.  
   
      La prueba puede tardar unos minutos. Cuando reciba la notificación de que se ha realizado correctamente, haga clic en **Cerrar**.  
   

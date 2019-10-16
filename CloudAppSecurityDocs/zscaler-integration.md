@@ -2,9 +2,9 @@
 title: Integración de Cloud App Security con Zscaler
 description: En este artículo se describe cómo integrar Microsoft Cloud App Security con Zscaler para conseguir un Cloud Discovery sin problemas y el bloqueo automatizado de aplicaciones no autorizadas.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 1/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 8abeab8e-3b7a-46a7-bbec-9aaf26f778a8
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 82bd7721d29d212c03342b0d016fe8c245a88625
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 687570ff372da79822715d40a3eb3220147610d0
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568341"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335958"
 ---
 # <a name="integrate-cloud-app-security-with-zscaler"></a>Integración de Cloud App Security con Zscaler
 

@@ -2,9 +2,9 @@
 title: 'Visibilidad de las cuentas de aplicaciones en la nube: Cloud App Security | Microsoft Docs'
 description: En este artículo se proporciona información sobre la revisión de las cuentas de las aplicaciones conectadas.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 86dad8f925f3ffd95a36787112482625c10c23d1
-ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
+ms.openlocfilehash: dd496f1aacaffedf16bc409f31fcc28a24c4ba68
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67237163"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335540"
 ---
 # <a name="accounts"></a>Cuentas
 
@@ -28,7 +28,7 @@ ms.locfileid: "67237163"
 
 Microsoft Cloud App Security le ofrece la posibilidad de supervisar las cuentas de sus aplicaciones conectadas. Después de conectar Cloud App Security a una aplicación mediante el conector de aplicaciones, Cloud App Security lee la información de la cuenta asociada a las aplicaciones conectadas. La página Cuentas permite investigar esas cuentas, los permisos, los grupos a los que pertenecen, sus alias y las aplicaciones que usan. Además, cuando Cloud App Security detecta una cuenta nueva que no se había detectado previamente en ninguna de las aplicaciones conectadas (por ejemplo, en la actividad o el uso compartido de archivos), la cuenta se agrega a la lista de cuentas de la aplicación en cuestión. Esto le permite supervisar la actividad de los usuarios externos que interactúan con sus aplicaciones en la nube.
 
-Los administradores pueden buscar los metadatos de un usuario específico o su actividad. El **usuarios y cuentas** página le proporciona información completa sobre las entidades que se extrajeron de aplicaciones conectadas en la nube. También presenta el historial de la actividad de un usuario y sus alertas de seguridad.
+Los administradores pueden buscar los metadatos de un usuario específico o su actividad. La página **usuarios y cuentas** proporciona detalles completos sobre las entidades que se extraen de las aplicaciones en la nube conectadas. También presenta el historial de la actividad de un usuario y sus alertas de seguridad.
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
@@ -58,25 +58,25 @@ A continuación, se muestra una lista de los filtros de cuenta que se pueden apl
 
 - **Afiliación**: la afiliación es **Interna** o **Externa**. Para establecer qué usuarios y cuentas son internos, en **Configuración** asegúrese de establecer el **intervalo de direcciones IP** de la organización interna. En caso de que la cuenta tenga permisos de administrador, el icono de la tabla Cuentas aparece con un lazo rojo. ![icono de administrador de cuentas](./media/accounts-admin-icon.png)
 
-- **Aplicación**: puede filtrar por cualquier aplicación conectada a la API que usen las cuentas de la organización.
+- **Aplicación**: puede filtrar por cualquier aplicación conectada a la API y que esté en uso en las cuentas de la organización.
 
-- **Dominio**: le permite filtrar por usuarios de dominios concretos.
+- **Dominio**: permite filtrar por usuarios de dominios concretos.
 
-- **Grupos**: le permite filtrar por miembros de grupos de usuarios de Cloud App Security, ya sean grupos de usuarios integrados o importados.
+- **Grupos**: permite filtrar por miembros de grupos de usuarios de Cloud App Security, tanto grupos de usuarios integrados como importados.
 
-- **Instancia**: le permite filtrar por miembros de una instancia de una aplicación específica. 
+- **Instancia**: permite filtrar por miembros de una instancia de una aplicación específica. 
 
-- **Visto por última vez**: el filtro **Visto por última vez** le permite buscar cuentas que estén inactivas y cuyos usuarios no hayan tenido actividad durante un tiempo.
+- **Visto por última vez**: el filtro **Visto por última vez** permite buscar cuentas que estén inactivas y cuyos usuarios no hayan tenido actividad durante un tiempo.
 
-- **Organización**: le permite filtrar por miembros de determinados grupos organizativos definidos en sus aplicaciones conectadas.
+- **Organización**: permite filtrar por miembros de determinados grupos organizativos definidos en sus aplicaciones conectadas.
 
-- **Mostrar solo los administradores**: filtra por cuentas y usuarios que son administradores.
+- **Show Admins only** (Mostrar solo administradores): filtra cuentas y usuarios que son administradores.
 
-- **Estado**: filtra según el estado de la cuenta de usuario de No aplicable, Preconfigurado, Activas, Suspendidas o Eliminada.
+- **Estado**: filtra según el estado de la cuenta de usuario de N/D, ensayo, activa, suspendida o eliminado.
 
-- **Tipo**: le permite filtrar por el usuario o el tipo de cuenta.
+- **Tipo**: permite filtrar por el usuario o el tipo de cuenta.
 
-- **Nombre de usuario**: le permite filtrar a usuarios específicos. 
+- **Nombre de usuario**: permite filtrar a usuarios específicos. 
 
 
 ## <a name="next-steps"></a>Pasos siguientes  

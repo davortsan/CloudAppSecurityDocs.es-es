@@ -2,9 +2,9 @@
 title: Búsqueda de informes integrados en desuso en Cloud App Security
 description: En este artículo se ofrecen instrucciones para generar informes en desuso en Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: a9660e5b-d5bd-4a32-8cb9-0de70af6f1e9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e662c7fecbc20a16b3709e6e603954d74771a6fd
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: dd064eb77955213a8fbcb2c655a86678ca4f0db8
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567489"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335511"
 ---
 # <a name="how-to-find-built-in-deprecating-reports"></a>Búsqueda de informes integrados en desuso
 

@@ -2,9 +2,9 @@
 title: 'Configuración de la carga de registros automática para informes continuos: Cloud App Security | Microsoft Docs'
 description: En este artículo se proporciona información sobre cómo cargar registros para crear informes de Cloud Discovery automáticos.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5cd93f4a98572af44b17515ac6bd0c4ed94e789f
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: d049cdbb7a85f2728a83120214a870747abbe6c3
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567693"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335033"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Configuración de la carga de registros automática para informes continuos en una aplicación virtual: en desuso
 
@@ -30,8 +30,8 @@ ms.locfileid: "65567693"
 > Es muy recomendable configurar la carga de registros mediante [Docker](discovery-docker.md) para una implementación más flexible.
 
 ## <a name="technical-requirements"></a>Requisitos técnicos
-- Hipervisor: Hyper-V o VMware
-- Espacio en disco: 250 GB
+- Hypervisor: Hyper-V o VMware
+- Espacio en disco: 250 GB
 - CPU: 2
 - RAM: 4 GB 
 - Configuración del firewall, tal como se describe en [Requisitos de red](network-requirements.md#log-collector)
@@ -106,7 +106,7 @@ El recopilador de registros tiene un mecanismo de seguridad integrado que superv
   
 10. Haga clic en la máquina en la tabla **Máquinas virtuales** y luego en **Iniciar**.   
   
-11. Conéctese a la máquina virtual del recopilador de registros para ver si se le ha asignado una dirección DHCP: para ello, haga clic en la máquina virtual y seleccione **Conectar**. Verá el mensaje de inicio de sesión. Si ve una dirección IP, puede conectarse a la máquina virtual mediante una herramienta SSH o terminal.  Si no ve ninguna dirección IP, inicie sesión mediante las herramientas de conexión de Hyper-V o VMware con las credenciales que copió al crear el recopilador de registros anteriormente. Puede cambiar la contraseña y configurar la máquina virtual con la utilidad de configuración de red mediante la ejecución del comando siguiente:
+11. Conéctese a la máquina virtual del recopilador de registros para ver si se le ha asignado una dirección DHCP. Para ello, haga clic en la máquina virtual y seleccione **Conectar**. Verá el mensaje de inicio de sesión. Si ve una dirección IP, puede conectarse a la máquina virtual mediante una herramienta SSH o terminal.  Si no ve ninguna dirección IP, inicie sesión mediante las herramientas de conexión de Hyper-V o VMware con las credenciales que copió al crear el recopilador de registros anteriormente. Puede cambiar la contraseña y configurar la máquina virtual con la utilidad de configuración de red mediante la ejecución del comando siguiente:
     ```
     sudo network_config
     ```
@@ -119,9 +119,9 @@ En este punto, el recopilador de registros debería estar conectado a la red y s
 ### <a name="step-3--on-premises-configuration-of-the-log-collection"></a>Paso 3: Configuración local de la recopilación de registros 
 Para iniciar sesión por primera vez en el recopilador de registros e importar la configuración de dicho recopilador desde el portal, debe hacer lo siguiente. 
 
-1.  Inicie sesión en el recopilador de registros a través de SSH con las credenciales de administrador interactivas que se le han proporcionado en el portal. Si es la primera vez que inicia sesión en la consola, deberá cambiar la contraseña y volver a iniciar sesión después de cambiarla. Si está usando una sesión de terminal, podría tener que volver a iniciarla )
+1.  Inicie sesión en el recopilador de registros a través de SSH con las credenciales de administrador interactivas que se le han proporcionado en el portal. Si es la primera vez que inicia sesión en la consola, deberá cambiar la contraseña y volver a iniciar sesión después de cambiarla. Si está usando una sesión de terminal, podría tener que volver a iniciarla ) simple
 2.  Ejecute la utilidad de configuración del recopilador con el token de acceso que se le proporcionó al crear el recopilador de registros.```sudo collector_config <access token> ```
-3. Escriba el dominio de la consola, por ejemplo: ```contoso.portal.cloudappsecurity.com``` Está disponible en la dirección URL que aparece después de iniciar sesión en el portal de Cloud App Security. 
+3. Escriba el dominio de la consola, por ejemplo: ```contoso.portal.cloudappsecurity.com```. Está disponible en la dirección URL que aparece después de iniciar sesión en el portal de Cloud App Security. 
 
 4. Escriba el nombre del recopilador de registros que quiere configurar, por ejemplo: **CloudAppSecurityLogCollector01** o **NewYork** en la imagen anterior.
 

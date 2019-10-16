@@ -2,9 +2,9 @@
 title: 'Establecimiento de preferencias de notificación de correo electrónico: Cloud App Security | Microsoft Docs'
 description: En este artículo se proporciona información sobre cómo personalizar las notificaciones de correo electrónico que Cloud App Security envía.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 2/4/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5ad87ebe283aa5bdd6b19766bfa76a2424015291
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 5bdf183c62329a2282881a341abd78e9126393d6
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568205"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335841"
 ---
 # <a name="email-notification-preferences"></a>Preferencias de notificación de correo electrónico
 
@@ -39,7 +39,7 @@ En este artículo se proporciona información sobre cómo personalizar las notif
 
    ![configuración de correo](./media/mail-settings-config.png)
 
-2. En **Identidad del emisor de correo electrónico**: si va a usar la configuración de correo electrónico predeterminada, no necesita cambiar nada en esta sección. Si quiere personalizar la identidad del remitente de correo electrónico, puede aplicar cualquiera de las opciones que se indican a continuación para personalizar el campo que quiera modificar. Puede cambiar alguno o todos los elementos siguientes: **Nombre para mostrar del campo Desde**, **Dirección de correo electrónico del campo Desde** o **Dirección de correo electrónico del campo Responder a**. Microsoft Cloud App Security realiza la personalización mediante el uso de un servicio de correo de terceros llamado MailChimp®. Asegúrese de revisar y aceptar los Términos de servicio y la Declaración de privacidad de MailChimp para habilitar la personalización. En caso contrario, Microsoft Cloud App Security enviará las notificaciones mediante la configuración predeterminada.
+2. En **Identidad del emisor de correo electrónico**: si va a usar la configuración de correo electrónico predeterminada, no necesita cambiar nada en esta sección. Si quiere personalizar la identidad del remitente de correo electrónico, puede aplicar cualquiera de las opciones que se indican a continuación para personalizar el campo que quiera modificar. Puede cambiar todas estas opciones o alguna de ellas: **Nombre para mostrar del campo Desde**, **Dirección de correo electrónico del campo Desde**, **Dirección de correo electrónico del campo Responder a**. Microsoft Cloud App Security realiza la personalización mediante el uso de un servicio de correo de terceros llamado MailChimp®. Asegúrese de revisar y aceptar los Términos de servicio y la Declaración de privacidad de MailChimp para habilitar la personalización. En caso contrario, Microsoft Cloud App Security enviará las notificaciones mediante la configuración predeterminada.
  
    > [!NOTE]
    > Solo se admiten caracteres Unicode en el nombre para mostrar y la dirección de correo electrónico de conformidad con el [estándar rfc822](https://www.rfc-editor.org/rfc/rfc822.txt).
@@ -51,11 +51,11 @@ En este artículo se proporciona información sobre cómo personalizar las notif
   
    - La plantilla debe tener tres marcadores de posición no modificables:  
   
-        - **%%logo%%**: dirección URL que lleva al logotipo de la empresa que se ha cargado en la página de configuración General.  
+        - **%%logo%%** : dirección URL que lleva al logotipo de la empresa que se ha cargado en la página de configuración General.  
   
-        - **%%title%%**: marcador de posición del título del correo electrónico, según lo establecido por la directiva.  
+        - **%%title%%** : marcador de posición del título del correo electrónico, según lo establecido por la directiva.  
 
-        - **%%content%%**: marcador de posición del contenido que se incluirá para los usuarios finales, según lo establecido por la directiva.  
+        - **%%content%%** : marcador de posición del contenido que se incluirá para los usuarios finales, según lo establecido por la directiva.  
 
 4. Haga clic en **Cargar una plantilla...** y seleccione el archivo que ha creado. 
 

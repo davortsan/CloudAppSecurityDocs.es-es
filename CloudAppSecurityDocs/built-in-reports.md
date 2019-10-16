@@ -2,9 +2,9 @@
 title: 'Generación de informes: Microsoft Cloud App Security | Microsoft Docs'
 description: En este artículo se ofrecen instrucciones para generar informes de administración de datos en Microsoft Cloud App Security.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 0dcc3c35-f787-4822-84c6-d4dff897dd6c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 70ea54352c717d8423826ca4c1f4160eb96cd327
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: debfe7e7cd464420e26d4619f2303c69d6a14363
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567541"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335458"
 ---
 # <a name="generate-data-management-reports"></a>Generar informes de administración de datos
 

@@ -2,9 +2,9 @@
 title: 'Crear directivas en aplicaciones de Cloud Discovery: Cloud App Security | Microsoft Docs'
 description: En este artículo se proporciona información sobre cómo trabajar con directivas de Cloud Discovery.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bf54021007d891b78577bd646c43ec5377421bfd
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 719d09c3d35f14e66862718e19562c7a16c18bf8
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567527"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335561"
 ---
 # <a name="cloud-discovery-policies"></a>Directivas de Cloud Discovery
 

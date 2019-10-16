@@ -2,9 +2,9 @@
 title: Conexión de Dropbox con Cloud App Security
 description: En este artículo se proporciona información sobre cómo conectar la aplicación de Dropbox con Cloud App Security mediante el conector de API para la visibilidad y el control del uso.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8fd87bf68e4c694089bd859b2b47e1b38ef912da
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 711c0cdf6a9678a63a19987f2c84101acf9de5ba
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568108"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72334466"
 ---
 # <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>Conectar Dropbox con Microsoft Cloud App Security
 
@@ -51,7 +51,7 @@ Dado que Dropbox permite el acceso a archivos desde vínculos compartidos sin in
   
 7.  De vuelta en la consola de Cloud App Security, debería recibir un mensaje que indica que Dropbox se ha conectado correctamente.  
   
-8.  Haga clic en **Probar API** para confirmar que la conexión se ha realizado correctamente.  
+8.  Haga clic en **Probar API** para asegurarse de que la conexión se ha realizado correctamente.  
   
      La prueba puede tardar unos minutos. Cuando reciba la notificación de que se ha realizado correctamente, haga clic en **Cerrar**.  
   
