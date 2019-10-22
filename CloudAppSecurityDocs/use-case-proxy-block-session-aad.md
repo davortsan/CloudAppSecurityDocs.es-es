@@ -2,9 +2,9 @@
 title: Bloqueo de las descargas desde dispositivos no administrados con el control de aplicaciones de acceso condicional de Cloud App Security
 description: En este tutorial se describe cómo usar las funciones de proxy inverso de Azure AD para proteger la organización de descargas de datos confidenciales con dispositivos no administrados.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 1/24/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 55f6943b6631178dbdc732264082715e2565b633
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: b7f4bc220c7643d8aaca34f409ceeb262d5358e4
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568441"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336097"
 ---
 # <a name="tutorial-block-download-of-sensitive-information"></a>Tutorial: bloqueo de las descargas de información confidencial 
 
@@ -71,7 +71,7 @@ Tras completar esta tarea, vaya al portal de Cloud App Security y cree una direc
 
 4. Asigne una **Gravedad de directiva** y una **Categoría**.
 
-5. En **Tipo de control de sesión**, seleccione **Controlar la descarga de archivos (con DLP)**. Esta configuración le proporciona la capacidad de supervisar todo lo que hacen los usuarios en una sesión de Salesforce, así como control para bloquear y proteger las descargas en tiempo real.
+5. En **Tipo de control de sesión**, seleccione **Controlar la descarga de archivos (con DLP)** . Esta configuración le proporciona la capacidad de supervisar todo lo que hacen los usuarios en una sesión de Salesforce, así como control para bloquear y proteger las descargas en tiempo real.
 
 6. En **Origen de actividad** en la sección **Actividades que coinciden con todo lo siguiente**, seleccione estos filtros: 
 
