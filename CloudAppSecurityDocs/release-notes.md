@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 97d006399582e653322910803aaeec04f74582d0
-ms.sourcegitcommit: 2e8488efcc2253e0b5fa33db308e4986a9cdefd5
+ms.openlocfilehash: f9aa6d02b22719fa23d76ef619461a273e267740
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71997424"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336218"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
@@ -106,6 +106,9 @@ Cloud App Security ahora incluye nuevas plantillas de directiva de actividad int
 - **Aviso: Fin de la compatibilidad con TLS 1.0 y 1.1 el 8 de septiembre**  
 Microsoft está moviendo todos sus servicios en línea a la Seguridad de la capa de transporte (TLS) 1.2+ para proporcionar el mejor cifrado de la clase. Por lo tanto, a partir del 8 de septiembre de 2019 Cloud App Security dejará de ser compatible con TLS 1.0 y 1.1, y no se admitirán las conexiones que usen estos protocolos. Para más información sobre cómo le afecta el cambio, consulte [nuestra entrada de blog](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/End-of-support-for-TLS-1-0-and-1-1-in-Microsoft-Cloud-App/ba-p/770507).
 
+- **Lógica mejorada para actividades de inicio de sesión interactivas (implementación gradual)**  
+Estamos implementando gradualmente una nueva lógica para identificar si una actividad de inicio de sesión de Azure Active Directory es interactiva. La nueva lógica mejora la capacidad de Cloud App Security de solo investigar las actividades de inicio de sesión iniciadas por un usuario.
+
 ## <a name="cloud-app-security-release-154"></a>Cloud App Security, versión 154
 
 Publicado el 21 de julio de 2019
@@ -166,6 +169,8 @@ Cloud App Security ahora admite la configuración de la acción de gobernanza **
 Cloud App Security ahora admite la acción de gobernanza **Trash** (Enviar a la papelera) para Google Drive. Esta acción de gobernanza brinda la capacidad de mover archivos de Google Drive a la carpeta de la papelera.
 - **Permiso nuevo para los roles de administrador de grupo y administrador de aplicación**  
 Los roles de *administrador de aplicación o instancia* y de *administrador de grupo de usuarios* ahora admiten el acceso de solo lectura.
+- **Actividades de inicio de sesión de autenticación heredada (implementación gradual)**  
+Cloud App Security ahora investiga las actividades de inicio de sesión de Azure Active Directory que usan protocolos heredados como ActiveSync. Estas actividades de inicio de sesión se pueden ver en el registro de actividad y se pueden usar al configurar las directivas.
 
 ## <a name="cloud-app-security-release-150"></a>Versión 150 de Cloud App Security
 
@@ -453,7 +458,7 @@ Publicado el 24 de junio de 2018
 
 - **Detección automática de aplicaciones OAuth peligrosas**: además de la investigación existente de aplicaciones de OAuth conectadas al entorno, ahora Microsoft Cloud App Security está implementando de forma gradual la funcionalidad para establecer notificaciones automatizadas que avisen cuando una aplicación de OAuth cumple determinados criterios. Por ejemplo, puede recibir alertas automáticamente cuando haya aplicaciones que requieran un alto nivel de permisos y las hayan autorizado más de 50 usuarios. Para obtener más información, vea [Directivas de permisos de la aplicación](app-permission-policy.md).
 
-- **Compatibilidad con la administración de proveedores de servicios de seguridad administrada (MSSP)**: Microsoft Cloud App Security ahora proporciona una mejor experiencia de administración para MSSP. Ahora es posible configurar a usuarios externos como administradores y asignarles cualquiera de los [roles disponibles actualmente en Microsoft Cloud App Security](manage-admins.md). Además, para permitir que los MSSP proporcionen servicios en varios inquilinos de clientes, los administradores que tienen derechos de acceso a más de un inquilino ahora pueden cambiar de inquilino fácilmente en el portal. Para información sobre cómo administrar los administradores, vea [Administración de los administradores](manage-admins.md).
+- **Compatibilidad con la administración de proveedores de servicios de seguridad administrada (MSSP)** : Microsoft Cloud App Security ahora proporciona una mejor experiencia de administración para MSSP. Ahora es posible configurar a usuarios externos como administradores y asignarles cualquiera de los [roles disponibles actualmente en Microsoft Cloud App Security](manage-admins.md). Además, para permitir que los MSSP proporcionen servicios en varios inquilinos de clientes, los administradores que tienen derechos de acceso a más de un inquilino ahora pueden cambiar de inquilino fácilmente en el portal. Para información sobre cómo administrar los administradores, vea [Administración de los administradores](manage-admins.md).
 
 - **Disponibilidad general de la integración con DLP externa**: Microsoft Cloud App Security permite [aprovechar las inversiones existentes en sistemas de clasificación de terceros](icap-stunnel.md), como soluciones de prevención de pérdida de datos (DLP), y permite examinar el contenido de aplicaciones en la nube mediante las implementaciones que se ejecutan en el entorno. Para obtener más información, vea [Integración de DLP externa](icap-stunnel.md).
 
