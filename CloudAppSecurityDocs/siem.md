@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 89b93b84caff9563e4d19769704abe6cc7c4705e
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: aaef9d6ed48cffb92aa7e83c0ae11788a37c9e1e
+ms.sourcegitcommit: 0826dd4ddc17258c0ef4baaec06cee1d05fd2115
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084936"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749633"
 ---
 # <a name="siem-integration"></a>Integración de SIEM
 
@@ -37,7 +37,7 @@ Cuando integre por primera vez su SIEM con Cloud App Security, las actividades y
 El agente SIEM se implementa en la red de su organización. Una vez implementado y configurado, extrae los tipos de datos que se han configurado (alertas y actividades) mediante las API de RESTful de Cloud App Security.
 El tráfico se envía a través de un canal HTTPS cifrado en el puerto 443.
 
-Una vez que el agente SIEM recupere los datos de Cloud App Security, enviará los mensajes de Syslog al SIEM local. Cloud App Security usa las configuraciones de red que proporcionó durante la instalación (TCP o UDP con un puerto personalizado). 
+Una vez que el agente SIEM recupere los datos de Cloud App Security, enviará los mensajes de Syslog al SIEM local. Cloud App Security usa las configuraciones de red que proporcionó durante la instalación (TCP o UDP con un puerto personalizado).
 
 ![Arquitectura de integración de SIEM](./media/siem-architecture.png)
 
@@ -65,7 +65,7 @@ La integración con SIEM se realiza en tres pasos:
 
 ## <a name="integrating-with-your-siem"></a>Integración con su SIEM
 
-### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>Paso 1: Configuración en el portal de Cloud App Security
+### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>Paso 1: configuración en el portal de Cloud App Security
 
 1. En el portal de Cloud App Security, en el engranaje de configuración, haga clic en Extensiones de seguridad y después en la pestaña **Agentes SIEM**.
 
@@ -80,7 +80,7 @@ La integración con SIEM se realiza en tres pasos:
 
    ![Configuración remota de Syslog](./media/siem2.png)
 
-6. Seleccione los tipos de datos que quiera exportar al servidor SIEM para **Alertas** y **Actividades**. Use el control deslizante para habilitarlas y deshabilitarlas; de forma predeterminada todo está seleccionado. Puede usar el menú desplegable **Apply to** (Aplicar a) para establecer filtros para enviar solo alertas y actividades específicas al servidor SIEM. Haga clic en **Editar y obtener vista previa de resultados** para comprobar que el filtro funciona según lo esperado. Haga clic en **Siguiente**. 
+6. Seleccione los tipos de datos que quiera exportar al servidor SIEM para **Alertas** y **Actividades**. Use el control deslizante para habilitarlas y deshabilitarlas; de forma predeterminada todo está seleccionado. Puede usar el menú desplegable **Apply to** (Aplicar a) para establecer filtros para enviar solo alertas y actividades específicas al servidor SIEM. Haga clic en **Editar y obtener vista previa de resultados** para comprobar que el filtro funciona según lo esperado. Haga clic en **Siguiente**.
 
    ![Configuración de tipos de datos](./media/siem3.png)
 
@@ -90,7 +90,7 @@ La integración con SIEM se realiza en tres pasos:
 > [!NOTE]
 > Los tokens que se creen se enlazan al administrador que los haya creado. Esto significa que, si se elimina al usuario administrador de Cloud App Security, el token dejará de ser válido.
 
-### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>Paso 2: Descarga del archivo JAR y ejecución en el servidor
+### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>Paso 2: descarga del archivo JAR y ejecución en el servidor
 
 1. En [Centro de descarga de Microsoft](https://go.microsoft.com/fwlink/?linkid=838596), después de aceptar los [términos de licencia del software](https://go.microsoft.com/fwlink/?linkid=862491), descargue el archivo .zip y descomprímalo.
 
@@ -102,7 +102,7 @@ La integración con SIEM se realiza en tres pasos:
 > - El nombre de archivo puede diferir dependiendo de la versión del agente SIEM.
 > - Los parámetros entre corchetes [  ] son opcionales y solo deben usarse si procede.
 > - Se recomienda ejecutar el archivo JAR mientras el servidor se inicia.
->   - Windows: ejecute como una tarea programada y asegúrese de haber configurado la tarea como **Ejecutar tanto si un usuario inició sesión como si no** y de haber desactivado la casilla **Detener la tarea si se ejecuta durante más de**.
+>   - Windows: ejecute como una tarea programada y asegúrese de configurar la tarea para que se **ejecute si el usuario ha iniciado sesión o no** y desactive la casilla **detener la tarea si se ejecuta durante más tiempo que** .
 >   - Linux: agregue el comando run con un símbolo **&** al archivo rc.local. Por ejemplo: `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
 
 Se usan las variables siguientes:
@@ -168,12 +168,12 @@ El siguiente texto es un ejemplo de archivo de registro de alertas:
 |      Alertas       |          <name>          |                                             Nombre de la directiva coincidente                                             |
 |      Alertas       |        externalId        |                                                    Id. de alerta                                                     |
 
-### <a name="step-3-validate-that-the-siem-agent-is-working"></a>Paso 3: Validación de que el agente SIEM funcione
+### <a name="step-3-validate-that-the-siem-agent-is-working"></a>Paso 3: validación del correcto funcionamiento del agente SIEM
 
 1. Asegúrese de que el estado del agente SIEM en el portal de Cloud App Security no sea **Error de conexión** o **Desconectado**, y de que no haya ninguna notificación del agente. Se mostrará como **Error de conexión** si la conexión está inactiva durante más de dos horas. El estado se muestra como **Desconectado** si la conexión está inactiva durante más de 12 horas.
  ![SIEM desconectado](./media/siem-not-connected.png)
 
-    En su lugar, el estado debe ser Conectado, tal como se muestra aquí:  ![SIEM conectado](./media/siem-connected.png)
+    En su lugar, el estado debe ser Conectado, tal como se muestra aquí: ![SIEM conectado](./media/siem-connected.png).
 
 2. En el servidor Syslog o SIEM, asegúrese de que vea las alertas y actividades procedentes de Cloud App Security.
 
