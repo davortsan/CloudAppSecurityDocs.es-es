@@ -19,6 +19,8 @@
   items:
     - name: Introducción
       href: getting-started-with-cloud-app-security.md
+    - name: Procedimientos recomendados
+      href: best-practices.md
 - name: Tutoriales
   items:
     - name: Detección y administración de shadow IT
