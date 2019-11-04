@@ -1,45 +1,49 @@
 ---
-title: Integración de SIEM con Cloud App Security
-description: En este artículo se proporciona información sobre la integración de SIEM con Cloud App Security.
+title: Integración de SIEM genérica con Cloud App Security
+description: En este artículo se proporciona información sobre cómo integrar el SIEM genérico con Cloud App Security.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 8/25/2019
+ms.date: 10/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: aaef9d6ed48cffb92aa7e83c0ae11788a37c9e1e
-ms.sourcegitcommit: 0826dd4ddc17258c0ef4baaec06cee1d05fd2115
+ms.openlocfilehash: b4d0cce7d6f46b362ad75c7316bc799bdba008a6
+ms.sourcegitcommit: 2c2a14a58492990be5bbac88ff9beb071d556c80
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749633"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73198738"
 ---
-# <a name="siem-integration"></a>Integración de SIEM
+# <a name="generic-siem-integration"></a>Integración de SIEM genérica
 
 *Se aplica a: Microsoft Cloud App Security*
 
-Puede integrar Microsoft Cloud App Security con su servidor SIEM para habilitar la supervisión centralizada de alertas y actividades de aplicaciones conectadas. A medida que las aplicaciones conectadas admiten nuevos eventos y actividades, podrá supervisarlas en Microsoft Cloud App Security. La integración de un servicio SIEM le permite proteger mejor sus aplicaciones de nube a la vez que mantiene el flujo de trabajo de seguridad habitual, automatizando así los procedimientos de seguridad y estableciendo correlaciones entre eventos basados en la nube y eventos locales. El agente SIEM de Microsoft Cloud App Security se ejecuta en el servidor y extrae las alertas y las actividades de Microsoft Cloud App Security y las transmite al servidor SIEM.
+Puede integrar Microsoft Cloud App Security con el servidor de SIEM genérico para habilitar la supervisión centralizada de alertas y actividades de aplicaciones conectadas. A medida que las aplicaciones conectadas admiten nuevos eventos y actividades, podrá supervisarlas en Microsoft Cloud App Security. La integración de un servicio SIEM le permite proteger mejor sus aplicaciones de nube a la vez que mantiene el flujo de trabajo de seguridad habitual, automatizando así los procedimientos de seguridad y estableciendo correlaciones entre eventos basados en la nube y eventos locales. El agente SIEM de Microsoft Cloud App Security se ejecuta en el servidor y extrae las alertas y las actividades de Microsoft Cloud App Security y las transmite al servidor SIEM.
 
 Cuando integre por primera vez su SIEM con Cloud App Security, las actividades y las alertas de los dos últimos días se reenviarán al SIEM, así como todas las actividades y alertas (en función del filtro seleccionado) que se produzcan a partir de entonces. Si deshabilita esta característica durante un período prolongado y la habilita de nuevo, se reenviarán las alertas y las actividades de los dos últimos días, así como las que se produzcan a partir de entonces.
+
+Entre las soluciones de integración adicionales se incluyen:
+
+* **Azure Sentinel** : un Siem escalable y nativo en la nube para la integración nativa. Para obtener información sobre la integración con Azure Sentinel, consulte [integración de centinela de Azure](siem-sentinel.md).
+* **Microsoft Security Graph API** : un servicio intermediario (o agente) que proporciona una única interfaz de programación para conectar varios proveedores de seguridad. Para obtener más información, consulte [integración de soluciones de seguridad con la API de seguridad de Microsoft Graph](https://docs.microsoft.com/graph/security-integration#list-of-connectors-from-microsoft).
 
 > [!IMPORTANT]
 > Si está integrando la protección contra amenazas avanzada de Azure en Cloud App Security y ambos servicios están configurados para enviar notificaciones de alerta a un SIEM, comenzará a recibir notificaciones SIEM duplicadas para la misma alerta. Se emitirá una alerta para todos los servicios y tendrán id. de alerta distintas. Para evitar la duplicación y la confusión, asegúrese de controlar el escenario. Por ejemplo, decida dónde desea realizar la administración de alertas y, a continuación, detenga las notificaciones de SIEM que se envían desde el otro servicio.
 
-## <a name="siem-integration-architecture"></a>Arquitectura de integración de SIEM
+## <a name="generic-siem-integration-architecture"></a>Arquitectura de integración de SIEM genérica
 
 El agente SIEM se implementa en la red de su organización. Una vez implementado y configurado, extrae los tipos de datos que se han configurado (alertas y actividades) mediante las API de RESTful de Cloud App Security.
 El tráfico se envía a través de un canal HTTPS cifrado en el puerto 443.
 
 Una vez que el agente SIEM recupere los datos de Cloud App Security, enviará los mensajes de Syslog al SIEM local. Cloud App Security usa las configuraciones de red que proporcionó durante la instalación (TCP o UDP con un puerto personalizado).
 
-![Arquitectura de integración de SIEM](./media/siem-architecture.png)
+![Arquitectura de integración de SIEM](media/siem-architecture.png)
 
 ## <a name="supported-siems"></a>SIEM admitidos
 
@@ -67,25 +71,28 @@ La integración con SIEM se realiza en tres pasos:
 
 ### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>Paso 1: configuración en el portal de Cloud App Security
 
-1. En el portal de Cloud App Security, en el engranaje de configuración, haga clic en Extensiones de seguridad y después en la pestaña **Agentes SIEM**.
+1. En el portal de Cloud App Security, en el engranaje de **configuración** , haga clic en **extensiones de seguridad**.
 
-2. Haga clic en el icono de signo más para iniciar el asistente **Agregar agente SIEM**.
-3. En el asistente, haga clic en **Iniciar asistente**.
-4. En el asistente, asigne un nombre, **seleccione el formato SIEM** y establezca la **Configuración avanzada** que esté relacionada con ese formato. Haga clic en **Siguiente**.
+1. En la pestaña **agentes Siem** , haga clic en agregar ( **+** ) y, a continuación, elija **Siem genérico**.
 
-   ![Configuración general de SIEM](./media/siem1.png)
+    ![Captura de pantalla que muestra el menú Agregar integración de SIEM](media/siem0.png)
 
-5. Escriba la dirección IP o nombre de host del **host de syslog remoto** y el **número de puerto de syslog**. Seleccione TCP o UDP como protocolo de syslog remoto.
-   Puede trabajar con el administrador de seguridad para obtener estos detalles si no los tiene. Haga clic en **Siguiente**.
+1. En el asistente, haga clic en **Iniciar asistente**.
+1. En el asistente, asigne un nombre, **seleccione el formato SIEM** y establezca la **Configuración avanzada** que esté relacionada con ese formato. Haga clic en **Siguiente**.
 
-   ![Configuración remota de Syslog](./media/siem2.png)
+    ![Configuración general de SIEM](media/siem1.png)
 
-6. Seleccione los tipos de datos que quiera exportar al servidor SIEM para **Alertas** y **Actividades**. Use el control deslizante para habilitarlas y deshabilitarlas; de forma predeterminada todo está seleccionado. Puede usar el menú desplegable **Apply to** (Aplicar a) para establecer filtros para enviar solo alertas y actividades específicas al servidor SIEM. Haga clic en **Editar y obtener vista previa de resultados** para comprobar que el filtro funciona según lo esperado. Haga clic en **Siguiente**.
+1. Escriba la dirección IP o nombre de host del **host de syslog remoto** y el **número de puerto de syslog**. Seleccione TCP o UDP como protocolo de syslog remoto.
+    Puede trabajar con el administrador de seguridad para obtener estos detalles si no los tiene. Haga clic en **Siguiente**.
 
-   ![Configuración de tipos de datos](./media/siem3.png)
+    ![Configuración remota de Syslog](media/siem2.png)
 
-7. Copie el token y guárdelo para más adelante.
-   Haga clic en Finalizar y salga del asistente. Vuelva a la página de SIEM para ver al agente SIEM que ha agregado en la tabla. Mostrará que está **Creado** hasta que se conecte más adelante.
+1. Seleccione los tipos de datos que quiera exportar al servidor SIEM para **Alertas** y **Actividades**. Use el control deslizante para habilitarlas y deshabilitarlas; de forma predeterminada todo está seleccionado. Puede usar el menú desplegable **Apply to** (Aplicar a) para establecer filtros para enviar solo alertas y actividades específicas al servidor SIEM. Haga clic en **Editar y obtener vista previa de resultados** para comprobar que el filtro funciona según lo esperado. Haga clic en **Siguiente**.
+
+   ![Configuración de tipos de datos](media/siem3.png)
+
+1. Copie el token y guárdelo para más adelante.
+    Haga clic en Finalizar y salga del asistente. Vuelva a la página de SIEM para ver al agente SIEM que ha agregado en la tabla. Mostrará que está **Creado** hasta que se conecte más adelante.
 
 > [!NOTE]
 > Los tokens que se creen se enlazan al administrador que los haya creado. Esto significa que, si se elimina al usuario administrador de Cloud App Security, el token dejará de ser válido.
@@ -94,11 +101,12 @@ La integración con SIEM se realiza en tres pasos:
 
 1. En [Centro de descarga de Microsoft](https://go.microsoft.com/fwlink/?linkid=838596), después de aceptar los [términos de licencia del software](https://go.microsoft.com/fwlink/?linkid=862491), descargue el archivo .zip y descomprímalo.
 
-2. Ejecute el archivo extraído en el servidor:
+1. Ejecute el archivo extraído en el servidor:
 
-        java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
+    `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN`
 
 > [!NOTE]
+>
 > - El nombre de archivo puede diferir dependiendo de la versión del agente SIEM.
 > - Los parámetros entre corchetes [  ] son opcionales y solo deben usarse si procede.
 > - Se recomienda ejecutar el archivo JAR mientras el servidor se inicia.
@@ -171,29 +179,29 @@ El siguiente texto es un ejemplo de archivo de registro de alertas:
 ### <a name="step-3-validate-that-the-siem-agent-is-working"></a>Paso 3: validación del correcto funcionamiento del agente SIEM
 
 1. Asegúrese de que el estado del agente SIEM en el portal de Cloud App Security no sea **Error de conexión** o **Desconectado**, y de que no haya ninguna notificación del agente. Se mostrará como **Error de conexión** si la conexión está inactiva durante más de dos horas. El estado se muestra como **Desconectado** si la conexión está inactiva durante más de 12 horas.
- ![SIEM desconectado](./media/siem-not-connected.png)
+ ![SIEM desconectado](media/siem-not-connected.png)
 
-    En su lugar, el estado debe ser Conectado, tal como se muestra aquí: ![SIEM conectado](./media/siem-connected.png).
+    En su lugar, el estado debe ser Conectado, tal como se muestra aquí: ![SIEM conectado](media/siem-connected.png).
 
-2. En el servidor Syslog o SIEM, asegúrese de que vea las alertas y actividades procedentes de Cloud App Security.
+1. En el servidor Syslog o SIEM, asegúrese de que vea las alertas y actividades procedentes de Cloud App Security.
 
 ## <a name="regenerating-your-token"></a>Volver a generar el token
 
 Si pierde el token, siempre puede volver a generarlo haciendo clic en los tres puntos al final de la fila del agente SIEM de la tabla. Seleccione **Regenerar token** para obtener un nuevo token.
 
- ![SIEM: volver a generar el token](./media/siem-regenerate-token.png)
+![SIEM: volver a generar el token](media/siem-regenerate-token.png)
 
 ## <a name="editing-your-siem-agent"></a>Editar el agente SIEM
 
 Para editar el agente SIEM, haga clic en los tres puntos al final de la fila del agente SIEM de la tabla y seleccione **Editar**. Si edita el agente SIEM, no es necesario volver a ejecutar el archivo .jar, ya que se actualiza automáticamente.
 
-![SIEM: edición](./media/siem-edit.png)
+![SIEM: edición](media/siem-edit.png)
 
 ## <a name="deleting-your-siem-agent"></a>Eliminación al agente SIEM
 
 Para eliminar el agente SIEM, haga clic en los tres puntos al final de la fila del agente SIEM de la tabla y seleccione **Eliminar**.
 
-![SIEM: eliminación](./media/siem-delete.png)
+![SIEM: eliminación](media/siem-delete.png)
 
 > [!NOTE]
 > Esta característica está en versión preliminar pública.
