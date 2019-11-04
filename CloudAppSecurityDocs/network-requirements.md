@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/12/2019
+ms.date: 11/01/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6d1bb49f9af2ee64c191a3cc06c42c021f474c3e
-ms.sourcegitcommit: 069f717a99a2e5a87702c45265dda45ad3901a41
+ms.openlocfilehash: 42e745feff8fbe9f17673cb15f0f8688ceeb1fe2
+ms.sourcegitcommit: e7af22892c56d03490d1e6241c0a74d2e11e9fe2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185211"
+ms.lasthandoff: 11/03/2019
+ms.locfileid: "73462171"
 ---
 # <a name="network-requirements"></a>Requisitos de red
 
@@ -58,6 +58,12 @@ Para acceder al portal de Cloud App Security, agregue el **Puerto de salida 443*
     dc.services.visualstudio.com
     *.blob.core.windows.net
 
+En el caso de los clientes de la administración pública de Estados Unidos, también es necesario agregar los siguientes nombres DNS a la lista de permitidos del firewall para proporcionar acceso al portal de Cloud App Security GCC High:
+
+    portal.cloudappsecurity.us
+    *.portal.cloudappsecurity.us
+    cdn.cloudappsecurity.com
+
 Además, estos elementos deben estar en una lista blanca, según el centro de datos que use:
 > [!div class="mx-tableFixed"]
 >
@@ -68,6 +74,7 @@ Además, estos elementos deben estar en una lista blanca, según el centro de da
 > |US3|13.80.125.22<br>40.74.1.235<br>40.74.6.204<br>40.90.218.196<br>40.90.218.198<br>51.143.58.207<br>52.137.89.147<br>52.183.75.62|*.us3.portal.cloudappsecurity.com|
 > |Unión Europea 1|13.80.125.22<br>40.119.154.72<br>40.74.1.235<br>40.74.6.204<br>51.143.58.207<br>52.137.89.147<br>52.157.238.58<br>52.174.56.180<br>52.183.75.62|\*.eu.portal.cloudappsecurity.com<|
 > |EU2|13.80.125.22<br>40.74.1.235<br>40.74.6.204<br>40.81.156.154<br>40.81.156.156<br>51.143.58.207<br>52.137.89.147<br>52.183.75.62|*.eu2.portal.cloudappsecurity.com|
+> |Estados Unidos 1 gov|13.72.19.4<br>52.227.143.223|*. us1.portal.cloudappsecurity.us|
 
 > [!NOTE]
 > En lugar de un carácter comodín (\*), puede abrir solo la dirección URL del inquilino específico, por ejemplo, de acuerdo con la captura de pantalla anterior, puede abrir: mod244533.us.portal.cloudappsecurity.com
@@ -103,9 +110,10 @@ Para habilitar Cloud App Security para conectarse a su SIEM, agregue el **Puerto
 > |US3|13.80.125.22<br>40.74.1.235<br>40.74.6.204<br>40.90.218.196<br>40.90.218.198<br>51.143.58.207<br>52.137.89.147<br>52.183.75.62|
 > |Unión Europea 1|13.80.125.22<br>40.119.154.72<br>40.74.1.235<br>40.74.6.204<br>51.143.58.207<br>52.137.89.147<br>52.157.238.58<br>52.174.56.180<br>52.183.75.62|
 > |EU2|13.80.125.22<br>40.74.1.235<br>40.74.6.204<br>40.81.156.154<br>40.81.156.156<br>51.143.58.207<br>52.137.89.147<br>52.183.75.62|
+> |Estados Unidos 1 gov|13.72.19.4<br>52.227.143.223|
 
 > [!NOTE]
-> Si no especificó un proxy al configurar el agente de Cloud App Security Siem, debe permitir las conexiones http a http://ocsp.msocsp.com/ y OCSP.DigiCert.com en el puerto 80. Esto sirve para comprobar el estado de revocación de certificado al conectarse al portal de Cloud App Security.
+> Si no especificó un proxy al configurar el agente de SIEM de Cloud App Security, debe permitir que las conexiones http http://ocsp.msocsp.com/ y ocsp.digicert.com en el puerto 80. Esto sirve para comprobar el estado de revocación de certificado al conectarse al portal de Cloud App Security.
 
 ## <a name="app-connector"></a>Conector de la aplicación
 
@@ -125,6 +133,7 @@ Para conectarse a aplicaciones de terceros, habilite Cloud App Security para per
 > |US3|13.68.76.47<br>40.90.218.196<br>40.90.218.197<br>40.90.218.198<br>40.90.218.203<br>40.90.220.190<br>40.90.220.196<br>51.143.120.236<br>51.143.120.242<br>104.42.54.148||
 > |Unión Europea 1|13.80.22.71<br>13.95.29.177<br>13.95.30.46<br>40.114.217.8<br>40.114.217.8<br>40.115.24.65<br>40.115.24.65<br>40.115.25.50<br>40.115.25.50<br>40.119.154.72|40.67.219.133<br>51.105.55.62<br>51.105.179.157<br>51.137.200.32<br>52.157.232.110<br>52.157.233.133<br>52.157.233.92<br>52.157.238.58<br>52.157.239.110<br>52.174.56.180|
 > |EU2|40.81.152.171<br>40.81.152.172<br>40.81.156.153<br>40.81.156.154<br>40.81.156.155<br>40.81.156.156<br>51.105.55.62<br>51.137.200.32<br>51.145.108.227<br>51.145.108.250|
+> |Estados Unidos 1 gov|52.227.138.248<br>52.227.142.192<br>52.227.143.223|
 
 ## <a name="third-party-dlp-integration"></a>Integración de DLP de terceros
 
@@ -176,18 +185,19 @@ Para habilitar características de Cloud Discovery por medio de un recopilador d
 - Permita que el recopilador de registros inicie tráfico saliente al portal (por ejemplo, contoso.cloudappsecurity.com) en el puerto 443.
 - Permita que el recopilador de registros inicie tráfico saliente a Azure Blog Storage en el puerto 443:
 
-  | Centro de datos |                        Dirección URL                        |
-  |-------------|---------------------------------------------------|
-  |     Estados Unidos 1     | https:\//adaprodconsole.BLOB.Core.Windows.net/     |
-  |     US2     | https:\//prod03use2console1.BLOB.Core.Windows.net/ |
-  |     US3     | https:\//prod5usw2console1.BLOB.Core.Windows.net/  |
-  |     Unión Europea 1     | https:\//prod02euwconsole1.BLOB.Core.Windows.net/  |
-  |     EU2     | https:\//prod4uksconsole1.BLOB.Core.Windows.net/   |
+  | Centro de datos |                        Dirección URL                                 |
+  |-------------|------------------------------------------------------------|
+  |     Estados Unidos 1     | https:\//adaprodconsole.blob.core.windows.net/             |
+  |     US2     | https:\//prod03use2console1.blob.core.windows.net/         |
+  |     US3     | https:\//prod5usw2console1.blob.core.windows.net/          |
+  |     Unión Europea 1     | https:\//prod02euwconsole1.blob.core.windows.net/          |
+  |     EU2     | https:\//prod4uksconsole1.blob.core.windows.net/           |
+  |   Estados Unidos 1 gov   | https:\//gprd1usgvconsole1.blob.core.usgovcloudapi.net/    |
 
 > [!NOTE]
 > - Si el firewall requiere una lista de acceso de dirección IP estática y no admite la creación de listas de permitidos basadas en direcciones URL, permita que el recopilador de registros enrute el tráfico saliente hacia los [intervalos IP del centro de datos de Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653) a través del puerto 443.
 >- Permita que el recopilador de registros inicie tráfico saliente al portal de Cloud App Security.
->- Si no especificó un proxy al configurar el recopilador de registros, debe permitir las conexiones http a http://ocsp.msocsp.com/ y OCSP.DigiCert.com en el puerto 80. Esto sirve para comprobar el estado de revocación de certificado al conectarse al portal de Cloud App Security.
+>- Si no especificó un proxy al configurar el recopilador de registros, debe permitir que las conexiones http http://ocsp.msocsp.com/ y ocsp.digicert.com en el puerto 80. Esto sirve para comprobar el estado de revocación de certificado al conectarse al portal de Cloud App Security.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
