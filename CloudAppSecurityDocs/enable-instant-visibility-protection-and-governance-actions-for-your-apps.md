@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9de8c36beed2ffb83152f2ff58da36b897c7026f
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: d435d8b12e5cc90de2c8d4816d1f1b93ddb5d0a8
+ms.sourcegitcommit: b592226ec8a07b4bc87720ea8611cd6edc8d7f8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084574"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73463619"
 ---
 # <a name="connect-apps"></a>Conectar aplicaciones
 
@@ -27,14 +27,14 @@ ms.locfileid: "71084574"
 
 Los conectores de aplicaciones usan las API de los proveedores de aplicaciones para permitir mediante Microsoft Cloud App Security una mayor visibilidad y control de las aplicaciones a las que se conecta.
 
-Microsoft Cloud App Security usa las API proporcionadas por el proveedor de nube. Cada servicio tiene su propio marco de trabajo y limitaciones de API como limitación, límites de API, ventanas de API de tiempo cambiante dinámicas, etc. Microsoft Cloud App Security funciona con los servicios para optimizar el uso de las API y proporcionar el máximo rendimiento. Los motores de Cloud App Security usan la capacidad permitida teniendo en cuenta las diferentes limitaciones que los servicios imponen a las API. Algunas operaciones, como el análisis de todos los archivos del inquilino, requieren numerosas API y, por tanto, se reparten a lo largo de un período de tiempo mayor. Tenga en cuenta que algunas directivas pueden ejecutarse durante varias horas o varios días.
+Microsoft Cloud App Security usa las API proporcionadas por el proveedor de nube. Cada servicio tiene su propio marco de trabajo y limitaciones de API como limitación, límites de API, ventanas de API de tiempo cambiante dinámicas, etc. Microsoft Cloud App Security funciona con los servicios para optimizar el uso de las API y proporcionar el máximo rendimiento. Los motores de Cloud App Security usan la capacidad permitida teniendo en cuenta las diferentes limitaciones que los servicios imponen a las API. Algunas operaciones, como el análisis de todos los archivos del inquilino, requieren numerosas API y, por tanto, se reparten a lo largo de un período de tiempo mayor. Tengan en cuenta que algunas directivas pueden ejecutarse durante varias horas o varios días.
 
 ## <a name="multi-instance-support"></a>Compatibilidad con varias instancias
 
 Cloud App Security admite varias instancias de la misma aplicación conectada. Por ejemplo, si tiene más de una instancia de Salesforce (una para venta y otra para marketing) puede conectarlas con Cloud App Security. Puede administrar las distintas instancias desde la misma consola para crear directivas pormenorizadas y una investigación más exhaustiva. Esta compatibilidad solo se aplica a las aplicaciones conectadas a API, no a aplicaciones conectadas por proxy ni detectadas por Cloud App Security.
 
 > [!NOTE]
-> No se admiten instancias múltiples de Office 365 y Azure.
+> Multi-instance is not supported for Office 365 and Azure.
 
 ## <a name="how-it-works"></a>Cómo funciona
 
@@ -68,22 +68,22 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
 
 > [!div class="mx-tableFixed"]
 >
-> ||**Office 365**|**Box**|**Okta**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|**Webex**|**Laboral**|
-> |-|-|-|-|-|-|-|-|-|-|-|
-> |**Cuentas de lista**|✔|✔|✔|✔|✔|✔|✔|✔|✔|✔|
-> |**Grupo**|✔|✔|✔|✔|✔|✔|✔|✔|No aplicable|No aplicable|
-> |**Privilegios**|✔|✔|No es compatible con el proveedor|✔|✔|✔|✔||✔|No aplicable|
-> |**Gobernanza de usuario**|✔|✔||✔|Próximamente|Próximamente|Próximamente||Próximamente|Próximamente|
-> |**Actividad de inicio de sesión**|✔|✔|✔|✔|✔|✔|✔|✔|✔|✔|
-> |**Actividad del usuario**|✔*|✔|✔|✔ - requiere Google Business o Enterprise|Parcial|Compatible con Salesforce Shield|✔|No disponible|✔|✔|
-> |**Actividad administrativa**|✔|✔|✔|✔|Parcial|✔|✔|✔|✔|✔|
-> |**Examen periódico de archivos**|✔|✔|No disponible|✔|✔|✔|✔|No disponible|||
-> |**Examen de archivos prácticamente en tiempo real**|✔|✔|No aplicable|✔ - requiere Google Business o Enterprise|||Próximamente||✔||
-> |**Control de uso compartido**|✔|✔|No disponible|✔|No disponible||✔||✔||
-> |**Cuarentena**|✔|✔|No disponible|Próximamente|||Próximamente||No aplicable|No aplicable|
-> |**Ver permisos de aplicación**|✔|No es compatible con el proveedor|No disponible|✔||✔|No es compatible con el proveedor||No aplicable|No aplicable|
-> |**Revocar permisos de aplicación**|✔||No disponible|✔||✔|No aplicable||No aplicable|No aplicable|
-> |**Aplicación de etiquetas de Azure Information Protection**|✔|✔||✔|||||No aplicable|No aplicable|
+> ||**Office 365**|**Box**|**Okta**|**GCP**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|**Webex**|**Workday**|
+> |-|-|-|-|-|-|-|-|-|-|-|-|
+> |**Cuentas de lista**|✔|✔|✔|Subject to connecting G Suite|✔|✔|✔|✔|✔|✔|✔|
+> |**Group**|✔|✔|✔|Subject to connecting G Suite|✔|✔|✔|✔|✔|No disponible|No disponible|
+> |**Privilegios**|✔|✔|No es compatible con el proveedor|Subject to connecting G Suite|✔|✔|✔|✔||✔|No disponible|
+> |**Regulación de usuario**|✔|✔||Subject to connecting G Suite|✔|Próximamente|✔|Próximamente||Próximamente|Próximamente|
+> |**Actividad de inicio de sesión**|✔|✔|✔|Subject to connecting G Suite|✔|✔|✔|✔|✔|✔|✔|
+> |**Actividad del usuario**|✔*|✔|✔|✔|✔ - requiere Google Business o Enterprise|Parcial|Compatible con Salesforce Shield|✔|No disponible|✔|✔|
+> |**Actividad administrativa**|✔|✔|✔|✔|✔|Parcial|✔|✔|✔|✔|✔|
+> |**Examen periódico de archivos**|✔|✔|No disponible||✔|✔|✔|✔|No disponible|||
+> |**Examen de archivos prácticamente en tiempo real**|✔|✔|No disponible||✔ - requiere Google Business o Enterprise|||Próximamente||✔||
+> |**Control de uso compartido**|✔|✔|No disponible||✔|No disponible||✔||✔||
+> |**Cuarentena**|✔|✔|No disponible||Próximamente|||Próximamente||No disponible|No disponible|
+> |**Ver permisos de aplicación**|✔|No es compatible con el proveedor|No disponible||✔||✔|No es compatible con el proveedor||No disponible|No disponible|
+> |**Revocar permisos de aplicación**|✔||No disponible||✔||✔|No disponible||No disponible|No disponible|
+> |**Aplicación de etiquetas de Azure Information Protection**|✔|✔|||✔|||||No disponible|No disponible|
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -92,7 +92,7 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
 - Se recomienda crear una cuenta de servicio de administración dedicada a Cloud App Security por cada aplicación que quiera conectar con la integración de la API de Cloud App Security.
 
 > [!NOTE]
-> Para obtener actualizaciones cuando las direcciones URL y las direcciones IP cambien, suscríbase al RSS como se explica en: [Intervalos de direcciones IP y URL de Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).
+> Para obtener actualizaciones cuando las direcciones URL y las direcciones IP cambien, suscríbase al RSS como se explica en: [URL de Office 365 e intervalos de direcciones IP](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).
 
 Para usar los conectores de aplicaciones, debe asegurarse de que tiene lo siguiente para cada aplicación específica:
 
@@ -100,20 +100,21 @@ Para usar los conectores de aplicaciones, debe asegurarse de que tiene lo siguie
 |-----|--------------|------|
 | Azure | | Administrador global |
 | AWS | | Usuario creado recientemente |
-| Cuadro | Enterprise | Se recomienda encarecidamente que se conecte a Box como administrador. Si se conecta como coadministrador, la visibilidad de los datos será parcial. En caso de que se conecte como coadministrador, asegúrese de seleccionar todos los permisos. |
+| Cuadro | Enterprise | It's strongly recommended that you connect to Box as an Admin. Connecting as a Coadmin will result in only partial data visibility. En caso de que se conecte como coadministrador, asegúrese de seleccionar todos los permisos. |
 | Dropbox | Empresa/Enterprise | Administración |
-| G Suite | Se prefiere G Suite Business o Enterprise<br /><br /> G Suite Enterprise (como mínimo) | Superadministrador |
+| GCP | | See the [connect GCP prerequisites](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
+| G Suite | Se prefiere G Suite Business o Enterprise<br /><br />G Suite Enterprise (como mínimo) | Superadministrador |
 | Office 365 | | Administrador global |
 | Okta | Enterprise (no versión de prueba) | Administración |
 | Salesforce | | Administración |
-| ServiceNow | Eureka o versión posterior | Rol de administrador + RestAPI |
-| Webex | | Administrador + administrador de cumplimiento |
-| Workday | | Consulte los [requisitos previos de Connect WorkDay](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) |
+| ServiceNow | Eureka o versión posterior | Admin + RestAPI role |
+| Webex | | Admin + Compliance Admin |
+| Workday | | See the [connect Workday prerequisites](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) |
 
 ### <a name="expressroute"></a>ExpressRoute
 
 Cloud App Security se ha implementado en Azure y está totalmente integrado con [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Todas las interacciones con las aplicaciones de Cloud App Security y el tráfico enviado a Cloud App Security, incluida la carga de registros de detección, se enrutan a través del **emparejamiento público** de ExpressRoute para mejorar la latencia, el rendimiento y la seguridad. No hay ningún paso de configuración necesario en el lado cliente.
-Para obtener más información sobre el emparejamiento público, vea [Circuitos ExpressRoute y dominios de enrutamiento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).
+Para obtener más información sobre el emparejamiento público, consulte [Circuitos ExpressRoute y dominios de enrutamiento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

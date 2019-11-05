@@ -15,12 +15,12 @@ ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e8be0a2cd23a23d223fff12e956eb7152fa9fa14
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: ba9c6c4251942214cd6a88fa697d431105eb4abc
+ms.sourcegitcommit: daddb755a7eb4e26df11e2f8f1c6bafd7e37e578
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335614"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73591869"
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Conectar Office 365 con Microsoft Cloud App Security
 
@@ -52,7 +52,7 @@ Cloud App Security admite las siguientes aplicaciones de Office 365:
 >- El registro de auditoría de buzones de Exchange debe estar activado para cada buzón de usuario antes de que se registre la actividad del usuario en Exchange Online. Consulte las [actividades de buzones de Exchange](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
 >- Si las aplicaciones de Office están habilitadas, también se importan los grupos que forman parte de Office 365 a Cloud App Security desde las aplicaciones de Office específicas. Por ejemplo, si SharePoint está habilitado, se importan también grupos de Office 365 como grupos de SharePoint.
 >- Debe [habilitar la auditoría en Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-auditing/) para obtener los registros desde ahí. Una vez habilitada, Cloud App Security empieza a obtener los registros (con un retraso de 24-72 horas).
->- Debe [Habilitar la auditoría en Dynamincs 365](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing#enable-auditing-in-dynamics-365-for-customer-engagement/) para obtener los registros desde allí. Una vez habilitada, Cloud App Security empieza a obtener los registros (con un retraso de 24-72 horas).
+>- Debe [Habilitar la auditoría en Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing#enable-auditing) para obtener los registros desde allí. Una vez habilitada, Cloud App Security empieza a obtener los registros (con un retraso de 24-72 horas).
 >- Si Azure Active Directory está establecido de modo que se sincronice automáticamente con los usuarios del entorno local de Active Directory, la configuración del entorno local reemplaza la configuración de Azure AD y se revierte el uso de la acción de gobernanza **Suspender usuario**.
 >- En el caso de las actividades de inicio de sesión Azure AD, Cloud App Security solo muestra las actividades de inicio de sesión interactivas y las actividades de inicio de sesión de los protocolos heredados, como ActiveSync. Las actividades de inicio de sesión no interactivas se pueden ver en el registro de auditoría Azure AD.
 
