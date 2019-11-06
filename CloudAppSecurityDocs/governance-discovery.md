@@ -15,19 +15,18 @@ ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ab6a8d276cdd3ce1963be2e5a0c28b42bc8eeaa6
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: a5b75eb8a376a83791f44986b446b8a22ed8d832
+ms.sourcegitcommit: 474cc4e6874224295931089af0cc8c5d93916627
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335792"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73612231"
 ---
 # <a name="govern-discovered-apps"></a>Controlar las aplicaciones detectadas
 
 *Se aplica a: Microsoft Cloud App Security*
 
-Después de revisar la lista de aplicaciones detectadas en el entorno, puede protegerlo contra el uso de aplicaciones no deseadas de las maneras que se indican a continuación.
-
+Después de revisar la lista de aplicaciones detectadas en su entorno, puede proteger su entorno mediante la aprobación de aplicaciones seguras (**autorizadas**) o la prohibición de las aplicaciones no deseadas (no**autorizadas**) de las siguientes maneras.
 
 ## <a name="BKMK_SanctionApp"></a> Autorizar o no autorizar una aplicación 
 
