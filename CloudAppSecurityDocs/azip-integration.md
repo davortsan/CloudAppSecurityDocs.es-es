@@ -15,12 +15,12 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d9c8385efac05367213fed4bd484509a9ba76a25
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: e9f6fe5bd55f94777901748778e40b7e00ba07ae
+ms.sourcegitcommit: 1d5e5a5c418d698ba624660abf2873fce47da999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71083786"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73732006"
 ---
 # <a name="azure-information-protection-integration"></a>Integración de Azure Information Protection
 
@@ -45,7 +45,7 @@ Al integrar Azure Information Protection en Cloud App Security, puede aprovechar
 
 - Para trabajar con la integración de Azure Information Protection, primero debe habilitar el [conector de aplicaciones para Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
-Para usar etiquetas en Cloud App Security, las etiquetas se deben publicar como parte de la directiva global. Si está utilizando Azure Information Protection, las etiquetas deben publicarse a través del portal de Azure Information Protection. Si migró a etiquetas unificadas, las etiquetas deben publicarse a través del centro de seguridad y cumplimiento de Office 365.
+Para usar etiquetas en Cloud App Security, las etiquetas se deben publicar como parte de la Directiva. Si está utilizando Azure Information Protection, las etiquetas deben publicarse a través del portal de Azure Information Protection. Si migró a etiquetas unificadas, las etiquetas deben publicarse a través del centro de seguridad y cumplimiento de Office 365.
 
 Actualmente, Cloud App Security permite aplicar etiquetas de clasificación de Azure Information Protection a los siguientes tipos de archivo:
 
@@ -58,7 +58,7 @@ Actualmente, Cloud App Security permite aplicar etiquetas de clasificación de A
 
 Esta característica está disponible actualmente para los archivos que se almacenan en Box, G Suite, SharePoint Online y OneDrive para la Empresa. Se admitirán más aplicaciones en la nube en futuras versiones.
 
-Cloud App Security no pueden cambiar los archivos etiquetados con protección fuera de Cloud App Security. Sin embargo, puede examinar estos archivos concediendo permisos para inspeccionar el [contenido de los archivos protegidos](content-inspection.md#content-inspection-for-protected-files). Se pueden examinar archivos etiquetados (sin protección) de forma externa a Cloud App Security y Cloud App Security puede aplicar otra etiqueta (con o sin protección), tal y como se define en las directivas de Cloud App Security.
+Cloud App Security no pueden cambiar los archivos etiquetados con protección fuera de Cloud App Security. Sin embargo, puede examinar estos archivos concediendo permisos para [inspeccionar el contenido de los archivos protegidos](content-inspection.md#content-inspection-for-protected-files). Se pueden examinar archivos etiquetados (sin protección) de forma externa a Cloud App Security y Cloud App Security puede aplicar otra etiqueta (con o sin protección), tal y como se define en las directivas de Cloud App Security.
 
 ## <a name="how-it-works"></a>Cómo funciona
 
@@ -137,7 +137,7 @@ Siga estas instrucciones para crear la directiva de archivo:
    ![Aplicar etiqueta](./media/aip-gov-action.png)
 
 > [!NOTE]
-> La función de aplicar automáticamente una etiqueta de Azure Information Protection mediante la directiva de archivo resulta eficaz. Para impedir que los clientes apliquen por error una etiqueta a un gran número de archivos, existe como medida de seguridad un límite diario de 100 acciones **Aplicar etiqueta** por aplicación e inquilino. Cuando se alcanza el límite diario, la acción Aplicar etiqueta se detiene temporalmente y continúa automáticamente al día siguiente (después de las 12:00 UTC). Para aumentar el límite del inquilino, abra una incidencia de soporte técnico.
+> La posibilidad de aplicar automáticamente una etiqueta de Azure Information Protection mediante la directiva de archivo resulta una funcionalidad eficaz. Para impedir que los clientes apliquen por error una etiqueta a gran cantidad de archivos, como medida de seguridad existe un límite diario de 100 acciones **Aplicar etiqueta** por aplicación y por inquilino. Cuando se alcanza el límite diario, la acción de aplicar etiqueta se detiene temporalmente y continúa automáticamente al día siguiente (después de 12:00 UTC). Para aumentar el límite del inquilino, abra una incidencia de soporte técnico.
 
 ### <a name="control-file-exposure"></a>Controlar la exposición del archivo
 
