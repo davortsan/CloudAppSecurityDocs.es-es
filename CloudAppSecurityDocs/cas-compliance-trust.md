@@ -5,16 +5,16 @@ author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: overview
-ms.date: 8/21/2019
+ms.date: 11/01/2019
 ms.collection: M365-security-compliance
 ms.custom: seodec18
 ms.suite: ems
-ms.openlocfilehash: 84c33ba29a0d63e5476186a417aae749f6f97825
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: de625987873d60b99f39579ea6694dacccfd4479
+ms.sourcegitcommit: e7af22892c56d03490d1e6241c0a74d2e11e9fe2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71083812"
+ms.lasthandoff: 11/03/2019
+ms.locfileid: "73462100"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Seguridad y privacidad de datos de Microsoft Cloud App Security
 
@@ -38,19 +38,19 @@ Microsoft Cloud App Security cumple muchos estándares de cumplimiento internaci
 
 | |Title|Descripción|
 |----|----|----|
-|![logotipo CSA](./media/csastar-attest.png)|Atestación STAR de CSA|Azure e Intune recibieron la atestación STAR de Cloud Security Alliance en función de una auditoría independiente.|
-|![logotipo csa](./media/csastar.png)|Certificación STAR de CSA|Azure, Intune y Power BI recibieron la certificación STAR de Cloud Security Alliance en el nivel Gold.|
+|![logotipo CSA](./media/csastar-attest.png)|Atestación CSA STAR|Azure e Intune han recibido la Atestación Cloud Security Alliance STAR basada en una auditoría independiente.|
+|![logotipo CSA](./media/csastar.png)|Certificación CSA STAR|Azure, Intune y Power BI han recibido la Certificación Cloud Security Alliance STAR de nivel Gold.|
 |![logotipo Cláusulas modelo de la UE](./media/eu-model-icon.png)|[Cláusulas modelo de la UE](https://www.microsoft.com/en-us/trustcenter/compliance/eu-model-clauses)|Microsoft ofrece las cláusulas contractuales estándar de la UE, que garantizan las transferencias de datos personales.|
-|![logotipo escudo de la privacidad](./media/privacy_shield.png)|Escudo de la privacidad entre la Unión Europea y Estados Unidos|Microsoft cumple este marco para proteger datos personales transferidos a Estados Unidos procedentes de la Unión Europea.|
-|![logotipo FISC](./media/logo_fisc.png)|FISC|Microsoft cumple los requisitos de la norma de la versión 8 de Financial Industry Information Systems en Japón.|
+|![logotipo Escudo de la privacidad](./media/privacy_shield.png)|UE-EE. UU. Escudo de la privacidad|Microsoft es compatible con este marco de protección de los datos personales que se transfieren de la Unión Europea a Estados Unidos.|
+|![logotipo FISC](./media/logo_fisc.png)|FISC|Microsoft cumple los requisitos del estándar Financial Industry Information Systems v8 de Japón.|
 |![logotipo HIPAA](./media/hipaa-logo.png)|[HIPAA/HITECH](https://www.microsoft.com/en-us/trustcenter/compliance/hipaa)|Microsoft ofrece contratos de asociación comercial (BAA) según la Ley de transferencia y responsabilidad de seguros de salud (HIPAA).|
-|![logotipo iso 9001](./media/iso-9001.png)|ISO 9001|Microsoft está certificado para su implementación de estos estándares de administración de calidad.|
+|![logotipo ISO 9001](./media/iso-9001.png)|ISO 9001|Microsoft está certificado para la implementación de estos estándares de administración de calidad.|
 |![logotipo ISO 27001](./media/iso-27001.png)|[ISO/IEC 27001](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27001)|Microsoft está certificado para la implementación de estos estándares de administración de seguridad de la información.|
 |![logotipo ISO 27018](./media/iso-27018.png)|[ISO/IEC 27018](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27018)|Microsoft fue el primer proveedor de nube en observar este código de prácticas de privacidad en la nube.|
-|![logotipo PCI](./media/pci-logo.png)|PCI DSS|Azure cumple la versión 3.1 de Payment Card Industry Data Security Standards nivel 1.|
+|![logotipo PCI](./media/pci-logo.png)|PCI DSS|Azure cumple el Estándar de Seguridad de Datos para la Industria de Tarjeta de Pago versión 3.1 de nivel 1.|
 |![logotipo SOC](./media/soc-logo.png)|[Informes SOC 1 y SOC 2 de tipo 2](https://www.microsoft.com/en-us/trustcenter/compliance/soc)|Los servicios en la nube de Microsoft cumplen con los estándares de Service Organization Controls para la seguridad operativa.|
 |![logotipo SOC](./media/soc-logo.png)|SOC 3|Los servicios en la nube de Microsoft cumplen con los estándares Service Organization Controls para la seguridad operativa.|
-|![logotipo g-cloud](./media/g-cloud.png)|G-Cloud de Reino Unido|El organismo gubernamental Crown Commercial Service ha renovado la clasificación de servicios en la nube de Microsoft en Government Cloud v6.|
+|![logotipo G-Cloud](./media/g-cloud.png)|UK G-Cloud|El organismo gubernamental Crown Commercial Service ha renovado la clasificación de servicios en la nube de Microsoft en Government Cloud v6.|
 
 Para obtener más información, vaya a [Ofertas de Microsoft Compliance](https://www.microsoft.com/en-us/trustcenter/compliance/complianceofferings) y seleccione Cloud App Security.  
 
@@ -141,7 +141,7 @@ Microsoft Cloud App Security permite limitar el acceso de los administradores al
 
 ### <a name="permissions"></a>Permisos
 
-Microsoft Cloud App Security es compatible con el control de acceso basado en roles. Los roles de administrador global y de administrador de seguridad de Office 365 y Azure Active Directory tienen pleno acceso a Cloud App Security. Los lectores de seguridad tienen acceso de lectura. [Para obtener más información](https://docs.microsoft.com/cloud-app-security/manage-admins).
+Microsoft Cloud App Security es compatible con el control de acceso basado en roles. Los roles de administrador global y de administrador de seguridad de Office 365 y Azure Active Directory tienen pleno acceso a Cloud App Security. Los lectores de seguridad tienen acceso de lectura. [Para obtener más información](/cloud-app-security/manage-admins).
 
 ## <a name="customer-controls-for-organizational-compliance"></a>Controles de cliente de cumplimiento organizativo
 
@@ -151,13 +151,17 @@ Microsoft Cloud App Security le permite establecer el ámbito de su implementaci
 
 ### <a name="anonymization"></a>Anonimización
 
-Puede conservar el anonimato de los informes de **Cloud Discovery**. Una vez cargados los archivos de registro en **Microsoft** Cloud App Security, toda la información de nombre de usuario se reemplaza por nombres de usuario cifrados. En el caso de investigaciones de seguridad concretas, puede resolver el nombre de usuario real. Los datos privados se cifran mediante AES-128 con una clave dedicada por inquilino. [Para obtener más información](https://docs.microsoft.com/cloud-app-security/cloud-discovery-anonymizer).
+Puede conservar el anonimato de los informes de **Cloud Discovery**. Una vez cargados los archivos de registro en **Microsoft** Cloud App Security, toda la información de nombre de usuario se reemplaza por nombres de usuario cifrados. En el caso de investigaciones de seguridad concretas, puede resolver el nombre de usuario real. Los datos privados se cifran mediante AES-128 con una clave dedicada por inquilino. [Para obtener más información](/cloud-app-security/cloud-discovery-anonymizer).
+
+## <a name="security-and-privacy-for-cloud-app-security-us-government-gcc-high-customers"></a>Seguridad y privacidad de los clientes de GCC High para la Administración Pública de Estados Unidos de Cloud App Security
+
+Para más información sobre los estándares de cumplimiento de Cloud App Security y la ubicación de los datos de los clientes de GCC High para la Administración Pública de Estados Unidos, consulte la [descripción del servicio Enterprise Mobility + Security para la Administración pública de Estados Unidos](/enterprise-mobility-security/solution/ems-cloud-app-security-govt-service-description).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 [Información general de Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
-[Documentación de Cloud App Security](https://docs.microsoft.com/cloud-app-security/)
+[Documentación de Cloud App Security](/cloud-app-security/)
 
 [Suscripción a Cloud App Security](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1)
 
