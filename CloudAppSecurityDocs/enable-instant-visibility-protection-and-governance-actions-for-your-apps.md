@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/1/2019
+ms.date: 11/12/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d435d8b12e5cc90de2c8d4816d1f1b93ddb5d0a8
-ms.sourcegitcommit: b592226ec8a07b4bc87720ea8611cd6edc8d7f8c
+ms.openlocfilehash: 1b153713784c737aeb5e863f99ed2196d471b2b8
+ms.sourcegitcommit: b48842b6622bd45af66afbffc70f92d31ec232a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73463619"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73934468"
 ---
 # <a name="connect-apps"></a>Conectar aplicaciones
 
@@ -34,7 +34,7 @@ Microsoft Cloud App Security usa las API proporcionadas por el proveedor de nube
 Cloud App Security admite varias instancias de la misma aplicación conectada. Por ejemplo, si tiene más de una instancia de Salesforce (una para venta y otra para marketing) puede conectarlas con Cloud App Security. Puede administrar las distintas instancias desde la misma consola para crear directivas pormenorizadas y una investigación más exhaustiva. Esta compatibilidad solo se aplica a las aplicaciones conectadas a API, no a aplicaciones conectadas por proxy ni detectadas por Cloud App Security.
 
 > [!NOTE]
-> Multi-instance is not supported for Office 365 and Azure.
+> No se admiten instancias múltiples de Office 365 y Azure.
 
 ## <a name="how-it-works"></a>Cómo funciona
 
@@ -68,22 +68,22 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
 
 > [!div class="mx-tableFixed"]
 >
-> ||**Office 365**|**Box**|**Okta**|**GCP**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|**Webex**|**Workday**|
+> | | AWS | Cuadro | Dropbox | GCP | G Suite | Office 365 | Okta | Servicio ahora | Salesforce | Computadoras | Workday |
 > |-|-|-|-|-|-|-|-|-|-|-|-|
-> |**Cuentas de lista**|✔|✔|✔|Subject to connecting G Suite|✔|✔|✔|✔|✔|✔|✔|
-> |**Group**|✔|✔|✔|Subject to connecting G Suite|✔|✔|✔|✔|✔|No disponible|No disponible|
-> |**Privilegios**|✔|✔|No es compatible con el proveedor|Subject to connecting G Suite|✔|✔|✔|✔||✔|No disponible|
-> |**Regulación de usuario**|✔|✔||Subject to connecting G Suite|✔|Próximamente|✔|Próximamente||Próximamente|Próximamente|
-> |**Actividad de inicio de sesión**|✔|✔|✔|Subject to connecting G Suite|✔|✔|✔|✔|✔|✔|✔|
-> |**Actividad del usuario**|✔*|✔|✔|✔|✔ - requiere Google Business o Enterprise|Parcial|Compatible con Salesforce Shield|✔|No disponible|✔|✔|
-> |**Actividad administrativa**|✔|✔|✔|✔|✔|Parcial|✔|✔|✔|✔|✔|
-> |**Examen periódico de archivos**|✔|✔|No disponible||✔|✔|✔|✔|No disponible|||
-> |**Examen de archivos prácticamente en tiempo real**|✔|✔|No disponible||✔ - requiere Google Business o Enterprise|||Próximamente||✔||
-> |**Control de uso compartido**|✔|✔|No disponible||✔|No disponible||✔||✔||
-> |**Cuarentena**|✔|✔|No disponible||Próximamente|||Próximamente||No disponible|No disponible|
-> |**Ver permisos de aplicación**|✔|No es compatible con el proveedor|No disponible||✔||✔|No es compatible con el proveedor||No disponible|No disponible|
-> |**Revocar permisos de aplicación**|✔||No disponible||✔||✔|No disponible||No disponible|No disponible|
-> |**Aplicación de etiquetas de Azure Information Protection**|✔|✔|||✔|||||No disponible|No disponible|
+> | **Cuentas de lista** | ✔ | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+> | **Lista de grupos** | ✔ | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | ✔ | ✔ | ✔ | | No es compatible con el proveedor |
+> | **Lista de privilegios** | | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | No es compatible con el proveedor | ✔ | ✔ | ✔ | No pported por el proveedor |
+> | **Regulación de usuario** | | ✔ | Próximamente | Conexión de asunto G Suite | ✔ | ✔ | | Próximamente | ✔ | Próximamente | t compatible con el proveedor |
+> | **Actividad de inicio de sesión** | ✔ | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+> | **Actividad del usuario** | No disponible | ✔ | ✔ | ✔ | ✔ - requiere Google Business o Enterprise | ✔ | ✔ | Parcial | Compatible con lesforce Shield | ✔ | ✔ |
+> | **Actividad administrativa** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Parcial | ✔ | ✔ | No es compatible con el proveedor |
+> | **DLP: examen periódico** | | ✔ | Próximamente | No disponible | ✔ | ✔ | No disponible | | | | No compatible con ovider |
+> | **Análisis de DLP casi en tiempo real** | | ✔ | ✔ | No disponible | ✔: requiere Google Business Enterprise | ✔ | No disponible | ✔ | ✔ | ✔ | No es compatible con el proveedor |
+> | **Control de uso compartido** | ✔ | ✔ | ✔ | No disponible | ✔ | ✔ | No disponible | No disponible | | ✔ | No compatible con ovider |
+> | **Regulación de archivos** | ✔ | ✔ | ✔ | No disponible | ✔ | ✔ | No disponible | | ✔ | | No es compatible con el proveedor |
+> | **Ver permisos de aplicación** | No disponible | No es compatible con el proveedor | Próximamente | No disponible | ✔ | ✔ | No disponible | | ✔ | No disponible | No disponible |
+> | **Revocar permisos de aplicación** | No disponible | No es compatible con el proveedor | en breve | No disponible | ✔ | ✔ | No disponible | | ✔ | No disponible | No disponible |
+> | **Aplicación de etiquetas de Azure Information Protection** | No disponible | ✔ | | No disponible | ✔ | ✔ | No disponible | | | No disponible | No disponible |
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -100,16 +100,16 @@ Para usar los conectores de aplicaciones, debe asegurarse de que tiene lo siguie
 |-----|--------------|------|
 | Azure | | Administrador global |
 | AWS | | Usuario creado recientemente |
-| Cuadro | Enterprise | It's strongly recommended that you connect to Box as an Admin. Connecting as a Coadmin will result in only partial data visibility. En caso de que se conecte como coadministrador, asegúrese de seleccionar todos los permisos. |
+| Cuadro | Enterprise | Se recomienda encarecidamente que se conecte a Box como administrador. La conexión como coadmin dará como resultado una visibilidad de datos parcial. En caso de que se conecte como coadministrador, asegúrese de seleccionar todos los permisos. |
 | Dropbox | Empresa/Enterprise | Administración |
-| GCP | | See the [connect GCP prerequisites](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
+| GCP | | Consulte los [requisitos previos de Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | G Suite | Se prefiere G Suite Business o Enterprise<br /><br />G Suite Enterprise (como mínimo) | Superadministrador |
 | Office 365 | | Administrador global |
 | Okta | Enterprise (no versión de prueba) | Administración |
 | Salesforce | | Administración |
-| ServiceNow | Eureka o versión posterior | Admin + RestAPI role |
-| Webex | | Admin + Compliance Admin |
-| Workday | | See the [connect Workday prerequisites](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) |
+| ServiceNow | Eureka o versión posterior | Rol de administrador + RestAPI |
+| Computadoras | | Administrador + administrador de cumplimiento |
+| Workday | | Consulte los [requisitos previos de Connect WorkDay](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) |
 
 ### <a name="expressroute"></a>ExpressRoute
 
