@@ -5,22 +5,21 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 1/28/2019
+ms.date: 11/14/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 86204ff4-dc1d-489f-b5fd-a43930fd49d3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a8a8570cfa27bdc9e05af3a8917bf0ce55a56be9
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 2f86c3dce15683520ca70f195ebac1c79cdded8b
+ms.sourcegitcommit: a1344fe9893eda8cdc0fe739f3a51869bdcc10cb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72336205"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74077573"
 ---
 # <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Soporte técnico y solución de problemas de Microsoft Cloud App Security
 
@@ -34,39 +33,38 @@ Microsoft proporciona soporte técnico global, preventa, facturación y suscripc
 
 Como administrador, puede usar la opción **Ayuda y soporte técnico** para presentar una solicitud de soporte técnico en línea para Cloud App Security desde Azure Portal. Para crear una solicitud de soporte técnico, la cuenta debe tener asignado uno de los siguientes [roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
 
--   Administrador global
+* Administrador global
 
--   Administrador de servicios
+* Administrador de servicios
 
 Seleccione **Solicitud de soporte técnico** para crear una solicitud de soporte técnico que se abre en la pestaña **Datos básicos** de la página *Ayuda y soporte técnico* de Azure siguiendo este protocolo.
 
 >[!NOTE]
 > Para obtener soporte técnico con productos de terceros que funcionan con Microsoft Cloud App Security (por ejemplo, Box, Salesforce y G Suite), póngase en contacto primero con el proveedor de ese producto.
 
-
 ### <a name="create-an-online-support-request"></a>Creación de una solicitud de soporte técnico en línea
 
-1.  Inicie sesión en Azure Portal [https://portal.azure.com](https://portal.azure.com/) con sus credenciales de administrador, seleccione el icono **?** de la esquina superior derecha del portal y, luego, seleccione **Ayuda y soporte técnico** para ir a la página [Ayuda y soporte técnico](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) de Azure.
+1. Inicie sesión en Azure Portal [https://portal.azure.com](https://portal.azure.com/) con sus credenciales de administrador, seleccione el icono **?** de la esquina superior derecha del portal y, luego, seleccione **Ayuda y soporte técnico** para ir a la página [Ayuda y soporte técnico](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) de Azure.
 
-2.  En Azure **ayuda y soporte técnico** página, seleccione **nueva solicitud de soporte técnico**.
+2. En Azure **ayuda y soporte técnico** página, seleccione **nueva solicitud de soporte técnico**.
 
-3.  Para la mayoría de los problemas de soporte técnico, en la pestaña **Datos básicos**, elija las opciones siguientes:
+3. Para la mayoría de los problemas de soporte técnico, en la pestaña **Datos básicos**, elija las opciones siguientes:
 
-    -   **Tipo de problema**: **Técnico**
+    * **Tipo de problema**: **Técnico**
 
-    -   **Suscripción**: \<*su suscripción*\>
+    * **Suscripción**: \<*su suscripción*\>
 
-    -   **Servicio**: **seguridad de aplicaciones en la nube**
+    * **Servicio**: **seguridad de aplicaciones en la nube**
 
-    -   **Tipo de problema**: elija el tipo de problema en el menú desplegable.
+    * **Tipo de problema**: elija el tipo de problema en el menú desplegable.
 
-    -   **Subtipo de problema**: elija el subtipo de problema en el menú desplegable.
+    * **Subtipo de problema**: elija el subtipo de problema en el menú desplegable.
 
-    -   **Asunto**: Describa brevemente el problema que tiene
+    * **Asunto**: Describa brevemente el problema que tiene
 
-4.  En la pestaña **detalles** , rellene los detalles del problema, el método de soporte técnico, su información de contacto y, a continuación, haga clic en **siguiente: revisar y crear**.
+4. En la pestaña **detalles** , rellene los detalles del problema, el método de soporte técnico, su información de contacto y, a continuación, haga clic en **siguiente: revisar y crear**.
 
-5.  Revise la información, compruebe que es correcta y, después, elija **Crear** para enviar la solicitud de soporte técnico.
+5. Revise la información, compruebe que es correcta y, después, elija **Crear** para enviar la solicitud de soporte técnico.
 
 **Nota:** Si tiene una pregunta de facturación o suscripción, puede abrir un caso para obtener soporte técnico a través del [centro de administración de Microsoft 365](https://admin.microsoft.com/Support/SupportEntry.aspx).
 
@@ -74,37 +72,32 @@ Seleccione **Solicitud de soporte técnico** para crear una solicitud de soporte
 
 Puede ver una solicitud de soporte técnico desde Azure Portal. Para ello:
 
-1.  Inicie sesión en Azure [https://portal.azure.com](https://portal.azure.com/) con sus credenciales de administrador, seleccione el icono **?** de la esquina superior derecha del portal y, luego, seleccione **Ayuda y soporte técnico** para ir a la página [Ayuda y soporte técnico](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) de Azure.
+1. Inicie sesión en Azure [https://portal.azure.com](https://portal.azure.com/) con sus credenciales de administrador, seleccione el icono **?** de la esquina superior derecha del portal y, luego, seleccione **Ayuda y soporte técnico** para ir a la página [Ayuda y soporte técnico](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) de Azure.
 
-2.  En la página **Ayuda y soporte técnico**, puede ver la lista de **solicitudes de soporte técnico recientes** y seleccionarlas para ver detalles adicionales.
+2. En la página **Ayuda y soporte técnico**, puede ver la lista de **solicitudes de soporte técnico recientes** y seleccionarlas para ver detalles adicionales.
 
 ## <a name="troubleshooting-microsoft-cloud-app-security-status"></a>Solución de problemas de estado de Microsoft Cloud App Security
 
 Compruebe el [estado actual de Microsoft Cloud App Security](https://status.cloudappsecurity.com/).
 
-
 ## <a name="additional-resources"></a>Recursos adicionales
 
-- [Los clientes Premier pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)
+* [Hable con una comunidad de iguales](https://techcommunity.microsoft.com/t5/Microsoft-Cloud-App-Security/bd-p/MicrosoftCloudAppSecurity)
 
--  [Hable con una comunidad de iguales](https://techcommunity.microsoft.com/t5/Microsoft-Cloud-App-Security/bd-p/MicrosoftCloudAppSecurity)
+* [Comience hoy una versión de evaluación](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1)
 
--   [Comience hoy una versión de evaluación](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1)
+* [Manténgase al día con nuestro blog](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/bg-p/enterprisemobilityandsecurity/label-name/Microsoft%20Cloud%20App%20Security)
 
--   [Manténgase al día con nuestro blog](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/bg-p/enterprisemobilityandsecurity/label-name/Microsoft%20Cloud%20App%20Security)
-
--   Descargue la [hoja de datos de Cloud App Security](http://download.microsoft.com/download/E/F/E/EFE908F8-7EDB-4244-8039-67BA574186CC/Microsoft_Cloud_App_Security_eBook.pdf)
+* Descargue la [hoja de datos de Cloud App Security](https://download.microsoft.com/download/E/F/E/EFE908F8-7EDB-4244-8039-67BA574186CC/Microsoft_Cloud_App_Security_eBook.pdf)
 
 ## <a name="feedback"></a>Comentarios
 
 El equipo de Cloud App Security está siempre dispuesto a escuchar sus comentarios sobre nuestro producto. Proporcione comentarios sobre las opciones siguientes:
 
-[Comentarios sobre el producto](https://microsoftsecurity.uservoice.com/forums/905161-cloud-app-security) 
+[Comentarios sobre el producto](https://microsoftsecurity.uservoice.com/forums/905161-cloud-app-security)
 
 Comentarios de la documentación Nuestro nuevo sistema de comentarios se basa en los problemas de GitHub. Para proporcionar comentarios sobre documentación, primero debe crear una cuenta de GitHub. Lea sobre este cambio en [nuestra entrada de blog](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
 
+## <a name="next-steps"></a>Pasos siguientes
 
-
-## <a name="next-steps"></a>Pasos siguientes 
-
-Consulte los aspectos básicos en [Introducción a Cloud App Security](getting-started-with-cloud-app-security.md). 
+Consulte los aspectos básicos en [Introducción a Cloud App Security](getting-started-with-cloud-app-security.md).
