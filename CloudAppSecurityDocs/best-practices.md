@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: best-practice
 ms.date: 10/24/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9e505044d94ce633bdba5f2b684873391d57f772
-ms.sourcegitcommit: 3a44f020c6ae7f6c4956bf53727dfb0e82fd7cf0
+ms.openlocfilehash: e90a340c206c0bfb1c01542dd184664d1fe87dfe
+ms.sourcegitcommit: e434c19fbbb67cf70bbf70729d03e38b4779ce25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72887947"
+ms.lasthandoff: 11/17/2019
+ms.locfileid: "74143469"
 ---
 # <a name="cloud-app-security-best-practices"></a>Procedimientos recomendados de Cloud App Security
 
@@ -72,7 +72,7 @@ Cloud App Security le proporciona la capacidad de investigar y supervisar los pe
 ---
 ---
 
-## <a name="apply-cloud-governance-policies"></a>Aplicar directivas de gobierno en la nube
+## <a name="apply-cloud-governance-policies"></a>Aplicación de directivas de gobernanza de la nube
 
 **Procedimiento**recomendado: aplicaciones de etiquetas y scripts de bloques de exportación  
 **Detalles**: después de revisar la lista de aplicaciones detectadas en su organización, puede proteger su entorno contra el uso no deseado de la aplicación. Puede aplicar la etiqueta **autorizada** a las aplicaciones aprobadas por su organización y la etiqueta no **autorizada** a las aplicaciones que no lo están. Puede supervisar aplicaciones no autorizadas con filtros de detección o exportar un script para bloquear aplicaciones no autorizadas mediante los dispositivos de seguridad locales. El uso de etiquetas y scripts de exportación le permite organizar las aplicaciones y proteger su entorno, ya que solo permite el acceso a las aplicaciones seguras.  
@@ -85,7 +85,7 @@ Cloud App Security le proporciona la capacidad de investigar y supervisar los pe
 ---
 ---
 
-## <a name="limit-exposure-of-shared-data-and-enforce-collaboration-policies"></a>Limitar la exposición de los datos compartidos y aplicar directivas de colaboración
+## <a name="limit-exposure-of-shared-data-and-enforce-collaboration-policies"></a>Limitación de la exposición de datos compartidos y aplicación de directivas de colaboración
 
 **Procedimiento**recomendado: conectar Office 365  
 **Detalle**: la conexión de Office 365 a Cloud App Security ofrece visibilidad inmediata de las actividades de los usuarios, los archivos a los que acceden y proporciona acciones de gobierno para Office 365, SharePoint, OneDrive, Teams, Power BI, Exchange y Dynamics.  
@@ -127,7 +127,7 @@ Cloud App Security le proporciona la capacidad de investigar y supervisar los pe
 ---
 ---
 
-## <a name="discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud"></a>Detectar, clasificar, etiquetar y proteger la información regulada y confidencial almacenada en la nube
+## <a name="discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud"></a>Detección, clasificación, etiquetado y protección de datos regulados y confidenciales almacenados en la nube
 
 **Procedimiento**recomendado: integración con Azure Information Protection  
 **Detalle**: la integración con Azure Information Protection ofrece la capacidad de aplicar automáticamente etiquetas de clasificación y, opcionalmente, agregar protección de cifrado. Una vez que la integración está activada, puede aplicar etiquetas como una acción de gobierno, ver archivos por clasificación, investigar archivos por nivel de clasificación y crear directivas granulares para asegurarse de que los archivos clasificados se controlan correctamente. Si no activa la integración, no podrá beneficiarse de la capacidad de examinar, etiquetar y cifrar archivos automáticamente en la nube.  
@@ -167,7 +167,7 @@ Cloud App Security le proporciona la capacidad de investigar y supervisar los pe
 ---
 ---
 
-## <a name="enforce-dlp-and-compliance-policies-for-data-stored-in-the-cloud"></a>Aplicación de directivas de cumplimiento y DLP para los datos almacenados en la nube
+## <a name="enforce-dlp-and-compliance-policies-for-data-stored-in-the-cloud"></a>Aplicación de directivas de cumplimiento y de DLP para datos almacenados en la nube
 
 **Procedimiento**recomendado: evitar que los datos confidenciales se compartan con usuarios externos  
 **Detalle**: cree una directiva de archivo que detecte Cuándo un usuario intenta compartir un archivo con la etiqueta de clasificación **confidencial** con una persona externa a la organización y configure su acción de gobierno para quitar usuarios externos. Esta Directiva garantiza que los datos confidenciales no salen de su organización y los usuarios externos no pueden obtener acceso a ellos.  
@@ -180,7 +180,7 @@ Cloud App Security le proporciona la capacidad de investigar y supervisar los pe
 ---
 ---
 
-## <a name="block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices"></a>Bloquear y proteger la descarga de datos confidenciales en dispositivos no administrados o peligrosos
+## <a name="block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices"></a>Bloqueo y protección de la descarga de datos confidenciales en dispositivos no administrados o de riesgo
 
 **Procedimiento**recomendado: administrar y controlar el acceso a dispositivos de alto riesgo  
 **Detalle**: Use control de aplicaciones de acceso condicional para establecer controles en las aplicaciones SaaS. Puede crear directivas de sesión para supervisar las sesiones de bajo riesgo y de bajo nivel de confianza. Del mismo modo, puede crear directivas de sesión para bloquear y proteger las descargas de los usuarios que intentan acceder a datos confidenciales desde dispositivos no administrados o de riesgo. Si no va a crear directivas de sesión para supervisar las sesiones de alto riesgo, perderá la capacidad de bloquear y proteger las descargas en el cliente web, así como la capacidad de supervisar sesiones de confianza baja en aplicaciones de Microsoft y de terceros.  
@@ -208,7 +208,7 @@ Cloud App Security le proporciona la capacidad de investigar y supervisar los pe
 ---
 ---
 
-## <a name="detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware"></a>Detección de amenazas en la nube, cuentas en peligro, Insiders malintencionados y ransomware
+## <a name="detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware"></a>Detección de amenazas en la nube, cuentas en peligro, colaboradores malintencionados y ransomware
 
 **Procedimiento**recomendado: ajuste de directivas de anomalías, establecimiento de intervalos IP y envío de comentarios para alertas  
 **Detalle**: las directivas de detección de anomalías proporcionan análisis de comportamiento de usuarios y entidades (UEBA) y aprendizaje automático (ml) para que pueda ejecutar inmediatamente la detección de amenazas avanzada en el entorno de nube.
@@ -250,7 +250,7 @@ Las directivas de detección de anomalías se desencadenan cuando hay actividade
 ---
 ---
 
-## <a name="use-the-audit-trail-of-activities-for-forensic-investigations"></a>Usar la traza de auditoría de actividades para investigaciones forenses
+## <a name="use-the-audit-trail-of-activities-for-forensic-investigations"></a>Uso de la traza de auditoría de actividades para investigaciones forenses
 
 **Procedimiento**recomendado: usar la traza de auditoría de las actividades al investigar alertas  
 **Detalle**: las alertas se desencadenan cuando las actividades de usuario, administrador o inicio de sesión no cumplen las directivas. Es importante investigar las alertas para saber si hay una posible amenaza en el entorno.
@@ -278,7 +278,7 @@ Al descartar las alertas, es importante investigar y comprender por qué no son 
 
 ---
 
-**Procedimiento**recomendado: revisión de CSPM para Azure y AWS  
+**Procedimiento**recomendado: revisión de las evaluaciones de configuración de seguridad para Azure y AWS  
 **Detalle**: la integración con Azure Security Center proporciona una evaluación de la configuración de seguridad de su entorno de Azure. La evaluación proporciona recomendaciones para la configuración y el control de seguridad que faltan. Revisar estas recomendaciones le ayuda a identificar anomalías y posibles vulnerabilidades en su entorno y navegar directamente en la ubicación correspondiente en el portal de seguridad de Azure para resolverlas.
 
 AWS le ofrece la capacidad de obtener visibilidad de las recomendaciones de configuración de seguridad sobre cómo mejorar la seguridad en la nube. Con estas recomendaciones, puede supervisar el estado de cumplimiento de las cuentas de AWS.  

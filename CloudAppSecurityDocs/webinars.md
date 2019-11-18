@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: conceptual
 ms.date: 8/25/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8c9421ae5eee4dee6518b12a7a2023a46bf14b51
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: b1dd96caca407472bcb00dff744d7bafeba3e69d
+ms.sourcegitcommit: 02f1992367d6de5c1b2c49935ada3c54167ff757
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71085108"
+ms.lasthandoff: 11/17/2019
+ms.locfileid: "74153239"
 ---
 # <a name="microsoft-cloud-app-security-webinars"></a>Seminarios web de Microsoft Cloud App Security
 
@@ -26,11 +26,12 @@ Para conocer nuestros próximos seminarios web y otros desarrollos, [Únase a la
 
 Vea las sesiones grabadas en cualquier momento.
 
-| Título | Más información |
+| Title | Más información |
 | --- | --- |
 | **Protección de la información**<br>[Ver ahora](https://go.microsoft.com/fwlink/?linkid=2101487) | -Protección de los datos en la nube<br>-Control y supervisión en tiempo real<br>: Procedimientos recomendados para la conexión de aplicaciones, identificación de tipos de datos, auditoría del entorno y corrección de acciones de gobierno |
 | **Detección de amenazas**<br>[Ver ahora](https://go.microsoft.com/fwlink/?linkid=2101574) | -Protección contra amenazas en la nube<br>-Detección de amenazas en aplicaciones en la nube<br>-Detección de malware<br>-Permisos de aplicación de OAuth<br>-Configuración de alertas en directivas |
 | **Control de aplicaciones de acceso condicional**<br>[Ver ahora](https://go.microsoft.com/fwlink/?linkid=2102100) | -Control de aplicaciones de acceso condicional<br>-Azure Active Directory la integración del acceso condicional<br>-Protección del entorno |
+| **Extender controles & de supervisión en tiempo real**<br>[Ver ahora](https://go.microsoft.com/fwlink/?linkid=2110389) | -Control de sesión & infraestructura de proxy inverso<br>-Aplicaciones destacadas y controles listos para su caja<br>-Incorporación de cualquier aplicación (aplicaciones nuevas, personalizadas y locales)<br>-Extensión de controles para cualquier aplicación |
 | **Detección de aplicaciones y configuración del recopilador de registros**<br>[Ver ahora](https://go.microsoft.com/fwlink/?linkid=2102101) | -Cómo funciona la detección<br>: El ciclo de vida de detección de ti Shadow<br>-Extensión de la integración con puertas de enlace web seguras<br>-Detección mediante recopiladores de registros |
 | **Conexión de aplicaciones de terceros**<br>[Ver ahora](https://go.microsoft.com/fwlink/?linkid=2102200) | Conexión de aplicaciones de terceros mediante:<br>-API<br>-OAuth<br>-Control de aplicaciones de acceso condicional<br>-Azure Active Directory proxy de aplicación |
 | **Automatización e integración con Microsoft Flow**<br>[Ver ahora](https://go.microsoft.com/fwlink/?linkid=2102102) | Extensión de Cloud App Security con Microsoft Flow para automatizar escenarios de corrección avanzados |
