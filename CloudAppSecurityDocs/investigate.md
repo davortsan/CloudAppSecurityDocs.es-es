@@ -5,30 +5,30 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 8/11/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4ef6132edd549f9d2552932bb9532650719331a4
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 390a9d5e9bff785b67f21802d4d0800af5640193
+ms.sourcegitcommit: 748c6f8cb234b303770814d8e63406a0bad36cd1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084272"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74154878"
 ---
-# <a name="investigate"></a>Investigación
+# <a name="investigate"></a>Investigar
 
 *Se aplica a: Microsoft Cloud App Security*
 
 Después de que Microsoft Cloud App Security se ejecute en el entorno de nube, necesitará una fase de aprendizaje e investigación. Aprenda a usar las herramientas de Microsoft Cloud App Security para mejorar su comprensión de lo que sucede en el entorno de nube. Según su entorno concreto y su uso, puede identificar los requisitos para proteger su organización de posibles riesgos. En este artículo se describe cómo realizar una investigación para comprender mejor lo que está ocurriendo en su entorno en la nube.
 
 ## <a name="dashboards"></a>Paneles
+
 Los siguientes paneles están disponibles para ayudarle a investigar las aplicaciones en su entorno en la nube:
 
 |Dashboard|Descripción|
@@ -36,24 +36,28 @@ Los siguientes paneles están disponibles para ayudarle a investigar las aplicac
 |Panel principal|Información general sobre el estado de la nube (usuarios, archivos, actividades) y las acciones necesarias (alertas, infracciones de actividad e infracciones de contenido).|
 |Panel de la aplicación: información general|Información general sobre el uso de aplicaciones por ubicación, gráficos de uso por número de usuarios.|
 |Panel de la aplicación: información|Información sobre los detalles de la aplicación, la seguridad y el cumplimiento.|
-|Panel de la aplicación: información<br />*(si es aplicable)*|Análisis de los datos almacenados en la aplicación, desglosados por tipo de archivo y nivel de uso compartido de archivos.|
-|Panel de la aplicación: archivos<br />*(si es aplicable)*|Explorar en profundidad los archivos; capacidad de filtrar según el propietario, el nivel de uso compartido y mucho más. Realizar acciones de gobierno como la cuarentena.|
+|Panel de la aplicación: información  
+*(si es aplicable)*|Análisis de los datos almacenados en la aplicación, desglosados por tipo de archivo y nivel de uso compartido de archivos.|
+|Panel de la aplicación: archivos  
+*(si es aplicable)*|Explorar en profundidad los archivos; capacidad de filtrar según el propietario, el nivel de uso compartido y mucho más. Realizar acciones de gobierno como la cuarentena.|
 |Panel de la aplicación: cuentas|Información general de todas las cuentas o usuarios vinculados a la aplicación.|
-|Panel de la aplicación: Aplicaciones de OAuth<br />*(si es aplicable)*|Profundice en las aplicaciones de OAuth actualmente implementadas, como G Suite, y definir directivas.|
+|Panel de la aplicación: aplicaciones de OAuth  
+*(si es aplicable)*|Profundice en las aplicaciones de OAuth actualmente implementadas, como G Suite, y definir directivas.|
 |Panel de la aplicación: registro de actividades|Explorar en profundidad toda la actividad de la aplicación; posibilidad de filtrar según los usuarios, la dirección IP y mucho más.|
 |Panel de la aplicación: alertas|Profundice en todas las alertas de la aplicación; capacidad de filtrar según el estado, la categoría, la gravedad, etc.|
-|Panel de la aplicación: cuentas con privilegios especiales<br />*(Solo Salesforce)*|Información general de los usuarios por tipo de usuario con privilegios.|
-|Panel del usuario|Información general completa del perfil de usuario en la nube, incluidos grupos, ubicaciones, actividades recientes, alertas relacionadas y exploradores usados.|
+|Panel de la aplicación: cuentas con privilegios especiales  
+*(Solo Salesforce)*|Información general de los usuarios por tipo de usuario con privilegios.|
+|Panel del usuario|Información general completa del perfil de usuario en la nube, ubicaciones, actividades recientes, alertas relacionadas.|
 
-##  <a name="sanctionapp"></a> Marcar aplicaciones como autorizadas o no autorizadas
+## <a name="a-namesanctionapp-tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp" />las aplicaciones de etiqueta como autorizadas o no autorizadas
+
 Marcar aplicaciones como autorizadas o no autorizadas es un paso importante para comprender su entorno en la nube. Después de autorizar una aplicación, puede filtrar por las aplicaciones que no estén autorizadas e iniciar la migración a las aplicaciones autorizadas que sean del mismo tipo.
 
 - En la consola de Cloud App Security, vaya a Catálogo de aplicaciones o Aplicaciones detectadas.
 
-- En la lista de aplicaciones, en la fila que contenga la aplicación que quiera marcar como autorizada, elija los tres puntos al final de la fila ![Puntos para marcar como autorizada](./media/sanction-three-dots.png "Puntos para marcar como autorizada") y elija **Marcar como autorizada**.
+- En la lista de aplicaciones, en la fila que contenga la aplicación que quiera marcar como autorizada, elija los tres puntos al final de la fila ![Puntos para marcar como autorizada](./media/sanction-three-dots.png "Etiquetar como puntos autorizados") y elija **Marcar como autorizada**.
 
-     ![Marcar como autorizada](./media/mark-as-sanctioned.png "Marcar como autorizada")
-
+    ![Etiqueta como autorizada](./media/mark-as-sanctioned.png "etiqueta como autorizada")
 
 ## <a name="use-the-investigation-tools"></a>Usar las herramientas de investigación
 
@@ -109,7 +113,7 @@ Marcar aplicaciones como autorizadas o no autorizadas es un paso importante para
 
     - ¿Cuántos usuarios las han implementado? ¿Cómo son de comunes estas aplicaciones en general?
 
-    ![Panel de la aplicación](./media/investigate-app.png "Investigar aplicación")
+    ![Panel de la aplicación](./media/investigate-app.png "investigar aplicación")
 
 5. Vaya al **panel de Cloud Discovery** y compruebe los siguientes elementos:
 
@@ -139,7 +143,7 @@ Imaginemos que, en teoría, ninguna dirección IP de riesgo puede tener acceso a
 
 5. En **Actividades que coinciden con todas las opciones siguientes**, haga clic en **+** para agregar un filtro. Desplácese hasta **Etiqueta IP** y luego elija **Tor**.
 
-     ![Ejemplo de directiva de IP de riesgo](./media/example-policy-risky-ips.png "Ejemplo de directiva de IP de riesgo")
+    ![Directiva de ejemplo para IP de riesgo](./media/example-policy-risky-ips.png "ejemplo de directiva de IP de riesgo")
 
 Con la directiva en marcha, le sorprenderá ver que recibe una alerta que indica que la directiva se ha infringido.
 
@@ -147,13 +151,13 @@ Con la directiva en marcha, le sorprenderá ver que recibe una alerta que indica
 
 2. Si ve que parece una infracción real, lo más conveniente será contener el riesgo o corregirlo.
 
-     Para contener el riesgo, puede enviar una notificación al usuario para preguntarle si la infracción ha sido intencionada y si el usuario era consciente de ello.
+    Para contener el riesgo, puede enviar una notificación al usuario para preguntarle si la infracción ha sido intencionada y si el usuario era consciente de ello.
 
-     También puede profundizar en la alerta y suspender al usuario hasta averiguar qué hay que hacer.
+    También puede profundizar en la alerta y suspender al usuario hasta averiguar qué hay que hacer.
 
 3. Si es un evento permitido que no es probable que se repita, puede descartar la alerta.
 
-     Si es un evento permitido y se espera que se repita, puede cambiar la directiva para evitar que este tipo de evento se considere una infracción en el futuro.
+    Si es un evento permitido y se espera que se repita, puede cambiar la directiva para evitar que este tipo de evento se considere una infracción en el futuro.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
