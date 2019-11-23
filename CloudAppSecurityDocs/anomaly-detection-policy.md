@@ -35,7 +35,7 @@ Las anomalías se detectan mediante el examen de la actividad del usuario. El ri
 * Errores de inicio de sesión
 * Actividad administrativa
 * Cuentas inactivas
-* Ubicación
+* Location
 * Viaje imposible
 * Agente de usuario y dispositivo
 * Tasa de actividad
@@ -169,7 +169,7 @@ Puede evaluar la prioridad de las diversas alertas desencadenadas por las nuevas
 
 1. En el **registro de actividades**, puede abrir una actividad para mostrar el cajón de actividades. Haga clic en **usuario** para ver la pestaña información de usuario. Esta pestaña incluye información como el número de alertas, las actividades y el lugar desde el que se han conectado, lo que es importante en una investigación.
 
-    ![anomaly Detection alert1 @ no__t-1 ![anomaly Detection alert1 @ no__t-3
+    ![detección de anomalías alert1](./media/anomaly-alert-user1.png) ![detección de anomalías alert1](./media/anomaly-alert-user2.png)
 
 1. Esto le permite comprender qué actividades sospechosas realizó el usuario y aumentar la confianza en cuanto a si la cuenta se vio comprometida. Por ejemplo, una alerta sobre varios inicios de sesión erróneos realmente puede ser sospechosa y puede indicar posibles ataques por fuerza bruta, pero también puede ser un error de configuración de aplicación, haciendo que la alerta resulte ser verdadera. Sin embargo, si ve una alerta de varios inicios de sesión erróneos con actividades sospechosas adicionales, entonces hay una mayor probabilidad de que la cuenta se vea comprometida. En el ejemplo siguiente, puede ver que, después de la alerta de los **diversos intentos de inicio de sesión erróneos**, hubo **actividad desde una dirección IP TOR** y **actividad de viaje imposible**, ambas buenos indicadores de riesgo (IOC) por sí mismas. Si esto no fue suficientemente sospechoso, puede ver que el mismo usuario realizó una **actividad de descarga masiva**, que suele ser un indicador de que el atacante está realizando exfiltración de datos.
 
