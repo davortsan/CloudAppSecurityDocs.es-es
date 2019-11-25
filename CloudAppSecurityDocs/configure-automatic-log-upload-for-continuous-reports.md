@@ -15,12 +15,12 @@ ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d049cdbb7a85f2728a83120214a870747abbe6c3
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: ac416d39f0884a417396fe121ccd8eb8f09fdbda
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335033"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460794"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Configuración de la carga de registros automática para informes continuos en una aplicación virtual: en desuso
 
@@ -49,7 +49,7 @@ El recopilador de registros tiene un mecanismo de seguridad integrado que superv
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Paso 1: Configuración del portal web: definición de orígenes de datos y vinculación a un recopilador de registros  
   
 1. Vaya a la página de configuración de carga automatizada:  
-   En el portal de Cloud App Security, haga clic en el icono de configuración ![icono de configuración](./media/settings-icon.png "icono de configuración") y, después, en **Recopiladores de registros**.  
+   En el portal de Cloud App Security, haga clic en el ![icono de configuración](./media/settings-icon.png "icono de configuración") y, después, en **Recopiladores de registros**.  
   
 2. Cree un origen de datos coincidente para cada firewall o servidor proxy desde el que quiera cargar registros:  
   
@@ -87,7 +87,7 @@ El recopilador de registros tiene un mecanismo de seguridad integrado que superv
 1. Abra el Administrador de Hyper-V.  
   
 2. Seleccione **Nuevo** y luego **Máquina virtual** y haga clic en **Siguiente**.  
-   ![detección de máquina virtual de Hyper-V](./media/discovery-hyperv-virtual-machine.png "detección de máquina virtual de Hyper-V")  
+   ![discovery Hyper-V virtual machine](./media/discovery-hyperv-virtual-machine.png "discovery Hyper-V virtual machine")  
   
 3. Proporcione un **Nombre** para la nueva máquina virtual, por ejemplo, CloudAppSecurityLogCollector01. Luego haga clic en **Siguiente**.  
   
@@ -169,4 +169,4 @@ Después de comprobar que los registros se cargan en Cloud App Security y que se
 ## <a name="next-steps"></a>Pasos siguientes 
 [Trabajar con datos de Cloud Discovery](working-with-cloud-discovery-data.md)   
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

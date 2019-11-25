@@ -15,12 +15,12 @@ ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 081ecac67dac14443a85bc103294974607e3e106
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 9a74d63d62809860479110c26def76873c66c8dd
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335444"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460983"
 ---
 # <a name="access-policies"></a>Directivas de acceso
 
@@ -92,6 +92,6 @@ Para crear una directiva de acceso, siga este procedimiento:
 ## <a name="next-steps"></a>Pasos siguientes  
 [Blocking downloads on unmanaged devices using Azure AD Conditional Access App Control capabilities](use-case-proxy-block-session-aad.md) (Bloqueo de descargas en dispositivos no administrados con las funciones de control de aplicaciones de acceso condicional de Azure AD)   
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

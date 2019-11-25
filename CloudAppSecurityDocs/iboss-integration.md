@@ -15,12 +15,12 @@ ms.assetid: 920d4272-685b-4c4d-9b31-94a2c6f3503e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 344fe833f5684de7bd944f3825c393bc9c02f021
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 14aa55ef1218aa5b95ee14c07791aa538f938e19
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335783"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461180"
 ---
 # <a name="integrate-cloud-app-security-with-iboss"></a>Integración de Cloud App Security con iboss
 
@@ -62,5 +62,5 @@ Si trabaja con Cloud App Security y iboss, puede integrar los dos productos para
 
 [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   

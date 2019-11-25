@@ -15,12 +15,12 @@ ms.assetid: 359eb77f-e719-4c50-9b62-6ef64149a5a5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6d2ffb878cc48c619a7e5026b2f51dd7407c038b
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 127ec9675d6be000a90931be596de0b267513213
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72336159"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460001"
 ---
 # <a name="troubleshooting-content-inspection"></a>Solucionar problemas relacionados con la inspección de contenido
 
@@ -53,7 +53,7 @@ En la tabla se enumera cada estado de inspección de contenido y su descripción
 ## <a name="see-also"></a>Véase también  
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
 
 ## <a name="next-steps"></a>Pasos siguientes
  

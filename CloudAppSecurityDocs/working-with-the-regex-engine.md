@@ -15,12 +15,12 @@ ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fee654b84f7149fa15be23d99d7b8f675a900599
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 803fa93c683acaaf7dac3e2705836973a898f839
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72336065"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459224"
 ---
 # <a name="working-with-the-regex-engine"></a>Trabajar con el motor de RegEx
 
@@ -80,7 +80,7 @@ En la tabla siguiente se proporcionan expresiones de ejemplo y si coincidirían 
 
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
 
 ## <a name="check-out-this-video"></a>Eche un vistazo a este vídeo.

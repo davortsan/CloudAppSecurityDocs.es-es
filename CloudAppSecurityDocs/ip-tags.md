@@ -15,12 +15,12 @@ ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ef9645a99e7fde05b2bcc801744fb19489d26a29
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 1b033c2d228d3c7b117c960ffb68b7d778c5629d
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335821"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461303"
 ---
 #  <a name="IPtagsandRanges"></a> Trabajar con etiquetas e intervalos IP
 
@@ -79,12 +79,12 @@ En la barra de menús, haga clic en el icono de configuración. Seleccione **Int
  
 7. Haga clic en **Crear** cuando acabe.  
   
-     ![nuevo intervalo de direcciones IP](./media/newipaddress-range.png "nuevo intervalo de direcciones IP")  
+     ![newipaddress range](./media/newipaddress-range.png "nuevo intervalo de direcciones IP")  
 
 
 ## <a name="next-steps"></a>Pasos siguientes
 [Configurar Cloud Discovery](set-up-cloud-discovery.md)   
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

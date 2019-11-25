@@ -15,12 +15,12 @@ ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 719d09c3d35f14e66862718e19562c7a16c18bf8
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 274dace6a7d6c4b1e083f689568d4e9247f3c44a
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335561"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461236"
 ---
 # <a name="cloud-discovery-policies"></a>Directivas de Cloud Discovery
 
@@ -35,7 +35,7 @@ Las directivas de detección permiten establecer alertas que avisan cuando se de
   
 2. Haga clic en **Crear directiva** y seleccione **Directiva de detección de aplicaciones**.  
   
-     ![Menú de directiva de detección de aplicaciones](./media/app-discovery-policy-menu.png "Menú de directiva de detección de aplicaciones")  
+     ![app discovery policy menu](./media/app-discovery-policy-menu.png "menú de directiva de detección de aplicaciones")  
   
 3. Proporcione un nombre y una descripción para la directiva. Si quiere, puede basarse en una plantilla. Para obtener más información sobre las plantillas de directiva, vea [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).  
   
@@ -67,7 +67,7 @@ Establezca los filtros de directiva para detectar los servicios que se encuentre
  Establezca los umbrales que deben desencadenar una alerta para una determinada aplicación detectada en la parte inferior. Por ejemplo, defina que se envíe una alerta solo si más de 100 usuarios del entorno han usado la aplicación y si han descargado una cantidad determinada de datos del servicio.
 También puede establecer el límite de alertas diarias que quiere recibir.  
   
-![Ejemplo de directiva de detección de aplicaciones](./media/app-discovery-policy-example.png "Ejemplo de directiva de detección de aplicaciones")  
+![app discovery policy example](./media/app-discovery-policy-example.png "ejemplo de directiva de detección de aplicaciones")  
   
 ## <a name="cloud-discovery-anomaly-detection"></a>Detección de anomalías de Cloud Discovery
 
@@ -77,7 +77,7 @@ Cloud App Security busca en todos los registros de Cloud Discovery para encontra
   
 2. Haga clic en **Crear directiva** y seleccione la directiva **Detección de anomalías de Cloud Discovery**.  
   
-     ![Menú de directiva de detección de anomalías de Cloud Discovery](./media/cloud-discovery-anomaly-detection-policy-menu.png "Menú de directiva de detección de anomalías de Cloud Discovery")  
+     ![cloud discovery anomaly detection policy menu](./media/cloud-discovery-anomaly-detection-policy-menu.png "menú de directiva de detección de anomalías de Cloud Discovery")  
   
 3. Proporcione un nombre y una descripción para la directiva. Si quiere, puede basarse en una plantilla. Para obtener más información sobre las plantillas de directiva, vea [Controlar aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).  
   
@@ -95,11 +95,11 @@ Cloud App Security busca en todos los registros de Cloud Discovery para encontra
   
 8. Haga clic en **Crear**.  
   
-![Nueva directiva de detección de anomalías](./media/new-discovery-anomaly-policy.png "Nueva directiva de detección de anomalías")  
+![new discovery anomaly policy](./media/new-discovery-anomaly-policy.png "nueva directiva de detección de anomalías")  
   
 ## <a name="next-steps"></a>Pasos siguientes 
 [Directivas de actividad de usuario](user-activity-policies.md)   
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

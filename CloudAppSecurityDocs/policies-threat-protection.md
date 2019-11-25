@@ -1,6 +1,6 @@
 ---
-title: 'Directivas de protección contra amenazas: Cloud App Security | Microsoft Docs'
-description: En este tema se describen los pasos para configurar muchas directivas de protección contra amenazas en Cloud App Security.
+title: Threat protection policies - Cloud App Security | Microsoft Docs
+description: This topic outlines the steps to configure many threat protection policies in Cloud App Security.
 author: shsagir
 ms.author: shsagir
 ms.date: 06/13/2019
@@ -10,293 +10,293 @@ ms.service: cloud-app-security
 ms.assetid: 7c8d5bfd-194e-40ba-b0b0-dfae80f45ecb
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 91bbcc622c32dccf8eec997adeac4080164c53e8
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 0b5c2ecdc6093c955448faa3a603d4f4ce6bdf6f
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335856"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460575"
 ---
 # <a name="threat-protection-policies"></a>Directivas de protección contra amenazas
 
 *Se aplica a: Microsoft Cloud App Security*
 
 
-Cloud App Security le permite identificar problemas de seguridad en la nube y de uso de alto riesgo, detectar comportamientos anómalos de los usuarios y evitar amenazas en las aplicaciones en la nube autorizadas. Obtenga visibilidad de las actividades de usuario y administración, y defina directivas para alertar automáticamente cuando se detecten comportamientos sospechosos o actividades específicas que considere arriesgado. Extraiga la inmensa cantidad de datos de investigación de seguridad e inteligencia de amenazas de Microsoft para asegurarse de que sus aplicaciones autorizadas tienen todos los controles de seguridad que necesita y le ayudan a mantener el control sobre ellas.
+Cloud App Security enables you to identify high-risk use and cloud security issues, detect abnormal user behavior, and prevent threats in your sanctioned cloud apps. Get visibility into user and admin activities and define policies to automatically alert when suspicious behavior or specific activities that you consider risky are detected. Draw from the vast amount of Microsoft threat intelligence and security research data to help ensure that your sanctioned apps have all the security controls you need in place and help you maintain control over them.
 
-## <a name="detect-and-control-user-activity-from-unfamiliar-locations"></a>Detección y control de la actividad de los usuarios desde ubicaciones desconocidas
+## <a name="detect-and-control-user-activity-from-unfamiliar-locations"></a>Detect and control user activity from unfamiliar locations
 
-Detección automática del acceso o actividad de los usuarios desde ubicaciones desconocidas que nunca han visitado otros usuarios de su organización.
+Automatic detection of user access or activity from unfamiliar locations that were never visited by anyone else in your organization.
 
 ### <a name="prerequisites"></a>Requisitos previos
 
-Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) o incorporada mediante el [control de aplicaciones de acceso condicional con controles de sesión](proxy-deployment-aad.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
 
 ### <a name="steps"></a>Pasos
 
-Esta detección se configura automáticamente de forma automática para avisarle cuando haya acceso desde nuevas ubicaciones. No es necesario realizar ninguna acción para configurar esta Directiva. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).
+This detection is automatically configured out-of-the-box to alert you when there is access from new locations. You do not need to take any action to configure this policy. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).
 
-## <a name="detect-compromised-account-by-impossible-location-impossible-travel"></a>Detección de una cuenta en peligro por ubicación imposible (viaje imposible)
+## <a name="detect-compromised-account-by-impossible-location-impossible-travel"></a>Detect compromised account by impossible location (impossible travel)
 
-Detección automática del acceso o actividad de los usuarios desde dos ubicaciones diferentes dentro de un período de tiempo menor que el tiempo que se tarda en viajar entre los dos.
+Automatic detection of user access or activity from 2 different locations within a time period that is shorter than the time it takes to travel between the two.
 
 ### <a name="prerequisites"></a>Requisitos previos
 
-Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) o incorporada mediante el [control de aplicaciones de acceso condicional con controles de sesión](proxy-deployment-aad.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
 ### <a name="steps"></a>Pasos
 
-1.  Esta detección se configura automáticamente de forma automática para avisarle cuando haya acceso desde ubicaciones imposibles. No es necesario realizar ninguna acción para configurar esta Directiva. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).
-2. Opcional: puede [personalizar las directivas de detección de anomalías](anomaly-detection-policy.md#scope-anomaly-detection-policies): 
-    - Personalizar el ámbito de detección en términos de usuarios y grupos
+1.  This detection is automatically configured out-of-the-box to alert you when there is access from impossible locations. You do not need to take any action to configure this policy. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).
+2. Optional: you can [customize anomaly detection policies](anomaly-detection-policy.md#scope-anomaly-detection-policies): 
+    - Customize the detection scope in terms of users and groups
 
-    - Elegir los tipos de inicios de sesión que se deben tener en cuenta
+    - Choose the types of sign-ins to consider
 
-    - Establecer la preferencia de sensibilidad para las alertas
+    - Set your sensitivity preference for alerting
 
-3.  Cree la Directiva de detección de anomalías.
+3.  Create the anomaly detection policy.
 
-## <a name="detect-suspicious-activity-from-an-on-leave-employee"></a>Detección de actividades sospechosas de un empleado "activado"
+## <a name="detect-suspicious-activity-from-an-on-leave-employee"></a>Detect suspicious activity from an “on-leave” employee
 
-Detectar cuándo un usuario, que se encuentra en un abandono no pagado y no debe estar activo en ningún recurso de la organización, tiene acceso a los recursos de la nube de su organización.
-
-### <a name="prerequisites"></a>Requisitos previos
-
-- Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
-
-- Cree un grupo de seguridad en Azure Active Directory para los usuarios con permiso no pagado y agregue todos los usuarios que desee supervisar.
-
-### <a name="steps"></a>Pasos
-
-1.  En la pantalla [grupos de usuarios](user-groups.md) , haga clic en **Crear grupo de usuarios** e importe el grupo de Azure ad correspondiente.
-
-2.  En la página **directivas** , cree una nueva **Directiva de actividad**.
-
-3.  Establezca el **grupo de usuarios** de filtro en el nombre de los grupos de usuarios que ha creado en Azure ad para los usuarios no pagados.
-
-4.  Opcional: establecer las acciones de **gobierno** que se realizarán en los archivos cuando se detecte una infracción. Las acciones de gobierno disponibles varían entre los servicios. Puede elegir **suspender usuario**.
-
-6.  Cree la Directiva de archivo.
-
-## <a name="detect-and-notify-when-outdated-browser-os-is-used"></a>Detección y notificación cuando se utiliza el sistema operativo del explorador obsoleto
-
-Detecte Cuándo un usuario usa un explorador con una versión de cliente obsoleta que podría suponer riesgos de cumplimiento o seguridad para su organización.
+Detect when a user, who is on unpaid leave and should not be active on any organizational resource, is accessing any of your organization's cloud resources.
 
 ### <a name="prerequisites"></a>Requisitos previos
 
-Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) o incorporada mediante el [control de aplicaciones de acceso condicional con controles de sesión](proxy-deployment-aad.md).
+- You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+
+- Create a security group in Azure Active Directory for the users on unpaid leave and add all the users you want to monitor.
 
 ### <a name="steps"></a>Pasos
 
-1.  En la página **directivas** , cree una nueva **Directiva de actividad**.
+1.  On the [User groups](user-groups.md) screen, click **Create user group** and import the relevant Azure AD group.
 
-2.  Establezca la **etiqueta de agente de usuario** filtrada en es el **Explorador obsoleto** y el **sistema operativo obsoleto**.
+2.  On the **Policies** page, create a new **Activity policy**.
 
-3. Establecer las acciones de **gobierno** que se realizarán en los archivos cuando se detecte una infracción. Las acciones de gobierno disponibles varían entre los servicios. En **todas las aplicaciones**, seleccione **notificar al usuario**para que los usuarios puedan actuar sobre la alerta y actualizar los componentes necesarios.
+3.  Set the filter **User group** equals to the name of the user groups you created in Azure AD for the unpaid leave users.
 
-5.  Cree la Directiva de actividad.
+4.  Optional: Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. You can choose **Suspend user**.
 
-## <a name="detect-and-alert-when-admin-activity-is-detected-on-risky-ip-addresses"></a>Detección y alerta cuando se detecta actividad de administración en direcciones IP de riesgo
+6.  Create the file policy.
 
-Detecte las actividades de administración realizadas desde y la dirección IP que se considera una dirección IP de riesgo, y notifique al administrador del sistema para que realice más investigación o establezca una acción de gobierno en la cuenta del administrador.
+## <a name="detect-and-notify-when-outdated-browser-os-is-used"></a>Detect and notify when outdated browser OS is used
+
+Detect when a user is using a browser with an outdated client version that might pose compliance or security risks to your organization.
 
 ### <a name="prerequisites"></a>Requisitos previos
 
-- Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
+
+### <a name="steps"></a>Pasos
+
+1.  On the **Policies** page, create a new **Activity policy**.
+
+2.  Set the filter **User agent tag** equals to **Outdated browser** and **Outdated operating system**.
+
+3. Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. Under **All apps**, select **Notify user**, so that your users can act upon the alert and update the necessary components.
+
+5.  Create the Activity policy.
+
+## <a name="detect-and-alert-when-admin-activity-is-detected-on-risky-ip-addresses"></a>Detect and alert when Admin activity is detected on risky IP addresses
+
+Detect admin activities performed from and IP address that is considered a risky IP address, and notify the system admin for further investigation or set a governance action on the admin’s account.
+
+### <a name="prerequisites"></a>Requisitos previos
+
+- You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
  
-- En el engranaje de configuración, seleccione **intervalos de direcciones IP** y haga clic en + para agregar intervalos de direcciones IP para las subredes internas y sus direcciones IP públicas de salida. Establezca la **categoría** en **interno**.
+- From the Settings cog, select **IP address ranges** and click the + to add IP address ranges for your internal subnets and their egress public IP addresses. Set the **Category** to **Internal**.
 
 ### <a name="steps"></a>Pasos
 
-1.  En la página **directivas** , cree una nueva **Directiva de actividad**.
+1.  On the **Policies** page, create a new **Activity policy**.
 
-2.  Establezca **actuar en** **una sola actividad**.
+2.  Set **Act on** to **Single activity**.
 
-3.  Establecer la **dirección IP** del filtro en **categoría** es igual a **arriesgado**
+3.  Set the filter **IP address** to **Category** equals **Risky**
 
-4.  Establezca la **actividad administrativa** filtrar en **true** .
+4.  Set the filter **Administrative activity** to **True**
 
-5.  Establecer las acciones de **gobierno** que se realizarán en los archivos cuando se detecte una infracción. Las acciones de gobierno disponibles varían entre los servicios. En **todas las aplicaciones**, seleccione **notificar al usuario**para que los usuarios puedan actuar en la alerta y actualizar los componentes necesarios en **el administrador del usuario**.
+5.  Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. Under **All apps**, select **Notify user**, so that your users can act upon the alert and update the necessary components **CC the user’s manager**.
 
-7.  Cree la Directiva de actividad.
+7.  Create the activity policy.
 
-## <a name="detect-activities-by-service-account-from-external-ip-addresses"></a>Detección de actividades por cuenta de servicio desde direcciones IP externas
+## <a name="detect-activities-by-service-account-from-external-ip-addresses"></a>Detect activities by service account from external IP addresses
 
-Detectar las actividades de la cuenta de servicio que se originan en una dirección IP no interna. Esto podría indicar un comportamiento sospechoso o una cuenta en peligro.
+Detect service account activities originating from a non-internal IP addresses. This could indicate suspicious behavior or a compromised account.
 
 ### <a name="prerequisites"></a>Requisitos previos
 
-- Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
-- En el engranaje de configuración, seleccione **intervalos de direcciones IP** y haga clic en + para agregar intervalos de direcciones IP para las subredes internas y sus direcciones IP públicas de salida. Establezca la **categoría** en **interno**.
+- You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+- From the Settings cog, select **IP address ranges** and click the + to add IP address ranges for your internal subnets and their egress public IP addresses. Set the **Category** to **Internal**.
 
-- Estandarizar las convenciones de nomenclatura para las cuentas de servicio en el entorno, por ejemplo, establecer que todos los nombres de cuenta empiecen por "SVC".
+- Standardize a naming conventions for service accounts in your environment, for example, set all account names to start with “svc”.
 
 ### <a name="steps"></a>Pasos
 
-1.  En la página **directivas** , cree una nueva **Directiva de actividad**.
+1.  On the **Policies** page, create a new **Activity policy**.
 
-2.  Establezca el filtro **usuario** en **nombre** y, a continuación, **empiece por** y escriba su Convención de nomenclatura, como SVC.
+2.  Set the filter **User** to **Name** and then **Starts with** and enter your naming convention, such as svc.
 
-3.  Establezca el filtro **dirección IP** en **categoría** no es igual a **otro** y **corporativo**.
+3.  Set the filter **IP address** to **Category** does not equal **Other** and **Corporate**.
 
-4.  Establecer las acciones de **gobierno** que se realizarán en los archivos cuando se detecte una infracción. Las acciones de gobierno disponibles varían entre los servicios.
+4.  Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services.
 
-5.  Cree la Directiva.
+5.  Create the policy.
 
-## <a name="detect-mass-download-data-exfiltration"></a>Detección de la descarga masiva (exfiltración de datos)
+## <a name="detect-mass-download-data-exfiltration"></a>Detect mass download (data exfiltration)
 
-Detectar cuándo un usuario determinado tiene acceso o descarga un número masivo de archivos en un breve período de tiempo.
+Detect when a certain user accesses or downloads a massive number of files in a short period of time.
 
 ### <a name="prerequisites"></a>Requisitos previos
 
-Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) o incorporada mediante el [control de aplicaciones de acceso condicional con controles de sesión](proxy-deployment-aad.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
 
 ### <a name="steps"></a>Pasos
 
-1.  En la página **directivas** , cree una nueva **Directiva de actividad**.
+1.  On the **Policies** page, create a new **Activity policy**.
 
-2.  Establezca el filtro de **direcciones IP** en **etiqueta** no es igual a **Microsoft Azure**. Esto excluirá las actividades basadas en equipo no interactivas.
+2.  Set the filter **IP addresses** to **Tag** does not equal **Microsoft Azure**. This will exclude non-interactive machine-based activities.
 
-3.  Establezca los **tipos de actividad** de filtro es igual a y, a continuación, seleccione todas las actividades de descarga pertinentes.
+3.  Set the filter **Activity types** equals to and then select all relevant download activities.
 
-4. Establecer las acciones de **gobierno** que se realizarán en los archivos cuando se detecte una infracción. Las acciones de gobierno disponibles varían entre los servicios.
-5.  Cree la Directiva.
+4. Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services.
+5.  Create the policy.
 
-## <a name="detect-potential-ransomware-activity"></a>Detección de una posible actividad de ransomware
+## <a name="detect-potential-ransomware-activity"></a>Detect potential Ransomware activity
 
-Detección automática de la posible actividad de ransomware.
+Automatic detection of potential Ransomware activity.
 
 ### <a name="prerequisites"></a>Requisitos previos
 
-Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>Pasos
 
-- Esta detección se configura automáticamente de forma automática para avisarle cuando se detecte un riesgo potencial de secuestro. No es necesario realizar ninguna acción para configurar esta Directiva. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).  
+- This detection is automatically configured out-of-the-box to alert you when there is a potential ransomeware risk detected. You do not need to take any action to configure this policy. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).  
 
-- Es posible configurar el **ámbito** de la detección y personalizar las acciones de gobierno que se llevarán a cabo cuando se desencadene una alerta. Para obtener más información acerca de cómo Cloud App Security identifica ransomware, consulte [protección de la organización desde ransomware](use-case-ransomware.md).
+- It is possible to configure the **Scope** of the detection and to customize the Governance actions to be taken when an alert is triggered. For more information about how Cloud App Security identifies Ransomware, see [Protecting your organization from ransomware](use-case-ransomware.md).
 
 > [!NOTE]
-> Esto se aplica a Office 365, G Suite, Box y Dropbox.
+> This applies to Office 365, G Suite, Box, and Dropbox.
 
-## <a name="detect-malware-in-the-cloud"></a>Detección de malware en la nube
+## <a name="detect-malware-in-the-cloud"></a>Detect malware in the cloud
 
-Detecte archivos que contengan malware en los entornos de nube mediante la integración de Cloud App Security con el motor de inteligencia de amenazas de Microsoft.
-
-### <a name="prerequisites"></a>Requisitos previos
-
-Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
-
-### <a name="steps"></a>Pasos
-
-- Esta detección se configura automáticamente de forma automática para avisarle cuando hay un archivo que puede contener malware. No es necesario realizar ninguna acción para configurar esta Directiva. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).  
-
-## <a name="detect-rogue-admin-takeover"></a>Detección de la adquisición de administrador no autorizado
-
-Detecte una actividad de administración repetida que puede indicar intenciones malintencionadas.
+Detect files containing malware in your cloud environments by utilizing Cloud App Security’s integration with the Microsoft’s Threat Intelligence engine.
 
 ### <a name="prerequisites"></a>Requisitos previos
 
-Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>Pasos
 
-1.  En la página **directivas** , cree una nueva **Directiva de actividad**.
+- This detection is automatically configured out-of-the-box to alert you when there is a file that may contain malware. You do not need to take any action to configure this policy. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).  
 
-2.  Establezca **actúa en** la **actividad repetida** y Personalice las **actividades mínimas repetidas** y establezca un **período de tiempo** para cumplir con la Directiva de su organización.
+## <a name="detect-rogue-admin-takeover"></a>Detect rogue admin takeover
 
-3.  Establezca el filtro **usuario** en **de grupo** es igual a y seleccione solo el grupo de administración relacionado como **actor**.
-
-4.  Establezca el **tipo de actividad** de filtro es igual a todas las actividades relacionadas con las actualizaciones, los cambios y los restablecimientos de contraseña.
-
-5. Establecer las acciones de **gobierno** que se realizarán en los archivos cuando se detecte una infracción. Las acciones de gobierno disponibles varían entre los servicios.
-6.  Cree la Directiva.
-
-## <a name="detect-suspicious-inbox-manipulation-rules"></a>Detectar reglas de manipulación de bandeja de entrada sospechosas
-
-Si se ha establecido una regla de bandeja de entrada sospechosa en la bandeja de entrada de un usuario, puede indicar que la cuenta de usuario está en peligro y que el buzón se usa para distribuir el correo no deseado y el malware en la organización.
+Detect repeated admin activity that might indicate malicious intentions.
 
 ### <a name="prerequisites"></a>Requisitos previos
 
-- Uso de Microsoft Exchange para el correo electrónico.
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>Pasos
 
-- Esta detección se configura automáticamente de forma automática para avisarle cuando haya un conjunto de reglas de bandeja de entrada sospechoso. No es necesario realizar ninguna acción para configurar esta Directiva. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).  
+1.  On the **Policies** page, create a new **Activity policy**.
+
+2.  Set **Act on** to **Repeated activity** and customize the **Minimum repeated activities** and set a **Timeframe** to comply with your organization's policy..
+
+3.  Set the filter **User** to **From group** equals and select all the related admin group as **Actor only**.
+
+4.  Set the filter **Activity type** equals to all activities that relate to password updates, changes, and resets.
+
+5. Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services.
+6.  Create the policy.
+
+## <a name="detect-suspicious-inbox-manipulation-rules"></a>Detect suspicious inbox manipulation rules
+
+If a suspicious inbox rule was set on a user's inbox, it may indicate that the user account is compromised, and that the mailbox is being used to distribute spam and malware in your organization.
+
+### <a name="prerequisites"></a>Requisitos previos
+
+- Use of Microsoft Exchange for email.
+
+### <a name="steps"></a>Pasos
+
+- This detection is automatically configured out-of-the-box to alert you when there is a suspicious inbox rule set. You do not need to take any action to configure this policy. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).  
 
 
-## <a name="detect-leaked-credentials"></a>Detección de credenciales perdidas
+## <a name="detect-leaked-credentials"></a>Detect leaked credentials
   
-Cuando los delincuentes cibernéticos ponen en peligro contraseñas válidas de usuarios legítimos, suelen compartir esas credenciales. Esto se suele hacer publicándolo públicamente en el sitio web oscuro o pegar sitios, o bien mediante el comercio o la venta de las credenciales en el mercado negro.
+When cyber criminals compromise valid passwords of legitimate users, they often share those credentials. This is usually done by posting them publicly on the dark web or paste sites or by trading or selling the credentials on the black market.
 
-Cloud App Security usa la inteligencia de amenazas de Microsoft para hacer coincidir las credenciales con las que se usan dentro de la organización.
-
-### <a name="prerequisites"></a>Requisitos previos
-
-Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
-
-### <a name="steps"></a>Pasos
-
-Esta detección se configura automáticamente de forma automática para avisarle cuando se detecte una posible pérdida de credenciales. No es necesario realizar ninguna acción para configurar esta Directiva. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).  
-
-
-## <a name="detect-anomalous-file-downloads"></a>Detección de descargas de archivos anómalas
-
-Detecte Cuándo los usuarios realizan varias actividades de descarga de archivos en una sola sesión, en relación con la base de referencia aprendida. Esto podría indicar un intento de infracción.
+Cloud App Security utilizes Microsoft’s Threat intelligence to match such credentials to the ones used inside your organization.
 
 ### <a name="prerequisites"></a>Requisitos previos
 
-Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) o incorporada mediante el [control de aplicaciones de acceso condicional con controles de sesión](proxy-deployment-aad.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>Pasos
 
-- Esta detección se configura automáticamente de forma automática para avisarle cuando se produce una descarga anómala. No es necesario realizar ninguna acción para configurar esta Directiva. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).  
-- Es posible configurar el ámbito de la detección y personalizar la acción que se realizará cuando se desencadene una alerta.
+This detection is automatically configured out-of-the-box to alert you when a possible credential leak is detected. You do not need to take any action to configure this policy. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).  
 
-## <a name="detect-anomalous-file-shares-by-a-user"></a>Detección de recursos compartidos de archivos anómalos por un usuario
 
-Detecte Cuándo los usuarios realizan varias actividades de uso compartido de archivos en una sola sesión con respecto a la base de referencia aprendida, lo que podría indicar una infracción de intento.
+## <a name="detect-anomalous-file-downloads"></a>Detect anomalous file downloads
 
-### <a name="prerequisites"></a>Requisitos previos
-Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) o incorporada mediante el [control de aplicaciones de acceso condicional con controles de sesión](proxy-deployment-aad.md).
-### <a name="steps"></a>Pasos
-
-- Esta detección se configura automáticamente de forma automática para avisarle cuando los usuarios realicen varios recursos compartidos de archivos. No es necesario realizar ninguna acción para configurar esta Directiva. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).  
-- Es posible configurar el ámbito de la detección y personalizar la acción que se realizará cuando se desencadene una alerta.
-
-## <a name="detect-anomalous-activities-from-infrequent-country"></a>Detección de actividades anómalas de un país poco frecuente
-
-Detecte actividades de una ubicación que no se haya visitado recientemente o que nunca haya visitado el usuario o cualquier usuario de la organización.
+Detect when users perform multiple file download activities in a single session, relative to the baseline learned. This could indicate an attempted breach.
 
 ### <a name="prerequisites"></a>Requisitos previos
 
-Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) o incorporada mediante el [control de aplicaciones de acceso condicional con controles de sesión](proxy-deployment-aad.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
 
 ### <a name="steps"></a>Pasos
 
-- Esta detección se configura automáticamente de forma automática para avisarle cuando se produce una actividad anómala de un país poco frecuente. No es necesario realizar ninguna acción para configurar esta Directiva. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).  
-- Es posible configurar el ámbito de la detección y personalizar la acción que se realizará cuando se desencadene una alerta.
+- This detection is automatically configured out-of-the-box to alert you when an anomalous download occurs. You do not need to take any action to configure this policy. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).  
+- It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
+
+## <a name="detect-anomalous-file-shares-by-a-user"></a>Detect anomalous file shares by a user
+
+Detect when users perform multiple file-sharing activities in a single session with respect to the baseline learned, which could indicate an attempted breach.
+
+### <a name="prerequisites"></a>Requisitos previos
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
+### <a name="steps"></a>Pasos
+
+- This detection is automatically configured out-of-the-box to alert you when users perform multiple file sharing. You do not need to take any action to configure this policy. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).  
+- It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
+
+## <a name="detect-anomalous-activities-from-infrequent-country"></a>Detect anomalous activities from infrequent country
+
+Detect activities from a location that was not recently or was never visited by the user or by any user in your organization.
+
+### <a name="prerequisites"></a>Requisitos previos
+
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
+
+### <a name="steps"></a>Pasos
+
+- This detection is automatically configured out-of-the-box to alert you when an anomalous activity occurs from an infrequent country. You do not need to take any action to configure this policy. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).  
+- It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
 > [!NOTE]
-> La detección de ubicaciones anómalas requiere un período de aprendizaje inicial de 7 días. Durante el período de aprendizaje, Cloud App Security no genera alertas para las nuevas ubicaciones.
+> Detecting anomalous locations necessitates an initial learning period of 7 days. During the learning period, Cloud App Security does not generate alerts for new locations.
 
-## <a name="detect-activity-performed-by-a-terminated-user"></a>Detección de la actividad realizada por un usuario Terminado
+## <a name="detect-activity-performed-by-a-terminated-user"></a>Detect activity performed by a terminated user
 
-Detectar cuándo un usuario que ya no es un empleado de la organización realiza una actividad en una aplicación autorizada. Esto puede indicar una actividad malintencionada por parte de un empleado terminado que todavía tiene acceso a los recursos corporativos.
+Detect when a user who is no longer an employee of your organization performs an activity in a sanctioned app. This may indicate malicious activity by a terminated employee who still has access to corporate resources.
 
 ### <a name="prerequisites"></a>Requisitos previos
 
-Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>Pasos
 
-- Esta detección se configura automáticamente de forma automática para avisarle cuando un empleado terminado realiza una actividad. No es necesario realizar ninguna acción para configurar esta Directiva. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).  
-- Es posible configurar el ámbito de la detección y personalizar la acción que se realizará cuando se desencadene una alerta.
+- This detection is automatically configured out-of-the-box to alert you when an activity is performed by a terminated employee. You do not need to take any action to configure this policy. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).  
+- It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
 
 ## <a name="next-steps"></a>Pasos siguientes 
 
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

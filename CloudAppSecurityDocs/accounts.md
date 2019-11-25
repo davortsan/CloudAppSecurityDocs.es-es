@@ -15,12 +15,12 @@ ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: dd496f1aacaffedf16bc409f31fcc28a24c4ba68
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: e6559c68b3b958eb9a989153d5f1e4ec011fea49
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335540"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460947"
 ---
 # <a name="accounts"></a>Cuentas
 
@@ -28,7 +28,7 @@ ms.locfileid: "72335540"
 
 Microsoft Cloud App Security le ofrece la posibilidad de supervisar las cuentas de sus aplicaciones conectadas. Después de conectar Cloud App Security a una aplicación mediante el conector de aplicaciones, Cloud App Security lee la información de la cuenta asociada a las aplicaciones conectadas. La página Cuentas permite investigar esas cuentas, los permisos, los grupos a los que pertenecen, sus alias y las aplicaciones que usan. Además, cuando Cloud App Security detecta una cuenta nueva que no se había detectado previamente en ninguna de las aplicaciones conectadas (por ejemplo, en la actividad o el uso compartido de archivos), la cuenta se agrega a la lista de cuentas de la aplicación en cuestión. Esto le permite supervisar la actividad de los usuarios externos que interactúan con sus aplicaciones en la nube.
 
-Los administradores pueden buscar los metadatos de un usuario específico o su actividad. La página **usuarios y cuentas** proporciona detalles completos sobre las entidades que se extraen de las aplicaciones en la nube conectadas. También presenta el historial de la actividad de un usuario y sus alertas de seguridad.
+Los administradores pueden buscar los metadatos de un usuario específico o su actividad. The **Users and accounts** page provides you with comprehensive details about the entities that are pulled from connected cloud applications. También presenta el historial de la actividad de un usuario y sus alertas de seguridad.
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
@@ -82,6 +82,6 @@ A continuación, se muestra una lista de los filtros de cuenta que se pueden apl
 ## <a name="next-steps"></a>Pasos siguientes  
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Los clientes Premier también pueden crear un nuevo problema directamente desde el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

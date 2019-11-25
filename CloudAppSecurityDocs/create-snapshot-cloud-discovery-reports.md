@@ -15,12 +15,12 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: af9db528ae9e3c3c21e67d502baf2f026d722f68
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 05e579a46bc8367f8968f7a5028bae42e840844c
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335668"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459013"
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Crear informes de instantáneas de Cloud Discovery
 
@@ -91,7 +91,7 @@ Por lo tanto, estos atributos no se mostrarán en los datos de Cloud Discovery d
 
 
 Para generar correctamente un informe de Cloud Discovery, los registros de tráfico deben cumplir las condiciones siguientes:
-1. [Se admite el origen de datos](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+1. [Data source is supported](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 2. El formato de registro coincide con el formato estándar esperado (el formato se comprueba después de la carga mediante la herramienta de registro).
 3. Los eventos no tienen más de 90 días.
 4. El archivo de registro es válido e incluye información sobre el tráfico saliente.
@@ -101,7 +101,7 @@ Para generar correctamente un informe de Cloud Discovery, los registros de tráf
 ## <a name="next-steps"></a>Pasos siguientes  
 [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)   
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
     
       
   

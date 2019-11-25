@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bb91534942fd95f04ebf1f87ac5582a14aed6a55
-ms.sourcegitcommit: 474c052a3f705973ebe83da3a03be3008fdf85ff
+ms.openlocfilehash: 5e5d6c141777c2e6351d8a98448a29f6d36dca5d
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74203844"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459450"
 ---
 # <a name="importing-user-groups-from-connected-apps"></a>Importación de grupos de usuarios de aplicaciones conectadas
 
@@ -48,7 +48,7 @@ Puede importar cualquier grupo de las aplicaciones conectadas. Por ejemplo, pued
 
 ## <a name="how-to-import-user-groups"></a>Cómo importar grupos de usuarios
 
-1. En la barra de menús, haga clic en el icono de configuración icono de ![configuración](./media/settings-icon.png "icono de configuración") y seleccione **grupos de usuarios**.
+1. In the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "icono de configuración") and select **User groups**.
 1. Haga clic en **Importar grupo de usuarios**.
 
     ![Importar grupos de usuarios](./media/user-groups-add.png)
@@ -63,7 +63,7 @@ La importación de grupos le permite seleccionar esos grupos como filtros cuando
 
 > [!NOTE]
 >
-> - Puede haber un breve retraso hasta que los grupos de usuarios importados estén disponibles en los filtros.
+> - There may be a short delay until imported user groups are available in filters.
 > - Para que las actividades se etiqueten como realizadas por un miembro del grupo de usuarios, deberán llevarse a cabo después de la importación de un grupo.
 > - Después de la sincronización inicial, los grupos se actualizan cada hora.
 
@@ -74,4 +74,4 @@ Para obtener más información sobre el uso de los filtros de grupo de usuario, 
 > [!div class="nextstepaction"]
 > [Configurar Cloud Discovery](set-up-cloud-discovery.md)
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

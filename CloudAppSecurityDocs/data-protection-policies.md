@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7391832b1be0ed9b50d54f22ee324879fd588d38
-ms.sourcegitcommit: 207543b3f7d0489b1275d20c3543964bc6525d1a
+ms.openlocfilehash: 1689bccc5c2dd55ca719159697986f7c317be1af
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995990"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461373"
 ---
 # <a name="file-policies"></a>Directivas de archivo
 
@@ -41,7 +41,7 @@ El motor combina tres aspectos en cada directiva:
 
 * Acciones automatizadas de gobernanza y corrección. Para obtener más información, vea [Control](control.md).
     > [!NOTE]
-    > Solo se puede aplicar una acción de gobierno por archivo; por lo tanto, si hay varias coincidencias de directiva de archivos para un archivo, se aplicará la acción de gobierno de la primera Directiva desencadenada. Por ejemplo, si una directiva de archivo ya ha aplicado una etiqueta de AIP a un archivo, una segunda Directiva de archivo no puede trasladar el archivo a la cuarentena de administrador.
+    > Only one governance action can be applied per file; hence, where there are multiple file policy matches for a file, the governance action of the first triggered policy will be applied. For example, if a file policy has already applied an AIP label to a file, a second file policy cannot move the file to admin quarantine.
 
 Una vez habilitada, la directiva analizará continuamente su entorno en la nube e identificará los archivos que coincidan con los filtros de contenido y el contexto y, después, aplicará las acciones automatizadas solicitadas. Estas directivas detectarán y corregirán cualquier infracción de la información en reposo o al crear contenido. Las directivas se pueden supervisar con alertas en tiempo real o con informes generados por la consola.
 
@@ -92,7 +92,7 @@ Haga lo siguiente para crear una directiva de archivo:
 
 1. Elija las acciones de **gobernanza** que quiera que Cloud App Security lleve a cabo cuando detecte una coincidencia.
 
-1. Una vez creada la directiva, puede verla en la pestaña **Directiva de archivo**. Una directiva siempre se puede modificar. Del mismo modo, se pueden calibrar sus filtros o cambiar las acciones automatizadas. La directiva se habilita automáticamente tras crearse e iniciará inmediatamente el análisis de los archivos en la nube.  Tenga especial cuidado al definir acciones de gobernanza, ya que podrían provocar la pérdida irreversible de permisos de acceso a los archivos. Se recomienda restringir los filtros para representar exactamente los archivos en los que quiere actuar por medio de varios campos de búsqueda. Cuanto más restringidos sean los filtros, mejor. Para obtener orientación, puede usar el botón **Editar y obtener vista previa de resultados** de la sección Filtros.
+1. Once you’ve created your policy, you can view it in the **File policy** tab. You can always edit a policy, calibrate its filters, or change the automated actions. La directiva se habilita automáticamente tras crearse e iniciará inmediatamente el análisis de los archivos en la nube.  Tenga especial cuidado al definir acciones de gobernanza, ya que podrían provocar la pérdida irreversible de permisos de acceso a los archivos. Se recomienda restringir los filtros para representar exactamente los archivos en los que quiere actuar por medio de varios campos de búsqueda. Cuanto más restringidos sean los filtros, mejor. Para obtener orientación, puede usar el botón **Editar y obtener vista previa de resultados** de la sección Filtros.
 
     ![editar la directiva de archivo y obtener una vista previa de resultados](./media/file-policy-edit-and-preview-results.png)
 
@@ -114,11 +114,11 @@ Cada directiva se compone de las siguientes partes:
 
 * **Extensiones**: es posible realizar una inspección del contenido mediante motores de terceros para DLP mejorada o funcionalidades antimalware.
 
-## <a name="file-queries"></a>Consultas de archivo
+## <a name="file-queries"></a>File queries
 
 Para que la investigación sea incluso más sencilla, ahora puede crear consultas personalizadas y guardarlas para usar más adelante.
 
-1. En la página **archivo** , use los filtros como se describió anteriormente para explorar en profundidad las aplicaciones según sea necesario.
+1. In the **File** page, use the filters as described above to drill down into your apps as necessary.
 
 1. Una vez que haya terminado de compilar la consulta, haga clic en el botón **Guardar como** situado en la esquina superior derecha de los filtros.
 
@@ -130,4 +130,4 @@ Para que la investigación sea incluso más sencilla, ahora puede crear consulta
 
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

@@ -15,12 +15,12 @@ ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9a6695d1b55237d79ae64c395d269d624891f796
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: bcb98ccaad997a0d98df6d7ecb6eee876c64622e
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71083725"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461296"
 ---
 # <a name="api-tokens"></a>Tokens de API
 
@@ -48,7 +48,7 @@ La pestaña de tokens de API ayuda a administrar todos los tokens de API del inq
 
 3. Copie el valor del token y guárdelo para poder recuperarlo en caso necesario. Si lo pierde, deberá regenerar el token. El token tiene los privilegios del usuario que lo emitió. Por ejemplo, un lector de seguridad no puede emitir un token que modifique datos.
 
-4. Puede filtrar los tokens por estado: Activo, Inactivo o Generado. 
+4. Puede filtrar los tokens por estado Activo, Inactivo o Generado. 
 
    - Los tokens generados son los que no se han usado nunca. 
    - Los tokens activos son los que se han generado y usado durante los siete últimos días. 
@@ -60,7 +60,7 @@ La pestaña de tokens de API ayuda a administrar todos los tokens de API del inq
     La dirección URL del portal genérico continuará funcionando, pero será notablemente más lenta que la dirección URL personalizada que reciba junto al token. Si alguna vez olvida la dirección URL, puede consultarla en el icono de interrogante ( **?** ) del menú seleccionando **Acerca de**.
 
 > [!NOTE]
-> Si usa la activación de rol de Azure Active Directory Privileged Identity Management, el token de API solo será efectivo una vez que se active el rol. Para obtener más información, consulte [activación de los roles de Azure ad en PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role).
+> If you are using Azure Active Directory Privileged Identity Management role activation, your API token will only be effective once the role is activated. For more information, see [Activate my Azure AD roles in PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role).
 
 ## <a name="api-token-management"></a>Administración de tokens de API
 
@@ -82,7 +82,7 @@ Después de que se haya revocado un token, se quitará de la tabla y el software
 ## <a name="next-steps"></a>Pasos siguientes
 [Solución de problemas de integración de SIEM](troubleshooting-siem.md)   
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
 
 ## <a name="check-out-this-video"></a>Eche un vistazo a este vídeo.
 [Microsoft Cloud App Security: API de REST y tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)  

@@ -1,5 +1,5 @@
 ---
-title: Obtención de recomendaciones de configuración de seguridad para Azure-Cloud App Security | Microsoft Docs
+title: Get security configuration recommendations for Azure - Cloud App Security | Microsoft Docs
 description: En este artículo se proporciona información sobre cómo obtener recomendaciones de configuración de seguridad en Cloud App Security mediante la integración con Azure Security Center.
 keywords: ''
 author: shsagir
@@ -15,12 +15,12 @@ ms.assetid: c6d8f8af-867b-43ab-adee-f06520577fe7
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c68cf2cb1df5c61a2f3685818320cd3ffd30eb15
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 1e53dcc94b6ca96aeefcfd511e4ae4e9557e5a21
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084974"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460491"
 ---
 # <a name="security-configuration-for-azure"></a>Configuración de seguridad para Azure
 
@@ -45,7 +45,7 @@ Para habilitar las recomendaciones de configuración de seguridad en Microsoft C
 
 2. Asegúrese de abrir <a href="https://ms.portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0" target="_blank">Azure Security Center</a> para que los cambios surtan efecto.
 
-3. En Cloud App Security, vaya a **investigar** > **configuración de seguridad**y, a continuación, seleccione la pestaña **Azure** .
+3. In Cloud App Security, browse to **Investigate** > **Security configuration**, and then select the **Azure** tab.
     - Microsoft Cloud App Security proporciona recomendaciones únicamente para las 50 suscripciones principales.
     - Es posible que los cambios tarden hasta 15 minutos en surtir efecto.
 
@@ -61,4 +61,4 @@ Para información sobre cómo implementar las recomendaciones de seguridad, vea 
 
 [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

@@ -15,12 +15,12 @@ ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 340e1919afc9ce5c72efb82825ddc6cd9579dbd3
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 0e0142cfaa91197084636cf1c3b9064f0fce021a
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084110"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460865"
 ---
 # <a name="manage-alerts"></a>Administrar alertas
 
@@ -29,7 +29,7 @@ ms.locfileid: "71084110"
 En este artículo se explica cómo trabajar con alertas generadas en el portal de Cloud App Security.
 
 > [!NOTE]
-> Las alertas se administran en sus respectivas directivas y se pueden configurar para enviarlas como correo electrónico, mensaje de texto o ambos.
+> Alerts are managed in their respective policies and can be configured to be sent as an email, text message, or both.
 
 ## <a name="manage-your-alerts"></a>Administración de alertas
 
@@ -41,7 +41,7 @@ Es buena idea revisar todas las alertas y usarlas como herramientas para modific
 
    En esta sección del panel se proporciona visibilidad completa de cualquier actividad sospechosa o infracción de las políticas establecidas. Puede ayudarle a proteger la postura de seguridad que ha definido para su entorno de la nube.  
 
-   ![Alertas](./media/alerts.png "Alertas")  
+   ![Alertas](./media/alerts.png "alertas")  
 
 2. Debe investigar y determinar la naturaleza de la infracción y la respuesta necesaria en cada alerta.  
 
@@ -70,10 +70,10 @@ Es buena idea revisar todas las alertas y usarlas como herramientas para modific
 3. Es importante que, siempre que se descarte una alerta, envíe comentarios sobre por qué la descarta. El equipo de Cloud App Security usa estos comentarios como indicación de la precisión de la alerta. Esta información se usa después para ajustar los modelos de Machine Learning para futuras alertas. Puede seguir estas directrices para decidir cómo clasificar la alerta:
    - Si la alerta se ha desencadenado por un uso legítimo y no es un problema de seguridad, podría ser uno de los siguientes tipos: 
 
-     - Positivo inofensivo: la alerta es precisa, pero la actividad es legítima. Puede descartar la alerta y establecer el motivo en **La gravedad real es inferior** o **No es interesante**.
+     - Benign positive: The alert is accurate but the activity is legitimate. Puede descartar la alerta y establecer el motivo en **La gravedad real es inferior** o **No es interesante**.
      -  Falso positivo: la alerta es inexacta. Descarte la alerta y establezca el motivo en **La alerta no es precisa**.
    - Si hay demasiado ruido para determinar la legitimidad y la precisión de una alerta, descártela y establezca el motivo en **Demasiadas alertas similares**.
-   - Verdadero positivo: si la alerta está relacionada con un evento de riesgo real que ha realizado de forma malintencionada o involuntaria un usuario interno o externo, debe establecer el evento en **Resolver** después de que se hayan tomado las medidas adecuadas para corregir el evento.
+   - Verdadero positivo: si la alerta está relacionada con un evento de riesgo real que realizó de forma malintencionada o involuntaria un usuario interno o externo, debe establecer el evento en **Resolver** después de que se hayan tomado las medidas adecuadas para corregir el evento.
 
 ## <a name="alert-types"></a>Tipos de alerta
 
@@ -97,4 +97,4 @@ En la tabla siguiente se proporciona una lista de los tipos de alertas que puede
 ## <a name="next-steps"></a>Pasos siguientes  
 Para obtener más información acerca de la investigación de alertas, consulte [Investigar](investigate.md).  
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

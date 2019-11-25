@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a9e918b7ba5295eab7d7e477fc0197263142653e
-ms.sourcegitcommit: b592226ec8a07b4bc87720ea8611cd6edc8d7f8c
+ms.openlocfilehash: 2f35d499398f6d538b552678d5c30740e2f5d5ea
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73463643"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460830"
 ---
 # <a name="connect-cisco-webex-to-microsoft-cloud-app-security"></a>Connect Cisco Webex to Microsoft Cloud App Security
 
@@ -59,4 +59,4 @@ After connecting Webex, you'll receive events for 7 days prior to connection. Cl
 > [!div class="nextstepaction"]
 > [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

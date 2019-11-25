@@ -15,12 +15,12 @@ ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 81555a0839090af293cc58ce1bde9c70a2a82aac
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: cd11c5a35761f21cc928a3debbc05a58ef56b6d1
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72336049"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459982"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Solución de problemas de Cloud Discovery
 
@@ -28,9 +28,9 @@ ms.locfileid: "72336049"
 
 En este artículo se proporciona una lista de errores de Cloud Discovery y recomendaciones para la solución de cada uno de ellos.
 
-## <a name="microsoft-defender-atp-integration"></a>Integración de ATP de Microsoft defender
+## <a name="microsoft-defender-atp-integration"></a>Microsoft Defender ATP integration
 
-Si ha integrado ATP de Microsoft defender con Cloud App Security y no ve los resultados de la integración: no hay un informe de **usuarios del punto** de conexión de Win10, asegúrese de que las máquinas a las que se está conectando sean la versión 1809 o posterior de Windows 10 y que esperó las dos horas necesarias antes de que se pueda tener acceso a los datos.
+If you integrated Microsoft Defender ATP with Cloud App Security, and you don't see the results of the integration - there's not a **Win10 endpoint users** report - make sure the machines you're connecting to are Windows 10 version 1809 or later, and that you waited the necessary two hours that it takes before your data is accessible.
 
 
 ## <a name="log-parsing-errors"></a>Errores de análisis de registro
@@ -42,21 +42,21 @@ Puede realizar un seguimiento del procesamiento de registros de Cloud Discovery 
 |Error de:|Descripción|Solución|
 |----|----|----|
 |Tipo de archivo no admitido|El archivo cargado no es un archivo de registro válido (por ejemplo, un archivo de imagen).|Cargue un archivo de **texto**, **zip o **gzip** que se haya exportado directamente desde el firewall o el proxy.|
-|El formato del registro no coincide|El formato del registro que ha cargado no coincide con el formato esperado para este origen de datos.|1. Compruebe que el registro no esté dañado. <br /> 2. Compare y haga coincidir el registro con el formato de ejemplo que se muestra en la página de carga.|
+|El formato del registro no coincide|El formato del registro que ha cargado no coincide con el formato esperado para este origen de datos.|1. Verify that the log isn't corrupt. <br /> 2. Compare and match your log to the sample format shown in the upload page.|
 |Las transacciones tienen más de 90 días|Todas las transacciones tienen más de 90 días y se omitirán.|Exporte un registro nuevo con eventos recientes y vuelva a cargarlo.|
 |No hay transacciones con las aplicaciones de nube catalogadas|No se ha encontrado ninguna transacción con las aplicaciones de nube reconocidas en el registro.|Compruebe que el registro contiene información sobre el tráfico saliente.|
-|Tipo de registro no admitido|Al seleccionar **Origen de datos = Otro (no admitido)**, el registro no se analiza. En su lugar, se envía para su revisión al equipo técnico de Cloud App Security.|El equipo técnico de Cloud App Security crea un analizador dedicado por cada origen de datos. Los orígenes de datos más populares [ya se admiten](set-up-cloud-discovery.md). Cada carga de un origen de datos no admitido se revisa y se agrega a la canalización para los analizadores de orígenes de datos nuevos. Las nuevas notificaciones del analizador se publican como parte de las [notas de la versión](release-notes.md) de Cloud App Security.|
+|Tipo de registro no admitido|Al seleccionar **Origen de datos = Otro (no admitido)** , el registro no se analiza. En su lugar, se envía para su revisión al equipo técnico de Cloud App Security.|El equipo técnico de Cloud App Security crea un analizador dedicado por cada origen de datos. Los orígenes de datos más populares [ya se admiten](set-up-cloud-discovery.md). Cada carga de un origen de datos no admitido se revisa y se agrega a la canalización para los analizadores de orígenes de datos nuevos. Las nuevas notificaciones del analizador se publican como parte de las [notas de la versión](release-notes.md) de Cloud App Security.|
 
 ## <a name="log-collector-errors"></a>Errores del recopilador de registros
 
 |PROBLEMA | SOLUCIÓN |
 |--------|--|
-|No se pudo conectar al recopilador de registros a través de FTP| 1. Compruebe que está usando credenciales de FTP y no credenciales de SSH. <br />2. Compruebe que el cliente FTP que está utilizando no está establecido en SFTP.  |
-|No se pudo actualizar la configuración del recopilador | 1. Compruebe que ha escrito el token de acceso más reciente. <br />2. Compruebe en el firewall que el recopilador de registros puede iniciar el tráfico saliente en el puerto 443.|
-|Los registros enviados al recopilador no aparecen en el portal | 1. Compruebe si hay tareas de análisis erróneas en el registro de gobierno.  <br />  &nbsp;&nbsp;&nbsp;&nbsp;En caso de que las haya, use la anterior tabla Errores de análisis de registro para solucionar el error.<br /> 2. Si no es así, compruebe los orígenes de datos y la configuración del recopilador de registros en el portal. <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. En la página Origen de datos, compruebe que el origen de datos que está usando está configurado de forma precisa. <br />&nbsp;&nbsp;&nbsp;&nbsp;b. En la página Recopiladores de registros, compruebe que el origen de datos está vinculado al recopilador de registros correcto. <br /> 3. Compruebe la configuración local del equipo del recopilador de registros local.  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. Inicie sesión en el recopilador de registros mediante SSH y ejecute la utilidad collector_config.<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. Confirme que el firewall o proxy envía los registros al recopilador de registros mediante el protocolo definido (Syslog/TCP, Syslog/UDP o FTP) y que los envía al puerto y directorio correctos.<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. Ejecute netstat en la máquina y compruebe que recibe las conexiones entrantes del firewall o proxy. <br /> 4. Compruebe que el recopilador de registros tiene permiso para iniciar el tráfico saliente en el puerto 443. |
+|No se pudo conectar al recopilador de registros a través de FTP| 1. Verify that you are using FTP credentials and not SSH credentials. <br />2. Verify that the FTP client you are using is not set to SFTP.  |
+|No se pudo actualizar la configuración del recopilador | 1. Verify that you entered the latest access token. <br />2. Verify in your firewall that the log collector is allowed to initiate outbound traffic on port 443.|
+|Los registros enviados al recopilador no aparecen en el portal | 1.  Check to see if there are failed parsing tasks in the Governance log.  <br />  &nbsp;&nbsp;&nbsp;&nbsp;En caso de que las haya, use la anterior tabla Errores de análisis de registro para solucionar el error.<br /> 2. If not, check the data sources and Log collector configuration in the portal. <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. En la página Origen de datos, compruebe que el origen de datos que está usando está configurado de forma precisa. <br />&nbsp;&nbsp;&nbsp;&nbsp;b. En la página Recopiladores de registros, compruebe que el origen de datos está vinculado al recopilador de registros correcto. <br /> 3. Check the local configuration of the on-premises log collector machine.  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. Inicie sesión en el recopilador de registros mediante SSH y ejecute la utilidad collector_config.<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. Confirme que el firewall o proxy envía los registros al recopilador de registros mediante el protocolo definido (Syslog/TCP, Syslog/UDP o FTP) y que los envía al puerto y directorio correctos.<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. Ejecute netstat en la máquina y compruebe que recibe las conexiones entrantes del firewall o proxy. <br /> 4.   Verify that the log collector is allowed to initiate outbound traffic on port 443. |
 |Estado del recopilador de registros: Creado | No se ha completado la implementación del recopilador de registros. Complete los pasos de implementación local indicados en la guía de implementación.|
 |Estado del recopilador de registros: Desconectado | No se han recibido datos durante las últimas 24 horas de ninguno de los orígenes de datos vinculados. |
-|Error al extraer la imagen del recopilador más reciente| Si recibe este error durante la implementación de Docker, podría deberse a que no tiene suficiente memoria en el equipo host. Para comprobarlo, ejecute este comando en el host: `docker pull microsoft/caslogcollector`. Si devuelve este error: `failed to register layer: Error processing tar file(exist status 1): write /opt/jdk/jdk1.8.0_152/src.zip: no space left on device` póngase en contacto con el administrador del equipo host para proporcionar más espacio.|
+|Failed pulling latest collector image| If you get this error during Docker deployment, it could be that you don't have enough memory ont he host machine. To check this, run this command on the host: `docker pull microsoft/caslogcollector`. If it returns this error: `failed to register layer: Error processing tar file(exist status 1): write /opt/jdk/jdk1.8.0_152/src.zip: no space left on device` contact your host machine administrator to provide more space.|
 
 ## <a name="discovery-dashboard-errors"></a>Errores del panel de detección
 
@@ -68,5 +68,5 @@ Puede realizar un seguimiento del procesamiento de registros de Cloud Discovery 
   
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
 

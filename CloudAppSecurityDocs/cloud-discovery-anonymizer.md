@@ -15,12 +15,12 @@ ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b83aa653074e0b441634c8560821fc4cf4d71373
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: f59f6b28ec6374f609b831d413b76a8aa5c6900e
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335492"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74458322"
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Anonimización de datos de Cloud Discovery
 
@@ -85,7 +85,7 @@ Puntos clave:
 ## <a name="next-steps"></a>Pasos siguientes 
 [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)   
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
     
       
   

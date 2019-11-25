@@ -1,5 +1,5 @@
 ---
-title: Configure los valores de la organización en Cloud App Security
+title: Set up your organization's settings in Cloud App Security
 description: En este artículo se explica cómo proporcionar información sobre su organización en Cloud App Security.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f9ad51d83ca6368f182178b209f7cf95393df458
-ms.sourcegitcommit: e7af22892c56d03490d1e6241c0a74d2e11e9fe2
+ms.openlocfilehash: 2708e8606e1838678e7d2b66fcb4e32584d475fc
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2019
-ms.locfileid: "73462088"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74458751"
 ---
 # <a name="basic-setup-for-cloud-app-security"></a>Configuración básica de Cloud App Security
 
@@ -29,11 +29,11 @@ En el siguiente procedimiento se proporcionan instrucciones para personalizar el
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Para el acceso al portal, es necesario agregar las siguientes direcciones IP a la lista de permitidos del firewall para proporcionar acceso al portal de Cloud App Security:
+For portal access, it's necessary to add the following IP addresses to your Firewall's allow list to provide access for the Cloud App Security portal:
 
 * 104.42.231.28
 
-En el caso de los clientes de la administración pública de Estados Unidos, también es necesario agregar las siguientes direcciones IP a la lista de permitidos del firewall para proporcionar acceso al portal de Cloud App Security GCC High:
+For US Government GCC High customers, it's also necessary to add the following IP addresses to your Firewall’s allow list to provide access for the Cloud App Security GCC High portal:
 
 * 52.227.143.223
 * 13.72.19.4
@@ -43,7 +43,7 @@ En el caso de los clientes de la administración pública de Estados Unidos, tam
 
 ## <a name="set-up-the-portal"></a>Configurar el portal
 
-1. En el portal de Cloud App Security, en la barra de menús, haga clic en el icono configuración engranaje ![configuración](./media/settings-icon.png "icono de configuración") y seleccione **configuración** para configurar los detalles de su organización.
+1. In the Cloud App Security portal, in the menu bar, click the settings cog ![settings icon](./media/settings-icon.png "icono de configuración") and select **Settings** to configure your organization's details.
 
 1. En **Detalles de la organización**, es importante que indique un **nombre para mostrar de la organización** para su organización. Este nombre se mostrará en los correos electrónicos y páginas web enviados desde el sistema.
 
@@ -55,13 +55,13 @@ En el caso de los clientes de la administración pública de Estados Unidos, tam
 
     * Los usuarios en dominios que no están configurados como internos se marcan como externos. Los usuarios externos no se analizan en busca de actividades o archivos.
 
-1. En **cierre de sesión automático**, especifique la cantidad de tiempo que una sesión puede permanecer inactiva antes de que se cierre la sesión automáticamente.
+1. Under **Auto sign out**, specify the amount of time a session can remain inactive before the session is automatically signed out.
 
 1. Si está integrando mediante la integración de Azure Information Protection, vea [Integración de Azure Information Protection](azip-integration.md) para obtener información.
 
     * Para trabajar con la integración de Azure Information Protection, primero debe habilitar el [conector de aplicaciones para Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
-1. Si está realizando la integración con la integración de protección contra amenazas avanzada de Azure, consulte [integración de protección contra amenazas avanzada de Azure](azip-integration.md) para obtener información.
+1. If you're integrating with Azure Advanced Threat Protection integration, see [Azure Advanced Threat Protection Integration](azip-integration.md) for information.
 
 1. Si, en un momento determinado, quiere hacer una copia de seguridad de la configuración del portal, puede hacerlo en esta pantalla. Haga clic en **Exportar configuración del portal** para crear un archivo .json con todas las opciones de configuración del portal, incluidas las reglas de directivas, los grupos de usuarios y los intervalos de direcciones IP.
 
@@ -74,4 +74,4 @@ En el caso de los clientes de la administración pública de Estados Unidos, tam
 
 [Configurar Cloud Discovery](set-up-cloud-discovery.md)
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

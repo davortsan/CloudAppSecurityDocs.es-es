@@ -15,12 +15,12 @@ ms.assetid: 8abeab8e-3b7a-46a7-bbec-9aaf26f778a8
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 687570ff372da79822715d40a3eb3220147610d0
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 038e46762ddc24934e9e926cd6a29ae3ec11067a
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335958"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459203"
 ---
 # <a name="integrate-cloud-app-security-with-zscaler"></a>Integración de Cloud App Security con Zscaler
 
@@ -62,5 +62,5 @@ Si trabaja con Cloud App Security y Zscaler, puede integrar los dos productos pa
 
 [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   

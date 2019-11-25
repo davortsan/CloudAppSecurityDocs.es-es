@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 390a9d5e9bff785b67f21802d4d0800af5640193
-ms.sourcegitcommit: 748c6f8cb234b303770814d8e63406a0bad36cd1
+ms.openlocfilehash: 6fc5d998bc174096d7530a37407137bfbf71d50d
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74154878"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461316"
 ---
 # <a name="investigate"></a>Investigar
 
@@ -33,31 +33,31 @@ Los siguientes paneles están disponibles para ayudarle a investigar las aplicac
 
 |Dashboard|Descripción|
 |---------------|-----------------|
-|Panel principal|Información general sobre el estado de la nube (usuarios, archivos, actividades) y las acciones necesarias (alertas, infracciones de actividad e infracciones de contenido).|
-|Panel de la aplicación: información general|Información general sobre el uso de aplicaciones por ubicación, gráficos de uso por número de usuarios.|
-|Panel de la aplicación: información|Información sobre los detalles de la aplicación, la seguridad y el cumplimiento.|
-|Panel de la aplicación: información  
-*(si es aplicable)*|Análisis de los datos almacenados en la aplicación, desglosados por tipo de archivo y nivel de uso compartido de archivos.|
-|Panel de la aplicación: archivos  
-*(si es aplicable)*|Explorar en profundidad los archivos; capacidad de filtrar según el propietario, el nivel de uso compartido y mucho más. Realizar acciones de gobierno como la cuarentena.|
-|Panel de la aplicación: cuentas|Información general de todas las cuentas o usuarios vinculados a la aplicación.|
-|Panel de la aplicación: aplicaciones de OAuth  
-*(si es aplicable)*|Profundice en las aplicaciones de OAuth actualmente implementadas, como G Suite, y definir directivas.|
-|Panel de la aplicación: registro de actividades|Explorar en profundidad toda la actividad de la aplicación; posibilidad de filtrar según los usuarios, la dirección IP y mucho más.|
-|Panel de la aplicación: alertas|Profundice en todas las alertas de la aplicación; capacidad de filtrar según el estado, la categoría, la gravedad, etc.|
-|Panel de la aplicación: cuentas con privilegios especiales  
-*(Solo Salesforce)*|Información general de los usuarios por tipo de usuario con privilegios.|
-|Panel del usuario|Información general completa del perfil de usuario en la nube, ubicaciones, actividades recientes, alertas relacionadas.|
+|Panel principal|Overview of cloud status (users, files, activities) and required actions (alerts, activity violations, and content violations).|
+|App dashboard: overview|Overview of app usage per location, usage graphs per number of users.|
+|App dashboard: info|Information about app details, security, and compliance.|
+|App dashboard: insights  
+*(where applicable)*|Analysis of data stored in the app, broken down by file type and file-sharing level.|
+|App dashboard: files  
+*(where applicable)*|Drill down into files; ability to filter according to owner, sharing level, and more. Perform governance actions like quarantine.|
+|App dashboard: accounts|Overview of all accounts/users linked to the app.|
+|App dashboard: OAuth apps  
+*(where applicable)*|Drill down into OAuth apps currently deployed, like G Suite, and define policies.|
+|App dashboard: activity log|Drill down into all app activity; ability to filter according to users, ip address, and more.|
+|App dashboard: alerts|Drill down into all app alerts; ability to filter according to status, category, severity, and more.|
+|App dashboard: special privileged accounts  
+*(Salesforce only)*|Overview of users by privileged user type.|
+|Panel del usuario|A complete overview of the user profile in the cloud, locations, recent activities, related alerts.|
 
-## <a name="a-namesanctionapp-tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp" />las aplicaciones de etiqueta como autorizadas o no autorizadas
+## <a name="a-namesanctionapp-tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp" />Tag apps as sanctioned or unsanctioned
 
 Marcar aplicaciones como autorizadas o no autorizadas es un paso importante para comprender su entorno en la nube. Después de autorizar una aplicación, puede filtrar por las aplicaciones que no estén autorizadas e iniciar la migración a las aplicaciones autorizadas que sean del mismo tipo.
 
 - En la consola de Cloud App Security, vaya a Catálogo de aplicaciones o Aplicaciones detectadas.
 
-- En la lista de aplicaciones, en la fila que contenga la aplicación que quiera marcar como autorizada, elija los tres puntos al final de la fila ![Puntos para marcar como autorizada](./media/sanction-three-dots.png "Etiquetar como puntos autorizados") y elija **Marcar como autorizada**.
+- En la lista de aplicaciones, en la fila que contenga la aplicación que quiera marcar como autorizada, elija los tres puntos al final de la fila ![Puntos para marcar como autorizada](./media/sanction-three-dots.png "Tag as sanctioned dots") y elija **Marcar como autorizada**.
 
-    ![Etiqueta como autorizada](./media/mark-as-sanctioned.png "etiqueta como autorizada")
+    ![Tag as sanctioned](./media/mark-as-sanctioned.png "tag as sanctioned")
 
 ## <a name="use-the-investigation-tools"></a>Usar las herramientas de investigación
 
@@ -113,7 +113,7 @@ Marcar aplicaciones como autorizadas o no autorizadas es un paso importante para
 
     - ¿Cuántos usuarios las han implementado? ¿Cómo son de comunes estas aplicaciones en general?
 
-    ![Panel de la aplicación](./media/investigate-app.png "investigar aplicación")
+    ![App dashboard](./media/investigate-app.png "investigar aplicación")
 
 5. Vaya al **panel de Cloud Discovery** y compruebe los siguientes elementos:
 
@@ -143,7 +143,7 @@ Imaginemos que, en teoría, ninguna dirección IP de riesgo puede tener acceso a
 
 5. En **Actividades que coinciden con todas las opciones siguientes**, haga clic en **+** para agregar un filtro. Desplácese hasta **Etiqueta IP** y luego elija **Tor**.
 
-    ![Directiva de ejemplo para IP de riesgo](./media/example-policy-risky-ips.png "ejemplo de directiva de IP de riesgo")
+    ![Example policy for risky IPs](./media/example-policy-risky-ips.png "ejemplo de directiva de IP de riesgo")
 
 Con la directiva en marcha, le sorprenderá ver que recibe una alerta que indica que la directiva se ha infringido.
 
@@ -163,4 +163,4 @@ Con la directiva en marcha, le sorprenderá ver que recibe una alerta que indica
 
 Para obtener información sobre cómo controlar la aplicación de la nube de su organización, consulte [Control](control.md).
 
-[Los clientes Premier también pueden crear una nueva solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)].

@@ -15,12 +15,12 @@ ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 13e1aad4a3ad2b8a93e291e019b637866acabffc
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 26046b25636523aab8494dcb122660d94e3182b9
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335761"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460726"
 ---
 # <a name="external-dlp-integration"></a>Integración de DLP externa
 
@@ -322,4 +322,4 @@ Esta regla se debe agregar a todas las directivas existentes.
 ## <a name="next-steps"></a>Pasos siguientes 
 [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)   
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

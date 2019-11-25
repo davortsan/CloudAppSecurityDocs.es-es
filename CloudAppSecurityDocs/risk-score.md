@@ -15,12 +15,12 @@ ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5947a83b6a09f5c25b8f3e3cf82318717e9aaca6
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 55bba38323d9f826504f5e288613feb2ca5f45da
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71085071"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460525"
 ---
 # <a name="working-with-app-risk-scores"></a>Trabajar con la puntuación de riesgo de la aplicación
 
@@ -59,13 +59,13 @@ Hay filtros básicos y avanzados en el Catálogo de aplicaciones en la nube. Par
 
 - **Etiquetas de aplicación**: las etiquetas le permiten personalizar el Catálogo de aplicaciones en la nube. 
   Puede seleccionar la etiqueta **Autorizada** o **No autorizada**, o bien crear etiquetas personalizadas para las aplicaciones. Después, estas etiquetas pueden usarse como filtros. Los filtros son útiles para profundizar un poco más en los tipos de aplicaciones específicos que quiere investigar.
-- **Aplicaciones y dominios**: le permite buscar aplicaciones específicas o aplicaciones usadas en dominios concretos.
-- **Categorías**: el filtro de categorías, que se encuentra a la izquierda de la página, le permite buscar tipos de aplicaciones en función de categorías de aplicaciones. Por ejemplo, aplicaciones de redes sociales, aplicaciones de almacenamiento en la nube y más tipos de aplicaciones. Puede seleccionar más de una categoría a la vez o una única categoría. Después, aplique los filtros básicos o avanzados sobre las categorías.
-- **Factor de riesgo de cumplimiento**: le permite buscar normas, certificaciones y elementos de conformidad específicos que puede cumplir la aplicación. Por ejemplo, HIPAA, ISO 27001, SOC 2 y PCI-DSS.
-- **Factor de riesgo general**: le permite buscar factores de riesgo generales, como la popularidad entre los consumidores, la configuración regional del centro de datos y muchos más.
-- **Factor de riesgo legal**: le permite filtrar en función de las regulaciones y directivas en vigor. Usar factores de riesgo legal ayuda a garantizar la protección y la privacidad de los datos de los usuarios de la aplicación, como RGPD, DMCA y directivas de retención de datos.
-- **Puntuación de riesgo**: le permite filtrar las aplicaciones mediante una puntuación de riesgo en la que puede centrarse. Por ejemplo, revisar solo las aplicaciones de riesgo.
-- **Factor de riesgo para la seguridad**: le permite filtrar en función de medidas de seguridad específicas. Las medidas incluyen entre otras el cifrado en reposo y la autenticación multifactor.
+- **Aplicaciones y dominios**: permite buscar aplicaciones específicas o aplicaciones usadas en dominios concretos.
+- **Categorías**: el filtro de categorías, que se encuentra a la izquierda de la página, permite buscar tipos de aplicaciones en función de categorías de aplicaciones. Por ejemplo, aplicaciones de redes sociales, aplicaciones de almacenamiento en la nube y más tipos de aplicaciones. Puede seleccionar más de una categoría a la vez o una única categoría. Después, aplique los filtros básicos o avanzados sobre las categorías.
+- **Factor de riesgo de cumplimiento**: permite buscar normas, certificaciones y elementos de conformidad específicos que puede cumplir la aplicación. Por ejemplo, HIPAA, ISO 27001, SOC 2 y PCI-DSS.
+- **Factor de riesgo general**: permite buscar factores de riesgo generales, como la popularidad entre los consumidores, la configuración regional del centro de datos y muchos más.
+- **Factor de riesgo legal**: permite filtrar en función de las regulaciones y directivas en vigor. Usar factores de riesgo legal ayuda a garantizar la protección y la privacidad de los datos de los usuarios de la aplicación, como RGPD, DMCA y directivas de retención de datos.
+- **Puntuación de riesgo**: permite filtrar las aplicaciones mediante una puntuación de riesgo en la que puede centrarse. Por ejemplo, revisar solo las aplicaciones de riesgo.
+- **Factor de riesgo para la seguridad**: permite filtrar en función de medidas de seguridad específicas. Las medidas incluyen entre otras el cifrado en reposo y la autenticación multifactor.
 
 ## <a name="suggesting-a-change"></a>Sugerir un cambio
 
@@ -117,7 +117,7 @@ Es importante dedicar un minuto a revisar y modificar las ponderaciones predeter
   
 3. Además, puede establecer si determinados valores no están disponibles o no son aplicables en el cálculo de la puntuación. Cuando se incluyen, los valores no aplicables tienen una contribución negativa a la puntuación calculada.  
   
-   ![puntuación](./media/score.png "score metrics")  
+   ![score](./media/score.png "score metrics")  
 
 Toda la información necesaria para entender cómo se apilan nuestras puntuaciones de riesgo de Cloud App Security está disponible en el portal de Cloud App Security. Para entender mejor el peso de un factor de riesgo en la categoría de riesgo específica, use el botón "i" situado a la derecha de cada nombre de campo en el perfil de la aplicación. Esto proporciona información sobre cómo Cloud App Security puntúa exactamente un factor de riesgo específico. La puntuación es el valor del factor de riesgo en una escala de 1 a 10 + su peso en la categoría de riesgo:
 
@@ -144,6 +144,6 @@ También puede agregar notas para que el motivo de este cambio le quede claro a 
  
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

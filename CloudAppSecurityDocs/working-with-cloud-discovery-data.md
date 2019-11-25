@@ -15,12 +15,12 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 34127140ac088352b35ffedd03c53f9b046e07a7
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 5e289a3eea5bbc3306bfe6fa07c5a9084145e6d1
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335946"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459253"
 ---
 # <a name="working-with-discovery-data"></a>Trabajo con datos de detección
 
@@ -56,7 +56,7 @@ Para crear una exclusión:
 3. Seleccione la pestaña **Usuarios excluidos**, **Direcciones IP excluidas** o **Máquinas excluidas** y haga clic en el botón + para agregar la exclusión.
 4. Agregue un alias de usuario, una dirección IP o un nombre de máquina. Se recomienda agregar información sobre por qué se ha realizado la exclusión.
   
-     ![Excluir usuario](./media/exclude-user.png "excluir usuario")  
+     ![exclude user](./media/exclude-user.png "excluir usuario")  
 
 ## <a name="manage-continuous-reports"></a>Administrar informes continuos
 
@@ -105,7 +105,7 @@ Para eliminar datos de Cloud Discovery:
   
 3. Haga clic en el botón **Eliminar**.  
   
-    ![eliminar datos](./media/delete-data.png "eliminar datos")  
+    ![delete data](./media/delete-data.png "eliminar datos")  
   
    > [!NOTE]  
    >  El proceso de eliminación tarda unos minutos y no es inmediato.
@@ -116,6 +116,6 @@ Para eliminar datos de Cloud Discovery:
 
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

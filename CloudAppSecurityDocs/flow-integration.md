@@ -14,14 +14,14 @@ ms.technology: ''
 ms.assetid: 344f92e2-6b3b-46db-bfd0-3b1016e0bc34
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 15a1f64077671b1ec703a967f04638098aa531dd
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: d9922f1b905e57cd43c9e4e8d25d2224e3f32c64
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084620"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459185"
 ---
-# <a name="integrate-with-flow-for-custom-alert-automation"></a>Integración con Flow para la automatización de alertas personalizada
+# <a name="integrate-with-flow-for-custom-alert-automation"></a>Integrate with Flow for custom alert automation
 
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -68,4 +68,4 @@ El [conector Cloud App Security](https://docs.microsoft.com/connectors/cloudapps
 ## <a name="next-steps"></a>Pasos siguientes 
 [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)   
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

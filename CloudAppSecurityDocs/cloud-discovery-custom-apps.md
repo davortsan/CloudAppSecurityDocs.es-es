@@ -15,12 +15,12 @@ ms.assetid: 98b0d841-b33d-4ae9-b48b-d9ee77785eaa
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b3d8fe254888eb442479c9d4ef5f328898a97dfb
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 6cc2d82fea2c5f207fccda3a5964c59a57640921
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335535"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461122"
 ---
 # <a name="add-custom-apps-to-cloud-discovery"></a>Incorporación de aplicaciones personalizadas a Cloud Discovery
 
@@ -64,6 +64,6 @@ Para ver todas las aplicaciones personalizadas, establezca el filtro **Etiqueta 
 ## <a name="next-steps"></a>Pasos siguientes 
 [Directivas de actividad de usuario](user-activity-policies.md)   
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

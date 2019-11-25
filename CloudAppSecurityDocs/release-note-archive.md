@@ -15,12 +15,12 @@ ms.assetid: 185c3a46-ede8-4d58-b232-111807845c8f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a9d411860fcaf3d261d815b2f6ba1c0b31f26d99
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: da7783c7ca1ee206de62be369df2b3059a35aa18
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335865"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460509"
 ---
 # <a name="past-release-archive-of-microsoft-cloud-app-security"></a>Archivo de versiones anteriores de Microsoft Cloud App Security
 
@@ -221,7 +221,7 @@ Publicado el 4 de junio de 2017
 
 **Nuevas características**
 
-- Se ha completado la implementación de RBAC para los lectores de seguridad. Esta característica permite administrar los permisos que se conceden a los administradores dentro de la consola de Cloud App Security. De forma predeterminada, todos los administradores de Azure Active Directory, los administradores globales de Office 365 y los administradores de seguridad tienen permisos completos en el portal. Todos los lectores de seguridad de Azure Active Directory y Office 365 tienen acceso de solo lectura en Cloud App Security. Puede agregar más administradores o reemplazar los permisos mediante la opción "Administrar acceso". Para obtener más información, vea [Administrar el acceso de administrador](manage-admins.md).
+- RBAC for Security Readers completed roll out. This feature enables you to manage the permissions you grant to your admins inside the Cloud App Security console. De forma predeterminada, todos los administradores de Azure Active Directory, los administradores globales de Office 365 y los administradores de seguridad tienen permisos completos en el portal. Todos los lectores de seguridad de Azure Active Directory y Office 365 tienen acceso de solo lectura en Cloud App Security. Puede agregar más administradores o reemplazar los permisos mediante la opción "Administrar acceso". Para obtener más información, vea [Administrar el acceso de administrador](manage-admins.md).
 - Ahora estamos implementando informes de inteligencia de amenazas detallados para las direcciones IP de riesgo detectadas por el gráfico de seguridad inteligente de Microsoft. Cuando una red de robots (botnet) realice una actividad, verá el nombre de la red de robots (si está disponible) con un vínculo a un informe detallado sobre la botnet específica.
  
 ### <a name="cloud-app-security-release-97"></a>Notas de la versión 97 de Cloud App Security
@@ -314,7 +314,7 @@ Fecha de publicación: 20 de marzo de 2017
 - El conector de la aplicación de Cloud App Security para ServiceNow se ha expandido para incluir compatibilidad con tokens de OAuth (tal como se presenta en Ginebra, Helsinki y Estambul). Este cambio proporciona una conexión más sólida de la API con ServiceNow, que no se basa en el usuario de implementación. Para obtener más información, vea [Conectar ServiceNow con Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security.md). Los clientes existentes pueden actualizar su configuración en la página del conector de ServiceNow App.
 - Si configura escáneres DLP adicionales de terceros, el estado del examen DLP ahora mostrará el estado de cada conector de forma independiente para mejorar la visibilidad.
 - Cloud App Security ahora incluye compatibilidad para las actividades de Microsoft Teams que se admiten en el registro de auditoría de Office 365. Esta característica se está implantando gradualmente.
-- En el caso de los eventos de suplantación de Exchange Online, ahora puede filtrar por el nivel de permiso usado-delegado, administrador o administrador delegado. Puede buscar eventos que muestren el nivel de suplantación que le interese en el **registro de actividad** mediante la búsqueda de **objetos de actividad** > **elemento**.
+- For Exchange Online impersonation events, you can now filter by the permission level used - delegated, admin, or delegated admin. You can search for events displaying the impersonation level that interests you in the **Activity log** by searching for **Activity objects** > **Item**.
 - En el cajón de aplicaciones de la pestaña **Permisos de la aplicación** de aplicaciones Office 365, ahora puede ver el **publicador** de cada aplicación. También puede utilizar el publicador como un filtro para la investigación de las aplicaciones adicionales del mismo publicador.
 - Las direcciones IP de riesgo aparecen ahora como un factor de riesgo independiente en lugar de ponderado en el factor de riesgo de la **ubicación** general. 
 - Cuando las etiquetas de Azure Information Protection están deshabilitadas en un archivo, las etiquetas deshabilitadas aparecerán como deshabilitadas en Cloud App Security. No se mostrarán las etiquetas eliminadas.
@@ -684,6 +684,6 @@ Fecha de publicación: 15 de mayo de 2016
 
 ### <a name="next-steps"></a>Pasos siguientes 
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

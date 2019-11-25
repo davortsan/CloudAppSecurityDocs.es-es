@@ -15,12 +15,12 @@ ms.assetid: 081c2cf4-2750-4546-9490-4b65e87ae48c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f2d2fc6ef5753cbca977e785249ddf61a3664eb5
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 6e2464988eb075e3dd3bd345716b5ec71dec8ba6
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72334438"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460840"
 ---
 # <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
@@ -48,4 +48,4 @@ Debe ser un administrador global, un administrador de cumplimiento o un administ
 ## <a name="next-steps"></a>Pasos siguientes  
 Para obtener información sobre cómo usar y configurar directivas para controlar el uso de la aplicación de la nube, vea [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).   
 
-Los clientes Premier también pueden elegir Cloud App Security directamente desde el [Portal Premier](https://premier.microsoft.com/).  
+[!INCLUDE [Open support ticket](includes/support.md)]  

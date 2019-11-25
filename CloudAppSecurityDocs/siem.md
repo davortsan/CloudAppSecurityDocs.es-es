@@ -1,6 +1,6 @@
 ---
-title: Integración de SIEM genérica con Cloud App Security
-description: En este artículo se proporciona información sobre cómo integrar el SIEM genérico con Cloud App Security.
+title: Generic SIEM integration with Cloud App Security
+description: This article provides information integrating your generic SIEM with Cloud App Security.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -13,30 +13,30 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b4d0cce7d6f46b362ad75c7316bc799bdba008a6
-ms.sourcegitcommit: 2c2a14a58492990be5bbac88ff9beb071d556c80
+ms.openlocfilehash: 1088cd9bb9f9ddcb1241c8ec97fb4f07b29fed46
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73198738"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460348"
 ---
 # <a name="generic-siem-integration"></a>Integración de SIEM genérica
 
 *Se aplica a: Microsoft Cloud App Security*
 
-Puede integrar Microsoft Cloud App Security con el servidor de SIEM genérico para habilitar la supervisión centralizada de alertas y actividades de aplicaciones conectadas. A medida que las aplicaciones conectadas admiten nuevos eventos y actividades, podrá supervisarlas en Microsoft Cloud App Security. La integración de un servicio SIEM le permite proteger mejor sus aplicaciones de nube a la vez que mantiene el flujo de trabajo de seguridad habitual, automatizando así los procedimientos de seguridad y estableciendo correlaciones entre eventos basados en la nube y eventos locales. El agente SIEM de Microsoft Cloud App Security se ejecuta en el servidor y extrae las alertas y las actividades de Microsoft Cloud App Security y las transmite al servidor SIEM.
+You can integrate Microsoft Cloud App Security with your generic SIEM server to enable centralized monitoring of alerts and activities from connected apps. A medida que las aplicaciones conectadas admiten nuevos eventos y actividades, podrá supervisarlas en Microsoft Cloud App Security. La integración de un servicio SIEM le permite proteger mejor sus aplicaciones de nube a la vez que mantiene el flujo de trabajo de seguridad habitual, automatizando así los procedimientos de seguridad y estableciendo correlaciones entre eventos basados en la nube y eventos locales. El agente SIEM de Microsoft Cloud App Security se ejecuta en el servidor y extrae las alertas y las actividades de Microsoft Cloud App Security y las transmite al servidor SIEM.
 
 Cuando integre por primera vez su SIEM con Cloud App Security, las actividades y las alertas de los dos últimos días se reenviarán al SIEM, así como todas las actividades y alertas (en función del filtro seleccionado) que se produzcan a partir de entonces. Si deshabilita esta característica durante un período prolongado y la habilita de nuevo, se reenviarán las alertas y las actividades de los dos últimos días, así como las que se produzcan a partir de entonces.
 
-Entre las soluciones de integración adicionales se incluyen:
+Additional integration solutions include:
 
-* **Azure Sentinel** : un Siem escalable y nativo en la nube para la integración nativa. Para obtener información sobre la integración con Azure Sentinel, consulte [integración de centinela de Azure](siem-sentinel.md).
-* **Microsoft Security Graph API** : un servicio intermediario (o agente) que proporciona una única interfaz de programación para conectar varios proveedores de seguridad. Para obtener más información, consulte [integración de soluciones de seguridad con la API de seguridad de Microsoft Graph](https://docs.microsoft.com/graph/security-integration#list-of-connectors-from-microsoft).
+* **Azure Sentinel** - A scalable, cloud-native SIEM and SOAR for native integration. For information about integrating with Azure Sentinel, see [Azure Sentinel integration](siem-sentinel.md).
+* **Microsoft security graph API** - An intermediary service (or broker) that provides a single programmatic interface to connect multiple security providers. For more information, see [Security solution integrations using the Microsoft Graph Security API](https://docs.microsoft.com/graph/security-integration#list-of-connectors-from-microsoft).
 
 > [!IMPORTANT]
-> Si está integrando la protección contra amenazas avanzada de Azure en Cloud App Security y ambos servicios están configurados para enviar notificaciones de alerta a un SIEM, comenzará a recibir notificaciones SIEM duplicadas para la misma alerta. Se emitirá una alerta para todos los servicios y tendrán id. de alerta distintas. Para evitar la duplicación y la confusión, asegúrese de controlar el escenario. Por ejemplo, decida dónde desea realizar la administración de alertas y, a continuación, detenga las notificaciones de SIEM que se envían desde el otro servicio.
+> If you are integrating Azure Advanced Threat Protection in Cloud App Security and both services are configured to send alert notifications to a SIEM, you'll start to receive duplicate SIEM notifications for the same alert. Se emitirá una alerta para todos los servicios y tendrán id. de alerta distintas. To avoid duplication and confusion, make sure to handle the scenario. For example, decide where you intend to perform alert management, and then stop SIEM notifications being sent from the other service.
 
-## <a name="generic-siem-integration-architecture"></a>Arquitectura de integración de SIEM genérica
+## <a name="generic-siem-integration-architecture"></a>Generic SIEM integration architecture
 
 El agente SIEM se implementa en la red de su organización. Una vez implementado y configurado, extrae los tipos de datos que se han configurado (alertas y actividades) mediante las API de RESTful de Cloud App Security.
 El tráfico se envía a través de un canal HTTPS cifrado en el puerto 443.
@@ -71,11 +71,11 @@ La integración con SIEM se realiza en tres pasos:
 
 ### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>Paso 1: configuración en el portal de Cloud App Security
 
-1. En el portal de Cloud App Security, en el engranaje de **configuración** , haga clic en **extensiones de seguridad**.
+1. In the Cloud App Security portal, under the **Settings** cog, click **Security extensions**.
 
-1. En la pestaña **agentes Siem** , haga clic en agregar ( **+** ) y, a continuación, elija **Siem genérico**.
+1. On the **SIEM agents** tab, click add ( **+** ), and then choose **Generic SIEM**.
 
-    ![Captura de pantalla que muestra el menú Agregar integración de SIEM](media/siem0.png)
+    ![Screenshot showing Add SIEM integration menu](media/siem0.png)
 
 1. En el asistente, haga clic en **Iniciar asistente**.
 1. En el asistente, asigne un nombre, **seleccione el formato SIEM** y establezca la **Configuración avanzada** que esté relacionada con ese formato. Haga clic en **Siguiente**.
@@ -110,7 +110,7 @@ La integración con SIEM se realiza en tres pasos:
 > - El nombre de archivo puede diferir dependiendo de la versión del agente SIEM.
 > - Los parámetros entre corchetes [  ] son opcionales y solo deben usarse si procede.
 > - Se recomienda ejecutar el archivo JAR mientras el servidor se inicia.
->   - Windows: ejecute como una tarea programada y asegúrese de configurar la tarea para que se **ejecute si el usuario ha iniciado sesión o no** y desactive la casilla **detener la tarea si se ejecuta durante más tiempo que** .
+>   - Windows: Run as a scheduled task and make sure that you configure the task to **Run whether the user is logged on or not** and that you uncheck the **Stop the task if it runs longer than** checkbox.
 >   - Linux: agregue el comando run con un símbolo **&** al archivo rc.local. Por ejemplo: `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
 
 Se usan las variables siguientes:
@@ -210,4 +210,4 @@ Para eliminar el agente SIEM, haga clic en los tres puntos al final de la fila d
 
 [Solución de problemas de integración de SIEM](troubleshooting-siem.md)
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

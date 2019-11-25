@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 12e09ac4a3f7e15aecbdac15c781e59f618850ac
-ms.sourcegitcommit: aa227a88d09eff15953d10663386f85ff68095b3
+ms.openlocfilehash: baa86eb5a0d21a69fd747e0d7ef1c4d5863deddf
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74203517"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460783"
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Docker en Ubuntu y RHEL locales
 
@@ -29,7 +29,7 @@ Puede configurar la carga de registros automática para informes continuos en Cl
 
 ## <a name="technical-requirements"></a>Requisitos técnicos
 
-* SO: Ubuntu 14,04, 16,04 y 18,04; RHEL 7,2 o posterior, o de la versión 7,2 o superior 
+* OS: Ubuntu 14.04, 16.04, and 18.04; RHEL 7.2 or higher, or CentOS 7.2 or higher 
 
 * Espacio en disco: 250 GB
 
@@ -40,7 +40,7 @@ Puede configurar la carga de registros automática para informes continuos en Cl
 * Configuración del firewall, tal como se describe en [Requisitos de red](network-requirements.md#log-collector)
 
 > [!NOTE]
-> Si tiene un recopilador de registros existente y desea quitarlo antes de implementarlo de nuevo, o si simplemente desea quitarlo, ejecute los siguientes comandos:
+> If you have an existing log collector and want to remove it before deploying it again, or if you simply want to remove it, run the following commands:
 >
 > ```console
 > docker stop <collector_name>
@@ -68,7 +68,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 1. Cree un origen de datos coincidente para cada firewall o servidor proxy desde el que quiera cargar registros.
 
     1. Haga clic en **Agregar origen de datos**.  
-    ![agregar un origen de datos](media/add-data-source.png)
+    ![Add a data source](media/add-data-source.png)
     1. **Ponga nombre** al servidor proxy o firewall.  
     ![ubuntu1](media/ubuntu1.png)
     1. Seleccione el dispositivo en la lista **Origen**. Si selecciona **Formato de los registros personalizados** para trabajar con un dispositivo de red que no aparezca en la lista, consulte el artículo sobre cómo [trabajar con el analizador de registros personalizados](custom-log-parser.md) para ver las instrucciones de configuración.
@@ -88,11 +88,11 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
     1. Haga clic en **Agregar recopilador de registros**.
     1. Ponga **nombre** al recopilador de registros.
     1. Escriba la **dirección IP de host** de la máquina que se va a usar para implementar Docker. La dirección IP del host puede reemplazarse con el nombre del equipo si un servidor DNS (o equivalente) resolverá el nombre de host.
-    1. Seleccione todos los **orígenes de datos** que desea conectar al recopilador y haga clic en **Actualizar** para guardar la configuración.
+    1. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration.
 
     ![ubuntu2](media/ubuntu2.png)
 
-1. Aparecerá más información de implementación. **Copie** el comando de ejecución desde el cuadro de diálogo. Puede usar el icono Copiar al Portapapeles. ![icono copiar al portapapeles](media/copy-icon.png)
+1. Aparecerá más información de implementación. **Copie** el comando de ejecución desde el cuadro de diálogo. Puede usar el icono Copiar al portapapeles. ![icono copiar al portapapeles](media/copy-icon.png)
 
 1. **Exporte** la configuración de origen de datos esperada. Esta configuración describe cómo debe establecer la exportación de registro en los dispositivos.
 
@@ -102,7 +102,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
     >
     > * Un único recopilador de registros puede administrar varios orígenes de datos.
     > * Copie el contenido de la pantalla, ya que necesitará la información al configurar el recopilador de registros para comunicarse con Cloud App Security. Si ha seleccionado Syslog, esta información incluirá información sobre el puerto en el que escucha el agente de escucha de Syslog.
-    > * Para que los usuarios envíen datos de registro a través de FTP por primera vez, se recomienda cambiar la contraseña del usuario de FTP. Para obtener más información, consulte [cambiar la contraseña de FTP](log-collector-ftp.md#changing-the-ftp-password).
+    > * For users sending log data via FTP for the first time, we recommend changing the password for the FTP user. For more information, see [Changing the FTP password](log-collector-ftp.md#changing-the-ftp-password).
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>Paso 2: Implementación local de la máquina
 
@@ -140,7 +140,7 @@ En los pasos siguientes se describe la implementación de Ubuntu. Los pasos de i
 
 1. Ejecute el comando siguiente para comprobar si el recopilador se ejecuta correctamente: `docker logs <collector_name>`
 
-Debería ver el mensaje: **finalizó correctamente.** 
+You should see the message: **Finished successfully!** 
 ![ubuntu8](media/ubuntu8.png)
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Paso 3: Configuración local de los dispositivos de red
@@ -174,6 +174,6 @@ Compruebe que se cargan los registros de Cloud App Security y que se generan los
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Configuración de FTP del recopilador de registros](log-collector-ftp.md)
+> [Log collector FTP configuration](log-collector-ftp.md)
 
-[Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

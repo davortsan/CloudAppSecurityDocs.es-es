@@ -15,12 +15,12 @@ ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8830e76a266d9ab5fb0e552cccd6e73cbf2bc700
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: d6c535c0ae8abb280265d5ae2f9b5c92fe462905
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335643"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460910"
 ---
 # <a name="control"></a>Control
 
@@ -39,11 +39,11 @@ Después de echar un vistazo a las alertas abiertas, vaya al centro de directiva
 
      Si la directiva está establecida para detectar infracciones de cumplimiento normativo y alguien guarda números de tarjetas de crédito en archivos en OneDrive, tendrá una coincidencia en la directiva.  
 
-     ![Coincidencias de PCI](./media/pci-matches.png "Coincidencias de PCI")  
+     ![PCI matches](./media/pci-matches.png "coincidencias de PCI")  
 
 -   Seleccione la coincidencia para ver los archivos reales que han infringido la directiva.  
 
-     ![Coincidencias de contenido de PCI](./media/pci-content-matches.png "Coincidencias de contenido de PCI")  
+     ![PCI content matches](./media/pci-content-matches.png "coincidencias de contenido de PCI")  
 
      Puede seleccionar el propio archivo para obtener información sobre los archivos.  
 
@@ -51,14 +51,14 @@ Después de echar un vistazo a las alertas abiertas, vaya al centro de directiva
 
      Puede hacer clic en **Coincidencias** para ver los números de tarjeta de crédito reales.  
 
-     ![Coincidencias de contenido de números de tarjeta de crédito](./media/content-matches-ccn.png "coincidencias de contenido de números de tarjeta de crédito")  
+     ![Content matches credit card numbers](./media/content-matches-ccn.png "content matches credit card numbers")  
 
 ## <a name="apply-governance-actions"></a>Aplicar acciones de gobernanza  
 Puede aplicar acciones de gobernanza desde las directivas, desde las alertas y desde el registro **Archivo**.  
 
-Puede revisar y ver el estado de todas las acciones de gobernanza aplicadas anteriormente en cualquier momento si va al icono de engranaje **Configuración** y selecciona **Registro de gobernanza**. ![icono de configuración](./media/settings-icon.png "settings icon")
+Puede revisar y ver el estado de todas las acciones de gobernanza aplicadas anteriormente en cualquier momento si va al icono de engranaje **Configuración** y selecciona **Registro de gobernanza**. ![settings icon](./media/settings-icon.png "settings icon")
 
-Para volver a aplicar cualquier acción de gobernanza errónea, haga clic en el icono **Reintentar** para aplicarla de nuevo. ![Icono Reintentar](./media/retry-icon.png "retry icon")   
+Para volver a aplicar cualquier acción de gobernanza errónea, haga clic en el icono **Reintentar** para aplicarla de nuevo. ![Retry icon](./media/retry-icon.png "retry icon")   
 
 Hay acciones de gobernanza distintas según el tipo de directiva, de infracción y de aplicación.  
 
@@ -72,7 +72,7 @@ Puesto que las acciones correctoras utilizan las API del proveedor de la nube, p
 >   
 >  Para obtener orientación, puede utilizar el botón **Editar y obtener vista previa de resultados** de la sección **Filtros**.  
 
-![Editar la directiva de archivo y obtener una vista previa de resultados](./media/file-policy-edit-and-preview-results.png "Editar la directiva de archivo y obtener una vista previa de resultados")  
+![File policy edit and preview results](./media/file-policy-edit-and-preview-results.png "editar la directiva de archivo y obtener una vista previa de resultados")  
 
 ## <a name="migration"></a>Migración  
 Cloud App Security le ayuda a implementar las migraciones, ya que le informa de qué usuarios de la organización usan una determinada aplicación y le ofrece herramientas para supervisar la adopción de aplicaciones nuevas. También puede ayudarle a decidir qué tipos de aplicaciones debe ofrecer en la organización al proporcionarle las herramientas para saber lo que todos los usuarios ya están usando.  
@@ -86,7 +86,7 @@ Imagínese esta situación: hace poco adquirió Office 365 y quiere que todos lo
 
    1. En el **panel de Cloud Discovery**, elija **Dropbox** y luego la ficha **Dirección IP** o **Usuarios**.  
 
-   2. Haga clic en el icono de flecha **Exportar** y elija las opciones de exportación. ![Icono de flecha](./media/arrow-icon.png "arrow icon")
+   2. Haga clic en el icono de flecha **Exportar** y elija las opciones de exportación. ![Arrow icon](./media/arrow-icon.png "arrow icon")
 
 ### <a name="find-more-secure-alternatives"></a>Buscar alternativas más seguras  
 El catálogo de servicios de Cloud App Security puede ayudarle a encontrar alternativas adecuadas para la organización en sustitución de las aplicaciones de riesgo que los usuarios puedan estar utilizando.  
@@ -104,4 +104,4 @@ Imagínese esta situación: está pensando en comprar una herramienta de product
 ## <a name="next-steps"></a>Pasos siguientes
 Para obtener información sobre cómo usar y configurar directivas para controlar el uso de la aplicación de la nube, consulte [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).   
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

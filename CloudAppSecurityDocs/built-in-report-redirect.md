@@ -15,12 +15,12 @@ ms.assetid: a9660e5b-d5bd-4a32-8cb9-0de70af6f1e9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: dd064eb77955213a8fbcb2c655a86678ca4f0db8
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: d72344a45a744ceb21d8387d5991e9d895fd274d
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335511"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460902"
 ---
 # <a name="how-to-find-built-in-deprecating-reports"></a>Búsqueda de informes integrados en desuso
 
@@ -50,6 +50,6 @@ Esta tabla le ayudará a ver la información proporcionada por los informes en d
 ## <a name="next-steps"></a>Pasos siguientes 
 [Control](control.md)   
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

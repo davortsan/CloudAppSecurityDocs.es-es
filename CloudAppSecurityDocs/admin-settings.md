@@ -15,12 +15,12 @@ ms.assetid: 85cae50d-f571-4907-9600-da4cc187b43b
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bfd81bc490b0620a9dfdf8534017feb0c6003ed0
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 91f7a9571391ef7e5f65e7151a60d4f6e2c8babc
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72334836"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74458994"
 ---
 # <a name="admin-user-settings"></a>Configuración de usuario de administración
 
@@ -33,14 +33,14 @@ Para configurar sus preferencias como un administrador de Microsoft Cloud App Se
   
 1.  Haga clic en **Configuración de la cuenta**. Aquí puede configurar y renovar la contraseña para acceder al portal de Cloud App Security.  
   
-     ![configuración de usuario personalizada](./media/custom-user-settings.png "configuración de usuario personalizada")  
+     ![custom user settings](./media/custom-user-settings.png "configuración de usuario personalizada")  
   
 2.  Haga clic en **Notificaciones** y establezca las preferencias de notificación de texto y correo electrónico para los mensajes recibidos del sistema.  Puede establecer la gravedad que determina para qué alertas e infracciones desea recibir correos electrónicos. La gravedad se establece por directiva, así que cuando se desencadenen infracciones, recibirá una notificación de correo según esta configuración y la configuración de gravedad de la directiva que se ha infringido. Los correos se envían al alias asociado con la cuenta de usuario de administrador que se ha usado para iniciar sesión en Cloud App Security. Escriba un número de teléfono para permitir que Cloud App Security le envíe mensajes de texto cuando se envíen alertas y notificaciones y establezca el nivel de gravedad a partir del cual quiera recibir notificaciones por mensaje de texto.  
   
     > [!NOTE] 
     > El número máximo de alertas que se enviarán por mensaje de texto es de diez al día por número de teléfono. El día se calcula según la zona horaria UTC. 
   
-    ![configuración de notificación](./media/notification-settings.png "configuración de notificación")  
+    ![notification settings](./media/notification-settings.png "configuración de notificación")  
   
 3. Cuando termine, haga clic en **Guardar**.  
   
@@ -51,6 +51,6 @@ Para configurar sus preferencias como un administrador de Microsoft Cloud App Se
 ## <a name="next-steps"></a>Pasos siguientes  
 [Configurar Cloud Discovery](set-up-cloud-discovery.md)   
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

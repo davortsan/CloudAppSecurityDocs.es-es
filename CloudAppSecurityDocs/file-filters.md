@@ -15,12 +15,12 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c7c7912a0b9363ce7f5375038914ea62d4606262
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: c7c42715eeb5aed583e85372b4560b61cc917be4
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084661"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74458829"
 ---
 # <a name="files"></a>Archivos
 
@@ -30,11 +30,11 @@ Para proporcionar protección de datos, Microsoft Cloud App Security le ofrece v
 
 ## <a name="file-filter-examples"></a>Ejemplos de filtros de archivo
 
-Por ejemplo, use la página **Archivos** para proteger archivos compartidos de forma externa etiquetados como **confidenciales**, de la siguiente forma: después de conectar una aplicación a Cloud App Security, intégrela con Azure Information Protection. Luego, en la página **Archivos**, filtre los archivos etiquetados con **confidencial** y excluya su dominio en el filtro **Colaboradores**. Si ve que hay archivos confidenciales compartidos fuera de la organización, puede crear una directiva de archivo para detectarlos. Puede aplicar acciones de gobernanza automáticas a estos archivos, tales como **Quitar colaboradores externos** y **Enviar un resumen de coincidencias de directiva al propietario del archivo** para evitar la pérdida de datos a la organización.
+Por ejemplo, use la página **Archivos** para proteger de forma externa archivos compartidos etiquetados como **confidenciales** de la siguiente manera: después de conectar una aplicación a Cloud App Security, intégrela con Azure Information Protection. Luego, en la página **Archivos**, filtre los archivos etiquetados con **confidencial** y excluya su dominio en el filtro **Colaboradores**. Si ve que hay archivos confidenciales compartidos fuera de la organización, puede crear una directiva de archivo para detectarlos. Puede aplicar acciones de gobernanza automáticas a estos archivos, tales como **Quitar colaboradores externos** y **Enviar un resumen de coincidencias de directiva al propietario del archivo** para evitar la pérdida de datos a la organización.
 
  ![Filtro de archivos confidenciales](media/file-filter-confidential.png)
 
-Este es otro ejemplo de cómo puede usar la página **Archivos**. Asegúrese de que nadie de la organización comparte de forma pública o externa archivos que no se han modificado en los últimos seis meses: conecte una aplicación a Cloud App Security y vaya a la página **Archivos**. Filtre los archivos cuyo nivel de acceso es **Externo** o **Público**, y establezca la fecha de **Última modificación** en hace seis meses. Cree una directiva de archivo que detecte estos archivos obsoletos públicos haciendo clic en **Nueva directiva de búsqueda**. Aplique acciones de gobernanza automáticas, como **Quitar usuarios externos**, para evitar la pérdida de datos a la organización.
+Este es otro ejemplo de cómo puede usar la página **Archivos**. Asegúrese de que nadie en la organización está compartiendo de forma pública o externa archivos que no se han modificado en los últimos seis meses: conecte una aplicación a Cloud App Security y vaya a la página **Archivos**. Filtre los archivos cuyo nivel de acceso es **Externo** o **Público**, y establezca la fecha de **Última modificación** en hace seis meses. Cree una directiva de archivo que detecte estos archivos obsoletos públicos haciendo clic en **Nueva directiva de búsqueda**. Aplique acciones de gobernanza automáticas, como **Quitar usuarios externos**, para evitar la pérdida de datos a la organización.
 
  ![Filtro de archivo obsoleto externo](media/file-example-stale-external.png)
 
@@ -107,7 +107,7 @@ A continuación se muestra una lista de los filtros de archivo que se pueden apl
 - **Tipo de archivo**: Cloud App Security toma el tipo MIME recibido del servicio y examina el archivo para determinar el tipo de archivo real. Este examen se aplica a archivos pertinentes para el examen de datos (documentos, imágenes, presentaciones, hojas de cálculo, texto y archivos de almacenamiento o ZIP). El filtro funciona por tipo de archivo o carpeta. Por ejemplo, Todas las carpetas que son… o Todos los archivos de hoja de cálculo que son...
 
 
-   ![filtros en papelera de archivo de directiva](./media/policy_file-filters-trash.png "filtros en papelera de archivo de directiva")  
+   ![policy_file filters trash](./media/policy_file-filters-trash.png "filtros en papelera de archivo de directiva")  
 
   
 - **En la papelera**: excluye o incluye archivos que se encuentran en la carpeta de la papelera. Estos archivos siguen pudiendo compartirse y suponen un riesgo.  
@@ -128,32 +128,32 @@ A continuación se muestra una lista de los filtros de archivo que se pueden apl
   
 También puede establecer la directiva para que se ejecute en determinados archivos estableciendo el filtro **Se aplica a**. Filtre por **Todos los archivos**, **Carpetas seleccionadas**, o bien **Todos los archivos excepto las carpetas seleccionadas**. Después, seleccione los archivos o carpetas que son relevantes.  
   
-![filtro Aplicar a](./media/apply-to-filter.png "filtro Aplicar a")  
+![apply to filter](./media/apply-to-filter.png "filtro Aplicar a")  
 <!-- 
 >[!NOTE]
 > If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon](./media/clear-filters.png).
 -->
 
-## <a name="authorizing-files"></a>Autorización de archivos
+## <a name="authorizing-files"></a>Authorizing files
 
-Una vez que Cloud App Security ha identificado los archivos como un riesgo de malware o DLP, recomendamos que investigue los archivos. Si determina que los archivos son seguros, puede autorizarlos. La autorización de un archivo quita el informe de detección de malware y suprime futuras coincidencias en este archivo.
+After Cloud App Security has identified files as posing a malware or DLP risk, we recommend that you investigate the files. If you determine that the files are safe, you can authorize them. La autorización de un archivo quita el informe de detección de malware y suprime futuras coincidencias en este archivo.
 
-### <a name="to-authorize-files"></a>Para autorizar archivos
+### <a name="to-authorize-files"></a>To authorize files
 
-1. En Cloud App Security, haga clic en **control** y luego en **directivas**.
-1. En la lista de directivas, en la fila en la que aparece la Directiva que desencadenó la investigación, en la columna **recuento** , haga clic en el vínculo coincidencias.
+1. In Cloud App Security, click **Control** and then **Policies**.
+1. In the list of policies, on the row in which the policy that triggered the investigation appears, in the **Count** column, click the matches link.
     > [!TIP]
-    > Puede filtrar la lista de directivas por tipo. En la tabla siguiente se enumeran, por tipo de riesgo, el tipo de filtro que se va a usar:
+    > You can filter the list of policies by type. The following table lists, per risk type, which filter type to use:
     >
-    > | Tipo de riesgo | Tipo de filtro |
+    > | Risk type | Filter type |
     > | --- | --- |
     > | DLP | Directiva de archivo |
-    > | Malware | Directiva de detección de malware |
-1. En la lista de archivos coincidentes, en la fila en la que aparece el archivo en investigación, haga clic en **autorizar**.
+    > | Malware | Malware detection policy |
+1. In the list of matched files, on the row in which the file under investigation appears, click **Authorize**.
 
 ## <a name="working-with-the-file-drawer"></a>Uso del cajón de archivos
 
-Puede ver más información sobre un archivo si hace clic en él en el registro de archivos. Al hacer clic en se abre el **cajón de archivos** que proporciona las siguientes acciones adicionales que puede realizar en el archivo:
+Puede ver más información sobre un archivo si hace clic en él en el registro de archivos. Clicking opens the **File drawer** that provides the following additional actions you can take on the file:
 
 - **Dirección URL**: le lleva a la ubicación del archivo.
 - **Identificadores de archivos**: abre una ventana emergente con los datos sin procesar sobre el archivo, como su id. o las claves de cifrado.
@@ -163,7 +163,7 @@ Puede ver más información sobre un archivo si hace clic en él en el registro 
 
 Los campos del cajón de archivos proporcionan vínculos contextuales a archivos adicionales y exploran en profundidad lo que desea realizar desde el cajón directamente. Por ejemplo, si mueve el cursor junto al campo **Propietario**, puede usar el icono "Agregar a filtro" ![Agregar a filtro](./media/add-to-filter-icon.png) para agregar el propietario inmediatamente al filtro de la página actual. También puede utilizar el icono de engranaje de configuración ![icono de configuración](./media/contextual-settings-icon.png) que aparece para llegar directamente a la página de configuración necesaria para modificar la configuración de uno de los campos, como **Etiquetas de clasificación**.
 
-![cajón de archivo](./media/file-drawer.png "cajón de archivo")  
+![File drawer](./media/file-drawer.png "Cajón de archivos")  
   
 Para obtener una lista de las acciones de gobernanza disponibles, consulte [Acciones de gobernanza de archivos](governance-actions.md#file-governance-actions).
 
@@ -171,4 +171,4 @@ Para obtener una lista de las acciones de gobernanza disponibles, consulte [Acci
   
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

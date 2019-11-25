@@ -15,12 +15,12 @@ ms.assetid: 776e834f-3c20-4d5f-9fab-4c5b975edb06
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 457d2cfd0a5b1c25b8463a8d48e3172c044a673e
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 4dabcc39d9688b8595b574b6806bcc7eb3e8780b
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084138"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74458736"
 ---
 # <a name="log-collector-ftp-configuration"></a>Configuración de FTP del recopilador de registros
 
@@ -36,7 +36,7 @@ Es posible que deba modificar la configuración de Docker de Cloud Discovery par
 
 1. Conéctese al host del recopilador de registros.
 
-2. Ejecute `docker exec -it <collector name> pure-pw passwd <ftp user>`
+2. Ejecute `docker exec -it <collector name> pure-pw passwd <ftp user>`:
 
     1. Escriba la nueva contraseña.
     2. Vuelva a escribir la nueva contraseña para confirmarla.
@@ -69,4 +69,4 @@ Siga este procedimiento para personalizar los archivos de certificado que utiliz
 
 [Implementar Cloud Discovery](set-up-cloud-discovery.md)
 
-[Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier](https://premier.microsoft.com/).
+[!INCLUDE [Open support ticket](includes/support.md)]

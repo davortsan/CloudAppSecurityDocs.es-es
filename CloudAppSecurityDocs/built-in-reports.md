@@ -15,12 +15,12 @@ ms.assetid: 0dcc3c35-f787-4822-84c6-d4dff897dd6c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: debfe7e7cd464420e26d4619f2303c69d6a14363
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: a9dfc6e859b28450d32fcb7ce925ad5209dd0c5f
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335458"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74458347"
 ---
 # <a name="generate-data-management-reports"></a>Generar informes de administración de datos
 
@@ -56,6 +56,6 @@ Se muestran los usuarios que comparten archivos corporativos con el exterior. Lo
 ## <a name="next-steps"></a>Pasos siguientes 
 [Control](control.md)   
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

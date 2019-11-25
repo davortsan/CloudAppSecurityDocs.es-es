@@ -15,12 +15,12 @@ ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b5c87765b8a87beec784fb580b90d21d2c5e4596
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: f184081a9911cb04a281419ae5c8f2048c7a690d
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335713"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461390"
 ---
 # <a name="working-with-the-dashboard"></a>Trabajo con el panel
 
@@ -48,10 +48,10 @@ En el panel de Cloud App Security se proporciona una visión general de las acti
 
 Es recomendable que eche un vistazo al panel a diario para ver qué nuevas alertas se han activado. Es un buen lugar para vigilar el estado de su entorno de nube. Con el panel puede hacerse una idea de lo que sucede.  
 
-![Panel de Cloud App Security](./media/dashboard.png "Panel de Cloud App Security")  
+![Cloud App Security dashboard](./media/dashboard.png "panel")  
 
 
 ## <a name="next-steps"></a>Pasos siguientes  
 Para obtener más información acerca de la investigación de alertas, consulte [Investigar](investigate.md).  
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

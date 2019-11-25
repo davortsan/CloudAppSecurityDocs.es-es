@@ -15,12 +15,12 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ce5cd7c341a6d255572763b879181ef2ca8f0cd6
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 0b0db06ebce6bb5757adbdc1439d332a20f063e6
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72334967"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461170"
 ---
 # <a name="activities"></a>Actividades
 
@@ -72,10 +72,10 @@ Para ver más información sobre cada actividad, haga clic en la misma actividad
  - Ver las actividades del mismo tipo
  - Ver todas las actividades del mismo usuario
  - Ver las actividades de la misma dirección IP
- - Ver las actividades de la misma ubicación geográfica
+ - View activities from the same geographic location
  - Ver las actividades del mismo período (48 horas)
  
-![cajón de actividades](./media/activity-drawer.png "cajón de actividades")  
+![activity drawer](./media/activity-drawer.png "cajón de actividades")  
   
 Para obtener una lista de las acciones de control disponibles, vea [Acciones de control de actividades](governance-actions.md#activity-governance-actions).
 
@@ -136,6 +136,6 @@ En el **Registro de actividad**, en la esquina superior derecha, haga clic en el
 ## <a name="next-steps"></a>Pasos siguientes  
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

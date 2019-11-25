@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a0fd462818e843556820a1a54a6c1d3a0b9c90ea
-ms.sourcegitcommit: be21e0f68f5e4d23bde661485bd9338e74bd6e45
+ms.openlocfilehash: 7b333509cd00b2a17b3a3984da30e4e8142daf88
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71307699"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460748"
 ---
 # <a name="control-cloud-apps-with-policies"></a>Controlar las aplicaciones en la nube con directivas
 
@@ -35,7 +35,7 @@ Cuando consulta la página **Directiva**, se pueden distinguir las distintas pol
 
 Pueden crearse los siguientes tipos de directivas:
 
-|Icono de tipo de directiva|Tipo de directiva|Use|
+|Icono de tipo de directiva|Tipo de directiva|Utilice los|
 |-----|-----------------|---------|
 |![Icono de directiva de acceso](./media/proxy-policy.png)|Directiva de acceso|Las directivas de acceso proporcionan funcionalidades de supervisión y control en tiempo real de los inicios de sesión de usuario en las aplicaciones en la nube.|
 |![icono de directiva de actividad](./media/activity_policy.png)|Directiva de actividad|Las directivas de actividad permiten aplicar toda una variedad de procesos automatizados usando las API del proveedor de aplicaciones. Estas directivas permiten supervisar actividades concretas realizadas por distintos usuarios o seguir niveles inesperadamente altos de un determinado tipo de actividad.|
@@ -49,15 +49,15 @@ Pueden crearse los siguientes tipos de directivas:
 
 Cloud App Security ayuda a mitigar los distintos riesgos en la nube. Puede configurar cualquier directiva y alerta de modo que esté asociada con uno de los siguientes riesgos:
 
-- **Control de acceso**: ¿quién accede a qué desde dónde?
+- **Control de acceso:** ¿quién accede a qué desde dónde?
 
     Se supervisa el comportamiento en todo momento, se detectan actividades anómalas (incluidos ataques internos y externos de alto riesgo) y se aplica una directiva para alertar, bloquear o exigir verificación de identidad para cualquier aplicación o acción concreta dentro una aplicación. Se habilitan directivas de control de acceso locales y móviles basadas en el usuario, el dispositivo y la geografía con bloqueo general y vista, edición y bloqueo pormenorizados. Se detectan eventos de inicio de sesión sospechosos, incluidos errores de autenticación multifactor, errores de inicio de sesión de cuentas deshabilitadas y eventos de suplantación.
 
-- **Cumplimiento normativo**: ¿se infringen los requisitos de cumplimiento normativo?
+- **Cumplimiento normativo:** ¿se infringen los requisitos de cumplimiento normativo?
 
     Se catalogan y se identifican los datos confidenciales o regulados, incluidos los permisos de uso compartido de cada archivo, almacenados en servicios de sincronización de archivos para garantizar el cumplimiento de normas como PCI, SOX e HIPAA.
 
-- **Control de configuración**: ¿se están realizando cambios no autorizados en la configuración?
+- **Control de configuración:** ¿se están realizando cambios no autorizados en la configuración?
 
     Se supervisan los cambios de configuración, incluida la manipulación de la configuración remota.
 
@@ -69,15 +69,15 @@ Cloud App Security ayuda a mitigar los distintos riesgos en la nube. Puede confi
 
     La integración DLP local proporciona integración y corrección de bucle cerrado con soluciones DLP locales existentes.
 
-- **Cuentas con privilegios**: ¿es necesario supervisar cuentas de administrador?
+- **Cuentas con privilegios:** ¿es necesario supervisar cuentas de administrador?
 
     Supervisión de actividad en tiempo real e informes de usuarios con privilegios y administradores.
 
-- **Control de uso compartido**: ¿cómo se comparten los datos en el entorno de nube?
+- **Control de uso compartido:** ¿cómo se comparten los datos en el entorno de nube?
 
     Inspeccione el contenido de archivos y el contenido en la nube y aplique directivas de uso compartido internas y externas. Supervise la colaboración y aplique directivas de uso compartido, por ejemplo el bloqueo del uso compartido de los archivos fuera de la organización.
 
-- **Detección de amenazas**: ¿hay actividades sospechosas que amenacen el entorno de nube?
+- **Detección de amenazas:** ¿hay actividades sospechosas que amenacen el entorno de nube?
 
     Reciba notificaciones en tiempo real de cualquier umbral de actividad o infracción de una directiva a través del correo electrónico o un mensaje de texto. La aplicación de algoritmos de aprendizaje automático de Cloud App Security permite detectar comportamientos que podrían indicar que un usuario está haciendo un uso indebido de los datos.
 
@@ -173,23 +173,23 @@ Después de crear una directiva, puede habilitarla o deshabilitarla. Si la desha
 
 De manera predeterminada, las directivas están habilitadas después de crearlas.
 
-## <a name="policies-overview-report"></a>Informe información general sobre directivas
+## <a name="policies-overview-report"></a>Policies overview report
 
-Cloud App Security le permite exportar un informe de información general de directivas que muestra métricas de alertas agregadas por directiva para ayudarle a supervisar, comprender y personalizar las directivas para proteger mejor su organización.
+Cloud App Security lets you export a policies overview report showing aggregated alert metrics per policy to help you monitor, understand, and customize your policies to better protect your organization.
 
-Para exportar un registro, realice los pasos siguientes:
+To export a log, perform the following steps:
 
-1. En la página **directivas** , haga clic en el botón **exportar** .
+1. In the **Policies** page, click the **Export** button.
 
-1. Especifique el intervalo de tiempo necesario.
+1. Specify the required time range.
 
-1. Haga clic en **exportar**. Este proceso puede tardar en completarse.
+1. Click **Export**. Este proceso puede tardar en completarse.
 
-Para descargar el informe exportado:
+To download the exported report:
 
 1. Una vez que el informe esté listo, vaya a **Configuración** y después a **Informes exportados**.
 
-1. En la tabla, seleccione el informe correspondiente en el **Informe información general** de la lista de directivas y haga clic en descargar.
+1. In the table, select the relevant report from the list of **Policies overview report** and click download.
 
     ![Botón de descarga](./media/download-button.png)
 
@@ -197,4 +197,4 @@ Para descargar el informe exportado:
 
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

@@ -1,6 +1,6 @@
 ---
-title: Solucionar problemas Control de aplicaciones de acceso condicional
-description: En este artículo se proporciona una lista de posibles problemas de Control de aplicaciones de acceso condicional y se proporcionan posibles soluciones.
+title: Troubleshoot Conditional Access App Control
+description: This article provides a list of possible Conditional Access App Control issues and provides possible resolutions.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -11,55 +11,55 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 6adcf8038a9e1135edd4663a73260030e08ec373
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 71126072096d9a2ba156c6c3e6b3c17dc0d619b3
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084883"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460111"
 ---
-# <a name="troubleshooting-conditional-access-app-control"></a>Solución de problemas Control de aplicaciones de acceso condicional
+# <a name="troubleshooting-conditional-access-app-control"></a>Troubleshooting Conditional Access App Control
 
 *Se aplica a: Microsoft Cloud App Security*
 
-En este artículo se prohvides una lista de posibles problemas de Control de aplicaciones de acceso condicional y se proporcionan posibles soluciones.
+This article prohvides a list of possible Conditional Access App Control issues and provides possible resolutions.
 
-## <a name="troubleshooting-onboarded-apps"></a>Solución de problemas de aplicaciones incorporadas
+## <a name="troubleshooting-onboarded-apps"></a>Troubleshooting onboarded apps
 
-### <a name="the-sign-in-to-the-app-is-not-working"></a>El inicio de sesión en la aplicación no funciona
+### <a name="the-sign-in-to-the-app-is-not-working"></a>The sign in to the app is not working
 
-1. En Cloud App Security, en la barra de menús, haga clic en el engranaje de configuración icono de configuración ![icono]de(./media/settings-icon.png "configuración") y seleccione **control de aplicaciones de acceso condicional**.
-1. En la lista de aplicaciones, en la fila en la que aparece la aplicación que está configurando, elija los tres puntos al final de la fila y, después, elija **Editar aplicación**.
-1. Haga clic en **control de nonce** para expandir la sección y, a continuación, seleccione **Habilitar el control de nonce**.
+1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon](./media/settings-icon.png "icono de configuración") and select **Conditional Access App Control**.
+1. In the list of apps, on the row in which the app you are configuring appears, choose the three dots at the end of the row, and then choose **Edit app**.
+1. Click **Nonce-handling** to expand the section and then select **Enable nonce handling**.
 
-    ![Captura de pantalla de la opción de control de nonce.](media/troubleshooing-nonce-handling.png)
-
-    > [!NOTE]
-    > Si experimenta problemas al navegar a las páginas de la aplicación que no sean la Página principal, consulte [solución de problemas de visitas posteriores a la aplicación no ir a la página esperada](#unexpected-page)
-
-### Las siguientes visitas a la aplicación no van a la página esperada<a name="unexpected-page"></a>
-
-Los pasos siguientes se basan en el uso de Fiddler como la herramienta de registro de tráfico. La experiencia puede ser diferente para otras herramientas. Para obtener más información sobre el uso de Fiddler, consulte la [forma más sencilla de recopilar el registro de Fiddler](https://blogs.msdn.microsoft.com/maheshk/2016/05/03/easy-way-to-collect-fiddler-log-fiddlercap/).
-
-1. Copie la dirección URL de la página de la aplicación que no vaya a la página esperada, ya que la necesitará más adelante.
+    ![Screenshot of nonce-handling option.](media/troubleshooing-nonce-handling.png)
 
     > [!NOTE]
-    > Asegúrese de que el dominio no incluya el sufijo de la dirección URL del Cloud App Security (por ejemplo, *. US2.CAS.ms*)
+    > If you experience problem navigating to app pages other than the home page, see [Troubleshooting subsequent visits to the app do not go to the expected page](#unexpected-page)
 
-1. Use una herramienta de registro de tráfico como Fiddler para supervisar la página.
-1. Vaya a la dirección URL que copió anteriormente y autentique si es necesario.
-1. En la herramienta de registro de tráfico, busque la solicitud que coincida con el dominio y la ruta de acceso en función del protocolo que esté usando.
+### Subsequent visits to the app do not go to the expected page<a name="unexpected-page"></a>
 
-    | Protocol | Dominio | Ruta de acceso | Nombre del campo de estado |
+The following steps are based on using Fiddler as the traffic logging tool. The experience may be different for other tools. For more information about using Fiddler, see [Easy way to collect fiddler log](https://blogs.msdn.microsoft.com/maheshk/2016/05/03/easy-way-to-collect-fiddler-log-fiddlercap/).
+
+1. Copy the URL of page in the app that doesn't go to the expected page - you need it later.
+
+    > [!NOTE]
+    > Ensure that the domain doesn't include the Cloud App Security URL suffix (e.g. *.us2.cas.ms*)
+
+1. Use a traffic logging tool such as Fiddler to monitor the page.
+1. Go to the URL that you copied earlier, and authenticate if required.
+1. In the traffic logging tool, search for the request matching the domain and path based on to the protocol you are using.
+
+    | Protocol | Dominio | Ruta | State field name |
     | --- | --- | --- | --- |
     | OIDC | `https://login.microsoftonline.com` | /common/oauth2/authorize | state |
     | SAML 2.0 | `https://login.microsoftonline.com` | /*id*/saml2 | RelayState |
 
-1. Seleccione la solicitud y, a continuación, en la pestaña **inspectores** , seleccione **WebForms**.
-1. Cree una cadena regex basada en el 
+1. Select the request, and then in the **Inspectors** tab, select **WebForms**.
+1. Create a regex string based on the 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 [Implementar Cloud Discovery](set-up-cloud-discovery.md)
 
-[Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier](https://premier.microsoft.com/).
+[!INCLUDE [Open support ticket](includes/support.md)]

@@ -15,12 +15,12 @@ ms.assetid: 828cc94a-248b-44f6-a1ba-c28c0a135f8c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 440739f3f8f3f735630c78c602761b636c8e5f9e
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: a02715120efe84707866b4b9e655e9d1d5fe5ace
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72336190"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460236"
 ---
 # <a name="troubleshooting-microsoft-cloud-app-security-policies"></a>Solución de problemas de directivas de Microsoft Cloud App Security | Microsoft Docs
 
@@ -40,5 +40,5 @@ En el gráfico siguiente se incluyen la descripción y la solución de los error
 
 [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
 
-[Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]
 

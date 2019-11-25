@@ -10,14 +10,14 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 490a2f56090973991fcb7e236310bd83b3012806
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 1f860400ec95d0aa2584eb1fd4a8682bb5a9ac58
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084872"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459581"
 ---
-# <a name="activity-policies"></a>Directivas de la actividad
+# <a name="activity-policies"></a>Directivas de actividad
 
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -37,7 +37,7 @@ Puede establecer que se le envíen alertas de actividad a usted o al usuario cua
 
 Para crear una nueva directiva de actividad, siga este procedimiento:
 
-1. En la consola, haga clic en **Control** seguido de **Directivas**.
+1. En la consola, haga clic en **Control**, seguido de **Directivas**.
 
 2. Haga clic en **Crear directiva** y seleccione **Directiva de actividad**.
 
@@ -47,9 +47,9 @@ Para crear una nueva directiva de actividad, siga este procedimiento:
 
 4. Para establecer qué acciones o qué otras métricas desencadenan esta directiva, trabaje con **filtros de actividad**.
     > [!NOTE]
-    > Para asegurarse de que solo se incluyen los resultados en los que el campo de filtro especificado tiene un valor, se recomienda volver a agregar el mismo campo mediante la prueba **set** . Por ejemplo, si el filtrado por **Ubicación** *no es igual* a una lista especificada de países, agregue también un filtro para **Ubicación** *establecida*. También puede obtener una vista previa de los resultados del filtro seleccionando **Editar y vista previa de los resultados**.
+    > To ensure you only include results where the specified filter field has a value, we recommend adding the same field again using the **is set** test. For example, when filtering by **Location** *does not equal* a specified list of countries, also add a filter for **Location** *is set*. You can also preview the filter results by selecting **Edit and preview results**.
     >
-    > ![Captura de pantalla de la configuración del filtro, donde se muestra el campo Ubicación](media/activity-example-location-isset.png)
+    > ![Screenshot of filter settings, showing location field is set](media/activity-example-location-isset.png)
 
 5. En **Activity match parameters** (Parámetros de coincidencia de actividad), seleccione cuándo se desencadenará una infracción de la directiva. Elija que se desencadene cuando una única actividad coincida con los filtros o solo cuando se detecte un número especificado de **actividades repetidas**.
     - Si elige **Actividad repetida**, puede establecer **En una única aplicación**. Esta configuración desencadenará una coincidencia de directiva solo cuando se producen las actividades repetidas en la misma aplicación. Por ejemplo, cinco descargas en 30 minutos desde Box desencadenan una coincidencia de directiva.
@@ -64,13 +64,13 @@ Observe estos ejemplos:
 
      Bajo el campo **Filtros de actividad**, configure los parámetros para los que se desencadenará la alerta.
 
-     ![Ejemplo de directiva de varios intentos de inicio de sesión erróneos](./media/multiple-failed-log-on-attempts-policy-example.png "ejemplo de directiva de varios intentos de inicio de sesión erróneos")
+     ![Policy example for multiple failed sign-in attempts](./media/multiple-failed-log-on-attempts-policy-example.png "ejemplo de directiva de varios intentos de inicio de sesión erróneos")
 
 - Frecuencia de descarga alta
 
      Puede establecer la directiva de modo que reciba una alerta cuando se produzca un nivel de actividad de descarga inesperado o inusitado. Para configurar este tipo de directiva, en el parámetro **Frecuencia**, elija los parámetros que desencadenen la alerta.
 
-     ![ejemplo de frecuencia de descarga alta](./media/high-download-rate-example.png "ejemplo de frecuencia de descarga alta")
+     ![high download rate example](./media/high-download-rate-example.png "ejemplo de frecuencia de descarga alta")
 
 ## <a name="activity-policy-reference"></a>Referencia de directiva de actividad
 
@@ -91,4 +91,4 @@ Cada directiva se compone de las siguientes partes:
 
 [Directivas de protección de datos](data-protection-policies.md)
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]
