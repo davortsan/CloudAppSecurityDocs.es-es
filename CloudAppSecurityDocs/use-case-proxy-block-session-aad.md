@@ -15,12 +15,12 @@ ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b7f4bc220c7643d8aaca34f409ceeb262d5358e4
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: a0c1699c3626e7582a3099b4481fce06ae5635d2
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72336097"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459573"
 ---
 # <a name="tutorial-block-download-of-sensitive-information"></a>Tutorial: bloqueo de las descargas de información confidencial 
 
@@ -122,6 +122,6 @@ Tras completar esta tarea, vaya al portal de Cloud App Security y cree una direc
   
 [Creación de directivas de sesión](session-policy-aad.md)   
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

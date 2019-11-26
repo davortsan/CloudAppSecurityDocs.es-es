@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: adb9c8cceaab8158c194256ccd1e5cb0ecbaaa8a
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: e27aa1efc0abfa5af6d7005015062b7d8c43dcac
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084355"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460694"
 ---
 # <a name="tutorial-investigate-risky-oauth-apps"></a>Tutorial: Investigación de aplicaciones de riesgo de OAuth
 
@@ -100,4 +100,4 @@ Después de determinar que una aplicación de OAuth es de riesgo, Cloud App Secu
 
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
 
-[Los clientes Premier también pueden crear una solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

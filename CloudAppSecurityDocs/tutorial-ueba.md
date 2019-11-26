@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: d7373fb53984b84095fb08522f2f1922c9a0b947
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 3b9bfce3be843a3c02b199ed2e7bd2c226d2378f
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72336133"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459746"
 ---
 # <a name="tutorial-investigate-risky-users"></a>Tutorial: Investigación de usuarios de riesgo
 
@@ -111,6 +111,6 @@ Si su investigación indica que un usuario está en peligro, siga estos pasos pa
 ## <a name="see-also"></a>Consulte también  
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Los clientes Premier también pueden elegir Cloud App Security directamente desde el Portal Premier.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   
