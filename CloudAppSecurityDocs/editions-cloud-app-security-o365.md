@@ -5,22 +5,21 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/6/2019
+ms.date: 11/17/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 48338744f06740b88262e4a6fade7ab174b37400
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: fcaf4dab75d85a392ad4b1f8607f9e43d2a9be4c
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335698"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459019"
 ---
 # <a name="what-are-the-differences-between-microsoft-cloud-app-security-and-office-365-cloud-app-security"></a>¿Cuáles son las diferencias entre Microsoft Cloud App Security y Office 365 Cloud App Security?
 
@@ -30,13 +29,13 @@ En este artículo se describen las diferencias entre Cloud App Security y Office
 
 Para información sobre las licencias, consulte la [hoja de datos de licencias de Microsoft Cloud App Security](https://aka.ms/mcaslicensing).
 
-## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security 
+## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
 Microsoft Cloud App Security es una solución completa entre SaaS que proporciona visibilidad detallada, controles de datos seguros y protección contra amenazas mejorada a las aplicaciones en la nube. Con este servicio, puede obtener visibilidad de Shadow IT mediante la detección de aplicaciones en la nube en uso. Puede controlar y proteger los datos en las aplicaciones una vez que las autorice para el servicio.
 
 ## <a name="office-365-cloud-app-security"></a>Office 365 Cloud App Security
 
-Office 365 Cloud App Security es un subconjunto de Microsoft Cloud App Security que ofrece una visibilidad y un control mejorados en Office 365. Office 365 Cloud App Security incluye detección de amenazas basada en registros de actividad de usuario, Shadow IT Discovery para aplicaciones con funcionalidades similares a las ofertas de Office 365 y permisos de aplicaciones de control para Office 365.
+Office 365 Cloud App Security es un subconjunto de Microsoft Cloud App Security que ofrece una visibilidad y un control mejorados en Office 365. Office 365 Cloud App Security incluye detección de amenazas basada en registros de actividad de usuario, detección de Shadow IT para aplicaciones con funcionalidades similares a las ofertas de Office 365, permisos de aplicaciones de control para Office 365 y aplicación de controles de sesión y acceso.
 
 ### <a name="feature-support"></a>Compatibilidad de las características
 
@@ -57,14 +56,13 @@ Office 365 Cloud App Security es un subconjunto de Microsoft Cloud App Security 
 ||Integración con soluciones DLP de terceros|Sí||
 |Detección de amenazas|Detección de anomalías y análisis de comportamiento|Para aplicaciones entre SaaS, incluido Office 365|Para aplicaciones de Office 365 |
 ||Corrección manual y automática de alertas|Sí|Sí|
-||Conector SIEM|Sí. Alertas y registros de actividad para aplicaciones entre SaaS.|Sí. Solo alertas de Office 365.|
+||Conector SIEM|Sí. Alertas y registros de actividad para aplicaciones entre SaaS.|Solo para alertas de Office 365|
 ||Integración con Microsoft Intelligent Security Graph|Sí|Sí|
 ||Directivas de actividad|Sí|Sí|
+|Control de aplicaciones de acceso condicional|Supervisión y control de sesiones en tiempo real|Cualquier aplicación en la nube y local|Para aplicaciones de Office 365|
 
+## <a name="next-steps"></a>Pasos siguientes
 
+Consulte los aspectos básicos en [Introducción a Cloud App Security](getting-started-with-cloud-app-security.md).
 
-## <a name="next-steps"></a>Pasos siguientes  
-
-Consulte los aspectos básicos en [Introducción a Cloud App Security](getting-started-with-cloud-app-security.md).    
-
-[Los clientes Premier también pueden crear una nueva solicitud de soporte técnico directamente en el portal Premier.](https://premier.microsoft.com/)   
+[!INCLUDE [Open support ticket](includes/support.md)].
