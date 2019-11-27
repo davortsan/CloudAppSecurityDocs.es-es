@@ -29,13 +29,13 @@ ms.locfileid: "74461344"
 Microsoft Cloud App Security le permite usar el servicio de clasificación de datos de Microsoft de forma nativa para clasificar los archivos de las aplicaciones en la nube. El servicio de clasificación de datos de Microsoft proporciona una experiencia de protección de información unificada en Office 365, Azure Information Protection y Microsoft Cloud App Security. Este servicio de clasificación permite ampliar el trabajo de clasificación de datos a las aplicaciones en la nube de terceros que están protegidas por Microsoft Cloud App Security, aprovechando las decisiones ya adoptadas en un número aún mayor de aplicaciones.
 
 >[!NOTE]
-> This feature is currently available in the US, Europe (except France), Australia, India, Canada, Japan, and APAC.
+> Esta característica está actualmente disponible en Estados Unidos, Europa (excepto Francia), Australia, India, Canadá, Japón y APAC.
 
 ## <a name="enable-content-inspection-with-data-classification-services"></a>Habilitar la inspección de contenido con los servicios de clasificación de datos
 
 Tiene la opción para establecer el **método de inspección** para que use el **servicio de clasificación de datos de Microsoft** sin ninguna configuración adicional necesaria. Esta opción es útil al crear una directiva de prevención de pérdida de datos para los archivos en Microsoft Cloud App Security.
 
-1. En la página [Directiva de archivo](data-protection-policies.md), en **Método de inspección** seleccione **Servicio de clasificación de datos**. You can also set the **Inspection method** in the [session policy](session-policy-aad.md) page with **Control file download (with DLP)** selected.
+1. En la página [Directiva de archivo](data-protection-policies.md), en **Método de inspección** seleccione **Servicio de clasificación de datos**. También puede establecer el **método de inspección** en la página [Directiva de sesión](session-policy-aad.md) con la opción **Descargar archivo de control (con DLP)** seleccionada.
      ![configuración del servicio de clasificación de datos](./media/dcs-enable.png)
 2. Seleccione si debe aplicarse la directiva cuando se cumpla **cualquier** criterio o **todos** ellos.
 3. En **Elija el tipo de inspección**, seleccione **Tipos de información confidencial**.
@@ -43,11 +43,11 @@ Tiene la opción para establecer el **método de inspección** para que use el *
 
 4. Puede usar los [tipos de información confidencial predeterminados](https://support.office.com/article/what-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b) para definir lo que ocurre con los archivos protegidos por Microsoft Cloud App Security. También puede reutilizar cualquiera de los [tipos personalizados de información confidencial de Office 365](https://support.office.com/article/create-a-custom-sensitive-information-type-82c382a5-b6db-44fd-995d-b333b3c7fc30).
     > [!NOTE]
-    > You can configure your policy to use advanced classification types such as Fingerprints and Exact Data Match.
+    > Puede configurar la Directiva para usar tipos de clasificación avanzados como huellas digitales y correspondencia exacta de datos.
 
 5. Si lo desea, puede mostrar los cuatro últimos caracteres de una coincidencia. De manera predeterminada, las coincidencias se enmascaran y se muestran en su contexto, e incluyen los 40 caracteres antes y después de la coincidencia. Si activa esta casilla, se mostrarán los cuatro últimos caracteres de la propia coincidencia.
 
-6. Leveraging file policies, you can also set alerts and governance actions for the policy. Para obtener más información, consulte [Directivas de archivo](data-protection-policies.md) y [Acciones de gobernanza](governance-actions.md). Leveraging session policies, you can also monitor and control actions in real-time when a file matches a DCS type. For more information, see [session policy](session-policy-aad.md).
+6. Al aprovechar las directivas de archivo, también puede establecer alertas y acciones de gobierno para la Directiva. Para obtener más información, consulte [Directivas de archivo](data-protection-policies.md) y [Acciones de gobernanza](governance-actions.md). Al aprovechar las directivas de sesión, también puede supervisar y controlar las acciones en tiempo real cuando un archivo coincide con un tipo de DC. Para obtener más información, vea [Directiva de sesión](session-policy-aad.md).
 
 Configurar estas directivas es una manera sencilla de llevar la eficacia de las capacidades de DLP de Office 365 al resto de las aplicaciones en la nube autorizadas, y de proteger los datos almacenados en ellas con el conjunto de herramientas completo suministrado por Microsoft Cloud App Security: por ejemplo, la capacidad de [aplicar automáticamente las etiquetas de clasificación de Azure Information Protection](azip-integration.md) y la capacidad para controlar permisos de uso compartido.
 

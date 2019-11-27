@@ -39,11 +39,11 @@ Después de echar un vistazo a las alertas abiertas, vaya al centro de directiva
 
      Si la directiva está establecida para detectar infracciones de cumplimiento normativo y alguien guarda números de tarjetas de crédito en archivos en OneDrive, tendrá una coincidencia en la directiva.  
 
-     ![PCI matches](./media/pci-matches.png "coincidencias de PCI")  
+     ![Coincide con PCI](./media/pci-matches.png "coincidencias de PCI")  
 
 -   Seleccione la coincidencia para ver los archivos reales que han infringido la directiva.  
 
-     ![PCI content matches](./media/pci-content-matches.png "coincidencias de contenido de PCI")  
+     ![Coincidencias de contenido de PCI](./media/pci-content-matches.png "coincidencias de contenido de PCI")  
 
      Puede seleccionar el propio archivo para obtener información sobre los archivos.  
 
@@ -51,14 +51,14 @@ Después de echar un vistazo a las alertas abiertas, vaya al centro de directiva
 
      Puede hacer clic en **Coincidencias** para ver los números de tarjeta de crédito reales.  
 
-     ![Content matches credit card numbers](./media/content-matches-ccn.png "content matches credit card numbers")  
+     ![El contenido coincide con los números de la tarjeta de crédito](./media/content-matches-ccn.png "el contenido coincide con los números de la tarjeta de crédito")  
 
 ## <a name="apply-governance-actions"></a>Aplicar acciones de gobernanza  
 Puede aplicar acciones de gobernanza desde las directivas, desde las alertas y desde el registro **Archivo**.  
 
-Puede revisar y ver el estado de todas las acciones de gobernanza aplicadas anteriormente en cualquier momento si va al icono de engranaje **Configuración** y selecciona **Registro de gobernanza**. ![settings icon](./media/settings-icon.png "settings icon")
+Puede revisar y ver el estado de todas las acciones de gobernanza aplicadas anteriormente en cualquier momento si va al icono de engranaje **Configuración** y selecciona **Registro de gobernanza**. ![icono de configuración](./media/settings-icon.png "sicono de configuración ")
 
-Para volver a aplicar cualquier acción de gobernanza errónea, haga clic en el icono **Reintentar** para aplicarla de nuevo. ![Retry icon](./media/retry-icon.png "retry icon")   
+Para volver a aplicar cualquier acción de gobernanza errónea, haga clic en el icono **Reintentar** para aplicarla de nuevo. ![Icono reintentar](./media/retry-icon.png "ricono de etry ")   
 
 Hay acciones de gobernanza distintas según el tipo de directiva, de infracción y de aplicación.  
 
@@ -72,7 +72,7 @@ Puesto que las acciones correctoras utilizan las API del proveedor de la nube, p
 >   
 >  Para obtener orientación, puede utilizar el botón **Editar y obtener vista previa de resultados** de la sección **Filtros**.  
 
-![File policy edit and preview results](./media/file-policy-edit-and-preview-results.png "editar la directiva de archivo y obtener una vista previa de resultados")  
+![Resultados de edición y vista previa de la Directiva de archivo](./media/file-policy-edit-and-preview-results.png "editar la directiva de archivo y obtener una vista previa de resultados")  
 
 ## <a name="migration"></a>Migración  
 Cloud App Security le ayuda a implementar las migraciones, ya que le informa de qué usuarios de la organización usan una determinada aplicación y le ofrece herramientas para supervisar la adopción de aplicaciones nuevas. También puede ayudarle a decidir qué tipos de aplicaciones debe ofrecer en la organización al proporcionarle las herramientas para saber lo que todos los usuarios ya están usando.  
@@ -86,7 +86,7 @@ Imagínese esta situación: hace poco adquirió Office 365 y quiere que todos lo
 
    1. En el **panel de Cloud Discovery**, elija **Dropbox** y luego la ficha **Dirección IP** o **Usuarios**.  
 
-   2. Haga clic en el icono de flecha **Exportar** y elija las opciones de exportación. ![Arrow icon](./media/arrow-icon.png "arrow icon")
+   2. Haga clic en el icono de flecha **Exportar** y elija las opciones de exportación. ![Icono de flecha](./media/arrow-icon.png "aicono de RROW ")
 
 ### <a name="find-more-secure-alternatives"></a>Buscar alternativas más seguras  
 El catálogo de servicios de Cloud App Security puede ayudarle a encontrar alternativas adecuadas para la organización en sustitución de las aplicaciones de riesgo que los usuarios puedan estar utilizando.  

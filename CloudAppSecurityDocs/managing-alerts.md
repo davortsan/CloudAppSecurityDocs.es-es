@@ -29,7 +29,7 @@ ms.locfileid: "74460865"
 En este artículo se explica cómo trabajar con alertas generadas en el portal de Cloud App Security.
 
 > [!NOTE]
-> Alerts are managed in their respective policies and can be configured to be sent as an email, text message, or both.
+> Las alertas se administran en sus respectivas directivas y se pueden configurar para enviarlas como correo electrónico, mensaje de texto o ambos.
 
 ## <a name="manage-your-alerts"></a>Administración de alertas
 
@@ -70,7 +70,7 @@ Es buena idea revisar todas las alertas y usarlas como herramientas para modific
 3. Es importante que, siempre que se descarte una alerta, envíe comentarios sobre por qué la descarta. El equipo de Cloud App Security usa estos comentarios como indicación de la precisión de la alerta. Esta información se usa después para ajustar los modelos de Machine Learning para futuras alertas. Puede seguir estas directrices para decidir cómo clasificar la alerta:
    - Si la alerta se ha desencadenado por un uso legítimo y no es un problema de seguridad, podría ser uno de los siguientes tipos: 
 
-     - Benign positive: The alert is accurate but the activity is legitimate. Puede descartar la alerta y establecer el motivo en **La gravedad real es inferior** o **No es interesante**.
+     - Positivo benigno: la alerta es precisa pero la actividad es legítima. Puede descartar la alerta y establecer el motivo en **La gravedad real es inferior** o **No es interesante**.
      -  Falso positivo: la alerta es inexacta. Descarte la alerta y establezca el motivo en **La alerta no es precisa**.
    - Si hay demasiado ruido para determinar la legitimidad y la precisión de una alerta, descártela y establezca el motivo en **Demasiadas alertas similares**.
    - Verdadero positivo: si la alerta está relacionada con un evento de riesgo real que realizó de forma malintencionada o involuntaria un usuario interno o externo, debe establecer el evento en **Resolver** después de que se hayan tomado las medidas adecuadas para corregir el evento.

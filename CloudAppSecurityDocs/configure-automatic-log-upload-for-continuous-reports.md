@@ -87,7 +87,7 @@ El recopilador de registros tiene un mecanismo de seguridad integrado que superv
 1. Abra el Administrador de Hyper-V.  
   
 2. Seleccione **Nuevo** y luego **Máquina virtual** y haga clic en **Siguiente**.  
-   ![discovery Hyper-V virtual machine](./media/discovery-hyperv-virtual-machine.png "discovery Hyper-V virtual machine")  
+   ![detección de máquina virtual de Hyper-V](./media/discovery-hyperv-virtual-machine.png "detección de máquina virtual de Hyper-V")  
   
 3. Proporcione un **Nombre** para la nueva máquina virtual, por ejemplo, CloudAppSecurityLogCollector01. Luego haga clic en **Siguiente**.  
   
@@ -119,7 +119,7 @@ En este punto, el recopilador de registros debería estar conectado a la red y s
 ### <a name="step-3--on-premises-configuration-of-the-log-collection"></a>Paso 3: Configuración local de la recopilación de registros 
 Para iniciar sesión por primera vez en el recopilador de registros e importar la configuración de dicho recopilador desde el portal, debe hacer lo siguiente. 
 
-1.  Inicie sesión en el recopilador de registros a través de SSH con las credenciales de administrador interactivas que se le han proporcionado en el portal. Si es la primera vez que inicia sesión en la consola, deberá cambiar la contraseña y volver a iniciar sesión después de cambiarla. Si está usando una sesión de terminal, podría tener que volver a iniciarla ) simple
+1.  Inicie sesión en el recopilador de registros a través de SSH con las credenciales de administrador interactivas que se le han proporcionado en el portal. Si es la primera vez que inicia sesión en la consola, deberá cambiar la contraseña y volver a iniciar sesión después de cambiarla. Si está usando una sesión de terminal, podría tener que volver a iniciarla )
 2.  Ejecute la utilidad de configuración del recopilador con el token de acceso que se le proporcionó al crear el recopilador de registros.```sudo collector_config <access token> ```
 3. Escriba el dominio de la consola, por ejemplo: ```contoso.portal.cloudappsecurity.com```. Está disponible en la dirección URL que aparece después de iniciar sesión en el portal de Cloud App Security. 
 

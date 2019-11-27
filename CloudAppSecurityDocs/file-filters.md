@@ -107,7 +107,7 @@ A continuación se muestra una lista de los filtros de archivo que se pueden apl
 - **Tipo de archivo**: Cloud App Security toma el tipo MIME recibido del servicio y examina el archivo para determinar el tipo de archivo real. Este examen se aplica a archivos pertinentes para el examen de datos (documentos, imágenes, presentaciones, hojas de cálculo, texto y archivos de almacenamiento o ZIP). El filtro funciona por tipo de archivo o carpeta. Por ejemplo, Todas las carpetas que son… o Todos los archivos de hoja de cálculo que son...
 
 
-   ![policy_file filters trash](./media/policy_file-filters-trash.png "filtros en papelera de archivo de directiva")  
+   ![policy_file filtrar la papelera](./media/policy_file-filters-trash.png "filtros en papelera de archivo de directiva")  
 
   
 - **En la papelera**: excluye o incluye archivos que se encuentran en la carpeta de la papelera. Estos archivos siguen pudiendo compartirse y suponen un riesgo.  
@@ -128,32 +128,32 @@ A continuación se muestra una lista de los filtros de archivo que se pueden apl
   
 También puede establecer la directiva para que se ejecute en determinados archivos estableciendo el filtro **Se aplica a**. Filtre por **Todos los archivos**, **Carpetas seleccionadas**, o bien **Todos los archivos excepto las carpetas seleccionadas**. Después, seleccione los archivos o carpetas que son relevantes.  
   
-![apply to filter](./media/apply-to-filter.png "filtro Aplicar a")  
+![aplicar a filtro](./media/apply-to-filter.png "filtro Aplicar a")  
 <!-- 
 >[!NOTE]
 > If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon](./media/clear-filters.png).
 -->
 
-## <a name="authorizing-files"></a>Authorizing files
+## <a name="authorizing-files"></a>Autorización de archivos
 
-After Cloud App Security has identified files as posing a malware or DLP risk, we recommend that you investigate the files. If you determine that the files are safe, you can authorize them. La autorización de un archivo quita el informe de detección de malware y suprime futuras coincidencias en este archivo.
+Una vez que Cloud App Security ha identificado los archivos como un riesgo de malware o DLP, recomendamos que investigue los archivos. Si determina que los archivos son seguros, puede autorizarlos. La autorización de un archivo quita el informe de detección de malware y suprime futuras coincidencias en este archivo.
 
-### <a name="to-authorize-files"></a>To authorize files
+### <a name="to-authorize-files"></a>Para autorizar archivos
 
-1. In Cloud App Security, click **Control** and then **Policies**.
-1. In the list of policies, on the row in which the policy that triggered the investigation appears, in the **Count** column, click the matches link.
+1. En Cloud App Security, haga clic en **control** y luego en **directivas**.
+1. En la lista de directivas, en la fila en la que aparece la Directiva que desencadenó la investigación, en la columna **recuento** , haga clic en el vínculo coincidencias.
     > [!TIP]
-    > You can filter the list of policies by type. The following table lists, per risk type, which filter type to use:
+    > Puede filtrar la lista de directivas por tipo. En la tabla siguiente se enumeran, por tipo de riesgo, el tipo de filtro que se va a usar:
     >
-    > | Risk type | Filter type |
+    > | Tipo de riesgo | Tipo de filtro |
     > | --- | --- |
     > | DLP | Directiva de archivo |
-    > | Malware | Malware detection policy |
-1. In the list of matched files, on the row in which the file under investigation appears, click **Authorize**.
+    > | Malware | Directiva de detección de malware |
+1. En la lista de archivos coincidentes, en la fila en la que aparece el archivo en investigación, haga clic en **autorizar**.
 
 ## <a name="working-with-the-file-drawer"></a>Uso del cajón de archivos
 
-Puede ver más información sobre un archivo si hace clic en él en el registro de archivos. Clicking opens the **File drawer** that provides the following additional actions you can take on the file:
+Puede ver más información sobre un archivo si hace clic en él en el registro de archivos. Al hacer clic en se abre el **cajón de archivos** que proporciona las siguientes acciones adicionales que puede realizar en el archivo:
 
 - **Dirección URL**: le lleva a la ubicación del archivo.
 - **Identificadores de archivos**: abre una ventana emergente con los datos sin procesar sobre el archivo, como su id. o las claves de cifrado.
@@ -163,7 +163,7 @@ Puede ver más información sobre un archivo si hace clic en él en el registro 
 
 Los campos del cajón de archivos proporcionan vínculos contextuales a archivos adicionales y exploran en profundidad lo que desea realizar desde el cajón directamente. Por ejemplo, si mueve el cursor junto al campo **Propietario**, puede usar el icono "Agregar a filtro" ![Agregar a filtro](./media/add-to-filter-icon.png) para agregar el propietario inmediatamente al filtro de la página actual. También puede utilizar el icono de engranaje de configuración ![icono de configuración](./media/contextual-settings-icon.png) que aparece para llegar directamente a la página de configuración necesaria para modificar la configuración de uno de los campos, como **Etiquetas de clasificación**.
 
-![File drawer](./media/file-drawer.png "Cajón de archivos")  
+![Cajón de archivos](./media/file-drawer.png "Cajón de archivos")  
   
 Para obtener una lista de las acciones de gobernanza disponibles, consulte [Acciones de gobernanza de archivos](governance-actions.md#file-governance-actions).
 

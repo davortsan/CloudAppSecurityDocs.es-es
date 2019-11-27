@@ -1,6 +1,6 @@
 ---
-title: Investigate activities using the API - Cloud App Security | Microsoft Docs
-description: This article provides information on how to use the API to investigate user activity in Cloud App Security.
+title: Investigue las actividades mediante el Cloud App Security de API | Microsoft Docs
+description: En este artículo se proporciona información sobre cómo usar la API de para investigar la actividad del usuario en Cloud App Security.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -22,40 +22,40 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 11/24/2019
 ms.locfileid: "74460704"
 ---
-# <a name="investigate-activities-using-the-api"></a>Investigate activities using the API
+# <a name="investigate-activities-using-the-api"></a>Investigación de actividades mediante la API
 
 *Se aplica a: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security provides you with a fully supported REST API to enable you to programmatically interact with the service.
+Microsoft Cloud App Security proporciona una API de REST totalmente compatible para que pueda interactuar con el servicio mediante programación.
 
-You can use the Microsoft Cloud App Security APIs to investigate the activities performed by your users across connected cloud apps. 
+Puede usar el Microsoft Cloud App Security API para investigar las actividades realizadas por los usuarios en las aplicaciones en la nube conectadas. 
 
-The Cloud App Security activities API mode is optimized for scanning and retrieval of large quantities of data (over 5,000 activities). The API scan queries the activity data repeatedly until all the results have been scanned. 
+El modo de API de Cloud App Security actividades está optimizado para el análisis y la recuperación de grandes cantidades de datos (más de 5.000 actividades). El análisis de la API consulta los datos de la actividad varias veces hasta que se han examinado todos los resultados. 
 
 > [!NOTE] 
-> For large quantities of activities and large scale deployments, we recommended that you use the [SIEM agent](siem.md) for activity scanning.
+> En el caso de grandes cantidades de actividades y de implementaciones a gran escala, se recomienda usar el [agente Siem](siem.md) para el análisis de actividades.
 
-**To use the activity scan API:**
+**Para usar la API de examen de actividad:**
 
-1. Run the query on your data.
-1. If there are more records than could be listed in a single scan, you will get a return command with `nextQueryFilters` that you should run. You will get this command each time you scan until the query has returned all the results.
+1. Ejecute la consulta en los datos.
+1. Si hay más registros de los que se pueden mostrar en un solo examen, obtendrá un comando devuelto con `nextQueryFilters` que debe ejecutar. Obtendrá este comando cada vez que digitalice hasta que la consulta devuelva todos los resultados.
  
  
-**Request body parameters**:
-- “filters”: Filter objects with all the search filters for the request, see [Activity filters](activity-filters.md) for more information. To avoid having your requests be throttled, make sure to include a limitation on your query, for example, query the last day’s activities, or filter for a particular app.
-- “isScan”: Boolean. Enables the scanning mode.
-- “sortDirection”: The sorting direction, possible values are “asc” and “desc” 
-- “sortField”: Fields used to sort activities. Los valores posibles son: 
-    - date - The date when then the activity occurred (this is the default).
-    - created - The timestamp when the activity was saved.
-- “limit”: Integer. In scan mode, between 500 and 5000 (defaults to 500). Controls the number of iterations used for scanning all the data. 
+**Parámetros del cuerpo**de la solicitud:
+- "filtros": los objetos de filtro con todos los filtros de búsqueda de la solicitud, vea [filtros de actividad](activity-filters.md) para obtener más información. Para evitar que las solicitudes se limiten, asegúrese de incluir una limitación en la consulta, por ejemplo, consultar las actividades del último día o filtrar por una aplicación determinada.
+- "isScan": booleano. Habilita el modo de exploración.
+- "sortDirection": la dirección de ordenación, los valores posibles son "ASC" y "DESC" 
+- "sortField": campos que se usan para ordenar las actividades. Los valores posibles son: 
+    - Fecha: la fecha en la que se produjo la actividad (este es el valor predeterminado).
+    - creado: marca de tiempo en la que se guardó la actividad.
+- "Limit": entero. En modo de exploración, entre 500 y 5000 (el valor predeterminado es 500). Controla el número de iteraciones utilizadas para examinar todos los datos. 
 
-**Response parameters**:
-- “data”: the returned data. Will contain up to “limit” number of records each iteration. If there are more records to be pulled (hasNext=true), the last few records will be dropped to ensure that all data is listed only once.
-- “hasNext”: Boolean. Denotes whether another iteration on the data is needed.
-- “nextQueryFilters”: If another iteration is needed, it contains the consecutive JSON query to be run. Use this as the “filters” parameter in the next request.
+**Parámetros de respuesta**:
+- "Data": los datos devueltos. Contendrá hasta "limitar" el número de registros de cada iteración. Si hay más registros para extraer (hasNext = true), se quitarán los últimos registros para asegurarse de que todos los datos se muestran una sola vez.
+- "hasNext": booleano. Indica si se necesita otra iteración en los datos.
+- "nextQueryFilters": si se necesita otra iteración, contiene la consulta JSON consecutiva que se va a ejecutar. Úselo como el parámetro "filters" en la siguiente solicitud.
 
-The following Python example gets all the activities from the past day from Exchange Online.
+En el siguiente ejemplo de Python se obtienen todas las actividades del último día de Exchange Online.
 
       import requests
       import json

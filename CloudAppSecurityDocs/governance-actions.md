@@ -16,7 +16,7 @@ ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 7eb1ed1466ef1fb302ca0179951d45d12314d572
 ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/24/2019
 ms.locfileid: "74458773"
@@ -75,7 +75,7 @@ Las siguientes acciones de gobernanza pueden realizarse para aplicaciones conect
 
   - **Enviar a la papelera**: el archivo se mueve a la carpeta de la Papelera. (Box, Dropbox, Google Drive, OneDrive, SharePoint)
 
-   ![policy_create alerts](./media/policy_create-alerts.png "alertas de crear directiva")
+   ![policy_create de alertas](./media/policy_create-alerts.png "alertas de crear directiva")
 
 ## <a name="activity-governance-actions"></a>Acciones de control de actividades
 
@@ -95,7 +95,7 @@ Las siguientes acciones de gobernanza pueden realizarse para aplicaciones conect
 
   - **Requerir que el usuario vuelva a iniciar sesión**: se cierra la sesión del usuario y se le requiere que vuelva a iniciarla.
 
-  ![Cloud App Security activity policy governance actions](./media/activity-policy-ref6.png "directiva de actividad, ref6")
+  ![Acciones de gobierno de directiva de actividad de Cloud App Security](./media/activity-policy-ref6.png "directiva de actividad, ref6")
 
 ## <a name="governance-conflicts"></a>Conflictos de gobernanza
 
@@ -118,13 +118,13 @@ El registro de gobernanza proporciona un registro del estado de cada tarea que C
 En la tabla siguiente se muestra una lista completa de las acciones que Cloud App Security permite realizar. Estas acciones se habilitarán en varios lugares de la consola, como se describe en la columna **Ubicación**. Cada acción de gobernanza realizada se incluye en el registro de gobernanza.
 Para obtener información sobre cómo se tratan las acciones de control cuando hay conflictos de directivas, vea [Policy Conflicts](control-cloud-apps-with-policies.md) (Conflictos de directivas).
 
-| Ubicación | Target object type | Governance action |Descripción| Related connectors|
+| Location | Tipo de objeto de destino | Acción de gobierno |Descripción| Conectores relacionados|
 |-------------------|---------|-----|--------|-------|
 |Cuentas |Archivo |Quitar las colaboraciones del usuario | Se quitan todas las colaboraciones de un usuario específico en cualquiera de los archivos. Resulta conveniente cuando las personas dejan la empresa. |Box, G Suite|
 |Cuentas | Cuenta | Anular la suspensión del usuario |Se anula la suspensión del usuario. |G Suite, Box, Office, Salesforce|
 |Cuentas | Cuenta |Configuración de la cuenta | Le lleva a la página de configuración de la cuenta de la aplicación específica (por ejemplo, Salesforce). | Todas las aplicaciones (la configuración de One Drive y SharePoint se establece en Office). |
 |Cuentas |Archivo |Transferir la propiedad de todos los archivos | En una cuenta, todos los archivos de un usuario se transfieren para pasar a pertenecer a una nueva persona de su elección. El propietario anterior se convierte en editor y ya no podrá cambiar la configuración de uso compartido. El nuevo propietario recibirá una notificación por correo relativa al cambio de propiedad. | G Suite|
-|Cuentas, Directiva de actividad | Cuenta | Suspender usuario| Establece el usuario que no tiene acceso ni puede iniciar sesión. If they're logged in when you set this action, they're immediately locked out. |G Suite, Box, Office, Salesforce|
+|Cuentas, Directiva de actividad | Cuenta | Suspender usuario| Establece el usuario que no tiene acceso ni puede iniciar sesión. Si ha iniciado sesión al establecer esta acción, se le bloqueará inmediatamente. |G Suite, Box, Office, Salesforce|
 |Directiva de actividad, Cuentas | Cuenta |Requerir que el usuario vuelva a iniciar sesión|Revoca todos los tokens de actualización y los problemas de cookies de sesión a las aplicaciones por parte del usuario. Esta acción impedirá el acceso a cualquiera de los datos de la organización y obligará al usuario a iniciar sesión en todas las aplicaciones de nuevo.| G Suite|
 |Directiva de actividad, Cuentas | Cuenta | Revocar privilegios de administrador |Revoca los privilegios de una cuenta de administrador. Por ejemplo, establecer una directiva de actividad que revoca los privilegios de administrador tras 10 intentos de inicio de sesión infructuosos. | G Suite|
 |Panel de la aplicación > Permisos de aplicación |Permisos|Cancelar prohibición de aplicación| En Google y Salesforce: quite la prohibición de una aplicación y permita que los usuarios concedan permisos a la aplicación de terceros con Google o Salesforce. En Office 365: se restauran los permisos de la aplicación de terceros para acceder a Office. |G Suite, Salesforce, Office |
@@ -134,13 +134,13 @@ Para obtener información sobre cómo se tratan las acciones de control cuando h
 |Panel de la aplicación > Permisos de aplicación |Permisos|Revocar aplicación|Revoque los permisos de una aplicación de terceros para acceder a Google o Salesforce. Se trata de una acción única que se producirá en todos los permisos existentes, pero no impedirá las conexiones futuras. | G Suite, Salesforce|
 |Panel de la aplicación > Permisos de aplicación | Cuenta | Revocar usuario de la aplicación|Se pueden revocar usuarios específicos al hacer clic en el número bajo Usuarios. La pantalla mostrará los usuarios específicos y puede usar la X para eliminar los permisos para cualquiera de ellos.| G Suite, Salesforce|
 |Detectar > Aplicaciones detectadas/Direcciones IP/Usuarios| Cloud Discovery | Exportar datos de detección | Se crea un archivo CSV a partir de los datos de detección. | Detección |
-|Directiva de archivo|Archivo |Enviar a la papelera|Moves the file in the user's trash.| Box, Dropbox, Google Drive, OneDrive, SharePoint |
+|Directiva de archivo|Archivo |Enviar a la papelera|Mueve el archivo en la papelera del usuario.| Box, Dropbox, Google Drive, OneDrive, SharePoint |
 |Directiva de archivo|Archivo | Enviar una notificación al último editor del archivo |Se envía un correo para informar a la última persona que editó el archivo de que este infringe una directiva. |G Suite, Box|
 |Directiva de archivo|Archivo |Enviar una notificación al propietario del archivo|Envía un correo electrónico al propietario del archivo cuando se infringe una directiva. En Dropbox, si no hay ningún propietario asociado a un archivo, la notificación se enviará al usuario específico que establezca. | Todas las aplicaciones |
 |Directiva de archivo, Directiva de actividad | Archivo, Actividad | Enviar una notificación a usuarios concretos |Se envía un correo para informar a determinados usuarios de que un archivo infringe una directiva.| Todas las aplicaciones |
 |Directiva de archivo y Directiva de actividad | Archivo, Actividad |Enviar notificación al usuario|Se envía un correo a los usuarios para informarles de que algo que han hecho o un archivo que poseen infringe una directiva. Se puede agregar una notificación personalizada que indique en qué consistió la infracción. |Todos |
 |Directiva de archivo y archivos|Archivo | Quitar la capacidad de compartir de los editores|En Google Drive, los permisos de editor predeterminados de un archivo permiten también compartir ese archivo. Esta acción de gobernanza restringe esta opción y limita el uso compartido del archivo al propietario.| G Suite|
-|Directiva de archivo y archivos|Archivo | [Poner en cuarentena de administrador](use-case-admin-quarantine.md) |Removes any permissions from the file and moves the file to a quarantine folder in a location for the admin. This action enables the admin to review the file and remove it.| Office 365 SharePoint, OneDrive para la Empresa, Box|
+|Directiva de archivo y archivos|Archivo | [Poner en cuarentena de administrador](use-case-admin-quarantine.md) |Quita todos los permisos del archivo y mueve el archivo a una carpeta de cuarentena en una ubicación para el administrador. Esta acción permite al administrador revisar el archivo y quitarlo.| Office 365 SharePoint, OneDrive para la Empresa, Box|
 |Directiva de archivo y archivos|Archivo | Aplicar etiqueta de clasificación|Se aplica una etiqueta de clasificación de Azure Information Protection a los archivos de forma automática en función de las condiciones establecidas en la directiva.| Box, One Drive, G Suite, SharePoint |
 |Directiva de archivo y archivos|Archivo | Quitar etiqueta de clasificación | Se quita una etiqueta de clasificación de Azure Information Protection de los archivos de forma automática en función de las condiciones establecidas en la directiva. Solo puede quitar las etiquetas si no incluyen protección y se aplicaron desde Cloud App Security, no directamente desde Information Protection.| Box, One Drive, G Suite, SharePoint |
 |Directiva de archivo, Directiva de actividad, Alertas | Aplicación |Requerir a los usuarios que inicien sesión de nuevo| Puede requerir a los usuarios que inicien sesión de nuevo en todas las aplicaciones de Office 365 y Azure AD como una solución rápida y eficaz en el caso de alertas de actividad sospechosa del usuario y cuentas en peligro. Encontrará la nueva acción de gobernanza en la configuración de directiva y las páginas de alertas, junto a la opción Suspender usuario. | Office 365, Azure AD |

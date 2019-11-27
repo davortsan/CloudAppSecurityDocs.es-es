@@ -27,7 +27,7 @@ ms.locfileid: "74461010"
 
 Muchas aplicaciones de productividad de terceros que puedan instalar los usuarios profesionales de su organización solicitan permiso para acceder a datos e información del usuario e iniciar sesión en nombre de este o en otras aplicaciones en la nube, como Office 365, G Suite y Salesforce. Cuando los usuarios instalan estas aplicaciones, a menudo hacen clic en Aceptar sin revisar detenidamente los detalles en el mensaje, incluyendo la concesión de permisos a la aplicación. Este problema se agrava por el hecho de que es posible que el departamento de TI no tenga suficiente información para evaluar el riesgo de seguridad que supone una aplicación frente a la ventaja de productividad que ofrece. Dado que aceptar permisos de aplicación de terceros es un riesgo de seguridad potencial para la organización, supervisar los permisos de aplicación que conceden los usuarios le ofrece la visibilidad y el control necesarios para proteger a los usuarios y las aplicaciones. Los permisos de aplicación de Microsoft Cloud App Security le permiten ver qué aplicaciones de OAuth instaladas por el usuario tienen acceso a datos de Office 365, de G Suite y de Salesforce. Cloud App Security le indica qué permisos tienen las aplicaciones y qué usuarios les concedieron acceso a sus cuentas de Office 365, G Suite y Salesforce. Los permisos de aplicación le ayudan a decidir a qué aplicaciones permite que los usuarios tengan acceso y cuáles quiere prohibir.
 
-For more information on investigating OAuth apps, see [Investigate risky OAuth apps](investigate-risky-oauth.md).
+Para obtener más información sobre cómo investigar aplicaciones OAuth, consulte [investigación de aplicaciones OAuth de riesgo](investigate-risky-oauth.md).
 
 ## <a name="working-with-the-oauth-apps-page"></a>Trabajar con la página de aplicaciones de OAuth
 
@@ -41,7 +41,7 @@ En el portal de Cloud App Security, haga clic en **Investigar** y después en **
 
 La página Aplicaciones de OAuth de aplicación proporciona la siguiente información sobre cada aplicación de OAuth a la que se han concedido permisos:
 
-|Elemento|Significado|Aplicable a|
+|Elemento|Significado|Se aplica a|
 |-------|-------|-------|
 |Icono Básica en la barra de consulta de aplicación  |Cambie a consulta en la vista básica.|Office 365, G Suite y Salesforce|
 |Icono Avanzada en la barra de consulta de aplicación  |Cambie a consulta en la vista avanzada.|Office 365, G Suite y Salesforce|
@@ -53,7 +53,7 @@ La página Aplicaciones de OAuth de aplicación proporciona la siguiente informa
 |Estado de la aplicación|Un administrador puede marcar una aplicación como Aprobada, Prohibida, o dejarla como Sin determinar.|Office 365, G Suite y Salesforce|
 |Uso de la comunidad|Muestra la popularidad de la aplicación entre los usuarios (conocida, poco conocida o desconocida)|Office 365, G Suite y Salesforce|
 |Última autorización|Fecha más reciente en la que un usuario concedió permisos a esta aplicación.|Office 365 y Salesforce|
-|Publisher|Nombre del proveedor que proporciona la aplicación.|Office 365|
+|Publicador|Nombre del proveedor que proporciona la aplicación.|Office 365|
 |Último uso|Fecha más reciente en la que un miembro de la organización usó esta aplicación.|Salesforce|
 
 ## <a name="ban-or-approve-an-app"></a>Prohibir o aprobar una aplicación
@@ -84,9 +84,9 @@ La página Aplicaciones de OAuth de aplicación proporciona la siguiente informa
 
 ## <a name="revoke-app-and-notify-user"></a>Revocar la aplicación y enviar una notificación al usuario
 
-En el caso de G Suite y Salesforce, es posible revocar el permiso de una aplicación o notificarle al usuario que deberían cambiar el permiso. When you revoke permission it removes all permissions that were granted to the application under “Enterprise Applications” in Azure AD.
+En el caso de G Suite y Salesforce, es posible revocar el permiso de una aplicación o notificarle al usuario que deberían cambiar el permiso. Al revocar el permiso, se quitan todos los permisos concedidos a la aplicación en "aplicaciones empresariales" en Azure AD.
 
-1. En la página **Aplicaciones de OAuth**, haga clic en los tres puntos situados al final de la fila de la aplicación y seleccione **Enviar notificación al usuario**. By default, the user will be notified as follows: *You authorized the app to access your G Suite account. This app conflicts with your organization's security policy. Reconsider giving or revoking the permissions you gave this app in your G Suite account. To revoke app access, go to: https://security.google.com/settings/security/permissions?hl=en&pli=1  Select the app and click 'Revoke access' on the right menu bar.* Puede personalizar el mensaje que se envía.
+1. En la página **Aplicaciones de OAuth**, haga clic en los tres puntos situados al final de la fila de la aplicación y seleccione **Enviar notificación al usuario**. De forma predeterminada, se notificará al usuario de la manera siguiente: *ha autorizado la aplicación para tener acceso a su cuenta de G Suite. Esta aplicación entra en conflicto con la Directiva de seguridad de su organización. Considere la posibilidad de conceder o revocar los permisos que asignó a esta aplicación en su cuenta de G Suite. Para revocar el acceso a la aplicación, vaya a: https://security.google.com/settings/security/permissions?hl=en&pli=1 seleccione la aplicación y haga clic en "revocar acceso" en la barra de menús derecha.* Puede personalizar el mensaje que se envía.
 2. También puede revocar permisos para usar la aplicación para el usuario. Haga clic en el icono al final de la fila de la aplicación en la tabla y seleccione **Revocar aplicación**.
 
     ![revocar aplicación](./media/revoke-app.png)
@@ -99,17 +99,17 @@ Puede consultar aplicaciones de OAuth en la vista **Básica** o la vista **Avanz
 
 - Elija el icono **Quitar un filtro** junto al filtro para quitar los filtros.
 
-## <a name="oauth-app-auditing"></a>OAuth app auditing
+## <a name="oauth-app-auditing"></a>Auditoría de la aplicación OAuth
 
-Cloud App Security audita todas las actividades de autorización OAuth para ofrecerle funciones completas de supervisión e investigación de las actividades realizadas. You can also export the details of users that authorized a specific OAuth app, providing you with additional information on the users, which you can then use for further analysis.
+Cloud App Security audita todas las actividades de autorización OAuth para ofrecerle funciones completas de supervisión e investigación de las actividades realizadas. También puede exportar los detalles de los usuarios que autorizaron una aplicación de OAuth específica, lo que le proporciona información adicional sobre los usuarios, que puede usar para realizar un análisis más exhaustivo.
 
-To export the log, perform the following steps:
+Para exportar el registro, realice los pasos siguientes:
 
-1. On the **OAuth apps** page, on the row where the relevant app appears, under **Authorized by**, click the link showing the number of users that authorized the app.
+1. En la página **aplicaciones de OAuth** , en la fila en la que aparece la aplicación correspondiente, en **autorizado por**, haga clic en el vínculo que muestra el número de usuarios que han autorizado la aplicación.
 
-1. In the pop-up window, click **Export**.
+1. En la ventana emergente, haga clic en **exportar**.
 
-    ![Screenshot showing export of OAuth app auditing](media/oauth-export-users.png)
+    ![Captura de pantalla que muestra la exportación de la auditoría de la aplicación OAuth](media/oauth-export-users.png)
 
 ## <a name="send-feedback"></a>Enviar comentarios
 

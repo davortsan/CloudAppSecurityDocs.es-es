@@ -37,7 +37,7 @@ Dado que Dropbox permite el acceso a archivos desde vínculos compartidos sin in
   
 2.  En la página **Conectores de aplicaciones**, haga clic en el botón del signo más y, después, en **Dropbox**.  
   
-     ![connect dropbox](./media/connect-dropbox.png "conectar Dropbox")  
+     ![conectar Dropbox](./media/connect-dropbox.png "conectar Dropbox")  
   
 3.  En el elemento emergente, escriba la dirección de correo electrónico de la cuenta de administrador.  
   

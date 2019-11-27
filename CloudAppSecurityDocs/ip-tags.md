@@ -79,7 +79,7 @@ En la barra de menús, haga clic en el icono de configuración. Seleccione **Int
  
 7. Haga clic en **Crear** cuando acabe.  
   
-     ![newipaddress range](./media/newipaddress-range.png "nuevo intervalo de direcciones IP")  
+     ![intervalo nuevo](./media/newipaddress-range.png "nuevo intervalo de direcciones IP")  
 
 
 ## <a name="next-steps"></a>Pasos siguientes

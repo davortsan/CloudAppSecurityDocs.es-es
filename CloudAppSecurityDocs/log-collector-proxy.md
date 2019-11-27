@@ -27,7 +27,7 @@ ms.locfileid: "74458398"
 Después de configurar el recopilador de registros, si está ejecutando detrás de un proxy, es posible que el recopilador de registros tenga problemas para enviar datos a Cloud App Security. Esto puede deberse a que el recopilador de registros no confía en la entidad emisora de certificados raíz del proxy y no puede conectarse a Microsoft Cloud App Security para recuperar su configuración o cargar los registros recibidos.
 
 >[!NOTE]
-> For information on how to change the certificates used by the log collector for Syslog or FTP, and to resolve connectivity issues from the firewalls and proxies to the log collector, see [Log collector FTP configuration](log-collector-ftp.md).
+> Para obtener información sobre cómo cambiar los certificados utilizados por el compilador de registros para syslog o FTP, y para resolver problemas de conectividad de los firewalls y servidores proxy en el compilador de registros, consulte registro de la [configuración de FTP del recopilador de registros](log-collector-ftp.md).
 >
 
 ## <a name="set-up-the-log-collector-behind-a-proxy"></a>Configuración del recopilador de registros tras un proxy
@@ -41,7 +41,7 @@ En el shell, compruebe que el contenedor se ha creado y se está ejecutando con 
     bash
     docker ps
 
-![docker ps](./media/docker-1.png "docker ps")
+![Docker PS](./media/docker-1.png "Docker PS")
 
 ### <a name="copy-proxy-root-ca-certificate-to-the-container"></a>Copia del certificado de entidad de certificación raíz del proxy en el contenedor
 
@@ -83,7 +83,7 @@ El contenedor ya está listo.
 
 Ejecute el comando **collector_config** mediante el token de la API que utilizó durante la creación del recopilador de registros:
 
-![API token](./media/docker-3.png "API token")
+![Token de API](./media/docker-3.png "Token de API")
 
 Al ejecutar el comando, especifique su propio token de API:
 
@@ -91,11 +91,11 @@ Al ejecutar el comando, especifique su propio token de API:
       collector_config abcd1234abcd1234abcd1234abcd1234 ${CONSOLE} ${COLLECTOR}
 
 
-![Configuration update](./media/docker-4.png "Configuration update")
+![Actualización de la configuración](./media/docker-4.png "Actualización de la configuración")
 
 El recopilador de registros ahora puede comunicarse con Cloud App Security. Después de enviarle los datos, el estado cambiará de **Correcto**a **Conectado** en el portal de Cloud App Security.
 
-![Status](./media/docker-5.png "Estado")
+![Estado](./media/docker-5.png "Estado")
 
 >[!NOTE]
 > Si tiene que actualizar la configuración del recopilador de registros para, por ejemplo, agregar o eliminar un origen de datos, normalmente tiene que **eliminar** el contenedor y volver a realizar los pasos anteriores. Para evitar esto, puede volver a ejecutar la herramienta *collector_config* con el nuevo token de la API generado en el portal de Cloud App Security.

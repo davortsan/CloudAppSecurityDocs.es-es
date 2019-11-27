@@ -32,7 +32,7 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
 >  Se recomienda implementar ServiceNow mediante tokens de aplicación OAuth, que están disponibles para Fuji y versiones posteriores. Consulte la [documentación de ServiceNow](https://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0) correspondiente. En el caso de versiones anteriores, está disponible un [modo de conexiones heredadas](#legacy-servicenow-connection) según el usuario y la contraseña. El nombre de usuario y la contraseña proporcionados solo se usan para la generación de tokens de API y no se guardan después del proceso de conexión inicial.
 > 
 > [!NOTE]
->  Cloud App Security supports ServiceNow versions of Jakarta, Kingston, Eureka, Fiji, Geneva, Helsinki, Istanbul, London, and Madrid. Para conectar ServiceNow con Cloud App Security, debe tener el rol de **administrador** y asegurarse de que la instancia de ServiceNow admite el acceso a la API.  Para más información, vea la [documentación del producto de ServiceNow](https://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0).
+>  Cloud App Security admite las versiones de ServiceNow de Yakarta, Kingston, Eureka, Fiji, Geneva, Helsinki, Estambul, Londres y Madrid. Para conectar ServiceNow con Cloud App Security, debe tener el rol de **administrador** y asegurarse de que la instancia de ServiceNow admite el acceso a la API.  Para más información, vea la [documentación del producto de ServiceNow](https://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0).
   
 ## <a name="how-to-connect-servicenow-to-cloud-app-security-using-oauth"></a>Cómo conectar ServiceNow con Cloud App Security mediante OAuth
   
@@ -70,7 +70,7 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
   
 7. En la página **Conectores de aplicaciones**, haga clic en el botón del signo más y, después, en **ServiceNow**.  
   
-    ![connect ServiceNow](./media/connect-servicenow.png "connect ServiceNow")  
+    ![conectar ServiceNow](./media/connect-servicenow.png "conectar ServiceNow")  
   
 8. En el elemento emergente, agregue el identificador de usuario de ServiceNow, la contraseña, la dirección URL de la instancia, el identificador de cliente y el secreto de cliente en los cuadros correspondientes. Para encontrar el identificador de usuario de ServiceNow, en el portal de ServiceNow, vaya a **Usuarios** y busque su nombre en la tabla.
 
@@ -78,7 +78,7 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
   
 9. Haga clic en **Conectar**.  
   
-    ![ServiceNow connect to CAS](./media/servicenow-portal-connect.png "ServiceNow connect in portal")  
+    ![Conexión de ServiceNow a CAS](./media/servicenow-portal-connect.png "Conexión de ServiceNow en el portal")  
   
 10. Haga clic en **Probar ahora** para confirmar que la conexión se ha realizado correctamente.  
   
@@ -96,19 +96,19 @@ Para conectar ServiceNow con Cloud App Security, debe tener permisos de administ
 
 3. Asegúrese de que el complemento de la API de REST está activado.   
 
-   ![ServiceNow account](./media/servicenow-account.png "ServiceNow account")   
+   ![Cuenta de ServiceNow](./media/servicenow-account.png "Cuenta de ServiceNow")   
 
 4. En el portal de Cloud App Security, haga clic en **Investigar** y, después, en **Aplicaciones autorizadas**.   
 
 5. En la fila de ServiceNow, haga clic en **Conectar** en la columna **Estado del conector de aplicaciones** o haga clic en el botón **Conectar una aplicación** y luego en **ServiceNow**.   
 
-   ![connect ServiceNow](./media/connect-servicenow.png "connect ServiceNow")   
+   ![conectar ServiceNow](./media/connect-servicenow.png "conectar ServiceNow")   
 
 6. En la página de configuración de ServiceNow, en la pestaña API, agregue el identificador de usuario, la contraseña y la dirección URL de la instancia de ServiceNow en los cuadros correspondientes.   
 
 7. Haga clic en **Conectar**.   
 
-   ![ServiceNow update password](./media/servicenow-update-password.png "ServiceNow update password")   
+   ![Contraseña de actualización de ServiceNow](./media/servicenow-update-password.png "Contraseña de actualización de ServiceNow")   
 
 8. Haga clic en **Probar API** para asegurarse de que la conexión se ha realizado correctamente.   
   

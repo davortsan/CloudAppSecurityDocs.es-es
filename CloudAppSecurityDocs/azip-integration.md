@@ -29,7 +29,7 @@ ms.locfileid: "74461272"
 Microsoft Cloud App Security le permite aplicar etiquetas de clasificación de Azure Information Protection automáticamente, con o sin protección, a los archivos como acción de gobernanza de directiva de archivo. También puede investigar archivos al filtrar la etiqueta de clasificación aplicada en el portal de Cloud App Security. El uso de clasificaciones permite mayor visibilidad y control de la información confidencial en la nube. La integración de Azure Information Protection con Cloud App Security es tan fácil como seleccionar una sola casilla.
 
 > [!NOTE]
-> This article is also relevant for Office 365 unified sensitivity labels if you already [migrated your classification labels for the Office 365 Security and Compliance Center](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels). If you did not migrate your existing classification labels, and you begin to create new labels in the Office 365 Security and Compliance Center, Cloud App Security will only use the preexisting labels configured in the Azure Information Protection portal.
+> Este artículo también es pertinente para las etiquetas de confidencialidad unificadas de Office 365 si ya ha [migrado las etiquetas de clasificación para el centro de seguridad y cumplimiento de office 365](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels). Si no migró las etiquetas de clasificación existentes y comienza a crear nuevas etiquetas en el centro de seguridad y cumplimiento de Office 365, Cloud App Security solo usará las etiquetas preexistentes configuradas en el portal de Azure Information Protection.
 
 Al integrar Azure Information Protection en Cloud App Security, puede aprovechar todas las funciones de ambos servicios y proteger los archivos en la nube, entre lo que se incluye lo siguiente:
 
@@ -41,11 +41,11 @@ Al integrar Azure Information Protection en Cloud App Security, puede aprovechar
 > [!NOTE]
 > Para habilitar esta característica, necesita una licencia de Cloud App Security y una licencia para Azure Information Protection Premium P1. Tan pronto como se activen las licencias, Cloud App Security sincroniza las etiquetas de las organizaciones del servicio Azure Information Protection.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 
 - Para trabajar con la integración de Azure Information Protection, primero debe habilitar el [conector de aplicaciones para Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
-To use labels in Cloud App Security, the labels must be published as part of the policy. If you're using Azure Information Protection, labels must be published via the Azure Information Protection portal. If you migrated to unified labels, labels must be published via Office 365 Security and Compliance Center.
+Para usar etiquetas en Cloud App Security, las etiquetas se deben publicar como parte de la Directiva. Si está utilizando Azure Information Protection, las etiquetas deben publicarse a través del portal de Azure Information Protection. Si migró a etiquetas unificadas, las etiquetas deben publicarse a través del centro de seguridad y cumplimiento de Office 365.
 
 Actualmente, Cloud App Security permite aplicar etiquetas de clasificación de Azure Information Protection a los siguientes tipos de archivo:
 
@@ -54,11 +54,11 @@ Actualmente, Cloud App Security permite aplicar etiquetas de clasificación de A
 - PowerPoint: potm, potx, ppsx, ppsm, pptm, pptx
 - PDF
     > [!NOTE]
-    > For PDF, you must use unified labels.
+    > En el caso de PDF, debe usar etiquetas unificadas.
 
 Esta característica está disponible actualmente para los archivos que se almacenan en Box, G Suite, SharePoint Online y OneDrive para la Empresa. Se admitirán más aplicaciones en la nube en futuras versiones.
 
-Files that were labeled with protection outside of Cloud App Security can't be changed by Cloud App Security. However, you can scan these files by granting permissions to [inspect content for protected files](content-inspection.md#content-inspection-for-protected-files). Se pueden examinar archivos etiquetados (sin protección) de forma externa a Cloud App Security y Cloud App Security puede aplicar otra etiqueta (con o sin protección), tal y como se define en las directivas de Cloud App Security.
+Cloud App Security no pueden cambiar los archivos etiquetados con protección fuera de Cloud App Security. Sin embargo, puede examinar estos archivos concediendo permisos para [inspeccionar el contenido de los archivos protegidos](content-inspection.md#content-inspection-for-protected-files). Se pueden examinar archivos etiquetados (sin protección) de forma externa a Cloud App Security y Cloud App Security puede aplicar otra etiqueta (con o sin protección), tal y como se define en las directivas de Cloud App Security.
 
 ## <a name="how-it-works"></a>Cómo funciona
 
@@ -93,7 +93,7 @@ Para permitir que Cloud App Security examine archivos que tengan la inspección 
 Después de habilitar Azure Information Protection, podrá ver los archivos que tienen etiquetas de clasificación y filtrarlos por etiqueta en Cloud App Security. Una vez que Cloud App Security esté conectado a la aplicación en la nube, podrá usar las características de integración de Azure Information Protection para aplicar etiquetas de clasificación de Azure Information Protection (con o sin protección) en el portal de Cloud App Security. Para ello, puede agregarlas directamente a los archivos o configurar una directiva de archivo para aplicar de forma automática las etiquetas de clasificación como una acción de gobernanza.
 
 > [!NOTE]
-> El examen automático no examina los archivos existentes hasta que se vuelvan a modificar. To scan existing files for Azure Information Protection classification labels, you must have at least one **File policy** that includes content inspection. If you have none, create a new **File policy**, delete all the preset filters, under **Inspection method** select **Built-in DLP**. In the **Content inspection** field, select **Include files that match a preset expression** and select any predefined value, and save the policy. Esto habilita la inspección de contenido, que detecta automáticamente etiquetas de clasificación de Azure Information Protection.
+> El examen automático no examina los archivos existentes hasta que se vuelvan a modificar. Para examinar los archivos existentes para las etiquetas de clasificación de Azure Information Protection, debe tener al menos una **Directiva de archivo** que incluya la inspección de contenido. Si no tiene ninguna, cree una nueva **Directiva de archivo**, elimine todos los filtros preestablecidos, en **método de inspección** seleccione **DLP integrado**. En el campo **inspección de contenido** , seleccione **incluir archivos que coincidan con una expresión preestablecida** y seleccione cualquier valor predefinido y guarde la Directiva. Esto habilita la inspección de contenido, que detecta automáticamente etiquetas de clasificación de Azure Information Protection.
 
 #### <a name="set-internal-and-external-tags"></a>Establecer etiquetas internas y externas
 
@@ -137,7 +137,7 @@ Siga estas instrucciones para crear la directiva de archivo:
    ![Aplicar etiqueta](./media/aip-gov-action.png)
 
 > [!NOTE]
-> La posibilidad de aplicar automáticamente una etiqueta de Azure Information Protection mediante la directiva de archivo resulta una funcionalidad eficaz. Para impedir que los clientes apliquen por error una etiqueta a gran cantidad de archivos, como medida de seguridad existe un límite diario de 100 acciones **Aplicar etiqueta** por aplicación y por inquilino. Cuando se alcanza el límite diario, la acción de aplicar etiqueta se detiene temporalmente y continúa automáticamente al día siguiente (después de 12:00 UTC). To raise the limit for your tenant, open a support ticket.
+> La posibilidad de aplicar automáticamente una etiqueta de Azure Information Protection mediante la directiva de archivo resulta una funcionalidad eficaz. Para impedir que los clientes apliquen por error una etiqueta a gran cantidad de archivos, como medida de seguridad existe un límite diario de 100 acciones **Aplicar etiqueta** por aplicación y por inquilino. Cuando se alcanza el límite diario, la acción de aplicar etiqueta se detiene temporalmente y continúa automáticamente al día siguiente (después de 12:00 UTC). Para aumentar el límite del inquilino, abra una incidencia de soporte técnico.
 
 ### <a name="control-file-exposure"></a>Controlar la exposición del archivo
 

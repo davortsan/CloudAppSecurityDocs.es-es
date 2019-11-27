@@ -26,9 +26,9 @@ ms.locfileid: "74458507"
 
 Puede configurar la carga de registros automática para los informes continuos de Cloud App Security con Docker y en Windows.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 
-* OS: **Windows 10** (fall creators update) or Windows Server **version 1709+**
+* SO: **Windows 10** (Fall Creators Update) o Windows Server **versión 1709 +**
 
 * Espacio en disco: 250 GB
 
@@ -41,10 +41,10 @@ Puede configurar la carga de registros automática para los informes continuos d
 * La virtualización en el sistema operativo debe estar habilitada con Hyper-V.
 
 > [!IMPORTANT]
-> A user must be signed in for Docker to collect logs. We recommend advising your Docker user's to disconnect without signing out.
+> Un usuario debe haber iniciado sesión en Docker para recopilar registros. Se recomienda que los usuarios de Docker se desconecten sin cerrar sesión.
 
 > [!NOTE]
-> If you have an existing log collector and want to remove it before deploying it again, or if you simply want to remove it, run the following commands:
+> Si tiene un recopilador de registros existente y desea quitarlo antes de implementarlo de nuevo, o si simplemente desea quitarlo, ejecute los siguientes comandos:
 >
 > ```console
 > docker stop <collector_name>
@@ -72,7 +72,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 1. Cree un origen de datos coincidente para cada firewall o servidor proxy desde el que quiera cargar registros.
 
     1. Haga clic en **Agregar origen de datos**.  
-    ![Add a data source](media/add-data-source.png)
+    ![agregar un origen de datos](media/add-data-source.png)
     1. **Ponga nombre** al servidor proxy o firewall.  
     ![ubuntu1](media/ubuntu1.png)
     1. Seleccione el dispositivo en la lista **Origen**. Si selecciona **Formato de los registros personalizados** para trabajar con un dispositivo de red que no aparezca en la lista, consulte el artículo sobre cómo [trabajar con el analizador de registros personalizados](custom-log-parser.md) para ver las instrucciones de configuración.
@@ -92,10 +92,10 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
     1. Haga clic en **Agregar recopilador de registros**.
     1. Ponga **nombre** al recopilador de registros.
     1. Escriba la **dirección IP de host** de la máquina que se va a usar para implementar Docker. La dirección IP del host puede reemplazarse con el nombre del equipo si un servidor DNS (o equivalente) resolverá el nombre de host.
-    1. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration.
+    1. Seleccione todos los **orígenes de datos** que desea conectar al recopilador y haga clic en **Actualizar** para guardar la configuración.
     ![ubuntu2](media/ubuntu2.png)
 
-1. Aparecerá más información de implementación. **Copie** el comando de ejecución desde el cuadro de diálogo. You can use the copy to clipboard icon, ![copy to clipboard icon](media/copy-icon.png). Lo necesitará más adelante.
+1. Aparecerá más información de implementación. **Copie** el comando de ejecución desde el cuadro de diálogo. Puede usar el icono Copiar al portapapeles, ![icono Copiar al portapapeles](media/copy-icon.png). Lo necesitará más adelante.
 
 1. **Exporte** la configuración de origen de datos esperada. Esta configuración describe cómo debe establecer la exportación de registro en los dispositivos.
 
@@ -105,7 +105,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
     >
     > * Un único recopilador de registros puede administrar varios orígenes de datos.
     > * Copie el contenido de la pantalla, ya que necesitará la información al configurar el recopilador de registros para comunicarse con Cloud App Security. Si ha seleccionado Syslog, esta información incluirá información sobre el puerto en el que escucha el agente de escucha de Syslog.
-    > * For users sending log data via FTP for the first time, we recommend changing the password for the FTP user. For more information, see [Changing the FTP password](log-collector-ftp.md#changing-the-ftp-password).
+    > * Para que los usuarios envíen datos de registro a través de FTP por primera vez, se recomienda cambiar la contraseña del usuario de FTP. Para obtener más información, consulte [cambiar la contraseña de FTP](log-collector-ftp.md#changing-the-ftp-password).
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>Paso 2: Implementación local de la máquina
 
@@ -113,15 +113,15 @@ En los pasos siguientes se describe la implementación en Windows. Los pasos de 
 
 1. Abra un terminal de PowerShell como administrador en la máquina Windows.
 
-1. Run the following command to download the Windows Docker installer PowerShell script file: `Invoke-WebRequest https://adaprodconsole.blob.core.windows.net/public-files/LogCollectorInstaller.ps1 -OutFile (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
+1. Ejecute el siguiente comando para descargar el archivo de script de PowerShell del instalador de Docker de Windows: `Invoke-WebRequest https://adaprodconsole.blob.core.windows.net/public-files/LogCollectorInstaller.ps1 -OutFile (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
 
-    To validate that the installer is signed by Microsoft, see [Validate installer signature](#validate-signature)
+    Para comprobar que el instalador está firmado por Microsoft, consulte [Validate Installer Signature](#validate-signature) .
 
-1. To enable PowerShell script execution, run `Set-ExecutionPolicy RemoteSigned`
+1. Para habilitar la ejecución de scripts de PowerShell, ejecute `Set-ExecutionPolicy RemoteSigned`
 
-1. Run: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)` This installs the Docker client on your machine. Durante la instalación del contenedor de recopilador de registros, la máquina se reiniciará dos veces y tendrá que volver a iniciar sesión. **Make sure the Docker client is set to use Linux containers.**
+1. Ejecutar: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)` instala el cliente de Docker en la máquina. Durante la instalación del contenedor de recopilador de registros, la máquina se reiniciará dos veces y tendrá que volver a iniciar sesión. **Asegúrese de que el cliente de Docker está configurado para usar contenedores de Linux.**
 
-1. After each restart, open a PowerShell terminal as an administrator on your machine, re-run: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
+1. Después de cada reinicio, abra un terminal de PowerShell como administrador en la máquina, vuelva a ejecutar: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
 
 1. Antes de que finalice la instalación, tendrá que pegar el comando de ejecución que ha copiado anteriormente.
 
@@ -184,6 +184,6 @@ Si la firma digital no es válida, se indicará **La firma digital no es válida
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Log collector FTP configuration](log-collector-ftp.md)
+> [Configuración de FTP del recopilador de registros](log-collector-ftp.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

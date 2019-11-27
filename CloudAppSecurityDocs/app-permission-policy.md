@@ -47,19 +47,19 @@ Como alternativa, también puede crear la directiva, para lo que debe hacer clic
 
    ![Nueva directiva de aplicación de OAuth](./media/app-permissions-policy.png)
 
-## <a name="oauth-app-anomaly-detection-policies"></a>OAuth app anomaly detection policies
+## <a name="oauth-app-anomaly-detection-policies"></a>Directivas de detección de anomalías de aplicación de OAuth
 
-In addition to OAuth app policies you can create, there are the following out-of-the-box anomaly detection policies that profile metadata of OAuth apps to identify ones that are potentially malicious:
+Además de las directivas de aplicación de OAuth que puede crear, hay las siguientes directivas de detección de anomalías integradas que perfilan los metadatos de las aplicaciones de OAuth para identificar las que son potencialmente malintencionadas:
 
 | Nombre de directiva | Descripción de la directiva |
 | --- | --- |
-| Misleading OAuth app name | Scans OAuth apps connected to your environment and triggers an alert when an app with a misleading name is detected. Misleading names, such as foreign letters that resemble Latin letters, could indicate an attempt to disguise a malicious app as a known and trusted app. |
-| Suspicious OAuth app name | Scans OAuth apps connected to your environment and triggers an alert when an app with a suspicious name is detected. Suspicious names, such as names of known apps published by unknown publishers, could indicate an attempt to disguise a malicious app as a known and trusted app. |
-| Non-secure redirect URL is used by an OAuth app | Scans OAuth apps connected to your environment and triggers an alert when an app uses a non-secure redirect URL (for example, does not use the HTTPS protocol), which exposes sensitive data to interception. |
-| Misleading publisher name for an OAuth app | Scans OAuth apps connected to your environment and triggers an alert when an app with a misleading publisher name is detected. Misleading publisher names, such as foreign letters that resemble Latin letters, could indicate an attempt to disguise a malicious app as an app coming from a known and trusted publisher. |
+| Nombre de aplicación OAuth engañoso | Examina las aplicaciones de OAuth conectadas a su entorno y desencadena una alerta cuando se detecta una aplicación con un nombre engañoso. Los nombres engañosos, como letras extranjeras que se parecen a las letras latinas, podrían indicar un intento de disfrazar una aplicación malintencionada como una aplicación conocida y de confianza. |
+| Nombre de aplicación de OAuth sospechoso | Examina las aplicaciones de OAuth conectadas a su entorno y desencadena una alerta cuando se detecta una aplicación con un nombre sospechoso. Los nombres sospechosos, como los nombres de las aplicaciones conocidas publicadas por publicadores desconocidos, podrían indicar un intento de disfrazar una aplicación malintencionada como una aplicación conocida y de confianza. |
+| Una aplicación OAuth usa una dirección URL de redireccionamiento no segura | Examina las aplicaciones de OAuth conectadas a su entorno y desencadena una alerta cuando una aplicación usa una dirección URL de redireccionamiento no segura (por ejemplo, no usa el protocolo HTTPS), que expone datos confidenciales a la interceptación. |
+| Nombre de publicador engañoso para una aplicación de OAuth | Examina las aplicaciones de OAuth conectadas a su entorno y desencadena una alerta cuando se detecta una aplicación con un nombre de publicador engañoso. Los nombres de publicador engañosos, como letras extranjeras que se parecen a las letras latinas, podrían indicar un intento de disfrazar una aplicación malintencionada como una aplicación procedente de un editor conocido y de confianza. |
 
 > [!NOTE]
-> Anomaly detection policies are only available for OAuth apps that are authorized in your Azure Active Directory.
+> Las directivas de detección de anomalías solo están disponibles para las aplicaciones de OAuth autorizadas en el Azure Active Directory.
 
   ## <a name="next-steps"></a>Pasos siguientes 
   [Directivas de protección de datos](data-protection-policies.md)

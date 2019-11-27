@@ -35,7 +35,7 @@ Cuando consulta la página **Directiva**, se pueden distinguir las distintas pol
 
 Pueden crearse los siguientes tipos de directivas:
 
-|Icono de tipo de directiva|Tipo de directiva|Utilice los|
+|Icono de tipo de directiva|Tipo de directiva|Usar|
 |-----|-----------------|---------|
 |![Icono de directiva de acceso](./media/proxy-policy.png)|Directiva de acceso|Las directivas de acceso proporcionan funcionalidades de supervisión y control en tiempo real de los inicios de sesión de usuario en las aplicaciones en la nube.|
 |![icono de directiva de actividad](./media/activity_policy.png)|Directiva de actividad|Las directivas de actividad permiten aplicar toda una variedad de procesos automatizados usando las API del proveedor de aplicaciones. Estas directivas permiten supervisar actividades concretas realizadas por distintos usuarios o seguir niveles inesperadamente altos de un determinado tipo de actividad.|
@@ -173,23 +173,23 @@ Después de crear una directiva, puede habilitarla o deshabilitarla. Si la desha
 
 De manera predeterminada, las directivas están habilitadas después de crearlas.
 
-## <a name="policies-overview-report"></a>Policies overview report
+## <a name="policies-overview-report"></a>Informe información general sobre directivas
 
-Cloud App Security lets you export a policies overview report showing aggregated alert metrics per policy to help you monitor, understand, and customize your policies to better protect your organization.
+Cloud App Security le permite exportar un informe de información general de directivas que muestra métricas de alertas agregadas por directiva para ayudarle a supervisar, comprender y personalizar las directivas para proteger mejor su organización.
 
-To export a log, perform the following steps:
+Para exportar un registro, realice los pasos siguientes:
 
-1. In the **Policies** page, click the **Export** button.
+1. En la página **directivas** , haga clic en el botón **exportar** .
 
-1. Specify the required time range.
+1. Especifique el intervalo de tiempo necesario.
 
-1. Click **Export**. Este proceso puede tardar en completarse.
+1. Haga clic en **exportar**. Este proceso puede tardar en completarse.
 
-To download the exported report:
+Para descargar el informe exportado:
 
 1. Una vez que el informe esté listo, vaya a **Configuración** y después a **Informes exportados**.
 
-1. In the table, select the relevant report from the list of **Policies overview report** and click download.
+1. En la tabla, seleccione el informe correspondiente en el **Informe información general** de la lista de directivas y haga clic en descargar.
 
     ![Botón de descarga](./media/download-button.png)
 

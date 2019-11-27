@@ -32,7 +32,7 @@ Si trabaja con Cloud App Security y iboss, puede integrar los dos productos para
 - Las funcionalidades de bloqueo de iboss se aplican automáticamente a las aplicaciones que haya establecido como no autorizadas en Cloud App Security.
 - Mejore su portal de administración de iboss gracias a la valoración de riesgos de Cloud App Security de las 100 aplicaciones en la nube más importantes de su organización, que se pueden ver directamente en el portal de administración de iboss.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 
 - Una licencia válida para Microsoft Cloud App Security
 - Una licencia válida para iboss Secure Cloud Gateway (versión 9.1.100.0 o posterior)

@@ -27,7 +27,7 @@ ms.locfileid: "74460428"
 *Se aplica a: Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
-[« PREVIOUS: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)<br>
+[«ANTERIOR: incorporación e implementación de Control de aplicaciones de acceso condicional para cualquier aplicación»](proxy-deployment-any-app.md)<br>
 [SIGUIENTE: Cómo crear una directiva de acceso »](access-policy-aad.md)
 
 
@@ -44,7 +44,7 @@ Por ejemplo, puede decidir que, desde cualquier dispositivo no administrado o en
 
 - Tener una licencia de Azure AD Premium P1.
 - Las aplicaciones en cuestión deben estar [implementadas con control de aplicaciones de acceso condicional](proxy-deployment-aad.md).
-- Debe haber aplicada una [directiva de acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) que redirija a los usuarios Microsoft Cloud App Security, tal y como se describe aquí.
+- Debe haber aplicada una [directiva de acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) que redirija a los usuarios a Microsoft Cloud App Security, tal y como se describe aquí.
 
 > [!NOTE]
 > Las directivas de sesión también admiten aplicaciones que estén configuradas con proveedores de identidades que no sean Azure AD. Para obtener más información sobre este escenario, envíe un correo electrónico a mcaspreview@microsoft.com.
@@ -144,11 +144,11 @@ Para descargar el registro exportado:
      ![Botón de descarga](./media/download-button.png)
 
 
-## Bloqueo de todas las descargas<a name="block-download"></a>
+## <a name="block-download">Bloqueo de todas las descargas</a>
 
 Cuando **Bloquear** es la **Acción** establecida que quiere realizar en la directiva de sesión de Cloud App Security, el control de aplicaciones de acceso condicional impedirá al usuario descargar un archivo de acuerdo con los filtros de archivos de la directiva. Microsoft Cloud App Security reconoce un evento de descarga para cada aplicación cuando un usuario inicia una descarga. El Control de aplicaciones de acceso condicional interviene en tiempo real para evitar que se ejecute. Cuando se recibe la señal de que un usuario ha iniciado una descarga, el control de aplicaciones de acceso condicional devuelve al usuario un mensaje que indica que la **descarga está restringida** y reemplaza el archivo descargado por un archivo de texto. El mensaje de dicho archivo se puede configurar y personalizar para el usuario en la directiva de sesión.  
 
-## Bloqueo de actividades específicas<a name="block-activities"></a>
+## <a name="block-activities">Bloqueo de actividades específicas</a>
 
 Cuando **Bloquear actividades** se establece como **Tipo de actividad**, pueden seleccionarse determinadas actividades para bloquear aplicaciones específicas. Todas las actividades de las aplicaciones seleccionadas se supervisarán y notificarán en el registro de actividad. Las actividades específicas que seleccione se bloquearán si selecciona la acción **Bloquear**. Las actividades específicas que seleccione generarán alertas si selecciona la acción **Probar** y hay alertas activadas.
 
@@ -161,12 +161,12 @@ Seleccione **Bloquear actividades** para bloquear actividades específicas que s
 Cuando **Proteger** es la **Acción** establecida que va a realizarse en la directiva de sesión de Cloud App Security, el control de aplicaciones de acceso condicional exige que el archivo se etiquete y proteja de acuerdo con los filtros de archivos de la directiva. Las etiquetas se configuran en la consola de Azure Information Protection y **Proteger** debe estar seleccionado en la etiqueta para que aparezca como una opción en la directiva de Cloud App Security. Cuando se selecciona una etiqueta y se descarga un archivo que cumple los criterios de la directiva de Cloud App Security, tanto la etiqueta como la protección correspondiente (con permisos) se aplican al archivo de descarga. El archivo original permanece tal cual en la aplicación en la nube, mientras que el archivo descargado ahora está protegido. Los usuarios que intenten acceder al archivo deben cumplir los requisitos de permiso establecidos por la protección aplicada.  
  
 >[!div class="step-by-step"]
-[« PREVIOUS: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)<br>
+[«ANTERIOR: incorporación e implementación de Control de aplicaciones de acceso condicional para cualquier aplicación»](proxy-deployment-any-app.md)<br>
 [SIGUIENTE: Cómo crear una directiva de acceso »](access-policy-aad.md)
 
 ## <a name="next-steps"></a>Pasos siguientes
  
-[Blocking downloads on unmanaged devices using Azure AD Conditional Access App Control capabilities](use-case-proxy-block-session-aad.md) (Bloqueo de descargas en dispositivos no administrados con las funciones de control de aplicaciones de acceso condicional de Azure AD)   
+[Bloqueo de descargas en dispositivos no administrados con las funciones de control de aplicaciones de acceso condicional de Azure AD](use-case-proxy-block-session-aad.md)   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  
   

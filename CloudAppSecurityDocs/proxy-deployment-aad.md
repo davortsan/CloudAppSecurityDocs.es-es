@@ -23,29 +23,29 @@ ms.locfileid: "74460622"
 
 >[!div class="step-by-step"]
 [« Anterior: Introducción a Control de aplicación de acceso condicional](proxy-intro-aad.md)<br>
-[Next: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)
+[Siguiente: incorporación e implementación de Control de aplicaciones de acceso condicional para cualquier aplicación»](proxy-deployment-any-app.md)
 
-Session controls in Microsoft Cloud App Security work with the featured apps. For a list of apps that are featured by Cloud App Security to work out-of-the-box, see [Protect apps with Microsoft Cloud App Security Conditional Access App Control](proxy-intro-aad.md#featured-apps).
+Los controles de sesión de Microsoft Cloud App Security funcionan con las aplicaciones destacadas. Para obtener una lista de las aplicaciones que se incluyen en Cloud App Security trabajar de forma integrada, consulte [proteger aplicaciones con Microsoft Cloud App Security control de aplicaciones de acceso condicional](proxy-intro-aad.md#featured-apps).
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 
 Para implementar el Control de aplicaciones de acceso condicional para aplicaciones de Azure AD, necesita una [licencia válida de Azure AD Premium P1](https://docs.microsoft.com/azure/active-directory/license-users-groups) y otra de Cloud App Security.
 
-## <a name="to-deploy-featured-apps"></a>To deploy featured apps
+## <a name="to-deploy-featured-apps"></a>Para implementar aplicaciones destacadas
 
-Follow these steps to configure featured apps to be controlled by Microsoft Cloud App Security Conditional Access App Control.
+Siga estos pasos para configurar las aplicaciones destacadas que se van a controlar mediante Microsoft Cloud App Security Control de aplicaciones de acceso condicional.
 
-**Step 1: [Go to the Azure AD portal and create a conditional access policy for the apps and route the session to Cloud App Security](#add-azure-ad)**
+**Paso 1: [ir al portal de Azure ad y crear una directiva de acceso condicional para las aplicaciones y enrutar la sesión a Cloud App Security](#add-azure-ad)**
 
-**Step 2: [Sign in to each app using a user scoped to the policy](#sign-in-scoped)**
+**Paso 2: [iniciar sesión en cada aplicación con un usuario con ámbito en la Directiva](#sign-in-scoped)**
 
-**Step 3: [Verify the apps are configured to use access and session controls](#portal)**
+**Paso 3: [comprobar que las aplicaciones están configuradas para usar controles de acceso y de sesión](#portal)**
 
-**Step 4: [Test the deployment](#test)**
+**Paso 4: [probar la implementación](#test)**
 
-## Step 1: Create an Azure AD conditional access test policy <a name="add-azure-ad"></a>
+## Paso 1: crear una directiva de prueba de acceso condicional Azure AD<a name="add-azure-ad"></a>
 
-1. In Azure Active Directory, under **Security**, click **Conditional Access**.
+1. En Azure Active Directory, en **seguridad**, haga clic en **acceso condicional**.
 
 1. Haga clic en **Nueva directiva** y cree una directiva.
 
@@ -59,31 +59,31 @@ Follow these steps to configure featured apps to be controlled by Microsoft Clou
 
    ![Acceso condicional de Azure AD](./media/azure-ad-caac-policy.png)
 
-1. Click **Enable** and **Save**.
+1. Haga clic en **Habilitar** y **Guardar**.
 
-## Step 2: Sign in to each app using a user scoped to the policy<a name="sign-in-scoped"></a>
+## Paso 2: iniciar sesión en cada aplicación con un usuario con ámbito en la Directiva<a name="sign-in-scoped"></a>
 
 > [!NOTE]
-> Before proceeding, make sure to first sign out of existing sessions.
+> Antes de continuar, asegúrese de cerrar primero las sesiones existentes.
 
 Después de crear la directiva, inicie sesión en cada aplicación configurada en esa directiva. Asegúrese de que inicia sesión con un usuario configurado en la directiva.
 
-Cloud App Security will sync your policy details to its servers for each new app you sign in to. Este proceso puede tardar hasta un minuto.
+Cloud App Security sincronizará los detalles de la Directiva con sus servidores para cada nueva aplicación en la que inicie sesión. Este proceso puede tardar hasta un minuto.
 
-## Step 3: Verify the apps are configured to use access and session controls<a name="portal"></a>
+## Paso 3: comprobar que las aplicaciones están configuradas para usar controles de acceso y de sesión<a name="portal"></a>
 
-Las instrucciones anteriores le han ayudado a crear una directiva integrada de Cloud App Security para aplicaciones destacadas directamente en Azure AD. In this step, verify that the access and session controls are configured for these apps.
+Las instrucciones anteriores le han ayudado a crear una directiva integrada de Cloud App Security para aplicaciones destacadas directamente en Azure AD. En este paso, compruebe que los controles de sesión y acceso estén configurados para estas aplicaciones.
 
-1. In the Cloud App Security portal, click the settings cog ![settings icon](./media/settings-icon.png "icono de configuración"), and then select **Conditional Access App Control**.
+1. En el portal de Cloud App Security, haga clic en el icono configuración engranaje ![configuración](./media/settings-icon.png "icono de configuración")y seleccione **control de aplicaciones de acceso condicional**.
 
-1. In the Conditional Access App Control apps table, look at the **Available controls** column and verify that both **Access control** and **Session control** appear for your apps.
+1. En la tabla Control de aplicaciones de acceso condicional Apps, examine la columna **controles disponibles** y compruebe que el **control de acceso** y el **control de sesión** aparecen para las aplicaciones.
 
    > [!NOTE]
-   > If session control doesn't appear for an app, it's not yet available for that specific app. You can either add it immediately as a [custom app](proxy-deployment-any-app.md), or you can open a request to add it as a featured app by clicking **Request session control**.
+   > Si el control de sesión no aparece para una aplicación, aún no está disponible para esa aplicación específica. Puede agregarla inmediatamente como una [aplicación personalizada](proxy-deployment-any-app.md)o puede abrir una solicitud para agregarla como una aplicación destacada haciendo clic en **solicitar control**de la sesión.
     >
     >![Solicitud del Control de aplicaciones de acceso condicional](media/caac-request.png)
 
-## Step 4: Test the deployment<a name="test"></a>
+## Paso 4: probar la implementación<a name="test"></a>
 
 1. Primero, cierre cualquier sesión existente. Después, intente iniciar sesión en cada aplicación que se ha implementado correctamente. Inicie sesión con un usuario que coincida con la directiva configurada en Azure AD.
 
@@ -100,10 +100,10 @@ Para confirmar que la actividad se captura correctamente, haga clic en un regist
 > Después de implementarse, no se puede quitar una aplicación de la página Control de aplicaciones de acceso condicional. Mientras no establezca una sesión o una directiva de acceso en la aplicación, el Control de aplicaciones de acceso condicional no cambiará el comportamiento de la aplicación.
 
 >[!div class="step-by-step"]
-[« Anterior: Introducción a Control de aplicación de acceso condicional](proxy-intro-aad.md)<br>[Next: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)
+[« Anterior: Introducción a Control de aplicación de acceso condicional](proxy-intro-aad.md)<br>[Siguiente: incorporación e implementación de Control de aplicaciones de acceso condicional para cualquier aplicación»](proxy-deployment-any-app.md)
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Working with Cloud App Security Conditional Access App Control](proxy-intro-aad.md)
+[Trabajar con Cloud App Security Control de aplicaciones de acceso condicional](proxy-intro-aad.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

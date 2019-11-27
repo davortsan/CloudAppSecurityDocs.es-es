@@ -40,7 +40,7 @@ Cloud App Security examina el entorno de nube y, en función de la configuració
 
 Dado que Cloud App Security se ejecuta en Azure, las implementaciones en Azure tendrán mejores resultados. Aun así se admiten otras opciones, incluidas otras implementaciones en la nube y locales. La implementación en otros entornos puede afectar al rendimiento, debido a una latencia mayor y un rendimiento inferior. El servidor ICAP y Stunnel deben implementarse juntos en la misma red para garantizar que se cifre el tráfico.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 Para que Cloud App Security envíe datos a través de Stunnel al servidor ICAP, abra el firewall de red perimetral a las direcciones IP externas que usa Cloud App Security con un número de puerto de origen dinámico. 
 
 1.  Direcciones de origen: vea la sección [Requisitos previos en Conectar aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#prerequisites)
@@ -277,7 +277,7 @@ El servidor de detección que Cloud App Security usa es un servidor estándar de
     
       ![deshabilitar el modo de prueba](./media/icap-disable-trial-mode.png)
     
-2. En **ICAP** > **Filtrado de respuesta**, cambie el valor **Ignore Responses Smaller Than** (Omitir respuestas menores que) a 1.
+2. En **ICAP** > **Filtrado de respuesta**, cambie el valor **Omitir respuestas menores que** a 1.
 
 
 3. Agregue "application/\*" a la lista **Inspect Content Type</em>** (Inspeccionar tipo de contenido).

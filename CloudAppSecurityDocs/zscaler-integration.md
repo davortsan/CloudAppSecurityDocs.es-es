@@ -32,7 +32,7 @@ Si trabaja con Cloud App Security y Zscaler, puede integrar los dos productos pa
 - Las funcionalidades de bloque de Zscaler se aplican automáticamente a las aplicaciones que haya establecido como no autorizadas en Cloud App Security.
 - Mejore el portal de Zscaler con la evaluación de riesgos de Cloud App Security para 200 aplicaciones líderes en la nube que pueden verse directamente en el portal de Zscaler.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 
 - Una licencia válida para Microsoft Cloud App Security
 - Una licencia válida para Zscaler Cloud 5.6

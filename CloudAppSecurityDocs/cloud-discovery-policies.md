@@ -31,11 +31,11 @@ Puede crear directivas de detección de aplicaciones para que se le envíen aler
 ## <a name="creating-an-app-discovery-policy"></a>Crear una directiva de detección de aplicaciones  
 Las directivas de detección permiten establecer alertas que avisan cuando se detectan nuevas aplicaciones en la organización.  
   
-1. En la consola, haga clic en **Control**, seguido de **Directivas**.  
+1. En la consola, haga clic en **Control** seguido de **Directivas**.  
   
 2. Haga clic en **Crear directiva** y seleccione **Directiva de detección de aplicaciones**.  
   
-     ![app discovery policy menu](./media/app-discovery-policy-menu.png "menú de directiva de detección de aplicaciones")  
+     ![menú de directiva de detección de aplicaciones](./media/app-discovery-policy-menu.png "menú de directiva de detección de aplicaciones")  
   
 3. Proporcione un nombre y una descripción para la directiva. Si quiere, puede basarse en una plantilla. Para obtener más información sobre las plantillas de directiva, vea [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).  
   
@@ -67,17 +67,17 @@ Establezca los filtros de directiva para detectar los servicios que se encuentre
  Establezca los umbrales que deben desencadenar una alerta para una determinada aplicación detectada en la parte inferior. Por ejemplo, defina que se envíe una alerta solo si más de 100 usuarios del entorno han usado la aplicación y si han descargado una cantidad determinada de datos del servicio.
 También puede establecer el límite de alertas diarias que quiere recibir.  
   
-![app discovery policy example](./media/app-discovery-policy-example.png "ejemplo de directiva de detección de aplicaciones")  
+![ejemplo de directiva de detección de aplicaciones](./media/app-discovery-policy-example.png "ejemplo de directiva de detección de aplicaciones")  
   
 ## <a name="cloud-discovery-anomaly-detection"></a>Detección de anomalías de Cloud Discovery
 
 Cloud App Security busca en todos los registros de Cloud Discovery para encontrar anomalías. Por ejemplo, cuando un usuario que nunca ha usado Dropbox de repente carga 600 GB o cuando hay muchas más transacciones de lo habitual en una aplicación determinada. La directiva de detección de anomalías está habilitada de forma predeterminada. No es necesario configurar ninguna directiva nueva para que funcione. Pero puede ajustar los tipos de anomalías sobre los que quiere que se le envíen alertas en la directiva predeterminada.  
   
-1. En la consola, haga clic en **Control**, seguido de **Directivas**.  
+1. En la consola, haga clic en **Control** seguido de **Directivas**.  
   
 2. Haga clic en **Crear directiva** y seleccione la directiva **Detección de anomalías de Cloud Discovery**.  
   
-     ![cloud discovery anomaly detection policy menu](./media/cloud-discovery-anomaly-detection-policy-menu.png "menú de directiva de detección de anomalías de Cloud Discovery")  
+     ![menú de directiva de detección de anomalías de Cloud Discovery](./media/cloud-discovery-anomaly-detection-policy-menu.png "menú de directiva de detección de anomalías de Cloud Discovery")  
   
 3. Proporcione un nombre y una descripción para la directiva. Si quiere, puede basarse en una plantilla. Para obtener más información sobre las plantillas de directiva, vea [Controlar aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).  
   
@@ -95,7 +95,7 @@ Cloud App Security busca en todos los registros de Cloud Discovery para encontra
   
 8. Haga clic en **Crear**.  
   
-![new discovery anomaly policy](./media/new-discovery-anomaly-policy.png "nueva directiva de detección de anomalías")  
+![nueva Directiva de anomalías de detección](./media/new-discovery-anomaly-policy.png "nueva directiva de detección de anomalías")  
   
 ## <a name="next-steps"></a>Pasos siguientes 
 [Directivas de actividad de usuario](user-activity-policies.md)   

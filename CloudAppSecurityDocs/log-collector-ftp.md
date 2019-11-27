@@ -36,7 +36,7 @@ Es posible que deba modificar la configuración de Docker de Cloud Discovery par
 
 1. Conéctese al host del recopilador de registros.
 
-2. Ejecute `docker exec -it <collector name> pure-pw passwd <ftp user>`:
+2. Ejecute `docker exec -it <collector name> pure-pw passwd <ftp user>`
 
     1. Escriba la nueva contraseña.
     2. Vuelva a escribir la nueva contraseña para confirmarla.

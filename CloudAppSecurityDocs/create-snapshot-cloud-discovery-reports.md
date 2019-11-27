@@ -91,7 +91,7 @@ Por lo tanto, estos atributos no se mostrarán en los datos de Cloud Discovery d
 
 
 Para generar correctamente un informe de Cloud Discovery, los registros de tráfico deben cumplir las condiciones siguientes:
-1. [Data source is supported](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+1. [Se admite el origen de datos](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 2. El formato de registro coincide con el formato estándar esperado (el formato se comprueba después de la carga mediante la herramienta de registro).
 3. Los eventos no tienen más de 90 días.
 4. El archivo de registro es válido e incluye información sobre el tráfico saliente.

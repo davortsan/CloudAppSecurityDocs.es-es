@@ -48,7 +48,7 @@ En el panel de Cloud App Security se proporciona una visión general de las acti
 
 Es recomendable que eche un vistazo al panel a diario para ver qué nuevas alertas se han activado. Es un buen lugar para vigilar el estado de su entorno de nube. Con el panel puede hacerse una idea de lo que sucede.  
 
-![Cloud App Security dashboard](./media/dashboard.png "panel")  
+![Panel de Cloud App Security](./media/dashboard.png "panel")  
 
 
 ## <a name="next-steps"></a>Pasos siguientes  

@@ -34,8 +34,8 @@ En la tabla se enumera cada estado de inspección de contenido y su descripción
 
 |Estado de la inspección de contenido|Descripción|
 |----|----|
-|Completed|La inspección de contenido se completó correctamente.|
-|No disponible|La inspección de contenido no es aplicable para este archivo. Puede ser que este estado aparezca porque no hay ninguna directiva que requiera la inspección de contenido de este archivo o porque no se admite el tipo de archivo.|
+|Completada|La inspección de contenido se completó correctamente.|
+|No aplicable|La inspección de contenido no es aplicable para este archivo. Puede ser que este estado aparezca porque no hay ninguna directiva que requiera la inspección de contenido de este archivo o porque no se admite el tipo de archivo.|
 |Pending|El archivo está actualmente en la cola de inspección de contenido.|
 |Error: Error de descarga|Microsoft Cloud App Security no ha podido descargar el archivo para la inspección.|
 |Error: Archivo cifrado|El archivo no se ha podido descifrar.|
@@ -50,7 +50,7 @@ En la tabla se enumera cada estado de inspección de contenido y su descripción
 > [!NOTE]
 > Si observa un guión en el estado del examen, significará que el archivo no está en la cola de examen. Consulte las [directivas de archivos](data-protection-policies.md) para obtener más información sobre cómo establecer directivas de inspección de contenido.
 
-## <a name="see-also"></a>Véase también  
+## <a name="see-also"></a>Vea también  
 [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

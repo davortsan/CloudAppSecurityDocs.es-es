@@ -39,7 +39,7 @@ Las directivas de acceso de Microsoft Cloud App Security permiten la supervisió
 
 - Tener una licencia de Azure AD Premium P1.
 - Las aplicaciones en cuestión deben estar [implementadas con control de aplicaciones de acceso condicional](proxy-deployment-aad.md).
-- Debe haber aplicada una [directiva de acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) que redirija a los usuarios Microsoft Cloud App Security, tal y como se describe aquí.
+- Debe haber aplicada una [directiva de acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) que redirija a los usuarios a Microsoft Cloud App Security, tal y como se describe aquí.
 
 > [!NOTE]
 > - Las directivas de acceso también admiten aplicaciones que estén configuradas con proveedores de identidades que no sean Azure AD. Para obtener más información, envíe un correo electrónico a mcaspreview@microsoft.com.
@@ -90,7 +90,7 @@ Para crear una directiva de acceso, siga este procedimiento:
 
  
 ## <a name="next-steps"></a>Pasos siguientes  
-[Blocking downloads on unmanaged devices using Azure AD Conditional Access App Control capabilities](use-case-proxy-block-session-aad.md) (Bloqueo de descargas en dispositivos no administrados con las funciones de control de aplicaciones de acceso condicional de Azure AD)   
+[Bloqueo de descargas en dispositivos no administrados con las funciones de control de aplicaciones de acceso condicional de Azure AD](use-case-proxy-block-session-aad.md)   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  
   

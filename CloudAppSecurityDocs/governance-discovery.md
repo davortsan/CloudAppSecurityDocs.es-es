@@ -25,7 +25,7 @@ ms.locfileid: "74461354"
 
 *Se aplica a: Microsoft Cloud App Security*
 
-After you've reviewed the list of discovered apps in your environment, you can secure your environment by approving safe apps (**Sanctioned**) or prohibiting unwanted apps (**Unsanctioned**) in the following ways.
+Después de revisar la lista de aplicaciones detectadas en su entorno, puede proteger su entorno mediante la aprobación de aplicaciones seguras (**autorizadas**) o la prohibición de las aplicaciones no deseadas (no**autorizadas**) de las siguientes maneras.
 
 ## <a name="BKMK_SanctionApp"></a> Autorizar o no autorizar una aplicación
 
@@ -38,7 +38,7 @@ Si tiene una lista de aplicaciones que quiere autorizar o no autorizar, active l
 Para consultar una lista de las aplicaciones no autorizadas, puede [generar un script de bloque mediante las API de Cloud App Security](https://us.portal.cloudappsecurity.com/api-docs/#generate-block-script).
 
 > [!NOTE]
-> If your tenant uses Zscaler NSS or iboss, any app you mark as unsanctioned is automatically blocked by Cloud App Security, and the following sections regarding creating blocking scripts are unnecessary. For more information, see [Integrating with Zscaler](zscaler-integration.md) and [Integrate Cloud App Security with iboss](iboss-integration.md) respectively.
+> Si el inquilino usa Zscaler NSS o iboss, las aplicaciones marcadas como no autorizadas se bloquean automáticamente mediante Cloud App Security y las siguientes secciones sobre la creación de scripts de bloqueo son innecesarias. Para obtener más información, vea [integrar con Zscaler](zscaler-integration.md) e [integrar Cloud App Security con iboss](iboss-integration.md) , respectivamente.
 
 ## <a name="export-a-block-script-to-govern-discovered-apps"></a>Exportar un script de bloque para controlar aplicaciones detectadas
 

@@ -45,19 +45,19 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
 
     * En **Administrar usuarios**, vaya a la página **Perfiles de usuario**.
 
-        ![salesforce manage users profiles](./media/salesforce-manageusers-profiles.png "salesforce manage users profiles")
+        ![administrar perfiles de usuarios de Salesforce](./media/salesforce-manageusers-profiles.png "administrar perfiles de usuarios de Salesforce")
 
     * Haga clic en **Nuevo** para crear un perfil nuevo.
-    * Elija el perfil que acaba de crear para implementar Cloud App Security y haga clic en **Editar**. This profile will be used for the Cloud App Security service account to set up the App connector.
+    * Elija el perfil que acaba de crear para implementar Cloud App Security y haga clic en **Editar**. Este perfil se utilizará para la cuenta de servicio de Cloud App Security para configurar el conector de aplicaciones.
 
-         ![salesforce edit profile](./media/salesforce-edit-profile.png "editar perfil en Salesforce")
+         ![Editar perfil de Salesforce](./media/salesforce-edit-profile.png "editar perfil en Salesforce")
 
     * Asegúrese de que las siguientes casillas están activadas:
       * **API Enabled** (API habilitada)
       * **Ver todos los datos**
       * **Manage Salesforce CRM Content** (Administrar contenido CRM de Salesforce)
       * **Administrar usuarios**
-      * **[Query All Files](https://go.microsoft.com/fwlink/?linkid=2106480)**
+      * **[Consultar todos los archivos](https://go.microsoft.com/fwlink/?linkid=2106480)**
 
       Si estas casillas no están activadas, es posible que deba ponerse en contacto con Salesforce para agregarlas a su cuenta.
 
@@ -65,11 +65,11 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
 
     1. Vaya a la página de configuración de Salesforce.
 
-        ![salesforce setup](./media/salesforce-setup.png "configuración de Salesforce")
+        ![configuración de Salesforce](./media/salesforce-setup.png "configuración de Salesforce")
 
     1. En el menú lateral, seleccione **Administrar usuarios** y haga clic en **Usuarios**.
 
-        ![salesforce menu users](./media/salesforce-menu-users.png "menú de usuarios de Salesforce")
+        ![usuarios del menú de Salesforce](./media/salesforce-menu-users.png "menú de usuarios de Salesforce")
 
     1. Seleccione el usuario administrativo actual de su usuario de Cloud App Security dedicado.
 
@@ -77,7 +77,7 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
 
         Si no está activada, haga clic en **Editar** y después active la casilla.
 
-        ![salesforce crm content user](./media/salesforce-crm-content-user.png "usuario de contenido CRM de Salesforce")
+        ![usuario de contenido CRM de Salesforce](./media/salesforce-crm-content-user.png "usuario de contenido CRM de Salesforce")
 
     1. Haga clic en **Guardar**.
 
@@ -85,13 +85,13 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
 
 1. En la página **Conectores de aplicaciones**, haga clic en el botón del signo más y, después, en **Salesforce**.
 
-    ![connect salesforce](./media/connect-salesforce.png "conectarse a Salesforce")
+    ![conectar Salesforce](./media/connect-salesforce.png "conectarse a Salesforce")
 
 1. En la página de configuración de Salesforce, en la pestaña API, haga clic en **Seguir vínculo**, en función de la instancia que vaya a instalar.
 
 1. Se abrirá la página de inicio de sesión de Salesforce. Escriba sus credenciales para permitir que Cloud App Security tenga acceso a la aplicación de Salesforce de su equipo.
 
-    ![salesforce sign-in](./media/salesforce-logon.png "inicio de sesión en Salesforce")
+    ![Inicio de sesión de Salesforce](./media/salesforce-logon.png "inicio de sesión en Salesforce")
 
 1. Salesforce le preguntará si quiere permitir que Cloud App Security acceda a la información y el registro de actividad de su equipo y que realice actividades como cualquier miembro del equipo. Para continuar, haga clic en **Permitir**.
 

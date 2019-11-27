@@ -37,15 +37,15 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
     ![google1](media/google1.png)
 
 1. En la pantalla **Nuevo proyecto**, asigne al proyecto el nombre siguiente:  
-**Cloud App Security** and click **Create**.
+**Cloud App Security** y haga clic en **crear**.
 
     ![google2](media/google2.png)
 
 1. Una vez creado el proyecto, en la barra de herramientas, haga clic en **Google Cloud Platform**. Asegúrese de que el proyecto correcto está seleccionado en la lista desplegable en la parte superior.
 
-    ![google project](media/googleverify-project.png)
+    ![proyecto de Google](media/googleverify-project.png)
 
-1. Under **APIs**, click **Go to API's overview**.
+1. En **API**, haga clic en **ir a información general de la API**.
 
     ![google3](media/google3.png)
 
@@ -59,16 +59,16 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
 
     * SDK de G Suite Marketplace
 
-    ![google apis](media/google4.png
+    ! [API de Google] (media/google4. png
 
     > [!NOTE]
     > Omita por ahora la advertencia sobre **credenciales**.
 
 1. Haga clic en Habilitar para cada API.
-    ![enable Google APPI](media/google-api.png)
+    ![habilitar Google APPI](media/google-api.png)
 1. Asegúrese de que las siguientes API están habilitadas:
 
-    ![google enabled apis](media/google5.png)
+    ![API habilitadas para Google](media/google5.png)
 
 1. Haga clic en **Credenciales** y, a continuación, seleccione la pestaña **OAuth consent screen** (Pantalla de consentimiento de OAuth).
 
@@ -78,56 +78,56 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
 
     * Haga clic en **Guardar**.
 
-    ![Google oauth consent](media/google-oauth-consent.png)
+    ![Consentimiento de OAuth de Google](media/google-oauth-consent.png)
 
 1. En la pestaña **Credenciales**, haga clic en la flecha situada junto a **Crear credenciales**.
 
-    ![Google credentials](media/google7.png)
+    ![Credenciales de Google](media/google7.png)
 
 1. Seleccione **Service account key** (Clave de la cuenta del servicio).
 
-    ![Google service account key](media/google8.png)
+    ![Clave de la cuenta de servicio de Google](media/google8.png)
 
 1. En **Crear clave de cuenta de servicio**, elija **Nueva cuenta de servicio** y escriba cualquier nombre (por ejemplo, **Cuenta de servicio 1**). En **Función**, elija **Project** (Proyecto) y después **Editor**. En **Tipo de clave**, elija **P12** y haga clic en **Crear**. Se guardará un archivo de certificado P12 en el equipo.
 
-    ![Create service account key in Google](media/google9.png)
+    ![Crear clave de cuenta de servicio en Google](media/google9.png)
 
 1. Copie el **identificador de la cuenta de servicio** asignado a su servicio, ya que lo necesitará más adelante.
 
 1. En la pantalla **Credenciales**, haga clic en **Manage service accounts** (Administrar las cuentas de servicio) en el extremo derecho.
 
-    ![credenciales de la cuenta de servicio de G Suite](media/google10.png "G Suite credentials service account")
+    ![credenciales de la cuenta de servicio de G Suite](media/google10.png "Cuenta de servicio de credenciales de G Suite")
 
 1. Haga clic en los tres puntos a la derecha de la cuenta de servicio que ha creado y seleccione **Editar**.
 
-    ![google edit](media/google11.png "google edit")
+    ![edición de Google](media/google11.png "edición de Google")
 
-1. Click **VIEW DOMAIN WIDE DELEGATION CLIENT ID**.
+1. Haga clic en **Ver ID**. de cliente de delegación en todo el dominio.
 
-    ![google client ID](media/google12.png "google12")
+    ![ID. de cliente de Google](media/google12.png "google12")
 
-    * Copy the **Client ID** - you need it later.
+    * Copie el **ID** . de cliente (lo necesitará más adelante).
 
     * Vaya a [admin.google.com](https://admin.google.com/) y haga clic en **Seguridad**.
 
-    * Select **Show more** and then choose **Advanced settings**.
+    * Seleccione **Mostrar más** y, a continuación, **Configuración avanzada**.
 
-    * In the **Authentication** section, select **Manage API client access**.
+    * En la sección **autenticación** , seleccione **administrar acceso de cliente de API**.
 
-    * In the **Client Name** box, enter the **Client ID** that you copied earlier.
+    * En el cuadro **nombre de cliente** , escriba el identificador de **cliente** que copió anteriormente.
 
-    ![manage api client access](media/google12-2.png "google12-2")
+    ![administrar el acceso de cliente de API](media/google12-2.png "google12-2")
 
-    * In the **One or More API Scopes** box, enter the following list of required scopes (copy the text and paste it in the box):
+    * En el cuadro **uno o más ámbitos** de la API, escriba la siguiente lista de ámbitos necesarios (Copie el texto y péguelo en el cuadro):
 
             `https://www.googleapis.com/auth/admin.reports.audit.readonly,https://www.googleapis.com/auth/admin.reports.usage.readonly,https://www.googleapis.com/auth/drive,https://www.googleapis.com/auth/drive.appdata,https://www.googleapis.com/auth/drive.apps.readonly,https://www.googleapis.com/auth/drive.file,https://www.googleapis.com/auth/drive.metadata.readonly,https://www.googleapis.com/auth/drive.readonly,https://www.googleapis.com/auth/drive.scripts,https://www.googleapis.com/auth/admin.directory.user.readonly,https://www.googleapis.com/auth/admin.directory.user.security,https://www.googleapis.com/auth/admin.directory.user.alias,https://www.googleapis.com/auth/admin.directory.orgunit,https://www.googleapis.com/auth/admin.directory.notifications,https://www.googleapis.com/auth/admin.directory.group.member,https://www.googleapis.com/auth/admin.directory.group,https://www.googleapis.com/auth/admin.directory.device.mobile.action,https://www.googleapis.com/auth/admin.directory.device.mobile,https://www.googleapis.com/auth/admin.directory.user`
 
-    * Click **Authorize**.
+    * Haga clic en **autorizar**.
 
 1. Abra el menú de Google; para ello, haga clic en las tres líneas horizontales junto a Google Cloud Platform en la barra de título. Haga clic en **Google Cloud Platform** y, a continuación, haga clic en la pestaña **APIs and services** (API y servicios) del menú izquierdo.
 
 1. En el panel que se abre, desplácese a la lista de API habilitadas y haga clic en **API de Google Drive**.
-    ![Select Google Drive](media/google14.png
+    ! [Seleccione Google Drive] (media/google14. png
 
 1. Haga clic en la pestaña **Drive UI Integration** (Integración de la IU de la unidad) y complete la información siguiente:
 
@@ -140,7 +140,7 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
     * Desplácese hacia abajo y, en la sección **Drive Integration** (Integración de unidades), escriba la siguiente dirección URL en **Abrir dirección URL:**  
     `https://portal.cloudappsecurity.com/#/services/11770?tab=files`
 
-    ![Edit Google Drive](media/google15.png)
+    ![Editar Google Drive](media/google15.png)
 
 1. Haga clic en **Guardar cambios**.
 
@@ -156,9 +156,9 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
 
     * Asegúrese de hacer clic en **Listo** en la ventana **Nuevo elemento**.
 
-    ![google new item](media/google-new-item.png)
+    ![nuevo elemento de Google](media/google-new-item.png)
 
-    * Clear the **Enable individual install** check box.
+    * Desactive la casilla **Habilitar instalación individual** .
 
     * Configure las cuatro imágenes necesarias en **Iconos de la aplicación**.
 
@@ -212,40 +212,40 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
 
     * En **Visibilidad**, seleccione **Mi dominio** (no público).
     * Haga clic en **Guardar cambios**.
-        ![google visibility](media/google-visibility.png)
+        ![Google Visibility](media/google-visibility.png)
 1. Vaya a [admin.google.com](https://admin.google.com/) y haga clic en **Seguridad**.
 
-    ![google security](media/googlesec.png)
+    ![seguridad de Google](media/googlesec.png)
 
 1. Seleccione **Referencia de API**.
 
-    ![google api enable](media/googleapi.png)
+    ![habilitación de la API de Google](media/googleapi.png)
 
 1. Seleccione **Habilitar acceso de API** y haga clic en **Guardar cambios**.
 
-    ![google api reference](media/googleapiref.png)
+    ![referencia de la API de Google](media/googleapiref.png)
 
 ## <a name="configure-cloud-app-security"></a>Configurar Cloud App Security
 
 1. En el portal de Cloud App Security, haga clic en **Investigar** y, después, en **Aplicaciones conectadas**.
 
-1. To provide the G Suite connection details, under **App connectors**, do one of the following:
+1. Para proporcionar los detalles de conexión de G Suite, en **conectores de aplicaciones**, realice una de las acciones siguientes:
 
-    **For a G Suite organization that already has a connected GCP instance**
+    **Para una organización de G Suite que ya tiene una instancia conectada de GCP**
 
-    * In the list of connectors, at the end of row in which the GCP instance appears, click the three dots and then click **Add G Suite**.
+    * En la lista de conectores, al final de la fila en la que aparece la instancia de GCP, haga clic en los tres puntos y, a continuación, haga clic en **Agregar G Suite**.
 
-    **For a G Suite organization that does not already have a connected GCP instance**
+    **Para una organización de G Suite que aún no tiene una instancia conectada de GCP**
 
     * En la página **Aplicaciones conectadas**, haga clic en el signo más y seleccione **G Suite**.
 
 3. En el elemento emergente, proporcione la información siguiente:
 
-    ![G Suite Configuration in Cloud App Security](media/gsuite-config-cas.png "G Suite Configuration in Cloud App Security")
+    ![Configuración de G Suite en Cloud App Security](media/gsuite-config-cas.png "Configuración de G Suite en Cloud App Security")
 
     1. **Id. de la cuenta de servicio** que ha copiado en el paso 13.
 
-    1. **Project number (App ID)** that you copied in step 22.
+    1. **Número de proyecto (identificador de la aplicación)** que ha copiado en el paso 22.
 
     1. Cargue el archivo P12 de **certificado** que ha guardado en el paso 12. Para hacerlo, necesita la contraseña que ha guardado.
 

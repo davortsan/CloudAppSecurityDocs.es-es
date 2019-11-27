@@ -35,7 +35,7 @@ Es posible que no desee usar Microsoft Cloud App Security para todos los usuario
 
     - Grupo de usuarios **Aplicación**: un grupo integrado que le permite ver las actividades realizadas por las aplicaciones de Office 365 y Azure AD.
 
-    - **External users** group - All users who aren't members of any of the managed domains you configured for your organization.
+    - Grupo de **usuarios externos** : todos los usuarios que no son miembros de ninguno de los dominios administrados que configuró para su organización.
 
 - El establecimiento de una regla de inclusión excluirá automáticamente a todos los grupos que no estén dentro del grupo incluido. Por ejemplo, si establece una regla para incluir a todos los miembros de los grupos de oficinas de EE. UU., no se supervisarán los grupos que no formen parte de ese grupo.
 
@@ -43,7 +43,7 @@ Es posible que no desee usar Microsoft Cloud App Security para todos los usuario
 
 1. En la barra de menús, haga clic en el engranaje de configuración y seleccione **Implementación con ámbito**.  
 
-    ![settings icon](./media/settings-icon.png "icono de configuración")
+    ![icono de configuración](./media/settings-icon.png "icono de configuración")
 
 2. Para establecer el ámbito de la implementación a fin de incluir o excluir grupos específicos, primero debe [importar grupos de usuarios](user-groups.md) en Microsoft Cloud App Security.
 
@@ -66,7 +66,7 @@ Es posible que no desee usar Microsoft Cloud App Security para todos los usuario
 
     1. En **Escriba el nombre de la regla**, asigne un nombre descriptivo a la regla.
     En **Seleccionar grupos de usuarios**, seleccione todos los grupos que no quiere que supervise Cloud App Security.
-    2. Seleccione si desea aplicar esta regla a todas las aplicaciones conectadas o solo a **aplicaciones específicas**. Si selecciona **aplicaciones específicas**, Cloud App Security dejará de supervisar el grupo seleccionado solo para las aplicaciones que seleccione. That means that if you select the group **UI team users** and **Active Directory**, Cloud App Security will monitor all user activity except Active Directory activities that are performed by UI team users.
+    2. Seleccione si desea aplicar esta regla a todas las aplicaciones conectadas o solo a **aplicaciones específicas**. Si selecciona **aplicaciones específicas**, Cloud App Security dejará de supervisar el grupo seleccionado solo para las aplicaciones que seleccione. Esto significa que si selecciona la interfaz de usuario del grupo **usuarios del equipo** y **Active Directory**, Cloud App Security supervisará toda la actividad de los usuarios excepto Active Directory actividades realizadas por los usuarios del equipo de la interfaz de usuario.
 
        ![regla de exclusión](./media/exclude-rule.png)
 
@@ -85,7 +85,7 @@ Se supervisan las actividades de usuario siguientes:
 
 |Usuario|Pertenencia a grupos|Actividades supervisadas|
 |----|----|----|
-|Adriana|Todos los usuarios de Alemania<br>Ventas globales<br>Directores de ventas|Ninguno|
+|Adriana|Todos los usuarios de Alemania<br>Ventas globales<br>Directores de ventas|Ninguna|
 |Alain|Ventas globales|Office 365 y todas las subaplicaciones, a excepción de Power BI|
 |Cornel|Ventas globales<br>Directores de ventas|Office 365 y todas las subaplicaciones|
 |Raymond|Directores de ventas|Solo Power BI|

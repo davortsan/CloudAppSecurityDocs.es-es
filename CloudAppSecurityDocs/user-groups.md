@@ -48,7 +48,7 @@ Puede importar cualquier grupo de las aplicaciones conectadas. Por ejemplo, pued
 
 ## <a name="how-to-import-user-groups"></a>Cómo importar grupos de usuarios
 
-1. In the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "icono de configuración") and select **User groups**.
+1. En la barra de menús, haga clic en el icono de configuración icono de ![configuración](./media/settings-icon.png "icono de configuración") y seleccione **grupos de usuarios**.
 1. Haga clic en **Importar grupo de usuarios**.
 
     ![Importar grupos de usuarios](./media/user-groups-add.png)
@@ -63,7 +63,7 @@ La importación de grupos le permite seleccionar esos grupos como filtros cuando
 
 > [!NOTE]
 >
-> - There may be a short delay until imported user groups are available in filters.
+> - Puede haber un breve retraso hasta que los grupos de usuarios importados estén disponibles en los filtros.
 > - Para que las actividades se etiqueten como realizadas por un miembro del grupo de usuarios, deberán llevarse a cabo después de la importación de un grupo.
 > - Después de la sincronización inicial, los grupos se actualizan cada hora.
 

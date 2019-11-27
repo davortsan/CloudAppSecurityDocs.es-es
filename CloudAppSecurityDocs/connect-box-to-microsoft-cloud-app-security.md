@@ -37,11 +37,11 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
   
     -   En la consola de administrador de Box, haga clic en el icono de configuración y luego en **Business settings** (Configuración de Business) o **Enterprise settings** (Configuración de Enterprise).  
   
-         ![box business settings](./media/box-business-settings.png "configuración empresarial de Box")  
+         ![configuración empresarial de Box](./media/box-business-settings.png "configuración empresarial de Box")  
   
     -   Haga clic en la pestaña **Aplicaciones**.  
   
-         ![box apps](./media/box-apps.png "aplicaciones de Box")  
+         ![aplicaciones de Box](./media/box-apps.png "aplicaciones de Box")  
   
     -   Si ha seleccionado **Aplicaciones no publicadas**, en el cuadro de texto **Excepto**, agregue el número de serie de la aplicación Cloud App Security:
      
@@ -55,7 +55,7 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
 
         Después, haga clic en **Guardar**. Para más información sobre cómo consultar con qué centros de datos de Cloud App Security tiene conexión, vea [Tokens de API](api-tokens.md). 
   
-         ![box settings except for](./media/box-settings-except-for.png "configuración del cuadro Excepto de Box")  
+         ![configuración de Box excepto](./media/box-settings-except-for.png "configuración del cuadro Excepto de Box")  
   
     > [!NOTE]  
     >  Si es cliente de Adallom y la dirección URL de la consola es de Adallom y no de Cloud App Security, use este número de serie de la aplicación: bwahmilhdlpbqy2ongkl119o3lrkoshc.  
@@ -64,7 +64,7 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
   
 3.  En la página **Conectores de aplicaciones**, haga clic en el botón del signo más y seleccione **Box**.  
   
-     ![connect box](./media/connect-box.png "conectar Box")  
+     ![cuadro conectar](./media/connect-box.png "conectar Box")  
   
 4.  En el elemento emergente **Box settings** (Configuración de Box), haga clic en **Follow this link** (Seguir este vínculo).  
   

@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot Conditional Access App Control
-description: This article provides a list of possible Conditional Access App Control issues and provides possible resolutions.
+title: Solucionar problemas Control de aplicaciones de acceso condicional
+description: En este artículo se proporciona una lista de posibles problemas de Control de aplicaciones de acceso condicional y se proporcionan posibles soluciones.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -18,45 +18,45 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 11/24/2019
 ms.locfileid: "74460111"
 ---
-# <a name="troubleshooting-conditional-access-app-control"></a>Troubleshooting Conditional Access App Control
+# <a name="troubleshooting-conditional-access-app-control"></a>Solución de problemas Control de aplicaciones de acceso condicional
 
 *Se aplica a: Microsoft Cloud App Security*
 
-This article prohvides a list of possible Conditional Access App Control issues and provides possible resolutions.
+En este artículo se prohvides una lista de posibles problemas de Control de aplicaciones de acceso condicional y se proporcionan posibles soluciones.
 
-## <a name="troubleshooting-onboarded-apps"></a>Troubleshooting onboarded apps
+## <a name="troubleshooting-onboarded-apps"></a>Solución de problemas de aplicaciones incorporadas
 
-### <a name="the-sign-in-to-the-app-is-not-working"></a>The sign in to the app is not working
+### <a name="the-sign-in-to-the-app-is-not-working"></a>El inicio de sesión en la aplicación no funciona
 
-1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon](./media/settings-icon.png "icono de configuración") and select **Conditional Access App Control**.
-1. In the list of apps, on the row in which the app you are configuring appears, choose the three dots at the end of the row, and then choose **Edit app**.
-1. Click **Nonce-handling** to expand the section and then select **Enable nonce handling**.
+1. En Cloud App Security, en la barra de menús, haga clic en el icono configuración engranaje ![configuración](./media/settings-icon.png "icono de configuración") y seleccione **control de aplicaciones de acceso condicional**.
+1. En la lista de aplicaciones, en la fila en la que aparece la aplicación que está configurando, elija los tres puntos al final de la fila y, después, elija **Editar aplicación**.
+1. Haga clic en **control de nonce** para expandir la sección y, a continuación, seleccione **Habilitar el control de nonce**.
 
-    ![Screenshot of nonce-handling option.](media/troubleshooing-nonce-handling.png)
-
-    > [!NOTE]
-    > If you experience problem navigating to app pages other than the home page, see [Troubleshooting subsequent visits to the app do not go to the expected page](#unexpected-page)
-
-### Subsequent visits to the app do not go to the expected page<a name="unexpected-page"></a>
-
-The following steps are based on using Fiddler as the traffic logging tool. The experience may be different for other tools. For more information about using Fiddler, see [Easy way to collect fiddler log](https://blogs.msdn.microsoft.com/maheshk/2016/05/03/easy-way-to-collect-fiddler-log-fiddlercap/).
-
-1. Copy the URL of page in the app that doesn't go to the expected page - you need it later.
+    ![Captura de pantalla de la opción de control de nonce.](media/troubleshooing-nonce-handling.png)
 
     > [!NOTE]
-    > Ensure that the domain doesn't include the Cloud App Security URL suffix (e.g. *.us2.cas.ms*)
+    > Si experimenta problemas al navegar a las páginas de la aplicación que no sean la Página principal, consulte [solución de problemas de visitas posteriores a la aplicación no ir a la página esperada](#unexpected-page)
 
-1. Use a traffic logging tool such as Fiddler to monitor the page.
-1. Go to the URL that you copied earlier, and authenticate if required.
-1. In the traffic logging tool, search for the request matching the domain and path based on to the protocol you are using.
+### Las siguientes visitas a la aplicación no van a la página esperada<a name="unexpected-page"></a>
 
-    | Protocol | Dominio | Ruta | State field name |
+Los pasos siguientes se basan en el uso de Fiddler como la herramienta de registro de tráfico. La experiencia puede ser diferente para otras herramientas. Para obtener más información sobre el uso de Fiddler, consulte la [forma más sencilla de recopilar el registro de Fiddler](https://blogs.msdn.microsoft.com/maheshk/2016/05/03/easy-way-to-collect-fiddler-log-fiddlercap/).
+
+1. Copie la dirección URL de la página de la aplicación que no vaya a la página esperada, ya que la necesitará más adelante.
+
+    > [!NOTE]
+    > Asegúrese de que el dominio no incluya el sufijo de la dirección URL del Cloud App Security (por ejemplo, *. US2.CAS.ms*)
+
+1. Use una herramienta de registro de tráfico como Fiddler para supervisar la página.
+1. Vaya a la dirección URL que copió anteriormente y autentique si es necesario.
+1. En la herramienta de registro de tráfico, busque la solicitud que coincida con el dominio y la ruta de acceso en función del protocolo que esté usando.
+
+    | Protocol | Dominio | Path | Nombre del campo de estado |
     | --- | --- | --- | --- |
     | OIDC | `https://login.microsoftonline.com` | /common/oauth2/authorize | state |
-    | SAML 2.0 | `https://login.microsoftonline.com` | /*id*/saml2 | RelayState |
+    | SAML 2.0 | `https://login.microsoftonline.com` | *identificador*de //saml2 | RelayState |
 
-1. Select the request, and then in the **Inspectors** tab, select **WebForms**.
-1. Create a regex string based on the 
+1. Seleccione la solicitud y, a continuación, en la pestaña **inspectores** , seleccione **WebForms**.
+1. Cree una cadena regex basada en el 
 
 ## <a name="next-steps"></a>Pasos siguientes
 

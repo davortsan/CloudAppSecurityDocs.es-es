@@ -1,6 +1,6 @@
 ---
-title: Connect Google Cloud Platform to Cloud App Security
-description: This article provides information about how to connect your Google Cloud Platform to Cloud App Security using the API connector for visibility and control over use.
+title: Conectar Google Cloud Platform a Cloud App Security
+description: En este artículo se proporciona información sobre cómo conectar el Google Cloud Platform a Cloud App Security mediante el conector de API para la visibilidad y el control del uso.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -16,142 +16,142 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 11/24/2019
 ms.locfileid: "74461208"
 ---
-# <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security-preview"></a>Connect Google Cloud Platform to Microsoft Cloud App Security (Preview)
+# <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security-preview"></a>Conectar Google Cloud Platform a Microsoft Cloud App Security (versión preliminar)
 
 *Se aplica a: Microsoft Cloud App Security*
 
-This article provides instructions for connecting Microsoft Cloud App Security to your existing Google Cloud Platform (GCP) account using the connector APIs. This connection gives you visibility into and control over GCP use.
+En este artículo se proporcionan instrucciones para conectar Microsoft Cloud App Security a su cuenta de Google Cloud Platform (GCP) existente mediante las API del conector. Esta conexión le proporciona visibilidad y control sobre el uso de GCP.
 
 > [!NOTE]
-> The instructions for connecting your GCP environment follow [Google’s recommendations](https://cloud.google.com/blog/products/gcp/best-practices-for-working-with-google-cloud-audit-logging) for consuming aggregated logs. The integration leverages Google StackDriver and will consume additional resources that might impact your billing. The consumed resources are:
+> Las instrucciones para conectar el entorno de GCP siguen las [recomendaciones de Google](https://cloud.google.com/blog/products/gcp/best-practices-for-working-with-google-cloud-audit-logging) para consumir registros agregados. La integración utiliza Google StackDriver y consumirá recursos adicionales que podrían afectar a la facturación. Los recursos consumidos son:
 >
-> * [Aggregated export sink – Organization level](https://cloud.google.com/logging/docs/export/aggregated_exports#concept)
-> * [Pub/Sub topic – GCP project level](https://cloud.google.com/logging/docs/export/using_exported_logs#pubsub-overview)
-> * [Pub/Sub subscription – GCP project level](https://cloud.google.com/logging/docs/export/using_exported_logs#pubsub-overview)
+> * [Receptor de exportación agregado: nivel de organización](https://cloud.google.com/logging/docs/export/aggregated_exports#concept)
+> * [Tema pub/sub: nivel de proyecto GCP](https://cloud.google.com/logging/docs/export/using_exported_logs#pubsub-overview)
+> * [Suscripción pub/sub: nivel de proyecto de GCP](https://cloud.google.com/logging/docs/export/using_exported_logs#pubsub-overview)
 >
-> Currently, Cloud App Security only imports Admin Activity audit logs; Data Access and System Event audit logs are not imported. For more information about GCP logs, see [Cloud Audit Logs](https://go.microsoft.com/fwlink/?linkid=2109230).
+> Actualmente, Cloud App Security solo importa los registros de auditoría de la actividad de administración; No se importan los registros de auditoría de eventos del sistema y de acceso a datos. Para obtener más información sobre los registros de GCP, consulte [registros de auditoría en la nube](https://go.microsoft.com/fwlink/?linkid=2109230).
 
-We recommend that you use a dedicated project for the integration and restrict access to the project to maintain stable integration and prevent deletions/modifications of the setup process. Also, if your GCP instance is part of an G Suite instance already connected to Cloud App Security, we recommend following the **For a GCP instance that is part of a connected G Suite organization** steps when you add the GCP connection details.
+Se recomienda usar un proyecto dedicado para la integración y restringir el acceso al proyecto para mantener la integración estable y evitar las eliminaciones o modificaciones del proceso de instalación. Además, si la instancia de GCP es parte de una instancia de G Suite que ya está conectada a Cloud App Security, se recomienda seguir el **para una instancia de GCP que forme parte de los pasos de una organización de g Suite conectada** al agregar los detalles de conexión de GCP.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 
-The integrating GCP user must have the following permissions:
+El usuario que integra GCP debe tener los permisos siguientes:
 
-* **IAM and Admin edit** – Organization level
-* **Project creation and edit**
+* **IAM y edición de administración** : nivel de organización
+* **Creación y edición de proyectos**
 
-## <a name="configure-google-cloud-platform"></a>Configure Google Cloud Platform
+## <a name="configure-google-cloud-platform"></a>Configurar Google Cloud Platform
 
-* Sign in to your GCP portal using your integrating GCP user account.
+* Inicie sesión en el portal de GCP mediante su cuenta de usuario de integración de GCP.
 
-### <a name="create-a-dedicated-project"></a>Create a dedicated project
+### <a name="create-a-dedicated-project"></a>Crear un proyecto dedicado
 
-Create a dedicated project in GCP under your organization to enable integration isolation and stability
+Cree un proyecto dedicado en GCP en su organización para habilitar la estabilidad y el aislamiento de la integración
 
-1. Click **Create Project** to start a new.
-1. In the **New project** screen, name your project and click **Create**.
+1. Haga clic en **crear proyecto** para iniciar un nuevo.
+1. En la pantalla **nuevo proyecto** , asigne un nombre al proyecto y haga clic en **crear**.
 
-    ![Screenshot showing GCP create project dialog](media/connect-gcp-create-project.png)
+    ![Captura de pantalla que muestra el cuadro de diálogo crear proyecto de GCP](media/connect-gcp-create-project.png)
 
-### <a name="enable-the-pubsub-api"></a>Enable the Pub/Sub API
+### <a name="enable-the-pubsub-api"></a>Habilitación de la API pub/sub
 
-1. Switch to the dedicated project.
-1. Go to the Pub/Sub tab. A service activation message should appear.
+1. Cambie al proyecto dedicado.
+1. Vaya a la pestaña pub/sub. Debería aparecer un mensaje de activación de servicio.
 
-### <a name="create-a-dedicated-service-account-for-the-integration"></a>Create a dedicated service account for the integration
+### <a name="create-a-dedicated-service-account-for-the-integration"></a>Crear una cuenta de servicio dedicada para la integración
 
-1. Under **IAM & admin**, click **Service accounts**.
-1. Click **CREATE SERVICE ACCOUNT** to create a dedicated service account.
-1. Enter an account name, and then click **Create**.
-1. Specify the **Role** as **Pub/Sub Admin** and then click **Save**.
+1. En **IAM & admin**, haga clic en **cuentas de servicio**.
+1. Haga clic en **crear cuenta de servicio** para crear una cuenta de servicio dedicada.
+1. Escriba un nombre de cuenta y, a continuación, haga clic en **crear**.
+1. Especifique el **rol** como **Administrador de pub/sub** y, a continuación, haga clic en **Guardar**.
 
-    ![Screenshot showing GCP add IAM role](media/connect-gcp-iam-role.PNG)
+    ![Captura de pantalla que muestra GCP agregar rol IAM](media/connect-gcp-iam-role.PNG)
 
-1. Copy the **Email** value, you'll need this later.
+1. Copie el valor de **correo electrónico** , lo necesitará más adelante.
 
-    ![Screenshot showing GCP service account dialog](media/connect-gcp-create-service-account.png)
+    ![Captura de pantalla que muestra el cuadro de diálogo cuenta de servicio GCP](media/connect-gcp-create-service-account.png)
 
-1. Under **IAM & admin**, click **IAM**.
+1. En **iam & admin**, haga clic en **IAM**.
 
-    1. Switch to organization level.
-    1. Click **ADD**.
-    1. In the **New members** box, paste the **Email** value you copied earlier.
-    1. Specify the **Role** as **Logs Configuration Writer** and then click **Save**.
+    1. Cambie al nivel de organización.
+    1. Haga clic en **Agregar**.
+    1. En el cuadro **nuevos miembros** , pegue el valor de **correo electrónico** que copió anteriormente.
+    1. Especifique el **rol** como **escritor de configuración de registros** y, a continuación, haga clic en **Guardar**.
 
-        ![Screenshot showing add member dialog](media/connect-gcp-add-member.png)
+        ![Captura de pantalla que muestra el cuadro de diálogo Agregar miembro](media/connect-gcp-add-member.png)
 
-### <a name="create-a-private-key-for-the-dedicated-service-account"></a>Create a private key for the dedicated service account
+### <a name="create-a-private-key-for-the-dedicated-service-account"></a>Crear una clave privada para la cuenta de servicio dedicada
 
-1. Switch to project level.
-1. Under **IAM & admin**, click **Service accounts**.
-1. Open the dedicated service account and click **Edit**.
-1. Click **CREATE KEY**.
-1. In the **Create private key** screen, select **JSON**, and then click **CREATE**.
+1. Cambiar a nivel de proyecto.
+1. En **IAM & admin**, haga clic en **cuentas de servicio**.
+1. Abra la cuenta de servicio dedicada y haga clic en **Editar**.
+1. Haga clic en **crear clave**.
+1. En la pantalla **crear clave privada** , seleccione **JSON**y, a continuación, haga clic en **crear**.
 
-    ![Screenshot showing create private key dialog](media/connect-gcp-create-private-key.png)
+    ![Captura de pantalla que muestra el cuadro de diálogo crear clave privada](media/connect-gcp-create-private-key.png)
 
     > [!NOTE]
-    > You'll need the JSON file that is downloaded to your machine later.
+    > Necesitará el archivo JSON que se descarga en el equipo más adelante.
 
-### <a name="retrieve-your-organization-id"></a>Retrieve your Organization ID
+### <a name="retrieve-your-organization-id"></a>Recuperar el identificador de la organización
 
-Make a note of your **Organization ID**, you'll need this later. For more information, see [Getting your organization ID](https://cloud.google.com/resource-manager/docs/creating-managing-organization#retrieving_your_organization_id).
-    ![Screenshot showing organization ID dialog](media/connect-gcp-org-id.png)
+Tome nota del identificador de la **organización**, lo necesitará más adelante. Para obtener más información, consulte [obtención del identificador de la organización](https://cloud.google.com/resource-manager/docs/creating-managing-organization#retrieving_your_organization_id).
+    ![captura de pantalla que muestra el cuadro de diálogo ID. de organización](media/connect-gcp-org-id.png)
 
 ## <a name="configure-cloud-app-security"></a>Configurar Cloud App Security
 
 * En el portal de Cloud App Security, haga clic en **Investigar** y, después, en **Aplicaciones conectadas**.
 
-### <a name="add-the-gcp-connection-details"></a>Add the GCP connection details
+### <a name="add-the-gcp-connection-details"></a>Agregar los detalles de la conexión GCP
 
-To provide the GCP connection details, under **App connectors**, do one of the following:
+Para proporcionar los detalles de la conexión GCP, en **conectores de aplicaciones**, realice una de las acciones siguientes:
 
-**For a GCP instance that is not part of a connected G Suite organization**
+**Para una instancia de GCP que no forma parte de una organización conectada de G Suite**
 
-1. Click the plus sign followed by **Google Cloud Platform**.
+1. Haga clic en el signo más seguido de **Google Cloud Platform**.
 
-    ![Screenshot showing add GCP menu](media/connect-gcp-add.png)
+    ![Captura de pantalla que muestra el menú Agregar GCP](media/connect-gcp-add.png)
 
-1. In the pop-up, provide a name for the connector, and then click **Connect Google Cloud Platform**.
+1. En el elemento emergente, proporcione un nombre para el conector y, a continuación, haga clic en **conectar Google Cloud Platform**.
 
-1. On the Google Cloud Platform page, do the following:
-    1. In the **Organization ID** box, enter the organization you made a note of earlier.
-    1. In the **Private key file** box, browse to the JSON file you downloaded earlier.
-    1. Click **Connect Google Cloud Platform**.
-
-    > [!NOTE]
-    > We recommended that you connect your G Suite instance to get unified user management and governance. This is the recommended even if you do not use any G Suite products and the GCP users are managed via the G Suite user management system.
-
-**For a GCP instance that is part of a connected G Suite organization**
-
-1. In the list of connected instances, at the end of row in which the G Suite connector appears, click the three dots and then click **Add Google Cloud Platform**.
-
-1. On the Google Cloud Platform page, do the following:
-    1. In the **Organization ID** box, enter the organization you made a note of earlier.
-    1. In the **Private key file** box, browse to the JSON file you downloaded earlier.
-    1. Click **Connect Google Cloud Platform**.
+1. En la Página Google Cloud Platform, haga lo siguiente:
+    1. En el cuadro ID. de la **organización** , escriba la organización que anotó anteriormente.
+    1. En el cuadro **archivo de clave privada** , busque el archivo JSON que descargó anteriormente.
+    1. Haga clic en **conectar Google Cloud Platform**.
 
     > [!NOTE]
-    > This enables unified user management and governance via the G Suite user identity realm.
+    > Se recomienda conectar la instancia de G Suite para obtener administración unificada de usuarios y gobernanza. Este es el recomendado incluso si no usa ningún producto G Suite y los usuarios de GCP se administran a través del sistema de administración de usuarios de G Suite.
 
-### <a name="test-the-connection"></a>Test the connection
+**Para una instancia de GCP que forme parte de una organización conectada de G Suite**
+
+1. En la lista de instancias conectadas, al final de la fila en la que aparece el conector G Suite, haga clic en los tres puntos y, a continuación, haga clic en **agregar Google Cloud Platform**.
+
+1. En la Página Google Cloud Platform, haga lo siguiente:
+    1. En el cuadro ID. de la **organización** , escriba la organización que anotó anteriormente.
+    1. En el cuadro **archivo de clave privada** , busque el archivo JSON que descargó anteriormente.
+    1. Haga clic en **conectar Google Cloud Platform**.
+
+    > [!NOTE]
+    > Esto permite la administración y el gobierno de usuarios unificados a través del dominio de identidad de usuario de G Suite.
+
+### <a name="test-the-connection"></a>Prueba de la conexión
 
 Haga clic en **Probar API** para asegurarse de que la conexión se ha realizado correctamente.
 
 La prueba puede tardar unos minutos. Cuando haya finalizado, recibirá una notificación que le indicará si se ha realizado correcta o incorrectamente. Cuando reciba la notificación de que se ha realizado correctamente, haga clic en **Listo**.
 
-## <a name="aggregated-export-sink"></a>Aggregated export sink
+## <a name="aggregated-export-sink"></a>Receptor de exportación agregado
 
-Disabling aggregated export sink is currently only possible via Google Cloud Shell.
+La deshabilitación del receptor de exportación agregado solo es posible a través de Google Cloud Shell.
 
-### <a name="to-disable-aggregated-export-sink"></a>To disable aggregated export sink
+### <a name="to-disable-aggregated-export-sink"></a>Para deshabilitar el receptor de exportación agregado
 
 | Paso | Script | Para obtener más información |
 |-|-|-|
-| 1. Start a Google Cloud Shell session. | | [Using Cloud Shell](https://cloud.google.com/shell/docs/using-cloud-shell) |
-| 2. Set the current project. | `gcloud config set project {PROJECT_ID}` | [gcloud config set](https://cloud.google.com/sdk/gcloud/reference/config/set) |
-| 3. List the organization-level sinks. | `gcloud logging sinks list --organization={ORGANIZATION_ID}` | [gcloud logging sinks list](https://cloud.google.com/sdk/gcloud/reference/logging/sinks/list) |
-| 4. Delete the relevant sink. | `gcloud logging sinks delete {SINK_NAME} --organization={ORGANIZATION_ID}` | [gcloud logging sinks delete](https://cloud.google.com/sdk/gcloud/reference/logging/sinks/delete) |
+| 1. Inicie una sesión de Google Cloud Shell. | | [Usar Cloud Shell](https://cloud.google.com/shell/docs/using-cloud-shell) |
+| 2. establezca el proyecto actual. | `gcloud config set project {PROJECT_ID}` | [conjunto de configuración de gcloud](https://cloud.google.com/sdk/gcloud/reference/config/set) |
+| 3. Enumere los receptores en el nivel de la organización. | `gcloud logging sinks list --organization={ORGANIZATION_ID}` | [gcloud lista de receptores de registro](https://cloud.google.com/sdk/gcloud/reference/logging/sinks/list) |
+| 4. Elimine el receptor pertinente. | `gcloud logging sinks delete {SINK_NAME} --organization={ORGANIZATION_ID}` | [gcloud eliminación de receptores de registro](https://cloud.google.com/sdk/gcloud/reference/logging/sinks/delete) |
 
 ## <a name="next-steps"></a>Pasos siguientes
 

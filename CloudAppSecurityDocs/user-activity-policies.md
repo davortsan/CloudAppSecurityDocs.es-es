@@ -37,7 +37,7 @@ Puede establecer que se le envíen alertas de actividad a usted o al usuario cua
 
 Para crear una nueva directiva de actividad, siga este procedimiento:
 
-1. En la consola, haga clic en **Control**, seguido de **Directivas**.
+1. En la consola, haga clic en **Control** seguido de **Directivas**.
 
 2. Haga clic en **Crear directiva** y seleccione **Directiva de actividad**.
 
@@ -47,9 +47,9 @@ Para crear una nueva directiva de actividad, siga este procedimiento:
 
 4. Para establecer qué acciones o qué otras métricas desencadenan esta directiva, trabaje con **filtros de actividad**.
     > [!NOTE]
-    > To ensure you only include results where the specified filter field has a value, we recommend adding the same field again using the **is set** test. For example, when filtering by **Location** *does not equal* a specified list of countries, also add a filter for **Location** *is set*. You can also preview the filter results by selecting **Edit and preview results**.
+    > Para asegurarse de que solo se incluyen los resultados en los que el campo de filtro especificado tiene un valor, se recomienda volver a agregar el mismo campo mediante la prueba **set** . Por ejemplo, si el filtrado por **Ubicación** *no es igual* a una lista especificada de países, agregue también un filtro para **Ubicación** *establecida*. También puede obtener una vista previa de los resultados del filtro seleccionando **Editar y vista previa de los resultados**.
     >
-    > ![Screenshot of filter settings, showing location field is set](media/activity-example-location-isset.png)
+    > ![Captura de pantalla de la configuración del filtro, donde se muestra el campo Ubicación](media/activity-example-location-isset.png)
 
 5. En **Activity match parameters** (Parámetros de coincidencia de actividad), seleccione cuándo se desencadenará una infracción de la directiva. Elija que se desencadene cuando una única actividad coincida con los filtros o solo cuando se detecte un número especificado de **actividades repetidas**.
     - Si elige **Actividad repetida**, puede establecer **En una única aplicación**. Esta configuración desencadenará una coincidencia de directiva solo cuando se producen las actividades repetidas en la misma aplicación. Por ejemplo, cinco descargas en 30 minutos desde Box desencadenan una coincidencia de directiva.
@@ -64,13 +64,13 @@ Observe estos ejemplos:
 
      Bajo el campo **Filtros de actividad**, configure los parámetros para los que se desencadenará la alerta.
 
-     ![Policy example for multiple failed sign-in attempts](./media/multiple-failed-log-on-attempts-policy-example.png "ejemplo de directiva de varios intentos de inicio de sesión erróneos")
+     ![Ejemplo de directiva de varios intentos de inicio de sesión erróneos](./media/multiple-failed-log-on-attempts-policy-example.png "ejemplo de directiva de varios intentos de inicio de sesión erróneos")
 
 - Frecuencia de descarga alta
 
      Puede establecer la directiva de modo que reciba una alerta cuando se produzca un nivel de actividad de descarga inesperado o inusitado. Para configurar este tipo de directiva, en el parámetro **Frecuencia**, elija los parámetros que desencadenen la alerta.
 
-     ![high download rate example](./media/high-download-rate-example.png "ejemplo de frecuencia de descarga alta")
+     ![ejemplo de la frecuencia de descarga alta](./media/high-download-rate-example.png "ejemplo de frecuencia de descarga alta")
 
 ## <a name="activity-policy-reference"></a>Referencia de directiva de actividad
 

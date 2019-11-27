@@ -41,7 +41,7 @@ El motor combina tres aspectos en cada directiva:
 
 * Acciones automatizadas de gobernanza y corrección. Para obtener más información, vea [Control](control.md).
     > [!NOTE]
-    > Only one governance action can be applied per file; hence, where there are multiple file policy matches for a file, the governance action of the first triggered policy will be applied. For example, if a file policy has already applied an AIP label to a file, a second file policy cannot move the file to admin quarantine.
+    > Solo se puede aplicar una acción de gobierno por archivo; por lo tanto, si hay varias coincidencias de directiva de archivos para un archivo, se aplicará la acción de gobierno de la primera Directiva desencadenada. Por ejemplo, si una directiva de archivo ya ha aplicado una etiqueta de AIP a un archivo, una segunda Directiva de archivo no puede trasladar el archivo a la cuarentena de administrador.
 
 Una vez habilitada, la directiva analizará continuamente su entorno en la nube e identificará los archivos que coincidan con los filtros de contenido y el contexto y, después, aplicará las acciones automatizadas solicitadas. Estas directivas detectarán y corregirán cualquier infracción de la información en reposo o al crear contenido. Las directivas se pueden supervisar con alertas en tiempo real o con informes generados por la consola.
 
@@ -63,7 +63,7 @@ Estos son algunos ejemplos de las directivas de archivo que se pueden crear:
 
 Haga lo siguiente para crear una directiva de archivo:
 
-1. En la consola, haga clic en **Control**, seguido de **Directivas**.
+1. En la consola, haga clic en **Control** seguido de **Directivas**.
 
 1. Haga clic en **Crear directiva** y seleccione **Directiva de archivo**.
 
@@ -92,7 +92,7 @@ Haga lo siguiente para crear una directiva de archivo:
 
 1. Elija las acciones de **gobernanza** que quiera que Cloud App Security lleve a cabo cuando detecte una coincidencia.
 
-1. Once you’ve created your policy, you can view it in the **File policy** tab. You can always edit a policy, calibrate its filters, or change the automated actions. La directiva se habilita automáticamente tras crearse e iniciará inmediatamente el análisis de los archivos en la nube.  Tenga especial cuidado al definir acciones de gobernanza, ya que podrían provocar la pérdida irreversible de permisos de acceso a los archivos. Se recomienda restringir los filtros para representar exactamente los archivos en los que quiere actuar por medio de varios campos de búsqueda. Cuanto más restringidos sean los filtros, mejor. Para obtener orientación, puede usar el botón **Editar y obtener vista previa de resultados** de la sección Filtros.
+1. Una vez creada la Directiva, puede verla en la pestaña Directiva de **archivo** . Siempre puede modificar una directiva, calibrar sus filtros o cambiar las acciones automatizadas. La directiva se habilita automáticamente tras crearse e iniciará inmediatamente el análisis de los archivos en la nube.  Tenga especial cuidado al definir acciones de gobernanza, ya que podrían provocar la pérdida irreversible de permisos de acceso a los archivos. Se recomienda restringir los filtros para representar exactamente los archivos en los que quiere actuar por medio de varios campos de búsqueda. Cuanto más restringidos sean los filtros, mejor. Para obtener orientación, puede usar el botón **Editar y obtener vista previa de resultados** de la sección Filtros.
 
     ![editar la directiva de archivo y obtener una vista previa de resultados](./media/file-policy-edit-and-preview-results.png)
 
@@ -114,11 +114,11 @@ Cada directiva se compone de las siguientes partes:
 
 * **Extensiones**: es posible realizar una inspección del contenido mediante motores de terceros para DLP mejorada o funcionalidades antimalware.
 
-## <a name="file-queries"></a>File queries
+## <a name="file-queries"></a>Consultas de archivo
 
 Para que la investigación sea incluso más sencilla, ahora puede crear consultas personalizadas y guardarlas para usar más adelante.
 
-1. In the **File** page, use the filters as described above to drill down into your apps as necessary.
+1. En la página **archivo** , use los filtros como se describió anteriormente para explorar en profundidad las aplicaciones según sea necesario.
 
 1. Una vez que haya terminado de compilar la consulta, haga clic en el botón **Guardar como** situado en la esquina superior derecha de los filtros.
 

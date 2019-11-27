@@ -117,7 +117,7 @@ Es importante dedicar un minuto a revisar y modificar las ponderaciones predeter
   
 3. Además, puede establecer si determinados valores no están disponibles o no son aplicables en el cálculo de la puntuación. Cuando se incluyen, los valores no aplicables tienen una contribución negativa a la puntuación calculada.  
   
-   ![score](./media/score.png "score metrics")  
+   ![carácter](./media/score.png "métricas de puntuación")  
 
 Toda la información necesaria para entender cómo se apilan nuestras puntuaciones de riesgo de Cloud App Security está disponible en el portal de Cloud App Security. Para entender mejor el peso de un factor de riesgo en la categoría de riesgo específica, use el botón "i" situado a la derecha de cada nombre de campo en el perfil de la aplicación. Esto proporciona información sobre cómo Cloud App Security puntúa exactamente un factor de riesgo específico. La puntuación es el valor del factor de riesgo en una escala de 1 a 10 + su peso en la categoría de riesgo:
 
