@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7eb1ed1466ef1fb302ca0179951d45d12314d572
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
-ms.translationtype: HT
+ms.openlocfilehash: 73778b6e0c7630779899e48b08ba872ef846ca93
+ms.sourcegitcommit: 89183b53608bb4fd4715d7682fb6996ea427ef6a
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74458773"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74536410"
 ---
 # <a name="governing-connected-apps"></a>Control de aplicaciones conectadas
 
@@ -55,7 +55,7 @@ Las siguientes acciones de gobernanza pueden realizarse para aplicaciones conect
 
     - **Quitar usuarios externos**: permite el acceso únicamente a los usuarios de la empresa.
 
-    - **Convertir en privado**: solo el propietario puede acceder al archivo. Se quitan todos los recursos compartidos.
+    - **Hacer privado** : solo los administradores del sitio pueden tener acceso al archivo, se quitan todos los recursos compartidos.
 
     - **Quitar un colaborador**: quita un colaborador específico del archivo.
 
@@ -118,7 +118,7 @@ El registro de gobernanza proporciona un registro del estado de cada tarea que C
 En la tabla siguiente se muestra una lista completa de las acciones que Cloud App Security permite realizar. Estas acciones se habilitarán en varios lugares de la consola, como se describe en la columna **Ubicación**. Cada acción de gobernanza realizada se incluye en el registro de gobernanza.
 Para obtener información sobre cómo se tratan las acciones de control cuando hay conflictos de directivas, vea [Policy Conflicts](control-cloud-apps-with-policies.md) (Conflictos de directivas).
 
-| Location | Tipo de objeto de destino | Acción de gobierno |Descripción| Conectores relacionados|
+| Ubicación | Tipo de objeto de destino | Acción de gobierno |Descripción| Conectores relacionados|
 |-------------------|---------|-----|--------|-------|
 |Cuentas |Archivo |Quitar las colaboraciones del usuario | Se quitan todas las colaboraciones de un usuario específico en cualquiera de los archivos. Resulta conveniente cuando las personas dejan la empresa. |Box, G Suite|
 |Cuentas | Cuenta | Anular la suspensión del usuario |Se anula la suspensión del usuario. |G Suite, Box, Office, Salesforce|
@@ -152,7 +152,7 @@ Para obtener información sobre cómo se tratan las acciones de control cuando h
 |Archivos, Directiva de archivo|Archivo | Transferir la propiedad de los archivos | Se cambia el propietario: en la directiva se elige un propietario específico. | G Suite|
 |Archivos, Directiva de archivo|Archivo | Reducir el acceso público|Esta acción permite establecer que los archivos disponibles públicamente solo estén disponibles con un vínculo compartido.| G Suite|
 |Archivos, Directiva de archivo|Archivo | Quitar un colaborador | Se quita un colaborador específico de un archivo. | G Suite, Box, One Drive, SharePoint|
-|Archivos, Directiva de archivo|Archivo | Convertir en privado| El archivo se convierte en privado: no hay más colaboradores ni vínculos públicos, ni se comparte con nadie. | G Suite, One Drive, SharePoint |
+|Archivos, Directiva de archivo|Archivo | Convertir en privado| Solo los administradores del sitio pueden tener acceso al archivo, se quitan todos los recursos compartidos. | G Suite, One Drive, SharePoint |
 |Archivos, Directiva de archivo|Archivo | Quitar usuarios externos | Se quitan todos los colaboradores externos de los dominios configurados como internos en la configuración. |G Suite, Box, One Drive, SharePoint|
 |Archivos, Directiva de archivo|Archivo |Conceder permisos de lectura para el dominio|Se conceden permisos de lectura para el archivo en el dominio especificado, ya sea en todo el dominio o en un dominio específico. Esta acción es útil si quiere quitar el acceso público tras conceder acceso al dominio a personas que necesitan trabajar en él.| G Suite|
 |Archivos, Directiva de archivo|Archivo | Poner en cuarentena de usuario | Se quitan todos los permisos del archivo y el archivo se mueve a una carpeta de cuarentena en la unidad raíz del usuario. Esta acción permite al usuario revisar el archivo y moverlo. Si se mueve de vuelta manualmente, no se restaura el uso compartido de archivos. | Box, One Drive, SharePoint |

@@ -5,28 +5,27 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
+ms.date: 12/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 09a5702f5a1e1d28dc64172bf6a8204d2bfce5d0
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 79b4bbd6e73a07820524df571ddf9cebe407c5af
+ms.sourcegitcommit: d6ba570c9fbb3c176dab2004c5712c889c759eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460549"
+ms.lasthandoff: 12/01/2019
+ms.locfileid: "74666758"
 ---
 # <a name="policy-template-reference"></a>Referencia de plantillas de directiva
 
 *Se aplica a: Microsoft Cloud App Security*
 
-En este artículo se proporciona información sobre las plantillas de directiva incluidas en Microsoft Cloud App Security. 
+En este artículo se proporciona información sobre las plantillas de directiva incluidas en Microsoft Cloud App Security.
 
 ## <a name="policy-templates"></a>Plantillas de directiva
 
@@ -66,12 +65,11 @@ Se recomienda empezar la creación de directivas basándose en una plantilla exi
 |Control de uso compartido|Archivo compartido con un dominio no autorizado|Alerta cuando se comparte un archivo con un dominio no autorizado (por ejemplo, la competencia).|
 |Control de uso compartido|Certificados digitales compartidos (extensiones de archivo)|Alerta cuando se comparte públicamente un archivo que contiene certificados digitales. Use esta plantilla para ayudar a regular su almacenamiento de AWS.|
 |Control de uso compartido|Cubos de S3 accesibles públicamente (AWS)|Alerta cuando un cubo de AWS S3 se comparte públicamente.|
-|Control de uso compartido|Archivos compartidos externamente obsoletos|Busca archivos compartidos externamente que no se han abierto o modificado durante 6 meses.|
+|Control de uso compartido|Archivos compartidos externamente obsoletos|Alerta cuando los archivos compartidos externamente no se han modificado durante al menos 6 meses.|
 
+## <a name="next-steps"></a>Pasos siguientes
 
+> [!div class="nextstepaction"]
+> [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
 
-## <a name="next-steps"></a>Pasos siguientes 
-[Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
-
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
+[!INCLUDE [Open support ticket](includes/support.md)]
