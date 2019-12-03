@@ -11,12 +11,12 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.suite: ems
-ms.openlocfilehash: d37b1da63547bf775648832374ef022464fc9c6b
-ms.sourcegitcommit: e7af22892c56d03490d1e6241c0a74d2e11e9fe2
+ms.openlocfilehash: 8b9c8d975176ff3d8fe4200316b8e3446e830414
+ms.sourcegitcommit: 02d63f48df393fa077bb16787c04dfae4be2f96d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2019
-ms.locfileid: "73462632"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74553619"
 ---
 # <a name="microsoft-cloud-app-security-for-us-government-gcc-high"></a>Microsoft Cloud App Security para GCC High para la Administración Pública de Estados Unidos
 
@@ -26,7 +26,7 @@ La oferta GCC High para Microsoft Cloud App Security está integrada en la nube 
 
 La descripción del servicio Microsoft Cloud App Security para la Administración pública de Estados Unidos está diseñada como una visión general de la oferta de servicio en el entorno GCC High e incluirá las variaciones de características de la oferta comercial.
 
-Para más información sobre la oferta Microsoft Cloud App Security para GCC High para la Administración pública de Estados Unidos, consulte la [descripción del servicio Microsoft Cloud App Security para la Administración pública de Estados Unidos](/enterprise-mobility-security/solution/ems-cloud-app-security-govt-service-description).
+Para más información sobre la oferta Microsoft Cloud App Security para GCC High para la Administración pública de Estados Unidos, consulte la [descripción del servicio Microsoft Cloud App Security para la Administración pública de Estados Unidos](/enterprise-mobility-security/solutions/ems-cloud-app-security-govt-service-description).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
