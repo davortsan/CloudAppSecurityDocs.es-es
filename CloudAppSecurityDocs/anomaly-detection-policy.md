@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 10/06/2019
+ms.date: 12/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 710c42d0fa307c30919ac8383e7e46881ae0b131
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
-ms.translationtype: MT
+ms.openlocfilehash: b9c354d752b9d960669223c4928453acf323d4bb
+ms.sourcegitcommit: 84d56e4953dd771b099261e10a59cf611dd6280a
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461154"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74669319"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtención de análisis de comportamiento y detección de anomalías instantáneos
 
@@ -35,7 +35,7 @@ Las anomalías se detectan mediante el examen de la actividad del usuario. El ri
 * Errores de inicio de sesión
 * Actividad administrativa
 * Cuentas inactivas
-* Location
+* Ubicación
 * Viaje imposible
 * Agente de usuario y dispositivo
 * Tasa de actividad
@@ -147,6 +147,9 @@ Para influir en el motor de detección de anomalías con el fin de suprimir o ex
 * En la directiva correspondiente a un viaje imposible, puede establecer el control deslizante del nivel de confidencialidad para determinar el nivel de comportamiento anómalo necesario para que se desencadene una alerta. Por ejemplo, si lo establece en un nivel bajo, se suprimirán las alertas correspondientes a un viaje imposible desde las ubicaciones habituales de un usuario; si lo establece en un nivel alto, dichas alertas quedarán expuestas.
 
 * También puede configurar si las alertas de actividad desde un país no habitual, direcciones IP anónimas, direcciones IP sospechosas y viaje imposible deben analizar los inicios de sesión correctos y los erróneos, o bien solo los correctos.
+
+> [!NOTE]
+> De forma predeterminada, los protocolos de inicio de sesión heredados, como los que no usan la autenticación multifactor (por ejemplo, WS-Trust), no se supervisan con la Directiva de viajes imposibles. Si su organización usa protocolos heredados, para evitar que falten actividades relevantes, edite la Directiva y, en **Configuración avanzada**, establezca **analizar las actividades de inicio de sesión** en **todos los inicios de sesión**.
 
 ## <a name="scope-anomaly-detection-policies"></a>Ámbito de directivas de detección de anomalías
 
