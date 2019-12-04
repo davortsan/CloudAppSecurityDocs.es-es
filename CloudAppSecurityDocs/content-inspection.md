@@ -11,30 +11,27 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: c67a387f-8c88-4018-9e80-0fb1455cf768
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ef3da968aeb3148365937f94110108a9785894ce
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 83969121e83bfa2efae352fc66de00766c23e5d9
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74458784"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720243"
 ---
 # <a name="content-inspection"></a>Inspección de contenido
 
 *Se aplica a: Microsoft Cloud App Security*
 
+Si habilita la inspección de contenido, puede optar entre usar expresiones preestablecidas o buscar otras expresiones personalizadas.
 
-Si habilita la inspección de contenido, puede optar entre usar expresiones preestablecidas o buscar otras expresiones personalizadas.  
+Puede especificar una expresión regular para excluir un archivo de los resultados. Esta opción es muy útil si tiene un estándar de palabra clave de clasificación interna que quiera excluir de la directiva.
 
-Puede especificar una expresión regular para excluir un archivo de los resultados. Esta opción es muy útil si tiene un estándar de palabra clave de clasificación interna que quiera excluir de la directiva.  
-   
-También puede decidir cuál es el número mínimo de infracciones de contenido que debe producirse antes de que el archivo se considere una infracción. Por ejemplo, puede elegir 10 si quiere recibir alertas sobre archivos con al menos 10 números de tarjeta de crédito en su contenido.  
+También puede decidir cuál es el número mínimo de infracciones de contenido que debe producirse antes de que el archivo se considere una infracción. Por ejemplo, puede elegir 10 si quiere recibir alertas sobre archivos con al menos 10 números de tarjeta de crédito en su contenido.
 
-Cuando el contenido se compare con la expresión seleccionada, el texto de la infracción se reemplazará por caracteres "X". De manera predeterminada, las infracciones se enmascaran y se muestran en su contexto mostrando 100 caracteres antes y después de la infracción. Los números del contexto de la expresión se reemplazan por caracteres "#" y nunca se almacenan en Cloud App Security. Puede seleccionar la opción de **quitar la máscara de los últimos cuatro caracteres de una infracción** para mostrarlos. Es necesario establecer qué tipos de datos buscará la expresión regular: contenido, metadatos o nombre de archivo. De forma predeterminada, buscará el contenido y los metadatos. 
-
+Cuando el contenido se compare con la expresión seleccionada, el texto de la infracción se reemplazará por caracteres "X". De manera predeterminada, las infracciones se enmascaran y se muestran en su contexto mostrando 100 caracteres antes y después de la infracción. Los números del contexto de la expresión se reemplazan por caracteres "#" y nunca se almacenan en Cloud App Security. Puede seleccionar la opción de **quitar la máscara de los últimos cuatro caracteres de una infracción** para mostrarlos. Es necesario establecer qué tipos de datos buscará la expresión regular: contenido, metadatos o nombre de archivo. De forma predeterminada, buscará el contenido y los metadatos.
 
 ## <a name="content-inspection-for-protected-files"></a>Inspección de contenido para archivos protegidos
 
@@ -47,10 +44,9 @@ Para conceder los permisos necesarios a Cloud App Security, haga lo siguiente:
 3. Siga las indicaciones para permitir los permisos requeridos en Azure Active Directory.
 4. Puede ajustar la configuración según la directiva de archivo para determinar qué directivas examinarán los archivos protegidos.
 
-
-
 ## <a name="next-steps"></a>Pasos siguientes
-[Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)   
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
+> [!div class="nextstepaction"]
+> [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
+
+[!INCLUDE [Open support ticket](includes/support.md)]

@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: b35ca44c-da8e-49ec-89d1-c076d123c14f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: aeddfb56542309b0ee6b1f0d4cdec85bb36a120e
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 90efa85fccd71e488f80db290b09b1636013304b
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74459431"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720387"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Integración de protección contra amenazas avanzada de Microsoft defender con Microsoft Cloud App Security
 
@@ -36,10 +35,8 @@ Microsoft Cloud App Security usa la integración nativa con Microsoft defender A
 
 > [!NOTE]
 > ¿Quiere experimentar ATP de Microsoft defender? [Suscríbase para disfrutar de una prueba gratuita](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
->
 
-
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Requisitos previos
 
 - Licencia de Microsoft Cloud App Security
 - Licencia de ATP de Microsoft defender
@@ -65,7 +62,7 @@ Para habilitar la integración con Cloud App Security de ATP de Microsoft defend
 > Los datos tardan en aparecer en Cloud App Security hasta dos horas después de habilitar la integración.
 >
 
-   ![Configuración de ATP de WD](./media/wdatp-settings.png)
+![Configuración de ATP de WD](media/wdatp-settings.png)
 
 ## <a name="investigate-machines-in-cloud-app-security"></a>Investigar las máquinas de Cloud App Security
 
@@ -73,35 +70,40 @@ Después de integrar ATP de Microsoft defender con Cloud App Security, puede inv
 
 1. En el portal de Cloud App Security, haga clic en **Cloud Discovery** y luego en el **panel de Cloud Discovery**.
 2. En la barra de navegación superior, en **Informes continuos**, seleccione **Usuarios del punto de conexión Win10**.
-  ![Informe de ATP de WD](./media/win10-dashboard-report.png)
+  ![Informe de ATP de WD](media/win10-dashboard-report.png)
 3. En la parte superior, verá el número de equipos detectadas que se ha agregado después de la integración.
 4. Haga clic en la pestaña **Máquinas**.
 5. Puede explorar en profundidad cada equipo que se muestra y usar las pestañas para ver los datos de la investigación. Busque correlaciones entre los equipos, los usuarios, las direcciones IP y las aplicaciones que estuvieron implicados en incidentes:
-   - **Información general**
-      - Transacciones: información sobre el número de transacciones que tuvieron lugar en el equipo durante el período de tiempo seleccionado.
-      - Tráfico total: información acerca de la cantidad total de tráfico (en MB) durante el período de tiempo seleccionado.
-     - Cargas: información acerca de la cantidad total de tráfico (en MB) que carga el equipo durante el período de tiempo seleccionado.
-     - Descargas: información acerca de la cantidad total de tráfico (en MB) que descarga el equipo durante el período de tiempo seleccionado.
-   - **Aplicaciones detectadas**<br>
+
+    - **Información general**
+        - Transacciones: información sobre el número de transacciones que tuvieron lugar en el equipo durante el período de tiempo seleccionado.
+        - Tráfico total: información acerca de la cantidad total de tráfico (en MB) durante el período de tiempo seleccionado.
+        - Cargas: información acerca de la cantidad total de tráfico (en MB) que carga el equipo durante el período de tiempo seleccionado.
+        - Descargas: información acerca de la cantidad total de tráfico (en MB) que descarga el equipo durante el período de tiempo seleccionado.
+    - **Aplicaciones detectadas**  
   Enumera todas las aplicaciones detectadas a las que tuvo acceso la máquina.
-   - **Historial de usuarios**<br>
+    - **Historial de usuarios**  
     Enumera todos los usuarios que iniciaron sesión en la máquina.
-   - **Historial de direcciones IP**<br>
+    - **Historial de direcciones IP**  
     Enumera todas las direcciones IP que se asignaron a la máquina.
- ![Información general de las máquinas](./media/machines-overview.png)
- 
-Al igual que con cualquier otro origen de Cloud Discovery, puede exportar los datos del informe de usuarios del punto de conexión Win10 para fines de investigación. 
+ ![Información general de las máquinas](media/machines-overview.png)
+
+Al igual que con cualquier otro origen de Cloud Discovery, puede exportar los datos del informe de usuarios del punto de conexión Win10 para fines de investigación.
 
 > [!NOTE]
+>
 > - La ATP de defender reenvía datos a Cloud App Security en fragmentos de ~ 4 MB (transacciones de punto de conexión ~ 4000)
 > - Si no se alcanza el límite de 4 MB en 1 hora, el NNC de defender notifica todas las transacciones realizadas en la última hora.
+> - Si el dispositivo de punto de conexión está detrás de un proxy de reenvío, el volumen de tráfico no será visible para ATP de Microsoft defender y, por tanto, no se incluirá en Cloud Discovery informes. Para obtener más información, vea [supervisar la conexión de red detrás del proxy de reenvío](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
+
+## <a name="next-steps"></a>Pasos siguientes
+
+> [!div class="nextstepaction"]
+> [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
 
 ## <a name="related-videos"></a>Vídeos relacionados
 
-[Detección de instantáneas de TI más allá de la red corporativa con ATP y Cloud App Security de Microsoft defender](https://www.youtube.com/watch?v=f8hbvbY1Hnc)  
+> [!div class="nextstepaction"]
+> [Detección de instantáneas de TI más allá de la red corporativa](https://www.youtube.com/watch?v=f8hbvbY1Hnc)
 
-## <a name="next-steps"></a>Pasos siguientes 
-[Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md) 
-
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
+[!INCLUDE [Open support ticket](includes/support.md)]

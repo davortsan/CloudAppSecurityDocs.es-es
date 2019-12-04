@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: a9660e5b-d5bd-4a32-8cb9-0de70af6f1e9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d72344a45a744ceb21d8387d5991e9d895fd274d
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 5f149c3f1eeb960169feac803db7cd2e7f2e62c2
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460902"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720206"
 ---
 # <a name="how-to-find-built-in-deprecating-reports"></a>Búsqueda de informes integrados en desuso
 
@@ -40,16 +39,13 @@ Esta tabla le ayudará a ver la información proporcionada por los informes en d
 | Administración de usuarios | Cuentas inactivas | Las cuentas inactivas son aquellas que tienen acceso a la instancia en la nube, pero no han realizado ningún evento en los últimos 60 días. La falta de acción sugiere que estas cuentas ya no están activas y que deben suspenderse para evitar que en el futuro tengan acceso a ellas agentes de amenaza o empleados que abandonan la organización. Si se sigue esta recomendación no solo mejora la seguridad, sino que se reducen los costos operativos. | Vaya a la página **Usuarios y cuentas** y use el filtro **Visto por última vez** para generar una lista de todos los usuarios que no han realizado ninguna actividad recientemente. |
 | Administración de usuarios | Usuarios con privilegios | En este informe se muestran los usuarios de los últimos 7 días que tienen privilegios elevados en las aplicaciones corporativas, como los administradores. Las cuentas con privilegios como estas son el vector de ataque preferido de los actores de amenazas, ya que les permiten tener acceso a información corporativa y a la configuración de red. El hecho de que haya cuentas con privilegios que no se usaron recientemente puede indicar que una empresa no es consciente de la importancia de la seguridad de TI, lo que potencialmente prepara el camino para una oleada de infracciones de datos. Puede investigar en detalle el uso de los privilegios de usuario elevados mediante el registro de auditoría y plantearse la posibilidad de revocar los privilegios cuando ya no sean necesarios. | Vaya a la página **Usuarios y cuentas** y utilice el filtro **Grupos** para generar una lista de los usuarios con privilegios que pertenecen al grupo de administradores. |
 | Administración de usuarios | Cuentas con privilegios especiales | Salesforce tiene varios tipos de cuentas con privilegios, incluidos Modificar todos los datos, Ver todos los datos y Administrar todos los usuarios. Dado que las cuentas con privilegios como estas son el vector de ataque preferido de los actores de amenazas, ya que les permiten tener acceso a la información corporativa y a las configuraciones, resulta útil ver una lista de las cuentas con privilegios. | Vaya a Salesforce. Haga clic en la pestaña **Cuentas con privilegios especiales**. |
-| Administración de datos | Información general sobre el uso compartido de datos | En este informe se muestra el número de archivos almacenados en las aplicaciones en la nube, divididos en función de los permisos de acceso. El uso compartido se ha convertido en un proceso fácil con las aplicaciones en la nube debido a la facilidad de acceso y la ubicuidad. Los archivos que no se comparten con nadie más que el propietario se denominan archivos privados. Si se comparte un archivo, Cloud App Security distingue cuatro tipos de estados: <br> - Un archivo compartido públicamente (web) es aquel al que se puede tener acceso sin autenticación, incluso a través de los resultados de un motor de búsqueda.<br> - Un archivo compartido públicamente es aquel al que se puede tener acceso sin autenticación a través de un enlace.<br> - Un archivo compartido externamente es aquel al que pueden tener acceso usuarios ajenos a la organización después de autenticarse en la aplicación en la nube.<br> - Un archivo compartido internamente es aquel al que pueden tener acceso todos o algunos de los usuarios de la organización.|Vaya a **Archivos**. En la esquina superior derecha, haga clic en los tres puntos y, en **Informes de administración de datos**, seleccione **Información general sobre el uso compartido de datos**. |
+| Administración de datos | Información general sobre el uso compartido de datos | En este informe se muestra el número de archivos almacenados en las aplicaciones en la nube, divididos en función de los permisos de acceso. El uso compartido se ha convertido en un proceso fácil con las aplicaciones en la nube debido a la facilidad de acceso y la ubicuidad. Los archivos que no se comparten con nadie más que el propietario se denominan archivos privados. Si se comparte un archivo, Cloud App Security distingue cuatro tipos de estados: <br /> - Un archivo compartido públicamente (web) es aquel al que se puede tener acceso sin autenticación, incluso a través de los resultados de un motor de búsqueda.<br /> - Un archivo compartido públicamente es aquel al que se puede tener acceso sin autenticación a través de un enlace.<br /> - Un archivo compartido externamente es aquel al que pueden tener acceso usuarios ajenos a la organización después de autenticarse en la aplicación en la nube.<br /> - Un archivo compartido internamente es aquel al que pueden tener acceso todos o algunos de los usuarios de la organización.|Vaya a **Archivos**. En la esquina superior derecha, haga clic en los tres puntos y, en **Informes de administración de datos**, seleccione **Información general sobre el uso compartido de datos**. |
 | Administración de datos | Uso compartido externo por dominio | En este informe se muestran los dominios con los que los empleados comparten archivos corporativos. En el informe se indica para cada dominio qué usuarios corporativos comparten archivos con qué dominio, qué archivos se comparten y quiénes son los colaboradores con los que se comparten los archivos. Se recomienda que administre el uso compartido con estos dominios a través de la pestaña Archivos de la página de cada aplicación en cuestión. | Vaya a **Archivos**. En la esquina superior derecha, haga clic en los tres puntos y, en **Informes de administración de datos**, seleccione **Uso compartido externo por dominio**. |
 | Administración de datos | Propietarios de archivos compartidos | Se muestran los usuarios que comparten archivos corporativos con el exterior. Los archivos compartidos externamente se comparten con colaboradores externos específicos. Los archivos compartidos públicamente son accesibles para cualquier usuario de Internet, a través de un vínculo privado, y solo los pueden encontrar aquellos que están expuestos explícitamente al vínculo. Los archivos compartidos públicamente (Internet) son accesibles para cualquier usuario de Internet, incluso a través de los resultados de un motor de búsqueda. Si detecta usuarios que comparten un número excesivo de archivos, es recomendable que investigue la naturaleza de este exceso de permisos de uso compartido mediante la pestaña Archivos y que se ponga en contacto con dichos usuarios para comprender mejor este uso compartido externo. | Vaya a **Archivos**. En la esquina superior derecha, haga clic en los tres puntos y, en **Informes de administración de datos**, seleccione **Propietarios de archivos compartidos**. |
 
+## <a name="next-steps"></a>Pasos siguientes
 
+> [!div class="nextstepaction"]
+> [Control](control.md)
 
-  
-## <a name="next-steps"></a>Pasos siguientes 
-[Control](control.md)   
-
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
-  
+[!INCLUDE [Open support ticket](includes/support.md)]

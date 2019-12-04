@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 62d7dc1d7dd9fc36c4c974afaad09b2659be5e51
-ms.sourcegitcommit: 02d63f48df393fa077bb16787c04dfae4be2f96d
+ms.openlocfilehash: e5853882b7f95a492f4d8647af154f855d4f1d19
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74553600"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720290"
 ---
 # <a name="oauth-app-policies"></a>Directivas de aplicación de OAuth
 
@@ -39,13 +39,13 @@ Para crear una directiva de aplicación de OAuth:
 
 1. Filtre las aplicaciones según sus necesidades. Por ejemplo, puede ver todas las aplicaciones que solicitan **permiso** para **modificar calendarios en el buzón**.
 1. Haga clic en el botón **New policy from search** (Nueva directiva a partir de búsqueda).
-    ![nueva directiva a partir de búsqueda](./media/app-permissions-filter.png)
+    ![nueva directiva a partir de búsqueda](media/app-permissions-filter.png)
 1. Puede usar el filtro **Community use** (Uso de la Comunidad) para obtener información sobre si permitir el permiso para esta aplicación es habitual, poco habitual o raro. Este filtro puede ser útil si tiene una aplicación que es poco frecuente y solicita un permiso que tiene un nivel de gravedad alto o solicita permiso de muchos usuarios.
 1. Puede establecer la directiva según la pertenencia a grupos de los usuarios que autorizaron las aplicaciones. Por ejemplo, un administrador puede decidir establecer una directiva que revoca aplicaciones poco habituales si solicitan permisos de nivel alto, solo si el usuario que autorizó los permisos es un miembro del grupo Administradores.
 
 Como alternativa, también puede crear la directiva, para lo que debe hacer clic en **Control** y en **Directivas**. Después, haga clic en **Crear directiva** y en **OAuth app policy** (Directiva de aplicación de OAuth).
 
-   ![Nueva directiva de aplicación de OAuth](./media/app-permissions-policy.png)
+   ![Nueva directiva de aplicación de OAuth](media/app-permissions-policy.png)
 
 ## <a name="oauth-app-anomaly-detection-policies"></a>Directivas de detección de anomalías de aplicación de OAuth
 

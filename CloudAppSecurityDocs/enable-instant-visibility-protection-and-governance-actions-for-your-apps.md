@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e22b7d7f1b59c49470426080bf822fa070a1af6d
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 0aa55a99017a1768bf58fd2c2a40688c1a5c95e6
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74458177"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720247"
 ---
 # <a name="connect-apps"></a>Conectar aplicaciones
 
@@ -68,26 +68,26 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
 
 > [!div class="mx-tableFixed"]
 >
-> | | AWS | Cuadro | Dropbox | GCP | G Suite | Office 365 | Okta | Servicio ahora | Salesforce | Webex | Workday |
+> | | AWS | Cuadro | Dropbox | GCP | G Suite | Office 365 | Okta | Servicio ahora | Salesforce | Computadoras | Workday |
 > |-|-|-|-|-|-|-|-|-|-|-|-|
 > | **Cuentas de lista** | ✔ | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 > | **Lista de grupos** | ✔ | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | ✔ | ✔ | ✔ | | No es compatible con el proveedor |
 > | **Lista de privilegios** | | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | No es compatible con el proveedor | ✔ | ✔ | ✔ | No pported por el proveedor |
 > | **Regulación de usuario** | | ✔ | Próximamente | Conexión de asunto G Suite | ✔ | ✔ | | Próximamente | ✔ | Próximamente | t compatible con el proveedor |
 > | **Actividad de inicio de sesión** | ✔ | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-> | **Actividad del usuario** | No aplicable | ✔ | ✔ | ✔ | ✔ - requiere Google Business o Enterprise | ✔ | ✔ | Parcial | Compatible con lesforce Shield | ✔ | ✔ |
+> | **Actividad del usuario** | No disponible | ✔ | ✔ | ✔ | ✔ - requiere Google Business o Enterprise | ✔ | ✔ | Parcial | Compatible con lesforce Shield | ✔ | ✔ |
 > | **Actividad administrativa** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Parcial | ✔ | ✔ | No es compatible con el proveedor |
-> | **DLP: examen periódico** | | ✔ | Próximamente | No aplicable | ✔ | ✔ | No aplicable | | | | No compatible con ovider |
-> | **Análisis de DLP casi en tiempo real** | | ✔ | ✔ | No aplicable | ✔: requiere Google Business Enterprise | ✔ | No aplicable | ✔ | ✔ | ✔ | No es compatible con el proveedor |
-> | **Control de uso compartido** | ✔ | ✔ | ✔ | No aplicable | ✔ | ✔ | No aplicable | No aplicable | | ✔ | No compatible con ovider |
-> | **Regulación de archivos** | ✔ | ✔ | ✔ | No aplicable | ✔ | ✔ | No aplicable | | ✔ | | No es compatible con el proveedor |
-> | **Ver permisos de aplicación** | No aplicable | No es compatible con el proveedor | Próximamente | No aplicable | ✔ | ✔ | No aplicable | | ✔ | No aplicable | No aplicable |
-> | **Revocar permisos de aplicación** | No aplicable | No es compatible con el proveedor | en breve | No aplicable | ✔ | ✔ | No aplicable | | ✔ | No aplicable | No aplicable |
-> | **Aplicación de etiquetas de Azure Information Protection** | No aplicable | ✔ | | No aplicable | ✔ | ✔ | No aplicable | | | No aplicable | No aplicable |
+> | **DLP: examen periódico** | | ✔ | Próximamente | No disponible | ✔ | ✔ | No disponible | | | | No compatible con ovider |
+> | **Análisis de DLP casi en tiempo real** | | ✔ | ✔ | No disponible | ✔: requiere Google Business Enterprise | ✔ | No disponible | ✔ | ✔ | ✔ | No es compatible con el proveedor |
+> | **Control de uso compartido** | ✔ | ✔ | ✔ | No disponible | ✔ | ✔ | No disponible | No disponible | | ✔ | No compatible con ovider |
+> | **Regulación de archivos** | ✔ | ✔ | ✔ | No disponible | ✔ | ✔ | No disponible | | ✔ | | No es compatible con el proveedor |
+> | **Ver permisos de aplicación** | No disponible | No es compatible con el proveedor | Próximamente | No disponible | ✔ | ✔ | No disponible | | ✔ | No disponible | No disponible |
+> | **Revocar permisos de aplicación** | No disponible | No es compatible con el proveedor | en breve | No disponible | ✔ | ✔ | No disponible | | ✔ | No disponible | No disponible |
+> | **Aplicación de etiquetas de Azure Information Protection** | No disponible | ✔ | | No disponible | ✔ | ✔ | No disponible | | | No disponible | No disponible |
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Requisitos previos
 
-- En el caso de algunas aplicaciones, puede que sea necesario agregar las direcciones IP a la lista blanca para habilitar Cloud App Security de modo que recopile registros y proporcione acceso a la consola de Cloud App Security. Para obtener más información, vea [Requisitos de red](network-requirements.md).
+- En el caso de algunas aplicaciones, puede que sea necesario agregar las direcciones IP a la lista de permitidos para habilitar Cloud App Security de modo que recopile registros y proporcione acceso a la consola de Cloud App Security. Para obtener más información, vea [Requisitos de red](network-requirements.md).
 
 - Se recomienda crear una cuenta de servicio de administración dedicada a Cloud App Security por cada aplicación que quiera conectar con la integración de la API de Cloud App Security.
 
@@ -108,7 +108,7 @@ Para usar los conectores de aplicaciones, debe asegurarse de que tiene lo siguie
 | Okta | Enterprise (no versión de prueba) | Administración |
 | Salesforce | | Administración |
 | ServiceNow | Eureka o versión posterior | Rol de administrador + RestAPI |
-| Webex | | Administrador + administrador de cumplimiento |
+| Computadoras | | Administrador + administrador de cumplimiento |
 | Workday | | Consulte los [requisitos previos de Connect WorkDay](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) |
 
 ### <a name="expressroute"></a>ExpressRoute
@@ -118,10 +118,12 @@ Para obtener más información sobre el emparejamiento público, consulte [Circu
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
 
 ## <a name="check-out-this-video"></a>Eche un vistazo a este vídeo.
 
-[Microsoft Cloud App Security: API de REST y tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)
+> [!div class="nextstepaction"]
+> [Microsoft Cloud App Security: API de REST y tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)

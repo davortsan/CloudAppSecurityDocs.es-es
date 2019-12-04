@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4dd033c3cf181e2e18e8ab8e2fc1d48b62865901
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 37b4f17539b0d160e8650f5478741f0941e50648
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461010"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719877"
 ---
 # <a name="manage-oauth-apps"></a>Administrar aplicaciones de OAuth
 
@@ -37,11 +37,11 @@ Para acceder a la pestaña de OAuth:
 
 En el portal de Cloud App Security, haga clic en **Investigar** y después en **Aplicaciones de OAuth**.
 
-![permisos de aplicación](./media/app-permissions.png)
+![permisos de aplicación](media/app-permissions.png)
 
 La página Aplicaciones de OAuth de aplicación proporciona la siguiente información sobre cada aplicación de OAuth a la que se han concedido permisos:
 
-|Elemento|Significado|Se aplica a|
+|Elemento|Significado|Aplicable a|
 |-------|-------|-------|
 |Icono Básica en la barra de consulta de aplicación  |Cambie a consulta en la vista básica.|Office 365, G Suite y Salesforce|
 |Icono Avanzada en la barra de consulta de aplicación  |Cambie a consulta en la vista avanzada.|Office 365, G Suite y Salesforce|
@@ -53,34 +53,34 @@ La página Aplicaciones de OAuth de aplicación proporciona la siguiente informa
 |Estado de la aplicación|Un administrador puede marcar una aplicación como Aprobada, Prohibida, o dejarla como Sin determinar.|Office 365, G Suite y Salesforce|
 |Uso de la comunidad|Muestra la popularidad de la aplicación entre los usuarios (conocida, poco conocida o desconocida)|Office 365, G Suite y Salesforce|
 |Última autorización|Fecha más reciente en la que un usuario concedió permisos a esta aplicación.|Office 365 y Salesforce|
-|Publicador|Nombre del proveedor que proporciona la aplicación.|Office 365|
+|Publisher|Nombre del proveedor que proporciona la aplicación.|Office 365|
 |Último uso|Fecha más reciente en la que un miembro de la organización usó esta aplicación.|Salesforce|
 
 ## <a name="ban-or-approve-an-app"></a>Prohibir o aprobar una aplicación
 
 1. En la página **Aplicación de OAuth**, haga clic en la aplicación para abrir el **Cajón de la aplicación** y obtener más información sobre ella y los permisos que se le han concedido.
 
-   - Haga clic en el vínculo **Permisos** para ver una lista completa de los permisos concedidos a la aplicación.
-   - En **Uso de la comunidad**, puede ver la frecuencia de uso de la aplicación entre otras organizaciones.
-   - Haga clic en el vínculo **Actividad relacionada** para ver las actividades que se muestran en el registro de gobernanza relacionadas con esta aplicación.
+    - Haga clic en el vínculo **Permisos** para ver una lista completa de los permisos concedidos a la aplicación.
+    - En **Uso de la comunidad**, puede ver la frecuencia de uso de la aplicación entre otras organizaciones.
+    - Haga clic en el vínculo **Actividad relacionada** para ver las actividades que se muestran en el registro de gobernanza relacionadas con esta aplicación.
 
 2. Para prohibir la aplicación, haga clic en el icono Prohibir al final de la fila de la aplicación en la tabla.
 
-     ![Icono prohibir una aplicación](./media/ban-app-icon.png)
+    ![Icono prohibir una aplicación](media/ban-app-icon.png)
 
     - Puede elegir si quiere indicar a los usuarios que se ha prohibido la aplicación que han instalado y autorizado. La notificación informa a los usuarios de que la aplicación estará deshabilitada y no tendrán acceso a la aplicación conectada. Si no quiere que lo sepan, anule la selección de **Enviar una notificación a los usuarios que hayan concedido permiso a esta aplicación prohibida** en el cuadro de diálogo.
     - Se recomienda permitir que los usuarios de la aplicación sepan que se ha prohibido el uso de la aplicación.
 
-      ![prohibir aplicación](./media/ban-app.png)
+    ![prohibir aplicación](media/ban-app.png)
 
 3. Escriba el mensaje que quiere enviar a los usuarios de la aplicación en el cuadro Escriba un mensaje de notificación personalizado. Haga clic en **Prohibir aplicación** para enviar el correo y prohibir que los usuarios de la aplicación conectada la usen.
 
 4. Para aprobar la aplicación, haga clic en el icono Aprobar al final de la fila en la tabla.
 
-   ![aprobar aplicación](./media/approve-app.png)
+    ![aprobar aplicación](media/approve-app.png)
 
-   - El icono se vuelve verde y se aprueba la aplicación para todos los usuarios de la aplicación conectada.
-   - Marcar una aplicación como aprobada no tiene efecto para el usuario final. Este cambio de color sirve para ayudarle a ver las aplicaciones que se han aprobado y distinguirlas de las que todavía no se han revisado.
+    - El icono se vuelve verde y se aprueba la aplicación para todos los usuarios de la aplicación conectada.
+    - Marcar una aplicación como aprobada no tiene efecto para el usuario final. Este cambio de color sirve para ayudarle a ver las aplicaciones que se han aprobado y distinguirlas de las que todavía no se han revisado.
 
 ## <a name="revoke-app-and-notify-user"></a>Revocar la aplicación y enviar una notificación al usuario
 
@@ -89,7 +89,7 @@ En el caso de G Suite y Salesforce, es posible revocar el permiso de una aplicac
 1. En la página **Aplicaciones de OAuth**, haga clic en los tres puntos situados al final de la fila de la aplicación y seleccione **Enviar notificación al usuario**. De forma predeterminada, se notificará al usuario de la manera siguiente: *ha autorizado la aplicación para tener acceso a su cuenta de G Suite. Esta aplicación entra en conflicto con la Directiva de seguridad de su organización. Considere la posibilidad de conceder o revocar los permisos que asignó a esta aplicación en su cuenta de G Suite. Para revocar el acceso a la aplicación, vaya a: https://security.google.com/settings/security/permissions?hl=en&pli=1 seleccione la aplicación y haga clic en "revocar acceso" en la barra de menús derecha.* Puede personalizar el mensaje que se envía.
 2. También puede revocar permisos para usar la aplicación para el usuario. Haga clic en el icono al final de la fila de la aplicación en la tabla y seleccione **Revocar aplicación**.
 
-    ![revocar aplicación](./media/revoke-app.png)
+    ![revocar aplicación](media/revoke-app.png)
 
 ## <a name="query-oauth-apps"></a>Consultar aplicaciones de OAuth
 
@@ -117,11 +117,12 @@ Si se detecta una aplicación OAuth en su organización que parece malintenciona
 
 1. En la página **Aplicaciones de OAuth**, haga clic en los tres puntos situados al final de la fila de la aplicación y seleccione **Informar sobre aplicación**.
 
-    ![informar de aplicación](./media/report-app.png)
+    ![informar de aplicación](media/report-app.png)
 2. En la pantalla **Informar sobre esta aplicación**, puede seleccionar si va a informar sobre la aplicación como malintencionada o va a notificar algún otro problema con la manera con la que Cloud App Security percibe la aplicación. Por ejemplo, **Publicador incorrecto**, **Permisos incorrectos** u **Otros**. Los datos que envíe se usarán para actualizar la puntuación de riesgo de la aplicación, así como otros análisis sobre la aplicación.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

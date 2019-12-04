@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6fc5d998bc174096d7530a37407137bfbf71d50d
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: c4f914fed75e30aca3b9d87d911c729dff0b77c0
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461316"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719927"
 ---
 # <a name="investigate"></a>Investigar
 
@@ -55,9 +55,9 @@ Marcar aplicaciones como autorizadas o no autorizadas es un paso importante para
 
 - En la consola de Cloud App Security, vaya a Catálogo de aplicaciones o Aplicaciones detectadas.
 
-- En la lista de aplicaciones, en la fila que contenga la aplicación que quiera marcar como autorizada, elija los tres puntos al final de la fila ![Puntos para marcar como autorizada](./media/sanction-three-dots.png "Etiquetar como puntos autorizados") y elija **Marcar como autorizada**.
+- En la lista de aplicaciones, en la fila que contenga la aplicación que quiera marcar como autorizada, elija los tres puntos al final de la fila ![Puntos para marcar como autorizada](media/sanction-three-dots.png "Etiquetar como puntos autorizados") y elija **Marcar como autorizada**.
 
-    ![Etiqueta como autorizada](./media/mark-as-sanctioned.png "etiqueta como autorizada")
+    ![Etiqueta como autorizada](media/mark-as-sanctioned.png "etiqueta como autorizada")
 
 ## <a name="use-the-investigation-tools"></a>Usar las herramientas de investigación
 
@@ -113,7 +113,7 @@ Marcar aplicaciones como autorizadas o no autorizadas es un paso importante para
 
     - ¿Cuántos usuarios las han implementado? ¿Cómo son de comunes estas aplicaciones en general?
 
-    ![Panel de la aplicación](./media/investigate-app.png "investigar aplicación")
+    ![Panel de la aplicación](media/investigate-app.png "investigar aplicación")
 
 5. Vaya al **panel de Cloud Discovery** y compruebe los siguientes elementos:
 
@@ -143,7 +143,7 @@ Imaginemos que, en teoría, ninguna dirección IP de riesgo puede tener acceso a
 
 5. En **Actividades que coinciden con todas las opciones siguientes**, haga clic en **+** para agregar un filtro. Desplácese hasta **Etiqueta IP** y luego elija **Tor**.
 
-    ![Directiva de ejemplo para IP de riesgo](./media/example-policy-risky-ips.png "ejemplo de directiva de IP de riesgo")
+    ![Directiva de ejemplo para IP de riesgo](media/example-policy-risky-ips.png "ejemplo de directiva de IP de riesgo")
 
 Con la directiva en marcha, le sorprenderá ver que recibe una alerta que indica que la directiva se ha infringido.
 

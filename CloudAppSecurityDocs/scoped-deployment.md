@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a9075aeedfb21f074bcbde1e9bf5ea136bb5d948
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 433488b7302d3f66255bb1bfa04b630d8dbb1b7d
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460445"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74721051"
 ---
 # Implementación con ámbito <a name="scoped-deployment"></a> 
 
@@ -33,22 +33,22 @@ Es posible que no desee usar Microsoft Cloud App Security para todos los usuario
 
 - Para establecer el ámbito de la implementación, primero debe [importar grupos de usuarios](user-groups.md) con Microsoft Cloud App Security. De forma predeterminada, verá los siguientes grupos:
 
-    - Grupo de usuarios **Aplicación**: un grupo integrado que le permite ver las actividades realizadas por las aplicaciones de Office 365 y Azure AD.
+  - Grupo de usuarios **Aplicación**: un grupo integrado que le permite ver las actividades realizadas por las aplicaciones de Office 365 y Azure AD.
 
-    - Grupo de **usuarios externos** : todos los usuarios que no son miembros de ninguno de los dominios administrados que configuró para su organización.
+  - Grupo de **usuarios externos** : todos los usuarios que no son miembros de ninguno de los dominios administrados que configuró para su organización.
 
 - El establecimiento de una regla de inclusión excluirá automáticamente a todos los grupos que no estén dentro del grupo incluido. Por ejemplo, si establece una regla para incluir a todos los miembros de los grupos de oficinas de EE. UU., no se supervisarán los grupos que no formen parte de ese grupo.
 
 - Los grupos de usuarios excluidos invalidan los grupos de usuarios incluidos. Esto significa que si incluye el grupo de usuarios "Empleados del Reino Unido" pero excluye "Marketing", los miembros de marketing del Reino Unido no se supervisarán incluso si forman parte del grupo **Empleados del Reino Unido**.
 
-1. En la barra de menús, haga clic en el engranaje de configuración y seleccione **Implementación con ámbito**.  
+1. En la barra de menús, haga clic en el engranaje de configuración y seleccione **Implementación con ámbito**.
 
-    ![icono de configuración](./media/settings-icon.png "icono de configuración")
+    ![icono de configuración](media/settings-icon.png "icono de configuración")
 
 2. Para establecer el ámbito de la implementación a fin de incluir o excluir grupos específicos, primero debe [importar grupos de usuarios](user-groups.md) en Microsoft Cloud App Security.
 
 3. Para establecer grupos específicos para su supervisión por parte de Microsoft Cloud App Security, en la pestaña **Incluir**, haga clic en el icono más.
-    ![icono](./media/plus-icon.png)
+    ![icono](media/plus-icon.png)
 
 4. En el cuadro de diálogo **Crear nueva regla de inclusión**, haga lo siguiente:
 
@@ -56,11 +56,11 @@ Es posible que no desee usar Microsoft Cloud App Security para todos los usuario
     2. En **Seleccionar grupos de usuarios**, seleccione todos los grupos que desea supervisar con Cloud App Security.
     3. Seleccione si desea aplicar esta regla a todas las aplicaciones conectadas o solo a **aplicaciones específicas**. Si selecciona **aplicaciones específicas**, la regla solo afectará a la supervisión de las aplicaciones que seleccione. Por ejemplo, si selecciona el grupo **Usuarios del equipo de UI** y **Box**, Cloud App Security solo supervisará la actividad de Box para los miembros del grupo de usuarios del equipo de UI y, en el resto de aplicaciones, Cloud App Security supervisará todas las actividades para todos los usuarios.
 
-        ![regla de inclusión](./media/include-rule.png)
+        ![regla de inclusión](media/include-rule.png)
 
 5. Si quiere establecer determinados grupos para excluirlos de la supervisión, en la pestaña **Excluir**, haga clic en el icono de signo más.
 
-   ![icono](./media/plus-icon.png)
+   ![icono](media/plus-icon.png)
 
 6. En el cuadro de diálogo **Crear nueva regla de exclusión**, establezca los parámetros siguientes:
 
@@ -68,7 +68,7 @@ Es posible que no desee usar Microsoft Cloud App Security para todos los usuario
     En **Seleccionar grupos de usuarios**, seleccione todos los grupos que no quiere que supervise Cloud App Security.
     2. Seleccione si desea aplicar esta regla a todas las aplicaciones conectadas o solo a **aplicaciones específicas**. Si selecciona **aplicaciones específicas**, Cloud App Security dejará de supervisar el grupo seleccionado solo para las aplicaciones que seleccione. Esto significa que si selecciona la interfaz de usuario del grupo **usuarios del equipo** y **Active Directory**, Cloud App Security supervisará toda la actividad de los usuarios excepto Active Directory actividades realizadas por los usuarios del equipo de la interfaz de usuario.
 
-       ![regla de exclusión](./media/exclude-rule.png)
+       ![regla de exclusión](media/exclude-rule.png)
 
 ## <a name="example-results-for-include-and-exclude-rules"></a>Resultados de ejemplo para las reglas de inclusión y exclusión
 
@@ -85,9 +85,9 @@ Se supervisan las actividades de usuario siguientes:
 
 |Usuario|Pertenencia a grupos|Actividades supervisadas|
 |----|----|----|
-|Adriana|Todos los usuarios de Alemania<br>Ventas globales<br>Directores de ventas|Ninguna|
+|Adriana|Todos los usuarios de Alemania<br />Ventas globales<br />Directores de ventas|Ninguno|
 |Alain|Ventas globales|Office 365 y todas las subaplicaciones, a excepción de Power BI|
-|Cornel|Ventas globales<br>Directores de ventas|Office 365 y todas las subaplicaciones|
+|Cornel|Ventas globales<br />Directores de ventas|Office 365 y todas las subaplicaciones|
 |Raymond|Directores de ventas|Solo Power BI|
 
 > [!NOTE]
@@ -96,6 +96,7 @@ Se supervisan las actividades de usuario siguientes:
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Configurar Cloud Discovery](set-up-cloud-discovery.md)
+> [!div class="nextstepaction"]
+> [Configurar Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

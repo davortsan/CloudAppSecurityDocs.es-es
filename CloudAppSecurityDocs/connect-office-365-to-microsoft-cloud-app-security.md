@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 67d424610e93f34ddacd1db2eb8e721ad0857bdf
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 86126d40279acd433066cc76db101061f1a03a93
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74458808"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720064"
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Conectar Office 365 con Microsoft Cloud App Security
 
@@ -58,11 +57,11 @@ Cloud App Security admite las siguientes aplicaciones de Office 365:
 
 1. En la página **Conectores de aplicaciones**, haga clic en el botón del signo más y seleccione **Office 365**.  
 
-      ![conectar O365](./media/connect-0365.png) 
+      ![conectar O365](media/connect-0365.png) 
 
 2. En el menú emergente de Office 365, haga clic en **Conectar Office 365**.
 
-      ![conectar O365](./media/office-connect.png) 
+      ![conectar O365](media/office-connect.png) 
 
 3. Cuando se indique que Office 365 está conectado correctamente, haga clic en **Cerrar**.
 
@@ -71,6 +70,7 @@ Cloud App Security admite las siguientes aplicaciones de Office 365:
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

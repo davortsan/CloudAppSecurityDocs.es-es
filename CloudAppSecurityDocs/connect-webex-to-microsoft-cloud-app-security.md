@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2f35d499398f6d538b552678d5c30740e2f5d5ea
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: e3a3f99dd64526439c9c5f4967a2918c33dfdde9
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460830"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719757"
 ---
 # <a name="connect-cisco-webex-to-microsoft-cloud-app-security"></a>Conexión de Cisco WebEx a Microsoft Cloud App Security
 
@@ -27,7 +27,7 @@ ms.locfileid: "74460830"
 
 En este artículo se proporcionan instrucciones para conectar Microsoft Cloud App Security a su cuenta de Cisco WebEx existente mediante las API del conector. Esta conexión le proporciona visibilidad y control sobre los usuarios, las actividades y los archivos de WebEx.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Requisitos previos
 
 - Se recomienda crear una cuenta de servicio dedicada para la conexión. Esto le permite ver las acciones de gobierno realizadas en WebEx como realizadas desde esta cuenta, como eliminar mensajes enviados en WebEx. De lo contrario, el nombre del administrador que se conectó Cloud App Security a Webex aparecerá como el usuario que realizó las acciones.
 - Debe tener permisos de administrador total **y** de administrador de cumplimiento en WebEx.
@@ -38,7 +38,7 @@ En este artículo se proporcionan instrucciones para conectar Microsoft Cloud Ap
 
 1. En la página **conectores de aplicaciones** , haga clic en el botón de signo más seguido de **Cisco WebEx**.
 
-    ![conectar WebEx](./media/cisco-webex.png "conectar WebEx")
+    ![conectar WebEx](media/cisco-webex.png "conectar WebEx")
 
 1. En el elemento emergente, escriba el nombre de instancia de este conector.
 

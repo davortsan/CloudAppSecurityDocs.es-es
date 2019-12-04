@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2708e8606e1838678e7d2b66fcb4e32584d475fc
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 07482404f8c3c374f8ebe8182512add5db64345b
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74458751"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719252"
 ---
 # <a name="basic-setup-for-cloud-app-security"></a>Configuración básica de Cloud App Security
 
@@ -27,7 +27,7 @@ ms.locfileid: "74458751"
 
 En el siguiente procedimiento se proporcionan instrucciones para personalizar el portal de Microsoft Cloud App Security.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Requisitos previos
 
 Para el acceso al portal, es necesario agregar las siguientes direcciones IP a la lista de permitidos del firewall para proporcionar acceso al portal de Cloud App Security:
 
@@ -43,7 +43,7 @@ En el caso de los clientes de la administración pública de Estados Unidos, tam
 
 ## <a name="set-up-the-portal"></a>Configurar el portal
 
-1. En el portal de Cloud App Security, en la barra de menús, haga clic en el icono configuración engranaje ![configuración](./media/settings-icon.png "icono de configuración") y seleccione **configuración** para configurar los detalles de su organización.
+1. En el portal de Cloud App Security, en la barra de menús, haga clic en el icono configuración engranaje ![configuración](media/settings-icon.png "icono de configuración") y seleccione **configuración** para configurar los detalles de su organización.
 
 1. En **Detalles de la organización**, es importante que indique un **nombre para mostrar de la organización** para su organización. Este nombre se mostrará en los correos electrónicos y páginas web enviados desde el sistema.
 
@@ -72,6 +72,7 @@ En el caso de los clientes de la administración pública de Estados Unidos, tam
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Configurar Cloud Discovery](set-up-cloud-discovery.md)
+> [!div class="nextstepaction"]
+> [Configurar Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

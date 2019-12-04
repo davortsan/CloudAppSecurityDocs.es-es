@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cd11c5a35761f21cc928a3debbc05a58ef56b6d1
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: ad21cce1ffda835dc45badccc07689ca300cf377
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74459982"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74721073"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Solución de problemas de Cloud Discovery
 
@@ -32,14 +31,13 @@ En este artículo se proporciona una lista de errores de Cloud Discovery y recom
 
 Si ha integrado Microsoft defender ATP con Cloud App Security y no ve los resultados de la integración: no hay un informe de **usuarios del punto** de conexión de Win10, asegúrese de que las máquinas a las que se está conectando son Windows 10 versión 1809 o posterior y de que ha esperado las dos horas necesarias para que se pueda tener acceso a los datos.
 
-
 ## <a name="log-parsing-errors"></a>Errores de análisis de registro
 
 Puede realizar un seguimiento del procesamiento de registros de Cloud Discovery mediante el registro de gobernanza. En este artículo se proporcionan las acciones para resolver cada uno de los errores que se pueden mostrar allí.
 
 ### <a name="governance-log-errors"></a>Errores del registro de gobernanza
 
-|Error|Descripción|Solución|
+|Error de:|Descripción|Solución|
 |----|----|----|
 |Tipo de archivo no admitido|El archivo cargado no es un archivo de registro válido (por ejemplo, un archivo de imagen).|Cargue un archivo de **texto**, **zip o **gzip** que se haya exportado directamente desde el firewall o el proxy.|
 |El formato del registro no coincide|El formato del registro que ha cargado no coincide con el formato esperado para este origen de datos.|1. Compruebe que el registro no esté dañado. <br /> 2. Compare y haga coincidir el registro con el formato de ejemplo que se muestra en la página de carga.|
@@ -65,8 +63,8 @@ Puede realizar un seguimiento del procesamiento de registros de Cloud Discovery 
 |Los datos de detección se han cargado y analizado correctamente, pero el panel de Cloud Discovery parece vacío|El panel puede estar filtrado por datos que los registros no tienen, por lo que no hay ningún dato que mostrar. Pruebe a cambiar los filtros del panel de Cloud Discovery para mostrar tipos de datos diferentes para ver los resultados.|
 
 ## <a name="next-steps"></a>Pasos siguientes
-  
-[Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
+> [!div class="nextstepaction"]
+> [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
 
+[!INCLUDE [Open support ticket](includes/support.md)]

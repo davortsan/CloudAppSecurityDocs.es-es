@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: bf25d1e6-e5dc-449f-b50e-1cd4a21b6d3d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c4e00f152fcb09f2133805157b85b2a930ad3aca
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: badb9427ba4a5eed267eb95f3b6d5c66ed058b98
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461344"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720664"
 ---
 # <a name="microsoft-data-classification-services-integration"></a>Integración de los servicios de clasificación de datos de Microsoft
 
@@ -36,10 +35,12 @@ Microsoft Cloud App Security le permite usar el servicio de clasificación de da
 Tiene la opción para establecer el **método de inspección** para que use el **servicio de clasificación de datos de Microsoft** sin ninguna configuración adicional necesaria. Esta opción es útil al crear una directiva de prevención de pérdida de datos para los archivos en Microsoft Cloud App Security.
 
 1. En la página [Directiva de archivo](data-protection-policies.md), en **Método de inspección** seleccione **Servicio de clasificación de datos**. También puede establecer el **método de inspección** en la página [Directiva de sesión](session-policy-aad.md) con la opción **Descargar archivo de control (con DLP)** seleccionada.
-     ![configuración del servicio de clasificación de datos](./media/dcs-enable.png)
+
+    ![configuración del servicio de clasificación de datos](media/dcs-enable.png)
 2. Seleccione si debe aplicarse la directiva cuando se cumpla **cualquier** criterio o **todos** ellos.
 3. En **Elija el tipo de inspección**, seleccione **Tipos de información confidencial**.
- ![configuración del servicio de clasificación de datos](./media/dcs-sensitive-information-type.png)
+
+    ![configuración del servicio de clasificación de datos](media/dcs-sensitive-information-type.png)
 
 4. Puede usar los [tipos de información confidencial predeterminados](https://support.office.com/article/what-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b) para definir lo que ocurre con los archivos protegidos por Microsoft Cloud App Security. También puede reutilizar cualquiera de los [tipos personalizados de información confidencial de Office 365](https://support.office.com/article/create-a-custom-sensitive-information-type-82c382a5-b6db-44fd-995d-b333b3c7fc30).
     > [!NOTE]
@@ -53,6 +54,7 @@ Configurar estas directivas es una manera sencilla de llevar la eficacia de las 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

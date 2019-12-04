@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 0eac8ac2-c8bc-4719-b45d-30a1da4e3424
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c7f73e64ed6934563012e244f6f0db0bd3569859
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 56434a38c0eef24c9581db36c16b47ef7694dc1d
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74459932"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74721188"
 ---
 # <a name="troubleshooting-microsoft-cloud-app-security-status"></a>Solución de problemas de estado de Microsoft Cloud App Security
 
@@ -33,12 +32,11 @@ En este artículo se proporcionan instrucciones y un vínculo a la página de es
 Para comprobar el estado actual del servicio Microsoft Cloud App Security, haga lo siguiente:
 
 - Vaya a [status.cloudappsecurity.com](https://status.cloudappsecurity.com).
-- Haga clic en **Ayuda**>**Estado del sistema** directamente desde el portal.
+- Haga clic en **Ayuda** > **Estado del sistema** directamente desde el portal.
 
 ## <a name="next-steps"></a>Pasos siguientes
- 
-[Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
-  
+> [!div class="nextstepaction"]
+> [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
+
+[!INCLUDE [Open support ticket](includes/support.md)]

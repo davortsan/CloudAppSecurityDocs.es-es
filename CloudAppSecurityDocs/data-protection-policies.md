@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1689bccc5c2dd55ca719159697986f7c317be1af
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 406851d56a484ee2b49104c813cd371952c10746
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461373"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720687"
 ---
 # <a name="file-policies"></a>Directivas de archivo
 
@@ -27,7 +27,7 @@ ms.locfileid: "74461373"
 
 Las directivas de archivo permiten aplicar toda una serie de procesos automatizados que usan las API del proveedor en la nube. Las directivas se pueden establecer para proporcionar análisis de conformidad constantes, tareas de exhibición de documentos electrónicos legales, DLP para el contenido confidencial compartido públicamente y otros muchos casos de uso. Cloud App Security puede supervisar cualquier tipo de archivo basado en más de 20 filtros de metadatos (por ejemplo, nivel de acceso o tipo de archivo).
 
-### <a name="supported-file-types"></a>Tipos de archivo admitidos
+## <a name="supported-file-types"></a>Tipos de archivo admitidos
 
 Los motores de DLP integrados de Cloud App Security realizan la inspección de contenido mediante la extracción de texto de todos los tipos de archivo comunes (más de 100), incluidos los de Office, Open Office, archivos comprimidos, varios formatos de texto enriquecido, XML, HTML y muchos más.
 
@@ -63,7 +63,7 @@ Estos son algunos ejemplos de las directivas de archivo que se pueden crear:
 
 Haga lo siguiente para crear una directiva de archivo:
 
-1. En la consola, haga clic en **Control** seguido de **Directivas**.
+1. En la consola, haga clic en **Control**, seguido de **Directivas**.
 
 1. Haga clic en **Crear directiva** y seleccione **Directiva de archivo**.
 
@@ -94,7 +94,7 @@ Haga lo siguiente para crear una directiva de archivo:
 
 1. Una vez creada la Directiva, puede verla en la pestaña Directiva de **archivo** . Siempre puede modificar una directiva, calibrar sus filtros o cambiar las acciones automatizadas. La directiva se habilita automáticamente tras crearse e iniciará inmediatamente el análisis de los archivos en la nube.  Tenga especial cuidado al definir acciones de gobernanza, ya que podrían provocar la pérdida irreversible de permisos de acceso a los archivos. Se recomienda restringir los filtros para representar exactamente los archivos en los que quiere actuar por medio de varios campos de búsqueda. Cuanto más restringidos sean los filtros, mejor. Para obtener orientación, puede usar el botón **Editar y obtener vista previa de resultados** de la sección Filtros.
 
-    ![editar la directiva de archivo y obtener una vista previa de resultados](./media/file-policy-edit-and-preview-results.png)
+    ![editar la directiva de archivo y obtener una vista previa de resultados](media/file-policy-edit-and-preview-results.png)
 
 1. Para ver coincidencias con la directiva de archivo, es decir, archivos sospechosos de infringir la directiva, haga clic en **Control** y, después, en **Directivas**. Filtre los resultados para mostrar solo las directivas de archivo con el filtro **Tipo** en la parte superior. Para obtener más información sobre las coincidencias de cada directiva, haga clic en una directiva. De este modo, se muestran los archivos que "coinciden ahora" con la directiva. Haga clic en la pestaña **Historial** para ver el historial de los seis meses anteriores con los archivos que coincidieron con la directiva.
 
@@ -128,6 +128,7 @@ Para que la investigación sea incluso más sencilla, ahora puede crear consulta
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

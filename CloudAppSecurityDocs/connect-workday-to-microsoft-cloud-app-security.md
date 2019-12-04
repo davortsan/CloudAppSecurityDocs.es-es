@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3a0756e8e2ffc9d351013b03e037fa996cbf341f
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: b31876240187e3f95ff2a8d10632b54de37e6ed6
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461005"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720760"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Conexión de WorkDay a Microsoft Cloud App Security (versión preliminar)
 
@@ -27,16 +27,16 @@ ms.locfileid: "74461005"
 
 En este artículo se proporcionan instrucciones para conectar Microsoft Cloud App Security a su cuenta de WorkDay existente mediante la API del conector de aplicaciones. Esta conexión le proporciona visibilidad y control sobre el uso de WorkDay.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Requisitos previos
 
 La cuenta de WorkDay usada para conectarse a Cloud App Security debe ser miembro de un grupo de seguridad (nuevo o existente). Se recomienda usar un usuario del sistema de integración de WorkDay. El grupo de seguridad debe tener los siguientes permisos seleccionados para las siguientes directivas de seguridad de dominio:
 
 | Área funcional | Directiva de seguridad de dominio | Directiva de seguridad de subdominio | Permisos de informe/tarea | Permisos de integración |
 | --- | --- | --- | --- | --- |
-| System | Configuración: configuración de inquilinos: General | Configuración: configuración de inquilinos: seguridad | Ver, modificar | Get, Put |
-| System | Administración de seguridad | | Ver, modificar | Get, Put |
-| System | Auditoría del sistema | | Ver | Get |
-| Personal | Datos de trabajo: personal | Datos de trabajo: informes de trabajo público | Ver | Get |
+| System (Sistema) | Configuración: configuración de inquilinos: General | Configuración: configuración de inquilinos: seguridad | Ver, modificar | Get, Put |
+| System (Sistema) | Administración de seguridad | | Ver, modificar | Get, Put |
+| System (Sistema) | Auditoría del sistema | | Consulte | Get |
+| Personal | Datos de trabajo: personal | Datos de trabajo: informes de trabajo público | Consulte | Get |
 
 > [!NOTE]
 >
@@ -60,7 +60,7 @@ Para obtener más información sobre la configuración de usuarios, grupos de se
 
 1. En la página **registrar el cliente de API** , rellene la información siguiente y, a continuación, haga clic en **Aceptar**.
 
-    | Nombre del campo | Valor |
+    | Nombre de campo | Value |
     | ---- | ---- |
     | Nombre de cliente | Microsoft Cloud App Security |
     | Tipo de concesión de cliente | Concesión de código de autorización |
@@ -73,7 +73,7 @@ Para obtener más información sobre la configuración de usuarios, grupos de se
 
 1. Una vez registrado, tome nota de los siguientes parámetros y, a continuación, haga clic en **listo**.
 
-    * Id. de cliente
+    * Identificador de cliente
     * Secreto de cliente
     * Punto de conexión de API de REST de WorkDay
     * Extremo de token
@@ -108,6 +108,7 @@ Para obtener más información sobre la configuración de usuarios, grupos de se
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/1/2019
+ms.date: 12/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 73778b6e0c7630779899e48b08ba872ef846ca93
-ms.sourcegitcommit: 89183b53608bb4fd4715d7682fb6996ea427ef6a
+ms.openlocfilehash: 5ae82c1acddf3bbf1ee711a108234d6b69cd8ee4
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74536410"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733749"
 ---
 # <a name="governing-connected-apps"></a>Control de aplicaciones conectadas
 
@@ -75,7 +75,7 @@ Las siguientes acciones de gobernanza pueden realizarse para aplicaciones conect
 
   - **Enviar a la papelera**: el archivo se mueve a la carpeta de la Papelera. (Box, Dropbox, Google Drive, OneDrive, SharePoint)
 
-   ![policy_create de alertas](./media/policy_create-alerts.png "alertas de crear directiva")
+   ![policy_create de alertas](media/policy_create-alerts.png "alertas de crear directiva")
 
 ## <a name="activity-governance-actions"></a>Acciones de control de actividades
 
@@ -91,11 +91,13 @@ Las siguientes acciones de gobernanza pueden realizarse para aplicaciones conect
 
   - **Suspender usuario**: se suspende al usuario de la aplicación.
     > [!NOTE]
-    > Si Azure Active Directory está establecido de modo que se sincronice automáticamente con los usuarios del entorno local de Active Directory, la configuración del entorno local reemplazará la configuración de Azure AD y esta acción de gobernanza se revertirá.
+    > Si el Azure Active Directory (Azure AD) está establecido para que se sincronice automáticamente con los usuarios de su Active Directory entorno local, la configuración del entorno local invalidará la configuración de Azure AD y esta acción de gobierno se revertirá.
 
   - **Requerir que el usuario vuelva a iniciar sesión**: se cierra la sesión del usuario y se le requiere que vuelva a iniciarla.
 
-  ![Acciones de gobierno de directiva de actividad de Cloud App Security](./media/activity-policy-ref6.png "directiva de actividad, ref6")
+  - **Confirmar usuario comprometido** : establezca el nivel de riesgo del usuario en alto. Esto hace que se apliquen las acciones de directiva relevantes definidas en Azure AD. Para obtener más información sobre cómo funciona Azure AD con los niveles de riesgo, consulte [¿Cómo usa Azure ad mis comentarios de riesgo](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-risk-feedback#how-does-azure-ad-use-my-risk-feedback)?
+
+  ![Acciones de gobierno de directiva de actividad de Cloud App Security](media/activity-policy-ref6.png "directiva de actividad, ref6")
 
 ## <a name="governance-conflicts"></a>Conflictos de gobernanza
 
@@ -109,7 +111,7 @@ Después de crear varias directivas, puede darse el caso de que sus acciones de 
 
 ### <a name="conflicts-in-user-sync"></a>Conflictos en la sincronización de usuarios
 
-- Si Azure Active Directory está establecido de modo que se sincronice automáticamente con los usuarios del entorno local de Active Directory, la configuración del entorno local reemplazará la configuración de Azure AD y esta acción de gobernanza se revertirá.
+- Si el Azure AD está establecido para que se sincronice automáticamente con los usuarios de su Active Directory entorno local, la configuración del entorno local invalidará la configuración de Azure AD y esta acción de gobierno se revertirá.
 
 ## <a name="governance-log"></a>Registro de gobernanza
 
@@ -125,7 +127,8 @@ Para obtener información sobre cómo se tratan las acciones de control cuando h
 |Cuentas | Cuenta |Configuración de la cuenta | Le lleva a la página de configuración de la cuenta de la aplicación específica (por ejemplo, Salesforce). | Todas las aplicaciones (la configuración de One Drive y SharePoint se establece en Office). |
 |Cuentas |Archivo |Transferir la propiedad de todos los archivos | En una cuenta, todos los archivos de un usuario se transfieren para pasar a pertenecer a una nueva persona de su elección. El propietario anterior se convierte en editor y ya no podrá cambiar la configuración de uso compartido. El nuevo propietario recibirá una notificación por correo relativa al cambio de propiedad. | G Suite|
 |Cuentas, Directiva de actividad | Cuenta | Suspender usuario| Establece el usuario que no tiene acceso ni puede iniciar sesión. Si ha iniciado sesión al establecer esta acción, se le bloqueará inmediatamente. |G Suite, Box, Office, Salesforce|
-|Directiva de actividad, Cuentas | Cuenta |Requerir que el usuario vuelva a iniciar sesión|Revoca todos los tokens de actualización y los problemas de cookies de sesión a las aplicaciones por parte del usuario. Esta acción impedirá el acceso a cualquiera de los datos de la organización y obligará al usuario a iniciar sesión en todas las aplicaciones de nuevo.| G Suite|
+|Directiva de actividad, Cuentas | Cuenta |Requerir que el usuario vuelva a iniciar sesión|Revoca todos los tokens de actualización y los problemas de cookies de sesión a las aplicaciones por parte del usuario. Esta acción impedirá el acceso a cualquiera de los datos de la organización y obligará al usuario a iniciar sesión en todas las aplicaciones de nuevo.| G Suite, Office|
+|Directiva de actividad, Cuentas | Cuenta |Confirmar que el usuario está comprometido|Establezca el nivel de riesgo del usuario en alto. Esto hace que se apliquen las acciones de directiva relevantes definidas en Azure AD. | Office |
 |Directiva de actividad, Cuentas | Cuenta | Revocar privilegios de administrador |Revoca los privilegios de una cuenta de administrador. Por ejemplo, establecer una directiva de actividad que revoca los privilegios de administrador tras 10 intentos de inicio de sesión infructuosos. | G Suite|
 |Panel de la aplicación > Permisos de aplicación |Permisos|Cancelar prohibición de aplicación| En Google y Salesforce: quite la prohibición de una aplicación y permita que los usuarios concedan permisos a la aplicación de terceros con Google o Salesforce. En Office 365: se restauran los permisos de la aplicación de terceros para acceder a Office. |G Suite, Salesforce, Office |
 |Panel de la aplicación > Permisos de aplicación |Permisos| Deshabilitar permisos de aplicación | Revoque los permisos de una aplicación de terceros para acceder a Google, Salesforce u Office. Se trata de una acción única que se producirá en todos los permisos existentes, pero no impedirá las conexiones futuras.|G Suite, Salesforce, Office |
@@ -167,6 +170,7 @@ Para obtener información sobre cómo se tratan las acciones de control cuando h
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

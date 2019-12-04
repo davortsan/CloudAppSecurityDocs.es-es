@@ -14,19 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d4b800afa927b8a9151837cfbff76478c98bf71f
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 39b3721a2a19c59f7c8d1a1376aa54efee455f65
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460539"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720465"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicaciones con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security
 
 *Se aplica a: Microsoft Cloud App Security*
-
->[!div class="step-by-step"]
-[SIGUIENTE: Implementación del control de aplicaciones de acceso condicional »](proxy-deployment-aad.md)
 
 En las empresas actuales, a menudo no resulta suficiente con saber lo que sucede en el entorno de nube después de que pase. Le interesa detener las infracciones de seguridad y las fugas en tiempo real, antes de que los empleados intencionadamente o por accidente pongan los datos y la organización en riesgo. Es importante permitir que los usuarios de la organización tengan a su disposición la mayoría de los servicios y las herramientas en aplicaciones de nube, y lleven al trabajo sus propios dispositivos. Al mismo tiempo, se necesitan herramientas que permitan proteger la organización de fugas o robos de datos en tiempo real. Junto con Azure Active Directory, Microsoft Cloud App Security proporciona estas funcionalidades en una experiencia integrada y holística con el control de aplicaciones de acceso condicional.
 
@@ -78,7 +75,7 @@ Para configurar una directiva para aprovechar la administración de dispositivos
 1. Cargue al menos un certificado raíz o intermedio.
 1. Una vez cargado el certificado, puede crear [directivas de acceso](access-policy-aad.md) y directivas de [sesión](session-policy-aad.md) basadas en la **etiqueta del dispositivo** y el certificado de **cliente válido**.
 
-    ![Id. de dispositivo del Control de aplicaciones de acceso condicional](./media/caac-device-id.png)
+    ![Id. de dispositivo del Control de aplicaciones de acceso condicional](media/caac-device-id.png)
 
 > [!NOTE]
 > Solo se solicita un certificado a un usuario si la sesión coincide con una directiva que use el filtro de certificado de cliente válido.
@@ -170,12 +167,12 @@ A continuación se muestra una lista de las aplicaciones destacadas que se admit
 
 Si está interesado en una aplicación específica, [envíenos detalles sobre la aplicación](mailto:casfeedback@microsoft.com). No olvide enviar el caso de uso que le interesa para que podamos incorporarlo.
 
-> [!div class="step-by-step"]
-> [SIGUIENTE: Implementación del control de aplicaciones de acceso condicional »](proxy-deployment-aad.md)
-
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Implementar el control de la aplicación de acceso condicional para aplicaciones de Azure AD](proxy-deployment-aad.md)
+> [Implementar Control de aplicaciones de acceso condicional para aplicaciones destacadas](proxy-deployment-aad.md)
+
+> [!div class="nextstepaction"]
+> [Implementar Control de aplicaciones de acceso condicional para cualquier aplicación»](proxy-deployment-any-app.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7b333509cd00b2a17b3a3984da30e4e8142daf88
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: e4675430b45e92579cd4c692247c5a481bad233e
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460748"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720715"
 ---
 # <a name="control-cloud-apps-with-policies"></a>Controlar las aplicaciones en la nube con directivas
 
@@ -35,15 +35,15 @@ Cuando consulta la página **Directiva**, se pueden distinguir las distintas pol
 
 Pueden crearse los siguientes tipos de directivas:
 
-|Icono de tipo de directiva|Tipo de directiva|Usar|
+|Icono de tipo de directiva|Tipo de directiva|Utilice los|
 |-----|-----------------|---------|
-|![Icono de directiva de acceso](./media/proxy-policy.png)|Directiva de acceso|Las directivas de acceso proporcionan funcionalidades de supervisión y control en tiempo real de los inicios de sesión de usuario en las aplicaciones en la nube.|
-|![icono de directiva de actividad](./media/activity_policy.png)|Directiva de actividad|Las directivas de actividad permiten aplicar toda una variedad de procesos automatizados usando las API del proveedor de aplicaciones. Estas directivas permiten supervisar actividades concretas realizadas por distintos usuarios o seguir niveles inesperadamente altos de un determinado tipo de actividad.|
-|![icono de directiva de detección de anomalías](./media/anomaly_detection_policy.png)|Directiva de detección de anomalías|Las directivas de detección de anomalías permiten buscar actividades inusuales en la nube. La detección se basa en los factores de riesgo que se configuran para avisarle cuando ocurre algo que es diferente de la línea base de la organización o de la actividad normal del usuario.|
-|![icono de directivas de Cloud Discovery](./media/discovery_policy.png)|Directiva de detección de aplicaciones|Las directivas de detección de aplicaciones permiten establecer alertas que notifican cuando se detectan nuevas aplicaciones en la organización.|
-|![icono de directiva de detección de anomalías](./media/anomaly_detection_policy.png)|Directiva de detección de anomalías de Cloud Discovery|Las directivas de detección de anomalías de Cloud Discovery examinan los registros que se usan para detectar aplicaciones en la nube y buscan apariciones inusuales. Por ejemplo, cuando un usuario que nunca ha usado Dropbox de repente carga 600 GB o cuando hay muchas más transacciones de lo habitual en una aplicación determinada.|
-|![icono de directiva de archivo](./media/file_policy.png)|Directiva de archivo|Las directivas de archivo permiten examinar las aplicaciones en la nube para detectar tipos de archivo o archivos concretos (compartidos, compartidos con dominios externos), datos (información de propiedad, datos personales, información de tarjeta de crédito y otros tipos de datos) y aplicar acciones de gobernanza a los archivos (las acciones de gobernanza son específicas de la aplicación en la nube).|
-|![Icono de directiva de sesión](./media/proxy-policy.png)|Directiva de sesión|Las directivas de sesión proporcionan control de la actividad de los usuarios en sus aplicaciones de nube y supervisión en tiempo real.|
+|![Icono de directiva de acceso](media/proxy-policy.png)|Directiva de acceso|Las directivas de acceso proporcionan funcionalidades de supervisión y control en tiempo real de los inicios de sesión de usuario en las aplicaciones en la nube.|
+|![icono de directiva de actividad](media/activity_policy.png)|Directiva de actividad|Las directivas de actividad permiten aplicar toda una variedad de procesos automatizados usando las API del proveedor de aplicaciones. Estas directivas permiten supervisar actividades concretas realizadas por distintos usuarios o seguir niveles inesperadamente altos de un determinado tipo de actividad.|
+|![icono de directiva de detección de anomalías](media/anomaly_detection_policy.png)|Directiva de detección de anomalías|Las directivas de detección de anomalías permiten buscar actividades inusuales en la nube. La detección se basa en los factores de riesgo que se configuran para avisarle cuando ocurre algo que es diferente de la línea base de la organización o de la actividad normal del usuario.|
+|![icono de directivas de Cloud Discovery](media/discovery_policy.png)|Directiva de detección de aplicaciones|Las directivas de detección de aplicaciones permiten establecer alertas que notifican cuando se detectan nuevas aplicaciones en la organización.|
+|![icono de directiva de detección de anomalías](media/anomaly_detection_policy.png)|Directiva de detección de anomalías de Cloud Discovery|Las directivas de detección de anomalías de Cloud Discovery examinan los registros que se usan para detectar aplicaciones en la nube y buscan apariciones inusuales. Por ejemplo, cuando un usuario que nunca ha usado Dropbox de repente carga 600 GB o cuando hay muchas más transacciones de lo habitual en una aplicación determinada.|
+|![icono de directiva de archivo](media/file_policy.png)|Directiva de archivo|Las directivas de archivo permiten examinar las aplicaciones en la nube para detectar tipos de archivo o archivos concretos (compartidos, compartidos con dominios externos), datos (información de propiedad, datos personales, información de tarjeta de crédito y otros tipos de datos) y aplicar acciones de gobernanza a los archivos (las acciones de gobernanza son específicas de la aplicación en la nube).|
+|![Icono de directiva de sesión](media/proxy-policy.png)|Directiva de sesión|Las directivas de sesión proporcionan control de la actividad de los usuarios en sus aplicaciones de nube y supervisión en tiempo real.|
 
 ## <a name="identifying-risk"></a>La identificación de riesgos
 
@@ -101,7 +101,7 @@ Para crear una directiva a partir de una **plantilla de directiva**, siga los pa
 
 1. En la consola, haga clic en **Control** y luego en **Plantillas**.
 
-    ![Creación de la directiva desde una plantilla](./media/create-policy-from-template.png)
+    ![Creación de la directiva desde una plantilla](media/create-policy-from-template.png)
 
 1. Haga clic en **+** en el extremo derecho de la fila de la plantilla que quiere usar. Se abre una página de creación de directivas con la configuración predefinida de la plantilla.
 
@@ -123,11 +123,11 @@ Para crear una directiva basada en los resultados de la investigación, siga est
 
 1. Use los filtros en la parte superior de la página para limitar los resultados de búsqueda al área sospechosa. Por ejemplo, en la página Registro de actividad, haga clic en **Tipo de actividad** y seleccione **Write Administrators** (Escribir administradores) en una operación de Azure. A continuación, en **Dirección IP**, seleccione **Categoría** y establezca el valor para que no incluya categorías de dirección IP que haya creado para los dominios reconocidos, como las direcciones IP de administrador, corporativas o de VPN.
 
-    ![Crear archivo de investigación](./media/create-file-from-investigation.png)
+    ![Crear archivo de investigación](media/create-file-from-investigation.png)
 
 1. En la esquina superior derecha de la consola, haga clic en **Nueva directiva a partir de búsqueda**.
 
-    ![Botón Nueva directiva a partir de búsqueda](./media/new-policy-from-search-button.png)
+    ![Botón Nueva directiva a partir de búsqueda](media/new-policy-from-search-button.png)
 
 1. Se abre una página de creación de directivas que contiene los filtros usados en la investigación.
 
@@ -137,7 +137,7 @@ Para crear una directiva basada en los resultados de la investigación, siga est
     > Al usar filtros de directiva, **Contiene** solo buscará palabras completas separadas por comas, puntos, espacios o caracteres de subrayado. Por ejemplo, si busca **malware** o **virus**, encontrará virus_malware_file.exe, pero no encontrará malwarevirusfile.exe.  
 **Es igual a** solo buscará la cadena completa. Por ejemplo, si busca **malware.exe**, encontrará malware.exe pero no malware.exe.txt.
 
-    ![crear directiva de actividad basada en investigación](./media/create-activity-policy-from-investigation.png)
+    ![crear directiva de actividad basada en investigación](media/create-activity-policy-from-investigation.png)
 
     > [!NOTE]
     > Para obtener más información sobre la configuración de los campos de la directiva, vea la documentación correspondiente de la directiva:
@@ -165,11 +165,11 @@ Después de crear una directiva, puede habilitarla o deshabilitarla. Si la desha
 
 - Para habilitar una directiva, en la página **Directiva**, haga clic en los tres puntos al final de la fila de la directiva que quiera habilitar. Seleccione **Habilitar**.
 
-    ![Habilitar una directiva](./media/enable-policy.png)
+    ![Habilitar una directiva](media/enable-policy.png)
 
 - Para deshabilitar una directiva, en la página **Directiva**, haga clic en los tres puntos al final de la fila de la directiva que quiera deshabilitar. Seleccione **Deshabilitar**.
 
-    ![Deshabilitar una directiva](./media/disable-policy.png)
+    ![Deshabilitar una directiva](media/disable-policy.png)
 
 De manera predeterminada, las directivas están habilitadas después de crearlas.
 
@@ -191,10 +191,11 @@ Para descargar el informe exportado:
 
 1. En la tabla, seleccione el informe correspondiente en el **Informe información general** de la lista de directivas y haga clic en descargar.
 
-    ![Botón de descarga](./media/download-button.png)
+    ![Botón de descarga](media/download-button.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 081c2cf4-2750-4546-9490-4b65e87ae48c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6e2464988eb075e3dd3bd345716b5ec71dec8ba6
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 043615ccdde609f77f6804ee9040e1df55a321f4
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460840"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719864"
 ---
 # <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
@@ -45,7 +44,8 @@ Debe ser un administrador global, un administrador de cumplimiento o un administ
  Add-MsolRoleMember -RoleName "Security Administrator" -RoleMemberEmailAddress “XX@XX.XX”
 ```
 
-## <a name="next-steps"></a>Pasos siguientes  
-Para obtener información sobre cómo usar y configurar directivas para controlar el uso de la aplicación de la nube, vea [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).   
+## <a name="next-steps"></a>Pasos siguientes
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
+Para obtener información sobre cómo usar y configurar directivas para controlar el uso de la aplicación de la nube, vea [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).
+
+[!INCLUDE [Open support ticket](includes/support.md)]

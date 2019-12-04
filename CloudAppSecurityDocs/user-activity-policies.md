@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1f860400ec95d0aa2584eb1fd4a8682bb5a9ac58
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 5272eec53b28fd55886586d06a035f36f70e6e8f
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74459581"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720442"
 ---
 # <a name="activity-policies"></a>Directivas de actividad
 
@@ -37,11 +37,11 @@ Puede establecer que se le envíen alertas de actividad a usted o al usuario cua
 
 Para crear una nueva directiva de actividad, siga este procedimiento:
 
-1. En la consola, haga clic en **Control** seguido de **Directivas**.
+1. En la consola, haga clic en **Control**, seguido de **Directivas**.
 
 2. Haga clic en **Crear directiva** y seleccione **Directiva de actividad**.
 
-     ![menú de directiva de actividad](./media/activity-policy-menu.png)
+     ![menú de directiva de actividad](media/activity-policy-menu.png)
 
 3. Asigne un nombre y una descripción a la directiva. Si quiere, puede basarla en una plantilla. Para obtener más información sobre las plantillas de directiva, vea [Controlar aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).
 
@@ -60,17 +60,17 @@ Observe estos ejemplos:
 
 - Varios inicios de sesión erróneos
 
-     Puede establecer la directiva de forma que reciba una alerta cuando se produce un gran número de inicios de sesión erróneos durante un breve período de tiempo. Para configurar este tipo de directiva, elija el filtro de actividad adecuado en la página **New Activity Policy** (Nueva directiva de actividad).
+    Puede establecer la directiva de forma que reciba una alerta cuando se produce un gran número de inicios de sesión erróneos durante un breve período de tiempo. Para configurar este tipo de directiva, elija el filtro de actividad adecuado en la página **New Activity Policy** (Nueva directiva de actividad).
 
-     Bajo el campo **Filtros de actividad**, configure los parámetros para los que se desencadenará la alerta.
+    Bajo el campo **Filtros de actividad**, configure los parámetros para los que se desencadenará la alerta.
 
-     ![Ejemplo de directiva de varios intentos de inicio de sesión erróneos](./media/multiple-failed-log-on-attempts-policy-example.png "ejemplo de directiva de varios intentos de inicio de sesión erróneos")
+    ![Ejemplo de directiva de varios intentos de inicio de sesión erróneos](media/multiple-failed-log-on-attempts-policy-example.png "ejemplo de directiva de varios intentos de inicio de sesión erróneos")
 
 - Frecuencia de descarga alta
 
-     Puede establecer la directiva de modo que reciba una alerta cuando se produzca un nivel de actividad de descarga inesperado o inusitado. Para configurar este tipo de directiva, en el parámetro **Frecuencia**, elija los parámetros que desencadenen la alerta.
+    Puede establecer la directiva de modo que reciba una alerta cuando se produzca un nivel de actividad de descarga inesperado o inusitado. Para configurar este tipo de directiva, en el parámetro **Frecuencia**, elija los parámetros que desencadenen la alerta.
 
-     ![ejemplo de la frecuencia de descarga alta](./media/high-download-rate-example.png "ejemplo de frecuencia de descarga alta")
+    ![ejemplo de la frecuencia de descarga alta](media/high-download-rate-example.png "ejemplo de frecuencia de descarga alta")
 
 ## <a name="activity-policy-reference"></a>Referencia de directiva de actividad
 
@@ -89,6 +89,7 @@ Cada directiva se compone de las siguientes partes:
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Directivas de protección de datos](data-protection-policies.md)
+> [!div class="nextstepaction"]
+> [Directivas de protección de datos](data-protection-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

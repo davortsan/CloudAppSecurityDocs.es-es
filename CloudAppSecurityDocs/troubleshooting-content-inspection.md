@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 359eb77f-e719-4c50-9b62-6ef64149a5a5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 127ec9675d6be000a90931be596de0b267513213
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: be3c76516217e9cc36a06c85d778a717609ba254
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460001"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74721143"
 ---
 # <a name="troubleshooting-content-inspection"></a>Solucionar problemas relacionados con la inspección de contenido
 
@@ -34,8 +33,8 @@ En la tabla se enumera cada estado de inspección de contenido y su descripción
 
 |Estado de la inspección de contenido|Descripción|
 |----|----|
-|Completada|La inspección de contenido se completó correctamente.|
-|No aplicable|La inspección de contenido no es aplicable para este archivo. Puede ser que este estado aparezca porque no hay ninguna directiva que requiera la inspección de contenido de este archivo o porque no se admite el tipo de archivo.|
+|Completed|La inspección de contenido se completó correctamente.|
+|No disponible|La inspección de contenido no es aplicable para este archivo. Puede ser que este estado aparezca porque no hay ninguna directiva que requiera la inspección de contenido de este archivo o porque no se admite el tipo de archivo.|
 |Pending|El archivo está actualmente en la cola de inspección de contenido.|
 |Error: Error de descarga|Microsoft Cloud App Security no ha podido descargar el archivo para la inspección.|
 |Error: Archivo cifrado|El archivo no se ha podido descifrar.|
@@ -50,12 +49,9 @@ En la tabla se enumera cada estado de inspección de contenido y su descripción
 > [!NOTE]
 > Si observa un guión en el estado del examen, significará que el archivo no está en la cola de examen. Consulte las [directivas de archivos](data-protection-policies.md) para obtener más información sobre cómo establecer directivas de inspección de contenido.
 
-## <a name="see-also"></a>Vea también  
-[Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
-
-[!INCLUDE [Open support ticket](includes/support.md)]  
-
 ## <a name="next-steps"></a>Pasos siguientes
- 
-[Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
 
+> [!div class="nextstepaction"]
+> [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
+
+[!INCLUDE [Open support ticket](includes/support.md)]

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b9c354d752b9d960669223c4928453acf323d4bb
-ms.sourcegitcommit: 84d56e4953dd771b099261e10a59cf611dd6280a
-ms.translationtype: HT
+ms.openlocfilehash: 0fc036ab2a785157d0f37347ae691b1455eaa9a1
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74669319"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720305"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtención de análisis de comportamiento y detección de anomalías instantáneos
 
@@ -46,7 +46,7 @@ Basándose en los resultados de la directiva, se activan alertas de seguridad. C
 
 Puede ver las directivas de detección de anomalías en el portal haciendo clic en **Control** y luego en **Directivas**. Seleccione **Directiva de detección de anomalías** para el tipo de directiva.
 
- ![nuevas directivas de detección de anomalías](./media/new-anomaly-detection-policies.png)
+ ![nuevas directivas de detección de anomalías](media/new-anomaly-detection-policies.png)
 
 Están disponibles las directivas de detección de anomalías siguientes:
 
@@ -64,12 +64,12 @@ Cuanto mayor sea el nivel de confidencialidad, menor será la supresión que se 
 * Esta detección identifica los archivos maliciosos en el almacenamiento en nube, tanto si proceden de aplicaciones de Microsoft como de aplicaciones de terceros. Microsoft Cloud App Security usa la inteligencia sobre amenazas de Microsoft para reconocer si determinados archivos están asociados a ataques de malware conocidos y son potencialmente maliciosos. Esta directiva integrada está deshabilitada de forma predeterminada. No se analizan todos los archivos, pero se usa la heurística para buscar archivos potencialmente peligrosos. Una vez que se han detectado archivos, puede ver una lista de **archivos infectados**. Haga clic en el nombre de archivo de malware en el cajón de archivos para abrir un informe de malware con información sobre el tipo de malware con el que está infectado el archivo.
 
     > [!NOTE]
-    >- Para la detección de malware de Office 365, necesita una licencia válida para la protección contra amenazas avanzada de Office 365 P1.
-    >- Cloud App Security admite la detección de malware en las siguientes aplicaciones:
-    >    - Cuadro
-    >    - Dropbox
-    >    - G Suite
-    >    - Office 365
+    > * Para la detección de malware de Office 365, necesita una licencia válida para la protección contra amenazas avanzada de Office 365 P1.
+    > * Cloud App Security admite la detección de malware en las siguientes aplicaciones:
+    >   * Cuadro
+    >   * Dropbox
+    >   * G Suite
+    >   * Office 365
 
 ### <a name="activity-from-anonymous-ip-addresses"></a>Actividad desde direcciones IP anónimas
 
@@ -164,7 +164,7 @@ Para establecer el ámbito de una directiva de detección de anomalías:
 1. Seleccione **Incluir** para especificar los usuarios y grupos para los que se aplicará esta directiva. Cualquier usuario o grupo que no se seleccione aquí no se considerará una amenaza y no generará una alerta.
 1. Seleccione **Excluir** para especificar los usuarios para los que no se aplicará esta directiva. Cualquier usuario que seleccione aquí no se considerará una amenaza y no generará una alerta, incluso si es miembro de los grupos seleccionados en **Incluir**.
 
-    ![ámbito de detección de anomalías](./media/anomaly-detection-scoping.png)
+    ![ámbito de detección de anomalías](media/anomaly-detection-scoping.png)
 
 ## <a name="triage-anomaly-detection-alerts"></a>Evaluación de las alertas de detección de anomalías
 
@@ -172,16 +172,17 @@ Puede evaluar la prioridad de las diversas alertas desencadenadas por las nuevas
 
 1. En el **registro de actividades**, puede abrir una actividad para mostrar el cajón de actividades. Haga clic en **usuario** para ver la pestaña información de usuario. Esta pestaña incluye información como el número de alertas, las actividades y el lugar desde el que se han conectado, lo que es importante en una investigación.
 
-    ![detección de anomalías alert1](./media/anomaly-alert-user1.png) ![detección de anomalías alert1](./media/anomaly-alert-user2.png)
+    ![detección de anomalías alert1](media/anomaly-alert-user1.png) ![detección de anomalías alert1](media/anomaly-alert-user2.png)
 
 1. Esto le permite comprender qué actividades sospechosas realizó el usuario y aumentar la confianza en cuanto a si la cuenta se vio comprometida. Por ejemplo, una alerta sobre varios inicios de sesión erróneos realmente puede ser sospechosa y puede indicar posibles ataques por fuerza bruta, pero también puede ser un error de configuración de aplicación, haciendo que la alerta resulte ser verdadera. Sin embargo, si ve una alerta de varios inicios de sesión erróneos con actividades sospechosas adicionales, entonces hay una mayor probabilidad de que la cuenta se vea comprometida. En el ejemplo siguiente, puede ver que, después de la alerta de los **diversos intentos de inicio de sesión erróneos**, hubo **actividad desde una dirección IP TOR** y **actividad de viaje imposible**, ambas buenos indicadores de riesgo (IOC) por sí mismas. Si esto no fue suficientemente sospechoso, puede ver que el mismo usuario realizó una **actividad de descarga masiva**, que suele ser un indicador de que el atacante está realizando exfiltración de datos.
 
-    ![alerta de detección de anomalías 1](./media/anomaly-alert-user3.png)
+    ![alerta de detección de anomalías 1](media/anomaly-alert-user3.png)
 
 1. En el caso de los archivos infectados con malware, una vez que se han detectado, puede ver una lista de **archivos infectados**. Haga clic en el nombre de archivo de malware en el cajón de archivos para abrir un informe de malware con información sobre el tipo de malware con el que está infectado el archivo.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

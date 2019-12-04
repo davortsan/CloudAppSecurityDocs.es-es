@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4a9d504193061091352985a616893f2220c5d040
-ms.sourcegitcommit: 254d5be2b002c5658803923aa9ef97240dcdc917
+ms.openlocfilehash: a63546a3404cdf4c48a56b800f5d80d09ee5971e
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71263272"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719349"
 ---
 # <a name="working-with-discovered-apps"></a>Trabajar con aplicaciones detectadas
 
@@ -27,7 +27,7 @@ ms.locfileid: "71263272"
 
 El panel de Cloud Discovery está diseñado para proporcionar más información sobre cómo se usan las aplicaciones en la nube en la organización. Proporciona una visión general de un vistazo sobre los tipos de aplicaciones que se usan, las alertas abiertas y los niveles de riesgo de las aplicaciones de la organización. También muestra quiénes son los usuarios que más usan las aplicaciones y proporciona un mapa de ubicación de la sede central de la aplicación. El panel de Cloud Discovery tiene muchas opciones para filtrar los datos. Con el filtrado se pueden generar vistas específicas en función de lo que más le interese y gráficos fáciles de entender para que se haga una idea general de un vistazo.
 
-![panel de Cloud Discovery](./media/cloud-discovery-dashboard.png)
+![panel de Cloud Discovery](media/cloud-discovery-dashboard.png)
 
 ## <a name="review-the-cloud-discovery-dashboard"></a>Revisar el panel de Cloud Discovery
 
@@ -58,7 +58,7 @@ Por ejemplo, si quiere identificar las aplicaciones de colaboración y de almace
 
 1. Establezca el **Factor de riesgo para la seguridad** para **Data at rest encryption** (Cifrado de datos en reposo) igual a **No admitido**. Después, establezca **Puntuación de riesgo** en un valor igual o menor que 6.
 
-![Filtros de aplicaciones detectadas](./media/discovered-app-filters.png)
+![Filtros de aplicaciones detectadas](media/discovered-app-filters.png)
 
 Una vez que se han filtrado los resultados, puede [no autorizar y bloquear](governance-discovery.md) las aplicaciones. Para ello, active la casilla de acción masiva para no autorizarlas en una sola acción. Después de no autorizarlas, puede usar un script de bloqueo para impedir que se usen en su entorno.
 
@@ -68,7 +68,7 @@ Por ejemplo, puede diferenciar entre los distintos sitios de SharePoint.
 
 Esto solo se admite en los firewalls y servidores proxy que contienen datos de dirección URL de destino. Para obtener más información, vea la lista de dispositivos compatibles en [Firewalls y servidores proxy compatibles](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
-![información de subdominio](./media/discovery-domains.png)
+![información de subdominio](media/discovery-domains.png)
 
 ## <a name="discover-resources-and-custom-apps"></a>Detección de recursos y aplicaciones personalizadas
 
@@ -83,11 +83,11 @@ Para consultar los recursos detectados:
 
 1. En el portal de Cloud App Security, seleccione **Detectar** y, luego, **Recursos detectados**.
 
-    ![Menú de recursos detectados](./media/discovered-resources-menu.png)
+    ![Menú de recursos detectados](media/discovered-resources-menu.png)
 
 1. En la página Recursos detectados, puede explorar en profundidad cada recurso y consultar los tipos de interacciones que han tenido lugar y los usuarios que han accedo a ellos. A partir de aquí, continuar con la exploración en profundidad para obtener más información concreta sobre los usuarios.
 
-   ![Recursos de la detección](./media/discovery-resources.png)
+   ![Recursos de la detección](media/discovery-resources.png)
 
 1. Para las aplicaciones personalizadas, puede hacer clic en los tres botones que verá al final de la fila y seleccionar **Agregar aplicación personalizada**. Esta acción abrirá la ventana **Agregar aplicación personalizada**, donde podrá asignar un nombre a la aplicación e identificarla para poder incluirla en el panel de Cloud Discovery.
 
@@ -115,7 +115,7 @@ Para crear una exclusión:
 
 1. Agregue un alias de usuario, una dirección IP o un nombre de máquina. Se recomienda agregar información sobre por qué se ha realizado la exclusión.
 
-    ![Excluir usuario](./media/exclude-user.png "excluir usuario")
+    ![excluir usuario](media/exclude-user.png "excluir usuario")
 
 ## <a name="manage-continuous-reports"></a>Administrar informes continuos
 
@@ -139,7 +139,7 @@ Para crear un informe continuo:
 
 1. Establezca los filtros que quiera sobre los datos. Estos filtros pueden ser **Grupos de usuarios**, **Etiquetas de dirección IP** o **Intervalos de direcciones IP**. Para obtener más información sobre el trabajo con etiquetas de dirección IP e intervalos de direcciones IP, consulte [Organize the data according to your needs](ip-tags.md) (Organizar los datos de acuerdo a las necesidades).
 
-    ![crear informe continuo personalizado](./media/create-custom-continuous-report.png)
+    ![crear informe continuo personalizado](media/create-custom-continuous-report.png)
 
 > [!NOTE]
 > Todos los informes personalizados se limitan a un máximo de 1 GB de datos sin comprimir. Si hay más de 1 GB de datos, se exportará el primer GB de datos en el informe.
@@ -164,15 +164,18 @@ Para eliminar datos de Cloud Discovery:
 
 1. Haga clic en el botón **Eliminar**.
 
-    ![eliminar datos](./media/delete-data.png "eliminar datos")
+    ![eliminar datos](media/delete-data.png "eliminar datos")
 
     > [!NOTE]
     > El proceso de eliminación tarda unos minutos y no es inmediato.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Crear informes de instantáneas de Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
+> [!div class="nextstepaction"]
+> [Crear informes de instantáneas de Cloud Discovery](create-snapshot-cloud-discovery-reports.md)
 
-[Configurar la carga de registros automática para informes continuos](configure-automatic-log-upload-for-continuous-reports.md)
+> [!div class="nextstepaction"]
+> [Configurar la carga de registros automática para informes continuos](configure-automatic-log-upload-for-continuous-reports.md)
 
-[Trabajar con datos de Cloud Discovery](working-with-cloud-discovery-data.md)
+> [!div class="nextstepaction"]
+> [Trabajar con datos de Cloud Discovery](working-with-cloud-discovery-data.md)

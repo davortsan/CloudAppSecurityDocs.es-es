@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 776e834f-3c20-4d5f-9fab-4c5b975edb06
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4dabcc39d9688b8595b574b6806bcc7eb3e8780b
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: aba19263cafbc1d91a4a650d4cb67e9e748947db
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74458736"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719914"
 ---
 # <a name="log-collector-ftp-configuration"></a>Configuración de FTP del recopilador de registros
 
@@ -36,14 +35,14 @@ Es posible que deba modificar la configuración de Docker de Cloud Discovery par
 
 1. Conéctese al host del recopilador de registros.
 
-2. Ejecute `docker exec -it <collector name> pure-pw passwd <ftp user>`
+2. Ejecute `docker exec -it <collector name> pure-pw passwd <ftp user>`:
 
     1. Escriba la nueva contraseña.
     2. Vuelva a escribir la nueva contraseña para confirmarla.
 
 3. Ejecute `docker exec -it <collector name> pure-pw mkdb` para aplicar el cambio.
 
-  ![cambio de la contraseña ftp](./media/ftp-connect.png)
+    ![cambio de la contraseña ftp](media/ftp-connect.png)
 
 ### <a name="customize-certificate-files"></a>Personalización de archivos de certificado
 
@@ -51,22 +50,23 @@ Siga este procedimiento para personalizar los archivos de certificado que utiliz
 
 1. Abra un cliente FTP y conéctese al recopilador de registros.
 
-   ![Conexión al cliente FTP](./media/ftp-connect.png)
+    ![Conexión al cliente FTP](media/ftp-connect.png)
 
 2. Navegue al directorio `ssl_update`.
 3. Cargue los nuevos archivos de certificado en el directorio `ssl_update` (los nombres son obligatorios).
 
-    ![Cambio de la contraseña FTP](./media/new-certs.png)
+    ![Cambio de la contraseña FTP](media/new-certs.png)
 
     - **Para FTP:** se requiere un solo archivo. El archivo tiene los datos de la clave y del certificado, en ese orden, y se denomina **pure-ftpd.pem**.
     - **Para Syslog:** se necesitan tres archivos: **ca.pem**, **server-key.pem y **server-cert.pem**. Si falta alguno de ellos, la actualización no se llevará a cabo.
 
 4. En una ejecución de terminal: `docker exec -t <collector name> update_certs`. El comando generará una salida similar a la que se ve en la captura de pantalla que se muestra a continuación.
 
-    ![Cambio de la contraseña FTP](./media/update-certs.png)
+    ![Cambio de la contraseña FTP](media/update-certs.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Implementar Cloud Discovery](set-up-cloud-discovery.md)
+> [!div class="nextstepaction"]
+> [Implementar Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

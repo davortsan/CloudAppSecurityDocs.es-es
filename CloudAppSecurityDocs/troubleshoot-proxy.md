@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 71126072096d9a2ba156c6c3e6b3c17dc0d619b3
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: d98721a4ca08b3e415b8b0fff40676af1b3d37e6
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460111"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720981"
 ---
 # <a name="troubleshooting-conditional-access-app-control"></a>Solución de problemas Control de aplicaciones de acceso condicional
 
@@ -28,7 +28,7 @@ En este artículo se prohvides una lista de posibles problemas de Control de apl
 
 ### <a name="the-sign-in-to-the-app-is-not-working"></a>El inicio de sesión en la aplicación no funciona
 
-1. En Cloud App Security, en la barra de menús, haga clic en el icono configuración engranaje ![configuración](./media/settings-icon.png "icono de configuración") y seleccione **control de aplicaciones de acceso condicional**.
+1. En Cloud App Security, en la barra de menús, haga clic en el icono configuración engranaje ![configuración](media/settings-icon.png "icono de configuración") y seleccione **control de aplicaciones de acceso condicional**.
 1. En la lista de aplicaciones, en la fila en la que aparece la aplicación que está configurando, elija los tres puntos al final de la fila y, después, elija **Editar aplicación**.
 1. Haga clic en **control de nonce** para expandir la sección y, a continuación, seleccione **Habilitar el control de nonce**.
 
@@ -50,7 +50,7 @@ Los pasos siguientes se basan en el uso de Fiddler como la herramienta de regist
 1. Vaya a la dirección URL que copió anteriormente y autentique si es necesario.
 1. En la herramienta de registro de tráfico, busque la solicitud que coincida con el dominio y la ruta de acceso en función del protocolo que esté usando.
 
-    | Protocol | Dominio | Path | Nombre del campo de estado |
+    | Protocol | Dominio | Ruta | Nombre del campo de estado |
     | --- | --- | --- | --- |
     | OIDC | `https://login.microsoftonline.com` | /common/oauth2/authorize | state |
     | SAML 2.0 | `https://login.microsoftonline.com` | *identificador*de //saml2 | RelayState |
@@ -60,6 +60,7 @@ Los pasos siguientes se basan en el uso de Fiddler como la herramienta de regist
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Implementar Cloud Discovery](set-up-cloud-discovery.md)
+> [!div class="nextstepaction"]
+> [Implementar Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

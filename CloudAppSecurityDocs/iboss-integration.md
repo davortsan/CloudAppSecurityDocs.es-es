@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 920d4272-685b-4c4d-9b31-94a2c6f3503e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 14aa55ef1218aa5b95ee14c07791aa538f938e19
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: f60f4ec7dc9ff241cc4d4ba45bca9a50a2e50a00
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461180"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719958"
 ---
 # <a name="integrate-cloud-app-security-with-iboss"></a>Integración de Cloud App Security con iboss
 
@@ -32,7 +31,7 @@ Si trabaja con Cloud App Security y iboss, puede integrar los dos productos para
 - Las funcionalidades de bloqueo de iboss se aplican automáticamente a las aplicaciones que haya establecido como no autorizadas en Cloud App Security.
 - Mejore su portal de administración de iboss gracias a la valoración de riesgos de Cloud App Security de las 100 aplicaciones en la nube más importantes de su organización, que se pueden ver directamente en el portal de administración de iboss.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Requisitos previos
 
 - Una licencia válida para Microsoft Cloud App Security
 - Una licencia válida para iboss Secure Cloud Gateway (versión 9.1.100.0 o posterior)
@@ -40,27 +39,27 @@ Si trabaja con Cloud App Security y iboss, puede integrar los dos productos para
 ## <a name="deployment"></a>Implementación
 
 1. En el portal de Cloud App Security, realice los pasos de integración siguientes:
-    1. Haga clic en el engranaje de configuración y seleccione **Configuración de Cloud Discovery**. 
+    1. Haga clic en el engranaje de configuración y seleccione **Configuración de Cloud Discovery**.
     2. Haga clic en la pestaña **Carga automática del registro** y, luego, en **Agregar origen de datos**.
     3. En la página **Agregar origen de datos**, escriba la siguiente configuración:
 
-       - Nombre: iboss
-       - Origen: iboss Secure Cloud Gateway
-       - Tipo de receptor = Syslog - UDP
+        - Nombre: iboss
+        - Origen: iboss Secure Cloud Gateway
+        - Tipo de receptor = Syslog - UDP
 
-         ![Origen de datos iboss](./media/iboss-integration.png)
+        ![Origen de datos iboss](media/iboss-integration.png)
 
-    4. Haga clic en **Ver ejemplo de archivo de registro previsto**. A continuación, haga clic en **Descargar registro de ejemplo** para ver un registro de detección de ejemplo y asegúrese de que coincida con los registros.<br>
+    4. Haga clic en **Ver ejemplo de archivo de registro previsto**. A continuación, haga clic en **Descargar registro de ejemplo** para ver un registro de detección de ejemplo y asegúrese de que coincida con los registros.<br />
 
-3. Investigue las aplicaciones en la nube que se han detectado en la red. Para obtener más información y pasos de investigación, consulte [Trabajo con Cloud Discovery](working-with-cloud-discovery-data.md).
+1. Investigue las aplicaciones en la nube que se han detectado en la red. Para obtener más información y pasos de investigación, consulte [Trabajo con Cloud Discovery](working-with-cloud-discovery-data.md).
 
-4. Las aplicaciones que se establecen como no autorizadas en Cloud App Security recibirán un ping por parte de iboss cada 10 minutos y, luego, iboss las bloqueará automáticamente. Para más información sobre las aplicaciones no autorizadas, consulte [Autorizar o no autorizar una aplicación](governance-discovery.md#BKMK_SanctionApp).
+1. Las aplicaciones que se establecen como no autorizadas en Cloud App Security recibirán un ping por parte de iboss cada 10 minutos y, luego, iboss las bloqueará automáticamente. Para más información sobre las aplicaciones no autorizadas, consulte [Autorizar o no autorizar una aplicación](governance-discovery.md#BKMK_SanctionApp).
 
-5. Si quiere configurar iboss para enviar registros de tráfico a Microsoft Cloud App Security, póngase en contacto con el equipo de soporte técnico de iboss.
+1. Si quiere configurar iboss para enviar registros de tráfico a Microsoft Cloud App Security, póngase en contacto con el equipo de soporte técnico de iboss.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
+[!INCLUDE [Open support ticket](includes/support.md)]

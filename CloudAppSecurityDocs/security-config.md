@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: c6d8f8af-867b-43ab-adee-f06520577fe7
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1e53dcc94b6ca96aeefcfd511e4ae4e9557e5a21
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: e7acfac8168057b66e7c0295211ef0f29315600e
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460491"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74721002"
 ---
 # <a name="security-configuration-for-azure"></a>Configuración de seguridad para Azure
 
@@ -38,27 +37,30 @@ Para usar esta característica, debe tener los permisos adecuados en Azure AD y 
 Para habilitar las recomendaciones de configuración de seguridad en Microsoft Cloud App Security:
 
 1. <a href="https://docs.microsoft.com/azure/security-center/security-center-management-groups" target="_blank">Obtenga visibilidad de todos los inquilinos en Azure Security Center</a>. Este proceso incluye:
-   - Concederse el rol lector para todas las suscripciones y también a los otros administradores de Microsoft Cloud App Security a los que quiere conceder acceso a esta página.
-   - Asignar el rol en el grupo de administración raíz en Azure Security Center
-   - Elevar el administrador Global de Azure AD para conceder acceso a las suscripciones de Azure.
-   - En el artículo se describe el proceso para convertirse en un administrador de seguridad. Para que esta integración funcione, los permisos mínimos que necesita son de **lector**.
 
-2. Asegúrese de abrir <a href="https://ms.portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0" target="_blank">Azure Security Center</a> para que los cambios surtan efecto.
+    - Concederse el rol lector para todas las suscripciones y también a los otros administradores de Microsoft Cloud App Security a los que quiere conceder acceso a esta página.
+    - Asignar el rol en el grupo de administración raíz en Azure Security Center
+    - Elevar el administrador Global de Azure AD para conceder acceso a las suscripciones de Azure.
+    - En el artículo se describe el proceso para convertirse en un administrador de seguridad. Para que esta integración funcione, los permisos mínimos que necesita son de **lector**.
 
-3. En Cloud App Security, vaya a **investigar** > **configuración de seguridad**y, a continuación, seleccione la pestaña **Azure** .
+1. Asegúrese de abrir <a href="https://ms.portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0" target="_blank">Azure Security Center</a> para que los cambios surtan efecto.
+
+1. En Cloud App Security, vaya a **investigar** > **configuración de seguridad**y, a continuación, seleccione la pestaña **Azure** .
+
     - Microsoft Cloud App Security proporciona recomendaciones únicamente para las 50 suscripciones principales.
     - Es posible que los cambios tarden hasta 15 minutos en surtir efecto.
 
-     ![menú de configuración de seguridad](media/security-configuration-menu.png)
+    ![menú de configuración de seguridad](media/security-configuration-menu.png)
 
-4. Puede filtrar las recomendaciones por tipo, recurso y suscripción. Además, puede hacer clic en el icono de configuración de seguridad ![Icono de ASC](./media/asc-icon.png) para abrir la recomendación en Azure Security Center, a fin de obtener más información y profundizar en la recomendación.
+1. Puede filtrar las recomendaciones por tipo, recurso y suscripción. Además, puede hacer clic en el icono de configuración de seguridad ![Icono de ASC](media/asc-icon.png) para abrir la recomendación en Azure Security Center, a fin de obtener más información y profundizar en la recomendación.
 
 Para información sobre cómo implementar las recomendaciones de seguridad, vea [Administración de recomendaciones de seguridad en Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-recommendations).
 
-   ![configuración de seguridad](media/security-configuration-azure.png)
+![configuración de seguridad](media/security-configuration-azure.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

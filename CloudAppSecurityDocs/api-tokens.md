@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bcb98ccaad997a0d98df6d7ecb6eee876c64622e
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 07141cbd39c7ceaa8d7a3bb1d324634ec4fbe595
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461296"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719290"
 ---
 # <a name="api-tokens"></a>Tokens de API
 
@@ -37,25 +36,26 @@ Para ver la documentación completa de la API, en el portal de Cloud App Securit
 
 Si quiere acceder a la API, deberá crear un token de API y usarlo en el software para conectar con la API de Cloud App Security.
 
-La pestaña de tokens de API ayuda a administrar todos los tokens de API del inquilino. 
+La pestaña de tokens de API ayuda a administrar todos los tokens de API del inquilino.
 
 ## <a name="generate-a-token"></a>Generar un token
 
 1. En el menú **Configuración**, seleccione **Extensiones de seguridad** y **API tokens** (Tokens de API).
 
 2. Haga clic en el icono de signo más. En **Generar nuevo token**, proporcione un nombre para identificar el token en el futuro y haga clic en **Siguiente**.
-   ![Cloud App Security genera el token de API](./media/api-token-gen.png)
+  ![Cloud App Security genera el token de API](media/api-token-gen.png)
 
 3. Copie el valor del token y guárdelo para poder recuperarlo en caso necesario. Si lo pierde, deberá regenerar el token. El token tiene los privilegios del usuario que lo emitió. Por ejemplo, un lector de seguridad no puede emitir un token que modifique datos.
 
-4. Puede filtrar los tokens por estado Activo, Inactivo o Generado. 
+4. Puede filtrar los tokens por estado Activo, Inactivo o Generado.
 
-   - Los tokens generados son los que no se han usado nunca. 
-   - Los tokens activos son los que se han generado y usado durante los siete últimos días. 
-   - Los tokens inactivos se han usado, pero no ha habido ninguna actividad durante los siete últimos días.
-5. Después de generar un nuevo token, se le proporcionará una nueva dirección URL para que pueda acceder al portal de Cloud App Security. 
+    - Los tokens generados son los que no se han usado nunca.
+    - Los tokens activos son los que se han generado y usado durante los siete últimos días.
+    - Los tokens inactivos se han usado, pero no ha habido ninguna actividad durante los siete últimos días.
 
-   ![Token de la API de Cloud App Security](./media/generate-api-token.png)
+5. Después de generar un nuevo token, se le proporcionará una nueva dirección URL para que pueda acceder al portal de Cloud App Security.
+
+    ![Token de la API de Cloud App Security](media/generate-api-token.png)
 
     La dirección URL del portal genérico continuará funcionando, pero será notablemente más lenta que la dirección URL personalizada que reciba junto al token. Si alguna vez olvida la dirección URL, puede consultarla en el icono de interrogante ( **?** ) del menú seleccionando **Acerca de**.
 
@@ -68,21 +68,20 @@ En la página de tokens de API se incluye una tabla de todos los tokens de API q
 
 Los administradores totales podrán ver todos los tokens generados para el inquilino en cuestión. Los demás usuarios solo verán los tokens que han generado por sí mismos.
 
-La tabla contiene detalles sobre cuándo se ha generado el token y cuando se ha usado por última vez. Además, permite revocar el token. 
+La tabla contiene detalles sobre cuándo se ha generado el token y cuando se ha usado por última vez. Además, permite revocar el token.
 
-Después de que se haya revocado un token, se quitará de la tabla y el software que lo usaba no podrá realizar llamadas API hasta que se proporcione un nuevo token. 
+Después de que se haya revocado un token, se quitará de la tabla y el software que lo usaba no podrá realizar llamadas API hasta que se proporcione un nuevo token.
 
 > [!NOTE]
-> Los conectores SIEM y los recopiladores de registros también usan tokens de API. Estos tokens deben administrarse desde los recopiladores de registros y las secciones de los agentes SIEM y no aparecerán en esta tabla. 
-
-
-
-
+> Los conectores SIEM y los recopiladores de registros también usan tokens de API. Estos tokens deben administrarse desde los recopiladores de registros y las secciones de los agentes SIEM y no aparecerán en esta tabla.
 
 ## <a name="next-steps"></a>Pasos siguientes
-[Solución de problemas de integración de SIEM](troubleshooting-siem.md)   
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
+> [!div class="nextstepaction"]
+> [Solución de problemas de integración de SIEM](troubleshooting-siem.md)
+
+[!INCLUDE [Open support ticket](includes/support.md)]
 
 ## <a name="check-out-this-video"></a>Eche un vistazo a este vídeo.
-[Microsoft Cloud App Security: API de REST y tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)  
+
+[Microsoft Cloud App Security: API de REST y tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)

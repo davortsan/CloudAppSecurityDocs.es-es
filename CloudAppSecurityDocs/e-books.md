@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: conceptual
 ms.date: 8/22/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 32dde1dcb79f617863701c1dcce3d6d8254deff0
-ms.sourcegitcommit: e434c19fbbb67cf70bbf70729d03e38b4779ce25
+ms.openlocfilehash: 91a262f81dbcb49c81df869c869cd81d2ada9766
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2019
-ms.locfileid: "74143451"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719984"
 ---
 # <a name="microsoft-cloud-app-security-e-books"></a>Microsoft Cloud App Security libros electrónicos
 
@@ -22,12 +22,12 @@ Lea nuestros libros electrónicos para obtener información sobre Microsoft Clou
 
 | Title | Descripción |
 | --- | --- |
-| **Información general**<br>[Leer ahora](https://go.microsoft.com/fwlink/p/?linkid=2079728) | Obtenga información sobre Cloud App Security y cómo se integra de forma nativa con las soluciones líderes de Microsoft para proporcionar una implementación sencilla, administración centralizada y capacidades de automatización innovadoras. |
-| **Shadow IT Discovery**<br>[Leer ahora](https://go.microsoft.com/fwlink/p/?linkid=2079805) | Identifique las aplicaciones y los servicios en la nube usados por su organización. Evalúe los niveles de riesgo y la disponibilidad empresarial de más de 16.000 aplicaciones contra más de 70 factores de riesgo y empiece a administrarlos para garantizar la seguridad y el cumplimiento. |
-| **Proteja su información confidencial en cualquier parte de la nube**<br>[Leer ahora](https://go.microsoft.com/fwlink/p/?linkid=2079808) | Comprenda, clasifique y proteja la exposición de información confidencial en riesgo. Aproveche las directivas integradas y los procesos automatizados para aplicar controles en tiempo real a todas las aplicaciones en la nube. |
-| **Los 20 principales casos de uso de CASB**<br>[Leer ahora](https://go.microsoft.com/fwlink/p/?linkid=2099428) | Obtenga información sobre los 20 principales casos de uso de CASB y cómo Cloud App Security ayuda a proteger su entorno. |
+| **Información general**<br />[Leer ahora](https://go.microsoft.com/fwlink/p/?linkid=2079728) | Obtenga información sobre Cloud App Security y cómo se integra de forma nativa con las soluciones líderes de Microsoft para proporcionar una implementación sencilla, administración centralizada y capacidades de automatización innovadoras. |
+| **Shadow IT Discovery**<br />[Leer ahora](https://go.microsoft.com/fwlink/p/?linkid=2079805) | Identifique las aplicaciones y los servicios en la nube usados por su organización. Evalúe los niveles de riesgo y la disponibilidad empresarial de más de 16.000 aplicaciones contra más de 70 factores de riesgo y empiece a administrarlos para garantizar la seguridad y el cumplimiento. |
+| **Proteja su información confidencial en cualquier parte de la nube**<br />[Leer ahora](https://go.microsoft.com/fwlink/p/?linkid=2079808) | Comprenda, clasifique y proteja la exposición de información confidencial en riesgo. Aproveche las directivas integradas y los procesos automatizados para aplicar controles en tiempo real a todas las aplicaciones en la nube. |
+| **Los 20 principales casos de uso de CASB**<br />[Leer ahora](https://go.microsoft.com/fwlink/p/?linkid=2099428) | Obtenga información sobre los 20 principales casos de uso de CASB y cómo Cloud App Security ayuda a proteger su entorno. |
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-[Vea nuestros seminarios web](webinars.md)
+> [Vea nuestros seminarios web](webinars.md)

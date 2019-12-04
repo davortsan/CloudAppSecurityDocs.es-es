@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 387a9a9184bb805db7659d6f67eae26239f812f3
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 89a14c0fa629a0affd9fde58b1faf4c3716de143
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461066"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719536"
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>Conectar AWS con Microsoft Cloud App Security
 
@@ -177,7 +176,8 @@ Siga los pasos de [Auditoría de seguridad de AWS](#how-to-connect-aws-security-
 1. En la página **conectores de aplicaciones** , para proporcionar las credenciales del conector de AWS, realice una de las acciones siguientes:
 
     **Para un nuevo conector**
-    1. Haga clic en el signo más seguido de **Amazon Web Services**.<br>
+
+    1. Haga clic en el signo más seguido de **Amazon Web Services**.<br />
 
         ![conectar AWS](media/connect-aws.png "conectar AWS")
 
@@ -190,6 +190,7 @@ Siga los pasos de [Auditoría de seguridad de AWS](#how-to-connect-aws-security-
         ![Conexión de la configuración de seguridad de la aplicación AWS](media/aws-connect-app-config.png "Conexión de la configuración de seguridad de la aplicación AWS")
 
     **Para un conector existente**
+
     1. En la lista de conectores, en la fila en la que aparece el conector de AWS, haga clic en **conectar configuración de seguridad**.
 
         ![Captura de pantalla de la página aplicaciones conectadas, donde se muestra el vínculo Editar configuración de seguridad](media/aws-connect-app-edit-config.png)
@@ -204,6 +205,7 @@ Siga los pasos de [Auditoría de seguridad de AWS](#how-to-connect-aws-security-
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

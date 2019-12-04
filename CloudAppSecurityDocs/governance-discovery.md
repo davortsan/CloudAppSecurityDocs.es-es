@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8464851432d8fce81baa624738c6f73da1d68413
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 43ab4126445f8f0ef36c88253c93d8b89bfa4eda
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461354"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720745"
 ---
 # <a name="govern-discovered-apps"></a>Controlar las aplicaciones detectadas
 
@@ -31,7 +31,7 @@ Después de revisar la lista de aplicaciones detectadas en su entorno, puede pro
 
 Puede no autorizar una aplicación de riesgo específica. Para ello, haga clic en los tres puntos situados al final de la fila. Después seleccione **No autorizar**. El hecho de no autorizar una aplicación no impide que se use, pero le permite supervisar más fácilmente su uso con los filtros de Cloud Discovery. Después, puede notificar a los usuarios de la aplicación que no está autorizada y sugerir una aplicación segura alternativa.
 
-![Etiquetar como no autorizada](./media/tag-as-unsanctioned.png)
+![Etiquetar como no autorizada](media/tag-as-unsanctioned.png)
 
 Si tiene una lista de aplicaciones que quiere autorizar o no autorizar, active la casilla de todas las aplicaciones que quiere administrar y después seleccione la acción.
 
@@ -46,19 +46,19 @@ Cloud App Security permite bloquear el acceso a aplicaciones no autorizadas con 
 
 1. En el panel de Cloud Discovery, etiquete las aplicaciones que quiere bloquear como **No autorizada**.
 
-    ![Etiquetar como no autorizada](./media/tag-as-unsanctioned.png)
+    ![Etiquetar como no autorizada](media/tag-as-unsanctioned.png)
 
 2. En la barra de título, haga clic en los tres puntos y seleccione **Generar script de bloque...** .
 
-    ![Generar script de bloque](./media/generate-block-script.png)
+    ![Generar script de bloque](media/generate-block-script.png)
 
 3. En **Generar script de bloque**, seleccione la aplicación para la que quiere generar el script de bloque.
 
-    ![Ventana emergente de Generar script de bloqueo](./media/generate-block-script-popup.png)
+    ![Ventana emergente de Generar script de bloqueo](media/generate-block-script-popup.png)
 
 4. Después, haga clic en el botón Generar script para crear un script de bloqueo para todas las aplicaciones no autorizadas. De forma predeterminada, se asignará un nombre al archivo con la fecha en la que se haya exportado y el tipo de aplicación que haya seleccionado. *2017-02-19_CAS_Fortigate_block_script.txt* sería un nombre de archivo de ejemplo
 
-   ![Botón Generar script de bloque](./media/generate-block-script-button.png)
+   ![Botón Generar script de bloque](media/generate-block-script-button.png)
 
 5. Importe el archivo que ha creado en la aplicación.
 

@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: c6d8f8af-867b-43ab-adee-f06520577fe7
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9e41902fd34f113412b02fb7c4377b226cd18fc0
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: fa4fe701de12753d754f0b5dcc9605a1ea4d0ac8
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460455"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74721032"
 ---
 # <a name="security-configuration-for-aws"></a>Configuración de seguridad para AWS
 
@@ -28,7 +27,7 @@ ms.locfileid: "74460455"
 
 Microsoft Cloud App Security proporciona una evaluación de la configuración de seguridad de su entorno de Amazon Web Services. Esta evaluación proporciona recomendaciones de seguridad fundamentales basadas en la prueba comparativa de Center for Internet Security (CIS) para AWS.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Requisitos previos
 
 - La central de seguridad de AWS debe estar configurada para todas las regiones de la cuenta de AWS. Para obtener más información, consulte [configuración del centro de seguridad de AWS](https://go.microsoft.com/fwlink/?linkid=2100208).
     > [!NOTE]
@@ -41,14 +40,15 @@ Microsoft Cloud App Security proporciona una evaluación de la configuración de
     - Microsoft Cloud App Security proporciona recomendaciones únicamente para las 50 suscripciones principales.
     - Es posible que los cambios tarden hasta 15 minutos en surtir efecto.
 
-     ![menú de configuración de seguridad](media/security-configuration-menu.png)
+    ![menú de configuración de seguridad](media/security-configuration-menu.png)
 
-1. Puede filtrar las recomendaciones por tipo, por recurso y por cuentas. Además, puede hacer clic en el icono de configuración de seguridad ![Icono de ASC](./media/asc-icon.png) para abrir la recomendación en Amazon Security hub para obtener más información y profundizar en la recomendación.
+1. Puede filtrar las recomendaciones por tipo, por recurso y por cuentas. Además, puede hacer clic en el icono de configuración de seguridad ![Icono de ASC](media/asc-icon.png) para abrir la recomendación en Amazon Security hub para obtener más información y profundizar en la recomendación.
 
-   ![configuración de seguridad](media/security-configuration-aws.png)
+    ![configuración de seguridad](media/security-configuration-aws.png)
 
-## <a name="next-steps"></a>Pasos siguientes 
-[Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
+## <a name="next-steps"></a>Pasos siguientes
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
+> [!div class="nextstepaction"]
+> [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
+
+[!INCLUDE [Open support ticket](includes/support.md)]

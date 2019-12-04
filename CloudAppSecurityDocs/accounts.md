@@ -5,22 +5,21 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
+ms.date: 12/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e6559c68b3b958eb9a989153d5f1e4ec011fea49
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: fe538419f86076977b5484c5571d65623eb9cdd7
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460947"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733729"
 ---
 # <a name="accounts"></a>Cuentas
 
@@ -32,56 +31,58 @@ Los administradores pueden buscar los metadatos de un usuario específico o su a
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
+La página **usuarios y cuentas** se puede [filtrar](#users-and-accounts-filters) para que pueda buscar cuentas específicas y profundizar en diferentes tipos de cuentas. por ejemplo, puede filtrar por todas las cuentas externas a las que no se ha accedido desde el año pasado.
 
-La página **Usuarios y cuentas** se puede filtrar para buscar cuentas concretas y profundizar en diferentes tipos de cuentas. Por ejemplo, puede filtrar por todas las cuentas externas a las que no se haya accedido desde el año pasado. 
+La página **Usuarios y cuentas** permite investigar fácilmente las cuentas, incluidos los problemas siguientes:
 
-La página **Usuarios y cuentas** permite investigar fácilmente las cuentas, incluidos los problemas siguientes:  
+* Compruebe si alguna cuenta ha estado inactiva en un servicio determinado durante mucho tiempo, ya que quizás se deba revocar la licencia de ese usuario en ese servicio.
 
--   Compruebe si alguna cuenta ha estado inactiva en un servicio determinado durante mucho tiempo, ya que quizás se deba revocar la licencia de ese usuario en ese servicio.  
--   Puede filtrar por la lista de usuarios con permisos de administrador.  
+* Puede filtrar por la lista de usuarios con permisos de administrador.
+* Puede buscar usuarios que ya no formen parte de su organización, pero que es posible que aún tengan cuentas activas.
+* Puede realizar [acciones de gobierno](#governance-actions) en las cuentas, como suspender una aplicación o ir a la página de configuración de la cuenta.
+* Puede ver qué cuentas están incluidas en cada grupo de usuarios.  
+* Puede ver a qué aplicaciones accede cada cuenta y qué aplicaciones se han eliminado en cuentas concretas.
 
--   Puede buscar usuarios que ya no formen parte de su organización, pero que es posible que aún tengan cuentas activas.  
-
--   Puede realizar acciones de gobernanza en la cuenta, como suspender una aplicación o ir a la página de configuración de la cuenta. Para obtener una lista completa de acciones de gobernanza, vea el [registro de gobernanza](governance-actions.md).
-    
--   Puede ver qué cuentas están incluidas en cada grupo de usuarios.  
-
--   Puede ver a qué aplicaciones accede cada cuenta y qué aplicaciones se han eliminado en cuentas concretas.
-    
-
-![pantalla cuentas](./media/accounts-page.png)
+    ![pantalla cuentas](./media/accounts-page.png)
 
 ## <a name="users-and-accounts-filters"></a>Filtros de usuarios y cuentas
+
 A continuación, se muestra una lista de los filtros de cuenta que se pueden aplicar. La mayoría de los filtros admiten varios valores, así como NOT, para proporcionarle una herramienta eficaz para la creación de directivas.  
   
 <!--- **Account name**: The account name is the primary alias of the user, but other identifiers from other Microsoft accounts (Office 365 and Azure Active Directory) such as proxy addresses, aliases, SID are supported and consolidated beneath the primary alias. -->
 
-- **Afiliación**: la afiliación es **Interna** o **Externa**. Para establecer qué usuarios y cuentas son internos, en **Configuración** asegúrese de establecer el **intervalo de direcciones IP** de la organización interna. En caso de que la cuenta tenga permisos de administrador, el icono de la tabla Cuentas aparece con un lazo rojo. ![icono de administrador de cuentas](./media/accounts-admin-icon.png)
+* **Afiliación**: la afiliación es **Interna** o **Externa**. Para establecer qué usuarios y cuentas son internos, en **Configuración** asegúrese de establecer el **intervalo de direcciones IP** de la organización interna. En caso de que la cuenta tenga permisos de administrador, el icono de la tabla Cuentas aparece con un lazo rojo. ![icono de administrador de cuentas](./media/accounts-admin-icon.png)
 
-- **Aplicación**: puede filtrar por cualquier aplicación conectada a la API y que esté en uso en las cuentas de la organización.
+* **Aplicación**: puede filtrar por cualquier aplicación conectada a la API y que esté en uso en las cuentas de la organización.
+* **Dominio**: permite filtrar por usuarios de dominios concretos.
+* **Grupos**: permite filtrar por miembros de grupos de usuarios de Cloud App Security, tanto grupos de usuarios integrados como importados.
+* **Instancia**: permite filtrar por miembros de una instancia de una aplicación específica.
+* **Visto por última vez**: el filtro **Visto por última vez** permite buscar cuentas que estén inactivas y cuyos usuarios no hayan tenido actividad durante un tiempo.
+* **Organización**: permite filtrar por miembros de determinados grupos organizativos definidos en sus aplicaciones conectadas.
+* **Show Admins only** (Mostrar solo administradores): filtra cuentas y usuarios que son administradores.
+* **Estado**: filtra según el estado de la cuenta de usuario de N/D, ensayo, activa, suspendida o eliminado.
+* **Tipo**: permite filtrar por el usuario o el tipo de cuenta.
+* **Nombre de usuario**: permite filtrar a usuarios específicos.
 
-- **Dominio**: permite filtrar por usuarios de dominios concretos.
+## <a name="governance-actions"></a>Acciones de gobernanza
 
-- **Grupos**: permite filtrar por miembros de grupos de usuarios de Cloud App Security, tanto grupos de usuarios integrados como importados.
+En la página **usuarios y cuentas** , puede realizar acciones de gobierno como suspender una aplicación o ir a la página de configuración de la cuenta. Para obtener una lista completa de acciones de gobernanza, vea el [registro de gobernanza](governance-actions.md).
 
-- **Instancia**: permite filtrar por miembros de una instancia de una aplicación específica. 
+Por ejemplo, si identifica un usuario que está en peligro, puede aplicar la acción **confirmar usuario comprometido** para establecer el nivel de riesgo del usuario en alto, lo que provoca que se apliquen las acciones de directiva relevantes definidas en Azure Active Directory. La acción se puede aplicar manualmente o mediante [directivas relevantes que admitan acciones de gobierno](governance-actions.md).
 
-- **Visto por última vez**: el filtro **Visto por última vez** permite buscar cuentas que estén inactivas y cuyos usuarios no hayan tenido actividad durante un tiempo.
+### <a name="to-manually-apply-a-user-or-account-governance-action"></a>Para aplicar manualmente una acción de gobierno de cuentas o usuarios
 
-- **Organización**: permite filtrar por miembros de determinados grupos organizativos definidos en sus aplicaciones conectadas.
+Puede aplicar manualmente la acción **confirmar el compromiso del usuario** mediante uno de los métodos siguientes:
 
-- **Show Admins only** (Mostrar solo administradores): filtra cuentas y usuarios que son administradores.
+* En la página **usuarios y cuentas** , en la fila donde aparece el usuario o la cuenta correspondiente, elija los tres puntos al final de la fila y, a continuación, elija **confirmar usuario comprometido**.
 
-- **Estado**: filtra según el estado de la cuenta de usuario de N/D, ensayo, activa, suspendida o eliminado.
+* En la **página usuario**, seleccione **acciones del usuario**y, a continuación, elija **confirmar usuario comprometido**.
 
-- **Tipo**: permite filtrar por el usuario o el tipo de cuenta.
+* **Nombre de usuario**: permite filtrar a usuarios específicos.
 
-- **Nombre de usuario**: permite filtrar a usuarios específicos. 
+## <a name="next-steps"></a>Pasos siguientes
 
+> [!div class="nextstepaction"]
+> [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
 
-## <a name="next-steps"></a>Pasos siguientes  
-[Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
-
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
-  
+[!INCLUDE [Open support ticket](includes/support.md)]
