@@ -9,12 +9,12 @@ ms.date: 11/01/2019
 ms.collection: M365-security-compliance
 ms.custom: seodec18
 ms.suite: ems
-ms.openlocfilehash: de625987873d60b99f39579ea6694dacccfd4479
-ms.sourcegitcommit: e7af22892c56d03490d1e6241c0a74d2e11e9fe2
+ms.openlocfilehash: c413409f71abcacd4fc74832a3617f6d6430c269
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2019
-ms.locfileid: "73462100"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74719824"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Seguridad y privacidad de datos de Microsoft Cloud App Security
 
@@ -38,21 +38,21 @@ Microsoft Cloud App Security cumple muchos estándares de cumplimiento internaci
 
 | |Title|Descripción|
 |----|----|----|
-|![logotipo CSA](./media/csastar-attest.png)|Atestación CSA STAR|Azure e Intune han recibido la Atestación Cloud Security Alliance STAR basada en una auditoría independiente.|
-|![logotipo CSA](./media/csastar.png)|Certificación CSA STAR|Azure, Intune y Power BI han recibido la Certificación Cloud Security Alliance STAR de nivel Gold.|
-|![logotipo Cláusulas modelo de la UE](./media/eu-model-icon.png)|[Cláusulas modelo de la UE](https://www.microsoft.com/en-us/trustcenter/compliance/eu-model-clauses)|Microsoft ofrece las cláusulas contractuales estándar de la UE, que garantizan las transferencias de datos personales.|
-|![logotipo Escudo de la privacidad](./media/privacy_shield.png)|UE-EE. UU. Escudo de la privacidad|Microsoft es compatible con este marco de protección de los datos personales que se transfieren de la Unión Europea a Estados Unidos.|
-|![logotipo FISC](./media/logo_fisc.png)|FISC|Microsoft cumple los requisitos del estándar Financial Industry Information Systems v8 de Japón.|
-|![logotipo HIPAA](./media/hipaa-logo.png)|[HIPAA/HITECH](https://www.microsoft.com/en-us/trustcenter/compliance/hipaa)|Microsoft ofrece contratos de asociación comercial (BAA) según la Ley de transferencia y responsabilidad de seguros de salud (HIPAA).|
-|![logotipo ISO 9001](./media/iso-9001.png)|ISO 9001|Microsoft está certificado para la implementación de estos estándares de administración de calidad.|
-|![logotipo ISO 27001](./media/iso-27001.png)|[ISO/IEC 27001](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27001)|Microsoft está certificado para la implementación de estos estándares de administración de seguridad de la información.|
-|![logotipo ISO 27018](./media/iso-27018.png)|[ISO/IEC 27018](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27018)|Microsoft fue el primer proveedor de nube en observar este código de prácticas de privacidad en la nube.|
-|![logotipo PCI](./media/pci-logo.png)|PCI DSS|Azure cumple el Estándar de Seguridad de Datos para la Industria de Tarjeta de Pago versión 3.1 de nivel 1.|
-|![logotipo SOC](./media/soc-logo.png)|[Informes SOC 1 y SOC 2 de tipo 2](https://www.microsoft.com/en-us/trustcenter/compliance/soc)|Los servicios en la nube de Microsoft cumplen con los estándares de Service Organization Controls para la seguridad operativa.|
-|![logotipo SOC](./media/soc-logo.png)|SOC 3|Los servicios en la nube de Microsoft cumplen con los estándares Service Organization Controls para la seguridad operativa.|
-|![logotipo G-Cloud](./media/g-cloud.png)|UK G-Cloud|El organismo gubernamental Crown Commercial Service ha renovado la clasificación de servicios en la nube de Microsoft en Government Cloud v6.|
+|![logotipo CSA](media/csastar-attest.png)|Atestación STAR de CSA|Azure e Intune recibieron la atestación STAR de Cloud Security Alliance en función de una auditoría independiente.|
+|![logotipo csa](media/csastar.png)|Certificación STAR de CSA|Azure, Intune y Power BI recibieron la certificación STAR de Cloud Security Alliance en el nivel Gold.|
+|![logotipo Cláusulas modelo de la UE](media/eu-model-icon.png)|[Cláusulas modelo de la UE](https://www.microsoft.com/trustcenter/compliance/eu-model-clauses)|Microsoft ofrece las cláusulas contractuales estándar de la UE, que garantizan las transferencias de datos personales.|
+|![logotipo escudo de la privacidad](media/privacy_shield.png)|Escudo de la privacidad entre la Unión Europea y Estados Unidos|Microsoft cumple este marco para proteger datos personales transferidos a Estados Unidos procedentes de la Unión Europea.|
+|![logotipo FISC](media/logo_fisc.png)|FISC|Microsoft cumple los requisitos de la norma de la versión 8 de Financial Industry Information Systems en Japón.|
+|![logotipo HIPAA](media/hipaa-logo.png)|[HIPAA/HITECH](https://www\.microsoft\.com/trustcenter/compliance/hipaa)|Microsoft ofrece contratos de asociación comercial (BAA) según la Ley de transferencia y responsabilidad de seguros de salud (HIPAA).|
+|![logotipo iso 9001](media/iso-9001.png)|ISO 9001|Microsoft está certificado para su implementación de estos estándares de administración de calidad.|
+|![logotipo ISO 27001](media/iso-27001.png)|[ISO/IEC 27001](https://www\.microsoft\.com/trustcenter/compliance/iso-iec-27001)|Microsoft está certificado para la implementación de estos estándares de administración de seguridad de la información.|
+|![logotipo ISO 27018](media/iso-27018.png)|[ISO/IEC 27018](https://www\.microsoft\.com/trustcenter/compliance/iso-iec-27018)|Microsoft fue el primer proveedor de nube en observar este código de prácticas de privacidad en la nube.|
+|![logotipo PCI](media/pci-logo.png)|PCI DSS|Azure cumple la versión 3.1 de Payment Card Industry Data Security Standards nivel 1.|
+|![logotipo SOC](media/soc-logo.png)|[Informes SOC 1 y SOC 2 de tipo 2](https://www\.microsoft\.com/trustcenter/compliance/soc)|Los servicios en la nube de Microsoft cumplen con los estándares de Service Organization Controls para la seguridad operativa.|
+|![logotipo SOC](media/soc-logo.png)|SOC 3|Los servicios en la nube de Microsoft cumplen con los estándares Service Organization Controls para la seguridad operativa.|
+|![logotipo g-cloud](media/g-cloud.png)|G-Cloud de Reino Unido|El organismo gubernamental Crown Commercial Service ha renovado la clasificación de servicios en la nube de Microsoft en Government Cloud v6.|
 
-Para obtener más información, vaya a [Ofertas de Microsoft Compliance](https://www.microsoft.com/en-us/trustcenter/compliance/complianceofferings) y seleccione Cloud App Security.  
+Para obtener más información, vaya a [Ofertas de Microsoft Compliance](https://www\.microsoft\.com/trustcenter/compliance/complianceofferings) y seleccione Cloud App Security.  
 
 ## <a name="privacy"></a>Privacidad
 
@@ -69,7 +69,7 @@ Para obtener más información, vaya a [Ofertas de Microsoft Compliance](https:/
 
 - Cloud App Security solo usa los datos con fines acordes con la prestación de los servicios a los que está suscrito.
 
-- Si un gobierno solicita a Microsoft el acceso a sus datos, Microsoft redirige la solicitud a usted, el cliente, siempre que sea posible. Microsoft ha cuestionado exigencias legales que no eran válidas, que prohibían la divulgación de [una solicitud gubernamental](https://www.microsoft.com/en-us/trustcenter/privacy/govt-requests-for-data) de datos del cliente. Obtenga más información sobre [quién puede tener acceso a los datos y en qué condiciones](https://www.microsoft.com/en-us/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms).
+- Si un gobierno solicita a Microsoft el acceso a sus datos, Microsoft redirige la solicitud a usted, el cliente, siempre que sea posible. Microsoft ha cuestionado exigencias legales que no eran válidas, que prohibían la divulgación de [una solicitud gubernamental](https://www\.microsoft\.com/trustcenter/privacy/govt-requests-for-data) de datos del cliente. Obtenga más información sobre [quién puede tener acceso a los datos y en qué condiciones](https://www\.microsoft\.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms).
 
 ### <a name="privacy-controls"></a>Controles de privacidad
 
@@ -86,7 +86,7 @@ Microsoft Cloud App Security funciona actualmente en centros de datos en los Est
 > [!NOTE]
 > Cloud App Security aprovecha los Centros de datos de Azure de todo el mundo para proporcionar un rendimiento optimizado a través de la geolocalización. Esto significa que la sesión de un usuario se puede hospedar fuera de una región determinada, dependiendo de los patrones de tráfico y su ubicación. Sin embargo, para proteger su privacidad, no se almacenan datos de la sesión en estos centros de datos.
 
-[Más información sobre privacidad](https://www.microsoft.com/en-us/trustcenter/privacy)
+[Más información sobre privacidad](https://www\.microsoft\.com/trustcenter/privacy)
 
 ## <a name="transparency"></a>Transparencia
 
@@ -116,7 +116,7 @@ Cloud App Security conserva los datos de la manera siguiente:
 
 Para obtener más información sobre las prácticas de datos de Microsoft, vea el apartado  [Términos de Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
-[Más información sobre transparencia](https://www.microsoft.com/en-us/trustcenter/about/transparency)
+[Más información sobre transparencia](https://www\.microsoft\.com/trustcenter/about/transparency)
 
 ### <a name="deleting-personal-data"></a>Eliminación de los datos personales
 
@@ -159,10 +159,13 @@ Para más información sobre los estándares de cumplimiento de Cloud App Securi
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Información general de Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
+> [!div class="nextstepaction"]
+> [Información general de Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
-[Documentación de Cloud App Security](/cloud-app-security/)
+> [!div class="nextstepaction"]
+> [Documentación de Cloud App Security](/cloud-app-security/)
 
-[Suscripción a Cloud App Security](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1)
+> [!div class="nextstepaction"]
+> [Suscripción a Cloud App Security](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1)
 
 Obtenga una evaluación gratuita de Cloud App Security y vea cómo cumple con los desafíos de su negocio.

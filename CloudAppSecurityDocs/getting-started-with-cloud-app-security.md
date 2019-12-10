@@ -11,12 +11,12 @@ ms.service: cloud-app-security
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0f79fea252ed16a603b75ea20e5641b3be2f963f
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 0b9f026c9509153cca5c51024616662983550ef7
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460873"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74720678"
 ---
 # <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Inicio rápido: Introducción a Microsoft Cloud App Security
 
@@ -33,7 +33,7 @@ Su organización debe tener una licencia para utilizar Cloud App Security. Para 
 
 - Su organización debe tener una licencia para utilizar Cloud App Security. Para obtener más información sobre precios, vea la [Hoja de datos de licencias de Cloud App Security](https://aka.ms/mcaslicensing).
 
-     Para obtener soporte para activar inquilinos, vea [Póngase en contacto con el soporte de Office 365 para empresas: ayuda para administradores](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+    Para obtener soporte para activar inquilinos, vea [Póngase en contacto con el soporte de Office 365 para empresas: ayuda para administradores](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 - Después de haber adquirido una licencia para Cloud App Security, recibirá un correo electrónico con la información de activación y un vínculo al portal de Cloud App Security.
 
 - Para configurar Cloud App Security, debe ser administrador global o administrador de seguridad de Azure Active Directory u Office 365. Es importante comprender que un usuario que tenga asignado un rol de administrador tendrá los mismos permisos en todas las aplicaciones de nube a las que se haya suscrito la organización. Esto es así independientemente de si ha asignado el rol en el centro de administración de Microsoft 365, en el portal clásico de Azure o mediante el módulo de Azure AD para [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx). Para obtener más información, vea [Asignación de roles de administrador en Office 365](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) y [Asignación de roles de administrador en Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).
@@ -87,10 +87,10 @@ Tarea necesaria: Habilitar Cloud App Security para ver el uso de la aplicación 
 1. Si usa [Zscaler](zscaler-integration.md), intégrelo con Cloud App Security.
 1. Para lograr cobertura completa, cree un informe continuo de Cloud Discovery
 
-   1. En el engranaje de configuración, seleccione **Configuración de Cloud Discovery**.
-   1. Elija **Carga automática del registro**.
-   1. En la ficha **Orígenes de datos**, agregue los orígenes.
-   1. En la pestaña **Recopiladores de registros**, configure el recopilador de registros.
+    1. En el engranaje de configuración, seleccione **Configuración de Cloud Discovery**.
+    1. Elija **Carga automática del registro**.
+    1. En la ficha **Orígenes de datos**, agregue los orígenes.
+    1. En la pestaña **Recopiladores de registros**, configure el recopilador de registros.
 
 ### <a name="to-create-a-snapshot-cloud-discovery-report"></a>Para crear un informe de instantáneas de Cloud Discovery
 
@@ -143,7 +143,7 @@ Tarea recomendada: Configurar valores de configuración importantes
 1. Escriba los **detalles**, la **ubicación**, las **etiquetas** y la **categoría** del intervalo IP.
 1. Elija **Crear**.
 
-   Ahora puede usar etiquetas IP cuando cree directivas y cuando filtre y cree informes continuos.
+    Ahora puede usar etiquetas IP cuando cree directivas y cuando filtre y cree informes continuos.
 
 ### <a name="to-create-continuous-reports"></a>Para crear informes continuos
 
@@ -166,6 +166,7 @@ Estos valores le ayudan a controlar mejor las características de la consola. Co
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Establezca directivas: [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).
+> [!div class="nextstepaction"]
+> [Controle las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).
 
 [!INCLUDE [Open support ticket](includes/support.md)].

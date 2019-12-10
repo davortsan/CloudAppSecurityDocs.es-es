@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e27aa1efc0abfa5af6d7005015062b7d8c43dcac
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 45d89b489fe017e0bc3f71c7785a4007b1a447e4
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460694"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74720630"
 ---
 # <a name="tutorial-investigate-risky-oauth-apps"></a>Tutorial: Investigación de aplicaciones de riesgo de OAuth
 
@@ -29,13 +29,13 @@ OAuth es un estándar abierto para autenticación y autorización basadas en tok
 
 Por ejemplo, una aplicación que analiza el calendario del usuario y le da consejos sobre cómo ser más productivo necesita acceder al calendario del usuario. En lugar de proporcionar las credenciales del usuario, OAuth permite a la aplicación acceder a los datos basándose únicamente en un token, que se genera cuando el usuario da su consentimiento a una página, como se puede ver en la siguiente imagen.
 
- ![Permiso de aplicación por OAuth](./media/oauth-permission.png)
+![Permiso de aplicación por OAuth](media/oauth-permission.png)
 
 Muchas aplicaciones de terceros que puedan instalar los usuarios profesionales de su organización solicitan permiso para acceder a datos e información de usuario e iniciar sesión en nombre del usuario en otras aplicaciones de nube. Cuando los usuarios instalan estas aplicaciones, a menudo hacen clic en **Aceptar** sin revisar detenidamente los detalles en el mensaje, incluyendo la concesión de permisos a la aplicación. La aceptación de permisos de aplicación de terceros es un riesgo de seguridad potencial para la organización.
 
 Por ejemplo, la siguiente página de consentimiento de aplicación de OAuth puede parecer legítima para el usuario medio; sin embargo, el "explorador de API de Google" no debería necesitar solicitar permisos a Google. Esto indica que la aplicación podría ser un intento de suplantación de identidad, no relacionado en absoluto con Google.
 
-![Suplantación de identidad de OAuth](./media/oauth-phishing.png)
+![Suplantación de identidad de OAuth](media/oauth-phishing.png)
 
 Como administrador de seguridad, necesita visibilidad y control sobre las aplicaciones de su entorno, lo que incluye los permisos que tienen. Necesita la capacidad de evitar el uso de aplicaciones que requieren permiso para los recursos que desea revocar. Por lo tanto, Microsoft Cloud App Security le ofrece la capacidad de investigar y supervisar los permisos de aplicaciones que sus usuarios otorgaron. Este artículo pretende ayudarle a investigar las aplicaciones de OAuth de su organización y se centra en las aplicaciones que tienen más probabilidades de ser sospechosas.
 
@@ -59,7 +59,7 @@ Puede establecer directivas para enviar automáticamente notificaciones cuando u
     - Establezca el filtro en **Nivel de permiso de alta gravedad** y **Uso comunitario no común**. Con este filtro, puede centrarse en aplicaciones con un potencial de alto riesgo en las que los usuarios puedan haber subestimado el riesgo.
     - En **Permisos** seleccione todas las opciones que sean particularmente de riesgo en un contexto específico. Por ejemplo, puede seleccionar todos los filtros que permiten el acceso al correo electrónico, como **Acceso total a todos los buzones de correo** y luego revisar la lista de aplicaciones para asegurarse de que todas realmente necesitan acceso relacionado con el correo. Esto le puede ayudar a investigar dentro de un contexto específico y a buscar aplicaciones que parecen legítimas, pero que contienen permisos innecesarios. Estas aplicaciones tienen más probabilidades de ser de riesgo.
 
-            ![OAuth phishing](./media/oauth-filters.png)
+        ![Suplantación de identidad de OAuth](media/oauth-filters.png)
 
     - Seleccione la consulta guardada **Aplicaciones que han autorizado los usuarios externos**. Con este filtro puede encontrar aplicaciones que quizás no estén alineadas con los estándares de seguridad de su empresa.
 1. Una vez que revise las aplicaciones, puede centrarse en las aplicaciones de las consultas que parecen ser legítimas, pero que podrían en realidad ser de riesgo. Use los filtros para buscarlas:
@@ -68,7 +68,7 @@ Puede establecer directivas para enviar automáticamente notificaciones cuando u
 1. Haga clic en cada aplicación para abrir el cajón de aplicaciones y compruebe si la aplicación tiene un nombre, editor o sitio web sospechoso.
 1. Vea la lista de aplicaciones y céntrese en las que tengan una fecha de **Última autorización** que no sea reciente. Puede que estas aplicaciones ya no sean necesarias.
 
-    ![Cajón de aplicaciones de OAuth](./media/oauth-drawer.png)
+    ![Cajón de aplicaciones de OAuth](media/oauth-drawer.png)
 
 ## <a name="how-to-investigate"></a>Procedimiento de investigación
 
@@ -98,6 +98,7 @@ Después de determinar que una aplicación de OAuth es de riesgo, Cloud App Secu
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
