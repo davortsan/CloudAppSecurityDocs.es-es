@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 69c025162539ec43742732455a90f96cd3149cc8
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 77face48858ae577c4eb2aa4fd85f7fc39c81377
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74459673"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74720791"
 ---
 # <a name="tutorial-automatically-apply-azure-information-protection-classification-labels"></a>Tutorial: Aplicar automáticamente etiquetas de clasificación de Azure Information Protection
 
@@ -31,9 +30,9 @@ En un mundo perfecto, todos los empleados serían plenamente conscientes de la i
 Este tutorial le ayudará a identificar qué permisos públicos se establecen en un documento guardado en el almacenamiento en la nube, de modo que reciba una alerta cuando se produzca una infracción. Además, puede aplicar automáticamente la etiqueta de clasificación **Confidencial** de Azure Information Protection para proporcionar un mayor cifrado a los archivos.
 
 > [!div class="checklist"]
-> * Configuración de la protección de datos 
+>
+> * Configuración de la protección de datos
 > * Validar la directiva
-
 
 ## <a name="enhanced-data-level-encryption-protection"></a>Mejor protección del cifrado de nivel de datos
 
@@ -51,8 +50,8 @@ Use Cloud App Security con Azure Information Protection para insertar informaci�
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- [Habilite Cloud App Security y Azure Information Protection](azip-integration.md) en el inquilino.
-- [Conecte Box](connect-box-to-microsoft-cloud-app-security.md) a Cloud App Security.
+* [Habilite Cloud App Security y Azure Information Protection](azip-integration.md) en el inquilino.
+* [Conecte Box](connect-box-to-microsoft-cloud-app-security.md) a Cloud App Security.
 
 ## <a name="set-up-data-protection"></a>Configuración de la protección de datos
 
@@ -60,14 +59,14 @@ Vamos a configurar una directiva que busque números de tarjeta de crédito en l
 
 1. Empiece a proteger los datos que guarda en Box mediante una directiva que cifre todos los datos confidenciales de Box:
 
-    1. En la pestaña **Control**, haga clic en [**Directivas**](control-cloud-apps-with-policies.md). 
+    1. En la pestaña **Control**, haga clic en [**Directivas**](control-cloud-apps-with-policies.md).
 
     2. Haga clic en **Crear directiva** y seleccione **Directiva de archivo**.
 
     3. Llame a la directiva *Protección de datos de Box*.
 
     4. En **Crear un filtro para los archivos a los que se aplicará esta directiva**, defina como objetivo los datos de su propiedad y confidenciales.
-        - Por ejemplo, seleccione **Datos del cliente** como **Carpeta principal** en Box y su equipo financiero como **Propietario**.
+        * Por ejemplo, seleccione **Datos del cliente** como **Carpeta principal** en Box y su equipo financiero como **Propietario**.
 
     5. En esa carpeta, busque los archivos que contengan información de tarjetas de crédito. En **Método de inspección de contenido** seleccione **DLP integrado**, **Incluir los elementos archivos que coincidan con una expresión preestablecida** y **Todos los países: finanzas, número de tarjeta de crédito**.
 
@@ -75,9 +74,9 @@ Vamos a configurar una directiva que busque números de tarjeta de crédito en l
 
     7. Puesto que [Cloud App Security se integra con Azure Information Protection](azip-integration.md), puede seleccionar las opciones de su lista de etiquetas de clasificación para proteger los datos.
 
-    8. Haga clic en **Crear**. 
+    8. Haga clic en **Crear**.
 
-   ![Agregar etiqueta de clasificación a la directiva](./media/aip-auto-policy.png)
+   ![Agregar etiqueta de clasificación a la directiva](media/aip-auto-policy.png)
 
 2. Investigación de las coincidencias
 
@@ -88,18 +87,17 @@ Vamos a configurar una directiva que busque números de tarjeta de crédito en l
 ## <a name="validate-your-policy"></a>Validar la directiva
 
 1. Para simular una alerta, vaya a su cuenta de Box e intente acceder a un archivo en la carpeta **Datos del cliente**.
-2. Vaya al informe de directiva. Una coincidencia de directiva de archivo debe aparecer en breve. 
+2. Vaya al informe de directiva. Una coincidencia de directiva de archivo debe aparecer en breve.
 3. Puede hacer clic en la coincidencia para ver qué archivos se han protegido. La propia coincidencia se enmascarará para proteger los datos confidenciales.
 
 >[!NOTE]
 >
-> - Actualmente, Cloud App Security admite la aplicación automática de etiquetas de Azure Information Protection en Box, GSuite, SharePoint y OneDrive para la Empresa.
-> - Cuando un documento se etiqueta con Cloud App Security, no se aplican inmediatamente marcas visuales, sino que se aplican cuando se abre ese documento en una aplicación de Office y se guarda por primera vez. Para obtener más información, consulte [Configuración de una etiqueta para marcas visuales de Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied).
+> *- Actualmente, Cloud App Security admite la aplicación automática de etiquetas de Azure Information Protection en Box, GSuite, SharePoint y OneDrive para la Empresa.
+> *- Cuando un documento se etiqueta con Cloud App Security, no se aplican inmediatamente marcas visuales, sino que se aplican cuando se abre ese documento en una aplicación de Office y se guarda por primera vez. Para obtener más información, consulte [Configuración de una etiqueta para marcas visuales de Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)   
+> [!div class="nextstepaction"]
+> [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
-  
+[!INCLUDE [Open support ticket](includes/support.md)]

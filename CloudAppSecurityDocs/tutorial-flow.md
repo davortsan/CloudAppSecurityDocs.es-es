@@ -6,12 +6,12 @@ ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: tutorial
 ms.date: 9/8/2019
-ms.openlocfilehash: df591023c15990ec4c00060c34a9d5671b5da3b1
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 06fe00d3a289aa32846be71509707aa384b2177f
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084946"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74720537"
 ---
 # <a name="tutorial-extend-governance-to-endpoint-remediation"></a>Tutorial: Ampliación de la gobernanza a la corrección de puntos de conexión
 
@@ -22,6 +22,7 @@ Por ejemplo, al detectar una posible amenaza de malware, puede usar flujos de tr
 En este tutorial obtendrá información sobre cómo configurar una acción de gobernanza de directivas para usar un flujo de trabajo que ejecute un examen antivirus en un punto de conexión donde un usuario muestre signos de comportamiento sospechoso.
 
 > [!div class="checklist"]
+>
 > * 1: [Generación de un token de la API Cloud App Security](#generate-token)
 > * 2: [Creación de un flujo para ejecutar un examen antivirus](#create-flow)
 > * 3: [Configuración del flujo](#configure-flow)
@@ -43,7 +44,7 @@ Si no tiene un plan de Microsoft Flow, [regístrese para obtener una cuenta de 
 > [!NOTE]
 > Si ha creado anteriormente un flujo de trabajo mediante un conector de Cloud App Security, Microsoft Flow reutilizará automáticamente el token, por lo que puede omitir este paso.
 
-1. En la barra de menús de Cloud App Security, haga clic en el engranaje de configuración ![icono de configuración](./media/settings-icon.png "icono de configuración") y seleccione **Extensiones de seguridad**.
+1. En la barra de menús de Cloud App Security, haga clic en el engranaje de configuración ![icono de configuración](media/settings-icon.png "icono de configuración") y seleccione **Extensiones de seguridad**.
 
 1. En la página **Extensiones de seguridad**, haga clic en el botón del signo más para generar un nuevo token de la API.
 1. En la ventana emergente **Generar nuevo token**, escriba el nombre del token (por ejemplo, "Flow-token") y haga clic en **Generar**.
@@ -59,7 +60,8 @@ Si no tiene un plan de Microsoft Flow, [regístrese para obtener una cuenta de 
 > Si ya ha creado un flujo con un conector de ATP de Defender, Flow vuelve a usar el conector automáticamente y se puede omitir el paso de **inicio de sesión**.
 
 1. Vaya al [portal de Microsoft Flow](https://flow.microsoft.com/) y seleccione Plantillas.
-    ![Captura de pantalla de la página principal de Microsoft Flow, donde se muestra la selección de plantillas.](media/tutorial-flow-templates.png)
+
+    ![Captura de pantalla de la página principal de Microsoft Flow, en la que se muestra la selección de plantillas.](media/tutorial-flow-templates.png)
 
 1. Busque "Cloud App Security" y seleccione **Run antivirus scan using Windows Defender upon a Cloud App Security alert** (Ejecutar examen antivirus con Windows Defender tras alerta de Cloud App Security).
 
@@ -113,4 +115,4 @@ Siga los pasos que se indican en este tutorial para crear una amplia variedad de
 ## <a name="see-also"></a>Consulte también
 
 > [!div class="nextstepaction"]
-[Integración con Microsoft Flow para la automatización de alertas personalizadas](flow-integration.md)
+> [Integración con Microsoft Flow para la automatización de alertas personalizadas](flow-integration.md)
