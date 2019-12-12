@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.openlocfilehash: 65237f7be2218dad16c09f3940ca53c478d022bc
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74461208"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security-preview"></a>Conectar Google Cloud Platform a Microsoft Cloud App Security (versión preliminar)
@@ -33,7 +33,7 @@ En este artículo se proporcionan instrucciones para conectar Microsoft Cloud Ap
 
 Se recomienda usar un proyecto dedicado para la integración y restringir el acceso al proyecto para mantener la integración estable y evitar las eliminaciones o modificaciones del proceso de instalación. Además, si la instancia de GCP es parte de una instancia de G Suite que ya está conectada a Cloud App Security, se recomienda seguir el **para una instancia de GCP que forme parte de los pasos de una organización de g Suite conectada** al agregar los detalles de conexión de GCP.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Requisitos previos
 
 El usuario que integra GCP debe tener los permisos siguientes:
 
@@ -74,7 +74,7 @@ Cree un proyecto dedicado en GCP en su organización para habilitar la estabilid
 1. En **iam & admin**, haga clic en **IAM**.
 
     1. Cambie al nivel de organización.
-    1. Haga clic en **Agregar**.
+    1. Haga clic en **AGREGAR**.
     1. En el cuadro **nuevos miembros** , pegue el valor de **correo electrónico** que copió anteriormente.
     1. Especifique el **rol** como **escritor de configuración de registros** y, a continuación, haga clic en **Guardar**.
 

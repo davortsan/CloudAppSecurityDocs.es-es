@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 5636c6a0aa51d17847560a122248e625137840cb
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74460931"
 ---
 # <a name="azure-advanced-threat-protection-integration"></a>Integración de protección contra amenazas avanzada de Azure
@@ -27,7 +27,7 @@ ms.locfileid: "74460931"
 
 Microsoft Cloud App Security [se](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)integra con la protección contra amenazas avanzada de Azure (ATP de Azure) para proporcionar análisis del comportamiento de la entidad de usuario (UEBA) en un entorno híbrido, tanto en la aplicación en la nube como en el entorno local, para obtener más información, consulte [Tutorial: investigación de usuarios de riesgo](tutorial-ueba.md) para obtener más información sobre el aprendizaje automático y el análisis de comportamiento proporcionado por ATP de Azure.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Requisitos previos
 
 Para realizar una investigación completa de los usuarios en un entorno híbrido, debe tener:
 
@@ -44,7 +44,7 @@ Para habilitar la integración de Cloud App Security con ATP de Azure:
 
 1. En Cloud App Security, en el engranaje de configuración, seleccione **configuración**.
 
-   ![Menú de configuración](media/azip-system-settings.png)
+   ![Menú Configuración](media/azip-system-settings.png)
 
 1. En **protección contra amenazas**, seleccione **ATP de Azure**.
 

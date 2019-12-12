@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 1c058f817e4fffa4f40060ad0bc865bb6798e771
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74460811"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Instalación y configuración en Ubuntu o RHEL en Azure
@@ -27,7 +27,7 @@ ms.locfileid: "74460811"
 
 Puede configurar la carga de registros automática para informes continuos en Cloud App Security con Docker en Ubuntu o Red Hat Enterprise Linux (RHEL) en Azure. En este artículo se describe cómo configurar la carga de registros automática.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Requisitos previos
 
 * SO: Ubuntu 14,04 y 16,04 (para las versiones más recientes, póngase en contacto con el soporte técnico), RHEL 7,2 o superior, o bien la versión 7,2 o superior
 
@@ -91,7 +91,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
     1. Seleccione todos los **orígenes de datos** que desea conectar al recopilador y haga clic en **Actualizar** para guardar la configuración.  
     ![ubuntu2](media/ubuntu2.png)
 
-1. Aparecerá más información de implementación. **Copie** el comando de ejecución desde el cuadro de diálogo. Puede usar el icono Copiar al Portapapeles. ![icono copiar al portapapeles](media/copy-icon.png)
+1. Aparecerá más información de implementación. **Copie** el comando de ejecución desde el cuadro de diálogo. Puede usar el icono Copiar al portapapeles. ![icono copiar al portapapeles](media/copy-icon.png)
 
 1. **Exporte** la configuración de origen de datos esperada. Esta configuración describe cómo debe establecer la exportación de registro en los dispositivos.
 
@@ -116,7 +116,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
     1. Vaya a **reglas de seguridad de entrada** y haga clic en **Agregar**![Ubuntu Azure](media/ubuntu-azure.png)
     1. Agregue las siguientes reglas (en modo **Avanzado**):
 
-    |Name|Rangos de puertos de destino|Protocol|`Source`|Destino|
+    |Name|Rangos de puertos de destino|Protocol|Origen|Destination|
     |----|----|----|----|----|
     |caslogcollector_ftp|21|TCP|<Subred de la dirección IP del dispositivo>|Cualquiera|
     |caslogcollector_ftp_passive|20000-20099|TCP|<Subred de la dirección IP del dispositivo>|Cualquiera|

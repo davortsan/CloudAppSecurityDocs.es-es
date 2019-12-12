@@ -14,10 +14,10 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: f7664685204a2d2f1965800119c946c85f2cbe49
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74460388"
 ---
 # <a name="azure-sentinel-integration-preview"></a>Integración de centinela de Azure (versión preliminar)
@@ -44,7 +44,7 @@ La integración con SIEM se realiza en dos pasos:
 1. Establézcalo en Cloud App Security.
 1. Establézcalo en Azure Sentinel.
 
-### <a name="prerequisites"></a>Prerequisites
+### <a name="prerequisites"></a>Requisitos previos
 
 Para integrar con Azure Sentinel:
 
@@ -78,7 +78,7 @@ Una vez completada la integración, puede ver Cloud App Security alertas y regis
 
 En Azure Sentinel, en **registros**, en **Security Insights**, puede encontrar los registros de los tipos de datos Cloud App Security, como se indica a continuación:
 
-| Tipo de datos | Table |
+| Tipo de datos | Tabla |
 | --- | --- |
 | Registros de detección | McasShadowItReporting |
 | Alertas | SecurityAlert |
@@ -87,21 +87,21 @@ En la tabla siguiente se describe cada campo del esquema **McasShadowItReporting
 
 | Campo | Tipo | Descripción | Ejemplos |
 | --- | --- | --- | --- |
-| TenantId | String | IDENTIFICADOR del área de trabajo | b459b4u5-912x-46d5-9cb1-p43069212nb4 |
+| TenantId | String | Id. del área de trabajo | b459b4u5-912x-46d5-9cb1-p43069212nb4 |
 | SourceSystem | String | Sistema de origen: valor estático | Azure |
 | TimeGenerated [UTC] | DateTime | Fecha de datos de detección | 2019-07-23T11:00:35.858 Z |
-| Nombredeflujo | String | Nombre del flujo específico | Departamento de marketing |
+| StreamName | String | Nombre del flujo específico | Departamento de marketing |
 | TotalEvents | Integer | Número total de eventos por sesión | 122 |
 | BlockedEvents | Integer | Número de eventos bloqueados | 0 |
 | UploadedBytes | Integer | Cantidad de datos cargados | 1\.514.874 |
 | TotalBytes | Integer | Cantidad total de datos | 4\.067.785 |
 | DownloadedBytes | Integer | Cantidad de datos descargados | 2\.552.911 |
-| DirIP | String | Dirección IP de origen | 127.0.0.0 |
+| IpAddress | String | Dirección IP de origen | 127.0.0.0 |
 | UserName | String | Nombre de usuario | `Raegan@contoso.com` |
 | EnrichedUserName | String | Nombre de usuario enriquecido con Azure AD nombre de usuario | `Raegan@contoso.com` |
-| Nombreaplicación | String | Nombre de la aplicación en la nube | Microsoft OneDrive para la empresa |
+| AppName | String | Nombre de la aplicación en la nube | Microsoft OneDrive para la Empresa |
 | AppId | Integer | Identificador de aplicación en la nube | 15600 |
-| AppCategory | String | Categoría de aplicación en la nube | Almacenamiento en nube |
+| AppCategory | String | Categoría de aplicación en la nube | El almacenamiento en la nube |
 | AppTags | Matriz de cadenas | Etiquetas personalizadas y integradas definidas para la aplicación | ["autorizada"] |
 | AppScore | Integer | La puntuación de riesgo de la aplicación en una escala 0-10, 10 es una puntuación para una aplicación no peligrosa. | 10 |
 | Tipo | String | Tipo de registros: valor estático | McasShadowItReporting |

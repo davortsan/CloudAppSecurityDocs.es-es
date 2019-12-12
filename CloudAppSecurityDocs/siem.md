@@ -14,10 +14,10 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 0a80b5fa980e8ece344ca39092293d5b820f604b
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74721009"
 ---
 # <a name="generic-siem-integration"></a>Integración de SIEM genérica
@@ -169,7 +169,7 @@ El siguiente texto es un ejemplo de archivo de registro de alertas:
 |    Actividades     |           dvc            |                                             Dirección IP del dispositivo del cliente                                             |
 |    Actividades     | requestClientApplication |                                         Agente de usuario del dispositivo del cliente                                         |
 |      Alertas       |       \<tipo de alerta >       |                                  Por ejemplo "ALERT_CABINET_EVENT_MATCH_AUDIT"                                  |
-|      Alertas       |          nombre del \<          |                                             Nombre de la directiva coincidente                                             |
+|      Alertas       |          \<name>          |                                             Nombre de la directiva coincidente                                             |
 |      Alertas       |        externalId        |                                                    Id. de alerta                                                     |
 
 ### <a name="step-3-validate-that-the-siem-agent-is-working"></a>Paso 3: validación del correcto funcionamiento del agente SIEM

@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 7/30/2019
+ms.date: 12/09/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 26715a7600edc6dc4602dcc977ac164e5ae3f35c
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.openlocfilehash: 47a59e48e61c8976218d11e3abac41108100fa3a
+ms.sourcegitcommit: 43c2759b175ea73692980ab96b30d6d11fd5f4aa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74720276"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74944355"
 ---
 # <a name="azure-information-protection-integration"></a>Integración de Azure Information Protection
 
@@ -52,8 +52,8 @@ Actualmente, Cloud App Security permite aplicar etiquetas de clasificación de A
 - Excel: xlam, xlsm, xlsx, xltx
 - PowerPoint: potm, potx, ppsx, ppsm, pptm, pptx
 - PDF
-    > [!NOTE]
-    > En el caso de PDF, debe usar etiquetas unificadas.
+  > [!NOTE]
+  > En el caso de PDF, debe usar etiquetas unificadas.
 
 Esta característica está disponible actualmente para los archivos que se almacenan en Box, G Suite, SharePoint Online y OneDrive para la Empresa. Se admitirán más aplicaciones en la nube en futuras versiones.
 
@@ -67,12 +67,12 @@ Probablemente esté familiarizado con las etiquetas de clasificación de archivo
 
 2. Después, Cloud App Security examina los archivos en busca de etiquetas de clasificación de la manera siguiente:
 
-    - Si ha habilitado el examen automático, todos los archivos nuevos o modificados se agregan a la cola de examen y todos los archivos y repositorios existentes se examinan, clasifican y protegen.
+    - Si ha habilitado el examen automático, todos los archivos nuevos o modificados se agregan a la cola de examen y se examinan todos los archivos y repositorios existentes.
     - Si ha establecido una directiva de archivo para buscar etiquetas de clasificación, estos archivos se agregan a la cola de examen de etiquetas de clasificación.
 
 3. Como se mencionó anteriormente, estos exámenes son para las etiquetas de clasificación detectadas en el examen inicial que Cloud App Security lleva a cabo para ver qué etiquetas de clasificación se usan en el inquilino. Las etiquetas externas, es decir, las etiquetas de clasificación establecidas por una persona externa al inquilino, se agregan a la lista de etiquetas de clasificación. Si no quiere que se examinen, active la casilla **Only scan files for Azure Information Protection classification labels from this tenant** (Examinar solo archivos en busca de etiquetas de clasificación de Azure Information Protection en este inquilino) (consulte la información a continuación).
 
-4. Después de habilitar Azure Information Protection en Cloud App Security, también se examinarán todos los archivos nuevos que se agreguen a Office 365 en busca de etiquetas de clasificación.
+4. Después de habilitar Azure Information Protection en Cloud App Security, todos los archivos nuevos que se agreguen a las aplicaciones conectadas en la nube se examinarán en busca de etiquetas de clasificación.
 
 5. Puede crear directivas de seguridad de Cloud App Security que apliquen sus etiquetas de clasificación de forma automática.
 
@@ -86,7 +86,7 @@ Para permitir que Cloud App Security examine archivos que tengan la inspección 
 
 1. En Cloud App Security, en el engranaje de configuración, seleccione la página **Settings** (Configuración) en el encabezado **System** (Sistema).
 
-    ![Menú de configuración](media/azip-system-settings.png)
+    ![Menú Configuración](media/azip-system-settings.png)
 1. En **Azure Information Protection**, seleccione **Automatically scan files for Azure Information Protection classification labels** (Examinar automáticamente los archivos en busca de etiquetas de clasificación de Azure Information Protection).
 
     ![habilitar azure information protection](media/enable-azip.png)

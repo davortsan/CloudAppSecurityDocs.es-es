@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 542f3e37a7b5446b72d0be0dca273bb115339880
-ms.sourcegitcommit: 33ac7a8f1f3efcc100db84575c3e9d8c0ba28e02
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74656672"
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Conectar G Suite con Microsoft Cloud App Security
@@ -98,7 +98,7 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
     1. Copie el **ID** . de cliente (lo necesitará más adelante).
     ![administrar el acceso de cliente de API](media/google12-2.png "google12-2 ")
 
-    1. Haga clic en **Guardar**
+    1. Haga clic en **GUARDAR**
 
     1. Vaya a [admin.google.com](https://admin.google.com/) y haga clic en **Seguridad**.
 
@@ -109,7 +109,7 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
     1. En el cuadro **uno o más ámbitos** de la API, escriba la siguiente lista de ámbitos necesarios (Copie el texto y péguelo en el cuadro):  
 `https://www.googleapis.com/auth/admin.reports.audit.readonly,https://www.googleapis.com/auth/admin.reports.usage.readonly,https://www.googleapis.com/auth/drive,https://www.googleapis.com/auth/drive.appdata,https://www.googleapis.com/auth/drive.apps.readonly,https://www.googleapis.com/auth/drive.file,https://www.googleapis.com/auth/drive.metadata.readonly,https://www.googleapis.com/auth/drive.readonly,https://www.googleapis.com/auth/drive.scripts,https://www.googleapis.com/auth/admin.directory.user.readonly,https://www.googleapis.com/auth/admin.directory.user.security,https://www.googleapis.com/auth/admin.directory.user.alias,https://www.googleapis.com/auth/admin.directory.orgunit,https://www.googleapis.com/auth/admin.directory.notifications,https://www.googleapis.com/auth/admin.directory.group.member,https://www.googleapis.com/auth/admin.directory.group,https://www.googleapis.com/auth/admin.directory.device.mobile.action,https://www.googleapis.com/auth/admin.directory.device.mobile,https://www.googleapis.com/auth/admin.directory.user`
 
-    1. Haga clic en **autorizar**.
+    1. Haga clic en **Autorizar**.
 
 1. En el [Google Cloud Platform](https://console.cloud.google.com/), seleccione menú y vaya a **api y servicios** > **Panel**.
 

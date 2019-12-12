@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 0aa55a99017a1768bf58fd2c2a40688c1a5c95e6
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74720247"
 ---
 # <a name="connect-apps"></a>Conectar aplicaciones
@@ -68,7 +68,7 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
 
 > [!div class="mx-tableFixed"]
 >
-> | | AWS | Cuadro | Dropbox | GCP | G Suite | Office 365 | Okta | Servicio ahora | Salesforce | Computadoras | Workday |
+> | | AWS | Cuadro | Dropbox | GCP | G Suite | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
 > |-|-|-|-|-|-|-|-|-|-|-|-|
 > | **Cuentas de lista** | ✔ | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 > | **Lista de grupos** | ✔ | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | ✔ | ✔ | ✔ | | No es compatible con el proveedor |
@@ -108,7 +108,7 @@ Para usar los conectores de aplicaciones, debe asegurarse de que tiene lo siguie
 | Okta | Enterprise (no versión de prueba) | Administración |
 | Salesforce | | Administración |
 | ServiceNow | Eureka o versión posterior | Rol de administrador + RestAPI |
-| Computadoras | | Administrador + administrador de cumplimiento |
+| Webex | | Administrador + administrador de cumplimiento |
 | Workday | | Consulte los [requisitos previos de Connect WorkDay](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) |
 
 ### <a name="expressroute"></a>ExpressRoute

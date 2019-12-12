@@ -10,10 +10,10 @@ ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 405bdd5636bdcdf93dbfc858ecc6578d1a43c402
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74720905"
 ---
 # <a name="threat-protection-policies"></a>Directivas de protección contra amenazas
@@ -139,7 +139,7 @@ Detectar las actividades de la cuenta de servicio que se originan en una direcci
 
 4. Establecer las acciones de **gobierno** que se realizarán en los archivos cuando se detecte una infracción. Las acciones de gobierno disponibles varían entre los servicios.
 
-5. Cree la Directiva.
+5. Crear la directiva.
 
 ## <a name="detect-mass-download-data-exfiltration"></a>Detección de la descarga masiva (exfiltración de datos)
 
@@ -158,7 +158,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 3. Establezca los **tipos de actividad** de filtro es igual a y, a continuación, seleccione todas las actividades de descarga pertinentes.
 
 4. Establecer las acciones de **gobierno** que se realizarán en los archivos cuando se detecte una infracción. Las acciones de gobierno disponibles varían entre los servicios.
-5. Cree la Directiva.
+5. Crear la directiva.
 
 ## <a name="detect-potential-ransomware-activity"></a>Detección de una posible actividad de ransomware
 
@@ -208,7 +208,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 4. Establezca el **tipo de actividad** de filtro es igual a todas las actividades relacionadas con las actualizaciones, los cambios y los restablecimientos de contraseña.
 
 5. Establecer las acciones de **gobierno** que se realizarán en los archivos cuando se detecte una infracción. Las acciones de gobierno disponibles varían entre los servicios.
-6. Cree la Directiva.
+6. Crear la directiva.
 
 ## <a name="detect-suspicious-inbox-manipulation-rules"></a>Detectar reglas de manipulación de bandeja de entrada sospechosas
 
@@ -224,7 +224,7 @@ Si se ha establecido una regla de bandeja de entrada sospechosa en la bandeja de
 
 ## <a name="detect-leaked-credentials"></a>Detección de credenciales perdidas
 
-Cuando los delincuentes cibernéticos ponen en peligro contraseñas válidas de usuarios legítimos, suelen compartir esas credenciales. Esto se suele hacer publicándolo públicamente en el sitio web oscuro o pegar sitios, o bien mediante el comercio o la venta de las credenciales en el mercado negro.
+Cuando los delincuentes cibernéticos ponen en peligro contraseñas válidas de usuarios legítimos, suelen compartir esas credenciales. Suelen hacer esto publicándolas en la Web oscura o sitios de pegado, o bien mediante el intercambio o la venta de esas credenciales en el mercado negro.
 
 Cloud App Security usa la inteligencia de amenazas de Microsoft para hacer coincidir las credenciales con las que se usan dentro de la organización.
 

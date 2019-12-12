@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 0243d1a75e4f322406ef768dddc898b58d3fe294
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74720511"
 ---
 # <a name="manage-admin-access"></a>Administrar el acceso de administrador
@@ -132,7 +132,7 @@ Para exportar un registro, realice los pasos siguientes:
 
 1. Especifique el intervalo de tiempo necesario.
 
-1. Haga clic en **exportar**.
+1. Haga clic en **Exportar**.
 
 ## <a name="invite-external-admins"></a>Invitar a administradores externos
 

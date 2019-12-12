@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: f3726c218be879e93495fb11b117974180bd3da7
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74720812"
 ---
 # <a name="troubleshooting-the-siem-agent"></a>Solución de problemas del agente SIEM
@@ -60,7 +60,7 @@ Si recibió una alerta del sistema con respecto a un problema con la entrega de 
 4. En el portal, vaya a la página del agente SIEM y quite el agente SIEM de recuperación.
 5. Asegúrese de que el agente SIEM original sigue ejecutándose correctamente.
 
-## <a name="general-troubleshooting"></a>Solución de problemas generales
+## <a name="general-troubleshooting"></a>Solución general de problemas
 
 Asegúrese de que el estado del agente SIEM en el portal de Microsoft Cloud App Security no sea **Error de conexión** ni **Desconectado** y de que no haya ninguna notificación del agente. El estado se muestra como **Error de conexión** si la conexión está inactiva durante más de dos horas. El estado cambia a **Desconectado** si la conexión está inactiva durante más de 12 horas.
 

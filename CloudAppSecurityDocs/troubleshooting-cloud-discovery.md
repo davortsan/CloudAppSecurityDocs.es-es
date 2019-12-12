@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: ad21cce1ffda835dc45badccc07689ca300cf377
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74721073"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Solución de problemas de Cloud Discovery
@@ -27,7 +27,7 @@ ms.locfileid: "74721073"
 
 En este artículo se proporciona una lista de errores de Cloud Discovery y recomendaciones para la solución de cada uno de ellos.
 
-## <a name="microsoft-defender-atp-integration"></a>Integración de ATP de Microsoft defender
+## <a name="microsoft-defender-atp-integration"></a>Integración de Microsoft Defender ATP
 
 Si ha integrado Microsoft defender ATP con Cloud App Security y no ve los resultados de la integración: no hay un informe de **usuarios del punto** de conexión de Win10, asegúrese de que las máquinas a las que se está conectando son Windows 10 versión 1809 o posterior y de que ha esperado las dos horas necesarias para que se pueda tener acceso a los datos.
 

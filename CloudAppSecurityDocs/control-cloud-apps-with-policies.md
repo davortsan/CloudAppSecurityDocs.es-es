@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: e4675430b45e92579cd4c692247c5a481bad233e
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74720715"
 ---
 # <a name="control-cloud-apps-with-policies"></a>Controlar las aplicaciones en la nube con directivas
@@ -183,7 +183,7 @@ Para exportar un registro, realice los pasos siguientes:
 
 1. Especifique el intervalo de tiempo necesario.
 
-1. Haga clic en **exportar**. Este proceso puede tardar en completarse.
+1. Haga clic en **Exportar**. Este proceso puede tardar en completarse.
 
 Para descargar el informe exportado:
 

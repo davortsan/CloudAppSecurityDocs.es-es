@@ -8,10 +8,10 @@ ms.topic: best-practice
 ms.date: 10/24/2019
 ms.collection: M365-security-compliance
 ms.openlocfilehash: e90a340c206c0bfb1c01542dd184664d1fe87dfe
-ms.sourcegitcommit: e434c19fbbb67cf70bbf70729d03e38b4779ce25
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74143469"
 ---
 # <a name="cloud-app-security-best-practices"></a>Procedimientos recomendados de Cloud App Security
@@ -186,7 +186,7 @@ Cloud App Security le proporciona la capacidad de investigar y supervisar los pe
 **Detalle**: Use control de aplicaciones de acceso condicional para establecer controles en las aplicaciones SaaS. Puede crear directivas de sesión para supervisar las sesiones de bajo riesgo y de bajo nivel de confianza. Del mismo modo, puede crear directivas de sesión para bloquear y proteger las descargas de los usuarios que intentan acceder a datos confidenciales desde dispositivos no administrados o de riesgo. Si no va a crear directivas de sesión para supervisar las sesiones de alto riesgo, perderá la capacidad de bloquear y proteger las descargas en el cliente web, así como la capacidad de supervisar sesiones de confianza baja en aplicaciones de Microsoft y de terceros.  
 **Para obtener más información**:
 
-* [Protección de aplicaciones con Microsoft Cloud App Security Control de aplicaciones de acceso condicional](proxy-intro-aad.md)
+* [Proteger aplicaciones con el Control de aplicaciones de acceso condicional de Microsoft Cloud App Security](proxy-intro-aad.md)
 * [Directivas de sesión](session-policy-aad.md)
 
 ---
@@ -200,7 +200,7 @@ Cloud App Security le proporciona la capacidad de investigar y supervisar los pe
 **Detalle**: para proteger la colaboración en su entorno, puede crear una directiva de sesión para supervisar las sesiones entre los usuarios internos y externos. Esto no solo le ofrece la capacidad de supervisar la sesión entre los usuarios (y les notifica que sus actividades de sesión se están supervisando), pero también le permite limitar las actividades específicas. Al crear directivas de sesión para supervisar la actividad, puede elegir las aplicaciones y los usuarios que le gustaría supervisar.  
 **Para obtener más información**:
 
-* [Protección de aplicaciones con Microsoft Cloud App Security Control de aplicaciones de acceso condicional](proxy-intro-aad.md)
+* [Proteger aplicaciones con el Control de aplicaciones de acceso condicional de Microsoft Cloud App Security](proxy-intro-aad.md)
 * [Directivas de sesión](session-policy-aad.md)
 
 ---
