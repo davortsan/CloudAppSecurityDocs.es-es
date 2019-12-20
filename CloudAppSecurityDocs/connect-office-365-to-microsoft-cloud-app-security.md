@@ -14,20 +14,20 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 86126d40279acd433066cc76db101061f1a03a93
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 98ed425bc3f095ce226e002a114fe10ee0b47e69
+ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720064"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75189407"
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Conectar Office 365 con Microsoft Cloud App Security
 
 *Se aplica a: Microsoft Cloud App Security*
 
-En este artículo se proporcionan instrucciones para conectar Microsoft Cloud App Security con una cuenta de Microsoft Office 365 existente mediante la API del conector de aplicaciones.  Esta conexión le ofrece visibilidad y control del uso de Office 365.
+En este artículo se proporcionan instrucciones para conectar Microsoft Cloud App Security con una cuenta de Microsoft Office 365 existente mediante la API del conector de aplicaciones. Esta conexión le ofrece visibilidad y control del uso de Office 365. Para obtener información sobre cómo Cloud App Security protege Office 365, consulte [protección de office 365](protect-office-365.md).
   
-Cloud App Security es compatible con la plataforma dedicada de Office 365 heredada, así como con las últimas ofertas de los servicios de Office 365 (conocidos comúnmente como la familia de versiones de vNext de Office 365).  Cloud App Security no es compatible con Microsoft Business Productivity Online Standard Suite heredado (BPOS). 
+Cloud App Security es compatible con la plataforma dedicada de Office 365 heredada, así como con las últimas ofertas de los servicios de Office 365 (conocidos comúnmente como la familia de versiones de vNext de Office 365).  Cloud App Security no es compatible con Microsoft Business Productivity Online Standard Suite heredado (BPOS).
 
 > [!NOTE]
 > En algunos casos, la versión de un servicio de vNext difiere ligeramente en los niveles de administración de la oferta de Office 365 estándar.
@@ -35,16 +35,17 @@ Cloud App Security es compatible con la plataforma dedicada de Office 365 hereda
 Cloud App Security admite las siguientes aplicaciones de Office 365:
 
 - Office 365
-- SharePoint
-- OneDrive
-- Equipos (solo aparece después de que se hayan detectado actividades de equipos en el portal)
-- Power BI (solo aparece después de que se hayan detectado actividades de Power BI en el portal, y es necesario activar la auditoría)
+- Dynamics 365 CRM
 - Exchange (solo aparece después de que se hayan detectado actividades de Exchange en el portal, y es necesario activar la auditoría)
-- Dynamics 365
+- OneDrive
+- Power BI (solo aparece después de que se hayan detectado actividades de Power BI en el portal, y es necesario activar la auditoría)
+- SharePoint
+- Equipos (solo aparece después de que se hayan detectado actividades de equipos en el portal)
 
 ## <a name="how-to-connect-office-365-to-cloud-app-security"></a>Cómo conectar Office 365 con Cloud App Security  
 
 > [!NOTE]
+>
 >- Debe tener al menos una licencia de Office 365 asignada para conectar Office 365 a Cloud App Security.
 >- Para habilitar la supervisión de las actividades de Office 365 en Cloud App Security, es necesario habilitar la auditoría en el [centro de seguridad y cumplimiento de Office](https://support.microsoft.com/help/4026501/office-auditing-in-office-365-for-admins).
 >- El registro de auditoría de administrador de Exchange, que está habilitado de forma predeterminada en Office 365, registra un evento en el registro de auditoría de Office 365 cuando un administrador (o un usuario al que se han asignado privilegios administrativos) realiza un cambio en la organización de Exchange Online. Los cambios realizados mediante el Centro de administración de Exchange o mediante la ejecución de un cmdlet en Windows PowerShell se registran en el registro de auditoría de administrador de Exchange. Para obtener más información sobre el registro de auditoría de administrador de Exchange, consulte [Registro de auditoría de administrador](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log).
@@ -55,13 +56,13 @@ Cloud App Security admite las siguientes aplicaciones de Office 365:
 >- Si Azure Active Directory está establecido de modo que se sincronice automáticamente con los usuarios del entorno local de Active Directory, la configuración del entorno local reemplaza la configuración de Azure AD y se revierte el uso de la acción de gobernanza **Suspender usuario**.
 >- En el caso de las actividades de inicio de sesión Azure AD, Cloud App Security solo muestra las actividades de inicio de sesión interactivas y las actividades de inicio de sesión de los protocolos heredados, como ActiveSync. Las actividades de inicio de sesión no interactivas se pueden ver en el registro de auditoría Azure AD.
 
-1. En la página **Conectores de aplicaciones**, haga clic en el botón del signo más y seleccione **Office 365**.  
+1. En la página **Conectores de aplicaciones**, haga clic en el botón del signo más y seleccione **Office 365**.
 
-      ![conectar O365](media/connect-0365.png) 
+    ![conectar O365](media/connect-0365.png)
 
 2. En el menú emergente de Office 365, haga clic en **Conectar Office 365**.
 
-      ![conectar O365](media/office-connect.png) 
+    ![conectar O365](media/office-connect.png)
 
 3. Cuando se indique que Office 365 está conectado correctamente, haga clic en **Cerrar**.
 

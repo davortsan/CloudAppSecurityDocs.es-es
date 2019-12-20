@@ -9,18 +9,18 @@ ms.date: 10/16/2019
 ms.topic: conceptual
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 65237f7be2218dad16c09f3940ca53c478d022bc
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: e03f24023968d9e3169aef8636061b8adf05d646
+ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74461208"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75189747"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security-preview"></a>Conectar Google Cloud Platform a Microsoft Cloud App Security (versión preliminar)
 
 *Se aplica a: Microsoft Cloud App Security*
 
-En este artículo se proporcionan instrucciones para conectar Microsoft Cloud App Security a su cuenta de Google Cloud Platform (GCP) existente mediante las API del conector. Esta conexión le proporciona visibilidad y control sobre el uso de GCP.
+En este artículo se proporcionan instrucciones para conectar Microsoft Cloud App Security a su cuenta de Google Cloud Platform (GCP) existente mediante las API del conector. Esta conexión le proporciona visibilidad y control sobre el uso de GCP. Para obtener información sobre cómo Cloud App Security protege GCP, consulte [protección](protect-gcp.md)de GCP.
 
 > [!NOTE]
 > Las instrucciones para conectar el entorno de GCP siguen las [recomendaciones de Google](https://cloud.google.com/blog/products/gcp/best-practices-for-working-with-google-cloud-audit-logging) para consumir registros agregados. La integración utiliza Google StackDriver y consumirá recursos adicionales que podrían afectar a la facturación. Los recursos consumidos son:
@@ -74,7 +74,7 @@ Cree un proyecto dedicado en GCP en su organización para habilitar la estabilid
 1. En **iam & admin**, haga clic en **IAM**.
 
     1. Cambie al nivel de organización.
-    1. Haga clic en **AGREGAR**.
+    1. Haga clic en **Agregar**.
     1. En el cuadro **nuevos miembros** , pegue el valor de **correo electrónico** que copió anteriormente.
     1. Especifique el **rol** como **escritor de configuración de registros** y, a continuación, haga clic en **Guardar**.
 

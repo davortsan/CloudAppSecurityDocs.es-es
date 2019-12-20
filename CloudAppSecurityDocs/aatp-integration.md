@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/20/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,29 +14,28 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2278a7a156525450c2ad4d8e75ee7a1aeb98fb0b
-ms.sourcegitcommit: 362ec5187cb13f152d240b75ed1ecebb5236b0ee
+ms.openlocfilehash: c38ccba7b6d9729ebdd80f005d9630270726d209
+ms.sourcegitcommit: d493fc811a68387398615ff6288a300bb1f0fce7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2019
-ms.locfileid: "75033368"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75310390"
 ---
 # <a name="azure-advanced-threat-protection-integration"></a>Integración de protección contra amenazas avanzada de Azure
 
-*Se aplica a: Microsoft Cloud App Security*
-
-Microsoft Cloud App Security [se](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)integra con la protección contra amenazas avanzada de Azure (ATP de Azure) para proporcionar análisis del comportamiento de la entidad de usuario (UEBA) en un entorno híbrido, tanto en la aplicación en la nube como en el entorno local, para obtener más información, consulte [Tutorial: investigación de usuarios de riesgo](tutorial-ueba.md) para obtener más información sobre el aprendizaje automático y el análisis de comportamiento proporcionado por ATP de Azure.
+*Se aplica a: Microsoft Cloud App Security* git Microsoft Cloud App Security se integra con protección contra amenazas avanzada de Azure (ATP de Azure) para proporcionar análisis del comportamiento de la entidad de usuario (UEBA) en un entorno híbrido, tanto en la aplicación en la nube como en un entorno local, para obtener más información, consulte [Tutorial: investigación de usuarios peligrosos](tutorial-ueba.md). Para obtener más información sobre el aprendizaje automático y el análisis de comportamiento proporcionado por ATP de Azure, consulte [¿Qué es ATP de Azure?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
 
 ## <a name="prerequisites"></a>Requisitos previos
 
 Para realizar una investigación completa de los usuarios en un entorno híbrido, debe tener:
 
 - Una licencia válida de Azure ATP conectada a la instancia de Active Directory
-- Debe ser un administrador global para habilitar la integración entre ATP de Azure y Microsoft Cloud App Security
-- Si no dispone de ATP de Azure, pruébelo ahora.
+- Debe ser un administrador global de Azure Active Directory para habilitar la integración entre ATP de Azure y Cloud App Security
 
->[!NOTE]
->Si no tiene una suscripción para Microsoft Cloud App Security, todavía podrá usar el portal de Cloud App Security para obtener información sobre ATP de Azure.
+> [!NOTE]
+>
+> - Si no tiene una suscripción para Microsoft Cloud App Security, podrá seguir usando Cloud App Security para obtener información sobre ATP de Azure.
+> - Los administradores de ATP de Azure pueden requerir nuevos permisos para obtener acceso a Cloud App Security. Para obtener información sobre cómo asignar permisos a Cloud App Security, consulte [Administración del acceso de administrador](manage-admins.md).
 
 ## <a name="enable-azure-atp"></a>Habilitación de ATP de Azure
 
@@ -44,7 +43,7 @@ Para habilitar la integración de Cloud App Security con ATP de Azure:
 
 1. En Cloud App Security, en el engranaje de configuración, seleccione **configuración**.
 
-   ![Menú Configuración](media/azip-system-settings.png)
+    ![Menú de configuración](media/azip-system-settings.png)
 
 1. En **protección contra amenazas**, seleccione **ATP de Azure**.
 

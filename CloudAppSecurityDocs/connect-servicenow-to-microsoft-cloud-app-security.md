@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a1af86b66387d8bb4274c48e5b1ab0e449ed1aed
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 2606263d1a033d09116111d08ed7f69c96814f68
+ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719211"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75189781"
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Conectar ServiceNow con Microsoft Cloud App Security
 
 *Se aplica a: Microsoft Cloud App Security*
 
-En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Security con una cuenta de ServiceNow existente mediante la API del conector de aplicaciones. Esta conexión le ofrece visibilidad y control del uso de ServiceNow.
+En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Security con una cuenta de ServiceNow existente mediante la API del conector de aplicaciones. Esta conexión le ofrece visibilidad y control del uso de ServiceNow. Para obtener información sobre cómo Cloud App Security protege ServiceNow, consulte [protección](protect-servicenow.md)de servicenow.
 
 > [!NOTE]
 > Se recomienda implementar ServiceNow mediante tokens de aplicación OAuth, que están disponibles para Fuji y versiones posteriores. Consulte la [documentación de ServiceNow](https://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0) correspondiente.
@@ -47,7 +47,7 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
 
     ![Nuevo perfil de OAuth de ServiceNow](media/servicenow-app-registry.png)
 
-4. En **¿Qué tipo de aplicación de OAuth?** , haga clic en **Crear un punto de conexión de la API de OAuth para clientes externos**.
+4. En **¿Qué tipo de aplicación de OAuth?**, haga clic en **Crear un punto de conexión de la API de OAuth para clientes externos**.
 
     ![Tipo de OAuth de ServiceNow](media/servicenow-oauth-app-type.png)
 

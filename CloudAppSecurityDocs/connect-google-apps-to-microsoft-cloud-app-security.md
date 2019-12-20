@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 542f3e37a7b5446b72d0be0dca273bb115339880
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: f688c4ab78fc366518146e761cc01e2edfe5dc30
+ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74656672"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75189730"
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Conectar G Suite con Microsoft Cloud App Security
 
 *Se aplica a: Microsoft Cloud App Security*
 
-En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Security con una cuenta de G Suite existente mediante las API del conector. Esta conexión le ofrece visibilidad y control del uso de G Suite.
+En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Security con una cuenta de G Suite existente mediante las API del conector. Esta conexión le ofrece visibilidad y control del uso de G Suite. Para obtener información sobre cómo Cloud App Security protege G Suite, consulte [Protect g Suite](protect-gsuite.md).
 
 ## <a name="configure-g-suite"></a>Configurar G Suite
 
@@ -96,9 +96,9 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
     ![ID. de cliente de Google](media/google12.png "google12")
 
     1. Copie el **ID** . de cliente (lo necesitará más adelante).
-    ![administrar el acceso de cliente de API](media/google12-2.png "google12-2 ")
+    ![administrar el acceso de cliente de API](media/google12-2.png "google12-2")
 
-    1. Haga clic en **GUARDAR**
+    1. Haga clic en **Guardar**
 
     1. Vaya a [admin.google.com](https://admin.google.com/) y haga clic en **Seguridad**.
 
@@ -109,7 +109,7 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
     1. En el cuadro **uno o más ámbitos** de la API, escriba la siguiente lista de ámbitos necesarios (Copie el texto y péguelo en el cuadro):  
 `https://www.googleapis.com/auth/admin.reports.audit.readonly,https://www.googleapis.com/auth/admin.reports.usage.readonly,https://www.googleapis.com/auth/drive,https://www.googleapis.com/auth/drive.appdata,https://www.googleapis.com/auth/drive.apps.readonly,https://www.googleapis.com/auth/drive.file,https://www.googleapis.com/auth/drive.metadata.readonly,https://www.googleapis.com/auth/drive.readonly,https://www.googleapis.com/auth/drive.scripts,https://www.googleapis.com/auth/admin.directory.user.readonly,https://www.googleapis.com/auth/admin.directory.user.security,https://www.googleapis.com/auth/admin.directory.user.alias,https://www.googleapis.com/auth/admin.directory.orgunit,https://www.googleapis.com/auth/admin.directory.notifications,https://www.googleapis.com/auth/admin.directory.group.member,https://www.googleapis.com/auth/admin.directory.group,https://www.googleapis.com/auth/admin.directory.device.mobile.action,https://www.googleapis.com/auth/admin.directory.device.mobile,https://www.googleapis.com/auth/admin.directory.user`
 
-    1. Haga clic en **Autorizar**.
+    1. Haga clic en **autorizar**.
 
 1. En el [Google Cloud Platform](https://console.cloud.google.com/), seleccione menú y vaya a **api y servicios** > **Panel**.
 
@@ -124,7 +124,7 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
 
     * Google requiere que se cargue al menos un icono de aplicación. Vaya a [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) para descargar un archivo ZIP que contiene los iconos de Cloud App Security. A continuación, debajo del **icono Aplicación**, haga clic en **Seleccionar**, junto a la imagen de 128 x 128, y arrastre el archivo a la ventana emergente. Haga clic en **Seleccionar**, junto a la imagen de 32 x 32, y arrastre el archivo a la ventana emergente.
 
-    * Desplácese hacia abajo y, en la sección **integración de unidad** , escriba la siguiente dirección URL en **dirección url abierta:** 
+    * Desplácese hacia abajo y, en la sección **integración de unidad** , escriba la siguiente dirección URL en **dirección url abierta:**
     `https://portal.cloudappsecurity.com/#/services/11770?tab=files`
 
     ![Editar Google Drive](media/google15.png)
