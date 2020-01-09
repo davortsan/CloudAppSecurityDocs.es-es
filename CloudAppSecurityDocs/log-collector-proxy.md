@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: db16695ffa6cc9c20d04616553256cba95de1550
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: c5d4132dd88f8bf7364a77ee8a3e282c1af7fa02
+ms.sourcegitcommit: 010725c70ff7b3fc9abdad92203eec6e72bb7473
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720517"
+ms.lasthandoff: 12/26/2019
+ms.locfileid: "75492089"
 ---
 # <a name="enable-the-log-collector-behind-a-proxy"></a>Habilitación del recopilador de registros tras un proxy
 
@@ -60,16 +60,16 @@ docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
     docker exec -it Ubuntu-LogCollector /bin/bash
     ```
 
-2. Desde el bash dentro del contenedor, vaya al directorio jre de Java. Para evitar un error de ruta de acceso relacionado con la versión, utilice este comando:
+2. Desde Bash dentro del contenedor, vaya a la carpeta Java *JRE* . Para evitar un error de ruta de acceso relacionado con la versión, utilice este comando:
 
     ```bash
     cd 'find /opt/jdk/*/jre -iname bin'
     ```
 
-3. Importe el certificado raíz, que copió anteriormente, desde la carpeta *discovery* en el almacén de claves de Java y defina una contraseña. La contraseña predeterminada es "changeit":
+3. Importe el certificado raíz que copió anteriormente, desde la carpeta de *detección* al almacén de claves de Java y defina una contraseña. La contraseña predeterminada es "changeit". Para obtener información sobre cómo cambiar la contraseña, consulte [cambio de la contraseña del almacén de claves de Java](#how-to-change-the-java-keystore-password).
 
     ```bash
-    ./keytool --import --noprompt --trustcacerts --alias SelfSignedCert --file /var/adallom/ftp/discovery/Proxy-CA.crt --keystore ../lib/security/cacerts --storepass changeit
+    ./keytool --import --noprompt --trustcacerts --alias SelfSignedCert --file /var/adallom/ftp/discovery/Proxy-CA.crt --keystore ../lib/security/cacerts --storepass <password>
     ```
 
 4. Valide que el certificado se importó correctamente en el almacén de claves de la entidad de certificación, mediante el siguiente comando para buscar el alias que ha proporcionado durante la importación (*SelfSignedCert*):
@@ -100,10 +100,38 @@ collector_config abcd1234abcd1234abcd1234abcd1234 ${CONSOLE} ${COLLECTOR}
 
 El recopilador de registros ahora puede comunicarse con Cloud App Security. Después de enviarle los datos, el estado cambiará de **Correcto**a **Conectado** en el portal de Cloud App Security.
 
-![Status](media/docker-5.png "Estado")
+![Estado](media/docker-5.png "Estado")
 
 >[!NOTE]
 > Si tiene que actualizar la configuración del recopilador de registros para, por ejemplo, agregar o eliminar un origen de datos, normalmente tiene que **eliminar** el contenedor y volver a realizar los pasos anteriores. Para evitar esto, puede volver a ejecutar la herramienta *collector_config* con el nuevo token de la API generado en el portal de Cloud App Security.
+
+## <a name="how-to-change-the-java-keystore-password"></a>Cómo cambiar la contraseña del almacén de claves de Java
+
+1. Detenga el servidor Java KeyStore.
+1. Abra un shell de Bash dentro del contenedor y vaya a la carpeta *AppData/conf* .
+1. Cambie la contraseña del almacén de claves del servidor mediante este comando:
+
+    ```bash
+    keytool -storepasswd -new newStorePassword -keystore server.keystore
+    -storepass changeit
+    ```
+
+    > [!NOTE]
+    > La contraseña predeterminada del servidor es *changeit*.
+
+1. Cambie la contraseña del certificado con este comando:
+
+    ```bash
+    keytool -keypasswd -alias server -keypass changeit -new newKeyPassword -keystore server.keystore -storepass newStorePassword
+    ```
+
+    > [!NOTE]
+    > El alias de servidor predeterminado es *Server*.
+
+1. En un editor de texto, abra el archivo *Server-install\conf\server\secured-installed.Properties* y, a continuación, agregue las siguientes líneas de código y, a continuación, guarde los cambios:
+    1. Especifique la nueva contraseña del almacén de claves de Java para el servidor: `server.keystore.password=newStorePassword`
+    1. Especifique la nueva contraseña de certificado para el servidor: `server.key.password=newKeyPassword`
+1. Inicie el servidor.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
