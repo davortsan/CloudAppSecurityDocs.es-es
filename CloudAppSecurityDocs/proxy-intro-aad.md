@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 39b3721a2a19c59f7c8d1a1376aa54efee455f65
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 8ff7c303b6dfa209c3d37ed7334f3276b36371ff
+ms.sourcegitcommit: 8309406e636b1adbe4d44ecec51aef5e849310f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720465"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597536"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicaciones con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security
 
@@ -29,8 +29,6 @@ En las empresas actuales, a menudo no resulta suficiente con saber lo que sucede
 
 > [!NOTE]
 > Para usar Cloud App Security Control de aplicaciones de acceso condicional, necesita una [licencia de Azure Active Directory P1](https://azure.microsoft.com/pricing/details/active-directory/)y una suscripción de Microsoft Cloud App Security o de Office 365 E5. Para obtener una lista de las aplicaciones destacadas incluidas con Office 365 E5, consulte [aplicaciones destacadas de office 365](#O365-apps).
-
-Licencia de Office 365 E5. Para obtener una lista de las aplicaciones incluidas en el soporte técnico 365 E5 de Office, consulte Office 365 aplicaciones destacadas
 
 ## <a name="how-it-works"></a>Cómo funciona
 

@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 8/6/2019
+ms.date: 12/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0243d1a75e4f322406ef768dddc898b58d3fe294
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: bda8b1e35b4a097a3ef753fb81a9293650305333
+ms.sourcegitcommit: a54a8437d6b03d457314e69b372e908976b7b1ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720511"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75545206"
 ---
 # <a name="manage-admin-access"></a>Administrar el acceso de administrador
 
@@ -34,6 +34,10 @@ De forma predeterminada, los siguientes roles de administrador de Office 365 y [
 - **Administrador global y Administrador de seguridad:** los administradores con **Acceso completo** tienen permisos completos en Cloud App Security. Pueden agregar administradores, incorporar directivas y configuración, cargar registros y realizar acciones de gobernanza.
 
 - **Administrador de cumplimiento**: tiene permisos de solo lectura y puede administrar alertas. Puede crear y modificar directivas de archivo, permitir acciones de control de archivos y ver todos los informes integrados en Administración de datos.
+
+- **Administrador de datos de cumplimiento:** Tiene permisos de solo lectura, puede crear y modificar directivas de archivo, permitir acciones de control de archivos y ver todos los informes de detección.
+
+- **Operador de seguridad:** Tiene permisos de solo lectura y puede administrar alertas.
 
 - **Lector de seguridad**: tiene permisos de solo lectura y puede administrar alertas. El lector de seguridad no puede realizar las siguientes acciones:
 
@@ -80,7 +84,7 @@ Además, se pueden configurar los siguientes roles de administrador específicos
 
 - **Administrador global de Cloud Discovery:**  Tiene permiso para ver y editar todos los datos y la configuración de Cloud Discovery. El administrador de detección global tiene acceso de la siguiente manera:
 
-  - Configuración
+  - Settings
     - Configuración del sistema: solo ver
     - Configuración de Cloud Discovery: ver y editar todo (los permisos de anonimización dependen de si se permite durante la asignación de funciones)
   - Actividad de Cloud Discovery: todos los permisos

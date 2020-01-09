@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/06/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 43ab4126445f8f0ef36c88253c93d8b89bfa4eda
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: bc95cb2272d996752c60c49c7f7402550325b208
+ms.sourcegitcommit: 6fd61d5f0953a5c1fc752091203b7dd0712f0cb3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720745"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "75333269"
 ---
 # <a name="govern-discovered-apps"></a>Controlar las aplicaciones detectadas
 
@@ -38,7 +38,7 @@ Si tiene una lista de aplicaciones que quiere autorizar o no autorizar, active l
 Para consultar una lista de las aplicaciones no autorizadas, puede [generar un script de bloque mediante las API de Cloud App Security](https://us.portal.cloudappsecurity.com/api-docs/#generate-block-script).
 
 > [!NOTE]
-> Si el inquilino usa Zscaler NSS o iboss, las aplicaciones marcadas como no autorizadas se bloquean automáticamente mediante Cloud App Security y las siguientes secciones sobre la creación de scripts de bloqueo son innecesarias. Para obtener más información, vea [integrar con Zscaler](zscaler-integration.md) e [integrar Cloud App Security con iboss](iboss-integration.md) , respectivamente.
+> Si el inquilino usa protección contra amenazas avanzada (ATP) de Microsoft defender, Zscaler NSS o iboss, las aplicaciones marcadas como no autorizadas se bloquean automáticamente mediante Cloud App Security y las siguientes secciones sobre la creación de scripts de bloqueo son innecesarias. Para obtener más información, consulte [integración con Microsoft defender ATP](wdatp-integration.md), [integración con Zscaler](zscaler-integration.md)e [integración con iboss](iboss-integration.md) , respectivamente.
 
 ## <a name="export-a-block-script-to-govern-discovered-apps"></a>Exportar un script de bloque para controlar aplicaciones detectadas
 
