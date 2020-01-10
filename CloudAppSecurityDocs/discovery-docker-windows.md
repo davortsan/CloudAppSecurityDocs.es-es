@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 62757b46f40127bb8d312435cd420fdb1e2f3865
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 9122a5c5cdde5f2a1ed02946970825b75155acc2
+ms.sourcegitcommit: fb0d93ca2469a7941a098ae3b5564e7fc327e89f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74458507"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75777123"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker en Windows local
 
@@ -28,7 +28,7 @@ Puede configurar la carga de registros automática para los informes continuos d
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* SO: **Windows 10** (Fall Creators Update) o Windows Server **versión 1709 +**
+* SO: **Windows 10** (Fall Creators Update), Windows Server **versión 1709 +** (SAC) o **Windows Server 2019 (LTSC)**
 
 * Espacio en disco: 250 GB
 
@@ -41,7 +41,7 @@ Puede configurar la carga de registros automática para los informes continuos d
 * La virtualización en el sistema operativo debe estar habilitada con Hyper-V.
 
 > [!IMPORTANT]
-> Un usuario debe haber iniciado sesión en Docker para recopilar registros. Se recomienda que los usuarios de Docker se desconecten sin cerrar sesión.
+> Un usuario debe haber iniciado sesión en Docker para recopilar registros. Se recomienda avisar a los usuarios de Docker para que se desconecten sin cerrar sesión.
 
 > [!NOTE]
 > Si tiene un recopilador de registros existente y desea quitarlo antes de implementarlo de nuevo, o si simplemente desea quitarlo, ejecute los siguientes comandos:
