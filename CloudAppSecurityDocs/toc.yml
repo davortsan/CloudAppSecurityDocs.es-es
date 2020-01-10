@@ -1,10 +1,10 @@
-- name: Documentación de Microsoft Cloud App Security
+- name: "Documentación de Microsoft\_Cloud App Security"
   href: index.yml
 - name: Introducción
   items:
-    - name: Descripción de Microsoft Cloud App Security
+    - name: "¿Qué es Microsoft\_Cloud App Security?"
       href: what-is-cloud-app-security.md
-    - name: Seguridad y privacidad de datos de Cloud App Security
+    - name: Seguridad y privacidad de los datos de Cloud App Security
       href: cas-compliance-trust.md
     - name: Novedades
       href: release-notes.md
@@ -16,7 +16,7 @@
           href: editions-cloud-app-security-aad.md
         - name: GCC High para la Administración Pública de Estados Unidos
           href: editions-cloud-app-security-gcc.md
-- name: Inicios rápidos
+- name: Guías de inicios rápidos
   expanded: true
   items:
     - name: Introducción
@@ -29,11 +29,13 @@
       href: tutorial-shadow-it.md
     - name: Investigación de usuarios de riesgo
       href: tutorial-ueba.md
-    - name: Investigación de aplicaciones de riesgo de OAuth
+    - name: Investigación de aplicaciones de OAuth de riesgo
       href: investigate-risky-oauth.md
-    - name: Bloqueo de las descargas de información confidencial
+    - name: Protección de cualquier aplicación de la organización en tiempo real
+      href: tutorial-proxy.md
+    - name: Bloqueo de descargas de información confidencial
       href: use-case-proxy-block-session-aad.md
-    - name: Proteger los archivos con la cuarentena de administrador
+    - name: Protección de los archivos con la cuarentena de administrador
       href: use-case-admin-quarantine.md
     - name: Aplicación automática de etiquetas de Azure Information Protection
       href: use-case-information-protection.md
@@ -75,19 +77,19 @@
           href: protect-webex.md
         - name: Protección de Workday
           href: protect-workday.md
-- name: Guías paso a paso
+- name: Guías de procedimientos
   items:
     - name: Configuración básica
       href: general-setup.md
       items:
         - name: Requisitos de red
           href: network-requirements.md
-        - name: Administración de los administradores
+        - name: Gestión de los administradores
           href: manage-admins.md
           items:
             - name: Configuración de administrador
               href: admin-settings.md
-        - name: Configuración de correo electrónico
+        - name: Configuración de correo
           href: mail-settings.md
         - name: Grupos de usuarios
           href: user-groups.md
@@ -99,13 +101,13 @@
       items:
         - name: Configuración
           items:
-            - name: Configurar Cloud Discovery
+            - name: Configuración de Cloud Discovery
               href: set-up-cloud-discovery.md
             - name: Integración con ATP de Microsoft Defender
               href: wdatp-integration.md
             - name: Integración con Zscaler
               href: zscaler-integration.md
-            - name: Integración con iboss
+            - name: Integración con iBoss
               href: iboss-integration.md
             - name: Crear informes de instantáneas de Cloud Discovery
               href: create-snapshot-cloud-discovery-reports.md
@@ -113,13 +115,13 @@
               href: discovery-docker.md
             - name: Docker en Windows
               href: discovery-docker-windows.md
-            - name: Docker en Ubuntu y RHEL locales
+            - name: Docker en Ubuntu y RHEL local
               href: discovery-docker-ubuntu.md
             - name: Docker en Ubuntu en Azure
               href: discovery-docker-ubuntu-azure.md
             - name: Configuración de FTP del recopilador de registros
               href: log-collector-ftp.md
-            - name: Recopilador de registros tras un proxy
+            - name: Recopilador de registros detrás de un proxy
               href: log-collector-proxy.md
             - name: Uso del analizador de registros personalizado
               href: custom-log-parser.md
@@ -127,9 +129,9 @@
           href: cloud-discovery-aad-enrichment.md
         - name: Anonimización de datos de Cloud Discovery
           href: cloud-discovery-anonymizer.md
-        - name: Incorporación de aplicaciones personalizadas a Cloud Discovery
+        - name: Adición de aplicaciones personalizadas a Cloud Discovery
           href: cloud-discovery-custom-apps.md
-        - name: Filtros y consultas de aplicaciones detectadas
+        - name: Consultas y filtros de aplicaciones detectadas
           href: discovered-app-queries.md
     - name: Conectar aplicaciones
       items:
@@ -171,16 +173,16 @@
         - name: Actividades
           href: activity-filters.md
           items:
-            - name: Filtros y consultas de actividad
+            - name: Consultas y filtros de actividad
               href: activity-filters-queries.md
         - name: Archivos
           href: file-filters.md
           items:
-            - name: Generar informes de administración de datos
+            - name: Generación de informes de administración de datos
               href: built-in-reports.md
         - name: Cuentas
           href: accounts.md
-        - name: Administrar aplicaciones de OAuth
+        - name: Administración de aplicaciones de OAuth
           href: manage-app-permissions.md
         - name: Configuración de seguridad
           items:
@@ -191,12 +193,12 @@
         - name: Supervisión de aplicaciones
           href: monitor-alerts.md
           items:
-            - name: Administrar alertas
+            - name: Administración de alertas
               href: managing-alerts.md
     - name: Control
       href: control.md
       items:
-        - name: Controlar las aplicaciones en la nube con directivas
+        - name: Control de aplicaciones en la nube con directivas
           href: control-cloud-apps-with-policies.md
           items:
             - name: Directivas de Cloud Discovery
@@ -210,19 +212,19 @@
               href: anomaly-detection-policy.md
             - name: Directivas de OAuth
               href: app-permission-policy.md
-            - name: Directivas de archivo
+            - name: Directivas de archivos
               href: data-protection-policies.md
               items:
                 - name: Inspección de contenido
                   href: content-inspection.md
                   items:
-                    - name: Inspección de contenido integrada
+                    - name: Inspección de contenido integrado
                       href: content-inspection-built-in.md
-                    - name: Integración de Data Classification Service
+                    - name: Integración del servicio de clasificación de datos
                       href: dcs-inspection.md
-                    - name: Trabajar con el motor de RegEx
+                    - name: Trabajo con el motor de RegEx
                       href: working-with-the-regex-engine.md
-            - name: Directivas de control de la aplicación de acceso condicional
+            - name: Directivas de Control de aplicaciones de acceso condicional
               items:
                 - name: Directivas de acceso
                   href: access-policy-aad.md
@@ -232,7 +234,7 @@
               href: policy-template-reference.md
         - name: Control de aplicaciones conectadas
           href: governance-actions.md
-        - name: Controlar las aplicaciones detectadas
+        - name: Control de aplicaciones detectadas
           href: governance-discovery.md
         - name: Integración de Azure ATP
           href: aatp-integration.md
@@ -248,11 +250,11 @@
               href: icap-stunnel.md
         - name: Automatización de procesos y flujos de trabajo
           items:
-            - name: Uso de API REST
+            - name: Uso de la API de REST
               href: api-tokens.md
-            - name: Investigación de actividades con API
+            - name: Investigación de actividades con las API
               href: investigate-activities-api.md
-            - name: Uso de Microsoft Flow
+            - name: "Uso de Microsoft\_Flow"
               href: flow-integration.md
 - name: Referencia
   items:
@@ -266,17 +268,17 @@
           href: policies-threat-protection.md
         - name: Directivas de protección de la información
           href: policies-information-protection.md
-    - name: Solucionar problemas
+    - name: Solución de problemas
       items:
         - name: Solución de problemas de Cloud Discovery
           href: troubleshooting-cloud-discovery.md
         - name: Solución de problemas de conectores de API mediante mensajes de error
           href: troubleshooting-api-connectors-using-error-messages.md
-        - name: Solucionar problemas relacionados con la inspección de contenido
+        - name: Solución de problemas relacionados con la inspección de contenido
           href: troubleshooting-content-inspection.md
         - name: Solución de problemas de integración de SIEM
           href: troubleshooting-siem.md
-        - name: Solución de problemas de directivas
+        - name: Directivas de solución de problemas
           href: troubleshoot-policies.md
 - name: Recursos
   items:
@@ -286,11 +288,11 @@
       href: e-books.md
     - name: Archivo de notas de la versión
       href: release-note-archive.md
-    - name: Hoja de datos de licencias
+    - name: Hoja de datos de concesión de licencias
       href: 'https://aka.ms/mcaslicensing'
     - name: Soporte técnico y solución de problemas
       href: support-and-ts.md
     - name: Portal de Cloud App Security
       href: 'https://portal.cloudappsecurity.com'
-    - name: Cómo comprar Cloud App Security
+    - name: Procedimiento para comprar Cloud App Security
       href: 'https://www.microsoft.com/cloud-platform/cloud-app-security'

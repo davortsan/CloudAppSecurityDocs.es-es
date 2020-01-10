@@ -12,18 +12,18 @@ metadata:
   author: shsagir
   ms.author: shsagir
   ms.date: 09/24/2019
-  ms.openlocfilehash: 05dd9156cddd6c94f4523d100b275c1ced42ba17
-  ms.sourcegitcommit: f3a6e9c4367d0ddfe4a23f417eb14de246fccd03
+  ms.openlocfilehash: 36f40dda4b6c169dae50100ccf457fc0f5c99801
+  ms.sourcegitcommit: 446041f0e7adf6688bf63d402838844baa3342bb
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/24/2019
-  ms.locfileid: "74457854"
+  ms.lasthandoff: 01/06/2020
+  ms.locfileid: "75667220"
 landingContent:
 - title: Acerca de Cloud App Security
   linkLists:
   - linkListType: overview
     links:
-    - text: Descripción de Cloud App Security
+    - text: ¿Qué es Cloud App Security?
       url: what-is-cloud-app-security.md
     - text: Los 20 principales casos de uso de CASB
       url: https://go.microsoft.com/fwlink/p/?linkid=2099428
@@ -47,11 +47,13 @@ landingContent:
     links:
     - text: Investigación de usuarios de riesgo
       url: tutorial-ueba.md
-    - text: Investigación de aplicaciones de riesgo de OAuth
+    - text: Investigación de aplicaciones de OAuth de riesgo
       url: investigate-risky-oauth.md
-    - text: bloqueo de las descargas de información confidencial
+    - text: Protección de cualquier aplicación de la organización en tiempo real
+      url: tutorial-proxy.md
+    - text: Bloqueo de la descarga de información confidencial
       url: use-case-proxy-block-session-aad.md
-    - text: protección de los archivos con la cuarentena de administrador
+    - text: Protección de archivos con la cuarentena de administrador
       url: use-case-admin-quarantine.md
     - text: Aplicación de etiquetas de clasificación de Azure Information Protection
       url: use-case-information-protection.md
@@ -97,11 +99,11 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
-    - text: detección de identificación de shadow IT
+    - text: Detección e identificación de shadow IT
       url: tutorial-shadow-it.md#phase-1-discover-and-identify-shadow-it
     - text: Evaluación y análisis
       url: tutorial-shadow-it.md#phase-2-evaluate-and-analyze
-    - text: administración de las aplicaciones
+    - text: Administración de las aplicaciones
       url: tutorial-shadow-it.md#phase-3-manage-your-apps
   - linkListType: concept
     links:
@@ -135,7 +137,7 @@ landingContent:
     links:
     - text: Lea nuestros libros electrónicos
       url: e-books.md
-    - text: Descubra Microsoft 365, una solución completa que incluye Cloud App Security
+    - text: Exploración de Microsoft 365, una solución completa que incluye Cloud App Security
       url: https://docs.microsoft.com/microsoft-365/
   - linkListType: video
     links:
