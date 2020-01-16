@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8e4932b8e96638f4b645ee48ddd694b3c121a9e1
-ms.sourcegitcommit: 362ec5187cb13f152d240b75ed1ecebb5236b0ee
+ms.openlocfilehash: 4d945a13f2cab9b11c74dae5aa6ff93eae5f3ba5
+ms.sourcegitcommit: dabfa885ebb82db25a92127d87e8d1283340e834
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2019
-ms.locfileid: "75033351"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76020756"
 ---
 # <a name="threat-protection-policies"></a>Directivas de protección contra amenazas
 
@@ -173,7 +173,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 ### <a name="steps"></a>Pasos
 
-1. Esta detección se configura automáticamente de forma automática para avisarle cuando se detecte un riesgo potencial de secuestro. No es necesario realizar ninguna acción para configurar esta Directiva. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).
+1. Esta detección se configura automáticamente de forma automática para avisarle cuando se detecte un riesgo de ransomware potencial. No es necesario realizar ninguna acción para configurar esta Directiva. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).
 
 2. Es posible configurar el **ámbito** de la detección y personalizar las acciones de gobierno que se llevarán a cabo cuando se desencadene una alerta. Para obtener más información acerca de cómo Cloud App Security identifica ransomware, consulte [protección de la organización desde ransomware](use-case-ransomware.md).
 
