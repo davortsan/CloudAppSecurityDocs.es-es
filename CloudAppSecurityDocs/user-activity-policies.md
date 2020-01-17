@@ -5,17 +5,17 @@ author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: conceptual
-ms.date: 8/15/2019
+ms.date: 01/12/2020
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5272eec53b28fd55886586d06a035f36f70e6e8f
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 3ed582468edbfae7b180fdccc0ba110a1eb694df
+ms.sourcegitcommit: 38cca5e4f0e69bb33f89d1c4347a14c994d16b65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720442"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76123091"
 ---
 # <a name="activity-policies"></a>Directivas de actividad
 
@@ -24,6 +24,9 @@ ms.locfileid: "74720442"
 Las directivas de actividad permiten aplicar toda una variedad de procesos automatizados usando las API del proveedor de aplicaciones. Estas directivas permiten supervisar actividades concretas realizadas por distintos usuarios o seguir niveles inesperadamente altos de un determinado tipo de actividad.
 
 Una vez que se ha establecido una directiva de detección de actividad, empieza a generar alertas, pero únicamente para las actividades que se producen después de haber creado la directiva.
+
+> [!NOTE]
+> Las directivas que desencadenan más de 50.000 coincidencias al día, durante 3 de los últimos 7 días, se deshabilitan automáticamente. Puede intentar refinar las directivas agregando filtros adicionales o, si usa directivas para la elaboración de informes, considere la posibilidad de [guardarlas como consultas](activity-filters-queries.md#activity-queries) en su lugar.
 
 ## <a name="custom-alerts"></a>Alertas personalizadas
 
@@ -37,7 +40,7 @@ Puede establecer que se le envíen alertas de actividad a usted o al usuario cua
 
 Para crear una nueva directiva de actividad, siga este procedimiento:
 
-1. En la consola, haga clic en **Control**, seguido de **Directivas**.
+1. En la consola, haga clic en **Control** seguido de **Directivas**.
 
 2. Haga clic en **Crear directiva** y seleccione **Directiva de actividad**.
 
