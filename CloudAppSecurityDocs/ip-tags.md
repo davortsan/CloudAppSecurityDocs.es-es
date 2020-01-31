@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9e7e77e0875d6eca37a8add22cb631fc86cf7138
-ms.sourcegitcommit: 6658e305313ab84c6df7632549af373ea2faec14
+ms.openlocfilehash: fbea8df8a5fb16fabde89a48d8ac8227fb37a1c5
+ms.sourcegitcommit: f81dd93841d7e5d01a1edaaf464c8656c4e7efda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76550214"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76814240"
 ---
 #  <a name="IPtagsandRanges"></a> Trabajar con etiquetas e intervalos IP
 
@@ -33,9 +33,14 @@ Cloud App Security está preconfigurado con intervalos IP integrados de proveedo
 >
 > - Para usar estas etiquetas integradas como parte de una búsqueda, consulte su identificador en la documentación de API de Cloud App Security.
 > - Para agregar intervalos de direcciones IP de forma masiva, puede crear un script mediante la **API de intervalos de direcciones IP**.
+> - No se pueden agregar intervalos IP con direcciones IP superpuestas.
 > - Para ver la documentación de API, en la barra de menús del portal de Cloud App Security haga clic en el signo de interrogación y después en **Documentación de API**.
 
 Las etiquetas de dirección IP integradas y las etiquetas IP personalizadas se consideran de forma jerárquica. Las etiquetas IP personalizadas tienen prioridad sobre las etiquetas IP integradas. Por ejemplo, si una dirección IP se etiqueta como **De riesgo** en función de la información disponible sobre las amenazas pero hay una etiqueta IP personalizada que la identifica como **Corporativa**, la categoría y las etiquetas personalizadas tendrán prioridad.
+
+>[!NOTE]
+> Cuando una dirección IP se etiqueta como corporativa, esto se refleja en el portal y se excluyen las direcciones IP del desencadenamiento de detecciones específicas (por ejemplo, viaje imposible) ya que estas direcciones IP se consideran de confianza.
+>
 
 ## <a name="create-an-ip-address-range"></a>Crear un intervalo de direcciones IP
 
