@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c72aa0edf8a2a70b501f79c97e8dd85b466602c7
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: df64be6f8e3d8739934ae575ee90f3813dabaae6
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75189662"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912320"
 ---
 # <a name="connect-okta-to-microsoft-cloud-app-security"></a>Conectar Okta con Microsoft Cloud App Security
 
@@ -68,6 +68,8 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
     La prueba puede tardar unos minutos. Cuando reciba la notificación de que se ha realizado correctamente, haga clic en **Cerrar**.
 
 Después de conectar Okta, recibirá eventos de 60 días anteriores a la conexión.
+
+Si tiene problemas para conectar la aplicación, consulte [solución de problemas de conectores de aplicaciones](troubleshooting-api-connectors-using-error-messages.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

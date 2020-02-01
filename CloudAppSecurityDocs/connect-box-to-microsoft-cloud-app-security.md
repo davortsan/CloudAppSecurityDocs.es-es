@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: eb3ddf8c4bb35f00c8e43f52c8cf2f8850a94e15
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: 01f73d9da14aa77ce579620b6acb17e8759223fe
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75189696"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912221"
 ---
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Conectar Box con Microsoft Cloud App Security
 
@@ -82,6 +82,8 @@ Box ya está conectado a Cloud App Security.
 Después de conectar Box, recibirá eventos de 60 días anteriores a la conexión.
 
 Después de conectar Box, Cloud App Security realiza un examen completo. En función del número de archivos y los usuarios que tenga, el examen podría tardar en completarse. Para habilitar el análisis casi en tiempo real, los archivos en los que se detectan actividades se mueven al principio de la cola de análisis. Por ejemplo, un archivo editado, actualizado o compartido se analiza inmediatamente, en lugar de esperar al proceso de análisis normal. El análisis casi en tiempo real no se aplica a los archivos que no se modifican de forma inherente. Por ejemplo, los archivos que se visualizan, previsualizan, imprimen o exportan se analizan como parte del análisis programado habitual.
+
+Si tiene problemas para conectar la aplicación, consulte [solución de problemas de conectores de aplicaciones](troubleshooting-api-connectors-using-error-messages.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

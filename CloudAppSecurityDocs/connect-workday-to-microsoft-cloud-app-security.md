@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3b69525ff6db246a48fa639274c8e9dc8295f360
-ms.sourcegitcommit: 904407680e8657c6b83f8240abefeb66703e8807
+ms.openlocfilehash: 032ed68260e178c176c631b41eb7dc64e869cbd3
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75553667"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912204"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Conexión de WorkDay a Microsoft Cloud App Security (versión preliminar)
 
@@ -41,10 +41,10 @@ La cuenta de WorkDay usada para conectarse a Cloud App Security debe ser miembro
 
 | Área funcional | Directiva de seguridad de dominio | Directiva de seguridad de subdominio | Permisos de informe/tarea | Permisos de integración |
 | --- | --- | --- | --- | --- |
-| System (Sistema) | Configuración: configuración de inquilinos: General | Configuración: configuración de inquilinos: seguridad | Ver, modificar | Get, Put |
-| System (Sistema) | Administración de seguridad | | Ver, modificar | Get, Put |
-| System (Sistema) | Auditoría del sistema | | Consulte | Get |
-| Personal | Datos de trabajo: personal | Worker Data: Public Worker Reports | Consulte | Get |
+| System | Configuración: configuración de inquilinos: General | Configuración: configuración de inquilinos: seguridad | Ver, modificar | Get, Put |
+| System | Administración de seguridad | | Ver, modificar | Get, Put |
+| System | Auditoría del sistema | | Consulte | Get |
+| Personal | Datos de trabajo: personal | Datos de trabajo: informes de trabajo público | Consulte | Get |
 
 > [!NOTE]
 >
@@ -113,6 +113,8 @@ Para obtener más información sobre la configuración de usuarios, grupos de se
 
 > [!NOTE]
 > Después de conectar WorkDay, recibirá eventos durante siete días antes de la conexión.
+
+Si tiene problemas para conectar la aplicación, consulte [solución de problemas de conectores de aplicaciones](troubleshooting-api-connectors-using-error-messages.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

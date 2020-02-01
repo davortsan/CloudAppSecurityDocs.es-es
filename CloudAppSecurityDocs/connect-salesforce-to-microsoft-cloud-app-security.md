@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8042b1dfe17410f6c32e81d9e4f10a4df2a5f339
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: 7a41ef688b956696a13052ba5603f0c2108f9357
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75189764"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912084"
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Conectar Salesforce con Microsoft Cloud App Security
 
@@ -114,6 +114,8 @@ Cloud App Security procesa los eventos de Salesforce de la manera siguiente:
 * Eventos de inicio de sesión cada 15 minutos
 * Configuración de registros de auditoría cada 15 minutos
 * Salesforce registra la actividad de uso durante un período de 24 horas, desde las 12:00 a.m. a las 11:59 p.m. hora UTC. Los eventos de Salesforce generan datos de registro en tiempo real. Sin embargo, Salesforce genera archivos de registro el día después de un evento, fuera de horas punta. Por lo tanto, los datos de archivos de registro no están disponibles durante al menos un día después de un evento. Para más información sobre los eventos de Salesforce, consulte el artículo sobre el [uso de supervisión de eventos](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm).
+
+Si tiene problemas para conectar la aplicación, consulte [solución de problemas de conectores de aplicaciones](troubleshooting-api-connectors-using-error-messages.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f5a9915760822efe01c7d8c908a88e0a02e77ca3
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: f50ff4ae3b3a5a04ab9ffe052b0fb1e8ecdb2f7d
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75189815"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912187"
 ---
 # <a name="connect-cisco-webex-to-microsoft-cloud-app-security"></a>Conexión de Cisco WebEx a Microsoft Cloud App Security
 
@@ -53,6 +53,8 @@ En este artículo se proporcionan instrucciones para conectar Microsoft Cloud Ap
     La prueba puede tardar unos minutos. Cuando reciba la notificación de que se ha realizado correctamente, haga clic en **Cerrar**.
 
 Después de conectar WebEx, recibirá eventos durante 7 días antes de la conexión. Cloud App Security examina eventos durante los últimos tres meses. Para aumentar esto, debe tener una licencia de Cisco WebEx Pro y abrir una incidencia con Cloud App Security soporte técnico.
+
+Si tiene problemas para conectar la aplicación, consulte [solución de problemas de conectores de aplicaciones](troubleshooting-api-connectors-using-error-messages.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

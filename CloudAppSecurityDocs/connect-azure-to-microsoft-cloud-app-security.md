@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 20f8c2194631f09fc54eab997596d97e10c338c9
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: 28a2885be1bd98f9ef5b3905d6ed1dc50f64238f
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75189713"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912064"
 ---
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>Conectar Azure con Microsoft Cloud App Security
 
@@ -45,6 +45,8 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
 
 > [!NOTE]
 > Se extraerán los datos una vez que conecte Azure. Verá los datos correspondientes a partir de ese momento.
+
+Si tiene problemas para conectar la aplicación, consulte [solución de problemas de conectores de aplicaciones](troubleshooting-api-connectors-using-error-messages.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

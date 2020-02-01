@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
+ms.date: 01/29/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9b3b09d2bf374f4503e5559530c8f6bbc9a7b098
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 1a57355a76037a33072872ed18a7567587eae860
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720126"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912177"
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Anonimización de datos de Cloud Discovery
 
@@ -48,9 +48,7 @@ Puntos clave:
     1. En el engranaje Configuración, seleccione **Configuración de Cloud Discovery**.
 
     2. En la pestaña Anonymization (Anonimización), para ocultar los nombres de usuario de forma predeterminada, seleccione **Anonymize private information by default in new reports and data sources** (Anonimizar información privada de forma predeterminada en los nuevos informes y orígenes de datos). También puede seleccionar **Anonimizar información de la máquina de forma predeterminada en el informe "Usuarios del punto de conexión Win10"** .
-
-    3. En la clave de cifrado, seleccione si desea **utilizar la clave dedicada generada para el portal** o **utilizar una clave personalizada**. Si opta por **utilizar una clave personalizada**, escriba una clave de cifrado UTF8 de 16 bytes.
-    4. Haga clic en **Guardar**.
+    3. Haga clic en **Guardar**.
 
     ![Anonimización](media/anonymizer1.png)
 

@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 6/20/2019
+ms.date: 01/30/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d28257e073227c34a81577558ac2e7c149e373b2
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: f2149e984f56385acd4d4e90ec6ea50f18bcc611
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720421"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912119"
 ---
 # <a name="attest-your-app"></a>Comprobaciones sobre la aplicación
 
@@ -29,26 +29,26 @@ Si la aplicación ya aparece en el catálogo de aplicaciones en la nube o es nue
 
 Siga los atributos de servicio que se describen a continuación para completar correctamente el envío del cuestionario:
 
-| Campo | Categoría de información | Tipo | Valores aceptados | Descripción |
+| Campo | Categoría de información | Escriba | Valores aceptados | Description |
 |------|-------|------|---------|----------|
-| Nombre de la aplicación | General | String | Texto libre | El nombre de la aplicación tal como debe aparecer en el catálogo de aplicaciones en la nube. |
-| Descripción | General | String | Texto libre | Breve explicación de lo que la aplicación permite a los usuarios realizar o conseguir. |
-| Category| General | String | Cerrar lista: se proporciona en el cuestionario | Clasificación de la aplicación según el campo con el que se relaciona. |
+| Nombre de la aplicación | General | Cadena | Texto libre | El nombre de la aplicación tal como debe aparecer en el catálogo de aplicaciones en la nube. |
+| Description | General | Cadena | Texto libre | Breve explicación de lo que la aplicación permite a los usuarios realizar o conseguir. |
+| Categoría| General | Cadena | Cerrar lista: se proporciona en el cuestionario | Clasificación de la aplicación según el campo con el que se relaciona. |
 | Oficina central | General | Código de país | Cerrar lista: se proporciona en el cuestionario | El país de la sede del proveedor.|
 | Centro de datos| General | Matriz de código de país * | Cerrar lista: se proporciona en cuestionario (selección múltiple) | El país en el que reside el centro de datos (puede ser varias ubicaciones) |
-| Empresa de hospedaje | General | String | Texto libre | El nombre de la empresa que proporciona hospedaje de servidor para la aplicación. |
+| Empresa de hospedaje | General | Cadena | Texto libre | El nombre de la empresa que proporciona hospedaje de servidor para la aplicación. |
 | Constitución | General | Integer | AAAA (no posterior a 2019) | Año en el que se fundó el proveedor. |
-| Holding | General | String | Privado, público | Muestra si el proveedor es una empresa privada o públicamente |
-| Dominio de aplicación | General | Matriz de direcciones URL * | Texto libre | La lista de dominios que se usan para interactuar con el servicio (por ejemplo, "teams.microsoft.com" para Microsoft Teams) |
-| Los términos del servicio | General | Dirección URL | Texto libre | ¿Esta aplicación proporciona un conjunto de normas que los usuarios deben aceptar para poder usar la aplicación? |
+| Esa | General | Cadena | Privado, público | Muestra si el proveedor es una empresa privada o públicamente |
+| Dominio de aplicación | General | Matriz de direcciones URL * | Texto libre | Lista de dominios específicos que se usan para interactuar con el servicio. Por ejemplo, ' teams.microsoft.com ' para Microsoft Teams y no el dominio genérico ' microsoft.com '. |
+| Condiciones del servicio | General | Dirección URL | Texto libre | ¿Esta aplicación proporciona un conjunto de normas que los usuarios deben aceptar para poder usar la aplicación? |
 | Directiva de privacidad | General | Dirección URL | Texto libre | Un vínculo a un documento de enlace legalmente relacionado con el modo en que este proveedor controla la información del cliente, el cliente o el empleado que se recopila como parte de la aplicación. |
 | URL de inicio de sesión | General | Matriz de direcciones URL * | Texto libre | La dirección URL a través de la que los usuarios inician sesión en la aplicación. |
-| Proveedor | General | String | Texto libre | Nombre del proveedor que proporciona esta aplicación. |
-| Tipos de datos | General | String | Cerrar lista: se proporciona en el cuestionario | ¿Qué tipos de datos puede cargar el usuario en la aplicación?|
+| Proveedor | General | Cadena | Texto libre | Nombre del proveedor que proporciona esta aplicación. |
+| Tipos de datos | General | Cadena | Cerrar lista: se proporciona en el cuestionario | ¿Qué tipos de datos puede cargar el usuario en la aplicación?|
 | Página principal | General | Dirección URL | Texto libre | Dirección URL de la Página principal del proveedor. |
 | Plan de recuperación ante desastres | General | Booleano | True, False | ¿Esta aplicación tiene un plan de recuperación ante desastres que incluye una estrategia de copia de seguridad y restauración? |
 | Última infracción | Seguridad | Fecha | MMM-DD-YYYY | Incidente más reciente en el que los datos confidenciales, protegidos o confidenciales que pertenecen a la aplicación se han visto, robado o utilizado por una persona no autorizada para ello. |
-| Método de cifrado de datos en reposo | Seguridad | String | Cerrar lista: se proporciona en el cuestionario | El tipo de cifrado de datos en reposo realizado en la aplicación. |
+| Método de cifrado de datos en reposo | Seguridad | Cadena | Cerrar lista: se proporciona en el cuestionario | El tipo de cifrado de datos en reposo realizado en la aplicación. |
 | Multi-factor Authentication | Seguridad | Booleano | True, False | ¿Admite esta aplicación soluciones de autenticación multifactor? |
 | Restricción de dirección IP | Seguridad | Booleano | True, False | ¿Esta aplicación admite la restricción de direcciones IP específicas de la aplicación? |
 | Seguimiento de auditoría de usuario | Seguridad | Booleano | True, False | ¿Esta aplicación admite la disponibilidad de la traza de auditoría por cuenta de usuario? |
@@ -61,7 +61,7 @@ Siga los atributos de servicio que se describen a continuación para completar c
 | Uso compartido de archivos | Seguridad | Booleano | True, False | ¿Esta aplicación incluye características que permiten el uso compartido de archivos entre usuarios? |
 | Nombre del certificado válido | Seguridad | Booleano | True, False | ¿El servidor proporciona un certificado SSL que coincide con el nombre de dominio? |
 | Certificado de confianza | Seguridad | Booleano | True, False | ¿El servidor proporciona un certificado SSL de confianza (no ha expirado, comprobado y una cadena de firma de confianza, etc.)? |
-| Protocolo de cifrado | Seguridad | String | Cerrar lista: se proporciona en el cuestionario | La versión más reciente del Protocolo de cifrado de seguridad de la capa de transporte (TLS) compatible entre el punto de conexión de usuario y el proveedor de aplicaciones. Si el certificado del servidor no existe o no es válido, se considera que el cifrado no es compatible.|
+| Protocolo de cifrado | Seguridad | Cadena | Cerrar lista: se proporciona en el cuestionario | La versión más reciente del Protocolo de cifrado de seguridad de la capa de transporte (TLS) compatible entre el punto de conexión de usuario y el proveedor de aplicaciones. Si el certificado del servidor no existe o no es válido, se considera que el cifrado no es compatible.|
 | Heartbleed revisado | Seguridad | Booleano | True, False | ¿La implementación de SSL del servidor revisado para el error de Heartbleed para reducir la vulnerabilidad? |
 | Encabezados de seguridad HTTP: STRICT-Transport-Security | Seguridad | Booleano | True, False | ¿Son los encabezados HTTP STRICT-Transport-Security implementados por la aplicación en su sitio web? |
 | Encabezados de seguridad HTTP: Content-Security-Policy | Seguridad | Booleano | True, False | ¿Son los encabezados HTTP Content-Security-Policy implementados por la aplicación en su sitio web? |
@@ -88,14 +88,14 @@ Siga los atributos de servicio que se describen a continuación para completar c
 | SOC 1 | Cumplimiento | Booleano | True, false, N/A | ¿Esta aplicación cumple con SOC 1, informa sobre los controles de una organización de servicio que son relevantes para el control interno de las entidades de usuario sobre los informes financieros? |
 | SOC 2 | Cumplimiento | Booleano | True, false, N/A | ¿Esta aplicación cumple con SOC 2, que informa sobre el procesamiento no financiero basado en uno o más de los criterios de servicio de confianza sobre seguridad, privacidad, disponibilidad, confidencialidad y integridad de procesamiento? |
 | SOC 3 | Cumplimiento | Booleano | True, false, N/A | ¿Esta aplicación cumple con SOC 3, con informes basados en los criterios de servicio de confianza, que se pueden distribuir libremente y solo contienen aserciones de administración que han cumplido los requisitos de los criterios elegidos? |
-| SOX | Cumplimiento | Booleano | True, false, N/A | ¿Esta aplicación cumple con las leyes SOX, EE. UU. dirigidas a proteger a los accionistas y al público general de los errores y fraudes de cuentas, así como a mejorar la precisión de las divulgaciones corporativas? |
+| Ley | Cumplimiento | Booleano | True, false, N/A | ¿Esta aplicación cumple con las leyes SOX, EE. UU. dirigidas a proteger a los accionistas y al público general de los errores y fraudes de cuentas, así como a mejorar la precisión de las divulgaciones corporativas? |
 | SP 800-53 | Cumplimiento | Booleano | True, false, N/A | ¿Esta aplicación cumple con SP80053, los controles de seguridad recomendados para las organizaciones y los sistemas de información federales? |
 | SSAE 16 | Cumplimiento | Booleano | True, false, N/A | ¿Esta aplicación cumple con el estándar SSAE 16 para la auditoría de los controles de cumplimiento y los procesos de informes internos de una organización de servicio? |
-| Versión de PCI DSS | Cumplimiento | String | 1, 2, 3, 3,1, 3,2, N/A | La versión del protocolo PCI-DSS compatible con esta aplicación. |
+| Versión de PCI DSS | Cumplimiento | Cadena | 1, 2, 3, 3,1, 3,2, N/A | La versión del protocolo PCI-DSS compatible con esta aplicación. |
 | ISO 27018 | Cumplimiento | Booleano | True, false, N/A | ¿Esta aplicación cumple con ISO 27018, que establece los controles y las directrices que se aceptan comúnmente para procesar y proteger la información de identificación personal (PII) en un entorno de informática en la nube pública? |
 | GLBA | Cumplimiento | Booleano | True, false, N/A | ¿Esta aplicación cumple con la Ley Gramm-Leach-Bliley (GLBA), que requiere que las instituciones financieras establezcan estándares para proteger la seguridad y confidencialidad de la información personal de los clientes? |
-| Nivel de FedRAMP | Cumplimiento | String | Alta, moderada, baja, N/A | Nivel de la solución compatible con FedRAMP proporcionada por esta aplicación. |
-| Nivel de estrella de CSA | Cumplimiento | String | Evaluación automática, certificación, atestación, evaluación de C-STAR, supervisión continua, N/A | El nivel de programa CSA STAR en el que la aplicación está certificada |
+| Nivel de FedRAMP | Cumplimiento | Cadena | Alta, moderada, baja, N/A | Nivel de la solución compatible con FedRAMP proporcionada por esta aplicación. |
+| Nivel de estrella de CSA | Cumplimiento | Cadena | Evaluación automática, certificación, atestación, evaluación de C-STAR, supervisión continua, N/A | El nivel de programa CSA STAR en el que la aplicación está certificada |
 | Escudo de la privacidad | Cumplimiento | Booleano | True, false, N/A | ¿Esta aplicación cumple la plataforma de protección de la privacidad de la Unión Europea-EE. UU., que impone mayores obligaciones en las empresas de EE. UU. para proteger los datos personales de europeans? |
 | ISO 27017 | Cumplimiento | Booleano | True, false, N/A | ¿Esta aplicación cumple con ISO 27017, que establece los controles y las directrices que se aceptan comúnmente para procesar y proteger la información de usuario en un entorno de informática en la nube pública? |
 | COBIT | Cumplimiento | Booleano | True, false, N/A | ¿Esta aplicación cumple COBIT, que establece las prácticas recomendadas para el gobierno y el control de la tecnología y los sistemas de información, y la alinea con los principios empresariales? |

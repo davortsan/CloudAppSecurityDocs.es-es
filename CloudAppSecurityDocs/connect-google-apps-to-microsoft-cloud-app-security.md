@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f688c4ab78fc366518146e761cc01e2edfe5dc30
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: 06c6a2db19332bb49e86220464a7eff459657b4b
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75189730"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912286"
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Conectar G Suite con Microsoft Cloud App Security
 
@@ -124,7 +124,7 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
 
     * Google requiere que se cargue al menos un icono de aplicación. Vaya a [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) para descargar un archivo ZIP que contiene los iconos de Cloud App Security. A continuación, debajo del **icono Aplicación**, haga clic en **Seleccionar**, junto a la imagen de 128 x 128, y arrastre el archivo a la ventana emergente. Haga clic en **Seleccionar**, junto a la imagen de 32 x 32, y arrastre el archivo a la ventana emergente.
 
-    * Desplácese hacia abajo y, en la sección **integración de unidad** , escriba la siguiente dirección URL en **dirección url abierta:**
+    * Desplácese hacia abajo y, en la sección **integración de unidad** , escriba la siguiente dirección URL en **dirección url abierta:** 
     `https://portal.cloudappsecurity.com/#/services/11770?tab=files`
 
     ![Editar Google Drive](media/google15.png)
@@ -223,6 +223,8 @@ En **Descripción de la aplicación**, escriba "Microsoft Cloud App Security pro
 Después de conectar G Suite, recibirá eventos de 60 días anteriores a la conexión.
 
 Después de conectar G Suite, Cloud App Security realiza un examen completo. En función del número de archivos y los usuarios que tenga, el examen podría tardar en completarse. Para habilitar el análisis casi en tiempo real, los archivos en los que se detecta actividad se mueven al principio de la cola de análisis. Por ejemplo, una archivo editado, actualizado o compartido se analiza inmediatamente. Esto no se aplica a los archivos que no se modifican de forma inherente. Por ejemplo, los archivos que se visualizan, previsualizan, imprimen o exportan se analizan durante un análisis normal.
+
+Si tiene problemas para conectar la aplicación, consulte [solución de problemas de conectores de aplicaciones](troubleshooting-api-connectors-using-error-messages.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
