@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9763793948bb8c7109c9fb627e337189402d2f67
-ms.sourcegitcommit: f81dd93841d7e5d01a1edaaf464c8656c4e7efda
+ms.openlocfilehash: 3441f2b78c015ba38185ca2c584a347985b9a71f
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76814257"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912340"
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>Conectar AWS con Microsoft Cloud App Security
 
@@ -232,6 +232,8 @@ Antes de poder conectar la configuración de seguridad de AWS, asegúrese de que
 1. Haga clic en **Probar API** para asegurarse de que la conexión se ha realizado correctamente.  
 
     La prueba puede tardar unos minutos. Cuando haya finalizado, recibirá una notificación que le indicará si se ha realizado correcta o incorrectamente. Cuando reciba la notificación de que se ha realizado correctamente, haga clic en **Listo**.
+
+Si tiene problemas para conectar la aplicación, consulte [solución de problemas de conectores de aplicaciones](troubleshooting-api-connectors-using-error-messages.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
