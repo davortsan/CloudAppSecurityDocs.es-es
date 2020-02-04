@@ -9,12 +9,12 @@ ms.date: 11/01/2019
 ms.collection: M365-security-compliance
 ms.custom: seodec18
 ms.suite: ems
-ms.openlocfilehash: 949a1b8f5409362256574f999c644dfaee2f0f09
-ms.sourcegitcommit: c96e73599036d62a4cef53fab0b8f060f5f0387f
+ms.openlocfilehash: 65a274b03492d0252e4ed617237159c685b1c131
+ms.sourcegitcommit: 69db12e3dc6ec25b8fb6a184beac34ca000841f1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2020
-ms.locfileid: "75600719"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76977517"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Seguridad y privacidad de los datos de Microsoft Cloud App Security
 
@@ -181,7 +181,7 @@ Puede elegir que los informes de **Cloud Discovery** sean anónimos. Una vez car
 
 ## <a name="security-and-privacy-for-cloud-app-security-us-government-gcc-high-customers"></a>Seguridad y privacidad de los clientes de GCC High para la Administración Pública de Estados Unidos de Cloud App Security
 
-Para más información sobre los estándares de cumplimiento de Cloud App Security y la ubicación de los datos de los clientes de GCC High para la Administración Pública de Estados Unidos, consulte la [descripción del servicio Enterprise Mobility + Security para la Administración pública de Estados Unidos](/enterprise-mobility-security/solution/ems-cloud-app-security-govt-service-description).
+Para más información sobre los estándares de cumplimiento de Cloud App Security y la ubicación de los datos de los clientes de GCC High para la Administración Pública de Estados Unidos, consulte la [descripción del servicio Enterprise Mobility + Security para la Administración pública de Estados Unidos](/enterprise-mobility-security/solutions/ems-cloud-app-security-govt-service-description).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
