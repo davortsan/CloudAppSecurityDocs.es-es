@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/1/2019
+ms.date: 02/04/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0fc036ab2a785157d0f37347ae691b1455eaa9a1
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: aa1da4946f115a5cf53279d95d3c81c59bc63aef
+ms.sourcegitcommit: 63007af53dafe14ef335e761a723fcbcb1581476
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720305"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76992449"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtención de análisis de comportamiento y detección de anomalías instantáneos
 
@@ -41,6 +41,13 @@ Las anomalías se detectan mediante el examen de la actividad del usuario. El ri
 * Tasa de actividad
 
 Basándose en los resultados de la directiva, se activan alertas de seguridad. Cloud App Security examina todas las sesiones de los usuarios en la nube y le alerta cuando ocurre algo que es diferente a la línea base de la organización o de la actividad normal del usuario.
+
+Además de las alertas nativas de Cloud App Security, también obtendrá las siguientes alertas de detección basadas en la información recibida de Azure Active Directory (AD) Identity Protection:
+
+* Credenciales perdidas: se desencadena cuando se han perdido las credenciales válidas de un usuario. Para obtener más información, vea [detección de credenciales perdidas de Azure ad](/azure/active-directory/identity-protection/concept-identity-protection-risks#user-risk).
+* Inicio de sesión peligroso: combina un número de detecciones de inicio de sesión Azure AD Identity Protection en una sola detección (deshabilitada de forma predeterminada). Para obtener más información, consulte [el Azure ad de las detecciones de riesgo de inicio de sesión](/azure/active-directory/identity-protection/concept-identity-protection-risks#sign-in-risk).
+
+Estas directivas aparecerán en la página Cloud App Security directivas y se pueden habilitar, deshabilitar, pero no editar.
 
 ## <a name="anomaly-detection-policies"></a>Directivas de detección de anomalías
 
