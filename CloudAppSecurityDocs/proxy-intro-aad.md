@@ -1,6 +1,6 @@
 ---
-title: Protección con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security
-description: En este artículo encontrará información sobre el funcionamiento del proxy inverso de control de aplicaciones de acceso condicional de Cloud App Security.
+title: Protección con Microsoft Cloud App Security Control de aplicaciones de acceso condicional
+description: En este artículo se proporciona información sobre cómo funciona el proxy inverso de Cloud App Security Control de aplicaciones de acceso condicional.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -14,29 +14,29 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b3517591eba70dde048041c7b55a57679e7cc829
-ms.sourcegitcommit: dabfa885ebb82db25a92127d87e8d1283340e834
+ms.openlocfilehash: bedf7e135e0204427b492c8106f1db13fb538195
+ms.sourcegitcommit: 35749af5294c45a3d5ba8667f7a764fe4719575d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76020768"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567181"
 ---
-# <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicaciones con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security
+# <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Protección de aplicaciones con Microsoft Cloud App Security Control de aplicaciones de acceso condicional
 
 *Se aplica a: Microsoft Cloud App Security*
 
-En las empresas actuales, a menudo no resulta suficiente con saber lo que sucede en el entorno de nube después de que pase. Le interesa detener las infracciones de seguridad y las fugas en tiempo real, antes de que los empleados intencionadamente o por accidente pongan los datos y la organización en riesgo. Es importante permitir que los usuarios de la organización tengan a su disposición la mayoría de los servicios y las herramientas en aplicaciones de nube, y lleven al trabajo sus propios dispositivos. Al mismo tiempo, se necesitan herramientas que permitan proteger la organización de fugas o robos de datos en tiempo real. Junto con Azure Active Directory (Azure AD), Microsoft Cloud App Security ofrece estas funcionalidades en una experiencia holística e integrada con Control de aplicaciones de acceso condicional.
+En el área de trabajo actual, a menudo no basta con saber lo que ocurre en su entorno de nube después del hecho. Desea detener las infracciones y las fugas en tiempo real, antes de que los empleados pongan en peligro los datos y la organización de forma intencionada o involuntaria. Es importante permitir que los usuarios de la organización puedan tener a su disposición la mayoría de los servicios y las herramientas en las aplicaciones en la nube, y dejar que sus propios dispositivos funcionen. Al mismo tiempo, necesita herramientas que ayuden a proteger su organización frente a pérdidas de datos y robos de datos en tiempo real. Junto con Azure Active Directory (Azure AD), Microsoft Cloud App Security ofrece estas funcionalidades en una experiencia holística e integrada con Control de aplicaciones de acceso condicional.
 
 > [!NOTE]
 >
 > - Para usar Cloud App Security Control de aplicaciones de acceso condicional, necesita una [licencia de Azure Active Directory P1](https://azure.microsoft.com/pricing/details/active-directory/)y una suscripción de Microsoft Cloud App Security o de Office 365 E5. Para obtener una lista de las aplicaciones destacadas incluidas con Office 365 E5, consulte [aplicaciones destacadas de office 365](#O365-apps).
-> - Los controles de acceso y de sesión también admiten las aplicaciones configuradas con proveedores de identidades distintos de Azure AD. Para obtener más información sobre este escenario, envíe un correo electrónico a mcaspreview@microsoft.com.
+> - Los controles de acceso y de sesión también admiten las aplicaciones configuradas con proveedores de identidades distintos de Azure AD. Para obtener más información acerca de este escenario, envíe un correo electrónico a mcaspreview@microsoft.com.
 
 ## <a name="how-it-works"></a>Cómo funciona
 
-Control de aplicaciones de acceso condicional usa una arquitectura de proxy inverso y se integra de forma exclusiva con el acceso condicional de Azure AD. Azure AD el acceso condicional permite aplicar controles de acceso en las aplicaciones de la organización en función de ciertas condiciones. Las condiciones definen *quién* (usuario o grupo de usuarios) y *qué* (qué aplicaciones en la nube) y *dónde* (a qué ubicaciones y redes) se aplica una directiva de acceso condicional. Tras establecer las condiciones, puede dirigir a los usuarios a Microsoft Cloud App Security, donde podrá proteger los datos con el control de aplicaciones de acceso condicional, aplicando para ello controles de sesión y acceso.
+Control de aplicaciones de acceso condicional usa una arquitectura de proxy inverso y se integra de forma exclusiva con el acceso condicional de Azure AD. Azure AD el acceso condicional permite aplicar controles de acceso en las aplicaciones de la organización en función de ciertas condiciones. Las condiciones definen *quién* (usuario o grupo de usuarios) y *qué* (qué aplicaciones en la nube) y *dónde* (a qué ubicaciones y redes) se aplica una directiva de acceso condicional. Después de determinar las condiciones, puede enrutar a los usuarios a Microsoft Cloud App Security donde puede proteger los datos con Control de aplicaciones de acceso condicional mediante la aplicación de controles de acceso y de sesión.
 
-Gracias al control de aplicaciones de acceso condicional, las sesiones y el acceso a la aplicación de los usuarios se pueden supervisar y controlar en tiempo real según las directivas de sesión y acceso definidas. Las directivas de sesión y acceso se usan en el portal de Cloud App Security para perfeccionar los filtros y establecer las medidas que hay que tomar con respecto a un usuario. Con las directivas de acceso y sesión, puede:
+Control de aplicaciones de acceso condicional permite que las sesiones y el acceso a las aplicaciones de usuario se supervisen y controlen en tiempo real en función de las directivas de acceso y de sesión. Las directivas de acceso y de sesión se usan en el portal de Cloud App Security para refinar los filtros y establecer las acciones que deben realizarse en un usuario. Con las directivas de acceso y de sesión, puede:
 
 - **Impedir la exfiltración de datos**: puede bloquear la descarga, cortar, copiar e imprimir documentos confidenciales en, por ejemplo, dispositivos no administrados.
 
@@ -44,7 +44,7 @@ Gracias al control de aplicaciones de acceso condicional, las sesiones y el acce
 
 - **Evitar la carga de archivos sin etiquetar**: antes de que otros usuarios carguen, distribuyan y usen otros, es importante asegurarse de que el archivo tiene la etiqueta y la protección adecuadas. Puede asegurarse de que los archivos sin etiqueta con contenido confidencial estén bloqueados para que no se carguen hasta que el usuario clasifique el contenido.
 
-- **Supervisar las sesiones de usuario para el cumplimiento**: los usuarios con riesgo se supervisan cuando inician sesión en las aplicaciones y sus acciones se registran desde dentro de la sesión. Puede investigar y analizar el comportamiento de los usuarios para entender dónde (y en qué condiciones) se deben aplicar directivas de sesión en el futuro.
+- **Supervisar las sesiones de usuario para el cumplimiento**: los usuarios con riesgo se supervisan cuando inician sesión en las aplicaciones y sus acciones se registran desde dentro de la sesión. Puede investigar y analizar el comportamiento del usuario para saber dónde se deben aplicar las directivas de sesión en el futuro, y en qué condiciones.
 
 - **Bloquear acceso**: puede bloquear el acceso a aplicaciones y usuarios específicos en función de varios factores de riesgo. Por ejemplo, puede bloquearlos si usan certificados de cliente como forma de administración de dispositivos.
 
@@ -52,9 +52,9 @@ Gracias al control de aplicaciones de acceso condicional, las sesiones y el acce
 
 ### <a name="how-session-control-works"></a>Funcionamiento del control de sesión
 
-Al crear una directiva de sesión con control de aplicaciones de acceso condicional, podrá controlar las sesiones de usuario redirigiendo al usuario en cuestión a través de un proxy inverso, en lugar de directamente a la aplicación. A partir de entonces, las solicitudes y respuestas de usuario pasan por Cloud App Security en lugar de hacerlo directamente a la aplicación.
+La creación de una directiva de sesión con Control de aplicaciones de acceso condicional permite controlar las sesiones de usuario mediante el redireccionamiento del usuario a través de un proxy inverso en lugar de hacerlo directamente a la aplicación. A partir de entonces, las solicitudes y respuestas de usuario pasan por Cloud App Security en lugar de hacerlo directamente a la aplicación.
 
-Cuando una sesión está protegida por el proxy, todas las direcciones URL y cookies pertinentes se sustituyen por Cloud App Security. Por ejemplo, si la aplicación devuelve una página con vínculos cuyos dominios terminan en miaplicación.com, el vínculo se reemplazará por dominios que acaben en algo parecido a miaplicación.com.us.cas.ms
+Cuando una sesión está protegida por el proxy, todas las direcciones URL y cookies pertinentes se sustituyen por Cloud App Security. Por ejemplo, si la aplicación devuelve una página con vínculos cuyos dominios finalizan con myapp.com, el vínculo se reemplaza con dominios que finalizan con algo parecido a: myapp.com.us.cas.ms
 
 Este método no requiere la instalación de nada en el dispositivo, por lo que resulta idóneo al supervisar o controlar sesiones desde dispositivos no administrados o usuarios asociados.
 
@@ -63,22 +63,22 @@ Este método no requiere la instalación de nada en el dispositivo, por lo que r
 
 ## <a name="managed-device-identification"></a>Identificación de dispositivos administrados
 
-El control de aplicaciones de acceso condicional permite crear directivas que tienen en cuenta si un dispositivo está administrado o no. Para identificar el estado de un dispositivo, puede configurar las directivas de acceso y de sesión para comprobar lo siguiente:
+Control de aplicaciones de acceso condicional le permite crear directivas que tienen en cuenta si un dispositivo está administrado o no. Para identificar el estado de un dispositivo, puede configurar las directivas de acceso y de sesión para comprobar lo siguiente:
 
 - Dispositivos compatibles con Microsoft Intune (Intune)
-- Dispositivos unidos a la implementación híbrida de Azure AD
+- Dispositivos Unidos a Azure AD híbrido
 - Presencia de certificados de cliente en una cadena de confianza
 
 ### <a name="intune-compliant-and-hybrid-azure-ad-joined-devices"></a>Dispositivos de Azure AD híbridos y compatibles con Intune
 
-Azure AD el acceso condicional permite pasar información del dispositivo compatible y de la Unión híbrida directamente a Microsoft Cloud App Security. Desde allí, se puede desarrollar una directiva de sesión o acceso que use el estado del dispositivo como filtro. Para más información, vea [Introducción a la administración de dispositivos en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
+Azure AD el acceso condicional permite pasar información del dispositivo compatible y de la Unión híbrida directamente a Microsoft Cloud App Security. Desde allí, se puede desarrollar una directiva de acceso o una directiva de sesión que use el estado del dispositivo como filtro. Para obtener más información, consulte [Introducción a la administración de dispositivos en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
 
 > [!NOTE]
 > Algunos exploradores pueden requerir una configuración adicional, como la instalación de una extensión. Para obtener más información, consulte [compatibilidad con el explorador de acceso condicional](https://go.microsoft.com/fwlink/?linkid=2102732).
 
 ### <a name="client-certificate-authenticated-devices"></a>Dispositivos autenticados con certificado de cliente
 
-El mecanismo de identificación de dispositivos puede solicitar la autenticación de los dispositivos que usan certificados de cliente. Puede usar certificados de cliente existentes ya implementados en la organización o implantar nuevos certificados de cliente a los dispositivos administrados. Después utilizará la presencia de esos certificados para establecer directivas de acceso y sesión.
+El mecanismo de identificación de dispositivos puede solicitar la autenticación de los dispositivos relevantes mediante certificados de cliente. Puede usar los certificados de cliente existentes ya implementados en la organización o implementar nuevos certificados de cliente en los dispositivos administrados. A continuación, se usa la presencia de estos certificados para establecer directivas de acceso y de sesión.
 
 Los certificados de cliente SSL se comprueban a través de una cadena de confianza. Puede cargar una entidad de certificación X. 509 o una entidad de certificación (CA) intermedia con formato en el formato de certificado PEM. Estos certificados deben contener la clave pública de la CA, que se usa para firmar los certificados de cliente presentados durante una sesión.
 
@@ -121,7 +121,7 @@ Puede bloquear el acceso a las aplicaciones de cliente de escritorio y móviles 
 
 ### <a name="session-controls"></a>Controles de sesión
 
-**El control de sesión está disponible para cualquier explorador en las principales plataformas en cualquier sistema operativo**. Se recomienda usar Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest) o Apple Safari (latest). También se puede bloquear o permitir el acceso a aplicaciones móviles y de escritorio.
+Aunque los controles de sesión se compilan para trabajar con cualquier explorador en cualquier plataforma principal de cualquier sistema operativo, se admite Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest) o Apple Safari (latest). También se puede bloquear o permitir el acceso a aplicaciones móviles y de escritorio.
 
 > [!NOTE]
 > Cloud App Security aprovecha los protocolos de Seguridad de la capa de transporte (TLS) 1.2+ para proporcionar el mejor cifrado de la clase. Las aplicaciones cliente nativas y los exploradores que no admiten TLS 1.2 + no serán accesibles cuando se configuran con el control de sesión. Sin embargo, las aplicaciones SaaS que usen TLS 1.1 o versiones anteriores aparecerán en el explorador como usuarias de TLS 1.2+ al configurarse con Cloud App Security.
@@ -130,31 +130,31 @@ Puede bloquear el acceso a las aplicaciones de cliente de escritorio y móviles 
 
 - AWS
 - Azure DevOps (Visual Studio Team Services)
-- Azure Portal (versión preliminar)
-- Cuadro
+- Azure Portal (vista previa)
+- Box
 - Concur
-- CornerStone on Demand
+- Piedra angular a petición
 - DocuSign
 - Dropbox
 - Dynamics 365 CRM (versión preliminar)
 - Egnyte
 - Exchange Online
 - G Suite
-- Github
+- GitHub
 - HighQ
 - JIRA/Confluence
 - OneDrive para la Empresa
-- Aprendizaje de LinkedIn
+- LinkedIn Learning
 - Power BI
 - Salesforce
 - ServiceNow
-- SharePoent Onlene
-- Slack
+- SharePoint Online
+- Demora
 - Tableau
 - Microsoft Teams (versión preliminar)
 - Workday
 - Workiva
-- Workplace de Facebook
+- Workplace by Facebook
 - Yammer (versión preliminar)
 
 ### <a name="a-ido365-apps-office-365-featured-apps"></a><a id="O365-apps" />aplicaciones destacadas de Office 365
@@ -164,16 +164,16 @@ A continuación se muestra una lista de las aplicaciones destacadas que se admit
 - Exchange Online
 - OneDrive para la Empresa
 - Power BI
-- SharePoent Onlene
+- SharePoint Online
 - Microsoft Teams (versión preliminar)
 - Yammer (versión preliminar)
 
-Si está interesado en una aplicación específica, [envíenos detalles sobre la aplicación](mailto:casfeedback@microsoft.com). No olvide enviar el caso de uso que le interesa para que podamos incorporarlo.
+Si está interesado en una aplicación específica, [envíenos detalles sobre la aplicación](mailto:casfeedback@microsoft.com). Asegúrese de enviar el caso de uso que le interese para incorporarlo.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Implementación de Control de aplicaciones de acceso condicional para aplicaciones destacadas](proxy-deployment-aad.md)
+> [Implementar Control de aplicaciones de acceso condicional para aplicaciones destacadas](proxy-deployment-aad.md)
 
 > [!div class="nextstepaction"]
 > [Implementación del Control de aplicaciones de acceso condicional para cualquier aplicación](proxy-deployment-any-app.md)

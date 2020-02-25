@@ -1,6 +1,6 @@
 ---
-title: Creación de directivas de sesión en Cloud App Security
-description: En este artículo se describe el procedimiento para configurar una directiva de sesión de control de aplicaciones de acceso condicional de Cloud App Security para obtener visibilidad detallada de las actividades de la sesión del usuario y bloquear descargas por medio de las funciones de proxy inverso.
+title: Crear directivas de sesión en Cloud App Security
+description: En este artículo se describe el procedimiento para configurar una directiva de sesión de Cloud App Security Control de aplicaciones de acceso condicional obtener una visión profunda de las actividades de sesión de usuario y bloquear las descargas mediante capacidades de proxy inverso.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -14,138 +14,147 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: aa28b20364b365ff865e746c76c03661282f242a
-ms.sourcegitcommit: 446041f0e7adf6688bf63d402838844baa3342bb
+ms.openlocfilehash: ca5fdade4d00e93d8adf6a79f3534be9e6ac7481
+ms.sourcegitcommit: 35749af5294c45a3d5ba8667f7a764fe4719575d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75667180"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567164"
 ---
 # <a name="session-policies"></a>Directivas de sesión
 
 *Se aplica a: Microsoft Cloud App Security*
 
-Las directivas de sesión de Microsoft Cloud App Security permiten las supervisiones en tiempo real y en el nivel de sesión, lo que le proporciona una visibilidad granular de las aplicaciones en la nube, así como la posibilidad de realizar distintas acciones según la directiva establecida para una sesión de usuario. En lugar de [permitir o bloquear el acceso por completo](access-policy-aad.md), con el control de sesión, puede permitir el acceso mientras supervisa la sesión o limita determinadas actividades de la sesión usando las funciones de proxy inverso de control de aplicaciones de acceso condicional.
+Microsoft Cloud App Security directivas de sesión permiten la supervisión en tiempo real en el nivel de sesión, lo que le ofrece visibilidad granular sobre las aplicaciones en la nube y la capacidad de realizar diferentes acciones en función de la directiva establecida para una sesión de usuario. En lugar de [permitir o bloquear el acceso por completo](access-policy-aad.md), con el control de sesión puede permitir el acceso mientras supervisa la sesión o limitar determinadas actividades de sesión mediante las capacidades del proxy inverso de control de aplicaciones de acceso condicional.
 
-Por ejemplo, puede decidir que, desde cualquier dispositivo no administrado o en sesiones que provienen de ubicaciones específicas, quiere permitir el acceso del usuario a la aplicación, pero también limitar la descarga de archivos confidenciales o requerir que algunos documentos estén protegidos al descargarse. Las directivas de sesión permiten establecer estos controles de sesión de usuario, ademas del acceso, y le permite realizar lo siguiente:
+Por ejemplo, puede decidir que, desde dispositivos no administrados, o para sesiones procedentes de ubicaciones específicas, quiere permitir que el usuario tenga acceso a la aplicación, pero también limitar la descarga de archivos confidenciales o requerir que determinados documentos se protejan tras la descarga. Las directivas de sesión permiten establecer estos controles de sesión de usuario y permitir el acceso y permiten:
 
-* [Supervisión de todas las actividades](#monitor-session)
-* [Bloqueo de todas las descargas](#block-download)
-* [Bloqueo de actividades específicas](#block-activities)
-* [Protección de archivos en la descarga](#protect-download)
+* [Supervisar todas las actividades](#monitor-session)
+* [Bloquear todas las descargas](#block-download)
+* [Bloquear actividades específicas](#block-activities)
+* [Proteger archivos durante la descarga](#protect-download)
 * [Proteger cargas de archivos confidenciales](#protect-upload)
 * [Instruya a los usuarios para proteger archivos confidenciales](#educate-protect)
 
-## <a name="prerequisites-to-using-session-policies"></a>Requisitos previos para usar directivas de sesión
+## <a name="prerequisites-to-using-session-policies"></a>Requisitos previos para el uso de directivas de sesión
 
-* Tener una licencia de Azure AD Premium P1.
-* Las aplicaciones en cuestión deben estar [implementadas con control de aplicaciones de acceso condicional](proxy-deployment-aad.md).
-* Debe haber aplicada una [directiva de acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) que redirija a los usuarios a Microsoft Cloud App Security, tal y como se describe aquí.
+* Licencia de Azure AD Premium P1
+* Las aplicaciones pertinentes deben [implementarse con control de aplicaciones de acceso condicional](proxy-deployment-aad.md)
+* Debe haber una [Directiva de acceso condicional Azure ad](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) que redirija a los usuarios a Microsoft Cloud App Security, como se describe a continuación.
 
 > [!NOTE]
-> Las directivas de sesión también admiten aplicaciones que estén configuradas con proveedores de identidades que no sean Azure AD. Para obtener más información sobre este escenario, envíe un correo electrónico a mcaspreview@microsoft.com.
+> Las directivas de sesión también admiten las aplicaciones configuradas con proveedores de identidades distintos de Azure AD. Para obtener más información acerca de este escenario, envíe un correo electrónico a mcaspreview@microsoft.com.
 
-## <a name="create-an-azure-ad-conditional-access-policy"></a>Crear una directiva de acceso condicional de Azure AD
+## <a name="create-an-azure-ad-conditional-access-policy"></a>Creación de una directiva de acceso condicional Azure AD
 
-Las directivas de acceso condicional de Azure Active Directory y las directivas de sesión de Cloud App Security funcionan conjuntamente para examinar cada sesión de usuario y tomar decisiones de directiva relativas a cada aplicación. Haga lo siguiente para configurar una directiva de acceso condicional en Azure AD:
+Azure Active Directory las directivas de acceso condicional y las directivas de sesión de Cloud App Security funcionan conjuntamente para examinar cada sesión de usuario y tomar decisiones de directiva para cada aplicación. Para configurar una directiva de acceso condicional en Azure AD, siga este procedimiento:
 
-1. Configure una [directiva de acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) con asignaciones de usuario o de grupo de usuarios, y la aplicación que quiere controlar con el Control de aplicaciones de acceso condicional.
+1. Configure una [Azure ad Directiva de acceso condicional](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) con asignaciones para un usuario o grupo de usuarios y la aplicación que desea controlar con el control de aplicaciones de acceso condicional.
 
     > [!NOTE]
-    > Esta directiva afectará únicamente a las aplicaciones que se hayan [implementado con control de aplicaciones de acceso condicional](proxy-deployment-aad.md).
+    > Esta directiva afectará solo a las aplicaciones que se [implementaron con control de aplicaciones de acceso condicional](proxy-deployment-aad.md) .
 
-2. Enrute usuarios a Microsoft Cloud App Security; para ello, active **Use Conditional Access App Control enforced restrictions** (Usar las restricciones que exige el Control de aplicaciones de acceso condicional) en la página **Sesión**.
+2. Para enrutar a los usuarios a Microsoft Cloud App Security, seleccione el **uso de restricciones control de aplicaciones de acceso condicional aplicadas** en la página de la **sesión** .
 
 ## <a name="create-a-cloud-app-security-session-policy"></a>Crear una directiva de sesión de Cloud App Security
 
-Haga lo siguiente para crear una directiva de sesión:
+Para crear una nueva Directiva de sesión, siga este procedimiento:
 
-1. En el portal, seleccione **Control** y, después, **Directivas**.
-1. En la página **Directivas**, haga clic en **Crear directiva** y seleccione **Directiva de sesión**.
-1. En la ventana **Directiva de sesión**, especifique un nombre para la directiva, como *Bloquear descarga de documentos confidenciales en Box de usuarios de marketing*.
-1. En el campo **Tipo de control de sesión**, haga lo siguiente:
+1. En el portal, seleccione **control** y, después, **directivas**.
+1. En la página **directivas** , haga clic en **crear Directiva** y seleccione **Directiva de sesión**.
+1. En la ventana **Directiva de sesión** , asigne un nombre a la Directiva, como *bloquear la descarga de documentos confidenciales en Box para usuarios de marketing*.
+1. En el campo **tipo de control de sesión** :
 
-    1. Seleccione **Monitor only** (Solo supervisar) si solo quiere supervisar las actividades de los usuarios. Esta selección creará una directiva de solo supervisión para las aplicaciones que seleccionó en la que, todos los inicios de sesión, descargas heurísticas y tipos de actividad, se descargarán.
+    1. Seleccione **supervisar solo** si solo desea supervisar las actividades de los usuarios. Esta selección creará una directiva de monitor solo para las aplicaciones seleccionadas donde se descargarán todos los inicios de sesión, las descargas heurísticas y los tipos de actividad.
 
-    1. Seleccione **Controlar la descarga de archivos (con DLP)** si quiere supervisar las actividades del usuario. Puede realizar acciones adicionales como bloquear o proteger las descargas para los usuarios.
-    1. Seleccione **Bloquear actividades** para bloquear actividades específicas que se pueden seleccionar con el filtro **Tipo de actividad**. Todas las actividades de las aplicaciones seleccionadas se supervisarán (y notificarán en el registro de actividad). Las actividades específicas que seleccione se bloquearán si selecciona la acción **Bloquear**. Las actividades específicas que seleccione generarán alertas si selecciona la acción **Probar** y hay alertas activadas.
-1. En la sección **Actividades que coinciden con todo lo siguiente** de **Origen de la actividad**, seleccione más filtros de actividad para aplicarlos a la directiva. Los filtros incluyen las siguientes opciones:
+    1. Seleccione **controlar la descarga de archivos (con DLP)** si desea supervisar las actividades de los usuarios. Puede realizar acciones adicionales, como bloquear o proteger las descargas de los usuarios.
+    1. Seleccione **bloquear actividades** para bloquear actividades específicas, que puede seleccionar mediante el filtro **tipo de actividad** . Todas las actividades de las aplicaciones seleccionadas se supervisarán (y se mostrarán en el registro de actividad). Las actividades específicas que seleccione se bloquearán si selecciona la acción **bloquear** . Las actividades específicas que seleccione generarán alertas si selecciona la acción **probar** y se activan las alertas.
+1. En **origen** de la actividad, en la sección **actividades que coinciden con todo lo siguiente** , seleccione los filtros de actividad adicionales que se van a aplicar a la Directiva. Estos filtros pueden incluir las siguientes opciones:
 
-    * **Etiqueta de dispositivo**: use este filtro para identificar los dispositivos no administrados.
+    * **Etiquetas de dispositivo**: Use este filtro para identificar los dispositivos no administrados.
 
-    * **Ubicación**: use este filtro para identificar las ubicaciones desconocidas (por tanto, que entrañan riesgo).
+    * **Ubicación**: Use este filtro para identificar ubicaciones desconocidas (y, por tanto, arriesgadas).
 
-    * **Dirección IP**: use este filtro para filtrar por direcciones IP o usar las etiquetas de dirección IP previamente asignadas.
+    * **Dirección IP**: Use este filtro para filtrar por direcciones IP o usar etiquetas de dirección IP asignadas previamente.
 
-    * **Etiqueta de agente de usuario**: use este filtro para habilitar la heurística que permite identificar las aplicaciones de escritorio y móviles. Este filtro se puede establecer en "igual a" o "no es igual a" **Cliente nativo**. Este filtro se debe probar con las aplicaciones de escritorio y móviles para cada aplicación en la nube.
+    * **Etiqueta de agente de usuario**: Use este filtro para habilitar la heurística a fin de identificar aplicaciones móviles y de escritorio. Este filtro se puede establecer en es igual a o no es el **cliente nativo**. Este filtro se debe probar con las aplicaciones móviles y de escritorio de cada aplicación en la nube.
 
     >[!NOTE]
-    >Las directivas de sesión no admiten aplicaciones de escritorio ni móviles. Las aplicaciones móviles y de escritorio también pueden bloquearse o permitirse con la creación de una directiva de acceso.
+    >Las directivas de sesión no admiten aplicaciones móviles y de escritorio. Las aplicaciones móviles y las aplicaciones de escritorio también pueden bloquearse o permitirse mediante la creación de una directiva de acceso.
 
-1. Si ha seleccionado la opción **Controlar la descarga de archivos (con DLP)** :
+1. Si ha seleccionado la opción para **controlar la descarga de archivos (con DLP)**:
 
-    1. En la sección **Archivos que coinciden con todo lo siguiente** de **Origen de la actividad**, seleccione más filtros de archivo para aplicarlos a la directiva. Los filtros incluyen las siguientes opciones:
+    1. En **origen** de la actividad, en la sección **archivos que coinciden con todo lo siguiente** , seleccione los filtros de archivo adicionales que se aplicarán a la Directiva. Estos filtros pueden incluir las siguientes opciones:
 
-        * **Etiqueta de clasificación**: use este filtro si la organización usa Azure Information Protection y los datos están protegidos con etiquetas de clasificación. Podrá filtrar los archivos por la etiqueta de clasificación que tengan aplicada. Para obtener más información sobre la integración con Azure Information Protection, vea [Integración de Azure Information Protection](azip-integration.md).
+        * **Etiqueta de clasificación** : Use este filtro si la organización usa Azure Information Protection y los datos están protegidos por sus etiquetas de clasificación. Puede filtrar los archivos en función de la etiqueta de clasificación que les haya aplicado. Para obtener más información sobre la integración con Azure Information Protection, vea [integración de Azure Information Protection](azip-integration.md).
 
-        * **Nombre de archivo**: use este filtro para aplicar la directiva a archivos concretos.
-        * **Tipo de archivo**: use este filtro para aplicar la directiva a tipos de archivo concretos, por ejemplo, para bloquear la descarga de cualquier archivo .xls.
-    2. En la sección **Inspección de contenido**, establezca si quiere permitir que el motor DLP examine documentos y el contenido de los archivos.
+        * **Nombre de archivo** : Use este filtro para aplicar la Directiva a archivos específicos.
+        * **Tipo de archivo** : Use este filtro para aplicar la Directiva a tipos de archivo específicos, por ejemplo, bloquear la descarga de todos los archivos. xls.
+    2. En la sección **inspección de contenido** , establezca si desea permitir que el motor DLP examine documentos y contenido de archivos.
 
-    3. En **Acciones**, seleccione uno de los siguientes elementos:
+    3. En **acciones**, seleccione uno de los siguientes elementos:
 
-        * **Test (Monitor all activities)** (Probar [supervisar todas las actividades]): establezca esta acción para permitir expresamente las descargas según los filtros de directiva que haya establecido.
+        * **Prueba (supervisar todas las actividades)**: establezca esta acción para permitir la descarga explícitamente según los filtros de directiva que haya establecido.
 
-        * **Block (Block file download and monitor all activities)** (Bloquear [bloquear descargas de archivos y supervisar todas las actividades]): establezca esta acción para bloquear expresamente las descargas según los filtros de directiva que haya establecido. Para más información, vea [Cómo funciona el bloqueo de descargas](#block-download).
+        * **Bloquear (bloquear la descarga de archivos y supervisar todas las actividades)**: establezca esta acción para bloquear explícitamente la descarga según los filtros de directiva que haya establecido. Para obtener más información, consulte [Cómo funciona Block download](#block-download).
 
-        * **Protect (Apply classification label to download and monitor all activities)** (Proteger [aplicar etiqueta de clasificación para descargar y supervisar todas las actividades]): esta opción solo está disponible si seleccionó **Controlar la descarga de archivos (con DLP)** en **Directiva de sesión**. Si la organización usa Azure Information Protection, puede establecer una **acción** que aplique al archivo una etiqueta de clasificación establecida en Azure Information Protection. Para más información, vea [Cómo funciona la protección de descargas](#protect-download).
+        * **Proteger (aplicar etiqueta de clasificación para descargar y supervisar todas las actividades)**: esta opción solo está disponible si seleccionó **controlar la descarga de archivos (con DLP)** en **Directiva de sesión**. Si su organización usa Azure Information Protection, puede establecer una **acción** para aplicar un conjunto de etiquetas de clasificación en Azure Information Protection al archivo. Para obtener más información, vea [Cómo funciona la protección de descargas](#protect-download).
 
-1. Puede **Crear una alerta para cada evento coincidente con la gravedad de la directiva** y establecer un límite de alerta. Seleccione si quiere que la alerta se envíe como mensaje de correo electrónico, de texto o ambos.
+1. Puede **crear una alerta para cada evento coincidente con la gravedad de la Directiva** y establecer un límite de alertas. Seleccione si desea que la alerta sea un correo electrónico, un mensaje de texto o ambos.
 
 ## <a name="monitor-session"></a>Supervisar todas las actividades
 
-Cuando se crea una directiva de sesión, cada sesión de usuario que coincida con la directiva se redirige al control de sesión, y no directamente a la aplicación. El usuario verá una notificación de supervisión que le avisa de que sus sesiones se están supervisando.
+Cuando se crea una directiva de sesión, cada sesión de usuario que coincida con la Directiva se redirige al control de sesión en lugar de a la aplicación directamente. El usuario verá un aviso de supervisión para indicarle que sus sesiones se están supervisando.
 
-Si prefiere no avisar al usuario de que se le está supervisando, puede deshabilitar el mensaje de notificación.
+Si no desea que se notifique al usuario que se está supervisando, puede deshabilitar el mensaje de notificación.
 
-1. En el engranaje Configuración, seleccione **Configuración general**.
+1. En el engranaje de configuración, seleccione **Configuración general**.
 
-2. Después, en **Control de aplicación de acceso condicional**, active **Supervisión de usuarios** y desactive la casilla **Notificar a los usuarios**.
+2. A continuación, en **control de aplicaciones de acceso condicional** seleccione **supervisión** de usuarios y desactive la casilla **notificar a los usuarios** .
 
-Para mantener al usuario dentro de la sesión, el control de aplicaciones de acceso condicional reemplaza todas las direcciones URL, scripts de Java y cookies pertinentes de la sesión de aplicación por direcciones URL de Microsoft Cloud App Security. Por ejemplo, si la aplicación devuelve una página con vínculos cuyos dominios finalizan con myapp.com, Control de aplicaciones de acceso condicional reemplaza los vínculos con dominios que terminan por algo como myapp.com.us.cas.ms. De esta forma, la sesión completa se supervisa por medio de Microsoft Cloud App Security.
+Para mantener al usuario dentro de la sesión, Control de aplicaciones de acceso condicional reemplaza todas las direcciones URL pertinentes, scripts de Java y cookies dentro de la sesión de la aplicación con Microsoft Cloud App Security direcciones URL. Por ejemplo, si la aplicación devuelve una página con vínculos cuyos dominios finalizan con myapp.com, Control de aplicaciones de acceso condicional reemplaza los vínculos con dominios que terminan por algo como myapp.com.us.cas.ms. De esta forma, la sesión completa se supervisa mediante Microsoft Cloud App Security.
 
-El control de aplicaciones de acceso condicional crea registros de tráfico de cada sesión de usuario que pasa a través de él. Los registros de tráfico reflejan la hora, la dirección IP, los agentes de usuario, las direcciones URL visitadas y el número de bytes cargados y descargados. Estos registros se analizan, mientras que un informe constantemente activo denominado **Cloud App Security Conditional Access App Control** (Control de aplicaciones de acceso condicional de Cloud App Security) se agrega a la lista de informes de Cloud Discovery en el panel de Cloud Discovery.
+Control de aplicaciones de acceso condicional registra los registros de tráfico de cada sesión de usuario que se enruta a través de él. Los registros de tráfico incluyen el tiempo, la dirección IP, el agente de usuario, las direcciones URL visitadas y el número de bytes cargados y descargados. Estos registros se analizan y se agrega un informe continuo, **Cloud App Security control de aplicaciones de acceso condicional**, a la lista de Cloud Discovery informes en el panel de Cloud Discovery.
 
-Para exportar estos registros, haga lo siguiente:
+Para exportar estos registros:
 
-1. Vaya al engranaje Configuración y haga clic en **Conditional Access App Control** (Control de aplicaciones de acceso condicional).
-2. En el lado derecho de la tabla, haga clic en el botón de exportación.
+1. Vaya al engranaje configuración y haga clic en **control de aplicaciones de acceso condicional**.
+2. En el lado derecho de la tabla, haga clic en el botón exportar.
 
-    ![Botón de exportación](./media/export-button.png)
-3. Seleccione el intervalo del informe y haga clic en **Exportar**. Este proceso puede tardar en completarse.
+    ![botón exportar](./media/export-button.png)
+3. Seleccione el intervalo del informe y haga clic en **exportar**. Este proceso puede tardar algún tiempo.
 
 Para descargar el registro exportado:
 
-1. Una vez que el informe esté listo, vaya a **Configuración** y después a **Informes exportados**.
-2. En la tabla, seleccione el informe que proceda en la lista de **registros de tráfico del control de aplicaciones de acceso condicional** y haga clic en el botón de descarga.
+1. Cuando el informe esté listo, vaya a **configuración** y después a **informes exportados**.
+2. En la tabla, seleccione el informe correspondiente en la lista de **control de aplicaciones de acceso condicional registros de tráfico** y haga clic en descargar.
 
-    ![Botón de descarga](./media/download-button.png)
+    ![botón Descargar](./media/download-button.png)
 
 ## <a name="block-download"></a>Bloquear todas las descargas
 
-Cuando **Bloquear** es la **Acción** establecida que quiere realizar en la directiva de sesión de Cloud App Security, el control de aplicaciones de acceso condicional impedirá al usuario descargar un archivo de acuerdo con los filtros de archivos de la directiva. Microsoft Cloud App Security reconoce un evento de descarga para cada aplicación cuando un usuario inicia una descarga. El Control de aplicaciones de acceso condicional interviene en tiempo real para evitar que se ejecute. Cuando se recibe la señal de que un usuario ha iniciado una descarga, el control de aplicaciones de acceso condicional devuelve al usuario un mensaje que indica que la **descarga está restringida** y reemplaza el archivo descargado por un archivo de texto. El mensaje de dicho archivo se puede configurar y personalizar para el usuario en la directiva de sesión.
+Cuando **bloquear** está establecido como la **acción** que desea realizar en la directiva de sesión de Cloud App Security, control de aplicaciones de acceso condicional impide que un usuario descargue un archivo según los filtros de archivo de la Directiva. Un evento de descarga es reconocido por Microsoft Cloud App Security para cada aplicación cuando un usuario inicia una descarga. Control de aplicaciones de acceso condicional intervienen en tiempo real para evitar que se ejecute. Cuando se recibe la señal de que un usuario ha iniciado una descarga, Control de aplicaciones de acceso condicional devuelve al usuario un mensaje de **descarga restringida** y reemplaza el archivo descargado por un archivo de texto. El mensaje del archivo de texto al usuario se puede configurar y personalizar desde la Directiva de sesión.
 
 ## <a name="block-activities"></a>Bloquear actividades específicas
 
-Cuando **Bloquear actividades** se establece como **Tipo de actividad**, pueden seleccionarse determinadas actividades para bloquear aplicaciones específicas. Todas las actividades de las aplicaciones seleccionadas se supervisarán y notificarán en el registro de actividad. Las actividades específicas que seleccione se bloquearán si selecciona la acción **Bloquear**. Las actividades específicas que seleccione generarán alertas si selecciona la acción **Probar** y hay alertas activadas.
+Cuando se establece **actividades de bloqueo** como el **tipo de actividad**, puede seleccionar actividades específicas para bloquearlas en aplicaciones específicas. Todas las actividades de las aplicaciones seleccionadas se supervisarán y se mostrarán en el registro de actividad. Las actividades específicas que seleccione se bloquearán si selecciona la acción **bloquear** . Las actividades específicas que seleccione generarán alertas si selecciona la acción **probar** y se activan las alertas.
 
-**Bloquee actividades específicas** y aplíquelo a grupos específicos para crear un modo de solo lectura completo para la organización.
+**Bloquear actividades específicas** y aplicarlas a grupos específicos para crear un modo completo de solo lectura para su organización.
 
 ## <a name="protect-download"></a>Proteger archivos durante la descarga
 
-Seleccione **Bloquear actividades** para bloquear actividades específicas que se pueden buscar con el filtro **Tipo de actividad**. Todas las actividades de las aplicaciones seleccionadas se supervisarán (y notificarán en el registro de actividad). Las actividades específicas que seleccione se bloquearán si selecciona la acción **Bloquear**. Las actividades específicas que seleccione generarán alertas si selecciona la acción **Probar** y hay alertas activadas.
+Seleccione **bloquear actividades** para bloquear actividades específicas, que puede encontrar mediante el filtro **tipo de actividad** . Todas las actividades de las aplicaciones seleccionadas se supervisarán (y se mostrarán en el registro de actividad). Las actividades específicas que seleccione se bloquearán si selecciona la acción **bloquear** . Las actividades específicas que seleccione generarán alertas si selecciona la acción **probar** y se activan las alertas.
 
-Cuando **Proteger** es la **Acción** establecida que va a realizarse en la directiva de sesión de Cloud App Security, el control de aplicaciones de acceso condicional exige que el archivo se etiquete y proteja de acuerdo con los filtros de archivos de la directiva. Las etiquetas se configuran en la consola de Azure Information Protection y **Proteger** debe estar seleccionado en la etiqueta para que aparezca como una opción en la directiva de Cloud App Security. Cuando se selecciona una etiqueta y se descarga un archivo que cumple los criterios de la directiva de Cloud App Security, tanto la etiqueta como la protección correspondiente (con permisos) se aplican al archivo de descarga. El archivo original permanece tal cual en la aplicación en la nube, mientras que el archivo descargado ahora está protegido. Los usuarios que intenten acceder al archivo deben cumplir los requisitos de permiso establecidos por la protección aplicada.
+Cuando **proteger** se establece como la **acción** que se va a realizar en la directiva de sesión de Cloud App Security, control de aplicaciones de acceso condicional aplica el etiquetado y la protección posterior de un archivo según los filtros de archivo de la Directiva. Las etiquetas se configuran en la consola de **Azure Information Protection y se** debe seleccionar en la etiqueta para que aparezca como una opción en la directiva de Cloud App Security. Cuando se selecciona una etiqueta y se descarga un archivo que cumple los criterios de la Directiva de Cloud App Security, la etiqueta y la protección correspondiente (con permisos) se aplican al archivo durante la descarga. El archivo original permanece tal cual en la aplicación en la nube, mientras que el archivo descargado ahora está protegido. Los usuarios que intenten acceder al archivo deben cumplir los requisitos de permisos determinados por la protección aplicada.
+
+Actualmente, Cloud App Security admite aplicar [etiquetas de clasificación de Azure Information Protection](azip-integration.md) para los siguientes tipos de archivo:
+
+* Word: docm, docx, dotm, dotx
+* Excel: XLAM, xlsm, xlsx, xltx
+* PowerPoint: potm, potx, ppsx, ppsm, pptm, pptx
+* PDF
+  > [!NOTE]
+  > En el caso de PDF, debe usar etiquetas unificadas.
 
 ## <a name="protect-upload"></a>Proteger cargas de archivos confidenciales
 
