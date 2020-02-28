@@ -1,6 +1,6 @@
 ---
-title: Creación de directivas de acceso de Cloud App Security para permitir y bloquear el acceso
-description: En este artículo se describe el procedimiento para configurar una directiva de acceso al control de aplicaciones de acceso condicional de Cloud App Security para permitir y bloquear el acceso a las aplicaciones conectadas a través de Azure AD mediante las funcionalidades de proxy inverso.
+title: Crear directivas de acceso Cloud App Security para permitir y bloquear el acceso
+description: En este artículo se describe el procedimiento para configurar una directiva de acceso Control de aplicaciones de acceso condicional de Cloud App Security para permitir y bloquear el acceso a las aplicaciones conectadas a través de Azure AD mediante capacidades de proxy inverso.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -14,75 +14,75 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3e5ed247c5769a4acdb3cae0d8792328b374f042
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 4f0fc4fa4bef878f6b248357f8c9bae97e52bbce
+ms.sourcegitcommit: 11ae264d365e403f7761e880e82aad80afc31228
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719683"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77674602"
 ---
 # <a name="access-policies"></a>Directivas de acceso
 
 *Se aplica a: Microsoft Cloud App Security*
 
-Las directivas de acceso de Microsoft Cloud App Security permiten la supervisión en tiempo real y el control del acceso a aplicaciones en la nube en función del usuario, la ubicación, el dispositivo y la aplicación. Puede crear directivas de acceso para cualquier dispositivo, incluidos aquellos que no están unidos al dominio y que no administra Windows Intune. Para ello, implemente certificados de cliente en dispositivos administrados o aproveche los certificados existentes, por ejemplo, los certificados de MDM de terceros. Por ejemplo, puede implementar certificados de cliente en dispositivos administrados y después bloquear el acceso desde dispositivos que no tengan ningún certificado.
+Las directivas de acceso Microsoft Cloud App Security permiten la supervisión en tiempo real y el control del acceso a las aplicaciones en la nube en función del usuario, la ubicación, el dispositivo y la aplicación. Puede crear directivas de acceso para cualquier dispositivo, incluidos los dispositivos que no están Unidos a un dominio y no administrados por Windows Intune, mediante la implementación de certificados de cliente en dispositivos administrados o mediante el uso de certificados existentes, como certificados MDM de terceros. Por ejemplo, puede implementar certificados de cliente en dispositivos administrados y, a continuación, bloquear el acceso desde dispositivos sin un certificado.
 
 > [!NOTE]
-> En lugar de permitir o bloquear el acceso por completo, con las [directivas de sesión](session-policy-aad.md) puede permitir el acceso mientras supervisa la sesión o limitar determinadas actividades de la sesión.
+> En lugar de permitir o bloquear el acceso por completo, con [las directivas de sesión](session-policy-aad.md) puede permitir el acceso mientras supervisa la sesión o limitar las actividades de sesión específicas.
 
-## <a name="prerequisites-to-using-access-policies"></a>Requisitos previos para usar las directivas de acceso
+## <a name="prerequisites-to-using-access-policies"></a>Requisitos previos para el uso de directivas de acceso
 
-- Tener una licencia de Azure AD Premium P1.
-- Las aplicaciones en cuestión deben estar [implementadas con control de aplicaciones de acceso condicional](proxy-deployment-aad.md).
-- Debe haber aplicada una [directiva de acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) que redirija a los usuarios Microsoft Cloud App Security, tal y como se describe aquí.
+- Licencia de Azure AD Premium P1
+- Las aplicaciones pertinentes deben [implementarse con control de aplicaciones de acceso condicional](proxy-deployment-aad.md)
+- Debe haber una [Directiva de acceso condicional Azure ad](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) que redirija a los usuarios a Microsoft Cloud App Security, como se describe a continuación.
 
 > [!NOTE]
-> - Las directivas de acceso también admiten aplicaciones que estén configuradas con proveedores de identidades que no sean Azure AD. Para obtener más información, envíe un correo electrónico a mcaspreview@microsoft.com.
+> - Las directivas de acceso también admiten aplicaciones que están configuradas con proveedores de identidades distintos de Azure AD. Para obtener más información, envíe un correo electrónico a mcaspreview@microsoft.com.
 
-## <a name="create-an-azure-ad-conditional-access-policy"></a>Crear una directiva de acceso condicional de Azure AD
+## <a name="create-an-azure-ad-conditional-access-policy"></a>Creación de una directiva de acceso condicional Azure AD
 
-Las directivas de acceso condicional de Azure Active Directory y las directivas de sesión de Cloud App Security funcionan conjuntamente para examinar cada sesión de usuario y tomar decisiones de directiva relativas a cada aplicación. Haga lo siguiente para configurar una directiva de acceso condicional en Azure AD:
+Azure Active Directory las directivas de acceso condicional y las directivas de sesión de Cloud App Security funcionan conjuntamente para examinar cada sesión de usuario y tomar decisiones de directiva para cada aplicación. Para configurar una directiva de acceso condicional en Azure AD, siga este procedimiento:
 
-1. Configure una [directiva de acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) con asignaciones de usuario o de grupo de usuarios y la aplicación que quiere controlar con Control de aplicaciones de acceso condicional.
+1. Configure una [Azure ad Directiva de acceso condicional](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) con asignaciones para el usuario o grupo de usuarios y la aplicación que desea controlar con control de aplicaciones de acceso condicional.
 
     > [!NOTE]
-    > Esta directiva afectará únicamente a las aplicaciones que se hayan [implementado con control de aplicaciones de acceso condicional](proxy-deployment-aad.md).
+    > Esta directiva afectará solo a las aplicaciones que se [implementaron con control de aplicaciones de acceso condicional](proxy-deployment-aad.md) .
 
-2. Enrute usuarios a Microsoft Cloud App Security mediante la selección de **Usar las restricciones que exige el control de aplicaciones de acceso condicional** en **Sesión**.
+2. Para enrutar a los usuarios a Microsoft Cloud App Security, seleccione el **uso de control de aplicaciones de acceso condicional restricciones aplicadas** en **sesión**.
 
-## <a name="create-a-cloud-app-security-access-policy"></a>Crear una directiva de acceso de Cloud App Security
+## <a name="create-a-cloud-app-security-access-policy"></a>Creación de una directiva de acceso Cloud App Security
 
-Para crear una directiva de acceso, siga este procedimiento:
+Para crear una nueva Directiva de acceso, siga este procedimiento:
 
-1. En el portal, seleccione **Control** y, después, **Directivas**.
-2. En la página **Directivas**, haga clic en **Crear directiva** y seleccione **Directiva de acceso**.
+1. En el portal, seleccione **control** y, después, **directivas**.
+2. En la página **directivas** , haga clic en **crear Directiva** y seleccione **Directiva de acceso**.
 
-3. En la ventana **Directiva de acceso**, asigne un nombre a la directiva, por ejemplo, *Bloquear el acceso desde dispositivos no administrados*.
+3. En la ventana **Directiva de acceso** , asigne un nombre a la Directiva, como *bloquear el acceso desde dispositivos no administrados*.
 
-4. En la sección **Actividades que coinciden con todo lo siguiente** de **Origen de la actividad**, seleccione más filtros de actividad para aplicarlos a la directiva. Los filtros incluyen las siguientes opciones:
+4. En la sección **actividades que coinciden con todo de la siguiente** , en origen de la **actividad**, seleccione los filtros de actividad adicionales que se van a aplicar a la Directiva. Los filtros incluyen las siguientes opciones:
 
-    - **Etiqueta de dispositivo**: use este filtro para identificar los dispositivos no administrados.
+    - **Etiquetas de dispositivo**: Use este filtro para identificar los dispositivos no administrados.
 
-    - **Ubicación**: use este filtro para identificar las ubicaciones desconocidas (por tanto, que entrañan riesgo).
+    - **Ubicación**: Use este filtro para identificar ubicaciones desconocidas (y, por tanto, arriesgadas).
 
-    - **Dirección IP**: use este filtro para filtrar por direcciones IP o usar las etiquetas de dirección IP previamente asignadas.
+    - **Dirección IP**: Use este filtro para filtrar por direcciones IP o usar etiquetas de dirección IP asignadas previamente.
 
-    - **Etiqueta de agente de usuario**: use este filtro para habilitar la heurística que permite identificar las aplicaciones de escritorio y móviles. Este filtro se puede establecer en "igual a" o "no es igual a". Los valores se deben probar con las aplicaciones de escritorio y móviles para cada aplicación en la nube.
+    - **Etiqueta de agente de usuario**: Use este filtro para habilitar la heurística a fin de identificar aplicaciones móviles y de escritorio. Este filtro se puede establecer en es igual a o no es igual a. Los valores se deben probar con las aplicaciones móviles y de escritorio de cada aplicación en la nube.
 
-5. En **Acciones**, seleccione una de las siguientes opciones:
+5. En **acciones**, seleccione una de las siguientes opciones:
 
-    - **Permitir**: establezca esta acción para permitir expresamente el acceso según los filtros de directiva que haya establecido.
+    - **Prueba**: establezca esta acción para permitir explícitamente el acceso según los filtros de directiva que establezca.
 
-    - **Bloquear**: establezca esta acción para bloquear expresamente el acceso según los filtros de directiva que haya establecido.
+    - **Bloquear**: establezca esta acción para bloquear explícitamente el acceso según los filtros de directiva que establezca.
 
-6. Puede **crear una alerta para cada evento que coincida con la gravedad de directiva**, establecer un límite de alerta y seleccionar si quiere que la alerta llegue como un correo electrónico, como un mensaje de texto o ambas.
+6. Puede **crear una alerta para cada evento coincidente con la gravedad de la Directiva** y establecer un límite de alertas y seleccionar si desea que la alerta sea un correo electrónico, un mensaje de texto o ambos.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
 > [Bloqueo de descargas en dispositivos no administrados mediante controles de sesión](use-case-proxy-block-session-aad.md)
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 > [!div class="nextstepaction"]
 > [Cómo crear una directiva de sesión](session-policy-aad.md)
