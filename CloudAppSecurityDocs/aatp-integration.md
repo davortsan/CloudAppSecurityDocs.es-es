@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c38ccba7b6d9729ebdd80f005d9630270726d209
-ms.sourcegitcommit: d493fc811a68387398615ff6288a300bb1f0fce7
+ms.openlocfilehash: 0605d54b8af24b2b060e96788349e2cfe45abaac
+ms.sourcegitcommit: 661228206512c6c8dcb30fdce59b2c038cf2fe69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75310390"
+ms.lasthandoff: 03/01/2020
+ms.locfileid: "78204289"
 ---
 # <a name="azure-advanced-threat-protection-integration"></a>Integración de protección contra amenazas avanzada de Azure
 
@@ -35,7 +35,7 @@ Para realizar una investigación completa de los usuarios en un entorno híbrido
 > [!NOTE]
 >
 > - Si no tiene una suscripción para Microsoft Cloud App Security, podrá seguir usando Cloud App Security para obtener información sobre ATP de Azure.
-> - Los administradores de ATP de Azure pueden requerir nuevos permisos para obtener acceso a Cloud App Security. Para obtener información sobre cómo asignar permisos a Cloud App Security, consulte [Administración del acceso de administrador](manage-admins.md).
+> - Los administradores de Azure ATP pueden requerir nuevos permisos para obtener acceso a Cloud App Security. Para información sobre cómo asignar permisos a Cloud App Security, consulte [Administrar acceso de administrador](manage-admins.md).
 
 ## <a name="enable-azure-atp"></a>Habilitación de ATP de Azure
 
@@ -49,12 +49,19 @@ Para habilitar la integración de Cloud App Security con ATP de Azure:
 
     ![habilitación de la protección contra amenazas avanzada de Azure](media/aatp-integration.png)
 
-1. Seleccione **conectar datos de ATP de Azure, incluidas las alertas y las actividades con Cloud App Security** y, a continuación, haga clic en **Guardar**.
+1. Seleccione **Habilitar la integración de datos de ATP de Azure** y haga clic en **Guardar**.
 
 > [!NOTE]
 > Puede tardar hasta 12 horas hasta que la integración surta efecto.
 
 Después de habilitar la integración de ATP de Azure, podrá ver las actividades locales para todos los usuarios de su organización. También obtendrá información avanzada sobre los usuarios que combinan alertas y actividades sospechosas en los entornos locales y en la nube. Además, las directivas de ATP de Azure aparecerán en la página directivas de Cloud App Security. Para obtener una lista de las directivas de ATP de Azure, consulte [alertas de seguridad](https://docs.microsoft.com/azure-advanced-threat-protection/suspicious-activity-guide).
+
+También debe usar los vínculos de **configuración de ATP de Azure** para configurar las opciones de ATP de Azure que son relevantes para Cloud App Security. Use la siguiente información para obtener más información acerca de estas opciones:
+
+- [Configuración de sensores de ATP de Azure](/azure-advanced-threat-protection/install-atp-step5)
+- [Configurar cuentas de servicio de directorio](/azure-advanced-threat-protection/install-atp-step2)
+- [Configurar cuentas RADIUS para VPN](/azure-advanced-threat-protection/install-atp-step6-vpn)
+- [Acceder al centro de mantenimiento de ATP de Azure](/azure-advanced-threat-protection/atp-health-center)
 
 ## <a name="disable-azure-atp"></a>Deshabilitación de ATP de Azure
 
@@ -67,7 +74,7 @@ Para deshabilitar la integración de Cloud App Security con ATP de Azure:
 1. Desactive **conectar datos de ATP de Azure, incluidas las alertas y las actividades con Cloud App Security** y, a continuación, haga clic en **Guardar**.
 
 > [!NOTE]
-> Los datos existentes de ATP de Azure se conservan de acuerdo con las directivas de retención de Cloud App Security, pero se quitan las evaluaciones de postura de seguridad de identidad.
+> Cuando la integración está deshabilitada, los datos existentes de ATP de Azure se conservan de acuerdo con las directivas de retención de Cloud App Security, pero se quita la sección evaluaciones de postura de seguridad de identidad.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
