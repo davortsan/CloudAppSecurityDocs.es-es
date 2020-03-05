@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: article
 ms.date: 12/04/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9a08b00cabaa7829663d391073a9a4935efdee58
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: 9ee405188d0f338bfe43ca9a08730baa6054a844
+ms.sourcegitcommit: 582779b75be41e57fb1d773d1cf01f6b8598521e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75190035"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78274640"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-workday-environment"></a>Cómo Cloud App Security ayuda a proteger su entorno de WorkDay
 
@@ -40,6 +40,7 @@ Puede usar las siguientes plantillas de directiva integradas para detectar y not
 
 | Tipo | Name |
 | ---- | ---- |
+| Directiva de detección de anomalías integrada | [Actividad desde direcciones IP anónimas](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Actividad de un país poco frecuente](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Actividad desde direcciones IP sospechosas](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Viaje imposible](anomaly-detection-policy.md#impossible-travel) |
 | Plantilla de directiva de actividad | Inicio de sesión desde una dirección IP de riesgo |
 
 Para obtener más información sobre la creación de directivas, vea [crear una directiva](control-cloud-apps-with-policies.md#create-a-policy).
