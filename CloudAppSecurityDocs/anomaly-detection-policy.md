@@ -15,17 +15,17 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: d2dce554b959c14ba32c92f27579d5525069b1f3
-ms.sourcegitcommit: 9fe879ce7f07933866191724de5f108f43e3f923
+ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77566858"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78342136"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtención de análisis de comportamiento y detección de anomalías instantáneos
 
 *Se aplica a: Microsoft Cloud App Security*
 
-Las directivas de detección de anomalías de Microsoft Cloud App Security proporcionan análisis de comportamiento de usuarios y entidades (UEBA) y aprendizaje automático (ML) para que pueda ejecutar inmediatamente la detección de amenazas avanzada en su entorno en la nube. Dado que se habilitan automáticamente, las nuevas directivas de detección de anomalías proporcionan resultados inmediatos al proporcionar detecciones inmediatas, dirigidas a numerosas anomalías de comportamiento entre los usuarios y los equipos y dispositivos conectados a la red.  Además, las nuevas directivas exponen más datos del motor de detección de Cloud App Security, para ayudarle a acelerar el proceso de investigación y a contener amenazas en curso.
+Las directivas de detección de anomalías de Microsoft Cloud App Security proporcionan análisis de comportamiento de usuarios y entidades (UEBA) y aprendizaje automático (ML) para que pueda ejecutar inmediatamente la detección de amenazas avanzada en su entorno en la nube. Dado que se habilitan automáticamente, las nuevas directivas de detección de anomalías proporcionan resultados inmediatos al proporcionar detecciones inmediatas, dirigidas a numerosas anomalías de comportamiento entre los usuarios y los equipos y dispositivos conectados a la red.  Además, las nuevas directivas exponen más datos del motor de detección de Cloud App Security para ayudarle a acelerar el proceso de investigación e incluir amenazas en curso.
 
 Las directivas de detección de anomalías se habilitan automáticamente, pero Cloud App Security tiene un período de aprendizaje inicial de siete días durante el cual no se generan todas las alertas de detección de anomalías. Después, cada sesión se compara con la actividad, cuando los usuarios estaban activos, las direcciones IP, los dispositivos, etc. detectados durante el último mes y la puntuación de riesgo de estas actividades.  Estas detecciones forman parte del motor de detección de anomalías heurísticos que genera perfiles de su entorno y desencadena alertas con respecto a una línea base que se aprendió en la actividad de su organización. Estas detecciones también usan algoritmos de aprendizaje automático diseñados para generar perfiles de los usuarios y el patrón de inicio de sesión para reducir los falsos positivos.
 
@@ -86,7 +86,7 @@ Están disponibles las siguientes directivas de detección de anomalías:
 
 ### <a name="ransomware-activity"></a>Actividad de ransomware
 
-* Cloud App Security amplió sus capacidades de detección de ransomware con detección de anomalías para garantizar una cobertura más completa frente a ataques de ransomware sofisticados. El uso de nuestra experiencia en investigación de seguridad para identificar patrones de comportamiento que reflejan la actividad de ransomware, Cloud App Security garantiza una protección holística y sólida. Si Cloud App Security identifica, por ejemplo, una alta tasa de cargas de archivos o actividades de eliminación de archivos, puede representar un proceso de cifrado adverso. Estos datos se recopilan en los registros recibidos de las API conectadas y, a continuación, se combinan con los patrones de comportamiento aprendidos y la inteligencia de amenazas, por ejemplo, las extensiones de ransomware conocidas. Para obtener más información sobre cómo Cloud App Security detecta ransomware, consulte [protección de la organización contra ransomware](use-case-ransomware.md).
+* Cloud App Security amplió sus funcionalidades de detección de ransomware con la detección de anomalías para garantizar una cobertura más completa frente a los ataques sofisticados de ransomware. Al usar nuestra experiencia en investigación de seguridad para identificar patrones de comportamiento que reflejan la actividad de ransomware, Cloud App Security garantiza una protección holística y sólida. Si Cloud App Security identifica, por ejemplo, una alta tasa de cargas de archivos o actividades de eliminación de archivos, puede representar un proceso de cifrado adverso. Estos datos se recopilan en los registros recibidos de las API conectadas y, a continuación, se combinan con los patrones de comportamiento aprendidos y la inteligencia de amenazas, por ejemplo, las extensiones de ransomware conocidas. Para obtener más información sobre cómo Cloud App Security detecta ransomware, consulte [protección de la organización contra ransomware](use-case-ransomware.md).
 
 ### <a name="activity-performed-by-terminated-user"></a>Actividad realizada por el usuario Terminado
 
@@ -108,7 +108,7 @@ La detección busca usuarios cuya cuenta finalizó en Azure AD, pero que siguen 
 
 ### <a name="suspicious-inbox-manipulation-rules"></a>Reglas de manipulación de bandeja de entrada sospechosas
 
-* Esta detección genera un perfil de su entorno y desencadena alertas cuando se establecen reglas sospechosas que eliminan o mueven mensajes o carpetas en la bandeja de entrada de un usuario. Esto puede indicar que la cuenta del usuario se ve comprometida, que los mensajes se están ocultando intencionadamente y que el buzón se usa para distribuir el correo no deseado en la organización.
+* Esta detección genera un perfil de su entorno y desencadena alertas cuando se establecen reglas sospechosas que eliminan o mueven mensajes o carpetas en la bandeja de entrada de un usuario. Esto puede indicar que la cuenta del usuario está en peligro, que los mensajes se están ocultando de manera intencionada o que el buzón se está usando para enviar correo no deseado y malware en la organización.
 
 ### <a name="suspicious-email-deletion-activity-preview"></a>Actividad de eliminación de correo electrónico sospechoso (versión preliminar)
 
@@ -153,7 +153,7 @@ Puede habilitar acciones correctivas automatizadas en alertas generadas por dire
 
 Para influir en el motor de detección de anomalías para suprimir o exponer alertas en función de sus preferencias:
 
-* En la Directiva de viaje imposible, puede establecer el control deslizante de sensibilidad para determinar el nivel de comportamiento anómalo necesario antes de que se desencadene una alerta. Por ejemplo, si se establece en Low, se suprimirán las alertas de viaje imposibles de las ubicaciones comunes de un usuario y, si se establece en alto, se mostrarán dichas alertas. Puede elegir entre los siguientes niveles de confidencialidad:
+* En la directiva de viaje imposible, puede establecer el control deslizante de sensibilidad para determinar el nivel de comportamiento anómalo necesario antes de que se desencadene una alerta. Por ejemplo, si se establece en Low, se suprimirán las alertas de viaje imposibles de las ubicaciones comunes de un usuario y, si se establece en alto, se mostrarán dichas alertas. Puede elegir entre los siguientes niveles de confidencialidad:
 
   * **Bajo**: suprimes del sistema, del inquilino y del usuario
   * **Medio**: suprimes del sistema y del usuario
@@ -175,7 +175,7 @@ Para influir en el motor de detección de anomalías para suprimir o exponer ale
 ## <a name="scope-anomaly-detection-policies"></a>Directivas de detección de anomalías de ámbito
 
 Cada directiva de detección de anomalías puede tener un ámbito independiente, de modo que solo se aplique a los usuarios y grupos que desee incluir y excluir en la Directiva.
-Por ejemplo, puede establecer la actividad desde la detección de un condado poco frecuente para omitir un usuario específico que viaja con frecuencia.
+Por ejemplo, puede establecer la actividad a partir de la detección de condados poco frecuentes para omitir un usuario específico que viaja de forma habitual.
 
 Para el ámbito de una directiva de detección de anomalías:
 
