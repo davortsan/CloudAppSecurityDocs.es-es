@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.openlocfilehash: bf9260d0fc4c68ac27638fbefbfdd738a89ccd22
-ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
+ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912269"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78342744"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security-preview"></a>Conectar Google Cloud Platform a Microsoft Cloud App Security (versión preliminar)
 
@@ -100,7 +100,7 @@ Tome nota del identificador de la **organización**, lo necesitará más adelant
 
 ## <a name="configure-cloud-app-security"></a>Configurar Cloud App Security
 
-* En el portal de Cloud App Security, haga clic en **Investigar** y, después, en **Aplicaciones conectadas**.
+* En el portal de Cloud App Security, haga clic en **investigar** y, a continuación, en **aplicaciones conectadas**.
 
 ### <a name="add-the-gcp-connection-details"></a>Agregar los detalles de la conexión GCP
 
@@ -136,9 +136,9 @@ Para proporcionar los detalles de la conexión GCP, en **conectores de aplicacio
 
 ### <a name="test-the-connection"></a>Prueba de la conexión
 
-Haga clic en **Probar API** para asegurarse de que la conexión se ha realizado correctamente.
+Haga clic en **Probar API** para confirmar que la conexión se ha realizado correctamente.
 
-La prueba puede tardar unos minutos. Cuando haya finalizado, recibirá una notificación que le indicará si se ha realizado correcta o incorrectamente. Cuando reciba la notificación de que se ha realizado correctamente, haga clic en **Listo**.
+La prueba puede tardar unos minutos. Cuando haya terminado, recibirá una notificación de éxito o de error. Cuando reciba la notificación de que se ha realizado correctamente, haga clic en **Listo**.
 
 Si tiene problemas para conectar la aplicación, consulte [solución de problemas de conectores de aplicaciones](troubleshooting-api-connectors-using-error-messages.md).
 
@@ -148,7 +148,7 @@ La deshabilitación del receptor de exportación agregado solo es posible a trav
 
 ### <a name="to-disable-aggregated-export-sink"></a>Para deshabilitar el receptor de exportación agregado
 
-| Paso | Script | Más información |
+| Paso | Secuencia de comandos | Más información |
 |-|-|-|
 | 1. Inicie una sesión de Google Cloud Shell. | | [Usar Cloud Shell](https://cloud.google.com/shell/docs/using-cloud-shell) |
 | 2. establezca el proyecto actual. | `gcloud config set project {PROJECT_ID}` | [conjunto de configuración de gcloud](https://cloud.google.com/sdk/gcloud/reference/config/set) |
