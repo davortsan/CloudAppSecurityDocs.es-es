@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: a4d58378bc8502a9022f51d3794d3175df8596de
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 25bbe485406d0c5df0bb9f60b479e4e159d095ff
+ms.sourcegitcommit: 3f6ef6b97a0953470135d115323a00cf11441ab7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720862"
+ms.lasthandoff: 03/08/2020
+ms.locfileid: "78927733"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Incorporación e implementación de Control de aplicaciones de acceso condicional para cualquier aplicación
 
@@ -88,7 +88,7 @@ Siga estos pasos para configurar cualquier aplicación que se controlará Cloud 
 
 ## Paso 3: configurar la aplicación que va a implementar<a name="conf-app"></a>
 
-Vaya a la aplicación que va a implementar. La página que vea dependerá de si se reconoce la aplicación. Realice una de las acciones siguientes:
+Vaya a la aplicación que va a implementar. La página que vea dependerá de si se reconoce la aplicación. Realice una de las siguientes acciones:
 
 | Estado de la aplicación | Descripción | Pasos |
 | --- | --- | --- |
@@ -99,16 +99,16 @@ Vaya a la aplicación que va a implementar. La página que vea dependerá de si 
 
 1. En la barra de menús, haga clic en el icono configuración engranaje ![configuración](media/settings-icon.png "icono de configuración")y, a continuación, seleccione **control de aplicaciones de acceso condicional**.
 
-1. Haga clic en **Ver nuevas aplicaciones**.
+1. Haga clic en **ver nuevas aplicaciones**.
 
-    ![Vista de nuevas aplicaciones del Control de aplicaciones de acceso condicional](media/caac-view-apps.png)
+    ![Control de aplicaciones de acceso condicional ver nuevas aplicaciones](media/caac-view-apps.png)
 
 1. En la pantalla que se abre, puede ver una lista de aplicaciones nuevas. Para cada aplicación que se está incorporando, haga clic en el signo de **+** y, a continuación, haga clic en **Agregar**.
 
     > [!NOTE]
-    > Si una aplicación no aparece en el catálogo de aplicaciones de Cloud App Security, aparecerá en la sección Aplicación no identificada del cuadro de diálogo junto con la dirección URL de inicio de sesión. Al hacer clic en el signo + en estas aplicaciones, puede incorporarlas como aplicación personalizada.
+    > Si una aplicación no aparece en el Cloud App Security catálogo de aplicaciones, aparecerá en el cuadro de diálogo en aplicaciones no identificadas junto con la dirección URL de inicio de sesión. Al hacer clic en el signo + de estas aplicaciones, puede incorporar la aplicación como una aplicación personalizada.
 
-    ![Aplicaciones de Azure AD detectadas mediante el Control de aplicaciones de acceso condicional](media/caac-discovered-aad-apps.png)
+    ![Control de aplicaciones de acceso condicional detectado Azure AD aplicaciones](media/caac-discovered-aad-apps.png)
 
 ### Para agregar dominios para una aplicación<a name="add-domains"></a>
 
@@ -176,17 +176,14 @@ Una vez que esté listo para habilitar la aplicación para su uso en el entorno 
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Cómo crear una directiva de sesión»](session-policy-aad.md)
+> [«ANTERIOR: implementar Control de aplicaciones de acceso condicional para aplicaciones destacadas](proxy-deployment-aad.md)
 
-## <a name="see-also"></a>Consulta también
+> [!div class="nextstepaction"]
+> [SIGUIENTE: Cómo crear una directiva de sesión»](session-policy-aad.md)
+
+## <a name="see-also"></a>Vea también
 
 > [!div class="nextstepaction"]
 > [Introducción a Control de aplicaciones de acceso condicional](proxy-intro-aad.md)
-
-> [!div class="nextstepaction"]
-> [Trabajo con el control de aplicaciones de acceso condicional de Cloud App Security](proxy-intro-aad.md)
-
-> [!div class="nextstepaction"]
-> [Implementación de Control de aplicaciones de acceso condicional para aplicaciones destacadas](proxy-deployment-aad.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

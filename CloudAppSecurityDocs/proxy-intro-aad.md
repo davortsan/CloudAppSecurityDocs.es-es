@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bedf7e135e0204427b492c8106f1db13fb538195
-ms.sourcegitcommit: 35749af5294c45a3d5ba8667f7a764fe4719575d
+ms.openlocfilehash: 8087effca6ceee2c65a9660391ac5606d8ef05e6
+ms.sourcegitcommit: 3f6ef6b97a0953470135d115323a00cf11441ab7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567181"
+ms.lasthandoff: 03/08/2020
+ms.locfileid: "78927798"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Protección de aplicaciones con Microsoft Cloud App Security Control de aplicaciones de acceso condicional
 
@@ -54,7 +54,11 @@ Control de aplicaciones de acceso condicional permite que las sesiones y el acce
 
 La creación de una directiva de sesión con Control de aplicaciones de acceso condicional permite controlar las sesiones de usuario mediante el redireccionamiento del usuario a través de un proxy inverso en lugar de hacerlo directamente a la aplicación. A partir de entonces, las solicitudes y respuestas de usuario pasan por Cloud App Security en lugar de hacerlo directamente a la aplicación.
 
-Cuando una sesión está protegida por el proxy, todas las direcciones URL y cookies pertinentes se sustituyen por Cloud App Security. Por ejemplo, si la aplicación devuelve una página con vínculos cuyos dominios finalizan con myapp.com, el vínculo se reemplaza con dominios que finalizan con algo parecido a: myapp.com.us.cas.ms
+Cuando una sesión está protegida por el proxy, todas las direcciones URL y cookies pertinentes se sustituyen por Cloud App Security. Por ejemplo, si la aplicación devuelve una página con vínculos cuyos dominios finalizan con `myapp.com`, el dominio del vínculo tiene un sufijo similar a `*.cas.ms`, como se indica a continuación:
+
+|Dirección URL de la aplicación|URL reemplazada|
+|---|---|
+|`myapp.com`|`myapp.com.us.cas.ms`|
 
 Este método no requiere la instalación de nada en el dispositivo, por lo que resulta idóneo al supervisar o controlar sesiones desde dispositivos no administrados o usuarios asociados.
 
