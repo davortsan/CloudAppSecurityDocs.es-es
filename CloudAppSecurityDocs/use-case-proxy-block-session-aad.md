@@ -1,6 +1,6 @@
 ---
-title: Bloqueo de las descargas desde dispositivos no administrados con el control de aplicaciones de acceso condicional de Cloud App Security
-description: En este tutorial se describe cómo usar las funciones de proxy inverso de Azure AD para proteger la organización de descargas de datos confidenciales con dispositivos no administrados.
+title: Bloqueo de las descargas desde dispositivos no administrados con control de aplicaciones de acceso condicional de Cloud App Security
+description: En este tutorial se describe el escenario para proteger su organización frente a las descargas de datos confidenciales por parte de dispositivos no administrados mediante funcionalidades de proxy inverso de Azure AD.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -14,26 +14,23 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 983b3c2927bf6b2ae62fafbe56a439e3677eebc3
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 097f1dcdf7cb360dc38ce138ee373d6d506bdda8
+ms.sourcegitcommit: 3f6ef6b97a0953470135d115323a00cf11441ab7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720784"
+ms.lasthandoff: 03/08/2020
+ms.locfileid: "78927768"
 ---
-# <a name="tutorial-block-download-of-sensitive-information"></a>Tutorial: bloqueo de las descargas de información confidencial
+# <a name="tutorial-block-download-of-sensitive-information"></a>Tutorial: Bloqueo de la descarga de información confidencial
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
->[!div class="step-by-step"]
->[« ANTERIOR: Cómo crear una directiva de acceso](access-policy-aad.md)
-
-Los administradores de TI de hoy en día se encuentran entre la espada y la pared. Quiere permitir que los empleados sean productivos. Para ello, hay que permitirles el acceso a aplicaciones, de forma que puedan trabajar en cualquier momento y desde cualquier dispositivo. Pero quiere proteger los activos de la empresa, incluida la información propietaria y con privilegios. ¿Cómo se puede permitir el acceso de los empleados a las aplicaciones en la nube y, al mismo tiempo, proteger los datos? **En este tutorial se describe cómo bloquear las descargas de los usuarios que tienen acceso a datos confidenciales en las aplicaciones en la nube de la empresa desde dispositivos no administrados o ubicaciones de red no corporativas.**
+Los administradores de TI de hoy en día se encuentran entre la espada y la pared. Por una parte, quiere permitir que los empleados sean productivos. Para ello, hay que permitirles el acceso a aplicaciones, de forma que puedan trabajar en cualquier momento y desde cualquier dispositivo. Pero por otra parte, quiere proteger los activos de la empresa, incluida la información propietaria y con privilegios. ¿Cómo se puede permitir el acceso de los empleados a las aplicaciones en la nube y, al mismo tiempo, proteger los datos? **En este tutorial se describe cómo bloquear las descargas de los usuarios que tienen acceso a datos confidenciales en las aplicaciones en la nube de la empresa desde dispositivos no administrados o ubicaciones de red no corporativas.**
 
 > [!div class="checklist"]
 >
-> * Crear una directiva de bloqueo de descarga en dispositivos no administrados
-> * Validar la directiva
+> * Creación de una directiva de bloqueo de descarga para dispositivos no administrados
+> * Validación de la directiva
 
 ## <a name="the-threat"></a>La amenaza
 
@@ -41,79 +38,78 @@ Un administrador de cuentas de la organización quiere consultar algo en Salesfo
 
 ## <a name="the-solution"></a>La solución
 
-Para proteger la organización, supervise y controle el uso de la aplicación en la nube usando el acceso condicional de Azure AD y el control de aplicaciones de acceso condicional de Microsoft Cloud App Security.
+Para proteger la organización, supervise y controle el uso de la aplicación en la nube usando el acceso condicional de Azure AD y el control de aplicaciones de acceso condicional de Microsoft Cloud App Security.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* Una licencia válida de Azure AD Premium P1
-* Haber configurado una aplicación en la nube para SSO en Azure AD
-* Haber [implementado la aplicación en Cloud App Security](proxy-deployment-aad.md)
+* Una licencia válida de Azure AD Premium P1
+* Configurar una aplicación en la nube para SSO en Azure AD
+* Asegurarse de que la [aplicación se implementa en Cloud App Security](proxy-deployment-aad.md).
 
-## <a name="create-a-block-download-policy-for-unmanaged-devices"></a>Crear una directiva de bloqueo de descarga en dispositivos no administrados
+## <a name="create-a-block-download-policy-for-unmanaged-devices"></a>Creación de una directiva de bloqueo de descargas para dispositivos no administrados
 
-Las directivas de sesión de Cloud App Security le permiten restringir una sesión según el estado del dispositivo. Para conseguir controlar una sesión mediante el dispositivo como condición, cree tanto una directiva de acceso condicional COMO una directiva de sesión.
+Las directivas de sesión de Cloud App Security permiten restringir una sesión en función del estado del dispositivo. Para conseguir controlar una sesión mediante el dispositivo como condición, cree una directiva de acceso condicional Y una directiva de sesión.
 
-### <a name="step-1-create-an-azure-ad-conditional-access-policy"></a>Paso 1: Crear una directiva de acceso condicional de Azure AD
+### <a name="step-1-create-an-azure-ad-conditional-access-policy"></a>Paso 1: Crear una directiva de acceso condicional de Azure AD
 
-1. Cree una directiva de acceso condicional de Azure AD con usuarios asignados y una aplicación.
+1. Cree una directiva de acceso condicional de Azure AD con usuarios asignados y una aplicación.
 2. Active **Use Conditional Access App Control enforced restrictions** (Usar las restricciones que exige el control de aplicaciones de acceso condicional) en los controles de sesión de la directiva de acceso condicional.
 
-Tras completar esta tarea, vaya al portal de Cloud App Security y cree una directiva de sesión para supervisar y controlar las descargas de archivos en la sesión.
+Después de completar esta tarea, vaya al portal de Cloud App Security y cree una directiva de sesión para supervisar y controlar las descargas de archivos en la sesión.
 
 ### <a name="step-2-create-a-session-policy"></a>Paso 2: Crear una directiva de sesión
 
-1. En el portal de Cloud App Security, seleccione **Control** y, después, **Directivas**.
+1. En el portal de Cloud App Security, seleccione **Control** seguido de **Directivas**.
 
-2. En la página **Directivas**, haga clic en **Crear directiva** y, después, en **Directiva de sesión**.
+2. En la página **Directivas**, haga clic en **Crear directiva** seguido de **Directiva de sesión**.
 
-3. En la página **Creación de directivas de sesión**, especifique un nombre y una descripción para la directiva. Por ejemplo, **Bloquear descargas desde Salesforce con dispositivos no administrados**.
+3. En la página **Crear directiva de sesión**, asigne un nombre y una descripción a la directiva. Por ejemplo, **Bloquear descargas de Salesforce para dispositivos no administrados**.
 
-4. Asigne una **Gravedad de directiva** y una **Categoría**.
+4. Asigne una **gravedad de directiva** y una **categoría**.
 
-5. En **Tipo de control de sesión**, seleccione **Controlar la descarga de archivos (con DLP)** . Esta configuración le proporciona la capacidad de supervisar todo lo que hacen los usuarios en una sesión de Salesforce, así como control para bloquear y proteger las descargas en tiempo real.
+5. En **Tipo de control de sesión**, seleccione **Controlar la descarga de archivos (con DLP)** . Esta configuración le permite supervisar todo lo que hacen los usuarios en una sesión de Salesforce y le ofrece control para bloquear y proteger las descargas en tiempo real.
 
-6. En **Origen de actividad** en la sección **Actividades que coinciden con todo lo siguiente**, seleccione estos filtros:
+6. En **Origen de actividad** en la sección **Actividades que coinciden con todo lo siguiente**, seleccione los filtros:
 
-   * **Etiqueta de dispositivo**: seleccione **No es igual a** y después seleccione **Conforme**, **Unido a dominio** o **Certificado de cliente válido**. La selección depende del método que se usa en su organización para identificar los dispositivos administrados.
+   * **Etiquetas de dispositivo**: seleccione **No es igual a** y después seleccione **Compatible**, **Unido a dominio** o **Certificado de cliente válido**. La selección depende del método que se use en su organización para identificar los dispositivos administrados.
 
-   * **Aplicación**: seleccione la aplicación que quiera controlar.
+   * **Aplicación**: Seleccione la aplicación que desea controlar.
 
-   * **Usuarios**: seleccione los usuarios que quiera supervisar.
+   * **Usuarios**: seleccione los usuarios que desea supervisar.
 
-7. Como alternativa, puede bloquear las descargas desde ubicaciones que no forman parte de la red corporativa. En **Origen de actividad** en la sección **Actividades que coinciden con todo lo siguiente**, establezca los siguientes filtros:
+7. También puede bloquear las descargas de ubicaciones que no forman parte de la red corporativa. En **Origen de actividad** en la sección **Actividades que coinciden con todo lo siguiente**, configure los filtros siguientes:
 
    * **Dirección IP** o **Ubicación**: puede usar cualquiera de estos dos parámetros para identificar las ubicaciones desconocidas o no corporativas desde las que un usuario podría estar intentando acceder a información confidencial.
 
      > [!NOTE]
-     > Si quiere bloquear las descargas TANTO desde dispositivos no administrados como desde ubicaciones no corporativas, tendrá que crear dos directivas de sesión. Establezca en una directiva el **Origen de actividad** mediante la ubicación. Establezca en la otra directiva el **Origen de actividad** en dispositivos no administrados.
+     > Si quiere bloquear las descargas TANTO desde dispositivos no administrados COMO desde ubicaciones no corporativas, tendrá que crear dos directivas de sesión. Una directiva establece el **origen de la actividad** de mediante la ubicación. La otra directiva establece el **origen de la actividad** en dispositivos no administrados.
 
-   * **Aplicación**: seleccione la aplicación que quiera controlar.
+   * **Aplicación**: Seleccione la aplicación que desea controlar.
 
-   * **Usuarios**: seleccione los usuarios que quiera supervisar.
+   * **Usuarios**: seleccione los usuarios que desea supervisar.
 
-8. Establezca los siguientes filtros en la sección **Archivos que coinciden con todo lo siguiente** de **Origen de la actividad**:
+8. En **Origen de actividad** en la sección **Archivos que coinciden con todo lo siguiente**, configure los filtros siguientes:
 
    * **Etiquetas de clasificación**: si usa etiquetas de clasificación de Azure Information Protection, filtre los archivos por una etiqueta de clasificación concreta de Azure Information Protection.
 
-   * Seleccione **Nombre de archivo** o **Tipo de archivo** para aplicar restricciones basadas en el nombre o el tipo de archivo.
+   * Seleccione **Nombre de archivo** o **Tipo de archivo** para aplicar las restricciones según el nombre o el tipo de archivo.
 9. Habilite **Inspección de contenido** para permitir que la DLP interna examine los archivos en busca de contenido confidencial.
 
-10. En **Acciones**, seleccione **bloquear**. Personalice el mensaje de bloqueo que verán los usuarios cuando no puedan descargar archivos.
+10. En **Acciones** seleccione **Bloquear**. Personalice el mensaje de bloqueo que verán los usuarios cuando no puedan descargar archivos.
 
 11. Establezca las alertas que quiera recibir cuando coincida la directiva. Puede establecer un límite para no recibir demasiadas alertas. Seleccione si quiere recibir las alertas como mensaje de correo electrónico, de texto o ambos.
 
 12. Haga clic en **Crear**.
 
-## <a name="validate-your-policy"></a>Validar la directiva
+## <a name="validate-your-policy"></a>Validación de la directiva
 
-1. Para simular la descarga de archivos bloqueada, inicie sesión en la aplicación desde un dispositivo no administrado o una ubicación de red no corporativa. Después, intente descargar un archivo.
+1. Para simular la descarga de archivos bloqueada, inicie sesión en la aplicación desde un dispositivo no administrado o una ubicación de red no corporativa. A continuación, intente descargar un archivo.
 
-2. El archivo debería estar bloqueado y debería recibir el mensaje que configuró en **Personalizar el mensaje de bloqueo**.
+2. El archivo debería estar bloqueado y debería recibir el mensaje que configuró al **personalizar el mensaje de bloqueo**.
 
-3. En el portal de Cloud App Security, haga clic en **Control** y **Directivas** y, después, en la directiva que ha creado para ver el informe de directiva. Una coincidencia de directiva de sesión debe aparecer en breve.
+3. En el portal de Cloud App Security, haga clic en **Control** y **Directivas** y, después, en la directiva que ha creado para ver el informe de directiva. En breve debe aparecer una coincidencia de directiva de sesión.
 
 4. En el informe de directiva puede ver los inicios de sesión que se han redirigido a Microsoft Cloud App Security para someterlos a un control de sesión, así como los archivos que se han descargado o bloqueado en las sesiones supervisadas.
-
 
 ## <a name="next-steps"></a>Pasos siguientes
 
