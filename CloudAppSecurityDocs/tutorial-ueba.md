@@ -11,15 +11,15 @@ ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
 ms.openlocfilehash: cafb971ae16b0c5bd48e041d36c16521b6e7e5d3
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74733701"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78342914"
 ---
 # <a name="tutorial-investigate-risky-users"></a>Tutorial: Investigación de usuarios de riesgo
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 Los equipos de operaciones de seguridad se enfrentan al desafío de supervisar la actividad del usuario, sospechosa o de otro tipo, en todas las dimensiones de la superficie expuesta a los ataques de identidad, mediante varias soluciones de seguridad que a menudo no están conectadas. Aunque muchas empresas disponen actualmente de equipos de búsqueda para identificar de forma proactiva las amenazas en sus entornos, saber qué buscar en la ingente cantidad de datos puede ser un desafío. Microsoft Cloud App Security simplifica ahora esta tarea, ya que elimina la necesidad de crear reglas de correlación complejas y le permite buscar ataques que se distribuyen entre la nube y la red local.
 
@@ -58,7 +58,7 @@ La puntuación de alertas representa el posible impacto de una alerta específic
 * **Puntuación de las actividades**  
 La puntuación de las actividades determina la probabilidad de que un usuario específico realice una actividad específica, en función del aprendizaje de comportamiento del usuario y las personas del mismo nivel. Las actividades identificadas como las más anómalas reciben las puntuaciones más altas.
 
-## Fase 1: Conexión a las aplicaciones que se quiere proteger<a name="connect-apps-protect"></a>
+## Fase 1: Conexión a las aplicaciones que se quiere proteger<a name="connect-apps-protect"></a>
 
 1. Conecte al menos una aplicación a Microsoft Cloud App Security mediante los [conectores de API](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md). Es recomendable que comience estableciendo la conexión a [Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 1. Conecte más aplicaciones mediante [proxy para lograr el control de las aplicaciones de acceso condicional](proxy-deployment-aad.md).
@@ -99,7 +99,7 @@ Al investigar a un usuario, se formulará estas preguntas sobre las actividades 
 
 * Vaya al **registro de actividad** para comprender por qué esta actividad recibió una puntuación alta y otras no. Puede establecer la opción **Prioridad de investigación** en **Se ha establecido** para comprender qué actividades son sospechosas. Por ejemplo, puede filtrar por la prioridad de investigación de todas las actividades que se produjeron en Ucrania. Así, puede ver si hubo otras actividades de riesgo, desde dónde se conectó el usuario, y puede pasar fácilmente a otras exploraciones en profundidad, como actividades locales y en la nube no anómalas recientes, para continuar con la investigación.
 
-## Fase 4: Protección de la organización<a name="protect"></a>
+## Fase 4: Protección de la organización<a name="protect"></a>
 
 Si su investigación indica que un usuario está en peligro, siga estos pasos para mitigar el riesgo.
 
