@@ -282,6 +282,8 @@
           href: troubleshooting-siem.md
         - name: Directivas de solución de problemas
           href: troubleshoot-policies.md
+        - name: 'Solución de problemas: ¿qué es cas.ms?'
+          href: troubleshooting-proxy-url.md
 - name: Recursos
   items:
     - name: Vea nuestros seminarios web
