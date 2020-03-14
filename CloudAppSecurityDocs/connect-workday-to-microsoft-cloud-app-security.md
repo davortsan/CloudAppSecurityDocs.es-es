@@ -15,11 +15,11 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 032ed68260e178c176c631b41eb7dc64e869cbd3
-ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912204"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285519"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Conexión de WorkDay a Microsoft Cloud App Security (versión preliminar)
 
@@ -43,8 +43,8 @@ La cuenta de WorkDay usada para conectarse a Cloud App Security debe ser miembro
 | --- | --- | --- | --- | --- |
 | System | Configuración: configuración de inquilinos: General | Configuración: configuración de inquilinos: seguridad | Ver, modificar | Get, Put |
 | System | Administración de seguridad | | Ver, modificar | Get, Put |
-| System | Auditoría del sistema | | Consulte | Get |
-| Personal | Datos de trabajo: personal | Datos de trabajo: informes de trabajo público | Consulte | Get |
+| System | Auditoría del sistema | | Ver | Obtener |
+| Personal | Datos de trabajo: personal | Datos de trabajo: informes de trabajo público | Ver | Obtener |
 
 > [!NOTE]
 >
@@ -68,7 +68,7 @@ Para obtener más información sobre la configuración de usuarios, grupos de se
 
 1. En la página **registrar el cliente de API** , rellene la información siguiente y, a continuación, haga clic en **Aceptar**.
 
-    | Nombre de campo | Valor |
+    | Nombre del campo | Valor |
     | ---- | ---- |
     | Nombre de cliente | Microsoft Cloud App Security |
     | Tipo de concesión de cliente | Concesión de código de autorización |
@@ -82,7 +82,7 @@ Para obtener más información sobre la configuración de usuarios, grupos de se
 1. Una vez registrado, tome nota de los siguientes parámetros y, a continuación, haga clic en **listo**.
 
     * Identificador de cliente
-    * Secreto de cliente
+    * Secreto del cliente
     * Punto de conexión de API de REST de WorkDay
     * Extremo de token
     * Extremo de autorización
@@ -107,9 +107,9 @@ Para obtener más información sobre la configuración de usuarios, grupos de se
 
     ![Captura de pantalla sobre cómo autorizar el acceso a la aplicación](media/connect-workday-add-app-allow.png)
 
-1. De vuelta en el portal de Cloud App Security, debería ver un mensaje que le indica que WorkDay se conectó correctamente. Haga clic en **Probar API** para asegurarse de que la conexión se ha realizado correctamente.
+1. De vuelta en el portal de Cloud App Security, debería ver un mensaje que le indica que WorkDay se conectó correctamente. Haga clic en **Probar API** para confirmar que la conexión se ha realizado correctamente.
 
-    La prueba puede tardar unos minutos. Cuando reciba la notificación de que se ha realizado correctamente, haga clic en **Cerrar**.
+    La prueba puede tardar unos minutos. Después de recibir un aviso de éxito, haga clic en **cerrar**.
 
 > [!NOTE]
 > Después de conectar WorkDay, recibirá eventos durante siete días antes de la conexión.

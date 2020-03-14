@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ca5fdade4d00e93d8adf6a79f3534be9e6ac7481
-ms.sourcegitcommit: 35749af5294c45a3d5ba8667f7a764fe4719575d
+ms.openlocfilehash: 06a9b0fc0a732f745d370fe28541b0a753bfe0cc
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567164"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285729"
 ---
 # <a name="session-policies"></a>Directivas de sesión
 
@@ -82,7 +82,7 @@ Para crear una nueva Directiva de sesión, siga este procedimiento:
     >[!NOTE]
     >Las directivas de sesión no admiten aplicaciones móviles y de escritorio. Las aplicaciones móviles y las aplicaciones de escritorio también pueden bloquearse o permitirse mediante la creación de una directiva de acceso.
 
-1. Si ha seleccionado la opción para **controlar la descarga de archivos (con DLP)**:
+1. Si ha seleccionado la opción para **controlar la descarga de archivos (con DLP)** :
 
     1. En **origen** de la actividad, en la sección **archivos que coinciden con todo lo siguiente** , seleccione los filtros de archivo adicionales que se aplicarán a la Directiva. Estos filtros pueden incluir las siguientes opciones:
 
@@ -94,11 +94,11 @@ Para crear una nueva Directiva de sesión, siga este procedimiento:
 
     3. En **acciones**, seleccione uno de los siguientes elementos:
 
-        * **Prueba (supervisar todas las actividades)**: establezca esta acción para permitir la descarga explícitamente según los filtros de directiva que haya establecido.
+        * **Prueba (supervisar todas las actividades)** : establezca esta acción para permitir la descarga explícitamente según los filtros de directiva que haya establecido.
 
-        * **Bloquear (bloquear la descarga de archivos y supervisar todas las actividades)**: establezca esta acción para bloquear explícitamente la descarga según los filtros de directiva que haya establecido. Para obtener más información, consulte [Cómo funciona Block download](#block-download).
+        * **Bloquear (bloquear la descarga de archivos y supervisar todas las actividades)** : establezca esta acción para bloquear explícitamente la descarga según los filtros de directiva que haya establecido. Para obtener más información, consulte [Cómo funciona Block download](#block-download).
 
-        * **Proteger (aplicar etiqueta de clasificación para descargar y supervisar todas las actividades)**: esta opción solo está disponible si seleccionó **controlar la descarga de archivos (con DLP)** en **Directiva de sesión**. Si su organización usa Azure Information Protection, puede establecer una **acción** para aplicar un conjunto de etiquetas de clasificación en Azure Information Protection al archivo. Para obtener más información, vea [Cómo funciona la protección de descargas](#protect-download).
+        * **Proteger (aplicar etiqueta de clasificación para descargar y supervisar todas las actividades)** : esta opción solo está disponible si seleccionó **controlar la descarga de archivos (con DLP)** en **Directiva de sesión**. Si su organización usa Azure Information Protection, puede establecer una **acción** para aplicar un conjunto de etiquetas de clasificación en Azure Information Protection al archivo. Para obtener más información, vea [Cómo funciona la protección de descargas](#protect-download).
 
 1. Puede **crear una alerta para cada evento coincidente con la gravedad de la Directiva** y establecer un límite de alertas. Seleccione si desea que la alerta sea un correo electrónico, un mensaje de texto o ambos.
 
@@ -168,11 +168,15 @@ Es importante formar a los usuarios cuando infrinjan una directiva, para que apr
 
 Por ejemplo, si un usuario carga un archivo sin una etiqueta de Azure Information Protection, se puede mostrar un mensaje que explica que el archivo contiene contenido confidencial que requiere una etiqueta adecuada. De forma similar, si un usuario intenta cargar un documento desde un dispositivo no administrado, se puede mostrar un mensaje con instrucciones sobre cómo inscribir el dispositivo o uno que proporciona una explicación más detallada de por qué se debe inscribir el dispositivo.
 
->[!div class="step-by-step"]
-> [«Anterior: incorporación e implementación de control de aplicaciones de acceso condicional para cualquier aplicación»](proxy-deployment-any-app.md)
-> [siguiente: creación de una directiva de acceso»](access-policy-aad.md)
-
 ## <a name="next-steps"></a>Pasos siguientes
+
+>[!div class="nextstepaction"]
+> [«ANTERIOR: incorporación e implementación de Control de aplicaciones de acceso condicional para cualquier aplicación»](proxy-deployment-any-app.md)
+
+>[!div class="nextstepaction"]
+> [SIGUIENTE: Cómo crear una directiva de acceso»](access-policy-aad.md)
+
+## <a name="see-also"></a>Vea también
 
 > [!div class="nextstepaction"]
 > [Bloqueo de descargas en dispositivos no administrados mediante Azure AD Control de aplicaciones de acceso condicional](use-case-proxy-block-session-aad.md)
