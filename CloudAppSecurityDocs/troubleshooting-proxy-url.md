@@ -1,30 +1,30 @@
 ---
-title: 'Solución de problemas: ¿Qué es cas.ms?'
-description: En este artículo se proporciona información sobre el sufijo cas.ms de la dirección URL que usa Control de aplicaciones de acceso condicional.
+title: 'Solución de problemas: ¿Qué es cas.ms, mcas.ms o mcas-gov.us?'
+description: En este artículo se proporciona información sobre el sufijo de dirección URL cas.ms, mcas.ms o mcas-gov.us que usa Control de aplicaciones de acceso condicional.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/08/2020
+ms.date: 03/18/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: e08fc2af75d59ac5697593a47e3a002dfb4986f9
-ms.sourcegitcommit: 3f6ef6b97a0953470135d115323a00cf11441ab7
+ms.openlocfilehash: 77a93d0b514b928af733be240357257f3573341b
+ms.sourcegitcommit: 7a217c4b127aa874de5bb5e44bd3b7291530cde0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "78927883"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79525508"
 ---
-# <a name="troubleshooting---what-is-casms"></a>Solución de problemas: ¿Qué es cas.ms?
+# <a name="troubleshooting---what-is-casms-mcasms-or-mcas-govus"></a>Solución de problemas: ¿Qué es `cas.ms`, `mcas.ms`o `mcas-gov.us`?
 
 *Se aplica a: Microsoft Cloud App Security*
 
-En este artículo se proporciona información sobre el `cas.ms` sufijo de dirección URL que usa Control de aplicaciones de acceso condicional.
+En este artículo se proporciona información sobre los sufijos de dirección URL `cas.ms`, `mcas.ms`y `mcas-gov.us` que usa Control de aplicaciones de acceso condicional.
 
-## <a name="our-system-flagged-a-new-dns-entry-or-generated-certificate-for-casms-but-we-dont-use-cloud-app-security"></a>Nuestro sistema marcó una nueva entrada DNS o un certificado generado para `*.cas.ms`, pero no usamos Cloud App Security
+## <a name="our-system-flagged-a-new-dns-entry-or-generated-certificate-for-casms-mcasms-or-mcas-govus-but-we-dont-use-cloud-app-security"></a>Nuestro sistema marcó una nueva entrada DNS o un certificado generado para `*.cas.ms`, `*.mcas.ms`o `*.mcas-gov.us`, pero no usamos Cloud App Security
 
 Este es el comportamiento normal y los resultados de Cloud App Security proteger el entorno. Incluso si su organización no usa Cloud App Security, cuando alguien visite su sitio o servicio desde un entorno que lo hace, sus direcciones URL se reescribirán para proteger su acceso.
 
@@ -32,12 +32,12 @@ Por ejemplo, contoso protege su entorno mediante Control de aplicaciones de acce
 
 Por lo tanto, aunque Fabrikam no utiliza realmente Cloud App Security, ven la entrada o el certificado DNS porque contoso sí lo hace.
 
-## <a name="heres-why-you-see-casms-in-your-url"></a>Este es el motivo por el que ve `*.cas.ms` en la dirección URL
+## <a name="heres-why-you-see-casms-mcasms-or-mcas-govus-in-your-url"></a>Este es el motivo por el que ve `*.cas.ms`, `*.mcas.ms`o `*.mcas-gov.us` en la dirección URL.
 
 En primer lugar, no ha sido phish. Se espera este tipo de URL e indica que su organización aplica controles de seguridad adicionales para proteger los datos críticos para la empresa.
 
-Para ello, se usa Cloud App Security, una solución para proteger el entorno de nube de la organización, a fin de reemplazar todas las direcciones URL y cookies pertinentes relacionadas con las aplicaciones en la nube que usa.
+Para ello, se usa Cloud App Security, una solución para proteger el entorno de nube de la organización, a fin de reemplazar todas las direcciones URL y cookies pertinentes relacionadas con las aplicaciones en la nube que se usan.
 
-Por lo tanto, cuando intente obtener acceso a una aplicación en la nube, como Salesforce, SharePoint Online o AWS, observará que su dirección URL tiene el sufijo `<region>.cas.ms`. Por ejemplo, al usar la aplicación XYZ, la dirección URL que se usa para ver los cambios de `XYZ.com` a `XYZ.com.<region>.cas.ms`.
+Por lo tanto, cuando intente obtener acceso a una aplicación en la nube, como Salesforce, SharePoint Online o AWS, observará que su dirección URL tiene el sufijo `<region>.cas.ms`, `<region>.mcas.ms`o `<region>.mcas-gov.us`. Por ejemplo, al usar la aplicación XYZ, la dirección URL que se usa para ver los cambios de `XYZ.com` a `XYZ.com.<region>.cas.ms`.
 
-Si la dirección URL no coincide exactamente con el patrón de reemplazo (por ejemplo, `<app_site>.com` no se sustituye por `<app_site>.com.<region>.cas.ms`) o si tiene problemas adicionales, póngase en contacto con el Departamento de ti.
+Si la dirección URL no coincide exactamente con uno de los patrones de reemplazo (por ejemplo, `<app_site>.com` no se reemplaza por `<app_site>.com.<region>.cas.ms`) o si tiene problemas adicionales, póngase en contacto con el Departamento de ti.
