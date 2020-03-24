@@ -424,7 +424,7 @@ El comportamiento predeterminado de la supervisión de archivos ha cambiado para
 - **Optimización avanzada de directivas de detección de anomalías**  
 Ahora puede influir en el motor de detección de anomalías para suprimir o exponer alertas según sus preferencias.
   - En la directiva de viaje imposible, puede establecer el control deslizante de sensibilidad para determinar el nivel de comportamiento anómalo necesario antes de que se desencadene una alerta.
-  - También puede configurar si las alertas de actividad de un país poco frecuente, direcciones IP anónimas, direcciones IP sospechosas y viajes imposibles deben analizar tanto inicios de sesión con errores como correctos o simplemente inicios de sesión correctos.
+  - También puede configurar si las alertas de actividad de un país o región poco frecuente, direcciones IP anónimas, direcciones IP sospechosas y viajes imposibles deben analizar tanto inicios de sesión con errores como correctos o simplemente inicios de sesión correctos.
 
 - **Compatibilidad con varias cadenas de confianza**  
 Control de aplicaciones de acceso condicional ahora permite agregar y usar varios certificados raíz o intermedios de confianza como forma de administración de dispositivos.
@@ -640,7 +640,7 @@ Microsoft Cloud App Security está ampliando sus funcionalidades de supervisión
 
 - **Implementaciones con ámbito** (implementación gradual)  
 Microsoft Cloud App Security proporciona a las empresas la capacidad de determinar granularmente los usuarios a los que desean supervisar y proteger en función de la pertenencia a grupos. Esta característica le permite seleccionar usuarios cuyas actividades no se mostrarán para ninguna de las aplicaciones protegidas. La funcionalidad de supervisión con ámbito es especialmente útil para:
-  - Cumplimiento: si su normativa de cumplimiento requiere que se abstenga de supervisar a usuarios de determinados países debido a la normativa local.
+  - Cumplimiento: si su normativa de cumplimiento requiere que se abstenga de supervisar a usuarios de determinados países o regiones debido a la normativa local.
   - Licencias: si desea supervisar a menos usuarios para permanecer dentro de los límites de sus licencias de Microsoft Cloud App Security.
   Para más información, vea [Implementación con ámbito](scoped-deployment.md).
 

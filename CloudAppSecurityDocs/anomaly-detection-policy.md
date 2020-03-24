@@ -141,7 +141,7 @@ Estas directivas buscan actividades dentro de una sola sesión con respecto a la
 
 * Esta directiva genera perfiles de su entorno y desencadena alertas cuando los usuarios eliminan varias máquinas virtuales en una sola sesión, en relación con la línea de base de su organización. Esto puede indicar un intento de infracción.
 
-## Habilitación del gobierno automatizado<a name="adp-automated-gov"></a>
+## <a name="enable-automated-governance"></a>Habilitación del gobierno automatizado<a name="adp-automated-gov"></a>
 
 Puede habilitar acciones correctivas automatizadas en alertas generadas por directivas de detección de anomalías.
 
@@ -167,7 +167,7 @@ Para influir en el motor de detección de anomalías para suprimir o exponer ale
     | **Inquilino** | Actividades comunes basadas en la actividad anterior en el inquilino. Por ejemplo, suprime las actividades de un ISP que previamente ha avisado en la organización. |
     | **Usuario** | Actividades comunes basadas en la actividad anterior del usuario específico. Por ejemplo, suprime las actividades de una ubicación que suele usar el usuario. |
 
-* También puede configurar si las alertas de actividad de un país poco frecuente, direcciones IP anónimas, direcciones IP sospechosas y viajes imposibles deben analizar tanto inicios de sesión con errores como correctos o simplemente inicios de sesión correctos.
+* También puede configurar si las alertas de actividad de un país o región poco frecuente, direcciones IP anónimas, direcciones IP sospechosas y viajes imposibles deben analizar tanto inicios de sesión con errores como correctos o simplemente inicios de sesión correctos.
 
 > [!NOTE]
 > De forma predeterminada, los protocolos de inicio de sesión heredados, como los que no usan la autenticación multifactor (por ejemplo, WS-Trust), no se supervisan con la Directiva de viajes imposibles. Si su organización usa protocolos heredados, para evitar que falten actividades relevantes, edite la Directiva y, en **Configuración avanzada**, establezca **analizar las actividades de inicio de sesión** en **todos los inicios de sesión**.
