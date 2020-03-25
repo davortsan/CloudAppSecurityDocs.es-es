@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0605d54b8af24b2b060e96788349e2cfe45abaac
-ms.sourcegitcommit: 661228206512c6c8dcb30fdce59b2c038cf2fe69
+ms.openlocfilehash: 44ede581e5f646695110975aa7a842e60e418bd4
+ms.sourcegitcommit: f396474ead281430c7a63d1172ab7288c9878f13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2020
-ms.locfileid: "78204289"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80152000"
 ---
 # <a name="azure-advanced-threat-protection-integration"></a>Integración de protección contra amenazas avanzada de Azure
 
@@ -75,6 +75,16 @@ Para deshabilitar la integración de Cloud App Security con ATP de Azure:
 
 > [!NOTE]
 > Cuando la integración está deshabilitada, los datos existentes de ATP de Azure se conservan de acuerdo con las directivas de retención de Cloud App Security, pero se quita la sección evaluaciones de postura de seguridad de identidad.
+
+## <a name="known-issues"></a>Problemas conocidos
+
+### <a name="missing-siem-alert-updates"></a>Actualizaciones de alertas de SIEM que faltan
+
+Este problema afecta a las alertas que se desencadenan más de una vez. La primera instancia de la alerta se envía al SIEM, pero no se envían los desencadenadores posteriores de la misma alerta.
+
+#### <a name="resolution"></a>Solución
+
+En este caso, no hay ninguna solución conocida.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
