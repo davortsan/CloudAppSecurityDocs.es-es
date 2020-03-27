@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: article
 ms.date: 12/04/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 151e698fe196946c41e945857b69a1e41135d433
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: 112f85ef89670f6e7fb6a256597bce72101c01ba
+ms.sourcegitcommit: 2cf3c78a1b45a5b6ca534fdd12fd97afc51726e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75190015"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80291162"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-amazon-web-services-aws-environment"></a>Cómo Cloud App Security ayuda a proteger el entorno de Amazon Web Services (AWS)
 
@@ -43,7 +43,7 @@ Puede usar las siguientes plantillas de directiva integradas para detectar y not
 | Tipo | Name |
 | ---- | ---- |
 | Plantilla de directiva de actividad | Errores de inicio de sesión en la consola de administración<br />Cambios de configuración de CloudTrail<br />Cambios de configuración de la instancia de EC2<br />Cambios en la Directiva IAM<br />Inicio de sesión desde una dirección IP de riesgo<br />Cambios en la lista de control de acceso (ACL) de red<br />Cambios de puerta de enlace de red<br />Cambios de configuración de S3<br />Cambios de configuración del grupo de seguridad<br />Cambios en la red privada virtual |
-| Directiva de detección de anomalías integrada | [Actividad desde direcciones IP anónimas](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Actividad desde un país poco frecuente](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Actividad desde direcciones IP sospechosas](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Viaje imposible](anomaly-detection-policy.md#impossible-travel)<br />[Actividad realizada por el usuario Terminado](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requiere AAD como IDP)<br />[Varios intentos incorrectos de inicio de sesión](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Actividades administrativas inusuales](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Actividades inusuales de eliminación de almacenamiento múltiple](anomaly-detection-policy.md#unusual-activities-by-user) (versión preliminar)<br />[Varias actividades de eliminación de VM](anomaly-detection-policy.md#multiple-delete-vm-activities)<br />[Actividades de creación de varias máquinas virtuales inusuales](anomaly-detection-policy.md#unusual-activities-by-user) (versión preliminar) |
+| Directiva de detección de anomalías integrada | [Actividad desde una dirección IP anónima](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Actividad desde un país poco frecuente](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Actividad desde direcciones IP sospechosas](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Viaje imposible](anomaly-detection-policy.md#impossible-travel)<br />[Actividad realizada por el usuario Terminado](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requiere AAD como IDP)<br />[Varios intentos de inicio de sesión erróneos](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Actividades administrativas inusuales](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Actividades inusuales de eliminación de almacenamiento múltiple](anomaly-detection-policy.md#unusual-activities-by-user) (versión preliminar)<br />[Varias actividades de eliminación de máquinas virtuales](anomaly-detection-policy.md#multiple-delete-vm-activities)<br />[Actividades de creación de varias máquinas virtuales inusuales](anomaly-detection-policy.md#unusual-activities-by-user) (versión preliminar)<br />[Región inusual para el recurso de nube](anomaly-detection-policy.md#unusual-activities-by-user) (versión preliminar) |
 | Plantilla de directiva de archivo | El cubo S3 es accesible públicamente |
 
 Para obtener más información sobre la creación de directivas, vea [crear una directiva](control-cloud-apps-with-policies.md#create-a-policy).
@@ -54,7 +54,7 @@ Además de supervisar posibles amenazas, puede aplicar y automatizar las siguien
 
 | Tipo | Acción |
 | ---- | ---- |
-| Regulación del usuario | -Notificar al usuario sobre la alerta (a través de Azure AD)<br />-Requerir al usuario que inicie sesión de nuevo (a través de Azure AD)<br />-Suspender usuario (a través de Azure AD) |
+| Regulación de usuario | -Notificar al usuario sobre la alerta (a través de Azure AD)<br />-Requerir al usuario que inicie sesión de nuevo (a través de Azure AD)<br />-Suspender usuario (a través de Azure AD) |
 | Regulación de datos | -Crear un cubo S3 privado<br />-Quitar un colaborador para un cubo S3 |
 
 Para obtener más información acerca de cómo corregir amenazas de aplicaciones, consulte [control de aplicaciones conectadas](governance-actions.md).

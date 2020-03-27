@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: article
 ms.date: 12/04/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: eaf8218f45da787e361fe4e1627bb2cdfc4afeb1
-ms.sourcegitcommit: 27c45aa35c11c4ce54edbe10a9d22cf6b452fbe6
+ms.openlocfilehash: e4fd133978a4e10826b4b6d95ae7341c682d72dc
+ms.sourcegitcommit: 2cf3c78a1b45a5b6ca534fdd12fd97afc51726e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78304805"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80291190"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-office-365-environment"></a>Cómo Cloud App Security ayuda a proteger el entorno de Office 365
 
@@ -64,8 +64,8 @@ Puede usar las siguientes plantillas de directiva integradas para detectar y not
 
 | Tipo | Name |
 | ---- | ---- |
-| Directiva de detección de anomalías integrada | [Actividad desde direcciones IP anónimas](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Actividad de un país poco frecuente](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Actividad desde direcciones IP sospechosas](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Viaje imposible](anomaly-detection-policy.md#impossible-travel)<br />[Actividad realizada por el usuario Terminado](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requiere AAD como IDP)<br />[Detección de malware](anomaly-detection-policy.md#malware-detection)<br />[Varios intentos de inicio de sesión erróneos](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Detección de ransomware](anomaly-detection-policy.md#ransomware-activity)<br />[Actividad de eliminación de correos electrónicos sospechosos (versión preliminar)](anomaly-detection-policy.md#suspicious-email-deletion-activity-preview)<br />[Actividades de eliminación de archivo inusual](anomaly-detection-policy.md#unusual-activities-by-user) de [reenvío de bandeja de entrada sospechosa](anomaly-detection-policy.md#suspicious-inbox-forwarding)<br />[Actividades de recurso compartido de archivos inusuales](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Actividades de descarga de varios archivos inusuales](anomaly-detection-policy.md#unusual-activities-by-user) |
-| Plantilla de directiva de actividad | Inicio de sesión desde una dirección IP de riesgo<br />Descarga masiva por parte de un solo usuario<br />Posible actividad de ransomware |
+| Directiva de detección de anomalías integrada | [Actividad desde una dirección IP anónima](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Actividad desde un país poco frecuente](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Actividad desde direcciones IP sospechosas](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Viaje imposible](anomaly-detection-policy.md#impossible-travel)<br />[Actividad realizada por el usuario Terminado](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requiere AAD como IDP)<br />[Detección de malware](anomaly-detection-policy.md#malware-detection)<br />[Varios intentos de inicio de sesión erróneos](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Detección de ransomware](anomaly-detection-policy.md#ransomware-activity)<br />[Actividad de eliminación de correos electrónicos sospechosos (versión preliminar)](anomaly-detection-policy.md#suspicious-email-deletion-activity-preview)<br />[Actividades de eliminación de archivo inusual](anomaly-detection-policy.md#unusual-activities-by-user) de [reenvío de bandeja de entrada sospechosa](anomaly-detection-policy.md#suspicious-inbox-forwarding)<br />[Actividades de recurso compartido de archivos inusuales](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Actividades de descarga de varios archivos inusuales](anomaly-detection-policy.md#unusual-activities-by-user) |
+| Plantilla de directiva de actividad | Inicio de sesión desde una dirección IP de riesgo<br />Descarga masiva por parte de un solo usuario<br />Posible actividad de ransomware<br />Cambio de nivel de acceso (equipos)<br />Usuario externo agregado (equipos)<br />Eliminación masiva (equipos) |
 | Plantilla de directiva de archivo | Detección de un archivo compartido con un dominio no autorizado<br />Detección de un archivo compartido con direcciones de correo electrónico personales<br />Detección de archivos con PII/PCI/PHI |
 | Directiva de detección de anomalías de aplicación de OAuth | [Nombre de aplicación OAuth engañoso](app-permission-policy.md#oauth-app-anomaly-detection-policies)<br />[Nombre de publicador engañoso para una aplicación de OAuth](app-permission-policy.md#oauth-app-anomaly-detection-policies)<br />[Consentimiento de aplicación de OAuth malintencionado](app-permission-policy.md#oauth-app-anomaly-detection-policies) |
 

@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/19/2019
+ms.date: 03/24/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,16 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 44ede581e5f646695110975aa7a842e60e418bd4
-ms.sourcegitcommit: f396474ead281430c7a63d1172ab7288c9878f13
+ms.openlocfilehash: aea4f3f290b75d9458dbf0009cb8c1dd3c1a79a6
+ms.sourcegitcommit: 2cf3c78a1b45a5b6ca534fdd12fd97afc51726e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80152000"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80291181"
 ---
 # <a name="azure-advanced-threat-protection-integration"></a>Integración de protección contra amenazas avanzada de Azure
 
-*Se aplica a: Microsoft Cloud App Security* git Microsoft Cloud App Security se integra con protección contra amenazas avanzada de Azure (ATP de Azure) para proporcionar análisis del comportamiento de la entidad de usuario (UEBA) en un entorno híbrido, tanto en la aplicación en la nube como en un entorno local, para obtener más información, consulte [Tutorial: investigación de usuarios peligrosos](tutorial-ueba.md). Para obtener más información sobre el aprendizaje automático y el análisis de comportamiento proporcionado por ATP de Azure, consulte [¿Qué es ATP de Azure?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
+*Se aplica a: Microsoft Cloud App Security*
+
+Microsoft Cloud App Security se integra con protección contra amenazas avanzada de Azure (ATP de Azure) para proporcionar análisis del comportamiento de la entidad de usuario (UEBA) en un entorno híbrido, tanto en la aplicación en la nube como en el entorno local, para obtener más información, consulte [Tutorial: investigar usuarios de riesgo](tutorial-ueba.md). Para obtener más información sobre el aprendizaje automático y el análisis de comportamiento proporcionado por ATP de Azure, consulte [¿Qué es ATP de Azure?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -71,7 +73,7 @@ Para deshabilitar la integración de Cloud App Security con ATP de Azure:
 
 1. En **protección contra amenazas**, seleccione **ATP de Azure**.
 
-1. Desactive **conectar datos de ATP de Azure, incluidas las alertas y las actividades con Cloud App Security** y, a continuación, haga clic en **Guardar**.
+1. Desactive **Habilitar la integración de datos de ATP de Azure** y haga clic en **Guardar**.
 
 > [!NOTE]
 > Cuando la integración está deshabilitada, los datos existentes de ATP de Azure se conservan de acuerdo con las directivas de retención de Cloud App Security, pero se quita la sección evaluaciones de postura de seguridad de identidad.

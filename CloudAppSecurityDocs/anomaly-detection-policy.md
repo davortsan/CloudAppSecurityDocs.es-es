@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 02/04/2020
+ms.date: 03/24/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d2dce554b959c14ba32c92f27579d5525069b1f3
-ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
+ms.openlocfilehash: dd637bc49d65452cedc13841686ea267134ef15e
+ms.sourcegitcommit: 2cf3c78a1b45a5b6ca534fdd12fd97afc51726e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79285319"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80291236"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtención de análisis de comportamiento y detección de anomalías instantáneos
 
@@ -108,7 +108,7 @@ La detección busca usuarios cuya cuenta finalizó en Azure AD, pero que siguen 
 
 ### <a name="suspicious-inbox-manipulation-rules"></a>Reglas de manipulación de bandeja de entrada sospechosas
 
-* Esta detección genera un perfil de su entorno y desencadena alertas cuando se establecen reglas sospechosas que eliminan o mueven mensajes o carpetas en la bandeja de entrada de un usuario. Esto puede indicar que la cuenta del usuario está en peligro, que los mensajes se están ocultando de manera intencionada o que el buzón se está usando para enviar correo no deseado y malware en la organización.
+* Esta detección genera un perfil de su entorno y desencadena alertas cuando se establecen reglas sospechosas que eliminan o mueven mensajes o carpetas en la bandeja de entrada de un usuario. Esto puede indicar que la cuenta del usuario se ve comprometida, que los mensajes se están ocultando intencionadamente y que el buzón se usa para distribuir el correo no deseado en la organización.
 
 ### <a name="suspicious-email-deletion-activity-preview"></a>Actividad de eliminación de correo electrónico sospechoso (versión preliminar)
 
@@ -126,6 +126,7 @@ Estas detecciones identifican a los usuarios que realizan lo siguiente:
 * Actividades inusuales de uso compartido de informes de Power BI (versión preliminar)
 * Actividades de creación de varias máquinas virtuales inusuales (versión preliminar)
 * Actividades inusuales de eliminación de almacenamiento múltiple (versión preliminar)
+* Región inusual para el recurso de nube (versión preliminar)
 
 Estas directivas buscan actividades dentro de una sola sesión con respecto a la base de referencia aprendida, lo que podría indicar un intento de infracción. Estas detecciones aprovechan un algoritmo de aprendizaje automático que perfila el patrón de inicio de sesión de los usuarios y reduce los falsos positivos. Estas detecciones forman parte del motor de detección de anomalías heurísticos que genera perfiles de su entorno y desencadena alertas con respecto a una línea base que se aprendió en la actividad de su organización.
 
@@ -167,7 +168,7 @@ Para influir en el motor de detección de anomalías para suprimir o exponer ale
     | **Inquilino** | Actividades comunes basadas en la actividad anterior en el inquilino. Por ejemplo, suprime las actividades de un ISP que previamente ha avisado en la organización. |
     | **Usuario** | Actividades comunes basadas en la actividad anterior del usuario específico. Por ejemplo, suprime las actividades de una ubicación que suele usar el usuario. |
 
-* También puede configurar si las alertas de actividad de un país o región poco frecuente, direcciones IP anónimas, direcciones IP sospechosas y viajes imposibles deben analizar tanto inicios de sesión con errores como correctos o simplemente inicios de sesión correctos.
+* También puede configurar si las alertas de actividad de un país poco frecuente, direcciones IP anónimas, direcciones IP sospechosas y viajes imposibles deben analizar tanto inicios de sesión con errores como correctos o simplemente inicios de sesión correctos.
 
 > [!NOTE]
 > De forma predeterminada, los protocolos de inicio de sesión heredados, como los que no usan la autenticación multifactor (por ejemplo, WS-Trust), no se supervisan con la Directiva de viajes imposibles. Si su organización usa protocolos heredados, para evitar que falten actividades relevantes, edite la Directiva y, en **Configuración avanzada**, establezca **analizar las actividades de inicio de sesión** en **todos los inicios de sesión**.
