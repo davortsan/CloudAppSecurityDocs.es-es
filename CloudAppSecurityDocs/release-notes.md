@@ -4,19 +4,19 @@ description: Este artículo se actualiza con frecuencia para informarle de las n
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/08/2019
+ms.date: 03/24/2020
 ms.topic: overview
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 23e8b6ef8045334555cedd38ef54e5866bc8b974
-ms.sourcegitcommit: 582779b75be41e57fb1d773d1cf01f6b8598521e
+ms.openlocfilehash: 619bce7e6f3931a53a5891c6c5ff0db223c384cf
+ms.sourcegitcommit: 2cf3c78a1b45a5b6ca534fdd12fd97afc51726e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78274664"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80291248"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
@@ -25,6 +25,22 @@ ms.locfileid: "78274664"
 Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security.
 
 Fuente RSS: reciba notificaciones cuando esta página se actualice copiando y pegando la siguiente dirección URL en su lector de fuentes: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-170-and-171"></a>Notas de la versión 170 y 171 de Cloud App Security
+
+Fecha de publicación: 22 de marzo de 2020
+
+- **Nueva detección de anomalías: Región inusual para el recurso de nube (versión preliminar)**  
+Hemos ampliado nuestra funcionalidad actual para detectar un comportamiento anómalo para AWS. La nueva detección ahora está disponible de manera predeterminada y se habilita automáticamente para alertarle cuando se crea un recurso en una región de AWS en la que la actividad no se realiza normalmente. A menudo, los atacantes aprovechan los créditos de AWS de una organización para realizar actividades malintencionadas, como la minería de datos criptográficos. La detección de este comportamiento anómalo puede ayudar a mitigar un ataque.
+
+- **Nuevas plantillas de directiva de actividad para Microsoft Teams**  
+Cloud App Security ahora proporciona las siguientes nuevas plantillas de directiva de actividad que permiten detectar actividades potencialmente sospechosas en Microsoft Teams:
+  - **Cambio del nivel de acceso (Teams):** Alerta cuando se cambia el nivel de acceso de un equipo de privado a público.
+  - **Usuario externo agregado (Teams):** Alerta cuando se agrega un usuario externo a un equipo.
+  - **Eliminación masiva (Teams):** Alerta cuando un usuario elimina un gran número de equipos.
+
+- **Integración de Active Directory (Azure AD) Identity Protection**  
+Ahora puede controlar la gravedad de las alertas de Azure AD Identity Protection que se introducen en Cloud App Security. Además, si aún no ha habilitado la detección del **inicio de sesión de riesgo de Azure AD**, la detección se habilitará automáticamente para ingerir alertas de gravedad alta. Para más información, consulte [Integración de Azure Active Directory Identity Protection](aadip-integration.md).
 
 ## <a name="cloud-app-security-release-169"></a>Notas de la versión 169 de Cloud App Security
 
@@ -262,7 +278,7 @@ Para ayudarlo a identificar las amenazas que están por debajo del radar, Cloud 
 - **Factor de riesgo nuevo agregado al Catálogo de aplicaciones en la nube**  
 El Catálogo de aplicaciones en la nube ahora incluye el factor de riesgo del plan de recuperación ante desastres para permitirle evaluar las aplicaciones en el Catálogo de aplicaciones en la nube para permitir la continuidad empresarial.
 - **Disponibilidad general del conector de Microsoft Flow**  
-Desde la versión preliminar de la compatibilidad de Microsoft Cloud App Security con el conector de Microsoft Flow el año pasado, ahora el conector está disponible con carácter general.
+Desde la versión preliminar de la compatibilidad de Microsoft Cloud App Security con el conector de Microsoft Flow el año pasado, ahora el conector está disponible con carácter general.
 - **Mejora de la gobernanza automatizada para las directivas de archivo**  
 Cloud App Security ahora admite la configuración de la acción de gobernanza **Trash** (Enviar a la papelera) para las directivas de archivo. Esta acción de gobernanza brinda la capacidad de mover automáticamente archivos a la carpeta de la papelera.
 - **Compatibilidad mejorada con Google Drive**  
@@ -648,7 +664,7 @@ Microsoft Cloud App Security proporciona a las empresas la capacidad de determin
  Ahora tenemos una alerta integrada que le informará cada vez que se infrinja cualquiera de las aplicaciones detectadas de un inquilino. La alerta proporcionará información sobre la hora y la fecha de la infracción, los usuarios que usaron la aplicación y se vinculará a orígenes disponibles públicamente que proporcionen información sobre la infracción.
 
 - **Nuevo servidor de correo**  
- El servidor de correo de Cloud App Security ha cambiado y usa otros intervalos de direcciones IP. Para asegurarse de que puede obtener notificaciones, agregue las nuevas direcciones IP a su lista de direcciones permitidas en el sistema antispam. En el caso de los usuarios que personalizan sus notificaciones, Microsoft Cloud App Security habilita esto automáticamente mediante MailChimp®, un servicio de correo electrónico externo. Para ver la lista de direcciones IP del servidor de correo e instrucciones para habilitar el trabajo con MailChimp, consulte [Requisitos de red](network-requirements.md#mail-server) y [Configuración de correo](mail-settings.md).
+ El servidor de correo de Cloud App Security ha cambiado y usa otros intervalos de direcciones IP. Para asegurarse de que puede obtener notificaciones, agregue las nuevas direcciones IP a su lista de direcciones permitidas en el sistema antispam. En el caso de los usuarios que personalizan sus notificaciones, Microsoft Cloud App Security habilita esto automáticamente mediante MailChimp&reg;, un servicio de correo electrónico externo. Para ver la lista de direcciones IP del servidor de correo e instrucciones para habilitar el trabajo con MailChimp, consulte [Requisitos de red](network-requirements.md#mail-server) y [Configuración de correo](mail-settings.md).
 
 ## <a name="cloud-app-security-release-123"></a>Notas de la versión 123 de Cloud App Security
 
@@ -681,7 +697,7 @@ Fecha de publicación: 8 de abril de 2018
 
 - Al exportar una lista de permisos de aplicación a csv, se incluyen campos adicionales como publicador, nivel de permisos y uso de la comunidad para ayudar con el proceso de cumplimiento e investigación.
 
-- La aplicación conectada de ServiceNow se ha mejorado para que las actividades de servicio internas dejen de registrarse como si las realizara el “invitado” y dejen de desencadenar alertas de falsos positivos. Estas actividades ahora se representan como N/D como todas las demás aplicaciones conectadas.
+- La aplicación conectada de ServiceNow se ha mejorado para que las actividades de servicio internas dejen de registrarse como si las realizara el "invitado" y dejen de desencadenar alertas de falsos positivos. Estas actividades ahora se representan como N/D como todas las demás aplicaciones conectadas.
 
 ## <a name="cloud-app-security-release-119"></a>Notas de la versión 119 de Cloud App Security
 
