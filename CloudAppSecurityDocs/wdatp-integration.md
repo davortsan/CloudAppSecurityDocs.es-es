@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d45711d5dfd5f0a7a3ae30df1e5e90425ff631ff
-ms.sourcegitcommit: be2c558eee71de02ec29632fc58256d49de0f86f
+ms.openlocfilehash: f596bd5161a5c7e0603ff934848ab6fa110647bf
+ms.sourcegitcommit: 288c279a0d2dd62a8ad8d7425c3e9e98857bf5f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78304878"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80666509"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Integración de protección contra amenazas avanzada de Microsoft defender con Microsoft Cloud App Security
 
@@ -99,7 +99,7 @@ Como con cualquier otro origen de Cloud Discovery, puede exportar los datos del 
 >
 > - ATP de Microsoft defender reenvía datos a Cloud App Security en fragmentos de ~ 4 MB (transacciones de punto de conexión ~ 4000)
 > - Si no se alcanza el límite de 4 MB en 1 hora, ATP de Microsoft defender notifica todas las transacciones realizadas durante la última hora.
-> - Si el dispositivo de punto de conexión está detrás de un proxy de reenvío, el volumen de tráfico no será visible para ATP de Microsoft defender y, por tanto, no se incluirá en Cloud Discovery informes. Para obtener más información, vea [supervisar la conexión de red detrás del proxy de reenvío](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
+> - Si el dispositivo de punto de conexión está detrás de un proxy de reenvío, los datos de tráfico no estarán visibles para ATP de Microsoft defender y, por tanto, no se incluirán en Cloud Discovery informes. Para obtener más información, vea [supervisar la conexión de red detrás del proxy de reenvío](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
 
 ## <a name="block-access-to-unsanctioned-cloud-apps"></a>Bloquear el acceso a aplicaciones no autorizadas en la nube
 

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2dcfbaa4cfb676aafcb996efaa243adeedaf93f7
-ms.sourcegitcommit: 06437f58d452294cf53d1ad86f7cb857569cd5ba
+ms.openlocfilehash: 7c309455b6c7c5a1d46421316eb589038f162726
+ms.sourcegitcommit: 288c279a0d2dd62a8ad8d7425c3e9e98857bf5f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/16/2020
-ms.locfileid: "77369564"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80666485"
 ---
 # <a name="file-policies"></a>Directivas de archivos
 
@@ -29,7 +29,7 @@ Las directivas de archivo permiten aplicar una amplia gama de procesos automatiz
 
 ## <a name="supported-file-types"></a>Tipos de archivo compatibles
 
-Los motores de DLP integrados en Cloud App Security realizan la inspección de contenido mediante la extracción de texto de todos los tipos de archivo comunes (más de 100), incluidos Office, Open Office, archivos comprimidos, varios formatos de texto enriquecido, XML, HTML, etc.
+Los motores de DLP integrados de Cloud App Security realizan la inspección de contenido mediante la extracción de texto de todos los tipos de archivo comunes (más de 100), como Office, Open Office, archivos comprimidos, varios formatos de texto enriquecido, XML, HTML, etc.
 
 ## <a name="policies"></a>Directivas
 
