@@ -1,6 +1,6 @@
 ---
-title: archivo include
-description: archivo include
+title: archivo de inclusión
+description: archivo de inclusión
 services: active-directory
 author: eross-msft
 ms.service: active-directory
@@ -9,11 +9,11 @@ ms.date: 04/24/2018
 ms.author: lizross
 ms.custom: include file
 ms.openlocfilehash: b049b3651f12b1a73a3511d030bbdbbfaceb2480
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "68912484"
 ---
 >[!Note] 
-> En este artículo se presentan los pasos para eliminar los datos personales del dispositivo o el servicio, y pueden utilizarse para cumplir con sus obligaciones en el marco del RGPD. Si desea obtener información general sobre el RGPD, consulte la [sección sobre RGPD del Portal de confianza de servicio](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
+> En este artículo se indican los pasos para eliminar los datos personales del dispositivo o del servicio y puede utilizarse para cumplir con sus obligaciones según el Reglamento general de protección de datos (RGPD). Si quiere obtener información general sobre este reglamento, vea la [sección del RGPD del Portal de confianza de servicios](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
