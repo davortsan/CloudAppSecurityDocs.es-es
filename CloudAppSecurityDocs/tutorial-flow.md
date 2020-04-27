@@ -7,10 +7,10 @@ ms.service: cloud-app-security
 ms.topic: tutorial
 ms.date: 9/8/2019
 ms.openlocfilehash: 06fe00d3a289aa32846be71509707aa384b2177f
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "74720537"
 ---
 # <a name="tutorial-extend-governance-to-endpoint-remediation"></a>Tutorial: Ampliación de la gobernanza a la corrección de puntos de conexión
@@ -35,11 +35,11 @@ Si no tiene un plan de Microsoft Flow, [regístrese para obtener una cuenta de 
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* Debe tener un [plan de Microsoft Flow](https://flow.microsoft.com/pricing) válido
+* Debe tener un [plan de Microsoft Flow](https://flow.microsoft.com/pricing) válido.
 * Necesita un plan válido de ATP de Microsoft Defender.
 * El entorno de Microsoft Flow necesita estar sincronizado con Azure AD, supervisado por ATP de Defender y unido a un dominio.
 
-## Fase 1: Generación de un token de la API Cloud App Security<a name="generate-token"></a>
+## <a name="phase-1-generate-a-cloud-app-security-api-token"></a>Fase 1: Generación de un token de la API Cloud App Security<a name="generate-token"></a>
 
 > [!NOTE]
 > Si ha creado anteriormente un flujo de trabajo mediante un conector de Cloud App Security, Microsoft Flow reutilizará automáticamente el token, por lo que puede omitir este paso.
@@ -54,7 +54,7 @@ Si no tiene un plan de Microsoft Flow, [regístrese para obtener una cuenta de 
 
     ![Captura de pantalla de la ventana del token, donde se muestran el token y el proceso de copia.](media/tutorial-flow-token-copy.png)
 
-## Fase 2: Creación de un flujo para ejecutar un examen antivirus<a name="create-flow"></a>
+## <a name="phase-2-create-a-flow-to-run-an-antivirus-scan"></a>Fase 2: Creación de un flujo para ejecutar un examen antivirus<a name="create-flow"></a>
 
 > [!NOTE]
 > Si ya ha creado un flujo con un conector de ATP de Defender, Flow vuelve a usar el conector automáticamente y se puede omitir el paso de **inicio de sesión**.
@@ -71,7 +71,7 @@ Si no tiene un plan de Microsoft Flow, [regístrese para obtener una cuenta de 
 
     ![Captura de pantalla de la página de plantillas de Microsoft Flow, donde se muestra el proceso de inicio de sesión.](media/tutorial-flow-templates-signin.png)
 
-## Fase 3: Configuración del flujo<a name="configure-flow"></a>
+## <a name="phase-3-configure-the-flow"></a>Fase 3: Configuración del flujo<a name="configure-flow"></a>
 
 > [!NOTE]
 > Si ya ha creado un flujo con un conector de Azure AD, Microsoft Flow volverá a usar el token automáticamente, por lo que puede omitir este paso.
@@ -98,7 +98,7 @@ Si no tiene un plan de Microsoft Flow, [regístrese para obtener una cuenta de 
 
     ![Captura de pantalla de la página del flujo, donde se muestra la sección de configuración del examen.](media/tutorial-flow-templates-scan.png)
 
-## Fase 4: Configuración de la directiva que ejecutará el flujo<a name="configure-policy"></a>
+## <a name="phase-4-configure-a-policy-to-run-the-flow"></a>Fase 4: Configuración de la directiva que ejecutará el flujo<a name="configure-policy"></a>
 
 1. En Cloud App Security, haga clic en **Control** y, después, seleccione **Directivas**.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 1/24/2019
+ms.date: 03/31/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 097f1dcdf7cb360dc38ce138ee373d6d506bdda8
-ms.sourcegitcommit: 3f6ef6b97a0953470135d115323a00cf11441ab7
+ms.openlocfilehash: e4dea21cdd9566781176a0d482bd2c45a6131ac5
+ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "78927768"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81228484"
 ---
 # <a name="tutorial-block-download-of-sensitive-information"></a>Tutorial: Bloqueo de la descarga de información confidencial
 
@@ -38,22 +38,29 @@ Un administrador de cuentas de la organización quiere consultar algo en Salesfo
 
 ## <a name="the-solution"></a>La solución
 
-Para proteger la organización, supervise y controle el uso de la aplicación en la nube usando el acceso condicional de Azure AD y el control de aplicaciones de acceso condicional de Microsoft Cloud App Security.
+Proteja su organización: supervise y controle el uso de las aplicaciones en la nube con cualquier solución IdP y el Control de aplicaciones de acceso condicional de Cloud App Security.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* Una licencia válida de Azure AD Premium P1
-* Configurar una aplicación en la nube para SSO en Azure AD
+* Una licencia válida para Azure AD Premium P1 o la licencia que requiera la solución del proveedor de identidades (IdP).
+* Configure una aplicación en la nube para inicio de sesión único con uno de los siguientes protocolos de autenticación:
+
+    |IdP|Protocolos|
+    |---|---|
+    |Azure AD|SAML 2.0 u OpenID Connect|
+    |Otros|SAML 2.0|
 * Asegurarse de que la [aplicación se implementa en Cloud App Security](proxy-deployment-aad.md).
 
 ## <a name="create-a-block-download-policy-for-unmanaged-devices"></a>Creación de una directiva de bloqueo de descargas para dispositivos no administrados
 
 Las directivas de sesión de Cloud App Security permiten restringir una sesión en función del estado del dispositivo. Para conseguir controlar una sesión mediante el dispositivo como condición, cree una directiva de acceso condicional Y una directiva de sesión.
 
-### <a name="step-1-create-an-azure-ad-conditional-access-policy"></a>Paso 1: Crear una directiva de acceso condicional de Azure AD
+### <a name="step-1-configure-your-idp-to-work-with-cloud-app-security"></a>Paso 1: Configurar el IdP para que funcione con Cloud App Security
 
-1. Cree una directiva de acceso condicional de Azure AD con usuarios asignados y una aplicación.
-2. Active **Use Conditional Access App Control enforced restrictions** (Usar las restricciones que exige el control de aplicaciones de acceso condicional) en los controles de sesión de la directiva de acceso condicional.
+Asegúrese de que ha configurado la solución IdP para que funcione con Cloud App Security, como se indica a continuación:
+
+* En el caso del [acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), consulte [Configuración de la integración con Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad).
+* Para información sobre otras soluciones IdP, consulte [Configuración de la integración con otras soluciones IdP](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions).
 
 Después de completar esta tarea, vaya al portal de Cloud App Security y cree una directiva de sesión para supervisar y controlar las descargas de archivos en la sesión.
 
@@ -107,7 +114,7 @@ Después de completar esta tarea, vaya al portal de Cloud App Security y cree un
 
 2. El archivo debería estar bloqueado y debería recibir el mensaje que configuró al **personalizar el mensaje de bloqueo**.
 
-3. En el portal de Cloud App Security, haga clic en **Control** y **Directivas** y, después, en la directiva que ha creado para ver el informe de directiva. En breve debe aparecer una coincidencia de directiva de sesión.
+3. En el portal de Cloud App Security, haga clic en **Control** y **Policies** (Directivas) y, luego, en la directiva que ha creado para ver el informe de directiva. En breve debe aparecer una coincidencia de directiva de sesión.
 
 4. En el informe de directiva puede ver los inicios de sesión que se han redirigido a Microsoft Cloud App Security para someterlos a un control de sesión, así como los archivos que se han descargado o bloqueado en las sesiones supervisadas.
 
