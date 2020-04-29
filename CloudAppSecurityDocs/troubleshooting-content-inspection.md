@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: be3c76516217e9cc36a06c85d778a717609ba254
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: b0d1afdd63cc7c92f520cc17c1d90ff83bf4ec23
+ms.sourcegitcommit: 82aaa76581fa76e207c754bb0855c24c2233fb44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74721143"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81738045"
 ---
 # <a name="troubleshooting-content-inspection"></a>Solucionar problemas relacionados con la inspección de contenido
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 En este artículo se proporciona una lista de los estados de inspección de contenido, así como el significado de estos.
 
@@ -32,16 +32,16 @@ En este artículo se proporciona una lista de los estados de inspección de cont
 En la tabla se enumera cada estado de inspección de contenido y su descripción.
 
 |Estado de la inspección de contenido|Descripción|
-|----|----|
+|---|---|
 |Completed|La inspección de contenido se completó correctamente.|
-|No disponible|La inspección de contenido no es aplicable para este archivo. Puede ser que este estado aparezca porque no hay ninguna directiva que requiera la inspección de contenido de este archivo o porque no se admite el tipo de archivo.|
+|No aplicable|La inspección de contenido no es aplicable para este archivo. Puede ser que este estado aparezca porque no hay ninguna directiva que requiera la inspección de contenido de este archivo o porque no se admite el tipo de archivo.|
 |Pending|El archivo está actualmente en la cola de inspección de contenido.|
 |Error: Error de descarga|Microsoft Cloud App Security no ha podido descargar el archivo para la inspección.|
 |Error: Archivo cifrado|El archivo no se ha podido descifrar.|
 |Error: El archivo está dañado|El archivo está dañado de algún modo y no se ha podido inspeccionar.|
 |Error: Error interno.|Se produjo un problema indeterminado al intentar inspeccionar el archivo.|
 |Error: Error de DLP externo|Se produjo un error en la DLP externa y Cloud App Security no pudo inspeccionar el contenido.|
-|Error: Se ha excedido el tamaño de archivo|El límite de archivo varía según el tamaño del archivo y el número de caracteres.|
+|Error: Se ha excedido el tamaño de archivo|El archivo supera el tamaño máximo de archivo de 50 MB o 1 millón caracteres.|
 |Error: Acceso denegado al archivo|El archivo es externo a la nube y Cloud App Security no ha podido acceder a él.|
 |Error: Archivo eliminado|El archivo ya no existe en la nube y no se ha podido inspeccionar.|
 |Error: Tipo de archivo no admitido|Cloud App Security no puede inspeccionar el contenido de este tipo de archivo. Puede que este estado aparezca porque no se admite el tipo de archivo o porque el archivo no se encuentra realmente en el formato del tipo de archivo esperado.|

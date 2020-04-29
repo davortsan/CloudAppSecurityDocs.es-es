@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
+ms.date: 04/19/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,39 +14,39 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9f687be6ba51bf7d1fb64803aaabd8397de02db7
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: c81af777d65e0815524dad02c795e8b06a76894b
+ms.sourcegitcommit: a166b85d5c91c48032cf133655471aec1ed88a0f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720822"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81662266"
 ---
 # <a name="admin-user-settings"></a>Configuración de usuario de administración
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 Microsoft Cloud App Security permite personalizar la configuración de usuario de administrador. La configuración de notificaciones permite a los administradores especificar si quieren recibir notificaciones de alertas por correo electrónico o por mensajes de texto.
 
-## <a name="Adminsettings"></a>Personalizar la configuración de administración
+## <a name="customize-your-admin-settings"></a><a name="Adminsettings"></a>Personalizar la configuración de administración
 
 Para configurar sus preferencias como un administrador de Microsoft Cloud App Security, haga clic en su nombre en la barra de menús del portal y seleccione **Configuración de usuario** para establecer lo siguiente:
 
-1. Haga clic en **Configuración de la cuenta**. Aquí puede configurar y renovar la contraseña para acceder al portal de Cloud App Security.
+1. Haga clic en **idioma**. Aquí puede elegir el idioma que desea usar en el portal de Cloud App Security.
 
-    ![configuración de usuario personalizada](media/custom-user-settings.png "configuración de usuario personalizada")
+    ![configuración de usuario personalizada](media/custom-language-settings.png)
 
 2. Haga clic en **Notificaciones** y establezca las preferencias de notificación de texto y correo electrónico para los mensajes recibidos del sistema.  Puede establecer la gravedad que determina para qué alertas e infracciones desea recibir correos electrónicos. La gravedad se establece por directiva, así que cuando se desencadenen infracciones, recibirá una notificación de correo según esta configuración y la configuración de gravedad de la directiva que se ha infringido. Los correos se envían al alias asociado con la cuenta de usuario de administrador que se ha usado para iniciar sesión en Cloud App Security. Escriba un número de teléfono para permitir que Cloud App Security le envíe mensajes de texto cuando se envíen alertas y notificaciones y establezca el nivel de gravedad a partir del cual quiera recibir notificaciones por mensaje de texto.
 
     > [!NOTE]
     > El número máximo de alertas que se enviarán por mensaje de texto es de diez al día por número de teléfono. El día se calcula según la zona horaria UTC.
 
-    ![configuración de notificaciones](media/notification-settings.png "configuración de notificación")
+    ![configuración de notificaciones](media/notification-settings.png)
 
-3. Cuando termine, haga clic en **Guardar**.
+3. Cuando haya terminado, haga clic en **Guardar**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Configurar Cloud Discovery](set-up-cloud-discovery.md)
+> [Configuración de Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

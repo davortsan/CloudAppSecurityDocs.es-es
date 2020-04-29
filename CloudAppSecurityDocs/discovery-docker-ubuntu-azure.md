@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/19/2019
+ms.date: 04/16/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,20 +14,20 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1c058f817e4fffa4f40060ad0bc865bb6798e771
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 09880e0702133fbca8ae0001d40aff098b2fa4d6
+ms.sourcegitcommit: f4845a6bbf39aea0504956bf23878f7e0adb8bcc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74460811"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81477557"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Instalación y configuración en Ubuntu o RHEL en Azure
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 Puede configurar la carga de registros automática para informes continuos en Cloud App Security con Docker en Ubuntu o Red Hat Enterprise Linux (RHEL) en Azure. En este artículo se describe cómo configurar la carga de registros automática.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 * SO: Ubuntu 14,04 y 16,04 (para las versiones más recientes, póngase en contacto con el soporte técnico), RHEL 7,2 o superior, o bien la versión 7,2 o superior
 
@@ -49,11 +49,14 @@ Puede configurar la carga de registros automática para informes continuos en Cl
 
 ## <a name="log-collector-performance"></a>Rendimiento del recopilador de registros
 
-El recopilador de registros puede manejar correctamente una capacidad de registros de hasta 50 GB por hora. Los principales cuellos de botella del proceso de recopilación de registros son:
+El compilador de registros puede administrar correctamente la capacidad de registro de hasta 50 GB por hora y que se compone de hasta 10 orígenes de datos. Los principales cuellos de botella del proceso de recopilación de registros son:
 
 * Ancho de banda de red: el ancho de banda de red determina la velocidad de carga de registros.
 
-* Rendimiento de E/S de la máquina virtual: determina la velocidad a la que se escriben los registros en el disco del recopilador de registros. El recopilador de registros tiene un mecanismo de seguridad integrado que supervisa la velocidad a la que llegan los registros y la compara con la velocidad de carga. En caso de congestión, el recopilador de registros comienza a quitar archivos de registro. Si la configuración normalmente supera los 50 GB por hora, se recomienda dividir el tráfico entre varios recopiladores de registros.
+* Rendimiento de e/s de la máquina virtual: determina la velocidad a la que se escriben los registros en el disco del recopilador de registros. El recopilador de registros tiene un mecanismo de seguridad integrado que supervisa la velocidad a la que llegan los registros y la compara con la velocidad de carga. En caso de congestión, el recopilador de registros comienza a quitar archivos de registro. Si la configuración normalmente supera los 50 GB por hora, se recomienda dividir el tráfico entre varios recopiladores de registros.
+
+> [!NOTE]
+> Si necesita más de 10 orígenes de datos, se recomienda dividir los orígenes de datos entre varios recopiladores de registros.
 
 ## <a name="set-up-and-configuration"></a>Establecimiento y configuración  
 
@@ -68,7 +71,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 1. Cree un origen de datos coincidente para cada firewall o servidor proxy desde el que quiera cargar registros.
 
     1. Haga clic en **Agregar origen de datos**.  
-    ![agregar un origen de datos](media/add-data-source.png)
+    ![Agregar un origen de datos](media/add-data-source.png)
     1. **Ponga nombre** al servidor proxy o firewall.  
       ![ubuntu1](media/ubuntu1.png)
     1. Seleccione el dispositivo en la lista **Origen**. Si selecciona **Formato de los registros personalizados** para trabajar con un dispositivo de red que no aparezca en la lista, consulte el artículo sobre cómo [trabajar con el analizador de registros personalizados](custom-log-parser.md) para ver las instrucciones de configuración.
@@ -113,15 +116,15 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 
     1. En la vista de la máquina, vaya a **Redes** y seleccione la interfaz adecuada haciendo doble clic en ella.
     1. Vaya a **Grupo de seguridad de red** y seleccione el grupo de seguridad de red pertinente.
-    1. Vaya a **reglas de seguridad de entrada** y haga clic en **Agregar**![Ubuntu Azure](media/ubuntu-azure.png)
+    1. Vaya a **reglas de seguridad de entrada** y haga clic ![en **Agregar**, Ubuntu Azure](media/ubuntu-azure.png)
     1. Agregue las siguientes reglas (en modo **Avanzado**):
 
-    |Name|Rangos de puertos de destino|Protocol|Origen|Destination|
+    |Nombre|Intervalos de puertos de destino|Protocolo|Source|Destination|
     |----|----|----|----|----|
-    |caslogcollector_ftp|21|TCP|<Subred de la dirección IP del dispositivo>|Cualquiera|
-    |caslogcollector_ftp_passive|20000-20099|TCP|<Subred de la dirección IP del dispositivo>|Cualquiera|
-    |caslogcollector_syslogs_tcp|601-700|TCP|<Subred de la dirección IP del dispositivo>|Cualquiera|
-    |caslogcollector_syslogs_udp|514-600|UDP|<Subred de la dirección IP del dispositivo>|Cualquiera|
+    |caslogcollector_ftp|21|TCP|<Subred de la dirección IP del dispositivo>|Any|
+    |caslogcollector_ftp_passive|20000-20099|TCP|<Subred de la dirección IP del dispositivo>|Any|
+    |caslogcollector_syslogs_tcp|601-700|TCP|<Subred de la dirección IP del dispositivo>|Any|
+    |caslogcollector_syslogs_udp|514-600|UDP|<Subred de la dirección IP del dispositivo>|Any|
 
     ![Reglas de Ubuntu en Azure](media/inbound-rule.png)
 

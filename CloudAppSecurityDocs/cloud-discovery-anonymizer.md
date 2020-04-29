@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 01/29/2020
+ms.date: 04/20/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1a57355a76037a33072872ed18a7567587eae860
-ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
+ms.openlocfilehash: b4d8a2c91d87df35445615e36b5caeb7d89de4f4
+ms.sourcegitcommit: a166b85d5c91c48032cf133655471aec1ed88a0f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912177"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81662333"
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Anonimización de datos de Cloud Discovery
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 La anonimización de datos de Cloud Discovery le permite proteger la privacidad del usuario. Cuando se haya cargado el registro de datos en el portal de Microsoft Cloud App Security, se depura el registro y se reemplaza toda la información de nombres de usuario con nombres de usuario cifrados. De este modo, todas las actividades de la nube se mantienen anónimas. Cuando sea necesario, para una investigación de seguridad específica (por ejemplo, una infracción de seguridad o una actividad sospechosa del usuario), los administradores pueden resolver el nombre de usuario real. Si un administrador tiene un motivo para sospechar de un usuario específico, puede buscar el nombre de usuario cifrado de un nombre de usuario conocido y, después, comenzar la investigación usando el nombre de usuario cifrado. En el **Registro de gobernanza** del portal se audita cada conversión de nombre de usuario.
 
@@ -47,8 +47,8 @@ Puntos clave:
 
     1. En el engranaje Configuración, seleccione **Configuración de Cloud Discovery**.
 
-    2. En la pestaña Anonymization (Anonimización), para ocultar los nombres de usuario de forma predeterminada, seleccione **Anonymize private information by default in new reports and data sources** (Anonimizar información privada de forma predeterminada en los nuevos informes y orígenes de datos). También puede seleccionar **Anonimizar información de la máquina de forma predeterminada en el informe "Usuarios del punto de conexión Win10"** .
-    3. Haga clic en **Guardar**.
+    2. En la pestaña Anonymization (Anonimización), para ocultar los nombres de usuario de forma predeterminada, seleccione **Anonymize private information by default in new reports and data sources** (Anonimizar información privada de forma predeterminada en los nuevos informes y orígenes de datos). También puede seleccionar **Anonimizar información de la máquina de forma predeterminada en el informe "Usuarios del punto de conexión Win10"**.
+    3. Haga clic en **Save**(Guardar).
 
     ![Anonimización](media/anonymizer1.png)
 
@@ -58,14 +58,46 @@ Puntos clave:
 
     ![Anonimizar el panel de Cloud Discovery](media/anonymize-dashboard.png)
 
-5. Para una investigación específica, como la investigación de una alerta de uso erróneo, puede resolver el nombre de usuario específico en el portal y proporcionar una justificación comercial.
-   Esta página también se puede usar para buscar el nombre de usuario cifrado de un nombre de usuario conocido.
+5. En el caso de una investigación específica, como una investigación de una alerta de uso anómalo, puede resolver el nombre de usuario específico en el portal y proporcionar una justificación empresarial.
+
+    > [!NOTE]
+    > Los siguientes pasos también funcionan con los nombres de equipo en la pestaña **máquinas** .
+
+    **Para resolver un nombre de usuario único**
+
+    1. Haga clic en los tres puntos al final de la fila del usuario que desea resolver y seleccione **Deanonymize usuario**.
+
+        ![Tabla de usuario de anonimización](media/anonymize-user-table.png)
+
+    1. En el elemento emergente, escriba la justificación para resolver el nombre de usuario y, a continuación, haga clic en **resolver**. En la fila correspondiente, se muestra el nombre de usuario resuelto.
+
+        > [!NOTE]
+        > Esta acción se audita.
+
+        ![Anonimización resolver emergente](media/anonymize-resolve-dialog.png)
+
+    La siguiente manera alternativa de resolver nombres de usuario únicos también puede usarse para buscar el nombre de usuario cifrado de un nombre de usuario conocido.
 
     1. En el engranaje Configuración, seleccione **Configuración de Cloud Discovery**.
-    2. En la pestaña **Anonymization** (Anonimización), en **Anonymize and resolve usernames** (Anonimizar y resolver nombres de usuario), escriba una justificación de por qué se realiza la resolución.
-    3. En **Enter username to resolve** (Escriba el nombre de usuario para resolver), seleccione **From anonymized** (De anónimo) y escriba el nombre de usuario anónimo, o seleccione **To anonymized** (Para anónimo) y escriba el nombre de usuario original para resolver. Haga clic en **Resolver**.
 
-    ![Anonimización](media/anonymizer.png)
+    1. En la pestaña **Anonymization** (Anonimización), en **Anonymize and resolve usernames** (Anonimizar y resolver nombres de usuario), escriba una justificación de por qué se realiza la resolución.
+    1. En **Enter username to resolve** (Escriba el nombre de usuario para resolver), seleccione **From anonymized** (De anónimo) y escriba el nombre de usuario anónimo, o seleccione **To anonymized** (Para anónimo) y escriba el nombre de usuario original para resolver. Haga clic en **Resolver**.
+
+        ![Anonimización](media/anonymizer.png)
+
+    **Para resolver varios nombres de usuario**
+
+    1. Active las casillas que aparecen al mantener el mouse sobre los iconos de usuario por los usuarios que desea resolver o, en la esquina superior izquierda, seleccione la casilla **selección masiva** .
+
+        ![Anonimización resolver en masa](media/anonymize-bulk-resolve.png)
+
+    1. Haga clic en **Deanonymize usuario**.
+    1. En el elemento emergente, escriba la justificación para resolver el nombre de usuario y, a continuación, haga clic en **resolver**. En las filas correspondientes, se muestran los nombres de usuario resueltos.
+
+        > [!NOTE]
+        > Esta acción se audita.
+
+        ![Anonimización resolver emergente](media/anonymize-resolve-dialog.png)
 
 6. La acción se audita en el **registro de gobernanza** del portal.
 

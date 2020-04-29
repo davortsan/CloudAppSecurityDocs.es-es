@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 032ed68260e178c176c631b41eb7dc64e869cbd3
-ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
+ms.openlocfilehash: 556e47a29c33fa898082a8148e3f3b431b30ac2a
+ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79285519"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81241285"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Conexión de WorkDay a Microsoft Cloud App Security (versión preliminar)
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 En este artículo se proporcionan instrucciones para conectar Microsoft Cloud App Security a su cuenta de WorkDay existente mediante la API del conector de aplicaciones. Esta conexión le proporciona visibilidad y control sobre el uso de WorkDay. Para obtener información sobre cómo Cloud App Security protege WorkDay, consulte [protección de WorkDay](protect-workday.md).
 
@@ -35,16 +35,16 @@ Vea nuestro vídeo de inicio rápido que muestra cómo configurar los requisitos
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4n1ZO]
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 La cuenta de WorkDay usada para conectarse a Cloud App Security debe ser miembro de un grupo de seguridad (nuevo o existente). Se recomienda usar un usuario del sistema de integración de WorkDay. El grupo de seguridad debe tener los siguientes permisos seleccionados para las siguientes directivas de seguridad de dominio:
 
 | Área funcional | Directiva de seguridad de dominio | Directiva de seguridad de subdominio | Permisos de informe/tarea | Permisos de integración |
 | --- | --- | --- | --- | --- |
-| System | Configuración: configuración de inquilinos: General | Configuración: configuración de inquilinos: seguridad | Ver, modificar | Get, Put |
-| System | Administración de seguridad | | Ver, modificar | Get, Put |
-| System | Auditoría del sistema | | Ver | Obtener |
-| Personal | Datos de trabajo: personal | Datos de trabajo: informes de trabajo público | Ver | Obtener |
+| Sistema | Configuración: configuración de inquilinos: General | Configuración: configuración de inquilinos: seguridad | Ver, modificar | Get, Put |
+| Sistema | Administración de seguridad | | Ver, modificar | Get, Put |
+| Sistema | Auditoría del sistema | | Ver | Obtener |
+| Personal | Datos de trabajo: personal | Worker Data: Public Worker Reports | Ver | Obtener |
 
 > [!NOTE]
 >
@@ -68,7 +68,7 @@ Para obtener más información sobre la configuración de usuarios, grupos de se
 
 1. En la página **registrar el cliente de API** , rellene la información siguiente y, a continuación, haga clic en **Aceptar**.
 
-    | Nombre del campo | Valor |
+    | Nombre del campo | Value |
     | ---- | ---- |
     | Nombre de cliente | Microsoft Cloud App Security |
     | Tipo de concesión de cliente | Concesión de código de autorización |
@@ -81,7 +81,7 @@ Para obtener más información sobre la configuración de usuarios, grupos de se
 
 1. Una vez registrado, tome nota de los siguientes parámetros y, a continuación, haga clic en **listo**.
 
-    * Identificador de cliente
+    * Id. de cliente
     * Secreto del cliente
     * Punto de conexión de API de REST de WorkDay
     * Extremo de token
@@ -95,7 +95,7 @@ Para obtener más información sobre la configuración de usuarios, grupos de se
 
     ![Captura de pantalla de la adición del conector de aplicaciones](media/connect-workday-add-app.png)
 
-1. En el menú emergente, agregue el nombre de instancia y, a continuación, haga clic en **conectar WorkDay**.
+1. En el elemento emergente, agregue el nombre de instancia y, a continuación, haga clic en **conectar WorkDay**.
 
     ![Captura de pantalla de la adición de nombre de instancia](media/connect-workday-add-app-connect.png)
 
@@ -103,13 +103,13 @@ Para obtener más información sobre la configuración de usuarios, grupos de se
 
     ![Captura de pantalla del rellenado de detalles de la aplicación](media/connect-workday-add-app-connect-details.png)
 
-1. En WorkDay, una ventana emergente le preguntará si desea permitir el acceso Cloud App Security a su cuenta de WorkDay. Para continuar, haga clic en **Permitir**.
+1. En WorkDay, aparecerá una ventana emergente en la que se le preguntará si desea permitir el acceso Cloud App Security a su cuenta de WorkDay. Para continuar, haga clic en **Permitir**.
 
     ![Captura de pantalla sobre cómo autorizar el acceso a la aplicación](media/connect-workday-add-app-allow.png)
 
 1. De vuelta en el portal de Cloud App Security, debería ver un mensaje que le indica que WorkDay se conectó correctamente. Haga clic en **Probar API** para confirmar que la conexión se ha realizado correctamente.
 
-    La prueba puede tardar unos minutos. Después de recibir un aviso de éxito, haga clic en **cerrar**.
+    La prueba puede tardar unos minutos. Cuando reciba la notificación de que se ha realizado correctamente, haga clic en **Cerrar**.
 
 > [!NOTE]
 > Después de conectar WorkDay, recibirá eventos durante siete días antes de la conexión.

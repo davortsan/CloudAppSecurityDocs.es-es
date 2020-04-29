@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9ea1b9524fe262bc6364e5150426622d4efddfbc
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 3c502e58ffcec4c99378bebcd9857368e0db41f0
+ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74721082"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81235617"
 ---
 # <a name="working-with-app-risk-scores"></a>Trabajar con la puntuación de riesgo de la aplicación
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 El Catálogo de aplicaciones en la nube proporciona una imagen completa de todo lo que puede identificar Cloud Discovery. Cloud Discovery analiza los registros de tráfico en el catálogo de aplicaciones en la nube de Microsoft Cloud App Security de más de 16 000 aplicaciones en la nube. Las aplicaciones se clasifican y se puntúan en función de más de 70 factores de riesgo para proporcionar visibilidad continua al uso de la nube, Shadow IT y el riesgo que Shadow IT supone para su organización. En este artículo se proporcionan instrucciones sobre cómo usar y personalizar la puntuación de riesgo de la aplicación de Cloud App Security.
 
@@ -36,7 +36,7 @@ El **catálogo de aplicaciones en la nube** evalúa el riesgo de las aplicacione
 3. Análisis continuo por parte del equipo de analistas de la nube de Cloud App Security (para atributos como el cifrado en reposo).
 4. Solicitudes de revisión de los clientes, según las solicitudes de envío de clientes para realizar cambios en el catálogo de aplicaciones en la nube. Todas las solicitudes se someten al examen del equipo de analistas de la nube y se actualizan en función de sus conclusiones.
 
-![El Catálogo de aplicaciones en la nube](media/cloud-app-catalog.png)
+![Catálogo de aplicaciones en la nube](media/cloud-app-catalog.png)
 
 Cada vez es mayor la demanda de aplicaciones en la nube por parte de las unidades de negocio, como solución para sus necesidades en constante evolución. El catálogo de aplicaciones de nube le permite elegir con criterio qué aplicaciones se ajustan a los requisitos de seguridad de la organización. El catálogo le mantiene al día con los estándares de seguridad más recientes, las vulnerabilidades y las infracciones.
 
@@ -76,9 +76,9 @@ Si encuentra una nueva aplicación en el entorno que Cloud App Security todavía
 
     ![Sugerir una aplicación a Cloud App Security](media/suggest-new-app.png)
 
-2. En el elemento emergente **Sugerir nueva aplicación de nube**, rellene los detalles sobre la nueva aplicación. Incluya el nombre y el dominio de la aplicación.
+2. En el elemento emergente **sugerir nueva aplicación** en la nube, rellene los detalles sobre el nuevo. Incluya el nombre y el dominio de la aplicación.
 
-    ![Ventana emergente para sugerir una aplicación a Cloud App Security](media/suggest-new-app-popup.png)
+    ![Sugerir un elemento emergente de la aplicación para Cloud App Security](media/suggest-new-app-pop-up.png)
 
 3. Se recomienda activar la casilla para permitir que los analistas de Cloud App Security se pongan en contacto con usted en caso de que necesiten más información sobre la aplicación. Rellenar la información de contacto también le permitirá recibir actualizaciones cuando se complete el análisis.
 
@@ -88,9 +88,9 @@ Si encuentra una nueva aplicación en el entorno que Cloud App Security todavía
 
     ![Solicitar actualización de puntuación](media/request-score-update.png)
 
-2. En la ventana emergente **Sugerencia de mejora**, seleccione si quiere solicitar una actualización de puntuación, sugerir un nuevo factor de riesgo o actualizar los datos de una aplicación.
+2. En el elemento emergente **sugerir una mejora** , seleccione si desea solicitar una actualización de puntuación, sugerir un nuevo factor de riesgo o actualizar los datos de la aplicación.
 
-    ![Sugerencia de mejora a Cloud App Security](media/suggest-improvement-popup.png)
+    ![Sugerencia de mejora a Cloud App Security](media/suggest-improvement-pop-up.png)
 
 3. Se recomienda activar la casilla para permitir que los analistas de Cloud App Security se pongan en contacto con usted en caso de que necesiten más información sobre la aplicación. Rellenar la información de contacto también le permitirá recibir actualizaciones cuando se complete el análisis.
 
@@ -98,7 +98,7 @@ Si encuentra una nueva aplicación en el entorno que Cloud App Security todavía
 
 Cloud Discovery proporciona datos importantes sobre la credibilidad y la confianza de las aplicaciones en la nube que se usan en el entorno. En el portal, cada aplicación detectada se muestra junto con una puntuación total. La puntuación representa la evaluación de Cloud App Security de la madurez de uso para las empresas de esta aplicación en concreto. La puntuación total de cualquier aplicación es un promedio ponderado de tres subpuntuaciones relacionadas con las tres subcategorías que Cloud App Security tiene en cuenta al evaluar la confiabilidad:
 
-- **General**: esta categoría se refiere a aspectos básicos sobre la compañía que produce la aplicación, incluidos su dominio, año de fundación y popularidad. Estos campos están diseñados para reflejar la estabilidad de la empresa en el nivel más básico.
+- **General** : esta categoría se refiere a los hechos básicos sobre la empresa que produce la aplicación, incluidos su dominio, año de Fundación y popularidad. Estos campos están diseñados para reflejar la estabilidad de la empresa en el nivel más básico.
 
 - **Seguridad**: la categoría de seguridad tiene en cuenta todos los estándares relacionados con la seguridad física de los datos usados por la aplicación detectada. Esta categoría incluye campos tales como autenticación multifactor, cifrado, clasificación de los datos y propiedad de los datos.
 
@@ -116,7 +116,7 @@ Es importante dedicar un minuto a revisar y modificar las ponderaciones predeter
 
 3. Además, puede establecer si determinados valores no están disponibles o no son aplicables en el cálculo de la puntuación. Cuando se incluyen, los valores no aplicables tienen una contribución negativa a la puntuación calculada.
 
-    ![score](media/score.png "métricas de puntuación")
+    ![carácter](media/score.png "métricas de puntuación")
 
 Toda la información necesaria para entender cómo se apilan nuestras puntuaciones de riesgo de Cloud App Security está disponible en el portal de Cloud App Security. Para entender mejor el peso de un factor de riesgo en la categoría de riesgo específica, use el botón "i" situado a la derecha de cada nombre de campo en el perfil de la aplicación. Esto proporciona información sobre cómo Cloud App Security puntúa exactamente un factor de riesgo específico. La puntuación es el valor del factor de riesgo en una escala de 1 a 10 + su peso en la categoría de riesgo:
 
@@ -131,7 +131,7 @@ Para comprender el peso de una categoría de riesgo en la puntuación total de u
 Para reemplazar la puntuación de riesgo, en la tabla **Aplicaciones detectadas** o en el **Catálogo de aplicaciones en la nube**, haga clic en los tres puntos que aparecen a la derecha de cualquier aplicación y seleccione **Override app score** (Reemplazar la puntuación de la aplicación).
 Puede reemplazar la puntuación de riesgo de una aplicación sin cambiar la forma en que se pondera, para obtener resultados inmediatos para la organización. Por ejemplo, la puntuación de riesgo de una aplicación LOB que usa es 8. Pero la aplicación está autorizada y apoyada por la organización. Es posible que quiera cambiar la puntuación de riesgo a 10 para la aplicación LOB.
 
-![invalidar la puntuación de riesgo de la aplicación Cloud App Security](media/override-risk-score.png)
+![reemplazar la puntuación de riesgo de una aplicación de cloud app security](media/override-risk-score.png)
 
 Después de actualizar la puntuación, puede incluir notas en la aplicación en las que explique a los demás administradores las razones empresariales por las que ha modificado la puntuación de la aplicación.
 

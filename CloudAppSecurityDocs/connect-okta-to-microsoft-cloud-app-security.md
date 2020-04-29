@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: df64be6f8e3d8739934ae575ee90f3813dabaae6
-ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
+ms.openlocfilehash: b86f8ef6eef534301b21371021295587c6535786
+ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912320"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81230204"
 ---
 # <a name="connect-okta-to-microsoft-cloud-app-security"></a>Conectar Okta con Microsoft Cloud App Security
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Security con una cuenta de Okta existente mediante las API del conector. Esta conexión le ofrece visibilidad y control del uso de Okta. Para obtener información sobre cómo Cloud App Security protege Okta, consulte [protección de Okta](protect-okta.md).
 
@@ -45,9 +45,9 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
 
          ![Okta crear token](media/okta-createtoken.jpg "Okta crear token")
 
-    - En el menú emergente **Crear token**, asigne un nombre al token de Cloud App Security y haga clic en **Crear token**.
+    - En el menú emergente **crear token** , asigne un nombre al token Cloud App Security y haga clic en **crear token**.
 
-         ![Emergente de token de Okta](media/okta-token-popup.png "Emergente de token de Okta")
+         ![Elemento emergente de token de Okta](media/okta-token-pop-up.png)
 
     - En el elemento emergente **Token created successfully** (Token creado correctamente), copie el **Token value** (Valor de token).
 
@@ -63,7 +63,7 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
 
 1. Haga clic en **Conectar** para crear el token de Okta en Cloud App Security.
 
-1. Haga clic en **Probar API** para asegurarse de que la conexión se ha realizado correctamente.
+1. Haga clic en **Probar API** para confirmar que la conexión se ha realizado correctamente.
 
     La prueba puede tardar unos minutos. Cuando reciba la notificación de que se ha realizado correctamente, haga clic en **Cerrar**.
 
