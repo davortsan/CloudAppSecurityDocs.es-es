@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/16/2020
+ms.date: 05/04/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 09880e0702133fbca8ae0001d40aff098b2fa4d6
-ms.sourcegitcommit: f4845a6bbf39aea0504956bf23878f7e0adb8bcc
+ms.openlocfilehash: 5b952a924b7b26e4d45ffb981698f660e53a0558
+ms.sourcegitcommit: baa9cb55d9d82808602a58ee24eeba7d83e92742
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81477557"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "82739015"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Instalación y configuración en Ubuntu o RHEL en Azure
 
@@ -27,9 +27,9 @@ ms.locfileid: "81477557"
 
 Puede configurar la carga de registros automática para informes continuos en Cloud App Security con Docker en Ubuntu o Red Hat Enterprise Linux (RHEL) en Azure. En este artículo se describe cómo configurar la carga de registros automática.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
-* SO: Ubuntu 14,04 y 16,04 (para las versiones más recientes, póngase en contacto con el soporte técnico), RHEL 7,2 o superior, o bien la versión 7,2 o superior
+* Sistema operativo: Ubuntu 16,04 y 18,04, RHEL 7,2 o posterior, o bien de versión 7,2 o superior
 
 * Espacio en disco: 250 GB
 
@@ -119,7 +119,7 @@ El compilador de registros puede administrar correctamente la capacidad de regis
     1. Vaya a **reglas de seguridad de entrada** y haga clic ![en **Agregar**, Ubuntu Azure](media/ubuntu-azure.png)
     1. Agregue las siguientes reglas (en modo **Avanzado**):
 
-    |Nombre|Intervalos de puertos de destino|Protocolo|Source|Destination|
+    |NOMBRE|Intervalos de puertos de destino|Protocolo|Source|Destination|
     |----|----|----|----|----|
     |caslogcollector_ftp|21|TCP|<Subred de la dirección IP del dispositivo>|Any|
     |caslogcollector_ftp_passive|20000-20099|TCP|<Subred de la dirección IP del dispositivo>|Any|
