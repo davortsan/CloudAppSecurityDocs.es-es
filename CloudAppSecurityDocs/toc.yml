@@ -27,6 +27,8 @@
   items:
     - name: Detección y administración de shadow IT
       href: tutorial-shadow-it.md
+    - name: Detección y administración de actividades sospechosas
+      href: tutorial-suspicious-activity.md
     - name: Investigación de usuarios de riesgo
       href: tutorial-ueba.md
     - name: Investigación de aplicaciones de OAuth de riesgo
