@@ -4,18 +4,18 @@ description: En este tutorial se describe el proceso para investigar los usuario
 keywords: ''
 author: shsagir
 ms.author: shsagir
-ms.date: 12/03/2019
+ms.date: 04/28/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: cafb971ae16b0c5bd48e041d36c16521b6e7e5d3
-ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
+ms.openlocfilehash: 7316a1b24e45219b55912e75b48b0c2e590bd34f
+ms.sourcegitcommit: 1288ef3b69b2fefc3015e61cb9f485c0c8e6c682
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79241814"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82888298"
 ---
 # <a name="tutorial-investigate-risky-users"></a>Tutorial: Investigación de usuarios de riesgo
 
@@ -85,6 +85,8 @@ La página Usuario le ayuda a responder a las siguientes preguntas:
     Consulte la parte superior del panel derecho para saber si merece la pena investigar al usuario. ¿Qué es la [puntuación de riesgo](#risk-score) del empleado?
     * ¿Qué riesgo representa el usuario para la organización?  
     Examine la lista que se encuentra en el panel inferior, que proporciona cada actividad y cada alerta relacionadas con el usuario, para ayudarlo a empezar a entender qué tipo de riesgo representa. En la escala de tiempo, haga clic en cada línea para que pueda explorar en profundidad la actividad o alerta propiamente dichas. También puede hacer clic en el número que aparece junto a la actividad para comprender la evidencia que ha influido en la propia puntuación.
+    * ¿Cuál es el riesgo para otros recursos de la organización?  
+    Seleccione la pestaña **Rutas de desplazamiento lateral** para comprender qué rutas de acceso puede usar un atacante para asumir el control de otros recursos de la organización. Por ejemplo, incluso si el usuario objeto de su investigación tiene una cuenta no confidencial, un atacante puede usar conexiones a la cuenta para detectar e intentar poner en peligro cuentas confidenciales de su red. Para obtener más información, consulte [Rutas de desplazamiento lateral](/azure-advanced-threat-protection/investigate-lateral-movement-path).
 
   >[!NOTE]
   >Es importante recordar que, mientras que la página Usuario proporciona información sobre los dispositivos, los recursos y las cuentas de todas las actividades, la puntuación de prioridad de investigación es la suma de todas las actividades de riesgo y las alertas de los últimos siete días.
@@ -99,7 +101,7 @@ Al investigar a un usuario, se formulará estas preguntas sobre las actividades 
 
 * Vaya al **registro de actividad** para comprender por qué esta actividad recibió una puntuación alta y otras no. Puede establecer la opción **Prioridad de investigación** en **Se ha establecido** para comprender qué actividades son sospechosas. Por ejemplo, puede filtrar por la prioridad de investigación de todas las actividades que se produjeron en Ucrania. Así, puede ver si hubo otras actividades de riesgo, desde dónde se conectó el usuario, y puede pasar fácilmente a otras exploraciones en profundidad, como actividades locales y en la nube no anómalas recientes, para continuar con la investigación.
 
-## <a name="phase-4-protect-your-organization"></a>Fase 4: Protección de la organización<a name="protect"></a>
+## <a name="phase-4-protect-your-organizationj"></a>Fase 4: Protección de la organización<a name="protect"></a>
 
 Si su investigación indica que un usuario está en peligro, siga estos pasos para mitigar el riesgo.
 
