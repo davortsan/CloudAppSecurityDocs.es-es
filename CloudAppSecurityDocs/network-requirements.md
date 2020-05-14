@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 162a3e6705ed772cc43c141afd135cfbda3bdad5
-ms.sourcegitcommit: 30077ab7e3dd25249924e178581cf5eb1e7085bd
+ms.openlocfilehash: 8b6e6746951616f1a6b4241d818e75dc7755f121
+ms.sourcegitcommit: a693d0bc9102a8320f9933d80ab9357f449d5316
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82093595"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83369349"
 ---
 # <a name="network-requirements"></a>Requisitos de red
 
@@ -83,6 +83,7 @@ Además, estos elementos deben estar en una lista blanca, según el centro de da
 Para habilitar Cloud App Security proxy inverso, agregue el **Puerto de salida 443** para las siguientes direcciones IP y nombres DNS a la lista de permitidos del firewall:
 
     *.cas.ms
+    mcasproxy.azureedge.net
 
 Además, estos elementos deben estar en una lista blanca, según el centro de datos que use:
 
@@ -187,12 +188,12 @@ Para habilitar características de Cloud Discovery por medio de un recopilador d
 
   | Centro de datos |                        URL                                 |
   |-------------|------------------------------------------------------------|
-  |     Estados Unidos 1     | https:\//adaprodconsole.BLOB.Core.Windows.net/             |
-  |     US2     | https:\//prod03use2console1.BLOB.Core.Windows.net/         |
-  |     US3     | https:\//prod5usw2console1.BLOB.Core.Windows.net/          |
-  |     Unión Europea 1     | https:\//prod02euwconsole1.BLOB.Core.Windows.net/          |
-  |     EU2     | https:\//prod4uksconsole1.BLOB.Core.Windows.net/           |
-  |   Estados Unidos 1 gov   | https:\//gprd1usgvconsole1.BLOB.Core.usgovcloudapi.net/    |
+  |     Estados Unidos 1     | https: \/ /adaprodconsole.BLOB.Core.Windows.net/             |
+  |     US2     | https: \/ /prod03use2console1.BLOB.Core.Windows.net/         |
+  |     US3     | https: \/ /prod5usw2console1.BLOB.Core.Windows.net/          |
+  |     Unión Europea 1     | https: \/ /prod02euwconsole1.BLOB.Core.Windows.net/          |
+  |     EU2     | https: \/ /prod4uksconsole1.BLOB.Core.Windows.net/           |
+  |   Estados Unidos 1 gov   | https: \/ /gprd1usgvconsole1.BLOB.Core.usgovcloudapi.net/    |
 
 > [!NOTE]
 >
