@@ -113,6 +113,8 @@
               href: zscaler-integration.md
             - name: Integración con iBoss
               href: iboss-integration.md
+            - name: Integración con Corrata
+              href: corrata-integration.md
             - name: Crear informes de instantáneas de Cloud Discovery
               href: create-snapshot-cloud-discovery-reports.md
             - name: Configurar la carga de registros automática para informes continuos
