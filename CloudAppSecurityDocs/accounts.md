@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/03/2019
+ms.date: 05/20/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fe538419f86076977b5484c5571d65623eb9cdd7
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 5a32b56b0ad310f5c7572f8113e4a9a33b722059
+ms.sourcegitcommit: d72c768e9a5fe087995ab1185ca33ef68168bee6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74733729"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83704271"
 ---
 # <a name="accounts"></a>Cuentas
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 Microsoft Cloud App Security le ofrece la posibilidad de supervisar las cuentas de sus aplicaciones conectadas. Después de conectar Cloud App Security a una aplicación mediante el conector de aplicaciones, Cloud App Security lee la información de la cuenta asociada a las aplicaciones conectadas. La página Cuentas permite investigar esas cuentas, los permisos, los grupos a los que pertenecen, sus alias y las aplicaciones que usan. Además, cuando Cloud App Security detecta una cuenta nueva que no se había detectado previamente en ninguna de las aplicaciones conectadas (por ejemplo, en la actividad o el uso compartido de archivos), la cuenta se agrega a la lista de cuentas de la aplicación en cuestión. Esto le permite supervisar la actividad de los usuarios externos que interactúan con sus aplicaciones en la nube.
 
@@ -60,13 +60,13 @@ A continuación, se muestra una lista de los filtros de cuenta que se pueden apl
 * **Visto por última vez**: el filtro **Visto por última vez** permite buscar cuentas que estén inactivas y cuyos usuarios no hayan tenido actividad durante un tiempo.
 * **Organización**: permite filtrar por miembros de determinados grupos organizativos definidos en sus aplicaciones conectadas.
 * **Show Admins only** (Mostrar solo administradores): filtra cuentas y usuarios que son administradores.
-* **Estado**: filtra según el estado de la cuenta de usuario de N/D, ensayo, activa, suspendida o eliminado.
+* **Estado**: filtra según el estado de la cuenta de usuario de N/D, ensayo, activa, suspendida o eliminado. Un estado de no disponible (N/A) es normal y puede aparecer, por ejemplo, para las cuentas anónimas.
 * **Tipo**: permite filtrar por el usuario o el tipo de cuenta.
 * **Nombre de usuario**: permite filtrar a usuarios específicos.
 
 ## <a name="governance-actions"></a>Acciones de gobernanza
 
-En la página **usuarios y cuentas** , puede realizar acciones de gobierno como suspender una aplicación o ir a la página de configuración de la cuenta. Para obtener una lista completa de acciones de gobernanza, vea el [registro de gobernanza](governance-actions.md).
+En la página **usuarios y cuentas** , puede realizar acciones de gobierno como suspender una aplicación o ir a la página de configuración de la cuenta. Para obtener una lista completa de las acciones de gobierno, consulte el [registro de gobierno](governance-actions.md).
 
 Por ejemplo, si identifica un usuario que está en peligro, puede aplicar la acción **confirmar usuario comprometido** para establecer el nivel de riesgo del usuario en alto, lo que provoca que se apliquen las acciones de directiva relevantes definidas en Azure Active Directory. La acción se puede aplicar manualmente o mediante [directivas relevantes que admitan acciones de gobierno](governance-actions.md).
 

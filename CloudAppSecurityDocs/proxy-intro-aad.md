@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b34e201e45989ac8e13b92d39fb10b49f6be45ac
-ms.sourcegitcommit: 8e3657c47357bd30f3802fcf91e3060621a0c15b
+ms.openlocfilehash: a69ad97d1876bf881957ab2d7c79c8aa390d5e87
+ms.sourcegitcommit: e1a0d6a7d639a6d268b0104eb3e5532d2692288b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82198325"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "83551330"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicaciones con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security
 
@@ -53,7 +53,7 @@ Control de aplicaciones de acceso condicional permite supervisar y controlar las
 
 Al crear una directiva de sesión con control de aplicaciones de acceso condicional, podrá controlar las sesiones de usuario redirigiendo al usuario en cuestión a través de un proxy inverso, en lugar de directamente a la aplicación. A partir de entonces, las solicitudes y respuestas de usuario pasan por Cloud App Security en lugar de hacerlo directamente a la aplicación.
 
-Cuando una sesión está protegida por el proxy, todas las direcciones URL y cookies pertinentes se sustituyen por Cloud App Security. Por ejemplo, si la aplicación devuelve una página con vínculos cuyos dominios terminan `myapp.com`con, el dominio del vínculo tiene un sufijo similar, `*.cas.ms`como se indica a continuación:
+Cuando una sesión está protegida por el proxy, todas las direcciones URL y cookies pertinentes se sustituyen por Cloud App Security. Por ejemplo, si la aplicación devuelve una página con vínculos cuyos dominios terminan con `myapp.com` , el dominio del vínculo tiene un sufijo similar `*.cas.ms` , como se indica a continuación:
 
 |Dirección URL de la aplicación|URL reemplazada|
 |---|---|
@@ -70,7 +70,7 @@ Este método no requiere la instalación de nada en el dispositivo, por lo que r
 
 El control de aplicaciones de acceso condicional permite crear directivas que tienen en cuenta si un dispositivo está administrado o no. Para identificar el estado de un dispositivo, puede configurar las directivas de acceso y de sesión para comprobar lo siguiente:
 
-- Dispositivos compatibles con Microsoft Intune (Intune) [solo disponible con Azure AD]
+- Dispositivos compatibles con Microsoft Intune [solo disponible con Azure AD]
 - Dispositivos Azure AD híbrido Unidos [solo disponible con Azure AD]
 - Presencia de certificados de cliente en una cadena de confianza
 
@@ -179,7 +179,7 @@ Si está interesado en una aplicación específica, [envíenos detalles sobre la
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Implementación de Control de aplicaciones de acceso condicional para aplicaciones destacadas](proxy-deployment-aad.md)
+> [Implementación del Control de aplicaciones de acceso condicional para aplicaciones destacadas](proxy-deployment-aad.md)
 
 > [!div class="nextstepaction"]
 > [Implementación del Control de aplicaciones de acceso condicional para cualquier aplicación](proxy-deployment-any-app.md)

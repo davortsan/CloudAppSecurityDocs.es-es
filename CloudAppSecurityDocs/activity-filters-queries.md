@@ -14,14 +14,14 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4ca67a5018aac268c5fefc96fe5d026c5f684125
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: 9a363ebb0c94735f4df8d2617f9d20c6bf7c8365
+ms.sourcegitcommit: e1a0d6a7d639a6d268b0104eb3e5532d2692288b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81228586"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "83551313"
 ---
-# <a name="activity-filters-and-queries"></a>Filtros y consultas de actividad
+# <a name="activity-filters-and-queries"></a>Consultas y filtros de actividad
 
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -53,7 +53,7 @@ A continuación se muestra una lista de los filtros de actividad que se pueden a
 
 <!--- Description – Specific keyword in the activity description, for example, all activities that include the string **user** in their description.  -->
 
-- Etiqueta de dispositivo: busca por dispositivo compatible, administrado o comprobado.
+- Etiqueta de dispositivo: busca un certificado de cliente **compatible con Intune**, **Azure ad híbrido** o un **certificado de cliente válido**.
 
 - Tipo de dispositivo: busca solo las actividades realizadas con un tipo de dispositivo concreto. Por ejemplo, busca todas las actividades de dispositivos móviles, equipos de escritorio o tabletas.
 
@@ -89,10 +89,10 @@ A continuación se muestra una lista de los filtros de actividad que se pueden a
 - ISP registrado: ISP desde el que se ha realizado la actividad.
 
 - Origen: busque el origen desde el que se detectó la actividad. El origen podría ser cualquiera de los siguientes:
-  - Conector de aplicaciones: los registros provienen directamente del conector de la API de la aplicación.
+  - Conector de aplicaciones: los registros provienen directamente del conector de API de la aplicación.
   - Análisis del conector de aplicaciones: enriquecimientos de Cloud App Security basados en la obtención de información del conector de la API.
 
-- Usuario: el usuario que realizó la actividad, que se puede filtrar en el dominio, grupo, nombre u organización. Para filtrar las actividades sin un usuario específico, puede usar el operador 'no establecido'.
+- Usuario: el usuario que realizó la actividad, que se puede filtrar en el dominio, grupo, nombre u organización. Para filtrar las actividades sin un usuario específico, puede usar el operador ' no establecido '.
   - Dominio del usuario: busca un dominio de usuario específico.
   - Organización de usuario: unidad organizativa del usuario que ha realizado la actividad, por ejemplo, todas las actividades realizadas por usuarios de marketing o EMEA. Esto solo es relevante para las instancias conectadas de G Suite mediante unidades organizativas.
   - Grupo de usuarios: grupos de usuarios específicos que puede importar de aplicaciones conectadas, como administradores de Office 365.
