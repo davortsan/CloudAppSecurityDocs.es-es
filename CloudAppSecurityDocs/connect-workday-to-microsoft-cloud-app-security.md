@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 556e47a29c33fa898082a8148e3f3b431b30ac2a
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: 652ab059cef9c911af4dc58a7cb4b79c679aed30
+ms.sourcegitcommit: 7b6124e5ecb3fa8fc1176d89e06b052f2a53a310
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81241285"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83854290"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Conexión de WorkDay a Microsoft Cloud App Security (versión preliminar)
 
@@ -68,12 +68,13 @@ Para obtener más información sobre la configuración de usuarios, grupos de se
 
 1. En la página **registrar el cliente de API** , rellene la información siguiente y, a continuación, haga clic en **Aceptar**.
 
-    | Nombre del campo | Value |
+    | Nombre de campo | Value |
     | ---- | ---- |
     | Nombre de cliente | Microsoft Cloud App Security |
     | Tipo de concesión de cliente | Concesión de código de autorización |
     | Tipo de token de acceso | Portador |
     | URI de redireccionamiento | `https://portal.cloudappsecurity.com/api/oauth/connect` |
+    | Tokens de actualización que no son de expiración | Sí |
     | Ámbitos de OAuth2 | **Personal** y **sistema** |
     | Ámbito (áreas funcionales) | **Personal** y **sistema** |
 
@@ -119,6 +120,6 @@ Si tiene problemas para conectar la aplicación, consulte [solución de problema
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
+> [Control de aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

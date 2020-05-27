@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/12/2019
+ms.date: 05/24/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,14 +14,14 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fe0a057318f1b9a55d60e807c2bbaf8fd89aa682
-ms.sourcegitcommit: a166b85d5c91c48032cf133655471aec1ed88a0f
+ms.openlocfilehash: 5c12226c36cba270ad5b54ffdb76cb8b228c2480
+ms.sourcegitcommit: 7b6124e5ecb3fa8fc1176d89e06b052f2a53a310
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81662205"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83854235"
 ---
-# <a name="connect-apps"></a>Conexión de aplicaciones
+# <a name="connect-apps"></a>Conectar aplicaciones
 
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -52,7 +52,7 @@ En función de la aplicación a la que se conecte, la conexión de API habilita 
 
 - **Información de cuenta**: ofrece visibilidad sobre los usuarios, las cuentas, la información de perfil, el estado (suspendido, activo, deshabilitado), los grupos y los privilegios.
 
-- **Pista de auditoría**: ofrece visibilidad de las actividades del usuario, las actividades del administrador y la actividad de inicio de sesión.
+- **Seguimiento de auditoría** : visibilidad de las actividades de usuario, las actividades de administración y las actividades de inicio de sesión.
 
 - **Análisis de datos**: examen de datos no estructurados mediante dos procesos, periódicamente (cada 12 horas) y en tiempo real (se desencadena cada vez que se detecta un cambio).
 
@@ -76,7 +76,7 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
 | **Actividad de usuario** | No aplicable | ✔ | ✔ | ✔ | ✔ - requiere Google Business o Enterprise | ✔ | ✔ | Parcial | Compatible con Salesforce Shield | ✔ | ✔ |
 | **Actividad administrativa** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Parcial | ✔ | ✔ | No es compatible con el proveedor |
 | **DLP: examen periódico** | | ✔ | Próximamente | No aplicable | ✔ | ✔ | No aplicable | | | | No es compatible con el proveedor |
-| **Análisis de DLP casi en tiempo real** | | ✔ | ✔ | No aplicable | ✔: requiere Google Business Enterprise | ✔ | No aplicable | ✔ | ✔ | ✔ | No es compatible con el proveedor |
+| **Análisis en tiempo real de DLP-Near** | | ✔ | ✔ | No aplicable | ✔: requiere Google Business Enterprise | ✔ | No aplicable | ✔ | ✔ | ✔ | No es compatible con el proveedor |
 | **Control de uso compartido** | ✔ | ✔ | ✔ | No aplicable | ✔ | ✔ | No aplicable | No aplicable | | ✔ | No es compatible con el proveedor |
 | **Regulación de archivos** | ✔ | ✔ | ✔ | No aplicable | ✔ | ✔ | No aplicable | | ✔ | | No es compatible con el proveedor |
 | **Ver permisos de aplicación** | No aplicable | No es compatible con el proveedor | Próximamente | No aplicable | ✔ | ✔ | No aplicable | | ✔ | No aplicable | No aplicable |

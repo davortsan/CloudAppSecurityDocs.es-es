@@ -14,43 +14,20 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 367778c25f0a56dd0db8f6457b884b02d382da6c
-ms.sourcegitcommit: e0c2a8fbdce9cc0fd0d6b85c92e112fd306ad950
+ms.openlocfilehash: c5c5dfb141347b1a08f850335c82e54393bbf4c6
+ms.sourcegitcommit: 7b6124e5ecb3fa8fc1176d89e06b052f2a53a310
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83203012"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83854259"
 ---
 # <a name="working-with-the-dashboard"></a>Trabajo con el panel
 
 *Se aplica a: Microsoft Cloud App Security*
 
-En este tema se describen las tareas diarias que debe realizar con Cloud App Security.  Después de tener Microsoft Cloud App Security configurado y ejecutándose, tendrá que:
-
-- Configurar flujos de datos
-- Autorizar las aplicaciones que quiera permitir que usen los usuarios
-- Configurar directivas para supervisar el entorno de nube.
-
-A continuación, puede utilizar Cloud App Security para controlar y proteger la nube, y para administrar los riesgos.
+En este tema se describen las tareas diarias que debe realizar con Cloud App Security.  
 
 ## <a name="check-the-dashboard"></a>Comprobar el panel
-
-![Panel de Cloud App Security](media/dashboard.png "dashboard")
-
-En el panel de Cloud App Security se proporciona una visión general de las actividades y características, entre ellas:
-
-- Alertas abiertas
-- Infracciones de la actividad
-- Infracciones del contenido
-- Un mapa de actividad que traza el origen de la actividad del usuario
-- Tendencias de uso de aplicaciones conectadas en su entorno de la nube
-- Usuarios principales según la detección de amenazas
-
-Es recomendable que eche un vistazo al panel a diario para ver qué nuevas alertas se han activado. Es un buen lugar para vigilar el estado de su entorno de nube. Con el panel puede hacerse una idea de lo que sucede.
-
-## <a name="gradual-deployment-of-our-enhanced-dashboard"></a>Implementación gradual de nuestro panel mejorado
-
-Como parte de las mejoras continuas en el diseño del portal, el panel de Cloud App Security se ha mejorado en función de sus comentarios. El panel ofrece una experiencia de usuario mejorada con contenido y datos actualizados.
 
 La información que se presenta en el panel es una introducción a toda la información más importante sobre su organización. Cada tarjeta de información proporciona vínculos a una investigación más profunda de la información presentada. También puede elegir ver la información del panel para una aplicación específica mediante el filtro proporcionado.
 

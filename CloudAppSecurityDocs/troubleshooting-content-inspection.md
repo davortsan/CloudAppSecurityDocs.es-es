@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
+ms.date: 05/25/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,14 +14,14 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b0d1afdd63cc7c92f520cc17c1d90ff83bf4ec23
-ms.sourcegitcommit: 82aaa76581fa76e207c754bb0855c24c2233fb44
+ms.openlocfilehash: 3831d576d3ead9164924557a8b097b78f39808cf
+ms.sourcegitcommit: 7b6124e5ecb3fa8fc1176d89e06b052f2a53a310
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81738045"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83854233"
 ---
-# <a name="troubleshooting-content-inspection"></a>Solucionar problemas relacionados con la inspección de contenido
+# <a name="troubleshooting-content-inspection"></a>Solución de problemas relacionados con la inspección de contenido
 
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -41,7 +41,8 @@ En la tabla se enumera cada estado de inspección de contenido y su descripción
 |Error: El archivo está dañado|El archivo está dañado de algún modo y no se ha podido inspeccionar.|
 |Error: Error interno.|Se produjo un problema indeterminado al intentar inspeccionar el archivo.|
 |Error: Error de DLP externo|Se produjo un error en la DLP externa y Cloud App Security no pudo inspeccionar el contenido.|
-|Error: Se ha excedido el tamaño de archivo|El archivo supera el tamaño máximo de archivo de 50 MB o 1 millón caracteres.|
+|Error: Se ha excedido el tamaño de archivo|El archivo supera el tamaño máximo de archivo de 50 MB.|
+|Error: el archivo es demasiado largo y se examinó parcialmente|El archivo superó el máximo de 1 millón caracteres. Para la parte del contenido que se examinó, se aplicaron las coincidencias de directiva relevantes.|
 |Error: Acceso denegado al archivo|El archivo es externo a la nube y Cloud App Security no ha podido acceder a él.|
 |Error: Archivo eliminado|El archivo ya no existe en la nube y no se ha podido inspeccionar.|
 |Error: Tipo de archivo no admitido|Cloud App Security no puede inspeccionar el contenido de este tipo de archivo. Puede que este estado aparezca porque no se admite el tipo de archivo o porque el archivo no se encuentra realmente en el formato del tipo de archivo esperado.|
