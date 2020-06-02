@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1b6bd39d420b113a85d9d171ab076769240b9d00
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: 47aa53855f83a2898616d17e6d4b12786bc7d893
+ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81228501"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84250679"
 ---
 # <a name="session-policies"></a>Directivas de sesión
 
@@ -40,9 +40,9 @@ Por ejemplo, puede decidir que, desde cualquier dispositivo no administrado o en
 
 * Azure AD Premium licencia P1 o la licencia requerida por su solución de proveedor de identidades (IdP)
 * Las aplicaciones en cuestión deben estar [implementadas con control de aplicaciones de acceso condicional](proxy-deployment-aad.md).
-* Asegúrese de que ha configurado la solución IdP para trabajar con Cloud App Security, como se indica a continuación:
-  * Para [Azure ad el acceso condicional](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), consulte Configuración de la [integración con Azure ad](proxy-deployment-aad.md#configure-integration-with-azure-ad)
-  * Para otras soluciones IdP, consulte [configuración de la integración con otras soluciones IDP](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions) .
+* Asegúrese de que ha configurado la solución IdP para que funcione con Cloud App Security, como se indica a continuación:
+  * En el caso del [acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), consulte [Configuración de la integración con Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad).
+  * Para información sobre otras soluciones IdP, consulte [Configuración de la integración con otras soluciones IdP](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions).
 
 ## <a name="create-a-cloud-app-security-session-policy"></a>Crear una directiva de sesión de Cloud App Security
 
@@ -100,7 +100,7 @@ Si prefiere no avisar al usuario de que se le está supervisando, puede deshabil
 
 2. Después, en **Control de aplicación de acceso condicional**, active **Supervisión de usuarios** y desactive la casilla **Notificar a los usuarios**.
 
-Para mantener al usuario dentro de la sesión, el control de aplicaciones de acceso condicional reemplaza todas las direcciones URL, scripts de Java y cookies pertinentes de la sesión de aplicación por direcciones URL de Microsoft Cloud App Security. Por ejemplo, si la aplicación devuelve una página con vínculos cuyos dominios finalizan con myapp.com, Control de aplicaciones de acceso condicional reemplaza los vínculos con dominios que terminan por algo como myapp.com.us.cas.ms. De esta forma, la sesión completa se supervisa por medio de Microsoft Cloud App Security.
+Para mantener al usuario dentro de la sesión, el control de aplicaciones de acceso condicional reemplaza todas las direcciones URL, scripts de Java y cookies pertinentes de la sesión de aplicación por direcciones URL de Microsoft Cloud App Security. Por ejemplo, si la aplicación devuelve una página con vínculos cuyos dominios finalizan con myapp.com, Control de aplicaciones de acceso condicional reemplaza los vínculos con dominios que terminan con algo parecido a `myapp.com.mcas.ms` . De esta forma, la sesión completa se supervisa por medio de Microsoft Cloud App Security.
 
 El control de aplicaciones de acceso condicional crea registros de tráfico de cada sesión de usuario que pasa a través de él. Los registros de tráfico reflejan la hora, la dirección IP, los agentes de usuario, las direcciones URL visitadas y el número de bytes cargados y descargados. Estos registros se analizan, mientras que un informe constantemente activo denominado **Cloud App Security Conditional Access App Control** (Control de aplicaciones de acceso condicional de Cloud App Security) se agrega a la lista de informes de Cloud Discovery en el panel de Cloud Discovery.
 
@@ -110,7 +110,7 @@ Para exportar estos registros, haga lo siguiente:
 2. En el lado derecho de la tabla, haga clic en el botón de exportación.
 
     ![botón Exportar](./media/export-button.png)
-3. Seleccione el intervalo del informe y haga clic en **Exportar**. Este proceso puede tardar un tiempo.
+3. Seleccione el intervalo del informe y haga clic en **Exportar**. Este proceso puede tardar algún tiempo.
 
 Para descargar el registro exportado:
 
@@ -164,7 +164,7 @@ Por ejemplo, si un usuario carga un archivo sin una etiqueta de Azure Informatio
 >[!div class="nextstepaction"]
 > [SIGUIENTE: Cómo crear una directiva de acceso »](access-policy-aad.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 > [!div class="nextstepaction"]
 > [Bloqueo de descargas en dispositivos no administrados mediante Azure AD Control de aplicaciones de acceso condicional](use-case-proxy-block-session-aad.md)

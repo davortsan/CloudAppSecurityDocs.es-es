@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a69ad97d1876bf881957ab2d7c79c8aa390d5e87
-ms.sourcegitcommit: e1a0d6a7d639a6d268b0104eb3e5532d2692288b
+ms.openlocfilehash: 65919019460b71907b33ec841b6d7c7b9d4b7143
+ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "83551330"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84250747"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicaciones con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security
 
@@ -53,11 +53,11 @@ Control de aplicaciones de acceso condicional permite supervisar y controlar las
 
 Al crear una directiva de sesión con control de aplicaciones de acceso condicional, podrá controlar las sesiones de usuario redirigiendo al usuario en cuestión a través de un proxy inverso, en lugar de directamente a la aplicación. A partir de entonces, las solicitudes y respuestas de usuario pasan por Cloud App Security en lugar de hacerlo directamente a la aplicación.
 
-Cuando una sesión está protegida por el proxy, todas las direcciones URL y cookies pertinentes se sustituyen por Cloud App Security. Por ejemplo, si la aplicación devuelve una página con vínculos cuyos dominios terminan con `myapp.com` , el dominio del vínculo tiene un sufijo similar `*.cas.ms` , como se indica a continuación:
+Cuando una sesión está protegida por el proxy, todas las direcciones URL y cookies pertinentes se sustituyen por Cloud App Security. Por ejemplo, si la aplicación devuelve una página con vínculos cuyos dominios terminan con `myapp.com` , el dominio del vínculo tiene un sufijo similar `*.mcas.ms` , como se indica a continuación:
 
 |Dirección URL de la aplicación|URL reemplazada|
 |---|---|
-|`myapp.com`|`myapp.com.us.cas.ms`|
+|`myapp.com`|`myapp.com.mcas.ms`|
 
 Este método no requiere la instalación de nada en el dispositivo, por lo que resulta idóneo al supervisar o controlar sesiones desde dispositivos no administrados o usuarios asociados.
 

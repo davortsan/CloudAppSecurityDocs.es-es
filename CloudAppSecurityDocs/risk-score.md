@@ -14,24 +14,24 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3c502e58ffcec4c99378bebcd9857368e0db41f0
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: 1b69c92be4a3e095b76eee3d458820dac5d218a9
+ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81235617"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84250696"
 ---
 # <a name="working-with-app-risk-scores"></a>Trabajar con la puntuación de riesgo de la aplicación
 
 *Se aplica a: Microsoft Cloud App Security*
 
-El Catálogo de aplicaciones en la nube proporciona una imagen completa de todo lo que puede identificar Cloud Discovery. Cloud Discovery analiza los registros de tráfico en el catálogo de aplicaciones en la nube de Microsoft Cloud App Security de más de 16 000 aplicaciones en la nube. Las aplicaciones se clasifican y se puntúan en función de más de 70 factores de riesgo para proporcionar visibilidad continua al uso de la nube, Shadow IT y el riesgo que Shadow IT supone para su organización. En este artículo se proporcionan instrucciones sobre cómo usar y personalizar la puntuación de riesgo de la aplicación de Cloud App Security.
+El Catálogo de aplicaciones en la nube proporciona una imagen completa de todo lo que puede identificar Cloud Discovery. Cloud Discovery analiza los registros de tráfico en el catálogo de aplicaciones en la nube de Microsoft Cloud App Security de más de 16 000 aplicaciones en la nube. Las aplicaciones se clasifican y puntuan en función de más de 80 factores de riesgo para proporcionar visibilidad continua del uso de la nube, Shadow IT y el riesgo que Shadow IT supone para su organización. En este artículo se proporcionan instrucciones sobre cómo usar y personalizar la puntuación de riesgo de la aplicación de Cloud App Security.
 
 ## <a name="the-cloud-app-catalog"></a>El Catálogo de aplicaciones en la nube
 
 El **catálogo de aplicaciones en la nube** evalúa el riesgo de las aplicaciones en la nube en función de certificaciones normativas, estándares del sector y procedimientos recomendados. En el catálogo de aplicaciones en la nube se ejecutan cuatro procesos complementarios para mantenerlo actualizado:
 
-1. Extracción de datos automatizada directamente desde la aplicación en la nube. La extracción es para atributos como el cumplimiento de SOC 2, los términos de servicio, la dirección URL de inicio de sesión, la directiva de privacidad y la ubicación de la sede central.
+1. Extracción de datos automatizada directamente desde la aplicación en la nube. La extracción es para atributos como el cumplimiento de SOC 2, los términos de servicio, la dirección URL de inicio de sesión, la Directiva de privacidad y la ubicación de HQ.
 2. Extracción de datos automatizada avanzada mediante algoritmos de Cloud App Security (para atributos como encabezados de seguridad HTTP).
 3. Análisis continuo por parte del equipo de analistas de la nube de Cloud App Security (para atributos como el cifrado en reposo).
 4. Solicitudes de revisión de los clientes, según las solicitudes de envío de clientes para realizar cambios en el catálogo de aplicaciones en la nube. Todas las solicitudes se someten al examen del equipo de analistas de la nube y se actualizan en función de sus conclusiones.
@@ -108,7 +108,7 @@ Cloud Discovery proporciona datos importantes sobre la credibilidad y la confian
 
 Cada una de las categorías se compone de muchas propiedades específicas. Según el algoritmo de puntuación de Cloud App Security, cada propiedad recibe una puntuación preliminar de entre 0 y 10, en función del valor. Los valores True y False recibirán 10 o 0 en consecuencia. Pero las propiedades continuas como la antigüedad del dominio recibirán un valor determinado del espectro. La puntuación de cada propiedad se pondera con todos los demás campos existentes en la categoría para crear la subpuntuación de esta. Si encuentra una aplicación sin puntuar, eso normalmente indica que sus propiedades son desconocidas y que, por lo tanto, no se ha puntuado.
 
-Es importante dedicar un minuto a revisar y modificar las ponderaciones predeterminadas otorgadas a la configuración de puntuación de Cloud Discovery. De forma predeterminada, todos los distintos parámetros evaluados tienen la misma ponderación. Si hay determinados parámetros que son más o menos importantes para la organización, es importante cambiarlos de la siguiente forma:
+Es importante dedicar un minuto a revisar y modificar las ponderaciones predeterminadas otorgadas a la configuración de puntuación de Cloud Discovery. De forma predeterminada, todos los distintos parámetros evaluados reciben el mismo peso. Si hay determinados parámetros que son más o menos importantes para la organización, es importante cambiarlos de la siguiente forma:
 
 1. En el portal, en el icono de configuración, seleccione **Configuración de Cloud Discovery**.
 
@@ -116,9 +116,9 @@ Es importante dedicar un minuto a revisar y modificar las ponderaciones predeter
 
 3. Además, puede establecer si determinados valores no están disponibles o no son aplicables en el cálculo de la puntuación. Cuando se incluyen, los valores no aplicables tienen una contribución negativa a la puntuación calculada.
 
-    ![carácter](media/score.png "métricas de puntuación")
+    ![score](media/score.png "métricas de puntuación")
 
-Toda la información necesaria para entender cómo se apilan nuestras puntuaciones de riesgo de Cloud App Security está disponible en el portal de Cloud App Security. Para entender mejor el peso de un factor de riesgo en la categoría de riesgo específica, use el botón "i" situado a la derecha de cada nombre de campo en el perfil de la aplicación. Esto proporciona información sobre cómo Cloud App Security puntúa exactamente un factor de riesgo específico. La puntuación es el valor del factor de riesgo en una escala de 1 a 10 + su peso en la categoría de riesgo:
+Toda la información necesaria para entender cómo se apilan nuestras puntuaciones de riesgo de Cloud App Security está disponible en el portal de Cloud App Security. Para comprender mejor el peso de un factor de riesgo en una categoría de riesgo específica, use el botón "i" a la derecha de cada nombre de campo en el perfil de la aplicación. Esto proporciona información sobre cómo Cloud App Security puntúa exactamente un factor de riesgo específico. La puntuación es el valor del factor de riesgo en una escala de 1 a 10 + su peso en la categoría de riesgo:
 
 ![cálculo del riesgo](media/cac-weight.png)
 
