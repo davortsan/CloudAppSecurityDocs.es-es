@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: b2cc376ee93d4f052227cbc3a0e8e8f04e564ae3
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: bfa910c78201a63a6e18c6e30f345c1e4361b23c
+ms.sourcegitcommit: 5822fcdb1433a6a26195692b05aed160bc339656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81241394"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84275819"
 ---
 # <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Implementación del Control de aplicaciones de acceso condicional para aplicaciones destacadas
 
@@ -23,7 +23,7 @@ ms.locfileid: "81241394"
 
 Los controles de sesión de Microsoft Cloud App Security funcionan con las aplicaciones destacadas. Para obtener una lista de las aplicaciones que se incluyen en Cloud App Security trabajar de forma integrada, consulte [proteger aplicaciones con Cloud App Security control de aplicaciones de acceso condicional](proxy-intro-aad.md#featured-apps).
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 - Su organización debe tener las licencias siguientes para usar Control de aplicaciones de acceso condicional:
 
@@ -33,9 +33,9 @@ Los controles de sesión de Microsoft Cloud App Security funcionan con las aplic
 - Las aplicaciones deben configurarse con el inicio de sesión único
 - Las aplicaciones deben usar uno de los protocolos de autenticación siguientes:
 
-    |URL de|Protocolos|
+    |IdP|Protocolos|
     |---|---|
-    |Azure AD|SAML 2,0 o OpenID Connect|
+    |Azure AD|SAML 2.0 u OpenID Connect|
     |Otros|SAML 2.0|
 
 ## <a name="to-deploy-featured-apps"></a>Para implementar aplicaciones destacadas
@@ -56,7 +56,7 @@ Siga estos pasos para configurar las aplicaciones destacadas que se van a contro
 
 Use los pasos siguientes para crear una Azure AD Directiva de acceso condicional que enruta las sesiones de la aplicación a Cloud App Security. Para otras soluciones IdP, consulte [configuración de la integración con otras soluciones IDP](#configure-integration-with-other-idp-solutions).
 
-1. En Azure ad, vaya a **Security** > **acceso condicional**de seguridad.
+1. En Azure ad, vaya a **Security**  >  **acceso condicional**de seguridad.
 
 1. En el panel **acceso condicional** , en la barra de herramientas de la parte superior, haga clic en **nueva Directiva**.
 
@@ -78,7 +78,7 @@ Use los pasos siguientes para crear una Azure AD Directiva de acceso condicional
 
 Use los pasos siguientes para enrutar las sesiones de la aplicación desde otras soluciones IdP a Cloud App Security. Para obtener Azure AD, consulte Configuración de la [integración con Azure ad](#configure-integration-with-azure-ad).
 
-1. En > Cloud App Security, vaya a **investigar** > **aplicaciones conectadas****control de aplicaciones de acceso condicional aplicaciones**.
+1. En Cloud App Security, vaya a **investigar**  >  **aplicaciones conectadas**  >  **control de aplicaciones de acceso condicional aplicaciones**.
 
 1. Haga clic en el signo más y, en el elemento emergente, seleccione la aplicación que desea implementar y, a continuación, haga clic en **iniciar el asistente**.
 1. En la página información de la **aplicación** , rellene el formulario con la información de la página de configuración de inicio de sesión único de la aplicación y, a continuación, haga clic en **siguiente**.
@@ -125,9 +125,11 @@ Use los pasos siguientes para enrutar las sesiones de la aplicación desde otras
     1. En el campo dirección URL de inicio de sesión único, escriba la dirección URL de inicio de sesión único que anotó anteriormente.
         > [!NOTE]
         > Algunos proveedores pueden hacer referencia a la dirección URL de inicio de sesión único como *dirección URL de respuesta*.
-    1. Agregue los atributos y los valores que anotó anteriormente a las propiedades de las aplicaciones.
+    1. Agregue los atributos y valores que anotó anteriormente a las propiedades de la aplicación.
         > [!NOTE]
-        > Algunos proveedores pueden hacer referencia a ellos como atributos o *notificaciones*de *usuario* .
+        >
+        > - Algunos proveedores pueden hacer referencia a ellos como atributos o *notificaciones*de *usuario* .
+        > - Al crear una nueva aplicación SAML, el proveedor de identidades Okta limita los atributos a 1024 caracteres. Para mitigar esta limitación, cree primero la aplicación sin los atributos pertinentes. Después de crear la aplicación, edítela y, a continuación, agregue los atributos pertinentes.
     1. Compruebe que el identificador de nombre tiene el formato de dirección de correo electrónico.
     1. Guarde la configuración.
 1. En la página cambios en la **aplicación** , realice lo siguiente y, a continuación, haga clic en **siguiente**. Necesitará la información en el paso siguiente.

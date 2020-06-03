@@ -1,6 +1,6 @@
 ---
-title: Implementación de informes continuos para Cloud App Security con Docker en Windows | Microsoft Docs
-description: En este artículo se describe el proceso de configuración de la carga de registros automática para informes continuos en Cloud App Security mediante Docker en Windows en un servidor local.
+title: Implementación de informes continuos para Cloud App Security con Docker en Windows
+description: En este artículo se describe el proceso de configuración de la carga de registros automática para los informes continuos de Cloud App Security con Docker. Se utiliza un servidor local de Windows.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -13,22 +13,25 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9122a5c5cdde5f2a1ed02946970825b75155acc2
-ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
+ms.openlocfilehash: e8a5863b0643ed99f5bd28f04b0634dc822602c7
+ms.sourcegitcommit: d159dbd8e1a35268468156eb9c5a5f218cdace4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79285589"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84274638"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker en Windows local
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
-Puede configurar la carga de registros automática para informes continuos en Cloud App Security mediante Docker en Windows.
+Puede configurar la carga de registros automática para los informes continuos de Cloud App Security con Docker y en Windows.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* SO: **Windows 10** (Fall Creators Update), Windows Server **versión 1709 +** (SAC) o **Windows Server 2019 (LTSC)**
+* Sistema operativo:
+    * **Windows 10** (Fall Creators Update)
+    * Windows Server **versión 1709 +** (SAC)
+    * **Windows Server 2019 (LTSC)**
 
 * Espacio en disco: 250 GB
 
@@ -36,9 +39,9 @@ Puede configurar la carga de registros automática para informes continuos en Cl
 
 * RAM: 4 GB
 
-* Establezca el Firewall como se describe en [requisitos de red](network-requirements.md#log-collector) .
+* Configuración del firewall, tal como se describe en [Requisitos de red](network-requirements.md#log-collector)
 
-* La virtualización en el sistema operativo debe estar habilitada con Hyper-V
+* La virtualización en el sistema operativo debe estar habilitada con Hyper-V.
 
 > [!IMPORTANT]
 > Un usuario debe haber iniciado sesión en Docker para recopilar registros. Se recomienda avisar a los usuarios de Docker para que se desconecten sin cerrar sesión.
@@ -63,43 +66,43 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Paso 1: Configuración del portal web: definición de orígenes de datos y vinculación a un recopilador de registros
 
-1. Vaya a la página Configuración de **carga de registros automática** .
+1. Vaya a la página de configuración **Carga de registros automática**.
 
-    1. En el portal de Cloud App Security, haga clic en el icono de configuración seguido de **recopiladores de registros**.
+    1. En el portal de Cloud App Security, haga clic en el icono de configuración y en **Recopiladores de registros**.
 
     ![icono de configuración](media/settings-icon.png)
 
-1. Cree un origen de datos coincidente para cada firewall o servidor proxy desde el que desea cargar los registros.
+1. Cree un origen de datos coincidente para cada firewall o servidor proxy desde el que quiera cargar registros.
 
     1. Haga clic en **Agregar origen de datos**.  
-    ![agregar un origen de datos](media/add-data-source.png)
+    ![Agregar un origen de datos](media/add-data-source.png)
     1. **Ponga nombre** al servidor proxy o firewall.  
     ![ubuntu1](media/ubuntu1.png)
-    1. Seleccione el dispositivo en la lista **Origen**. Si selecciona el **formato de registro personalizado** para trabajar con un dispositivo de red que no aparece en la lista, consulte [trabajar con el analizador de registros personalizado](custom-log-parser.md) para obtener instrucciones de configuración.
-    1. Compare el registro con el ejemplo del formato de registro esperado. Si el formato del archivo de registro no coincide con este ejemplo, debe agregar el origen de datos como **otro**.
-    1. Establezca el **Tipo de receptor** en **FTP**, **FTPS**, **Syslog: UDP**, o **Syslog: TCP** o **Syslog – TLS**.
+    1. Seleccione el dispositivo en la lista **Origen**. Si selecciona **Formato de los registros personalizados** para trabajar con un dispositivo de red que no aparezca en la lista, consulte el artículo sobre cómo [trabajar con el analizador de registros personalizados](custom-log-parser.md) para ver las instrucciones de configuración.
+    1. Compare el registro con el ejemplo del formato de registro esperado. Si el formato de archivo del registro no coincide con este ejemplo, debe agregar el origen de datos como **Otro**.
+    1. Establezca el **tipo de receptor** en **FTP**, **FTPS**, **Syslog – UDP**, **Syslog – TCP** o **Syslog – TLS**.
 
     > [!NOTE]
-    > La integración con los protocolos de transferencia segura (FTPS y Syslog – TLS) a menudo requiere una configuración adicional o el firewall o proxy.
+    > La integración con protocolos de transferencia segura (FTPS y Syslog – TLS) a menudo requiere una configuración adicional o firewall/proxy.
 
-    f. Repita este proceso para cada servidor proxy y firewall cuyos registros se puedan usar para detectar tráfico en la red. Se recomienda configurar un origen de datos dedicado por dispositivo de red para que pueda:
+    f. Repita este proceso para cada servidor proxy y firewall cuyos registros se puedan usar para detectar tráfico en la red. Se recomienda configurar un origen de datos dedicado por dispositivo de red para poder hacer lo siguiente:
 
-    * Supervise el estado de cada dispositivo por separado, con fines de investigación.
-    * Explore Shadow IT Discovery por dispositivo, si cada dispositivo lo usa otro segmento de usuario.
+    * Supervisar el estado de cada dispositivo por separado para fines de investigación.
+    * Explorar Shadow IT Discovery de cada dispositivo, si cada uno de ellos lo usa un segmento de usuarios distinto.
 
 1. Vaya a la pestaña **Recopiladores de registros** de la parte superior.
 
     1. Haga clic en **Agregar recopilador de registros**.
     1. Ponga **nombre** al recopilador de registros.
-    1. Escriba la **dirección IP del host** de la máquina que usará para implementar Docker. La dirección IP del host se puede reemplazar por el nombre del equipo, si hay un servidor DNS (o equivalente) que resolverá el nombre de host.
+    1. Escriba la **dirección IP de host** de la máquina que se va a usar para implementar Docker. La dirección IP del host puede reemplazarse con el nombre del equipo si un servidor DNS (o equivalente) resolverá el nombre de host.
     1. Seleccione todos los **orígenes de datos** que desea conectar al recopilador y haga clic en **Actualizar** para guardar la configuración.
     ![ubuntu2](media/ubuntu2.png)
 
-1. Se mostrará más información sobre la implementación. **Copie** el comando de ejecución en el cuadro de diálogo. Puede usar el icono Copiar al portapapeles, ![icono Copiar al portapapeles](media/copy-icon.png). Lo necesitará más adelante.
+1. Aparecerá más información de implementación. **Copie** el comando de ejecución desde el cuadro de diálogo. Puede usar el icono Copiar al portapapeles, ![ copiar al portapapeles ](media/copy-icon.png) . Lo necesitará más adelante.
 
-1. **Exporte** la configuración del origen de datos esperado. Esta configuración describe cómo se debe establecer la exportación del registro en los dispositivos.
+1. **Exporte** la configuración de origen de datos esperada. Esta configuración describe cómo debe establecer la exportación de registro en los dispositivos.
 
-    ![Crear el recopilador de registros](media/windows7.png)
+    ![Crear un recopilador de registros](media/windows7.png)
 
     > [!NOTE]
     >
@@ -107,77 +110,77 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
     > * Copie el contenido de la pantalla, ya que necesitará la información al configurar el recopilador de registros para comunicarse con Cloud App Security. Si ha seleccionado Syslog, esta información incluirá información sobre el puerto en el que escucha el agente de escucha de Syslog.
     > * Para que los usuarios envíen datos de registro a través de FTP por primera vez, se recomienda cambiar la contraseña del usuario de FTP. Para obtener más información, consulte [cambiar la contraseña de FTP](log-collector-ftp.md#changing-the-ftp-password).
 
-### <a name="step-2--on-premises-deployment-of-your-machine"></a>Paso 2: implementación local de la máquina
+### <a name="step-2--on-premises-deployment-of-your-machine"></a>Paso 2: Implementación local de la máquina
 
-En los pasos siguientes se describe la implementación en Windows. Los pasos de implementación para otras plataformas son ligeramente diferentes.
+En los pasos siguientes se describe la implementación en Windows. Los pasos de implementación en otras plataformas son ligeramente diferentes.
 
 1. Abra un terminal de PowerShell como administrador en la máquina Windows.
 
-1. Ejecute el siguiente comando para descargar el archivo de script de PowerShell del instalador de Docker de Windows: `Invoke-WebRequest https://adaprodconsole.blob.core.windows.net/public-files/LogCollectorInstaller.ps1 -OutFile (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
+1. Ejecute el siguiente comando para descargar el archivo de script de PowerShell del instalador de Docker de Windows:`Invoke-WebRequest https://adaprodconsole.blob.core.windows.net/public-files/LogCollectorInstaller.ps1 -OutFile (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
 
     Para comprobar que el instalador está firmado por Microsoft, consulte [Validate Installer Signature](#validate-signature) .
 
-1. Para habilitar la ejecución de scripts de PowerShell, ejecute `Set-ExecutionPolicy RemoteSigned`
+1. Para habilitar la ejecución de scripts de PowerShell, ejecute`Set-ExecutionPolicy RemoteSigned`
 
-1. Ejecutar: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)` instala el cliente de Docker en la máquina. Mientras el contenedor del recopilador de registros está instalado, el equipo se reiniciará dos veces y tendrá que volver a iniciar sesión. **Asegúrese de que el cliente de Docker está configurado para usar contenedores de Linux.**
+1. Ejecutar: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)` se instala el cliente de Docker en la máquina. Durante la instalación del contenedor de recopilador de registros, la máquina se reiniciará dos veces y tendrá que volver a iniciar sesión. **Asegúrese de que el cliente de Docker está configurado para usar contenedores de Linux.**
 
-1. Después de cada reinicio, abra un terminal de PowerShell como administrador en la máquina, vuelva a ejecutar: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
+1. Después de cada reinicio, abra un terminal de PowerShell como administrador en la máquina y vuelva a ejecutar:`& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
 
-1. Antes de que se complete la instalación, tendrá que pegar el comando ejecutar que copió anteriormente.
+1. Antes de que finalice la instalación, tendrá que pegar el comando de ejecución que ha copiado anteriormente.
 
-1. Implemente la imagen del recopilador en el equipo host mediante la importación de la configuración del recopilador. Importe la configuración copiando el comando de ejecución generado en el portal. Si necesita configurar un proxy, agregue la dirección IP del proxy y el número de puerto. Por ejemplo, si los detalles del proxy son 192.168.10.1:8080, el comando de ejecución actualizado es:
+1. Implemente la imagen del recopilador en la máquina host al importar la configuración del recopilador. Para importar la configuración, copie el comando de ejecución generado en el portal. Si necesita configurar un proxy, agregue la dirección IP del proxy y el número de puerto. Por ejemplo, si los detalles de proxy son 192.168.10.1:8080, el comando de ejecución actualizado es:
 
     ```console
     (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
     ```
 
-    ![Crear el recopilador de registros](media/windows7.png)
+    ![Crear un recopilador de registros](media/windows7.png)
 
-1. Compruebe que el recopilador se está ejecutando correctamente con el siguiente comando: `docker logs <collector_name>`
+1. Ejecute el comando siguiente para comprobar si el recopilador se ejecuta correctamente: `docker logs <collector_name>`
 
-Debería ver el mensaje: **Finalizado correctamente**.
+Debería ver el mensaje: **finalizó correctamente.**
 
 ![ubuntu8](media/ubuntu8.png)
 
-### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Paso 3: configuración local de los dispositivos de red
+### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Paso 3: Configuración local de los dispositivos de red
 
-Configure los firewalls y los servidores proxy de red para que exporten periódicamente los registros al puerto syslog dedicado del directorio FTP según las instrucciones del cuadro de diálogo. Por ejemplo:
+Configure los firewalls y los servidores proxy de la red de modo que exporten periódicamente los registros al puerto Syslog dedicado del directorio FTP según las instrucciones del cuadro de diálogo. Por ejemplo:
 
 ```console
 BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 ```
 
-### <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Paso 4: comprobación de la implementación correcta en el portal de Cloud App Security
+### <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Paso 4: Comprobación de la implementación correcta en el portal Cloud App Security
 
-Compruebe el estado del recopilador en la tabla **Recopilador de registros** y asegúrese de que el estado es **Conectado**. Si se **crea**, es posible que la conexión y el análisis del recopilador de registros no se hayan completado.
+Compruebe el estado del recopilador en la tabla **Recopilador de registros** y asegúrese de que el estado es **Conectado**. Si es **Creado**, es posible que la conexión y el análisis del recopilador de registros no se hayan completado.
 
 ![ubuntu9](media/ubuntu9.png)
 
 También puede ir al **registro de gobernanza** y comprobar que los registros se están cargando periódicamente en el portal.
 
-Si tiene problemas durante la implementación, consulte [solución de problemas Cloud Discovery](troubleshooting-cloud-discovery.md).
+Si tiene problemas durante la implementación, consulte [Solución de problemas de Cloud Discovery](troubleshooting-cloud-discovery.md).
 
-### Opcional: crear informes continuos personalizados<a name="continuous-reports"></a>
+### <a name="optional---create-custom-continuous-reports"></a>Opcional: crear informes continuos personalizados<a name="continuous-reports"></a>
 
-Compruebe que los registros se están cargando en Cloud App Security y que se generan los informes. Después de la comprobación, cree informes personalizados. Puede crear informes de detección personalizados basados en Azure Active Directory grupos de usuarios. Por ejemplo, si desea ver el uso en la nube de su Departamento de marketing, importe el grupo de marketing mediante la característica importar grupo de usuarios. A continuación, cree un informe personalizado para este grupo. También puede personalizar un informe en función de la etiqueta de dirección IP o los intervalos de direcciones IP.
+Compruebe que se cargan los registros de Cloud App Security y que se generan los informes. Después de la comprobación, cree informes personalizados. Puede crear informes de detección personalizados en función de los grupos de usuarios de Azure Active Directory. Por ejemplo, si quiere ver el uso de la nube por parte del departamento de marketing, importe el grupo de marketing mediante la característica para importar grupos de usuarios. Después, cree un informe personalizado para este grupo. También puede personalizar un informe en función de la etiqueta de dirección IP o los intervalos de direcciones IP.
 
-1. En el portal de Cloud App Security, en el engranaje de configuración, seleccione Configuración de Cloud Discovery y, a continuación, seleccione **informes continuos**.
+1. En el portal de Cloud App Security, en el engranaje de configuración, seleccione Configuración de Cloud Discovery y después **Informes continuos**.
 1. Haga clic en el botón **Crear informe** y rellene los campos.
 1. En **Filtros**, puede filtrar los datos por origen de datos, por [grupo de usuarios importados](user-groups.md) o por [etiquetas e intervalos de direcciones IP](ip-tags.md).
 
     ![Informe continuo personalizado](media/custom-continuous-report.png)
 
-### Opcional: validar la firma del instalador<a name="validate-signature"></a>
+### <a name="optional---validate-installer-signature"></a>Opcional: validar la firma del programa de instalación <a name="validate-signature"></a>
 
-Para asegurarse de que el instalador de Docker está firmado por Microsoft:
+Para asegurarse de que el programa de instalación de Docker está firmado por Microsoft:
 
-1. Haga clic con el botón derecho en el archivo y seleccione **propiedades**.
-1. Haga clic en **firmas digitales** y asegúrese de que indica que **esta firma digital es correcta**.
-1. Asegúrese de que **Microsoft Corporation** aparece como la única entrada en **nombre del firmante**.
+1. Haga clic con el botón derecho en el archivo y seleccione **Propiedades**.
+1. Haga clic en **Firmas digitales** y asegúrese de que indica **Esta firma digital es correcta**.
+1. Asegúrese de que **Microsoft Corporation** aparece como la única entrada en **Nombre del firmante**.
 
     ![Firma digital válida](media/digital-signature-successful.png)
 
-Si la firma digital no es válida, indicará que **esta firma digital no es válida**:
+Si la firma digital no es válida, se indicará **La firma digital no es válida**:
 
 ![Firma digital no válida](media/digital-signature-unsuccessful.png)
 

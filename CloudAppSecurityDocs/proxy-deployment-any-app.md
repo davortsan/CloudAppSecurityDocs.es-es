@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: 32052630526fcd15114399e2295ca9a111233050
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: ddbcbbe72c83f926b8307904a9d5e2bb2731dcba
+ms.sourcegitcommit: 5822fcdb1433a6a26195692b05aed160bc339656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81241455"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84275802"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Incorporación e implementación de Control de aplicaciones de acceso condicional para cualquier aplicación
 
@@ -27,7 +27,7 @@ Los controles de sesión de Microsoft Cloud App Security se pueden configurar pa
 
 Para obtener una lista de las aplicaciones que se incluyen en Cloud App Security trabajar de forma integrada, consulte [proteger aplicaciones con Cloud App Security control de aplicaciones de acceso condicional](proxy-intro-aad.md#featured-apps).
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 - Su organización debe tener las licencias siguientes para usar Control de aplicaciones de acceso condicional:
 
@@ -37,9 +37,9 @@ Para obtener una lista de las aplicaciones que se incluyen en Cloud App Security
 - Las aplicaciones deben configurarse con el inicio de sesión único
 - Las aplicaciones deben usar uno de los protocolos de autenticación siguientes:
 
-    |URL de|Protocolos|
+    |IdP|Protocolos|
     |---|---|
-    |Azure AD|SAML 2,0 o OpenID Connect|
+    |Azure AD|SAML 2.0 u OpenID Connect|
     |Otros|SAML 2.0|
 
 ## <a name="to-deploy-any-app"></a>Para implementar cualquier aplicación
@@ -67,7 +67,7 @@ Siga estos pasos para configurar cualquier aplicación que se controlará Cloud 
 
 Use los pasos siguientes para crear una Azure AD Directiva de acceso condicional que enruta las sesiones de la aplicación a Cloud App Security. Para otras soluciones IdP, consulte [configuración de la integración con otras soluciones IDP](#configure-integration-with-other-idp-solutions).
 
-1. En Azure ad, vaya a **Security** > **acceso condicional**de seguridad.
+1. En Azure ad, vaya a **Security**  >  **acceso condicional**de seguridad.
 
 1. En el panel **acceso condicional** , en la barra de herramientas de la parte superior, haga clic en **nueva Directiva**.
 
@@ -89,7 +89,7 @@ Use los pasos siguientes para crear una Azure AD Directiva de acceso condicional
 
 Use los pasos siguientes para enrutar las sesiones de la aplicación desde otras soluciones IdP a Cloud App Security. Para obtener Azure AD, consulte Configuración de la [integración con Azure ad](#configure-integration-with-azure-ad).
 
-1. En > Cloud App Security, vaya a **investigar** > **aplicaciones conectadas****control de aplicaciones de acceso condicional aplicaciones**.
+1. En Cloud App Security, vaya a **investigar**  >  **aplicaciones conectadas**  >  **control de aplicaciones de acceso condicional aplicaciones**.
 
 1. Haga clic en el signo más y, en el elemento emergente, seleccione la aplicación que desea implementar y, a continuación, haga clic en **iniciar el asistente**.
 1. En la página información de la **aplicación** , rellene el formulario con la información de la página de configuración de inicio de sesión único de la aplicación y, a continuación, haga clic en **siguiente**.
@@ -136,9 +136,11 @@ Use los pasos siguientes para enrutar las sesiones de la aplicación desde otras
     1. En el campo dirección URL de inicio de sesión único, escriba la dirección URL de inicio de sesión único que anotó anteriormente.
         > [!NOTE]
         > Algunos proveedores pueden hacer referencia a la dirección URL de inicio de sesión único como *dirección URL de respuesta*.
-    1. Agregue los atributos y los valores que anotó anteriormente a las propiedades de las aplicaciones.
+    1. Agregue los atributos y valores que anotó anteriormente a las propiedades de la aplicación.
         > [!NOTE]
-        > Algunos proveedores pueden hacer referencia a ellos como atributos o *notificaciones*de *usuario* .
+        >
+        > - Algunos proveedores pueden hacer referencia a ellos como atributos o *notificaciones*de *usuario* .
+        > - Al crear una nueva aplicación SAML, el proveedor de identidades Okta limita los atributos a 1024 caracteres. Para mitigar esta limitación, cree primero la aplicación sin los atributos pertinentes. Después de crear la aplicación, edítela y, a continuación, agregue los atributos pertinentes.
     1. Compruebe que el identificador de nombre tiene el formato de dirección de correo electrónico.
     1. Guarde la configuración.
 1. En la página cambios en la **aplicación** , realice lo siguiente y, a continuación, haga clic en **siguiente**. Necesitará la información en el paso siguiente.
@@ -167,7 +169,7 @@ Use los pasos siguientes para enrutar las sesiones de la aplicación desde otras
 
 ## <a name="step-3-configure-the-app-that-you-are-deploying"></a>Paso 3: configurar la aplicación que va a implementar<a name="conf-app"></a>
 
-Vaya a la aplicación que va a implementar. La página que vea dependerá de si se reconoce la aplicación. Realice una de las siguientes acciones:
+Vaya a la aplicación que va a implementar. La página que vea dependerá de si se reconoce la aplicación. Lleve a cabo una de las siguientes acciones:
 
 | Estado de la aplicación | Descripción | Pasos |
 | --- | --- | --- |
@@ -182,7 +184,7 @@ Vaya a la aplicación que va a implementar. La página que vea dependerá de si 
 
     ![Vista de nuevas aplicaciones del Control de aplicaciones de acceso condicional](media/caac-view-apps.png)
 
-1. En la pantalla que se abre, puede ver una lista de aplicaciones nuevas. Para cada aplicación que se está incorporando, haga clic en **+** el signo y, a continuación, haga clic en **Agregar**.
+1. En la pantalla que se abre, puede ver una lista de aplicaciones nuevas. Para cada aplicación que se está incorporando, haga clic en el **+** signo y, a continuación, haga clic en **Agregar**.
 
     > [!NOTE]
     > Si una aplicación no aparece en el catálogo de aplicaciones de Cloud App Security, aparecerá en la sección Aplicación no identificada del cuadro de diálogo junto con la dirección URL de inicio de sesión. Al hacer clic en el signo + en estas aplicaciones, puede incorporarlas como aplicación personalizada.
@@ -209,7 +211,7 @@ Por ejemplo, si ha configurado una directiva que bloquea la descarga de archivos
     > Para ver la lista de los dominios configurados en la aplicación, haga clic en **Ver dominios de aplicación**.
 1. En **dominios definidos por el usuario**, escriba todos los dominios que desea asociar a esta aplicación y, a continuación, haga clic en **Guardar**.
     > [!NOTE]
-    > Puede usar el carácter comodín * como un marcador de posición para cualquier carácter. Al agregar dominios, decida si desea agregar dominios específicos (`sub1.contoso.com`,`sub2.contoso.com`) o varios dominios (`*.contoso.com`).
+    > Puede usar el carácter comodín * como un marcador de posición para cualquier carácter. Al agregar dominios, decida si desea agregar dominios específicos ( `sub1.contoso.com` , `sub2.contoso.com` ) o varios dominios ( `*.contoso.com` ).
 
 ### <a name="to-install-root-certificates"></a>Para instalar certificados raíz<a name="install-certs"></a>
 
@@ -225,7 +227,7 @@ Por ejemplo, si ha configurado una directiva que bloquea la descarga de archivos
     > [!NOTE]
     > Para que se reconozcan los certificados, una vez que haya instalado el certificado, debe reiniciar el explorador e ir a la misma página.<!-- You'll see a check-mark by the certificates links confirmation they are installed.-->
 
-1. Haga clic en **Continue**.
+1. Haga clic en **Continuar**.
 
 ## <a name="step-4-verify-that-the-app-is-working-correctly"></a>Paso 4: comprobar que la aplicación funciona correctamente<a name="verify-app"></a>
 
@@ -250,7 +252,7 @@ Una vez que esté listo para habilitar la aplicación para su uso en el entorno 
 
 1. En Azure AD, en **seguridad**, haga clic en **acceso condicional**.
 1. Actualice la Directiva que creó anteriormente para incluir los usuarios, los grupos y los controles pertinentes que necesite.
-1. En uso de **sesión** > **control de aplicaciones de acceso condicional**, si seleccionó **usar directiva personalizada**, vaya a Cloud App Security y cree una directiva de sesión correspondiente. Para obtener más información, consulte [Directivas de sesión](session-policy-aad.md).
+1. En uso de **sesión**  >  **control de aplicaciones de acceso condicional**, si seleccionó **usar directiva personalizada**, vaya a Cloud App Security y cree una directiva de sesión correspondiente. Para obtener más información, consulte [Directivas de sesión](session-policy-aad.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

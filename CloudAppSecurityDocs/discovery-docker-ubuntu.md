@@ -1,11 +1,11 @@
 ---
-title: Configuración de la carga de registros automática con una instancia local de Docker
-description: En este artículo se describe el proceso de configuración de carga de registros automática para informes continuos en Cloud App Security con Docker en Ubuntu o RHEL en un servidor local.
+title: Configuración de la carga de registros automática mediante Docker local
+description: En este artículo se describe el proceso de configuración de la carga de registros automática para informes continuos en Cloud App Security mediante Docker en Linux en un servidor local.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/19/2019
+ms.date: 06/02/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,22 +14,25 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: baa86eb5a0d21a69fd747e0d7ef1c4d5863deddf
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: cbd419984f5b3cca55727b7795210edd9b4d5afe
+ms.sourcegitcommit: d159dbd8e1a35268468156eb9c5a5f218cdace4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74460783"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84274621"
 ---
-# <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Docker en Ubuntu y RHEL locales
+# <a name="docker-on-linux-on-premises"></a>Docker en Linux local
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
-Puede configurar la carga de registros automática para informes continuos en Cloud App Security con Docker en un servidor de RHEL o Ubuntu local.
+Puede configurar la carga de registros automática para informes continuos en Cloud App Security mediante un Docker en un servidor Ubuntu, Red Hat Enterprise Linux (RHEL) o de la instancia local.
 
-## <a name="technical-requirements"></a>Requisitos técnicos
+## <a name="prerequisites"></a>Requisitos previos
 
-* SO: Ubuntu 14,04, 16,04 y 18,04; RHEL 7,2 o posterior, o de la versión 7,2 o superior 
+* Sistema operativo:
+    * Ubuntu 14,04, 16,04 y 18,04
+    * RHEL 7,2 o superior
+    * Versión 7,2 o superior
 
 * Espacio en disco: 250 GB
 
@@ -53,7 +56,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 
 * Ancho de banda de red: el ancho de banda de red determina la velocidad de carga de registros.
 
-* Rendimiento de E/S de la máquina virtual: determina la velocidad a la que se escriben los registros en el disco del recopilador de registros. El recopilador de registros tiene un mecanismo de seguridad integrado que supervisa la velocidad a la que llegan los registros y la compara con la velocidad de carga. En caso de congestión, el recopilador de registros comienza a quitar archivos de registro. Si la configuración normalmente supera los 50 GB por hora, se recomienda dividir el tráfico entre varios recopiladores de registros.
+* Rendimiento de e/s de la máquina virtual: determina la velocidad a la que se escriben los registros en el disco del recopilador de registros. El recopilador de registros tiene un mecanismo de seguridad integrado que supervisa la velocidad a la que llegan los registros y la compara con la velocidad de carga. En caso de congestión, el recopilador de registros comienza a quitar archivos de registro. Si la configuración normalmente supera los 50 GB por hora, se recomienda dividir el tráfico entre varios recopiladores de registros.
 
 ## <a name="set-up-and-configuration"></a>Establecimiento y configuración  
 
@@ -68,7 +71,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 1. Cree un origen de datos coincidente para cada firewall o servidor proxy desde el que quiera cargar registros.
 
     1. Haga clic en **Agregar origen de datos**.  
-    ![agregar un origen de datos](media/add-data-source.png)
+    ![Agregar un origen de datos](media/add-data-source.png)
     1. **Ponga nombre** al servidor proxy o firewall.  
     ![ubuntu1](media/ubuntu1.png)
     1. Seleccione el dispositivo en la lista **Origen**. Si selecciona **Formato de los registros personalizados** para trabajar con un dispositivo de red que no aparezca en la lista, consulte el artículo sobre cómo [trabajar con el analizador de registros personalizados](custom-log-parser.md) para ver las instrucciones de configuración.
@@ -141,7 +144,7 @@ En los pasos siguientes se describe la implementación de Ubuntu. Los pasos de i
 1. Ejecute el comando siguiente para comprobar si el recopilador se ejecuta correctamente: `docker logs <collector_name>`
 
 Debería ver el mensaje: **finalizó correctamente.** 
-![ubuntu8](media/ubuntu8.png)
+ ![ ubuntu8](media/ubuntu8.png)
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Paso 3: Configuración local de los dispositivos de red
 

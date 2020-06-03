@@ -1,11 +1,11 @@
 ---
 title: Configuración de la carga de registros automática con Docker en Azure
-description: En este artículo se describe el proceso de configuración de carga de registros automática para informes continuos en Cloud App Security con Docker en Ubuntu o RHEL en Azure.
+description: En este artículo se describe el proceso de configuración de la carga de registros automática para informes continuos en Cloud App Security mediante Docker en Linux en Azure.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 05/04/2020
+ms.date: 06/02/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,22 +14,25 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5b952a924b7b26e4d45ffb981698f660e53a0558
-ms.sourcegitcommit: baa9cb55d9d82808602a58ee24eeba7d83e92742
+ms.openlocfilehash: b481ff78df6c563512f867d53e906df9a7cfd0fb
+ms.sourcegitcommit: d159dbd8e1a35268468156eb9c5a5f218cdace4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "82739015"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84274604"
 ---
-# <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Instalación y configuración en Ubuntu o RHEL en Azure
+# <a name="docker-on-linux-in-azure"></a>Docker en Linux en Azure
 
 *Se aplica a: Microsoft Cloud App Security*
 
-Puede configurar la carga de registros automática para informes continuos en Cloud App Security con Docker en Ubuntu o Red Hat Enterprise Linux (RHEL) en Azure. En este artículo se describe cómo configurar la carga de registros automática.
+Puede configurar la carga de registros automática para informes continuos en Cloud App Security mediante Docker en Ubuntu, Red Hat Enterprise Linux (RHEL) o en Azure.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* Sistema operativo: Ubuntu 16,04 y 18,04, RHEL 7,2 o posterior, o bien de versión 7,2 o superior
+* Sistema operativo:
+    * Ubuntu 14,04, 16,04 y 18,04
+    * RHEL 7,2 o superior
+    * Versión 7,2 o superior
 
 * Espacio en disco: 250 GB
 
@@ -116,7 +119,7 @@ El compilador de registros puede administrar correctamente la capacidad de regis
 
     1. En la vista de la máquina, vaya a **Redes** y seleccione la interfaz adecuada haciendo doble clic en ella.
     1. Vaya a **Grupo de seguridad de red** y seleccione el grupo de seguridad de red pertinente.
-    1. Vaya a **reglas de seguridad de entrada** y haga clic ![en **Agregar**, Ubuntu Azure](media/ubuntu-azure.png)
+    1. Vaya a **reglas de seguridad de entrada** y haga clic en **Agregar**, ![ Ubuntu Azure](media/ubuntu-azure.png)
     1. Agregue las siguientes reglas (en modo **Avanzado**):
 
     |NOMBRE|Intervalos de puertos de destino|Protocolo|Source|Destination|
