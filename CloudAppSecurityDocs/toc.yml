@@ -101,6 +101,8 @@
           href: user-groups.md
         - name: Implementación con ámbito
           href: scoped-deployment.md
+        - name: Privacidad de las actividades
+          href: activity-privacy.md
         - name: Etiquetas e intervalos IP
           href: ip-tags.md
     - name: Cloud Discovery
