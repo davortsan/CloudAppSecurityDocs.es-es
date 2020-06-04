@@ -11,23 +11,26 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
+ROBOTS: NOINDEX
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 645e5b93b9fe9f27d3a2ca52258fa3fc904230ef
-ms.sourcegitcommit: 5822fcdb1433a6a26195692b05aed160bc339656
+ms.openlocfilehash: 97e15ea3a12588bf6b6af7f06381f868c9c15a8e
+ms.sourcegitcommit: 796a99e91a8681a60b4449a474bb80089dd3df0d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84292249"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84327839"
 ---
 # <a name="connect-github-enterprise-cloud-to-microsoft-cloud-app-security"></a>Conectar GitHub Enterprise Cloud a Microsoft Cloud App Security
 
 *Se aplica a: Microsoft Cloud App Security*
 
+El conector de GitHub Enterprise Cloud API se encuentra actualmente en versión preliminar privada y se implementa gradualmente. Esta versión preliminar se proporciona sin un contrato de nivel de servicio y no se recomienda para las cargas de trabajo de producción. Es posible que algunas características no sean compatibles o que tengan sus funcionalidades limitadas. Para más información, consulte [Términos de uso complementarios de las Versiones Preliminares de Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
+
 En este artículo se proporcionan instrucciones para conectar Microsoft Cloud App Security a la organización en la nube de GitHub Enterprise existente mediante las API del conector de aplicaciones. Esta conexión le proporciona visibilidad y control sobre el uso de GitHub Enterprise Cloud de su organización.<!-- For more information about how Cloud App Security protects GitHub Enterprise Cloud, see **//TODO:: ???**.-->
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 - Su organización debe tener una licencia de GitHub Enterprise Cloud.
 - La cuenta de GitHub usada para conectarse a Cloud App Security debe tener permisos de *propietario* para su organización.
