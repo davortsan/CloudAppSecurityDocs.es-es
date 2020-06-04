@@ -123,11 +123,11 @@
               href: create-snapshot-cloud-discovery-reports.md
             - name: Configurar la carga de registros automática para informes continuos
               href: discovery-docker.md
-            - name: Docker en Windows
+            - name: Docker en Windows local
               href: discovery-docker-windows.md
-            - name: Docker en Ubuntu y RHEL local
+            - name: Docker en Linux local
               href: discovery-docker-ubuntu.md
-            - name: Docker en Ubuntu en Azure
+            - name: Docker en Linux en Azure
               href: discovery-docker-ubuntu-azure.md
             - name: Configuración de FTP del recopilador de registros
               href: log-collector-ftp.md

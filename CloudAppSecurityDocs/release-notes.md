@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0ab614ab612fc628b42780d11beba4e0f57f0ad4
-ms.sourcegitcommit: bea164d19469c0a7ef9bc47b128f3ba0b1b14591
+ms.openlocfilehash: 09c2f8ca89a53372f9d40190c430fd4be1615612
+ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83748019"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84250716"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
@@ -25,6 +25,31 @@ ms.locfileid: "83748019"
 Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security.
 
 Fuente RSS: reciba notificaciones cuando esta página se actualice copiando y pegando la siguiente dirección URL en su lector de fuentes: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-176"></a>Notas de la versión 176 de Cloud App Security
+
+Fecha de publicación: 31 de mayo de 2020
+
+- **Nueva característica de privacidad de las actividades**  
+Se ha mejorado la capacidad de determinar con minuciosidad qué usuarios desea supervisar con la posibilidad de convertir las actividades en privadas. Esta nueva característica permite especificar usuarios en función de la pertenencia a grupos, cuyas actividades se ocultarán de forma predeterminada. Solo los administradores autorizados tienen la opción de elegir la opción de ver estas actividades privadas, con la auditoría de cada instancia en el registro de gobernanza. Para más información, vea [Privacidad de la actividad](activity-privacy.md).
+
+- **Nueva integración con la galería de Azure Active Directory (Azure AD)**  
+Se recurre a la integración nativa con Azure AD para ofrecer la posibilidad de navegar directamente desde una aplicación del catálogo de aplicaciones en la nube hasta su aplicación correspondiente de la galería de Azure AD, para poder administrarla en la galería. Para más información, vea [Administración de aplicaciones con la galería de Azure AD](tutorial-shadow-it.md#gallery-apps).
+
+- **Nueva opción de comentarios disponible en las directivas seleccionadas**  
+Nos interesa recibir sus comentarios para saber cómo podemos ayudarle. Por ello, ahora un nuevo cuadro de diálogo de comentarios le ofrece la oportunidad de mejorar Cloud App Security, al crear, modificar o eliminar un archivo, una detección de anomalías o una directiva de sesión.
+
+- **Proxy de sufijo mejorado para controles de sesión (implementación gradual)**  
+A partir del 7 de junio de 2020, se implementarán gradualmente los controles de sesión de proxy mejorado para usar un sufijo unificado que no incluye regiones con nombre. Por ejemplo, los usuarios verán el sufijo `<AppName>.mcas.ms` en lugar de `<AppName>.<Region>.cas.ms`. Si, por rutina, crea listas negras de dominios en las puertas de enlace o los dispositivos de red, asegúrese de crear una lista blanca de todos los dominios enumerados en [Controles de acceso y sesión](network-requirements.md#access-and-session-controls).
+
+- **Mejoras de rendimiento de los controles de sesión (implementación gradual)**  
+Se han introducido mejoras significativas en el rendimiento de la red para el servicio de proxy. El servicio mejorado está todavía más optimizado y proporciona una mayor capacidad de respuesta cuando se usan controles de sesión.
+
+- **Nueva detección de actividad de riesgo: inicio de sesión inusual con errores**  
+Se ha ampliado la funcionalidad actual para detectar un comportamiento de riesgo. La nueva detección ya está disponible para su uso y se habilita automáticamente para avisarle cuando se identifica un intento de inicio de sesión inusual con errores. Los intentos inusuales de inicio de sesión con errores pueden ser un indicio de un posible ataque por fuerza bruta de *rociado de contraseñas* (también conocido como el método *lento y silencioso*). Esta detección afecta a la [clasificación de prioridad de la investigación](tutorial-ueba.md) general del usuario.
+
+- **Experiencia de tabla mejorada**  
+Se ha agregado la capacidad de cambiar el tamaño de los anchos de las columnas de la tabla, de modo que pueda ampliar o reducir las columnas para personalizar y mejorar la manera de verlas. También tiene la opción de restaurar el diseño original seleccionando el menú de configuración de la tabla y eligiendo **Ancho predeterminado**.
 
 ## <a name="cloud-app-security-release-175"></a>Cloud App Security, versión 175
 
@@ -36,7 +61,7 @@ Hemos agregado integración nativa con Corrata, lo que ofrece visibilidad de TI 
 - **Nuevos analizadores de registro de Cloud Discovery**  
 Cloud Discovery de Cloud App Security analiza una amplia gama de registros de tráfico para clasificar y puntuar aplicaciones. Ahora Cloud Discovery incluye un analizador de registros integrado para admitir Corrata y Cisco ASA con formatos de registro de FirePOWER 6.4. Para ver una lista de los analizadores de registros admitidos, vea [Firewalls y proxies admitidos](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
-- **Panel mejorado (implementación gradual)** : como parte de las mejoras continuas en el diseño del portal, implementaremos el panel de Cloud App Security mejorado gradualmente. El panel se ha modernizado atendiendo a los comentarios de los usuarios y ofrece una experiencia de uso mejorada con nuevos datos y contenidos. Para obtener más información, consulte [Implementación gradual de nuestro panel mejorado](daily-activities-to-protect-your-cloud-environment.md#gradual-deployment-of-our-enhanced-dashboard).
+- **Panel mejorado (implementación gradual)** : como parte de las mejoras continuas en el diseño del portal, implementaremos el panel de Cloud App Security mejorado gradualmente. El panel se ha modernizado atendiendo a los comentarios de los usuarios y ofrece una experiencia de uso mejorada con nuevos datos y contenidos. Para obtener más información, consulte [Implementación gradual de nuestro panel mejorado](daily-activities-to-protect-your-cloud-environment.md).
 
 - **Gobernanza mejorada: confirmación de vulneración de la identidad del usuario para la detección de anomalías**  
 Hemos ampliado las acciones de gobernanza y ahora las directivas de anomalías incluyen la opción **Confirmar vulneración de la identidad del usuario**. Esto permite proteger de forma proactiva su entorno ante actividades de usuario sospechosas. Para obtener más información, vea [Acciones de gobernanza de actividades](governance-actions.md#activity-governance-actions).
@@ -486,7 +511,7 @@ Control de aplicaciones de acceso condicional ahora permite agregar y usar vario
 - **Nuevo rol de Cloud Discovery** (implementación gradual)  
 Cloud App Security ahora incluye un nuevo rol de administrador para los usuarios de Cloud Discovery. Este rol se puede usar para limitar el acceso de un usuario administrador a solo la configuración y los datos de Cloud Discovery en el portal de Cloud App Security.
 
-- **Compatibilidad con etiquetas unificadas de Microsoft Information Protection** (implementación gradual)  
+- **Compatibilidad con etiquetas unificadas de Microsoft Information Protection** (implementación gradual)  
 Cloud App Security ahora admite las etiquetas unificadas de Microsoft Information Protection. En el caso de los clientes que ya [hayan migrado sus etiquetas de clasificación del Centro de seguridad y cumplimiento de Office 365](/azure/information-protection/configure-policy-migrate-labels), Cloud App Security las identificará y trabajará con ellas, tal como se describe en [Integración de Azure Information Protection](azip-integration.md).
 
 **Compatibilidad con el etiquetado de archivos PDF** (implementación gradual)  
