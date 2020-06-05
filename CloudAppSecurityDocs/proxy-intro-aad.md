@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 65919019460b71907b33ec841b6d7c7b9d4b7143
-ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
+ms.openlocfilehash: 75a9c50b91b0aca0183af548bee6d6265be59e96
+ms.sourcegitcommit: b00cf17cc91d7a08cae5a602a6db05269643aa95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84250747"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84415702"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicaciones con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security
 
@@ -39,7 +39,7 @@ Control de aplicaciones de acceso condicional permite supervisar y controlar las
 
 - **Impedir la exfiltración de datos**: puede bloquear la descarga, cortar, copiar e imprimir documentos confidenciales en, por ejemplo, dispositivos no administrados.
 
-- **Proteger al descargar: en**lugar de bloquear la descarga de documentos confidenciales, puede requerir que los documentos estén etiquetados y protegidos con Azure Information Protection. Esta acción garantiza que el documento está protegido y el acceso de usuario está restringido en una sesión de riesgo potencial.
+- **Proteger al descargar: en**lugar de bloquear la descarga de documentos confidenciales, puede requerir que los documentos estén etiquetados y protegidos con Azure Information Protection. Esta acción garantiza que el documento está protegido y el acceso del usuario se restringe en una sesión potencialmente arriesgada.
 
 - **Evitar la carga de archivos sin etiquetar**: antes de que otros usuarios carguen, distribuyan y usen otros, es importante asegurarse de que el archivo tiene la etiqueta y la protección adecuadas. Puede asegurarse de que los archivos sin etiqueta con contenido confidencial se bloqueen para que no se carguen hasta que el usuario clasifique el contenido.
 
@@ -127,7 +127,7 @@ Puede bloquear el acceso a las aplicaciones de cliente de escritorio y móviles 
 
 ### <a name="session-controls"></a>Controles de sesión
 
-Aunque los controles de sesión se compilan para trabajar con cualquier explorador en cualquier plataforma principal de cualquier sistema operativo, se admite Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest) o Apple Safari (latest). También se puede bloquear o permitir el acceso a aplicaciones móviles y de escritorio.
+Aunque los controles de sesión se compilan para trabajar con cualquier explorador en cualquier plataforma principal de cualquier sistema operativo, se admite [Microsoft Edge](https://www.microsoft.com/edge) (latest), Google Chrome (latest), Mozilla Firefox (latest) o Apple Safari (latest). También se puede bloquear o permitir el acceso a aplicaciones móviles y de escritorio.
 
 > [!NOTE]
 > Cloud App Security aprovecha los protocolos de Seguridad de la capa de transporte (TLS) 1.2+ para proporcionar el mejor cifrado de la clase. Las aplicaciones cliente nativas y los exploradores que no admiten TLS 1.2 + no serán accesibles cuando se configuran con el control de sesión. Sin embargo, las aplicaciones SaaS que usen TLS 1.1 o versiones anteriores aparecerán en el explorador como usuarias de TLS 1.2+ al configurarse con Cloud App Security.
@@ -163,7 +163,7 @@ Aunque los controles de sesión se compilan para trabajar con cualquier explorad
 - Workplace by Facebook
 - Yammer (versión preliminar)
 
-### <a name="office-365-featured-apps"></a><a id="O365-apps" />Aplicaciones destacadas de Office 365
+### <a name="office-365-featured-apps"></a><a name="O365-apps"></a>Aplicaciones destacadas de Office 365
 
 A continuación se muestra una lista de las aplicaciones destacadas que se admiten en Office 365 Cloud App Security. Para usar estas aplicaciones con Cloud App Security, debe tener una licencia de Office 365 E5.
 
@@ -179,7 +179,7 @@ Si está interesado en una aplicación específica, [envíenos detalles sobre la
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Implementación del Control de aplicaciones de acceso condicional para aplicaciones destacadas](proxy-deployment-aad.md)
+> [Implementación de Control de aplicaciones de acceso condicional para aplicaciones destacadas](proxy-deployment-aad.md)
 
 > [!div class="nextstepaction"]
 > [Implementación del Control de aplicaciones de acceso condicional para cualquier aplicación](proxy-deployment-any-app.md)
