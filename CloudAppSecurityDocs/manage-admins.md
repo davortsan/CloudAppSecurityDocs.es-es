@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/19/2020
+ms.date: 06/07/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e828181c52b10c80e2e94d5e871c13ef444d45c3
-ms.sourcegitcommit: a166b85d5c91c48032cf133655471aec1ed88a0f
+ms.openlocfilehash: 0965c492c7f837810bc68b2b97645e89bdd03e75
+ms.sourcegitcommit: ffc8f6053418d20f2394dc6645e043c9db582e6b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81662230"
+ms.lasthandoff: 06/07/2020
+ms.locfileid: "84486303"
 ---
 # <a name="manage-admin-access"></a>Administrar el acceso de administrador
 
@@ -54,6 +54,9 @@ De forma predeterminada, los siguientes roles de administrador de Office 365 y [
   - Acceso y edición del agente SIEM
 
 - **Lector global:** Tiene acceso de solo lectura completo a todos los aspectos de Microsoft Cloud App Security. No se puede cambiar la configuración ni realizar ninguna acción.
+
+> [!NOTE]
+> Los roles de Office 365 y Azure AD no aparecen en la página **administrar acceso de administrador** .
 
 Además, se pueden configurar los siguientes roles de administrador específicos de Cloud App Security en el portal de Cloud App Security:
 
@@ -129,7 +132,7 @@ Puede agregar más administradores a Cloud App Security sin agregar usuarios a l
 
 ## <a name="admin-activity-auditing"></a>Auditoría de actividades de administración
 
-Cloud App Security permite exportar un registro de todas las actividades de administración, incluida la auditoría de un administrador que investiga a un usuario específico o la visualización de alertas específicas.
+Cloud App Security le permite exportar un registro de las actividades de inicio de sesión de administrador y una auditoría de vistas de un usuario específico o de las alertas que se han llevado a cabo como parte de una investigación.
 
 Para exportar un registro, realice los pasos siguientes:
 

@@ -13,16 +13,16 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f7664685204a2d2f1965800119c946c85f2cbe49
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: efdfcab2e736abfc300dfdd673a078f340a647dd
+ms.sourcegitcommit: 96981740994aee3661dea8b64b72741099ca6fb9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74460388"
+ms.lasthandoff: 06/07/2020
+ms.locfileid: "84485970"
 ---
 # <a name="azure-sentinel-integration-preview"></a>Integración de centinela de Azure (versión preliminar)
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 Puede integrar Microsoft Cloud App Security con Azure Sentinel (un SIEM escalable y nativo en la nube) para habilitar la supervisión centralizada de alertas y datos de detección. La integración con Azure Sentinel le permite proteger mejor sus aplicaciones en la nube a la vez que mantiene su flujo de trabajo de seguridad habitual, automatiza los procedimientos de seguridad y correlaciona entre eventos basados en la nube y locales.
 
@@ -55,7 +55,7 @@ Para integrar con Azure Sentinel:
 
 1. En el portal de Cloud App Security, en el engranaje de **configuración** , haga clic en **extensiones de seguridad**.
 
-1. En la pestaña **agentes Siem** , haga clic en agregar ( **+** ) y, a continuación, elija **centinela de Azure**.
+1. En la pestaña **agentes Siem** , haga clic en Agregar ( **+** ) y, a continuación, elija **Azure Sentinel**.
 
     ![Captura de pantalla que muestra el menú Agregar integración de SIEM](media/siem0.png)
 
@@ -65,12 +65,12 @@ Para integrar con Azure Sentinel:
 
     ![Captura de pantalla que muestra la página de inicio de configuración de la integración de centinela de Azure](media/siem-sentinel-configuration.png)
 
-1. Haga clic en **siguiente**y continúe con Azure Sentinel para finalizar la integración. Para obtener información sobre cómo configurar Azure Sentinel, consulte [https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security](https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security).
+1. Haga clic en **siguiente**y continúe con Azure Sentinel para finalizar la integración. Para obtener información sobre cómo configurar Azure Sentinel, vea [https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security](https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security) .
 
     ![Captura de pantalla que muestra la página de finalización de configuración de Azure Sentinel](media/siem-sentinel-configuration-complete.png)
 
 > [!NOTE]
-> Los registros de detección comenzarán a reenviarse a Azure Sentinel en un plazo de 15 minutos después de configurarlos en el portal de Cloud App Security.
+> Los nuevos registros de detección comenzarán a reenviarse a Azure Sentinel en un plazo de 15 minutos después de configurarlos en el portal de Cloud App Security.
 
 ## <a name="alerts-and-discovery-logs-in-azure-sentinel"></a>Alertas y registros de detección en Azure Sentinel
 
@@ -91,19 +91,19 @@ En la tabla siguiente se describe cada campo del esquema **McasShadowItReporting
 | SourceSystem | String | Sistema de origen: valor estático | Azure |
 | TimeGenerated [UTC] | DateTime | Fecha de datos de detección | 2019-07-23T11:00:35.858 Z |
 | StreamName | String | Nombre del flujo específico | Departamento de marketing |
-| TotalEvents | Integer | Número total de eventos por sesión | 122 |
-| BlockedEvents | Integer | Número de eventos bloqueados | 0 |
-| UploadedBytes | Integer | Cantidad de datos cargados | 1\.514.874 |
-| TotalBytes | Integer | Cantidad total de datos | 4\.067.785 |
-| DownloadedBytes | Integer | Cantidad de datos descargados | 2\.552.911 |
+| TotalEvents | Entero | Número total de eventos por sesión | 122 |
+| BlockedEvents | Entero | Número de eventos bloqueados | 0 |
+| UploadedBytes | Entero | Cantidad de datos cargados | 1.514.874 |
+| TotalBytes | Entero | Cantidad total de datos | 4.067.785 |
+| DownloadedBytes | Entero | Cantidad de datos descargados | 2.552.911 |
 | IpAddress | String | Dirección IP de origen | 127.0.0.0 |
 | UserName | String | Nombre de usuario | `Raegan@contoso.com` |
 | EnrichedUserName | String | Nombre de usuario enriquecido con Azure AD nombre de usuario | `Raegan@contoso.com` |
-| AppName | String | Nombre de la aplicación en la nube | Microsoft OneDrive para la Empresa |
-| AppId | Integer | Identificador de aplicación en la nube | 15600 |
+| AppName | String | Nombre de la aplicación en la nube | Microsoft OneDrive para la Empresa |
+| AppId | Entero | Identificador de aplicación en la nube | 15600 |
 | AppCategory | String | Categoría de aplicación en la nube | El almacenamiento en la nube |
-| AppTags | Matriz de cadenas | Etiquetas personalizadas y integradas definidas para la aplicación | ["autorizada"] |
-| AppScore | Integer | La puntuación de riesgo de la aplicación en una escala 0-10, 10 es una puntuación para una aplicación no peligrosa. | 10 |
+| AppTags | Matriz de cadena | Etiquetas personalizadas y integradas definidas para la aplicación | ["autorizada"] |
+| AppScore | Entero | La puntuación de riesgo de la aplicación en una escala 0-10, 10 es una puntuación para una aplicación no peligrosa. | 10 |
 | Tipo | String | Tipo de registros: valor estático | McasShadowItReporting |
 
 ## <a name="use-power-bi-with-cloud-app-security-data-in-azure-sentinel"></a>Uso de Power BI con datos de Cloud App Security en Azure Sentinel

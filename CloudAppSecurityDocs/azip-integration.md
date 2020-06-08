@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 06a85abdda78f4f3b160b63198871dfb7f68db84
-ms.sourcegitcommit: a166b85d5c91c48032cf133655471aec1ed88a0f
+ms.openlocfilehash: 6369646c8b4cd10e1b2c236369693f4e8c92d878
+ms.sourcegitcommit: ffc8f6053418d20f2394dc6645e043c9db582e6b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81662394"
+ms.lasthandoff: 06/07/2020
+ms.locfileid: "84486294"
 ---
 # <a name="azure-information-protection-integration"></a>Integración de Azure Information Protection
 
@@ -40,7 +40,7 @@ Al integrar Azure Information Protection en Cloud App Security, puede aprovechar
 > [!NOTE]
 > Para habilitar esta característica, necesita una licencia de Cloud App Security y una licencia para Azure Information Protection Premium P1. Tan pronto como se activen las licencias, Cloud App Security sincroniza las etiquetas de las organizaciones del servicio Azure Information Protection.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 - Para trabajar con la integración de Azure Information Protection, primero debe habilitar el [conector de aplicaciones para Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
@@ -84,10 +84,10 @@ Lo único que tiene que hacer para integrar Azure Information Protection con Clo
 
 Para permitir que Cloud App Security examine archivos que tengan la inspección de contenido habilitada en busca de etiquetas de clasificación:
 
-1. En Cloud App Security, en el engranaje de configuración, seleccione la página **Settings** (Configuración) en el encabezado **System** (Sistema).
+1. En Cloud App Security, en el engranaje de configuración, seleccione la página **Configuración** en el encabezado **Sistema**.
 
     ![Menú Configuración](media/azip-system-settings.png)
-1. En **Azure Information Protection**, seleccione **analizar automáticamente los nuevos archivos para las etiquetas de clasificación de Azure Information Protection**.
+1. En **Azure Information Protection**, seleccione **Buscar automáticamente las etiquetas de clasificación de Azure Information Protection en los archivos nuevos**.
 
     ![habilitar azure information protection](media/enable-azip.png)
 
@@ -124,7 +124,7 @@ Para omitir las etiquetas de clasificación establecidas externas a la organizac
 > [!NOTE]
 > Solo puede quitar las etiquetas si no incluyen protección y se aplicaron desde Cloud App Security, no directamente desde Information Protection.
 
-Para obtener más información sobre cómo funcionan conjuntamente Cloud App Security y Azure Information Protection, consulte protección de los [datos frente a errores](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake)de los usuarios.
+Para obtener más información sobre cómo funcionan conjuntamente Cloud App Security y Azure Information Protection, consulte [aplicar automáticamente etiquetas de clasificación de Azure Information Protection](use-case-information-protection.md).
 
 ### <a name="automatically-label-files"></a>Etiquetar archivos automáticamente
 
@@ -187,7 +187,7 @@ Obtenga más información sobre [Azure Information Protection](https://docs.micr
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
+> [Control de aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
 
 ## <a name="related-videos"></a>Vídeos relacionados
 

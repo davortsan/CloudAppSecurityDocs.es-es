@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c4f914fed75e30aca3b9d87d911c729dff0b77c0
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: a4ea4e8e49cd2787a2c571cd8bbc9bc8f438e72b
+ms.sourcegitcommit: ffc8f6053418d20f2394dc6645e043c9db582e6b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719927"
+ms.lasthandoff: 06/07/2020
+ms.locfileid: "84486328"
 ---
-# <a name="investigate"></a>Investigar
+# <a name="investigate"></a>Investigación
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 Después de que Microsoft Cloud App Security se ejecute en el entorno de nube, necesitará una fase de aprendizaje e investigación. Aprenda a usar las herramientas de Microsoft Cloud App Security para mejorar su comprensión de lo que sucede en el entorno de nube. Según su entorno concreto y su uso, puede identificar los requisitos para proteger su organización de posibles riesgos. En este artículo se describe cómo realizar una investigación para comprender mejor lo que está ocurriendo en su entorno en la nube.
 
@@ -31,7 +31,7 @@ Después de que Microsoft Cloud App Security se ejecute en el entorno de nube, n
 
 Los siguientes paneles están disponibles para ayudarle a investigar las aplicaciones en su entorno en la nube:
 
-|Dashboard|Descripción|
+|Panel|Descripción|
 |---------------|-----------------|
 |Panel principal|Información general sobre el estado de la nube (usuarios, archivos, actividades) y las acciones necesarias (alertas, infracciones de actividad e infracciones de contenido).|
 |Panel de la aplicación: información general|Información general sobre el uso de aplicaciones por ubicación, gráficos de uso por número de usuarios.|
@@ -49,7 +49,7 @@ Los siguientes paneles están disponibles para ayudarle a investigar las aplicac
 *(Solo Salesforce)*|Información general de los usuarios por tipo de usuario con privilegios.|
 |Panel del usuario|Información general completa del perfil de usuario en la nube, ubicaciones, actividades recientes, alertas relacionadas.|
 
-## <a name="a-namesanctionapp-tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp" />las aplicaciones de etiqueta como autorizadas o no autorizadas
+## <a name="tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp"></a>Etiquetar aplicaciones como autorizadas o no autorizadas
 
 Marcar aplicaciones como autorizadas o no autorizadas es un paso importante para comprender su entorno en la nube. Después de autorizar una aplicación, puede filtrar por las aplicaciones que no estén autorizadas e iniciar la migración a las aplicaciones autorizadas que sean del mismo tipo.
 
@@ -57,7 +57,7 @@ Marcar aplicaciones como autorizadas o no autorizadas es un paso importante para
 
 - En la lista de aplicaciones, en la fila que contenga la aplicación que quiera marcar como autorizada, elija los tres puntos al final de la fila ![Puntos para marcar como autorizada](media/sanction-three-dots.png "Etiquetar como puntos autorizados") y elija **Marcar como autorizada**.
 
-    ![Etiqueta como autorizada](media/mark-as-sanctioned.png "etiqueta como autorizada")
+    ![Marcar como autorizada](media/mark-as-sanctioned.png "etiqueta como autorizada")
 
 ## <a name="use-the-investigation-tools"></a>Usar las herramientas de investigación
 
@@ -113,7 +113,7 @@ Marcar aplicaciones como autorizadas o no autorizadas es un paso importante para
 
     - ¿Cuántos usuarios las han implementado? ¿Cómo son de comunes estas aplicaciones en general?
 
-    ![Panel de la aplicación](media/investigate-app.png "investigar aplicación")
+    ![Panel de aplicaciones](media/investigate-app.png "investigar aplicación")
 
 5. Vaya al **panel de Cloud Discovery** y compruebe los siguientes elementos:
 
@@ -127,7 +127,7 @@ Marcar aplicaciones como autorizadas o no autorizadas es un paso importante para
 
     - Para soluciones alternativas, ¿quiere no autorizar algunas aplicaciones en su organización?
 
-    - ¿Hay aplicaciones en la nube que se usan, pero no en conformidad con la directiva de su organización?
+    - ¿Hay aplicaciones en la nube que se usen pero que no cumplan la Directiva de su organización?
 
 ## <a name="sample-investigation"></a>Ejemplo de investigación
 
@@ -137,13 +137,13 @@ Imaginemos que, en teoría, ninguna dirección IP de riesgo puede tener acceso a
 
 2. Elija la **Directiva de actividad** para el **Tipo**.
 
-3. Al final de la fila **Inicio de sesión desde una dirección IP de riesgo**, haga clic en el signo más ( **+** ) para crear una directiva.
+3. Al final de la fila **Inicio de sesión desde una dirección IP de riesgo**, haga clic en el signo más (**+**) para crear una directiva.
 
 4. Cambie el nombre de la directiva para que pueda identificarla.
 
 5. En **Actividades que coinciden con todas las opciones siguientes**, haga clic en **+** para agregar un filtro. Desplácese hasta **Etiqueta IP** y luego elija **Tor**.
 
-    ![Directiva de ejemplo para IP de riesgo](media/example-policy-risky-ips.png "ejemplo de directiva de IP de riesgo")
+    ![Ejemplo de directiva de IP de riesgo](media/example-policy-risky-ips.png "ejemplo de directiva de IP de riesgo")
 
 Con la directiva en marcha, le sorprenderá ver que recibe una alerta que indica que la directiva se ha infringido.
 
