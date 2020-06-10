@@ -9,16 +9,16 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4d945a13f2cab9b11c74dae5aa6ff93eae5f3ba5
-ms.sourcegitcommit: dabfa885ebb82db25a92127d87e8d1283340e834
+ms.openlocfilehash: 0598b9f5131d38edc5b2a0f5683648a294e4db40
+ms.sourcegitcommit: 3f0693bf32fef5b4819c51ca7eeaee751eb03df6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76020756"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84611229"
 ---
 # <a name="threat-protection-policies"></a>Directivas de protección contra amenazas
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 Cloud App Security le permite identificar problemas de seguridad en la nube y de uso de alto riesgo, detectar comportamientos anómalos de los usuarios y evitar amenazas en las aplicaciones en la nube autorizadas. Obtenga visibilidad de las actividades de usuario y administración, y defina directivas para alertar automáticamente cuando se detecten comportamientos sospechosos o actividades específicas que considere arriesgado. Extraiga la inmensa cantidad de datos de investigación de seguridad e inteligencia de amenazas de Microsoft para asegurarse de que sus aplicaciones autorizadas tienen todos los controles de seguridad que necesita y le ayudan a mantener el control sobre ellas.
 
@@ -35,7 +35,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 ### <a name="steps"></a>Pasos
 
-Esta detección se configura automáticamente de forma automática para avisarle cuando haya acceso desde nuevas ubicaciones. No es necesario realizar ninguna acción para configurar esta Directiva. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).
+Esta detección se configura automáticamente de forma automática para avisarle cuando haya acceso desde nuevas ubicaciones. No es necesario realizar ninguna acción para configurar esta Directiva. Para más información, consulte [Directivas de detección de anomalías](anomaly-detection-policy.md).
 
 ## <a name="detect-compromised-account-by-impossible-location-impossible-travel"></a>Detección de una cuenta en peligro por ubicación imposible (viaje imposible)
 
@@ -46,7 +46,7 @@ Detección automática del acceso o actividad de los usuarios desde dos ubicacio
 Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) o incorporada mediante el [control de aplicaciones de acceso condicional con controles de sesión](proxy-deployment-aad.md).
 ### <a name="steps"></a>Pasos
 
-1. Esta detección se configura automáticamente de forma automática para avisarle cuando haya acceso desde ubicaciones imposibles. No es necesario realizar ninguna acción para configurar esta Directiva. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).
+1. Esta detección se configura automáticamente de forma automática para avisarle cuando haya acceso desde ubicaciones imposibles. No es necesario realizar ninguna acción para configurar esta Directiva. Para más información, consulte [Directivas de detección de anomalías](anomaly-detection-policy.md).
 2. Opcional: puede [personalizar las directivas de detección de anomalías](anomaly-detection-policy.md#scope-anomaly-detection-policies):
 
     - Personalizar el ámbito de detección en términos de usuarios y grupos
@@ -173,7 +173,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 ### <a name="steps"></a>Pasos
 
-1. Esta detección se configura automáticamente de forma automática para avisarle cuando se detecte un riesgo de ransomware potencial. No es necesario realizar ninguna acción para configurar esta Directiva. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).
+1. Esta detección se configura automáticamente de forma automática para avisarle cuando se detecte un riesgo de ransomware potencial. No es necesario realizar ninguna acción para configurar esta Directiva. Para más información, consulte [Directivas de detección de anomalías](anomaly-detection-policy.md).
 
 2. Es posible configurar el **ámbito** de la detección y personalizar las acciones de gobierno que se llevarán a cabo cuando se desencadene una alerta. Para obtener más información acerca de cómo Cloud App Security identifica ransomware, consulte [protección de la organización desde ransomware](use-case-ransomware.md).
 
@@ -186,11 +186,12 @@ Detecte archivos que contengan malware en los entornos de nube mediante la integ
 
 ### <a name="prerequisites"></a>Requisitos previos
 
-Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+- Para la detección de malware de Office 365, debe tener una licencia válida para la protección contra amenazas avanzada de Office 365 P1.
+- Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>Pasos
 
-- Esta detección se configura automáticamente de forma automática para avisarle cuando hay un archivo que puede contener malware. No es necesario realizar ninguna acción para configurar esta Directiva. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).
+- Esta detección se configura automáticamente de forma automática para avisarle cuando hay un archivo que puede contener malware. No es necesario realizar ninguna acción para configurar esta Directiva. Para más información, consulte [Directivas de detección de anomalías](anomaly-detection-policy.md).
 
 ## <a name="detect-rogue-admin-takeover"></a>Detección de la adquisición de administrador no autorizado
 
@@ -223,7 +224,7 @@ Si se ha establecido una regla de bandeja de entrada sospechosa en la bandeja de
 
 ### <a name="steps"></a>Pasos
 
-- Esta detección se configura automáticamente de forma automática para avisarle cuando haya un conjunto de reglas de bandeja de entrada sospechoso. No es necesario realizar ninguna acción para configurar esta Directiva. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).
+- Esta detección se configura automáticamente de forma automática para avisarle cuando haya un conjunto de reglas de bandeja de entrada sospechoso. No es necesario realizar ninguna acción para configurar esta Directiva. Para más información, consulte [Directivas de detección de anomalías](anomaly-detection-policy.md).
 
 ## <a name="detect-leaked-credentials"></a>Detección de credenciales perdidas
 
@@ -237,7 +238,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 ### <a name="steps"></a>Pasos
 
-Esta detección se configura automáticamente de forma automática para avisarle cuando se detecte una posible pérdida de credenciales. No es necesario realizar ninguna acción para configurar esta Directiva. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).
+Esta detección se configura automáticamente de forma automática para avisarle cuando se detecte una posible pérdida de credenciales. No es necesario realizar ninguna acción para configurar esta Directiva. Para más información, consulte [Directivas de detección de anomalías](anomaly-detection-policy.md).
 
 ## <a name="detect-anomalous-file-downloads"></a>Detección de descargas de archivos anómalas
 
@@ -249,7 +250,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 ### <a name="steps"></a>Pasos
 
-1. Esta detección se configura automáticamente de forma automática para avisarle cuando se produce una descarga anómala. No es necesario realizar ninguna acción para configurar esta Directiva. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).
+1. Esta detección se configura automáticamente de forma automática para avisarle cuando se produce una descarga anómala. No es necesario realizar ninguna acción para configurar esta Directiva. Para más información, consulte [Directivas de detección de anomalías](anomaly-detection-policy.md).
 
 2. Es posible configurar el ámbito de la detección y personalizar la acción que se realizará cuando se desencadene una alerta.
 
@@ -263,7 +264,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 ### <a name="steps"></a>Pasos
 
-1. Esta detección se configura automáticamente de forma automática para avisarle cuando los usuarios realicen varios recursos compartidos de archivos. No es necesario realizar ninguna acción para configurar esta Directiva. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).
+1. Esta detección se configura automáticamente de forma automática para avisarle cuando los usuarios realicen varios recursos compartidos de archivos. No es necesario realizar ninguna acción para configurar esta Directiva. Para más información, consulte [Directivas de detección de anomalías](anomaly-detection-policy.md).
 
 2. Es posible configurar el ámbito de la detección y personalizar la acción que se realizará cuando se desencadene una alerta.
 
@@ -277,7 +278,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 ### <a name="steps"></a>Pasos
 
-1. Esta detección se configura automáticamente de forma automática para avisarle cuando se produce una actividad anómala de un país poco frecuente. No es necesario realizar ninguna acción para configurar esta Directiva. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).
+1. Esta detección se configura automáticamente de forma automática para avisarle cuando se produce una actividad anómala de un país poco frecuente. No es necesario realizar ninguna acción para configurar esta Directiva. Para más información, consulte [Directivas de detección de anomalías](anomaly-detection-policy.md).
 
 2. Es posible configurar el ámbito de la detección y personalizar la acción que se realizará cuando se desencadene una alerta.
 
@@ -294,7 +295,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 ### <a name="steps"></a>Pasos
 
-1. Esta detección se configura automáticamente de forma automática para avisarle cuando un empleado terminado realiza una actividad. No es necesario realizar ninguna acción para configurar esta Directiva. Para obtener más información, vea [Directivas de detección de anomalías](anomaly-detection-policy.md).
+1. Esta detección se configura automáticamente de forma automática para avisarle cuando un empleado terminado realiza una actividad. No es necesario realizar ninguna acción para configurar esta Directiva. Para más información, consulte [Directivas de detección de anomalías](anomaly-detection-policy.md).
 
 2. Es posible configurar el ámbito de la detección y personalizar la acción que se realizará cuando se desencadene una alerta.
 
