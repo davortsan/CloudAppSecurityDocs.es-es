@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4a1a7efae52509f32e171ad40d0f3dc163cd0064
-ms.sourcegitcommit: 27f5fecfb32c28c150d22546bfd3c7f7b9d254e5
+ms.openlocfilehash: f4f7b05caa3c516294f08864b0a711b71be047f3
+ms.sourcegitcommit: 3f0693bf32fef5b4819c51ca7eeaee751eb03df6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "83546112"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84611178"
 ---
 # <a name="integrate-cloud-app-security-with-zscaler"></a>Integración de Cloud App Security con Zscaler
 
@@ -31,9 +31,9 @@ Si trabaja con Cloud App Security y Zscaler, puede integrar los dos productos pa
 - Las funcionalidades de bloque de Zscaler se aplican automáticamente a las aplicaciones que haya establecido como no autorizadas en Cloud App Security.
 - Mejore el portal de Zscaler con la evaluación de riesgos de Cloud App Security para 200 aplicaciones líderes en la nube que pueden verse directamente en el portal de Zscaler.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
-- Una licencia válida para Microsoft Cloud App Security
+- Una licencia válida para Microsoft Cloud App Security o una licencia válida para Azure Active Directory Premium P1
 - Una licencia válida para Zscaler Cloud 5.6
 - Una suscripción activa de Zscaler NSS
 

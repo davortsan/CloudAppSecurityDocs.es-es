@@ -1,6 +1,6 @@
 ---
-title: Guía de investigación de Cloud App Security Alerts
-description: En este artículo se explica cómo investigar las alertas Cloud App Security emitidas cuando se detectan ataques en su organización.
+title: Cloud App Security guía de investigación de alertas de detección de anomalías
+description: En este artículo se explica cómo investigar las alertas de detección de anomalías de Cloud App Security emitidas cuando se detectan ataques en su organización.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -14,14 +14,14 @@ ms.technology: ''
 ms.reviewer: itfalcon
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e59acc35811b69d30616c32af5876e89e576a2e7
-ms.sourcegitcommit: 9538de5f3034a65626710648d22e2e186d77041a
+ms.openlocfilehash: 15b8a8eab3558443831b415c3d6ddef554879b09
+ms.sourcegitcommit: 33e4b39d56256e54bc6e74ca45a03055484916d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84512060"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84566930"
 ---
-# <a name="how-to-investigate-anomaly-alerts"></a>Cómo investigar alertas de anomalías
+# <a name="how-to-investigate-anomaly-detection-alerts"></a>Cómo investigar alertas de detección de anomalías
 
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -29,7 +29,7 @@ Microsoft Cloud App Security proporciona detecciones de seguridad y alertas para
 
 ## <a name="mitre-attck"></a>MITRE ATT \& CK
 
-Para explicar y facilitar la asignación de la relación entre Cloud App Security alertas y la conocida matriz de MITRE ATT&CK, hemos categorizado las alertas por su táctica de MITRE ATT \& CK correspondiente. Esta referencia adicional facilita la comprensión de la técnica de ataques sospechoso que se puede usar cuando se desencadena una alerta Cloud App Security.
+Para explicar y facilitar la asignación de la relación entre Cloud App Security las alertas y la conocida matriz de MITRE ATT \& CK, hemos categorizado las alertas por su táctica de Mitre ATT \& CK correspondiente. Esta referencia adicional facilita la comprensión de la técnica de ataques sospechoso que se puede usar cuando se desencadena una alerta Cloud App Security.
 
 En esta guía se proporciona información sobre cómo investigar y corregir Cloud App Security alertas en las siguientes categorías.
 
@@ -49,12 +49,12 @@ En esta guía se proporciona información sobre cómo investigar y corregir Clou
 Tras una investigación adecuada, todas las alertas de Cloud App Security se pueden clasificar como uno de los siguientes tipos de actividad:
 
 - **Verdadero positivo (TP)**: una alerta en una actividad malintencionada confirmada.
-- **Verdadero positivo benigno (B-TP)**: una alerta sobre una actividad sospechosa pero no malintencionada, como una prueba de penetración u otra acción sospechosa autorizada.
+- **Verdadero positivo benigno (B-TP)**: una alerta de actividad sospechosa pero no malintencionada, como una prueba de penetración u otra acción sospechosa autorizada.
 - **Falso positivo (FP)**: una alerta en una actividad no malintencionada.
 
 ## <a name="general-investigation-steps"></a>Pasos de investigación generales
 
-Puede usar las siguientes directrices generales al investigar cualquier tipo de alerta para obtener una descripción más clara de la posible amenaza.
+Debe usar las siguientes directrices generales al investigar cualquier tipo de alerta para obtener una descripción más clara de la posible amenaza antes de aplicar la acción recomendada.
 
 - Revise la puntuación de [prioridad](tutorial-ueba.md#understand-the-investigation-priority-score) de la investigación del usuario y compárelo con el resto de la organización. Esto le ayudará a identificar qué usuarios de su organización suponen el mayor riesgo.
 - Si identifica un **TP**, revise todas las actividades del usuario para comprender el impacto.
@@ -230,7 +230,7 @@ El establecimiento del patrón de actividad de un usuario nuevo requiere un per�
 1. **TP**: Si va a confirmar que las eliminaciones no se autorizaron.
 
     **Acción recomendada**: suspenda al usuario, restablezca la contraseña y examine todos los dispositivos en busca de amenazas malintencionadas. Revise toda la actividad de los usuarios para ver otros indicadores de riesgo y explore el ámbito de impacto.
-1. **FP**: Si, después de la investigación, puede confirmar que el administrador está autorizado para realizar estas actividades de eliminación.
+1. **FP**: Si después de la investigación, puede confirmar que el administrador está autorizado para realizar estas actividades de eliminación.
 
     **Acción recomendada**: descartar la alerta.
 
@@ -255,7 +255,7 @@ Para mejorar la precisión y alertar solo cuando hay una indicación fuerte de u
 - **TP**: si es capaz de confirmar que las actividades de creación no fueron realizadas por un usuario legítimo.
 
     **Acción recomendada**: suspenda al usuario, restablezca la contraseña y examine todos los dispositivos en busca de amenazas malintencionadas. Revise toda la actividad de los usuarios para ver otros indicadores de riesgo y explore el ámbito de impacto. Además, póngase en contacto con el usuario, confirme sus acciones legítimas y, a continuación, asegúrese de deshabilitar o eliminar las máquinas virtuales en peligro.
-- **B-TP**: Si, después de la investigación, puede confirmar que el administrador está autorizado para realizar estas actividades de creación.
+- **B-TP**: Si después de la investigación, puede confirmar que el administrador está autorizado para realizar estas actividades de creación.
 
     **Acción recomendada**: descartar la alerta.
 
@@ -263,6 +263,30 @@ Para mejorar la precisión y alertar solo cuando hay una indicación fuerte de u
 
 1. Revise toda la actividad de los usuarios para ver otros indicadores de riesgo.
 1. Revise los recursos creados o modificados por el usuario y compruebe que cumplen con las directivas de su organización.
+
+### <a name="suspicious-creation-activityfor-cloudregion-preview"></a>Actividad de creación sospechosa para la región de nube (versión preliminar)
+
+Actividades que indican que un usuario ha realizado una acción de creación de recursos inusual en una región de AWS no común en comparación con la base de referencia aprendida. La creación de recursos en regiones en la nube poco frecuentes podría indicar un intento de realizar una actividad malintencionada, como operaciones de minería de datos de cifrado de dentro de su organización.
+
+**Período de aprendizaje**
+
+El establecimiento del patrón de actividad de un usuario nuevo requiere un período de aprendizaje inicial de siete días durante el cual no se desencadenan alertas para las nuevas ubicaciones.
+
+**TP**, **B-TP**o **FP**?
+
+Para mejorar la precisión y alertar solo cuando hay una indicación fuerte de una infracción, esta detección establece una línea base en cada entorno de la organización para reducir los incidentes **B-TP** .
+
+- **TP**: si es capaz de confirmar que las actividades de creación no fueron realizadas por un usuario legítimo.
+
+    **Acción recomendada**: suspenda al usuario, restablezca la contraseña y examine todos los dispositivos en busca de amenazas malintencionadas. Revise toda la actividad de los usuarios para ver otros indicadores de riesgo y explore el ámbito de impacto. Además, póngase en contacto con el usuario, confirme sus acciones legítimas y, a continuación, asegúrese de deshabilitar o eliminar los recursos en peligro en la nube.
+- **B-TP**: Si después de la investigación, puede confirmar que el administrador está autorizado para realizar estas actividades de creación.
+
+    **Acción recomendada**: descartar la alerta.
+
+**Comprender el ámbito de la vulneración de seguridad**
+
+1. Revise toda la actividad de los usuarios para ver otros indicadores de riesgo.
+1. Revise los recursos creados y compruebe que cumplen con las directivas de su organización.
 
 ## <a name="persistence-alerts"></a>Alertas de persistencia
 
@@ -276,7 +300,7 @@ La actividad realizada por un usuario Terminado puede indicar que un empleado te
 
 1. **TP**: si se puede confirmar que el usuario terminado todavía tiene acceso a determinados recursos corporativos y está realizando actividades.
 
-    **Acción recomendada**: suspenda al usuario y asegúrese de que se quita todo el acceso.
+    **Acción recomendada**: deshabilitar el usuario.
 1. **B-TP**: si se puede determinar que el usuario se ha deshabilitado temporalmente o se ha eliminado y se ha vuelto a registrar.
 
     **Acción recomendada**: descartar la alerta.
@@ -369,7 +393,7 @@ El establecimiento del patrón de actividad de un usuario nuevo requiere un per�
 1. **TP**: si es capaz de confirmar que un administrador legítimo no ha realizado la actividad.
 
     **Acción recomendada**: suspender al usuario, marcar el usuario como comprometido y restablecer su contraseña.
-1. **FP**: si es capaz de confirmar que un administrador ha realizado legítimamente más actividades administrativas que la línea base establecida.
+1. **FP**: si es capaz de confirmar que un administrador ha realizado legítimamente el volumen inusual de actividades administrativas.
 
     **Acción recomendada**: descartar la alerta.
 
@@ -588,7 +612,7 @@ El establecimiento del patrón de actividad de un usuario nuevo requiere un per�
 - **TP**: si es capaz de confirmar que las eliminaciones no se autorizaron.
 
     **Acción recomendada**: suspenda al usuario, restablezca la contraseña y examine todos los dispositivos en busca de amenazas malintencionadas. Revise toda la actividad de los usuarios para ver otros indicadores de riesgo y explore el ámbito de impacto.
-- **B-TP**: Si, después de la investigación, puede confirmar que el administrador está autorizado para realizar estas actividades de eliminación.
+- **B-TP**: Si después de la investigación, puede confirmar que el administrador está autorizado para realizar estas actividades de eliminación.
 
     **Acción recomendada**: descartar la alerta.
 
@@ -649,7 +673,7 @@ El establecimiento del patrón de actividad de un usuario nuevo requiere un per�
 1. Revise las actividades de eliminación y cree una lista de los archivos eliminados. Si es necesario, recupere los archivos eliminados.
 1. Opcionalmente, puede crear una guía mediante la automatización de la energía para ponerse en contacto con los usuarios y sus administradores para comprobar la actividad.
 
-## <a name="see-also"></a>Consulte también:
+## <a name="see-also"></a>Consulte también
 
 > [!div class="nextstepaction"]
 > [Investigación de usuarios de riesgo](tutorial-ueba.md)

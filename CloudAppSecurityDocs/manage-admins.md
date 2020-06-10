@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0965c492c7f837810bc68b2b97645e89bdd03e75
-ms.sourcegitcommit: ffc8f6053418d20f2394dc6645e043c9db582e6b
+ms.openlocfilehash: face06e83dc57a3722298bf2e22846334ca811b2
+ms.sourcegitcommit: 33e4b39d56256e54bc6e74ca45a03055484916d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2020
-ms.locfileid: "84486303"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84566831"
 ---
 # <a name="manage-admin-access"></a>Administrar el acceso de administrador
 
@@ -121,12 +121,15 @@ Puede agregar más administradores a Cloud App Security sin agregar usuarios a l
 
 2. Haga clic en el signo más para agregar los administradores que deben tener acceso a Cloud App Security. Puede escribir una dirección de correo electrónico interno o externo para permitir que los administradores de la organización o los proveedores de servicios de seguridad administrada (MSSP) externos administren las alertas de seguridad.
 
+    > [!NOTE]
+    > Para conceder acceso al portal a MSSPs, debe agregar usuarios de MSSP a su Azure AD como usuarios invitados. Para más información, consulte [Incorporación de usuarios de colaboración B2B de Azure Active Directory en Azure Portal](/azure/active-directory/b2b/add-users-administrator).
+
     ![agregar administradores](media/add-admin.png)
 
 3. A continuación, haga clic en la lista desplegable para establecer el tipo de rol que tiene el administrador, un **administrador global**, un **lector de seguridad**, un **Administrador de cumplimiento**o un **Administrador de aplicación/instancia**. Si selecciona **Administrador de instancia/aplicación**, seleccione la aplicación y la instancia para que el Administrador tenga permisos.
 
     >[!NOTE]
-    >Si un administrador cuyo acceso está limitado intenta acceder a una página restringida o realizar una acción restringida, recibirá un error por el que se notifica que no tiene permiso para acceder a la página o realizar la acción.
+    > Si un administrador cuyo acceso está limitado intenta acceder a una página restringida o realizar una acción restringida, recibirá un error por el que se notifica que no tiene permiso para acceder a la página o realizar la acción.
 
 4. Haga clic en **Agregar administrador**.
 
