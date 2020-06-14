@@ -205,6 +205,8 @@
           items:
             - name: Administración de alertas
               href: managing-alerts.md
+        - name: Investigación de alertas de detección de anomalías
+          href: investigate-anomaly-alerts.md
     - name: Control
       href: control.md
       items:
@@ -280,6 +282,74 @@
           href: policies-threat-protection.md
         - name: Directivas de protección de la información
           href: policies-information-protection.md
+    - name: API de REST
+      items:
+        - name: Introducción
+          href: api-introduction.md
+        - name: Autenticación
+          href: api-authentication.md
+        - name: Cloud Discovery
+          items:
+            - name: Introducción
+              href: api-discovery.md
+            - name: Iniciación de la carga de archivos
+              href: api-discovery-initiate.md
+            - name: Realización de la carga de archivos
+              href: api-discovery-perform.md
+            - name: Finalización de la carga de archivos
+              href: api-discovery-finalize.md
+            - name: Generación de scripts de bloques
+              href: api-discovery-script.md
+        - name: Mejora de datos
+          items:
+            - name: Actualización del intervalo de direcciones IP
+              href: api-data-enrichment.md
+        - name: Actividades
+          items:
+            - name: Introducción
+              href: api-activities.md
+            - name: Enumeración de actividades
+              href: api-activities-list.md
+            - name: Captura de actividades
+              href: api-activities-fetch.md
+            - name: Comentarios sobre actividades
+              href: api-activities-feedback.md
+        - name: Alertas
+          items:
+            - name: Introducción
+              href: api-alerts.md
+            - name: Enumeración de alertas
+              href: api-alerts-list.md
+            - name: Descarte masivo
+              href: api-alerts-bulk-dismiss.md
+            - name: Resolución masiva
+              href: api-alerts-bulk-resolve.md
+            - name: Captura de alertas
+              href: api-alerts-fetch.md
+            - name: Descarte de alertas
+              href: api-alerts-dismiss.md
+            - name: Marcación de alerta como leída
+              href: api-alerts-mark-read.md
+            - name: Marcación de alerta como no leída
+              href: api-alerts-mark-unread.md
+        - name: Entities
+          items:
+            - name: Introducción
+              href: api-entities.md
+            - name: Enumeración de entidades
+              href: api-entities-list.md
+            - name: Captura de entidades
+              href: api-entities-fetch.md
+            - name: Captura de árboles de entidades
+              href: api-entities-fetch-tree.md
+        - name: Archivos
+          items:
+            - name: Introducción
+              href: api-files.md
+            - name: Enumeración de archivos
+              href: api-files-list.md
+            - name: Captura de archivos
+              href: api-files-fetch.md
     - name: Solución de problemas
       items:
         - name: Solución de problemas de Cloud Discovery
