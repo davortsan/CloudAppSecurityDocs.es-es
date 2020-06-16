@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: itfalcon
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 15b8a8eab3558443831b415c3d6ddef554879b09
-ms.sourcegitcommit: 33e4b39d56256e54bc6e74ca45a03055484916d9
+ms.openlocfilehash: 08eec9c9a8e684d53b0947ce186d661bf5e7d961
+ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84566930"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800816"
 ---
 # <a name="how-to-investigate-anomaly-detection-alerts"></a>Cómo investigar alertas de detección de anomalías
 
@@ -75,7 +75,7 @@ Actividad de una dirección IP identificada como dirección IP de proxy anónima
 
 **TP**, **B-TP**o **FP**?
 
-Esta detección usa un algoritmo de aprendizaje automático que reduce los incidentes **de B-TP** , como las direcciones IP no etiquetadas ampliamente utilizadas por los usuarios de la organización.
+Esta detección usa un algoritmo de aprendizaje automático que reduce los incidentes **de B-TP** , como las direcciones IP con etiquetas no utilizadas ampliamente por los usuarios de la organización.
 
 1. **TP**: si es capaz de confirmar que la actividad se realizó desde una dirección IP anónima o de Tor.
 

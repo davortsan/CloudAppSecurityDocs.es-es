@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 47aa53855f83a2898616d17e6d4b12786bc7d893
-ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
+ms.openlocfilehash: 1578a945e461d69a78f56f000b494235245002b9
+ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84250679"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800799"
 ---
 # <a name="session-policies"></a>Directivas de sesión
 
@@ -55,7 +55,7 @@ Haga lo siguiente para crear una directiva de sesión:
 
     1. Seleccione **Monitor only** (Solo supervisar) si solo quiere supervisar las actividades de los usuarios. Esta selección creará una directiva de solo supervisión para las aplicaciones que seleccionó en la que, todos los inicios de sesión, descargas heurísticas y tipos de actividad, se descargarán.
 
-    1. Seleccione **Controlar la descarga de archivos (con DLP)** si quiere supervisar las actividades del usuario. Puede realizar acciones adicionales como bloquear o proteger las descargas para los usuarios.
+    1. Seleccione **controlar la descarga de archivos (con inspección)** si desea supervisar las actividades de los usuarios. Puede realizar acciones adicionales como bloquear o proteger las descargas para los usuarios.
     1. Seleccione **Bloquear actividades** para bloquear actividades específicas que se pueden seleccionar con el filtro **Tipo de actividad**. Todas las actividades de las aplicaciones seleccionadas se supervisarán (y notificarán en el registro de actividad). Las actividades específicas que seleccione se bloquearán si selecciona la acción **Bloquear**. Las actividades específicas que seleccione generarán alertas si selecciona la acción **Probar** y hay alertas activadas.
 1. En la sección **Actividades que coinciden con todo lo siguiente** de **Origen de la actividad**, seleccione más filtros de actividad para aplicarlos a la directiva. Los filtros incluyen las siguientes opciones:
 
@@ -70,7 +70,7 @@ Haga lo siguiente para crear una directiva de sesión:
     >[!NOTE]
     >Las directivas de sesión no admiten aplicaciones móviles y de escritorio. Las aplicaciones móviles y de escritorio también pueden bloquearse o permitirse con la creación de una directiva de acceso.
 
-1. Si ha seleccionado la opción **Controlar la descarga de archivos (con DLP)**:
+1. Si ha seleccionado la opción para **controlar la descarga de archivos (con inspección)**:
 
     1. En la sección **Archivos que coinciden con todo lo siguiente** de **Origen de la actividad**, seleccione más filtros de archivo para aplicarlos a la directiva. Los filtros incluyen las siguientes opciones:
 
@@ -86,7 +86,7 @@ Haga lo siguiente para crear una directiva de sesión:
 
         * **Block (Block file download and monitor all activities)** (Bloquear [bloquear descargas de archivos y supervisar todas las actividades]): establezca esta acción para bloquear expresamente las descargas según los filtros de directiva que haya establecido. Para más información, vea [Cómo funciona el bloqueo de descargas](#block-download).
 
-        * **Protect (Apply classification label to download and monitor all activities)** (Proteger [aplicar etiqueta de clasificación para descargar y supervisar todas las actividades]): esta opción solo está disponible si seleccionó **Controlar la descarga de archivos (con DLP)** en **Directiva de sesión**. Si la organización usa Azure Information Protection, puede establecer una **acción** que aplique al archivo una etiqueta de clasificación establecida en Azure Information Protection. Para más información, vea [Cómo funciona la protección de descargas](#protect-download).
+        * **Proteger (aplicar etiqueta de clasificación para descargar y supervisar todas las actividades)**: esta opción solo está disponible si seleccionó **controlar la descarga de archivos (con inspección)** en **Directiva de sesión**. Si la organización usa Azure Information Protection, puede establecer una **acción** que aplique al archivo una etiqueta de clasificación establecida en Azure Information Protection. Para más información, vea [Cómo funciona la protección de descargas](#protect-download).
 
 1. Puede **Crear una alerta para cada evento coincidente con la gravedad de la directiva** y establecer un límite de alerta. Seleccione si quiere que la alerta se envíe como mensaje de correo electrónico, de texto o ambos.
 
@@ -146,9 +146,17 @@ Actualmente, Cloud App Security admite aplicar [etiquetas de clasificación de A
 
 ## <a name="protect-uploads-of-sensitive-files"></a><a name="protect-upload"></a>Proteger cargas de archivos confidenciales
 
-Cuando **controlar la carga de archivos (con DLP)** se establece como el **tipo de control de sesión** en la directiva de sesión de Cloud App Security, control de aplicaciones de acceso condicional impide que un usuario cargue un archivo por los filtros de archivos de la Directiva. Cuando se reconoce un evento de carga, Control de aplicaciones de acceso condicional interviene en tiempo real para determinar si el archivo es sensible y necesita protección. Si el archivo tiene datos confidenciales y no tiene una etiqueta adecuada, se bloquea la carga de archivos.
+Cuando **controlar la carga de archivos (con inspección)** se establece como el **tipo de control de sesión** en la directiva de sesión de Cloud App Security, control de aplicaciones de acceso condicional impide que un usuario cargue un archivo según los filtros de archivo de la Directiva. Cuando se reconoce un evento de carga, Control de aplicaciones de acceso condicional interviene en tiempo real para determinar si el archivo es sensible y necesita protección. Si el archivo tiene datos confidenciales y no tiene una etiqueta adecuada, se bloquea la carga de archivos.
 
 Por ejemplo, puede crear una directiva que examine el contenido de un archivo para determinar si contiene una coincidencia de contenido confidencial, como un número de la seguridad social. Si contiene contenido confidencial y no se etiqueta con una Azure Information Protection etiqueta confidencial, la carga de archivos se bloquea. Cuando el archivo está bloqueado, puede [Mostrar un mensaje personalizado al usuario para](#educate-protect) indicarle cómo etiquetar el archivo para cargarlo. Al hacerlo, se asegura de que los archivos almacenados en las aplicaciones en la nube cumplan las directivas.
+
+## <a name="block-malware-on-upload"></a>Bloquear malware al cargar
+
+Cuando el **control de carga de archivos (con inspección)**   se establece como el **tipo de control de sesión** y la **detección de malware** está establecida como **método de inspección** en la Directiva de sesión de Cloud App Security, control de aplicaciones de acceso condicional impide que un usuario cargue un archivo en tiempo real si se detecta malware. Los archivos se examinan con el motor de inteligencia de amenazas de Microsoft.
+
+Puede ver los archivos marcados como posibles malware mediante el filtro **potencial de malware detectado** en el registro de actividad.
+
+También puede configurar directivas de sesión para bloquear el malware en la descarga.
 
 ## <a name="educate-users-to-protect-sensitive-files"></a><a name="educate-protect"></a>Instruya a los usuarios para proteger archivos confidenciales
 
@@ -164,7 +172,7 @@ Por ejemplo, si un usuario carga un archivo sin una etiqueta de Azure Informatio
 >[!div class="nextstepaction"]
 > [SIGUIENTE: Cómo crear una directiva de acceso »](access-policy-aad.md)
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 > [!div class="nextstepaction"]
 > [Bloqueo de descargas en dispositivos no administrados mediante Azure AD Control de aplicaciones de acceso condicional](use-case-proxy-block-session-aad.md)

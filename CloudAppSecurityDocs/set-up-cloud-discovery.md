@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7e7635cf2fd7400376ec5a57919d2804ab8ab6b1
-ms.sourcegitcommit: 211dcc2850a7b1513f93ccc83e8e152bc941f253
+ms.openlocfilehash: ca5d9d10b9c2270e3f8a8b391a42a8e2344a7aa7
+ms.sourcegitcommit: 223c9e4cefe6986537dcfbd697a236a3cee1768c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84654413"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84801174"
 ---
 # <a name="set-up-cloud-discovery"></a>Configuración de Cloud Discovery
 
@@ -89,7 +89,10 @@ El proceso de generación de una evaluación de riesgos consta de los siguientes
 > [!NOTE]
 > Cloud Discovery admite tanto direcciones IPv4 como IPv6.
 
-Si el registro no es compatible, seleccione **Otro** como **Origen de datos** y especifique el dispositivo y el registro que está intentando cargar. El equipo de analistas de la nube de Cloud App Security examinará el registro y se le notificará si se ha agregado compatibilidad con el tipo de registro. También puede definir un analizador personalizado que coincida con el formato. Para más información, consulte [Uso de un analizador de registros personalizado](custom-log-parser.md).
+Si el registro no es compatible, o si está usando un formato de registro recién publicado de uno de los orígenes de datos admitidos y se produce un error en la carga, seleccione **otro** como **origen de datos** y especifique el dispositivo y el registro que está intentando cargar. El equipo de analistas de la nube de Cloud App Security examinará el registro y se le notificará si se ha agregado compatibilidad con el tipo de registro. También puede definir un analizador personalizado que coincida con el formato. Para más información, consulte [Uso de un analizador de registros personalizado](custom-log-parser.md).
+
+> [!NOTE]
+> Es posible que la siguiente lista de los dispositivos compatibles no funcione con los formatos de registro publicados recientemente. Si usa un formato recién lanzado y se produce un error en la carga, [use un analizador de registros personalizado](custom-log-parser.md) y, si es necesario, abra un caso de soporte técnico.
 
 Atributos de datos (según la documentación del proveedor):
 

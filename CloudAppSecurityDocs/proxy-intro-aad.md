@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 75a9c50b91b0aca0183af548bee6d6265be59e96
-ms.sourcegitcommit: b00cf17cc91d7a08cae5a602a6db05269643aa95
+ms.openlocfilehash: 84d78ef48ed141c62934b8b91137d601c1fff666
+ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84415702"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800848"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicaciones con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security
 
@@ -42,6 +42,8 @@ Control de aplicaciones de acceso condicional permite supervisar y controlar las
 - **Proteger al descargar: en**lugar de bloquear la descarga de documentos confidenciales, puede requerir que los documentos estén etiquetados y protegidos con Azure Information Protection. Esta acción garantiza que el documento está protegido y el acceso del usuario se restringe en una sesión potencialmente arriesgada.
 
 - **Evitar la carga de archivos sin etiquetar**: antes de que otros usuarios carguen, distribuyan y usen otros, es importante asegurarse de que el archivo tiene la etiqueta y la protección adecuadas. Puede asegurarse de que los archivos sin etiqueta con contenido confidencial se bloqueen para que no se carguen hasta que el usuario clasifique el contenido.
+
+- **Bloquear malware potencial**: puede proteger su entorno contra malware bloqueando la carga de archivos potencialmente malintencionados. Los archivos que se cargan o descargan se pueden analizar con la inteligencia de amenazas de Microsoft y bloquearse de forma instantánea.
 
 - **Supervisar las sesiones de usuario para el cumplimiento**: los usuarios con riesgo se supervisan cuando inician sesión en las aplicaciones y sus acciones se registran desde dentro de la sesión. Puede investigar y analizar el comportamiento del usuario para saber dónde se deben aplicar las directivas de sesión en el futuro, y en qué condiciones.
 

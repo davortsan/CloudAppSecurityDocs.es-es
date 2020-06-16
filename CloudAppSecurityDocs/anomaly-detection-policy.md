@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5b4691cdc29199d65b6ac0a2884b8b5a82263c5e
-ms.sourcegitcommit: 33e4b39d56256e54bc6e74ca45a03055484916d9
+ms.openlocfilehash: 85cf523e8cc733156c2365da114cc893b022e1e3
+ms.sourcegitcommit: 223c9e4cefe6986537dcfbd697a236a3cee1768c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84566988"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84801157"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtención de análisis de comportamiento y detección de anomalías instantáneos
 
@@ -47,7 +47,7 @@ Además de las alertas nativas de Cloud App Security, también obtendrá las sig
 * Credenciales perdidas: se desencadena cuando se han perdido las credenciales válidas de un usuario. Para obtener más información, vea [detección de credenciales perdidas de Azure ad](/azure/active-directory/identity-protection/concept-identity-protection-risks#user-risk).
 * Inicio de sesión peligroso: combina un número de detecciones de inicio de sesión Azure AD Identity Protection en una sola detección. Para obtener más información, consulte [el Azure ad de las detecciones de riesgo de inicio de sesión](/azure/active-directory/identity-protection/concept-identity-protection-risks#sign-in-risk).
 
-Estas directivas aparecerán en la página Cloud App Security directivas y se pueden habilitar, deshabilitar, pero no editar.
+Estas directivas aparecerán en la página directivas de Cloud App Security y se pueden habilitar o deshabilitar.
 
 ## <a name="anomaly-detection-policies"></a>Directivas de detección de anomalías
 
@@ -70,9 +70,12 @@ Están disponibles las directivas de detección de anomalías siguientes:
 
 ### <a name="malware-detection"></a>Detección de malware
 
-* Esta detección identifica los archivos maliciosos en el almacenamiento en nube, tanto si proceden de aplicaciones de Microsoft como de aplicaciones de terceros. Microsoft Cloud App Security usa la inteligencia sobre amenazas de Microsoft para reconocer si determinados archivos están asociados a ataques de malware conocidos y son potencialmente maliciosos. Esta directiva integrada está deshabilitada de forma predeterminada. No se analizan todos los archivos, pero se usa la heurística para buscar archivos potencialmente peligrosos. Una vez que se han detectado archivos, puede ver una lista de **archivos infectados**. Haga clic en el nombre de archivo de malware en el cajón de archivos para abrir un informe de malware con información sobre el tipo de malware con el que está infectado el archivo.
+* Esta detección identifica los archivos maliciosos en el almacenamiento en nube, tanto si proceden de aplicaciones de Microsoft como de aplicaciones de terceros. Microsoft Cloud App Security usa la inteligencia sobre amenazas de Microsoft para reconocer si determinados archivos están asociados a ataques de malware conocidos y son potencialmente maliciosos. Esta directiva integrada está deshabilitada de forma predeterminada. No se analizan todos los archivos, pero se usa la heurística para buscar archivos potencialmente peligrosos. Una vez que se han detectado archivos, puede ver una lista de **archivos infectados**. Haga clic en el nombre del archivo de malware en el cajón de archivos para abrir un informe de malware que le proporcione información sobre el tipo de malware con el que está infectado el archivo.
+
+    Puede usar esta detección en tiempo real mediante directivas de sesión para controlar las cargas y descargas de archivos.
 
     > [!NOTE]
+    >
     > * Para la detección de malware de Office 365, necesita una licencia válida para la protección contra amenazas avanzada de Office 365 P1.
     > * Cloud App Security admite la detección de malware en las siguientes aplicaciones:
     >   * Box
@@ -80,7 +83,7 @@ Están disponibles las directivas de detección de anomalías siguientes:
     >   * G Suite
     >   * Office 365
 
-### <a name="activity-from-anonymous-ip-addresses"></a>Actividad desde una dirección IP anónima
+### <a name="activity-from-anonymous-ip-addresses"></a>Actividad desde direcciones IP anónimas
 
 * Esta detección identifica que los usuarios estaban activos desde una dirección IP que se ha identificado como una dirección IP de proxy anónima. Estos servidores proxy los usan las personas que desean ocultar la dirección IP de su dispositivo y se pueden usar para fines malintencionados. Esta detección usa un algoritmo de aprendizaje automático que reduce los falsos positivos, como las direcciones IP no etiquetadas que los usuarios de la organización usan habitualmente.
 

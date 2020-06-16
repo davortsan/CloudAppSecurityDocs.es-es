@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 75ee564e0001b76ea38f345cec24c02d567ed200
-ms.sourcegitcommit: f4845a6bbf39aea0504956bf23878f7e0adb8bcc
+ms.openlocfilehash: 353cff79b3e76c3f63380194ea055a92f13c0ce8
+ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81477486"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800782"
 ---
 # <a name="microsoft-data-classification-services-integration"></a>Integración de los servicios de clasificación de datos de Microsoft
 
@@ -34,7 +34,7 @@ Microsoft Cloud App Security le permite usar el servicio de clasificación de da
 
 Tiene la opción para establecer el **método de inspección** para que use el **servicio de clasificación de datos de Microsoft** sin ninguna configuración adicional necesaria. Esta opción es útil al crear una directiva de prevención de pérdida de datos para los archivos en Microsoft Cloud App Security.
 
-1. En la página [Directiva de archivo](data-protection-policies.md) , en método de **inspección**, seleccione servicio de **clasificación de datos**. También puede establecer el **método de inspección** en la página [Directiva de sesión](session-policy-aad.md) con la opción **Descargar archivo de control (con DLP)** seleccionada.
+1. En la página [Directiva de archivo](data-protection-policies.md) , en método de **inspección**, seleccione servicio de **clasificación de datos**. También puede establecer el **método de inspección** en la página [Directiva de sesión](session-policy-aad.md) con la opción **Descargar archivo de control (con inspección)** seleccionada.
 
     ![configuración del servicio de clasificación de datos](media/dcs-enable.png)
 2. Seleccione si debe aplicarse la directiva cuando se cumpla **cualquier** criterio o **todos** ellos.
@@ -55,6 +55,6 @@ Configurar estas directivas es una manera sencilla de llevar la eficacia de las 
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
+> [Control de aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

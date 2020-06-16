@@ -9,16 +9,16 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3a5f6f6eb607faac7aec7eb9dda3ec1d66cadb5f
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 681a2389b0a1a47013bdec2d4925cf47326330a9
+ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719712"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800847"
 ---
 # <a name="information-protection-policies"></a>Directivas de protección de la información
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 Cloud App Security las directivas de archivo permiten aplicar una amplia gama de procesos automatizados. Las directivas se pueden establecer para proporcionar protección de la información, incluidos los exámenes de cumplimiento continuos, las tareas legales de eDiscovery y DLP para el contenido confidencial compartido públicamente.
 
@@ -218,7 +218,7 @@ Debe tener una instancia de AWS conectada mediante los [conectores de aplicacion
 
 1. En la página **directivas** , cree una nueva **Directiva de archivo**.
 
-2. Seleccione y aplique la plantilla de directiva **cubos S3 de acceso público (AWS)** .
+2. Seleccione y aplique la plantilla de directiva **cubos S3 de acceso público (AWS)**.
 
 3. Establecer las acciones de **gobierno** que se realizarán en los archivos cuando se detecte una infracción. Las acciones de gobierno disponibles varían entre los servicios. Por ejemplo, establezca AWS para que **sea privado** , lo que haría que los cubos S3 fuera privados.
 
@@ -261,7 +261,7 @@ Impedir que los usuarios externos expongan los datos de la empresa, bloqueando l
 
 1. En la página **directivas** , cree una nueva **Directiva de sesión**.
 
-2. En **Tipo de control de sesión**, seleccione **Controlar la descarga de archivos (con DLP)** .
+2. En **tipo de control de sesión**, seleccione **controlar la descarga de archivos (con inspección)**.
 
 3. En **filtros de actividad**, **Seleccione usuario** y establézcalo en **de grupo** es igual a **usuarios externos**.
 
@@ -320,7 +320,7 @@ Evite que los usuarios carguen datos no protegidos en la nube mediante el uso de
 
 1. En la página **directivas** , cree una nueva **Directiva de sesión**.
 
-2. En **tipo de control de sesión**, seleccione **controlar la carga de archivos (con DLP)** o **controlar la descarga de archivos (con DLP)** .
+2. En **tipo de control de sesión**, seleccione **controlar la carga de archivos (con inspección)** o **controlar la descarga de archivos (con inspección)**.
 
    >[!NOTE]
    > No es necesario establecer ningún filtro para habilitar esta directiva para que se aplique a todos los usuarios y aplicaciones.

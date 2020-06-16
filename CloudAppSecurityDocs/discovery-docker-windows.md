@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e8a5863b0643ed99f5bd28f04b0634dc822602c7
-ms.sourcegitcommit: d159dbd8e1a35268468156eb9c5a5f218cdace4c
+ms.openlocfilehash: 99cdf5ec406287dd1458b75c8d5d76c2f027918b
+ms.sourcegitcommit: 223c9e4cefe6986537dcfbd697a236a3cee1768c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84274638"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84801191"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker en Windows local
 
@@ -44,7 +44,9 @@ Puede configurar la carga de registros automática para los informes continuos d
 * La virtualización en el sistema operativo debe estar habilitada con Hyper-V.
 
 > [!IMPORTANT]
-> Un usuario debe haber iniciado sesión en Docker para recopilar registros. Se recomienda avisar a los usuarios de Docker para que se desconecten sin cerrar sesión.
+>
+> * Un usuario debe haber iniciado sesión en Docker para recopilar registros. Se recomienda avisar a los usuarios de Docker para que se desconecten sin cerrar sesión.
+> * Docker para Windows no se admite oficialmente en escenarios de virtualización anidada. Si todavía tiene previsto usar la virtualización anidada, consulte [la guía oficial de Docker](https://docs.docker.com/docker-for-windows/troubleshoot/#running-docker-desktop-in-nested-virtualization-scenarios).
 
 > [!NOTE]
 > Si tiene un recopilador de registros existente y desea quitarlo antes de implementarlo de nuevo, o si simplemente desea quitarlo, ejecute los siguientes comandos:
