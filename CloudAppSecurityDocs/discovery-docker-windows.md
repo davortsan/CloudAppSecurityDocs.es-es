@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 99cdf5ec406287dd1458b75c8d5d76c2f027918b
-ms.sourcegitcommit: 223c9e4cefe6986537dcfbd697a236a3cee1768c
+ms.openlocfilehash: ce6525373c8cb9be6a1e70085f5f3bda3dbd11fa
+ms.sourcegitcommit: 1f8f19312ce70e62b6aa0b94db06af07f881fefa
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/16/2020
-ms.locfileid: "84801191"
+ms.locfileid: "84811271"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker en Windows local
 
@@ -29,9 +29,9 @@ Puede configurar la carga de registros automática para los informes continuos d
 ## <a name="prerequisites"></a>Requisitos previos
 
 * Sistema operativo:
-    * **Windows 10** (Fall Creators Update)
-    * Windows Server **versión 1709 +** (SAC)
-    * **Windows Server 2019 (LTSC)**
+  * **Windows 10** (Fall Creators Update)
+  * Windows Server **versión 1709 +** (SAC)
+  * **Windows Server 2019 (LTSC)**
 
 * Espacio en disco: 250 GB
 
@@ -46,6 +46,7 @@ Puede configurar la carga de registros automática para los informes continuos d
 > [!IMPORTANT]
 >
 > * Un usuario debe haber iniciado sesión en Docker para recopilar registros. Se recomienda avisar a los usuarios de Docker para que se desconecten sin cerrar sesión.
+> * Docker para Windows no se admite oficialmente en escenarios de virtualización de VMWare.
 > * Docker para Windows no se admite oficialmente en escenarios de virtualización anidada. Si todavía tiene previsto usar la virtualización anidada, consulte [la guía oficial de Docker](https://docs.docker.com/docker-for-windows/troubleshoot/#running-docker-desktop-in-nested-virtualization-scenarios).
 
 > [!NOTE]
