@@ -1,11 +1,11 @@
 ---
-title: Integración de Flow con Cloud App Security para obtener la automatización de alertas personalizadas
-description: En este artículo se proporciona información sobre cómo obtener la automatización de alertas personalizadas mediante la integración de Flow con Cloud App Security.
+title: Integre Microsoft Power Automate con Microsoft Cloud App Security para obtener una automatización de alertas personalizada
+description: En este artículo se proporciona información sobre cómo obtener una automatización de alertas personalizada mediante la integración de Microsoft Power Automate con Cloud App Security.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 6/18/2019
+ms.date: 04/27/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -13,57 +13,59 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 76115cb85be2f20f6d57f2e016d1a7d4548d05d1
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: f63e873d2b65781a3bca7209c020696bf2957171
+ms.sourcegitcommit: 4e2b905c8770d411df68372c29154d30b2cf195e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719994"
+ms.lasthandoff: 06/21/2020
+ms.locfileid: "85123266"
 ---
-# <a name="integrate-with-flow-for-custom-alert-automation"></a>Integración con Flow para la automatización de alertas personalizada
+# <a name="integrate-with-microsoft-power-automate-for-custom-alert-automation"></a>Integración con Microsoft Power Automate para la automatización de alertas personalizada
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
-Cloud App Security se integra con [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) para proporcionar cuadernos de estrategias de automatización y orquestación de alertas personalizadas. Mediante el uso del [ecosistema de conectores](https://docs.microsoft.com/connectors/) disponible en Microsoft Flow, puede automatizar la activación de cuadernos de estrategias cuando Cloud App Security genera alertas. Por ejemplo, crear automáticamente un problema en sistemas de vales mediante el [conector de ServiceNow](https://docs.microsoft.com/connectors/service-now/) o enviar un correo electrónico de aprobación para ejecutar una acción de control personalizado cuando se active una alerta en Cloud App Security.
+Cloud App Security se integra con [Microsoft Power Automate](https://docs.microsoft.com/flow/getting-started) para proporcionar una automatización de alertas personalizada y guías de orquestación. Con el [ecosistema de conectores](https://docs.microsoft.com/connectors/) disponible en Power Automatic, puede automatizar la activación de los cuadernos de estrategias cuando Cloud App Security genera alertas. Por ejemplo, crear automáticamente un problema en sistemas de vales mediante el [conector de ServiceNow](https://docs.microsoft.com/connectors/service-now/) o enviar un correo electrónico de aprobación para ejecutar una acción de control personalizado cuando se active una alerta en Cloud App Security.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- Debe tener un [plan de Microsoft Flow](https://flow.microsoft.com/pricing) válido
+- Debe tener un plan de [Microsoft Power automaticly](https://flow.microsoft.com/pricing) válido
 
-## <a name="how-it-works"></a>Cómo funciona
+## <a name="how-it-works"></a>Funcionamiento
 
-Por sí mismo, Cloud App Security proporciona opciones de control predefinidas como la suspensión de usuarios o hacer que los archivos sean privados al definir las directivas. Al crear un cuaderno de estrategias en Microsoft Flow mediante el conector de Cloud App Security, puede crear flujos de trabajo para habilitar las opciones de control personalizado para sus directivas. Después de crear el cuaderno de estrategias en Flow, solo tiene que asociarlo a una directiva de Cloud App Security para enviar alertas a Flow. Microsoft Flow ofrece varios conectores y condiciones para crear un flujo de trabajo personalizado para su organización.
+Por su cuenta, Cloud App Security proporciona opciones de gobierno predefinidas, como suspender a un usuario o hacer que un archivo sea privado al definir directivas. Mediante la creación de una guía en Power Automate mediante Cloud App Security Connector, puede crear flujos de trabajo para habilitar opciones de gobierno personalizadas para sus directivas. Una vez que se haya creado la guía en Power Automate, basta con asociarla a una directiva en Cloud App Security para enviar alertas a Power Automate. Microsoft Power Automate ofrece varios conectores y condiciones para crear un flujo de trabajo personalizado para su organización.
 
-El [conector Cloud App Security](https://docs.microsoft.com/connectors/cloudappsecurity/) de Flow admite activaciones y acciones automatizadas. Flow se activa automáticamente cuando Cloud App Security genera una alerta. Una de las posibles acciones es cambiar el estado de alerta en Cloud App Security.
+El [conector de Cloud App Security](https://docs.microsoft.com/connectors/cloudappsecurity/) de Power Automatic es compatible con los desencadenadores y las acciones automatizadas. Power Automatic se desencadena automáticamente cuando Cloud App Security genera una alerta. Una de las posibles acciones es cambiar el estado de alerta en Cloud App Security.
 
-## <a name="how-to-create-playbooks-with-microsoft-flow"></a>Cómo crear cuadernos de estrategias con Microsoft Flow
+## <a name="how-to-create-playbooks-with-power-automate"></a>Creación de guías con Power Automatic
 
 1. [Crear un token de API](api-tokens.md) en Cloud App Security.
 
-2. Vaya al [portal de Microsoft Flow](https://flow.microsoft.com) y elija [ **Crear un nuevo flujo desde cero**](https://docs.microsoft.com/flow/get-started-logic-flow).
+2. Vaya al [portal de Power Automate](https://flow.microsoft.com), seleccione **Mis flujos**, seleccione **nuevo**y, en la lista desplegable, seleccione **automatizado-desde**cero.
 
-3. En Activadores y conectores de búsqueda, escriba **Cloud App Security** y seleccione **Cuando se genera una alerta**.
+    ![Power Automate crear nuevo flujo](media/flow-create-new.png)
 
-    ![Flujo al generarse una alerta](media/flow-when-alert.png)
+3. Proporcione un nombre para el flujo y, en **elegir el desencadenador de su flujo**, escriba **Cloud App Security** y seleccione **cuando se genere una alerta**.
+
+    ![Energía automatizada cuando se genera una alerta](media/flow-when-alert.png)
 
 4. En **Configuración de autenticación**, pegue el token de API del paso 1.
 
 5. Defina el flujo de trabajo que debe activarse cuando una directiva de Cloud App Security genera una alerta. Puede agregar una acción o una condición lógica, cambiar las condiciones o los bucles y guardar el cuaderno de estrategias.
 
-    ![Flujo de trabajo de Flow](media/flow-workflow.png)
+    ![Flujo de trabajo de automatización de energía](media/flow-workflow.png)
 
-6. En el portal de Cloud App Security, vaya a **Directivas** y, en la fila de la directiva cuyas alertas quiera reenviar a Flow, haga clic en los puntos suspensivos y seleccione **Configuración**.
-7. En **Alertas**, seleccione **Enviar alertas a Flow** y elija el nombre del cuaderno de estrategias en el menú desplegable.
+6. En el portal de Cloud App Security, vaya a **directivas** y, en la fila de la Directiva cuyas alertas desea reenviar a Power Automatic, haga clic en los tres puntos y seleccione **configuración**.
+7. En **alertas**, seleccione **enviar alertas a Power Automatic** y elija el nombre de la guía en el menú desplegable.
 
-    ![Habilitar Flow en el portal de Cloud App Security](media/flow-mcas-config.png)
+    ![Habilitación de Power Automatic en Cloud App Security portal](media/flow-mcas-config.png)
 
-8. Los cuadernos de estrategias que ha creado o que se les ha concedido acceso pueden verse en la pantalla **Extensiones de seguridad**.
+8. En la pantalla **extensiones de seguridad** se pueden consultar Cloud App Security guías a las que ha creado o a las que se le concede acceso.
 
     ![ver cuadernos de estrategias en Cloud App Security](media/flow-extensions.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
+> [Control de aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
