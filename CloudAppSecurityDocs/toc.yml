@@ -268,7 +268,7 @@
               href: api-tokens.md
             - name: Investigación de actividades con las API
               href: investigate-activities-api.md
-            - name: "Uso de Microsoft\_Flow"
+            - name: "Uso de Microsoft\_Power Automate"
               href: flow-integration.md
 - name: Referencia
   items:
