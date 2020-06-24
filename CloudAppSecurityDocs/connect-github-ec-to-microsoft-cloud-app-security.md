@@ -15,22 +15,22 @@ ROBOTS: NOINDEX
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 97e15ea3a12588bf6b6af7f06381f868c9c15a8e
-ms.sourcegitcommit: 796a99e91a8681a60b4449a474bb80089dd3df0d
+ms.openlocfilehash: 3941ea5141049f23ed8a187df5c29192883203c8
+ms.sourcegitcommit: 0e8065703810347c86567d636293bf6d41df1a84
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84327839"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85256116"
 ---
-# <a name="connect-github-enterprise-cloud-to-microsoft-cloud-app-security"></a>Conectar GitHub Enterprise Cloud a Microsoft Cloud App Security
+# <a name="connect-github-enterprise-cloud-to-microsoft-cloud-app-security-preview"></a>Conexión de GitHub Enterprise Cloud a Microsoft Cloud App Security (versión preliminar)
 
 *Se aplica a: Microsoft Cloud App Security*
 
 El conector de GitHub Enterprise Cloud API se encuentra actualmente en versión preliminar privada y se implementa gradualmente. Esta versión preliminar se proporciona sin un contrato de nivel de servicio y no se recomienda para las cargas de trabajo de producción. Es posible que algunas características no sean compatibles o que tengan sus funcionalidades limitadas. Para más información, consulte [Términos de uso complementarios de las Versiones Preliminares de Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
-En este artículo se proporcionan instrucciones para conectar Microsoft Cloud App Security a la organización en la nube de GitHub Enterprise existente mediante las API del conector de aplicaciones. Esta conexión le proporciona visibilidad y control sobre el uso de GitHub Enterprise Cloud de su organización.<!-- For more information about how Cloud App Security protects GitHub Enterprise Cloud, see **//TODO:: ???**.-->
+En este artículo se proporcionan instrucciones para conectar Microsoft Cloud App Security a la organización en la nube de GitHub Enterprise existente mediante las API del conector de aplicaciones. Esta conexión le proporciona visibilidad y control sobre el uso de GitHub Enterprise Cloud de su organización. Para obtener más información sobre cómo Cloud App Security protege GitHub Enterprise Cloud, consulte [protección de github Enterprise](protect-github.md).
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 - Su organización debe tener una licencia de GitHub Enterprise Cloud.
 - La cuenta de GitHub usada para conectarse a Cloud App Security debe tener permisos de *propietario* para su organización.
@@ -60,7 +60,7 @@ En GitHub, vaya a la página de su organización y, en la dirección URL, anote 
 
     ![Captura de pantalla que muestra obtener el nombre de inicio de sesión](media/connect-github-org-login-name.png)
 
-1. **Cree una aplicación de OAuth dentro de su organización.**  
+1. **Cree una aplicación de OAuth para Cloud App Security para conectar su organización de GitHub.**  
 Repita este paso para cada organización conectada adicional.
 
     1. Vaya a **configuración**  >  **configuración del desarrollador**, seleccione **aplicaciones de OAuth**y, a continuación, haga clic en **registrar una aplicación**. Como alternativa, si tiene aplicaciones de OAuth existentes, haga clic en **nueva aplicación de OAuth**.
@@ -68,7 +68,7 @@ Repita este paso para cada organización conectada adicional.
         ![Captura de pantalla que muestra la creación de una aplicación de OAuth](media/connect-github-create-oauth-app.png)
 
     1. Rellene los detalles del **registro de una nueva aplicación de OAuth** y haga clic en **registrar aplicación**.
-        - En el cuadro Nombre de la **aplicación** , escriba el nombre de la aplicación.
+        - En el cuadro Nombre de la **aplicación** , escriba un nombre para la aplicación.
         - En el cuadro **dirección URL de la Página principal** , escriba la dirección URL de la Página principal de la aplicación.
         - En el cuadro **dirección URL de devolución de llamada de autorización** , escriba el siguiente valor: `https://portal.cloudappsecurity.com/api/oauth/connect` .
 
