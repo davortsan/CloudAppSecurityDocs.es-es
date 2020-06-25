@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/16/2020
+ms.date: 06/24/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 353cff79b3e76c3f63380194ea055a92f13c0ce8
-ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
+ms.openlocfilehash: 120c34fda9080a921b7a2a4cbcdb0563dd5b0777
+ms.sourcegitcommit: 33e4a3eae5852fb24531aee9e880a4c0c0520820
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800782"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85311888"
 ---
 # <a name="microsoft-data-classification-services-integration"></a>Integración de los servicios de clasificación de datos de Microsoft
 
@@ -44,7 +44,7 @@ Tiene la opción para establecer el **método de inspección** para que use el *
 
 4. Puede usar los [tipos de información confidencial predeterminados](https://support.office.com/article/what-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b) para definir lo que ocurre con los archivos protegidos por Microsoft Cloud App Security. También puede reutilizar cualquiera de los [tipos personalizados de información confidencial de Office 365](https://support.office.com/article/create-a-custom-sensitive-information-type-82c382a5-b6db-44fd-995d-b333b3c7fc30).
     > [!NOTE]
-    > Puede configurar la Directiva para usar tipos de clasificación avanzados como huellas digitales y correspondencia exacta de datos.
+    > Puede configurar la Directiva para usar tipos de clasificación avanzados como [huellas digitales](/microsoft-365/compliance/document-fingerprinting?view=o365-worldwide), [coincidencia de datos exacta](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)y [clasificadores](/microsoft-365/compliance/classifier-getting-started-with)que se pueden entrenar.
 
 5. Si lo desea, puede mostrar los cuatro últimos caracteres de una coincidencia. De manera predeterminada, las coincidencias se enmascaran y se muestran en su contexto, e incluyen los 40 caracteres antes y después de la coincidencia. Si activa esta casilla, se mostrarán los cuatro últimos caracteres de la propia coincidencia.
 
