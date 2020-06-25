@@ -4,19 +4,19 @@ description: Este artículo se actualiza con frecuencia para informarle de las n
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 05/17/2020
+ms.date: 06/16/2020
 ms.topic: overview
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 09c2f8ca89a53372f9d40190c430fd4be1615612
-ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
+ms.openlocfilehash: 2ec05e43341dbabb6c01219c150599d2245840b9
+ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84250716"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800867"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
@@ -25,6 +25,35 @@ ms.locfileid: "84250716"
 Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security.
 
 Fuente RSS: reciba notificaciones cuando esta página se actualice copiando y pegando la siguiente dirección URL en su lector de fuentes: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-177"></a>Notas de la versión 177 de Cloud App Security
+
+Fecha de publicación: 14 de junio de 2020
+
+- **Nueva detección de malware en tiempo real (versión preliminar, lanzamiento gradual)**  
+Se han expandido los controles de sesión para detectar malware potencial con la inteligencia sobre amenazas de Microsoft al cargar o descargar archivos. La nueva detección ya está disponible de serie y se puede configurar para que bloquee automáticamente los archivos identificados como posible malware. Para obtener más información, vea [Bloquear malware al cargar](session-policy-aad.md#block-malware-on-upload).
+
+- **Nueva compatibilidad de los tokens de acceso con los controles de acceso y de sesión**  
+Se ha agregado la posibilidad de tratar las solicitudes de tokens de acceso y código como inicios de sesión al incorporar aplicaciones a los controles de acceso y de sesión. Para usar tokens, haga clic en el icono de engranaje de configuración, seleccione **Control de aplicaciones de acceso condicional**, edite la aplicación correspondiente (menú de tres puntos > **Editar aplicación**), seleccione **Tratar solicitudes de código y tokens de acceso como inicios de sesión de la aplicación** y haga clic en **Guardar**. Para obtener más información sobre la incorporación de aplicaciones, vea [Incorporación e implementación para cualquier aplicación](proxy-deployment-any-app.md) e [Implementación para aplicaciones destacadas](proxy-deployment-aad.md).
+
+<!--
+- **New OAuth app policy templates**  
+Cloud App Security now provides the following new OAuth app policy templates enabling you to detect potentially malicious apps:
+
+  - **OAuth apps authorized by external users**: Alert when an app was authorized by an external user.
+  - **OAuth apps with high permissions and rare community use – Google**: Alert for apps with high permissions and rare community use in Google.
+  - **OAuth apps with high permissions and rare community use – Office**: Alert for apps with high permissions and rare community use in Office
+  - **OAuth apps with rare community use - Salesforce**: Alert for apps with rare community use in Salesforce.
+-->
+
+- **Sufijo URL de proxy mejorado para controles de sesión (lanzamiento gradual)**  
+El 7 de junio de 2020 se ha iniciado el lanzamiento gradual de los controles de sesión de proxy mejorados para usar un sufijo unificado que no incluye regiones con nombre. Por ejemplo, los usuarios verán el sufijo `<AppName>.mcas.ms` en lugar de `<AppName>.<Region>.cas.ms`. Si, por rutina, crea listas negras de dominios en las puertas de enlace o los dispositivos de red, asegúrese de crear una lista blanca de todos los dominios enumerados en [Controles de acceso y sesión](network-requirements.md#access-and-session-controls).
+
+- **Nueva documentación**  
+La documentación de Cloud App Security se ha ampliado para incluir el siguiente contenido nuevo:
+
+  - **[Uso de las API de REST de Cloud App Security](api-introduction.md)** : obtenga información sobre las capacidades de API e inicie la integración de las aplicaciones con Cloud App Security.
+  - **[Investigación de alertas de detección de anomalías](investigate-anomaly-alerts.md)** : familiarícese con las alertas de UEBA disponibles, lo que significan, identifique el riesgo que suponen, comprenda el ámbito de una infracción y la acción que puede llevar a cabo para remediar la situación.
 
 ## <a name="cloud-app-security-release-176"></a>Notas de la versión 176 de Cloud App Security
 
@@ -39,7 +68,7 @@ Se recurre a la integración nativa con Azure AD para ofrecer la posibilidad de
 - **Nueva opción de comentarios disponible en las directivas seleccionadas**  
 Nos interesa recibir sus comentarios para saber cómo podemos ayudarle. Por ello, ahora un nuevo cuadro de diálogo de comentarios le ofrece la oportunidad de mejorar Cloud App Security, al crear, modificar o eliminar un archivo, una detección de anomalías o una directiva de sesión.
 
-- **Proxy de sufijo mejorado para controles de sesión (implementación gradual)**  
+- **Sufijo URL de proxy mejorado para controles de sesión (lanzamiento gradual)**  
 A partir del 7 de junio de 2020, se implementarán gradualmente los controles de sesión de proxy mejorado para usar un sufijo unificado que no incluye regiones con nombre. Por ejemplo, los usuarios verán el sufijo `<AppName>.mcas.ms` en lugar de `<AppName>.<Region>.cas.ms`. Si, por rutina, crea listas negras de dominios en las puertas de enlace o los dispositivos de red, asegúrese de crear una lista blanca de todos los dominios enumerados en [Controles de acceso y sesión](network-requirements.md#access-and-session-controls).
 
 - **Mejoras de rendimiento de los controles de sesión (implementación gradual)**  
@@ -93,7 +122,7 @@ Hemos ampliado y simplificado el proceso de desanonimizar uno o varios usuarios 
 
 Fecha de publicación: 22 de marzo de 2020
 
-- **Nueva detección de anomalías: Región inusual para el recurso de nube (versión preliminar)**  
+- **Nueva detección de anomalías: Región inusual de recurso de nube (versión preliminar)**  
 Hemos ampliado nuestra funcionalidad actual para detectar un comportamiento anómalo para AWS. La nueva detección ahora está disponible de manera predeterminada y se habilita automáticamente para alertarle cuando se crea un recurso en una región de AWS en la que la actividad no se realiza normalmente. A menudo, los atacantes aprovechan los créditos de AWS de una organización para realizar actividades malintencionadas, como la minería de datos criptográficos. La detección de este comportamiento anómalo puede ayudar a mitigar un ataque.
 
 - **Nuevas plantillas de directiva de actividad para Microsoft Teams**  
@@ -201,7 +230,7 @@ Hemos puesto en marcha la capacidad de los administradores de personalizar la p�
 
 - **Nuevas detecciones**  
 
-  - **Cambios en el servicio de registro sospechoso de AWS (versión preliminar)** : Le avisa cuando un usuario realiza cambios en el servicio de registro de CloudTrail. Por ejemplo, los atacantes suelen desactivar la auditoría en CloudTrail para ocultar las huellas de su ataque.
+  - **Cambios sospechosos en el servicio de registro de AWS (versión preliminar)** : Le avisa cuando un usuario realiza cambios en el servicio de registro de CloudTrail. Por ejemplo, los atacantes suelen desactivar la auditoría en CloudTrail para ocultar las huellas de su ataque.
 
   - **Varias actividades de creación de máquinas virtuales**: Le avisa cuando un usuario realiza un número inusual de actividades de creación de máquinas virtuales, en comparación con la línea de base aprendida. Ahora se aplica a AWS.
 
@@ -215,7 +244,7 @@ Cloud Discovery de Cloud App Security analiza una amplia gama de registros de tr
 - **Nuevas detecciones**  
 Las siguientes nuevas directivas de detección de anomalías vienen integradas y habilitadas automáticamente:
 
-  - **Actividad de eliminación de correos electrónicos sospechosos (versión preliminar)**  
+  - **Actividad sospechosa de eliminación de correos electrónicos (versión preliminar)**  
     Le avisa cuando un usuario realiza actividades inusuales de eliminación de correos electrónicos. Esta directiva puede ayudarlo a detectar los buzones de usuario que pueden estar en peligro por posibles vectores de ataque, como la comunicación de comando y control (C&C/C2) por correo electrónico.
 
   - **Varias actividades de uso compartido de informes de Power BI (versión preliminar)**  
@@ -244,7 +273,7 @@ Publicada el 1 de septiembre de 2019
 - **Aviso: Fin de la compatibilidad con TLS 1.0 y 1.1 el 8 de septiembre**  
 Microsoft está moviendo todos sus servicios en línea a la Seguridad de la capa de transporte (TLS) 1.2+ para proporcionar el mejor cifrado de la clase. Por lo tanto, a partir del 8 de septiembre de 2019 Cloud App Security dejará de ser compatible con TLS 1.0 y 1.1, y no se admitirán las conexiones que usen estos protocolos. Para más información sobre cómo le afecta el cambio, consulte [nuestra entrada de blog](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/End-of-support-for-TLS-1-0-and-1-1-in-Microsoft-Cloud-App/ba-p/770507).
 
-- **Nueva detección: Uso compartido sospechoso en Microsoft Power BI (versión preliminar)**  
+- **Nueva detección: Uso compartido sospechoso de Microsoft Power BI (versión preliminar)**  
 La nueva directiva del informe de uso compartido sospechoso de Power BI está disponible de forma predeterminada y se habilita automáticamente para enviarle un aviso cuando un informe de Power BI que parezca confidencial se comparta de forma sospechosa fuera de su organización.
 
 - **Nueva característica de exportación para la auditoría de aplicaciones de OAuth**  

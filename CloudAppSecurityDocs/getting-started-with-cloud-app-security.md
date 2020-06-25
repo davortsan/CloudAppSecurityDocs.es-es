@@ -4,19 +4,19 @@ description: En este inicio rápido se describe el proceso de empezar a trabajar
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/23/2019
+ms.date: 06/07/2020
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0b9f026c9509153cca5c51024616662983550ef7
-ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
+ms.openlocfilehash: 0ba3ba9d063e35c0dc95def25c2c69d351e24f22
+ms.sourcegitcommit: 3f0693bf32fef5b4819c51ca7eeaee751eb03df6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "74720678"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84611212"
 ---
 # <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Inicio rápido: Introducción a Microsoft Cloud App Security
 
@@ -27,7 +27,7 @@ En este inicio rápido se proporcionan los pasos necesarios para empezar a traba
 Su organización debe tener una licencia para usar Cloud App Security. Para obtener más información sobre precios, vea la [Hoja de datos de licencias de Cloud App Security](https://aka.ms/mcaslicensing).
 
 >[!NOTE]
->No necesita una licencia de Office 365 para usar Cloud App Security.
+>Cloud App Security no requiere ninguna licencia de Office 365.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -42,9 +42,9 @@ Su organización debe tener una licencia para usar Cloud App Security. Para obte
 
 ## <a name="to-access-the-portal"></a>Acceso al portal
 
-Para acceder al portal de Cloud App Security, vaya a [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com). También puede acceder al portal a través del **Centro de administración de Microsoft 365**, como se indica a continuación:
+Para acceder al portal de Cloud App Security, vaya a [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com). También puede acceder al portal a través del **[Centro de administración de Microsoft 365](https://security.microsoft.com)** , como se indica a continuación:
 
-1. En el Centro de administración de Microsoft 365, haga clic en el icono **Iniciador de aplicaciones**![icono del iniciador de aplicaciones de Office 365](media/o365-admin-centers-icon.png) y seleccione **Seguridad**.
+1. En el Centro de administración de Microsoft 365, en el menú lateral, haga clic en **Mostrar todo** y seleccione **Seguridad**.
 
     ![Acceso desde Office 365](media/access-from-o365.png)
 
@@ -129,7 +129,7 @@ Ahora, las puntuaciones de riesgo asignadas a las aplicaciones detectadas se con
 ### <a name="why-personalize-your-environment"></a>¿Por qué personalizar el entorno?
 
 Algunas características funcionan mejor si se personalizan según sus necesidades.
-Ofrezca una mejor experiencia a los usuarios con sus propias plantillas de correo electrónico. Decida qué notificaciones recibe y personalice la métrica de puntuación de riesgo para ajustarse a las preferencias de su organización.
+Ofrezca una mejor experiencia a los usuarios con sus propias plantillas de correo electrónico. Decida qué notificaciones recibe y personalice la métrica de puntuación de riesgo para ajustarse a las preferencias de la organización.
 
 ## <a name="step-5-organize-the-data-according-to-your-needs"></a>Paso 5. [Organización de los datos según las necesidades](ip-tags.md)
 

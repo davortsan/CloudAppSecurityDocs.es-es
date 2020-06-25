@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 57fac7776efbb617a382a30f6bf68ac2578ad0a6
-ms.sourcegitcommit: e1a0d6a7d639a6d268b0104eb3e5532d2692288b
+ms.openlocfilehash: d8208d654774aefd776da4ba1b3b1cbfda4caae7
+ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "83551296"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800714"
 ---
 # <a name="tutorial-block-download-of-sensitive-information"></a>Tutorial: Bloqueo de la descarga de información confidencial
 
@@ -74,7 +74,7 @@ Después de completar esta tarea, vaya al portal de Cloud App Security y cree un
 
 4. Asigne una **gravedad de directiva** y una **categoría**.
 
-5. En **Tipo de control de sesión**, seleccione **Controlar la descarga de archivos (con DLP)** . Esta configuración le permite supervisar todo lo que hacen los usuarios en una sesión de Salesforce y le ofrece control para bloquear y proteger las descargas en tiempo real.
+5. En **Tipo de control de sesión**, seleccione **Controlar la descarga de archivos (con inspección)** . Esta configuración le permite supervisar todo lo que hacen los usuarios en una sesión de Salesforce y le ofrece control para bloquear y proteger las descargas en tiempo real.
 
 6. En **Origen de actividad** en la sección **Actividades que coinciden con todo lo siguiente**, seleccione los filtros:
 
