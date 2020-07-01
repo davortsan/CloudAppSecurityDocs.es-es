@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5af7efa448e7d93902e9d8845dd97479b7c53df7
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 13e1260fd86a4b252e56e43917fdd84fc67ebc01
+ms.sourcegitcommit: 7811a0d33e1756782222f20df02acae2f3ea4afe
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624396"
+ms.locfileid: "85795794"
 ---
 # <a name="azure-active-directory-identity-protection-integration"></a>Integración de Azure Active Directory Identity Protection
 
@@ -73,10 +73,6 @@ Están disponibles las siguientes directivas:
 |---|---|---|---|
 |Filtración de credenciales|Muestra las alertas de credenciales perdidas, las credenciales válidas del usuario se han perdido|habilitado|Bajo: recibir todas las alertas|
 |Inicio de sesión peligroso|Agrega varias detecciones de inicio de sesión de riesgo, inicios de sesión no realizadas por el usuario|habilitado|Alta: recepción de alertas de gravedad alta|
-
-## <a name="remediating-risky-users"></a>Corrección de usuarios de riesgo
-
-Las directivas de Identity Protection se pueden usar para corregir automáticamente los usuarios de riesgo estableciendo el nivel de riesgo del usuario en alto. Una vez que un usuario está establecido en alto, el algoritmo de análisis de riesgos de usuario avanzado tiene en cuenta el nuevo estado del usuario, así como el estado de *Administración del dispositivo* . Esto hace que se apliquen las acciones de directiva relevantes definidas en Azure AD, como restablecer la contraseña del usuario, requerir la autenticación MFA o forzar al usuario a usar un dispositivo administrado. Para obtener más información, consulte [Azure ad ¿cómo usan los comentarios de riesgo](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-risk-feedback#how-does-azure-ad-use-my-risk-feedback) y [las acciones de gobierno](accounts.md#governance-actions)?
 
 ## <a name="next-steps"></a>Pasos siguientes
 
