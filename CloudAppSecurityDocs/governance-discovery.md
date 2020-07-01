@@ -1,5 +1,5 @@
 ---
-title: 'Bloqueo de aplicaciones detectadas: Cloud App Security | Microsoft Docs'
+title: 'Bloqueo de aplicaciones detectadas: Cloud App Security'
 description: En este artículo se describe el procedimiento para exportar scripts de bloqueo para aplicaciones detectadas.
 keywords: ''
 author: shsagir
@@ -14,14 +14,14 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a8cd5232ceaa08ed6d4446edf025cffe06787dfd
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: 1c0df9e769608b2ca66de5b7a8889bfd648795a9
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81241265"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624578"
 ---
-# <a name="govern-discovered-apps"></a>Controlar las aplicaciones detectadas
+# <a name="govern-discovered-apps"></a>Control de aplicaciones detectadas
 
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -50,7 +50,7 @@ Cloud App Security permite bloquear el acceso a aplicaciones no autorizadas con 
 
 2. En la barra de título, haga clic en los tres puntos y seleccione **Generar script de bloque...**.
 
-    ![Generar script de bloque](media/generate-block-script.png)
+    ![Generación de scripts de bloques](media/generate-block-script.png)
 
 3. En **Generar script de bloque**, seleccione la aplicación para la que quiere generar el script de bloque.
 

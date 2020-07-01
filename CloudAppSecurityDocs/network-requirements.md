@@ -1,5 +1,5 @@
 ---
-title: 'Requisitos de red: Cloud App Security | Microsoft Docs'
+title: 'Requisitos de red: Cloud App Security'
 description: En este artículo se describen las direcciones IP y los puertos que debe abrir para trabajar con Cloud App Security.
 keywords: ''
 author: shsagir
@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 780e208fc781b413b424c8809de6e1f50611ec92
-ms.sourcegitcommit: 165225f48f89dc438110f463587722c251402ef8
+ms.openlocfilehash: 047f922f7040e06d740d8d75e37dd54774b5acb7
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2020
-ms.locfileid: "84482105"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624954"
 ---
 # <a name="network-requirements"></a>Requisitos de red
 
@@ -191,7 +191,7 @@ Para habilitar características de Cloud Discovery por medio de un recopilador d
 - Permita que el recopilador de registros inicie tráfico saliente al portal (por ejemplo, contoso.cloudappsecurity.com) en el puerto 443.
 - Permita que el recopilador de registros inicie tráfico saliente a Azure Blog Storage en el puerto 443:
 
-  | Centro de datos |                        Dirección URL                                 |
+  | Centro de datos |                        URL                                 |
   |-------------|------------------------------------------------------------|
   |     Estados Unidos 1     | https: \/ /adaprodconsole.BLOB.Core.Windows.net/             |
   |     US2     | https: \/ /prod03use2console1.BLOB.Core.Windows.net/         |

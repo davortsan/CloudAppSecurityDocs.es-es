@@ -1,5 +1,5 @@
 ---
-title: Lea nuestros libros electrónicos Cloud App Security | Microsoft Docs
+title: Lea nuestros libros electrónicos Cloud App Security
 description: Muestra una lista de libros electrónicos, incluida una descripción.
 author: shsagir
 ms.author: shsagir
@@ -7,16 +7,16 @@ ms.service: cloud-app-security
 ms.topic: conceptual
 ms.date: 8/22/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 91a262f81dbcb49c81df869c869cd81d2ada9766
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 46ba4c9952b1a25912c8071e0fad34e1160ea6f8
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719984"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624531"
 ---
 # <a name="microsoft-cloud-app-security-e-books"></a>Microsoft Cloud App Security libros electrónicos
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 Lea nuestros libros electrónicos para obtener información sobre Microsoft Cloud App Security, sus casos de uso clave y procedimientos recomendados de implementación para ayudarle a proteger mejor sus entornos de nube.
 

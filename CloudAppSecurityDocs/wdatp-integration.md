@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/24/2019
+ms.date: 06/29/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0b2106faed750a2eba06ae505a6d7d9cf17ca1be
-ms.sourcegitcommit: f8d170b0da8e8d7f723ddc9e845595f64dc79a02
+ms.openlocfilehash: 3c0bb1f5a3ff0241067d23bd455865d40c29c652
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85323771"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624797"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Integración de protección contra amenazas avanzada de Microsoft defender con Microsoft Cloud App Security
 
@@ -54,6 +54,8 @@ Por su cuenta, Cloud App Security recopila registros de los puntos de conexión 
 
 Para que pueda realizar Cloud Discovery en otras plataformas, es mejor usar el compilador de [registros](discovery-docker.md)de Cloud App Security, junto con la integración de ATP de Microsoft defender para supervisar sus máquinas con Windows 10.
 
+[Vea nuestros vídeos](#related-videos) en los que se muestran las ventajas de usar ATP de Microsoft Defender con Cloud App Security.
+
 ## <a name="how-to-integrate-microsoft-defender-atp-with-cloud-app-security"></a>Cómo integrar ATP de Microsoft defender con Cloud App Security
 
 Para habilitar la integración de Microsoft defender ATP con Cloud App Security:
@@ -80,11 +82,12 @@ Después de integrar ATP de Microsoft defender con Cloud App Security, puede inv
 4. Haga clic en la pestaña **Máquinas**.
 5. Puede explorar en profundidad cada equipo que se muestra y usar las pestañas para ver los datos de la investigación. Busque correlaciones entre los equipos, los usuarios, las direcciones IP y las aplicaciones que estuvieron implicados en incidentes:
 
-    - **Información general**
-        - Transacciones: información sobre el número de transacciones que tuvieron lugar en el equipo durante el período de tiempo seleccionado.
-        - Tráfico total: información acerca de la cantidad total de tráfico (en MB) durante el período de tiempo seleccionado.
+    - **Introducción**
+        - **Nivel de riesgo del equipo**: muestra el riesgo de que el perfil del equipo sea relativo a otras máquinas de la organización, tal y como indica la gravedad (alta, media, baja e informativa). Cloud App Security usa perfiles de equipo de ATP de Microsoft defender para cada equipo basado en análisis avanzado. La actividad que es anómala en la línea de base de un equipo se evalúa y determina el nivel de riesgo de la máquina. Use el nivel de riesgo del equipo para determinar qué máquinas se deben investigar en primer lugar.
+        - **Transacciones**: información sobre el número de transacciones que tuvieron lugar en el equipo durante el período de tiempo seleccionado.
+        - **Tráfico total**: información acerca de la cantidad total de tráfico (en MB) durante el período de tiempo seleccionado.
         - Cargas: información acerca de la cantidad total de tráfico (en MB) que carga el equipo durante el período de tiempo seleccionado.
-        - Descargas: información acerca de la cantidad total de tráfico (en MB) que descarga el equipo durante el período de tiempo seleccionado.
+        - **Descargas**: información acerca de la cantidad total de tráfico (en MB) que descarga el equipo durante el período de tiempo seleccionado.
     - **Aplicaciones detectadas**  
   Enumera todas las aplicaciones detectadas a las que tuvo acceso la máquina.
     - **Historial de usuarios**  
@@ -141,9 +144,12 @@ A veces, no se bloquea el acceso a una aplicación no autorizada, ya sea porque 
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Control de aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
+> [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
 
 ## <a name="related-videos"></a>Vídeos relacionados
+
+> [!div class="nextstepaction"]
+> [Detección y bloqueo de la sombra mediante ATP de Microsoft defender](https://www.youtube.com/watch?v=MsHkTOoqSQo)
 
 > [!div class="nextstepaction"]
 > [Detección de shadow IT más allá de la red corporativa](https://www.youtube.com/watch?v=f8hbvbY1Hnc)

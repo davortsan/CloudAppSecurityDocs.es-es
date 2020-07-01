@@ -1,11 +1,11 @@
 ---
-title: 'Conexión de aplicaciones para obtener visibilidad y control: Cloud App Security | Microsoft Docs'
+title: Conectar aplicaciones para obtener visibilidad y control Cloud App Security
 description: En este artículo se describe el proceso para conectar aplicaciones con las aplicaciones en la nube de la organización mediante conectores de API.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 05/24/2020
+ms.date: 06/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5c12226c36cba270ad5b54ffdb76cb8b228c2480
-ms.sourcegitcommit: 7b6124e5ecb3fa8fc1176d89e06b052f2a53a310
+ms.openlocfilehash: 5c48fff030c1f008d9361796eafe4ba49b8b0b82
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83854235"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624552"
 ---
 # <a name="connect-apps"></a>Conectar aplicaciones
 
@@ -73,17 +73,17 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
 | **Lista de privilegios** | | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | No es compatible con el proveedor | ✔ | ✔ | ✔ | No es compatible con el proveedor |
 | **Regulación de usuario** | | ✔ | Próximamente | Conexión de asunto G Suite | ✔ | ✔ | | Próximamente | ✔ | Próximamente | No es compatible con el proveedor |
 | **Actividad de inicio de sesión** | ✔ | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **Actividad de usuario** | No aplicable | ✔ | ✔ | ✔ | ✔ - requiere Google Business o Enterprise | ✔ | ✔ | Parcial | Compatible con Salesforce Shield | ✔ | ✔ |
+| **Actividad de usuario** | No disponible | ✔ | ✔ | ✔ | ✔ - requiere Google Business o Enterprise | ✔ | ✔ | Parcial | Compatible con Salesforce Shield | ✔ | ✔ |
 | **Actividad administrativa** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Parcial | ✔ | ✔ | No es compatible con el proveedor |
-| **DLP: examen periódico** | | ✔ | Próximamente | No aplicable | ✔ | ✔ | No aplicable | | | | No es compatible con el proveedor |
-| **Análisis en tiempo real de DLP-Near** | | ✔ | ✔ | No aplicable | ✔: requiere Google Business Enterprise | ✔ | No aplicable | ✔ | ✔ | ✔ | No es compatible con el proveedor |
-| **Control de uso compartido** | ✔ | ✔ | ✔ | No aplicable | ✔ | ✔ | No aplicable | No aplicable | | ✔ | No es compatible con el proveedor |
-| **Regulación de archivos** | ✔ | ✔ | ✔ | No aplicable | ✔ | ✔ | No aplicable | | ✔ | | No es compatible con el proveedor |
-| **Ver permisos de aplicación** | No aplicable | No es compatible con el proveedor | Próximamente | No aplicable | ✔ | ✔ | No aplicable | | ✔ | No aplicable | No aplicable |
-| **Revocar permisos de aplicación** | No aplicable | No es compatible con el proveedor | en breve | No aplicable | ✔ | ✔ | No aplicable | | ✔ | No aplicable | No aplicable |
-| **Aplicación de etiquetas de Azure Information Protection** | No aplicable | ✔ | | No aplicable | ✔ | ✔ | No aplicable | | | No aplicable | No aplicable |
+| **DLP: examen periódico** | | ✔ | Próximamente | No disponible | ✔ | ✔ | No disponible | | | | No es compatible con el proveedor |
+| **Análisis en tiempo real de DLP-Near** | | ✔ | ✔ | No disponible | ✔: requiere Google Business Enterprise | ✔ | No disponible | ✔ | ✔ | ✔ | No es compatible con el proveedor |
+| **Control de uso compartido** | ✔ | ✔ | ✔ | No disponible | ✔ | ✔ | No aplicable | No aplicable | | ✔ | No es compatible con el proveedor |
+| **Regulación de archivos** | ✔ | ✔ | ✔ | No disponible | ✔ | ✔ | No disponible | | ✔ | | No es compatible con el proveedor |
+| **Ver permisos de aplicación** | No disponible | No es compatible con el proveedor | Próximamente | No disponible | ✔ | ✔ | No disponible | | ✔ | No aplicable | No aplicable |
+| **Revocar permisos de aplicación** | No disponible | No es compatible con el proveedor | en breve | No disponible | ✔ | ✔ | No disponible | | ✔ | No aplicable | No aplicable |
+| **Aplicación de etiquetas de Azure Information Protection** | No disponible | ✔ | | No disponible | ✔ | ✔ | No aplicable | | | No aplicable | No aplicable |
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 - En el caso de algunas aplicaciones, puede que sea necesario agregar las direcciones IP a la lista blanca para habilitar Cloud App Security de modo que recopile registros y proporcione acceso a la consola de Cloud App Security. Para obtener más información, consulte [requisitos de red](network-requirements.md).
 
@@ -100,6 +100,7 @@ Para usar los conectores de aplicaciones, debe asegurarse de que tiene lo siguie
 | AWS | | Usuario creado recientemente |
 | Box | Enterprise | Se recomienda encarecidamente que se conecte a Box como administrador. La conexión como coadmin dará como resultado una visibilidad de datos parcial. En caso de que se conecte como coadministrador, asegúrese de seleccionar todos los permisos. |
 | Dropbox | Empresa/Enterprise | Administración |
+| GitHub | Nube de GitHub Enterprise | Propietario |
 | GCP | | Consulte los [requisitos previos de Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | G Suite | Se prefiere G Suite Business o Enterprise<br /><br />G Suite Enterprise (como mínimo) | Superadministrador |
 | Office 365 | | Administrador global |
@@ -114,6 +115,15 @@ Para usar los conectores de aplicaciones, debe asegurarse de que tiene lo siguie
 Cloud App Security se ha implementado en Azure y está totalmente integrado con [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). Todas las interacciones con las aplicaciones Cloud App Security y el tráfico enviado a Cloud App Security, incluida la carga de registros de detección, se enrutan a través **del emparejamiento público** de ExpressRoute para mejorar la latencia, el rendimiento y la seguridad. No hay ningún paso de configuración necesario en el lado cliente.
 Para obtener más información sobre el emparejamiento público, vea [Circuitos ExpressRoute y dominios de enrutamiento](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).
 
+## <a name="disable-app-connectors"></a>Deshabilitación de conectores de aplicaciones
+
+Para deshabilitar las aplicaciones conectadas:
+
+1. En la página **aplicaciones conectadas** , en la fila correspondiente, haga clic en los tres puntos y seleccione **deshabilitar el conector de aplicaciones**.
+1. En el elemento emergente, haga clic en **deshabilitar instancia de conector de aplicaciones** para confirmar la acción.
+
+Una vez deshabilitada, la instancia de Connector dejará de consumir datos del conector.
+
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
@@ -124,4 +134,4 @@ Para obtener más información sobre el emparejamiento público, vea [Circuitos 
 ## <a name="check-out-this-video"></a>Eche un vistazo a este vídeo.
 
 > [!div class="nextstepaction"]
-> [Microsoft Cloud App Security: API de REST y tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)
+> [Microsoft Cloud App Security: tokens y API de REST](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)

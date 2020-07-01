@@ -1,5 +1,5 @@
 ---
-title: Directivas de Cloud Discovery Cloud App Security | Microsoft Docs
+title: Directivas de Cloud Discovery-Cloud App Security
 description: En este artículo se describen los pasos para configurar muchas directivas de Cloud Discovery en Cloud App Security.
 author: shsagir
 ms.author: shsagir
@@ -9,22 +9,22 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 58208567133bf9c8257e456a415c60ab3dacee0b
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: f76e77edff81d8104ecafa3ba03d146400a86dea
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719201"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624912"
 ---
 # <a name="cloud-discovery-policies"></a>Directivas de Cloud Discovery
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 En este artículo se proporciona información general sobre cómo empezar a usar Cloud App Security para obtener visibilidad en la organización en la sombra con Cloud Discovery.
 
 Cloud App Security permite detectar y analizar las aplicaciones en la nube que se usan en el entorno de la organización. En el panel de Cloud Discovery se muestran todas las aplicaciones en la nube que se ejecutan en el entorno y se clasifican por función y preparación para la empresa. Para cada aplicación, detecte los usuarios asociados, las direcciones IP, las máquinas, las transacciones y realiza la evaluación de riesgos sin necesidad de instalar un agente en los dispositivos de punto de conexión.
 
-## Detección de un nuevo uso de aplicaciones grandes o de gran volumen<a name= "detect-volume"></a>
+## <a name="detect-new-high-volume-or-wide-app-use"></a>Detección de un nuevo uso de aplicaciones grandes o de gran volumen<a name= "detect-volume"></a>
 
 Detecte las nuevas aplicaciones que se usan con mucha capacidad, en cuanto al número de usuarios o la cantidad de tráfico de su organización.
 

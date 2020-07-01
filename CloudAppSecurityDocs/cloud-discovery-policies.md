@@ -1,11 +1,11 @@
 ---
-title: 'Crear directivas en aplicaciones de Cloud Discovery: Cloud App Security | Microsoft Docs'
+title: 'Crear directivas en Cloud Discovery aplicaciones: Cloud App Security'
 description: En este artículo se proporciona información sobre cómo trabajar con directivas de Cloud Discovery.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/16/2020
+ms.date: 06/29/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 72df9c27cd27fea1f35a67eb7ca3ab56209c6992
-ms.sourcegitcommit: f4845a6bbf39aea0504956bf23878f7e0adb8bcc
+ms.openlocfilehash: 4434bd5faf1ab8aa30391d3434df71e6db557096
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81477526"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85623328"
 ---
 # <a name="cloud-discovery-policies"></a>Directivas de Cloud Discovery
 
@@ -59,12 +59,14 @@ Las directivas de detección permiten establecer alertas que avisan cuando se de
 
 9. Haga clic en **Crear**.
 
+> [!NOTE]
+> Las directivas de detección creadas recientemente (o las directivas con informes continuos actualizados) desencadenan una alerta una vez en 90 días por cada aplicación de informe continuo, independientemente de si hay alertas existentes para la misma aplicación. Por lo tanto, por ejemplo, si crea una directiva para la detección de nuevas aplicaciones populares, puede desencadenar alertas adicionales para las aplicaciones que ya se han detectado y alertar.
+
 Si, por ejemplo, le interesa detectar las aplicaciones de hospedaje de riesgo que hay en su entorno en la nube, establezca la directiva de la siguiente forma:
 
 Establezca los filtros de directiva para detectar los servicios que se encuentren en la categoría **Servicios de hospedaje** y que tengan una puntuación de riesgo de 1, lo que indica un riesgo elevado.
 
- Establezca los umbrales que deben desencadenar una alerta para una determinada aplicación detectada en la parte inferior. Por ejemplo, defina que se envíe una alerta solo si más de 100 usuarios del entorno han usado la aplicación y si han descargado una cantidad determinada de datos del servicio.
-También puede establecer el límite de alertas diarias que quiere recibir.
+Establezca los umbrales que deben desencadenar una alerta para una determinada aplicación detectada en la parte inferior. Por ejemplo, defina que se envíe una alerta solo si más de 100 usuarios del entorno han usado la aplicación y si han descargado una cantidad determinada de datos del servicio. También puede establecer el límite de alertas diarias que quiere recibir.
 
 ![ejemplo de directiva de detección de aplicaciones](media/app-discovery-policy-example.png "ejemplo de directiva de detección de aplicaciones")
 

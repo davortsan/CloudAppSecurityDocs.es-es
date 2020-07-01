@@ -1,5 +1,5 @@
 ---
-title: 'Control de qué aplicaciones de OAuth en la nube de terceros obtienen permisos: Cloud App Security | Microsoft Docs'
+title: 'Controlar qué aplicaciones de OAuth de nube de terceros obtienen permisos: Cloud App Security'
 description: Este artículo proporciona información sobre cómo puede controlar, prohibir y permitir aplicaciones de OAuth de terceros.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 62968b15a69ec67a828c3512fe9718b2a48cc25e
-ms.sourcegitcommit: 9538de5f3034a65626710648d22e2e186d77041a
+ms.openlocfilehash: 084491b7c74019d2145439f66ce5a90482091ed9
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84507175"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624651"
 ---
 # <a name="manage-oauth-apps"></a>Administración de aplicaciones de OAuth
 
@@ -107,11 +107,11 @@ Para exportar el registro, realice los pasos siguientes:
 
 1. En la página **aplicaciones de OAuth** , en la fila en la que aparece la aplicación correspondiente, en **autorizado por**, haga clic en el vínculo que muestra el número de usuarios que han autorizado la aplicación.
 
-1. En la ventana emergente, haga clic en **exportar**.
+1. En el elemento emergente, haga clic en **exportar**.
 
     ![Captura de pantalla que muestra la exportación de la auditoría de la aplicación OAuth](media/oauth-export-users.png)
 
-## <a name="send-feedback"></a>Enviar comentarios
+## <a name="send-feedback"></a>Envío de comentarios
 
 Si hay una aplicación de OAuth detectada en la organización que parece malintencionada, puede enviar la Cloud App Security comentarios del equipo para que podamos saberlo. Esta característica le permite formar parte de nuestra comunidad de seguridad y mejorar el análisis y la puntuación de riesgo de las aplicaciones OAuth.
 
@@ -123,6 +123,6 @@ Si hay una aplicación de OAuth detectada en la organización que parece malinte
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Control de aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
+> [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

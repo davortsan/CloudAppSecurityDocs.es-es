@@ -1,5 +1,5 @@
 ---
-title: 'Configuración de la carga de registros automática para informes continuos: Cloud App Security | Microsoft Docs'
+title: 'Configuración de la carga de registros automática para informes continuos: Cloud App Security'
 description: En este artículo se proporciona información sobre cómo cargar registros para crear informes de Cloud Discovery automáticos.
 keywords: ''
 author: shsagir
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b718641a17860bf3edb8ffc5f78c07b805b38bab
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: ebbe2f53f184cf8668a9cf3443ade3dedb42733f
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720086"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85623357"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Configuración de la carga de registros automática para informes continuos en una aplicación virtual: en desuso
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 > [!WARNING]
 > Es muy recomendable configurar la carga de registros mediante [Docker](discovery-docker.md) para una implementación más flexible.
@@ -69,7 +69,7 @@ El recopilador de registros tiene un mecanismo de seguridad integrado que superv
 
     a. Haga clic en **Agregar recopilador de registros**.
 
-    b. Proporcione un **nombre** para el recopilador de registros.
+    b. Asigne un **nombre**al recopilador de registros.
 
     c. Seleccione todos los **orígenes de datos** que quiera conectar al recopilador. Haga clic en **Actualizar** para guardar la configuración y generar un token de acceso.
 
@@ -107,7 +107,7 @@ El recopilador de registros tiene un mecanismo de seguridad integrado que superv
 
 10. Haga clic en la máquina en la tabla **Máquinas virtuales** y luego en **Iniciar**.
 
-11. Conéctese a la máquina virtual del recopilador de registros para ver si se le ha asignado una dirección DHCP. Para ello, haga clic en la máquina virtual y seleccione **Conectar**. Verá el mensaje de inicio de sesión. Si ve una dirección IP, puede conectarse a la máquina virtual mediante una herramienta SSH o terminal.  Si no ve ninguna dirección IP, inicie sesión mediante las herramientas de conexión de Hyper-V o VMware con las credenciales que copió al crear el recopilador de registros anteriormente. Puede cambiar la contraseña y configurar la máquina virtual con la utilidad de configuración de red mediante la ejecución del siguiente comando: `sudo network_config`
+11. Conéctese a la máquina virtual del recopilador de registros para ver si se le ha asignado una dirección DHCP. Para ello, haga clic en la máquina virtual y seleccione **Conectar**. Verá el mensaje de inicio de sesión. Si ve una dirección IP, puede conectarse a la máquina virtual mediante una herramienta SSH o terminal.  Si no ve ninguna dirección IP, inicie sesión mediante las herramientas de conexión de Hyper-V o VMware con las credenciales que copió al crear el recopilador de registros anteriormente. Puede cambiar la contraseña y configurar la máquina virtual con la utilidad de configuración de red mediante la ejecución del siguiente comando:`sudo network_config`
     > [!NOTE]
     > La máquina virtual está preconfigurada para obtener una dirección IP de un servidor DHCP. Si necesita configurar direcciones IP estáticas, una puerta de enlace predeterminada, un nombre de host, servidores DNS y NTPS, puede usar la utilidad **network_config** o realizar los cambios manualmente.
 
@@ -117,7 +117,7 @@ En este punto, el recopilador de registros debería estar conectado a la red y s
 
 Para iniciar sesión por primera vez en el recopilador de registros e importar la configuración de dicho recopilador desde el portal, debe hacer lo siguiente.
 
-1. Inicie sesión en el recopilador de registros a través de SSH con las credenciales de administrador interactivas que se le han proporcionado en el portal. Si es la primera vez que inicia sesión en la consola, deberá cambiar la contraseña y volver a iniciar sesión después de cambiarla. Si está usando una sesión de terminal, podría tener que volver a iniciarla ) simple
+1. Inicie sesión en el recopilador de registros a través de SSH con las credenciales de administrador interactivas que se le han proporcionado en el portal. Si es la primera vez que inicia sesión en la consola, deberá cambiar la contraseña y volver a iniciar sesión después de cambiarla. Si está usando una sesión de terminal, podría tener que volver a iniciarla )
 2. Ejecute la utilidad de configuración del recopilador con el token de acceso que se le proporcionó al crear el recopilador de registros. `sudo collector_config <access token>`
 3. Escriba el dominio de la consola, por ejemplo: `contoso.portal.cloudappsecurity.com`. Está disponible en la dirección URL que aparece después de iniciar sesión en el portal de Cloud App Security.
 4. Escriba el nombre del recopilador de registros que quiere configurar, por ejemplo: **CloudAppSecurityLogCollector01** o **NewYork** en la imagen anterior.
@@ -129,7 +129,7 @@ Para iniciar sesión por primera vez en el recopilador de registros e importar l
 
     c. Escriba el dominio de la consola, por ejemplo: `contoso.portal.cloudappsecurity.com`
 
-    d. Escriba el nombre del recopilador de registros que quiere configurar, por ejemplo: `CloudAppSecurityLogCollector01`
+    d. Escriba el nombre del recopilador de registros que quiere configurar, por ejemplo:`CloudAppSecurityLogCollector01`
 
 ### <a name="step-4---on-premises-configuration-of-your-network-appliances"></a>Paso 4: Configuración local de los dispositivos de red
 
@@ -137,7 +137,7 @@ Configure los firewalls y los servidores proxy de la red de modo que exporten pe
 
 `London Zscaler - Destination path: 614`
 
-BlueCoat_HQ-ruta de acceso de destino: \<< machine_name > > \ BlueCoat_HQ \
+BlueCoat_HQ-ruta de acceso de destino: \<<machine_name>> \ BlueCoat_HQ \
 
 ### <a name="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>Paso 5: Comprobación de la implementación correcta en el portal Cloud App Security
 
@@ -153,7 +153,7 @@ Si tiene problemas durante la implementación, consulte [Solución de problemas 
 
 Después de comprobar que los registros se cargan en Cloud App Security y que se generan los informes, puede crear informes personalizados. Ahora puede crear informes de detección personalizados en función de los grupos de usuarios de Azure Active Directory. Por ejemplo, si quiere ver el uso de la nube por parte del departamento de marketing, puede importar el grupo de marketing mediante la característica para importar grupos de usuarios y, después, crear un informe personalizado para este grupo. También puede personalizar un informe en función de la etiqueta de dirección IP o los intervalos de direcciones IP.
 
-1. En el portal de Cloud App Security, en el engranaje de configuración, seleccione **Configuración de Cloud Discovery** y, después, **Informes continuos**.
+1. En el portal de Cloud App Security, en el engranaje de configuración, seleccione **configuración de Cloud Discovery**y, a continuación, seleccione **informes continuos**.
 2. Haga clic en el botón **Crear informe** y rellene los campos.
 3. En **Filtros**, puede filtrar los datos por origen de datos, por [grupo de usuarios importados](user-groups.md) o por [etiquetas e intervalos de direcciones IP](ip-tags.md).
 
@@ -165,6 +165,6 @@ Después de comprobar que los registros se cargan en Cloud App Security y que se
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Trabajar con datos de Cloud Discovery](working-with-cloud-discovery-data.md)
+> [Trabajo con datos de Cloud Discovery](working-with-cloud-discovery-data.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

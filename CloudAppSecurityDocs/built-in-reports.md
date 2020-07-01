@@ -1,5 +1,5 @@
 ---
-title: 'Generación de informes: Microsoft Cloud App Security | Microsoft Docs'
+title: Generar informes-Microsoft Cloud App Security
 description: En este artículo se ofrecen instrucciones para generar informes de administración de datos en Microsoft Cloud App Security.
 keywords: ''
 author: shsagir
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3d87522306932229b9defd05e760672e875a28ab
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 88cf54f981ef02b76cd3286f3171e98f5f33752b
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720165"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624320"
 ---
-# <a name="generate-data-management-reports"></a>Generar informes de administración de datos
+# <a name="generate-data-management-reports"></a>Generación de informes de administración de datos
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 Microsoft Cloud App Security permite generar informes con los que se proporciona una visión general de los archivos que hay en las aplicaciones en la nube.
 
@@ -32,15 +32,15 @@ Para generar estos informes, siga estos pasos:
 1. Vaya a **Archivos**.
 2. En la esquina superior derecha, haga clic en los tres puntos y, en **Informes de administración de datos**, seleccione uno de los informes que se indican a continuación.
 
-    ![informes](media/reports.png)
+    ![reports](media/reports.png)
 
 ## <a name="data-sharing-overview"></a>Información general sobre el uso compartido de datos
 
 En este informe se muestra el número de archivos (por permisos de acceso) almacenados en cada aplicación en la nube. El uso compartido de archivos se ha convertido en un proceso fácil con las aplicaciones en la nube debido a la facilidad de acceso y la ubicuidad. Los archivos **privados** no se comparten con nadie más que su propietario. Si se comparte un archivo, Cloud App Security distingue cuatro tipos de estados:
 
 - Los archivos **compartidos públicamente (Internet)** son aquellos a los que se puede acceder sin autenticación, incluso a través de los resultados de un motor de búsqueda.
-- Los archivos **compartidos públicamente** son aquellos a los que se puede acceder sin autenticación a través de un vínculo.
-- Los archivos **compartidos externamente** son aquellos a los que pueden acceder los usuarios ajenos a la organización después de autenticarse en la aplicación en la nube.
+- Un archivo **compartido públicamente** es un archivo al que se puede tener acceso sin autenticación, mediante un vínculo.
+- Un archivo **compartido externamente** es un archivo al que pueden tener acceso usuarios ajenos a la organización, después de autenticarse en la aplicación en la nube.
 - Los archivos **compartidos internamente** son aquellos a los que pueden acceder todos o algunos de los usuarios de la organización.
 
 ## <a name="outbound-sharing-by-domain"></a>Uso compartido externo por dominio

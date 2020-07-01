@@ -1,11 +1,11 @@
 ---
-title: Obtención de recomendaciones de configuración de seguridad para Azure-Cloud App Security | Microsoft Docs
-description: En este artículo se proporciona información sobre cómo obtener recomendaciones de configuración de seguridad en Cloud App Security mediante la integración con Azure Security Center.
+title: Obtener recomendaciones de configuración de seguridad para las plataformas de nube pública
+description: En este artículo se proporciona información sobre cómo obtener recomendaciones de configuración de seguridad en Cloud App Security para las plataformas de nube pública de la organización.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 8/1/2019
+ms.date: 06/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,49 +14,24 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e7acfac8168057b66e7c0295211ef0f29315600e
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: fe757841d9b0d26608ac5134e92055c24ec07dd6
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74721002"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624980"
 ---
-# <a name="security-configuration-for-azure"></a>Configuración de seguridad para Azure
+# <a name="security-configuration-overview"></a>Información general sobre la configuración de seguridad
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security proporciona una evaluación de la configuración de seguridad del entorno de Azure. La evaluación, con tecnología de Azure Security Center, proporciona recomendaciones para la configuración y el control de seguridad que faltan.
+Microsoft Cloud App Security proporciona valoraciones de configuración de seguridad para Azure, Amazon Web Services (AWS) y Google Cloud Platform (GCP). Las recomendaciones cubren todas las suscripciones de Azure, las cuentas de AWS, incluidas las cuentas de miembro, y todos los proyectos de GCP que están conectados a la organización. Esta vista multinube de todas las recomendaciones de configuración de seguridad de plataforma en la nube permite a los administradores de seguridad investigar todos los intervalos de configuración de seguridad en Cloud App Security.
 
-## <a name="enable-security-configuration-recommendations"></a>Habilitar las recomendaciones de configuración de seguridad
+Use los vínculos siguientes para obtener más detalles sobre los diferentes tipos de evaluación.
 
-Para usar esta característica, debe tener los permisos adecuados en Azure AD y en Azure Portal. De forma predeterminada, el rol de administrador global de Azure AD no proporciona acceso a suscripciones de Azure. Eleve los permisos para conceder acceso a las suscripciones de Azure a otros usuarios y para usted.
-
-> [!IMPORTANT]
-> Se recomienda que deshabilite la elevación después de completar el proceso siguiente.
-
-Para habilitar las recomendaciones de configuración de seguridad en Microsoft Cloud App Security:
-
-1. <a href="https://docs.microsoft.com/azure/security-center/security-center-management-groups" target="_blank">Obtenga visibilidad de todos los inquilinos en Azure Security Center</a>. Este proceso incluye:
-
-    - Concederse el rol lector para todas las suscripciones y también a los otros administradores de Microsoft Cloud App Security a los que quiere conceder acceso a esta página.
-    - Asignar el rol en el grupo de administración raíz en Azure Security Center
-    - Elevar el administrador Global de Azure AD para conceder acceso a las suscripciones de Azure.
-    - En el artículo se describe el proceso para convertirse en un administrador de seguridad. Para que esta integración funcione, los permisos mínimos que necesita son de **lector**.
-
-1. Asegúrese de abrir <a href="https://ms.portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0" target="_blank">Azure Security Center</a> para que los cambios surtan efecto.
-
-1. En Cloud App Security, vaya a **investigar** > **configuración de seguridad**y, a continuación, seleccione la pestaña **Azure** .
-
-    - Microsoft Cloud App Security proporciona recomendaciones únicamente para las 50 suscripciones principales.
-    - Es posible que los cambios tarden hasta 15 minutos en surtir efecto.
-
-    ![menú de configuración de seguridad](media/security-configuration-menu.png)
-
-1. Puede filtrar las recomendaciones por tipo, recurso y suscripción. Además, puede hacer clic en el icono de configuración de seguridad ![Icono de ASC](media/asc-icon.png) para abrir la recomendación en Azure Security Center, a fin de obtener más información y profundizar en la recomendación.
-
-Para información sobre cómo implementar las recomendaciones de seguridad, vea [Administración de recomendaciones de seguridad en Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-recommendations).
-
-![configuración de seguridad](media/security-configuration-azure.png)
+- **[Recomendaciones de Azure](security-config-azure.md)**: recomendaciones de seguridad para las prácticas recomendadas de Azure utilizadas en Azure Security Center.
+- **[Recomendaciones de AWS](security-config-aws.md)**: recomendaciones de seguridad basadas en el Banco de pruebas comparativas de seguridad de Internet (CIS) para AWS, versión 1.2.0, consumidos desde el centro de seguridad de AWS.
+- **[Recomendaciones de GCP](security-config-gcp.md)**: recomendaciones de seguridad basadas en el Banco de pruebas de CIS para GCP, versión 1.1.0, consumido desde el centro de comandos de seguridad de Google y análisis de estado de seguridad.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

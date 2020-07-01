@@ -1,5 +1,5 @@
 ---
-title: 'Trabajo con la puntuación de riesgo: Cloud App Security | Microsoft Docs'
+title: Trabajo con la puntuación de riesgo-Cloud App Security
 description: En este artículo se proporcionan instrucciones sobre cómo usar y personalizar la puntuación de riesgo de la aplicación de Cloud App Security.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1b69c92be4a3e095b76eee3d458820dac5d218a9
-ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
+ms.openlocfilehash: d3d292f7bedfdfd9d4569bb357b5c0dcaf48c69f
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84250696"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85625091"
 ---
 # <a name="working-with-app-risk-scores"></a>Trabajar con la puntuación de riesgo de la aplicación
 
@@ -116,7 +116,7 @@ Es importante dedicar un minuto a revisar y modificar las ponderaciones predeter
 
 3. Además, puede establecer si determinados valores no están disponibles o no son aplicables en el cálculo de la puntuación. Cuando se incluyen, los valores no aplicables tienen una contribución negativa a la puntuación calculada.
 
-    ![score](media/score.png "métricas de puntuación")
+    ![carácter](media/score.png "métricas de puntuación")
 
 Toda la información necesaria para entender cómo se apilan nuestras puntuaciones de riesgo de Cloud App Security está disponible en el portal de Cloud App Security. Para comprender mejor el peso de un factor de riesgo en una categoría de riesgo específica, use el botón "i" a la derecha de cada nombre de campo en el perfil de la aplicación. Esto proporciona información sobre cómo Cloud App Security puntúa exactamente un factor de riesgo específico. La puntuación es el valor del factor de riesgo en una escala de 1 a 10 + su peso en la categoría de riesgo:
 

@@ -7,16 +7,16 @@ ms.service: cloud-app-security
 ms.topic: best-practice
 ms.date: 10/24/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e90a340c206c0bfb1c01542dd184664d1fe87dfe
-ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
+ms.openlocfilehash: 6b07d3dd484fba64b8feda1d5b5fb37a20cc09f3
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79285329"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624313"
 ---
 # <a name="cloud-app-security-best-practices"></a>Procedimientos recomendados de Cloud App Security
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 En este artículo se proporcionan prácticas recomendadas para proteger su organización mediante el uso de Microsoft Cloud App Security. Estos procedimientos recomendados proceden de nuestra experiencia con Cloud App Security y las experiencias de clientes como usted.
 
@@ -24,14 +24,14 @@ Los procedimientos recomendados que se describen en este artículo son:
 
 > [!div class="checklist"]
 > * [Detección y evaluación de aplicaciones en la nube](#discover-and-assess-cloud-apps)
-> * [Aplicar directivas de gobierno en la nube](#apply-cloud-governance-policies)
-> * [Limitar la exposición de los datos compartidos y aplicar directivas de colaboración](#limit-exposure-of-shared-data-and-enforce-collaboration-policies)
-> * [Detectar, clasificar, etiquetar y proteger la información regulada y confidencial almacenada en la nube](#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
-> * [Aplicación de directivas de cumplimiento y DLP para los datos almacenados en la nube](#enforce-dlp-and-compliance-policies-for-data-stored-in-the-cloud)
-> * [Bloquear y proteger la descarga de datos confidenciales en dispositivos no administrados o peligrosos](#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices)
+> * [Aplicación de directivas de gobernanza de la nube](#apply-cloud-governance-policies)
+> * [Limitación de la exposición de datos compartidos y aplicación de directivas de colaboración](#limit-exposure-of-shared-data-and-enforce-collaboration-policies)
+> * [Detección, clasificación, etiquetado y protección de datos regulados y confidenciales almacenados en la nube](#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
+> * [Aplicación de directivas de cumplimiento y de DLP para datos almacenados en la nube](#enforce-dlp-and-compliance-policies-for-data-stored-in-the-cloud)
+> * [Bloqueo y protección de la descarga de datos confidenciales en dispositivos no administrados o de riesgo](#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices)
 > * [Colaboración segura con usuarios externos mediante la aplicación de controles de sesión en tiempo real](#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls)
-> * [Detección de amenazas en la nube, cuentas en peligro, Insiders malintencionados y ransomware](#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
-> * [Usar la traza de auditoría de actividades para investigaciones forenses](#use-the-audit-trail-of-activities-for-forensic-investigations)
+> * [Detección de amenazas en la nube, cuentas en peligro, colaboradores malintencionados y ransomware](#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
+> * [Uso de la traza de auditoría de actividades para investigaciones forenses](#use-the-audit-trail-of-activities-for-forensic-investigations)
 > * [Servicios de IaaS seguros y aplicaciones personalizadas](#secure-iaas-services-and-custom-apps)
 
 ## <a name="discover-and-assess-cloud-apps"></a>Detección y evaluación de aplicaciones en la nube
@@ -92,7 +92,7 @@ Cloud App Security le proporciona la capacidad de investigar y supervisar los pe
 **Para obtener más información**:
 
 * [Conectar aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
-* [Conectar Office 365 a Microsoft Cloud App Security](connect-office-365-to-microsoft-cloud-app-security.md)
+* [Conectar Office 365 con Microsoft Cloud App Security](connect-office-365-to-microsoft-cloud-app-security.md)
 
 ---
 
@@ -112,7 +112,7 @@ Cloud App Security le proporciona la capacidad de investigar y supervisar los pe
 * **Propietarios de archivos compartidos**: muestra los usuarios que comparten archivos corporativos con el mundo exterior.  
 **Para obtener más información**:
 
-* [Generar informes de administración de datos](built-in-reports.md)
+* [Generación de informes de administración de datos](built-in-reports.md)
 
 ---
 
@@ -150,7 +150,7 @@ Cloud App Security le proporciona la capacidad de investigar y supervisar los pe
 
 * [Inspección de contenido](content-inspection.md)
 * [Directivas de archivos](data-protection-policies.md)
-* [Directivas de protección de información](policies-information-protection.md)
+* [Directivas de protección de la información](policies-information-protection.md)
 
 ---
 
@@ -186,7 +186,7 @@ Cloud App Security le proporciona la capacidad de investigar y supervisar los pe
 **Detalle**: Use control de aplicaciones de acceso condicional para establecer controles en las aplicaciones SaaS. Puede crear directivas de sesión para supervisar las sesiones de bajo riesgo y de bajo nivel de confianza. Del mismo modo, puede crear directivas de sesión para bloquear y proteger las descargas de los usuarios que intentan acceder a datos confidenciales desde dispositivos no administrados o de riesgo. Si no va a crear directivas de sesión para supervisar las sesiones de alto riesgo, perderá la capacidad de bloquear y proteger las descargas en el cliente web, así como la capacidad de supervisar sesiones de confianza baja en aplicaciones de Microsoft y de terceros.  
 **Para obtener más información**:
 
-* [Protección de aplicaciones con Microsoft Cloud App Security Control de aplicaciones de acceso condicional](proxy-intro-aad.md)
+* [Proteger aplicaciones con el Control de aplicaciones de acceso condicional de Microsoft Cloud App Security](proxy-intro-aad.md)
 * [Directivas de sesión](session-policy-aad.md)
 
 ---
@@ -200,7 +200,7 @@ Cloud App Security le proporciona la capacidad de investigar y supervisar los pe
 **Detalle**: para proteger la colaboración en su entorno, puede crear una directiva de sesión para supervisar las sesiones entre los usuarios internos y externos. Esto no solo le ofrece la capacidad de supervisar la sesión entre los usuarios (y les notifica que sus actividades de sesión se están supervisando), pero también le permite limitar las actividades específicas. Al crear directivas de sesión para supervisar la actividad, puede elegir las aplicaciones y los usuarios que le gustaría supervisar.  
 **Para obtener más información**:
 
-* [Protección de aplicaciones con Microsoft Cloud App Security Control de aplicaciones de acceso condicional](proxy-intro-aad.md)
+* [Proteger aplicaciones con el Control de aplicaciones de acceso condicional de Microsoft Cloud App Security](proxy-intro-aad.md)
 * [Directivas de sesión](session-policy-aad.md)
 
 ---
@@ -269,23 +269,27 @@ Al descartar las alertas, es importante investigar y comprender por qué no son 
 
 ## <a name="secure-iaas-services-and-custom-apps"></a>Servicios de IaaS seguros y aplicaciones personalizadas
 
-**Procedimiento**recomendado: conectar Azure y AWS  
+**Procedimiento**recomendado: conectar Azure, AWS y GCP  
 **Detalle**: la conexión de cada una de estas aplicaciones de almacenamiento en la nube a Cloud App Security le ayuda a mejorar las capacidades de detección de amenazas. Mediante la supervisión de las actividades administrativas e inicios de sesión para estos servicios, puede detectar y recibir notificaciones sobre posibles ataques por fuerza bruta, el uso malintencionado de una cuenta de usuario con privilegios y otras amenazas de su entorno. Por ejemplo, puede identificar riesgos como eliminaciones inusuales de máquinas virtuales o incluso actividades de suplantación en estas aplicaciones.  
 **Para obtener más información**:
 
-* [Conexión de Azure a Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md)
+* [Conectar Azure con Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md)
 * [Conectar AWS con Microsoft Cloud App Security](connect-aws-to-microsoft-cloud-app-security.md)
+* [Conectar GCP a Microsoft Cloud App Security (versión preliminar)](connect-google-gcp-to-microsoft-cloud-app-security.md)
 
 ---
 
-**Procedimiento**recomendado: revisión de las evaluaciones de configuración de seguridad para Azure y AWS  
+**Procedimiento**recomendado: revisión de las evaluaciones de configuración de seguridad de Azure, AWS y GCP  
 **Detalle**: la integración con Azure Security Center proporciona una evaluación de la configuración de seguridad de su entorno de Azure. La evaluación proporciona recomendaciones para la configuración y el control de seguridad que faltan. Revisar estas recomendaciones le ayuda a identificar anomalías y posibles vulnerabilidades en su entorno y navegar directamente en la ubicación correspondiente en el portal de seguridad de Azure para resolverlas.
 
-AWS le ofrece la capacidad de obtener visibilidad de las recomendaciones de configuración de seguridad sobre cómo mejorar la seguridad en la nube. Con estas recomendaciones, puede supervisar el estado de cumplimiento de las cuentas de AWS.  
+AWS y GCP le ofrecen la posibilidad de obtener visibilidad de las recomendaciones de configuración de seguridad sobre cómo mejorar la seguridad en la nube.
+
+Siga estas recomendaciones para supervisar el estado de cumplimiento y la posición de seguridad de toda la organización, incluidas las suscripciones de Azure, las cuentas de AWS y los proyectos de GCP.  
 **Para obtener más información**:
 
-* [Configuración de seguridad de Azure](security-config.md)
+* [Configuración de seguridad para Azure](security-config.md)
 * [Configuración de seguridad para AWS](security-config-aws.md)
+* [Configuración de seguridad para GCP](security-config-gcp.md)
 
 ---
 
@@ -295,5 +299,5 @@ AWS le ofrece la capacidad de obtener visibilidad de las recomendaciones de conf
 Además, puede incorporar una aplicación personalizada como Control de aplicaciones de acceso condicional aplicación para supervisar sus sesiones de confianza baja.  
 **Para obtener más información**:
 
-* [Agregar aplicaciones personalizadas a Cloud Discovery](cloud-discovery-custom-apps.md)
+* [Adición de aplicaciones personalizadas a Cloud Discovery](cloud-discovery-custom-apps.md)
 * [Incorporación e implementación de Control de aplicaciones de acceso condicional para cualquier aplicación](proxy-deployment-any-app.md)

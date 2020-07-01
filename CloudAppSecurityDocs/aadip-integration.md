@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/24/2020
+ms.date: 06/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f5603102aa393c676b82fc179094526933e93f68
-ms.sourcegitcommit: 2cf3c78a1b45a5b6ca534fdd12fd97afc51726e3
+ms.openlocfilehash: 5af7efa448e7d93902e9d8845dd97479b7c53df7
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80295786"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624396"
 ---
 # <a name="azure-active-directory-identity-protection-integration"></a>Integración de Azure Active Directory Identity Protection
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 Microsoft Cloud App Security se integra con Azure Active Directory Identity Protection (Identity Protection) para proporcionar análisis de comportamiento de la entidad de usuario (UEBA) en un entorno híbrido. Para obtener más información sobre el aprendizaje automático y el análisis de comportamiento que proporciona Identity Protection, consulte [¿Qué es Identity Protection?](/azure/active-directory/identity-protection/overview-identity-protection).
 
@@ -31,7 +31,7 @@ Microsoft Cloud App Security se integra con Azure Active Directory Identity Prot
 
 - Una cuenta de administrador de Cloud App Security para habilitar la integración entre la protección de identidades y el Cloud App Security.
 
-## <a name="enable-identity-protection"></a>Habilitar Identity Protection
+## <a name="enable-identity-protection"></a>Habilitación de Identity Protection
 
 > [!NOTE]
 > La característica Identity Protection está habilitada de forma predeterminada. Sin embargo, si la característica estaba deshabilitada, puede seguir estos pasos para habilitarla.
@@ -40,7 +40,7 @@ Para habilitar la integración de Cloud App Security con Identity Protection:
 
 1. En Cloud App Security, en el engranaje de configuración, seleccione **configuración**.
 
-    ![Menú de configuración](media/azip-system-settings.png)
+    ![Menú Configuración](media/azip-system-settings.png)
 
 1. En **protección contra amenazas**, seleccione **Azure ad Identity Protection**.
 
@@ -71,8 +71,12 @@ Están disponibles las siguientes directivas:
 
 |Directiva|Descripción|Estado predeterminado|Gravedad predeterminada|
 |---|---|---|---|
-|Credenciales perdidas|Muestra las alertas de credenciales perdidas, las credenciales válidas del usuario se han perdido|Habilitado|Bajo: recibir todas las alertas|
-|Inicio de sesión peligroso|Agrega varias detecciones de inicio de sesión de riesgo, inicios de sesión no realizadas por el usuario|Habilitado|Alta: recepción de alertas de gravedad alta|
+|Filtración de credenciales|Muestra las alertas de credenciales perdidas, las credenciales válidas del usuario se han perdido|habilitado|Bajo: recibir todas las alertas|
+|Inicio de sesión peligroso|Agrega varias detecciones de inicio de sesión de riesgo, inicios de sesión no realizadas por el usuario|habilitado|Alta: recepción de alertas de gravedad alta|
+
+## <a name="remediating-risky-users"></a>Corrección de usuarios de riesgo
+
+Las directivas de Identity Protection se pueden usar para corregir automáticamente los usuarios de riesgo estableciendo el nivel de riesgo del usuario en alto. Una vez que un usuario está establecido en alto, el algoritmo de análisis de riesgos de usuario avanzado tiene en cuenta el nuevo estado del usuario, así como el estado de *Administración del dispositivo* . Esto hace que se apliquen las acciones de directiva relevantes definidas en Azure AD, como restablecer la contraseña del usuario, requerir la autenticación MFA o forzar al usuario a usar un dispositivo administrado. Para obtener más información, consulte [Azure ad ¿cómo usan los comentarios de riesgo](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-risk-feedback#how-does-azure-ad-use-my-risk-feedback) y [las acciones de gobierno](accounts.md#governance-actions)?
 
 ## <a name="next-steps"></a>Pasos siguientes
 

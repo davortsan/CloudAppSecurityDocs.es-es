@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b86f8ef6eef534301b21371021295587c6535786
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: f69522921f3bd9996e8a0146cdf6ea224691e1f8
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81230204"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85623270"
 ---
 # <a name="connect-okta-to-microsoft-cloud-app-security"></a>Conectar Okta con Microsoft Cloud App Security
 
@@ -59,7 +59,7 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
 
     ![conectar Okta](media/connect-okta.png "conectar Okta")
 
-1. En el elemento emergente que se muestra, en el campo **Dominio**, escriba el dominio de Okta y pegue el token en el campo **Token**.
+1. En el menú emergente, en el campo **dominio** , escriba el dominio de Okta y pegue el token en el campo **token** .
 
 1. Haga clic en **Conectar** para crear el token de Okta en Cloud App Security.
 

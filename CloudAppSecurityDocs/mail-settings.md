@@ -1,5 +1,5 @@
 ---
-title: 'Establecimiento de preferencias de notificación de correo electrónico: Cloud App Security | Microsoft Docs'
+title: Establecer preferencias de notificación de correo electrónico-Cloud App Security
 description: En este artículo se proporciona información sobre cómo personalizar las notificaciones de correo electrónico que Cloud App Security envía.
 keywords: ''
 author: shsagir
@@ -14,23 +14,23 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e362314a62399c15e662e20d13ea660015666b3d
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 77bf7eeadf64108ca62a12d485aadba21e8d8848
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719887"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624617"
 ---
 # <a name="email-notification-preferences"></a>Preferencias de notificación de correo electrónico
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 En este artículo se proporciona información sobre cómo personalizar las notificaciones de correo electrónico que Cloud App Security envía a los usuarios cuando se detecta una infracción de seguridad.
 
 > [!NOTE]
 > Esta personalización solo afecta a las notificaciones enviadas a los usuarios finales, no a las que se envían a los administradores de Cloud App Security.
 
-## <a name="mailsettings"></a> Establecimiento de preferencias de notificación de correo electrónico
+## <a name="set-email-notification-preferences"></a><a name="mailsettings"></a> Establecimiento de preferencias de notificación de correo electrónico
 
  Microsoft Cloud App Security permite personalizar las notificaciones de correo electrónico enviadas a los usuarios finales implicados en las infracciones de seguridad. Para establecer los parámetros para las notificaciones de correo electrónico, siga este procedimiento. Para obtener información sobre la dirección IP del servidor de correo electrónico de Microsoft Cloud App Security que debe incluir en la lista de permitidos del servicio de correo electrónico no deseado, vea [Requisitos de red](network-requirements.md).
 
@@ -49,11 +49,11 @@ En este artículo se proporciona información sobre cómo personalizar las notif
 
     - La plantilla debe tener tres marcadores de posición no modificables:
 
-        - **%%logo%%** : dirección URL que lleva al logotipo de la empresa que se ha cargado en la página de configuración General.
+        - **%%logo%%**: dirección URL que lleva al logotipo de la empresa que se ha cargado en la página de configuración General.
 
-        - **%%title%%** : marcador de posición del título del correo electrónico, según lo establecido por la directiva.
+        - **%%title%%**: marcador de posición del título del correo electrónico, según lo establecido por la directiva.
 
-        - **%%content%%** : marcador de posición del contenido que se incluirá para los usuarios finales, según lo establecido por la directiva.
+        - **%%content%%**: marcador de posición del contenido que se incluirá para los usuarios finales, según lo establecido por la directiva.
 
 4. Haga clic en **Cargar una plantilla...** y seleccione el archivo que ha creado.
 

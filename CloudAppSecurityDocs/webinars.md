@@ -1,5 +1,5 @@
 ---
-title: 'Vea nuestros seminarios web: Cloud App Security | Microsoft Docs'
+title: 'Vea nuestros seminarios web: Cloud App Security'
 description: Muestra una lista de seminarios web anteriores, incluida una descripción.
 author: shsagir
 ms.author: shsagir
@@ -7,16 +7,16 @@ ms.service: cloud-app-security
 ms.topic: conceptual
 ms.date: 8/25/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9fc28a4e51c816523cb6268e84004c176ce2839a
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 95df4dafcb38ce7b4fa041c7fc0e5ea6e600c6e1
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720332"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624725"
 ---
 # <a name="microsoft-cloud-app-security-webinars"></a>Seminarios web de Microsoft Cloud App Security
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 Vea esta serie de seminarios web de seis partes para obtener más información sobre Microsoft Cloud App Security casos de uso clave y procedimientos recomendados de implementación para ayudarle a proteger mejor los entornos de nube.
 
@@ -26,7 +26,7 @@ Para conocer nuestros próximos seminarios web y otros desarrollos, [Únase a la
 
 Vea las sesiones grabadas en cualquier momento
 
-| Title | Obtener información acerca de |
+| Title | Información |
 | --- | --- |
 | **Protección de la información**<br />[Ver ahora](https://go.microsoft.com/fwlink/?linkid=2101487) | -Protección de los datos en la nube<br />-Control y supervisión en tiempo real<br />: Procedimientos recomendados para la conexión de aplicaciones, identificación de tipos de datos, auditoría del entorno y corrección de acciones de gobierno |
 | **Detección de amenazas**<br />[Ver ahora](https://go.microsoft.com/fwlink/?linkid=2101574) | -Protección contra amenazas en la nube<br />-Detección de amenazas en aplicaciones en la nube<br />-Detección de malware<br />-Permisos de aplicación de OAuth<br />-Configuración de alertas en directivas |

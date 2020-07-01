@@ -1,5 +1,5 @@
 ---
-title: 'Supervisión y protección de archivos en aplicaciones en la nube: Cloud App Security | Microsoft Docs'
+title: 'Supervisión y protección de archivos en aplicaciones en la nube: Cloud App Security'
 description: En este artículo se describe el procedimiento para configurar una directiva de datos para supervisar y controlar los datos y los archivos durante el uso de aplicaciones en la nube de la organización.
 keywords: ''
 author: shsagir
@@ -14,14 +14,14 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 345f3bea6e204598a3ce4af7c06d7c1540fec032
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: 317595b377d19b1d6f9a06b316cb14e4d1ad4c1c
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81241472"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624602"
 ---
-# <a name="file-policies"></a>Directivas de archivo
+# <a name="file-policies"></a>Directivas de archivos
 
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -75,7 +75,7 @@ Haga lo siguiente para crear una directiva de archivo:
 
 1. **Cree un filtro para los archivos sobre los que esta directiva actuará** para definir qué aplicaciones activarán esta directiva. Limite los filtros de directiva hasta conseguir exactamente el conjunto de archivos sobre los que quiere actuar. Sea lo más restrictivo posible para evitar falsos positivos. Por ejemplo, si desea quitar permisos públicos, recuerde agregar el filtro **público** , si desea quitar un usuario externo, use el filtro "externo", etc.
    > [!NOTE]
-   > Al usar filtros de directiva, **Contiene** solo buscará palabras completas separadas por comas, puntos, espacios o caracteres de subrayado. Por ejemplo, si busca **malware** o **virus**, encontrará virus_malware_file.exe, pero no encontrará malwarevirusfile.exe. Si busca **malware. exe**, encontrará todos los archivos con malware o exe en el nombre de archivo, mientras que si busca **"malware. exe"** (con comillas) solo encontrará los archivos que contengan exactamente "malware. exe". **Es igual a** solo buscará la cadena completa. Por ejemplo, si busca **malware.exe**, encontrará malware.exe pero no malware.exe.txt.
+   > Al usar filtros de directiva, **Contiene** solo buscará palabras completas separadas por comas, puntos, espacios o caracteres de subrayado. Por ejemplo, si busca **malware** o **virus**, encontrará virus_malware_file.exe, pero no encontrará malwarevirusfile.exe. Si busca **malware.exe**, encontrará todos los archivos con malware o exe en el nombre de archivo, mientras que si busca **"malware.exe"** (con las comillas) solo encontrará los archivos que contengan exactamente "malware.exe". **Es igual a** solo buscará la cadena completa. Por ejemplo, si busca **malware.exe**, encontrará malware.exe pero no malware.exe.txt.
 1. En el primer filtro **Aplicar a**, seleccione **todos los archivos excepto las carpetas seleccionadas** o las **carpetas seleccionadas** para Box, SharePoint, Dropbox y OneDrive, donde puede aplicar la directiva en todos los archivos de la aplicación o en carpetas específicas. Se le redirigirá para que inicie sesión en la aplicación en la nube y agregue las carpetas relevantes.
 
 1. En el segundo filtro **Aplicar a**, seleccione **todos los propietarios de archivos**, **los propietarios de archivos de los grupos seleccionados** o **todos los propietarios de archivos excepto los grupos seleccionados**. Después, seleccione los grupos de usuarios pertinentes para determinar qué usuarios y grupos deben incluirse en la directiva.

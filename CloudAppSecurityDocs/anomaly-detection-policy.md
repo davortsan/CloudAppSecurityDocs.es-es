@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/24/2020
+ms.date: 06/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 85cf523e8cc733156c2365da114cc893b022e1e3
-ms.sourcegitcommit: 223c9e4cefe6986537dcfbd697a236a3cee1768c
+ms.openlocfilehash: d5ebc12c77fa8e2a9b3b1ccb006493a02771c296
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84801157"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624358"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtención de análisis de comportamiento y detección de anomalías instantáneos
 
@@ -83,7 +83,7 @@ Están disponibles las directivas de detección de anomalías siguientes:
     >   * G Suite
     >   * Office 365
 
-### <a name="activity-from-anonymous-ip-addresses"></a>Actividad desde direcciones IP anónimas
+### <a name="activity-from-anonymous-ip-addresses"></a>Actividad desde una dirección IP anónima
 
 * Esta detección identifica que los usuarios estaban activos desde una dirección IP que se ha identificado como una dirección IP de proxy anónima. Estos servidores proxy los usan las personas que desean ocultar la dirección IP de su dispositivo y se pueden usar para fines malintencionados. Esta detección usa un algoritmo de aprendizaje automático que reduce los falsos positivos, como las direcciones IP no etiquetadas que los usuarios de la organización usan habitualmente.
 
@@ -113,9 +113,14 @@ La detección busca los usuarios cuya cuenta de Azure AD ha quedado suspendida, 
 
 * Esta detección genera un perfil del entorno y activa alertas cuando se establecen reglas sospechosas que eliminan o mueven mensajes o carpetas en la bandeja de entrada de un usuario. Esto puede indicar que la cuenta del usuario está en peligro, que los mensajes se están ocultando de manera intencionada o que el buzón se está usando para enviar correo no deseado y malware en la organización.
 
-### <a name="suspicious-email-deletion-activity-preview"></a>Actividad de eliminación de correos electrónicos sospechosos (versión preliminar)
+### <a name="suspicious-email-deletion-activity-preview"></a>Actividad de eliminación de correo electrónico sospechoso (versión preliminar)
 
-* Esta directiva genera perfiles de su entorno y desencadena alertas cuando un usuario realiza actividades de eliminación de correo electrónico sospechosas en una sola sesión. Esta Directiva puede indicar que los buzones de usuario pueden estar en peligro por posibles vectores de ataque, como la comunicación de comando y control (C&C/C2) por correo electrónico.
+* Esta directiva genera perfiles de su entorno y desencadena alertas cuando un usuario realiza actividades de eliminación de correo electrónico sospechosas en una sola sesión. Esta Directiva puede indicar que los buzones de un usuario pueden estar en peligro por posibles vectores de ataque, como la comunicación de comando y control (C&C/C2) por correo electrónico.
+
+> [!NOTE]
+> Cloud App Security se integra con protección contra amenazas avanzada de Office (ATP de Office) para proporcionar protección para Exchange Online, incluida la detonación de direcciones URL, la protección contra malware y mucho más. Una vez habilitada la ATP de Office, comenzará a ver alertas en el registro de actividad de Cloud App Security.
+
+<!-- // MATP? Delay tile start appearing? -->
 
 ### <a name="unusual-activities-by-user"></a>Actividades inusuales (realizadas por un usuario)
 

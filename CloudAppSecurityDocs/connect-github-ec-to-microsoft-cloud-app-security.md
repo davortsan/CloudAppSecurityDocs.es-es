@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/02/2020
+ms.date: 06/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,18 +15,16 @@ ROBOTS: NOINDEX
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3941ea5141049f23ed8a187df5c29192883203c8
-ms.sourcegitcommit: 0e8065703810347c86567d636293bf6d41df1a84
+ms.openlocfilehash: f39ede3da1483acb4fd47c0708e3c244ff458aa5
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85256116"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85623341"
 ---
-# <a name="connect-github-enterprise-cloud-to-microsoft-cloud-app-security-preview"></a>Conexión de GitHub Enterprise Cloud a Microsoft Cloud App Security (versión preliminar)
+# <a name="connect-github-enterprise-cloud-to-microsoft-cloud-app-security"></a>Conectar GitHub Enterprise Cloud a Microsoft Cloud App Security
 
 *Se aplica a: Microsoft Cloud App Security*
-
-El conector de GitHub Enterprise Cloud API se encuentra actualmente en versión preliminar privada y se implementa gradualmente. Esta versión preliminar se proporciona sin un contrato de nivel de servicio y no se recomienda para las cargas de trabajo de producción. Es posible que algunas características no sean compatibles o que tengan sus funcionalidades limitadas. Para más información, consulte [Términos de uso complementarios de las Versiones Preliminares de Microsoft Azure](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
 En este artículo se proporcionan instrucciones para conectar Microsoft Cloud App Security a la organización en la nube de GitHub Enterprise existente mediante las API del conector de aplicaciones. Esta conexión le proporciona visibilidad y control sobre el uso de GitHub Enterprise Cloud de su organización. Para obtener más información sobre cómo Cloud App Security protege GitHub Enterprise Cloud, consulte [protección de github Enterprise](protect-github.md).
 
@@ -119,6 +117,6 @@ Si tiene problemas para conectar la aplicación, consulte [solución de problema
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Control de aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
+> [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
