@@ -270,6 +270,8 @@
               href: siem-sentinel.md
             - name: Integración de DLP externa
               href: icap-stunnel.md
+            - name: Integraciones adicionales
+              href: additional-integrations.md
         - name: Automatización de procesos y flujos de trabajo
           items:
             - name: Uso de la API de REST
