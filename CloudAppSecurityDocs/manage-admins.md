@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: face06e83dc57a3722298bf2e22846334ca811b2
-ms.sourcegitcommit: 33e4b39d56256e54bc6e74ca45a03055484916d9
+ms.openlocfilehash: ed9b4a8b34f0a6b0d4e0ecab3977c97cf0ec1491
+ms.sourcegitcommit: 5ea18a81e5fffacf81cda6eb545ed95d822426da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84566831"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85846024"
 ---
 # <a name="manage-admin-access"></a>Administrar el acceso de administrador
 
@@ -121,9 +121,6 @@ Puede agregar más administradores a Cloud App Security sin agregar usuarios a l
 
 2. Haga clic en el signo más para agregar los administradores que deben tener acceso a Cloud App Security. Puede escribir una dirección de correo electrónico interno o externo para permitir que los administradores de la organización o los proveedores de servicios de seguridad administrada (MSSP) externos administren las alertas de seguridad.
 
-    > [!NOTE]
-    > Para conceder acceso al portal a MSSPs, debe agregar usuarios de MSSP a su Azure AD como usuarios invitados. Para más información, consulte [Incorporación de usuarios de colaboración B2B de Azure Active Directory en Azure Portal](/azure/active-directory/b2b/add-users-administrator).
-
     ![agregar administradores](media/add-admin.png)
 
 3. A continuación, haga clic en la lista desplegable para establecer el tipo de rol que tiene el administrador, un **administrador global**, un **lector de seguridad**, un **Administrador de cumplimiento**o un **Administrador de aplicación/instancia**. Si selecciona **Administrador de instancia/aplicación**, seleccione la aplicación y la instancia para que el Administrador tenga permisos.
@@ -147,7 +144,7 @@ Para exportar un registro, realice los pasos siguientes:
 
 ## <a name="invite-external-admins"></a>Invitar a administradores externos
 
-Cloud App Security le permite invitar a los proveedores de servicios de seguridad administrados (MSSPs) externos como administradores de su portal de Cloud App Security. Los usuarios externos ahora se pueden configurar como administradores y asignar cualquiera de los roles disponibles en Cloud App Security. Para agregar usuarios externos, proporcione una dirección de correo electrónico externa en los pasos que se indican en [agregar administradores adicionales](#add-additional-admins).
+Cloud App Security le permite invitar a los proveedores de servicios de seguridad administrados (MSSPs) externos como administradores de su portal de Cloud App Security. Los usuarios externos ahora se pueden configurar como administradores y asignar cualquiera de los roles disponibles en Cloud App Security. Para agregar usuarios externos, asegúrese de que Cloud App Security esté habilitado en el inquilino de origen y proporcione una dirección de correo electrónico externa en los pasos que se indican en [agregar administradores adicionales](#add-additional-admins).
 
 Además, para permitir que los MSSP proporcionen servicios en varios inquilinos de clientes, los administradores que tienen derechos de acceso a más de un inquilino ahora pueden cambiar de inquilino fácilmente en el portal. Para cambiar de inquilino, una vez que tenga permisos para varios inquilinos, haga clic en el icono de usuario. Verá una lista con los inquilinos para los que dispone de permisos. Seleccione el inquilino que quiera administrar.
 
@@ -156,4 +153,4 @@ Además, para permitir que los MSSP proporcionen servicios en varios inquilinos 
 ## <a name="next-steps"></a>Pasos siguientes  
 
 > [!div class="nextstepaction"]
-> [Configuración de Cloud Discovery](set-up-cloud-discovery.md)
+> [Configurar Cloud Discovery](set-up-cloud-discovery.md)

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 84d78ef48ed141c62934b8b91137d601c1fff666
-ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
+ms.openlocfilehash: 0ba00548c014126414319fb5860d2c7fab9fb26d
+ms.sourcegitcommit: 9a35b4e96db80ac85a4c0244ef6abd468d5774a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800848"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85853975"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicaciones con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security
 
@@ -31,7 +31,7 @@ En el área de trabajo actual, a menudo no basta con saber lo que ocurre en su e
 >
 > - Para usar Cloud App Security Control de aplicaciones de acceso condicional, necesita una [licencia de Azure Active Directory P1](https://azure.microsoft.com/pricing/details/active-directory/)o la licencia requerida por la solución IDP, así como una licencia de Cloud App Security.
 
-## <a name="how-it-works"></a>Funcionamiento
+## <a name="how-it-works"></a>Cómo funciona
 
 Control de aplicaciones de acceso condicional usa una arquitectura de proxy inverso y se integra con el IdP. Al integrar con Azure AD el acceso condicional, puede configurar las aplicaciones para que funcionen con Control de aplicaciones de acceso condicional con solo unos clics, lo que le permite aplicar de forma sencilla y selectiva controles de acceso y de sesión en las aplicaciones de su organización en función de cualquier condición en el acceso condicional. Las condiciones definen *quién* (usuario o grupo de usuarios) y *qué* (qué aplicaciones en la nube) y *dónde* (a qué ubicaciones y redes) se aplica una directiva de acceso condicional. Después de determinar las condiciones, puede enrutar a los usuarios a Cloud App Security donde puede proteger los datos con Control de aplicaciones de acceso condicional mediante la aplicación de controles de acceso y de sesión.
 
@@ -132,7 +132,9 @@ Puede bloquear el acceso a las aplicaciones de cliente de escritorio y móviles 
 Aunque los controles de sesión se compilan para trabajar con cualquier explorador en cualquier plataforma principal de cualquier sistema operativo, se admite [Microsoft Edge](https://www.microsoft.com/edge) (latest), Google Chrome (latest), Mozilla Firefox (latest) o Apple Safari (latest). También se puede bloquear o permitir el acceso a aplicaciones móviles y de escritorio.
 
 > [!NOTE]
-> Cloud App Security aprovecha los protocolos de Seguridad de la capa de transporte (TLS) 1.2+ para proporcionar el mejor cifrado de la clase. Las aplicaciones cliente nativas y los exploradores que no admiten TLS 1.2 + no serán accesibles cuando se configuran con el control de sesión. Sin embargo, las aplicaciones SaaS que usen TLS 1.1 o versiones anteriores aparecerán en el explorador como usuarias de TLS 1.2+ al configurarse con Cloud App Security.
+>
+> - Cloud App Security aprovecha los protocolos de seguridad de la capa de transporte (TLS) 1.2 + para proporcionar el mejor cifrado. Las aplicaciones cliente nativas y los exploradores que no admiten TLS 1.2 + no serán accesibles cuando se configuran con el control de sesión. Sin embargo, las aplicaciones SaaS que usen TLS 1.1 o versiones anteriores aparecerán en el explorador como usuarias de TLS 1.2+ al configurarse con Cloud App Security.
+> - Para aplicar controles de sesión a portal.office.com, debe incorporar Microsoft Office centro de administración de 365. Para obtener más información sobre las aplicaciones de incorporación, consulte [incorporación e implementación de control de aplicaciones de acceso condicional para cualquier aplicación](proxy-deployment-any-app.md).
 
 <a name="featured-apps"></a>Cualquier aplicación web configurada con los [protocolos de autenticación mencionados anteriormente](#supported-apps-and-clients) se puede incorporar para trabajar con controles de acceso y de sesión. Además, las siguientes aplicaciones se incluyen en Cloud App Security y ya se incorporan y están listas para usarse en cualquier inquilino:
 
