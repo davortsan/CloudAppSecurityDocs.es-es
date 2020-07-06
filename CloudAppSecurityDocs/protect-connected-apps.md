@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c4bb689262eaf2784d3394aea9dd76723f452e07
-ms.sourcegitcommit: a14ce5fd805e2a470a03578f73114a818441e6c1
+ms.openlocfilehash: 9130c75680ec6cb095d3995cd4a5aee3329f3189
+ms.sourcegitcommit: 9395620dfc916b0954207c4fe26f58c76cdfe0d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77519411"
+ms.lasthandoff: 07/05/2020
+ms.locfileid: "85953698"
 ---
 # <a name="protecting-connected-apps"></a>Protección de aplicaciones conectadas
 
@@ -31,16 +31,17 @@ La amplitud de compatibilidad para cada aplicación se basa en la riqueza de sus
 
 - [Protección de AWS](protect-aws.md)
 - [Protección de Azure](protect-azure.md)
-- [Cuadro proteger](protect-box.md)
-- [Proteger Dropbox](protect-dropbox.md)
-- [Proteger GCP](protect-gcp.md)
-- [Proteger G Suite](protect-gsuite.md)
-- [Proteger Office 365](protect-office-365.md)
-- [Proteger Okta](protect-okta.md)
+- [Protección de Box](protect-box.md)
+- [Protección de Dropbox](protect-dropbox.md)
+- [Protección de GitHub Enterprise Cloud](protect-github.md)
+- [Protección de GCP](protect-gcp.md)
+- [Protección de G Suite](protect-gsuite.md)
+- [Protección de Office 365](protect-office-365.md)
+- [Protección de Okta](protect-okta.md)
 - [Protección de Salesforce](protect-salesforce.md)
 - [Protección de ServiceNow](protect-servicenow.md)
-- [Proteger WebEx](protect-webex.md)
-- [Protección de WorkDay](protect-workday.md)
+- [Protección de Webex](protect-webex.md)
+- [Protección de Workday](protect-workday.md)
 
 ## <a name="next-steps"></a>Pasos siguientes
 
