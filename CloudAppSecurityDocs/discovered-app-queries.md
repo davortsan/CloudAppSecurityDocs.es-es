@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
+ms.date: 07/07/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,14 +14,14 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 10faf7a844c64efb621e6b8e1cf14b79443b322d
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: ff18286f75a3f5a306f7ac1c08ecff3ad98a01a5
+ms.sourcegitcommit: 15d80cde40df8a8d3a156764a6a99fad0e62a422
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81241489"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86046069"
 ---
-# <a name="discovered-app-filters-and-queries"></a>Filtros y consultas de aplicaciones detectadas
+# <a name="discovered-app-filters-and-queries"></a>Consultas y filtros de aplicaciones detectadas
 
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -45,8 +45,7 @@ Hay filtros de aplicaciones detectadas básicos y avanzados. Para aplicar un fil
 
 ### <a name="creating-and-managing-custom-app-tags"></a>Crear y administrar etiquetas de aplicación personalizadas
 
-Puede crear etiquetas de aplicación personalizadas.
-Estas etiquetas pueden usarse como filtros para profundizar un poco más en los tipos de aplicaciones específicos que quiere investigar. Por ejemplo, lista de supervisión personalizada, asignación a una unidad de negocio específica o aprobaciones personalizadas (por ejemplo, "aprobado por el departamento legal").
+Puede crear etiquetas de aplicación personalizadas. Estas etiquetas pueden usarse como filtros para profundizar un poco más en los tipos de aplicaciones específicos que quiere investigar. Por ejemplo, lista de supervisión personalizada, asignación a una unidad de negocio específica o aprobaciones personalizadas, como "aprobada por legal". Las etiquetas de aplicación también se pueden usar en directivas de detección de aplicaciones en filtros o mediante la aplicación de etiquetas a las aplicaciones como parte de las acciones de gobierno de directivas.
 
 Para crear una etiqueta de aplicación personalizada:
 
@@ -64,7 +63,7 @@ Para crear una etiqueta de aplicación personalizada:
 
 ## <a name="discovered-app-queries"></a>Consultas de aplicaciones detectadas
 
-Para que la investigación sea incluso más sencilla, puede crear consultas personalizadas y guardarlas para usar más adelante.
+Para que una investigación sea aún más sencilla, puede crear consultas personalizadas y guardarlas para su uso posterior.
 
 1. En la página **Aplicaciones detectadas**, use los filtros como se ha descrito anteriormente para explorar las aplicaciones en profundidad según sea necesario.
 
@@ -94,7 +93,7 @@ Cloud App Security también le proporciona **consultas sugeridas** y le permite 
 
 - **Aplicaciones empresariales en la nube con cifrado débil** : filtra todas las aplicaciones detectadas para mostrar solo las aplicaciones que son arriesgadas porque no cifran los datos en reposo y no admiten ningún protocolo de cifrado.
 
-- **Aplicaciones en la nube preparadas para el RGPD**: filtra todas las aplicaciones detectadas para mostrar solo las que estén preparadas para el RGPD. Dado que el cumplimiento del RGPD es una prioridad principal, esta consulta permite identificar fácilmente las aplicaciones que están preparadas para el RGPD y mitigar las posibles amenazas mediante una evaluación del riesgo de las que no lo están.
+- **Aplicaciones en la nube preparadas para el RGPD**: filtra todas las aplicaciones detectadas para mostrar solo las que estén preparadas para el RGPD. Dado que el cumplimiento de RGPD es una prioridad máxima, esta consulta le ayuda a identificar fácilmente las aplicaciones que están listas para RGPD y a mitigar la amenaza mediante la evaluación del riesgo de las que no lo son.
 
 ![consultar aplicaciones detectadas](media/queries-discovered-apps.png)
 

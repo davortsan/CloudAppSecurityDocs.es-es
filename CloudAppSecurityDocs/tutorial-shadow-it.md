@@ -1,11 +1,11 @@
 ---
-title: Detección y administración de TI en la sombra | Microsoft Docs
+title: Detección y administración de TI en la sombra
 description: En este tutorial se describe el proceso para aplicar automáticamente etiquetas de clasificación de Azure Information Protection en Microsoft Cloud App Security.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/11/2019
+ms.date: 06/29/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 66b70832dcdcc3c741a8eb330bc15050afbd70c8
-ms.sourcegitcommit: c981486f4ef211bce41dca1691aa0d47d180dd5e
+ms.openlocfilehash: 2a9ef4658cb363e98397341faffc69d6c961808f
+ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2020
-ms.locfileid: "84481733"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85624941"
 ---
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutorial: detección y administración de shadow IT en la red
 
@@ -70,13 +70,16 @@ Ahora que Cloud Discovery se está ejecutando en la red, examine los informes c
 
     * Para explorar la aplicación en profundidad y obtener más información sobre de los factores de riesgo del cumplimiento de la aplicación, haga clic en el nombre y, a continuación, en la pestaña **Información**.
 
+    > [!TIP]
+    > Reciba una notificación cuando una aplicación detectada esté asociada a una vulneración de seguridad publicada recientemente mediante la **alerta de vulneración de seguridad para aplicaciones detectadas**. Investigue todos los usuarios, direcciones IP y dispositivos que acceden a la aplicación vulnerada en los últimos 90 días y aplique los controles pertinentes.
+
 1. **Analice el uso**: ahora que sabe si quiere o no que se use la aplicación en la organización, querrá investigar cómo y quién la usa. Si solo se usa de forma limitada en la organización, es posible que no suponga un problema, pero si el uso aumenta puede que quiera recibir una notificación para decidir si quiere bloquear la aplicación.
 
     * En el portal de Cloud App Security, en **Detección**, haga clic en **Aplicaciones detectadas** y, a continuación, explore en profundidad haciendo clic en la aplicación específica que quiera investigar. La pestaña **Uso** le permite saber cuántos usuarios activos están usando la aplicación y cuánto tráfico genera. Esto ya puede proporcionarle una buena idea de lo que ocurre con la aplicación. Después, si quiere ver quién está usando la aplicación en concreto, puede profundizar más haciendo clic en **Total de usuarios activos**. Este paso importante puede proporcionarle información pertinente. Por ejemplo, si detecta que todos los usuarios de una aplicación específica pertenecen al departamento de marketing, es posible que haya una necesidad empresarial de esta aplicación y, si es peligrosa, debería comunicarse con ese departamento para encontrar una alternativa antes de bloquearla.
 
     * Profundice aún más al investigar el uso de aplicaciones detectadas. Vea subdominios y recursos para obtener información sobre actividades específicas, acceso a datos y uso de recursos en los servicios en la nube. Para obtener más información, consulte [Análisis detallado de las aplicaciones detectadas](discovered-apps.md#deep-dive-into-discovered-apps) y [Detección de recursos y aplicaciones personalizadas](discovered-apps.md#discover-resources-and-custom-apps).
 
-1. Use el catálogo de aplicaciones en la nube y filtre por las aplicaciones que pertenezcan a la misma categoría de aplicación en cuestión. Luego, con el uso de los filtros avanzados, identifique soluciones que cumplan con los distintos controles de seguridad que se necesiten para cumplir con la directiva de su organización.
+1. **Identificación de aplicaciones alternativas**: Use el catálogo de aplicaciones en la nube y filtre por las aplicaciones que pertenezcan a la misma categoría de aplicación en cuestión. Luego, con el uso de los filtros avanzados, identifique soluciones que cumplan con los distintos controles de seguridad que se necesiten para cumplir con la directiva de su organización.
 
 ### <a name="phase-3-manage-your-apps"></a>Fase 3: Administración de las aplicaciones
 

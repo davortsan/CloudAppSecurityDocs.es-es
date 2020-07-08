@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1578a945e461d69a78f56f000b494235245002b9
-ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
+ms.openlocfilehash: 7ad7bc15a2ea70a9b1166f30024afc0bfe17ae27
+ms.sourcegitcommit: 15d80cde40df8a8d3a156764a6a99fad0e62a422
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800799"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86046103"
 ---
 # <a name="session-policies"></a>Directivas de sesión
 
@@ -34,6 +34,7 @@ Por ejemplo, puede decidir que, desde cualquier dispositivo no administrado o en
 * [Bloqueo de actividades específicas](#block-activities)
 * [Protección de archivos en la descarga](#protect-download)
 * [Proteger cargas de archivos confidenciales](#protect-upload)
+* [Bloquear malware al cargar](#block-malware-on-upload)
 * [Instruya a los usuarios para proteger archivos confidenciales](#educate-protect)
 
 ## <a name="prerequisites-to-using-session-policies"></a>Requisitos previos para usar directivas de sesión
@@ -160,7 +161,7 @@ También puede configurar directivas de sesión para bloquear el malware en la d
 
 ## <a name="educate-users-to-protect-sensitive-files"></a><a name="educate-protect"></a>Instruya a los usuarios para proteger archivos confidenciales
 
-Es importante formar a los usuarios cuando infrinjan una directiva, para que aprendan a cumplir las directivas de la organización. Como cada empresa tiene necesidades y directivas exclusivas, Cloud App Security le permite personalizar los filtros de una directiva y el mensaje que se muestra al usuario cuando se detecta una infracción. Puede proporcionar instrucciones específicas a los usuarios, como proporcionar instrucciones sobre cómo etiquetar correctamente un archivo o cómo inscribir un dispositivo no administrado, para asegurarse de que los archivos se cargan correctamente.
+Es importante formar a los usuarios cuando infrinjan una directiva para que aprendan a cumplir las directivas de la organización. Como cada empresa tiene necesidades y directivas exclusivas, Cloud App Security le permite personalizar los filtros de una directiva y el mensaje que se muestra al usuario cuando se detecta una infracción. Puede proporcionar instrucciones específicas a los usuarios, como proporcionar instrucciones sobre cómo etiquetar correctamente un archivo o cómo inscribir un dispositivo no administrado, para asegurarse de que los archivos se cargan correctamente.
 
 Por ejemplo, si un usuario carga un archivo sin una etiqueta de Azure Information Protection, se puede mostrar un mensaje que explica que el archivo contiene contenido confidencial que requiere una etiqueta adecuada. De forma similar, si un usuario intenta cargar un documento desde un dispositivo no administrado, se puede mostrar un mensaje con instrucciones sobre cómo inscribir el dispositivo o uno que proporciona una explicación más detallada de por qué se debe inscribir el dispositivo.
 
@@ -172,7 +173,7 @@ Por ejemplo, si un usuario carga un archivo sin una etiqueta de Azure Informatio
 >[!div class="nextstepaction"]
 > [SIGUIENTE: Cómo crear una directiva de acceso »](access-policy-aad.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 > [!div class="nextstepaction"]
 > [Bloqueo de descargas en dispositivos no administrados mediante Azure AD Control de aplicaciones de acceso condicional](use-case-proxy-block-session-aad.md)

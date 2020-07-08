@@ -262,12 +262,12 @@
           href: aadip-integration.md
         - name: Integración de Azure Information Protection
           href: azip-integration.md
+        - name: Integración de Azure Sentinel
+          href: siem-sentinel.md
         - name: Integración con soluciones externas
           items:
             - name: Integración de SIEM genérica
               href: siem.md
-            - name: Integración de Azure Sentinel
-              href: siem-sentinel.md
             - name: Integración de DLP externa
               href: icap-stunnel.md
             - name: Integraciones adicionales
