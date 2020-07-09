@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5c48fff030c1f008d9361796eafe4ba49b8b0b82
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 4b2d84c2c8f3260cf5e6048bc453a62c29cd95b9
+ms.sourcegitcommit: 14b6fe342aa06d5547d121522b1e2ae9525da8e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624552"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86122655"
 ---
 # <a name="connect-apps"></a>Conectar aplicaciones
 
@@ -68,20 +68,20 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
 
 | | AWS | Box | Dropbox | GCP | G Suite | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
 |-|-|-|-|-|-|-|-|-|-|-|-|
-| **Enumerar cuentas** | ✔ | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| **Enumeración de cuentas** | ✔ | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | **Lista de grupos** | ✔ | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | ✔ | ✔ | ✔ | | No es compatible con el proveedor |
 | **Lista de privilegios** | | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | No es compatible con el proveedor | ✔ | ✔ | ✔ | No es compatible con el proveedor |
 | **Regulación de usuario** | | ✔ | Próximamente | Conexión de asunto G Suite | ✔ | ✔ | | Próximamente | ✔ | Próximamente | No es compatible con el proveedor |
 | **Actividad de inicio de sesión** | ✔ | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **Actividad de usuario** | No disponible | ✔ | ✔ | ✔ | ✔ - requiere Google Business o Enterprise | ✔ | ✔ | Parcial | Compatible con Salesforce Shield | ✔ | ✔ |
+| **Actividad de usuario** | No aplicable | ✔ | ✔ | ✔ | ✔ - requiere Google Business o Enterprise | ✔ | ✔ | Parcial | Compatible con Salesforce Shield | ✔ | ✔ |
 | **Actividad administrativa** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Parcial | ✔ | ✔ | No es compatible con el proveedor |
-| **DLP: examen periódico** | | ✔ | Próximamente | No disponible | ✔ | ✔ | No disponible | | | | No es compatible con el proveedor |
-| **Análisis en tiempo real de DLP-Near** | | ✔ | ✔ | No disponible | ✔: requiere Google Business Enterprise | ✔ | No disponible | ✔ | ✔ | ✔ | No es compatible con el proveedor |
-| **Control de uso compartido** | ✔ | ✔ | ✔ | No disponible | ✔ | ✔ | No aplicable | No aplicable | | ✔ | No es compatible con el proveedor |
-| **Regulación de archivos** | ✔ | ✔ | ✔ | No disponible | ✔ | ✔ | No disponible | | ✔ | | No es compatible con el proveedor |
-| **Ver permisos de aplicación** | No disponible | No es compatible con el proveedor | Próximamente | No disponible | ✔ | ✔ | No disponible | | ✔ | No aplicable | No aplicable |
-| **Revocar permisos de aplicación** | No disponible | No es compatible con el proveedor | en breve | No disponible | ✔ | ✔ | No disponible | | ✔ | No aplicable | No aplicable |
-| **Aplicación de etiquetas de Azure Information Protection** | No disponible | ✔ | | No disponible | ✔ | ✔ | No aplicable | | | No aplicable | No aplicable |
+| **DLP: examen periódico** | | ✔ | Próximamente | No aplicable | ✔ | ✔ | No aplicable | ✔ | ✔ | ✔ | No es compatible con el proveedor |
+| **Análisis en tiempo real de DLP-Near** | | ✔ | ✔ | No aplicable | ✔: requiere Google Business Enterprise | ✔ | No aplicable | | | ✔ | No es compatible con el proveedor |
+| **Control de uso compartido** | ✔ | ✔ | ✔ | No aplicable | ✔ | ✔ | No aplicable | No aplicable | | ✔ | No es compatible con el proveedor |
+| **Regulación de archivos** | ✔ | ✔ | ✔ | No aplicable | ✔ | ✔ | No aplicable | | ✔ | | No es compatible con el proveedor |
+| **Ver permisos de aplicación** | No aplicable | No es compatible con el proveedor | Próximamente | No aplicable | ✔ | ✔ | No aplicable | | ✔ | No aplicable | No aplicable |
+| **Revocar permisos de aplicación** | No aplicable | No es compatible con el proveedor | en breve | No aplicable | ✔ | ✔ | No aplicable | | ✔ | No aplicable | No aplicable |
+| **Aplicación de etiquetas de Azure Information Protection** | No aplicable | ✔ | | No aplicable | ✔ | ✔ | No aplicable | | | No aplicable | No aplicable |
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -99,13 +99,13 @@ Para usar los conectores de aplicaciones, debe asegurarse de que tiene lo siguie
 | Azure | | Administrador global |
 | AWS | | Usuario creado recientemente |
 | Box | Enterprise | Se recomienda encarecidamente que se conecte a Box como administrador. La conexión como coadmin dará como resultado una visibilidad de datos parcial. En caso de que se conecte como coadministrador, asegúrese de seleccionar todos los permisos. |
-| Dropbox | Empresa/Enterprise | Administración |
+| Dropbox | Empresa/Enterprise | Administrador |
 | GitHub | Nube de GitHub Enterprise | Propietario |
 | GCP | | Consulte los [requisitos previos de Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | G Suite | Se prefiere G Suite Business o Enterprise<br /><br />G Suite Enterprise (como mínimo) | Superadministrador |
 | Office 365 | | Administrador global |
-| Okta | Enterprise (no versión de prueba) | Administración |
-| Salesforce | | Administración |
+| Okta | Enterprise (no versión de prueba) | Administrador |
+| Salesforce | | Administrador |
 | ServiceNow | Eureka o versión posterior | Rol de administrador + RestAPI |
 | Webex | | Administrador + administrador de cumplimiento |
 | Workday | | Consulte los [requisitos previos de Connect WorkDay](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) |

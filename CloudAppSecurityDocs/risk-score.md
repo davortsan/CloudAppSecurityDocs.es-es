@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d3d292f7bedfdfd9d4569bb357b5c0dcaf48c69f
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 074ff2ae9e23cdcb351a34f937103e311441aa7f
+ms.sourcegitcommit: 45a23730c2beda00c32b0d6cb8da872dc2bf0e14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85625091"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86137957"
 ---
 # <a name="working-with-app-risk-scores"></a>Trabajar con la puntuación de riesgo de la aplicación
 
@@ -76,7 +76,7 @@ Si encuentra una nueva aplicación en el entorno que Cloud App Security todavía
 
     ![Sugerir una aplicación a Cloud App Security](media/suggest-new-app.png)
 
-2. En el elemento emergente **sugerir nueva aplicación** en la nube, rellene los detalles sobre el nuevo. Incluya el nombre y el dominio de la aplicación.
+2. En el elemento emergente **sugerir nueva aplicación** en la nube, rellene los detalles sobre la nueva aplicación. Incluya el nombre y el dominio de la aplicación.
 
     ![Sugerir un elemento emergente de la aplicación para Cloud App Security](media/suggest-new-app-pop-up.png)
 

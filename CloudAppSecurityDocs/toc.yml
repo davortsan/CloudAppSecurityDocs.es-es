@@ -27,7 +27,7 @@
   items:
     - name: Detección y administración de shadow IT
       href: tutorial-shadow-it.md
-    - name: Detección y administración de actividades sospechosas
+    - name: Detección de actividad sospechosa del usuario con UEBA
       href: tutorial-suspicious-activity.md
     - name: Investigación de usuarios de riesgo
       href: tutorial-ueba.md

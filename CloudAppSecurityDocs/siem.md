@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 546912761fb854adecc9d7626465b694f02b20b7
-ms.sourcegitcommit: f58ca0afb30e2db7e4e868f5df05651b42aede5e
+ms.openlocfilehash: 9b2b4cfc8c3807f5acd7540390a3b44604e49d84
+ms.sourcegitcommit: 45a23730c2beda00c32b0d6cb8da872dc2bf0e14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82161816"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86137973"
 ---
 # <a name="generic-siem-integration"></a>Integración de SIEM genérica
 
@@ -57,7 +57,7 @@ La integración con SIEM se realiza en tres pasos:
 2. Descarga del archivo JAR y ejecución en el servidor
 3. Valide que el agente SIEM funcione.
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 * Servidor Windows o Linux estándar (puede ser una máquina virtual).
 * Sistema operativo: Windows o Linux
@@ -73,21 +73,21 @@ La integración con SIEM se realiza en tres pasos:
 
 1. En el portal de Cloud App Security, en el engranaje de **configuración** , haga clic en **extensiones de seguridad**.
 
-1. En la pestaña **agentes Siem** , haga clic en**+** agregar () y, a continuación, elija **Siem genérico**.
+1. En la pestaña **agentes Siem** , haga clic en Agregar ( **+** ) y, a continuación, elija **Siem genérico**.
 
     ![Captura de pantalla que muestra el menú Agregar integración de SIEM](media/siem0.png)
 
 1. En el asistente, haga clic en **Iniciar asistente**.
-1. En el asistente, asigne un nombre, **seleccione el formato SIEM** y establezca la **Configuración avanzada** que esté relacionada con ese formato. Haga clic en **Next**.
+1. En el asistente, asigne un nombre, **seleccione el formato SIEM** y establezca la **Configuración avanzada** que esté relacionada con ese formato. Haga clic en **Siguiente**.
 
     ![Configuración general de SIEM](media/siem1.png)
 
 1. Escriba la dirección IP o nombre de host del **host de syslog remoto** y el **número de puerto de syslog**. Seleccione TCP o UDP como protocolo de syslog remoto.
-    Puede trabajar con el administrador de seguridad para obtener estos detalles si no los tiene. Haga clic en **Next**.
+    Puede trabajar con el administrador de seguridad para obtener estos detalles si no los tiene. Haga clic en **Siguiente**.
 
     ![Configuración remota de Syslog](media/siem2.png)
 
-1. Seleccione los tipos de datos que quiera exportar al servidor SIEM para **Alertas** y **Actividades**. Use el control deslizante para habilitarlas y deshabilitarlas; de forma predeterminada todo está seleccionado. Puede usar el menú desplegable **Apply to** (Aplicar a) para establecer filtros para enviar solo alertas y actividades específicas al servidor SIEM. Haga clic en **Editar y obtener vista previa de resultados** para comprobar que el filtro funciona según lo esperado. Haga clic en **Next**.
+1. Seleccione los tipos de datos que quiera exportar al servidor SIEM para **Alertas** y **Actividades**. Use el control deslizante para habilitarlas y deshabilitarlas; de forma predeterminada todo está seleccionado. Puede usar el menú desplegable **Apply to** (Aplicar a) para establecer filtros para enviar solo alertas y actividades específicas al servidor SIEM. Haga clic en **Editar y obtener vista previa de resultados** para comprobar que el filtro funciona según lo esperado. Haga clic en **Siguiente**.
 
    ![Configuración de tipos de datos](media/siem3.png)
 
@@ -116,7 +116,7 @@ La integración con SIEM se realiza en tres pasos:
 Se usan las variables siguientes:
 
 * NOMBRE_DIRECTORIO es la ruta de acceso al directorio que quiere usar para los registros de depuración del agente local.
-* ADDRESS [:P ordenar] es la dirección del servidor proxy y el puerto que usa el servidor para conectarse a * Internet.
+* ADDRESS [:P ordenar] es la dirección del servidor proxy y el puerto que usa el servidor para conectarse a Internet.
 * TOKEN es el token del agente SIEM que ha copiado en el paso anterior.
 
 Puede escribir -h en cualquier momento para obtener ayuda.
@@ -161,15 +161,15 @@ El siguiente texto es un ejemplo de archivo de registro de alertas:
 | Actividades y alertas | msg | Descripción de la actividad o alerta, tal como se muestra en el portal |
 | Actividades y alertas | suser | Usuario asunto de la actividad o alerta |
 | Actividades y alertas | destinationServiceName | Aplicación que origina la actividad o alerta, por ejemplo, Office 365, SharePoint, Box. |
-| Actividades y alertas | Etiqueta\<de>CS X | Cada etiqueta tiene un significado diferente, pero la misma etiqueta lo explica, por ejemplo, targetObjects. |
-| Actividades y alertas | >\<CS X | La información correspondiente a la etiqueta (el usuario de destino de la actividad o alerta según el ejemplo de etiqueta). |
+| Actividades y alertas | cs\<X>Label | Cada etiqueta tiene un significado diferente, pero la misma etiqueta lo explica, por ejemplo, targetObjects. |
+| Actividades y alertas | cs\<X> | La información correspondiente a la etiqueta (el usuario de destino de la actividad o alerta según el ejemplo de etiqueta). |
 | Actividades | EVENT_CATEGORY_* | Categoría general de la actividad |
-| Actividades | \<> DE ACCIÓN | Tipo de actividad, tal como se muestra en el portal |
+| Actividades | \<ACTION> | Tipo de actividad, tal como se muestra en el portal |
 | Actividades | externalId | Id. de evento |
 | Actividades | dvc | Dirección IP del dispositivo del cliente |
 | Actividades | requestClientApplication | Agente de usuario del dispositivo del cliente |
-| Alertas | \<tipo de alerta> | Por ejemplo "ALERT_CABINET_EVENT_MATCH_AUDIT" |
-| Alertas | \<nombre> | Nombre de la directiva coincidente |
+| Alertas | \<alert type> | Por ejemplo "ALERT_CABINET_EVENT_MATCH_AUDIT" |
+| Alertas | \<name> | Nombre de la directiva coincidente |
 | Alertas | externalId | Id. de alerta |
 | Alertas | src | Dirección IPv4 del dispositivo cliente |
 | Alertas | c6a1 | Dirección IPv6 del dispositivo cliente |
