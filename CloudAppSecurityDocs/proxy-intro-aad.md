@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/27/2020
+ms.date: 07/09/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0ba00548c014126414319fb5860d2c7fab9fb26d
-ms.sourcegitcommit: 9a35b4e96db80ac85a4c0244ef6abd468d5774a9
+ms.openlocfilehash: c957afbd4b4fef2947b042c99b548edfacbcb5c0
+ms.sourcegitcommit: 5ae4c12ee43c9133b61731a95f81f771eeeb7d19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85853975"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86180553"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicaciones con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security
 
@@ -107,6 +107,13 @@ Para configurar una directiva para aprovechar la administración de dispositivos
 1. Seleccione la pestaña **identificación del dispositivo** .
 1. Cargue tantos certificados raíz como intermedios como necesite.
 
+    > [!TIP]
+    > Para probar cómo funciona esto, puede usar nuestra entidad de certificación raíz y el certificado de cliente de ejemplo, como se indica a continuación:
+    >
+    > 1. Descargue la [entidad de certificación raíz](https://github.com/microsoft/Microsoft-Cloud-App-Security/blob/master/Doc%20Assets/Proxy/Samples/SampleRootCA.crt.pem) y el [certificado de cliente](https://github.com/microsoft/Microsoft-Cloud-App-Security/blob/master/Doc%20Assets/Proxy/Samples/SampleClientCert.pfx)de ejemplo.
+    > 1. Cargue la CA raíz en Cloud App Security.
+    > 1. Instale el certificado de cliente (contraseña = Microsoft) en los dispositivos correspondientes.
+
 Una vez cargados los certificados, puede crear directivas de acceso y de sesión basadas en la **etiqueta del dispositivo** y el certificado de **cliente válido**.
 
 ## <a name="supported-apps-and-clients"></a>Aplicaciones y clientes compatibles
@@ -141,14 +148,14 @@ Aunque los controles de sesión se compilan para trabajar con cualquier explorad
 - AWS
 - Azure DevOps (Visual Studio Team Services)
 - Azure Portal (versión preliminar)
-- Box
+- Cuadro
 - Concur
 - CornerStone on Demand
 - DocuSign
 - Dropbox
 - Dynamics 365 CRM (versión preliminar)
 - egnyte
-- Exchange Online
+- Exchange Online
 - G Suite
 - GitHub
 - HighQ
@@ -171,7 +178,7 @@ Aunque los controles de sesión se compilan para trabajar con cualquier explorad
 
 A continuación se muestra una lista de las aplicaciones destacadas que se admiten en Office 365 Cloud App Security. Para usar estas aplicaciones con Cloud App Security, debe tener una licencia de Office 365 E5.
 
-- Exchange Online
+- Exchange Online
 - OneDrive para la Empresa
 - Power BI
 - SharePoint Online
