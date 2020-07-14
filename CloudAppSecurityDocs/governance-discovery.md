@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1c0df9e769608b2ca66de5b7a8889bfd648795a9
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: ad9f158a1e81a9aeaf7bb59a23da56e27260a6c5
+ms.sourcegitcommit: a76d7b8837a5ad17348eb1b2e1dcbe0bf8a2d0a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624578"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86282455"
 ---
 # <a name="govern-discovered-apps"></a>Control de aplicaciones detectadas
 
@@ -35,7 +35,7 @@ Puede no autorizar una aplicación de riesgo específica. Para ello, haga clic e
 
 Si tiene una lista de aplicaciones que quiere autorizar o no autorizar, active la casilla de todas las aplicaciones que quiere administrar y después seleccione la acción.
 
-Para consultar una lista de las aplicaciones no autorizadas, puede [generar un script de bloque mediante las API de Cloud App Security](https://us.portal.cloudappsecurity.com/api-docs/#generate-block-script).
+Para consultar una lista de las aplicaciones no autorizadas, puede [generar un script de bloque mediante las API de Cloud App Security](api-discovery-script.md).
 
 > [!NOTE]
 > Si el inquilino usa protección contra amenazas avanzada (ATP) de Microsoft defender, Zscaler NSS o iboss, las aplicaciones marcadas como no autorizadas se bloquean automáticamente mediante Cloud App Security y las siguientes secciones sobre la creación de scripts de bloqueo son innecesarias. Para obtener más información, consulte [integración con Microsoft defender ATP](wdatp-integration.md), [integración con Zscaler](zscaler-integration.md)e [integración con iboss](iboss-integration.md) , respectivamente.
