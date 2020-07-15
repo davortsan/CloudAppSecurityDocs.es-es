@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/28/2020
+ms.date: 07/14/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4b2d84c2c8f3260cf5e6048bc453a62c29cd95b9
-ms.sourcegitcommit: 14b6fe342aa06d5547d121522b1e2ae9525da8e4
+ms.openlocfilehash: bf6c12f3b41abf63ab3183f85d7dedcba21584c9
+ms.sourcegitcommit: b71546236cb97c0a22d0e82742a167f31555b275
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86122655"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86308265"
 ---
 # <a name="connect-apps"></a>Conectar aplicaciones
 
@@ -75,8 +75,8 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
 | **Actividad de inicio de sesión** | ✔ | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | **Actividad de usuario** | No aplicable | ✔ | ✔ | ✔ | ✔ - requiere Google Business o Enterprise | ✔ | ✔ | Parcial | Compatible con Salesforce Shield | ✔ | ✔ |
 | **Actividad administrativa** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Parcial | ✔ | ✔ | No es compatible con el proveedor |
-| **DLP: examen periódico** | | ✔ | Próximamente | No aplicable | ✔ | ✔ | No aplicable | ✔ | ✔ | ✔ | No es compatible con el proveedor |
-| **Análisis en tiempo real de DLP-Near** | | ✔ | ✔ | No aplicable | ✔: requiere Google Business Enterprise | ✔ | No aplicable | | | ✔ | No es compatible con el proveedor |
+| **DLP: examen periódico** | | ✔ | ✔ | No aplicable | ✔ | ✔ | No aplicable | ✔ | ✔ | ✔ | No es compatible con el proveedor |
+| **Análisis en tiempo real de DLP-Near** | | ✔ | | No aplicable | ✔: requiere Google Business Enterprise | ✔ | No aplicable | | | ✔ | No es compatible con el proveedor |
 | **Control de uso compartido** | ✔ | ✔ | ✔ | No aplicable | ✔ | ✔ | No aplicable | No aplicable | | ✔ | No es compatible con el proveedor |
 | **Regulación de archivos** | ✔ | ✔ | ✔ | No aplicable | ✔ | ✔ | No aplicable | | ✔ | | No es compatible con el proveedor |
 | **Ver permisos de aplicación** | No aplicable | No es compatible con el proveedor | Próximamente | No aplicable | ✔ | ✔ | No aplicable | | ✔ | No aplicable | No aplicable |
@@ -117,12 +117,22 @@ Para obtener más información sobre el emparejamiento público, vea [Circuitos 
 
 ## <a name="disable-app-connectors"></a>Deshabilitación de conectores de aplicaciones
 
+> [!NOTE]
+> Antes de deshabilitar un conector de aplicaciones, asegúrese de que tiene los detalles de conexión disponibles, ya que los necesitará si desea volver a habilitar el conector.
+
 Para deshabilitar las aplicaciones conectadas:
 
 1. En la página **aplicaciones conectadas** , en la fila correspondiente, haga clic en los tres puntos y seleccione **deshabilitar el conector de aplicaciones**.
 1. En el elemento emergente, haga clic en **deshabilitar instancia de conector de aplicaciones** para confirmar la acción.
 
 Una vez deshabilitada, la instancia de Connector dejará de consumir datos del conector.
+
+## <a name="re-enable-app-connectors"></a>Volver a habilitar los conectores de aplicaciones
+
+Para volver a habilitar las aplicaciones conectadas:
+
+1. En la página **aplicaciones conectadas** , en la fila correspondiente, haga clic en los tres puntos y seleccione **Editar aplicación**. Esto inicia el proceso para agregar un conector.
+1. Agregue el conector siguiendo los pasos de la guía del conector de API correspondiente. Por ejemplo, si va a volver a habilitar GitHub, siga los pasos que se describen en [conexión de github Enterprise Cloud a Cloud App Security](connect-github-ec-to-microsoft-cloud-app-security.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

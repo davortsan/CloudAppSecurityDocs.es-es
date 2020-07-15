@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
+ms.date: 07/14/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b19fdd34425218cbeff284bb16962723e027e914
-ms.sourcegitcommit: 14b6fe342aa06d5547d121522b1e2ae9525da8e4
+ms.openlocfilehash: 81c44eb4527b19e1f3f42929028791f1ae48715d
+ms.sourcegitcommit: b71546236cb97c0a22d0e82742a167f31555b275
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86122638"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86308248"
 ---
 # <a name="api-tokens"></a>Tokens de API
 
@@ -32,7 +32,7 @@ La API de Microsoft Cloud App Security proporciona acceso mediante programación
 - Enumerar actividades, alertas e informes de directiva
 - Descartar o resolver alertas
 
-Para ver la documentación completa de la API, en el portal de Cloud App Security, vaya a Ayuda > **Documentación de la API**.
+Para obtener más información sobre el uso de nuestra API, consulte [Cloud App Security API de REST](api-introduction.md).
 
 Si quiere acceder a la API, deberá crear un token de API y usarlo en el software para conectar con la API de Cloud App Security.
 
@@ -75,6 +75,9 @@ Después de que se haya revocado un token, se quitará de la tabla y el software
 > - Los tokens de API de usuarios desaprovisionados se conservan en Cloud App Security pero no se pueden usar. Cualquier intento de utilizarlos producirá una respuesta de Permiso denegado. Sin embargo, se recomienda revocar dichos tokens en la página de **tokens de API** .
 
 ## <a name="next-steps"></a>Pasos siguientes
+
+> [!div class="nextstepaction"]
+> [Cloud App Security API de REST](api-introduction.md)
 
 > [!div class="nextstepaction"]
 > [Solución de problemas de integración de SIEM](troubleshooting-siem.md)
