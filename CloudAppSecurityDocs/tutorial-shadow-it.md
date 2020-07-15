@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 2a9ef4658cb363e98397341faffc69d6c961808f
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 6145c6dade8729c3572f9c491ad9743899b3b92e
+ms.sourcegitcommit: 5f3b3f11bfb6f677b8666a4566e7abbb873567d1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624941"
+ms.lasthandoff: 07/12/2020
+ms.locfileid: "86279982"
 ---
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutorial: detección y administración de shadow IT en la red
 
@@ -79,7 +79,7 @@ Ahora que Cloud Discovery se está ejecutando en la red, examine los informes c
 
     * Profundice aún más al investigar el uso de aplicaciones detectadas. Vea subdominios y recursos para obtener información sobre actividades específicas, acceso a datos y uso de recursos en los servicios en la nube. Para obtener más información, consulte [Análisis detallado de las aplicaciones detectadas](discovered-apps.md#deep-dive-into-discovered-apps) y [Detección de recursos y aplicaciones personalizadas](discovered-apps.md#discover-resources-and-custom-apps).
 
-1. **Identificación de aplicaciones alternativas**: Use el catálogo de aplicaciones en la nube y filtre por las aplicaciones que pertenezcan a la misma categoría de aplicación en cuestión. Luego, con el uso de los filtros avanzados, identifique soluciones que cumplan con los distintos controles de seguridad que se necesiten para cumplir con la directiva de su organización.
+1. **Identificación de aplicaciones alternativas**: Use el catálogo de aplicaciones en la nube para identificar aplicaciones más seguras que consigan una funcionalidad empresarial similar a la de las aplicaciones de riesgo detectadas y que cumplan con la directiva de la organización. Para ello, puede usar los filtros avanzados a fin de buscar aplicaciones de la misma categoría que cumplan los requisitos para superar los diferentes controles de seguridad.
 
 ### <a name="phase-3-manage-your-apps"></a>Fase 3: Administración de las aplicaciones
 
