@@ -1,6 +1,6 @@
 ---
-title: Establecimiento del ámbito de la implementación de Microsoft Cloud App Security
-description: En este artículo se proporciona información acerca de cómo definir el ámbito de la implementación de Cloud App Security, incluyendo o excluyendo usuarios o grupos específicos.
+title: Privacidad de las actividades
+description: En este artículo se proporciona información sobre cómo configurar la supervisión de la actividad para que cumpla con la Directiva de privacidad del usuario.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -13,18 +13,18 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6cfc4421569a59c49c9a980af3ce2e0876d90bce
-ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
+ms.openlocfilehash: 6de413cc6067ea43f5c2d677e421c09ffddcd94d
+ms.sourcegitcommit: 3464ce8ed73d1bfaf02e4e78007766ea18350d9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84253822"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86402668"
 ---
-# <a name="activity-privacy"></a>Privacidad de la actividad
+# <a name="activity-privacy"></a>Privacidad de las actividades
 
 *Se aplica a: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security proporciona a las empresas la capacidad de determinar con detalle qué usuarios desean supervisar en función de la pertenencia a grupos. La privacidad de la actividad agrega la capacidad de cumplir las normas de cumplimiento de su organización sin poner en peligro la privacidad del usuario. Esto se consigue permitiendo supervisar a los usuarios manteniendo su privacidad ocultando sus actividades en el registro de actividad. Solo los administradores autorizados tienen la opción de elegir ver estas actividades privadas, con cada instancia que se está auditando en el registro de gobierno.
+Microsoft Cloud App Security proporciona a las empresas la capacidad de determinar con detalle qué usuarios desean supervisar en función de la pertenencia a grupos. La privacidad de la actividad agrega la capacidad de cumplir las normas de cumplimiento de su organización sin poner en peligro la privacidad del usuario. Esto se consigue permitiendo supervisar a los usuarios manteniendo su privacidad ocultando sus actividades en el registro de actividad. Solo los administradores autorizados tienen la opción de elegir la opción de ver estas actividades privadas, con la auditoría de cada instancia en el registro de gobernanza.
 
 ## <a name="configure-activity-privacy-user-groups"></a>Configurar grupos de usuarios de privacidad de actividad
 

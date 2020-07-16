@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f63e873d2b65781a3bca7209c020696bf2957171
-ms.sourcegitcommit: 4e2b905c8770d411df68372c29154d30b2cf195e
+ms.openlocfilehash: 5d6491c27c5eeb4608f9712c3835194a9c252059
+ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2020
-ms.locfileid: "85123266"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86402229"
 ---
 # <a name="integrate-with-microsoft-power-automate-for-custom-alert-automation"></a>Integración con Microsoft Power Automate para la automatización de alertas personalizada
 
@@ -28,7 +28,7 @@ Cloud App Security se integra con [Microsoft Power Automate](https://docs.micros
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- Debe tener un plan de [Microsoft Power automaticly](https://flow.microsoft.com/pricing) válido
+- Debe tener un [plan de Microsoft Power Automate](https://flow.microsoft.com/pricing) válido.
 
 ## <a name="how-it-works"></a>Funcionamiento
 
@@ -66,6 +66,6 @@ El [conector de Cloud App Security](https://docs.microsoft.com/connectors/clouda
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Control de aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
+> [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

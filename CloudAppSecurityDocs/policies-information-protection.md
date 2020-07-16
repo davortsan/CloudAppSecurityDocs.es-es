@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fcec14fa59661c2d1f066d531779f433dc257070
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 5485b179fe3a5bccfe969b93cd32a0954bd89bf6
+ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624902"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86402212"
 ---
 # <a name="information-protection-policies"></a>Directivas de protección de la información
 
@@ -232,7 +232,7 @@ Detectar archivos que se comparten en aplicaciones de almacenamiento en la nube 
 
 - Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-- La [integración de Azure Information Protection](azip-integration.md) está habilitada y la etiqueta RGPD está configurada en AIP.
+- La [integración de Azure Information Protection (AIP)](azip-integration.md) está habilitada y la etiqueta RGPD está configurada en AIP.
 
 ### <a name="steps"></a>Pasos
 

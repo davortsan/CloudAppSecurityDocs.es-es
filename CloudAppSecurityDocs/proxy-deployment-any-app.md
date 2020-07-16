@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: ddbcbbe72c83f926b8307904a9d5e2bb2731dcba
-ms.sourcegitcommit: 5822fcdb1433a6a26195692b05aed160bc339656
+ms.openlocfilehash: 41c2617226653564398836ce7326521afde19f82
+ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84275802"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86402263"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Incorporación e implementación de Control de aplicaciones de acceso condicional para cualquier aplicación
 
@@ -77,7 +77,7 @@ Use los pasos siguientes para crear una Azure AD Directiva de acceso condicional
 
 1. En **asignaciones**, haga clic en **aplicaciones en la nube**, asigne las aplicaciones que quiera controlar con control de aplicaciones de acceso condicional y, a continuación, haga clic en **listo**.
 
-1. En **controles de acceso**, haga clic en **sesión**, seleccione **usar control de aplicaciones de acceso condicional** y elija las directivas integradas (**supervisar solo** o **bloquear descargas**) o **use la directiva personalizada** para establecer una directiva avanzada en Cloud App Security y, a continuación, haga clic en **seleccionar**.
+1. En **controles de acceso**, haga clic en **sesión**, seleccione **usar control de aplicaciones de acceso condicional** y elija una directiva integrada (**supervisar solo** o **bloquear descargas**) o **use la directiva personalizada** para establecer una directiva avanzada en Cloud App Security y, a continuación, haga clic en **seleccionar**.
 
     ![Acceso condicional de Azure AD](media/azure-ad-caac-policy.png)
 
@@ -169,7 +169,7 @@ Use los pasos siguientes para enrutar las sesiones de la aplicación desde otras
 
 ## <a name="step-3-configure-the-app-that-you-are-deploying"></a>Paso 3: configurar la aplicación que va a implementar<a name="conf-app"></a>
 
-Vaya a la aplicación que va a implementar. La página que vea dependerá de si se reconoce la aplicación. Lleve a cabo una de las siguientes acciones:
+Vaya a la aplicación que va a implementar. La página que vea dependerá de si se reconoce la aplicación. Realice una de las siguientes acciones:
 
 | Estado de la aplicación | Descripción | Pasos |
 | --- | --- | --- |
@@ -180,11 +180,11 @@ Vaya a la aplicación que va a implementar. La página que vea dependerá de si 
 
 1. En la barra de menús, haga clic en el icono configuración engranaje ![configuración](media/settings-icon.png "icono de configuración")y, a continuación, seleccione **control de aplicaciones de acceso condicional**.
 
-1. Haga clic en **Ver nuevas aplicaciones**.
+1. En el encabezado, haga clic en **ver nuevas aplicaciones**.
 
     ![Vista de nuevas aplicaciones del Control de aplicaciones de acceso condicional](media/caac-view-apps.png)
 
-1. En la pantalla que se abre, puede ver una lista de aplicaciones nuevas. Para cada aplicación que se está incorporando, haga clic en el **+** signo y, a continuación, haga clic en **Agregar**.
+1. En la lista de aplicaciones nuevas, para cada aplicación que está incorporando, haga clic en el **+** signo y, a continuación, haga clic en **Agregar**.
 
     > [!NOTE]
     > Si una aplicación no aparece en el catálogo de aplicaciones de Cloud App Security, aparecerá en la sección Aplicación no identificada del cuadro de diálogo junto con la dirección URL de inicio de sesión. Al hacer clic en el signo + en estas aplicaciones, puede incorporarlas como aplicación personalizada.
@@ -262,7 +262,7 @@ Una vez que esté listo para habilitar la aplicación para su uso en el entorno 
 > [!div class="nextstepaction"]
 > [SIGUIENTE: Cómo crear una directiva de sesión»](session-policy-aad.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 > [!div class="nextstepaction"]
 > [Introducción a Control de aplicaciones de acceso condicional](proxy-intro-aad.md)

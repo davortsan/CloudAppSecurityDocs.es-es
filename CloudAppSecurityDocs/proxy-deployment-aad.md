@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: bfa910c78201a63a6e18c6e30f345c1e4361b23c
-ms.sourcegitcommit: 5822fcdb1433a6a26195692b05aed160bc339656
+ms.openlocfilehash: 11236b48d153e32166e3a12a4b13eb200479cbf9
+ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84275819"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86402246"
 ---
 # <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Implementación del Control de aplicaciones de acceso condicional para aplicaciones destacadas
 
@@ -66,7 +66,7 @@ Use los pasos siguientes para crear una Azure AD Directiva de acceso condicional
 
 1. En **asignaciones**, haga clic en **aplicaciones en la nube**, asigne las aplicaciones que quiera controlar con control de aplicaciones de acceso condicional y, a continuación, haga clic en **listo**.
 
-1. En **controles de acceso**, haga clic en **sesión**, seleccione **usar control de aplicaciones de acceso condicional** y elija las directivas integradas (**supervisar solo** o **bloquear descargas**) o **use la directiva personalizada** para establecer una directiva avanzada en Cloud App Security y, a continuación, haga clic en **seleccionar**.
+1. En **controles de acceso**, haga clic en **sesión**, seleccione **usar control de aplicaciones de acceso condicional** y elija una directiva integrada (**supervisar solo** o **bloquear descargas**) o **use la directiva personalizada** para establecer una directiva avanzada en Cloud App Security y, a continuación, haga clic en **seleccionar**.
 
     ![Acceso condicional de Azure AD](media/azure-ad-caac-policy.png)
 

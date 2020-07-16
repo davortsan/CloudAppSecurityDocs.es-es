@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 317595b377d19b1d6f9a06b316cb14e4d1ad4c1c
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: b833af37dae275ff9ecdf382eeacc12d59ef3aed
+ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624602"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86402195"
 ---
 # <a name="file-policies"></a>Directivas de archivos
 
@@ -41,7 +41,7 @@ El motor combina tres aspectos en cada directiva:
 
 * Acciones automatizadas de gobernanza y corrección. Para obtener más información, vea [Control](control.md).
     > [!NOTE]
-    > Solo se garantiza que se aplique la acción de gobierno de la primera Directiva desencadenada. Por ejemplo, si una directiva de archivo ya ha aplicado una etiqueta de AIP a un archivo, una segunda Directiva de archivo no puede aplicarle otra etiqueta de AIP.
+    > Solo se garantiza que se aplique la acción de gobierno de la primera Directiva desencadenada. Por ejemplo, si una directiva de archivo ya ha aplicado una etiqueta de Azure Information Protection (AIP) a un archivo, una segunda Directiva de archivo no puede aplicarle otra etiqueta de AIP.
 
 Una vez habilitada, la directiva analizará continuamente su entorno en la nube e identificará los archivos que coincidan con los filtros de contenido y el contexto y, después, aplicará las acciones automatizadas solicitadas. Estas directivas detectarán y corregirán cualquier infracción de la información en reposo o al crear contenido. Las directivas se pueden supervisar con alertas en tiempo real o con informes generados por la consola.
 

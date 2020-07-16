@@ -8,12 +8,12 @@ ms.topic: article
 ms.date: 06/23/2020
 ROBOTS: NOINDEX
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ede37cbf987cfe43b8574e227c4b38243e0693ab
-ms.sourcegitcommit: 0e8065703810347c86567d636293bf6d41df1a84
+ms.openlocfilehash: a875328b6d47b0de5a3e71db1374dc89e26fe12e
+ms.sourcegitcommit: 3464ce8ed73d1bfaf02e4e78007766ea18350d9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85256224"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86402652"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-github-enterprise-environment"></a>Cómo Cloud App Security ayuda a proteger su entorno de GitHub Enterprise
 
@@ -35,7 +35,7 @@ La conexión de GitHub Enterprise Cloud a Cloud App Security le proporciona info
 - [Detección de amenazas en la nube, cuentas en peligro e Insiders malintencionados](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
 - [Uso de la traza de auditoría de actividades para investigaciones forenses](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
 
-## <a name="protect-gcp-in-real-time"></a>Protección de GCP en tiempo real
+## <a name="protect-github-in-real-time"></a>Protección de GitHub en tiempo real
 
 Revise nuestras prácticas recomendadas para [proteger y colaborar con usuarios externos](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls).
 
