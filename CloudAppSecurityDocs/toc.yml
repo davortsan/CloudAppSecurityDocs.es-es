@@ -372,6 +372,8 @@
           href: troubleshooting-siem.md
         - name: Directivas de solución de problemas
           href: troubleshoot-policies.md
+        - name: Solución de problemas de controles de sesión y acceso
+          href: troubleshooting-proxy.md
         - name: 'Solución de problemas: ¿qué es cas.ms?'
           href: troubleshooting-proxy-url.md
 - name: Recursos
