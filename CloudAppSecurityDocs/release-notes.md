@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ff7ac3fb2a6cda0a411ac02f161ce32f5b037a9e
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 55e66016098e6b844686f539c7280b40e60ab993
+ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85625074"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86402280"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
@@ -485,7 +485,7 @@ Como parte de este cambio, las directivas de detección de malware ahora incluye
 
 - **Actualizaciones del acceso condicional**  
 El Control de aplicaciones de acceso condicional agregó la capacidad de supervisar y bloquear estas actividades:
-  - Cargas de archivos en cualquier aplicación: habilitación de escenarios como la prevención de la carga de extensiones de malware conocidas y la garantía de protección de los archivos por parte de los usuarios con AIP antes de cargarlos.
+  - Cargas de archivos en cualquier aplicación: habilitación de escenarios como la prevención de la carga de extensiones de malware conocidas y la garantía de protección de los archivos por parte de los usuarios con Azure Information Protection antes de cargarlos.
   - Copiar y pegar en cualquier aplicación: redondeo de controles sólidos de filtración de datos que ya incluía el control de actividades de descarga, impresión y personalizadas como el uso compartido.
   - Enviar mensaje: garantía de que los datos PII como contraseñas no se comparten en herramientas de colaboración populares como Slack, Salesforce y Workplace de Facebook.
   - Las directivas de sesión ahora incluyen plantillas integradas para permitir que su organización habilite sin esfuerzo la supervisión en tiempo real y el control populares sobre sus aplicaciones autorizadas, como **Bloquear carga según la inspección de contenido en tiempo real**.
