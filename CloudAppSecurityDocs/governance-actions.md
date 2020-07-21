@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 14ef18bb57d979dc5ddabc3ef8a7ff0c724ff619
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: bf3d80fbea1847fc22d07164d25db0ec7c4149f6
+ms.sourcegitcommit: 4d2ebbd68a48876825e663375ea2b17dc6b58d03
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624555"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86865477"
 ---
 # <a name="governing-connected-apps"></a>Control de aplicaciones conectadas
 
@@ -75,7 +75,7 @@ Las siguientes acciones de gobernanza pueden realizarse para aplicaciones conect
 
   - **Enviar a la papelera**: el archivo se mueve a la carpeta de la Papelera. (Box, Dropbox, Google Drive, OneDrive, SharePoint)
 
-   ![alertas de crear directiva](media/policy_create-alerts.png "alertas de crear directiva")
+   ![alertas de crear directiva](media/policy_create-alerts.png)
 
 ## <a name="activity-governance-actions"></a>Acciones de control de actividades
 
@@ -97,7 +97,7 @@ Las siguientes acciones de gobernanza pueden realizarse para aplicaciones conect
 
   - **Confirmar usuario comprometido** : establezca el nivel de riesgo del usuario en alto. Esto hace que se apliquen las acciones de directiva relevantes definidas en Azure AD. Para obtener más información sobre cómo funciona Azure AD con los niveles de riesgo, consulte [¿Cómo usa Azure ad mis comentarios de riesgo](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-risk-feedback#how-does-azure-ad-use-my-risk-feedback)?
 
-  ![Acciones de gobierno de directiva de actividad de Cloud App Security](media/activity-policy-ref6.png "directiva de actividad, ref6")
+  ![Acciones de gobierno de directiva de actividad de Cloud App Security](media/activity-policy-ref6.png)
 
 ## <a name="governance-conflicts"></a>Conflictos de gobernanza
 

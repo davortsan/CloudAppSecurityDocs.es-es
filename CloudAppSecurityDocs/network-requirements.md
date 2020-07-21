@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 047f922f7040e06d740d8d75e37dd54774b5acb7
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 0aff022a162dc099b5a6402570a832de1afcb074
+ms.sourcegitcommit: c37923e69f52ee0e755cca16b4ce88cbc5b01c0b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624954"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86473512"
 ---
 # <a name="network-requirements"></a>Requisitos de red
 
@@ -44,6 +44,7 @@ Para ver el centro de datos al que se está conectando, siga estos pasos:
 
 Para acceder al portal de Cloud App Security, agregue el **Puerto de salida 443** para las siguientes direcciones IP y nombres DNS a la lista de permitidos del firewall:
 
+```ini
     portal.cloudappsecurity.com
     *.portal.cloudappsecurity.com
     cdn.cloudappsecurity.com
@@ -56,12 +57,15 @@ Para acceder al portal de Cloud App Security, agregue el **Puerto de salida 443*
     static2.sharepointonline.com
     dc.services.visualstudio.com
     *.blob.core.windows.net
+```
 
 En el caso de los clientes de la administración pública de Estados Unidos, también es necesario agregar los siguientes nombres DNS a la lista de permitidos del firewall para proporcionar acceso al portal de Cloud App Security GCC High:
 
+```ini
     portal.cloudappsecurity.us
     *.portal.cloudappsecurity.us
     cdn.cloudappsecurity.com
+```
 
 Además, estos elementos deben estar en una lista blanca, según el centro de datos que use:
 
@@ -85,10 +89,12 @@ Configure el firewall para el proxy inverso con los valores relevantes para su e
 
 En el caso de los clientes comerciales, para habilitar Cloud App Security proxy inverso, agregue el **Puerto de salida 443** para las siguientes direcciones IP y nombres DNS a la lista de permitidos del firewall:
 
+```ini
     *.cas.ms
     *.mcas.ms
     *.admin-mcas.ms
     mcasproxy.azureedge.net
+```
 
 Además, estos elementos deben estar en una lista blanca, según el centro de datos que use:
 
@@ -104,9 +110,11 @@ Además, estos elementos deben estar en una lista blanca, según el centro de da
 
 Para los clientes de la administración pública de Estados Unidos GCC, para habilitar Cloud App Security proxy inverso, agregue el **Puerto de salida 443** para los siguientes nombres DNS a la lista de permitidos del firewall:
 
+```ini
     *.mcas-gov.us
     *.admin-mcas-gov.us
     mcasproxy.azureedge.net
+```
 
 ## <a name="siem-agent-connection"></a>Conexión del agente SIEM
 
@@ -202,9 +210,9 @@ Para habilitar características de Cloud Discovery por medio de un recopilador d
 
 > [!NOTE]
 >
-> - Si el Firewall requiere una lista de acceso de dirección IP estática y no admite la inclusión en listas blancas basadas en direcciones URL, permita que el recopilador de registros inicie el tráfico saliente a los [Microsoft Azure intervalos IP del centro](https://www.microsoft.com/download/details.aspx?id=41653) de seguridad en el puerto 443.
->- Permita que el recopilador de registros inicie tráfico saliente al portal de Cloud App Security.
->- Si no especificó un proxy al configurar el recopilador de registros, debe permitir las conexiones http a http://ocsp.msocsp.com/ y OCSP.DigiCert.com en el puerto 80. Esto sirve para comprobar el estado de revocación de certificado al conectarse al portal de Cloud App Security.
+> - Si el Firewall requiere una lista de acceso de dirección IP estática y no admite la inclusión en listas blancas basadas en direcciones URL, permita que el recopilador de registros inicie el tráfico saliente a los [Microsoft Azure intervalos IP del centro](https://www.microsoft.com/download/details.aspx?id=56519) de seguridad en el puerto 443.
+> - Permita que el recopilador de registros inicie tráfico saliente al portal de Cloud App Security.
+> - Si no especificó un proxy al configurar el recopilador de registros, debe permitir las conexiones http a http://ocsp.msocsp.com/ y OCSP.DigiCert.com en el puerto 80. Esto sirve para comprobar el estado de revocación de certificado al conectarse al portal de Cloud App Security.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

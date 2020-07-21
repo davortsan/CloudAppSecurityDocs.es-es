@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bf6c12f3b41abf63ab3183f85d7dedcba21584c9
-ms.sourcegitcommit: b71546236cb97c0a22d0e82742a167f31555b275
+ms.openlocfilehash: 84ba90f5959980815caa7170ab7bee9d11db263c
+ms.sourcegitcommit: 4d2ebbd68a48876825e663375ea2b17dc6b58d03
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86308265"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86865499"
 ---
 # <a name="connect-apps"></a>Conectar aplicaciones
 
@@ -99,13 +99,13 @@ Para usar los conectores de aplicaciones, debe asegurarse de que tiene lo siguie
 | Azure | | Administrador global |
 | AWS | | Usuario creado recientemente |
 | Box | Enterprise | Se recomienda encarecidamente que se conecte a Box como administrador. La conexión como coadmin dará como resultado una visibilidad de datos parcial. En caso de que se conecte como coadministrador, asegúrese de seleccionar todos los permisos. |
-| Dropbox | Empresa/Enterprise | Administrador |
+| Dropbox | Empresa/Enterprise | Administración |
 | GitHub | Nube de GitHub Enterprise | Propietario |
 | GCP | | Consulte los [requisitos previos de Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | G Suite | Se prefiere G Suite Business o Enterprise<br /><br />G Suite Enterprise (como mínimo) | Superadministrador |
 | Office 365 | | Administrador global |
-| Okta | Enterprise (no versión de prueba) | Administrador |
-| Salesforce | | Administrador |
+| Okta | Enterprise (no versión de prueba) | Administración |
+| Salesforce | | Administración |
 | ServiceNow | Eureka o versión posterior | Rol de administrador + RestAPI |
 | Webex | | Administrador + administrador de cumplimiento |
 | Workday | | Consulte los [requisitos previos de Connect WorkDay](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) |
@@ -118,7 +118,9 @@ Para obtener más información sobre el emparejamiento público, vea [Circuitos 
 ## <a name="disable-app-connectors"></a>Deshabilitación de conectores de aplicaciones
 
 > [!NOTE]
-> Antes de deshabilitar un conector de aplicaciones, asegúrese de que tiene los detalles de conexión disponibles, ya que los necesitará si desea volver a habilitar el conector.
+>
+> - Antes de deshabilitar un conector de aplicaciones, asegúrese de que tiene los detalles de conexión disponibles, ya que los necesitará si desea volver a habilitar el conector.
+> - Estos pasos no se pueden usar para deshabilitar el conector de Azure.
 
 Para deshabilitar las aplicaciones conectadas:
 
