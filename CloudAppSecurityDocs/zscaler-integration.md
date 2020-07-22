@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f4f7b05caa3c516294f08864b0a711b71be047f3
-ms.sourcegitcommit: 3f0693bf32fef5b4819c51ca7eeaee751eb03df6
+ms.openlocfilehash: 0e7f32bd4f6213b4bce86232e40d15cf06e12c18
+ms.sourcegitcommit: c737a1ad67b4f7efa302d1aa92fce50f75c94d2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84611178"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86926730"
 ---
 # <a name="integrate-cloud-app-security-with-zscaler"></a>Integración de Cloud App Security con Zscaler
 
@@ -52,7 +52,7 @@ Si trabaja con Cloud App Security y Zscaler, puede integrar los dos productos pa
         ![Zscaler de origen de datos](media/data-source-zscaler.png)
 
         > [!NOTE]
-        > Asegúrese de que el nombre del origen de datos es idéntico al nombre de fuente utilizado al crear la Cloud App Security fuente NSS. Para obtener más información, consulte [agregar Cloud App Security fuentes NSS](https://help.zscaler.com/zia/adding-mcas-nss-feeds).
+        > Asegúrese de que el nombre del origen de datos es **NSS.** Para obtener más información sobre cómo configurar las fuentes NSS, consulte [adición de Cloud App Security fuentes NSS](https://help.zscaler.com/zia/adding-mcas-nss-feeds).
 
     4. Haga clic en **Ver ejemplo de archivo de registro previsto**. A continuación, haga clic en **Descargar registro de ejemplo** para ver un registro de detección de ejemplo y asegúrese de que coincida con los registros.<br />
 
@@ -63,6 +63,6 @@ Si trabaja con Cloud App Security y Zscaler, puede integrar los dos productos pa
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Control de aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
+> [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
