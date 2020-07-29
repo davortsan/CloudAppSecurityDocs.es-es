@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 55e66016098e6b844686f539c7280b40e60ab993
-ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
+ms.openlocfilehash: fcf90957167b9e51522e2f9f77a3c29958f6c9a2
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86402280"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254669"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
@@ -454,7 +454,7 @@ Cloud Discovery de Cloud App Security ahora incluye un analizador de registros i
 Fecha de publicación: 31 de marzo de 2019
 
 - **Mejora de viaje imposible**  
-Se ha mejorado la detección de viajes imposibles con compatibilidad específica para los países vecinos.
+Se ha mejorado la detección de viajes imposibles con compatibilidad específica para los países/regiones vecinos.
 - **Compatibilidad adicional de atributos para el analizador genérico de CEF**  
 La compatibilidad del analizador de registros de Cloud Discovery para el formato genérico CEF se ha mejorado para admitir atributos adicionales.
 - **Acceso limitado a los informes de Cloud Discovery**  
@@ -776,7 +776,7 @@ Microsoft Cloud App Security está ampliando sus funcionalidades de supervisión
 
 - **Implementaciones con ámbito** (implementación gradual)  
 Microsoft Cloud App Security proporciona a las empresas la capacidad de determinar granularmente los usuarios a los que desean supervisar y proteger en función de la pertenencia a grupos. Esta característica le permite seleccionar usuarios cuyas actividades no se mostrarán para ninguna de las aplicaciones protegidas. La funcionalidad de supervisión con ámbito es especialmente útil para:
-  - Cumplimiento: si su normativa de cumplimiento requiere que se abstenga de supervisar a usuarios de determinados países o regiones debido a la normativa local.
+  - Cumplimiento: si su normativa de cumplimiento requiere que se abstenga de supervisar a usuarios de determinados países/regiones debido a la normativa local.
   - Licencias: si desea supervisar a menos usuarios para permanecer dentro de los límites de sus licencias de Microsoft Cloud App Security.
   Para más información, vea [Implementación con ámbito](scoped-deployment.md).
 

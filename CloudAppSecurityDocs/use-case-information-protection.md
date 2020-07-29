@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 77face48858ae577c4eb2aa4fd85f7fc39c81377
-ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
+ms.openlocfilehash: 341bc297d31f53cf446baec553e3abd6eec1c6df
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "74720791"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254727"
 ---
 # <a name="tutorial-automatically-apply-azure-information-protection-classification-labels"></a>Tutorial: Aplicación automática de etiquetas de clasificación de Azure Information Protection
 
@@ -42,7 +42,7 @@ Este nivel fuerte de protección acompaña siempre al archivo. El archivo sigue 
 
 ## <a name="the-threat"></a>La amenaza
 
-Un usuario de su organización guarda los archivos confidenciales de información del cliente en Box y los configura para que se compartan con todos los usuarios de la organización. El usuario no se da cuenta de que no solo su equipo inmediato tiene acceso a esa cuenta de Box, sino el personal entero de soporte técnico. Este acceso incluye a proveedores, asociados y visitantes que, ocasionalmente, pasan por la oficina. Cualquier persona con acceso a la cuenta de Box de su organización ahora tiene acceso a esa información. Este acceso no solo puede ser peligroso para su organización, sino que puede ir en contra de las normativas de información personal en muchos países y ocasionar posibles problemas legales.
+Un usuario de su organización guarda los archivos confidenciales de información del cliente en Box y los configura para que se compartan con todos los usuarios de la organización. El usuario no se da cuenta de que no solo su equipo inmediato tiene acceso a esa cuenta de Box, sino el personal entero de soporte técnico. Este acceso incluye a proveedores, asociados y visitantes que, ocasionalmente, pasan por la oficina. Cualquier persona con acceso a la cuenta de Box de su organización ahora tiene acceso a esa información. Este acceso no solo puede ser peligroso para su organización, sino que puede ir en contra de las normativas de información personal en muchos países/regiones y ocasionar posibles problemas legales.
 
 ## <a name="the-solution"></a>La solución
 

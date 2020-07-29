@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: galz
 ms.suite: ems
-ms.openlocfilehash: 3b42c103d1c9143217c76fa9c8f3d346ae8f3252
-ms.sourcegitcommit: 5e8dd22b6c9a5c18dbb704ccc8d8b12b33b66955
+ms.openlocfilehash: 00646b44cb9c2095e3beaaa98f3528c6eb7b31db
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2020
-ms.locfileid: "83006209"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254829"
 ---
 # <a name="tutorial-detect-suspicious-user-activity-with-ueba"></a>Tutorial: Detección de actividad sospechosa del usuario con UEBA
 
@@ -138,10 +138,10 @@ Para evitar la fatiga de alertas, configure la sensibilidad de las alertas. Pued
 
 ## <a name="phase-4-tune-rule-based-detection-activity-policies"></a>Fase 4: Ajuste de directivas de detección basadas en reglas (actividad)
 
-Las [directivas de detección basadas en reglas](user-activity-policies.md) proporcionan la capacidad de complementar las directivas de detección de anomalías con requisitos específicos de la organización. Recomendamos crear las directivas basadas en reglas utilizando una de nuestras plantillas de directiva de actividad (vaya a **Control** > **Plantillas** y establezca el filtro de **tipo** en **Directiva de actividad**) y [configurándolas](activity-filters-queries.md) a continuación para detectar aquellos comportamientos que no sean normales en su entorno. Por ejemplo, en el caso de algunas organizaciones sin presencia en un país determinado, puede que tenga sentido crear una directiva que detecte las actividades anómalas de ese país y alertar sobre ellas. En el caso de otras organizaciones con sucursales grandes en ese país, las actividades del mismo serían normales y no tendría sentido detectar dichas actividades.
+Las [directivas de detección basadas en reglas](user-activity-policies.md) proporcionan la capacidad de complementar las directivas de detección de anomalías con requisitos específicos de la organización. Recomendamos crear las directivas basadas en reglas utilizando una de nuestras plantillas de directiva de actividad (vaya a **Control** > **Plantillas** y establezca el filtro de **tipo** en **Directiva de actividad**) y [configurándolas](activity-filters-queries.md) a continuación para detectar aquellos comportamientos que no sean normales en su entorno. Por ejemplo, en el caso de algunas organizaciones sin presencia en un país/región en particular, puede que tenga sentido crear una directiva que detecte las actividades anómalas de ese país y alertar sobre ellas. En el caso de otras organizaciones con sucursales grandes en ese país, las actividades del mismo serían normales y no tendría sentido detectar dichas actividades.
 
 1. **Ajuste del volumen de actividad**  
-Elija el volumen de actividad requerido antes de que la detección genere una alerta. Con nuestro ejemplo de país, si no tiene presencia alguna en un país, incluso una sola actividad es importante y garantiza una alerta. Sin embargo, un error de inicio de sesión único podría ser un error humano y solo de interés si hay muchos errores en un breve período.
+Elija el volumen de actividad requerido antes de que la detección genere una alerta. Con nuestro ejemplo de país, si no tiene presencia alguna en un país/región, incluso una sola actividad es importante y garantiza una alerta. Sin embargo, un error de inicio de sesión único podría ser un error humano y solo de interés si hay muchos errores en un breve período.
 2. **Ajuste de los [filtros de actividad](activity-filters-queries.md)**  
 Establezca los filtros que necesita para detectar el tipo de actividad sobre el que desea generar alertas. Por ejemplo, para detectar la actividad de un país, use el parámetro **Ubicación**.
 3. **Ajuste de alertas**  

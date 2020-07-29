@@ -9,12 +9,12 @@ ms.date: 11/01/2019
 ms.collection: M365-security-compliance
 ms.custom: seodec18
 ms.suite: ems
-ms.openlocfilehash: 7cdc03bf2cc8bae19ef59cbe9ed926a28d81bb22
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 44880f4e19fc317d09dbc091c2c4a4e9c9399a43
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624414"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254693"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Seguridad y privacidad de los datos de Microsoft Cloud App Security
 
@@ -82,7 +82,7 @@ Los datos personales sobre los usuarios se derivan del objeto del usuario en las
 
 ## <a name="data-location"></a>Ubicación de los datos
 
-En la actualidad, Microsoft Cloud App Security opera en centros de datos de Estados Unidos y Europa ("Geoáreas"). La cuenta de inquilino se creará en una geoárea en función del país que haya elegido al suscribirse. En concreto, los datos se almacenarán en un centro de datos de la geoárea más cercana a esa ubicación.
+En la actualidad, Microsoft Cloud App Security opera en centros de datos de Estados Unidos y Europa ("Geoáreas"). La cuenta de inquilino se creará en una geoárea en función del país/región que haya elegido al suscribirse. En concreto, los datos se almacenarán en un centro de datos de la geoárea más cercana a esa ubicación.
 
 > [!NOTE]
 > Cloud App Security aprovecha los Centros de datos de Azure de todo el mundo para proporcionar un rendimiento optimizado a través de la geolocalización. Esto significa que la sesión de un usuario se puede hospedar fuera de una región determinada, dependiendo de los patrones de tráfico y su ubicación. Sin embargo, para proteger su privacidad, no se almacenan datos de la sesión en estos centros de datos.
