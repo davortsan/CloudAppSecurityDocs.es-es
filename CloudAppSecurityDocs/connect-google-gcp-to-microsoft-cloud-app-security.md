@@ -9,12 +9,12 @@ ms.date: 06/28/2020
 ms.topic: conceptual
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 275e81a80124f95131ee110f4dce33a5ba3dac13
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: a792ae503fda51e69d162cec0b5e32cd3710780f
+ms.sourcegitcommit: 84eafb4926bf0d4db27bed7df55dc83ca48f9192
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85623506"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87377871"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security"></a>Conectar Google Cloud Platform a Microsoft Cloud App Security
 
@@ -71,10 +71,15 @@ Cree un proyecto dedicado en GCP en su organización para habilitar la estabilid
 
     ![Captura de pantalla que muestra el cuadro de diálogo crear proyecto de GCP](media/connect-gcp-create-project.png)
 
-#### <a name="enable-the-pubsub-api"></a>Habilitación de la API pub/sub
+#### <a name="enable-required-apis"></a>Habilitación de las API necesarias
 
 1. Cambie al proyecto dedicado.
-1. Vaya a la pestaña pub/sub. Debería aparecer un mensaje de activación de servicio.
+1. Vaya a la pestaña **biblioteca** .
+1. Busque y seleccione **API de registro**en la nube y, a continuación, en la página API, haga clic en **Habilitar**.
+1. Busque y seleccione **API pub/sub**en la nube y, a continuación, en la página API, haga clic en **Habilitar**.
+
+    > [!NOTE]
+    > Asegúrese de que no selecciona la **API pub/sub Lite**.
 
 #### <a name="create-a-dedicated-service-account-for-the-security-auditing-integration"></a>Crear una cuenta de servicio dedicada para la integración de auditoría de seguridad
 

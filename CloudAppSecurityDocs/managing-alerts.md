@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d159132c297216154c9c53dc5801e2c3519cc489
-ms.sourcegitcommit: 6658e305313ab84c6df7632549af373ea2faec14
+ms.openlocfilehash: 1ccd5a4bfedbad5edf1ee2e398b0da480f20fb38
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76550197"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254761"
 ---
 # <a name="manage-alerts"></a>Administración de alertas
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 En este artículo se explica cómo trabajar con alertas generadas en el portal de Cloud App Security.
 
@@ -40,7 +40,7 @@ Es buena idea revisar todas las alertas y usarlas como herramientas para modific
 
     En esta sección del panel se proporciona visibilidad completa de cualquier actividad sospechosa o infracción de las políticas establecidas. Puede ayudarle a proteger la postura de seguridad que ha definido para su entorno de la nube.
 
-    ![Alerta](media/alerts.png "alertas")
+    ![Alertas](media/alerts.png "alerts")
 
 2. Debe investigar y determinar la naturaleza de la infracción y la respuesta necesaria en cada alerta.
 
@@ -73,7 +73,7 @@ Es buena idea revisar todas las alertas y usarlas como herramientas para modific
     - Si hay demasiado ruido para determinar la legitimidad y la precisión de una alerta, descártela y establezca el motivo en **Demasiadas alertas similares**.
     - Verdadero positivo: si la alerta está relacionada con un evento de riesgo real que realizó de forma malintencionada o involuntaria un usuario interno o externo, debe establecer el evento en **Resolver** después de que se hayan tomado las medidas adecuadas para corregir el evento.
 
-## <a name="alert-types"></a>Tipos de alertas
+## <a name="alert-types"></a>Tipos de alerta
 
 En la tabla siguiente se proporciona una lista de los tipos de alertas que pueden activarse y se recomiendan formas para resolverlas.
 
@@ -85,7 +85,7 @@ En la tabla siguiente se proporciona una lista de los tipos de alertas que puede
 |Cuenta inactiva|Esta alerta se activa cuando una cuenta no se ha usado en los últimos 60 días en ninguna de sus aplicaciones en la nube conectadas.|Póngase en contacto con el usuario y el administrador para determinar si la cuenta aún está activa. Si no es así, suspenda al usuario y finalice la licencia de la aplicación.|
 |Nuevo usuario administrador|Advierte de cambios en las cuentas con privilegios de las aplicaciones conectadas.|Confirme que los nuevos permisos de administrador en realidad son necesarios para el usuario. Si no lo son, se recomienda revocar los privilegios de administrador para reducir la exposición.|
 |Nueva ubicación de administrador|Advierte de cambios en las cuentas con privilegios de las aplicaciones conectadas.|Confirme que el inicio de sesión desde esta ubicación anómala era legítimo. Si no es así, se recomienda revocar los permisos de administrador o la suspensión de la cuenta para reducir la exposición.|
-|Nueva ubicación|Una alerta informativa sobre el acceso a una aplicación conectada desde una nueva ubicación y solo se activa una vez por país.|Investigue la actividad del usuario concreto.|
+|Nueva ubicación|Una alerta informativa sobre el acceso a una aplicación conectada desde una nueva ubicación y se desencadena solo una vez por país o región.|Investigue la actividad del usuario concreto.|
 |Nuevo servicio detectado|Esta es una alerta sobre Shadow IT. Cloud Discovery ha detectado una nueva aplicación.|<ul><li>Evalúe el riesgo del servicio según el catálogo de aplicaciones.</li><li>Explore la actividad en profundidad para entender los patrones de uso y la prevalencia.</li><li>Decida si quiere autorizar o no la aplicación.</li><br /></ul>En el caso de las aplicaciones sin autorización:<br /><br /><ul><li>Es posible que quiera bloquear el uso en el servidor proxy o el firewall.</li><li>Si tiene una aplicación sin autorización y una aplicación con autorización en la misma categoría, puede exportar una lista de usuarios de la aplicación sin autorización. Luego, póngase en contacto con ellos para migrarlos a la aplicación autorizada.</li></ul></li>|
 |Actividad sospechosa|Esta alerta permite saber que se ha detectado actividad anómala no alineada con actividades o usuarios esperados de la organización.|Investigue el comportamiento y confírmelo con el usuario.<br /><br />Este tipo de alerta es un buen punto para empezar a aprender más sobre el entorno y a crear nuevas directivas con estas alertas. Por ejemplo, si alguien carga repentinamente una gran cantidad de datos en una de las aplicaciones conectadas, puede establecer una regla para controlar ese tipo de comportamiento anómalo.|
 |Uso de cuenta personal|Esta alerta permite saber que una nueva cuenta personal tiene acceso a recursos de las aplicaciones conectadas.|Quite las colaboraciones del usuario en la cuenta externa.|

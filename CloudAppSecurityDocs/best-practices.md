@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: best-practice
 ms.date: 10/24/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6b07d3dd484fba64b8feda1d5b5fb37a20cc09f3
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 0815432cf7410ab4e122ab52a136b978d6dec430
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624313"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254608"
 ---
 # <a name="cloud-app-security-best-practices"></a>Procedimientos recomendados de Cloud App Security
 
@@ -134,7 +134,7 @@ Cloud App Security le proporciona la capacidad de investigar y supervisar los pe
 **Para obtener más información**:
 
 * [Integración de Azure Information Protection](azip-integration.md)
-* [Tutorial: aplicar automáticamente etiquetas de clasificación de Azure Information Protection](use-case-information-protection.md)
+* [Tutorial: Aplicación automática de etiquetas de clasificación de Azure Information Protection](use-case-information-protection.md)
 
 ---
 
@@ -149,7 +149,7 @@ Cloud App Security le proporciona la capacidad de investigar y supervisar los pe
 **Para obtener más información**:
 
 * [Inspección de contenido](content-inspection.md)
-* [Directivas de archivos](data-protection-policies.md)
+* [Directivas de archivo](data-protection-policies.md)
 * [Directivas de protección de la información](policies-information-protection.md)
 
 ---

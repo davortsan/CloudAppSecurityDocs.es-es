@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: 41c2617226653564398836ce7326521afde19f82
-ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
+ms.openlocfilehash: c0676bf371e13be602fcbeea1625b19480a348a1
+ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86402263"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87296975"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Incorporación e implementación de Control de aplicaciones de acceso condicional para cualquier aplicación
 
@@ -169,9 +169,9 @@ Use los pasos siguientes para enrutar las sesiones de la aplicación desde otras
 
 ## <a name="step-3-configure-the-app-that-you-are-deploying"></a>Paso 3: configurar la aplicación que va a implementar<a name="conf-app"></a>
 
-Vaya a la aplicación que va a implementar. La página que vea dependerá de si se reconoce la aplicación. Realice una de las siguientes acciones:
+Vaya a la aplicación que va a implementar. La página que vea dependerá de si se reconoce la aplicación. Lleve a cabo una de las siguientes acciones:
 
-| Estado de la aplicación | Descripción | Pasos |
+| Estado de la aplicación | Description | Pasos |
 | --- | --- | --- |
 | No reconocido | Verá una página de aplicación no reconocida que le pide que configure la aplicación. | 1. [agregue la aplicación a control de aplicaciones de acceso condicional](#add-app).<br /> 2. [agregue los dominios de la aplicación](#add-domains)y, a continuación, vuelva a la aplicación y actualice la página.<br /> 3. [Instale los certificados para la aplicación](#install-certs). |
 | Recognized | Verá una página de incorporación que le pide que continúe con el proceso de configuración de la aplicación. | - [Instale los certificados para la aplicación](#install-certs). <br /><br /> **Nota:** Asegúrese de que la aplicación esté configurada con todos los dominios necesarios para que la aplicación funcione correctamente. Para configurar dominios adicionales, vaya a [Agregar los dominios de la aplicación](#add-domains)y, a continuación, vuelva a la página de la aplicación. |
@@ -222,12 +222,12 @@ Por ejemplo, si ha configurado una directiva que bloquea la descarga de archivos
     1. Elija el **usuario actual** o el **equipo local**.
     1. Seleccione **colocar todos los certificados en el siguiente almacén** y, a continuación, haga clic en **examinar**.
     1. Seleccione **entidades de certificación raíz de confianza** y, a continuación, haga clic en **Aceptar**.
-    1. Haga clic en **Finalizar**
+    1. Haga clic en **Finalizar**.
 
     > [!NOTE]
     > Para que se reconozcan los certificados, una vez que haya instalado el certificado, debe reiniciar el explorador e ir a la misma página.<!-- You'll see a check-mark by the certificates links confirmation they are installed.-->
 
-1. Haga clic en **Continuar**.
+1. Haga clic en **Continue**.
 
 ## <a name="step-4-verify-that-the-app-is-working-correctly"></a>Paso 4: comprobar que la aplicación funciona correctamente<a name="verify-app"></a>
 
@@ -262,9 +262,12 @@ Una vez que esté listo para habilitar la aplicación para su uso en el entorno 
 > [!div class="nextstepaction"]
 > [SIGUIENTE: Cómo crear una directiva de sesión»](session-policy-aad.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 > [!div class="nextstepaction"]
 > [Introducción a Control de aplicaciones de acceso condicional](proxy-intro-aad.md)
+
+> [!div class="nextstepaction"]
+> [Solución de problemas de controles de sesión y acceso](troubleshooting-proxy.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5485b179fe3a5bccfe969b93cd32a0954bd89bf6
-ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
+ms.openlocfilehash: b4be7d9e31f2fc0bf71175a9c7fb3d07c38262a4
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86402212"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254812"
 ---
 # <a name="information-protection-policies"></a>Directivas de protección de la información
 
@@ -129,9 +129,9 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 2. Establezca el **tipo de actividad** de filtro en las actividades de archivos y carpetas que le interesen, como **Ver**, **Descargar**, **obtener acceso**y **modificar**.
 
-3. Establezca la **Ubicación** del filtro no es igual a y, a continuación, especifique los países desde los que la organización espera la actividad.
+3. Establezca la **Ubicación** del filtro no es igual a y, a continuación, especifique los países o regiones desde los que la organización espera la actividad.
 
-    1. Opcional: puede usar el enfoque opuesto y establecer el filtro en **Ubicación** es igual a si su organización bloquea el acceso desde determinados países.
+    1. Opcional: puede usar el enfoque opuesto y establecer el filtro en **Ubicación** es igual a si su organización bloquea el acceso desde determinados países o regiones.
 
 4. Opcional: cree acciones de **gobierno** que se aplicarán a la infracción detectada (la disponibilidad varía entre los servicios), como **suspender usuario**.
 

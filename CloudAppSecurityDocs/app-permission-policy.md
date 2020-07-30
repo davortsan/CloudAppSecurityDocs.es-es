@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 25809c1ace00b31df32c225f6b72a2b4e98a70d8
-ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
+ms.openlocfilehash: c67e950b2d3227e8c0e261d346dcd1eec5f22d89
+ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800731"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87296702"
 ---
 # <a name="oauth-app-policies"></a>Directivas de aplicación de OAuth
 
@@ -56,6 +56,7 @@ Además de las directivas de aplicación de OAuth que puede crear, hay las sigui
 | Nombre de aplicación OAuth engañoso | Examina las aplicaciones de OAuth conectadas a su entorno y desencadena una alerta cuando se detecta una aplicación con un nombre engañoso. Los nombres engañosos, como letras extranjeras que se parecen a las letras latinas, podrían indicar un intento de disfrazar una aplicación malintencionada como una aplicación conocida y de confianza. |
 | Nombre de publicador engañoso para una aplicación de OAuth | Examina las aplicaciones de OAuth conectadas a su entorno y desencadena una alerta cuando se detecta una aplicación con un nombre de publicador engañoso. Los nombres de publicador engañosos, como letras extranjeras que se parecen a las letras latinas, podrían indicar un intento de disfrazar una aplicación malintencionada como una aplicación procedente de un editor conocido y de confianza. |
 | Consentimiento de aplicación de OAuth malintencionado | Examina las aplicaciones de OAuth conectadas a su entorno y desencadena una alerta cuando se autoriza una aplicación potencialmente malintencionada. Las aplicaciones de OAuth malintencionadas se pueden usar como parte de una campaña de suplantación de identidad en un intento de poner en peligro a los usuarios. Esta detección aprovecha la investigación de seguridad de Microsoft y la experiencia con la inteligencia sobre amenazas para identificar aplicaciones malintencionadas. |
+| Actividades de descarga de archivos de la aplicación OAuth sospechosa | Vea [directivas de detección de anomalías](anomaly-detection-policy.md#suspicious-oauth-app-file-download-activities) |
 
 <!--
 | OAuth apps authorized by external users | Scans OAuth apps connected to your environment and triggers an alert when an app was authorized by an external user. |

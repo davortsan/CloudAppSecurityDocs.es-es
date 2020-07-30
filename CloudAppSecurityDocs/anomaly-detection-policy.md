@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d5ebc12c77fa8e2a9b3b1ccb006493a02771c296
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: dff363a63cab2760cc953f7493a38b8ffda0d02f
+ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624358"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87296797"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtención de análisis de comportamiento y detección de anomalías instantáneos
 
@@ -120,7 +120,9 @@ La detección busca los usuarios cuya cuenta de Azure AD ha quedado suspendida, 
 > [!NOTE]
 > Cloud App Security se integra con protección contra amenazas avanzada de Office (ATP de Office) para proporcionar protección para Exchange Online, incluida la detonación de direcciones URL, la protección contra malware y mucho más. Una vez habilitada la ATP de Office, comenzará a ver alertas en el registro de actividad de Cloud App Security.
 
-<!-- // MATP? Delay tile start appearing? -->
+### <a name="suspicious-oauth-app-file-download-activities"></a>Actividades de descarga de archivos de la aplicación OAuth sospechosa
+
+* Examina las aplicaciones de OAuth conectadas a su entorno y desencadena una alerta cuando una aplicación descarga varios archivos de Microsoft SharePoint o Microsoft OneDrive de una manera inusual para el usuario. Esto puede indicar que la cuenta de usuario está en peligro.
 
 ### <a name="unusual-activities-by-user"></a>Actividades inusuales (realizadas por un usuario)
 
@@ -156,7 +158,7 @@ Puede habilitar acciones de corrección automatizadas en las alertas generadas p
 
 1. Haga clic en el nombre de la directiva de detección en la página **Directiva**.
 1. En la ventana **Editar directiva de detección de anomalías** que se abre, en **Gobernanza**, establezca las acciones de corrección que quiera para cada aplicación conectada o para todas las aplicaciones.
-1. Haga clic en **Actualizar**.
+1. Haga clic en **Update**(Actualizar).
 
 ## <a name="tune-anomaly-detection-policies"></a>Ajuste de directivas de detección de anomalías
 

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c957afbd4b4fef2947b042c99b548edfacbcb5c0
-ms.sourcegitcommit: 5ae4c12ee43c9133b61731a95f81f771eeeb7d19
+ms.openlocfilehash: 68b2f2a6bc1c8350510c54dc505593c35b5de0b0
+ms.sourcegitcommit: 5cf263c4094f5ac91210b03d085ca3dbca50f32d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86180553"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87388684"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicaciones con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security
 
@@ -31,7 +31,7 @@ En el área de trabajo actual, a menudo no basta con saber lo que ocurre en su e
 >
 > - Para usar Cloud App Security Control de aplicaciones de acceso condicional, necesita una [licencia de Azure Active Directory P1](https://azure.microsoft.com/pricing/details/active-directory/)o la licencia requerida por la solución IDP, así como una licencia de Cloud App Security.
 
-## <a name="how-it-works"></a>Cómo funciona
+## <a name="how-it-works"></a>Funcionamiento
 
 Control de aplicaciones de acceso condicional usa una arquitectura de proxy inverso y se integra con el IdP. Al integrar con Azure AD el acceso condicional, puede configurar las aplicaciones para que funcionen con Control de aplicaciones de acceso condicional con solo unos clics, lo que le permite aplicar de forma sencilla y selectiva controles de acceso y de sesión en las aplicaciones de su organización en función de cualquier condición en el acceso condicional. Las condiciones definen *quién* (usuario o grupo de usuarios) y *qué* (qué aplicaciones en la nube) y *dónde* (a qué ubicaciones y redes) se aplica una directiva de acceso condicional. Después de determinar las condiciones, puede enrutar a los usuarios a Cloud App Security donde puede proteger los datos con Control de aplicaciones de acceso condicional mediante la aplicación de controles de acceso y de sesión.
 
@@ -67,13 +67,14 @@ Este método no requiere la instalación de nada en el dispositivo, por lo que r
 >
 > - Nuestra tecnología usa la heurística patentada de la mejor clase para identificar y controlar las actividades realizadas por el usuario en la aplicación de destino. Nuestra heurística está diseñada para optimizar y equilibrar la seguridad con facilidad de uso. En algunos escenarios poco frecuentes, cuando las actividades de bloqueo en el lado servidor representan la aplicación como inutilizable, protegemos estas actividades solo en el lado cliente, lo que hace que sean potencialmente susceptibles de ser aprovechados por Insiders malintencionados.
 > - Cloud App Security aprovecha los Centros de datos de Azure de todo el mundo para proporcionar un rendimiento optimizado a través de la geolocalización. Esto significa que la sesión de un usuario se puede hospedar fuera de una región determinada, en función de los patrones de tráfico y su ubicación. Sin embargo, para proteger su privacidad, no se almacenan datos de la sesión en estos centros de datos.
+> - Nuestros servidores proxy no almacenan datos en reposo. Al almacenar en caché contenido, se siguen los requisitos que se han diseñado en [RFC 7234 (almacenamiento en caché de http)](https://tools.ietf.org/html/rfc7234) y solo se almacenan en caché el contenido público.
 
 ## <a name="managed-device-identification"></a>Identificación de dispositivos administrados
 
-El control de aplicaciones de acceso condicional permite crear directivas que tienen en cuenta si un dispositivo está administrado o no. Para identificar el estado de un dispositivo, puede configurar las directivas de acceso y de sesión para comprobar lo siguiente:
+La característica Control de aplicaciones de acceso condicional le permite crear directivas que tienen en cuenta si un dispositivo está administrado o no. Para identificar el estado de un dispositivo, puede configurar las directivas de acceso y de sesión para comprobar lo siguiente:
 
 - Dispositivos compatibles con Microsoft Intune [solo disponible con Azure AD]
-- Dispositivos Azure AD híbrido Unidos [solo disponible con Azure AD]
+- Dispositivos unidos a Azure AD híbrido (solo disponible con Azure AD)
 - Presencia de certificados de cliente en una cadena de confianza
 
 ### <a name="intune-compliant-and-hybrid-azure-ad-joined-devices"></a>Dispositivos compatibles y Unidos a Azure AD híbrido de Intune
@@ -148,14 +149,14 @@ Aunque los controles de sesión se compilan para trabajar con cualquier explorad
 - AWS
 - Azure DevOps (Visual Studio Team Services)
 - Azure Portal (versión preliminar)
-- Cuadro
+- Box
 - Concur
 - CornerStone on Demand
 - DocuSign
 - Dropbox
 - Dynamics 365 CRM (versión preliminar)
 - egnyte
-- Exchange Online
+- Exchange Online
 - G Suite
 - GitHub
 - HighQ
@@ -178,7 +179,7 @@ Aunque los controles de sesión se compilan para trabajar con cualquier explorad
 
 A continuación se muestra una lista de las aplicaciones destacadas que se admiten en Office 365 Cloud App Security. Para usar estas aplicaciones con Cloud App Security, debe tener una licencia de Office 365 E5.
 
-- Exchange Online
+- Exchange Online
 - OneDrive para la Empresa
 - Power BI
 - SharePoint Online
@@ -194,5 +195,8 @@ Si está interesado en una aplicación específica, [envíenos detalles sobre la
 
 > [!div class="nextstepaction"]
 > [Implementación del Control de aplicaciones de acceso condicional para cualquier aplicación](proxy-deployment-any-app.md)
+
+> [!div class="nextstepaction"]
+> [Solución de problemas de controles de sesión y acceso](troubleshooting-proxy.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

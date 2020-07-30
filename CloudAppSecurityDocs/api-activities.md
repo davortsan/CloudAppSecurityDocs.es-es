@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: c3459843fc2a432f664ac09ebc67ec7c52a01fe4
-ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
+ms.openlocfilehash: 0f6528074003d43777d21e956961739a19584742
+ms.sourcegitcommit: 84eafb4926bf0d4db27bed7df55dc83ca48f9192
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84505594"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87377837"
 ---
 # <a name="activities-api"></a>API de actividades
 
@@ -25,9 +25,9 @@ La API de actividad le permite ver todas las acciones realizadas en las aplicaci
 
 A continuación se enumeran las solicitudes admitidas:
 
-- [Enumerar actividades](api-activities-list.md)
-- [Actividad fetch](api-activities-fetch.md)
-- [Comentarios sobre la actividad](api-activities-feedback.md)
+- [Enumeración de actividades](api-activities-list.md)
+- [Captura de actividades](api-activities-fetch.md)
+- [Comentarios sobre actividades](api-activities-feedback.md)
 
 ## <a name="filters"></a>Filtros
 
@@ -37,7 +37,7 @@ En la tabla siguiente se describen los filtros admitidos:
 
 | Filter | Tipo | Operadores | Descripción |
 | --- | --- | --- | --- |
-| service | integer | eq | NEQ filtrar las actividades relacionadas con el appID de servicio especificado, por ejemplo: 11770 |
+| service | integer | EQ, Neq | Filtre las actividades relacionadas con el appID de servicio especificado, por ejemplo: 11770 |
 | instance | integer | EQ, Neq | Filtrar actividades de instancias especificadas |
 | usuario. unidad organizativa | string | EQ, Neq, isset, isnotset | Filtrar actividades por la unidad organizativa del usuario que realiza la operación |
 | Activity. eventType | string | EQ, Neq | Filtrar actividades por tipo de evento |
@@ -68,7 +68,6 @@ En la tabla siguiente se describen los filtros admitidos:
 | Entidad | PK de entidad | EQ, Neq, isset, isnotset, StartsWith | Filtre las actividades por la entidad que llevó a cabo la actividad. Ejemplo: `[{ "id": "entity-id", "saas": 11161, "inst": 0 }]` |
 | User. username | string | EQ, Neq, isset, isnotset, StartsWith | Filtrar actividades por el usuario que realizó la actividad |
 | User. Tags | string | EQ, Neq, isset, isnotset, StartsWith | Filtre las actividades por etiquetas que pertenezcan al usuario que realiza la ejecución. Requiere ID. de grupo |
-| Activity. azureSubscriptions | string | EQ, Neq | Filtrar actividades de suscripciones de Azure |
 | usuario. dominio | string | EQ, Neq, isset, isnotset | Filtrar actividades por el dominio de usuario que realiza la operación |
 
 [!INCLUDE [Open support ticket](includes/support.md)]

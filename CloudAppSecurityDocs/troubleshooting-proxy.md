@@ -1,5 +1,5 @@
 ---
-title: Solución de problemas de controles de acceso y de sesión
+title: Solución de problemas de controles de sesión y acceso
 description: En este artículo se proporcionan a los administradores instrucciones sobre cómo investigar y resolver controles de acceso y de sesión comunes.
 keywords: ''
 author: shsagir
@@ -11,14 +11,14 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: c473128c22f0369725260077b642d75ac50f559f
-ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
+ms.openlocfilehash: 6d2996fb77912b04d5a6d4aefe7edc8c77f27a21
+ms.sourcegitcommit: 84eafb4926bf0d4db27bed7df55dc83ca48f9192
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86402367"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87377854"
 ---
-# <a name="troubleshooting-access-and-session-controls"></a>Solución de problemas de controles de acceso y de sesión
+# <a name="troubleshooting-access-and-session-controls"></a>Solución de problemas de controles de sesión y acceso
 
 En este artículo se proporcionan a los administradores instrucciones sobre cómo investigar y resolver problemas comunes de acceso y control de sesión que experimentan los [administradores](#issues-experienced-by-admins) y [los usuarios finales](#issues-experienced-by-end-users).
 
@@ -35,7 +35,7 @@ Antes de continuar, asegúrese de que el entorno cumple los siguientes requisito
 
 Esta sección es para los administradores que configuran los controles de acceso y de sesión con Cloud App Security y ayuda a identificar situaciones comunes que pueden surgir en las siguientes áreas:
 
-|Sección|Incidencias|
+|Sección|Issues|
 |---|---|
 |[Las condiciones de la red](#network-conditions)|- [Errores de red al navegar a una página del explorador](#network-errors-when-navigating-to-a-browser-page)<br />- [Inicio de sesión lento](#slow-login)<br />- [Consideraciones adicionales](#network-conditions-additional-considerations)|
 |[Identificación del dispositivo](#device-identification)|- [Dispositivos compatibles con Intune o Azure AD híbrido Unidos indefinidos](#misidentified-intune-compliant-or-hybrid-azure-ad-joined-devices)<br />- [Los certificados de cliente no se solicitan cuando se espera](#client-certificates-are-not-prompting-when-expected)<br />- [Los certificados de cliente se solicitan en cada inicio de sesión](#client-certificates-are-prompting-at-every-login)<br />- [Consideraciones adicionales](#device-identification-additional-considerations)|
@@ -67,11 +67,11 @@ Cuando se configura por primera vez Cloud App Security controles de acceso y de 
     > - Cloud App Security aprovecha los protocolos de seguridad de la capa de transporte (TLS) 1.2 + para proporcionar el mejor cifrado de la clase. No se podrá obtener acceso a las aplicaciones y exploradores de cliente nativo que no admitan TLS 1.2 + cuando se configuran con el control de sesión. Sin embargo, las aplicaciones SaaS que usen TLS 1.1 o versiones anteriores aparecerán en el explorador como usuarias de TLS 1.2+ al configurarse con Cloud App Security.
     > - Aunque los controles de sesión se compilan para trabajar con cualquier explorador en cualquier plataforma principal de cualquier sistema operativo, se admite Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest) o Apple Safari (latest). También se puede bloquear o permitir el acceso a aplicaciones móviles y de escritorio.
 
-    | Explorador | Pasos |
+    | Browser | Pasos |
     |---|---|
     | Microsoft Internet Explorer | 1. abrir Internet Explorer<br />2. seleccionar **herramientas**  >  **Opciones**  >  **avanzadas** de Internet (pestaña)<br />3. en **seguridad**, seleccione **TLS 1,2**<br />4. Seleccione **aplicar**y, después, haga clic en **Aceptar** .<br />5. Reinicie el explorador y compruebe que puede acceder a la aplicación |
     | Cromo de Microsoft Edge/Edge | 1. Abra la búsqueda desde la barra de tareas y busque "opciones de Internet"<br />2. Seleccione **Opciones de Internet**<br />3. en **seguridad**, seleccione **TLS 1,2**<br />4. Seleccione **aplicar**y, después, haga clic en **Aceptar** .<br />5. Reinicie el explorador y compruebe que puede acceder a la aplicación |
-    | Google Chrome | 1. Abra Google Chrome<br />2. en la parte superior derecha, haga clic en **más** (3 puntos verticales) > **configuración** .<br />3. en la parte inferior, haga clic en **Opciones avanzadas** .<br />4. en **sistema**, haga clic en **abrir configuración de proxy** .<br />5. en la pestaña **Opciones avanzadas** , en **seguridad**, seleccione **TLS 1,2**<br />6. Haga clic en **Aceptar** .<br />7. Reinicie el explorador y compruebe que puede acceder a la aplicación |
+    | Google Chrome | 1. Abra Google Chrome<br />2. en la parte superior derecha, haga clic en **más** (3 puntos verticales) > **configuración** .<br />3. en la parte inferior, haga clic en **Opciones avanzadas** .<br />4. en **sistema**, haga clic en **abrir configuración de proxy** .<br />5. en la pestaña **Opciones avanzadas** , en **seguridad**, seleccione **TLS 1,2**<br />6. Haga clic en **Aceptar** .<br />7. Reinicie el explorador y compruebe que puede acceder a la aplicación |
     | Mozilla Firefox | 1. Abra Mozilla Firefox<br />2. en la barra de direcciones y busque "About: config"<br />3. en el cuadro de búsqueda, busque "TLS"<br />4. Haga doble clic en la entrada de **Security. TLS. version. min**<br />5. establezca el valor entero en 3 para forzar TLS 1,2 como la versión mínima requerida.<br />6. Haga clic en **Guardar** (marca de verificación a la derecha del cuadro valor)<br />7. Reinicie el explorador y compruebe que puede acceder a la aplicación |
     | Safari | Si usa la versión 7 o posterior de Safari, TLS 1,2 se habilita automáticamente. |
 
@@ -154,7 +154,7 @@ Azure AD el acceso condicional permite que la información del dispositivo compa
 1. Si las actividades no se rellenan en el registro de actividad Cloud App Security, vaya a Azure AD y haga lo siguiente:
     1. En **Monitoring**  >  **inicios de sesión**de supervisión, compruebe que hay actividades de inicio de sesión en los registros.
     1. Seleccione la entrada de registro correspondiente al dispositivo en el que ha iniciado sesión.
-    1. En el panel de **detalles** , en la pestaña **información del dispositivo** , compruebe que el dispositivo está **administrado** (Azure ad híbrido Unido) o **compatible** (Intune compatible). Si no puede comprobar ninguno de estos Estados, pruebe con otra entrada de registro o asegúrese de que los datos del dispositivo están configurados correctamente en Azure AD.
+    1. En el panel **Detalles**, en la pestaña **Información del dispositivo**, compruebe que el dispositivo está **administrado** (unido a Azure AD híbrido) o es **compatible** (compatible con Intune). Si no puede comprobar ninguno de estos estados, pruebe con otra entrada de registro o asegúrese de que los datos del dispositivo estén configurados correctamente en Azure AD.
     1. En el caso del acceso condicional, algunos exploradores pueden requerir una configuración adicional, como la instalación de una extensión. Utilice la información de la guía de [soporte del explorador de acceso condicional](/azure/active-directory/conditional-access/concept-conditional-access-conditions#supported-browsers) para configurar el explorador.
     1. Si sigue sin ver la información del dispositivo en la página **inicios de sesión** , abra una incidencia de soporte técnico para Azure ad.
 
@@ -188,7 +188,7 @@ El mecanismo de identificación de dispositivos puede solicitar la autenticació
 
 Si está experimentando el certificado de cliente que se está expulsando después de abrir una nueva pestaña, esto puede deberse a que la configuración está oculta en **las opciones de Internet**.
 
-| Explorador | Pasos |
+| Browser | Pasos |
 |---|---|
 | Microsoft Internet Explorer | 1. abrir Internet Explorer<br />2. seleccionar **herramientas**  >  **Opciones**  >  **avanzadas** de Internet (pestaña)<br />3. en **seguridad**, seleccione **no solicitar la selección de certificado de cliente cuando solo existe un certificado** .<br />4. Seleccione **aplicar**y, después, haga clic en **Aceptar** .<br />5. Reinicie el explorador y compruebe que puede acceder a la aplicación sin los mensajes adicionales. |
 | Cromo de Microsoft Edge/Edge | 1. Abra la búsqueda desde la barra de tareas y busque "opciones de Internet"<br />2. Seleccione **Opciones de Internet**<br />3. en **seguridad**, seleccione **no solicitar la selección de certificado de cliente cuando solo existe un certificado** .<br />4. Seleccione **aplicar**y, después, haga clic en **Aceptar** .<br />5. Reinicie el explorador y compruebe que puede acceder a la aplicación sin los mensajes adicionales. |
@@ -291,9 +291,9 @@ Después de agregar una aplicación, puede ver la opción **solicitar control de
 1. En Cloud App Security, en la barra de menús, haga clic en el engranaje de configuración y seleccione **configuración**.
 1. En **control de aplicaciones de acceso condicional**, seleccione **incorporación/mantenimiento**de la aplicación.
 1. Escriba el nombre principal de usuario o el correo electrónico de los usuarios que van a incorporar la aplicación y, a continuación, haga clic en **Guardar**.
-1. Vaya a la aplicación que va a implementar. La página que vea dependerá de si se reconoce la aplicación. Realice una de las siguientes acciones:
+1. Vaya a la aplicación que va a implementar. La página que vea dependerá de si se reconoce la aplicación. Lleve a cabo una de las siguientes acciones:
 
-    | Estado de la aplicación | Descripción | Pasos |
+    | Estado de la aplicación | Description | Pasos |
     | --- | --- | --- |
     | No reconocido | Verá una página de aplicación no reconocida que le pide que configure la aplicación. | 1. [agregue la aplicación a control de aplicaciones de acceso condicional](proxy-deployment-any-app.md#add-app).<br /> 2. [agregue los dominios de la aplicación](proxy-deployment-any-app.md#add-domains)y, a continuación, vuelva a la aplicación y actualice la página.<br /> 3. [Instale los certificados para la aplicación](proxy-deployment-any-app.md#install-certs). |
     | Recognized | Verá una página de incorporación que le pide que continúe con el proceso de configuración de la aplicación. | - [Instale los certificados para la aplicación](proxy-deployment-any-app.md#install-certs). <br /><br /> **Nota:** Asegúrese de que la aplicación esté configurada con todos los dominios necesarios para que la aplicación funcione correctamente. Para configurar dominios adicionales, vaya a [Agregar los dominios de la aplicación](proxy-deployment-any-app.md#add-domains)y, a continuación, vuelva a la página de la aplicación. |
@@ -410,6 +410,7 @@ Esta sección es para los usuarios finales que usan aplicaciones protegidas por 
 - [Aparece **un error** en la página](#something-went-wrong-page-appears)
 - [No se bloquean las acciones o los controles de archivo del portapapeles](#clipboard-actions-or-file-controls-are-not-being-blocked)
 - [No se están protegiendo las descargas](#downloads-are-not-being-protected)
+- [Navegación a una dirección URL concreta de una aplicación con sufijo y aterrizaje en una página genérica](#navigating-to-a-particular-url-of-a-suffixed-app-and-landing-on-a-generic-page)
 - [Consideraciones adicionales](#app-additional-considerations)
 
 ### <a name="user-monitoring-page-is-not-appearing"></a>La página de supervisión de usuarios no aparece
@@ -431,7 +432,7 @@ Al enrutar a un usuario a través del Cloud App Security, puede notificar al usu
     | Valor predeterminado | **Encabezado**:<br />El acceso a [nombre de la aplicación aparecerá aquí] está supervisado<br />**Cuerpo**:<br />Para mejorar la seguridad, su organización permite el acceso a [el nombre de la aplicación aparecerá aquí] en modo de supervisión. El acceso solo está disponible desde un explorador Web. |
     | Personalizado | **Encabezado**:<br />Use este cuadro para proporcionar un encabezado personalizado para informar a los usuarios que se están supervisando.<br />**Cuerpo**:<br />Use este cuadro para agregar información personalizada adicional para el usuario, como quién debe ponerse en contacto con preguntas y admite las siguientes entradas: texto sin formato, texto enriquecido, hipervínculos. |
 1. Haga clic en **vista previa** para comprobar la página de supervisión de usuarios que aparece antes de acceder a una aplicación.
-1. Haga clic en **Guardar**.
+1. Haga clic en **Save**(Guardar).
 
 ### <a name="not-able-to-access-app-from-a-third-party-identity-provider"></a>No se puede tener acceso a la aplicación desde un proveedor de identidades de terceros
 
@@ -502,6 +503,20 @@ Como usuario final, podría ser necesario descargar datos confidenciales en un d
         - PDF * si está habilitada la etiqueta unificada
     - Si no se admite el tipo de archivo, en la Directiva de sesión, puede seleccionar **bloquear la descarga de cualquier archivo que no sea compatible con la protección nativa o donde la protección nativa no sea correcta**.
 1. Si todavía no puede ver la actividad bloqueada, abra una [incidencia de soporte técnico](support-and-ts.md).
+
+### <a name="navigating-to-a-particular-url-of-a-suffixed-app-and-landing-on-a-generic-page"></a>Navegación a una dirección URL concreta de una aplicación con sufijo y aterrizaje en una página genérica
+
+Todos los servidores proxy que son susceptibles a la pérdida de contexto, un problema en el que la navegación a un vínculo pierde la ruta de acceso completa del vínculo y que normalmente se encuentran en la Página principal de la aplicación. Cloud App Security está posicionada de forma exclusiva para abordar esta limitación y resolver la pérdida de contexto mediante la asociación con proveedores de Microsoft y otros fabricantes.
+
+Las aplicaciones de nuestra página de aplicaciones destacadas marcadas como **(vista previa)** pueden sufrir una pérdida de contexto. En el caso de las aplicaciones no destacadas que experimentan pérdida de contexto, envíe una incidencia de soporte técnico. Estamos trabajando con cada proveedor de aplicaciones individualmente para corregir estos problemas principales.
+
+Como mitigación temporal, puede solucionar problemas de pérdida de contexto, como se indica a continuación:
+
+1. Navegue a una dirección URL donde se produzca la pérdida de contexto.
+1. Anote el dominio de dirección URL con sufijo incluido el sufijo agregado por Cloud App Security, por ejemplo `https://www.yammer.com.us2.cas.ms` .
+1. Copie la ruta de acceso de la dirección URL original, por ejemplo, si la dirección URL concreta original era `https://www.yammer.com/organization/threads/threadnumber` , Copy `/organization/threads/threadnumber` .
+1. Anexe la ruta de acceso copiada al dominio con sufijo, por ejemplo `https://www.yammer.com.us2.cas.ms/organization/threads/threadnumber` .
+1. Navegue a la nueva dirección URL con sufijo.
 
 <a name="app-additional-considerations"></a>
 

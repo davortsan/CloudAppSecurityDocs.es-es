@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7ad7bc15a2ea70a9b1166f30024afc0bfe17ae27
-ms.sourcegitcommit: 15d80cde40df8a8d3a156764a6a99fad0e62a422
+ms.openlocfilehash: eabbad5f2ce6ca4649f0923e9bce248a6d28781f
+ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86046103"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87296874"
 ---
 # <a name="session-policies"></a>Directivas de sesión
 
@@ -173,7 +173,10 @@ Por ejemplo, si un usuario carga un archivo sin una etiqueta de Azure Informatio
 >[!div class="nextstepaction"]
 > [SIGUIENTE: Cómo crear una directiva de acceso »](access-policy-aad.md)
 
-## <a name="see-also"></a>Vea también
+> [!div class="nextstepaction"]
+> [Solución de problemas de controles de sesión y acceso](troubleshooting-proxy.md)
+
+## <a name="see-also"></a>Consulte también
 
 > [!div class="nextstepaction"]
 > [Bloqueo de descargas en dispositivos no administrados mediante Azure AD Control de aplicaciones de acceso condicional](use-case-proxy-block-session-aad.md)

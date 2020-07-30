@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: itfalcon
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 08eec9c9a8e684d53b0947ce186d661bf5e7d961
-ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
+ms.openlocfilehash: 00a4152258b27c6d992e4d7e5b0e4583cefad758
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800816"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254778"
 ---
 # <a name="how-to-investigate-anomaly-detection-alerts"></a>Cómo investigar alertas de detección de anomalías
 
@@ -90,7 +90,7 @@ Esta detección usa un algoritmo de aprendizaje automático que reduce los incid
 
 ### <a name="activity-from-infrequent-country"></a>Actividad desde un país poco frecuente
 
-Actividad de un país que podría indicar actividad malintencionada. Esta directiva genera perfiles de su entorno y desencadena alertas cuando se detecta actividad en una ubicación que no se ha visitado nunca por ningún usuario de la organización.
+Actividad de un país o región que podría indicar actividad malintencionada. Esta directiva genera perfiles de su entorno y desencadena alertas cuando se detecta actividad en una ubicación que no se ha visitado nunca por ningún usuario de la organización.
 
 De forma predeterminada, la Directiva está configurada para incluir solo las actividades de inicio de sesión correctas, pero se puede configurar para que incluya cualquier actividad de inicio de sesión. La Directiva se puede limitar aún más a un subconjunto de usuarios o puede excluir a los usuarios que se sabe que viajan a ubicaciones remotas.
 
@@ -204,13 +204,13 @@ El nombre del publicador de OAuth engañoso para una aplicación de OAuth identi
 
 **Comprender el ámbito de la vulneración de seguridad**
 
-1. En la página **aplicaciones de OAuth** , haga clic en la aplicación para abrir el cajón de la **aplicación**y, a continuación, haga clic en **actividad relacionada**. Se abrirá la página del **registro de actividad** que se ha filtrado para las actividades realizadas por la aplicación. Tenga en cuenta que algunas aplicaciones realizan actividades que se registran como si las hubiera hecho un usuario. Estas actividades se filtran automáticamente de los resultados del registro de actividad. Para realizar una investigación más detallada con el registro de actividad, consulte [Registro de actividad](activity-filters.md).
+1. En la página **aplicaciones de OAuth** , haga clic en la aplicación para abrir el cajón de la **aplicación**y, a continuación, haga clic en **actividad relacionada**. Se abrirá la página del **registro de actividad** que se ha filtrado para las actividades realizadas por la aplicación. Tenga en cuenta que algunas aplicaciones realizan actividades que se registran como realizadas por un usuario. Estas actividades se filtran automáticamente de los resultados del registro de actividad. Para investigar más sobre el uso del registro de actividad, consulte [Registro de actividad](activity-filters.md).
 1. Si sospecha que una aplicación es sospechosa, se recomienda que investigue el nombre y el publicador de la aplicación en diferentes tiendas de aplicaciones. Al comprobar las tiendas de aplicaciones, céntrese en los siguientes tipos de aplicaciones:
     - Aplicaciones con un número reducido de descargas.
-    - Aplicaciones con una puntuación o clasificación baja o comentarios malos.
+    - Aplicaciones con una clasificación o puntuación baja o con comentarios negativos.
     - Aplicaciones con un editor o sitio web sospechoso.
-    - Aplicaciones que no se han actualizado recientemente. Esto puede indicar que una aplicación ya no se admite.
-    - Aplicaciones con permisos irrelevantes. Esto podría indicar que una aplicación es riesgosa.
+    - Aplicaciones que no se han actualizado recientemente. Esto podría ser signo de una aplicación que ya no se admite.
+    - Aplicaciones que tienen permisos no pertinentes. Esto podría indicar que una aplicación es de riesgo.
 1. Si todavía sospecha que una aplicación es sospechosa, puede investigar el nombre de la aplicación, el editor y la dirección URL en línea.
 
 ## <a name="execution-alerts"></a>Alertas de ejecución
@@ -676,4 +676,4 @@ El establecimiento del patrón de actividad de un usuario nuevo requiere un per�
 ## <a name="see-also"></a>Consulte también
 
 > [!div class="nextstepaction"]
-> [Investigación de usuarios de riesgo](tutorial-ueba.md)
+> [Tutorial: Investigación de usuarios de riesgo](tutorial-ueba.md)

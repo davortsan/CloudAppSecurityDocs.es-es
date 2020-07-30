@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 23763911724e802d31e848ee1f8d6c42e346ffa4
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: 88a86e60e632f781428f307c4e1cf6653f87836b
+ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81232585"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87296768"
 ---
 # <a name="access-policies"></a>Directivas de acceso
 
@@ -34,9 +34,9 @@ Las directivas de acceso de Microsoft Cloud App Security permiten la supervisió
 
 - Azure AD Premium licencia P1 o la licencia requerida por su solución de proveedor de identidades (IdP)
 - Las aplicaciones en cuestión deben estar [implementadas con control de aplicaciones de acceso condicional](proxy-deployment-aad.md).
-- Asegúrese de que ha configurado la solución IdP para trabajar con Cloud App Security, como se indica a continuación:
-  - Para [Azure ad el acceso condicional](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), consulte Configuración de la [integración con Azure ad](proxy-deployment-aad.md#configure-integration-with-azure-ad)
-  - Para otras soluciones IdP, consulte [configuración de la integración con otras soluciones IDP](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions) .
+- Asegúrese de que ha configurado la solución IdP para que funcione con Cloud App Security, como se indica a continuación:
+  - En el caso del [acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), consulte [Configuración de la integración con Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad).
+  - Para información sobre otras soluciones IdP, consulte [Configuración de la integración con otras soluciones IdP](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions).
 
 ## <a name="create-a-cloud-app-security-access-policy"></a>Crear una directiva de acceso de Cloud App Security
 
@@ -77,5 +77,8 @@ Para crear una directiva de acceso, siga este procedimiento:
 
 > [!div class="nextstepaction"]
 > [Bloqueo de descargas en dispositivos no administrados mediante controles de sesión](use-case-proxy-block-session-aad.md)
+
+> [!div class="nextstepaction"]
+> [Solución de problemas de controles de sesión y acceso](troubleshooting-proxy.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

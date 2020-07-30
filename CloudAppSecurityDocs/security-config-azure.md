@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: dec6b720804716df8ac275b6f6f641832e4cec17
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: f92d94c18ba8f91fd616fe00baeeb38b79a4354c
+ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85716502"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87296912"
 ---
 # <a name="security-configuration-for-azure"></a>Configuración de seguridad para Azure
 
@@ -58,9 +58,12 @@ Para habilitar las recomendaciones de configuración de seguridad en Microsoft C
 
 1. Puede filtrar las recomendaciones por tipo, recurso y suscripción. Además, puede hacer clic en el icono de configuración de seguridad ![Icono de ASC](media/asc-icon.png) para abrir la recomendación en Azure Security Center, a fin de obtener más información y profundizar en la recomendación.
 
-Para información sobre cómo implementar las recomendaciones de seguridad, vea [Administración de recomendaciones de seguridad en Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-recommendations).
+    > [!NOTE]
+    > Para que la investigación sea incluso más sencilla, puede crear consultas personalizadas y guardarlas para usar más adelante. Una vez que haya terminado de compilar la consulta, haga clic en el botón **Guardar como** situado en la esquina superior derecha de los filtros.  En el elemento emergente **Guardar consulta** , asigne un nombre a la consulta.
 
-![configuración de seguridad](media/security-configuration-azure.png)
+    ![configuración de seguridad](media/security-configuration-azure.png)
+
+Para información sobre cómo implementar las recomendaciones de seguridad, vea [Administración de recomendaciones de seguridad en Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-recommendations).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
