@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6c2c4e5d48af1650dce4744568f9bdb3df051a07
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 12af451c7d5e808baf09598e263ef582c975ebbf
+ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85716501"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87296940"
 ---
 # <a name="security-configuration-for-google-cloud-platform"></a>Configuración de seguridad para Google Cloud Platform
 
@@ -44,6 +44,9 @@ Esta evaluación proporciona una vista organizativa de las recomendaciones de co
     ![menú de configuración de seguridad](media/security-configuration-menu.png)
 
 1. Puede filtrar las recomendaciones por tipo, recurso y suscripción. Además, puede hacer clic en el icono de configuración de seguridad ![Icono de ASC](media/asc-icon.png) para abrir la recomendación en centro de comandos de seguridad GCP para obtener más información y profundizar en la recomendación.
+
+    > [!NOTE]
+    > Para que la investigación sea incluso más sencilla, puede crear consultas personalizadas y guardarlas para usar más adelante. Una vez que haya terminado de compilar la consulta, haga clic en el botón **Guardar como** situado en la esquina superior derecha de los filtros. En el elemento emergente **Guardar consulta** , asigne un nombre a la consulta.
 
     ![configuración de seguridad](media/security-configuration-gcp.png)
 

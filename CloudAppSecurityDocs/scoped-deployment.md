@@ -14,22 +14,22 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 433488b7302d3f66255bb1bfa04b630d8dbb1b7d
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 5f0aa6f32f964d1f0bb5f2ad404bae65e9e95e0c
+ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74721051"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254744"
 ---
-# Implementación con ámbito <a name="scoped-deployment"></a> 
+# <a name="scoped-deployment"></a>Implementación con ámbito<a name="scoped-deployment"></a> 
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security le permite establecer el ámbito de su implementación. Establecer el ámbito le permite seleccionar determinados grupos de usuarios que se van a supervisar o excluir de la supervisión para las aplicaciones.
+Microsoft Cloud App Security permite definir el ámbito de la implementación. Establecer el ámbito le permite seleccionar determinados grupos de usuarios que se van a supervisar o excluir de la supervisión para las aplicaciones.
 
 ## <a name="include-or-exclude-user-groups"></a>Incluir o excluir grupos de usuarios
 
-Es posible que no desee usar Microsoft Cloud App Security para todos los usuarios de su organización. Establecer el ámbito es especialmente útil cuando quiera limitar la implementación debido a restricciones de licencia. También es posible que deba establecer límites debido a las normativas de cumplimiento que requieren que no se supervisen usuarios de determinados países. Por ejemplo, puede usar la implementación con ámbito para supervisar solo los empleados en Estados Unidos. Como alternativa, puede evitar que se muestren las actividades de los usuarios que se encuentran en Alemania.
+Es posible que no desee usar Microsoft Cloud App Security para todos los usuarios de su organización. Establecer el ámbito es especialmente útil cuando quiera limitar la implementación debido a restricciones de licencia. Es posible que también necesite limitar debido a las regulaciones de cumplimiento que requieren que no supervise usuarios de determinados países o regiones. Por ejemplo, puede usar la implementación con ámbito para supervisar solo los empleados en Estados Unidos. Como alternativa, puede evitar que se muestren las actividades de los usuarios que se encuentran en Alemania.
 
 - Para establecer el ámbito de la implementación, primero debe [importar grupos de usuarios](user-groups.md) con Microsoft Cloud App Security. De forma predeterminada, verá los siguientes grupos:
 
@@ -47,8 +47,8 @@ Es posible que no desee usar Microsoft Cloud App Security para todos los usuario
 
 2. Para establecer el ámbito de la implementación a fin de incluir o excluir grupos específicos, primero debe [importar grupos de usuarios](user-groups.md) en Microsoft Cloud App Security.
 
-3. Para establecer grupos específicos para su supervisión por parte de Microsoft Cloud App Security, en la pestaña **Incluir**, haga clic en el icono más.
-    ![icono](media/plus-icon.png)
+3. Para establecer que los grupos específicos se supervisan mediante Microsoft Cloud App Security, en la pestaña **incluir** , haga clic en el icono del signo más.
+    ![icon](media/plus-icon.png)
 
 4. En el cuadro de diálogo **Crear nueva regla de inclusión**, haga lo siguiente:
 
@@ -60,7 +60,7 @@ Es posible que no desee usar Microsoft Cloud App Security para todos los usuario
 
 5. Si quiere establecer determinados grupos para excluirlos de la supervisión, en la pestaña **Excluir**, haga clic en el icono de signo más.
 
-   ![icono](media/plus-icon.png)
+   ![icon](media/plus-icon.png)
 
 6. En el cuadro de diálogo **Crear nueva regla de exclusión**, establezca los parámetros siguientes:
 
@@ -85,7 +85,7 @@ Se supervisan las actividades de usuario siguientes:
 
 |Usuario|Pertenencia a grupos|Actividades supervisadas|
 |----|----|----|
-|Adriana|Todos los usuarios de Alemania<br />Ventas globales<br />Directores de ventas|Ninguno|
+|Adriana|Todos los usuarios de Alemania<br />Ventas globales<br />Directores de ventas|None|
 |Alain|Ventas globales|Office 365 y todas las subaplicaciones, a excepción de Power BI|
 |Cornel|Ventas globales<br />Directores de ventas|Office 365 y todas las subaplicaciones|
 |Raymond|Directores de ventas|Solo Power BI|

@@ -14,14 +14,14 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4434bd5faf1ab8aa30391d3434df71e6db557096
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 8a434520f3e0ca3baa01167cae13856085e9a318
+ms.sourcegitcommit: 859934f13d0f7f7a24a5fb21856d415ef0f6889a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85623328"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87378240"
 ---
-# <a name="cloud-discovery-policies"></a>Directivas de Cloud Discovery
+# <a name="create-cloud-discovery-policies"></a>Crear directivas de Cloud Discovery
 
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -60,7 +60,9 @@ Las directivas de detección permiten establecer alertas que avisan cuando se de
 9. Haga clic en **Crear**.
 
 > [!NOTE]
-> Las directivas de detección creadas recientemente (o las directivas con informes continuos actualizados) desencadenan una alerta una vez en 90 días por cada aplicación de informe continuo, independientemente de si hay alertas existentes para la misma aplicación. Por lo tanto, por ejemplo, si crea una directiva para la detección de nuevas aplicaciones populares, puede desencadenar alertas adicionales para las aplicaciones que ya se han detectado y alertar.
+>
+> - Las directivas de detección creadas recientemente (o las directivas con informes continuos actualizados) desencadenan una alerta una vez en 90 días por cada aplicación de informe continuo, independientemente de si hay alertas existentes para la misma aplicación. Por lo tanto, por ejemplo, si crea una directiva para la detección de nuevas aplicaciones populares, puede desencadenar alertas adicionales para las aplicaciones que ya se han detectado y alertar.
+> - Los datos de los **informes de instantáneas** no desencadenan alertas en las directivas de detección de aplicaciones.
 
 Si, por ejemplo, le interesa detectar las aplicaciones de hospedaje de riesgo que hay en su entorno en la nube, establezca la directiva de la siguiente forma:
 
