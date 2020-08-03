@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 77bf7eeadf64108ca62a12d485aadba21e8d8848
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 29e6fb15880f9d3c306acbe6e696dd96a73ac241
+ms.sourcegitcommit: 021914cf4b16ad3a5543f69958639dc670f09304
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624617"
+ms.lasthandoff: 08/02/2020
+ms.locfileid: "87514520"
 ---
 # <a name="email-notification-preferences"></a>Preferencias de notificación de correo electrónico
 
@@ -32,13 +32,13 @@ En este artículo se proporciona información sobre cómo personalizar las notif
 
 ## <a name="set-email-notification-preferences"></a><a name="mailsettings"></a> Establecimiento de preferencias de notificación de correo electrónico
 
- Microsoft Cloud App Security permite personalizar las notificaciones de correo electrónico enviadas a los usuarios finales implicados en las infracciones de seguridad. Para establecer los parámetros para las notificaciones de correo electrónico, siga este procedimiento. Para obtener información sobre la dirección IP del servidor de correo electrónico de Microsoft Cloud App Security que debe incluir en la lista de permitidos del servicio de correo electrónico no deseado, vea [Requisitos de red](network-requirements.md).
+ Microsoft Cloud App Security permite personalizar las notificaciones de correo electrónico enviadas a los usuarios finales implicados en las infracciones de seguridad. Para establecer los parámetros para las notificaciones de correo electrónico, siga este procedimiento. Para obtener información sobre el Microsoft Cloud App Security dirección IP del servidor de correo electrónico que debe permitir en el servicio anti-spam, consulte [requisitos de red](network-requirements.md).
 
 1. En la barra de menús, haga clic en el engranaje de configuración, seleccione **Configuración** y después la pestaña **Configuración de correo electrónico**.
 
     ![configuración de correo](media/mail-settings-config.png)
 
-2. En **Identidad del emisor de correo electrónico**: si va a usar la configuración de correo electrónico predeterminada, no necesita cambiar nada en esta sección. Si quiere personalizar la identidad del remitente de correo electrónico, puede aplicar cualquiera de las opciones que se indican a continuación para personalizar el campo que quiera modificar. Puede cambiar todas estas opciones o alguna de ellas: **Nombre para mostrar del campo Desde**, **Dirección de correo electrónico del campo Desde**, **Dirección de correo electrónico del campo Responder a**. Microsoft Cloud App Security realiza la personalización mediante el uso de un servicio de correo de terceros llamado MailChimp®. Asegúrese de revisar y aceptar los Términos de servicio y la Declaración de privacidad de MailChimp para habilitar la personalización. En caso contrario, Microsoft Cloud App Security enviará las notificaciones mediante la configuración predeterminada.
+2. En **Identidad del emisor de correo electrónico**: si va a usar la configuración de correo electrónico predeterminada, no necesita cambiar nada en esta sección. Si quiere personalizar la identidad del remitente de correo electrónico, puede aplicar cualquiera de las opciones que se indican a continuación para personalizar el campo que quiera modificar. Puede cambiar todas estas opciones o alguna de ellas: **Nombre para mostrar del campo Desde**, **Dirección de correo electrónico del campo Desde**, **Dirección de correo electrónico del campo Responder a**. Microsoft Cloud App Security realiza la personalización mediante el uso de un servicio de correo de terceros llamado MailChimp &reg; . Asegúrese de revisar y aceptar los Términos de servicio y la Declaración de privacidad de MailChimp para habilitar la personalización. En caso contrario, Microsoft Cloud App Security enviará las notificaciones mediante la configuración predeterminada.
 
     > [!NOTE]
     > Solo se admiten caracteres Unicode en el nombre para mostrar y la dirección de correo electrónico de conformidad con el [estándar rfc822](https://www.rfc-editor.org/rfc/rfc822.txt).
