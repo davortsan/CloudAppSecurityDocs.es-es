@@ -1,6 +1,6 @@
 ---
 title: Archivo de inclusión
-description: Archivo de inclusión
+description: archivo de inclusión
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 author: shsagir
