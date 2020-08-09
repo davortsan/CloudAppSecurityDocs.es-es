@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/1/2019
+ms.date: 08/05/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 084491b7c74019d2145439f66ce5a90482091ed9
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: faf3be962650316a1c16f1b3db884dc16a0dc552
+ms.sourcegitcommit: 4450119e1c7e2c54357dca955621327f9c343422
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624651"
+ms.lasthandoff: 08/09/2020
+ms.locfileid: "88027064"
 ---
 # <a name="manage-oauth-apps"></a>Administración de aplicaciones de OAuth
 
@@ -28,6 +28,9 @@ ms.locfileid: "85624651"
 Muchas aplicaciones de productividad de terceros que puedan instalar los usuarios profesionales de su organización solicitan permiso para acceder a datos e información del usuario e iniciar sesión en nombre de este o en otras aplicaciones en la nube, como Office 365, G Suite y Salesforce. Cuando los usuarios instalan estas aplicaciones, a menudo hacen clic en Aceptar sin revisar detenidamente los detalles en el mensaje, incluyendo la concesión de permisos a la aplicación. Este problema se agrava por el hecho de que es posible que el departamento de TI no tenga suficiente información para evaluar el riesgo de seguridad que supone una aplicación frente a la ventaja de productividad que ofrece. Dado que aceptar permisos de aplicación de terceros es un riesgo de seguridad potencial para la organización, supervisar los permisos de aplicación que conceden los usuarios le ofrece la visibilidad y el control necesarios para proteger a los usuarios y las aplicaciones. Los permisos de aplicación de Microsoft Cloud App Security le permiten ver qué aplicaciones de OAuth instaladas por el usuario tienen acceso a datos de Office 365, de G Suite y de Salesforce. Cloud App Security le indica qué permisos tienen las aplicaciones y qué usuarios les concedieron acceso a sus cuentas de Office 365, G Suite y Salesforce. Los permisos de aplicación le ayudan a decidir a qué aplicaciones permite que los usuarios tengan acceso y cuáles quiere prohibir.
 
 Para obtener más información sobre cómo investigar aplicaciones OAuth, consulte [investigación de aplicaciones OAuth de riesgo](investigate-risky-oauth.md).
+
+> [!NOTE]
+> Cloud App Security solo identifica las aplicaciones que solicitan permisos "delegados". Para obtener más información, consulte [permisos de aplicación cliente](/azure/active-directory/develop/developer-glossary#permissions).
 
 ## <a name="working-with-the-oauth-apps-page"></a>Trabajar con la página de aplicaciones de OAuth
 
@@ -41,7 +44,7 @@ En el portal de Cloud App Security, haga clic en **Investigar** y después en **
 
 La página Aplicaciones de OAuth de aplicación proporciona la siguiente información sobre cada aplicación de OAuth a la que se han concedido permisos:
 
-|Elemento|Significado|Se aplica a|
+|Elemento|Qué significa|Se aplica a|
 |-------|-------|-------|
 |Icono Básica en la barra de consulta de aplicación  |Cambie a consulta en la vista básica.|Office 365, G Suite y Salesforce|
 |Icono Avanzada en la barra de consulta de aplicación  |Cambie a consulta en la vista avanzada.|Office 365, G Suite y Salesforce|
@@ -53,7 +56,7 @@ La página Aplicaciones de OAuth de aplicación proporciona la siguiente informa
 |Estado de la aplicación|Un administrador puede marcar una aplicación como Aprobada, Prohibida, o dejarla como Sin determinar.|Office 365, G Suite y Salesforce|
 |Uso de la comunidad|Muestra la popularidad de la aplicación entre los usuarios (conocida, poco conocida o desconocida)|Office 365, G Suite y Salesforce|
 |Última autorización|Fecha más reciente en la que un usuario concedió permisos a esta aplicación.|Office 365 y Salesforce|
-|Publisher|Nombre del proveedor que proporciona la aplicación.|Office 365|
+|Publicador|Nombre del proveedor que proporciona la aplicación.|Office 365|
 |Último uso|Fecha más reciente en la que un miembro de la organización usó esta aplicación.|Salesforce|
 
 ## <a name="ban-or-approve-an-app"></a>Prohibir o aprobar una aplicación
