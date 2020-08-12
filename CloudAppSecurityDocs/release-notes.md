@@ -4,19 +4,19 @@ description: Este artículo se actualiza con frecuencia para informarle de las n
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/28/2020
+ms.date: 08/09/2020
 ms.topic: overview
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fcf90957167b9e51522e2f9f77a3c29958f6c9a2
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: b53977404f44c56fade4808e8d7668eb8b810373
+ms.sourcegitcommit: 4450119e1c7e2c54357dca955621327f9c343422
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254669"
+ms.lasthandoff: 08/09/2020
+ms.locfileid: "88027013"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
@@ -25,6 +25,38 @@ ms.locfileid: "87254669"
 Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security.
 
 Fuente RSS: reciba notificaciones cuando esta página se actualice copiando y pegando la siguiente dirección URL en su lector de fuentes: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-181"></a>Versión 181 de Cloud App Security
+
+Fecha de publicación: 9 de agosto de 2020
+
+- **Nuevo analizador de registros de Menlo Security de Cloud Discovery**  
+Cloud Discovery de Cloud App Security analiza una amplia gama de registros de tráfico para clasificar y puntuar aplicaciones. Ahora Cloud Discovery incluye un analizador de registros integrado para admitir el formato CEF de Menlo Security. Para ver una lista de los analizadores de registros admitidos, vea [Firewalls y proxies admitidos](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+
+- **En el portal se muestra el nombre Azure Active Directory (AD) Cloud App Discovery**  
+Hemos actualizado el nombre del producto a **Cloud App Discovery** para las licencias P1 y P2 de Azure AD en el portal. Más información sobre [Cloud App Discovery](editions-cloud-app-security-aad.md)
+
+## <a name="cloud-app-security-release-179-and-180"></a>Notas de la versión 179 y 180 de Cloud App Security
+
+Fecha de publicación: 26 de julio de 2020
+
+- **Nueva detección de anomalías: Actividades sospechosas de descarga de archivos en aplicaciones de OAuth**  
+Hemos ampliado las detecciones de anomalías para incluir las actividades de descarga sospechosas en aplicaciones de OAuth. La nueva detección ya está disponible para su uso y se habilita automáticamente para avisarle cuando una aplicación de OAuth descarga varios archivos de Microsoft SharePoint o Microsoft OneDrive de forma inusual para el usuario.
+
+- **Mejoras de rendimiento de los controles de sesión mediante almacenamiento en caché de proxy (implementación gradual)**  
+Hemos realizado mejoras de rendimiento adicionales en los controles de sesión al perfeccionar nuestros mecanismos de almacenamiento en caché de contenido. El servicio mejorado está todavía más optimizado y proporciona una mayor capacidad de respuesta cuando se usan controles de sesión. Tenga en cuenta que los controles de sesión no almacenan en caché el contenido privado y se alinean con los estándares adecuados para almacenar en caché solo el contenido compartido (público). Para obtener más información, vea [Funcionamiento del control de sesión](proxy-intro-aad.md#how-session-control-works).
+
+- **Nueva característica: Guardado de las consultas de configuración de seguridad**  
+Hemos agregado la capacidad de guardar las consultas para los filtros del panel de configuración de seguridad de Azure, Amazon Web Services (AWS) y Google Cloud Platform (GCP). Esto puede ayudar a simplificar aún más las investigaciones futuras mediante la reutilización de consultas comunes. Obtenga más información sobre nuestras [recomendaciones para la configuración de seguridad](security-config.md).
+
+- **Alertas de detección de anomalías mejoradas**  
+Hemos ampliado la información que se proporciona en las alertas de detección de anomalías con el fin de incluir una asignación a la táctica de MITRE ATT\&CK correspondiente. Esta asignación le permitirá conocer la fase y el impacto del ataque y le ayudará con sus investigaciones. Obtenga más información sobre [cómo investigar alertas de detección de anomalías](investigate-anomaly-alerts.md).
+
+- **Lógica de detección mejorada: Actividad de ransomware**  
+Hemos actualizado la lógica de detección de actividades de ransomware con el fin de mejorar la precisión y reducir el volumen de alertas. Para obtener más información acerca de esta directiva de detección de anomalías, consulte la sección [Actividad de ransomware](anomaly-detection-policy.md#ransomware-activity).
+
+- **Informes de la posición de seguridad de las identidades: Visibilidad de las etiquetas**  
+Hemos agregado etiquetas de entidad a los informes de la posición de seguridad de las identidades que proporcionan información adicional de las entidades. Por ejemplo, la etiqueta **Confidencial** puede ayudarle a identificar a los usuarios de riesgo y a priorizar sus investigaciones. Obtenga más información sobre la [investigación de usuarios de riesgo](tutorial-ueba.md).
 
 ## <a name="cloud-app-security-release-178"></a>Versión 178 de Cloud App Security
 
@@ -50,19 +82,6 @@ Cloud App Security proporciona la capacidad de identificar máquinas de riesgo c
 
 - **Nueva característica: Autoservicio para la deshabilitación de conectores de aplicaciones (lanzamiento gradual)**  
 Hemos agregado la capacidad de deshabilitar los conectores de aplicaciones directamente en Cloud App Security. Para obtener más información, consulte [Deshabilitación de conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#disable-app-connectors).
-
-<!--
-- **Enhanced detection logic: Ransomware activity (gradual rollout)**  
-We've updated the detection logic for Ransomware activity to provide improved accuracy and reduced alert volume. For more information about this anomaly detection policy, see [Ransomware activity](anomaly-detection-policy.md#ransomware-activity).
-
-- **New OAuth app policy templates**  
-Cloud App Security now provides the following new OAuth app policy templates enabling you to detect potentially malicious apps:
-
-  - **OAuth apps authorized by external users**: Alert when an app was authorized by an external user.
-  - **OAuth apps with high permissions and rare community use – Google**: Alert for apps with high permissions and rare community use in Google.
-  - **OAuth apps with high permissions and rare community use – Office**: Alert for apps with high permissions and rare community use in Office
-  - **OAuth apps with rare community use - Salesforce**: Alert for apps with rare community use in Salesforce.
--->
 
 ## <a name="cloud-app-security-release-177"></a>Notas de la versión 177 de Cloud App Security
 
@@ -106,7 +125,7 @@ Se han introducido mejoras significativas en el rendimiento de la red para el se
 Hemos ampliado la funcionalidad actual para detectar un comportamiento de riesgo. La nueva detección ya está disponible para su uso y se habilita automáticamente para avisarle cuando se identifica un intento de inicio de sesión inusual con errores. Los intentos inusuales de inicio de sesión con errores pueden ser un indicio de un posible ataque por fuerza bruta de *rociado de contraseñas* (también conocido como el método *lento y silencioso*). Esta detección afecta a la [clasificación de prioridad de la investigación](tutorial-ueba.md) general del usuario.
 
 - **Experiencia de tabla mejorada**  
-Se ha agregado la capacidad de cambiar el tamaño de los anchos de las columnas de la tabla, de modo que pueda ampliar o reducir las columnas para personalizar y mejorar la manera de verlas. También tiene la opción de restaurar el diseño original seleccionando el menú de configuración de la tabla y eligiendo **Ancho predeterminado**.
+Se ha agregado la capacidad de cambiar el tamaño de los anchos de las columnas de la tabla de modo que pueda ampliar o reducir las columnas para personalizar y mejorar la manera de verlas. También tiene la opción de restaurar el diseño original seleccionando el menú de configuración de la tabla y eligiendo **Ancho predeterminado**.
 
 ## <a name="cloud-app-security-release-175"></a>Cloud App Security, versión 175
 
@@ -839,7 +858,7 @@ Fecha de publicación: 4 de marzo de 2018
 
 - La funcionalidad de búsqueda de las páginas Usuario y Dirección IP ahora habilita Autocompletar para que pueda encontrar lo que busca con mayor facilidad.
 
-- Ahora puede realizar acciones en masa en las páginas de configuración de exclusión de entidades y direcciones IP. Esto le permitirá seleccionar con más facilidad varios usuarios y grupos o direcciones IP y evitar que se supervisen como parte de Cloud Discovery en su organización.
+- Ahora puede realizar acciones en masa en las páginas de configuración de exclusión de entidades y direcciones IP. Esto le permitirá seleccionar con más facilidad varios usuarios o direcciones IP y evitar que se supervisen como parte de Cloud Discovery en su organización.
 
 ## <a name="cloud-app-security-release-117"></a>Notas de la versión 117 de Cloud App Security
 

@@ -9,12 +9,12 @@ ms.date: 11/01/2019
 ms.collection: M365-security-compliance
 ms.custom: seodec18
 ms.suite: ems
-ms.openlocfilehash: 44880f4e19fc317d09dbc091c2c4a4e9c9399a43
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: 6aa884bf83e71964173b69d9ca11a5a86e3cef9f
+ms.sourcegitcommit: 4450119e1c7e2c54357dca955621327f9c343422
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254693"
+ms.lasthandoff: 08/09/2020
+ms.locfileid: "88027047"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Seguridad y privacidad de los datos de Microsoft Cloud App Security
 
@@ -36,7 +36,7 @@ Para ayudar a las organizaciones a cumplir los requisitos nacionales, regionales
 
 Microsoft Cloud App Security cumple muchos estándares de cumplimiento internacionales y específicos del sector, incluidos, entre otros, los siguientes:
 
-| |Título|Descripción|
+| Organización |Title|Descripción|
 |----|----|----|
 |![logotipo csa](media/csastar-attest.png)|Atestación STAR de CSA|Azure e Intune recibieron la atestación STAR de Cloud Security Alliance en función de una auditoría independiente.|
 |![logotipo csa](media/csastar.png)|Certificación STAR de CSA|Azure, Intune y Power BI recibieron la certificación STAR de Cloud Security Alliance en el nivel Gold.|
@@ -51,7 +51,9 @@ Microsoft Cloud App Security cumple muchos estándares de cumplimiento internac
 |![logotipo SOC](media/soc-logo.png)|SOC 3|Los servicios en la nube de Microsoft cumplen los estándares de los controles de organización de servicio para la seguridad operativa.|
 |![logotipo g-cloud](media/g-cloud.png)|G-Cloud de Reino Unido|Crown Commercial Service renovó la clasificación de los servicios en la nube de Microsoft a la versión 6 de nube de administración pública.|
 
-<!--|![logo FISC](media/logo_fisc.png)|FISC|Microsoft meets the requirements of the Financial Industry Information Systems v8 standard in Japan.|-->
+<!--
+|![logo FISC](media/logo_fisc.png)|FISC|Microsoft meets the requirements of the Financial Industry Information Systems v8 standard in Japan.|
+-->
 
 Para más información, vaya a [Oferta de cumplimiento de Microsoft](https://www\.microsoft\.com/trustcenter/compliance/complianceofferings) y seleccione Cloud App Security.  
 
@@ -60,7 +62,7 @@ Para más información, vaya a [Oferta de cumplimiento de Microsoft](https://www
 ### <a name="youre-the-owner-of-your-data"></a>Usted es el propietario de los datos
 
 - En Microsoft Cloud App Security, los administradores pueden ver los datos personales identificables almacenados en el servicio desde el portal mediante la barra de búsqueda.
-- Los administradores pueden buscar los metadatos o la actividad de un usuario específico. Al hacer clic en una entidad, se abre [**Usuarios y cuentas**](accounts.md). En la página **Usuarios y cuentas** se proporcionan detalles completos sobre la entidad que se extraen de las aplicaciones en la nube conectadas. También se proporciona el historial de actividad del usuario y las alertas de seguridad relacionadas con el usuario.
+- Los administradores pueden buscar los metadatos o la actividad de un usuario específico. Al hacer clic en una entidad, se abre [**Usuarios y cuentas**](accounts.md). En la página **Usuarios y cuentas** se proporcionan detalles completos sobre la entidad que se extraen de las aplicaciones en la nube conectadas. También se proporciona el historial de actividad del usuario y las alertas de seguridad relacionadas con él.
 
 - Usted es el propietario de los datos y puede cancelar las suscripciones y solicitar la eliminación de los datos en cualquier momento. Si no renueva la suscripción, los datos se eliminarán dentro de la escala de tiempo especificada en los  [Términos de los servicios en línea](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
@@ -82,7 +84,7 @@ Los datos personales sobre los usuarios se derivan del objeto del usuario en las
 
 ## <a name="data-location"></a>Ubicación de los datos
 
-En la actualidad, Microsoft Cloud App Security opera en centros de datos de Estados Unidos y Europa ("Geoáreas"). La cuenta de inquilino se creará en una geoárea en función del país/región que haya elegido al suscribirse. En concreto, los datos se almacenarán en un centro de datos de la geoárea más cercana a esa ubicación.
+En la actualidad, Microsoft Cloud App Security opera en centros de datos de Estados Unidos y Europa ("geoáreas"). La cuenta de inquilino se creará en una geoárea en función del país/región que haya elegido al suscribirse. En concreto, los datos se almacenarán en un centro de datos de la geoárea más cercana a esa ubicación.
 
 > [!NOTE]
 > Cloud App Security aprovecha los Centros de datos de Azure de todo el mundo para proporcionar un rendimiento optimizado a través de la geolocalización. Esto significa que la sesión de un usuario se puede hospedar fuera de una región determinada, dependiendo de los patrones de tráfico y su ubicación. Sin embargo, para proteger su privacidad, no se almacenan datos de la sesión en estos centros de datos.
