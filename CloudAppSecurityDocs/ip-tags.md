@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 02b3ebfdb6def927e7f3bde55fe76ef74e65406b
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 8e79d605aa56afebea59088df43abb9894d6b409
+ms.sourcegitcommit: 684feff0782ed30f23f3d7fd9f3e063368f46b47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624632"
+ms.lasthandoff: 08/16/2020
+ms.locfileid: "88256732"
 ---
 #  <a name="working-with-ip-ranges-and-tags"></a><a name="IPtagsandRanges"></a> Trabajar con etiquetas e intervalos IP
 
@@ -81,6 +81,6 @@ En la barra de menús, haga clic en el icono de configuración. Seleccione **Int
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Configurar Cloud Discovery](set-up-cloud-discovery.md)
+> [Configuración de Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

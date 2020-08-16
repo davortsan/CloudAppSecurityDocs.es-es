@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: best-practice
 ms.date: 10/24/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0815432cf7410ab4e122ab52a136b978d6dec430
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: de72f525d7188b4fac360f3ad910c3078a8de2e7
+ms.sourcegitcommit: 684feff0782ed30f23f3d7fd9f3e063368f46b47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254608"
+ms.lasthandoff: 08/16/2020
+ms.locfileid: "88256755"
 ---
 # <a name="cloud-app-security-best-practices"></a>Procedimientos recomendados de Cloud App Security
 
@@ -43,7 +43,7 @@ La integración de Cloud App Security con protección contra amenazas avanzada d
 **Para obtener más información**:
 
 * [Integración de ATP de Microsoft defender con Cloud App Security](wdatp-integration.md)
-* [Configurar Cloud Discovery](set-up-cloud-discovery.md)
+* [Configuración de Cloud Discovery](set-up-cloud-discovery.md)
 * [Detección y administración de shadow IT en la red](tutorial-shadow-it.md)
 
 ---
@@ -52,7 +52,7 @@ La integración de Cloud App Security con protección contra amenazas avanzada d
 **Detalles**: las directivas de detección de aplicaciones facilitan el seguimiento de las aplicaciones importantes detectadas en su organización para ayudarle a administrar estas aplicaciones de forma eficaz. Cree directivas para recibir alertas cuando detecte nuevas aplicaciones que se identifican como peligrosas, no compatibles, de tendencia o de gran volumen.  
 **Para obtener más información**:
 
-* [Directivas de Cloud Discovery](cloud-discovery-policies.md)
+* [Crear directivas de Cloud Discovery](cloud-discovery-policies.md)
 * [Directiva de detección de anomalías de Cloud Discovery](cloud-discovery-anomaly-detection-policy.md)
 * [Obtención de análisis de comportamiento y detección de anomalías instantáneos](anomaly-detection-policy.md)
 
@@ -270,7 +270,7 @@ Al descartar las alertas, es importante investigar y comprender por qué no son 
 ## <a name="secure-iaas-services-and-custom-apps"></a>Servicios de IaaS seguros y aplicaciones personalizadas
 
 **Procedimiento**recomendado: conectar Azure, AWS y GCP  
-**Detalle**: la conexión de cada una de estas aplicaciones de almacenamiento en la nube a Cloud App Security le ayuda a mejorar las capacidades de detección de amenazas. Mediante la supervisión de las actividades administrativas e inicios de sesión para estos servicios, puede detectar y recibir notificaciones sobre posibles ataques por fuerza bruta, el uso malintencionado de una cuenta de usuario con privilegios y otras amenazas de su entorno. Por ejemplo, puede identificar riesgos como eliminaciones inusuales de máquinas virtuales o incluso actividades de suplantación en estas aplicaciones.  
+**Detalle**: la conexión de cada una de estas plataformas en la nube a Cloud App Security le ayuda a mejorar las capacidades de detección de amenazas. Mediante la supervisión de las actividades administrativas e inicios de sesión para estos servicios, puede detectar y recibir notificaciones sobre posibles ataques por fuerza bruta, el uso malintencionado de una cuenta de usuario con privilegios y otras amenazas de su entorno. Por ejemplo, puede identificar riesgos como eliminaciones inusuales de máquinas virtuales o incluso actividades de suplantación en estas aplicaciones.  
 **Para obtener más información**:
 
 * [Conectar Azure con Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md)
