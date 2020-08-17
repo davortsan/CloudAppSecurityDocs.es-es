@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ed9b4a8b34f0a6b0d4e0ecab3977c97cf0ec1491
-ms.sourcegitcommit: 5ea18a81e5fffacf81cda6eb545ed95d822426da
+ms.openlocfilehash: 85cfe50bd9fefc2b7ace059340a8aea8ed39c2ac
+ms.sourcegitcommit: 61e9579ebe2c1ca02c7a56e32781e145f6612879
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85846024"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88261426"
 ---
 # <a name="manage-admin-access"></a>Administrar el acceso de administrador
 
 *Se aplica a: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security es compatible con el control de acceso basado en roles. En este artículo se ofrecen instrucciones para configurar el acceso al portal de Cloud App Security para los administradores. Para obtener más información sobre la asignación de roles de administrador, consulte los artículos sobre [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) y [Office 365](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles).
+Microsoft Cloud App Security es compatible con el control de acceso basado en roles. En este artículo se ofrecen instrucciones para configurar el acceso al portal de Cloud App Security para los administradores. Para obtener más información sobre la asignación de roles de administrador, consulte los artículos sobre [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) y [Office 365](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles).
 
 ## <a name="office-365-and-azure-ad-roles-with-access-to-cloud-app-security"></a>Roles de Office 365 y de Azure AD con acceso a Cloud App Security
 
@@ -33,9 +33,9 @@ De forma predeterminada, los siguientes roles de administrador de Office 365 y [
 
 - **Administrador global y Administrador de seguridad:** los administradores con **Acceso completo** tienen permisos completos en Cloud App Security. Pueden agregar administradores, incorporar directivas y configuración, cargar registros y realizar acciones de gobernanza.
 
-- **Administrador de cumplimiento:** Tiene permisos de solo lectura y puede administrar alertas. Puede crear y modificar directivas de archivo, permitir acciones de control de archivos y ver todos los informes integrados en Administración de datos.
+- **Administrador de cumplimiento:** Tiene permisos de solo lectura y puede administrar alertas. No se puede tener acceso a recomendaciones de seguridad para plataformas en la nube. Puede crear y modificar directivas de archivo, permitir acciones de control de archivos y ver todos los informes integrados en Administración de datos.
 
-- **Administrador de datos de cumplimiento:** Tiene permisos de solo lectura, puede crear y modificar directivas de archivo, permitir acciones de control de archivos y ver todos los informes de detección.
+- **Administrador de datos de cumplimiento:** Tiene permisos de solo lectura, puede crear y modificar directivas de archivo, permitir acciones de control de archivos y ver todos los informes de detección. No se puede tener acceso a recomendaciones de seguridad para plataformas en la nube.
 
 - **Operador de seguridad:** Tiene permisos de solo lectura y puede administrar alertas.
 
@@ -72,6 +72,7 @@ Además, se pueden configurar los siguientes roles de administrador específicos
   - Actividad de Cloud Discovery (sin permisos)
   - Extensiones de seguridad (permisos únicamente para el token de API con permisos de usuario)
   - Acciones de gobernanza (solo para la aplicación o instancia específica)
+  - Recomendaciones de seguridad para plataformas en la nube: sin permisos
 
 - **Administrador del grupo de usuarios:** Tiene permisos completos o de solo lectura para todos los datos de Microsoft Cloud App Security que se ocupan exclusivamente del grupo específico seleccionado aquí. Por ejemplo, si concede permiso a un administrador de usuarios para el grupo "Alemania: todos los usuarios", el administrador podrá ver y modificar información en Microsoft Cloud App Security solo para ese grupo de usuarios:
 
@@ -85,6 +86,7 @@ Además, se pueden configurar los siguientes roles de administrador específicos
   - Actividad de Cloud Discovery (sin permisos)
   - Extensiones de seguridad (permisos únicamente para el token de API con usuarios del grupo)
   - Acciones de gobernanza (solo para los usuarios del grupo específicos)
+  - Recomendaciones de seguridad para plataformas en la nube: sin permisos
 
 - **Administrador global de Cloud Discovery:**  Tiene permiso para ver y editar todos los datos y la configuración de Cloud Discovery. El administrador de detección global tiene acceso de la siguiente manera:
 
@@ -101,14 +103,13 @@ Además, se pueden configurar los siguientes roles de administrador específicos
   - Control de aplicaciones de acceso condicional (sin permisos)
   - Extensiones de seguridad: sin permisos
   - Acciones de gobernanza: solo acciones relacionadas con Cloud Discovery
+  - Recomendaciones de seguridad para plataformas en la nube: sin permisos
 
-- **Cloud Discovery administrador de informes:** Tiene permisos para ver todos los datos de Microsoft Cloud App Security que se ocupan exclusivamente de los informes de Cloud Discovery específicos seleccionados. Por ejemplo, puede conceder permisos de administrador a un usuario para el informe continuo desde ATP de Microsoft defender. El administrador de detección verá solo los Cloud Discovery datos relacionados con ese origen de datos y con el catálogo de aplicaciones.
-Este administrador no tendrá acceso a las páginas **actividades** o **archivos** y acceso limitado a las directivas.
+- **Cloud Discovery administrador de informes:** Tiene permisos para ver todos los datos de Cloud App Security que se ocupan exclusivamente de los informes de Cloud Discovery específicos seleccionados. Por ejemplo, puede conceder permisos de administrador a un usuario para el informe continuo desde ATP de Microsoft defender. El administrador de detección verá solo los Cloud Discovery datos relacionados con ese origen de datos y con el catálogo de aplicaciones. Este administrador no tendrá acceso a las páginas de **actividades**, **archivos**o **recomendaciones de seguridad** y acceso limitado a las directivas.
 
 ## <a name="override-admin-permissions"></a>Invalidación de los permisos de administrador
 
-Si quiere invalidar un permiso de administrador de Azure Active Directory u Office 365, puede hacerlo manualmente agregando el usuario a Cloud App Security y asignándole permisos.
-Por ejemplo, si quiere que Claudia, una usuaria que tiene el rol de Lector de seguridad en Azure Active Directory, tenga **Acceso completo** en Cloud App Security, puede agregarla manualmente a Cloud App Security y asignarle **Acceso completo** a fin de invalidar su rol y concederle los permisos necesarios en Cloud App Security.
+Si quiere invalidar un permiso de administrador de Azure Active Directory u Office 365, puede hacerlo manualmente agregando el usuario a Cloud App Security y asignándole permisos. Por ejemplo, si quiere que Claudia, una usuaria que tiene el rol de Lector de seguridad en Azure Active Directory, tenga **Acceso completo** en Cloud App Security, puede agregarla manualmente a Cloud App Security y asignarle **Acceso completo** a fin de invalidar su rol y concederle los permisos necesarios en Cloud App Security.
 
 ## <a name="add-additional-admins"></a>Agregar administradores adicionales
 
@@ -123,7 +124,7 @@ Puede agregar más administradores a Cloud App Security sin agregar usuarios a l
 
     ![agregar administradores](media/add-admin.png)
 
-3. A continuación, haga clic en la lista desplegable para establecer el tipo de rol que tiene el administrador, un **administrador global**, un **lector de seguridad**, un **Administrador de cumplimiento**o un **Administrador de aplicación/instancia**. Si selecciona **Administrador de instancia/aplicación**, seleccione la aplicación y la instancia para que el Administrador tenga permisos.
+3. A continuación, haga clic en la lista desplegable para establecer el tipo de rol que tiene el administrador, el administrador **global**, el **lector de seguridad**, el **Administrador de cumplimiento**, el administrador de la **aplicación/instancia**, el **Administrador del grupo de usuarios**, **Cloud Discovery administrador global**o **Cloud Discovery administrador de informes**. Si selecciona **Administrador de instancia/aplicación**, seleccione la aplicación y la instancia para que el Administrador tenga permisos.
 
     >[!NOTE]
     > Si un administrador cuyo acceso está limitado intenta acceder a una página restringida o realizar una acción restringida, recibirá un error por el que se notifica que no tiene permiso para acceder a la página o realizar la acción.
@@ -153,4 +154,4 @@ Además, para permitir que los MSSP proporcionen servicios en varios inquilinos 
 ## <a name="next-steps"></a>Pasos siguientes  
 
 > [!div class="nextstepaction"]
-> [Configurar Cloud Discovery](set-up-cloud-discovery.md)
+> [Configuración de Cloud Discovery](set-up-cloud-discovery.md)
