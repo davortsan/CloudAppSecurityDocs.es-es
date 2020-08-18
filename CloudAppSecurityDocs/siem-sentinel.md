@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: efdfcab2e736abfc300dfdd673a078f340a647dd
-ms.sourcegitcommit: 96981740994aee3661dea8b64b72741099ca6fb9
+ms.openlocfilehash: 5e291ec3e659b4c9a44f60f5ef05134951e94235
+ms.sourcegitcommit: 75cdc376a0aea79dc7f339af52a90f0ec6dfc526
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2020
-ms.locfileid: "84485970"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88514259"
 ---
 # <a name="azure-sentinel-integration-preview"></a>Integración de centinela de Azure (versión preliminar)
 
@@ -43,6 +43,9 @@ La integración con SIEM se realiza en dos pasos:
 
 1. Establézcalo en Cloud App Security.
 1. Establézcalo en Azure Sentinel.
+
+> [!NOTE]
+> La opción para agregar Azure Sentinel no está disponible si previamente ha realizado la integración.
 
 ### <a name="prerequisites"></a>Requisitos previos
 
@@ -87,7 +90,7 @@ En la tabla siguiente se describe cada campo del esquema **McasShadowItReporting
 
 | Campo | Tipo | Descripción | Ejemplos |
 | --- | --- | --- | --- |
-| TenantId | String | Id. del área de trabajo | b459b4u5-912x-46d5-9cb1-p43069212nb4 |
+| TenantId | String | Identificador del área de trabajo | b459b4u5-912x-46d5-9cb1-p43069212nb4 |
 | SourceSystem | String | Sistema de origen: valor estático | Azure |
 | TimeGenerated [UTC] | DateTime | Fecha de datos de detección | 2019-07-23T11:00:35.858 Z |
 | StreamName | String | Nombre del flujo específico | Departamento de marketing |

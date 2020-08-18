@@ -9,12 +9,12 @@ ms.date: 11/01/2019
 ms.collection: M365-security-compliance
 ms.custom: seodec18
 ms.suite: ems
-ms.openlocfilehash: 6aa884bf83e71964173b69d9ca11a5a86e3cef9f
-ms.sourcegitcommit: 4450119e1c7e2c54357dca955621327f9c343422
+ms.openlocfilehash: 842f29242a2b15cc6bf41b72f5b894c06400634b
+ms.sourcegitcommit: 684feff0782ed30f23f3d7fd9f3e063368f46b47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2020
-ms.locfileid: "88027047"
+ms.lasthandoff: 08/16/2020
+ms.locfileid: "88256786"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Seguridad y privacidad de los datos de Microsoft Cloud App Security
 
@@ -41,7 +41,6 @@ Microsoft Cloud App Security cumple muchos estándares de cumplimiento internac
 |![logotipo csa](media/csastar-attest.png)|Atestación STAR de CSA|Azure e Intune recibieron la atestación STAR de Cloud Security Alliance en función de una auditoría independiente.|
 |![logotipo csa](media/csastar.png)|Certificación STAR de CSA|Azure, Intune y Power BI recibieron la certificación STAR de Cloud Security Alliance en el nivel Gold.|
 |![logotipo cláusulas del modelo de la UE](media/eu-model-icon.png)|[Cláusulas del modelo de la UE](https://www.microsoft.com/trustcenter/compliance/eu-model-clauses)|Microsoft ofrece cláusulas contractuales estándar de la Unión Europea, garantías de transferencias de datos personales.|
-|![logotipo escudo de la privacidad](media/privacy_shield.png)|Escudo de la privacidad entre la Unión Europea y Estados Unidos|Microsoft cumple este marco para proteger datos personales transferidos a Estados Unidos procedentes de la Unión Europea.|
 |![logotipo HIPAA](media/hipaa-logo.png)|[HIPAA/HITECH](https://www\.microsoft\.com/trustcenter/compliance/hipaa)|Microsoft ofrece contratos de asociación comercial (BAA, Business Associate Agreements) de Health Insurance Portability & Accountability Act.|
 |![logotipo iso 9001](media/iso-9001.png)|ISO 9001|Microsoft está certificado para su implementación de estos estándares de administración de calidad.|
 |![logotipo iso 27001](media/iso-27001.png)|[ISO/IEC 27001](https://www\.microsoft\.com/trustcenter/compliance/iso-iec-27001)|Microsoft está certificado para su implementación de estos estándares de administración de seguridad de la información.|

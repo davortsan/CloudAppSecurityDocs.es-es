@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 7/30/2019
+ms.date: 08/17/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 98039cf5bf28516180fb788082643d656a566d17
-ms.sourcegitcommit: 5ea18a81e5fffacf81cda6eb545ed95d822426da
+ms.openlocfilehash: ea89ea91de2cccaf0fc52d6f97d4973a178f18ba
+ms.sourcegitcommit: 75cdc376a0aea79dc7f339af52a90f0ec6dfc526
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85846030"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88514315"
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Conectar Office 365 con Microsoft Cloud App Security
 
@@ -65,16 +65,25 @@ Cloud App Security admite las siguientes aplicaciones de Office 365:
 
 1. En la página **Conectores de aplicaciones**, haga clic en el botón del signo más y seleccione **Office 365**.
 
-    ![conectar O365](media/connect-0365.png)
+    ![conectar O365](media/connect-o365.png)
 
-2. En el menú emergente de Office 365, haga clic en **Conectar Office 365**.
+1. En el menú emergente de Office 365, haga clic en **Conectar Office 365**.
 
     ![conectar O365](media/office-connect.png)
 
-3. Cuando se indique que Office 365 está conectado correctamente, haga clic en **Cerrar**.
+1. En la página componentes de Office 365, seleccione las opciones que necesite y, a continuación, haga clic en **conectar**.
+
+    > [!NOTE]
+    >
+    > - Para lograr una protección óptima, se recomienda seleccionar todos los componentes de Office 365.
+    > - El componente **Office 365 files** requiere el componente de **actividades de Office 365** y Cloud App Security la supervisión de archivos (**Settings**  >  **los archivos**de configuración  >  **habilitan la supervisión de archivos**).
+
+    ![conectar componentes de 0365](media/connect-o365-components.png)
+
+1. Cuando se indique que Office 365 está conectado correctamente, haga clic en **Cerrar**.
 
 > [!NOTE]
-> Después de conectar Office 365, podrá ver los datos de la semana anterior, incluidas las aplicaciones de terceros conectadas a Office 365 que extraen API. En el caso de las aplicaciones de terceros que no extraían API antes de la conexión, verá eventos a partir del momento en que conectó Office 365, ya que Cloud App Security activa las API que estaban desactivadas de forma predeterminada.
+> Después de conectar Office 365, podrá ver los datos de la semana anterior, incluidas las aplicaciones de terceros conectadas a Office 365 que extraen API. En el caso de las aplicaciones de terceros que no extraían API antes de la conexión, verá eventos desde el momento en que se conecta Office 365 porque Cloud App Security activa las API que estaban desactivadas de forma predeterminada.
 
 Si tiene problemas para conectar la aplicación, consulte [solución de problemas de conectores de aplicaciones](troubleshooting-api-connectors-using-error-messages.md).
 
