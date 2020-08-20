@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: df70a9408b88692b9faf789a00b5f307c0af24ee
-ms.sourcegitcommit: 3172d6bd5e9d7a08f5cd2aa2e36980ef21bf0235
+ms.openlocfilehash: aa5b3d4488a8e62f965900593169e899f90829b2
+ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84563906"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88657670"
 ---
 # <a name="cloud-app-security-rest-api"></a>Cloud App Security API de REST
 
@@ -61,7 +61,7 @@ Para obtener más información sobre los tokens de API, consulte [Administració
 ### <a name="example"></a>Ejemplo
 
 ```rest
-curl -XGET -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint"
+curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint"
 ```
 
 ## <a name="what-actions-are-supported"></a>¿Qué acciones se admiten?
@@ -70,7 +70,7 @@ En la tabla siguiente se describen las acciones admitidas:
 
 |Recurso|Verbos HTTP|Rutas de URI|
 |---|---|---|
-|de esquema JSON|GET, POST o PUT|/api/v1/discovery/|
+|Detección|GET, POST o PUT|/api/v1/discovery/|
 |Enriquecimiento de datos|POST|/api/subnet/|
 |Actividades|GET o POST|/api/v1/activities/|
 |Alertas|GET o POST|/api/v1/alerts/|
@@ -118,7 +118,7 @@ La mayoría de los filtros admiten varios valores para proporcionarle consultas 
 ### <a name="example"></a>Ejemplo
 
 ```rest
-curl -XGET -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint" -d '{
+curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint" -d '{
   "filters": {
     "some.field": {
       "eq": ["value1", "value2"],
@@ -140,9 +140,9 @@ curl -XGET -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_regi
 
 En la tabla siguiente se describen los operadores admitidos:
 
-| Operador | Tipo de respuesta | Descripción |
+| Operator | Tipo de respuesta | Descripción |
 | --- | --- | --- |
-| contiene | lista de cadenas | Devuelve todos los registros pertinentes que contienen una de las cadenas proporcionadas. |
+| contains | lista de cadenas | Devuelve todos los registros pertinentes que contienen una de las cadenas proporcionadas. |
 | deq | lista de valores | Devuelve todos los registros que contienen un valor que no es igual a uno de los valores proporcionados. |
 | descendiente | lista de valores | Devuelve todos los registros pertinentes que coinciden con valores o descendientes de ellos. |
 | doesnotstartwith | lista de cadenas | Devuelve todos los registros relevantes que no empiecen por cada una de las cadenas proporcionadas. |

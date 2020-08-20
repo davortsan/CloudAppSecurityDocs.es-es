@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 22f19d6d1b03cec31f36f37a0b1bd112927af781
-ms.sourcegitcommit: 3172d6bd5e9d7a08f5cd2aa2e36980ef21bf0235
+ms.openlocfilehash: 998fe96459147f621e407130fb0f726e26a5f1f1
+ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84563889"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88657800"
 ---
 # <a name="create-ip-address-range---data-enrichment-api"></a>Creación de un intervalo de direcciones IP: API de enriquecimiento de datos
 
@@ -40,13 +40,13 @@ POST /api/subnet/
 
 Actualmente se admiten las siguientes categorías:
 
-| Category | Identificador |
+| Categoría | Identificador |
 | --- | -- |
 | Corporativos | 1 |
-| Administrativo | 2 |
+| Administrativa | 2 |
 | Riesgo | 3 |
 | VPN | 4 |
-| Proveedor de nube | 5 |
+| Proveedor de servicios en la nube | 5 |
 | Otros | 6 |
 
 ## <a name="example"></a>Ejemplo
@@ -56,7 +56,7 @@ Actualmente se admiten las siguientes categorías:
 Este es un ejemplo de la solicitud.
 
 ```rest
-curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/subnet/create_rule/" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/subnet/create_rule/" -d '{
   "name":"range name",
   "category":5,
   "organization":"Microsoft",
