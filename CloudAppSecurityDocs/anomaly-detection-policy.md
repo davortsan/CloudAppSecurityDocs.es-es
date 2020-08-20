@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/28/2020
+ms.date: 08/20/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,20 +14,20 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 586836d517a458639c0b669108c7d359b8d02ba4
-ms.sourcegitcommit: 61e9579ebe2c1ca02c7a56e32781e145f6612879
+ms.openlocfilehash: 445465491a2f5a047cd73bd03bb467ce58e20e6b
+ms.sourcegitcommit: 02b91dd1c51161c9d627d977eb37fa925b0328d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88261443"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88647810"
 ---
-# <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>Obtención de análisis de comportamiento y detección de anomalías instantáneos
+# <a name="get-behavioral-analytics-and-anomaly-detection"></a>Obtención de análisis de comportamiento y detección de anomalías
 
 *Se aplica a: Microsoft Cloud App Security*
 
-Las directivas de detección de anomalías de Microsoft Cloud App Security ofrecen análisis de comportamiento de usuarios y entidades (UEBA) y aprendizaje automático (ML) de serie para que pueda ejecutar inmediatamente la detección de amenazas avanzada en el entorno en la nube. Dado que se habilitan automáticamente, las nuevas directivas de detección de anomalías ofrecen resultados al instante proporcionando detecciones inmediatas, dirigidas a numerosas anomalías de comportamientos entre los usuarios, las máquinas y los dispositivos conectados a la red.  Además, las nuevas directivas exponen más datos del motor de detección de Cloud App Security para ayudarle a acelerar el proceso de investigación e incluir amenazas en curso.
+Las directivas de detección de anomalías de Microsoft Cloud App Security proporcionan análisis de comportamiento de entidad y usuario (UEBA) y aprendizaje automático (ML) listos para usar, de modo que esté listo desde el principio para ejecutar la detección de amenazas avanzada en su entorno en la nube. Dado que se habilitan automáticamente, las nuevas directivas de detección de anomalías inician inmediatamente el proceso de detección y la intercalación de los resultados, dirigidas a numerosas anomalías de comportamiento entre los usuarios y los equipos y dispositivos conectados a la red. Además, las directivas exponen más datos del motor de detección de Cloud App Security, para ayudarle a acelerar el proceso de investigación y a contener amenazas en curso.
 
-Las directivas de detección de anomalías se habilitan automáticamente, pero Cloud App Security tiene un período de aprendizaje inicial de siete días durante el cual no todas las alertas de detección de anomalías se generan. Después de ese período, cada sesión se compara con la actividad, cuándo los usuarios estaban activos, las direcciones IP, los dispositivos, etc. que se detectaron durante el mes pasado y la puntuación de riesgo de estas actividades.  Estas detecciones forman parte del motor de detección de anomalías heurísticos que genera perfiles de su entorno y desencadena alertas con respecto a una línea base que se aprendió en la actividad de su organización. Estas detecciones también usan algoritmos de aprendizaje automático diseñados para generar perfiles de los usuarios y el patrón de inicio de sesión para reducir los falsos positivos.
+Las directivas de detección de anomalías se habilitan automáticamente, pero Cloud App Security tiene un período de aprendizaje inicial de siete días durante el cual no todas las alertas de detección de anomalías se generan. Después, a medida que se recopilan datos de los conectores de API configurados, cada sesión se compara con la actividad, cuando los usuarios estaban activos, las direcciones IP, los dispositivos, etc. detectados durante el último mes y la puntuación de riesgo de estas actividades. Tenga en cuenta que los datos pueden tardar varias horas en estar disponibles desde los conectores de API. Estas detecciones forman parte del motor de detección de anomalías heurísticos que genera perfiles de su entorno y desencadena alertas con respecto a una línea base que se aprendió en la actividad de su organización. Estas detecciones también usan algoritmos de aprendizaje automático diseñados para generar perfiles de los usuarios y el patrón de inicio de sesión para reducir los falsos positivos.
 
 Las anomalías se detectan mediante el examen de la actividad del usuario. El riesgo se evalúa mediante el análisis de más de 30 indicadores de riesgo distintos, agrupados por factores de riesgo, que son los siguientes:
 
@@ -83,7 +83,7 @@ Están disponibles las directivas de detección de anomalías siguientes:
     > * G Suite
     > * Office 365 (requiere una licencia válida para la protección contra amenazas avanzada de Office 365 P1)
 
-### <a name="activity-from-anonymous-ip-addresses"></a>Actividad desde una dirección IP anónima
+### <a name="activity-from-anonymous-ip-addresses"></a>Actividad desde direcciones IP anónimas
 
 * Esta detección identifica que los usuarios estaban activos desde una dirección IP que se ha identificado como una dirección IP de proxy anónima. Estos servidores proxy los usan las personas que desean ocultar la dirección IP de su dispositivo y se pueden usar para fines malintencionados. Esta detección usa un algoritmo de aprendizaje automático que reduce los falsos positivos, como las direcciones IP no etiquetadas que los usuarios de la organización usan habitualmente.
 
