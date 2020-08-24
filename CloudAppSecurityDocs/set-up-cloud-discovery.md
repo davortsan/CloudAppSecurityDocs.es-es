@@ -4,18 +4,18 @@ description: En este artículo se describe el procedimiento de configuración de
 author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 08/09/2020
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 87d0aa487e71e308bddccfcf504356423e485584
-ms.sourcegitcommit: 4450119e1c7e2c54357dca955621327f9c343422
+ms.openlocfilehash: 83bb26da4ff034f36053d3152575a29cb8399bc6
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2020
-ms.locfileid: "88026962"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88779277"
 ---
 # <a name="set-up-cloud-discovery"></a>Configuración de Cloud Discovery
 
@@ -52,7 +52,7 @@ El proceso de generación de una evaluación de riesgos consta de los siguientes
 >[!NOTE]
 > Los datos de informes continuos se analizan dos veces al día.
 
-## <a name="supported-firewalls-and-proxies"></a>Firewalls y servidores proxy compatibles<a name="supported-firewalls-and-proxies"></a>
+## <a name="supported-firewalls-and-proxies"></a>Firewalls y servidores proxy compatibles <a name="supported-firewalls-and-proxies"></a>
 
 - Barracuda - Firewall de aplicación web (W3C)
 - Blue Coat Proxy SG - Registros de acceso (W3C)
@@ -132,7 +132,7 @@ Atributos de datos (según la documentación del proveedor):
 | Websense - Registro de actividad de Internet (CEF) | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
 | Zscaler | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
 
-\*No se admiten las versiones 8,5 y posteriores de Forcepoint Web Security Cloud
+\* No se admiten las versiones 8,5 y posteriores de Forcepoint Web Security Cloud
 
 ## <a name="next-steps"></a>Pasos siguientes
 

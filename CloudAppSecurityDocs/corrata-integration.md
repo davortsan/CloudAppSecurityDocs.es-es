@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 05/17/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: borisk
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ddffc53b0ccf1b6073ea056b883947805d8ad92c
-ms.sourcegitcommit: 27f5fecfb32c28c150d22546bfd3c7f7b9d254e5
+ms.openlocfilehash: c6774d68bf354e58074281e403f571a1a079a738
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "83546143"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780569"
 ---
 # <a name="integrate-cloud-app-security-with-corrata"></a>Integración de Cloud App Security con Corrata
 
@@ -31,7 +31,7 @@ Si trabaja con Cloud App Security y Corrata, puede integrar los dos productos pa
 - Las funcionalidades de bloqueo de Corrata se aplican automáticamente en las aplicaciones que establezca como no autorizadas en Cloud App Security.
 - Mejore el portal de Corrata con la evaluación de riesgos de Cloud App Security para las principales aplicaciones en la nube, que se pueden ver directamente en el portal de Corrata.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 - Una licencia válida para Microsoft Cloud App Security
 - Una licencia válida para Corrata Cloud
@@ -59,6 +59,6 @@ Si trabaja con Cloud App Security y Corrata, puede integrar los dos productos pa
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Control de aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
+> [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

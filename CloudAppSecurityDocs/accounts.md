@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 05/20/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b9cde676dad0b86633124d1f485c1f2276cbb208
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: ed0d53a3a71e03dab31ad179e293ae1b7dbc43b6
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624444"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88779498"
 ---
 # <a name="accounts"></a>Cuentas
 
@@ -27,7 +27,7 @@ ms.locfileid: "85624444"
 
 Microsoft Cloud App Security le ofrece la posibilidad de supervisar las cuentas de sus aplicaciones conectadas. Después de conectar Cloud App Security a una aplicación mediante el conector de aplicaciones, Cloud App Security lee la información de la cuenta asociada a las aplicaciones conectadas. La página Cuentas permite investigar esas cuentas, los permisos, los grupos a los que pertenecen, sus alias y las aplicaciones que usan. Además, cuando Cloud App Security detecta una cuenta nueva que no se había detectado previamente en ninguna de las aplicaciones conectadas (por ejemplo, en la actividad o el uso compartido de archivos), la cuenta se agrega a la lista de cuentas de la aplicación en cuestión. Esto le permite supervisar la actividad de los usuarios externos que interactúan con sus aplicaciones en la nube.
 
-Los administradores pueden buscar los metadatos de un usuario específico o su actividad. La página **usuarios y cuentas** proporciona detalles completos sobre las entidades que se extraen de las aplicaciones en la nube conectadas. También presenta el historial de la actividad de un usuario y sus alertas de seguridad.
+Los administradores pueden buscar los metadatos o la actividad de un usuario específico. La página **usuarios y cuentas** proporciona detalles completos sobre las entidades que se extraen de las aplicaciones en la nube conectadas. También se proporciona el historial de actividad del usuario y las alertas de seguridad relacionadas con el usuario.
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 

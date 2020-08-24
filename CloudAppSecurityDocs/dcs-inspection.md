@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 06/24/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 120c34fda9080a921b7a2a4cbcdb0563dd5b0777
-ms.sourcegitcommit: 33e4a3eae5852fb24531aee9e880a4c0c0520820
+ms.openlocfilehash: 18e4aa471a5223234b961e62742f69b2f93d03ae
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85311888"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780331"
 ---
 # <a name="microsoft-data-classification-services-integration"></a>Integración de los servicios de clasificación de datos de Microsoft
 
@@ -40,7 +40,7 @@ Tiene la opción para establecer el **método de inspección** para que use el *
 2. Seleccione si debe aplicarse la directiva cuando se cumpla **cualquier** criterio o **todos** ellos.
 3. En **Elija el tipo de inspección**, seleccione **Tipos de información confidencial**.
 
-    ![configuración del servicio de clasificación de datos](media/dcs-sensitive-information-type.png)
+    ![Elegir tipo de inspección de servicio de clasificación de datos](media/dcs-sensitive-information-type.png)
 
 4. Puede usar los [tipos de información confidencial predeterminados](https://support.office.com/article/what-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b) para definir lo que ocurre con los archivos protegidos por Microsoft Cloud App Security. También puede reutilizar cualquiera de los [tipos personalizados de información confidencial de Office 365](https://support.office.com/article/create-a-custom-sensitive-information-type-82c382a5-b6db-44fd-995d-b333b3c7fc30).
     > [!NOTE]
@@ -55,6 +55,6 @@ Configurar estas directivas es una manera sencilla de llevar la eficacia de las 
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Control de aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
+> [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

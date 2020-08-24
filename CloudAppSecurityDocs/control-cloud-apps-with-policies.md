@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 09/26/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f38cf010aeaf2031a5e77d7c454b43458a084334
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 27378482ecc530890b66c930ec5ad60fcfa6cdc6
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85623246"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780671"
 ---
 # <a name="control-cloud-apps-with-policies"></a>Control de aplicaciones en la nube con directivas
 
@@ -35,7 +35,7 @@ Cuando consulta la página **Directiva**, se pueden distinguir las distintas pol
 
 Pueden crearse los siguientes tipos de directivas:
 
-|Icono de tipo de directiva|Tipo de directiva|Uso|
+|Icono de tipo de directiva|Tipo de directiva|Use|
 |-----|-----------------|---------|
 |![Icono de directiva de acceso](media/proxy-policy.png)|Directiva de acceso|Las directivas de acceso proporcionan funcionalidades de supervisión y control en tiempo real de los inicios de sesión de usuario en las aplicaciones en la nube.|
 |![icono de directiva de actividad](media/activity_policy.png)|Directiva de actividades|Las directivas de actividad permiten aplicar toda una variedad de procesos automatizados usando las API del proveedor de aplicaciones. Estas directivas permiten supervisar actividades concretas realizadas por distintos usuarios o seguir niveles inesperadamente altos de un determinado tipo de actividad.|
@@ -146,7 +146,7 @@ Para crear una directiva basada en los resultados de la investigación, siga est
     >
     > [Directivas de protección de datos](data-protection-policies.md)
     >
-    > [Directivas de Cloud Discovery](cloud-discovery-policies.md)
+    > [Crear directivas de Cloud Discovery](cloud-discovery-policies.md)
 
 ### <a name="add-automated-actions-to-respond-and-remediate-risks-automatically"></a>Agregar acciones automatizadas para responder a los riesgos y corregirlos automáticamente
 

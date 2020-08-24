@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9930a45593f4d2dfba0310228d4576ac2ffd42f2
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: a0b884f08fcf743faf2c37fe3ff065535aefb77a
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719160"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780603"
 ---
 # <a name="control"></a>Control
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 Puede aplicar acciones de gobernanza a los archivos de los usuarios en el entorno de la nube. Después de haber investigado exhaustivamente y aprendido sobre la nube, puede usar las acciones de gobernanza para ayudar a proteger la organización.
 
@@ -39,7 +39,7 @@ Después de echar un vistazo a las alertas abiertas, vaya al centro de directiva
 
     Si la directiva está establecida para detectar infracciones de cumplimiento normativo y alguien guarda números de tarjetas de crédito en archivos en OneDrive, tendrá una coincidencia en la directiva.
 
-    ![Coincide con PCI](media/pci-matches.png "coincidencias de PCI")
+    ![Coincidencias de PCI](media/pci-matches.png "coincidencias de PCI")
 
 - Seleccione la coincidencia para ver los archivos reales que han infringido la directiva.
 
@@ -57,9 +57,9 @@ Después de echar un vistazo a las alertas abiertas, vaya al centro de directiva
 
 Puede aplicar acciones de gobernanza desde las directivas, desde las alertas y desde el registro **Archivo**.
 
-Puede revisar y ver el estado de todas las acciones de gobernanza aplicadas anteriormente en cualquier momento si va al icono de engranaje **Configuración** y selecciona **Registro de gobernanza**. ![icono de configuración](media/settings-icon.png "sicono de configuración ")
+Puede revisar y ver el estado de todas las acciones de gobernanza aplicadas anteriormente en cualquier momento si va al icono de engranaje **Configuración** y selecciona **Registro de gobernanza**. ![icono de configuración](media/settings-icon.png "icono de configuración")
 
-Para volver a aplicar cualquier acción de gobernanza errónea, haga clic en el icono **Reintentar** para aplicarla de nuevo. ![Icono reintentar](media/retry-icon.png "ricono de etry ")
+Para volver a aplicar cualquier acción de gobernanza errónea, haga clic en el icono **Reintentar** para aplicarla de nuevo. ![Icono reintentar](media/retry-icon.png "icono de reintento")
 
 Hay acciones de gobernanza distintas según el tipo de directiva, de infracción y de aplicación.
 
@@ -74,7 +74,7 @@ Puesto que las acciones correctoras utilizan las API del proveedor de la nube, p
 >
 > Para obtener orientación, puede utilizar el botón **Editar y obtener vista previa de resultados** de la sección **Filtros**.
 
-![Resultados de edición y vista previa de la Directiva de archivo](media/file-policy-edit-and-preview-results.png "editar la directiva de archivo y obtener una vista previa de resultados")
+![Editar la directiva de archivo y obtener una vista previa de resultados](media/file-policy-edit-and-preview-results.png "editar la directiva de archivo y obtener una vista previa de resultados")
 
 ## <a name="migration"></a>Migración
 
@@ -90,7 +90,7 @@ Imagínese esta situación: hace poco adquirió Office 365 y quiere que todos lo
 
     1. En el **panel de Cloud Discovery**, elija **Dropbox** y luego la ficha **Dirección IP** o **Usuarios**.
 
-    2. Haga clic en el icono de flecha **Exportar** y elija las opciones de exportación. ![Icono de flecha](media/arrow-icon.png "aicono de RROW ")
+    2. Haga clic en el icono de flecha **Exportar** y elija las opciones de exportación. ![Icono de flecha](media/arrow-icon.png "Icono de flecha")
 
 ### <a name="find-more-secure-alternatives"></a>Buscar alternativas más seguras
 

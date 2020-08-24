@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/14/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5c055cebf7bf63f50fcea997648316f25a7b4429
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 5f418760ec40d8d93dce623acb81f5ebf015dc27
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74721148"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88779940"
 ---
-# <a name="working-with-the-regex-engine"></a>Trabajar con el motor de RegEx
+# <a name="working-with-the-regex-engine"></a>Trabajo con el motor de RegEx
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 En este artículo se proporcionan instrucciones para usar RegEx para la coincidencia de patrones en directivas de Cloud App Security.
 
@@ -35,9 +35,9 @@ Las directivas de inspección de contenido de Microsoft Cloud App Security usan 
 
 Para probar expresiones regulares, puede usar los siguientes sitios web:
 
-- [https://regexpal.com/](https://regexpal.com/): asegúrese de que selecciona **Case insensitive** (No distingue mayúsculas de minúsculas).
+- [https://regexpal.com/](https://regexpal.com/) Asegúrese de seleccionar no **distinguir mayúsculas de minúsculas**.
 
-- [https://regex101.com/](https://regex101.com/): proporciona un análisis detallado de la expresión regular.
+- [https://regex101.com/](https://regex101.com/) : Proporciona un análisis detallado de la expresión regular.
 
 ### <a name="limitations-of-regular-expressions-in-cloud-app-security"></a>Limitaciones de las expresiones regulares en Cloud App Security
 
@@ -57,13 +57,13 @@ Se imponen las siguientes limitaciones a las expresiones regulares personalizada
 
     Use {1,9} en lugar de +
 
-- No se permiten las referencias inversas \\<número\> o \k\<nombre>
+- Referencias inversas no permitidas: \\ número \> de<o \k\<name>
 
 ### <a name="example-expressions"></a>Expresiones de ejemplo
 
 En la tabla siguiente se proporcionan expresiones de ejemplo y si coincidirían o no.
 
-|              Expresión regular              |                     Datos                     |      Coincidencia      |
+|              Expresión regular              |                     data                     |      Coincide      |
 |---------------------------------------------------------------|---------------------------------------------------------------|------------------------------------|
 |            Colou?r (?:black&#124;blue&#124;white)             |   Color negro<br /><br /> Color blanco<br /><br /> Color rojo   | Sí<br /><br /> Sí<br /><br /> No |
 |           [a-z0-9]{1,9}@[a-z0-9]{1,9}\\.[a-z]{2,3}            | Some1@abc.com<br /><br /> user@host.org<br /><br /> @bad.com  | Sí<br /><br /> Sí<br /><br /> No |
@@ -73,7 +73,7 @@ En la tabla siguiente se proporcionan expresiones de ejemplo y si coincidirían 
 ## <a name="check-out-this-video"></a>Eche un vistazo a este vídeo.
 
 > [!div class="nextstepaction"]
-> [Trabajar con el motor de RegEx](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security-Working-with-the-Regex-Engine)
+> [Trabajar con el motor de Regex](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security-Working-with-the-Regex-Engine)
 
 ## <a name="next-steps"></a>Pasos siguientes
 

@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 06/02/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cbd419984f5b3cca55727b7795210edd9b4d5afe
-ms.sourcegitcommit: d159dbd8e1a35268468156eb9c5a5f218cdace4c
+ms.openlocfilehash: 6fa59bf106e41aa0f0dbc9ea2252c7053f22245f
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84274621"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780348"
 ---
 # <a name="docker-on-linux-on-premises"></a>Docker en Linux local
 
@@ -73,7 +73,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
     1. Haga clic en **Agregar origen de datos**.  
     ![Agregar un origen de datos](media/add-data-source.png)
     1. **Ponga nombre** al servidor proxy o firewall.  
-    ![ubuntu1](media/ubuntu1.png)
+    ![Nombre del origen de datos](media/ubuntu1.png)
     1. Seleccione el dispositivo en la lista **Origen**. Si selecciona **Formato de los registros personalizados** para trabajar con un dispositivo de red que no aparezca en la lista, consulte el artículo sobre cómo [trabajar con el analizador de registros personalizados](custom-log-parser.md) para ver las instrucciones de configuración.
     1. Compare el registro con el ejemplo del formato de registro esperado. Si el formato de archivo del registro no coincide con este ejemplo, debe agregar el origen de datos como **Otro**.
     1. Establezca el **tipo de receptor** en **FTP**, **FTPS**, **Syslog – UDP**, **Syslog – TCP** o **Syslog – TLS**.
@@ -93,7 +93,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
     1. Escriba la **dirección IP de host** de la máquina que se va a usar para implementar Docker. La dirección IP del host puede reemplazarse con el nombre del equipo si un servidor DNS (o equivalente) resolverá el nombre de host.
     1. Seleccione todos los **orígenes de datos** que desea conectar al recopilador y haga clic en **Actualizar** para guardar la configuración.
 
-    ![ubuntu2](media/ubuntu2.png)
+    ![Seleccionar orígenes de datos para conectarse](media/ubuntu2.png)
 
 1. Aparecerá más información de implementación. **Copie** el comando de ejecución desde el cuadro de diálogo. Puede usar el icono Copiar al portapapeles. ![icono copiar al portapapeles](media/copy-icon.png)
 
@@ -131,7 +131,7 @@ En los pasos siguientes se describe la implementación de Ubuntu. Los pasos de i
     > [!NOTE]
     > Si se produce un error en este comando al validar el certificado de servidor proxy, ejecute el comando con `curl -k` al principio.
 
-    ![ubuntu5](media/ubuntu5.png)
+    ![Comando para instalar Docker](media/ubuntu5.png)
 
 1. Implemente la imagen del recopilador en la máquina host al importar la configuración del recopilador. Para importar la configuración, copie el comando de ejecución generado en el portal. Si necesita configurar un proxy, agregue la dirección IP del proxy y el número de puerto. Por ejemplo, si los detalles de proxy son 192.168.10.1:8080, el comando de ejecución actualizado es:
 
@@ -144,7 +144,7 @@ En los pasos siguientes se describe la implementación de Ubuntu. Los pasos de i
 1. Ejecute el comando siguiente para comprobar si el recopilador se ejecuta correctamente: `docker logs <collector_name>`
 
 Debería ver el mensaje: **finalizó correctamente.** 
- ![ ubuntu8](media/ubuntu8.png)
+ ![ Comando para comprobar que Docker se está ejecutando correctamente](media/ubuntu8.png)
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Paso 3: Configuración local de los dispositivos de red
 
@@ -158,7 +158,7 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 Compruebe el estado del recopilador en la tabla **Recopilador de registros** y asegúrese de que el estado es **Conectado**. Si es **Creado**, es posible que la conexión y el análisis del recopilador de registros no se hayan completado.
 
-![ubuntu9](media/ubuntu9.png)
+![Comprobar la implementación correcta del recopilador de registros](media/ubuntu9.png)
 
 También puede ir al **registro de gobernanza** y comprobar que los registros se están cargando periódicamente en el portal.
 

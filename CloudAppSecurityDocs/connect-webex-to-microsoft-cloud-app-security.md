@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 04/16/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f50ff4ae3b3a5a04ab9ffe052b0fb1e8ecdb2f7d
-ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
+ms.openlocfilehash: 3a398d483d210ca607be939148616ef38e3f1e68
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912187"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780841"
 ---
 # <a name="connect-cisco-webex-to-microsoft-cloud-app-security"></a>Conexión de Cisco WebEx a Microsoft Cloud App Security
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 En este artículo se proporcionan instrucciones para conectar Microsoft Cloud App Security a su cuenta de Cisco WebEx existente mediante las API del conector. Esta conexión le proporciona visibilidad y control sobre los usuarios, las actividades y los archivos de WebEx. Para obtener información sobre cómo Cloud App Security protege Cisco WebEx, consulte [protección de Cisco WebEx](protect-webex.md).
 
@@ -48,7 +48,7 @@ En este artículo se proporcionan instrucciones para conectar Microsoft Cloud Ap
 
 1. De nuevo en la consola de Cloud App Security, debería recibir un mensaje que indica que WebEx se conectó correctamente.
 
-1. Haga clic en **Probar API** para asegurarse de que la conexión se ha realizado correctamente.
+1. Haga clic en **Probar API** para confirmar que la conexión se ha realizado correctamente.
 
     La prueba puede tardar unos minutos. Cuando reciba la notificación de que se ha realizado correctamente, haga clic en **Cerrar**.
 

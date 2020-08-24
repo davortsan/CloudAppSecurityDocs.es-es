@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 06/29/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3c0bb1f5a3ff0241067d23bd455865d40c29c652
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 0ea29fe115c4235f926ae2d64e3a377bc02949f0
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624797"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780059"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Integración de protección contra amenazas avanzada de Microsoft defender con Microsoft Cloud App Security
 
@@ -36,7 +36,7 @@ Además, al identificar a un usuario de riesgo, puede comprobar todas las máqui
 Una vez recopilada la información de tráfico, está listo para [profundizar](discovered-apps.md#deep-dive-into-discovered-apps) en el uso de aplicaciones en la nube en su organización. Cloud App Security aprovecha las funcionalidades de protección de red de ATP de Microsoft defender para bloquear el acceso de los dispositivos de punto de conexión a las aplicaciones en la nube. Puede bloquear las aplicaciones si las [etiqueta como no **autorizadas** ](governance-discovery.md#BKMK_SanctionApp) en el portal. En función de la evaluación de riesgos y uso integral de cada aplicación no autorizada, los dominios de la aplicación se usan para crear [indicadores de dominio](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview) en el portal de ATP de Microsoft defender. Antivirus de Microsoft defender, que se ejecuta en dispositivos de punto de conexión, usa los indicadores de dominio para bloquear el acceso a estas aplicaciones.
 
 > [!NOTE]
-> ¿Quiere experimentar ATP de Microsoft defender? [Regístrese para obtener una evaluación gratuita](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink).
+> ¿Quiere experimentar ATP de Microsoft defender? [Regístrese para una evaluación gratuita](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -48,7 +48,7 @@ Una vez recopilada la información de tráfico, está listo para [profundizar](d
   - [protección entregada en la nube habilitada](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus)
   - [Protección de red habilitada y configurada para el modo de bloqueo](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)
 
-## <a name="how-it-works"></a>Funcionamiento
+## <a name="how-it-works"></a>Cómo funciona
 
 Por su cuenta, Cloud App Security recopila registros de los puntos de conexión [usando registros cargados](create-snapshot-cloud-discovery-reports.md) o [configurando la carga automática de registros](discovery-docker.md). La integración nativa permite aprovechar los registros que crea el agente de ATP de Microsoft defender cuando se ejecuta en Windows y supervisa las transacciones de red. Use esta información para la detección de Shadow IT en los equipos Windows de la red.
 
@@ -82,7 +82,7 @@ Después de integrar ATP de Microsoft defender con Cloud App Security, puede inv
 4. Haga clic en la pestaña **Máquinas**.
 5. Puede explorar en profundidad cada equipo que se muestra y usar las pestañas para ver los datos de la investigación. Busque correlaciones entre los equipos, los usuarios, las direcciones IP y las aplicaciones que estuvieron implicados en incidentes:
 
-    - **Introducción**
+    - **Información general**
         - **Nivel de riesgo del equipo**: muestra el riesgo de que el perfil del equipo sea relativo a otras máquinas de la organización, tal y como indica la gravedad (alta, media, baja e informativa). Cloud App Security usa perfiles de equipo de ATP de Microsoft defender para cada equipo basado en análisis avanzado. La actividad que es anómala en la línea de base de un equipo se evalúa y determina el nivel de riesgo de la máquina. Use el nivel de riesgo del equipo para determinar qué máquinas se deben investigar en primer lugar.
         - **Transacciones**: información sobre el número de transacciones que tuvieron lugar en el equipo durante el período de tiempo seleccionado.
         - **Tráfico total**: información acerca de la cantidad total de tráfico (en MB) durante el período de tiempo seleccionado.
@@ -108,7 +108,7 @@ Al igual que con cualquier otro origen de Cloud Discovery, puede exportar los da
 
 Cloud App Security usa la etiqueta de aplicación integrada no [**autorizada**](governance-discovery.md#BKMK_SanctionApp) para marcar las aplicaciones en la nube como prohibidas para su uso, disponibles tanto en las páginas del catálogo de aplicaciones de Cloud Discovery como en la nube. Al habilitar la integración con ATP de Microsoft defender, puede bloquear sin problemas el acceso a aplicaciones no autorizadas con un solo clic en el portal de Cloud App Security.
 
-### <a name="how-it-works"></a>Funcionamiento
+### <a name="how-it-works"></a>Cómo funciona
 
 Las aplicaciones marcadas como no **autorizadas** en Cloud App Security se sincronizan automáticamente con ATP de Microsoft defender, normalmente en pocos minutos. Más concretamente, los dominios usados por estas aplicaciones no autorizadas se propagan a los dispositivos de punto de conexión para que los bloqueen antivirus de Microsoft defender en el acuerdo de nivel de servicio de protección de red.
 

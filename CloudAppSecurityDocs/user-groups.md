@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 11/17/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,28 +14,28 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 777e672436220642df6ea739c0f2e381487dd9ee
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 0b61dbeb47b4f63a5dff01cc372b52a81a21dd01
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720365"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88778937"
 ---
 # <a name="importing-user-groups-from-connected-apps"></a>Importación de grupos de usuarios de aplicaciones conectadas
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 Al conectar aplicaciones mediante conectores de API, Microsoft Cloud App Security permite importar grupos de usuarios de, por ejemplo, Office 365 y Azure Active Directory. Hay dos tipos de grupos de usuarios:
 
 - Grupos automáticos  
 Microsoft Cloud App Security crea de manera predeterminada grupos automáticos. Por ejemplo, hay un grupo automático de usuarios denominado **Externos** que combina todos los usuarios de todas las aplicaciones que son externos a la organización y que tienen acceso a archivos o que se encontraban en las actividades de usuario del inquilino. En Cloud App Security existen los siguientes grupos automáticos:
 
-  - External
+  - Externo
   - Administrador de Dropbox
   - Administrador de Office 365
   - Administrador de G Suite
   - Administrador de Box
-  - Todos los perfiles estándar y personalizados de Salesforce, como Administrador del sistema de Salesforce. Vea [aquí](https://help.salesforce.com/articleView?id=standard_profiles.htm&language=en&type=0) la lista completa.
+  - Todos los perfiles estándar y personalizados de Salesforce, como Administrador del sistema de Salesforce. Vea la lista completa [aquí](https://help.salesforce.com/articleView?id=standard_profiles.htm&language=en&type=0).
 
 - Grupos importados  
 Puede importar cualquier grupo de las aplicaciones conectadas. Por ejemplo, puede importar grupos de usuarios de Office 365 (Active Directory) y otras aplicaciones conectadas. Estos grupos le permiten buscar amenazas en la organización, no solo al examinar toda la organización o un usuario específico, sino al examinar un grupo específico.
@@ -56,7 +56,7 @@ Puede importar cualquier grupo de las aplicaciones conectadas. Por ejemplo, pued
 1. Seleccione la aplicación de la que va a importar el grupo de usuarios. La lista de aplicaciones dependerá de los conectores de aplicaciones implementados.
 1. Seleccione el grupo que quiere importar. La lista de grupos disponibles incluirá todos los grupos de usuarios existentes en la aplicación. Si quiere agregar un grupo nuevo, deberá hacerlo directamente en la aplicación. Cuando el grupo aparezca en la lista de aquí, selecciónelo.
 1. En función del tamaño del grupo, la importación puede tardar hasta una hora. Puede seleccionar la opción de recibir una notificación por correo electrónico cuando finalice el proceso de importación.
-1. Haga clic en **Importar**. Después de importar un grupo, Cloud App Security sincroniza automáticamente los miembros del grupo, igual que Active Directory Connect.
+1. Haga clic en **Import**. Después de importar un grupo, Cloud App Security sincroniza automáticamente los miembros del grupo, igual que Active Directory Connect.
 1. Una vez finalizada la importación, en la página **Grupos de usuarios** puede hacer clic en un grupo específico para ver una lista de todos los miembros del grupo. Haga clic en cualquier miembro del grupo para explorar en profundidad los detalles de una cuenta específica. Puede ver qué aplicaciones usan y un resumen de la cuenta, incluidos los gráficos del usuario y su actividad.
 
 La importación de grupos le permite seleccionar esos grupos como filtros cuando examine el **registro de actividad** y cuando cree directivas.
@@ -72,6 +72,6 @@ Para obtener más información sobre el uso de los filtros de grupo de usuario, 
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Configurar Cloud Discovery](set-up-cloud-discovery.md)
+> [Configuración de Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

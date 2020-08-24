@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 06/28/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 12af451c7d5e808baf09598e263ef582c975ebbf
-ms.sourcegitcommit: 97563af6076ccbad0d994ac69a85a998a625d06a
+ms.openlocfilehash: 653b9faef5819a1e2733091b7d2ca98d36334281
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87296940"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780025"
 ---
 # <a name="security-configuration-for-google-cloud-platform"></a>Configuración de seguridad para Google Cloud Platform
 
@@ -52,7 +52,7 @@ Esta evaluación proporciona una vista organizativa de las recomendaciones de co
 
 1. Seleccione una recomendación para ver información adicional acerca de la recomendación, incluida una descripción y instrucciones de corrección detalladas.
 
-    ![configuración de seguridad](media/security-configuration-gcp-details.png)
+    ![recomendación de configuración de seguridad](media/security-configuration-gcp-details.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
 

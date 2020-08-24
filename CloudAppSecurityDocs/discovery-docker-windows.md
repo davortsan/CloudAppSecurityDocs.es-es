@@ -6,19 +6,19 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 11/19/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ce6525373c8cb9be6a1e70085f5f3bda3dbd11fa
-ms.sourcegitcommit: 1f8f19312ce70e62b6aa0b94db06af07f881fefa
+ms.openlocfilehash: ae59702910ca7c36a03f3a05b73b9747906fce99
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84811271"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780263"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker en Windows local
 
@@ -80,7 +80,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
     1. Haga clic en **Agregar origen de datos**.  
     ![Agregar un origen de datos](media/add-data-source.png)
     1. **Ponga nombre** al servidor proxy o firewall.  
-    ![ubuntu1](media/ubuntu1.png)
+    ![Agregar nombre para el origen de datos](media/ubuntu1.png)
     1. Seleccione el dispositivo en la lista **Origen**. Si selecciona **Formato de los registros personalizados** para trabajar con un dispositivo de red que no aparezca en la lista, consulte el artículo sobre cómo [trabajar con el analizador de registros personalizados](custom-log-parser.md) para ver las instrucciones de configuración.
     1. Compare el registro con el ejemplo del formato de registro esperado. Si el formato de archivo del registro no coincide con este ejemplo, debe agregar el origen de datos como **Otro**.
     1. Establezca el **tipo de receptor** en **FTP**, **FTPS**, **Syslog – UDP**, **Syslog – TCP** o **Syslog – TLS**.
@@ -99,7 +99,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
     1. Ponga **nombre** al recopilador de registros.
     1. Escriba la **dirección IP de host** de la máquina que se va a usar para implementar Docker. La dirección IP del host puede reemplazarse con el nombre del equipo si un servidor DNS (o equivalente) resolverá el nombre de host.
     1. Seleccione todos los **orígenes de datos** que desea conectar al recopilador y haga clic en **Actualizar** para guardar la configuración.
-    ![ubuntu2](media/ubuntu2.png)
+    ![Seleccionar origen de datos para conectarse](media/ubuntu2.png)
 
 1. Aparecerá más información de implementación. **Copie** el comando de ejecución desde el cuadro de diálogo. Puede usar el icono Copiar al portapapeles, ![ copiar al portapapeles ](media/copy-icon.png) . Lo necesitará más adelante.
 
@@ -119,15 +119,15 @@ En los pasos siguientes se describe la implementación en Windows. Los pasos de 
 
 1. Abra un terminal de PowerShell como administrador en la máquina Windows.
 
-1. Ejecute el siguiente comando para descargar el archivo de script de PowerShell del instalador de Docker de Windows:`Invoke-WebRequest https://adaprodconsole.blob.core.windows.net/public-files/LogCollectorInstaller.ps1 -OutFile (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
+1. Ejecute el siguiente comando para descargar el archivo de script de PowerShell del instalador de Docker de Windows: `Invoke-WebRequest https://adaprodconsole.blob.core.windows.net/public-files/LogCollectorInstaller.ps1 -OutFile (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
 
     Para comprobar que el instalador está firmado por Microsoft, consulte [Validate Installer Signature](#validate-signature) .
 
-1. Para habilitar la ejecución de scripts de PowerShell, ejecute`Set-ExecutionPolicy RemoteSigned`
+1. Para habilitar la ejecución de scripts de PowerShell, ejecute `Set-ExecutionPolicy RemoteSigned`
 
 1. Ejecutar: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)` se instala el cliente de Docker en la máquina. Durante la instalación del contenedor de recopilador de registros, la máquina se reiniciará dos veces y tendrá que volver a iniciar sesión. **Asegúrese de que el cliente de Docker está configurado para usar contenedores de Linux.**
 
-1. Después de cada reinicio, abra un terminal de PowerShell como administrador en la máquina y vuelva a ejecutar:`& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
+1. Después de cada reinicio, abra un terminal de PowerShell como administrador en la máquina y vuelva a ejecutar: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
 
 1. Antes de que finalice la instalación, tendrá que pegar el comando de ejecución que ha copiado anteriormente.
 
@@ -143,7 +143,7 @@ En los pasos siguientes se describe la implementación en Windows. Los pasos de 
 
 Debería ver el mensaje: **finalizó correctamente.**
 
-![ubuntu8](media/ubuntu8.png)
+![Comprobar que el recopilador se está ejecutando correctamente](media/ubuntu8.png)
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Paso 3: Configuración local de los dispositivos de red
 
@@ -157,13 +157,13 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 Compruebe el estado del recopilador en la tabla **Recopilador de registros** y asegúrese de que el estado es **Conectado**. Si es **Creado**, es posible que la conexión y el análisis del recopilador de registros no se hayan completado.
 
-![ubuntu9](media/ubuntu9.png)
+![Comprobar que el recopilador se ha implementado correctamente](media/ubuntu9.png)
 
 También puede ir al **registro de gobernanza** y comprobar que los registros se están cargando periódicamente en el portal.
 
 Si tiene problemas durante la implementación, consulte [Solución de problemas de Cloud Discovery](troubleshooting-cloud-discovery.md).
 
-### <a name="optional---create-custom-continuous-reports"></a>Opcional: crear informes continuos personalizados<a name="continuous-reports"></a>
+### <a name="optional---create-custom-continuous-reports"></a>Opcional: crear informes continuos personalizados <a name="continuous-reports"></a>
 
 Compruebe que se cargan los registros de Cloud App Security y que se generan los informes. Después de la comprobación, cree informes personalizados. Puede crear informes de detección personalizados en función de los grupos de usuarios de Azure Active Directory. Por ejemplo, si quiere ver el uso de la nube por parte del departamento de marketing, importe el grupo de marketing mediante la característica para importar grupos de usuarios. Después, cree un informe personalizado para este grupo. También puede personalizar un informe en función de la etiqueta de dirección IP o los intervalos de direcciones IP.
 

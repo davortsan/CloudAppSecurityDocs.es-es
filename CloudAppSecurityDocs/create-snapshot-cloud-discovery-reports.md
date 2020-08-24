@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 04/07/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a5a2184cb908af4bff010fced5bd28d8b1d2504d
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 4bfa89a9794df5cbce0c361e1b2a7d8071cd303c
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720014"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780535"
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Crear informes de instantáneas de Cloud Discovery
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 Es importante cargar un registro manualmente y dejar que Microsoft Cloud App Security lo analice antes de intentar usar el recopilador de registros automáticos. Para información sobre cómo funciona el recopilador de registros y el formato de registro esperado, vea [Uso de registros de tráfico para Cloud Discovery](#log-format).
 
@@ -35,23 +35,23 @@ Para crear un informe de instantáneas:
 
 2. En el portal de Cloud App Security, haga clic en **Detectar** y, después, en **Crear un informe de instantáneas**.
 
-    ![Crear nuevo informe de instantáneas](media/create-new-snapshot-report.png)
+    ![Creación de un informe de instantánea](media/create-new-snapshot-report.png)
 
-3. Escriba un **nombre de informe** y una **descripción**
+3. Escriba un **nombre de informe** y una **Descripción**
 
-    ![Nuevo informe de instantáneas](media/new-snapshot-report.png)
+    ![Nuevo informe de instantánea](media/new-snapshot-report.png)
 
-4. Seleccione el **Origen de datos** desde el que quiere cargar los archivos de registro.
+4. Seleccione el **origen de datos** desde el que desea cargar los archivos de registro.
 
 5. Compruebe el formato del registro para asegurarse de que es correcto según el registro de ejemplo que puede descargar. Haga clic en **View and verify** (Ver y comprobar) y luego haga clic en **Download sample log** (Descargar registro de ejemplo). Compare su registro con el ejemplo proporcionado para asegurarse de que es compatible.
 
-    ![Comprobar el formato del registro](media/cloud-discovery-snapshot-verify.png)
+    ![Comprobación del formato del registro](media/cloud-discovery-snapshot-verify.png)
 
     > [!NOTE]
     > El formato de ejemplo FTP se admite en las instantáneas y la carga automatizada, mientras que syslog solo se admite en la carga automatizada.  
     Si se descarga un registro de ejemplo, se descargará un registro de FTP de ejemplo.
 
-6. **Elija los registros de tráfico** que quiera cargar. Puede cargar hasta 20 archivos a la vez. También se admiten los archivos comprimidos.
+6. **Elija los registros de tráfico** que desea cargar. Puede cargar hasta 20 archivos a la vez. También se admiten archivos comprimidos y zip.
 
 7. Haga clic en **Crear**.
 
@@ -70,7 +70,7 @@ Para crear un informe de instantáneas:
 
     ![administración de informes de instantáneas](media/snapshot-report-managment.png)
 
-## Uso de registros de tráfico para Cloud Discovery <a name="log-format"></a>
+## <a name="using-traffic-logs-for-cloud-discovery"></a>Uso de registros de tráfico para Cloud Discovery <a name="log-format"></a>
 
 Cloud Discovery usa los datos de los registros de tráfico. Cuanto más detallado sea el registro, mejor visibilidad se logrará. Cloud Discovery requiere que los datos de tráfico de web tengan los siguientes atributos:
 
@@ -81,7 +81,7 @@ Cloud Discovery usa los datos de los registros de tráfico. Cuanto más detallad
 - Dirección URL de destino: **recomendado** (las direcciones URL proporcionan una mayor precisión para la detección de aplicaciones en la nube que las direcciones IP)
 - Cantidad total de datos (la información de datos es muy valiosa)
 - Cantidad de datos cargados o descargados (proporciona información sobre los patrones de uso de las aplicaciones en la nube)
-- Acción realizada (permitido/bloqueado)
+- Acción realizada (permitido o bloqueado)
 
 Cloud Discovery no puede mostrar ni analizar los atributos que no estén incluidos en los registros.
 Por ejemplo, el formato de registro estándar del **firewall de Cisco ASA** no tiene la **cantidad de bytes cargados por transacción** ni el **nombre de usuario**, y tampoco tiene la **dirección URL de destino** (solo la IP de destino).
@@ -92,7 +92,7 @@ Para generar correctamente un informe de Cloud Discovery, los registros de tráf
 1. [Se admite el origen de datos](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 2. El formato de registro coincide con el formato estándar esperado (el formato se comprueba después de la carga mediante la herramienta de registro).
 3. Los eventos no tienen más de 90 días.
-4. El archivo de registro es válido e incluye información sobre el tráfico saliente.
+4. El archivo de registro es válido e incluye información sobre el tráfico de salida.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

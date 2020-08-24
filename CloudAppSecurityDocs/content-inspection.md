@@ -1,12 +1,12 @@
 ---
-title: Cómo realiza Cloud App Security la inspección de contenido
+title: Cómo Cloud App Security realiza la inspección de contenido de DLP
 description: En este artículo se describe el proceso que Cloud App Security sigue al realizar la inspección de contenido de DLP en los datos en la nube.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 1/6/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c84a6522a39a2fb57189ee2eece60f24990bd1fa
-ms.sourcegitcommit: e362bf01d41e82a82f9050a064ebfeb4307b58b7
+ms.openlocfilehash: d740e69361eb1ebffe83ff2915216808a8ee124d
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2020
-ms.locfileid: "84758432"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780773"
 ---
 # <a name="content-inspection"></a>Inspección de contenido
 
@@ -47,6 +47,6 @@ Para dar Cloud App Security los permisos necesarios:
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Control de aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
+> [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -1,12 +1,12 @@
 ---
-title: Conectar Salesforce a Cloud App Security
-description: En este artículo se proporciona información sobre cómo conectar Salesforce a Cloud App Security mediante el conector de API para la visibilidad y el control del uso.
+title: Conexión de Salesforce con Cloud App Security
+description: En este artículo se proporciona información sobre cómo conectar Salesforce con Cloud App Security mediante el conector de API para la visibilidad y el control del uso.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 10/06/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b47b17e74df346b1e1b1cdf01522d5b980360b78
-ms.sourcegitcommit: 582779b75be41e57fb1d773d1cf01f6b8598521e
+ms.openlocfilehash: 81ad720b3230ab49a752671bcdc7d45cf789aad7
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78274680"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780892"
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Conectar Salesforce con Microsoft Cloud App Security
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
-En este artículo se proporcionan instrucciones para conectar Microsoft Cloud App Security a su cuenta de Salesforce existente mediante la API del conector de aplicaciones. Esta conexión le proporciona visibilidad y control sobre el uso de Salesforce. Para obtener información sobre cómo Cloud App Security protege Salesforce, consulte [protección de Salesforce](protect-salesforce.md).
+En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Security con una cuenta de Salesforce existente mediante la API del conector de aplicaciones. Esta conexión le ofrece visibilidad y control del uso de Salesforce. Para obtener información sobre cómo Cloud App Security protege Salesforce, consulte [protección de Salesforce](protect-salesforce.md).
 
 ## <a name="how-to-connect-salesforce-to-cloud-app-security"></a>Cómo conectar Salesforce con Cloud App Security
 
@@ -37,20 +37,20 @@ En este artículo se proporcionan instrucciones para conectar Microsoft Cloud Ap
 
     **Performance**, **Enterprise**, **Unlimited**o **Developer**.
 
-    La edición **Professional** no tiene la API de REST de forma predeterminada, pero se puede Agregar a petición.
+    La edición **Professional** no tiene la API REST de forma predeterminada, pero se puede agregar a petición.
 
     Compruebe que la edición tiene disponible la API de REST y que está habilitada de la manera siguiente:
 
-    * Inicie sesión en su cuenta de Salesforce y vaya a la página de **configuración** .
+    * Inicie sesión en su cuenta de Salesforce y vaya a la página **Configuración**.
 
-    * En **administrar usuarios**, vaya a la página **perfiles de usuario** .
+    * En **Administrar usuarios**, vaya a la página **Perfiles de usuario**.
 
         ![administrar perfiles de usuarios de Salesforce](media/salesforce-manageusers-profiles.png "administrar perfiles de usuarios de Salesforce")
 
-    * Para crear un nuevo perfil, haga clic en **nuevo**.
+    * Haga clic en **Nuevo** para crear un perfil nuevo.
     * Elija el perfil que acaba de crear para implementar Cloud App Security y haga clic en **Editar**. Este perfil se utilizará para la cuenta de servicio de Cloud App Security para configurar el conector de aplicaciones.
 
-         ![Editar perfil de Salesforce](media/salesforce-edit-profile.png "Editar perfil de Salesforce")
+         ![editar perfil en Salesforce](media/salesforce-edit-profile.png "editar perfil en Salesforce")
 
     * Asegúrese de que las siguientes casillas están activadas:
       * **API Enabled** (API habilitada)
@@ -59,7 +59,7 @@ En este artículo se proporcionan instrucciones para conectar Microsoft Cloud Ap
       * **Administrar usuarios**
       * **[Consultar todos los archivos](https://go.microsoft.com/fwlink/?linkid=2106480)**
 
-      Si no se seleccionan estas casillas, es posible que deba ponerse en contacto con Salesforce para agregarlas a su cuenta.
+      Si estas casillas no están activadas, es posible que deba ponerse en contacto con Salesforce para agregarlas a su cuenta.
 
 1. Si su organización tiene habilitada la opción **Salesforce CRM Content** (Contenido CRM de Salesforce), asegúrese de que la cuenta administrativa actual también la tenga habilitada.
 
@@ -69,13 +69,13 @@ En este artículo se proporcionan instrucciones para conectar Microsoft Cloud Ap
 
     1. En el menú lateral, seleccione **Administrar usuarios** y haga clic en **Usuarios**.
 
-        ![usuarios del menú de Salesforce](media/salesforce-menu-users.png "usuarios del menú de Salesforce")
+        ![menú de usuarios de Salesforce](media/salesforce-menu-users.png "menú de usuarios de Salesforce")
 
     1. Seleccione el usuario administrativo actual de su usuario de Cloud App Security dedicado.
 
     1. Asegúrese de que está seleccionada la casilla **Salesforce CRM Content User** (Usuario de contenido CRM de Salesforce).
 
-        Si no está seleccionada, haga clic en **Editar** y active la casilla.
+        Si no está activada, haga clic en **Editar** y después active la casilla.
 
         ![usuario de contenido CRM de Salesforce](media/salesforce-crm-content-user.png "usuario de contenido CRM de Salesforce")
 
@@ -85,17 +85,17 @@ En este artículo se proporcionan instrucciones para conectar Microsoft Cloud Ap
 
 1. En la página **Conectores de aplicaciones**, haga clic en el botón del signo más y, después, en **Salesforce**.
 
-    ![conectar Salesforce](media/connect-salesforce.png "conectar Salesforce")
+    ![conectar Salesforce](media/connect-salesforce.png "conectarse a Salesforce")
 
 1. En la página de configuración de Salesforce, en la pestaña API, haga clic en **Seguir vínculo**, en función de la instancia que vaya a instalar.
 
 1. Se abrirá la página de inicio de sesión de Salesforce. Escriba sus credenciales para permitir que Cloud App Security tenga acceso a la aplicación de Salesforce de su equipo.
 
-    ![Inicio de sesión de Salesforce](media/salesforce-logon.png "Inicio de sesión de Salesforce")
+    ![Inicio de sesión de Salesforce](media/salesforce-logon.png "inicio de sesión en Salesforce")
 
 1. Salesforce le preguntará si quiere permitir que Cloud App Security acceda a la información y el registro de actividad de su equipo y que realice actividades como cualquier miembro del equipo. Para continuar, haga clic en **Permitir**.
 
-1. Llegados a este punto, recibirá un aviso de éxito o error en la implementación. Cloud App Security ya está autorizado en Salesforce.com.
+1. En este momento recibirá una notificación que le indicará si la implementación se ha llevado a cabo correcta o incorrectamente. Cloud App Security ya está autorizado en Salesforce.com.
 
 1. Si vuelve a la consola de Cloud App Security, debería aparecer un mensaje que le indica que Salesforce se ha conectado correctamente.
 
@@ -103,7 +103,7 @@ En este artículo se proporcionan instrucciones para conectar Microsoft Cloud Ap
 
     La prueba puede tardar unos minutos. Cuando reciba la notificación de que se ha realizado correctamente, haga clic en **Listo**.
 
-Después de conectar Salesforce, recibirá eventos como se indica a continuación: desencadenadores desde el momento de la conexión, eventos de inicio de sesión y la traza de auditoría de 60 días anteriores a la conexión, Y supervisión 30 días o 1 día en función de su Y supervisión de Salesforce sin. La API de Cloud App Security se comunica directamente con las API disponibles de Salesforce. Dado que Salesforce limita el número de llamadas API que puede recibir, Cloud App Security lo tiene en cuenta y respeta la limitación. Las API de Salesforce envían cada respuesta con un campo para los contadores de API, incluido el total disponible y restante. Cloud App Security lo calcula como un porcentaje y siempre se asegura de que quede como restante un 10 % de las llamadas de API disponibles.
+Después de conectarse a Salesforce, recibirá eventos de este modo: desencadenadores en el momento de la conexión, eventos de inicio de sesión y traza de auditoría de configuración de los 60 días anteriores a la conexión, y supervisión de eventos de los 30 días anteriores o del día anterior, en función de su licencia de supervisión de eventos de Salesforce. La API de Cloud App Security se comunica directamente con las API disponibles de Salesforce. Dado que Salesforce limita el número de llamadas API que puede recibir, Cloud App Security lo tiene en cuenta y respeta la limitación. Las API de Salesforce envían cada respuesta con un campo para los contadores de API, incluido el total disponible y restante. Cloud App Security lo calcula como un porcentaje y siempre se asegura de que quede como restante un 10 % de las llamadas de API disponibles.
 
 > [!NOTE]
 > La limitación de Cloud App Security se calcula únicamente según sus propias llamadas API con Salesforce, no según las de otras aplicaciones que realizan llamadas API con Salesforce.
@@ -112,8 +112,8 @@ Después de conectar Salesforce, recibirá eventos como se indica a continuació
 Cloud App Security procesa los eventos de Salesforce de la manera siguiente:
 
 * Eventos de inicio de sesión cada 15 minutos
-* Configurar seguimientos de auditoría cada 15 minutos
-* Registros de eventos cada 1 hora. Para obtener más información sobre los eventos de Salesforce, consulte [Using event monitoring](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm) (Uso de supervisión de eventos).
+* Configuración de registros de auditoría cada 15 minutos
+* Registros de eventos cada 1 hora. Para más información sobre los eventos de Salesforce, consulte el artículo sobre el [uso de supervisión de eventos](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm).
 
 Si tiene problemas para conectar la aplicación, consulte [solución de problemas de conectores de aplicaciones](troubleshooting-api-connectors-using-error-messages.md).
 

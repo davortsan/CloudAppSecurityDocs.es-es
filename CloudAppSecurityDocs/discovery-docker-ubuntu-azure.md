@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 06/02/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b481ff78df6c563512f867d53e906df9a7cfd0fb
-ms.sourcegitcommit: d159dbd8e1a35268468156eb9c5a5f218cdace4c
+ms.openlocfilehash: 135dd542bce61796d0de8bce81fd735f2c87df53
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84274604"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88780450"
 ---
 # <a name="docker-on-linux-in-azure"></a>Docker en Linux en Azure
 
@@ -76,7 +76,7 @@ El compilador de registros puede administrar correctamente la capacidad de regis
     1. Haga clic en **Agregar origen de datos**.  
     ![Agregar un origen de datos](media/add-data-source.png)
     1. **Ponga nombre** al servidor proxy o firewall.  
-      ![ubuntu1](media/ubuntu1.png)
+      ![Nombre del proxy o firewall](media/ubuntu1.png)
     1. Seleccione el dispositivo en la lista **Origen**. Si selecciona **Formato de los registros personalizados** para trabajar con un dispositivo de red que no aparezca en la lista, consulte el artículo sobre cómo [trabajar con el analizador de registros personalizados](custom-log-parser.md) para ver las instrucciones de configuración.
     1. Compare el registro con el ejemplo del formato de registro esperado. Si el formato de archivo del registro no coincide con este ejemplo, debe agregar el origen de datos como **Otro**.
     1. Establezca el **tipo de receptor** en **FTP**, **FTPS**, **Syslog – UDP**, **Syslog – TCP** o **Syslog – TLS**.
@@ -95,7 +95,7 @@ El compilador de registros puede administrar correctamente la capacidad de regis
     1. Ponga **nombre** al recopilador de registros.
     1. Escriba la **dirección IP de host** de la máquina que se va a usar para implementar Docker. La dirección IP del host puede reemplazarse con el nombre del equipo si un servidor DNS (o equivalente) resolverá el nombre de host.
     1. Seleccione todos los **orígenes de datos** que desea conectar al recopilador y haga clic en **Actualizar** para guardar la configuración.  
-    ![ubuntu2](media/ubuntu2.png)
+    ![Seleccionar orígenes de datos](media/ubuntu2.png)
 
 1. Aparecerá más información de implementación. **Copie** el comando de ejecución desde el cuadro de diálogo. Puede usar el icono Copiar al portapapeles. ![icono copiar al portapapeles](media/copy-icon.png)
 
@@ -119,10 +119,10 @@ El compilador de registros puede administrar correctamente la capacidad de regis
 
     1. En la vista de la máquina, vaya a **Redes** y seleccione la interfaz adecuada haciendo doble clic en ella.
     1. Vaya a **Grupo de seguridad de red** y seleccione el grupo de seguridad de red pertinente.
-    1. Vaya a **reglas de seguridad de entrada** y haga clic en **Agregar**, ![ Ubuntu Azure](media/ubuntu-azure.png)
+    1. Vaya a **reglas de seguridad de entrada** y haga clic en **Agregar**, ![ agregar reglas de seguridad de entrada.](media/ubuntu-azure.png)
     1. Agregue las siguientes reglas (en modo **Avanzado**):
 
-    |NOMBRE|Intervalos de puertos de destino|Protocolo|Source|Destination|
+    |Nombre|Intervalos de puertos de destino|Protocolo|Source|Destination|
     |----|----|----|----|----|
     |caslogcollector_ftp|21|TCP|<Subred de la dirección IP del dispositivo>|Any|
     |caslogcollector_ftp_passive|20000-20099|TCP|<Subred de la dirección IP del dispositivo>|Any|
@@ -145,7 +145,7 @@ El compilador de registros puede administrar correctamente la capacidad de regis
 
 1. En el portal de Cloud App Security, en la ventana **Create new log collector** (Crear nuevo recopilador de registros), copie el comando para importar la configuración del recopilador en la máquina host:
 
-    ![Ubuntu en Azure](media/windows7.png)
+    ![Copiar comando para importar la configuración del recopilador en el equipo host](media/windows7.png)
 
 1. Ejecute el comando para implementar el recopilador de registros.
 
@@ -157,7 +157,7 @@ El compilador de registros puede administrar correctamente la capacidad de regis
 
 1. Para comprobar si el recopilador de registros se ejecuta correctamente, ejecute el comando siguiente: `Docker logs <collector_name>`. Debe obtener los resultados: **Finalizado correctamente.**
 
-    ![ubuntu8](media/ubuntu8.png)
+    ![Comando para comprobar que el recopilador de registros se está ejecutando correctamente](media/ubuntu8.png)
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>Paso 3: Configuración local de los dispositivos de red
 
@@ -171,7 +171,7 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 Compruebe el estado del recopilador en la tabla **Recopilador de registros** y asegúrese de que el estado es **Conectado**. Si es **Creado**, es posible que la conexión y el análisis del recopilador de registros no se hayan completado.
 
-![ubuntu9](media/ubuntu9.png)
+![Comprobar el estado del recopilador en el recopilador de registros](media/ubuntu9.png)
 
 También puede ir al **registro de gobernanza** y comprobar que los registros se están cargando periódicamente en el portal.
 
