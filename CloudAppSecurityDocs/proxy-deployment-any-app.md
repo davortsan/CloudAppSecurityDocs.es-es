@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: 2eaa965e8925a67945b3524e9b0a61b0e139df26
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 0f5fbf5668d49ced48b2a1afe0fc1893e077bf43
+ms.sourcegitcommit: f4ed1283e73af88201dd85fc6a59300cd31341d7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779770"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88807633"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Incorporación e implementación de Control de aplicaciones de acceso condicional para cualquier aplicación
 
@@ -244,9 +244,11 @@ Por ejemplo, si ha configurado una directiva que bloquea la descarga de archivos
 
 Una vez que esté listo para habilitar la aplicación para su uso en el entorno de producción de su organización, siga estos pasos.
 
-1. En Cloud App Security, haga clic en el ![icono](media/settings-icon.png "icono de configuración")configuración engranaje configuración y, a continuación, seleccione **control de aplicaciones de acceso condicional**.
+1. En Cloud App Security, haga clic en el ![ icono configuración engranaje configuración ](media/settings-icon.png) y, a continuación, seleccione **control de aplicaciones de acceso condicional**.
 1. En la lista de aplicaciones, en la fila en la que aparece la aplicación que va a implementar, elija los tres puntos al final de la fila y, después, elija **Editar aplicación**.
 1. Seleccione **usar con control de aplicaciones de acceso condicional** y, a continuación, haga clic en **Guardar**.
+
+    ![Habilitar elementos emergentes de controles de sesión](media/edit-app-enable-session-controls.png)
 
 ## <a name="step-6-update-the-azure-ad-policy-azure-ad-only"></a>Paso 6: actualización de la Directiva de Azure AD (solo Azure AD)<a name="update-azure-ad"></a>
 
@@ -262,7 +264,7 @@ Una vez que esté listo para habilitar la aplicación para su uso en el entorno 
 > [!div class="nextstepaction"]
 > [SIGUIENTE: Cómo crear una directiva de sesión»](session-policy-aad.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 > [!div class="nextstepaction"]
 > [Introducción a Control de aplicaciones de acceso condicional](proxy-intro-aad.md)
