@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 8/6/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2b62a1344f4277f58ebff09dded12497238705bf
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 665d7435399c37a1d9683f004b0996f9ea5d263f
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624659"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781708"
 ---
 # <a name="enable-the-log-collector-behind-a-proxy"></a>Habilitación del recopilador de registros tras un proxy
 
@@ -129,8 +129,8 @@ El recopilador de registros ahora puede comunicarse con Cloud App Security. Desp
     > El alias de servidor predeterminado es *Server*.
 
 1. En un editor de texto, abra el archivo *Server-install\conf\server\secured-installed.Properties* y, a continuación, agregue las siguientes líneas de código y, a continuación, guarde los cambios:
-    1. Especifique la nueva contraseña del almacén de claves de Java para el servidor:`server.keystore.password=newStorePassword`
-    1. Especifique la nueva contraseña del certificado para el servidor:`server.key.password=newKeyPassword`
+    1. Especifique la nueva contraseña del almacén de claves de Java para el servidor: `server.keystore.password=newStorePassword`
+    1. Especifique la nueva contraseña del certificado para el servidor: `server.key.password=newKeyPassword`
 1. Inicie el servidor.
 
 ## <a name="next-steps"></a>Pasos siguientes

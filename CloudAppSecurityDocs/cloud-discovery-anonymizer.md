@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 04/20/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b4d8a2c91d87df35445615e36b5caeb7d89de4f4
-ms.sourcegitcommit: a166b85d5c91c48032cf133655471aec1ed88a0f
+ms.openlocfilehash: 44bc98ec887b8a2d601961a65115b7d7a50f3128
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81662333"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781232"
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Anonimización de datos de Cloud Discovery
 
 *Se aplica a: Microsoft Cloud App Security*
 
-La anonimización de datos de Cloud Discovery le permite proteger la privacidad del usuario. Cuando se haya cargado el registro de datos en el portal de Microsoft Cloud App Security, se depura el registro y se reemplaza toda la información de nombres de usuario con nombres de usuario cifrados. De este modo, todas las actividades de la nube se mantienen anónimas. Cuando sea necesario, para una investigación de seguridad específica (por ejemplo, una infracción de seguridad o una actividad sospechosa del usuario), los administradores pueden resolver el nombre de usuario real. Si un administrador tiene un motivo para sospechar de un usuario específico, puede buscar el nombre de usuario cifrado de un nombre de usuario conocido y, después, comenzar la investigación usando el nombre de usuario cifrado. En el **Registro de gobernanza** del portal se audita cada conversión de nombre de usuario.
+La anonimización de datos de Cloud Discovery le permite proteger la privacidad del usuario. Cuando se haya cargado el registro de datos en el portal de Microsoft Cloud App Security, se depura el registro y se reemplaza toda la información de nombres de usuario con nombres de usuario cifrados. De este modo, todas las actividades de la nube se mantienen anónimas. Cuando sea necesario, para una investigación de seguridad específica (por ejemplo, una infracción de seguridad o una actividad sospechosa del usuario), los administradores pueden resolver el nombre de usuario real. Si un administrador tiene un motivo para sospechar de un usuario específico, puede buscar el nombre de usuario cifrado de un nombre de usuario conocido y, después, comenzar la investigación usando el nombre de usuario cifrado. Cada conversión de nombre de usuario se audita en el **registro de gobierno**del portal.
 
 Puntos clave:
 
@@ -45,12 +45,12 @@ Puntos clave:
 
     - Puede establecer el valor predeterminado en Cloud App Security para anonimizar todos los datos de los informes de instantáneas de los archivos de registro cargados y de los informes continuados de recopiladores de registros como se muestra a continuación:
 
-    1. En el engranaje Configuración, seleccione **Configuración de Cloud Discovery**.
+    1. En el engranaje de configuración, seleccione **configuración de Cloud Discovery**.
 
-    2. En la pestaña Anonymization (Anonimización), para ocultar los nombres de usuario de forma predeterminada, seleccione **Anonymize private information by default in new reports and data sources** (Anonimizar información privada de forma predeterminada en los nuevos informes y orígenes de datos). También puede seleccionar **Anonimizar información de la máquina de forma predeterminada en el informe "Usuarios del punto de conexión Win10"**.
-    3. Haga clic en **Save**(Guardar).
+    2. En la pestaña Anonimización, para anonimizar nombres de usuario de forma predeterminada, seleccione **Anonimizar la información privada de forma predeterminada en los nuevos informes y orígenes de datos**. También puede seleccionar **información de la máquina anonimización de forma predeterminada en el informe "usuarios del punto de conexión de Win10"**.
+    3. Haga clic en **Guardar**.
 
-    ![Anonimización](media/anonymizer1.png)
+    ![Página de configuración de anonimización](media/anonymizer1.png)
 
 2. Cuando se selecciona la anonimización, Cloud App Security analiza el registro del tráfico y extrae los atributos de datos específicos.
 3. Cloud App Security reemplaza el nombre de usuario por un nombre de usuario cifrado.
@@ -78,12 +78,12 @@ Puntos clave:
 
     La siguiente manera alternativa de resolver nombres de usuario únicos también puede usarse para buscar el nombre de usuario cifrado de un nombre de usuario conocido.
 
-    1. En el engranaje Configuración, seleccione **Configuración de Cloud Discovery**.
+    1. En el engranaje de configuración, seleccione **configuración de Cloud Discovery**.
 
     1. En la pestaña **Anonymization** (Anonimización), en **Anonymize and resolve usernames** (Anonimizar y resolver nombres de usuario), escriba una justificación de por qué se realiza la resolución.
     1. En **Enter username to resolve** (Escriba el nombre de usuario para resolver), seleccione **From anonymized** (De anónimo) y escriba el nombre de usuario anónimo, o seleccione **To anonymized** (Para anónimo) y escriba el nombre de usuario original para resolver. Haga clic en **Resolver**.
 
-        ![Anonimización](media/anonymizer.png)
+        ![Resolver elemento emergente de anonimización](media/anonymizer.png)
 
     **Para resolver varios nombres de usuario**
 
@@ -99,9 +99,9 @@ Puntos clave:
 
         ![Anonimización resolver emergente](media/anonymize-resolve-dialog.png)
 
-6. La acción se audita en el **registro de gobernanza** del portal.
+6. La acción se audita en el **registro de gobierno**del portal.
 
-    ![Anonimización](media/anonymize-gov-log.png)
+    ![Acción anonimización en el registro de gobierno](media/anonymize-gov-log.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
 

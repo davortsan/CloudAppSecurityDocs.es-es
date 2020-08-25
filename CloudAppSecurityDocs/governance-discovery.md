@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/12/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ad9f158a1e81a9aeaf7bb59a23da56e27260a6c5
-ms.sourcegitcommit: a76d7b8837a5ad17348eb1b2e1dcbe0bf8a2d0a2
+ms.openlocfilehash: c7e63522634f6048ad9ae13ce00298638fe7b070
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86282455"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781759"
 ---
 # <a name="govern-discovered-apps"></a>Control de aplicaciones detectadas
 
@@ -27,7 +27,7 @@ ms.locfileid: "86282455"
 
 Después de revisar la lista de aplicaciones detectadas en su entorno, puede proteger su entorno mediante la aprobación de aplicaciones seguras (**autorizadas**) o la prohibición de las aplicaciones no deseadas (no**autorizadas**) de las siguientes maneras.
 
-## <a name="sanctioningunsanctioning-an-app"></a><a name="BKMK_SanctionApp"></a>Autorizar o no autorizar una aplicación
+## <a name="sanctioningunsanctioning-an-app"></a><a name="BKMK_SanctionApp"></a> Autorizar o no autorizar una aplicación
 
 Puede no autorizar una aplicación de riesgo específica. Para ello, haga clic en los tres puntos situados al final de la fila. Después seleccione **No autorizar**. El hecho de no autorizar una aplicación no impide que se use, pero le permite supervisar más fácilmente su uso con los filtros de Cloud Discovery. Después, puede notificar a los usuarios de la aplicación que no está autorizada y sugerir una aplicación segura alternativa.
 

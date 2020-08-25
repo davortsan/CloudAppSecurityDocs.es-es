@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cc1d0b563d7d155fdd9f0aab55b4fe117ddfd6bc
-ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
+ms.openlocfilehash: a2cc37a22d339b721111948b277135382a2c7c8a
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912102"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781096"
 ---
 # <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>Conectar Dropbox con Microsoft Cloud App Security
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 En este artículo se proporcionan instrucciones para conectar Microsoft Cloud App Security con una cuenta de Dropbox existente mediante las API del conector. Esta conexión le ofrece visibilidad y control del uso de Dropbox. Para obtener información sobre cómo Cloud App Security protege Dropbox, consulte [protección de Dropbox](protect-dropbox.md).
 
@@ -33,7 +33,7 @@ Dado que Dropbox permite el acceso a archivos desde vínculos compartidos sin in
 
 1. En la consola de Cloud App Security, haga clic en **Investigar** y, después, en **Aplicaciones conectadas**.
 
-2. En la página **Conectores de aplicaciones**, haga clic en el botón del signo más y, después, en **Dropbox**.
+2. En la página **conectores de aplicaciones** , haga clic en el botón de signo más seguido de **Dropbox**.
 
     ![conectar Dropbox](media/connect-dropbox.png "conectar Dropbox")
 
@@ -49,7 +49,7 @@ Dado que Dropbox permite el acceso a archivos desde vínculos compartidos sin in
 
 7. De vuelta en la consola de Cloud App Security, debería recibir un mensaje que indica que Dropbox se ha conectado correctamente.
 
-8. Haga clic en **Probar API** para asegurarse de que la conexión se ha realizado correctamente.
+8. Haga clic en **Probar API** para confirmar que la conexión se ha realizado correctamente.
 
     La prueba puede tardar unos minutos. Cuando reciba la notificación de que se ha realizado correctamente, haga clic en **Cerrar**.
 

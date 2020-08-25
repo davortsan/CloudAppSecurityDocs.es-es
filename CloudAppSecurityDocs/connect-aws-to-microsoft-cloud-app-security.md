@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 06/24/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 930710dc9524bd873318291b18b71d6acd33ad5c
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: dff661d7db60a01cb9d66fc131add97db7598e04
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85623881"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781266"
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>Conectar AWS con Microsoft Cloud App Security
 
@@ -128,15 +128,15 @@ Siga los pasos que se indican a continuación para configurar la auditoría de A
 
     1. Haga clic en el signo más seguido de **Amazon Web Services**.
 
-        ![conectar AWS](media/connect-aws.png "conectar AWS")
+        ![conexión de la auditoría de AWS](media/connect-aws.png "conectar AWS")
 
     1. En el elemento emergente, proporcione un nombre para el conector y, a continuación, haga clic en **conectar Amazon Web Services**.
 
-        ![Nombre del conector de AWS](media/connect-aws-name.png)
+        ![Nombre del conector de auditoría de AWS](media/connect-aws-name.png)
 
     1. En la página conectar Amazon Web Services, seleccione **Auditoría de seguridad**, pegue la **clave de acceso** y la **clave secreta** del archivo. csv en los campos correspondientes y haga clic en **conectar**.
 
-        ![Conexión de la auditoría de seguridad de aplicaciones AWS](media/aws-connect-app-audit.png "Conexión de la auditoría de seguridad de aplicaciones AWS")
+        ![Conexión de la auditoría de seguridad de aplicaciones AWS para nuevo conector](media/aws-connect-app-audit.png "Conexión de la auditoría de seguridad de aplicaciones AWS")
 
     **Para un conector existente**
 
@@ -146,7 +146,7 @@ Siga los pasos que se indican a continuación para configurar la auditoría de A
 
     1. En la página conectar Amazon Web Services, pegue la **clave de acceso** y la **clave secreta** del archivo. csv en los campos correspondientes y haga clic en **conectar**.
 
-        ![Conexión de la auditoría de seguridad de aplicaciones AWS](media/aws-connect-app-edit-audit-creds.png "Conexión de la auditoría de seguridad de aplicaciones AWS")
+        ![Conexión de la auditoría de seguridad de aplicaciones AWS para el conector existente](media/aws-connect-app-edit-audit-creds.png "Conexión de la auditoría de seguridad de aplicaciones AWS")
 
 1. Haga clic en **probar API** para asegurarse de que la conexión se ha realizado correctamente.
 
@@ -215,7 +215,7 @@ Antes de poder conectar la configuración de seguridad de AWS, asegúrese de que
 
 1. En la pestaña **aplicaciones de configuración de seguridad** , haga clic en el botón más y, a continuación, seleccione **Amazon Web Services**.
 
-    ![conectar AWS](media/connect-aws-security-configuration.png)
+    ![conexión de la configuración de seguridad de AWS](media/connect-aws-security-configuration.png)
 
 1. En la página **nombre de instancia** , elija el tipo de instancia y, a continuación, haga clic en **siguiente**.
 
@@ -225,7 +225,7 @@ Antes de poder conectar la configuración de seguridad de AWS, asegúrese de que
 
     - Para un nuevo conector, proporcione un nombre para la instancia.
 
-        ![Nombre del conector de AWS](media/aws-connect-name.png)
+        ![Nombre del conector de configuración de seguridad de AWS](media/aws-connect-name.png)
 
 1. En la **página Detalles** de la cuenta, pegue la **clave de acceso** y la **clave secreta** del archivo. csv en los campos correspondientes y, a continuación, haga clic en **siguiente**.
 

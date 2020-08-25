@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 88cf54f981ef02b76cd3286f3171e98f5f33752b
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: c4102b65899b9579d5aed5d719a6a0bbecb4ae2f
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624320"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781300"
 ---
 # <a name="generate-data-management-reports"></a>Generación de informes de administración de datos
 
@@ -32,7 +32,7 @@ Para generar estos informes, siga estos pasos:
 1. Vaya a **Archivos**.
 2. En la esquina superior derecha, haga clic en los tres puntos y, en **Informes de administración de datos**, seleccione uno de los informes que se indican a continuación.
 
-    ![reports](media/reports.png)
+    ![Captura de pantalla que muestra el menú informes de administración de datos](media/reports.png)
 
 ## <a name="data-sharing-overview"></a>Información general sobre el uso compartido de datos
 

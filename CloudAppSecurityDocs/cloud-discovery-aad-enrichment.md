@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c288b153976f50851a72a54393c099b011521c33
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 1e6f89d896612c48b567435e06ecf2fa475e119e
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720158"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781283"
 ---
 # <a name="cloud-discovery-enrichment"></a>Enriquecimiento de Cloud Discovery
 
-*Se aplica a: Microsoft Cloud App Security*
+*Se aplica a: Microsoft Cloud App Security*
 
 Ahora es posible mejorar los datos de Cloud Discovery con datos de nombre de usuario de Azure Active Directory. Cuando se habilita esta característica, el nombre de usuario que se recibe en los registros de tráfico de detección se hace coincidir con el nombre de usuario de Azure AD y se reemplaza por este. Enriquecimiento de Cloud Discovery ofrece estas características:
 
@@ -38,7 +38,7 @@ Ahora es posible mejorar los datos de Cloud Discovery con datos de nombre de usu
 
 ## <a name="enabling-user-data-enrichment"></a>Habilitar el enriquecimiento de datos del usuario
 
-1. En el engranaje Configuración, seleccione **Configuración de Cloud Discovery**.
+1. En el engranaje de configuración, seleccione **configuración de Cloud Discovery**.
 
 2. En la pestaña **Enriquecimiento de usuarios**, seleccione **Enriquezca los identificadores de los usuarios detectados con los nombres de usuario de Azure Active Directory**. Esta opción permite a Cloud App Security usar datos de Azure Active Directory para mejorar los nombres de usuarios de forma predeterminada.
 

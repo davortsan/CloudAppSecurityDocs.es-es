@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 07/09/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 38b142121f4d14d2fb07017e764a2a57bd1ceee0
-ms.sourcegitcommit: 1dec09a56cc44148393f103c96fc24c59adc2f8f
+ms.openlocfilehash: a80d54546b93545b65082115c939190f65b3801d
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86402144"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781453"
 ---
 # <a name="external-dlp-integration"></a>Integración de DLP externa
 
@@ -253,7 +253,7 @@ Si el proceso todavía no se está ejecutando, vea la [documentación de Stunnel
     - **Generic ICAP – REQMOD**: use otros dispositivos DLP que usan la [modificación de solicitudes](https://tools.ietf.org/html/rfc3507).
     - **Generic ICAP – RESPMOD**: use otros dispositivos DLP que usan la [modificación de respuestas](https://tools.ietf.org/html/rfc3507).
 
-        ![Conexión ICAP de Cloud App Security](media/icap-wizard1.png)
+        ![Tipo de conexión de Cloud App Security ICAP](media/icap-wizard1.png)
 
 5. Busque para seleccionar el certificado público generado en los pasos anteriores, "cert. pem", para conectarse a su stunnel. Haga clic en **Next**.
 
@@ -262,7 +262,7 @@ Si el proceso todavía no se está ejecutando, vea la [documentación de Stunnel
 
 6. En la pantalla **Configuración del servidor**, proporcione la **dirección IP** y el **puerto** del servidor de Stunnel que ha configurado en el paso 2. Para equilibrar la carga, puede configurar la **dirección IP** y el **puerto** en un servidor adicional. Las direcciones IP proporcionadas deben ser las direcciones IP estáticas externas de los servidores.
 
-    ![Conexión ICAP de Cloud App Security](media/icap-wizard2.png)
+    ![Cloud App Security la dirección IP y el puerto de la conexión ICAP](media/icap-wizard2.png)
 
 7. Haga clic en **Next**. Cloud App Security probará la conectividad con el servidor que ha configurado. Si recibe un error, revise las instrucciones y la configuración de red. Cuando lo haya conectado correctamente, haga clic en **Salir**.
 
@@ -305,7 +305,7 @@ El servidor de detección que Cloud App Security usa es un servidor estándar de
 
     1. Deshabilite el **modo de prueba**.
 
-        ![deshabilitar el modo de prueba](media/icap-disable-trial-mode.png)
+        ![deshabilitar elemento emergente del modo de prueba](media/icap-disable-trial-mode.png)
 
 2. En **ICAP**  >  **filtrado de respuestas**ICAP, cambie el valor de **omitir respuestas menores que** a 1.
 
@@ -341,7 +341,7 @@ Agregue la regla que creó a cualquier directiva existente:
 
 3. Guarde la directiva.
 
-    ![deshabilitar el modo de prueba](media/icap-add-policy.png)
+    ![deshabilitar el modo de prueba en la Directiva](media/icap-add-policy.png)
 
 Esta regla se debe agregar a todas las directivas existentes.
 

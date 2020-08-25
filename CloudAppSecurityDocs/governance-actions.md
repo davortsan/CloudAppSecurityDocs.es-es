@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 06/28/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bf3d80fbea1847fc22d07164d25db0ec7c4149f6
-ms.sourcegitcommit: 4d2ebbd68a48876825e663375ea2b17dc6b58d03
+ms.openlocfilehash: e424a3dd483e762a1fb3f589116ea362b1e1fb27
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86865477"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781640"
 ---
 # <a name="governing-connected-apps"></a>Control de aplicaciones conectadas
 
@@ -138,7 +138,7 @@ Para obtener información sobre cómo se tratan las acciones de control cuando h
 |Panel de la aplicación > Permisos de aplicación |Permisos| Prohibir una aplicación | En Google y Salesforce: revoque los permisos que tiene una aplicación de terceros en Google o Salesforce y prohíba que reciba permisos en el futuro. En Office 365: no permite el permiso de aplicaciones de terceros para tener acceso a Office, pero no los revoca. |G Suite, Salesforce, Office |
 |Panel de la aplicación > Permisos de aplicación |Permisos|Revocar aplicación|Revoque los permisos de una aplicación de terceros para acceder a Google o Salesforce. Se trata de una acción única que se producirá en todos los permisos existentes, pero no impedirá las conexiones futuras. | G Suite, Salesforce|
 |Panel de la aplicación > Permisos de aplicación | Cuenta | Revocar usuario de la aplicación|Se pueden revocar usuarios específicos al hacer clic en el número bajo Usuarios. La pantalla mostrará los usuarios específicos y puede usar la X para eliminar los permisos para cualquiera de ellos.| G Suite, Salesforce|
-|Detectar > Aplicaciones detectadas/Direcciones IP/Usuarios| Cloud Discovery | Exportar datos de detección | Se crea un archivo CSV a partir de los datos de detección. | de esquema JSON |
+|Detectar > Aplicaciones detectadas/Direcciones IP/Usuarios| Cloud Discovery | Exportar datos de detección | Se crea un archivo CSV a partir de los datos de detección. | Detección |
 |Directiva de archivo|Archivo |Enviar a la papelera|Mueve el archivo en la papelera del usuario.| Box, Dropbox, Google Drive, OneDrive, SharePoint |
 |Directiva de archivo|Archivo | Enviar una notificación al último editor del archivo |Se envía un correo para informar a la última persona que editó el archivo de que este infringe una directiva. |G Suite, Box|
 |Directiva de archivo|Archivo |Enviar una notificación al propietario del archivo|Envía un correo electrónico al propietario del archivo cuando se infringe una directiva. En Dropbox, si no hay ningún propietario asociado a un archivo, la notificación se enviará al usuario específico que establezca. | Todas las aplicaciones |
@@ -165,10 +165,10 @@ Para obtener información sobre cómo se tratan las acciones de control cuando h
 |Archivos|Archivo|Cambio del nivel de acceso del vínculo compartido|Cambia el nivel de acceso del vínculo compartido entre la empresa solo, solo los colaboradores y público.| Box|
 |Archivos, Directiva de archivo|Archivo | Quitar el acceso público| Si pone un archivo suyo como de acceso público, pasa a ser accesible para quien esté configurado para tener acceso a él, según el tipo de acceso que tuviera el archivo. | G Suite|
 |Archivos, Directiva de archivo|Archivo |Quitar el vínculo compartido directo| Se quita un vínculo creado para un archivo que es público, pero que solo se comparte con personas específicas.|Box |
-|Configuración > Configuración de Cloud Discovery| Cloud Discovery | Recalcular las puntuaciones de Cloud Discovery |Se recalculan las puntuaciones en el catálogo de aplicaciones de Cloud tras un cambio en la métrica de puntuación.| de esquema JSON |
-|Configuración > Configuración de Cloud Discovery > Administrar vistas de datos| Cloud Discovery | Crear vista de datos de filtro personalizado de Cloud Discovery|Se crea una vista de datos para obtener una vista más detallada de los resultados de la detección. Por ejemplo, intervalos de IP específicos. | de esquema JSON |
-|Configuración > Configuración de Cloud Discovery > Eliminar datos| Cloud Discovery | Eliminar datos de Cloud Discovery |Se eliminan todos los datos recopilados de los orígenes de detección.| de esquema JSON |
-|Configuración > Configuración de Cloud Discovery > Cargar registros manualmente/Cargar registros automáticamente | Cloud Discovery | Analizar datos de Cloud Discovery| Notificación de que todos los datos de registro se han analizado. | de esquema JSON |
+|Configuración > Configuración de Cloud Discovery| Cloud Discovery | Recalcular las puntuaciones de Cloud Discovery |Se recalculan las puntuaciones en el catálogo de aplicaciones de Cloud tras un cambio en la métrica de puntuación.| Detección |
+|Configuración > Configuración de Cloud Discovery > Administrar vistas de datos| Cloud Discovery | Crear vista de datos de filtro personalizado de Cloud Discovery|Se crea una vista de datos para obtener una vista más detallada de los resultados de la detección. Por ejemplo, intervalos de IP específicos. | Detección |
+|Configuración > Configuración de Cloud Discovery > Eliminar datos| Cloud Discovery | Eliminar datos de Cloud Discovery |Se eliminan todos los datos recopilados de los orígenes de detección.| Detección |
+|Configuración > Configuración de Cloud Discovery > Cargar registros manualmente/Cargar registros automáticamente | Cloud Discovery | Analizar datos de Cloud Discovery| Notificación de que todos los datos de registro se han analizado. | Detección |
 
 ## <a name="next-steps"></a>Pasos siguientes
 

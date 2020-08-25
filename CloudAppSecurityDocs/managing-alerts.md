@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 01/22/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,14 +14,14 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1ccd5a4bfedbad5edf1ee2e398b0da480f20fb38
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: 41495095be323743f44d7822283cc08b8b9afbfb
+ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254761"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88781572"
 ---
-# <a name="manage-alerts"></a>Administración de alertas
+# <a name="manage-alerts"></a>Administrar alertas
 
 *Se aplica a: Microsoft Cloud App Security*
 
@@ -40,7 +40,7 @@ Es buena idea revisar todas las alertas y usarlas como herramientas para modific
 
     En esta sección del panel se proporciona visibilidad completa de cualquier actividad sospechosa o infracción de las políticas establecidas. Puede ayudarle a proteger la postura de seguridad que ha definido para su entorno de la nube.
 
-    ![Alertas](media/alerts.png "alerts")
+    ![Página estado de resolución de alertas](media/alerts.png "alerts")
 
 2. Debe investigar y determinar la naturaleza de la infracción y la respuesta necesaria en cada alerta.
 
@@ -77,7 +77,7 @@ Es buena idea revisar todas las alertas y usarlas como herramientas para modific
 
 En la tabla siguiente se proporciona una lista de los tipos de alertas que pueden activarse y se recomiendan formas para resolverlas.
 
-|Tipo de alerta|Description|Solución recomendada|
+|Tipo de alerta|Descripción|Solución recomendada|
 |----------------|-----------------|----------------------------|
 |Infracción de directiva de actividad|Este tipo de alerta es el resultado de una directiva que ha creado.|Para trabajar con este tipo de alerta en masa, se recomienda que trabaje en el centro de directivas para mitigarlas.<br /><br /> Ajuste la directiva para excluir las entidades con ruido al agregar más filtros y controles más pormenorizados.<br /><br />Si la directiva es precisa, la alerta está garantizada y es una infracción que quiere detener inmediatamente, considere la posibilidad de agregar una corrección automática en la directiva.|
 |Infracción de directiva de archivo|Este tipo de alerta es el resultado de una directiva que ha creado.| Para trabajar con este tipo de alerta en masa, se recomienda que trabaje en el centro de directivas para mitigarlas.<br /><br /> Ajuste la directiva para excluir las entidades con ruido al agregar más filtros y controles más pormenorizados.<br /><br />Si la directiva es precisa, la alerta está garantizada y es una infracción que quiere detener inmediatamente, considere la posibilidad de agregar una corrección automática en la directiva.|
