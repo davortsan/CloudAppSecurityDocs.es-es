@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 55a5d50f8dbe0dbbe1a34fcca913bc25d3292e42
-ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
+ms.openlocfilehash: 3a1d9ef4412ddecf2117722b6c060a9f86023814
+ms.sourcegitcommit: 04811ae308bcc3cd25b18c5e2379ca92920d9e60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88657765"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88876551"
 ---
 # <a name="generate-block-script---cloud-discovery-api"></a>Generar script de bloque Cloud Discovery API
 
@@ -29,7 +29,7 @@ Ejecute la solicitud GET para obtener un script de bloque para el dispositivo de
 ## <a name="http-request"></a>Solicitud HTTP
 
 ```rest
-GET /api/discovery/discovery_block_scripts/
+GET /api/discovery_block_scripts/
 ```
 
 ## <a name="request-url-parameters"></a>Parámetros de URL de solicitud
@@ -53,7 +53,7 @@ Actualmente se admiten los siguientes formatos:
 > [!NOTE]
 > Si no encuentra el dispositivo, genere un script de bloque manualmente mediante el portal.
 
-## <a name="response"></a>Response
+## <a name="response"></a>Respuesta
 
 Esta solicitud devuelve el script de bloque como texto.
 
@@ -64,10 +64,10 @@ Esta solicitud devuelve el script de bloque como texto.
 Este es un ejemplo de la solicitud.
 
 ```rest
-curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/discovery/discovery_block_scripts/?format=102&type=banned"
+curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/discovery_block_scripts/?format=102&type=banned"
 ```
 
-### <a name="response"></a>Response
+### <a name="response"></a>Respuesta
 
 ```text
 url.domain=application.com deny
