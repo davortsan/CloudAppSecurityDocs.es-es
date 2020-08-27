@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 68b2f2a6bc1c8350510c54dc505593c35b5de0b0
-ms.sourcegitcommit: 5cf263c4094f5ac91210b03d085ca3dbca50f32d
+ms.openlocfilehash: a1d6abfc92a1678f954c4a332dc4c7e5e82536b8
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87388684"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963971"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicaciones con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security
 
@@ -66,7 +66,7 @@ Este método no requiere la instalación de nada en el dispositivo, por lo que r
 > [!NOTE]
 >
 > - Nuestra tecnología usa la heurística patentada de la mejor clase para identificar y controlar las actividades realizadas por el usuario en la aplicación de destino. Nuestra heurística está diseñada para optimizar y equilibrar la seguridad con facilidad de uso. En algunos escenarios poco frecuentes, cuando las actividades de bloqueo en el lado servidor representan la aplicación como inutilizable, protegemos estas actividades solo en el lado cliente, lo que hace que sean potencialmente susceptibles de ser aprovechados por Insiders malintencionados.
-> - Cloud App Security aprovecha los Centros de datos de Azure de todo el mundo para proporcionar un rendimiento optimizado a través de la geolocalización. Esto significa que la sesión de un usuario se puede hospedar fuera de una región determinada, en función de los patrones de tráfico y su ubicación. Sin embargo, para proteger su privacidad, no se almacenan datos de la sesión en estos centros de datos.
+> - Cloud App Security aprovecha los Centros de datos de Azure de todo el mundo para proporcionar un rendimiento optimizado a través de la geolocalización. Esto significa que la sesión de un usuario se puede hospedar fuera de una región determinada, dependiendo de los patrones de tráfico y su ubicación. Sin embargo, para proteger su privacidad, no se almacenan datos de la sesión en estos centros de datos.
 > - Nuestros servidores proxy no almacenan datos en reposo. Al almacenar en caché contenido, se siguen los requisitos que se han diseñado en [RFC 7234 (almacenamiento en caché de http)](https://tools.ietf.org/html/rfc7234) y solo se almacenan en caché el contenido público.
 
 ## <a name="managed-device-identification"></a>Identificación de dispositivos administrados
@@ -79,7 +79,7 @@ La característica Control de aplicaciones de acceso condicional le permite crea
 
 ### <a name="intune-compliant-and-hybrid-azure-ad-joined-devices"></a>Dispositivos compatibles y Unidos a Azure AD híbrido de Intune
 
-Azure AD el acceso condicional permite pasar la información de dispositivo compatible con Intune y Azure AD híbrido combinarse directamente a Cloud App Security. Desde allí, se puede desarrollar una directiva de sesión o acceso que use el estado del dispositivo como filtro. Para obtener más información, consulte [Introducción a la administración de dispositivos en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
+Azure AD el acceso condicional permite pasar la información de dispositivo compatible con Intune y Azure AD híbrido combinarse directamente a Cloud App Security. Desde allí, se puede desarrollar una directiva de sesión o acceso que use el estado del dispositivo como filtro. Para obtener más información, consulte [Introducción a la administración de dispositivos en Azure Active Directory](/azure/active-directory/device-management-introduction).
 
 > [!NOTE]
 > Algunos exploradores pueden requerir una configuración adicional, como la instalación de una extensión. Para obtener más información, consulte [compatibilidad con el explorador de acceso condicional](https://go.microsoft.com/fwlink/?linkid=2102732).
@@ -119,7 +119,7 @@ Una vez cargados los certificados, puede crear directivas de acceso y de sesión
 
 ## <a name="supported-apps-and-clients"></a>Aplicaciones y clientes compatibles
 
-Los controles de sesión y acceso se pueden aplicar a cualquier inicio de sesión único interactivo, mediante el protocolo de autenticación SAML 2,0 o, si usa Azure AD también, el protocolo de autenticación Open ID Connect. Además, si las aplicaciones se configuran con Azure AD, también puede aplicar estos controles a las aplicaciones hospedadas localmente configuradas con el [proxy de aplicación de Azure ad](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy). Además, los controles de acceso se pueden aplicar a las aplicaciones de cliente de escritorio y móviles nativas.
+Los controles de sesión y acceso se pueden aplicar a cualquier inicio de sesión único interactivo, mediante el protocolo de autenticación SAML 2,0 o, si usa Azure AD también, el protocolo de autenticación Open ID Connect. Además, si las aplicaciones se configuran con Azure AD, también puede aplicar estos controles a las aplicaciones hospedadas localmente configuradas con el [proxy de aplicación de Azure ad](/azure/active-directory/manage-apps/application-proxy). Además, los controles de acceso se pueden aplicar a las aplicaciones de cliente de escritorio y móviles nativas.
 
 Cloud App Security identifica aplicaciones que usan información disponible en el catálogo de aplicaciones en la nube. Algunas organizaciones y usuarios personalizan las aplicaciones mediante la adición de complementos. Sin embargo, para que los controles de sesión funcionen correctamente con estos complementos, los dominios personalizados asociados deben agregarse a la aplicación correspondiente en el catálogo.
 
@@ -149,7 +149,7 @@ Aunque los controles de sesión se compilan para trabajar con cualquier explorad
 - AWS
 - Azure DevOps (Visual Studio Team Services)
 - Azure Portal (versión preliminar)
-- Box
+- Cuadro
 - Concur
 - CornerStone on Demand
 - DocuSign

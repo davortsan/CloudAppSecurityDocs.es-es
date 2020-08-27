@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1fa2a1e9d0c46531284b674cf20dd512ecba292c
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: 5efaa862e32264005fa3b469218c4aad041b12b7
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254795"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88964005"
 ---
 # <a name="threat-protection-policies"></a>Directivas de protección contra amenazas
 
@@ -23,7 +23,7 @@ ms.locfileid: "87254795"
 Cloud App Security le permite identificar problemas de seguridad en la nube y de uso de alto riesgo, detectar comportamientos anómalos de los usuarios y evitar amenazas en las aplicaciones en la nube autorizadas. Obtenga visibilidad de las actividades de usuario y administración, y defina directivas para alertar automáticamente cuando se detecten comportamientos sospechosos o actividades específicas que considere arriesgado. Extraiga la inmensa cantidad de datos de investigación de seguridad e inteligencia de amenazas de Microsoft para asegurarse de que sus aplicaciones autorizadas tienen todos los controles de seguridad que necesita y le ayudan a mantener el control sobre ellas.
 
 > [!NOTE]
-> Al integrar Cloud App Security con protección contra amenazas avanzada de Azure (ATP de Azure), las directivas de ATP de Azure también aparecen en la página directivas. Para obtener una lista de las directivas de ATP de Azure, consulte [alertas de seguridad](https://docs.microsoft.com/azure-advanced-threat-protection/suspicious-activity-guide).
+> Al integrar Cloud App Security con protección contra amenazas avanzada de Azure (ATP de Azure), las directivas de ATP de Azure también aparecen en la página directivas. Para obtener una lista de las directivas de ATP de Azure, consulte [alertas de seguridad](/azure-advanced-threat-protection/suspicious-activity-guide).
 
 ## <a name="detect-and-control-user-activity-from-unfamiliar-locations"></a>Detección y control de la actividad de los usuarios desde ubicaciones desconocidas
 

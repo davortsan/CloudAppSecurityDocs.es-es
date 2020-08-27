@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: 0f5fbf5668d49ced48b2a1afe0fc1893e077bf43
-ms.sourcegitcommit: f4ed1283e73af88201dd85fc6a59300cd31341d7
+ms.openlocfilehash: 830eae43a1bd33df1669bc05e9cbc125794af75b
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88807633"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88964022"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Incorporación e implementación de Control de aplicaciones de acceso condicional para cualquier aplicación
 
@@ -31,7 +31,7 @@ Para obtener una lista de las aplicaciones que se incluyen en Cloud App Security
 
 - Su organización debe tener las licencias siguientes para usar Control de aplicaciones de acceso condicional:
 
-  - [Azure Active Directory (Azure ad) Premium P1](https://docs.microsoft.com/azure/active-directory/license-users-groups) o superior, o la licencia requerida por su solución de proveedor de identidades (IDP)
+  - [Azure Active Directory (Azure ad) Premium P1](/azure/active-directory/license-users-groups) o superior, o la licencia requerida por su solución de proveedor de identidades (IDP)
   - Microsoft Cloud App Security
 
 - Las aplicaciones deben configurarse con el inicio de sesión único
@@ -59,7 +59,7 @@ Siga estos pasos para configurar cualquier aplicación que se controlará Cloud 
 **Paso 6: [actualización de la Directiva de Azure ad](#update-azure-ad)**
 
 > [!NOTE]
-> Para implementar Control de aplicaciones de acceso condicional para aplicaciones de Azure AD, necesita una [licencia válida para Azure Active Directory Premium P1 o superior](https://docs.microsoft.com/azure/active-directory/license-users-groups) , así como una licencia de Cloud App Security.
+> Para implementar Control de aplicaciones de acceso condicional para aplicaciones de Azure AD, necesita una [licencia válida para Azure Active Directory Premium P1 o superior](/azure/active-directory/license-users-groups) , así como una licencia de Cloud App Security.
 
 ## <a name="step-1--configure-your-idp-to-work-with-cloud-app-security"></a>Paso 1: configurar el IdP para trabajar con Cloud App Security<a name="conf-idp"></a><a name="conf-azure-ad"></a>
 
@@ -264,7 +264,7 @@ Una vez que esté listo para habilitar la aplicación para su uso en el entorno 
 > [!div class="nextstepaction"]
 > [SIGUIENTE: Cómo crear una directiva de sesión»](session-policy-aad.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 > [!div class="nextstepaction"]
 > [Introducción a Control de aplicaciones de acceso condicional](proxy-intro-aad.md)

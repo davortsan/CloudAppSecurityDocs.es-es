@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: itfalcon
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f117092ebdae230eae473bf4bbfd2d53b05fa3eb
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 7b93a60c42b024b03a048848d048f4ed93d13f17
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781385"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963478"
 ---
 # <a name="how-to-investigate-anomaly-detection-alerts"></a>Cómo investigar alertas de detección de anomalías
 
@@ -350,7 +350,7 @@ Actividades en una única sesión que indica que un usuario realizó eliminacion
 - Revise toda la actividad de los usuarios para ver indicadores adicionales de riesgo, como la alerta de [reenvío de bandeja de entrada sospechosa](#suspicious-inbox-forwarding) seguido de una alerta de [viaje imposible](#impossible-travel) . Buscar:
 
     1. Nuevas reglas de reenvío de SMTP, como se indica a continuación:
-        - Compruebe los nombres de las reglas de reenvío malintencionado. Los nombres de las reglas pueden variar con respecto a nombres simples, como "reenviar todos los mensajes de correo electrónico" y "reenviar automáticamente", o nombres engañosos, como un "." apenas visible. Los nombres de las reglas de reenvío pueden estar incluso vacíos y el destinatario del reenvío puede ser una sola cuenta de correo electrónico o una lista completa. También se pueden ocultar reglas malintencionadas de la interfaz de usuario. Una vez detectado, puede usar esta [entrada de blog](https://blogs.msdn.microsoft.com/hkong/2015/02/27/how-to-delete-corrupted-hidden-inbox-rules-from-a-mailbox-using-mfcmapi/) útil para eliminar reglas ocultas de los buzones.
+        - Compruebe los nombres de las reglas de reenvío malintencionado. Los nombres de las reglas pueden variar con respecto a nombres simples, como "reenviar todos los mensajes de correo electrónico" y "reenviar automáticamente", o nombres engañosos, como un "." apenas visible. Los nombres de las reglas de reenvío pueden estar incluso vacíos y el destinatario del reenvío puede ser una sola cuenta de correo electrónico o una lista completa. También se pueden ocultar reglas malintencionadas de la interfaz de usuario. Una vez detectado, puede usar esta [entrada de blog](/archive/blogs/hkong/how-to-delete-corrupted-hidden-inbox-rules-from-a-mailbox-using-mfcmapi) útil para eliminar reglas ocultas de los buzones.
         - Si detecta una regla de reenvío no reconocida en una dirección de correo electrónico interna o externa desconocida, puede suponer que la cuenta de bandeja de entrada se ha puesto en peligro.
     1. Nuevas reglas de bandeja de entrada, como "eliminar todo", "trasladar mensajes a otra carpeta" o aquellas con convenciones de nomenclatura ocultas, por ejemplo "...".
     1. Aumento en los mensajes de correo electrónico enviados.
@@ -539,7 +539,7 @@ Actividades que indican que un atacante ha obtenido acceso a la bandeja de entra
 1. Revise toda la actividad de los usuarios para ver indicadores adicionales de riesgo, como la alerta va seguida de una alerta de [viaje imposible](#impossible-travel) . Buscar:
 
     1. Nuevas reglas de reenvío de SMTP, como se indica a continuación:
-        - Compruebe los nombres de las reglas de reenvío malintencionado. Los nombres de las reglas pueden variar con respecto a nombres simples, como "reenviar todos los mensajes de correo electrónico" y "reenviar automáticamente", o nombres engañosos, como un "." apenas visible. Los nombres de las reglas de reenvío pueden estar incluso vacíos y el destinatario del reenvío puede ser una sola cuenta de correo electrónico o una lista completa. También se pueden ocultar reglas malintencionadas de la interfaz de usuario. Una vez detectado, puede usar esta [entrada de blog](https://blogs.msdn.microsoft.com/hkong/2015/02/27/how-to-delete-corrupted-hidden-inbox-rules-from-a-mailbox-using-mfcmapi/) útil para eliminar reglas ocultas de los buzones.
+        - Compruebe los nombres de las reglas de reenvío malintencionado. Los nombres de las reglas pueden variar con respecto a nombres simples, como "reenviar todos los mensajes de correo electrónico" y "reenviar automáticamente", o nombres engañosos, como un "." apenas visible. Los nombres de las reglas de reenvío pueden estar incluso vacíos y el destinatario del reenvío puede ser una sola cuenta de correo electrónico o una lista completa. También se pueden ocultar reglas malintencionadas de la interfaz de usuario. Una vez detectado, puede usar esta [entrada de blog](/archive/blogs/hkong/how-to-delete-corrupted-hidden-inbox-rules-from-a-mailbox-using-mfcmapi) útil para eliminar reglas ocultas de los buzones.
         - Si detecta una regla de reenvío no reconocida en una dirección de correo electrónico interna o externa desconocida, puede suponer que la cuenta de bandeja de entrada se ha puesto en peligro.
     1. Nuevas reglas de bandeja de entrada, como "eliminar todo", "trasladar mensajes a otra carpeta" o aquellas con convenciones de nomenclatura ocultas, por ejemplo "...".
 1. Revise las actividades realizadas desde la dirección IP utilizada para crear la regla para detectar otros usuarios en peligro.

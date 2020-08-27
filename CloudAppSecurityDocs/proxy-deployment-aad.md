@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: e94a6691987d89fc44f05a1bd0a12f8ef04d74fa
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: a706367211dbf6446168e33128676b6227b18ae3
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779414"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88964039"
 ---
 # <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Implementación del Control de aplicaciones de acceso condicional para aplicaciones destacadas
 
@@ -27,7 +27,7 @@ Los controles de sesión de Microsoft Cloud App Security funcionan con las aplic
 
 - Su organización debe tener las licencias siguientes para usar Control de aplicaciones de acceso condicional:
 
-  - [Azure Active Directory (Azure ad) Premium P1](https://docs.microsoft.com/azure/active-directory/license-users-groups) o superior, o la licencia requerida por su solución de proveedor de identidades (IDP)
+  - [Azure Active Directory (Azure ad) Premium P1](/azure/active-directory/license-users-groups) o superior, o la licencia requerida por su solución de proveedor de identidades (IDP)
   - Microsoft Cloud App Security
 
 - Las aplicaciones deben configurarse con el inicio de sesión único

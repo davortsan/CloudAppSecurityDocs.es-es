@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ed0d53a3a71e03dab31ad179e293ae1b7dbc43b6
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 6dbba6a8be8f0292d924baabb3fc670e3521c5b4
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779498"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963444"
 ---
 # <a name="accounts"></a>Cuentas
 
@@ -43,7 +43,7 @@ La página **Usuarios y cuentas** permite investigar fácilmente las cuentas, in
 * Puede ver qué cuentas están incluidas en cada grupo de usuarios.  
 * Puede ver a qué aplicaciones accede cada cuenta y qué aplicaciones se han eliminado en cuentas concretas.
 
-    ![pantalla cuentas](./media/accounts-page.png)
+    ![pantalla cuentas](media/accounts-page.png)
 
 ## <a name="users-and-accounts-filters"></a>Filtros de usuarios y cuentas
 
@@ -51,7 +51,7 @@ A continuación, se muestra una lista de los filtros de cuenta que se pueden apl
   
 <!--- **Account name**: The account name is the primary alias of the user, but other identifiers from other Microsoft accounts (Office 365 and Azure Active Directory) such as proxy addresses, aliases, SID are supported and consolidated beneath the primary alias. -->
 
-* **Afiliación**: la afiliación es **Interna** o **Externa**. Para establecer qué usuarios y cuentas son internos, en **Configuración** asegúrese de establecer el **intervalo de direcciones IP** de la organización interna. En caso de que la cuenta tenga permisos de administrador, el icono de la tabla Cuentas aparece con un lazo rojo. ![icono de administrador de cuentas](./media/accounts-admin-icon.png)
+* **Afiliación**: la afiliación es **Interna** o **Externa**. Para establecer qué usuarios y cuentas son internos, en **Configuración** asegúrese de establecer el **intervalo de direcciones IP** de la organización interna. En caso de que la cuenta tenga permisos de administrador, el icono de la tabla Cuentas aparece con un lazo rojo. ![icono de administrador de cuentas](media/accounts-admin-icon.png)
 
 * **Aplicación**: puede filtrar por cualquier aplicación conectada a la API y que esté en uso en las cuentas de la organización.
 * **Dominio**: permite filtrar por usuarios de dominios concretos.

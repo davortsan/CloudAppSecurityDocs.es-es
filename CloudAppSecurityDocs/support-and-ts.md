@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 80ae1af2a0f40adbaa1e989de8ec644d721a7f88
-ms.sourcegitcommit: 4450119e1c7e2c54357dca955621327f9c343422
+ms.openlocfilehash: fa42e9e481bd815d3bf8ebc8505bde8712eed59f
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2020
-ms.locfileid: "88026996"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963843"
 ---
 # <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Soporte técnico y solución de problemas de Microsoft Cloud App Security
 
@@ -31,7 +31,7 @@ En este artículo se describen las opciones de soporte técnico y de solución d
 
 Microsoft proporciona soporte técnico global, preventa, facturación y suscripción para Microsoft Cloud App Security. El soporte técnico está disponible tanto en línea como por teléfono para las suscripciones de pago y de prueba. El soporte técnico en línea está disponible en inglés y japonés. El soporte técnico telefónico y para facturación en línea está disponible en otros idiomas.
 
-Como administrador, puede usar la opción **Ayuda y soporte técnico** para presentar una solicitud de soporte técnico en línea para Cloud App Security desde Azure Portal. Para crear una solicitud de soporte técnico, la cuenta debe tener asignado uno de los siguientes [roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
+Como administrador, puede usar la opción **Ayuda y soporte técnico** para presentar una solicitud de soporte técnico en línea para Cloud App Security desde Azure Portal. Para crear una solicitud de soporte técnico, la cuenta debe tener asignado uno de los siguientes [roles de administrador en Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
 
 * Administrador global
 
@@ -52,7 +52,7 @@ Seleccione **Solicitud de soporte técnico** para crear una solicitud de soporte
 
     * **Tipo de problema**: **Técnico**
 
-    * **Suscripción**:\<*your subscription*\>
+    * **Suscripción**: \<*your subscription*\>
 
     * **Servicio**: **seguridad de aplicaciones en la nube**
 
@@ -97,7 +97,7 @@ El equipo de Cloud App Security está siempre dispuesto a escuchar sus comentari
 
 * **Comentarios del producto**: Envíe comentarios a [casfeedback@microsoft.com](mailto:casfeedback@microsoft.com) .
 
-* **Comentarios**sobre la documentación: nuestro nuevo sistema de comentarios se basa en problemas de github. Para proporcionar comentarios sobre documentación, primero debe crear una cuenta de GitHub. Lea sobre este cambio en [nuestra entrada de blog](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
+* **Comentarios**sobre la documentación: nuestro nuevo sistema de comentarios se basa en problemas de github. Para proporcionar comentarios sobre documentación, primero debe crear una cuenta de GitHub. Lea sobre este cambio en [nuestra entrada de blog](/teamblog/a-new-feedback-system-is-coming-to-docs).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

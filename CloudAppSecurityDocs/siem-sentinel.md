@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4f0bf993a1e0306035c9b75a215873532eb17c5f
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: fc68868e2fed402d245be5bae4ad8ea713dea4e9
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779226"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963903"
 ---
 # <a name="azure-sentinel-integration-preview"></a>Integración de centinela de Azure (versión preliminar)
 
@@ -35,7 +35,7 @@ Las ventajas de usar Azure Sentinel incluyen:
 Entre las soluciones de integración adicionales se incluyen:
 
 * **Siem genéricos** : Integre Cloud App Security con el servidor de Siem genérico. Para obtener información sobre la integración con un SIEM genérico, consulte [integración de Siem genérica](siem.md).
-* **Microsoft Security Graph API** : un servicio intermediario (o agente) que proporciona una única interfaz de programación para conectar varios proveedores de seguridad. Para obtener más información, consulte [integración de soluciones de seguridad con la API de seguridad de Microsoft Graph](https://docs.microsoft.com/graph/security-integration#list-of-connectors-from-microsoft).
+* **Microsoft Security Graph API** : un servicio intermediario (o agente) que proporciona una única interfaz de programación para conectar varios proveedores de seguridad. Para obtener más información, consulte [integración de soluciones de seguridad con la API de seguridad de Microsoft Graph](/graph/security-integration#list-of-connectors-from-microsoft).
 
 ## <a name="how-to-integrate"></a>Integración
 
@@ -68,7 +68,7 @@ Para integrar con Azure Sentinel:
 
     ![Captura de pantalla que muestra la página de inicio de configuración de la integración de centinela de Azure](media/siem-sentinel-configuration.png)
 
-1. Haga clic en **siguiente**y continúe con Azure Sentinel para finalizar la integración. Para obtener información sobre cómo configurar Azure Sentinel, vea [https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security](https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security) .
+1. Haga clic en **siguiente**y continúe con Azure Sentinel para finalizar la integración. Para obtener información sobre cómo configurar Azure Sentinel, consulte [/Azure/Sentinel/Connect-Cloud-App-Security](/azure/sentinel/connect-cloud-app-security).
 
     ![Captura de pantalla que muestra la página de finalización de configuración de Azure Sentinel](media/siem-sentinel-configuration-complete.png)
 
@@ -117,7 +117,7 @@ En esta sección se describe cómo puede usar Microsoft Power BI (Power BI) para
 
 Puede empezar a trabajar rápidamente con los pasos siguientes:
 
-1. En Power BI, importe consultas desde Azure Sentinel para datos de Cloud App Security. Para obtener más información, consulte [importar datos de registro de Azure monitor en Power BI](https://docs.microsoft.com/azure/azure-monitor/platform/powerbi).
+1. En Power BI, importe consultas desde Azure Sentinel para datos de Cloud App Security. Para obtener más información, consulte [importar datos de registro de Azure monitor en Power BI](/azure/azure-monitor/platform/powerbi).
 1. [Instale la aplicación de Shadow it Discovery de Cloud App Security](https://aka.ms/MCASShadowITReporting) y [conéctela](#connect-the-cloud-app-security-app) a los datos del registro de detección para ver el panel de Shadow it Discovery integrado.
 
     > [!NOTE]

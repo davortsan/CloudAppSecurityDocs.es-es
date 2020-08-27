@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2256703ee2c92774635f7ce04dfa0c08694bd627
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 9fdea4bcf8db70a1f8eed023cb8af81d328b8771
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779515"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963529"
 ---
 # <a name="access-policies"></a>Directivas de acceso
 
@@ -35,7 +35,7 @@ Las directivas de acceso de Microsoft Cloud App Security permiten la supervisió
 - Azure AD Premium licencia P1 o la licencia requerida por su solución de proveedor de identidades (IdP)
 - Las aplicaciones en cuestión deben estar [implementadas con control de aplicaciones de acceso condicional](proxy-deployment-aad.md).
 - Asegúrese de que ha configurado la solución IdP para que funcione con Cloud App Security, como se indica a continuación:
-  - En el caso del [acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), consulte [Configuración de la integración con Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad).
+  - En el caso del [acceso condicional de Azure AD](/azure/active-directory/active-directory-conditional-access-azure-portal), consulte [Configuración de la integración con Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad).
   - Para información sobre otras soluciones IdP, consulte [Configuración de la integración con otras soluciones IdP](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions).
 
 ## <a name="create-a-cloud-app-security-access-policy"></a>Crear una directiva de acceso de Cloud App Security
