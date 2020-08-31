@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4bc31fda0e2e647e386d2ce1d5b55e8d2fff6174
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 5bf75b479f3568b7c6451880f3a2774104d8115a
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779736"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89149651"
 ---
 # <a name="get-behavioral-analytics-and-anomaly-detection"></a>Obtención de análisis de comportamiento y detección de anomalías
 
@@ -35,7 +35,7 @@ Las anomalías se detectan mediante el examen de la actividad del usuario. El ri
 * Errores de inicio de sesión
 * Actividad administrativa
 * Cuentas inactivas
-* Location
+* Ubicación
 * Viaje imposible
 * Agente de usuario y dispositivo
 * Tasa de actividad
@@ -78,10 +78,10 @@ Están disponibles las directivas de detección de anomalías siguientes:
     >
     > Cloud App Security admite la detección de malware para las siguientes aplicaciones:
     >
-    > * Box
+    > * Cuadro
     > * Dropbox
     > * G Suite
-    > * Office 365 (requiere una licencia válida para la protección contra amenazas avanzada de Office 365 P1)
+    > * Microsoft 365 (requiere una licencia válida para la protección contra amenazas avanzada de Office 365 P1)
 
 ### <a name="activity-from-anonymous-ip-addresses"></a>Actividad desde direcciones IP anónimas
 

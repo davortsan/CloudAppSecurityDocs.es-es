@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0d4d046b406e0849437d02f1abba87948e488473
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 2f9a2d504eded5f57f415aac2841c4e78cda7e2a
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779192"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89149863"
 ---
 # <a name="scoped-deployment"></a>Implementación con ámbito <a name="scoped-deployment"></a> 
 
@@ -33,7 +33,7 @@ Es posible que no desee usar Microsoft Cloud App Security para todos los usuario
 
 - Para establecer el ámbito de la implementación, primero debe [importar grupos de usuarios](user-groups.md) con Microsoft Cloud App Security. De forma predeterminada, verá los siguientes grupos:
 
-  - Grupo de usuarios **Aplicación**: un grupo integrado que le permite ver las actividades realizadas por las aplicaciones de Office 365 y Azure AD.
+  - Grupo de usuarios de **aplicación** : un grupo integrado que le permite ver las actividades realizadas por Microsoft 365 y Azure ad aplicaciones.
 
   - Grupo de **usuarios externos** : todos los usuarios que no son miembros de ninguno de los dominios administrados que configuró para su organización.
 
@@ -77,7 +77,7 @@ Las reglas de inclusión y exclusión que cree funcionan en conjunto para defini
 Si crea las reglas siguientes:
 
 - Excluir el grupo de usuarios "Todos los usuarios de Alemania"
-- Incluir para el grupo de usuarios "Ventas globales" solo las actividades de Office 365
+- Incluir solo para el grupo de usuarios "ventas globales" Microsoft 365 actividades
 - Incluir para el grupo de usuarios "Directores de ventas" solo las actividades de Power BI
 - Salesforce está conectado con Microsoft Cloud App Security, y no se establece ninguna regla para dicha plataforma.
 
@@ -85,9 +85,9 @@ Se supervisan las actividades de usuario siguientes:
 
 |Usuario|Pertenencia a grupos|Actividades supervisadas|
 |----|----|----|
-|Adriana|Todos los usuarios de Alemania<br />Ventas globales<br />Directores de ventas|None|
-|Alain|Ventas globales|Office 365 y todas las subaplicaciones, a excepción de Power BI|
-|Cornel|Ventas globales<br />Directores de ventas|Office 365 y todas las subaplicaciones|
+|Adriana|Todos los usuarios de Alemania<br />Ventas globales<br />Directores de ventas|Ninguno|
+|Alain|Ventas globales|Microsoft 365 y todas las subaplicacións excepto Power BI|
+|Cornel|Ventas globales<br />Directores de ventas|Microsoft 365 y todas las subaplicacións|
 |Raymond|Directores de ventas|Solo Power BI|
 
 > [!NOTE]

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6d3d281d8ad56e52f717125f62a7feb580b007b9
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: dd6e6f00f39c4107884620d2514145022596c95c
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781351"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89149761"
 ---
 # <a name="oauth-app-policies"></a>Directivas de aplicación de OAuth
 
@@ -27,7 +27,7 @@ ms.locfileid: "88781351"
 
 Además de la [investigación existente de aplicaciones OAuth](manage-app-permissions.md) conectada a su entorno, puede establecer directivas de permisos para recibir notificaciones automatizadas cuando una aplicación OAuth cumpla determinados criterios. Por ejemplo, puede recibir automáticamente una alerta cuando haya aplicaciones que requieran un nivel de permisos elevado y que hayan sido autorizadas por más de 50 usuarios.
 
-Las directivas de aplicación de OAuth de la aplicación permiten investigar qué permisos ha solicitado cada aplicación y qué usuarios los han autorizado para Office 365, G Suite y Salesforce. También es posible marcar estos permisos como aprobados o prohibidos. Si se marcan como prohibidos, se revocarán los permisos de cada aplicación para cada usuario que la haya autorizado.
+Las directivas de aplicación de OAuth permiten investigar qué permisos solicitó cada aplicación y qué usuarios los autorizaron para Microsoft 365, G Suite y Salesforce. También es posible marcar estos permisos como aprobados o prohibidos. Si se marcan como prohibidos, se revocarán los permisos de cada aplicación para cada usuario que la haya autorizado.
 
 ## <a name="create-a-new-oauth-app-policy"></a>Crear una directiva de aplicación de OAuth
 

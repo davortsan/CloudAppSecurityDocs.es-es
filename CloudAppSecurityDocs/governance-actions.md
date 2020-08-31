@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f2314c8204a1ca19ffed834ee8d231fec1a48575
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: b6ad9583cd250f438be0cf2d29e171777eaf8fb4
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88963648"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89150220"
 ---
 # <a name="governing-connected-apps"></a>Control de aplicaciones conectadas
 
@@ -71,7 +71,7 @@ Las siguientes acciones de gobernanza pueden realizarse para aplicaciones conect
 
     - **Poner en cuarentena de administrador** : el archivo se mueve a la cuarentena en la unidad de administración y el administrador tiene que aprobarlo.
 
-  - **Heredar permisos del primario**: esta acción de control permite quitar el conjunto de permisos específicos para un archivo o carpeta en Office 365. Después, los revierte a los permisos establecidos para la carpeta principal.
+  - **Heredar permisos del elemento primario** : esta acción de gobierno permite quitar permisos concretos establecidos para un archivo o una carpeta en Microsoft 365. Después, los revierte a los permisos establecidos para la carpeta principal.
 
   - **Enviar a la papelera**: el archivo se mueve a la carpeta de la Papelera. (Box, Dropbox, Google Drive, OneDrive, SharePoint)
 
@@ -122,7 +122,7 @@ Para ver el registro de gobierno, en la barra de menús, haga clic en el engrana
 En la tabla siguiente se muestra una lista completa de las acciones que Cloud App Security permite realizar. Estas acciones se habilitarán en varios lugares de la consola, como se describe en la columna **Ubicación**. Cada acción de gobernanza realizada se incluye en el registro de gobernanza.
 Para obtener información sobre cómo se tratan las acciones de control cuando hay conflictos de directivas, vea [Policy Conflicts](control-cloud-apps-with-policies.md) (Conflictos de directivas).
 
-| Location | Tipo de objeto de destino | Acción de gobierno |Descripción| Conectores relacionados|
+| Location | Tipo de objeto de destino | Acción de gobierno |Description| Conectores relacionados|
 |-------------------|---------|-----|--------|-------|
 |Cuentas |Archivo |Quitar las colaboraciones del usuario | Se quitan todas las colaboraciones de un usuario específico en cualquiera de los archivos. Resulta conveniente cuando las personas dejan la empresa. |Box, G Suite|
 |Cuentas | Cuenta | Anular la suspensión del usuario |Se anula la suspensión del usuario. |G Suite, Box, Office, Salesforce|
@@ -132,27 +132,27 @@ Para obtener información sobre cómo se tratan las acciones de control cuando h
 |Directiva de actividad, Cuentas | Cuenta |Requerir que el usuario vuelva a iniciar sesión|Revoca todos los tokens de actualización y los problemas de cookies de sesión a las aplicaciones por parte del usuario. Esta acción impedirá el acceso a cualquiera de los datos de la organización y obligará al usuario a iniciar sesión en todas las aplicaciones de nuevo.| G Suite, Office|
 |Directiva de actividad, Cuentas | Cuenta |Confirmar vulneración de la identidad del usuario|Establezca el nivel de riesgo del usuario en alto. Esto hace que se apliquen las acciones de directiva relevantes definidas en Azure AD. | Office |
 |Directiva de actividad, Cuentas | Cuenta | Revocar privilegios de administrador |Revoca los privilegios de una cuenta de administrador. Por ejemplo, establecer una directiva de actividad que revoca los privilegios de administrador tras 10 intentos de inicio de sesión infructuosos. | G Suite|
-|Panel de la aplicación > Permisos de aplicación |Permisos|Cancelar prohibición de aplicación| En Google y Salesforce: quite la prohibición de una aplicación y permita que los usuarios concedan permisos a la aplicación de terceros con Google o Salesforce. En Office 365: restaura los permisos de la aplicación de terceros en Office. |G Suite, Salesforce, Office |
+|Panel de la aplicación > Permisos de aplicación |Permisos|Cancelar prohibición de aplicación| En Google y Salesforce: quite la prohibición de una aplicación y permita que los usuarios concedan permisos a la aplicación de terceros con Google o Salesforce. En Microsoft 365: restaura los permisos de la aplicación de terceros en Office. |G Suite, Salesforce, Office |
 |Panel de la aplicación > Permisos de aplicación |Permisos| Deshabilitar permisos de aplicación | Revoque los permisos de una aplicación de terceros para acceder a Google, Salesforce u Office. Se trata de una acción única que se producirá en todos los permisos existentes, pero no impedirá las conexiones futuras.|G Suite, Salesforce, Office |
 |Panel de la aplicación > Permisos de aplicación |Permisos| Habilitar permisos de aplicación |Conceda los permisos de una aplicación de terceros para acceder a Google, Salesforce u Office. Se trata de una acción única que se producirá en todos los permisos existentes, pero no impedirá las conexiones futuras.|G Suite, Salesforce, Office |
-|Panel de la aplicación > Permisos de aplicación |Permisos| Prohibir una aplicación | En Google y Salesforce: revoque los permisos que tiene una aplicación de terceros en Google o Salesforce y prohíba que reciba permisos en el futuro. En Office 365: no permite el permiso de aplicaciones de terceros para tener acceso a Office, pero no los revoca. |G Suite, Salesforce, Office |
+|Panel de la aplicación > Permisos de aplicación |Permisos| Prohibir una aplicación | En Google y Salesforce: revoque los permisos que tiene una aplicación de terceros en Google o Salesforce y prohíba que reciba permisos en el futuro. En Microsoft 365: no permite que los permisos de aplicaciones de terceros accedan a Office, pero no los revoca. |G Suite, Salesforce, Office |
 |Panel de la aplicación > Permisos de aplicación |Permisos|Revocar aplicación|Revoque los permisos de una aplicación de terceros para acceder a Google o Salesforce. Se trata de una acción única que se producirá en todos los permisos existentes, pero no impedirá las conexiones futuras. | G Suite, Salesforce|
 |Panel de la aplicación > Permisos de aplicación | Cuenta | Revocar usuario de la aplicación|Se pueden revocar usuarios específicos al hacer clic en el número bajo Usuarios. La pantalla mostrará los usuarios específicos y puede usar la X para eliminar los permisos para cualquiera de ellos.| G Suite, Salesforce|
-|Detectar > Aplicaciones detectadas/Direcciones IP/Usuarios| Cloud Discovery | Exportar datos de detección | Se crea un archivo CSV a partir de los datos de detección. | Detección |
+|Detectar > Aplicaciones detectadas/Direcciones IP/Usuarios| Cloud Discovery | Exportar datos de detección | Se crea un archivo CSV a partir de los datos de detección. | de esquema JSON |
 |Directiva de archivo|Archivo |Enviar a la papelera|Mueve el archivo en la papelera del usuario.| Box, Dropbox, Google Drive, OneDrive, SharePoint |
 |Directiva de archivo|Archivo | Enviar una notificación al último editor del archivo |Se envía un correo para informar a la última persona que editó el archivo de que este infringe una directiva. |G Suite, Box|
 |Directiva de archivo|Archivo |Enviar una notificación al propietario del archivo|Envía un correo electrónico al propietario del archivo cuando se infringe una directiva. En Dropbox, si no hay ningún propietario asociado a un archivo, la notificación se enviará al usuario específico que establezca. | Todas las aplicaciones |
 |Directiva de archivo, Directiva de actividad | Archivo, Actividad | Enviar una notificación a usuarios concretos |Se envía un correo para informar a determinados usuarios de que un archivo infringe una directiva.| Todas las aplicaciones |
 |Directiva de archivo y Directiva de actividad | Archivo, Actividad |Enviar notificación al usuario|Se envía un correo a los usuarios para informarles de que algo que han hecho o un archivo que poseen infringe una directiva. Se puede agregar una notificación personalizada que indique en qué consistió la infracción. |All |
 |Directiva de archivo y archivos|Archivo | Quitar la capacidad de compartir de los editores|En Google Drive, los permisos de editor predeterminados de un archivo permiten también compartir ese archivo. Esta acción de gobernanza restringe esta opción y limita el uso compartido del archivo al propietario.| G Suite|
-|Directiva de archivo y archivos|Archivo | [Poner en cuarentena de administrador](use-case-admin-quarantine.md) |Quita todos los permisos del archivo y mueve el archivo a una carpeta de cuarentena en una ubicación para el administrador. Esta acción permite al administrador revisar el archivo y quitarlo.| Office 365 SharePoint, OneDrive para la Empresa, Box|
+|Directiva de archivo y archivos|Archivo | [Poner en cuarentena de administrador](use-case-admin-quarantine.md) |Quita todos los permisos del archivo y mueve el archivo a una carpeta de cuarentena en una ubicación para el administrador. Esta acción permite al administrador revisar el archivo y quitarlo.| Microsoft 365 SharePoint, OneDrive para la empresa, Box|
 |Directiva de archivo y archivos|Archivo | Aplicar etiqueta de clasificación|Se aplica una etiqueta de clasificación de Azure Information Protection a los archivos de forma automática en función de las condiciones establecidas en la directiva.| Box, One Drive, G Suite, SharePoint |
 |Directiva de archivo y archivos|Archivo | Quitar etiqueta de clasificación | Se quita una etiqueta de clasificación de Azure Information Protection de los archivos de forma automática en función de las condiciones establecidas en la directiva. Solo puede quitar las etiquetas si no incluyen protección y se aplicaron desde Cloud App Security, no directamente desde Information Protection.| Box, One Drive, G Suite, SharePoint |
-|Directiva de archivo, Directiva de actividad, Alertas | Aplicación |Requerir a los usuarios que inicien sesión de nuevo| Puede requerir a los usuarios que inicien sesión de nuevo en todas las aplicaciones de Office 365 y Azure AD como una solución rápida y eficaz en el caso de alertas de actividad sospechosa del usuario y cuentas en peligro. Encontrará la nueva acción de gobernanza en la configuración de directiva y las páginas de alertas, junto a la opción Suspender usuario. | Office 365, Azure AD |
+|Directiva de archivo, Directiva de actividad, Alertas | Aplicación |Requerir a los usuarios que inicien sesión de nuevo| Puede exigir a los usuarios que inicien sesión de nuevo en todas las aplicaciones Microsoft 365 y Azure AD como una solución rápida y eficaz en el caso de alertas de actividad sospechosa del usuario y cuentas en peligro. Encontrará la nueva acción de gobernanza en la configuración de directiva y las páginas de alertas, junto a la opción Suspender usuario. | Microsoft 365, Azure AD |
 |Archivos |Archivo |Restaurar de la cuarentena de usuario |Se restaura un usuario que estaba en cuarentena. |Cuadro |
 |Archivos |Archivo | Concederme permisos de lectura| Se concede permisos de lectura para el archivo a sí mismo con el fin de tener acceso al archivo y saber si existe o no una infracción en él.| G Suite|
 |Archivos |Archivo | Permitir que los editores compartan | En Google Drive, los permisos de editor predeterminados de un archivo permiten también compartir ese archivo. Esta acción de gobierno es lo contrario de la capacidad del editor de quitar recursos compartidos y permite que el editor comparta el archivo. | G Suite|
-|Archivos |Archivo | Protección | Proteja un archivo con Azure Information Protection aplicando una plantilla de la organización. | Office 365 (SharePoint y OneDrive) |
+|Archivos |Archivo | Protección | Proteja un archivo con Azure Information Protection aplicando una plantilla de la organización. | Microsoft 365 (SharePoint y OneDrive) |
 |Archivos |Archivo | Revocar mis propios permisos de lectura | Se revocan los permisos de lectura para el archivo de uno mismo. Esto es útil después de haberse concedido permisos manualmente para saber si un archivo tiene o no una infracción.| G Suite|
 |Archivos, Directiva de archivo|Archivo | Transferir la propiedad de los archivos | Se cambia el propietario: en la directiva se elige un propietario específico. | G Suite|
 |Archivos, Directiva de archivo|Archivo | Reducir el acceso público|Esta acción permite establecer que los archivos disponibles públicamente solo estén disponibles con un vínculo compartido.| G Suite|
@@ -165,10 +165,10 @@ Para obtener información sobre cómo se tratan las acciones de control cuando h
 |Archivos|Archivo|Cambio del nivel de acceso del vínculo compartido|Cambia el nivel de acceso del vínculo compartido entre la empresa solo, solo los colaboradores y público.| Cuadro|
 |Archivos, Directiva de archivo|Archivo | Quitar el acceso público| Si pone un archivo suyo como de acceso público, pasa a ser accesible para quien esté configurado para tener acceso a él, según el tipo de acceso que tuviera el archivo. | G Suite|
 |Archivos, Directiva de archivo|Archivo |Quitar el vínculo compartido directo| Se quita un vínculo creado para un archivo que es público, pero que solo se comparte con personas específicas.|Cuadro |
-|Configuración > Configuración de Cloud Discovery| Cloud Discovery | Recalcular las puntuaciones de Cloud Discovery |Se recalculan las puntuaciones en el catálogo de aplicaciones de Cloud tras un cambio en la métrica de puntuación.| Detección |
-|Configuración > Configuración de Cloud Discovery > Administrar vistas de datos| Cloud Discovery | Crear vista de datos de filtro personalizado de Cloud Discovery|Se crea una vista de datos para obtener una vista más detallada de los resultados de la detección. Por ejemplo, intervalos de IP específicos. | Detección |
-|Configuración > Configuración de Cloud Discovery > Eliminar datos| Cloud Discovery | Eliminar datos de Cloud Discovery |Se eliminan todos los datos recopilados de los orígenes de detección.| Detección |
-|Configuración > Configuración de Cloud Discovery > Cargar registros manualmente/Cargar registros automáticamente | Cloud Discovery | Analizar datos de Cloud Discovery| Notificación de que todos los datos de registro se han analizado. | Detección |
+|Configuración > Configuración de Cloud Discovery| Cloud Discovery | Recalcular las puntuaciones de Cloud Discovery |Se recalculan las puntuaciones en el catálogo de aplicaciones de Cloud tras un cambio en la métrica de puntuación.| de esquema JSON |
+|Configuración > Configuración de Cloud Discovery > Administrar vistas de datos| Cloud Discovery | Crear vista de datos de filtro personalizado de Cloud Discovery|Se crea una vista de datos para obtener una vista más detallada de los resultados de la detección. Por ejemplo, intervalos de IP específicos. | de esquema JSON |
+|Configuración > Configuración de Cloud Discovery > Eliminar datos| Cloud Discovery | Eliminar datos de Cloud Discovery |Se eliminan todos los datos recopilados de los orígenes de detección.| de esquema JSON |
+|Configuración > Configuración de Cloud Discovery > Cargar registros manualmente/Cargar registros automáticamente | Cloud Discovery | Analizar datos de Cloud Discovery| Notificación de que todos los datos de registro se han analizado. | de esquema JSON |
 
 ## <a name="next-steps"></a>Pasos siguientes
 

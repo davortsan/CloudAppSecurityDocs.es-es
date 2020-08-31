@@ -9,12 +9,12 @@ ms.date: 06/28/2020
 ms.topic: how-to
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6639761e2be3ef2f5a0bd9d5367bad44f0d12895
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 60710c450515b6cf7cf355b3dc370798df24cbe8
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781164"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89149897"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security"></a>Conectar Google Cloud Platform a Microsoft Cloud App Security
 
@@ -42,7 +42,7 @@ Dado que puede Agregar una o ambas conexiones, los pasos de este artículo se es
 
 La conexión de la auditoría de seguridad GCP proporciona visibilidad y control sobre el uso de la aplicación de GCP.
 
-Siga estos pasos para conectar la auditoría de seguridad de AWS a Cloud App Security.
+Siga estos pasos para conectar la auditoría de seguridad de GCP a Cloud App Security.
 
 > [!div class="checklist"]
 >

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1b0e6f838435b84d285881353c6a7b0f371b7670
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 25020539ecc5a0ae48e8cb3d6b1c6ce0387a7d2a
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779379"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89149744"
 ---
 # <a name="activity-filters-and-queries"></a>Consultas y filtros de actividad
 
@@ -95,7 +95,7 @@ A continuación se muestra una lista de los filtros de actividad que se pueden a
 - Usuario: el usuario que realizó la actividad, que se puede filtrar en el dominio, grupo, nombre u organización. Para filtrar las actividades sin un usuario específico, puede usar el operador ' no establecido '.
   - Dominio del usuario: busca un dominio de usuario específico.
   - Organización de usuario: unidad organizativa del usuario que ha realizado la actividad, por ejemplo, todas las actividades realizadas por usuarios de marketing o EMEA. Esto solo es relevante para las instancias conectadas de G Suite mediante unidades organizativas.
-  - Grupo de usuarios: grupos de usuarios específicos que puede importar de aplicaciones conectadas, como administradores de Office 365.
+  - Grupo de usuarios: grupos de usuarios específicos que puede importar de aplicaciones conectadas, por ejemplo, Microsoft 365 administradores.
   - Nombre de usuario: busca por un nombre de usuario específico. Para ver una lista de los usuarios de un grupo de usuarios específico, en el **Cajón de actividades**, haga clic en el nombre del grupo de usuarios. Al hacer clic se le lleva a la página Cuentas, en la que se enumeran todos los usuarios del grupo. Desde ahí puede profundizar en los detalles de las cuentas de usuarios específicos del grupo.
   - Los filtros **Grupo de usuarios** y **Nombre de usuario** se pueden filtrar aún más si se usa el filtro **Como** y se selecciona el rol del usuario, que puede ser uno de los siguientes:
     - Objeto de actividad solo: significa que el usuario o grupo de usuarios seleccionado no ha realizado la actividad en cuestión, sino que era el objeto de la actividad.
@@ -132,7 +132,7 @@ Cloud App Security también le proporciona **consultas sugeridas**. Las consulta
 
 - Actividades de descarga: filtra todas las actividades para mostrar solo aquellas que fueron actividades de descarga, incluida la descarga de la lista de usuarios como un archivo .csv, la descarga de contenido compartido y la descarga de una carpeta.
 
-- Error al iniciar sesión: filtra todas las actividades para mostrar solo los errores al iniciar sesión a través de SSO.
+- Error de inicio de sesión: filtra todas las actividades para mostrar solo los inicios de sesión erróneos y el inicio de sesión con error mediante SSO
 
 - Actividades de archivo y carpeta: filtra todas las actividades para mostrar solo aquellas en las que intervienen archivos y carpetas. El filtro incluye la carga y descarga de carpetas y el acceso a estas, junto con la creación, eliminación, carga, descarga y puesta en cuarentena de los archivos, el acceso a estos y la transferencia de contenido.
 
@@ -146,7 +146,7 @@ Cloud App Security también le proporciona **consultas sugeridas**. Las consulta
 
 - Actividades de uso compartido: filtra todas las actividades para mostrar solo aquellas que implican compartir carpetas y archivos, incluidas la creación de un vínculo de la empresa, la creación de un vínculo anónimo y la concesión de permisos de lectura y escritura.
 
-- Inicio de sesión correcto: filtra todas las actividades para mostrar solo aquellas que implican inicios de sesión correctos, entre los que se incluyen la acción de suplantar, el inicio de sesión de suplantación, el inicio de sesión único y el inicio de sesión desde un nuevo dispositivo.
+- Inicio de sesión correcto: filtra todas las actividades para mostrar solo las actividades que implican inicios de sesión correctos, incluida la acción suplantar, suplantar el inicio de sesión, Inicio de sesión único e iniciar sesión desde un dispositivo nuevo.
 
 ![consultar actividades](media/queries-activity.png)
 

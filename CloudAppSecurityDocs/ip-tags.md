@@ -14,20 +14,20 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c952539aaa864c6634bc45cdbb1589bec42a175e
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: a9080e92adf919d0f6a96299db69ad34f55cee5d
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781691"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89150166"
 ---
-#  <a name="working-with-ip-ranges-and-tags"></a><a name="IPtagsandRanges"></a> Trabajar con etiquetas e intervalos IP
+#  <a name="working-with-ip-ranges-and-tags"></a><a name="IPtagsandRanges"></a> Trabajar con etiquetas y intervalos IP
 
 *Se aplica a: Microsoft Cloud App Security*
 
 Para identificar fácilmente las direcciones IP conocidas, como las direcciones IP de oficina física, deberá establecer los intervalos de direcciones IP. Los intervalos de direcciones IP permiten etiquetar, clasificar y personalizar la forma en que los registros y alertas se muestran e investigan. Cada grupo de intervalos IP se puede clasificar en función de una lista predeterminada de categorías IP. También podrá crear etiquetas IP personalizadas para los intervalos IP. Además, puede invalidar la información de geolocalización pública según su conocimiento de la red interna. Se admiten tanto IPv4 como IPv6.
 
-Cloud App Security está preconfigurado con intervalos IP integrados de proveedores populares de servicios en la nube como Azure y Office 365. También hay etiquetas integradas basadas en la inteligencia sobre amenazas de Microsoft, incluidos proxy anónimos, redes de robots (botnet) y Tor. Puede ver la lista completa en la lista desplegable de la página de intervalos de direcciones IP.
+Cloud App Security viene preconfigurado con intervalos IP integrados para proveedores de nube populares, como Azure y Microsoft 365. También hay etiquetas integradas basadas en la inteligencia sobre amenazas de Microsoft, incluidos proxy anónimos, redes de robots (botnet) y Tor. Puede ver la lista completa en la lista desplegable de la página de intervalos de direcciones IP.
 
 > [!NOTE]
 >

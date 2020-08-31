@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 18e4aa471a5223234b961e62742f69b2f93d03ae
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 9d9032b0084a1c25290f8e067279f9ef7e66f8a6
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88780331"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89150084"
 ---
 # <a name="microsoft-data-classification-services-integration"></a>Integración de los servicios de clasificación de datos de Microsoft
 
 *Se aplica a: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security le permite usar el servicio de clasificación de datos de Microsoft de forma nativa para clasificar los archivos de las aplicaciones en la nube. El servicio de clasificación de datos de Microsoft proporciona una experiencia de protección de información unificada en Office 365, Azure Information Protection y Microsoft Cloud App Security. Este servicio de clasificación permite ampliar el trabajo de clasificación de datos a las aplicaciones en la nube de terceros que están protegidas por Microsoft Cloud App Security, aprovechando las decisiones ya adoptadas en un número aún mayor de aplicaciones.
+Microsoft Cloud App Security le permite usar el servicio de clasificación de datos de Microsoft de forma nativa para clasificar los archivos de las aplicaciones en la nube. El servicio de clasificación de datos de Microsoft proporciona una experiencia de protección de la información unificada en Microsoft 365, Azure Information Protection y Microsoft Cloud App Security. Este servicio de clasificación permite ampliar el trabajo de clasificación de datos a las aplicaciones en la nube de terceros que están protegidas por Microsoft Cloud App Security, aprovechando las decisiones ya adoptadas en un número aún mayor de aplicaciones.
 
 >[!NOTE]
 > Esta característica está actualmente disponible en Estados Unidos, Europa, Australia, India, Canadá, Japón y APAC.
@@ -50,7 +50,7 @@ Tiene la opción para establecer el **método de inspección** para que use el *
 
 6. Al aprovechar las directivas de archivo, también puede establecer alertas y acciones de gobierno para la Directiva. Para obtener más información, consulte [Directivas de archivo](data-protection-policies.md) y [Acciones de gobernanza](governance-actions.md). Al aprovechar las directivas de sesión, también puede supervisar y controlar las acciones en tiempo real cuando un archivo coincide con un tipo de DC. Para obtener más información, vea [Directiva de sesión](session-policy-aad.md).
 
-Configurar estas directivas es una manera sencilla de llevar la eficacia de las capacidades de DLP de Office 365 al resto de las aplicaciones en la nube autorizadas, y de proteger los datos almacenados en ellas con el conjunto de herramientas completo suministrado por Microsoft Cloud App Security: por ejemplo, la capacidad de [aplicar automáticamente las etiquetas de clasificación de Azure Information Protection](azip-integration.md) y la capacidad para controlar permisos de uso compartido.
+La configuración de estas directivas le permite ampliar fácilmente la seguridad de las funciones de DLP Microsoft 365 a todas las demás aplicaciones autorizadas en la nube y proteger los datos almacenados en ellas con el conjunto de herramientas completo que le proporciona Microsoft Cloud App Security, como la capacidad de [aplicar automáticamente etiquetas de clasificación de Azure Information Protection](azip-integration.md) y la capacidad de controlar los permisos de uso compartido.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

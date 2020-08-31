@@ -1,6 +1,6 @@
 - name: Documentación de Microsoft Cloud App Security
   href: index.yml
-- name: Introducción
+- name: Información general
   items:
     - name: "¿Qué es Microsoft\_Cloud App Security?"
       href: what-is-cloud-app-security.md
@@ -73,7 +73,7 @@
           href: protect-gcp.md
         - name: Protección de G Suite
           href: protect-gsuite.md
-        - name: "Protección de Office\_365"
+        - name: "Protección de Microsoft\_365"
           href: protect-office-365.md
         - name: Protección de Okta
           href: protect-okta.md
@@ -163,7 +163,7 @@
           href: connect-google-apps-to-microsoft-cloud-app-security.md
         - name: Conexión de GCP
           href: connect-google-gcp-to-microsoft-cloud-app-security.md
-        - name: Conexión de Office 365
+        - name: "Conexión de Microsoft\_365"
           href: connect-office-365-to-microsoft-cloud-app-security.md
         - name: Conexión de Okta
           href: connect-okta-to-microsoft-cloud-app-security.md

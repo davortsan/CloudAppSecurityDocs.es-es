@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 534c12f66d52c1085477c90fc36d43f004324fb1
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: ab60b9237af0d2dadbfbe6c48b6e2f17ff80df3b
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88963920"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89150288"
 ---
 # <a name="generic-siem-integration"></a>Integración de SIEM genérica
 
@@ -160,7 +160,7 @@ El siguiente texto es un ejemplo de archivo de registro de alertas:
 | Actividades y alertas | rt | Marca de tiempo de actividad o alerta |
 | Actividades y alertas | msg | Descripción de la actividad o alerta, tal como se muestra en el portal |
 | Actividades y alertas | suser | Usuario asunto de la actividad o alerta |
-| Actividades y alertas | destinationServiceName | Aplicación que origina la actividad o alerta, por ejemplo, Office 365, SharePoint, Box. |
+| Actividades y alertas | destinationServiceName | Aplicación que origina la actividad o alerta, por ejemplo, Microsoft 365, SharePoint, Box. |
 | Actividades y alertas | cs\<X>Label | Cada etiqueta tiene un significado diferente, pero la misma etiqueta lo explica, por ejemplo, targetObjects. |
 | Actividades y alertas | cs\<X> | La información correspondiente a la etiqueta (el usuario de destino de la actividad o alerta según el ejemplo de etiqueta). |
 | Actividades | EVENT_CATEGORY_* | Categoría general de la actividad |

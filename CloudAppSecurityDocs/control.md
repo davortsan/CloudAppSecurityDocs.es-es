@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a0b884f08fcf743faf2c37fe3ff065535aefb77a
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 7143b8a8b98e95dffdd5e27cc56ba9e9b6c6ded5
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88780603"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89149844"
 ---
 # <a name="control"></a>Control
 
@@ -82,7 +82,7 @@ Cloud App Security le ayuda a implementar las migraciones, ya que le informa de 
 
 ### <a name="migrate-your-users-to-a-new-app"></a>Migrar a los usuarios a una nueva aplicación
 
-Imagínese esta situación: hace poco adquirió Office 365 y quiere que todos los usuarios de la organización dejen de usar todas las demás aplicaciones de almacenamiento en la nube y empiecen a usar OneDrive. Esto es lo que puede hacer:
+Imagínese este escenario: ha comprado recientemente Microsoft 365 y desea que todos los usuarios de su organización dejen de usar todas las demás aplicaciones de almacenamiento en la nube y empiecen a usar OneDrive. Esto es lo que puede hacer:
 
 1. Vaya al **panel de Cloud Discovery** y, en **Categorías de aplicaciones**, filtre las aplicaciones por **Almacenamiento en la nube**. Ordene los resultados por **Usuarios** o **Direcciones IP** y compruebe qué aplicación es la más popular.
 

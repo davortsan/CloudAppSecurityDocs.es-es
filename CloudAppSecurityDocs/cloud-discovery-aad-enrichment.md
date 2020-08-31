@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1e6f89d896612c48b567435e06ecf2fa475e119e
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 0f7ce34e19fa1b4a62b8d3786eae6898a19a428f
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781283"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89149616"
 ---
 # <a name="cloud-discovery-enrichment"></a>Enriquecimiento de Cloud Discovery
 
@@ -34,7 +34,7 @@ Ahora es posible mejorar los datos de Cloud Discovery con datos de nombre de usu
 ## <a name="prerequisites"></a>Requisitos previos
 
 - El origen de datos debe proporcionar información sobre el nombre de usuario.
-- El conector de aplicaciones de Office 365 debe estar conectado.
+- Conectar Microsoft 365 conector de aplicaciones
 
 ## <a name="enabling-user-data-enrichment"></a>Habilitar el enriquecimiento de datos del usuario
 

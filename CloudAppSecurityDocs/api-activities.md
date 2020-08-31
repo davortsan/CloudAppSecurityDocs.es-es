@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 0f6528074003d43777d21e956961739a19584742
-ms.sourcegitcommit: 84eafb4926bf0d4db27bed7df55dc83ca48f9192
+ms.openlocfilehash: 73045177f79bb17c5adbf2d19c9c41875e135b51
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87377837"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89149727"
 ---
 # <a name="activities-api"></a>API de actividades
 
@@ -35,7 +35,7 @@ Para obtener información sobre cómo funcionan los filtros, vea [filtros](api-i
 
 En la tabla siguiente se describen los filtros admitidos:
 
-| Filter | Tipo | Operadores | Descripción |
+| Filtrar | Tipo | Operadores | Descripción |
 | --- | --- | --- | --- |
 | service | integer | EQ, Neq | Filtre las actividades relacionadas con el appID de servicio especificado, por ejemplo: 11770 |
 | instance | integer | EQ, Neq | Filtrar actividades de instancias especificadas |
@@ -53,7 +53,7 @@ En la tabla siguiente se describen los filtros admitidos:
 | Ubicación. organizaciones | string | EQ, Neq, isset, isnotset, Contains | Filtrar actividades procedentes de la organización especificada |
 | Dirección IP. | string | EQ, StartsWith, doesnotstartwith, isset, isnotset, Neq | Filtrar actividades que se originan en la dirección IP determinada |
 | fileSelector | archivo | EQ, Neq | Filtrar las actividades que contienen el archivo o carpeta especificados |
-| office365url | string | StartsWith, EQ, EndsWith | Filtrar actividades por direcciones URL de Office 365 |
+| office365url | string | StartsWith, EQ, EndsWith | Filtrar actividades por direcciones URL de Microsoft 365 |
 | fileId | string | eq | Buscar un archivo por identificador |
 | IP. categoría | integer | EQ, Neq | Filtre las actividades con las categorías de subred especificadas. Los valores posibles son:<br /><br />**1**: empresa<br />**2**: administración<br />**3**: arriesgado<br />**4**: VPN<br />**5**: proveedor de la nube<br />**6**: otros |
 | IP. Tags | string | EQ, Neq | Filtrar actividades por ID. de etiquetas IP |

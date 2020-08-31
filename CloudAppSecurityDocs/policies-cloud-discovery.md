@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f76e77edff81d8104ecafa3ba03d146400a86dea
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 01becaab45d0276599bcdf5b42d3aadcfe31b259
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624912"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89149840"
 ---
 # <a name="cloud-discovery-policies"></a>Directivas de Cloud Discovery
 
@@ -24,7 +24,7 @@ En este artículo se proporciona información general sobre cómo empezar a usar
 
 Cloud App Security permite detectar y analizar las aplicaciones en la nube que se usan en el entorno de la organización. En el panel de Cloud Discovery se muestran todas las aplicaciones en la nube que se ejecutan en el entorno y se clasifican por función y preparación para la empresa. Para cada aplicación, detecte los usuarios asociados, las direcciones IP, las máquinas, las transacciones y realiza la evaluación de riesgos sin necesidad de instalar un agente en los dispositivos de punto de conexión.
 
-## <a name="detect-new-high-volume-or-wide-app-use"></a>Detección de un nuevo uso de aplicaciones grandes o de gran volumen<a name= "detect-volume"></a>
+## <a name="detect-new-high-volume-or-wide-app-use"></a>Detección de un nuevo uso de aplicaciones grandes o de gran volumen <a name= "detect-volume"></a>
 
 Detecte las nuevas aplicaciones que se usan con mucha capacidad, en cuanto al número de usuarios o la cantidad de tráfico de su organización.
 
@@ -134,26 +134,26 @@ Configure la carga de registros automática para informes de Cloud Discovery con
 
 ## <a name="detect-risky-oauth-apps"></a>Detección de aplicaciones de OAuth peligrosas
 
-Obtenga visibilidad y control sobre las [aplicaciones de OAuth](investigate-risky-oauth.md) que se instalan dentro de aplicaciones como G Suite, Office 365 y Salesforce. Las aplicaciones de OAuth que solicitan permisos altos y tienen poco uso de la comunidad se pueden considerar arriesgadas.
+Obtenga visibilidad y control sobre las [aplicaciones de OAuth](investigate-risky-oauth.md) que se instalan dentro de aplicaciones como G Suite, Microsoft 365 y Salesforce. Las aplicaciones de OAuth que solicitan permisos altos y tienen poco uso de la comunidad se pueden considerar arriesgadas.
 
 ### <a name="prerequisites"></a>Requisitos previos
 
-Debe tener la aplicación G Suite, Office 365 o Salesforce conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+Debe tener la aplicación G Suite, Microsoft 365 o Salesforce conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>Pasos
 
 1. En la página **directivas** , cree una nueva **Directiva de aplicación de OAuth**.
 
-2. Seleccione la **aplicación** de filtro y establezca la aplicación que debe cubrir la Directiva, G Suite, Office 365 o Salesforce.
+2. Seleccione la **aplicación** de filtro y establezca la aplicación que debe cubrir la Directiva, G Suite, Microsoft 365 o Salesforce.
 
-3. Seleccione el filtro de **nivel de permiso** es igual a **alto** (disponible para G Suite y O365).
+3. Seleccione el filtro de **nivel de permiso** es igual a **alto** (disponible para G Suite y Microsoft 365).
 
 4. Agregar el uso de la **comunidad** de filtros es igual a **inusual**.
 
-5. Configure las acciones que deben llevarse a cabo cuando se desencadene una alerta. Por ejemplo, para Office 365, Active **revocar aplicación** para OAuth aplicaciones detectadas por la Directiva.
+5. Configure las acciones que deben llevarse a cabo cuando se desencadene una alerta. Por ejemplo, para Microsoft 365, Active **revocar aplicación** para OAuth aplicaciones detectadas por la Directiva.
 
 > [!NOTE]
-> Compatible con tiendas de aplicaciones de G Suite, Office 365 y Salesforce.
+> Se admite para tiendas de aplicaciones de G Suite, Microsoft 365 y Salesforce.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
