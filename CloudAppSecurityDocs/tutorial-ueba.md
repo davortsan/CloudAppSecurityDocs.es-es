@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 89da56403cbd6239094e58bebdd2a78ef3558edc
-ms.sourcegitcommit: a6d6ab856bc06591d8ccdb5bf9dfd506dcd90e20
+ms.openlocfilehash: 7252a7c18278a6e536c26b3f84f5c51d09c72efe
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83579790"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88964073"
 ---
 # <a name="tutorial-investigate-risky-users"></a>Tutorial: Investigación de usuarios de riesgo
 
@@ -71,10 +71,10 @@ Para identificar quiénes son los usuarios de más riesgo en Cloud App Security:
 1. Vaya al panel de Cloud App Security y examine las personas identificadas en el icono **Usuarios principales por prioridad de investigación**. Luego, uno por uno, vaya a su página de usuario para investigarlos.  
 El **número de prioridad de investigación**, que se encuentra junto al nombre de usuario, es la suma de todas las actividades de riesgo del usuario durante la última semana.
 
-   ![Panel Usuarios principales](./media/dashboard-top-users.png)
+   ![Panel Usuarios principales](media/dashboard-top-users.png)
 
 1. Haga clic en un usuario determinado para llegar a la página **Usuario**.
-    ![Página Usuario](./media/user-page.png)
+    ![Página Usuario](media/user-page.png)
 
 1. Revise la información de la página Usuario para obtener información general sobre el usuario y ver si hay puntos en los que dicho usuario haya realizado actividades inusuales para él o se hayan ejecutado a una hora inusual. **Puntuación del usuario en comparación con la de la organización** representa en qué percentil se encuentra el usuario según la clasificación de la organización: en qué puesto está en la lista de usuarios que debe investigar respecto a otros usuarios de la organización. El número aparecerá en color rojo si un usuario está en el percentil 90 de los usuarios de riesgo de toda la organización o por encima de dicho percentil.  
 La página Usuario le ayuda a responder a las siguientes preguntas:

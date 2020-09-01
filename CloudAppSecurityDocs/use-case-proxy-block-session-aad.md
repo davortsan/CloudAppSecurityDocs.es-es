@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d8208d654774aefd776da4ba1b3b1cbfda4caae7
-ms.sourcegitcommit: 826d2ec022647bce6c3135c115a41ee894ff8ecd
+ms.openlocfilehash: e3b170d932c66532d421604f63f956a891d17663
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800714"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88963852"
 ---
 # <a name="tutorial-block-download-of-sensitive-information"></a>Tutorial: Bloqueo de la descarga de información confidencial
 
@@ -59,7 +59,7 @@ Las directivas de sesión de Cloud App Security permiten restringir una sesión 
 
 Asegúrese de que ha configurado la solución IdP para que funcione con Cloud App Security, como se indica a continuación:
 
-* En el caso del [acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), consulte [Configuración de la integración con Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad).
+* En el caso del [acceso condicional de Azure AD](/azure/active-directory/active-directory-conditional-access-azure-portal), consulte [Configuración de la integración con Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad).
 * Para información sobre otras soluciones IdP, consulte [Configuración de la integración con otras soluciones IdP](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions).
 
 Después de completar esta tarea, vaya al portal de Cloud App Security y cree una directiva de sesión para supervisar y controlar las descargas de archivos en la sesión.

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 341bc297d31f53cf446baec553e3abd6eec1c6df
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: 4f8e5c59de4dd05730dc6970ae1cbebe8f941356
+ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254727"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88964056"
 ---
 # <a name="tutorial-automatically-apply-azure-information-protection-classification-labels"></a>Tutorial: Aplicación automática de etiquetas de clasificación de Azure Information Protection
 
@@ -93,7 +93,7 @@ Vamos a configurar una directiva que busque los números de tarjeta de crédito 
 >[!NOTE]
 >
 > *- Actualmente, Cloud App Security admite la aplicación automática de etiquetas de Azure Information Protection en Box, GSuite, SharePoint y OneDrive para la Empresa.
-> *- Cuando un documento se etiqueta con Cloud App Security, no se aplican inmediatamente marcas visuales, sino que se aplican cuando se abre ese documento en una aplicación de Office y se guarda por primera vez. Para más información, consulte [Configuración de una etiqueta para marcas visuales de Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied).
+> *- Cuando un documento se etiqueta con Cloud App Security, no se aplican inmediatamente marcas visuales, sino que se aplican cuando se abre ese documento en una aplicación de Office y se guarda por primera vez. Para más información, consulte [Configuración de una etiqueta para marcas visuales de Azure Information Protection](/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
