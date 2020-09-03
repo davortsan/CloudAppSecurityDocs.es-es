@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: dd474cdaec20738f5969b5deba20b3c54dc82acb
-ms.sourcegitcommit: 684feff0782ed30f23f3d7fd9f3e063368f46b47
+ms.openlocfilehash: 47a9a4677b504fa746b13dcf87873c1e2d9a6634
+ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2020
-ms.locfileid: "88256828"
+ms.lasthandoff: 08/30/2020
+ms.locfileid: "89149506"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
@@ -450,8 +450,8 @@ Microsoft Cloud App Security ha ampliado sus capacidades de Cloud Discovery y
 - **Certificación de aplicaciones**  
 La evaluación de cumplimiento y riesgo de Microsoft Cloud App Security ahora permite que los proveedores de la nube certifiquen que la aplicación está actualizada en el catálogo de aplicaciones de la nube. Este programa piloto permite a los proveedores de la nube completar un cuestionario de autocertificación basado en los atributos de riesgo del catálogo de aplicaciones de la nube para asegurarse de que su evaluación de riesgos en Cloud App Security es precisa y está actualizada. Luego, los usuarios pueden obtener una indicación de qué atributos de riesgo fueron certificados por el proveedor (en lugar de que sea el equipo de Cloud App Security quien los evalúe) y el momento en que el proveedor envió cada atributo. Para obtener más información, consulte [Comprobaciones sobre la aplicación](attest-your-app.md).
 
-- **Granularidad de la carga de trabajo de Office 365**  
-Al conectar Office 365 con Microsoft Cloud App Security, ahora tiene control sobre qué cargas de trabajo desea conectar. Por ejemplo, los clientes interesados solo en conectar Office 365 para la supervisión de la actividad ahora pueden hacerlo durante el proceso de conexión, o mediante la edición de un conector de Office 365 existente. Como parte de este cambio, OneDrive y SharePoint Online ya no se mostrarán como conectores independientes, sino que se incluirán en el conector de Office 365 como la carga de trabajo de _archivos de Office 365_. Los clientes con un conector de Office 365 existente no se ven afectados por este cambio.
+- **Granularidad de la carga de trabajo de Microsoft 365**  
+Al conectar Microsoft 365 con Microsoft Cloud App Security, ahora tiene control sobre qué cargas de trabajo quiere conectar. Por ejemplo, los clientes interesados solo en conectar Microsoft 365 para la supervisión de la actividad ahora pueden hacerlo durante el proceso de conexión, o mediante la edición de un conector de Microsoft 365 existente. Como parte de este cambio, OneDrive y SharePoint ya no se mostrarán como conectores independientes, sino que se incluirán en el conector de Microsoft 365 como la carga de trabajo de _archivos de Office 365_. Los clientes con un conector de Microsoft 365 existente no se ven afectados por este cambio.
 
 - **Compatibilidad mejorada con Teams**  
 Ahora puede supervisar y bloquear el envío de mensajes en la aplicación web de Teams en tiempo real, mediante la configuración de una directiva de sesión basada en contenido confidencial.
@@ -506,7 +506,7 @@ Como parte de este cambio, las directivas de detección de malware ahora incluye
 El Control de aplicaciones de acceso condicional agregó la capacidad de supervisar y bloquear estas actividades:
   - Cargas de archivos en cualquier aplicación: habilitación de escenarios como la prevención de la carga de extensiones de malware conocidas y la garantía de protección de los archivos por parte de los usuarios con Azure Information Protection antes de cargarlos.
   - Copiar y pegar en cualquier aplicación: redondeo de controles sólidos de filtración de datos que ya incluía el control de actividades de descarga, impresión y personalizadas como el uso compartido.
-  - Enviar mensaje: garantía de que los datos PII como contraseñas no se comparten en herramientas de colaboración populares como Slack, Salesforce y Workplace de Facebook.
+  - Enviar mensaje: garantía de que los datos personales como las contraseñas no se comparten en herramientas de colaboración populares como Slack, Salesforce y Workplace de Facebook.
   - Las directivas de sesión ahora incluyen plantillas integradas para permitir que su organización habilite sin esfuerzo la supervisión en tiempo real y el control populares sobre sus aplicaciones autorizadas, como **Bloquear carga según la inspección de contenido en tiempo real**.
 
 ## <a name="cloud-app-security-release-143"></a>Notas de la versión 143 de Cloud App Security
@@ -516,11 +516,11 @@ Fecha de publicación: 17 de febrero de 2019
 - **Implementación de ámbito para instancias de la aplicación**  
 La implementación con ámbito ahora se puede configurar en el nivel de instancia de la aplicación, lo que permite un aumento de la granularidad y el control.
 - **Mejoras de roles**  
-  - Los roles de Office 365 de administrador de datos y operador de seguridad se admiten ahora en Cloud App Security. El rol de administrador de datos permite a los usuarios administrar todo aquello relacionado con los archivos, así como ver los informes de Cloud Discovery. Los operadores de seguridad tienen permiso para administrar alertas y ver la configuración de directivas.
+  - Los roles de administrador de datos y operador de seguridad de Microsoft 365 ahora en se admiten Cloud App Security. El rol de administrador de datos permite a los usuarios administrar todo aquello relacionado con los archivos, así como ver los informes de Cloud Discovery. Los operadores de seguridad tienen permiso para administrar alertas y ver la configuración de directivas.
   - El rol de lector de seguridad ahora puede configurar el agente SIEM, lo que permite un mejor ámbito de permiso.
 
 - **Soporte técnico de Microsoft Flow**  
-Cloud App Security ahora supervisa las actividades del usuario en Microsoft Flow. Las actividades admitidas son las actividades notificadas por Flow al registro de auditoría de Office 365.
+Cloud App Security ahora supervisa las actividades del usuario en Microsoft Flow. Las actividades admitidas son las que notifica Flow al registro de auditoría de Microsoft 365.
 
 - **Agrupación de entidades de alerta**  
 La página **Alerta** ahora agrupa las entidades relacionadas que están involucradas en la alerta para ayudar en la investigación.
@@ -535,8 +535,8 @@ Ahora puede configurar directivas de sesión para supervisar a los usuarios o bl
 - **Consultas sugeridas y guardadas para aplicaciones de OAuth**  
 Las consultas sugeridas se han agregado a la página de aplicaciones de OAuth y proporcionan plantillas de investigación predefinidas para filtrar las aplicaciones de OAuth. Las consultas sugeridas incluyen filtros personalizados para identificar aplicaciones arriesgadas, como las aplicaciones autorizadas por los administradores. Las consultas guardadas permiten guardar consultas personalizadas para su uso futuro, de forma similar a las consultas guardadas disponibles hoy en las páginas de detección y registro de actividad.
 
-- **Configuración predeterminada de auditoría de Office 365**  
-Si desea habilitar la supervisión de las actividades de Office 365 en Cloud App Security, ahora es necesario habilitar la auditoría en el [Centro de seguridad y cumplimiento de Office](/office365/securitycompliance/turn-audit-log-search-on-or-off#turn-on-audit-log-search), lo que se debe a un [cambio en la auditoría de Office 365](/office/office-365-management-api/office-365-management-activity-api-faq#what-happens-if-i-disable-auditing-for-my-office-365-organization-will-i-still-get-events-via-the-management-activity-api). Este cambio solo debe realizarse si aún no ha habilitado la supervisión de las actividades de Office 365 en Cloud App Security.
+- **Configuración predeterminada de auditoría de Microsoft 365**  
+Si quiere habilitar la supervisión de las actividades de Microsoft 365 en Cloud App Security, ahora es necesario habilitar la auditoría en el [Centro de seguridad y cumplimiento de Office](/office365/securitycompliance/turn-audit-log-search-on-or-off#turn-on-audit-log-search), lo que se debe a un [cambio en la auditoría de Microsoft 365](/office/office-365-management-api/office-365-management-activity-api-faq#what-happens-if-i-disable-auditing-for-my-office-365-organization-will-i-still-get-events-via-the-management-activity-api). Este cambio solo se debe realizar si todavía no ha habilitado la supervisión de las actividades de Microsoft 365 en Cloud App Security.
 
 - **Compatibilidad mejorada con Box**  
 Cloud App Security ahora admite dos nuevas acciones de gobierno para Box:
@@ -607,7 +607,7 @@ Cloud App Security ahora admite la carga automática del Registro para Windows 
 Fecha de publicación: 25 de noviembre de 2018
 
 - **Compatibilidad agregada para Dynamics**  
-Cloud App Security ahora incluye compatibilidad para las actividades de Microsoft Dynamics que se admiten en el registro de auditoría de Office 365.
+Cloud App Security ahora incluye compatibilidad para las actividades de Microsoft Dynamics que se admiten en el registro de auditoría de Microsoft 365.
 
 - **Examen del contenido cifrado (versión preliminar)**  
 Cloud App Security ahora permite examinar el contenido protegido por las etiquetas de protección de Azure Information Protection. Esto le permitirá buscar contenido confidencial, incluso en archivos que ya se han cifrado mediante Azure Information Protection.
@@ -650,8 +650,8 @@ Fecha de publicación: octubre de 2018
 
 Fecha de publicación: 25 de septiembre de 2018
 
-- **Control de aplicaciones de acceso condicional para Office 365 está ahora en versión preliminar pública**  
-  - Control de aplicaciones de acceso condicional ahora admite Office 365 y cualquier aplicación que esté configurada con Open ID Connect.
+- **Control de aplicaciones de acceso condicional para Microsoft 365 está ahora en versión preliminar pública**  
+  - Control de aplicaciones de acceso condicional ahora admite Microsoft 365 y cualquier aplicación que esté configurada con Open ID Connect.
   - Proporcione comentarios en una sesión: Esta nueva herramienta le permite enviar comentarios al equipo de Cloud App Security sobre el rendimiento de una aplicación bajo control de sesión, directamente desde dentro de la sesión.
 
 - **Integración nativa con Microsoft Defender ATP para Shadow IT Discovery más allá de los límites de la empresa**  
@@ -722,7 +722,7 @@ Hay una nueva consulta sugerida que le permite identificar las aplicaciones dete
 
 Publicado el 8 de julio de 2018
 
-- Ahora tiene la capacidad de ver actividades genéricas para Office 365. En el **Registro de actividad** y en las **Directivas de actividad** ahora puede filtrar las actividades de Office 365 para las actividades **sin especificar**. Revisar estas actividades le permite investigar la información sobre las actividades realizadas que todavía no están clasificadas por tipo en Cloud App Security, y puede usar estas actividades para enviar solicitudes al equipo de Cloud App Security para crear nuevos tipos de actividad basados en estas actividades.
+- Ahora tiene la capacidad de ver actividades genéricas para Microsoft 365. En el **Registro de actividad** y en las **Directivas de actividad** ahora puede filtrar las actividades de Microsoft 365 para las actividades **sin especificar**. Revisar estas actividades le permite investigar la información sobre las actividades realizadas que todavía no están clasificadas por tipo en Cloud App Security, y puede usar estas actividades para enviar solicitudes al equipo de Cloud App Security para crear nuevos tipos de actividad basados en estas actividades.
 
 ## <a name="cloud-app-security-release-126"></a>Notas de la versión 126 de Cloud App Security
 
@@ -780,7 +780,7 @@ Se han agregado 13 nuevos factores de riesgo a Microsoft Cloud App Security. Est
 
 - **Integración con el servicio de clasificación de datos de Microsoft**  
 Microsoft Cloud App Security ahora le permite usar el servicio de clasificación de datos de Microsoft de forma nativa para clasificar los archivos en sus aplicaciones en la nube.   
-El servicio de clasificación de datos de Microsoft proporciona una experiencia de protección de información unificada en Office 365, Azure Information Protection y Microsoft Cloud App Security. Le permite ampliar el mismo marco de clasificación de datos a las aplicaciones en la nube de terceros protegidas por Microsoft Cloud App Security, aprovechando las decisiones que ya tomó en un número de aplicaciones incluso mayor.
+El servicio de clasificación de datos de Microsoft proporciona una experiencia de protección de información unificada en Microsoft 365, Azure Information Protection y Microsoft Cloud App Security. Le permite ampliar el mismo marco de clasificación de datos a las aplicaciones en la nube de terceros protegidas por Microsoft Cloud App Security, aprovechando las decisiones que ya tomó en un número de aplicaciones incluso mayor.
 
 - **Conectar con Microsoft Azure** (implementación gradual)  
 Microsoft Cloud App Security está ampliando sus funcionalidades de supervisión de IaaS más allá de Amazon Web Services y ahora admite Microsoft Azure. Esto le permite conectarse y supervisar de manera fluida todas las suscripciones de Azure con Cloud App Security. Esta conexión le ofrece un conjunto eficaz de herramientas para proteger el entorno de Azure, como las siguientes:
@@ -803,7 +803,7 @@ Microsoft Cloud App Security proporciona a las empresas la capacidad de determin
  Ahora tenemos una alerta integrada que le informará cada vez que se infrinja cualquiera de las aplicaciones detectadas de un inquilino. La alerta proporcionará información sobre la hora y la fecha de la infracción, los usuarios que usaron la aplicación y se vinculará a orígenes disponibles públicamente que proporcionen información sobre la infracción.
 
 - **Nuevo servidor de correo**  
- El servidor de correo de Cloud App Security ha cambiado y usa otros intervalos de direcciones IP. Para asegurarse de que puede obtener notificaciones, agregue las nuevas direcciones IP a su lista de direcciones permitidas en el sistema antispam. En el caso de los usuarios que personalizan sus notificaciones, Microsoft Cloud App Security habilita esto automáticamente mediante MailChimp&reg;, un servicio de correo electrónico externo. Para ver la lista de direcciones IP del servidor de correo e instrucciones para habilitar el trabajo con MailChimp, consulte [Requisitos de red](network-requirements.md#mail-server) y [Configuración de correo](mail-settings.md).
+ El servidor de correo de Cloud App Security ha cambiado y usa otros intervalos de direcciones IP. Para asegurarse de que puede obtener notificaciones, agregue las nuevas direcciones IP a la lista de direcciones permitidas en el sistema antispam. En el caso de los usuarios que personalizan sus notificaciones, Microsoft Cloud App Security habilita esto automáticamente mediante MailChimp&reg;, un servicio de correo electrónico externo. Para ver la lista de direcciones IP del servidor de correo e instrucciones para habilitar el trabajo con MailChimp, consulte [Requisitos de red](network-requirements.md#mail-server) y [Configuración de correo](mail-settings.md).
 
 ## <a name="cloud-app-security-release-123"></a>Notas de la versión 123 de Cloud App Security
 
@@ -832,7 +832,7 @@ Fecha de publicación: 22 de abril de 2018
 
 Fecha de publicación: 8 de abril de 2018
 
-- En Office 365 y Azure AD, estamos implementando gradualmente la capacidad de detectar aplicaciones internas como actividades de la cuenta de usuario realizadas por las aplicaciones de Office 365 y Azure AD (tanto internas como externas). Esto le permite crear directivas que le avisarán si una aplicación realiza actividades inesperadas y no autorizadas.
+- En Microsoft 365 y Azure AD, se va a implementar gradualmente la capacidad de detectar aplicaciones internas como actividades de la cuenta de usuario realizadas por las aplicaciones de Microsoft 365 y Azure AD (tanto internas como externas). Esto le permite crear directivas que le avisarán si una aplicación realiza actividades inesperadas y no autorizadas.
 
 - Al exportar una lista de permisos de aplicación a csv, se incluyen campos adicionales como publicador, nivel de permisos y uso de la comunidad para ayudar con el proceso de cumplimiento e investigación.
 
@@ -842,7 +842,7 @@ Fecha de publicación: 8 de abril de 2018
 
 Fecha de publicación: 18 de marzo de 2018
 
-- En la página Intervalos de direcciones IP se incluyen direcciones IP detectadas por Cloud App Security. Entre estas se incluyen direcciones IP para servicios en la nube identificados, como Azure y Office 365, así como la fuente de inteligencia sobre amenazas que enriquece automáticamente direcciones IP con información sobre direcciones IP de riesgo conocidas.
+- En la página Intervalos de direcciones IP se incluyen direcciones IP detectadas por Cloud App Security. Se incluyen direcciones IP para servicios en la nube identificados, como Azure y Microsoft 365, así como la fuente de inteligencia sobre amenazas que enriquece automáticamente direcciones IP con información sobre direcciones IP de riesgo conocidas.
 
 - Si Cloud App Security intenta ejecutar una acción de gobernanza en un archivo, pero no lo consigue porque el archivo está bloqueado, ahora volverá a intentar la acción de gobernanza.
 
@@ -874,7 +874,7 @@ Publicado el 20 de febrero de 2018
 
 Fecha de publicación: 4 de febrero de 2018
 
-- La directiva de detección de anomalías de Cloud App Security se ha mejorado con nuevas **detecciones basadas en los escenarios**, incluidos un viaje imposible, la actividad de una dirección IP sospechosa y varios intentos incorrectos de inicio de sesión. Las nuevas directivas se habilitan automáticamente, proporcionando una detección de amenazas predefinida en su entorno en la nube. Además, las nuevas directivas exponen más datos del motor de detección de Cloud App Security para ayudarle a acelerar el proceso de investigación e incluir amenazas en curso. Para obtener más información, consulte [Obtención de análisis de comportamiento y detección de anomalías instantáneos](/cloud-app-security/anomaly-detection-policy).
+- La directiva de detección de anomalías de Cloud App Security se ha mejorado con nuevas **detecciones basadas en los escenarios**, incluidos un viaje imposible, la actividad de una dirección IP sospechosa y varios intentos incorrectos de inicio de sesión. Las nuevas directivas se habilitan automáticamente, proporcionando una detección de amenazas predefinida en su entorno en la nube. Además, las nuevas directivas exponen más datos del motor de detección de Cloud App Security para ayudarle a acelerar el proceso de investigación e incluir amenazas en curso. Para obtener más información, consulte [Obtención de análisis de comportamiento y detección de anomalías instantáneos](anomaly-detection-policy.md).
 
 - Implementación gradual: Cloud App Security ahora se correlaciona entre los usuarios y sus cuentas en las aplicaciones SaaS. Esto le permite investigar fácilmente todas las actividades para un usuario, en todas sus diferentes aplicaciones SaaS correlacionadas, sin importar la aplicación o cuenta que usaron.
 
