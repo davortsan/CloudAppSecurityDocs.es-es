@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cc27146979efcf090ef4f4596ec1c4a5840892ed
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 7b3757c49d4f72acbc4daf04f3c7fcecec2241cb
+ms.sourcegitcommit: 03c7cbed4207f06b5d49cf19d690114a59916f9c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624746"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89422778"
 ---
 # <a name="troubleshooting-the-siem-agent"></a>Solución de problemas del agente SIEM
 
@@ -27,7 +27,9 @@ ms.locfileid: "85624746"
 
 En este artículo se proporciona una lista de posibles problemas al conectar su SIEM con Cloud App Security, así como posibles soluciones.
 
-## <a name="recover-missing-activity-events-in-mcas-siem-agent"></a>Recuperación de eventos de actividad que faltan en el agente SIEM de MCAS
+## <a name="recover-missing-activity-events-in-cloud-app-security-siem-agent"></a>Recuperación de eventos de actividad que faltan en Cloud App Security agente SIEM
+
+Antes de continuar, compruebe que la [licencia de Cloud App Security](https://aka.ms/mcaslicensing) admite la integración de Siem que está intentando configurar.
 
 Si recibió una alerta del sistema con respecto a un problema con la entrega de actividad a través del agente SIEM, siga los pasos que se indican a continuación para recuperar los eventos de actividad en el período de tiempo del problema. Estos pasos le guiarán a través de la configuración de un nuevo agente SIEM de recuperación que se ejecutará en paralelo y volverá a enviar los eventos de actividad a su SIEM.
 
@@ -37,10 +39,13 @@ Si recibió una alerta del sistema con respecto a un problema con la entrega de 
 ### <a name="step-1--configure-a-new-siem-agent-in-parallel-to-your-existing-agent"></a>Paso 1: configuración de un nuevo agente SIEM en paralelo para el agente existente
 
 1. En el portal de Cloud App Security, vaya a la página extensiones de seguridad.
-1. En la pestaña agentes SIEM, haga clic en [Agregar un nuevo agente Siem](siem.md)y use el Asistente para configurar los detalles de conexión a su Siem.
+1. En la pestaña agentes SIEM, haga clic en [Agregar un nuevo agente Siem](siem.md)y use el Asistente para configurar los detalles de conexión a su Siem. Por ejemplo, puede crear un nuevo agente SIEM con la siguiente configuración:
+    - **Protocolo**: TCP
+    - **Host remoto**: cualquier equipo en el que pueda escuchar un puerto. Por ejemplo, una solución sencilla sería usar el mismo equipo que el agente y establecer la dirección IP del host remoto en 127.0.0.1
+    - **Puerto**: cualquier puerto que pueda escuchar en el equipo host remoto
 
-    >[!NOTE]
-    >Este agente debe ejecutarse en paralelo al existente, por lo que es posible que la configuración de red no sea idéntica.
+    > [!NOTE]
+    > Este agente debe ejecutarse en paralelo al existente, por lo que es posible que la configuración de red no sea idéntica.
 
 1. En el asistente, configure los tipos de datos para incluir **solo las actividades** y aplicar el mismo filtro de actividad que se usó en el agente Siem original (si existe).
 1. Guarde la configuración
@@ -48,8 +53,19 @@ Si recibió una alerta del sistema con respecto a un problema con la entrega de 
 
 ### <a name="step-2--validate-the-successful-data-delivery-to-your-siem"></a>Paso 2: validar la entrega de datos correcta a su SIEM
 
-1. Conéctese a su SIEM y compruebe que los nuevos datos se reciben del nuevo agente SIEM que ha configurado.
-1. El agente solo enviará actividades desde el intervalo de tiempo del problema, al que se le ha avisado.
+Siga los pasos siguientes para validar la configuración:
+
+1. Conéctese a su SIEM y compruebe que se reciben nuevos datos del nuevo agente SIEM que ha configurado.
+
+> [!NOTE]
+> El agente solo enviará actividades en el plazo del problema en el que se le ha avisado.
+
+1. Si el SIEM no recibe los datos, en el nuevo equipo del agente SIEM, intente escuchar el puerto configurado para reenviar actividades para ver si los datos se envían desde el agente al SIEM. Por ejemplo, ejecute, `netcat -l <port>` donde `<port>` es el número de puerto configurado previamente.
+
+> [!NOTE]
+> Si usa, asegúrese `ncat` de especificar la marca IPv4 `-4` .
+
+1. Si el agente envía datos, pero no los recibe el SIEM, compruebe el registro del agente SIEM. Si puede ver los mensajes de "conexión rechazada", asegúrese de que el agente SIEM está configurado para usar TLS 1,2 o una versión más reciente.
 
 ### <a name="step-3--remove-the-recovery-siem-agent"></a>Paso 3: eliminación del agente SIEM de recuperación
 
