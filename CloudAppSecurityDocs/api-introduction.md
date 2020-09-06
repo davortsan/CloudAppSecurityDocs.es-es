@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: aa5b3d4488a8e62f965900593169e899f90829b2
-ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
+ms.openlocfilehash: 31190fd4df5dc9c3bac19794ff1fd78c4982100d
+ms.sourcegitcommit: 5ace3437d49c7bbde2266a6f1565a65a379b9c2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88657670"
+ms.lasthandoff: 09/06/2020
+ms.locfileid: "89499499"
 ---
 # <a name="cloud-app-security-rest-api"></a>Cloud App Security API de REST
 
@@ -68,7 +68,7 @@ curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenan
 
 En la tabla siguiente se describen las acciones admitidas:
 
-|Recurso|Verbos HTTP|Rutas de URI|
+|Resource|Verbos HTTP|Rutas de URI|
 |---|---|---|
 |Detección|GET, POST o PUT|/api/v1/discovery/|
 |Enriquecimiento de datos|POST|/api/subnet/|
@@ -104,6 +104,7 @@ Se admiten los métodos siguientes para proporcionar el parámetro de límite:
 >
 > - Si no se proporciona ningún límite, se establecerá un valor predeterminado de 100.
 > - Las respuestas para todas las solicitudes realizadas con el token de API están limitadas a un máximo de 100 elementos.
+> - El límite de limitación para todas las solicitudes de API es de 30 solicitudes por minuto por inquilino.
 
 ## <a name="filters"></a>Filtros
 
@@ -140,7 +141,7 @@ curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenan
 
 En la tabla siguiente se describen los operadores admitidos:
 
-| Operator | Tipo de respuesta | Descripción |
+| Operador | Tipo de respuesta | Descripción |
 | --- | --- | --- |
 | contains | lista de cadenas | Devuelve todos los registros pertinentes que contienen una de las cadenas proporcionadas. |
 | deq | lista de valores | Devuelve todos los registros que contienen un valor que no es igual a uno de los valores proporcionados. |
