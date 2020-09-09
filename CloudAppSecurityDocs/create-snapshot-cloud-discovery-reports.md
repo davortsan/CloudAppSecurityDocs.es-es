@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4bfa89a9794df5cbce0c361e1b2a7d8071cd303c
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 8cfefb76ec1c464ace29717ba069f82a456554ad
+ms.sourcegitcommit: 30bd09cd5a05bf19818a3f3a7e1b2ac0dc25d420
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88780535"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89598264"
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Crear informes de instantáneas de Cloud Discovery
 
@@ -33,17 +33,17 @@ Para crear un informe de instantáneas:
 
 1. Recopile archivos de registro del firewall y el servidor proxy a través de los cuales los usuarios de la organización acceden a Internet. Asegúrese de recopilar registros durante períodos de tráfico pico que sean representativos de toda la actividad de usuario de la organización.
 
-2. En el portal de Cloud App Security, haga clic en **Detectar** y, después, en **Crear un informe de instantáneas**.
+1. En el portal de Cloud App Security, haga clic en **Detectar** y, después, en **Crear un informe de instantáneas**.
 
     ![Creación de un informe de instantánea](media/create-new-snapshot-report.png)
 
-3. Escriba un **nombre de informe** y una **Descripción**
+1. Escriba un **nombre de informe** y una **Descripción**
 
     ![Nuevo informe de instantánea](media/new-snapshot-report.png)
 
-4. Seleccione el **origen de datos** desde el que desea cargar los archivos de registro.
+1. Seleccione el **origen de datos** desde el que desea cargar los archivos de registro.
 
-5. Compruebe el formato del registro para asegurarse de que es correcto según el registro de ejemplo que puede descargar. Haga clic en **View and verify** (Ver y comprobar) y luego haga clic en **Download sample log** (Descargar registro de ejemplo). Compare su registro con el ejemplo proporcionado para asegurarse de que es compatible.
+1. Compruebe el formato del registro para asegurarse de que es correcto según el registro de ejemplo que puede descargar. Haga clic en **View and verify** (Ver y comprobar) y luego haga clic en **Download sample log** (Descargar registro de ejemplo). Compare su registro con el ejemplo proporcionado para asegurarse de que es compatible.
 
     ![Comprobación del formato del registro](media/cloud-discovery-snapshot-verify.png)
 
@@ -51,22 +51,21 @@ Para crear un informe de instantáneas:
     > El formato de ejemplo FTP se admite en las instantáneas y la carga automatizada, mientras que syslog solo se admite en la carga automatizada.  
     Si se descarga un registro de ejemplo, se descargará un registro de FTP de ejemplo.
 
-6. **Elija los registros de tráfico** que desea cargar. Puede cargar hasta 20 archivos a la vez. También se admiten archivos comprimidos y zip.
+1. **Elija los registros de tráfico** que desea cargar. Puede cargar hasta 20 archivos a la vez. También se admiten archivos comprimidos y zip.
 
-7. Haga clic en **Crear**.
+1. Haga clic en **Crear**.
 
-8. Una vez finalizada la carga, aparecerá el mensaje de estado en la esquina superior derecha de la pantalla, que informa de que el registro se ha cargado correctamente.
+1. Una vez finalizada la carga, aparecerá el mensaje de estado en la esquina superior derecha de la pantalla, que informa de que el registro se ha cargado correctamente.
 
-9. Después de cargar los archivos de registro, pasará algún tiempo hasta que se redistribuyan y se analicen.
+1. Después de cargar los archivos de registro, pasará algún tiempo hasta que se redistribuyan y se analicen.
     Una vez completado el procesamiento de los archivos de registro, recibirá un correo electrónico que le notificará que ya está listo.
 
-10. Aparecerá un banner de notificación en la barra de estado en la parte superior del **panel de Cloud Discovery**. El banner actualiza el estado de procesamiento de los archivos de registro.
+1. Aparecerá un banner de notificación en la barra de estado en la parte superior del **panel de Cloud Discovery**. El banner actualiza el estado de procesamiento de los archivos de registro.
     ![barra de menús del archivo de registro de procesamiento](media/processing-log-file-menu-bar.png)
 
-11. Una vez cargados correctamente los registros, verá una notificación informándole de que el procesamiento de los archivos de registro se ha completado correctamente. En este punto, puede ver el informe. Para ello, haga clic en el vínculo de la barra de estado o vaya al icono de engranaje de configuración y seleccione **Cloud Discovery settings** (Configuración de Cloud Discovery).
+1. Una vez cargados correctamente los registros, verá una notificación informándole de que el procesamiento de los archivos de registro se ha completado correctamente. En este punto, puede ver el informe haciendo clic en el vínculo de la barra de estado, o haciendo clic en el ![icono](media/settings-icon.png "icono de configuración")configuración engranaje de configuración y, después, seleccionando **configuración**.
 
-    ![Pestaña de configuración de Cloud Discovery](media/discovery-settings-tab.png)
-12. Después, seleccione **Informes de instantáneas** y elija el informe de instantáneas.
+1. A continuación, en **Cloud Discovery**, seleccione **informes de instantáneas**y seleccione el informe de instantáneas.
 
     ![administración de informes de instantáneas](media/snapshot-report-managment.png)
 
