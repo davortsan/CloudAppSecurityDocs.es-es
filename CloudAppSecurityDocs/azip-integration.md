@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0759c218b1125fa6c383e861228f6c6606841072
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: d57c2568ed52eccad862a689b157f460e8b591c8
+ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149625"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89666888"
 ---
 # <a name="azure-information-protection-integration"></a>Integración de Azure Information Protection
 
@@ -28,7 +28,7 @@ ms.locfileid: "89149625"
 Microsoft Cloud App Security le permite aplicar etiquetas de clasificación de Azure Information Protection automáticamente, con o sin protección, a los archivos como acción de gobernanza de directiva de archivo. También puede investigar archivos al filtrar la etiqueta de clasificación aplicada en el portal de Cloud App Security. El uso de clasificaciones permite mayor visibilidad y control de la información confidencial en la nube. La integración de Azure Information Protection con Cloud App Security es tan fácil como seleccionar una sola casilla.
 
 > [!NOTE]
-> Este artículo también es pertinente para Microsoft 365 etiquetas de confidencialidad unificada si ya ha [migrado las etiquetas de clasificación para el centro de seguridad y cumplimiento de Office 365](/azure/information-protection/configure-policy-migrate-labels). Si no migró las etiquetas de clasificación existentes y comienza a crear nuevas etiquetas en el centro de seguridad y cumplimiento de Office 365, Cloud App Security solo usará las etiquetas preexistentes configuradas en el portal de Azure Information Protection.
+> Este artículo también es pertinente para las etiquetas de confidencialidad unificadas de Office 365 si ya ha [migrado las etiquetas de clasificación para el centro de seguridad y cumplimiento de office 365](/azure/information-protection/configure-policy-migrate-labels). Si no migró las etiquetas de clasificación existentes y comienza a crear nuevas etiquetas en el centro de seguridad y cumplimiento de Office 365, Cloud App Security solo usará las etiquetas preexistentes configuradas en el portal de Azure Information Protection.
 
 Al integrar Azure Information Protection en Cloud App Security, puede aprovechar todas las funciones de ambos servicios y proteger los archivos en la nube, entre lo que se incluye lo siguiente:
 
@@ -42,7 +42,7 @@ Al integrar Azure Information Protection en Cloud App Security, puede aprovechar
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- Para trabajar con la integración de Azure Information Protection, debe habilitar el [conector de aplicaciones para Microsoft 365](connect-office-365-to-microsoft-cloud-app-security.md).
+- Para trabajar con la integración de Azure Information Protection, primero debe habilitar el [conector de aplicaciones para Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
 Para usar etiquetas en Cloud App Security, las etiquetas se deben publicar como parte de la Directiva. Si está utilizando Azure Information Protection, las etiquetas deben publicarse a través del portal de Azure Information Protection. Si migró a etiquetas unificadas, las etiquetas deben publicarse a través del centro de seguridad y cumplimiento de Office 365.
 
@@ -80,7 +80,7 @@ Probablemente esté familiarizado con las etiquetas de clasificación de archivo
 
 ### <a name="enable-azure-information-protection"></a>Habilitar Azure Information Protection
 
-Lo único que tiene que hacer para integrar Azure Information Protection con Cloud App Security es activar una casilla. Al habilitar el examen automático, se habilita la búsqueda de Azure Information Protection etiquetas de clasificación en los archivos de Microsoft 365 sin necesidad de crear una directiva. Después de habilitarlo, si tiene archivos en su entorno de nube con etiquetas de clasificación de Azure Information Protection, los verá en Cloud App Security.
+Lo único que tiene que hacer para integrar Azure Information Protection con Cloud App Security es activar una casilla. Al habilitar el examen automático, permite la búsqueda de etiquetas de clasificación de Azure Information Protection en los archivos de Office 365 sin necesidad de crear una directiva. Después de habilitarlo, si tiene archivos en su entorno de nube con etiquetas de clasificación de Azure Information Protection, los verá en Cloud App Security.
 
 Para permitir que Cloud App Security examine archivos que tengan la inspección de contenido habilitada en busca de etiquetas de clasificación:
 

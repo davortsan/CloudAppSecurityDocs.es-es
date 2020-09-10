@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 25020539ecc5a0ae48e8cb3d6b1c6ce0387a7d2a
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 8dd243af267de7bd598505771554675832560e37
+ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149744"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89666853"
 ---
 # <a name="activity-filters-and-queries"></a>Consultas y filtros de actividad
 
@@ -95,7 +95,7 @@ A continuación se muestra una lista de los filtros de actividad que se pueden a
 - Usuario: el usuario que realizó la actividad, que se puede filtrar en el dominio, grupo, nombre u organización. Para filtrar las actividades sin un usuario específico, puede usar el operador ' no establecido '.
   - Dominio del usuario: busca un dominio de usuario específico.
   - Organización de usuario: unidad organizativa del usuario que ha realizado la actividad, por ejemplo, todas las actividades realizadas por usuarios de marketing o EMEA. Esto solo es relevante para las instancias conectadas de G Suite mediante unidades organizativas.
-  - Grupo de usuarios: grupos de usuarios específicos que puede importar de aplicaciones conectadas, por ejemplo, Microsoft 365 administradores.
+  - Grupo de usuarios: grupos de usuarios específicos que puede importar de aplicaciones conectadas, como administradores de Office 365.
   - Nombre de usuario: busca por un nombre de usuario específico. Para ver una lista de los usuarios de un grupo de usuarios específico, en el **Cajón de actividades**, haga clic en el nombre del grupo de usuarios. Al hacer clic se le lleva a la página Cuentas, en la que se enumeran todos los usuarios del grupo. Desde ahí puede profundizar en los detalles de las cuentas de usuarios específicos del grupo.
   - Los filtros **Grupo de usuarios** y **Nombre de usuario** se pueden filtrar aún más si se usa el filtro **Como** y se selecciona el rol del usuario, que puede ser uno de los siguientes:
     - Objeto de actividad solo: significa que el usuario o grupo de usuarios seleccionado no ha realizado la actividad en cuestión, sino que era el objeto de la actividad.

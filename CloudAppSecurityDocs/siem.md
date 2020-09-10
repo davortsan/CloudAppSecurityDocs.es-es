@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ab60b9237af0d2dadbfbe6c48b6e2f17ff80df3b
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: b0b928f095769a1051f825748941ed818401e6d3
+ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89150288"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89667085"
 ---
 # <a name="generic-siem-integration"></a>Integración de SIEM genérica
 
@@ -78,21 +78,21 @@ La integración con SIEM se realiza en tres pasos:
     ![Captura de pantalla que muestra el menú Agregar integración de SIEM](media/siem0.png)
 
 1. En el asistente, haga clic en **Iniciar asistente**.
-1. En el asistente, asigne un nombre, **seleccione el formato SIEM** y establezca la **Configuración avanzada** que esté relacionada con ese formato. Haga clic en **Siguiente**.
+1. En el asistente, asigne un nombre, **seleccione el formato SIEM** y establezca la **Configuración avanzada** que esté relacionada con ese formato. Haga clic en **Next**.
 
     ![Configuración general de SIEM](media/siem1.png)
 
 1. Escriba la dirección IP o nombre de host del **host de syslog remoto** y el **número de puerto de syslog**. Seleccione TCP o UDP como protocolo de syslog remoto.
-    Puede trabajar con el administrador de seguridad para obtener estos detalles si no los tiene. Haga clic en **Siguiente**.
+    Puede trabajar con el administrador de seguridad para obtener estos detalles si no los tiene. Haga clic en **Next**.
 
     ![Configuración remota de Syslog](media/siem2.png)
 
-1. Seleccione los tipos de datos que quiera exportar al servidor SIEM para **Alertas** y **Actividades**. Use el control deslizante para habilitarlas y deshabilitarlas; de forma predeterminada todo está seleccionado. Puede usar el menú desplegable **Apply to** (Aplicar a) para establecer filtros para enviar solo alertas y actividades específicas al servidor SIEM. Haga clic en **Editar y obtener vista previa de resultados** para comprobar que el filtro funciona según lo esperado. Haga clic en **Siguiente**.
+1. Seleccione los tipos de datos que quiera exportar al servidor SIEM para **Alertas** y **Actividades**. Use el control deslizante para habilitarlas y deshabilitarlas; de forma predeterminada todo está seleccionado. Puede usar el menú desplegable **Apply to** (Aplicar a) para establecer filtros para enviar solo alertas y actividades específicas al servidor SIEM. Haga clic en **Editar y obtener vista previa de resultados** para comprobar que el filtro funciona según lo esperado. Haga clic en **Next**.
 
    ![Configuración de tipos de datos](media/siem3.png)
 
 1. Copie el token y guárdelo para más adelante.
-    Haga clic en Finalizar y salga del asistente. Vuelva a la página de SIEM para ver al agente SIEM que ha agregado en la tabla. Mostrará que está **Creado** hasta que se conecte más adelante.
+    Haga clic en Finalizar y salga del asistente. Vuelva a la página de SIEM para ver al agente SIEM que ha agregado en la tabla. Se mostrará que se **crea** hasta que se conecte más adelante.
 
 > [!NOTE]
 > Los tokens que se creen se enlazan al administrador que los haya creado. Esto significa que, si se elimina al usuario administrador de Cloud App Security, el token dejará de ser válido.
@@ -160,7 +160,7 @@ El siguiente texto es un ejemplo de archivo de registro de alertas:
 | Actividades y alertas | rt | Marca de tiempo de actividad o alerta |
 | Actividades y alertas | msg | Descripción de la actividad o alerta, tal como se muestra en el portal |
 | Actividades y alertas | suser | Usuario asunto de la actividad o alerta |
-| Actividades y alertas | destinationServiceName | Aplicación que origina la actividad o alerta, por ejemplo, Microsoft 365, SharePoint, Box. |
+| Actividades y alertas | destinationServiceName | Aplicación que origina la actividad o alerta, por ejemplo, Office 365, SharePoint, Box. |
 | Actividades y alertas | cs\<X>Label | Cada etiqueta tiene un significado diferente, pero la misma etiqueta lo explica, por ejemplo, targetObjects. |
 | Actividades y alertas | cs\<X> | La información correspondiente a la etiqueta (el usuario de destino de la actividad o alerta según el ejemplo de etiqueta). |
 | Actividades | EVENT_CATEGORY_* | Categoría general de la actividad |
@@ -168,7 +168,7 @@ El siguiente texto es un ejemplo de archivo de registro de alertas:
 | Actividades | externalId | Id. de evento |
 | Actividades | dvc | Dirección IP del dispositivo del cliente |
 | Actividades | requestClientApplication | Agente de usuario del dispositivo del cliente |
-| Alertas | \<alert type> | Por ejemplo "ALERT_CABINET_EVENT_MATCH_AUDIT" |
+| Alertas | \<alert type> | Por ejemplo, "ALERT_CABINET_EVENT_MATCH_AUDIT" |
 | Alertas | \<name> | Nombre de la directiva coincidente |
 | Alertas | externalId | Id. de alerta |
 | Alertas | src | Dirección IPv4 del dispositivo cliente |

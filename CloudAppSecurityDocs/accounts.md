@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9fe4593f6c7bf59f74a39520e12e6b7e6c5f7d01
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 726e6abcdecf1f25c58ad212f8259a66aa638b6d
+ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149795"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89666965"
 ---
 # <a name="accounts"></a>Cuentas
 
@@ -27,7 +27,7 @@ ms.locfileid: "89149795"
 
 Microsoft Cloud App Security le ofrece la posibilidad de supervisar las cuentas de sus aplicaciones conectadas. Después de conectar Cloud App Security a una aplicación mediante el conector de aplicaciones, Cloud App Security lee la información de la cuenta asociada a las aplicaciones conectadas. La página Cuentas permite investigar esas cuentas, los permisos, los grupos a los que pertenecen, sus alias y las aplicaciones que usan. Además, cuando Cloud App Security detecta una cuenta nueva que no se había detectado previamente en ninguna de las aplicaciones conectadas (por ejemplo, en la actividad o el uso compartido de archivos), la cuenta se agrega a la lista de cuentas de la aplicación en cuestión. Esto le permite supervisar la actividad de los usuarios externos que interactúan con sus aplicaciones en la nube.
 
-Los administradores pueden buscar los metadatos o la actividad de un usuario específico. La página **usuarios y cuentas** proporciona detalles completos sobre las entidades que se extraen de las aplicaciones en la nube conectadas. También se proporciona el historial de actividad del usuario y las alertas de seguridad relacionadas con el usuario.
+Los administradores pueden buscar los metadatos o la actividad de un usuario específico. La página **usuarios y cuentas** proporciona detalles completos sobre las entidades que se extraen de las aplicaciones en la nube conectadas. También se proporciona el historial de actividad del usuario y las alertas de seguridad relacionadas con él.
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
@@ -49,7 +49,7 @@ La página **Usuarios y cuentas** permite investigar fácilmente las cuentas, in
 
 A continuación, se muestra una lista de los filtros de cuenta que se pueden aplicar. La mayoría de los filtros admiten varios valores, así como NOT, para proporcionarle una herramienta eficaz para la creación de directivas.  
   
-<!--- **Account name**: The account name is the primary alias of the user, but other identifiers from other Microsoft accounts (Microsoft 365 and Azure Active Directory) such as proxy addresses, aliases, SID are supported and consolidated beneath the primary alias. -->
+<!--- **Account name**: The account name is the primary alias of the user, but other identifiers from other Microsoft accounts (Office 365 and Azure Active Directory) such as proxy addresses, aliases, SID are supported and consolidated beneath the primary alias. -->
 
 * **Afiliación**: la afiliación es **Interna** o **Externa**. Para establecer qué usuarios y cuentas son internos, en **Configuración** asegúrese de establecer el **intervalo de direcciones IP** de la organización interna. En caso de que la cuenta tenga permisos de administrador, el icono de la tabla Cuentas aparece con un lazo rojo. ![icono de administrador de cuentas](media/accounts-admin-icon.png)
 

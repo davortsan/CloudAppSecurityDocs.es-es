@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a8793a96269f42dce827d101e717543ad873dacd
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 80d7b83c49d3e2ebbd5ffc13ff82b414ccf67718
+ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89150167"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89667169"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicaciones con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security
 
@@ -130,7 +130,7 @@ Cloud App Security identifica aplicaciones que usan información disponible en e
 
 Muchas organizaciones que optan por usar controles de sesión para aplicaciones en la nube para controlar las actividades en la sesión, también pueden aplicar controles de acceso para bloquear el mismo conjunto de aplicaciones de cliente de escritorio y móviles nativas, lo que proporciona una seguridad completa para las aplicaciones.
 
-Puede bloquear el acceso a las aplicaciones de cliente de escritorio y móviles nativas con directivas de acceso. para ello, establezca el filtro de la **aplicación cliente** en **móvil y escritorio**. Algunas aplicaciones cliente nativas se pueden reconocer individualmente, mientras que otras que forman parte de un conjunto de aplicaciones solo se pueden identificar como su aplicación de nivel superior. Por ejemplo, las aplicaciones como SharePoint Online solo se pueden reconocer mediante la creación de una directiva de acceso que se aplica a Microsoft 365 aplicaciones.
+Puede bloquear el acceso a las aplicaciones de cliente de escritorio y móviles nativas con directivas de acceso. para ello, establezca el filtro de la **aplicación cliente** en **móvil y escritorio**. Algunas aplicaciones cliente nativas se pueden reconocer individualmente, mientras que otras que forman parte de un conjunto de aplicaciones solo se pueden identificar como su aplicación de nivel superior. Por ejemplo, las aplicaciones como SharePoint Online solo se pueden reconocer mediante la creación de una directiva de acceso que se aplica a las aplicaciones de Office 365.
 
 > [!NOTE]
 > A menos que el filtro de **aplicación cliente** se establezca específicamente en **móvil y escritorio**, la Directiva de acceso resultante solo se aplicará a las sesiones del explorador. La razón de esto es evitar que las sesiones de usuario se configuran de forma inadvertida para el proxy, lo que puede ser un subproducto del uso de este filtro. Aunque la mayoría de los exploradores principales admiten la comprobación de certificados de cliente, algunas aplicaciones móviles y de escritorio usan exploradores integrados que es posible que no admitan esta comprobación. Por lo tanto, el uso de este filtro puede afectar a la autenticación de estas aplicaciones.
@@ -149,7 +149,7 @@ Aunque los controles de sesión se compilan para trabajar con cualquier explorad
 - AWS
 - Azure DevOps (Visual Studio Team Services)
 - Azure Portal (versión preliminar)
-- Cuadro
+- Box
 - Concur
 - CornerStone on Demand
 - DocuSign
@@ -163,7 +163,7 @@ Aunque los controles de sesión se compilan para trabajar con cualquier explorad
 - JIRA/Confluence
 - OneDrive para la Empresa
 - LinkedIn Learning
-- Power BI
+- Power BI
 - Salesforce
 - ServiceNow
 - SharePoint Online
@@ -175,13 +175,13 @@ Aunque los controles de sesión se compilan para trabajar con cualquier explorad
 - Workplace by Facebook
 - Yammer (versión preliminar)
 
-### <a name="microsoft-365-featured-apps"></a><a name="O365-apps"></a>Aplicaciones destacadas de Microsoft 365
+### <a name="office-365-featured-apps"></a><a name="O365-apps"></a>Aplicaciones destacadas de Office 365
 
-A continuación se muestra una lista de las aplicaciones destacadas que se admiten en Microsoft 365 Cloud App Security. Para usar estas aplicaciones con Cloud App Security, debe tener una licencia de Office 365 E5.
+A continuación se muestra una lista de las aplicaciones destacadas que se admiten en Office 365 Cloud App Security. Para usar estas aplicaciones con Cloud App Security, debe tener una licencia de Office 365 E5.
 
 - Exchange Online
 - OneDrive para la Empresa
-- Power BI
+- Power BI
 - SharePoint Online
 - Microsoft Teams (versión preliminar)
 - Yammer (versión preliminar)

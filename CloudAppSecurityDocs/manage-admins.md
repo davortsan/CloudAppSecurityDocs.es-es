@@ -14,22 +14,22 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1818697f5d5ad26d13cc2bf37e35cecc20f70fdb
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: d7bfc0fad445b242f9093cb109c6678e6d2542aa
+ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89150118"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89666821"
 ---
 # <a name="manage-admin-access"></a>Administrar el acceso de administrador
 
 *Se aplica a: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security es compatible con el control de acceso basado en roles. En este artículo se ofrecen instrucciones para configurar el acceso al portal de Cloud App Security para los administradores. Para obtener más información sobre la asignación de roles de administrador, consulte los artículos sobre [Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles) y [Microsoft 365](/office365/admin/add-users/assign-admin-roles).
+Microsoft Cloud App Security es compatible con el control de acceso basado en roles. En este artículo se ofrecen instrucciones para configurar el acceso al portal de Cloud App Security para los administradores. Para obtener más información sobre la asignación de roles de administrador, consulte los artículos sobre [Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles) y [Office 365](/office365/admin/add-users/assign-admin-roles).
 
-## <a name="microsoft-365-and-azure-ad-roles-with-access-to-cloud-app-security"></a>Microsoft 365 y Azure AD roles con acceso a Cloud App Security
+## <a name="office-365-and-azure-ad-roles-with-access-to-cloud-app-security"></a>Roles de Office 365 y de Azure AD con acceso a Cloud App Security
 
-De forma predeterminada, los siguientes roles de administrador de Microsoft 365 y [Azure Active Directory (Azure ad)](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) tienen acceso a Cloud App Security:
+De forma predeterminada, los siguientes roles de administrador de Office 365 y [Azure Active Directory (Azure ad)](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) tienen acceso a Cloud App Security:
 
 - **Administrador global y Administrador de seguridad:** los administradores con **Acceso completo** tienen permisos completos en Cloud App Security. Pueden agregar administradores, incorporar directivas y configuración, cargar registros y realizar acciones de gobernanza.
 
@@ -56,7 +56,7 @@ De forma predeterminada, los siguientes roles de administrador de Microsoft 365 
 - **Lector global:** Tiene acceso de solo lectura completo a todos los aspectos de Microsoft Cloud App Security. No se puede cambiar la configuración ni realizar ninguna acción.
 
 > [!NOTE]
-> Los roles Microsoft 365 y Azure AD no se muestran en la página **administrar acceso de administrador** .
+> Los roles de Office 365 y Azure AD no aparecen en la página **administrar acceso de administrador** .
 
 Además, se pueden configurar los siguientes roles de administrador específicos de Cloud App Security en el portal de Cloud App Security:
 
@@ -109,7 +109,7 @@ Además, se pueden configurar los siguientes roles de administrador específicos
 
 ## <a name="override-admin-permissions"></a>Invalidación de los permisos de administrador
 
-Si desea invalidar el permiso de un administrador desde Azure Active Directory o Microsoft 365, puede hacerlo manualmente agregando el usuario a Cloud App Security y asignando los permisos de usuario. Por ejemplo, si quiere que Claudia, una usuaria que tiene el rol de Lector de seguridad en Azure Active Directory, tenga **Acceso completo** en Cloud App Security, puede agregarla manualmente a Cloud App Security y asignarle **Acceso completo** a fin de invalidar su rol y concederle los permisos necesarios en Cloud App Security.
+Si quiere invalidar un permiso de administrador de Azure Active Directory u Office 365, puede hacerlo manualmente agregando el usuario a Cloud App Security y asignándole permisos. Por ejemplo, si quiere que Claudia, una usuaria que tiene el rol de Lector de seguridad en Azure Active Directory, tenga **Acceso completo** en Cloud App Security, puede agregarla manualmente a Cloud App Security y asignarle **Acceso completo** a fin de invalidar su rol y concederle los permisos necesarios en Cloud App Security.
 
 ## <a name="add-additional-admins"></a>Agregar administradores adicionales
 
@@ -154,4 +154,4 @@ Además, para permitir que los MSSP proporcionen servicios en varios inquilinos 
 ## <a name="next-steps"></a>Pasos siguientes  
 
 > [!div class="nextstepaction"]
-> [Configuración de Cloud Discovery](set-up-cloud-discovery.md)
+> [Configurar Cloud Discovery](set-up-cloud-discovery.md)

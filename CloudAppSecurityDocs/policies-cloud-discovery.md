@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 01becaab45d0276599bcdf5b42d3aadcfe31b259
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: e8f60e2412ab32fd5cb22adb78e482d6359697f6
+ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149840"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89667151"
 ---
 # <a name="cloud-discovery-policies"></a>Directivas de Cloud Discovery
 
@@ -134,26 +134,26 @@ Configure la carga de registros automática para informes de Cloud Discovery con
 
 ## <a name="detect-risky-oauth-apps"></a>Detección de aplicaciones de OAuth peligrosas
 
-Obtenga visibilidad y control sobre las [aplicaciones de OAuth](investigate-risky-oauth.md) que se instalan dentro de aplicaciones como G Suite, Microsoft 365 y Salesforce. Las aplicaciones de OAuth que solicitan permisos altos y tienen poco uso de la comunidad se pueden considerar arriesgadas.
+Obtenga visibilidad y control sobre las [aplicaciones de OAuth](investigate-risky-oauth.md) que se instalan dentro de aplicaciones como G Suite, Office 365 y Salesforce. Las aplicaciones de OAuth que solicitan permisos altos y tienen poco uso de la comunidad se pueden considerar arriesgadas.
 
 ### <a name="prerequisites"></a>Requisitos previos
 
-Debe tener la aplicación G Suite, Microsoft 365 o Salesforce conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+Debe tener la aplicación G Suite, Office 365 o Salesforce conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>Pasos
 
 1. En la página **directivas** , cree una nueva **Directiva de aplicación de OAuth**.
 
-2. Seleccione la **aplicación** de filtro y establezca la aplicación que debe cubrir la Directiva, G Suite, Microsoft 365 o Salesforce.
+2. Seleccione la **aplicación** de filtro y establezca la aplicación que debe cubrir la Directiva, G Suite, Office 365 o Salesforce.
 
-3. Seleccione el filtro de **nivel de permiso** es igual a **alto** (disponible para G Suite y Microsoft 365).
+3. Seleccione el filtro de **nivel de permiso** es igual a **alto** (disponible para G Suite y Office 365).
 
 4. Agregar el uso de la **comunidad** de filtros es igual a **inusual**.
 
-5. Configure las acciones que deben llevarse a cabo cuando se desencadene una alerta. Por ejemplo, para Microsoft 365, Active **revocar aplicación** para OAuth aplicaciones detectadas por la Directiva.
+5. Configure las acciones que deben llevarse a cabo cuando se desencadene una alerta. Por ejemplo, para Office 365, Active **revocar aplicación** para OAuth aplicaciones detectadas por la Directiva.
 
 > [!NOTE]
-> Se admite para tiendas de aplicaciones de G Suite, Microsoft 365 y Salesforce.
+> Compatible con tiendas de aplicaciones de G Suite, Office 365 y Salesforce.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
