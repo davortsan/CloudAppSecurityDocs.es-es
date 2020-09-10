@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 575028a9df41f8340c4a7a398fb05b5264ee93bb
-ms.sourcegitcommit: 1554e381acc1e58de113d3b427f4e9de91b98488
+ms.openlocfilehash: 706bdf5d49c044f5fe9015e65eb57bf34e325e32
+ms.sourcegitcommit: c31df5ab5f2c1ee1dbfdabc83294b425a48dba70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89148733"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89654402"
 ---
 # <a name="docker-on-linux-on-premises"></a>Docker en Linux local
 
@@ -109,7 +109,10 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>Paso 2: Implementación local de la máquina
 
-En los pasos siguientes se describe la implementación de Ubuntu. Los pasos de implementación en otras plataformas son ligeramente diferentes.
+En los pasos siguientes se describe la implementación de Ubuntu.
+
+> [!NOTE]
+> Los pasos de implementación para otras plataformas admitidas pueden ser ligeramente diferentes.
 
 1. Abra un terminal en la máquina Ubuntu.
 
