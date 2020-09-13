@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 80d7b83c49d3e2ebbd5ffc13ff82b414ccf67718
-ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
+ms.openlocfilehash: 93b285abfbbffad4a9a033e39cb226100ecd519a
+ms.sourcegitcommit: c9b7aa05694a1825f0b32b677b5a6549b846c554
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89667169"
+ms.lasthandoff: 09/13/2020
+ms.locfileid: "90056751"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicaciones con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security
 
@@ -31,7 +31,7 @@ En el área de trabajo actual, a menudo no basta con saber lo que ocurre en su e
 >
 > - Para usar Cloud App Security Control de aplicaciones de acceso condicional, necesita una [licencia de Azure Active Directory P1](https://azure.microsoft.com/pricing/details/active-directory/)o la licencia requerida por la solución IDP, así como una licencia de Cloud App Security.
 
-## <a name="how-it-works"></a>Funcionamiento
+## <a name="how-it-works"></a>Cómo funciona
 
 Control de aplicaciones de acceso condicional usa una arquitectura de proxy inverso y se integra con el IdP. Al integrar con Azure AD el acceso condicional, puede configurar las aplicaciones para que funcionen con Control de aplicaciones de acceso condicional con solo unos clics, lo que le permite aplicar de forma sencilla y selectiva controles de acceso y de sesión en las aplicaciones de su organización en función de cualquier condición en el acceso condicional. Las condiciones definen *quién* (usuario o grupo de usuarios) y *qué* (qué aplicaciones en la nube) y *dónde* (a qué ubicaciones y redes) se aplica una directiva de acceso condicional. Después de determinar las condiciones, puede enrutar a los usuarios a Cloud App Security donde puede proteger los datos con Control de aplicaciones de acceso condicional mediante la aplicación de controles de acceso y de sesión.
 
@@ -148,7 +148,7 @@ Aunque los controles de sesión se compilan para trabajar con cualquier explorad
 
 - AWS
 - Azure DevOps (Visual Studio Team Services)
-- Azure Portal (versión preliminar)
+- Azure portal
 - Box
 - Concur
 - CornerStone on Demand
@@ -163,7 +163,7 @@ Aunque los controles de sesión se compilan para trabajar con cualquier explorad
 - JIRA/Confluence
 - OneDrive para la Empresa
 - LinkedIn Learning
-- Power BI
+- Power BI
 - Salesforce
 - ServiceNow
 - SharePoint Online
@@ -181,7 +181,7 @@ A continuación se muestra una lista de las aplicaciones destacadas que se admit
 
 - Exchange Online
 - OneDrive para la Empresa
-- Power BI
+- Power BI
 - SharePoint Online
 - Microsoft Teams (versión preliminar)
 - Yammer (versión preliminar)
