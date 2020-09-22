@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6e0f5f0d7f692dc254b334be9bd34d4b7ebe01a6
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 87a3eb690c81930baaa0cee5dba02f5d9fe62e59
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781589"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90878957"
 ---
 # <a name="security-configuration-for-aws"></a>Configuración de seguridad para AWS
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security proporciona una evaluación de la configuración de seguridad de su entorno de Amazon Web Services. Esta evaluación proporciona recomendaciones de seguridad fundamentales basadas en la prueba comparativa de Center for Internet Security (CIS) para AWS.
 

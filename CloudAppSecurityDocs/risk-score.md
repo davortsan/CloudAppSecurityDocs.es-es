@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 074ff2ae9e23cdcb351a34f937103e311441aa7f
-ms.sourcegitcommit: 45a23730c2beda00c32b0d6cb8da872dc2bf0e14
+ms.openlocfilehash: 4cbc15f85c40d8a36750df20c701900df7a0b8c8
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86137957"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90879134"
 ---
 # <a name="working-with-app-risk-scores"></a>Trabajar con la puntuación de riesgo de la aplicación
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 El Catálogo de aplicaciones en la nube proporciona una imagen completa de todo lo que puede identificar Cloud Discovery. Cloud Discovery analiza los registros de tráfico en el catálogo de aplicaciones en la nube de Microsoft Cloud App Security de más de 16 000 aplicaciones en la nube. Las aplicaciones se clasifican y puntuan en función de más de 80 factores de riesgo para proporcionar visibilidad continua del uso de la nube, Shadow IT y el riesgo que Shadow IT supone para su organización. En este artículo se proporcionan instrucciones sobre cómo usar y personalizar la puntuación de riesgo de la aplicación de Cloud App Security.
 
@@ -116,7 +116,7 @@ Es importante dedicar un minuto a revisar y modificar las ponderaciones predeter
 
 3. Además, puede establecer si determinados valores no están disponibles o no son aplicables en el cálculo de la puntuación. Cuando se incluyen, los valores no aplicables tienen una contribución negativa a la puntuación calculada.
 
-    ![carácter](media/score.png "métricas de puntuación")
+    ![métricas de puntuación](media/score.png)
 
 Toda la información necesaria para entender cómo se apilan nuestras puntuaciones de riesgo de Cloud App Security está disponible en el portal de Cloud App Security. Para comprender mejor el peso de un factor de riesgo en una categoría de riesgo específica, use el botón "i" a la derecha de cada nombre de campo en el perfil de la aplicación. Esto proporciona información sobre cómo Cloud App Security puntúa exactamente un factor de riesgo específico. La puntuación es el valor del factor de riesgo en una escala de 1 a 10 + su peso en la categoría de riesgo:
 

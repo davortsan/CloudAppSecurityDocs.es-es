@@ -13,16 +13,16 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b0b928f095769a1051f825748941ed818401e6d3
-ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
+ms.openlocfilehash: e587bd1a3c339160504f1fbfebf1523bc4d3da9a
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89667085"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90878727"
 ---
 # <a name="generic-siem-integration"></a>Integración de SIEM genérica
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Puede integrar Microsoft Cloud App Security con el servidor de SIEM genérico para habilitar la supervisión centralizada de alertas y actividades de aplicaciones conectadas. A medida que las aplicaciones conectadas admiten nuevos eventos y actividades, podrá supervisarlas en Microsoft Cloud App Security. La integración de un servicio SIEM le permite proteger mejor sus aplicaciones de nube a la vez que mantiene el flujo de trabajo de seguridad habitual, automatizando así los procedimientos de seguridad y estableciendo correlaciones entre eventos basados en la nube y eventos locales. El agente SIEM de Microsoft Cloud App Security se ejecuta en el servidor y extrae las alertas y las actividades de Microsoft Cloud App Security y las transmite al servidor SIEM.
 
