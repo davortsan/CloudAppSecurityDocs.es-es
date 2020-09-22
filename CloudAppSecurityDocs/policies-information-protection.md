@@ -9,16 +9,16 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b4be7d9e31f2fc0bf71175a9c7fb3d07c38262a4
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: d5b42984d8e0f1b16db5a92116e4d7835d3882b8
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254812"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90877859"
 ---
 # <a name="information-protection-policies"></a>Directivas de protección de la información
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Cloud App Security las directivas de archivo permiten aplicar una amplia gama de procesos automatizados. Las directivas se pueden establecer para proporcionar protección de la información, incluidos los exámenes de cumplimiento continuos, las tareas legales de eDiscovery y DLP para el contenido confidencial compartido públicamente.
 
@@ -133,7 +133,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
     1. Opcional: puede usar el enfoque opuesto y establecer el filtro en **Ubicación** es igual a si su organización bloquea el acceso desde determinados países o regiones.
 
-4. Opcional: cree acciones de **gobierno** que se aplicarán a la infracción detectada (la disponibilidad varía entre los servicios), como **suspender usuario**.
+4. Opcional: cree acciones de **gobierno** que se aplicarán a la infracción detectada (la disponibilidad varía entre los servicios), como  **suspender usuario**.
 
 5. Cree la Directiva de actividad.
 

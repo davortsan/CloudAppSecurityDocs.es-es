@@ -13,16 +13,16 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fc68868e2fed402d245be5bae4ad8ea713dea4e9
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: 154cb0eda5a223c31813e1753b9dc0bcb8836436
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88963903"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90878711"
 ---
 # <a name="azure-sentinel-integration-preview"></a>Integración de centinela de Azure (versión preliminar)
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Puede integrar Microsoft Cloud App Security con Azure Sentinel (un SIEM escalable y nativo en la nube) para habilitar la supervisión centralizada de alertas y datos de detección. La integración con Azure Sentinel le permite proteger mejor sus aplicaciones en la nube a la vez que mantiene su flujo de trabajo de seguridad habitual, automatiza los procedimientos de seguridad y correlaciona entre eventos basados en la nube y locales.
 

@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d5080886b2b21c345b7ec65c3874ec0a3192b4fc
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 63d4e269287f8f8f58722e11fe3b80cfe3252e5d
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624786"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90878443"
 ---
 # <a name="protecting-your-organization-from-ransomware"></a>Proteger la organización frente a ransomware
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 En el ataque de ransomware masivo más reciente, WannaCry asestó un duro golpe al mundo cibernético, ya que infectó aproximadamente 200 000 equipos en 150 países. Con el aumento de los ataques de ransomware en los últimos años, con una media de 25 000 ataques al mes en 2015 y 56 000 en 2016, es imprescindible para la ciberseguridad ser proactivos a la hora de asegurarse de que la red y la nube no están en peligro. En este artículo se explica cómo se puede usar Cloud App Security para supervisar la nube, detectar y mitigar las amenazas, y aplicar los procedimientos recomendados para proteger el entorno contra el ransomware.
 

@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 55c3a9f1edfadcaa686a54a3b69f95e319a55320
-ms.sourcegitcommit: 740357159d8bc405412ca3c36757647b5f1c7623
+ms.openlocfilehash: 84aed2a0a5fc96ee3c8ca06723fe3ee0028bf275
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89316978"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90878412"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Integración de protección contra amenazas avanzada de Microsoft defender con Microsoft Cloud App Security
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security se integra con protección contra amenazas avanzada (ATP) de Microsoft defender de forma nativa. La integración simplifica la implementación de Cloud Discovery, amplía las funcionalidades de Cloud Discovery más allá de la red corporativa y habilita la investigación en el equipo. [ATP de Microsoft defender](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) es una plataforma de seguridad para la protección, la detección, la investigación y la respuesta inteligentes. Microsoft defender ATP protege los puntos de conexión de las amenazas de Cyber, detecta ataques avanzados e infracciones de datos, automatiza incidentes de seguridad y mejora la posición de seguridad.
 
@@ -48,7 +48,7 @@ Una vez recopilada la información de tráfico, está listo para [profundizar](d
   - [protección entregada en la nube habilitada](/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus)
   - [Protección de red habilitada y configurada para el modo de bloqueo](/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)
 
-## <a name="how-it-works"></a>Funcionamiento
+## <a name="how-it-works"></a>Cómo funciona
 
 Por su cuenta, Cloud App Security recopila registros de los puntos de conexión [usando registros cargados](create-snapshot-cloud-discovery-reports.md) o [configurando la carga automática de registros](discovery-docker.md). La integración nativa permite aprovechar los registros que crea el agente de ATP de Microsoft defender cuando se ejecuta en Windows y supervisa las transacciones de red. Use esta información para la detección de Shadow IT en los equipos Windows de la red.
 

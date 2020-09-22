@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 05af62c1754484572ff36510aedca113cdae8d5e
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 1406212b95a790aea489f4580fa821206139d5ae
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624722"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90878118"
 ---
 # <a name="working-with-discovery-data"></a>Trabajo con datos de detección
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 El panel de Cloud Discovery está diseñado para proporcionar más información sobre cómo se usan las aplicaciones en la nube en la organización. Proporciona una visión general de un vistazo sobre los tipos de aplicaciones que se usan, las alertas abiertas y los niveles de riesgo de las aplicaciones de la organización. También muestra quiénes son los usuarios que más usan las aplicaciones y proporciona un mapa de ubicación de la sede central de la aplicación. El panel de Cloud Discovery tiene muchas opciones para filtrar los datos. Con el filtrado se pueden generar vistas específicas en función de lo que más le interese y gráficos fáciles de entender para que se haga una idea general de un vistazo.
 
@@ -102,7 +102,7 @@ Para eliminar datos de Cloud Discovery:
 
     Es importante estar seguro de querer eliminar los datos antes de continuar: esta acción no se puede deshacer y elimina **todos** los datos de Cloud Discovery del sistema.
 
-3. Haga clic en el botón **Eliminar** .
+3. Haga clic en el botón **Eliminar**.
 
     ![eliminar datos](media/delete-data.png "eliminar datos")
 

@@ -13,16 +13,16 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c2d208fa3570f32719e247b006c831755ab80173
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: 6ea53492ebb2b3edbc08ebd7568b809953e8a6cb
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88963784"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90878203"
 ---
 # <a name="integrate-with-microsoft-power-automate-for-custom-alert-automation"></a>Integración con Microsoft Power Automate para la automatización de alertas personalizada
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Cloud App Security se integra con [Microsoft Power Automate](/flow/getting-started) para proporcionar una automatización de alertas personalizada y guías de orquestación. Con el [ecosistema de conectores](/connectors/) disponible en Power Automatic, puede automatizar la activación de los cuadernos de estrategias cuando Cloud App Security genera alertas. Por ejemplo, crear automáticamente un problema en sistemas de vales mediante el [conector de ServiceNow](/connectors/service-now/) o enviar un correo electrónico de aprobación para ejecutar una acción de control personalizado cuando se active una alerta en Cloud App Security.
 
@@ -30,7 +30,7 @@ Cloud App Security se integra con [Microsoft Power Automate](/flow/getting-start
 
 - Debe tener un [plan de Microsoft Power Automate](https://flow.microsoft.com/pricing) válido.
 
-## <a name="how-it-works"></a>Funcionamiento
+## <a name="how-it-works"></a>Cómo funciona
 
 Por su cuenta, Cloud App Security proporciona opciones de gobierno predefinidas, como suspender a un usuario o hacer que un archivo sea privado al definir directivas. Mediante la creación de una guía en Power Automate mediante Cloud App Security Connector, puede crear flujos de trabajo para habilitar opciones de gobierno personalizadas para sus directivas. Una vez que se haya creado la guía en Power Automate, basta con asociarla a una directiva en Cloud App Security para enviar alertas a Power Automate. Microsoft Power Automate ofrece varios conectores y condiciones para crear un flujo de trabajo personalizado para su organización.
 
