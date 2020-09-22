@@ -12,16 +12,16 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: 830eae43a1bd33df1669bc05e9cbc125794af75b
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: 6ccaf32072dd012ab694457f7a4fb89a34a01965
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88964022"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880385"
 ---
-# <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Incorporación e implementación de Control de aplicaciones de acceso condicional para cualquier aplicación
+# <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Incorporación e implementación del Control de aplicaciones de acceso condicional para cualquier aplicación
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Los controles de sesión de Microsoft Cloud App Security se pueden configurar para que funcionen con cualquier aplicación Web. En este artículo se describe cómo incorporar e implementar aplicaciones de línea de negocio personalizadas, aplicaciones SaaS no destacadas y aplicaciones locales hospedadas a través del proxy de aplicación de Azure Active Directory (Azure AD) con controles de sesión.
 

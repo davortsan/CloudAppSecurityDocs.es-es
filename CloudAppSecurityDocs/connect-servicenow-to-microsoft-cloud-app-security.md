@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 75bc58df1ea45eb4d00498cb9fb2d7a061dac9b4
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 5274e9d4d358730d8e2e44d02c886aa637b3409a
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88780858"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881273"
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Conectar ServiceNow con Microsoft Cloud App Security
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Security con una cuenta de ServiceNow existente mediante la API del conector de aplicaciones. Esta conexión le ofrece visibilidad y control del uso de ServiceNow. Para obtener información sobre cómo Cloud App Security protege ServiceNow, consulte [protección](protect-servicenow.md)de servicenow.
 

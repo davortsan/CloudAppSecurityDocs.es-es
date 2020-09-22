@@ -13,16 +13,16 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2d642a834111a1b8cadc3e997bdb63a19426aac1
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 89a5f95512a2cfd3eb64c181b5e805944c0275eb
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149914"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880931"
 ---
 # <a name="activity-privacy"></a>Privacidad de las actividades
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security proporciona a las empresas la capacidad de determinar con detalle qué usuarios desean supervisar en función de la pertenencia a grupos. La privacidad de la actividad agrega la capacidad de cumplir las normas de cumplimiento de su organización sin poner en peligro la privacidad del usuario. Esto se consigue permitiendo supervisar a los usuarios manteniendo su privacidad ocultando sus actividades en el registro de actividad. Solo los administradores autorizados tienen la opción de elegir la opción de ver estas actividades privadas, con la auditoría de cada instancia en el registro de gobernanza.
 
@@ -32,7 +32,7 @@ Puede tener usuarios en Cloud App Security que desee supervisar pero, debido a l
 
 Para configurar los grupos de privacidad de usuario, primero debe [importar los grupos de usuarios](user-groups.md) a Cloud App Security. De forma predeterminada, verá los siguientes grupos:
 
-- Grupo de usuarios de **aplicación** : un grupo integrado que le permite ver las actividades realizadas por Microsoft 365 y Azure ad aplicaciones.
+- Grupo de usuarios **Aplicación**: un grupo integrado que le permite ver las actividades realizadas por las aplicaciones de Office 365 y Azure AD.
 
 - Grupo de **usuarios externos** : todos los usuarios que no son miembros de ninguno de los dominios administrados que configuró para su organización.
 

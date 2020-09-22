@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: itfalcon
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7b93a60c42b024b03a048848d048f4ed93d13f17
-ms.sourcegitcommit: 870ca47381a36b4bc04e1ccb9b2a522944431fed
+ms.openlocfilehash: 60314be5b2dba1ec3ff5a35eb7d4e836a2a9d34d
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88963478"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881656"
 ---
 # <a name="how-to-investigate-anomaly-detection-alerts"></a>Cómo investigar alertas de detección de anomalías
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security proporciona detecciones de seguridad y alertas para actividades malintencionadas. El objetivo de esta guía es proporcionarle información general y práctica sobre cada alerta, para ayudarle con las tareas de investigación y corrección. En esta guía se incluye información general sobre las condiciones para desencadenar alertas. Sin embargo, es importante tener en cuenta que, puesto que las detecciones de anomalías son no deterministas por naturaleza, solo se desencadenan cuando hay un comportamiento que se desvía de la norma. Por último, algunas alertas pueden estar en versión preliminar, por lo que debe revisar periódicamente la documentación oficial sobre el estado de alerta actualizado.
 
@@ -493,7 +493,7 @@ Actividades que indican que un usuario ha compartido un informe de Power BI que 
 
 ### <a name="unusual-impersonated-activity-by-user"></a>Actividad suplantada inusual (por usuario)
 
-En cierto software, hay opciones para permitir que otros usuarios suplanten a otros usuarios. Por ejemplo, los servicios de correo electrónico permiten a los usuarios autorizar a otros usuarios a enviar correo electrónico en su nombre. Esta actividad la suelen usar los atacantes para crear mensajes de correo electrónico de suplantación de identidad en un intento de extraer información acerca de su organización. Cloud App Security crea una línea base basada en el comportamiento del usuario y crea una actividad cuando se detecta una actividad de suplantación inusual.
+En cierto software, hay opciones para permitir que otros usuarios suplanten a otros usuarios. Por ejemplo, los servicios de correo electrónico permiten que un usuario autorice a otros a enviar correos electrónicos en su nombre. Esta actividad la suelen usar los atacantes para crear mensajes de correo electrónico de suplantación de identidad en un intento de extraer información acerca de su organización. Cloud App Security crea una línea base basada en el comportamiento del usuario y crea una actividad cuando se detecta una actividad de suplantación inusual.
 
 **Período de aprendizaje**
 

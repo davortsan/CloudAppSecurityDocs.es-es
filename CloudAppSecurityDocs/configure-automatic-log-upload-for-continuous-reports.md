@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ebbe2f53f184cf8668a9cf3443ade3dedb42733f
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 8711209823bdb2ea010dbb734fc67c03561122ed
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85623357"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881455"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Configuración de la carga de registros automática para informes continuos en una aplicación virtual: en desuso
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 > [!WARNING]
 > Es muy recomendable configurar la carga de registros mediante [Docker](discovery-docker.md) para una implementación más flexible.
@@ -49,7 +49,7 @@ El recopilador de registros tiene un mecanismo de seguridad integrado que superv
 
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>Paso 1: Configuración del portal web: definición de orígenes de datos y vinculación a un recopilador de registros
 
-1. Vaya a la página Configuración de carga automatizada: en el portal de Cloud App Security, haga clic en ![el icono de](media/settings-icon.png "icono de configuración")configuración icono de configuración y, después, en **recopiladores de registros**.
+1. Vaya a la página Configuración de carga automatizada: en el portal de Cloud App Security, haga clic en ![el icono de](media/settings-icon.png "icono de configuración")configuración icono de configuración y, después, en  **recopiladores de registros**.
 
 2. Cree un origen de datos coincidente para cada firewall o servidor proxy desde el que quiera cargar registros:
 
@@ -107,7 +107,7 @@ El recopilador de registros tiene un mecanismo de seguridad integrado que superv
 
 10. Haga clic en la máquina en la tabla **Máquinas virtuales** y luego en **Iniciar**.
 
-11. Conéctese a la máquina virtual del recopilador de registros para ver si se le ha asignado una dirección DHCP. Para ello, haga clic en la máquina virtual y seleccione **Conectar**. Verá el mensaje de inicio de sesión. Si ve una dirección IP, puede conectarse a la máquina virtual mediante una herramienta SSH o terminal.  Si no ve ninguna dirección IP, inicie sesión mediante las herramientas de conexión de Hyper-V o VMware con las credenciales que copió al crear el recopilador de registros anteriormente. Puede cambiar la contraseña y configurar la máquina virtual con la utilidad de configuración de red mediante la ejecución del siguiente comando:`sudo network_config`
+11. Conéctese a la máquina virtual del recopilador de registros para ver si se le ha asignado una dirección DHCP. Para ello, haga clic en la máquina virtual y seleccione **Conectar**. Verá el mensaje de inicio de sesión. Si ve una dirección IP, puede conectarse a la máquina virtual mediante una herramienta SSH o terminal.  Si no ve ninguna dirección IP, inicie sesión mediante las herramientas de conexión de Hyper-V o VMware con las credenciales que copió al crear el recopilador de registros anteriormente. Puede cambiar la contraseña y configurar la máquina virtual con la utilidad de configuración de red mediante la ejecución del siguiente comando: `sudo network_config`
     > [!NOTE]
     > La máquina virtual está preconfigurada para obtener una dirección IP de un servidor DHCP. Si necesita configurar direcciones IP estáticas, una puerta de enlace predeterminada, un nombre de host, servidores DNS y NTPS, puede usar la utilidad **network_config** o realizar los cambios manualmente.
 
@@ -129,7 +129,7 @@ Para iniciar sesión por primera vez en el recopilador de registros e importar l
 
     c. Escriba el dominio de la consola, por ejemplo: `contoso.portal.cloudappsecurity.com`
 
-    d. Escriba el nombre del recopilador de registros que quiere configurar, por ejemplo:`CloudAppSecurityLogCollector01`
+    d. Escriba el nombre del recopilador de registros que quiere configurar, por ejemplo: `CloudAppSecurityLogCollector01`
 
 ### <a name="step-4---on-premises-configuration-of-your-network-appliances"></a>Paso 4: Configuración local de los dispositivos de red
 

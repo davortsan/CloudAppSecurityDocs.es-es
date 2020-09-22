@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 17c963eb51b5b90a6ab07ec3337600b463fd9684
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 31b732fc51a61606bd2b7b3a25bbb00714901af4
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779651"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880163"
 ---
 # <a name="azure-active-directory-identity-protection-integration"></a>Integración de Azure Active Directory Identity Protection
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security se integra con Azure Active Directory Identity Protection (Identity Protection) para proporcionar análisis de comportamiento de la entidad de usuario (UEBA) en un entorno híbrido. Para obtener más información sobre el aprendizaje automático y el análisis de comportamiento que proporciona Identity Protection, consulte [¿Qué es Identity Protection?](/azure/active-directory/identity-protection/overview-identity-protection).
 
@@ -71,8 +71,8 @@ Están disponibles las siguientes directivas:
 
 |Directiva|Descripción|Estado predeterminado|Gravedad predeterminada|
 |---|---|---|---|
-|Filtración de credenciales|Muestra las alertas de credenciales perdidas, las credenciales válidas del usuario se han perdido|Habilitado|Bajo: recibir todas las alertas|
-|Inicio de sesión peligroso|Agrega varias detecciones de inicio de sesión de riesgo, inicios de sesión no realizadas por el usuario|Habilitado|Alta: recepción de alertas de gravedad alta|
+|Filtración de credenciales|Muestra las alertas de credenciales perdidas, las credenciales válidas del usuario se han perdido|habilitado|Bajo: recibir todas las alertas|
+|Inicio de sesión peligroso|Agrega varias detecciones de inicio de sesión de riesgo, inicios de sesión no realizadas por el usuario|habilitado|Alta: recepción de alertas de gravedad alta|
 
 ## <a name="next-steps"></a>Pasos siguientes
 

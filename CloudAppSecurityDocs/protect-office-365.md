@@ -7,16 +7,16 @@ ms.service: cloud-app-security
 ms.topic: article
 ms.date: 12/04/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e640fbd96b91bb19fa0f9b70ce4eff603d48308a
-ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
+ms.openlocfilehash: 79d79cdbb62881b519c66718dbd66df563cfe676
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89667115"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90877129"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-office-365-environment"></a>Cómo Cloud App Security ayuda a proteger el entorno de Office 365
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Como un importante conjunto de productividad que proporciona herramientas de almacenamiento, colaboración, BI y almacenamiento de archivos en la nube, Office 365 permite a los usuarios compartir sus documentos entre su organización y los asociados de una manera simplificada y eficaz. El uso de Office 365 puede exponer los datos confidenciales no solo internamente, sino también a colaboradores externos, o incluso peor hacer que esté disponible públicamente a través de un vínculo compartido. Estos incidentes pueden producirse debido a un actor malintencionado o a un empleado no compatible. Office 365 también proporciona un sistema de eco de aplicaciones de terceros de gran tamaño para ayudar a mejorar la productividad. El uso de estas aplicaciones puede exponer su organización al riesgo de aplicaciones malintencionadas o el uso de aplicaciones con permisos excesivos.
 

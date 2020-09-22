@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b960cd22f6eaa660484ef3c2f56df34554d24e1d
-ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
+ms.openlocfilehash: 46aa21dd9755725da3e46f2c9ba40ad784a8a3b3
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89667146"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880298"
 ---
 # <a name="past-release-archive-of-microsoft-cloud-app-security"></a>Archivo de versiones anteriores de Microsoft Cloud App Security
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Este artículo es un archivo que describe las actualizaciones realizadas en versiones anteriores de Cloud App Security. Para ver la lista de novedades más reciente, consulte [Novedades de Microsoft Cloud App Security](release-notes.md).
 

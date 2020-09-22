@@ -10,16 +10,16 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 31190fd4df5dc9c3bac19794ff1fd78c4982100d
-ms.sourcegitcommit: 5ace3437d49c7bbde2266a6f1565a65a379b9c2c
+ms.openlocfilehash: cb66e8d45d74d57adf71a095851c40087d102ce4
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2020
-ms.locfileid: "89499499"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880545"
 ---
 # <a name="cloud-app-security-rest-api"></a>Cloud App Security API de REST
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 En este artículo se describe cómo interactuar con Cloud App Security a través de HTTPS.
 
@@ -68,7 +68,7 @@ curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenan
 
 En la tabla siguiente se describen las acciones admitidas:
 
-|Resource|Verbos HTTP|Rutas de URI|
+|Recurso|Verbos HTTP|Rutas de URI|
 |---|---|---|
 |Detección|GET, POST o PUT|/api/v1/discovery/|
 |Enriquecimiento de datos|POST|/api/subnet/|
@@ -87,7 +87,7 @@ En la tabla siguiente se describen los tipos de campo admitidos:
 |---|---|
 |string|Una cadena de texto|
 |boolean|Un valor booleano que representa true/false|
-|integer|Entero de 32 bits con signo|
+|Entero|Entero de 32 bits con signo|
 |timestamp|Milisegundos desde la época|
 
 ## <a name="limits"></a>Límites
@@ -141,9 +141,9 @@ curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenan
 
 En la tabla siguiente se describen los operadores admitidos:
 
-| Operador | Tipo de respuesta | Descripción |
+| Operator | Tipo de respuesta | Descripción |
 | --- | --- | --- |
-| contains | lista de cadenas | Devuelve todos los registros pertinentes que contienen una de las cadenas proporcionadas. |
+| contiene | lista de cadenas | Devuelve todos los registros pertinentes que contienen una de las cadenas proporcionadas. |
 | deq | lista de valores | Devuelve todos los registros que contienen un valor que no es igual a uno de los valores proporcionados. |
 | descendiente | lista de valores | Devuelve todos los registros pertinentes que coinciden con valores o descendientes de ellos. |
 | doesnotstartwith | lista de cadenas | Devuelve todos los registros relevantes que no empiecen por cada una de las cadenas proporcionadas. |

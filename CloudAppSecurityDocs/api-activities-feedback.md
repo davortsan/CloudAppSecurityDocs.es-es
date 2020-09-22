@@ -10,16 +10,16 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: cd6f32c85d0202264a951533a29c26d068337917
-ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
+ms.openlocfilehash: b9d073d3b39fbfeee7ee43b18ab05ddf2969c7bf
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88657606"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880100"
 ---
 # <a name="feedback-on-activity---activities-api"></a>Comentarios sobre la actividad: API de actividades
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Ejecute la solicitud POST para enviar comentarios sobre la actividad que coincide con la clave principal especificada.
 

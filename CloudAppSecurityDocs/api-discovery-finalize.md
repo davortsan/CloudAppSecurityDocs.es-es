@@ -10,16 +10,16 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 509f0c1096d22492a93683a31309e5cf6584987c
-ms.sourcegitcommit: 6e47d0348283d105614d81db4e7737fc837ed20b
+ms.openlocfilehash: a30fd3f257089d8d3aeda125f63ae2c695d6344c
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88657833"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880605"
 ---
 # <a name="finalize-file-upload---cloud-discovery-api"></a>Finalización de la carga de archivos: API de Cloud Discovery
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Una vez completada correctamente la carga del contenido del archivo, notifíquelo para comenzar el procesamiento del archivo.
 

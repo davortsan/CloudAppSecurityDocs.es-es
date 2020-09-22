@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7540ac541f3a6c83191f54c2b4d2df773483299e
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: c2f478c48280fb9fce63d23af0662cec59d61abf
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89150135"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881063"
 ---
 # <a name="basic-setup-for-cloud-app-security"></a>Configuración básica de Cloud App Security
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 En el siguiente procedimiento se proporcionan instrucciones para personalizar el portal de Microsoft Cloud App Security.
 
@@ -59,7 +59,7 @@ En el caso de los clientes de la administración pública de Estados Unidos, tam
 
 1. Si está integrando mediante la integración de Azure Information Protection, vea [Integración de Azure Information Protection](azip-integration.md) para obtener información.
 
-    * Para trabajar con la integración de Azure Information Protection, debe habilitar el [conector de aplicaciones para Microsoft 365](connect-office-365-to-microsoft-cloud-app-security.md).
+    * Para trabajar con la integración de Azure Information Protection, primero debe habilitar el [conector de aplicaciones para Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
 1. Si está realizando la integración con la integración de protección contra amenazas avanzada de Azure, consulte [integración de protección contra amenazas avanzada de Azure](azip-integration.md) para obtener información.
 
@@ -73,6 +73,6 @@ En el caso de los clientes de la administración pública de Estados Unidos, tam
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Configuración de Cloud Discovery](set-up-cloud-discovery.md)
+> [Configurar Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

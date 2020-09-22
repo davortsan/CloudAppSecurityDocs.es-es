@@ -7,16 +7,16 @@ ms.service: cloud-app-security
 ms.topic: article
 ms.date: 09/15/2020
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9271b856cffaea72c38aa6f9a2a85768bb52e7f8
-ms.sourcegitcommit: 7d05b81a839286d2afae4cdad2c2d59e7becc1f9
+ms.openlocfilehash: 56685b66f26e3f8085125cf9cf1c5fd9ec528093
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90524181"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90877417"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-google-cloud-platform-gcp-environment"></a>Cómo Cloud App Security ayuda a proteger el entorno de Google Cloud Platform (GCP)
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Google Cloud Platform es un proveedor de IaaS que permite a su organización hospedar y administrar sus cargas de trabajo completas en la nube. Junto con las ventajas de aprovechar la infraestructura en la nube, los activos más críticos de su organización pueden estar expuestos a las amenazas. Los recursos expuestos incluyen instancias de almacenamiento con información potencialmente confidencial, recursos de proceso que operan algunas de las aplicaciones, puertos y redes privadas virtuales más importantes que permiten el acceso a su organización.
 

@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0c5cb9d6604fead5090c68ae74d9919d4ab0b3e4
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: f7f3fe7ba1df0a62950f88d1053c8f9709cae8c6
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254626"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881600"
 ---
 # <a name="how-to-find-built-in-deprecating-reports"></a>Búsqueda de informes integrados en desuso
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Estamos actualizando la funcionalidad de informes integrados insertándola en otras partes del portal. La actualización de esta funcionalidad está en curso para mejorar los informes de Microsoft Cloud App Security.
 
@@ -31,7 +31,7 @@ Estamos actualizando la funcionalidad de informes integrados insertándola en ot
 
 Esta tabla le ayudará a ver la información proporcionada por los informes en desuso mediante otra funcionalidad de Cloud App Security:
 
-| Tipo de informe | Nombre del informe integrado | Description | Nueva ubicación de los datos |
+| Tipo de informe | Nombre del informe integrado | Descripción | Nueva ubicación de los datos |
 |----|----|----|----|
 | Seguridad | Actividad | Este informe le permite ver una lista de los países o regiones desde los que se originó actividad en las aplicaciones en la nube. El informe muestra distintos parámetros que revelan el volumen de actividad de cada país o región, como el número de eventos, el número de usuarios, etc. Ayuda a obtener una visión general de la distribución geográfica de los usuarios. | Esta información está disponible para aplicaciones, usuarios y direcciones IP concretos. Para cada aplicación, haga clic en la aplicación. Desde allí puede ver el mapa de actividad con todas las ubicaciones. Para cada usuario, haga clic en el usuario y luego, en el cajón de información de usuario. Pueden verse las ubicaciones usadas recientemente, así como el número de direcciones IP y de ISP que se usan. Para cada dirección IP, haga clic en la dirección IP específica. En el cajón de direcciones IP puede ver cuántos usuarios y administradores la usan. |
 | Seguridad | Uso del explorador | Los ataques basados en el explorador se encuentran entre los vectores de ataque más comunes. Los proveedores invierten muchos recursos en proteger el software de exploración, para lo que crean un mecanismo de actualización eficaz para publicar actualizaciones en los puntos de conexión. El empleo de exploradores en desuso mucho después de la fecha de vencimiento de su actualización los convierte en un objetivo fácil para los actores de amenazas que usan los kits de vulnerabilidad de seguridad disponibles. Esta funcionalidad permite obtener una lista de los exploradores obsoletos que los usuarios con acceso a las aplicaciones en la nube usaron en los últimos siete días. También permite saber si ha sido un robot el que ha usado el explorador obsoleto. | Vaya a **Registro de actividad** y abra **Filtros avanzados**. Después, establezca el filtro de **Etiqueta de agente de usuario** igual a **Explorador obsoleto** y **Sistema operativo obsoleto** para ver una lista de los exploradores y los SO obsoletos en uso. |

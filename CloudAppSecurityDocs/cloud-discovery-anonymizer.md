@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 44bc98ec887b8a2d601961a65115b7d7a50f3128
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: ec8e89711fbaea90237bf279633fef134a41eabc
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88781232"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881545"
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Anonimización de datos de Cloud Discovery
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 La anonimización de datos de Cloud Discovery le permite proteger la privacidad del usuario. Cuando se haya cargado el registro de datos en el portal de Microsoft Cloud App Security, se depura el registro y se reemplaza toda la información de nombres de usuario con nombres de usuario cifrados. De este modo, todas las actividades de la nube se mantienen anónimas. Cuando sea necesario, para una investigación de seguridad específica (por ejemplo, una infracción de seguridad o una actividad sospechosa del usuario), los administradores pueden resolver el nombre de usuario real. Si un administrador tiene un motivo para sospechar de un usuario específico, puede buscar el nombre de usuario cifrado de un nombre de usuario conocido y, después, comenzar la investigación usando el nombre de usuario cifrado. Cada conversión de nombre de usuario se audita en el **registro de gobierno**del portal.
 
@@ -48,7 +48,7 @@ Puntos clave:
     1. En el engranaje de configuración, seleccione **configuración de Cloud Discovery**.
 
     2. En la pestaña Anonimización, para anonimizar nombres de usuario de forma predeterminada, seleccione **Anonimizar la información privada de forma predeterminada en los nuevos informes y orígenes de datos**. También puede seleccionar **información de la máquina anonimización de forma predeterminada en el informe "usuarios del punto de conexión de Win10"**.
-    3. Haga clic en **Guardar**.
+    3. Haga clic en **Save**(Guardar).
 
     ![Página de configuración de anonimización](media/anonymizer1.png)
 

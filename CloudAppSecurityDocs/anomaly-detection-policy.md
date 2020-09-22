@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5bf75b479f3568b7c6451880f3a2774104d8115a
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 7aa2b2ac172608d445860c1ddce4b9125657e18e
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149651"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880132"
 ---
 # <a name="get-behavioral-analytics-and-anomaly-detection"></a>Obtención de análisis de comportamiento y detección de anomalías
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Las directivas de detección de anomalías de Microsoft Cloud App Security proporcionan análisis de comportamiento de entidad y usuario (UEBA) y aprendizaje automático (ML) listos para usar, de modo que esté listo desde el principio para ejecutar la detección de amenazas avanzada en su entorno en la nube. Dado que se habilitan automáticamente, las nuevas directivas de detección de anomalías inician inmediatamente el proceso de detección y la intercalación de los resultados, dirigidas a numerosas anomalías de comportamiento entre los usuarios y los equipos y dispositivos conectados a la red. Además, las directivas exponen más datos del motor de detección de Cloud App Security, para ayudarle a acelerar el proceso de investigación y a contener amenazas en curso.
 
@@ -35,7 +35,7 @@ Las anomalías se detectan mediante el examen de la actividad del usuario. El ri
 * Errores de inicio de sesión
 * Actividad administrativa
 * Cuentas inactivas
-* Ubicación
+* Location
 * Viaje imposible
 * Agente de usuario y dispositivo
 * Tasa de actividad
@@ -78,12 +78,12 @@ Están disponibles las directivas de detección de anomalías siguientes:
     >
     > Cloud App Security admite la detección de malware para las siguientes aplicaciones:
     >
-    > * Cuadro
+    > * Box
     > * Dropbox
     > * G Suite
-    > * Microsoft 365 (requiere una licencia válida para la protección contra amenazas avanzada de Office 365 P1)
+    > * Office 365 (requiere una licencia válida para la protección contra amenazas avanzada de Office 365 P1)
 
-### <a name="activity-from-anonymous-ip-addresses"></a>Actividad desde direcciones IP anónimas
+### <a name="activity-from-anonymous-ip-addresses"></a>Actividad desde una dirección IP anónima
 
 * Esta detección identifica que los usuarios estaban activos desde una dirección IP que se ha identificado como una dirección IP de proxy anónima. Estos servidores proxy los usan las personas que desean ocultar la dirección IP de su dispositivo y se pueden usar para fines malintencionados. Esta detección usa un algoritmo de aprendizaje automático que reduce los falsos positivos, como las direcciones IP no etiquetadas que los usuarios de la organización usan habitualmente.
 

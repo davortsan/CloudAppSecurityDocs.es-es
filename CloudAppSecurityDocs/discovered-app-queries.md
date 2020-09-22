@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f31b8937d1eeb9781b677da154880ab699ef131e
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: ef61d90f23eb9e15b8b84f926b0b4424f4b3b36b
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88780314"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881676"
 ---
 # <a name="discovered-app-filters-and-queries"></a>Consultas y filtros de aplicaciones detectadas
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Cuando haya un gran número de aplicaciones detectadas, le resultará útil filtrarlas y realizar consultas en ellas. En este artículo se describe qué filtros están disponibles y cómo realizar consultas en las aplicaciones detectadas.
 
@@ -49,7 +49,7 @@ Puede crear etiquetas de aplicación personalizadas. Estas etiquetas pueden usar
 
 Para crear una etiqueta de aplicación personalizada:
 
-1. En el engranaje de **configuración** , seleccione **configuración de Cloud Discovery**, luego la pestaña Etiquetas de la **aplicación** . Haga clic en el icono de signo más. ![icono de signo más](media/plus-icon.png)
+1. En el engranaje de **configuración** , seleccione **configuración de Cloud Discovery**y, a continuación, la pestaña Etiquetas de la **aplicación** . Haga clic en el icono de signo más. ![icono de signo más](media/plus-icon.png)
 
    ![Crear una etiqueta de aplicación personalizada](media/create-app-tag.png)
 

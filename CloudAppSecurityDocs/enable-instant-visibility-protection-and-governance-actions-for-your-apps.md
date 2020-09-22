@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1275d29f301f407dfd9198e5278bd4bd75ce7d39
-ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
+ms.openlocfilehash: 2e23caa4e0ca986bb17d9e5014b328b214d0aeef
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89666912"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880219"
 ---
 # <a name="connect-apps"></a>Conectar aplicaciones
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Los conectores de aplicaciones usan las API de los proveedores de aplicaciones para permitir una mayor visibilidad y control de las aplicaciones a las que se conecta mediante Microsoft Cloud App Security.
 
@@ -36,7 +36,7 @@ Cloud App Security admite varias instancias de la misma aplicación conectada. P
 > [!NOTE]
 > No se admiten instancias múltiples de Office 365 y Azure.
 
-## <a name="how-it-works"></a>Funcionamiento
+## <a name="how-it-works"></a>Cómo funciona
 
 Cloud App Security se implementa con privilegios de administrador del sistema para permitir el acceso total a todos los objetos del entorno.
 
@@ -73,15 +73,15 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
 | **Lista de privilegios** | | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | No es compatible con el proveedor | ✔ | ✔ | ✔ | No es compatible con el proveedor |
 | **Regulación de usuario** | | ✔ | Próximamente | Conexión de asunto G Suite | ✔ | ✔ | | Próximamente | ✔ | Próximamente | No es compatible con el proveedor |
 | **Actividad de inicio de sesión** | ✔ | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **Actividad de usuario** | No aplicable | ✔ | ✔ | ✔ | ✔ - requiere Google Business o Enterprise | ✔ | ✔ | Parcial | Compatible con Salesforce Shield | ✔ | ✔ |
+| **Actividad de usuario** | No es aplicable | ✔ | ✔ | ✔ | ✔ - requiere Google Business o Enterprise | ✔ | ✔ | Parcial | Compatible con Salesforce Shield | ✔ | ✔ |
 | **Actividad administrativa** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Parcial | ✔ | ✔ | No es compatible con el proveedor |
-| **DLP: examen periódico** | | ✔ | ✔ | No aplicable | ✔ | ✔ | No aplicable | ✔ | ✔ | ✔ | No es compatible con el proveedor |
-| **Análisis en tiempo real de DLP-Near** | | ✔ | | No aplicable | ✔: requiere Google Business Enterprise | ✔ | No aplicable | | | ✔ | No es compatible con el proveedor |
-| **Control de uso compartido** | ✔ | ✔ | ✔ | No aplicable | ✔ | ✔ | No aplicable | No aplicable | | ✔ | No es compatible con el proveedor |
-| **Regulación de archivos** | ✔ | ✔ | ✔ | No aplicable | ✔ | ✔ | No aplicable | | ✔ | | No es compatible con el proveedor |
-| **Ver permisos de aplicación** | No aplicable | No es compatible con el proveedor | Próximamente | No aplicable | ✔ | ✔ | No aplicable | | ✔ | No aplicable | No aplicable |
-| **Revocar permisos de aplicación** | No aplicable | No es compatible con el proveedor | en breve | No aplicable | ✔ | ✔ | No aplicable | | ✔ | No aplicable | No aplicable |
-| **Aplicación de etiquetas de Azure Information Protection** | No aplicable | ✔ | | No aplicable | ✔ | ✔ | No aplicable | | | No aplicable | No aplicable |
+| **DLP: examen periódico** | | ✔ | ✔ | No es aplicable | ✔ | ✔ | No es aplicable | ✔ | ✔ | ✔ | No es compatible con el proveedor |
+| **Análisis en tiempo real de DLP-Near** | | ✔ | | No es aplicable | ✔: requiere Google Business Enterprise | ✔ | No es aplicable | | | ✔ | No es compatible con el proveedor |
+| **Control de uso compartido** | ✔ | ✔ | ✔ | No es aplicable | ✔ | ✔ | No aplicable | No aplicable | | ✔ | No es compatible con el proveedor |
+| **Regulación de archivos** | ✔ | ✔ | ✔ | No es aplicable | ✔ | ✔ | No es aplicable | | ✔ | | No es compatible con el proveedor |
+| **Ver permisos de aplicación** | No es aplicable | No es compatible con el proveedor | Próximamente | No es aplicable | ✔ | ✔ | No es aplicable | | ✔ | No aplicable | No aplicable |
+| **Revocar permisos de aplicación** | No es aplicable | No es compatible con el proveedor | en breve | No es aplicable | ✔ | ✔ | No es aplicable | | ✔ | No aplicable | No aplicable |
+| **Aplicación de etiquetas de Azure Information Protection** | No es aplicable | ✔ | | No es aplicable | ✔ | ✔ | No aplicable | | | No aplicable | No aplicable |
 
 ## <a name="prerequisites"></a>Requisitos previos
 
