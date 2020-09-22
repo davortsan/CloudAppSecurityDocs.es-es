@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 27378482ecc530890b66c930ec5ad60fcfa6cdc6
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: a701de6959bdaba8045c42d6317b62bd42645d0f
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88780671"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880832"
 ---
 # <a name="control-cloud-apps-with-policies"></a>Control de aplicaciones en la nube con directivas
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Las directivas permiten definir la forma en que quiere que los usuarios se comporten en la nube. Con ellas se puede detectar comportamientos arriesgados, infracciones o actividades y puntos de datos sospechosos en su entorno de la nube. Si es necesario, puede integrar flujos de trabajo de corrección para lograr una mitigación de riesgos completa. Hay varios tipos de directivas que se correlacionan con los diferentes tipos de información que quiere recopilar sobre el entorno de nube y los tipos de acciones correctoras que quizás quiera realizar.
 
@@ -35,7 +35,7 @@ Cuando consulta la página **Directiva**, se pueden distinguir las distintas pol
 
 Pueden crearse los siguientes tipos de directivas:
 
-|Icono de tipo de directiva|Tipo de directiva|Use|
+|Icono de tipo de directiva|Tipo de directiva|Uso|
 |-----|-----------------|---------|
 |![Icono de directiva de acceso](media/proxy-policy.png)|Directiva de acceso|Las directivas de acceso proporcionan funcionalidades de supervisión y control en tiempo real de los inicios de sesión de usuario en las aplicaciones en la nube.|
 |![icono de directiva de actividad](media/activity_policy.png)|Directiva de actividades|Las directivas de actividad permiten aplicar toda una variedad de procesos automatizados usando las API del proveedor de aplicaciones. Estas directivas permiten supervisar actividades concretas realizadas por distintos usuarios o seguir niveles inesperadamente altos de un determinado tipo de actividad.|

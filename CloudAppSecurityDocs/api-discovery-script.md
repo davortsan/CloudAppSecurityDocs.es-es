@@ -10,16 +10,16 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 3a1d9ef4412ddecf2117722b6c060a9f86023814
-ms.sourcegitcommit: 04811ae308bcc3cd25b18c5e2379ca92920d9e60
+ms.openlocfilehash: 542f4a010aa5ca5051dedb5bc3ca8f97913c4a4e
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88876551"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90879814"
 ---
 # <a name="generate-block-script---cloud-discovery-api"></a>Generar script de bloque Cloud Discovery API
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 > [!NOTE]
 > Esta solicitud no está disponible para Office 365 Cloud App Security.
@@ -53,7 +53,7 @@ Actualmente se admiten los siguientes formatos:
 > [!NOTE]
 > Si no encuentra el dispositivo, genere un script de bloque manualmente mediante el portal.
 
-## <a name="response"></a>Respuesta
+## <a name="response"></a>Response
 
 Esta solicitud devuelve el script de bloque como texto.
 
@@ -67,7 +67,7 @@ Este es un ejemplo de la solicitud.
 curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/discovery_block_scripts/?format=102&type=banned"
 ```
 
-### <a name="response"></a>Respuesta
+### <a name="response"></a>Response
 
 ```text
 url.domain=application.com deny

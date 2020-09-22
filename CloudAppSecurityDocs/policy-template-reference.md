@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9e8b9060163e9756660719ab390f260337f14192
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 28b78dfb0a295d341d9f43d9bd6cc6efacda0aa7
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88779124"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880499"
 ---
 # <a name="policy-template-reference"></a>Referencia de plantillas de directiva
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 En este artículo se proporciona información sobre las plantillas de directiva incluidas en Microsoft Cloud App Security.
 
@@ -54,11 +54,11 @@ Se recomienda empezar la creación de directivas basándose en una plantilla exi
 |DLP|Archivo con información de tarjeta de pago detectado en la nube (motor DLP integrado)|Alerta cuando nuestro motor de prevención de pérdida de datos (DLP) integrado de Microsoft Cloud App Security detecta un archivo que contiene información de tarjeta de pago (PCI) en una aplicación de nube autorizada.|
 |DLP|Archivo con información sanitaria protegida detectado en la nube (motor DLP integrado)|Alerta cuando nuestro motor de prevención de pérdida de datos (DLP) integrado de Microsoft Cloud App Security detecta un archivo que contiene información de estado protegida (PHI) en una aplicación de nube autorizada.|
 |DLP|Archivo con información privada detectado en la nube (motor DLP integrado)|Alerta cuando nuestro motor de prevención de pérdida de datos (DLP) integrado de Microsoft Cloud App Security detecta un archivo que contiene datos personales en una aplicación de nube autorizada.|
-|Detección de amenazas|Actividad administrativa desde una dirección IP no corporativa|Cuando un usuario administrador realiza una actividad administrativa desde una dirección IP que no está incluida en la categoría de intervalo de direcciones IP corporativas, se puede optar por enviar o recibir una alerta. Primero configure las direcciones IP corporativas en la página Configuración y establezca los **intervalos de direcciones IP**.|
-|Detección de amenazas|Inicio de sesión desde una dirección IP de riesgo|Alerta cuando un usuario inicia sesión en las aplicaciones autorizadas desde una dirección IP de riesgo. De forma predeterminada, la categoría de direcciones IP de riesgo contiene direcciones que tienen etiquetas de dirección IP de proxy anónimo, Tor o red de robots (botnet). Puede agregar más direcciones IP a esta categoría en la página de configuración de intervalos de direcciones IP.|
-|Detección de amenazas|Descarga masiva de un solo usuario|Alerta cuando un solo usuario realiza más de 50 descargas en 1 minutos.|
-|Detección de amenazas|Varios intentos de inicio de sesión de usuario erróneos en una aplicación|Alerta cuando un usuario intenta iniciar sesión en una única aplicación y se produce un error más de 10 veces en 5 minutos.|
-|Detección de amenazas|Actividad potencial de ransomware|Alerta cuando un usuario carga en la nube archivos que podrían estar infectados con ransomware.|
+|Detección de amenazas.|Actividad administrativa desde una dirección IP no corporativa|Cuando un usuario administrador realiza una actividad administrativa desde una dirección IP que no está incluida en la categoría de intervalo de direcciones IP corporativas, se puede optar por enviar o recibir una alerta. Primero configure las direcciones IP corporativas en la página Configuración y establezca los **intervalos de direcciones IP**.|
+|Detección de amenazas.|Inicio de sesión desde una dirección IP de riesgo|Alerta cuando un usuario inicia sesión en las aplicaciones autorizadas desde una dirección IP de riesgo. De forma predeterminada, la categoría de direcciones IP de riesgo contiene direcciones que tienen etiquetas de dirección IP de proxy anónimo, Tor o red de robots (botnet). Puede agregar más direcciones IP a esta categoría en la página de configuración de intervalos de direcciones IP.|
+|Detección de amenazas.|Descarga masiva de un solo usuario|Alerta cuando un solo usuario realiza más de 50 descargas en 1 minutos.|
+|Detección de amenazas.|Varios intentos de inicio de sesión de usuario erróneos en una aplicación|Alerta cuando un usuario intenta iniciar sesión en una única aplicación y se produce un error más de 10 veces en 5 minutos.|
+|Detección de amenazas.|Actividad potencial de ransomware|Alerta cuando un usuario carga en la nube archivos que podrían estar infectados con ransomware.|
 |Control de uso compartido|Archivo compartido con direcciones de correo electrónico personales|Alerta cuando se comparte un archivo con la dirección de correo electrónico personal de un usuario.|
 |Control de uso compartido|Archivo compartido con un dominio no autorizado|Alerta cuando se comparte un archivo con un dominio no autorizado (por ejemplo, la competencia).|
 |Control de uso compartido|Certificados digitales compartidos (extensiones de archivo)|Alerta cuando se comparte públicamente un archivo que contiene certificados digitales. Use esta plantilla para ayudar a regular su almacenamiento de AWS.|

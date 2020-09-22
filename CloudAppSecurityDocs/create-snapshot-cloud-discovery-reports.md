@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8cfefb76ec1c464ace29717ba069f82a456554ad
-ms.sourcegitcommit: 30bd09cd5a05bf19818a3f3a7e1b2ac0dc25d420
+ms.openlocfilehash: 0f74f1ad1cec5a8a3f57298378ef00e6f89c71ca
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89598264"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880790"
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Crear informes de instantáneas de Cloud Discovery
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Es importante cargar un registro manualmente y dejar que Microsoft Cloud App Security lo analice antes de intentar usar el recopilador de registros automáticos. Para información sobre cómo funciona el recopilador de registros y el formato de registro esperado, vea [Uso de registros de tráfico para Cloud Discovery](#log-format).
 

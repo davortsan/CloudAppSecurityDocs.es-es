@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8ce7a23e95bfaf0195453e22afe8f547ab8837b8
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 0f6aebe10c147a6be1250ce5f15a208570947edc
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149880"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90879254"
 ---
 # <a name="manage-oauth-apps"></a>Administración de aplicaciones de OAuth
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Muchas aplicaciones de productividad de terceros que pueden instalar los usuarios empresariales de su organización solicitan permiso para acceder a la información y los datos de los usuarios, e iniciar sesión en nombre del usuario en otras aplicaciones en la nube, como Microsoft 365, G Suite y Salesforce. Cuando los usuarios instalan estas aplicaciones, a menudo hacen clic en Aceptar sin revisar detenidamente los detalles en el mensaje, incluyendo la concesión de permisos a la aplicación. Este problema se agrava por el hecho de que es posible que el departamento de TI no tenga suficiente información para evaluar el riesgo de seguridad que supone una aplicación frente a la ventaja de productividad que ofrece. Dado que aceptar permisos de aplicación de terceros es un riesgo de seguridad potencial para la organización, supervisar los permisos de aplicación que conceden los usuarios le ofrece la visibilidad y el control necesarios para proteger a los usuarios y las aplicaciones. Los permisos de la aplicación Microsoft Cloud App Security permiten ver qué aplicaciones de OAuth instaladas por el usuario tienen acceso a datos de Microsoft 365, G Suite Data y Salesforce. Cloud App Security le indica qué permisos tienen las aplicaciones y a qué usuarios se les concede acceso a sus cuentas de Microsoft 365, G Suite y Salesforce. Los permisos de aplicación le ayudan a decidir a qué aplicaciones permite que los usuarios tengan acceso y cuáles quiere prohibir.
+Muchas aplicaciones de productividad de terceros que puedan instalar los usuarios profesionales de su organización solicitan permiso para acceder a datos e información del usuario e iniciar sesión en nombre de este o en otras aplicaciones en la nube, como Office 365, G Suite y Salesforce. Cuando los usuarios instalan estas aplicaciones, a menudo hacen clic en Aceptar sin revisar detenidamente los detalles en el mensaje, incluyendo la concesión de permisos a la aplicación. Este problema se agrava por el hecho de que es posible que el departamento de TI no tenga suficiente información para evaluar el riesgo de seguridad que supone una aplicación frente a la ventaja de productividad que ofrece. Dado que aceptar permisos de aplicación de terceros es un riesgo de seguridad potencial para la organización, supervisar los permisos de aplicación que conceden los usuarios le ofrece la visibilidad y el control necesarios para proteger a los usuarios y las aplicaciones. Los permisos de aplicación de Microsoft Cloud App Security le permiten ver qué aplicaciones de OAuth instaladas por el usuario tienen acceso a datos de Office 365, de G Suite y de Salesforce. Cloud App Security le indica qué permisos tienen las aplicaciones y qué usuarios les concedieron acceso a sus cuentas de Office 365, G Suite y Salesforce. Los permisos de aplicación le ayudan a decidir a qué aplicaciones permite que los usuarios tengan acceso y cuáles quiere prohibir.
 
 Para obtener más información sobre cómo investigar aplicaciones OAuth, consulte [investigación de aplicaciones OAuth de riesgo](investigate-risky-oauth.md).
 
@@ -46,17 +46,17 @@ La página Aplicaciones de OAuth de aplicación proporciona la siguiente informa
 
 |Elemento|Qué significa|Se aplica a|
 |-------|-------|-------|
-|Icono Básica en la barra de consulta de aplicación  |Cambie a consulta en la vista básica.|Microsoft 365, G Suite, Salesforce|
-|Icono Avanzada en la barra de consulta de aplicación  |Cambie a consulta en la vista avanzada.|Microsoft 365, G Suite, Salesforce|
+|Icono Básica en la barra de consulta de aplicación  |Cambie a consulta en la vista básica.|Office 365, G Suite y Salesforce|
+|Icono Avanzada en la barra de consulta de aplicación  |Cambie a consulta en la vista avanzada.|Office 365, G Suite y Salesforce|
 |Icono Abrir o cerrar todos los detalles en la lista de aplicaciones  |Vea más o menos detalles sobre cada aplicación.|
-|Icono Exportar en la lista de aplicaciones  |Exporte un archivo CSV que contiene una lista de aplicaciones, el número de usuarios para cada aplicación, los permisos asociados a la aplicación, el nivel de permisos, el estado de la aplicación y el nivel de uso de la comunidad.|Microsoft 365, G Suite, Salesforce|
-|Aplicación|Nombre de la aplicación. Seleccione el nombre para ver más información, incluida la descripción, el publicador (por Microsoft 365), el sitio web de la aplicación y el identificador.|Microsoft 365, G Suite, Salesforce|
-|Autorizado por|Número de usuarios que han autorizado esta aplicación para obtener acceso a sus cuentas de aplicación y han concedido permisos a la aplicación. Seleccione el número para ver más información, incluida una lista de correos electrónicos de usuario, y si un administrador ha aceptado previamente la aplicación.|Microsoft 365, G Suite, Salesforce|
-|Nivel de permisos  |El icono y texto de nivel de permisos que indica Alto, Medio o Bajo. El nivel indica el grado de acceso que tiene esta aplicación a sus datos. Por ejemplo, Bajo podría indicar que la aplicación solo tiene acceso a los perfiles y nombres de usuario. Seleccione el nivel para obtener más información, incluidos los permisos concedidos a la aplicación, el uso de la comunidad o actividad relacionada en el [registro de gobernanza](governance-actions.md).|Microsoft 365, G Suite|
-|Estado de la aplicación|Un administrador puede marcar una aplicación como Aprobada, Prohibida, o dejarla como Sin determinar.|Microsoft 365, G Suite, Salesforce|
-|Uso de la comunidad|Muestra la popularidad de la aplicación entre los usuarios (conocida, poco conocida o desconocida)|Microsoft 365, G Suite, Salesforce|
-|Última autorización|Fecha más reciente en la que un usuario concedió permisos a esta aplicación.|Microsoft 365, Salesforce|
-|Publisher|Nombre del proveedor que proporciona la aplicación.|Microsoft 365|
+|Icono Exportar en la lista de aplicaciones  |Exporte un archivo CSV que contiene una lista de aplicaciones, el número de usuarios para cada aplicación, los permisos asociados a la aplicación, el nivel de permisos, el estado de la aplicación y el nivel de uso de la comunidad.|Office 365, G Suite y Salesforce|
+|Aplicación|Nombre de la aplicación. Seleccione el nombre para ver más información, incluida la descripción, el publicador (para Office 365), el sitio web de la aplicación y el identificador.|Office 365, G Suite y Salesforce|
+|Autorizado por|Número de usuarios que han autorizado esta aplicación para obtener acceso a sus cuentas de aplicación y han concedido permisos a la aplicación. Seleccione el número para ver más información, incluida una lista de correos electrónicos de usuario, y si un administrador ha aceptado previamente la aplicación.|Office 365, G Suite y Salesforce|
+|Nivel de permisos  |El icono y texto de nivel de permisos que indica Alto, Medio o Bajo. El nivel indica el grado de acceso que tiene esta aplicación a sus datos. Por ejemplo, Bajo podría indicar que la aplicación solo tiene acceso a los perfiles y nombres de usuario. Seleccione el nivel para obtener más información, incluidos los permisos concedidos a la aplicación, el uso de la comunidad o actividad relacionada en el [registro de gobernanza](governance-actions.md).|Office 365 y G Suite|
+|Estado de la aplicación|Un administrador puede marcar una aplicación como Aprobada, Prohibida, o dejarla como Sin determinar.|Office 365, G Suite y Salesforce|
+|Uso de la comunidad|Muestra la popularidad de la aplicación entre los usuarios (conocida, poco conocida o desconocida)|Office 365, G Suite y Salesforce|
+|Última autorización|Fecha más reciente en la que un usuario concedió permisos a esta aplicación.|Office 365 y Salesforce|
+|Publisher|Nombre del proveedor que proporciona la aplicación.|Office 365|
 |Último uso|Fecha más reciente en la que un miembro de la organización usó esta aplicación.|Salesforce|
 
 ## <a name="ban-or-approve-an-app"></a>Prohibir o aprobar una aplicación
@@ -114,7 +114,7 @@ Para exportar el registro, realice los pasos siguientes:
 
     ![Captura de pantalla que muestra la exportación de la auditoría de la aplicación OAuth](media/oauth-export-users.png)
 
-## <a name="send-feedback"></a>Enviar comentarios
+## <a name="send-feedback"></a>Envío de comentarios
 
 Si hay una aplicación de OAuth detectada en la organización que parece malintencionada, puede enviar la Cloud App Security comentarios del equipo para que podamos saberlo. Esta característica le permite formar parte de nuestra comunidad de seguridad y mejorar el análisis y la puntuación de riesgo de las aplicaciones OAuth.
 

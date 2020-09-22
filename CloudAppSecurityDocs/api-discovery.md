@@ -10,16 +10,16 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 647570edd98fd1fd4977a9096fcf475f3ee09a8e
-ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
+ms.openlocfilehash: cdf70db4edd8b476a1915b9f54459a8d8b1a7bec
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84505254"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90879770"
 ---
 # <a name="cloud-discovery-api"></a>API de Cloud Discovery
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Cloud Discovery analiza los registros del sistema proporcionados por el usuario para detectar aplicaciones nuevas y desconocidas en el entorno de nube. Use la API de Cloud Discovery para automatizar la carga de los archivos de registro de detección de su empresa. El proceso de carga de archivos consta de tres llamadas API a las que se debe llamar consecutivamente.
 
@@ -27,9 +27,9 @@ Además, Cloud App Security permite bloquear el acceso a aplicaciones no autoriz
 
 A continuación se enumeran las solicitudes admitidas:
 
-- [Iniciar carga de archivos](api-discovery-initiate.md)
-- [Realizar la carga de archivos](api-discovery-perform.md)
-- [Finalizar carga de archivos](api-discovery-finalize.md)
-- [Generar script de bloque](api-discovery-script.md)
+- [Iniciación de la carga de archivos](api-discovery-initiate.md)
+- [Realización de la carga de archivos](api-discovery-perform.md)
+- [Finalización de la carga de archivos](api-discovery-finalize.md)
+- [Generación de scripts de bloques](api-discovery-script.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

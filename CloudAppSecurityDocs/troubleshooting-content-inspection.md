@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2f4c9f5ddb7219356b808cf4d8829ea87ff795ee
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 9ac46552691fd3298ab8ffb81355aed48a680c45
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624768"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90877213"
 ---
 # <a name="troubleshooting-content-inspection"></a>Solución de problemas relacionados con la inspección de contenido
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 En este artículo se proporciona una lista de los estados de inspección de contenido, así como el significado de estos.
 
@@ -34,7 +34,7 @@ En la tabla se enumera cada estado de inspección de contenido y su descripción
 |Estado de la inspección de contenido|Descripción|
 |---|---|
 |Completed|La inspección de contenido se completó correctamente.|
-|No disponible|La inspección de contenido no es aplicable para este archivo. Puede ser que este estado aparezca porque no hay ninguna directiva que requiera la inspección de contenido de este archivo o porque no se admite el tipo de archivo.|
+|No es aplicable|La inspección de contenido no es aplicable para este archivo. Puede ser que este estado aparezca porque no hay ninguna directiva que requiera la inspección de contenido de este archivo o porque no se admite el tipo de archivo.|
 |Pending|El archivo está actualmente en la cola de inspección de contenido.|
 |Error: Error de descarga|Microsoft Cloud App Security no ha podido descargar el archivo para la inspección.|
 |Error: Archivo cifrado|El archivo no se ha podido descifrar.|

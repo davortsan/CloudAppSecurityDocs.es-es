@@ -14,20 +14,20 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: dd6e6f00f39c4107884620d2514145022596c95c
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: 56499755612ba1ba5453c694cea84ded4bc153e1
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89149761"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880509"
 ---
 # <a name="oauth-app-policies"></a>Directivas de aplicación de OAuth
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Además de la [investigación existente de aplicaciones OAuth](manage-app-permissions.md) conectada a su entorno, puede establecer directivas de permisos para recibir notificaciones automatizadas cuando una aplicación OAuth cumpla determinados criterios. Por ejemplo, puede recibir automáticamente una alerta cuando haya aplicaciones que requieran un nivel de permisos elevado y que hayan sido autorizadas por más de 50 usuarios.
 
-Las directivas de aplicación de OAuth permiten investigar qué permisos solicitó cada aplicación y qué usuarios los autorizaron para Microsoft 365, G Suite y Salesforce. También es posible marcar estos permisos como aprobados o prohibidos. Si se marcan como prohibidos, se revocarán los permisos de cada aplicación para cada usuario que la haya autorizado.
+Las directivas de aplicación de OAuth de la aplicación permiten investigar qué permisos ha solicitado cada aplicación y qué usuarios los han autorizado para Office 365, G Suite y Salesforce. También es posible marcar estos permisos como aprobados o prohibidos. Si se marcan como prohibidos, se revocarán los permisos de cada aplicación para cada usuario que la haya autorizado.
 
 ## <a name="create-a-new-oauth-app-policy"></a>Crear una directiva de aplicación de OAuth
 
@@ -38,7 +38,7 @@ Para crear una directiva de aplicación de OAuth:
 1. En **Investigar**, seleccione **Aplicación de OAuth**.
 
 1. Filtre las aplicaciones según sus necesidades. Por ejemplo, puede ver todas las aplicaciones que solicitan **permiso** para **modificar calendarios en el buzón**.
-1. Haga clic en el botón **New policy from search** (Nueva directiva a partir de búsqueda).
+1. Haga clic en el botón **Nueva directiva a partir de búsqueda**.
     ![nueva directiva a partir de búsqueda](media/app-permissions-filter.png)
 1. Puede usar el filtro de uso de la **comunidad** para obtener información sobre si el permiso para esta aplicación es común, infrecuente o poco frecuente. Este filtro puede ser útil si tiene una aplicación que es poco frecuente y solicita un permiso que tiene un nivel de gravedad alto o solicita permiso de muchos usuarios.
 1. Puede establecer la directiva según la pertenencia a grupos de los usuarios que autorizaron las aplicaciones. Por ejemplo, un administrador puede decidir establecer una directiva que revoca aplicaciones no comunes si requieren permisos elevados, solo si el usuario que autoriza los permisos es miembro del grupo de administradores.

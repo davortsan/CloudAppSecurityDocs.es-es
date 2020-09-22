@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d7bfc0fad445b242f9093cb109c6678e6d2542aa
-ms.sourcegitcommit: 98c8dd439d1183af3d8598c676c8ff041a88bd88
+ms.openlocfilehash: 9e80f41434f5d8255bb1ebfb1f0cc73782ac1e39
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89666821"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90879248"
 ---
 # <a name="manage-admin-access"></a>Administrar el acceso de administrador
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security es compatible con el control de acceso basado en roles. En este artículo se ofrecen instrucciones para configurar el acceso al portal de Cloud App Security para los administradores. Para obtener más información sobre la asignación de roles de administrador, consulte los artículos sobre [Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles) y [Office 365](/office365/admin/add-users/assign-admin-roles).
 

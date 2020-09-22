@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: borisk
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c6774d68bf354e58074281e403f571a1a079a738
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: be9454c025d0dd2bf7d83954cba48ed349cf08e3
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88780569"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880809"
 ---
 # <a name="integrate-cloud-app-security-with-corrata"></a>Integración de Cloud App Security con Corrata
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Si trabaja con Cloud App Security y Corrata, puede integrar los dos productos para mejorar su experiencia de Cloud Discovery de seguridad para el uso de aplicaciones móviles. Corrata, como puerta de enlace móvil local, supervisa el tráfico de su organización desde dispositivos móviles, lo que permite establecer directivas para el bloqueo de transacciones. Juntos, Cloud App Security y Corrata proporcionan las siguientes capacidades:
 

@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6ea6a6c8d544fe3dbfc4ceaf63f7d5c91d98054a
-ms.sourcegitcommit: 29a8e66c665f51d831516924ae4d9d8047b39276
+ms.openlocfilehash: 0c18810e5fc6c4aa94fecd2db5e6b8a03d82ae20
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88780399"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880754"
 ---
 # <a name="use-a-custom-log-parser"></a>Uso del analizador de registros personalizado
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Cloud App Security le permite configurar un analizador personalizado para satisfacer y procesar el formato de los registros de modo que se puedan usar para Cloud Discovery. Normalmente usaría un analizador personalizado si Cloud App Security no admite explícitamente el firewall o el dispositivo. Puede tratarse de un analizador CSV o un analizador de clave-valor personalizado.
 
@@ -54,7 +54,7 @@ Para configurar un analizador personalizado:
 
     ![Rellene los campos de analizador de registros personalizados](media/custom-log-parser.png)
 
-7. Haga clic en **Guardar**. El formato de registro personalizado que ha configurado se guardará como analizador personalizado de forma predeterminada. Puede editarlo en cualquier momento si hace clic en **Editar**.
+7. Haga clic en **Save**(Guardar). El formato de registro personalizado que ha configurado se guardará como analizador personalizado de forma predeterminada. Puede editarlo en cualquier momento si hace clic en **Editar**.
 
 8. En **Elija los registros de tráfico**, seleccione el archivo de registro que ha modificado y cárguelo. Puede cargar hasta 20 archivos a la vez. También se admiten archivos comprimidos y zip.
 
