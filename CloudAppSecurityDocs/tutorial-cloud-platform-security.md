@@ -12,16 +12,16 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: ae33c53a8067b91aa1d1b6eb8ad78533fbac3161
-ms.sourcegitcommit: 4b92203500955b3e12f751348725384615b671db
+ms.openlocfilehash: 069ed5a6182c88bef89c792793c9bab2e0700f56
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90721910"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90881014"
 ---
 # <a name="tutorial-manage-cloud-platform-security"></a>Tutorial: Administración de la seguridad de plataformas en la nube
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 El trabajo remoto suele conllevar un uso intensivo de aplicaciones en la nube y plataformas en la nube para las tareas empresariales comunes, y expone la necesidad de proteger los entornos de nube y de la adopción de productos de seguridad en la nube. Según el [modelo de responsabilidad compartida](/azure/security/fundamentals/shared-responsibility), una organización es responsable de administrar y proteger su plataforma en la nube: Administración de identidad y acceso (IAM), Virtual Machines (VM) y sus recursos de proceso, datos y almacenamiento, recursos de red y mucho más.
 

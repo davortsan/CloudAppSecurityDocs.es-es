@@ -12,16 +12,16 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: c0ba4e4271b39adf3fa574459c15641bce5b3c26
-ms.sourcegitcommit: 7b6124e5ecb3fa8fc1176d89e06b052f2a53a310
+ms.openlocfilehash: 4a75a256f8d4fa2e9483a153fce7ba1e1ab28376
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83856098"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90880936"
 ---
 # <a name="tutorial-discover-and-protect-sensitive-information-in-your-organization"></a>Tutorial: Detección y protección de la información confidencial de una organización
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 En un mundo ideal, todos los empleados entienden la importancia de la protección de la información y trabajan dentro de las directivas. En el mundo real, es probable que un asociado ocupado que trabaja con frecuencia con información de cuentas cargue accidentalmente un documento confidencial en el repositorio de Box con permisos incorrectos. Al cabo de una semana, se da cuenta de que información confidencial de su empresa se ha filtrado a la competencia.
 
