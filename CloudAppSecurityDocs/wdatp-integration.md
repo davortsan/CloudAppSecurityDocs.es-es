@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 84aed2a0a5fc96ee3c8ca06723fe3ee0028bf275
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 2f267febaa980964b26685fb7aa6d64af08a607a
+ms.sourcegitcommit: 9aae0f85debf0c9b8c3e26770c0c285ac251c008
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90878412"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91570949"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Integración de protección contra amenazas avanzada de Microsoft defender con Microsoft Cloud App Security
 
@@ -102,7 +102,7 @@ Al igual que con cualquier otro origen de Cloud Discovery, puede exportar los da
 >
 > - ATP de Microsoft defender reenvía datos a Cloud App Security en fragmentos de ~ 4 MB (transacciones de punto de conexión ~ 4000)
 > - Si no se alcanza el límite de 4 MB en 1 hora, ATP de Microsoft defender notifica todas las transacciones realizadas durante la última hora.
-> - Si el dispositivo de punto de conexión está detrás de un proxy de reenvío, los datos de tráfico no estarán visibles para ATP de Microsoft defender y, por tanto, no se incluirán en Cloud Discovery informes. Para obtener más información, vea [supervisar la conexión de red detrás del proxy de reenvío](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
+> - Si el dispositivo de punto de conexión está detrás de un proxy de reenvío, los datos de tráfico no estarán visibles para ATP de Microsoft defender y, por tanto, no se incluirán en Cloud Discovery informes. Para obtener una forma alternativa de ver este tráfico, consulte supervisión de la [conexión de red detrás de proxy de reenvío](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
 
 ## <a name="investigate-device-network-events-in-microsoft-defender-atp"></a>Investigación de eventos de red de dispositivo en ATP de Microsoft defender
 
