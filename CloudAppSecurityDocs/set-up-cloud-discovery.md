@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 38592b682d7ac0684fc7db6197b884530556333b
-ms.sourcegitcommit: 438ba105224aa2673a004e6ae2999d0bccfc47c5
+ms.openlocfilehash: 5e82cd32197013160bb671850dad0854ab57c739
+ms.sourcegitcommit: 4ddf7bc78697b88a2e3e34e15b1fc09020970b20
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91450807"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91620399"
 ---
 # <a name="set-up-cloud-discovery"></a>Configuración de Cloud Discovery
 
@@ -51,7 +51,7 @@ El proceso de generación de una evaluación de riesgos consta de los siguientes
 - **Generar informe**: se genera un informe de evaluación de riesgos de los datos extraídos de los archivos de registro.
 
 >[!NOTE]
-> Los datos de informes continuos se analizan dos veces al día.
+> Los datos de informe continuos se analizan cuatro veces al día.
 
 ## <a name="supported-firewalls-and-proxies"></a>Firewalls y servidores proxy compatibles <a name="supported-firewalls-and-proxies"></a>
 
