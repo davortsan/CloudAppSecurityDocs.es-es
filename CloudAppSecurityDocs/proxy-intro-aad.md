@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0964983a0e91ff7ee0b8fb33c0f42d6f76c08c1e
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: d180b65125316fe4f5f630166002d0675589ae43
+ms.sourcegitcommit: d44833cbc0cb264a244819b8a3be67aa142d2cc8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880325"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91614485"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicaciones con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security
 
@@ -29,7 +29,7 @@ En el área de trabajo actual, a menudo no basta con saber lo que ocurre en su e
 
 > [!NOTE]
 >
-> - Para usar Cloud App Security Control de aplicaciones de acceso condicional, necesita una [licencia de Azure Active Directory P1](https://azure.microsoft.com/pricing/details/active-directory/)o la licencia requerida por la solución IDP, así como una licencia de Cloud App Security.
+> - Además de una licencia de Cloud App Security válida, para usar Cloud App Security Control de aplicaciones de acceso condicional, también necesita una [licencia de Azure Active Directory P1](https://azure.microsoft.com/pricing/details/active-directory/)o la licencia que requiere la solución IDP, así como una licencia de Cloud App Security.
 
 ## <a name="how-it-works"></a>Cómo funciona
 
@@ -148,7 +148,7 @@ Aunque los controles de sesión se compilan para trabajar con cualquier explorad
 
 - AWS
 - Azure DevOps (Visual Studio Team Services)
-- Azure portal
+- Azure Portal
 - Box
 - Concur
 - CornerStone on Demand
