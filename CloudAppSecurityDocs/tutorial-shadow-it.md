@@ -13,16 +13,16 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 6145c6dade8729c3572f9c491ad9743899b3b92e
-ms.sourcegitcommit: 5f3b3f11bfb6f677b8666a4566e7abbb873567d1
+ms.openlocfilehash: f8e273a21b049592f575429ab23a4231440d98ab
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2020
-ms.locfileid: "86279982"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90878512"
 ---
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutorial: detección y administración de shadow IT en la red
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Cuando se pregunta a los administradores de TI cuántas aplicaciones en la nube creen que usan sus empleados, la media es de 30 o 40. En realidad, la media de aplicaciones que usan los empleados de su organización es de más de 1000 aplicaciones distintas. Shadow IT le permite conocer e identificar qué aplicaciones se usan y cuál es el nivel de riesgo que suponen. El 80 % de los empleados usan aplicaciones no autorizadas que no ha revisado nadie y que es posible que no cumplan con las directivas de seguridad y cumplimiento. Además, debido a que los clientes pueden acceder a sus recursos y aplicaciones desde fuera de la red corporativa, ya no es suficiente disponer de reglas y directivas en los firewalls.
 
@@ -87,7 +87,7 @@ Ahora que Cloud Discovery se está ejecutando en la red, examine los informes c
 
 * **Administre aplicaciones detectadas en la galería de Azure Active Directory (Azure AD)** <a name ="gallery-apps"></a>: Cloud App Security también aprovecha su integración nativa con Azure AD para permitir administrar las aplicaciones detectadas en la galería de Azure AD. En el caso de las aplicaciones que ya aparecen en la galería de Azure AD, puede aplicar el inicio de sesión único y administrar la aplicación con Azure AD. Para ello, en la fila donde se muestra la aplicación pertinente, seleccione el signo de tres puntos al final de la fila y, después, haga clic en **Administrar aplicación con Azure AD**.
 
-    ![ciclo de vida de shadow IT](media/manage-app-in-azure-ad-gallery.png)
+    ![Administración de la aplicación en la galería de Azure AD](media/manage-app-in-azure-ad-gallery.png)
 
 * **Supervisión continua**: ahora que ha investigado en profundidad las aplicaciones, es posible que quiera establecer directivas que supervisen las aplicaciones y proporcionen control cuando sea necesario.
 

@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 578e4a7a22da188e4cc196c7b8dc217a7a249e54
-ms.sourcegitcommit: c9b7aa05694a1825f0b32b677b5a6549b846c554
+ms.openlocfilehash: aef7ad8efedb26f8b8d5bea902c1eeda387ba696
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2020
-ms.locfileid: "90056785"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90878997"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
@@ -25,6 +25,10 @@ ms.locfileid: "90056785"
 Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security.
 
 Fuente RSS: reciba notificaciones cuando esta página se actualice copiando y pegando la siguiente dirección URL en su lector de fuentes: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+> [!IMPORTANT]
+>
+> Los nombres de productos de protección contra amenazas de Microsoft están cambiando. Obtenga más información sobre esta y otras actualizaciones [en este artículo](https://www.microsoft.com/security/blog/?p=91813). Usaremos los nombres nuevos en futuras versiones.
 
 ## <a name="cloud-app-security-release-182-and-183"></a>Notas de las versiones 182 y 183 de Cloud App Security
 

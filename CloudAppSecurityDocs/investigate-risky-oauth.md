@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2c6b6ffc3b2c89dc107f223e1f0177df4fa8155b
-ms.sourcegitcommit: b15034dd50142afd8e95de22a9232f711b1eae6e
+ms.openlocfilehash: 569fe064eed86a1778afffc08a4d35fc0a81d0de
+ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85624705"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90878135"
 ---
 # <a name="tutorial-investigate-risky-oauth-apps"></a>Tutorial: Investigación de aplicaciones de OAuth de riesgo
 
-*Se aplica a: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 OAuth es un estándar abierto para la autenticación y autorización basadas en tokens. OAuth permite usar la información de la cuenta de un usuario por parte de servicios de terceros, sin exponer la contraseña del usuario. OAuth actúa como intermediario en nombre del usuario y proporciona al servicio un token de acceso que autoriza el uso compartido de información específica de la cuenta.
 
@@ -35,7 +35,7 @@ Muchas aplicaciones de terceros que podrían instalar los usuarios empresariales
 
 Por ejemplo, la siguiente página de consentimiento de aplicación de OAuth puede parecer legítima para el usuario medio; sin embargo, el "explorador de API de Google" no debería necesitar solicitar permisos a Google. Esto indica que la aplicación podría ser un intento de suplantación de identidad, no relacionado en absoluto con Google.
 
-![Suplantación de identidad de OAuth](media/oauth-phishing.png)
+![Suplantación de identidad (phishing) de OAuth a Google](media/oauth-phishing.png)
 
 Como administrador de seguridad, necesita visibilidad y control sobre las aplicaciones de su entorno, lo que incluye los permisos que tienen. Necesita la capacidad de evitar el uso de aplicaciones que requieren permiso para los recursos que desea revocar. Por lo tanto, Microsoft Cloud App Security le ofrece la capacidad de investigar y supervisar los permisos de aplicaciones que sus usuarios otorgaron. Este artículo está dedicado a ayudarle a investigar las aplicaciones de OAuth de su organización y a centrarse en las aplicaciones que es más probable que sean sospechosas.
 
@@ -59,7 +59,7 @@ Puede establecer directivas para enviar automáticamente notificaciones cuando u
     - Establezca el filtro en **Nivel de permiso de alta gravedad** y **Uso comunitario no común**. Con este filtro, puede centrarse en aplicaciones con un potencial de alto riesgo en las que los usuarios puedan haber subestimado el riesgo.
     - En **Permisos** seleccione todas las opciones que sean particularmente de riesgo en un contexto específico. Por ejemplo, puede seleccionar todos los filtros que permiten el acceso al correo electrónico, como **Acceso total a todos los buzones de correo** y luego revisar la lista de aplicaciones para asegurarse de que todas realmente necesitan acceso relacionado con el correo. Esto le puede ayudar a investigar dentro de un contexto específico y a buscar aplicaciones que parecen legítimas, pero que contienen permisos innecesarios. Estas aplicaciones tienen más probabilidades de ser de riesgo.
 
-        ![Suplantación de identidad de OAuth](media/oauth-filters.png)
+        ![Riesgo de suplantación de identidad (phishing) de OAuth](media/oauth-filters.png)
 
     - Seleccione la consulta guardada **Aplicaciones que han autorizado los usuarios externos**. Con este filtro puede encontrar aplicaciones que quizás no estén alineadas con los estándares de seguridad de su empresa.
 1. Una vez que revise las aplicaciones, puede centrarse en las aplicaciones de las consultas que parecen ser legítimas, pero que podrían en realidad ser de riesgo. Use los filtros para buscarlas:
