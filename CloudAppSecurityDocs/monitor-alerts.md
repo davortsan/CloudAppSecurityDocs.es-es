@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6bb43764f9a8e200b79a81dfe0dc97db557b6fe0
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: e5effef1c69cf3a8ce44218a8838bbb4d0ef1614
+ms.sourcegitcommit: b173d24dba412e81801c498cc0c3623ad9e31601
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90878021"
+ms.lasthandoff: 10/11/2020
+ms.locfileid: "91941601"
 ---
 # <a name="monitor-alerts-in-cloud-app-security"></a>Supervisión de alertas en Cloud App Security
 
@@ -45,6 +45,37 @@ Revisar todas las alertas es una buena idea. Comprender por qué se produce una 
   - **Márquela como no leída** si ha empezado a investigar un problema, pero quiere asegurarse de que no se olvida de continuar trabajando en él.
   - **Ajuste la directiva** que coincidía con la alerta para mejorar las coincidencias de próximas alertas.
   - Al resolver una alerta, puede escribir un comentario y **enviarlo al equipo de Cloud App Security**.
+
+## <a name="deployment-of-our-enhanced-alert-monitoring-and-management-experience"></a>Implementación de nuestra experiencia mejorada de supervisión y administración de alertas
+
+Como parte de las mejoras continuas en la supervisión y la administración de alertas, la página de alertas de Cloud App Security se ha mejorado en función de sus comentarios. En la experiencia mejorada, los Estados **resuelto** y **descartado** se sustituyen por el estado **cerrado** y las alertas cerradas tienen uno de los siguientes tipos de resolución:
+
+- **Verdadero positivo**: una alerta en una actividad malintencionada confirmada
+- **Benigna**: una alerta sobre una actividad sospechosa pero no malintencionada, como una prueba de penetración u otra acción sospechosa autorizada.
+- **Falso positivo**: una alerta en una actividad no malintencionada
+
+> [!NOTE]
+> La experiencia mejorada solo se aplica a las nuevas alertas y no afecta al estado de las alertas existentes (heredadas) que se han **resuelto** o **descartado**.
+
+![Página de alertas mejorada](media/monitor-alerts/enhanced-alerts.png)
+
+### <a name="enhanced-alert-monitoring"></a>Supervisión de alertas mejorada
+
+En la página Alertas mejoradas, la columna **Estado** muestra si se abre o se cierra una alerta y la columna **tipo de resolución** muestra el tipo de resolución que se utiliza al cerrar una alerta. Puede usar el filtro de **Estado** para ayudarle a identificar las alertas abiertas o cerradas y, a continuación, usar el filtro **avanzado** , puede investigar más las alertas cerradas por **tipo de resolución** con tipos de resolución mejorada y heredada.
+
+![Página de alertas mejorada que muestra el filtro avanzado](media/monitor-alerts/enhanced-alerts-advanced-filter.png)
+
+### <a name="enhanced-alert-management"></a>Administración de alertas mejorada
+
+Al cerrar las alertas, elija una de las siguientes opciones de resolución:
+
+- **Cerrar como verdadero positivo**: Si la actividad se confirma como malintencionada
+- **Cerrar como benigno**: Si la actividad es sospechosa pero no es una actividad malintencionada, como una prueba de penetración u otra acción sospechosa autorizada
+- **Cerrar como falso positivo**: Si la actividad se confirma como no malintencionada
+
+En el menú emergente que aparece, proporcione un motivo para cerrar la alerta y rellene el resto de los detalles según sea necesario y, a continuación, haga clic en **cerrar alerta**.
+
+![Emergente de cierre de alertas mejorada](media/monitor-alerts/enhanced-alerts-close-resolution.png)
 
 ## <a name="built-in-alerts"></a>Alertas integradas
 
