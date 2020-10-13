@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: f9d29046b0a63b89926d3ba95bab75aba5964cad
-ms.sourcegitcommit: 75cdc376a0aea79dc7f339af52a90f0ec6dfc526
+ms.openlocfilehash: b5efb0ebc30167f98c5361dbc037ef139836889f
+ms.sourcegitcommit: 52875173d3528cc8ae1121cf9f3acde2126d9e52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88514361"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91990839"
 ---
 # <a name="troubleshooting-access-and-session-controls"></a>Solución de problemas de controles de sesión y acceso
 
@@ -25,7 +25,7 @@ En este artículo se proporcionan a los administradores instrucciones sobre cóm
 Antes de continuar, asegúrese de que el entorno cumple los siguientes requisitos generales mínimos para los controles de acceso y de sesión.
 
 - **Licencias**: Asegúrese de que tiene una [licencia](https://aka.ms/mcaslicensing)válida.
-- **Inicio de sesión único (SSO)**: las aplicaciones se deben configurar con una de las soluciones de SSO admitidas.
+- **Sign-On único (SSO)**: las aplicaciones se deben configurar con una de las soluciones de SSO admitidas.
   - Azure Active Directory (Azure AD) con SAML 2,0 o OpenID Connect 2,0
   - IdP de terceros con SAML 2,0
 - **Compatibilidad con exploradores**: los controles de sesión están disponibles para sesiones basadas en explorador en estos exploradores admitidos: Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest) o Apple Safari (latest)
@@ -191,9 +191,9 @@ Si está experimentando el certificado de cliente que se está expulsando despu�
 | Browser | Pasos |
 |---|---|
 | Microsoft Internet Explorer | 1. abrir Internet Explorer<br />2. seleccionar **herramientas**  >  **Opciones**  >  **avanzadas** de Internet (pestaña)<br />3. en **seguridad**, seleccione **no solicitar la selección de certificado de cliente cuando solo existe un certificado** .<br />4. Seleccione **aplicar**y, después, haga clic en **Aceptar** .<br />5. Reinicie el explorador y compruebe que puede acceder a la aplicación sin los mensajes adicionales. |
-| Cromo de Microsoft Edge/Edge | 1. Abra la búsqueda desde la barra de tareas y busque "opciones de Internet"<br />2. Seleccione **Opciones de Internet**<br />3. en **seguridad**, seleccione **no solicitar la selección de certificado de cliente cuando solo existe un certificado** .<br />4. Seleccione **aplicar**y, después, haga clic en **Aceptar** .<br />5. Reinicie el explorador y compruebe que puede acceder a la aplicación sin los mensajes adicionales. |
+| Cromo de Microsoft Edge/Edge | 1. Abra la búsqueda desde la barra de tareas y busque "opciones de Internet"<br />2. Seleccione **Opciones de Internet**<br />3. Seleccione **seguridad**, seleccione **Intranet local**y, a continuación, haga clic en **nivel personalizado** .<br />4. en **varios**  >  **no preguntar si se selecciona un certificado de cliente cuando solo existe un certificado**, seleccione **deshabilitar** .<br />5. Haga clic en **Aceptar** para cerrar el cuadro de diálogo nivel personalizado<br />6. Haga clic en **aplicar**y, a continuación, seleccione **Aceptar** para cerrar opciones de Internet.<br />7. Reinicie el explorador y compruebe que puede acceder a la aplicación sin los mensajes adicionales. |
 
-<a name="device-identification-additional-considerations"></a>
+<a name="device-identification-additional-considerations"></a>s
 
 #### <a name="additional-considerations"></a>Consideraciones adicionales
 
@@ -293,7 +293,7 @@ Después de agregar una aplicación, puede ver la opción **solicitar control de
 1. Escriba el nombre principal de usuario o el correo electrónico de los usuarios que van a incorporar la aplicación y, a continuación, haga clic en **Guardar**.
 1. Vaya a la aplicación que va a implementar. La página que vea dependerá de si se reconoce la aplicación. Realice una de las siguientes acciones:
 
-    | Estado de la aplicación | Description | Pasos |
+    | Estado de la aplicación | Descripción | Pasos |
     | --- | --- | --- |
     | No reconocido | Verá una página de aplicación no reconocida que le pide que configure la aplicación. | 1. [agregue la aplicación a control de aplicaciones de acceso condicional](proxy-deployment-any-app.md#add-app).<br /> 2. [agregue los dominios de la aplicación](proxy-deployment-any-app.md#add-domains)y, a continuación, vuelva a la aplicación y actualice la página.<br /> 3. [Instale los certificados para la aplicación](proxy-deployment-any-app.md#install-certs). |
     | Recognized | Verá una página de incorporación que le pide que continúe con el proceso de configuración de la aplicación. | - [Instale los certificados para la aplicación](proxy-deployment-any-app.md#install-certs). <br /><br /> **Nota:** Asegúrese de que la aplicación esté configurada con todos los dominios necesarios para que la aplicación funcione correctamente. Para configurar dominios adicionales, vaya a [Agregar los dominios de la aplicación](proxy-deployment-any-app.md#add-domains)y, a continuación, vuelva a la página de la aplicación. |
