@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 10/12/2020
+ms.date: 10/13/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 804380fd242acd33f45176da0d1394c79ca5f24c
-ms.sourcegitcommit: 2602cae9e6b31c549e5232762beb136843c0d011
+ms.openlocfilehash: b95b38aadc1d8794b1c8cab927e2735415172421
+ms.sourcegitcommit: 56d63e09b48bb9d34218b30f1776e25499517e30
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947071"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91997102"
 ---
 # <a name="manage-admin-access"></a>Administrar el acceso de administrador
 
@@ -58,7 +58,9 @@ De forma predeterminada, los siguientes roles de administrador de Office 365 y [
 > [!NOTE]
 > Los roles de Office 365 y Azure AD no aparecen en la página **administrar acceso de administrador** .
 
-Además, se pueden configurar los siguientes roles de administrador específicos de Cloud App Security en el portal de Cloud App Security:
+## <a name="built-in-cloud-app-security-admin-roles"></a>Roles de administrador de Cloud App Security integrados
+
+En el portal de Cloud App Security se pueden configurar los siguientes roles de administrador específicos Cloud App Security:
 
 - **Administrador de aplicaciones/instancias:** Tiene permisos completos o de solo lectura para todos los datos de Cloud App Security que se ocupan exclusivamente de la aplicación o instancia específica de una aplicación seleccionada. Por ejemplo, da a un usuario permiso de administrador para la instancia europea de Box. El administrador verá solo los datos que se relacionan con la instancia europea de Box, ya sean archivos, actividades, directivas o alertas:
 
@@ -111,6 +113,9 @@ Además, se pueden configurar los siguientes roles de administrador específicos
   - Recomendaciones de seguridad para plataformas en la nube: sin permisos
 
 - **Cloud Discovery administrador de informes:** Tiene permisos para ver todos los datos de Cloud App Security que se ocupan exclusivamente de los informes de Cloud Discovery específicos seleccionados. Por ejemplo, puede conceder permisos de administrador a un usuario para el informe continuo desde ATP de Microsoft defender. El administrador de detección verá solo los Cloud Discovery datos relacionados con ese origen de datos y con el catálogo de aplicaciones. Este administrador no tendrá acceso a las páginas de **actividades**, **archivos**o **recomendaciones de seguridad** y acceso limitado a las directivas.
+
+> [!NOTE]
+> Los roles de administrador de Cloud App Security integrados solo proporcionan permisos de acceso a Cloud App Security.
 
 ## <a name="override-admin-permissions"></a>Invalidación de los permisos de administrador
 
