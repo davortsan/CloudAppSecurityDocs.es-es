@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 07/09/2020
+ms.date: 10/14/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d180b65125316fe4f5f630166002d0675589ae43
-ms.sourcegitcommit: d44833cbc0cb264a244819b8a3be67aa142d2cc8
+ms.openlocfilehash: f9b273f2e89bd3cff380fbdcd2c183827f58f903
+ms.sourcegitcommit: 5041a8bfae9c9a1a3425c0a0fd75ac60ed1fe9cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91614485"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92053853"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicaciones con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security
 
@@ -31,7 +31,7 @@ En el área de trabajo actual, a menudo no basta con saber lo que ocurre en su e
 >
 > - Además de una licencia de Cloud App Security válida, para usar Cloud App Security Control de aplicaciones de acceso condicional, también necesita una [licencia de Azure Active Directory P1](https://azure.microsoft.com/pricing/details/active-directory/)o la licencia que requiere la solución IDP, así como una licencia de Cloud App Security.
 
-## <a name="how-it-works"></a>Cómo funciona
+## <a name="how-it-works"></a>Funcionamiento
 
 Control de aplicaciones de acceso condicional usa una arquitectura de proxy inverso y se integra con el IdP. Al integrar con Azure AD el acceso condicional, puede configurar las aplicaciones para que funcionen con Control de aplicaciones de acceso condicional con solo unos clics, lo que le permite aplicar de forma sencilla y selectiva controles de acceso y de sesión en las aplicaciones de su organización en función de cualquier condición en el acceso condicional. Las condiciones definen *quién* (usuario o grupo de usuarios) y *qué* (qué aplicaciones en la nube) y *dónde* (a qué ubicaciones y redes) se aplica una directiva de acceso condicional. Después de determinar las condiciones, puede enrutar a los usuarios a Cloud App Security donde puede proteger los datos con Control de aplicaciones de acceso condicional mediante la aplicación de controles de acceso y de sesión.
 
@@ -39,7 +39,7 @@ Control de aplicaciones de acceso condicional permite supervisar y controlar las
 
 - **Impedir la exfiltración de datos**: puede bloquear la descarga, cortar, copiar e imprimir documentos confidenciales en, por ejemplo, dispositivos no administrados.
 
-- **Proteger al descargar: en**lugar de bloquear la descarga de documentos confidenciales, puede requerir que los documentos estén etiquetados y protegidos con Azure Information Protection. Esta acción garantiza que el documento está protegido y el acceso del usuario se restringe en una sesión potencialmente arriesgada.
+- **Proteger al descargar: en**lugar de bloquear la descarga de documentos confidenciales, puede requerir que los documentos estén etiquetados y protegidos con Azure Information Protection. Esta acción garantiza que el documento está protegido y el acceso de usuario está restringido en una sesión de riesgo potencial.
 
 - **Evitar la carga de archivos sin etiquetar**: antes de que otros usuarios carguen, distribuyan y usen otros, es importante asegurarse de que el archivo tiene la etiqueta y la protección adecuadas. Puede asegurarse de que los archivos sin etiqueta con contenido confidencial se bloqueen para que no se carguen hasta que el usuario clasifique el contenido.
 
@@ -57,7 +57,7 @@ Al crear una directiva de sesión con control de aplicaciones de acceso condicio
 
 Cuando una sesión está protegida por el proxy, todas las direcciones URL y cookies pertinentes se sustituyen por Cloud App Security. Por ejemplo, si la aplicación devuelve una página con vínculos cuyos dominios terminan con `myapp.com` , el dominio del vínculo tiene un sufijo similar `*.mcas.ms` , como se indica a continuación:
 
-|Dirección URL de la aplicación|URL reemplazada|
+|Dirección URL de la aplicación|Dirección URL reemplazada|
 |---|---|
 |`myapp.com`|`myapp.com.mcas.ms`|
 
@@ -144,11 +144,11 @@ Aunque los controles de sesión se compilan para trabajar con cualquier explorad
 > - Cloud App Security aprovecha los protocolos de seguridad de la capa de transporte (TLS) 1.2 + para proporcionar el mejor cifrado. Las aplicaciones cliente nativas y los exploradores que no admiten TLS 1.2 + no serán accesibles cuando se configuran con el control de sesión. Sin embargo, las aplicaciones SaaS que usen TLS 1.1 o versiones anteriores aparecerán en el explorador como usuarias de TLS 1.2+ al configurarse con Cloud App Security.
 > - Para aplicar controles de sesión a portal.office.com, debe incorporar Microsoft 365 centro de administración. Para obtener más información sobre las aplicaciones de incorporación, consulte [incorporación e implementación de control de aplicaciones de acceso condicional para cualquier aplicación](proxy-deployment-any-app.md).
 
-<a name="featured-apps"></a>Cualquier aplicación web configurada con los [protocolos de autenticación mencionados anteriormente](#supported-apps-and-clients) se puede incorporar para trabajar con controles de acceso y de sesión. Además, las siguientes aplicaciones se incluyen en Cloud App Security y ya se incorporan y están listas para usarse en cualquier inquilino:
+<a name="featured-apps"></a>Cualquier aplicación web configurada con los [protocolos de autenticación mencionados anteriormente](#supported-apps-and-clients) se puede incorporar para trabajar con controles de acceso y de sesión. Además, las siguientes aplicaciones ya están incorporadas con los controles de acceso y de sesión:
 
 - AWS
 - Azure DevOps (Visual Studio Team Services)
-- Azure Portal
+- Azure portal
 - Box
 - Concur
 - CornerStone on Demand
@@ -175,9 +175,9 @@ Aunque los controles de sesión se compilan para trabajar con cualquier explorad
 - Workplace by Facebook
 - Yammer (versión preliminar)
 
-### <a name="office-365-featured-apps"></a><a name="O365-apps"></a>Aplicaciones destacadas de Office 365
+### <a name="office-365-cloud-app-security-featured-apps"></a><a name="O365-apps"></a>Office 365 Cloud App Security aplicaciones destacadas
 
-A continuación se muestra una lista de las aplicaciones destacadas que se admiten en Office 365 Cloud App Security. Para usar estas aplicaciones con Cloud App Security, debe tener una licencia de Office 365 E5.
+A continuación se muestra una lista de las aplicaciones destacadas que se admiten en [Office 365 Cloud App Security](editions-cloud-app-security-o365.md).
 
 - Exchange Online
 - OneDrive para la Empresa
