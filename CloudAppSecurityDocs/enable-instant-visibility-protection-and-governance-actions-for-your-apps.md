@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2e23caa4e0ca986bb17d9e5014b328b214d0aeef
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 729dec5de9bb349927e3cd60f331f61b31b65864
+ms.sourcegitcommit: 812cb1e24ec18de2c4818970f3042ac06acea14c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880219"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92212007"
 ---
 # <a name="connect-apps"></a>Conectar aplicaciones
 
@@ -36,7 +36,7 @@ Cloud App Security admite varias instancias de la misma aplicación conectada. P
 > [!NOTE]
 > No se admiten instancias múltiples de Office 365 y Azure.
 
-## <a name="how-it-works"></a>Cómo funciona
+## <a name="how-it-works"></a>Funcionamiento
 
 Cloud App Security se implementa con privilegios de administrador del sistema para permitir el acceso total a todos los objetos del entorno.
 
@@ -83,7 +83,7 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
 | **Revocar permisos de aplicación** | No es aplicable | No es compatible con el proveedor | en breve | No es aplicable | ✔ | ✔ | No es aplicable | | ✔ | No aplicable | No aplicable |
 | **Aplicación de etiquetas de Azure Information Protection** | No es aplicable | ✔ | | No es aplicable | ✔ | ✔ | No aplicable | | | No aplicable | No aplicable |
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 - En el caso de algunas aplicaciones, puede que sea necesario permitir que las direcciones IP de la lista permitan Cloud App Security recopilar registros y proporcionar acceso a la consola de Cloud App Security. Para obtener más información, consulte [requisitos de red](network-requirements.md).
 
@@ -121,6 +121,7 @@ Para obtener más información sobre el emparejamiento público, vea [Circuitos 
 >
 > - Antes de deshabilitar un conector de aplicaciones, asegúrese de que tiene los detalles de conexión disponibles, ya que los necesitará si desea volver a habilitar el conector.
 > - Estos pasos no se pueden usar para deshabilitar el conector de Azure.
+> - Estos pasos no se pueden usar para deshabilitar Control de aplicaciones de acceso condicional aplicaciones y aplicaciones de configuración de seguridad.
 
 Para deshabilitar las aplicaciones conectadas:
 

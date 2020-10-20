@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: 6ccaf32072dd012ab694457f7a4fb89a34a01965
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 13505c22de0751041bc42f2891248163a51e6239
+ms.sourcegitcommit: 812cb1e24ec18de2c4818970f3042ac06acea14c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880385"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92212041"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Incorporación e implementación del Control de aplicaciones de acceso condicional para cualquier aplicación
 
@@ -27,7 +27,7 @@ Los controles de sesión de Microsoft Cloud App Security se pueden configurar pa
 
 Para obtener una lista de las aplicaciones que se incluyen en Cloud App Security trabajar de forma integrada, consulte [proteger aplicaciones con Cloud App Security control de aplicaciones de acceso condicional](proxy-intro-aad.md#featured-apps).
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 - Su organización debe tener las licencias siguientes para usar Control de aplicaciones de acceso condicional:
 
@@ -87,7 +87,7 @@ Use los pasos siguientes para crear una Azure AD Directiva de acceso condicional
 
 ### <a name="configure-integration-with-other-idp-solutions"></a>Configuración de la integración con otras soluciones IdP
 
-Use los pasos siguientes para enrutar las sesiones de la aplicación desde otras soluciones IdP a Cloud App Security. Para obtener Azure AD, consulte Configuración de la [integración con Azure ad](#configure-integration-with-azure-ad).
+Use los pasos siguientes para enrutar las sesiones de la aplicación desde otras soluciones IdP a Cloud App Security. Para obtener Azure AD, consulte Configuración de la [integración con Azure ad](#configure-integration-with-azure-ad). Para ver ejemplos de cómo configurar las soluciones IdP, consulte [configuración de su IDP](proxy-idp-examples.md).
 
 1. En Cloud App Security, vaya a **investigar**  >  **aplicaciones conectadas**  >  **control de aplicaciones de acceso condicional aplicaciones**.
 
@@ -141,6 +141,7 @@ Use los pasos siguientes para enrutar las sesiones de la aplicación desde otras
         >
         > - Algunos proveedores pueden hacer referencia a ellos como atributos o *notificaciones*de *usuario* .
         > - Al crear una nueva aplicación SAML, el proveedor de identidades Okta limita los atributos a 1024 caracteres. Para mitigar esta limitación, cree primero la aplicación sin los atributos pertinentes. Después de crear la aplicación, edítela y, a continuación, agregue los atributos pertinentes.
+
     1. Compruebe que el identificador de nombre tiene el formato de dirección de correo electrónico.
     1. Guarde la configuración.
 1. En la página cambios en la **aplicación** , realice lo siguiente y, a continuación, haga clic en **siguiente**. Necesitará la información en el paso siguiente.
@@ -152,8 +153,8 @@ Use los pasos siguientes para enrutar las sesiones de la aplicación desde otras
 
 1. En el portal de la aplicación, en la configuración de inicio de sesión único, realice lo siguiente:
     1. Recomendar Cree una copia de seguridad de la configuración actual.
-    1. En el campo dirección URL de inicio de sesión único, escriba la dirección URL de inicio de sesión único que anotó anteriormente.
-    1. Cargue el certificado SAML Cloud App Security que anotó anteriormente.
+    1. En el campo dirección URL de inicio de sesión único, escriba el Cloud App Security dirección URL de inicio de sesión único que anotó anteriormente.
+    1. Cargue el certificado SAML Cloud App Security que descargó anteriormente.
     > [!NOTE]
     > Después de guardar la configuración, todas las solicitudes de inicio de sesión asociadas a esta aplicación se enrutarán a través de Control de aplicaciones de acceso condicional.
 

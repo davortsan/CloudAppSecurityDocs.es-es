@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 4e47e58f3568fb8180359828d4b1a3cb0291880b
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 0df2a20c1c8c8bb1aef440cf3eb8bf16634e6ce0
+ms.sourcegitcommit: 812cb1e24ec18de2c4818970f3042ac06acea14c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880393"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92212024"
 ---
 # <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Implementación del Control de aplicaciones de acceso condicional para aplicaciones destacadas
 
@@ -23,7 +23,7 @@ ms.locfileid: "90880393"
 
 Los controles de sesión de Microsoft Cloud App Security funcionan con las aplicaciones destacadas. Para obtener una lista de las aplicaciones que se incluyen en Cloud App Security trabajar de forma integrada, consulte [proteger aplicaciones con Cloud App Security control de aplicaciones de acceso condicional](proxy-intro-aad.md#featured-apps).
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 - Su organización debe tener las licencias siguientes para usar Control de aplicaciones de acceso condicional:
 
@@ -76,7 +76,7 @@ Use los pasos siguientes para crear una Azure AD Directiva de acceso condicional
 
 ### <a name="configure-integration-with-other-idp-solutions"></a>Configuración de la integración con otras soluciones IdP
 
-Use los pasos siguientes para enrutar las sesiones de la aplicación desde otras soluciones IdP a Cloud App Security. Para obtener Azure AD, consulte Configuración de la [integración con Azure ad](#configure-integration-with-azure-ad).
+Use los pasos siguientes para enrutar las sesiones de la aplicación desde otras soluciones IdP a Cloud App Security. Para obtener Azure AD, consulte Configuración de la [integración con Azure ad](#configure-integration-with-azure-ad). Para ver ejemplos de cómo configurar las soluciones IdP, consulte [configuración de su IDP](proxy-idp-examples.md).
 
 1. En Cloud App Security, vaya a **investigar**  >  **aplicaciones conectadas**  >  **control de aplicaciones de acceso condicional aplicaciones**.
 
