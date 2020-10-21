@@ -5,17 +5,17 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/27/2020
+ms.date: 10/20/2020
 ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 54aa8efa3ad214ff55f3800ffb95126766e549e4
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: c5b927cf1cfaa1038b4b2ab1aa096978ec9c964c
+ms.sourcegitcommit: ee40375712d2cc4090bd4e9cb58df486ec02aa62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880658"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92326949"
 ---
 # <a name="alerts-api"></a>API de alertas
 
@@ -25,13 +25,26 @@ La API de alertas proporciona información acerca de los riesgos inmediatos iden
 
 A continuación se enumeran las solicitudes admitidas:
 
-- [Enumeración de alertas](api-alerts-list.md)
-- [Descarte masivo](api-alerts-bulk-dismiss.md)
-- [Resolución masiva](api-alerts-bulk-resolve.md)
+- [Mostrar alertas](api-alerts-list.md)
+- [Cerrar benigno](api-alerts-close-benign.md)
+- [Cerrar falso positivo](api-alerts-close-false-positive.md)
+- [Cerrar verdadero positivo](api-alerts-close-true-positive.md)
 - [Captura de alertas](api-alerts-fetch.md)
-- [Descartar alerta](api-alerts-dismiss.md)
 - [Marcación de alerta como leída](api-alerts-mark-read.md)
 - [Marcación de alerta como no leída](api-alerts-mark-unread.md)
+
+## <a name="deprecated-requests"></a>Solicitudes en desuso
+
+En la tabla siguiente se enumeran las solicitudes desusadas como obsoletas y las que las sustituyen.
+
+| Solicitud obsoleta | Alternativa |
+| --- | --- |
+| Descarte masivo | [Cerrar falso positivo](api-alerts-close-false-positive.md) |
+| Resolución masiva | [Cerrar verdadero positivo](api-alerts-close-true-positive.md) |
+| Descartar alerta | [Cerrar falso positivo](api-alerts-close-false-positive.md) |
+
+> [!NOTE]
+> Las solicitudes en desuso se han asignado a sus alternativas para evitar interrupciones. Sin embargo, si usa solicitudes obsoletas en su entorno, se recomienda actualizarlas a sus alternativas.
 
 ## <a name="filters"></a>Filtros
 
@@ -39,7 +52,7 @@ Para obtener información sobre cómo funcionan los filtros, vea [filtros](api-i
 
 En la tabla siguiente se describen los filtros admitidos:
 
-| Filtrar | Tipo | Operadores | Descripción |
+| Filter | Tipo | Operadores | Descripción |
 | --- | --- | --- | --- |
 | Entity. Entity | PK de entidad | EQ, Neq | Filtre las alertas relacionadas con las entidades especificadas. Ejemplo: `[{ "id": "entity-id", "saas": 11161, "inst": 0 }]` |
 | entidad. IP | string | EQ, Neq | Filtrar las alertas relacionadas con las direcciones IP especificadas |
@@ -47,7 +60,7 @@ En la tabla siguiente se describen los filtros admitidos:
 | entidad. instancia | Entero | EQ, Neq | Filtrar las alertas relacionadas con las instancias especificadas; por ejemplo: 11770, 1059065 |
 | entidad. Directiva | string | EQ, Neq | Filtrar las alertas relacionadas con las directivas especificadas |
 | Entity. File | string | EQ, Neq | Filtrar las alertas relacionadas con el archivo especificado |
-| severity | Entero | EQ, Neq | Filtre por gravedad. Los valores posibles son:<br /><br />**0**: bajo<br />**1**: medio<br/>**2**: alto |
+| severity | Entero | EQ, Neq | Filtre por gravedad. Entre los posibles valores se incluyen:<br /><br />**0**: bajo<br />**1**: medio<br/>**2**: alto |
 | resolutionStatus | Entero | EQ, Neq | Filtrar por estado de resolución de alerta, los valores posibles incluyen:<br /><br />**0**: abrir<br />**1**: descartado<br />**2**: resuelto |
 | leer | boolean | eq | Si se establece en "true", solo devuelve alertas de lectura, si se establece en "false", devuelve alertas no leídas. |
 | date | timestamp | LTE, GTE, intervalo, lte_ndays, gte_ndays | Filtrar por la hora a la que se desencadenó una alerta |

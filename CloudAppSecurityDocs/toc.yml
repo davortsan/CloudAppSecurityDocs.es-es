@@ -1,6 +1,6 @@
 - name: Documentación de Microsoft Cloud App Security
   href: index.yml
-- name: Información general
+- name: Introducción
   items:
     - name: "¿Qué es Microsoft\_Cloud App Security?"
       href: what-is-cloud-app-security.md
@@ -183,6 +183,8 @@
           href: proxy-deployment-aad.md
         - name: Incorporación e implementación del Control de aplicaciones de acceso condicional para cualquier aplicación
           href: proxy-deployment-any-app.md
+        - name: Configuración del IdP PingOne
+          href: proxy-idp-examples.md
     - name: Investigación
       href: investigate.md
       items:
