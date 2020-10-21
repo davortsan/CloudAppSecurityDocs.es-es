@@ -5,17 +5,17 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/27/2020
+ms.date: 10/21/2020
 ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 027f9df535f3dc660879d622d0658587eef65338
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: e9ce97ebd5a9bb3e57b6ed6d0a54d91ad54d6039
+ms.sourcegitcommit: ce4c0c03292c75a515938433951bdb78270d75a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880593"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92333594"
 ---
 # <a name="initiate-file-upload---cloud-discovery-api"></a>Inicio de la carga de archivos: API de Cloud Discovery
 
@@ -31,7 +31,7 @@ GET /api/v1/discovery/upload_url/
 
 ## <a name="request-url-parameters"></a>Parámetros de URL de solicitud
 
-| Parámetro | Descripción |
+| Parámetro | Description |
 | --- |--- |
 | filename | Nombre del archivo que desea cargar para el procesamiento de Cloud Discovery |
 | source | El tipo de archivo de registro de Cloud Discovery que se va a cargar. |
@@ -53,6 +53,7 @@ Actualmente se admiten los siguientes tipos de origen:
 - CISCO_SCAN_SAFE
 - CLAVISTER
 - CORRATA
+- CUSTOM_PARSER
 - FORCEPOINT
 - FORCEPOINT_LEEF
 - FORTIGATE
@@ -84,7 +85,9 @@ Actualmente se admiten los siguientes tipos de origen:
 - ZSCALER_QRADAR
 
 > [!NOTE]
-> Si no encuentra el formato de archivo, realice una carga manual mediante el portal.
+>
+> - Cuando se usa un analizador personalizado, Cloud App Security usará el analizador personalizado asociado al origen de datos seleccionado.
+> - Si no encuentra el formato de archivo, realice una carga manual mediante el portal.
 
 ## <a name="response-parameters"></a>Parámetros de respuesta
 
