@@ -1,6 +1,6 @@
 - name: Documentación de Microsoft Cloud App Security
   href: index.yml
-- name: Introducción
+- name: Información general
   items:
     - name: "¿Qué es Microsoft\_Cloud App Security?"
       href: what-is-cloud-app-security.md
@@ -334,14 +334,14 @@
               href: api-alerts.md
             - name: Enumeración de alertas
               href: api-alerts-list.md
-            - name: Descarte masivo
-              href: api-alerts-bulk-dismiss.md
-            - name: Resolución masiva
-              href: api-alerts-bulk-resolve.md
+            - name: Cerrar inofensivo
+              href: api-alerts-close-benign.md
+            - name: Cerrar falso positivo
+              href: api-alerts-close-false-positive.md
+            - name: Cerrar verdadero positivo
+              href: api-alerts-close-true-positive.md
             - name: Captura de alertas
               href: api-alerts-fetch.md
-            - name: Descarte de alertas
-              href: api-alerts-dismiss.md
             - name: Marcación de alerta como leída
               href: api-alerts-mark-read.md
             - name: Marcación de alerta como no leída
