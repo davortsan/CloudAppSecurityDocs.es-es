@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: c5b927cf1cfaa1038b4b2ab1aa096978ec9c964c
-ms.sourcegitcommit: ee40375712d2cc4090bd4e9cb58df486ec02aa62
+ms.openlocfilehash: f1176967bfcf67a458f55fe9421575df329aabe7
+ms.sourcegitcommit: 6ae1c05025a49ad3c8e8cecd0c10dc05edcd9bf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92326949"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92929087"
 ---
 # <a name="alerts-api"></a>API de alertas
 
@@ -25,8 +25,8 @@ La API de alertas proporciona información acerca de los riesgos inmediatos iden
 
 A continuación se enumeran las solicitudes admitidas:
 
-- [Mostrar alertas](api-alerts-list.md)
-- [Cerrar benigno](api-alerts-close-benign.md)
+- [Enumeración de alertas](api-alerts-list.md)
+- [Cerrar inofensivo](api-alerts-close-benign.md)
 - [Cerrar falso positivo](api-alerts-close-false-positive.md)
 - [Cerrar verdadero positivo](api-alerts-close-true-positive.md)
 - [Captura de alertas](api-alerts-fetch.md)
@@ -52,21 +52,22 @@ Para obtener información sobre cómo funcionan los filtros, vea [filtros](api-i
 
 En la tabla siguiente se describen los filtros admitidos:
 
-| Filter | Tipo | Operadores | Descripción |
+| Filtrar | Tipo | Operadores | Descripción |
 | --- | --- | --- | --- |
 | Entity. Entity | PK de entidad | EQ, Neq | Filtre las alertas relacionadas con las entidades especificadas. Ejemplo: `[{ "id": "entity-id", "saas": 11161, "inst": 0 }]` |
 | entidad. IP | string | EQ, Neq | Filtrar las alertas relacionadas con las direcciones IP especificadas |
-| Entity. Service | Entero | EQ, Neq | Filtrar las alertas relacionadas con el appId de servicio especificado, por ejemplo: 11770 |
-| entidad. instancia | Entero | EQ, Neq | Filtrar las alertas relacionadas con las instancias especificadas; por ejemplo: 11770, 1059065 |
+| Entity. Service | integer | EQ, Neq | Filtrar las alertas relacionadas con el appId de servicio especificado, por ejemplo: 11770 |
+| entidad. instancia | integer | EQ, Neq | Filtrar las alertas relacionadas con las instancias especificadas; por ejemplo: 11770, 1059065 |
 | entidad. Directiva | string | EQ, Neq | Filtrar las alertas relacionadas con las directivas especificadas |
 | Entity. File | string | EQ, Neq | Filtrar las alertas relacionadas con el archivo especificado |
-| severity | Entero | EQ, Neq | Filtre por gravedad. Entre los posibles valores se incluyen:<br /><br />**0**: bajo<br />**1**: medio<br/>**2**: alto |
-| resolutionStatus | Entero | EQ, Neq | Filtrar por estado de resolución de alerta, los valores posibles incluyen:<br /><br />**0**: abrir<br />**1**: descartado<br />**2**: resuelto |
+| alertOpen | boolean | eq | Si se establece en "true", solo devuelve alertas abiertas, si se establece en "false", solo devuelve alertas cerradas |
+| severity | integer | EQ, Neq | Filtre por gravedad. Los valores posibles son:<br /><br />**0** : bajo<br />**1** : medio<br/>**2** : alto |
+| resolutionStatus | integer | EQ, Neq | Filtrar por estado de resolución de alerta, los valores posibles incluyen:<br /><br />**0** : abrir <br />**1** : descartado (estado heredado)<br />**2** : resuelto (estado heredado)<br />**3** : cerrado como falso positivo<br />**4** : cerrado como benigno<br />**5** : cerrado como verdadero positivo |
 | leer | boolean | eq | Si se establece en "true", solo devuelve alertas de lectura, si se establece en "false", devuelve alertas no leídas. |
 | date | timestamp | LTE, GTE, intervalo, lte_ndays, gte_ndays | Filtrar por la hora a la que se desencadenó una alerta |
 | resolutionDate | timestamp | LTE, GTE, intervalo | Filtrar por la hora en que se resolvió una alerta |
-| riesgo | Entero | EQ, Neq | Filtrar por riesgo |
-| alertType | Entero | EQ, Neq | Filtrar por tipo de alerta |
+| riesgo | integer | EQ, Neq | Filtrar por riesgo |
+| alertType | integer | EQ, Neq | Filtrar por tipo de alerta |
 | id | string | EQ, Neq | Filtrar por ID. de alerta |
 | source | string | eq | El origen de la alerta, ya sea integrada o Directiva |
 
