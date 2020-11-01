@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 118f0047640b3b062ba5cd66d5601fec99ea8477
-ms.sourcegitcommit: b0ad9e8e6b5668849e1c292c43084480f229d981
+ms.openlocfilehash: 11cba0aa39fc55ba8ce28544bcddc0d82afac467
+ms.sourcegitcommit: a9b26f2ef0db18910ae7cdf7b34e9028bff7b576
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/01/2020
-ms.locfileid: "93147499"
+ms.locfileid: "93147790"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Integración de protección contra amenazas avanzada de Microsoft defender con Microsoft Cloud App Security
 
@@ -102,7 +102,7 @@ Al igual que con cualquier otro origen de Cloud Discovery, puede exportar los da
 >
 > - Microsoft defender for Endpoint reenvía datos a Cloud App Security en fragmentos de ~ 4 MB (~ 4000 transacciones de punto de conexión)
 > - Si no se alcanza el límite de 4 MB en 1 hora, Microsoft defender for Endpoint informa de todas las transacciones realizadas durante la última hora.
-> - Se recomienda enrutar los registros del proxy de reenvío para Cloud App Security mediante la **carga de registros automatizada** con el fin de obtener visibilidad completa. Para obtener una forma alternativa de ver este tráfico e investigar las direcciones URL a las que se accede mediante dispositivos detrás del proxy de reenvío, consulte supervisión de la [conexión de red detrás de proxy de reenvío](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
+> - Si el dispositivo de punto de conexión está detrás de un proxy de reenvío, los datos de tráfico no serán visibles para Microsoft defender para los puntos de conexión y, por tanto, no se incluirán en Cloud Discovery informes. Se recomienda enrutar los registros del proxy de reenvío para Cloud App Security mediante la **carga de registros automatizada** con el fin de obtener visibilidad completa. Para obtener una forma alternativa de ver este tráfico e investigar las direcciones URL a las que se accede mediante dispositivos detrás del proxy de reenvío, consulte supervisión de la [conexión de red detrás de proxy de reenvío](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
 
 ## <a name="investigate-device-network-events-in-microsoft-defender-for-endpoint"></a>Investigación de eventos de red de dispositivo en Microsoft defender para el punto de conexión
 
