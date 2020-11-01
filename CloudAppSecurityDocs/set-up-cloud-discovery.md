@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5e82cd32197013160bb671850dad0854ab57c739
-ms.sourcegitcommit: 4ddf7bc78697b88a2e3e34e15b1fc09020970b20
+ms.openlocfilehash: 1744a906a89f8627f7d208b85a0ceda09edf0ae5
+ms.sourcegitcommit: b0ad9e8e6b5668849e1c292c43084480f229d981
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91620399"
+ms.lasthandoff: 11/01/2020
+ms.locfileid: "93147465"
 ---
 # <a name="set-up-cloud-discovery"></a>Configuración de Cloud Discovery
 
@@ -25,30 +25,32 @@ Cloud Discovery analiza los registros de tráfico en el catálogo de aplicacione
 
 ## <a name="snapshot-and-continuous-risk-assessment-reports"></a>Informes de instantáneas y de evaluación continua de riesgos
 
-Se pueden generar dos tipos de informes:
+Puede generar los siguientes tipos de informes:
 
-- **Informes de instantáneas**: proporcionan visibilidad ad hoc de un conjunto de registros de tráfico que puede cargar manualmente desde los firewalls y los servidores proxy.
+- **Informes de instantáneas** : proporcionan visibilidad ad hoc de un conjunto de registros de tráfico que puede cargar manualmente desde los firewalls y los servidores proxy.
 
-- **Informes continuos**: analizan todos los registros que se reenvían desde la red mediante Cloud App Security. Proporcionan una mejor visibilidad de todos los datos e identifican automáticamente los usos erróneos, ya sea mediante el motor de detección de anomalías de aprendizaje automático o mediante las directivas personalizadas que haya definido. Estos informes pueden crearse conectándose de varias maneras:
+- **Informes continuos** : analizan todos los registros que se reenvían desde la red mediante Cloud App Security. Proporcionan una mejor visibilidad de todos los datos e identifican automáticamente los usos erróneos, ya sea mediante el motor de detección de anomalías de aprendizaje automático o mediante las directivas personalizadas que haya definido. Estos informes pueden crearse conectándose de varias maneras:
 
-  - [**Integración de ATP de Microsoft defender**](wdatp-integration.md): Cloud App Security se integra con protección contra amenazas avanzada (ATP) de Microsoft defender de forma nativa para simplificar el lanzamiento de Cloud Discovery, ampliar las funcionalidades de Cloud Discovery más allá de la red corporativa y habilitar la investigación basada en equipo.
+  - [**Microsoft defender for Endpoint Integration**](wdatp-integration.md): Cloud App Security se integra con defender para el punto de conexión de forma nativa, para simplificar el lanzamiento de Cloud Discovery, ampliar las funcionalidades de Cloud Discovery más allá de la red corporativa y habilitar la investigación basada en el equipo.
   - [**Recopilador de registros**](discovery-docker.md): los recopiladores de registros permiten automatizar fácilmente la carga de registros desde la red. El recopilador de registros se ejecuta en la red y recibe los registros a través de Syslog o FTP.
-  - **Puerta de enlace web segura (SWG)**: Si trabaja con Cloud App Security y uno de los siguientes SWGs, puede integrar los productos para mejorar su experiencia de Cloud Discovery de seguridad. Juntos, Cloud App Security y SWGs proporcionan una implementación sin problemas de Cloud Discovery, el bloqueo automático de aplicaciones no autorizadas y la evaluación de riesgos directamente en el portal de SWG.
+  - **Puerta de enlace web segura (SWG)** : Si trabaja con Cloud App Security y uno de los siguientes SWGs, puede integrar los productos para mejorar su experiencia de Cloud Discovery de seguridad. Juntos, Cloud App Security y SWGs proporcionan una implementación sin problemas de Cloud Discovery, el bloqueo automático de aplicaciones no autorizadas y la evaluación de riesgos directamente en el portal de SWG.
     - [Integración de Zscaler](zscaler-integration.md)
     - [integración de iboss](iboss-integration.md)
     - [Integración de Corrata](corrata-integration.md)
+
+- **[Cloud Discovery API](api-discovery.md)** : Use la api de Cloud Discovery de Cloud App Security para automatizar la carga del registro de tráfico y obtener una evaluación de riesgos y un informe de Cloud Discovery automatizados. También puede usar la API para [generar scripts de bloqueo](api-discovery-script.md) y optimizar los controles de aplicación directamente en el dispositivo de red.
 
 ## <a name="log-process-flow-from-raw-data-to-risk-assessment"></a>Flujo del proceso de registro: de datos sin procesar a evaluación de riesgos
 
 El proceso de generación de una evaluación de riesgos consta de los siguientes pasos. El proceso tarda desde unos minutos hasta varias horas según la cantidad de datos procesados.
 
-- **Cargar**: se cargan los registros de tráfico web de la red en el portal.
+- **Cargar** : se cargan los registros de tráfico web de la red en el portal.
 
-- **Redistribuir**: Cloud App Security redistribuye y extrae datos de tráfico de los registros de tráfico con un analizador dedicado para cada origen de datos.
+- **Redistribuir** : Cloud App Security redistribuye y extrae datos de tráfico de los registros de tráfico con un analizador dedicado para cada origen de datos.
 
-- **Analizar**: se analizan los datos de tráfico con el catálogo de aplicaciones en la nube para identificar más de 16 000 aplicaciones en la nube y evaluar su puntuación de riesgo. Los usuarios activos y las direcciones IP también se identifican como parte del análisis.
+- **Analizar** : se analizan los datos de tráfico con el catálogo de aplicaciones en la nube para identificar más de 16 000 aplicaciones en la nube y evaluar su puntuación de riesgo. Los usuarios activos y las direcciones IP también se identifican como parte del análisis.
 
-- **Generar informe**: se genera un informe de evaluación de riesgos de los datos extraídos de los archivos de registro.
+- **Generar informe** : se genera un informe de evaluación de riesgos de los datos extraídos de los archivos de registro.
 
 >[!NOTE]
 > Los datos de informe continuos se analizan cuatro veces al día.

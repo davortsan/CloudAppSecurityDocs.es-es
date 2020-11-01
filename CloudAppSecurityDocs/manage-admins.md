@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b95b38aadc1d8794b1c8cab927e2735415172421
-ms.sourcegitcommit: 56d63e09b48bb9d34218b30f1776e25499517e30
+ms.openlocfilehash: f89b3daceacca86faaec840e9faeec1c1aac577d
+ms.sourcegitcommit: b0ad9e8e6b5668849e1c292c43084480f229d981
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91997102"
+ms.lasthandoff: 11/01/2020
+ms.locfileid: "93147482"
 ---
 # <a name="manage-admin-access"></a>Administrar el acceso de administrador
 
@@ -72,7 +72,7 @@ En el portal de Cloud App Security se pueden configurar los siguientes roles de 
   - Página de archivos (solo archivos de la aplicación o instancia específica)
   - Control de aplicaciones de acceso condicional (sin permisos)
   - Actividad de Cloud Discovery (sin permisos)
-  - Extensiones de seguridad (permisos únicamente para el token de API con permisos de usuario)
+  - Extensiones de seguridad: solo permisos para el token de API con permisos de usuario
   - Acciones de gobernanza (solo para la aplicación o instancia específica)
   - Recomendaciones de seguridad para plataformas en la nube: sin permisos
 
@@ -86,7 +86,7 @@ En el portal de Cloud App Security se pueden configurar los siguientes roles de 
   - Página Archivos (sin permisos)
   - Control de aplicaciones de acceso condicional (sin permisos)
   - Actividad de Cloud Discovery (sin permisos)
-  - Extensiones de seguridad (permisos únicamente para el token de API con usuarios del grupo)
+  - Extensiones de seguridad: solo permisos para el token de API con usuarios del grupo
   - Acciones de gobernanza (solo para los usuarios del grupo específicos)
   - Recomendaciones de seguridad para plataformas en la nube: sin permisos
 
@@ -108,11 +108,11 @@ En el portal de Cloud App Security se pueden configurar los siguientes roles de 
   - Permisos de aplicación (sin permisos)
   - Página Archivos (sin permisos)
   - Control de aplicaciones de acceso condicional (sin permisos)
-  - Extensiones de seguridad: sin permisos
+  - Extensiones de seguridad: creación y eliminación de sus propios tokens de API
   - Acciones de gobernanza: solo acciones relacionadas con Cloud Discovery
   - Recomendaciones de seguridad para plataformas en la nube: sin permisos
 
-- **Cloud Discovery administrador de informes:** Tiene permisos para ver todos los datos de Cloud App Security que se ocupan exclusivamente de los informes de Cloud Discovery específicos seleccionados. Por ejemplo, puede conceder permisos de administrador a un usuario para el informe continuo desde ATP de Microsoft defender. El administrador de detección verá solo los Cloud Discovery datos relacionados con ese origen de datos y con el catálogo de aplicaciones. Este administrador no tendrá acceso a las páginas de **actividades**, **archivos**o **recomendaciones de seguridad** y acceso limitado a las directivas.
+- **Cloud Discovery administrador de informes:** Tiene permisos para ver todos los datos de Cloud App Security que se ocupan exclusivamente de los informes de Cloud Discovery específicos seleccionados. Por ejemplo, puede conceder permisos de administrador a un usuario para el informe continuo desde ATP de Microsoft defender. El administrador de detección verá solo los Cloud Discovery datos relacionados con ese origen de datos y con el catálogo de aplicaciones. Este administrador no tendrá acceso a las páginas de **actividades** , **archivos** o **recomendaciones de seguridad** y acceso limitado a las directivas.
 
 > [!NOTE]
 > Los roles de administrador de Cloud App Security integrados solo proporcionan permisos de acceso a Cloud App Security.
@@ -128,18 +128,18 @@ Puede agregar más administradores a Cloud App Security sin agregar usuarios a l
 > [!IMPORTANT]
 > Solo los administradores globales o de seguridad pueden conceder acceso a otros usuarios a Cloud App Security.
 
-1. Haga clic en el engranaje de configuración ![icono de configuración](media/settings-icon.png "icono de configuración") y luego en **administrar acceso de administrador**.
+1. Haga clic en el engranaje de configuración ![icono de configuración](media/settings-icon.png "icono de configuración") y luego en **administrar acceso de administrador** .
 
 2. Haga clic en el signo más para agregar los administradores que deben tener acceso a Cloud App Security. Puede escribir una dirección de correo electrónico interno o externo para permitir que los administradores de la organización o los proveedores de servicios de seguridad administrada (MSSP) externos administren las alertas de seguridad.
 
     ![agregar administradores](media/add-admin.png)
 
-3. A continuación, haga clic en la lista desplegable para establecer el tipo de rol que tiene el administrador, el administrador **global**, el **lector de seguridad**, el **Administrador de cumplimiento**, el administrador de la **aplicación/instancia**, el **Administrador del grupo de usuarios**, **Cloud Discovery administrador global**o **Cloud Discovery administrador de informes**. Si selecciona **Administrador de instancia/aplicación**, seleccione la aplicación y la instancia para que el Administrador tenga permisos.
+3. A continuación, haga clic en la lista desplegable para establecer el tipo de rol que tiene el administrador, el administrador **global** , el **lector de seguridad** , el **Administrador de cumplimiento** , el administrador de la **aplicación/instancia** , el **Administrador del grupo de usuarios** , **Cloud Discovery administrador global** o **Cloud Discovery administrador de informes** . Si selecciona **Administrador de instancia/aplicación** , seleccione la aplicación y la instancia para que el Administrador tenga permisos.
 
     >[!NOTE]
     > Si un administrador cuyo acceso está limitado intenta acceder a una página restringida o realizar una acción restringida, recibirá un error por el que se notifica que no tiene permiso para acceder a la página o realizar la acción.
 
-4. Haga clic en **Agregar administrador**.
+4. Haga clic en **Agregar administrador** .
 
 ## <a name="admin-activity-auditing"></a>Auditoría de actividades de administración
 
@@ -147,11 +147,11 @@ Cloud App Security le permite exportar un registro de las actividades de inicio 
 
 Para exportar un registro, realice los pasos siguientes:
 
-1. En la página de **acceso administrar administradores** , seleccione **exportar actividades de administración**.
+1. En la página de **acceso administrar administradores** , seleccione **exportar actividades de administración** .
 
 1. Especifique el intervalo de tiempo necesario.
 
-1. Haga clic en **Exportar**.
+1. Haga clic en **Exportar** .
 
 ## <a name="invite-external-admins"></a>Invitar a administradores externos
 
@@ -161,7 +161,7 @@ Además, para permitir que los MSSP proporcionen servicios en varios inquilinos 
 
 ![elegir inquilino](media/choose-tenant.png "elegir inquilino")
 
-## <a name="next-steps"></a>Pasos siguientes  
+## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
 > [Configurar Cloud Discovery](set-up-cloud-discovery.md)
