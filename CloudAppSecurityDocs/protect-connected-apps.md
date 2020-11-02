@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6e970d0ef3d2d89fecdbc224c9f56f5dbc29f33b
-ms.sourcegitcommit: c174a7ada5c6a14f0fea9870672898c54e5e3b52
+ms.openlocfilehash: fa1dfb6cd91e0072503462ea4b91ccfebedab1cc
+ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89150237"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93185992"
 ---
 # <a name="protecting-connected-apps"></a>Protección de aplicaciones conectadas
 
 Cloud App Security proporciona protección de un extremo a otro para aplicaciones conectadas que usan la integración de nube a nube, [conectores de API](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)y acceso en tiempo real y controles de sesión que [aprovechan nuestros](proxy-intro-aad.md) controles de acceso a aplicaciones condicionales.
 
-Una vez que una aplicación se conecta mediante uno o varios de estos métodos, se obtiene una protección inmediata inmediata con nuestro motor de detección de anomalías integrado. Además, obtiene una visión profunda de las actividades de usuario y equipo de la aplicación, el control de los datos compartidos por la aplicación y puede crear directivas de detección con gobierno para mitigar las actividades de riesgo o el uso compartido de datos confidenciales por parte de la aplicación.
+Una vez que una aplicación se conecta mediante uno o varios de estos métodos, se obtiene una protección inmediata inmediata con nuestro motor de detección de anomalías integrado. Además, obtiene una visión profunda de las actividades de usuario y dispositivo de la aplicación, el control de los datos compartidos por la aplicación y puede crear directivas de detección con gobierno para mitigar las actividades de riesgo o el uso compartido de datos confidenciales por parte de la aplicación.
 
 La amplitud de compatibilidad para cada aplicación se basa en la riqueza de sus API. Use los vínculos siguientes para obtener información sobre cómo Cloud App Security protege las aplicaciones conectadas y qué riesgos exponen esas aplicaciones. Para cada aplicación, revise la lista de detecciones de anomalías integradas disponibles, explore las plantillas de directivas listas para usar para la supervisión y alerta de las actividades de riesgo y descubra qué acciones de gobierno automatizadas se pueden aplicar.
 
@@ -36,7 +36,7 @@ La amplitud de compatibilidad para cada aplicación se basa en la riqueza de sus
 - [Protección de GitHub Enterprise Cloud](protect-github.md)
 - [Protección de GCP](protect-gcp.md)
 - [Protección de G Suite](protect-gsuite.md)
-- [Proteger Microsoft 365](protect-office-365.md)
+- [Protección de Office 365](protect-office-365.md)
 - [Protección de Okta](protect-okta.md)
 - [Protección de Salesforce](protect-salesforce.md)
 - [Protección de ServiceNow](protect-servicenow.md)

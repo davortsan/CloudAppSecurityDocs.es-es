@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 54df0eef56e31d8391d2bb7cfa80a98650dfdd9e
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 028df24a9efbd88337727032df3941e8b086f6e1
+ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877924"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93186100"
 ---
 # <a name="cloud-discovery-policies"></a>Directivas de Cloud Discovery
 
@@ -22,7 +22,7 @@ ms.locfileid: "90877924"
 
 En este artículo se proporciona información general sobre cómo empezar a usar Cloud App Security para obtener visibilidad en la organización en la sombra con Cloud Discovery.
 
-Cloud App Security permite detectar y analizar las aplicaciones en la nube que se usan en el entorno de la organización. En el panel de Cloud Discovery se muestran todas las aplicaciones en la nube que se ejecutan en el entorno y se clasifican por función y preparación para la empresa. Para cada aplicación, detecte los usuarios asociados, las direcciones IP, las máquinas, las transacciones y realiza la evaluación de riesgos sin necesidad de instalar un agente en los dispositivos de punto de conexión.
+Cloud App Security permite detectar y analizar las aplicaciones en la nube que se usan en el entorno de la organización. En el panel de Cloud Discovery se muestran todas las aplicaciones en la nube que se ejecutan en el entorno y se clasifican por función y preparación para la empresa. Para cada aplicación, detecte los usuarios asociados, las direcciones IP, los dispositivos, las transacciones y realiza la evaluación de riesgos sin necesidad de instalar un agente en los dispositivos de punto de conexión.
 
 ## <a name="detect-new-high-volume-or-wide-app-use"></a>Detección de un nuevo uso de aplicaciones grandes o de gran volumen <a name= "detect-volume"></a>
 
@@ -67,7 +67,7 @@ Configure la carga de registros automática para informes de Cloud Discovery con
 
     3. Seleccione el **tráfico diario** superior a 2000 GB (u otros).
 
-4. Configure las acciones de gobierno que se llevarán a cabo cuando se desencadene una alerta. En **gobierno**, seleccione la **aplicación de etiqueta como no autorizada.**<br />El acceso a la aplicación se bloqueará automáticamente cuando se cumpla la Directiva.
+4. Configure las acciones de gobierno que se llevarán a cabo cuando se desencadene una alerta. En **gobierno** , seleccione la **aplicación de etiqueta como no autorizada.**<br />El acceso a la aplicación se bloqueará automáticamente cuando se cumpla la Directiva.
 
 5. Opcional: aproveche las [integraciones nativas de Cloud App Security](set-up-cloud-discovery.md) con puertas de enlace web seguras para bloquear el acceso a las aplicaciones.
 
@@ -87,7 +87,7 @@ Puede detectar cuándo los empleados siguen usando aplicaciones no autorizadas c
 
 3. Agregue un filtro de etiqueta de la **aplicación** y elija las etiquetas de la aplicación que creó para las aplicaciones para la empresa.
 
-4. Configure las acciones de gobierno que se llevarán a cabo cuando se desencadene una alerta. En gobierno, seleccione la **aplicación de etiqueta como no autorizada**.<br />El acceso a la aplicación se bloqueará automáticamente cuando se cumpla la Directiva.
+4. Configure las acciones de gobierno que se llevarán a cabo cuando se desencadene una alerta. En gobierno, seleccione la **aplicación de etiqueta como no autorizada** .<br />El acceso a la aplicación se bloqueará automáticamente cuando se cumpla la Directiva.
 
 5. Opcional: aproveche las [integraciones nativas de Cloud App Security](set-up-cloud-discovery.md) con puertas de enlace web seguras para bloquear el acceso a las aplicaciones.
 
@@ -101,15 +101,15 @@ Configure la carga de registros automática para informes de Cloud Discovery con
 
 ### <a name="steps"></a>Pasos
 
-1. En la página **directivas** , cree una nueva **Directiva de detección de anomalías Cloud Discovery**.
+1. En la página **directivas** , cree una nueva **Directiva de detección de anomalías Cloud Discovery** .
 
-2. En el campo **plantilla de directiva** , seleccione **comportamiento anómalo en usuarios detectados** o **comportamiento anómalo en direcciones IP detectadas**.
+2. En el campo **plantilla de directiva** , seleccione **comportamiento anómalo en usuarios detectados** o **comportamiento anómalo en direcciones IP detectadas** .
 
 3. Personalice los filtros para satisfacer los requisitos de su organización.
 
 4. Si quiere que se le avise solo cuando haya anomalías que impliquen aplicaciones de riesgo, use los filtros de **puntuación de riesgo** y establezca el intervalo en el que las aplicaciones se consideran arriesgadas.
 
-5. Use el control deslizante para **seleccionar la sensibilidad de la detección de anomalías**.
+5. Use el control deslizante para **seleccionar la sensibilidad de la detección de anomalías** .
 
 > [!NOTE]
 > Una vez establecida la carga continua de registros, el motor de detección de anomalías tarda unos días hasta que se establece una línea de base (período de aprendizaje) para el comportamiento esperado de la organización. Una vez establecida una línea base, comienza a recibir alertas basadas en discrepancias del comportamiento esperado del tráfico en aplicaciones en la nube realizadas por usuarios o desde direcciones IP.
@@ -124,11 +124,11 @@ Configure la carga de registros automática para informes de Cloud Discovery con
 
 ### <a name="steps"></a>Pasos
 
-1. En la página **directivas** , edite la exfiltración de datos de directiva integrada **en aplicaciones no autorizadas**.
+1. En la página **directivas** , edite la exfiltración de datos de directiva integrada **en aplicaciones no autorizadas** .
 
-2. Seleccione la **categoría aplicación** de filtro es igual a **almacenamiento en la nube**.
+2. Seleccione la **categoría aplicación** de filtro es igual a **almacenamiento en la nube** .
 
-3. Active la casilla para **crear una alerta para cada evento coincidente con la gravedad de la Directiva**.
+3. Active la casilla para **crear una alerta para cada evento coincidente con la gravedad de la Directiva** .
 
 4. Configure las acciones que deben llevarse a cabo cuando se desencadene una alerta.
 
@@ -142,13 +142,13 @@ Debe tener la aplicación G Suite, Office 365 o Salesforce conectada mediante lo
 
 ### <a name="steps"></a>Pasos
 
-1. En la página **directivas** , cree una nueva **Directiva de aplicación de OAuth**.
+1. En la página **directivas** , cree una nueva **Directiva de aplicación de OAuth** .
 
 2. Seleccione la **aplicación** de filtro y establezca la aplicación que debe cubrir la Directiva, G Suite, Office 365 o Salesforce.
 
 3. Seleccione el filtro de **nivel de permiso** es igual a **alto** (disponible para G Suite y Office 365).
 
-4. Agregar el uso de la **comunidad** de filtros es igual a **inusual**.
+4. Agregar el uso de la **comunidad** de filtros es igual a **inusual** .
 
 5. Configure las acciones que deben llevarse a cabo cuando se desencadene una alerta. Por ejemplo, para Office 365, Active **revocar aplicación** para OAuth aplicaciones detectadas por la Directiva.
 

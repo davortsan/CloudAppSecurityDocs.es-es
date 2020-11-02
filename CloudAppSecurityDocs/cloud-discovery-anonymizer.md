@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ec8e89711fbaea90237bf279633fef134a41eabc
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: da5092903eb11d73726fe7f2f73da1ffd94b57b9
+ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881545"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93185905"
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Anonimización de datos de Cloud Discovery
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-La anonimización de datos de Cloud Discovery le permite proteger la privacidad del usuario. Cuando se haya cargado el registro de datos en el portal de Microsoft Cloud App Security, se depura el registro y se reemplaza toda la información de nombres de usuario con nombres de usuario cifrados. De este modo, todas las actividades de la nube se mantienen anónimas. Cuando sea necesario, para una investigación de seguridad específica (por ejemplo, una infracción de seguridad o una actividad sospechosa del usuario), los administradores pueden resolver el nombre de usuario real. Si un administrador tiene un motivo para sospechar de un usuario específico, puede buscar el nombre de usuario cifrado de un nombre de usuario conocido y, después, comenzar la investigación usando el nombre de usuario cifrado. Cada conversión de nombre de usuario se audita en el **registro de gobierno**del portal.
+La anonimización de datos de Cloud Discovery le permite proteger la privacidad del usuario. Cuando se haya cargado el registro de datos en el portal de Microsoft Cloud App Security, se depura el registro y se reemplaza toda la información de nombres de usuario con nombres de usuario cifrados. De este modo, todas las actividades de la nube se mantienen anónimas. Cuando sea necesario, para una investigación de seguridad específica (por ejemplo, una infracción de seguridad o una actividad sospechosa del usuario), los administradores pueden resolver el nombre de usuario real. Si un administrador tiene un motivo para sospechar de un usuario específico, puede buscar el nombre de usuario cifrado de un nombre de usuario conocido y, después, comenzar la investigación usando el nombre de usuario cifrado. Cada conversión de nombre de usuario se audita en el **registro de gobierno** del portal.
 
 Puntos clave:
 
@@ -37,7 +37,7 @@ Puntos clave:
 
 1. Hay tres formas de aplicar la anonimización de datos:
 
-    - Puede configurar los datos para anonimizar desde un archivo de registro específico, mediante la [creación de un nuevo informe de instantáneas](create-snapshot-cloud-discovery-reports.md) y seleccionando **Anonimización de la información privada**.  
+    - Puede configurar los datos para anonimizar desde un archivo de registro específico, mediante la [creación de un nuevo informe de instantáneas](create-snapshot-cloud-discovery-reports.md) y seleccionando **Anonimización de la información privada** .  
     ![Anonimización de datos de instantáneas](media/anonymize-log.png)
 
     - Puede establecer los datos para anonimizar desde una [carga automatizada para un nuevo origen de datos](configure-automatic-log-upload-for-continuous-reports.md) seleccionando **Anonymize private information** (Anonimizar información privada) al agregar el nuevo origen de datos.  
@@ -45,10 +45,10 @@ Puntos clave:
 
     - Puede establecer el valor predeterminado en Cloud App Security para anonimizar todos los datos de los informes de instantáneas de los archivos de registro cargados y de los informes continuados de recopiladores de registros como se muestra a continuación:
 
-    1. En el engranaje de configuración, seleccione **configuración de Cloud Discovery**.
+    1. Seleccione **configuración**  >  **Cloud Discovery configuración** .
 
-    2. En la pestaña Anonimización, para anonimizar nombres de usuario de forma predeterminada, seleccione **Anonimizar la información privada de forma predeterminada en los nuevos informes y orígenes de datos**. También puede seleccionar **información de la máquina anonimización de forma predeterminada en el informe "usuarios del punto de conexión de Win10"**.
-    3. Haga clic en **Save**(Guardar).
+    2. En la pestaña **anonimización** , para anonimización los nombres de usuario de forma predeterminada, seleccione **anonimización información privada de forma predeterminada en nuevos informes y orígenes de datos** . También puede seleccionar la **información del dispositivo anonimización de forma predeterminada en el informe "usuarios del punto de conexión de Win10"** .
+    3. Haga clic en **Save** (Guardar).
 
     ![Página de configuración de anonimización](media/anonymizer1.png)
 
@@ -61,15 +61,15 @@ Puntos clave:
 5. En el caso de una investigación específica, como una investigación de una alerta de uso anómalo, puede resolver el nombre de usuario específico en el portal y proporcionar una justificación empresarial.
 
     > [!NOTE]
-    > Los siguientes pasos también funcionan con los nombres de equipo en la pestaña **máquinas** .
+    > Los siguientes pasos también funcionan con los nombres de dispositivos en la pestaña **dispositivos** .
 
     **Para resolver un nombre de usuario único**
 
-    1. Haga clic en los tres puntos al final de la fila del usuario que desea resolver y seleccione **Deanonymize usuario**.
+    1. Haga clic en los tres puntos al final de la fila del usuario que desea resolver y seleccione **Deanonymize usuario** .
 
         ![Tabla de usuario de anonimización](media/anonymize-user-table.png)
 
-    1. En el elemento emergente, escriba la justificación para resolver el nombre de usuario y, a continuación, haga clic en **resolver**. En la fila correspondiente, se muestra el nombre de usuario resuelto.
+    1. En el elemento emergente, escriba la justificación para resolver el nombre de usuario y, a continuación, haga clic en **resolver** . En la fila correspondiente, se muestra el nombre de usuario resuelto.
 
         > [!NOTE]
         > Esta acción se audita.
@@ -78,10 +78,10 @@ Puntos clave:
 
     La siguiente manera alternativa de resolver nombres de usuario únicos también puede usarse para buscar el nombre de usuario cifrado de un nombre de usuario conocido.
 
-    1. En el engranaje de configuración, seleccione **configuración de Cloud Discovery**.
+    1. En el engranaje de configuración, seleccione **configuración de Cloud Discovery** .
 
     1. En la pestaña **Anonymization** (Anonimización), en **Anonymize and resolve usernames** (Anonimizar y resolver nombres de usuario), escriba una justificación de por qué se realiza la resolución.
-    1. En **Enter username to resolve** (Escriba el nombre de usuario para resolver), seleccione **From anonymized** (De anónimo) y escriba el nombre de usuario anónimo, o seleccione **To anonymized** (Para anónimo) y escriba el nombre de usuario original para resolver. Haga clic en **Resolver**.
+    1. En **Enter username to resolve** (Escriba el nombre de usuario para resolver), seleccione **From anonymized** (De anónimo) y escriba el nombre de usuario anónimo, o seleccione **To anonymized** (Para anónimo) y escriba el nombre de usuario original para resolver. Haga clic en **Resolver** .
 
         ![Resolver elemento emergente de anonimización](media/anonymizer.png)
 
@@ -91,15 +91,15 @@ Puntos clave:
 
         ![Anonimización resolver en masa](media/anonymize-bulk-resolve.png)
 
-    1. Haga clic en **Deanonymize usuario**.
-    1. En el elemento emergente, escriba la justificación para resolver el nombre de usuario y, a continuación, haga clic en **resolver**. En las filas correspondientes, se muestran los nombres de usuario resueltos.
+    1. Haga clic en **Deanonymize usuario** .
+    1. En el elemento emergente, escriba la justificación para resolver el nombre de usuario y, a continuación, haga clic en **resolver** . En las filas correspondientes, se muestran los nombres de usuario resueltos.
 
         > [!NOTE]
         > Esta acción se audita.
 
         ![Anonimización resolver emergente](media/anonymize-resolve-dialog.png)
 
-6. La acción se audita en el **registro de gobierno**del portal.
+6. La acción se audita en el **registro de gobierno** del portal.
 
     ![Acción anonimización en el registro de gobierno](media/anonymize-gov-log.png)
 

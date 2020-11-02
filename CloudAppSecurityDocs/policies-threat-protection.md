@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4860dc37a2d0ad8fab903ec852e5e21074672a81
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 92a02c1810c427de10719193bd0b75249c9e6c21
+ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877829"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93186083"
 ---
 # <a name="threat-protection-policies"></a>Directivas de protección contra amenazas
 
@@ -71,11 +71,11 @@ Detectar cuándo un usuario, que se encuentra en un abandono no pagado y no debe
 
 1. En la pantalla [grupos de usuarios](user-groups.md) , haga clic en **Crear grupo de usuarios** e importe el grupo de Azure ad correspondiente.
 
-2. En la página **directivas** , cree una nueva **Directiva de actividad**.
+2. En la página **directivas** , cree una nueva **Directiva de actividad** .
 
 3. Establezca el **grupo de usuarios** de filtro en el nombre de los grupos de usuarios que ha creado en Azure ad para los usuarios no pagados.
 
-4. Opcional: establecer las acciones de **gobierno** que se realizarán en los archivos cuando se detecte una infracción. Las acciones de gobierno disponibles varían entre los servicios. Puede elegir **suspender usuario**.
+4. Opcional: establecer las acciones de **gobierno** que se realizarán en los archivos cuando se detecte una infracción. Las acciones de gobierno disponibles varían entre los servicios. Puede elegir **suspender usuario** .
 
 5. Cree la Directiva de archivo.
 
@@ -89,11 +89,11 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 ### <a name="steps"></a>Pasos
 
-1. En la página **directivas** , cree una nueva **Directiva de actividad**.
+1. En la página **directivas** , cree una nueva **Directiva de actividad** .
 
-2. Establezca la **etiqueta de agente de usuario** filtrada en es el **Explorador obsoleto** y el **sistema operativo obsoleto**.
+2. Establezca la **etiqueta de agente de usuario** filtrada en es el **Explorador obsoleto** y el **sistema operativo obsoleto** .
 
-3. Establecer las acciones de **gobierno** que se realizarán en los archivos cuando se detecte una infracción. Las acciones de gobierno disponibles varían entre los servicios. En **todas las aplicaciones**, seleccione **notificar al usuario**para que los usuarios puedan actuar sobre la alerta y actualizar los componentes necesarios.
+3. Establecer las acciones de **gobierno** que se realizarán en los archivos cuando se detecte una infracción. Las acciones de gobierno disponibles varían entre los servicios. En **todas las aplicaciones** , seleccione **notificar al usuario** para que los usuarios puedan actuar sobre la alerta y actualizar los componentes necesarios.
 
 4. Cree la Directiva de actividad.
 
@@ -105,19 +105,19 @@ Detecte las actividades de administración realizadas desde y la dirección IP q
 
 - Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-- En el engranaje de configuración, seleccione **intervalos de direcciones IP** y haga clic en + para agregar intervalos de direcciones IP para las subredes internas y sus direcciones IP públicas de salida. Establezca la **categoría** en **interno**.
+- En el engranaje de configuración, seleccione **intervalos de direcciones IP** y haga clic en + para agregar intervalos de direcciones IP para las subredes internas y sus direcciones IP públicas de salida. Establezca la **categoría** en **interno** .
 
 ### <a name="steps"></a>Pasos
 
-1. En la página **directivas** , cree una nueva **Directiva de actividad**.
+1. En la página **directivas** , cree una nueva **Directiva de actividad** .
 
-2. Establezca **actuar en** **una sola actividad**.
+2. Establezca **actuar en** **una sola actividad** .
 
 3. Establecer la **dirección IP** del filtro en **categoría** es igual a **arriesgado**
 
 4. Establezca la **actividad administrativa** filtrar en **true** .
 
-5. Establecer las acciones de **gobierno** que se realizarán en los archivos cuando se detecte una infracción. Las acciones de gobierno disponibles varían entre los servicios. En **todas las aplicaciones**, seleccione **notificar al usuario**para que los usuarios puedan actuar en la alerta y actualizar los componentes necesarios en **el administrador del usuario**.
+5. Establecer las acciones de **gobierno** que se realizarán en los archivos cuando se detecte una infracción. Las acciones de gobierno disponibles varían entre los servicios. En **todas las aplicaciones** , seleccione **notificar al usuario** para que los usuarios puedan actuar en la alerta y actualizar los componentes necesarios en **el administrador del usuario** .
 
 6. Cree la Directiva de actividad.
 
@@ -128,17 +128,17 @@ Detectar las actividades de la cuenta de servicio que se originan en una direcci
 ### <a name="prerequisites"></a>Requisitos previos
 
 - Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
-- En el engranaje de configuración, seleccione **intervalos de direcciones IP** y haga clic en + para agregar intervalos de direcciones IP para las subredes internas y sus direcciones IP públicas de salida. Establezca la **categoría** en **interno**.
+- En el engranaje de configuración, seleccione **intervalos de direcciones IP** y haga clic en + para agregar intervalos de direcciones IP para las subredes internas y sus direcciones IP públicas de salida. Establezca la **categoría** en **interno** .
 
 - Estandarizar las convenciones de nomenclatura para las cuentas de servicio en el entorno, por ejemplo, establecer que todos los nombres de cuenta empiecen por "SVC".
 
 ### <a name="steps"></a>Pasos
 
-1. En la página **directivas** , cree una nueva **Directiva de actividad**.
+1. En la página **directivas** , cree una nueva **Directiva de actividad** .
 
 2. Establezca el filtro **usuario** en **nombre** y, a continuación, **empiece por** y escriba su Convención de nomenclatura, como SVC.
 
-3. Establezca el filtro **dirección IP** en **categoría** no es igual a **otro** y **corporativo**.
+3. Establezca el filtro **dirección IP** en **categoría** no es igual a **otro** y **corporativo** .
 
 4. Establecer las acciones de **gobierno** que se realizarán en los archivos cuando se detecte una infracción. Las acciones de gobierno disponibles varían entre los servicios.
 
@@ -154,9 +154,9 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 ### <a name="steps"></a>Pasos
 
-1. En la página **directivas** , cree una nueva **Directiva de actividad**.
+1. En la página **directivas** , cree una nueva **Directiva de actividad** .
 
-2. Establezca el filtro de **direcciones IP** en **etiqueta** no es igual a **Microsoft Azure**. Esto excluirá las actividades basadas en equipo no interactivas.
+2. Establezca el filtro de **direcciones IP** en **etiqueta** no es igual a **Microsoft Azure** . Esto excluirá las actividades no interactivas basadas en dispositivos.
 
 3. Establezca los **tipos de actividad** de filtro es igual a y, a continuación, seleccione todas las actividades de descarga pertinentes.
 
@@ -203,11 +203,11 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 ### <a name="steps"></a>Pasos
 
-1. En la página **directivas** , cree una nueva **Directiva de actividad**.
+1. En la página **directivas** , cree una nueva **Directiva de actividad** .
 
 2. Establezca **actúa en** la **actividad repetida** y Personalice las **actividades mínimas repetidas** y establezca un **período de tiempo** para cumplir con la Directiva de su organización.
 
-3. Establezca el filtro **usuario** en **de grupo** es igual a y seleccione solo el grupo de administración relacionado como **actor**.
+3. Establezca el filtro **usuario** en **de grupo** es igual a y seleccione solo el grupo de administración relacionado como **actor** .
 
 4. Establezca el **tipo de actividad** de filtro es igual a todas las actividades relacionadas con las actualizaciones, los cambios y los restablecimientos de contraseña.
 

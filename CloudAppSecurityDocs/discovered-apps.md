@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 824e3a39b242f8bbe8452f495c51ac5304d66b6c
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 7d9c81b173da0c08d9d2c251514a0fbc151ac799
+ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881640"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93185696"
 ---
 # <a name="working-with-discovered-apps"></a>Trabajar con aplicaciones detectadas
 
@@ -33,16 +33,16 @@ El panel de Cloud Discovery está diseñado para proporcionar más información 
 
 Lo primero que debe hacer para obtener una visión general de sus aplicaciones de Cloud Discovery es ir al panel de Cloud Discovery y revisar esta información:
 
-1. Primero, vea el uso general de aplicaciones en la nube de la organización en la **información general sobre el uso de alto nivel**.
+1. Primero, vea el uso general de aplicaciones en la nube de la organización en la **información general sobre el uso de alto nivel** .
 
 1. Después, profundice un nivel para ver cuáles son las **categorías que más se usan** en la organización para cada uno de los diferentes parámetros de uso. Puede ver qué porcentaje de este uso lo realizan las aplicaciones autorizadas.
 
-1. Profundice todavía más y vea todas las aplicaciones de una categoría específica en la pestaña **Aplicaciones detectadas**.
+1. Profundice todavía más y vea todas las aplicaciones de una categoría específica en la pestaña **Aplicaciones detectadas** .
 
 1. Puede ver los **principales usuarios y las direcciones IP de origen** para identificar los usuarios predominantes de aplicaciones en la nube de la organización.
-1. Compruebe cómo se extienden las aplicaciones detectadas según la ubicación geográfica (de acuerdo con su sede central) en el **mapa de la sede central de la aplicación**.
+1. Compruebe cómo se extienden las aplicaciones detectadas según la ubicación geográfica (de acuerdo con su sede central) en el **mapa de la sede central de la aplicación** .
 
-1. Por último, no olvide revisar la puntuación de riesgo de la aplicación detectada en el **App risk overview** (Información general sobre el riesgo de la aplicación). Compruebe el **estado de alertas de detección** para ver cuántas alertas abiertas se deben investigar.
+1. Por último, no olvide revisar la puntuación de riesgo de la aplicación detectada en la **información general sobre el riesgo** de la aplicación. Compruebe el **estado de alertas de detección** para ver cuántas alertas abiertas se deben investigar.
 
 ## <a name="deep-dive-into-discovered-apps"></a>Análisis detallado de las aplicaciones detectadas
 
@@ -50,19 +50,19 @@ Si quiere profundizar en los datos proporcionados por Cloud Discovery, use los f
 
 Por ejemplo, si quiere identificar las aplicaciones de colaboración y de almacenamiento en la nube que entrañan riesgos y que se usan habitualmente, puede usar la página Aplicaciones detectadas para filtrar las aplicaciones que quiera. Después, puede [no autorizarlas o bloquearlas](governance-discovery.md), como se indica aquí:
 
-1. En la página **Aplicaciones detectadas**, en **Buscar por categoría**, seleccione **Almacenamiento en la nube** y **Colaboración**.
+1. En la página **Aplicaciones detectadas** , en **Buscar por categoría** , seleccione **Almacenamiento en la nube** y **Colaboración** .
 
 1. Luego use los filtros avanzados y establezca **Factor de riesgo de cumplimiento** en **SOC 2** igual a **False**
 
-1. Para **Uso**, establezca **Usuarios** en más de 50 usuarios y **Uso** para **Transacciones** en más de 100.
+1. Para **Uso** , establezca **Usuarios** en más de 50 usuarios y **Uso** para **Transacciones** en más de 100.
 
-1. Establezca el **Factor de riesgo para la seguridad** para **Data at rest encryption** (Cifrado de datos en reposo) igual a **No admitido**. Después, establezca **Puntuación de riesgo** en un valor igual o menor que 6.
+1. Establezca el **Factor de riesgo para la seguridad** para **Data at rest encryption** (Cifrado de datos en reposo) igual a **No admitido** . Después, establezca **Puntuación de riesgo** en un valor igual o menor que 6.
 
 ![Filtros de aplicaciones detectadas](media/discovered-app-filters.png)
 
 Una vez que se han filtrado los resultados, puede [no autorizar y bloquear](governance-discovery.md) las aplicaciones. Para ello, active la casilla de acción masiva para no autorizarlas en una sola acción. Después de no autorizarlas, puede usar un script de bloqueo para impedir que se usen en su entorno.
 
-Cloud Discovery permite profundizar incluso más en el uso de la nube de la organización. Puede identificar instancias específicas que se están usando al investigar los subdominios detectados.
+Cloud Discovery le permite profundizar incluso más en el uso de la nube de su organización. Puede identificar instancias específicas que se están usando al investigar los subdominios detectados.
 
 Por ejemplo, puede diferenciar entre los distintos sitios de SharePoint.
 
@@ -81,7 +81,7 @@ Por ejemplo, desde Cloud App Security puede supervisar la actividad en un contex
 
 Para consultar los recursos detectados:
 
-1. En el portal de Cloud App Security, seleccione **Detectar** y, luego, **Recursos detectados**.
+1. En el portal de Cloud App Security, seleccione **Detectar** y, luego, **Recursos detectados** .
 
     ![Menú de recursos detectados](media/discovered-resources-menu.png)
 
@@ -89,7 +89,7 @@ Para consultar los recursos detectados:
 
    ![Recursos de la detección](media/discovery-resources.png)
 
-1. Para las aplicaciones personalizadas, puede hacer clic en los tres botones que verá al final de la fila y seleccionar **Agregar aplicación personalizada**. Esta acción abrirá la ventana **Agregar aplicación personalizada**, donde podrá asignar un nombre a la aplicación e identificarla para poder incluirla en el panel de Cloud Discovery.
+1. Para las aplicaciones personalizadas, puede hacer clic en los tres botones que verá al final de la fila y seleccionar **Agregar aplicación personalizada** . Esta acción abrirá la ventana **Agregar aplicación personalizada** , donde podrá asignar un nombre a la aplicación e identificarla para poder incluirla en el panel de Cloud Discovery.
 
 ## <a name="generate-cloud-discovery-executive-report"></a>Generación de un informe ejecutivo de Cloud Discovery
 
@@ -97,23 +97,23 @@ La mejor manera de obtener información general sobre el uso de Shadow IT en la 
 
 Para generar un informe ejecutivo de Cloud Discovery:
 
-1. En el **Panel de Cloud Discovery**, haga clic en los tres puntos situados en la esquina superior derecha del panel y, a continuación, seleccione **generar Cloud Discovery Informe Ejecutivo**.
+1. En el **Panel de Cloud Discovery** , haga clic en los tres puntos situados en la esquina superior derecha del panel y, a continuación, seleccione **generar Cloud Discovery Informe Ejecutivo** .
 1. Opcionalmente, cambie el nombre del informe.
-1. Haga clic en **Generar**.
+1. Haz clic en **Generar** .
 
 ## <a name="exclude-entities"></a>Excluir entidades
 
-Si tiene usuarios del sistema, direcciones IP o máquinas que son ruidosos y no interesantes, o aplicaciones que no son relevantes, es posible que quiera excluir sus datos de los datos de Cloud Discovery que se analizan. Por ejemplo, puede excluir toda la información que se origina en 127.0.0.1 o el host local.
+Si tiene usuarios del sistema, direcciones IP o dispositivos que son ruidosos pero no interesantes o aplicaciones que no son relevantes, puede que desee excluir sus datos de los Cloud Discovery datos que se analizan. Por ejemplo, puede excluir toda la información que se origina en 127.0.0.1 o el host local.
 
 Para crear una exclusión:
 
-1. En el portal, en el icono de configuración, seleccione **Configuración de Cloud Discovery**.
+1. En el portal, en el icono de configuración, seleccione **Configuración de Cloud Discovery** .
 
-1. Haga clic en la pestaña **Excluir entidades**.
+1. Haga clic en la pestaña **Excluir entidades** .
 
-1. Seleccione la pestaña **Usuarios excluidos**, **Direcciones IP excluidas** o **Máquinas excluidas** y haga clic en el botón + para agregar la exclusión.
+1. Elija la pestaña **usuarios excluidos** , **direcciones IP excluidas** o **dispositivos excluidos** y haga clic en el botón + para agregar su exclusión.
 
-1. Agregue un alias de usuario, una dirección IP o un nombre de máquina. Se recomienda agregar información sobre por qué se ha realizado la exclusión.
+1. Agregue un alias de usuario, una dirección IP o un nombre de dispositivo. Se recomienda agregar información sobre por qué se ha realizado la exclusión.
 
     ![excluir usuario](media/exclude-user.png "excluir usuario")
 
@@ -121,23 +121,23 @@ Para crear una exclusión:
 
 Los informes continuos personalizados proporcionan más granularidad al supervisar los datos de registro de Cloud Discovery de la organización. Al crear informes personalizados, es posible filtrar por ubicaciones geográficas concretas, redes y sitios o unidades organizativas. De forma predeterminada, solo aparecen los informes siguientes en el selector de informes de Cloud Discovery:
 
-- El **informe global** consolida toda la información del portal de todos los orígenes de datos incluidos en los registros.  El informe global no incluye datos de Microsoft Defender ATP.
+- El **informe global** consolida toda la información del portal de todos los orígenes de datos incluidos en los registros.  El informe global no incluye datos de ATP de Microsoft defender.
 
 - El **informe específico de origen de datos** muestra únicamente la información de un origen de datos concreto.
 
 Para crear un informe continuo:
 
-1. En el portal, en el icono de configuración, seleccione **Configuración de Cloud Discovery**.
+1. En el portal, en el icono de configuración, seleccione **Configuración de Cloud Discovery** .
 
-1. Haga clic en la pestaña **Informe continuo**.
+1. Haga clic en la pestaña **Informe continuo** .
 
-1. Haga clic en el botón **Crear informe**.
+1. Haga clic en el botón **Crear informe** .
 
 1. Escriba un nombre de informe.
 
 1. Seleccione los orígenes de datos que quiere incluir (todos u orígenes específicos).
 
-1. Establezca los filtros que quiera sobre los datos. Estos filtros pueden ser **Grupos de usuarios**, **Etiquetas de dirección IP** o **Intervalos de direcciones IP**. Para obtener más información sobre el trabajo con etiquetas de dirección IP e intervalos de direcciones IP, consulte [Organize the data according to your needs](ip-tags.md) (Organizar los datos de acuerdo a las necesidades).
+1. Establezca los filtros que quiera sobre los datos. Estos filtros pueden ser **Grupos de usuarios** , **Etiquetas de dirección IP** o **Intervalos de direcciones IP** . Para obtener más información sobre el trabajo con etiquetas de dirección IP e intervalos de direcciones IP, consulte [Organize the data according to your needs](ip-tags.md) (Organizar los datos de acuerdo a las necesidades).
 
     ![crear informe continuo personalizado](media/create-custom-continuous-report.png)
 
@@ -156,13 +156,13 @@ Hay una serie de razones por las que puede que quiera eliminar los datos de Clou
 
 Para eliminar datos de Cloud Discovery:
 
-1. En el portal, en el icono de configuración, seleccione **Configuración de Cloud Discovery**.
+1. En el portal, en el icono de configuración, seleccione **Configuración de Cloud Discovery** .
 
-1. Haga clic en la pestaña **Eliminar datos**.
+1. Haga clic en la pestaña **Eliminar datos** .
 
     Es importante estar seguro de querer eliminar los datos antes de continuar: esta acción no se puede deshacer y elimina **todos** los datos de Cloud Discovery del sistema.
 
-1. Haga clic en el botón **Eliminar**.
+1. Haga clic en el botón **Eliminar** .
 
     ![eliminar datos](media/delete-data.png "eliminar datos")
 

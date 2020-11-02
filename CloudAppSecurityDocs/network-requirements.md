@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1542e3c10adcb3df2c58fefb0e2e9e62ca985cb8
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: c3551532dbd9e436369cae913e74a743bfadc8d6
+ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877978"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93186164"
 ---
 # <a name="network-requirements"></a>Requisitos de red
 
@@ -32,7 +32,7 @@ Algunos de los siguientes requisitos dependen del centro de datos al que esté c
 
 Para ver el centro de datos al que se está conectando, siga estos pasos:
 
-1. En el portal de Cloud App Security, haga clic en el **icono de signo de interrogación** en la barra de menús. Después, seleccione **Acerca de**.
+1. En el portal de Cloud App Security, haga clic en el **icono de signo de interrogación** en la barra de menús. Después, seleccione **Acerca de** .
 
     ![clic en Acerca de](media/about-menu.png)
 
@@ -154,10 +154,10 @@ Para conectarse a aplicaciones de terceros, habilite Cloud App Security para per
 
 Para permitir que Cloud App Security envíe datos a través de Stunnel al servidor ICAP, abra el firewall de red perimetral a estas direcciones IP con un número de puerto de origen dinámico.
 
-1. **Direcciones de origen**: estas direcciones deben incluirse en la lista de admitidas como se detalla anteriormente para las aplicaciones de conector de la API de terceros
-2. **Puerto TCP de origen**: dinámico
-3. **Direcciones de destino**: una o dos direcciones IP del servidor Stunnel conectado al servidor ICAP externo
-4. **Puerto TCP de destino**: según se defina en la red
+1. **Direcciones de origen** : estas direcciones deben incluirse en la lista de admitidas como se detalla anteriormente para las aplicaciones de conector de la API de terceros
+2. **Puerto TCP de origen** : dinámico
+3. **Direcciones de destino** : una o dos direcciones IP del servidor Stunnel conectado al servidor ICAP externo
+4. **Puerto TCP de destino** : según se defina en la red
 
 > [!NOTE]
 >
@@ -185,7 +185,7 @@ Para habilitar las notificaciones para que se envíen desde la plantilla y la co
 - 111.221.26.0/27
 - 207.46.200.0/27
 
-Si desea personalizar la identidad del remitente de correo electrónico, Microsoft Cloud App Security habilita la personalización mediante MailChimp &reg; , un servicio de correo electrónico de terceros. Para facilitar el trabajo en el portal de Microsoft Cloud App Security, vaya a **Configuración**. Seleccione **configuración de correo** y revise los términos de servicio y la declaración de privacidad de Mailchimp. Después, conceda permiso a Microsoft para usar MailChimp en su nombre.
+Si desea personalizar la identidad del remitente de correo electrónico, Microsoft Cloud App Security habilita la personalización mediante MailChimp &reg; , un servicio de correo electrónico de terceros. Para facilitar el trabajo en el portal de Microsoft Cloud App Security, vaya a **Configuración** . Seleccione **configuración de correo** y revise los términos de servicio y la declaración de privacidad de Mailchimp. Después, conceda permiso a Microsoft para usar MailChimp en su nombre.
 
 Si no Personaliza la identidad del remitente, las notificaciones por correo electrónico se enviarán con la configuración predeterminada.
 
@@ -199,7 +199,7 @@ Para habilitar características de Cloud Discovery por medio de un recopilador d
 - Permita que el recopilador de registros inicie tráfico saliente al portal (por ejemplo, contoso.cloudappsecurity.com) en el puerto 443.
 - Permita que el recopilador de registros inicie tráfico saliente a Azure Blog Storage en el puerto 443:
 
-  | Centro de datos |                        URL                                 |
+  | Centro de datos |                        Resolución                                 |
   |-------------|------------------------------------------------------------|
   |     Estados Unidos 1     | https: \/ /adaprodconsole.BLOB.Core.Windows.net/             |
   |     US2     | https: \/ /prod03use2console1.BLOB.Core.Windows.net/         |
@@ -210,7 +210,7 @@ Para habilitar características de Cloud Discovery por medio de un recopilador d
 
 > [!NOTE]
 >
-> - Si el Firewall requiere una lista de acceso de dirección IP estática y no admite la inclusión en listas blancas basadas en direcciones URL, permita que el recopilador de registros inicie el tráfico saliente a los [Microsoft Azure intervalos IP del centro](https://www.microsoft.com/download/details.aspx?id=56519) de seguridad en el puerto 443.
+> - Si el Firewall requiere una lista de acceso de dirección IP estática y no admite la función basada en la dirección URL, permita que el recopilador de registros inicie el tráfico saliente a los [Microsoft Azure intervalos IP del centro](https://www.microsoft.com/download/details.aspx?id=56519) de seguridad en el puerto 443.
 > - Permita que el recopilador de registros inicie tráfico saliente al portal de Cloud App Security.
 > - Si no especificó un proxy al configurar el recopilador de registros, debe permitir las conexiones http a http://ocsp.msocsp.com/ y OCSP.DigiCert.com en el puerto 80. Esto sirve para comprobar el estado de revocación de certificado al conectarse al portal de Cloud App Security.
 

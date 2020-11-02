@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1744a906a89f8627f7d208b85a0ceda09edf0ae5
-ms.sourcegitcommit: b0ad9e8e6b5668849e1c292c43084480f229d981
+ms.openlocfilehash: 706a90ff21e4dde66ed0b221e4fc5c94a7663368
+ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "93147465"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93186120"
 ---
 # <a name="set-up-cloud-discovery"></a>Configuración de Cloud Discovery
 
@@ -31,7 +31,7 @@ Puede generar los siguientes tipos de informes:
 
 - **Informes continuos** : analizan todos los registros que se reenvían desde la red mediante Cloud App Security. Proporcionan una mejor visibilidad de todos los datos e identifican automáticamente los usos erróneos, ya sea mediante el motor de detección de anomalías de aprendizaje automático o mediante las directivas personalizadas que haya definido. Estos informes pueden crearse conectándose de varias maneras:
 
-  - [**Microsoft defender for Endpoint Integration**](wdatp-integration.md): Cloud App Security se integra con defender para el punto de conexión de forma nativa, para simplificar el lanzamiento de Cloud Discovery, ampliar las funcionalidades de Cloud Discovery más allá de la red corporativa y habilitar la investigación basada en el equipo.
+  - [**Microsoft defender for Endpoint Integration**](mde-integration.md): Cloud App Security se integra con defender para el punto de conexión de forma nativa, para simplificar el lanzamiento de Cloud Discovery, ampliar las funcionalidades de Cloud Discovery más allá de la red corporativa y habilitar la investigación basada en el equipo.
   - [**Recopilador de registros**](discovery-docker.md): los recopiladores de registros permiten automatizar fácilmente la carga de registros desde la red. El recopilador de registros se ejecuta en la red y recibe los registros a través de Syslog o FTP.
   - **Puerta de enlace web segura (SWG)** : Si trabaja con Cloud App Security y uno de los siguientes SWGs, puede integrar los productos para mejorar su experiencia de Cloud Discovery de seguridad. Juntos, Cloud App Security y SWGs proporcionan una implementación sin problemas de Cloud Discovery, el bloqueo automático de aplicaciones no autorizadas y la evaluación de riesgos directamente en el portal de SWG.
     - [Integración de Zscaler](zscaler-integration.md)
