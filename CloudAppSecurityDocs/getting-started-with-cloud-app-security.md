@@ -11,12 +11,12 @@ ms.service: cloud-app-security
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 719da19742facca2cecd3cc1aba27046a05e00b3
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: d7e32b00bc555dd5c9fb58bc874a3f149521d390
+ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90879551"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93185887"
 ---
 # <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Inicio rápido: Introducción a Microsoft Cloud App Security
 
@@ -72,7 +72,7 @@ Tarea necesaria: Crear directivas
 1. Vaya a **Control** > **Plantillas**.
 1. Seleccione una plantilla de directiva de la lista y haga clic en **Crear directiva**.
 1. Personalice la directiva (seleccione filtros, acciones y otras opciones) y, luego, elija **Crear**.
-1. En la pestaña **Directivas**, elija la directiva para ver las coincidencias pertinentes (actividades, archivos y alertas).
+1. En la pestaña **Directivas** , elija la directiva para ver las coincidencias pertinentes (actividades, archivos y alertas).
  Sugerencia: Para abarcar todos los escenarios de seguridad del entorno de nube, cree una directiva para cada **categoría de riesgo**.
 
 ### <a name="how-can-policies-help-your-organization"></a>¿Cómo pueden las directivas ayudar a su organización?
@@ -83,14 +83,14 @@ Puede usar directivas para ayudarle a supervisar tendencias, ver amenazas de seg
 
 Tarea necesaria: Habilitar Cloud App Security para ver el uso de las aplicaciones en la nube
 
-1. [Integración con Microsoft Defender ATP](wdatp-integration.md) para habilitar automáticamente Cloud App Security y supervisar los dispositivos Windows 10 dentro y fuera de la empresa.
+1. [Integración con Microsoft Defender ATP](mde-integration.md) para habilitar automáticamente Cloud App Security y supervisar los dispositivos Windows 10 dentro y fuera de la empresa.
 1. Si usa [Zscaler, intégrelo](zscaler-integration.md) con Cloud App Security.
 1. Para conseguir una cobertura completa, cree un informe de Cloud Discovery continuo.
 
     1. En el engranaje de configuración, seleccione **Cloud Discovery settings** (Configuración de Cloud Discovery).
     1. Elija **Carga automática de registros**.
-    1. En la pestaña **Orígenes de datos**, agregue los orígenes.
-    1. En la pestaña **Recopiladores de registros**, configure el recopilador de registros.
+    1. En la pestaña **Orígenes de datos** , agregue los orígenes.
+    1. En la pestaña **Recopiladores de registros** , configure el recopilador de registros.
 
 ### <a name="to-create-a-snapshot-cloud-discovery-report"></a>Para crear un informe de instantáneas de Cloud Discovery
 
@@ -108,20 +108,20 @@ Tarea recomendada: Agregar los datos de la organización
 ### <a name="to-enter-email-settings"></a>Para especificar la configuración del correo electrónico
 
 1. En el engranaje de configuración, seleccione **Configuración de correo**.
-1. En **Identidad del emisor de correo electrónico**, escriba las direcciones de correo electrónico y el nombre para mostrar.
-1. En **Diseño del correo electrónico**, cargue la plantilla de correo electrónico de su organización.
+1. En **Identidad del emisor de correo electrónico** , escriba las direcciones de correo electrónico y el nombre para mostrar.
+1. En **Diseño del correo electrónico** , cargue la plantilla de correo electrónico de su organización.
 
 ### <a name="to-set-admin-notifications"></a>Para establecer notificaciones de administrador
 
 1. En la barra de navegación, elija su nombre de usuario y, luego, vaya a **Configuración de usuario**.
-1. En **Notificaciones**, configure los métodos que quiere establecer para las notificaciones del sistema.
+1. En **Notificaciones** , configure los métodos que quiere establecer para las notificaciones del sistema.
 1. Elija **Guardar**.
 
 ### <a name="to-customize-the-score-metrics"></a>Para personalizar las métricas de puntuación
 
 1. En el engranaje de configuración, seleccione **Cloud Discovery settings** (Configuración de Cloud Discovery).
 1. En el engranaje de configuración, seleccione **Cloud Discovery settings** (Configuración de Cloud Discovery).
-1. En **Métricas de puntuación**, configure la importancia de los distintos valores de riesgo.
+1. En **Métricas de puntuación** , configure la importancia de los distintos valores de riesgo.
 1. Elija **Guardar**.
 
 Ahora, las puntuaciones de riesgo asignadas a las aplicaciones detectadas se configuran de forma precisa según las necesidades y las prioridades de la organización.
@@ -140,7 +140,7 @@ Tarea recomendada: Configurar los valores importantes
 1. En el engranaje de configuración, seleccione **Cloud Discovery settings** (Configuración de Cloud Discovery).
 1. En el engranaje de configuración, seleccione **Intervalos de direcciones IP**.
 1. Haga clic en el signo más para agregar un intervalo de direcciones IP.
-1. Escriba los **detalles**, la **ubicación**, las **etiquetas** y la **categoría** del intervalo IP.
+1. Escriba los **detalles** , la **ubicación** , las **etiquetas** y la **categoría** del intervalo IP.
 1. Elija **Crear**.
 
     Ahora puede usar etiquetas IP al crear directivas y al filtrar y crear informes continuos.
@@ -148,7 +148,7 @@ Tarea recomendada: Configurar los valores importantes
 ### <a name="to-create-continuous-reports"></a>Para crear informes continuos
 
 1. En el engranaje de configuración, seleccione **Cloud Discovery settings** (Configuración de Cloud Discovery).
-1. En **Informes continuos**, elija **Crear informe**.
+1. En **Informes continuos** , elija **Crear informe**.
 1. Siga los pasos de configuración.
 1. Elija **Crear**.
 
@@ -157,7 +157,7 @@ Ahora puede ver los datos detectados según sus propias preferencias, como las u
 ### <a name="to-add-domains"></a>Para agregar dominios
 
 1. En el engranaje de configuración, seleccione **Configuración**.
-1. En **Detalles de la organización**, agregue los dominios internos de la organización.
+1. En **Detalles de la organización** , agregue los dominios internos de la organización.
 1. Elija **Guardar**.
 
 ### <a name="why-should-you-configure-these-settings"></a>¿Por qué es importante configurar estos parámetros?
