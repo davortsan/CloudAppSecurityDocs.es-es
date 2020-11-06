@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f9b273f2e89bd3cff380fbdcd2c183827f58f903
-ms.sourcegitcommit: 5041a8bfae9c9a1a3425c0a0fd75ac60ed1fe9cc
+ms.openlocfilehash: ad681b763233a84d63cb11a98e6f709e72816080
+ms.sourcegitcommit: 138d435905eaf29584f50d6dac30489d2104189a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92053853"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93415460"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Proteger aplicaciones con el control de aplicaciones de acceso condicional de Microsoft Cloud App Security
 
@@ -37,19 +37,19 @@ Control de aplicaciones de acceso condicional usa una arquitectura de proxy inve
 
 Control de aplicaciones de acceso condicional permite supervisar y controlar las sesiones y el acceso a las aplicaciones de usuario en tiempo real, en función de las directivas de acceso y de sesión. Las directivas de acceso y de sesión se usan en el portal Cloud App Security para refinar los filtros y establecer las acciones que deben realizarse en un usuario. Con las directivas de acceso y de sesión, puede:
 
-- **Impedir la exfiltración de datos**: puede bloquear la descarga, cortar, copiar e imprimir documentos confidenciales en, por ejemplo, dispositivos no administrados.
+- **Impedir la exfiltración de datos** : puede bloquear la descarga, cortar, copiar e imprimir documentos confidenciales en, por ejemplo, dispositivos no administrados.
 
-- **Proteger al descargar: en**lugar de bloquear la descarga de documentos confidenciales, puede requerir que los documentos estén etiquetados y protegidos con Azure Information Protection. Esta acción garantiza que el documento está protegido y el acceso de usuario está restringido en una sesión de riesgo potencial.
+- **Proteger al descargar: en** lugar de bloquear la descarga de documentos confidenciales, puede requerir que los documentos estén etiquetados y protegidos con Azure Information Protection. Esta acción garantiza que el documento está protegido y el acceso de usuario está restringido en una sesión de riesgo potencial.
 
-- **Evitar la carga de archivos sin etiquetar**: antes de que otros usuarios carguen, distribuyan y usen otros, es importante asegurarse de que el archivo tiene la etiqueta y la protección adecuadas. Puede asegurarse de que los archivos sin etiqueta con contenido confidencial se bloqueen para que no se carguen hasta que el usuario clasifique el contenido.
+- **Evitar la carga de archivos sin etiquetar** : antes de que otros usuarios carguen, distribuyan y usen otros, es importante asegurarse de que el archivo tiene la etiqueta y la protección adecuadas. Puede asegurarse de que los archivos sin etiqueta con contenido confidencial se bloqueen para que no se carguen hasta que el usuario clasifique el contenido.
 
-- **Bloquear malware potencial**: puede proteger su entorno contra malware bloqueando la carga de archivos potencialmente malintencionados. Los archivos que se cargan o descargan se pueden analizar con la inteligencia de amenazas de Microsoft y bloquearse de forma instantánea.
+- **Bloquear malware potencial** : puede proteger su entorno contra malware bloqueando la carga de archivos potencialmente malintencionados. Los archivos que se cargan o descargan se pueden analizar con la inteligencia de amenazas de Microsoft y bloquearse de forma instantánea.
 
-- **Supervisar las sesiones de usuario para el cumplimiento**: los usuarios con riesgo se supervisan cuando inician sesión en las aplicaciones y sus acciones se registran desde dentro de la sesión. Puede investigar y analizar el comportamiento del usuario para saber dónde se deben aplicar las directivas de sesión en el futuro, y en qué condiciones.
+- **Supervisar las sesiones de usuario para el cumplimiento** : los usuarios con riesgo se supervisan cuando inician sesión en las aplicaciones y sus acciones se registran desde dentro de la sesión. Puede investigar y analizar el comportamiento del usuario para saber dónde se deben aplicar las directivas de sesión en el futuro, y en qué condiciones.
 
-- **Bloquear acceso**: puede bloquear el acceso a aplicaciones y usuarios específicos en función de varios factores de riesgo. Por ejemplo, puede bloquearlos si usan certificados de cliente como forma de administración de dispositivos.
+- **Bloquear acceso** : puede bloquear el acceso a aplicaciones y usuarios específicos en función de varios factores de riesgo. Por ejemplo, puede bloquearlos si usan certificados de cliente como forma de administración de dispositivos.
 
-- **Bloquear actividades personalizadas**: algunas aplicaciones tienen escenarios únicos que incluyen el riesgo, por ejemplo, el envío de mensajes con contenido confidencial en aplicaciones como Microsoft Teams o el margen de demora. En estos tipos de escenarios, puede examinar los mensajes para detectar el contenido confidencial y bloquearlos en tiempo real.
+- **Bloquear actividades personalizadas** : algunas aplicaciones tienen escenarios únicos que incluyen el riesgo, por ejemplo, el envío de mensajes con contenido confidencial en aplicaciones como Microsoft Teams o el margen de demora. En estos tipos de escenarios, puede examinar los mensajes para detectar el contenido confidencial y bloquearlos en tiempo real.
 
 ### <a name="how-session-control-works"></a>Funcionamiento del control de sesión
 
@@ -82,7 +82,7 @@ La característica Control de aplicaciones de acceso condicional le permite crea
 Azure AD el acceso condicional permite pasar la información de dispositivo compatible con Intune y Azure AD híbrido combinarse directamente a Cloud App Security. Desde allí, se puede desarrollar una directiva de sesión o acceso que use el estado del dispositivo como filtro. Para obtener más información, consulte [Introducción a la administración de dispositivos en Azure Active Directory](/azure/active-directory/device-management-introduction).
 
 > [!NOTE]
-> Algunos exploradores pueden requerir una configuración adicional, como la instalación de una extensión. Para obtener más información, consulte [compatibilidad con el explorador de acceso condicional](https://go.microsoft.com/fwlink/?linkid=2102732).
+> Algunos exploradores pueden requerir una configuración adicional, como la instalación de una extensión. Para obtener más información, consulte [compatibilidad con el explorador de acceso condicional](/azure/active-directory/conditional-access/concept-conditional-access-conditions).
 
 ### <a name="client-certificate-authenticated-devices"></a>Dispositivos autenticados con certificado de cliente
 
@@ -133,7 +133,7 @@ Muchas organizaciones que optan por usar controles de sesión para aplicaciones 
 Puede bloquear el acceso a las aplicaciones de cliente de escritorio y móviles nativas con directivas de acceso. para ello, establezca el filtro de la **aplicación cliente** en **móvil y escritorio**. Algunas aplicaciones cliente nativas se pueden reconocer individualmente, mientras que otras que forman parte de un conjunto de aplicaciones solo se pueden identificar como su aplicación de nivel superior. Por ejemplo, las aplicaciones como SharePoint Online solo se pueden reconocer mediante la creación de una directiva de acceso que se aplica a las aplicaciones de Office 365.
 
 > [!NOTE]
-> A menos que el filtro de **aplicación cliente** se establezca específicamente en **móvil y escritorio**, la Directiva de acceso resultante solo se aplicará a las sesiones del explorador. La razón de esto es evitar que las sesiones de usuario se configuran de forma inadvertida para el proxy, lo que puede ser un subproducto del uso de este filtro. Aunque la mayoría de los exploradores principales admiten la comprobación de certificados de cliente, algunas aplicaciones móviles y de escritorio usan exploradores integrados que es posible que no admitan esta comprobación. Por lo tanto, el uso de este filtro puede afectar a la autenticación de estas aplicaciones.
+> A menos que el filtro de **aplicación cliente** se establezca específicamente en **móvil y escritorio** , la Directiva de acceso resultante solo se aplicará a las sesiones del explorador. La razón de esto es evitar que las sesiones de usuario se configuran de forma inadvertida para el proxy, lo que puede ser un subproducto del uso de este filtro. Aunque la mayoría de los exploradores principales admiten la comprobación de certificados de cliente, algunas aplicaciones móviles y de escritorio usan exploradores integrados que es posible que no admitan esta comprobación. Por lo tanto, el uso de este filtro puede afectar a la autenticación de estas aplicaciones.
 
 ### <a name="session-controls"></a>Controles de sesión
 
@@ -148,7 +148,7 @@ Aunque los controles de sesión se compilan para trabajar con cualquier explorad
 
 - AWS
 - Azure DevOps (Visual Studio Team Services)
-- Azure portal
+- Azure Portal
 - Box
 - Concur
 - CornerStone on Demand
