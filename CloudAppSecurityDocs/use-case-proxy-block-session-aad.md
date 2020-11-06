@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f145c8f76e205e24703742d4162c8766b2785588
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 3dec3c1729d63649a754098ace7f638ccc3029bc
+ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877049"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93185940"
 ---
 # <a name="tutorial-block-download-of-sensitive-information"></a>Tutorial: Bloqueo de la descarga de información confidencial
 
@@ -34,7 +34,7 @@ Los administradores de TI de hoy en día se encuentran entre la espada y la pare
 
 ## <a name="the-threat"></a>La amenaza
 
-Un administrador de cuentas de la organización quiere consultar algo en Salesforce desde casa durante el fin de semana en su portátil personal. Los datos de Salesforce pueden incluir desde información de la tarjeta de crédito de un cliente hasta información de carácter personal. El equipo doméstico no está administrado. Si descarga los documentos de Salesforce en el equipo, puede estar infectado con malware. En caso de que se pierda el equipo o de que alguien lo robe, puede que no esté protegido por contraseña y que cualquier persona que lo encuentre tenga acceso a información confidencial.
+Un administrador de cuentas de la organización quiere consultar algo en Salesforce desde casa durante el fin de semana en su portátil personal. Los datos de Salesforce pueden incluir desde información de la tarjeta de crédito de un cliente hasta información de carácter personal. El equipo doméstico no está administrado. Si descarga los documentos de Salesforce en el equipo, puede estar infectado con malware. En caso de que se pierda el dispositivo o de que alguien lo robe, puede que no esté protegido por contraseña y que cualquier persona que lo encuentre tenga acceso a información confidencial.
 
 ## <a name="the-solution"></a>La solución
 
@@ -68,36 +68,36 @@ Después de completar esta tarea, vaya al portal de Cloud App Security y cree un
 
 1. En el portal de Cloud App Security, seleccione **Control** seguido de **Directivas**.
 
-2. En la página **Directivas**, haga clic en **Crear directiva** seguido de **Directiva de sesión**.
+2. En la página **Directivas** , haga clic en **Crear directiva** seguido de **Directiva de sesión**.
 
-3. En la página **Crear directiva de sesión**, asigne un nombre y una descripción a la directiva. Por ejemplo, **Bloquear descargas de Salesforce para dispositivos no administrados**.
+3. En la página **Crear directiva de sesión** , asigne un nombre y una descripción a la directiva. Por ejemplo, **Bloquear descargas de Salesforce para dispositivos no administrados**.
 
 4. Asigne una **gravedad de directiva** y una **categoría**.
 
-5. En **Tipo de control de sesión**, seleccione **Controlar la descarga de archivos (con inspección)** . Esta configuración le permite supervisar todo lo que hacen los usuarios en una sesión de Salesforce y le ofrece control para bloquear y proteger las descargas en tiempo real.
+5. En **Tipo de control de sesión** , seleccione **Controlar la descarga de archivos (con inspección)** . Esta configuración le permite supervisar todo lo que hacen los usuarios en una sesión de Salesforce y le ofrece control para bloquear y proteger las descargas en tiempo real.
 
-6. En **Origen de actividad** en la sección **Actividades que coinciden con todo lo siguiente**, seleccione los filtros:
+6. En **Origen de actividad** en la sección **Actividades que coinciden con todo lo siguiente** , seleccione los filtros:
 
-   * **Etiquetas de dispositivo**: seleccione **No es igual a** y, después, seleccione **Conforme con Intune**, **Unidos a Azure AD híbrido** o **Certificado de cliente válido**. La selección depende del método que se use en su organización para identificar los dispositivos administrados.
+   * **Etiquetas de dispositivo** : seleccione **No es igual a** y, después, seleccione **Conforme con Intune** , **Unidos a Azure AD híbrido** o **Certificado de cliente válido**. La selección depende del método que se use en su organización para identificar los dispositivos administrados.
 
-   * **Aplicación**: Seleccione la aplicación que desea controlar.
+   * **Aplicación** : Seleccione la aplicación que desea controlar.
 
-   * **Usuarios**: seleccione los usuarios que desea supervisar.
+   * **Usuarios** : seleccione los usuarios que desea supervisar.
 
-7. También puede bloquear las descargas de ubicaciones que no forman parte de la red corporativa. En **Origen de actividad** en la sección **Actividades que coinciden con todo lo siguiente**, configure los filtros siguientes:
+7. También puede bloquear las descargas de ubicaciones que no forman parte de la red corporativa. En **Origen de actividad** en la sección **Actividades que coinciden con todo lo siguiente** , configure los filtros siguientes:
 
-   * **Dirección IP** o **Ubicación**: puede usar cualquiera de estos dos parámetros para identificar las ubicaciones desconocidas o no corporativas desde las que un usuario podría estar intentando acceder a información confidencial.
+   * **Dirección IP** o **Ubicación** : puede usar cualquiera de estos dos parámetros para identificar las ubicaciones desconocidas o no corporativas desde las que un usuario podría estar intentando acceder a información confidencial.
 
      > [!NOTE]
      > Si quiere bloquear las descargas TANTO desde dispositivos no administrados COMO desde ubicaciones no corporativas, tendrá que crear dos directivas de sesión. Una directiva establece el **origen de la actividad** de mediante la ubicación. La otra directiva establece el **origen de la actividad** en dispositivos no administrados.
 
-   * **Aplicación**: Seleccione la aplicación que desea controlar.
+   * **Aplicación** : Seleccione la aplicación que desea controlar.
 
-   * **Usuarios**: seleccione los usuarios que desea supervisar.
+   * **Usuarios** : seleccione los usuarios que desea supervisar.
 
-8. En **Origen de actividad** en la sección **Archivos que coinciden con todo lo siguiente**, configure los filtros siguientes:
+8. En **Origen de actividad** en la sección **Archivos que coinciden con todo lo siguiente** , configure los filtros siguientes:
 
-   * **Etiquetas de clasificación**: si usa etiquetas de clasificación de Azure Information Protection, filtre los archivos por una etiqueta de clasificación concreta de Azure Information Protection.
+   * **Etiquetas de clasificación** : si usa etiquetas de clasificación de Azure Information Protection, filtre los archivos por una etiqueta de clasificación concreta de Azure Information Protection.
 
    * Seleccione **Nombre de archivo** o **Tipo de archivo** para aplicar las restricciones según el nombre o el tipo de archivo.
 9. Habilite **Inspección de contenido** para permitir que la DLP interna examine los archivos en busca de contenido confidencial.
