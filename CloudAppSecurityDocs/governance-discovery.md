@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 73309d7edba1493c941af201aef300deed6b0314
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: dc6eb398526c416af306881d9fd17c71992b8c86
+ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93185975"
+ms.lasthandoff: 11/08/2020
+ms.locfileid: "94370932"
 ---
 # <a name="govern-discovered-apps"></a>Control de aplicaciones detectadas
 
@@ -29,7 +29,7 @@ Después de revisar la lista de aplicaciones detectadas en su entorno, puede pro
 
 ## <a name="sanctioningunsanctioning-an-app"></a><a name="BKMK_SanctionApp"></a> Autorizar o no autorizar una aplicación
 
-Puede no autorizar una aplicación de riesgo específica. Para ello, haga clic en los tres puntos situados al final de la fila. Después seleccione **No autorizar** . El hecho de no autorizar una aplicación no impide que se use, pero le permite supervisar más fácilmente su uso con los filtros de Cloud Discovery. Después, puede notificar a los usuarios de la aplicación que no está autorizada y sugerir una aplicación segura alternativa.
+Puede no autorizar una aplicación de riesgo específica. Para ello, haga clic en los tres puntos situados al final de la fila. Después seleccione **No autorizar**. El hecho de no autorizar una aplicación no impide que se use, pero le permite supervisar más fácilmente su uso con los filtros de Cloud Discovery. Después, puede notificar a los usuarios de la aplicación que no está autorizada y sugerir una aplicación segura alternativa.
 
 ![Etiquetar como no autorizada](media/tag-as-unsanctioned.png)
 
@@ -38,17 +38,17 @@ Si tiene una lista de aplicaciones que quiere autorizar o no autorizar, active l
 Para consultar una lista de las aplicaciones no autorizadas, puede [generar un script de bloque mediante las API de Cloud App Security](api-discovery-script.md).
 
 > [!NOTE]
-> Si el inquilino usa protección contra amenazas avanzada (ATP) de Microsoft defender, Zscaler NSS o iboss, las aplicaciones marcadas como no autorizadas se bloquean automáticamente mediante Cloud App Security y las siguientes secciones sobre la creación de scripts de bloqueo son innecesarias. Para obtener más información, consulte [integración con Microsoft defender ATP](mde-integration.md), [integración con Zscaler](zscaler-integration.md)e [integración con iboss](iboss-integration.md) , respectivamente.
+> Si el inquilino usa Microsoft defender para el punto de conexión, Zscaler NSS o iboss, las aplicaciones marcadas como no autorizadas se bloquean automáticamente mediante Cloud App Security y las siguientes secciones sobre la creación de scripts de bloqueo son innecesarias. Para obtener más información, consulte [integración con Microsoft defender para el punto de conexión](mde-integration.md), [integración con Zscaler](zscaler-integration.md)e [integración con iboss](iboss-integration.md) , respectivamente.
 
 ## <a name="export-a-block-script-to-govern-discovered-apps"></a>Exportar un script de bloque para controlar aplicaciones detectadas
 
 Cloud App Security permite bloquear el acceso a aplicaciones no autorizadas con el uso de sus aplicaciones locales de seguridad. Puede generar un script de bloqueo dedicado e importarlo al la aplicación. Esta solución no requiere redireccionar todo el tráfico web de la organización a un proxy.
 
-1. En el panel de Cloud Discovery, etiquete las aplicaciones que quiere bloquear como **No autorizada** .
+1. En el panel de Cloud Discovery, etiquete las aplicaciones que quiere bloquear como **No autorizada**.
 
     ![Etiquetar como no autorizada](media/tag-as-unsanctioned.png)
 
-2. En la barra de título, haga clic en los tres puntos y seleccione **Generar script de bloque...** .
+2. En la barra de título, haga clic en los tres puntos y seleccione **Generar script de bloque...**.
 
     ![Generación de scripts de bloques](media/generate-block-script.png)
 

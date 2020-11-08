@@ -1,6 +1,6 @@
 ---
 title: Integre Microsoft defender para el punto de conexión con Cloud App Security
-description: En este artículo se describe cómo integrar protección contra amenazas avanzada de Microsoft defender con Cloud App Security para mejorar la visibilidad de la administración de riesgos y de ti.
+description: En este artículo se describe cómo integrar Microsoft defender para el punto de conexión con Cloud App Security para mejorar la visibilidad de la administración de riesgos y de ti.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0812aba9855c61cfa4e34d336b7f3ec4624b03cc
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: 95e8271a26828ad4e3adb73727e2692cac3a8d23
+ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93186356"
+ms.lasthandoff: 11/08/2020
+ms.locfileid: "94371157"
 ---
-# <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Integración de protección contra amenazas avanzada de Microsoft defender con Microsoft Cloud App Security
+# <a name="microsoft-defender-for-endpoint-integration-with-microsoft-cloud-app-security"></a>Microsoft defender para la integración de puntos de conexión con Microsoft Cloud App Security
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Cloud App Security se integra con Microsoft defender para el punto de conexión de forma nativa. La integración simplifica la implementación de Cloud Discovery, extiende Cloud Discovery capacidades más allá de la red corporativa y permite la investigación basada en dispositivos. [Microsoft defender for Endpoint](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) es una plataforma de seguridad para protección, detección, investigación y respuesta inteligentes. Defender for Endpoint protege los puntos de conexión de las amenazas de Cyber, detecta ataques avanzados e infracciones de datos, automatiza incidentes de seguridad y mejora la posición de seguridad.
+Microsoft Cloud App Security se integra con Microsoft defender para el punto de conexión de forma nativa. La integración simplifica la implementación de Cloud Discovery, extiende Cloud Discovery capacidades más allá de la red corporativa y permite la investigación basada en dispositivos. [Microsoft defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) es una plataforma de seguridad para protección, detección, investigación y respuesta inteligentes. Defender for Endpoint protege los puntos de conexión de las amenazas de Cyber, detecta ataques avanzados e infracciones de datos, automatiza incidentes de seguridad y mejora la posición de seguridad.
 
 Cloud App Security usa la información de tráfico recopilada por defender para el punto de conexión sobre las aplicaciones en la nube y los servicios a los que se tiene acceso desde dispositivos Windows 10 administrados por ti. La integración nativa permite ejecutar Cloud Discovery en cualquier dispositivo de la red corporativa, mediante Wi-Fi pública, en itinerancia y a través de acceso remoto. También permite la investigación basada en dispositivos.
 
@@ -56,14 +56,14 @@ Para que pueda realizar Cloud Discovery en otras plataformas, es mejor usar tant
 
 [Vea nuestros vídeos](#related-videos) en los que se muestran las ventajas de usar defender para el punto de conexión con Cloud App Security.
 
-## <a name="how-to-integrate-defender-for-endpoint-with-cloud-app-security"></a>Cómo integrar defender para el punto de conexión con Cloud App Security
+## <a name="how-to-integrate-microsoft-defender-for-endpoint-with-cloud-app-security"></a>Integración de Microsoft defender para el punto de conexión con Cloud App Security
 
 Para habilitar defender para la integración del punto de conexión con Cloud App Security:
 
-1. En Microsoft defender Security Center, en el panel de navegación, seleccione **configuración** .
-2. En **General** , seleccione **características avanzadas** .
-3. Cambie la opción **Microsoft Cloud App Security** a **Activado** .
-4. Haga clic en **Aplicar** .
+1. En Microsoft defender Security Center, en el panel de navegación, seleccione **configuración**.
+2. En **General** , seleccione **características avanzadas**.
+3. Cambie la opción **Microsoft Cloud App Security** a **Activado**.
+4. Haga clic en **Aplicar**.
 
 >[!NOTE]
 > Los datos tardan en aparecer en Cloud App Security hasta dos horas después de habilitar la integración.
@@ -73,9 +73,9 @@ Para habilitar defender para la integración del punto de conexión con Cloud Ap
 
 Para configurar la gravedad de las alertas enviadas a Microsoft defender para el punto de conexión:
 
-1. En Cloud App Security, haga clic en el icono de **configuración** y, a continuación, seleccione **Microsoft defender para punto de conexión** .
+1. En Cloud App Security, haga clic en el icono de **configuración** y, a continuación, seleccione **Microsoft defender para punto de conexión**.
 1. En **alertas** , seleccione el nivel de gravedad global para las alertas.
-1. Haga clic en **Guardar** .
+1. Haga clic en **Save** (Guardar).
 
 ![Defender para la configuración de alertas de punto de conexión](media/mde-alert-severity-settings.png)
 
@@ -83,11 +83,11 @@ Para configurar la gravedad de las alertas enviadas a Microsoft defender para el
 
 Después de integrar defender para el punto de conexión con Cloud App Security, puede investigar los datos del dispositivo detectado en el panel de Cloud Discovery.
 
-1. En Cloud App Security, haga clic en **Cloud Discovery** y **Cloud Discovery panel** .
-2. En la barra de navegación superior, en **Informes continuos** , seleccione **Usuarios del punto de conexión Win10** .
+1. En Cloud App Security, haga clic en **Cloud Discovery** y **Cloud Discovery panel**.
+2. En la barra de navegación superior, en **Informes continuos** , seleccione **Usuarios del punto de conexión Win10**.
   ![Informe de defender para extremo](media/win10-dashboard-report.png)
 3. En la parte superior, verá el número de dispositivos detectados agregados después de la integración.
-4. Haga clic en la pestaña **Dispositivos** .
+4. Haga clic en la pestaña **Dispositivos**.
 5. Puede explorar en profundidad cada uno de los dispositivos que aparecen y usar las pestañas para ver los datos de la investigación. Busque correlaciones entre los dispositivos, los usuarios, las direcciones IP y las aplicaciones implicadas en incidentes:
 
     - **Información general**
@@ -116,22 +116,22 @@ Al igual que con cualquier otro origen de Cloud Discovery, puede exportar los da
 
 Siga estos pasos para obtener una visibilidad más pormenorizada de la actividad de red del dispositivo en Microsoft defender para el punto de conexión:
 
-1. En Cloud App Security, en **detección** y, a continuación, seleccione **dispositivos** .
-1. Seleccione el equipo que desea investigar y, en la parte superior derecha, haga clic **en la vista de Microsoft defender para punto de conexión** .
-1. En Microsoft defender Security Center, en **dispositivos** > {dispositivo seleccionado}, seleccione **escala de tiempo** .
-1. En **filtros** , seleccione **eventos de red** .
+1. En Cloud App Security, en **detección** y, a continuación, seleccione **dispositivos**.
+1. Seleccione el equipo que desea investigar y, en la parte superior derecha, haga clic **en la vista de Microsoft defender para punto de conexión**.
+1. En Microsoft defender Security Center, en **dispositivos** > {dispositivo seleccionado}, seleccione **escala de tiempo**.
+1. En **filtros** , seleccione **eventos de red**.
 1. Investigue los eventos de red del dispositivo según sea necesario.
 
-![Captura de pantalla que muestra la escala de tiempo del dispositivo en Microsoft defender Security Center](media/mdatp-selected-device.png)
+![Captura de pantalla que muestra la escala de tiempo del dispositivo en Microsoft defender Security Center](media/mde-selected-device.png)
 
 ## <a name="investigate-app-usage-in-defender-for-endpoint-with-advanced-hunting"></a>Investigar el uso de la aplicación en defender para el punto de conexión con la búsqueda avanzada
 
 Siga estos pasos para obtener una visibilidad más granular sobre los eventos de red relacionados con la aplicación en defender para el punto de conexión:
 
-1. En Cloud App Security, en **detección** y, a continuación, seleccione **detectado** .
+1. En Cloud App Security, en **detección** y, a continuación, seleccione **detectado**.
 1. Haga clic en la aplicación que desea investigar para abrir su cajón.
 1. Haga clic en la lista de **dominios** de la aplicación y copie la lista de dominios.
-1. En Microsoft defender Security Center, en **dispositivos** , seleccione **búsqueda avanzada** .
+1. En Microsoft defender Security Center, en **dispositivos** , seleccione **búsqueda avanzada**.
 1. Pegue la siguiente consulta y sustitúyala `<DOMAIN_LIST>` por la lista de dominios que copió anteriormente.
 
     ```kusto
@@ -142,7 +142,7 @@ Siga estos pasos para obtener una visibilidad más granular sobre los eventos de
 
 1. Ejecute la consulta e investigue los eventos de red para esta aplicación.
 
-![Captura de pantalla que muestra la búsqueda avanzada de Microsoft defender Security Center](media/mdatp-advanced-hunting.png)
+![Captura de pantalla que muestra la búsqueda avanzada de Microsoft defender Security Center](media/mde-advanced-hunting.png)
 
 ## <a name="block-access-to-unsanctioned-cloud-apps"></a>Bloquear el acceso a aplicaciones no autorizadas en la nube
 
@@ -156,15 +156,15 @@ Las aplicaciones marcadas como no **autorizadas** en Cloud App Security se sincr
 
 Siga estos pasos para habilitar el control de acceso para aplicaciones en la nube:
 
-1. En Cloud App Security, en el engranaje de configuración, seleccione **configuración** , en **Cloud Discovery** seleccione **Microsoft defender para punto de conexión** y, a continuación, seleccione **bloquear aplicaciones no autorizadas** .
+1. En Cloud App Security, en el engranaje de configuración, seleccione **configuración** , en **Cloud Discovery** seleccione **Microsoft defender para punto de conexión** y, a continuación, seleccione **bloquear aplicaciones no autorizadas**.
 
-    ![Captura de pantalla que muestra cómo habilitar el bloqueo con defender para el punto de conexión](media/defender-atp-integration.png)
+    ![Captura de pantalla que muestra cómo habilitar el bloqueo con defender para el punto de conexión](media/mde-integration.png)
 
-1. En Microsoft defender Security Center, vaya a **configuración**  >  **características avanzadas** y, a continuación, seleccione **indicadores de red personalizados** . Para obtener información acerca de los indicadores de red, consulte [crear indicadores para direcciones IP y direcciones URL y dominios](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview).
+1. En Microsoft defender Security Center, vaya a **configuración**  >  **características avanzadas** y, a continuación, seleccione **indicadores de red personalizados**. Para obtener información acerca de los indicadores de red, consulte [crear indicadores para direcciones IP y direcciones URL y dominios](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview).
 
     Esto le permite aprovechar las capacidades de protección de la red antivirus de Microsoft defender para bloquear el acceso a un conjunto predefinido de direcciones URL mediante Cloud App Security, ya sea asignando manualmente [etiquetas de aplicación](governance-discovery.md#BKMK_SanctionApp) a aplicaciones específicas o usando automáticamente una directiva de [detección de aplicaciones](cloud-discovery-policies.md#creating-an-app-discovery-policy).
 
-    ![Captura de pantalla que muestra cómo habilitar los indicadores de red personalizados en defender para el punto de conexión](media/defender-atp-custom-network-indicators.png)
+    ![Captura de pantalla que muestra cómo habilitar los indicadores de red personalizados en defender para el punto de conexión](media/mde-custom-network-indicators.png)
 
 ## <a name="investigate-unsanctioned-apps-in-microsoft-defender-security-center"></a>Investigue las aplicaciones no autorizadas en Microsoft defender Security Center
 
@@ -172,7 +172,7 @@ Cada intento de acceder a una aplicación no autorizada desencadena una alerta e
 
 A veces, no se bloquea el acceso a una aplicación no autorizada, ya sea porque el dispositivo de punto de conexión no está configurado correctamente o si la Directiva de cumplimiento no se ha propagado todavía al punto de conexión. En esta instancia, defender para los administradores de puntos de conexión recibirá una alerta en Microsoft defender Security Center de que no se bloqueó la aplicación no autorizada.
 
-![Captura de pantalla que muestra la alerta de aplicación de defender para el punto de conexión](media/defender-atp-unsanctioned-app-alert.png)
+![Captura de pantalla que muestra la alerta de aplicación de defender para el punto de conexión](media/mde-unsanctioned-app-alert.png)
 
 > [!NOTE]
 >
