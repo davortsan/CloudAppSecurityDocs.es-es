@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 706a90ff21e4dde66ed0b221e4fc5c94a7663368
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: 8a5d2d5ee97677482be80a44b33f832cfaee6ddf
+ms.sourcegitcommit: 288f3011c0ce0e5f2d8cbaa9057a63be044465f7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93186120"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94375098"
 ---
 # <a name="set-up-cloud-discovery"></a>Configuración de Cloud Discovery
 
@@ -37,6 +37,7 @@ Puede generar los siguientes tipos de informes:
     - [Integración de Zscaler](zscaler-integration.md)
     - [integración de iboss](iboss-integration.md)
     - [Integración de Corrata](corrata-integration.md)
+    - [Integración de seguridad de Menlo](menlo-integration.md)
 
 - **[Cloud Discovery API](api-discovery.md)** : Use la api de Cloud Discovery de Cloud App Security para automatizar la carga del registro de tráfico y obtener una evaluación de riesgos y un informe de Cloud Discovery automatizados. También puede usar la API para [generar scripts de bloqueo](api-discovery-script.md) y optimizar los controles de aplicación directamente en el dispositivo de red.
 

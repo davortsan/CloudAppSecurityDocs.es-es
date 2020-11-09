@@ -10,19 +10,21 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 9d1d06e3951322036b4a4344d85f3ba960582637
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 5127f1e09fc5cd34ce0a45fd05ed1714e94cd94a
+ms.sourcegitcommit: 288f3011c0ce0e5f2d8cbaa9057a63be044465f7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880916"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94375079"
 ---
 # <a name="fetch---files-api"></a>Fetch: API de archivos
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 > [!NOTE]
-> Esta solicitud no está disponible para Office 365 Cloud App Security.
+>
+> - Esta API estará en desuso pronto. Microsoft Cloud App Security está desarrollando una nueva solución para identificar y actuar sobre los archivos que infringen las directivas.
+> - Esta API no está disponible para Office 365 Cloud App Security.
 
 Ejecute la solicitud GET para capturar el archivo que coincide con la clave principal especificada.
 
