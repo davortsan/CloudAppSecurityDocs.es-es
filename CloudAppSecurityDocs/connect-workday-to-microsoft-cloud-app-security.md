@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/28/2020
+ms.date: 11/10/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d06817890b94ddc5f37742fcff70654feb494d17
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: c849aace75d1d4268a44e02feaecdcd032a53888
+ms.sourcegitcommit: 98f1b892294beb74157cb3452aa5d489e78bbef4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881302"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94424544"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security"></a>Conexión de WorkDay a Microsoft Cloud App Security
 
@@ -58,11 +58,11 @@ Para obtener más información sobre la configuración de usuarios, grupos de se
 
 1. Inicie sesión en WorkDay con una cuenta que sea miembro del grupo de seguridad mencionado en los requisitos previos.
 
-1. Busque "Editar configuración de inquilino – sistema" y, en **registro de actividad de usuario**, seleccione **Habilitar registro de actividad de usuario**.
+1. Busque "Editar configuración de inquilino – sistema" y, en **registro de actividad de usuario** , seleccione **Habilitar registro de actividad de usuario**.
 
     ![Captura de pantalla para permitir el registro de actividad de usuario](media/connect-workday-enable-logging.png)
 
-1. Busque "Editar configuración de inquilino – seguridad" y, en **configuración de oauth 2,0**, seleccione **clientes de OAuth 2,0 habilitados**.
+1. Busque "Editar configuración de inquilino – seguridad" y, en **configuración de oauth 2,0** , seleccione **clientes de OAuth 2,0 habilitados**.
 
 1. Busque "registrar el cliente de API" y seleccione **registrar API Client – tarea**.
 
@@ -73,7 +73,7 @@ Para obtener más información sobre la configuración de usuarios, grupos de se
     | Nombre de cliente | Microsoft Cloud App Security |
     | Tipo de concesión de cliente | Concesión de código de autorización |
     | Tipo de token de acceso | Portador |
-    | URI de redireccionamiento | `https://portal.cloudappsecurity.com/api/oauth/connect` |
+    | URI de redireccionamiento | `https://portal.cloudappsecurity.com/api/oauth/connect`<br /><br />**Nota** : para clientes de la administración pública de Estados Unidos GCC, escriba el siguiente valor: `https://portal.cloudappsecurity.us/api/oauth/connect` |
     | Tokens de actualización que no son de expiración | Sí |
     | Ámbitos de OAuth2 | **Personal** y **sistema** |
     | Ámbito (áreas funcionales) | **Personal** y **sistema** |
