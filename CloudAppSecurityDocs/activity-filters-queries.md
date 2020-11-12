@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fa30bef49788834233a8aa44b9e6d165c1b83658
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 8acd6889c8c5f3a1a8a1c4610b2ba990ec4cd13c
+ms.sourcegitcommit: 1349f6d9c8f4994cd2ec722d3def227153d93397
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877781"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94551636"
 ---
 # <a name="activity-filters-and-queries"></a>Consultas y filtros de actividad
 
@@ -37,7 +37,7 @@ A continuación se muestra una lista de los filtros de actividad que se pueden a
   - Identificador de objeto de actividad: el identificador del objeto (identificador del archivo, carpeta, usuario o aplicación).
   <!-- - File, folder or site URL - Enables you to select files, folders and URLs that start with a specific string.-->
   <!-- - Target object (file/folder) - Enables you to select a specific file or folder. -->
-  - Elemento: permite buscar por el nombre o por el identificador de cualquier objeto de actividad (por ejemplo, nombres de usuario, archivos, parámetros, sitios). Para el filtro **Elemento de objetos de actividad**, puede seleccionar filtrar elementos que **contengan**, **sean iguales** o **comiencen por** el elemento específico.
+  - Elemento: permite buscar por el nombre o por el identificador de cualquier objeto de actividad (por ejemplo, nombres de usuario, archivos, parámetros, sitios). Para el filtro **Elemento de objetos de actividad** , puede seleccionar filtrar elementos que **contengan** , **sean iguales** o **comiencen por** el elemento específico.
 
 - Tipo de actividad: busca la actividad de la aplicación.
 
@@ -53,14 +53,14 @@ A continuación se muestra una lista de los filtros de actividad que se pueden a
 
 <!--- Description – Specific keyword in the activity description, for example, all activities that include the string **user** in their description.  -->
 
-- Etiqueta de dispositivo: busca un certificado de cliente **compatible con Intune**, **Azure ad híbrido** o un **certificado de cliente válido**.
+- Etiqueta de dispositivo: busca un certificado de cliente **compatible con Intune** , **Azure ad híbrido** o un **certificado de cliente válido**.
 
 - Tipo de dispositivo: busca solo las actividades realizadas con un tipo de dispositivo concreto. Por ejemplo, busca todas las actividades de dispositivos móviles, equipos de escritorio o tabletas.
 
 - Archivos y carpetas: busca archivos y carpetas en los que se ha realizado la actividad.
   - Id. de archivo: permite buscar por el Id. de archivo en el que se ha realizado la actividad.
-  - Nombre: filtra por el nombre de archivos o carpetas. Puede seleccionar si el nombre **termina por**, **es igual que** o **comienza por** el valor de búsqueda.
-  - Archivos o carpetas específicos: permite incluir o excluir determinados archivos o carpetas. Al seleccionar archivos o carpetas, puede filtrar la lista por **Aplicación**, **Propietario** o **Nombre de archivo** parcial.
+  - Nombre: filtra por el nombre de archivos o carpetas. Puede seleccionar si el nombre **termina por** , **es igual que** o **comienza por** el valor de búsqueda.
+  - Archivos o carpetas específicos: permite incluir o excluir determinados archivos o carpetas. Al seleccionar archivos o carpetas, puede filtrar la lista por **Aplicación** , **Propietario** o **Nombre de archivo** parcial.
 
 - Dirección IP: dirección IP sin procesar, categoría o etiqueta desde la que se ha realizado la actividad.
   - Dirección IP sin procesar: le permite buscar las actividades realizadas por direcciones IP sin procesar. Las direcciones IP sin procesar pueden ser iguales o no iguales a una secuencia determinada, o comenzar o no comenzar por ella.
@@ -96,7 +96,7 @@ A continuación se muestra una lista de los filtros de actividad que se pueden a
   - Dominio del usuario: busca un dominio de usuario específico.
   - Organización de usuario: unidad organizativa del usuario que ha realizado la actividad, por ejemplo, todas las actividades realizadas por usuarios de marketing o EMEA. Esto solo es relevante para las instancias conectadas de G Suite mediante unidades organizativas.
   - Grupo de usuarios: grupos de usuarios específicos que puede importar de aplicaciones conectadas, como administradores de Office 365.
-  - Nombre de usuario: busca por un nombre de usuario específico. Para ver una lista de los usuarios de un grupo de usuarios específico, en el **Cajón de actividades**, haga clic en el nombre del grupo de usuarios. Al hacer clic se le lleva a la página Cuentas, en la que se enumeran todos los usuarios del grupo. Desde ahí puede profundizar en los detalles de las cuentas de usuarios específicos del grupo.
+  - Nombre de usuario: busca por un nombre de usuario específico. Para ver una lista de los usuarios de un grupo de usuarios específico, en el **Cajón de actividades** , haga clic en el nombre del grupo de usuarios. Al hacer clic se le lleva a la página Cuentas, en la que se enumeran todos los usuarios del grupo. Desde ahí puede profundizar en los detalles de las cuentas de usuarios específicos del grupo.
   - Los filtros **Grupo de usuarios** y **Nombre de usuario** se pueden filtrar aún más si se usa el filtro **Como** y se selecciona el rol del usuario, que puede ser uno de los siguientes:
     - Objeto de actividad solo: significa que el usuario o grupo de usuarios seleccionado no ha realizado la actividad en cuestión, sino que era el objeto de la actividad.
     - Solo actor: significa que el usuario o grupo de usuarios ha realizado la actividad.
@@ -114,7 +114,7 @@ A continuación se muestra una lista de los filtros de actividad que se pueden a
 
 Para que la investigación sea incluso más sencilla, ahora puede crear consultas personalizadas y guardarlas para usar más adelante.
 
-1. En la página **Registro de actividad**, use los filtros como se ha descrito anteriormente para explorar las aplicaciones en profundidad según sea necesario.
+1. En la página **Registro de actividad** , use los filtros como se ha descrito anteriormente para explorar las aplicaciones en profundidad según sea necesario.
 
 2. Una vez que haya terminado de compilar la consulta, haga clic en el botón **Guardar como** situado en la esquina superior derecha de los filtros.
 
@@ -122,7 +122,7 @@ Para que la investigación sea incluso más sencilla, ahora puede crear consulta
 
    ![nueva consulta](media/new-activity-query.png)
 
-4. Para volver a usar esta consulta en el futuro, en **Consultas**, desplácese hacia abajo hasta **Consultas guardadas** y seleccione la consulta.
+4. Para volver a usar esta consulta en el futuro, en **Consultas** , desplácese hacia abajo hasta **Consultas guardadas** y seleccione la consulta.
 
    ![abrir consulta](media/select-activity-query.png)
 
@@ -130,7 +130,7 @@ Cloud App Security también le proporciona **consultas sugeridas**. Las consulta
 
 - Actividades administrativas: filtra todas las actividades para mostrar solo aquellas que implican a administradores.
 
-- Actividades de descarga: filtra todas las actividades para mostrar solo aquellas que fueron actividades de descarga, incluida la descarga de la lista de usuarios como un archivo .csv, la descarga de contenido compartido y la descarga de una carpeta.
+- Descargar actividades: filtra todas las actividades para mostrar solo aquellas que eran actividades de descarga, incluida la descarga de la lista de usuarios como archivo. csv, la descarga de contenido compartido y la descarga de una carpeta.
 
 - Error de inicio de sesión: filtra todas las actividades para mostrar solo los inicios de sesión erróneos y el inicio de sesión con error mediante SSO
 
@@ -138,7 +138,7 @@ Cloud App Security también le proporciona **consultas sugeridas**. Las consulta
 
 - Actividades de suplantación: filtra todas las actividades para mostrar solo las de suplantación.
 
-- Actividades de buzón: filtra todas las actividades para mostrar solo las actividades de Microsoft Exchange Online, por ejemplo, crear un elemento, purgar mensajes del buzón, actualizar el mensaje y enviar el mensaje con permisos de Enviar como (suplantación).
+- Actividades de buzón: filtra todas las actividades para mostrar solo las actividades de Microsoft Exchange Online, como crear elemento, purgar mensajes del buzón, actualizar mensaje y enviar un mensaje mediante permisos de envío como (suplantación).
 
 - Cambios de contraseña y solicitudes de restablecimiento: filtra todas las actividades para mostrar solo aquellas que suponen restablecer la contraseña, cambiar la contraseña y forzar al usuario a cambiarla en el siguiente inicio de sesión.
 
@@ -146,7 +146,7 @@ Cloud App Security también le proporciona **consultas sugeridas**. Las consulta
 
 - Actividades de uso compartido: filtra todas las actividades para mostrar solo aquellas que implican compartir carpetas y archivos, incluidas la creación de un vínculo de la empresa, la creación de un vínculo anónimo y la concesión de permisos de lectura y escritura.
 
-- Inicio de sesión correcto: filtra todas las actividades para mostrar solo las actividades que implican inicios de sesión correctos, incluida la acción suplantar, suplantar el inicio de sesión, Inicio de sesión único e iniciar sesión desde un dispositivo nuevo.
+- Inicio de sesión correcto: filtra todas las actividades para mostrar solo las actividades que implican inicios de sesión correctos, incluida la acción Impersonate, suplantar el inicio de sesión, Inicio de sesión único e iniciar sesión desde un dispositivo nuevo.
 
 ![consultar actividades](media/queries-activity.png)
 

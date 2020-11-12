@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: quickstart
 ms.date: 10/24/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a7c2dc834173dc212d783ba5853dff6186410e34
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: 555ae29e4121207d87105b597bc5c973fe8a9a07
+ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93185776"
+ms.lasthandoff: 11/08/2020
+ms.locfileid: "94371050"
 ---
 # <a name="cloud-app-security-best-practices"></a>Procedimientos recomendados de Cloud App Security
 
@@ -36,13 +36,13 @@ Los procedimientos recomendados que se describen en este artículo son los sigui
 
 ## <a name="discover-and-assess-cloud-apps"></a>Detección y evaluación de aplicaciones en la nube
 
-Como Cloud App Security está integrado con Protección contra amenazas avanzada de Microsoft Defender (ATP de Microsoft Defender), podrá usar Cloud Discovery más allá de la red corporativa o de puertas de enlace web seguras. Combinando la información de usuarios y dispositivos, puede identificar dispositivos o usuarios de riesgo, ver qué aplicaciones están usando e investigar más detalles en el portal de ATP de Microsoft Defender.
+La integración de Cloud App Security con Microsoft Defender para punto de conexión le permite usar Cloud Discovery más allá de la red corporativa o de puertas de enlace web seguras. Combinando la información de usuarios y dispositivos, puede identificar dispositivos o usuarios de riesgo, ver qué aplicaciones están usando e investigar más detalles en el portal de Defender para punto de conexión.
 
-**Práctica recomendada** : Habilitación de Shadow IT Discovery mediante ATP de Microsoft defender  
-**Detalle** : Cloud Discovery analiza los registros de tráfico que recopila ATP de Microsoft Defender y evalúa las aplicaciones identificadas con respecto al catálogo de aplicaciones en la nube para proporcionar información de seguridad y cumplimiento normativo. Al configurar Cloud Discovery, obtiene visibilidad del uso de la nube, de shadow IT y de la supervisión continua de las aplicaciones no autorizadas que usan los usuarios.  
+**Práctica recomendada** : habilitación de Shadow IT Discovery mediante Defender para punto de conexión  
+**Detalle** : Cloud Discovery analiza los registros de tráfico que recopila Defender para punto de conexión y evalúa las aplicaciones identificadas con respecto al catálogo de aplicaciones en la nube para proporcionar información de seguridad y cumplimiento normativo. Al configurar Cloud Discovery, obtiene visibilidad del uso de la nube, de shadow IT y de la supervisión continua de las aplicaciones no autorizadas que usan los usuarios.  
 **Más información** :
 
-* [Integración de ATP de Microsoft Defender con Cloud App Security](mde-integration.md)
+* [Integración de Microsoft Defender para punto de conexión con Cloud App Security](mde-integration.md)
 * [Configuración de Cloud Discovery](set-up-cloud-discovery.md)
 * [Detección y administración de shadow IT en la red](tutorial-shadow-it.md)
 
