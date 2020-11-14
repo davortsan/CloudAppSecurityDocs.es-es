@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: aae8887a3a71d9b63c9af7464a8da75977120b07
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: faf7d4fcfbdf37d7a38d155deb65aa2693e846af
+ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93186178"
+ms.lasthandoff: 11/08/2020
+ms.locfileid: "94371278"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
@@ -38,7 +38,7 @@ Fecha de publicación: 25 de octubre de 2020
 Como parte de las mejoras continuas en la supervisión y la administración de alertas, la página de alertas de Cloud App Security se ha mejorado en función de sus comentarios. En la experiencia mejorada, los estados **Resuelta** y **Descartada** se sustituyen por el estado **Cerrada** con un tipo de resolución. [Más información](monitor-alerts.md#deployment-of-our-enhanced-alert-monitoring-and-management-experience)
 
 - **Nueva configuración de gravedad global para señales enviadas a Microsoft Defender for Endpoint**  
-Se ha agregado la posibilidad de establecer la configuración de gravedad global para las señales enviadas a Microsoft Defender for Endpoint. Para más información, consulte [Integración de Defender for Endpoint con Cloud App Security](mde-integration.md#how-to-integrate-defender-for-endpoint-with-cloud-app-security).
+Se ha agregado la posibilidad de establecer la configuración de gravedad global para las señales enviadas a Microsoft Defender for Endpoint. Para más información, consulte [Integración de Microsoft Defender for Endpoint con Cloud App Security](mde-integration.md#how-to-integrate-microsoft-defender-for-endpoint-with-cloud-app-security).
 
 - **Nuevo informe de recomendaciones de seguridad**  
 Cloud App Security ofrece valoraciones de la configuración de seguridad de Azure, Amazon Web Services (AWS) y Google Cloud Platform (GCP) que le proporcionan información sobre las deficiencias de dicha configuración en el entorno de varias nubes. Ahora, puede exportar informes detallados de recomendaciones de seguridad para que le ayuden a supervisar, comprender y personalizar los entornos de nube a fin de proteger mejor su organización. Para más información sobre cómo exportar el informe, consulte [Informe de recomendaciones de seguridad](security-config.md#security-recommendations-report).
@@ -447,7 +447,7 @@ Ahora puede configurar el cierre de sesión automático de las sesiones del admi
 Publicada el 9 de junio de 2019
 
 - **UEBA híbrido: integración nativa con Azure ATP (versión preliminar)**  
-Cloud App Security ahora se integra de manera nativa con Azure ATP para proporcionar una vista única de las actividades de identidad en ambas aplicaciones en la nube y la red local. Para más información, consulte [Integración de Azure Advanced Threat Protection](aatp-integration.md).
+Cloud App Security ahora se integra de manera nativa con Azure ATP para proporcionar una vista única de las actividades de identidad en ambas aplicaciones en la nube y la red local. Para más información, consulte [Integración de Azure Advanced Threat Protection](mdi-integration.md).
 - **Mejoras de UEBA**  
 Para ayudarlo a identificar las amenazas que están por debajo del radar, Cloud App Security ahora usa la generación de perfiles única para brindar puntuaciones de riesgo a actividades y alertas individuales. Las puntuaciones de riesgo se pueden usar para identificar las actividades que no son suficientemente sospechosas como para desencadenar las alertas. Sin embargo, al agregar las puntuaciones de riesgo a la **puntuación de prioridad de investigación** de un usuario, Cloud App Security ayuda a identificar el comportamiento de riesgo y a centrar la investigación. Estas funcionalidades nuevas ahora están disponibles en la página de usuario rediseñada.
 - **Factor de riesgo nuevo agregado al Catálogo de aplicaciones en la nube**  

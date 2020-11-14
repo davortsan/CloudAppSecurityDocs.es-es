@@ -1,23 +1,23 @@
 ---
 title: Ampliación de la gobernanza a la corrección de puntos de conexión
-description: En este tutorial se explica el proceso para configurar alertas de directivas de Microsoft Cloud App Security para desencadenar flujos de trabajo de Microsoft Power Automate a fin de ejecutar acciones de corrección de Advanced Threat Protection de Microsoft Defender.
+description: En este tutorial se describe el proceso para configurar alertas de directivas de Microsoft Cloud App Security para desencadenar flujos de trabajo de Microsoft Power Automate a fin de ejecutar acciones de corrección de Microsoft Defender for Endpoint.
 author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: tutorial
 ms.date: 04/27/2020
-ms.openlocfilehash: 9b8cb1021c3aca223edf4f8b9b2e98d67e014480
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: 213b041630a1367a4f505643e73482490456682d
+ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93186260"
+ms.lasthandoff: 11/08/2020
+ms.locfileid: "94370663"
 ---
 # <a name="tutorial-extend-governance-to-endpoint-remediation"></a>Tutorial: Ampliación de la gobernanza a la corrección de puntos de conexión
 
 Cloud App Security ofrece opciones de gobernanza predefinidas para directivas (por ejemplo, para suspender un usuario o convertir un archivo en privado). Mediante la integración nativa con Microsoft Power Automate, puede usar un amplio ecosistema de conectores de software como servicio (SaaS) para compilar flujos de trabajo con el fin de automatizar procesos, incluida la corrección.
 
-Por ejemplo, al detectar una posible amenaza de malware, puede usar flujos de trabajo para iniciar acciones de corrección de Advanced Threat Protection (ATP) de Microsoft Defender, como la ejecución de un examen antivirus o aislar un punto de conexión.
+Por ejemplo, al detectar una posible amenaza de malware, puede usar flujos de trabajo para iniciar acciones de corrección de Microsoft Defender for Endpoint, como ejecutar un examen antivirus o aislar un punto de conexión.
 
 En este tutorial obtendrá información sobre cómo configurar una acción de gobernanza de directivas para usar un flujo de trabajo que ejecute un examen antivirus en un punto de conexión donde un usuario muestre signos de comportamiento sospechoso.
 
@@ -36,8 +36,8 @@ Si no tiene un plan de Power Automate, [regístrese para obtener una cuenta de e
 ## <a name="prerequisites"></a>Requisitos previos
 
 * Debe tener un [plan de Microsoft Power Automate](https://flow.microsoft.com/pricing) válido.
-* Necesita un plan válido de ATP de Microsoft Defender.
-* El entorno de Power Automate necesita estar sincronizado con Azure AD, supervisado por ATP de Defender y unido a dominio.
+* Debe tener un plan válido de Microsoft Defender for Endpoint.
+* El entorno de Power Automate debe estar sincronizado con Azure AD, supervisado por Defender for Endpoint y unido a un dominio.
 
 ## <a name="phase-1-generate-a-cloud-app-security-api-token"></a>Fase 1: Generación de un token de la API Cloud App Security<a name="generate-token"></a>
 
@@ -57,7 +57,7 @@ Si no tiene un plan de Power Automate, [regístrese para obtener una cuenta de e
 ## <a name="phase-2-create-a-flow-to-run-an-antivirus-scan"></a>Fase 2: Creación de un flujo para ejecutar un examen antivirus<a name="create-flow"></a>
 
 > [!NOTE]
-> Si ha creado anteriormente un flujo con un conector de ATP de Defender, Power Automate vuelve a usar el conector automáticamente y se puede omitir el paso de **inicio de sesión**.
+> Si ha creado anteriormente un flujo con un conector de Defender for Endpoint, Power Automate vuelve a usar el conector automáticamente y se puede omitir el paso de **inicio de sesión**.
 
 1. Vaya al [portal de Power Automate](https://flow.microsoft.com/) y seleccione **Plantillas**.
 
@@ -67,7 +67,7 @@ Si no tiene un plan de Power Automate, [regístrese para obtener una cuenta de e
 
     ![Captura de pantalla de la página de plantillas de Power Automate, donde se muestran los resultados de la búsqueda.](media/tutorial-flow-templates-search.png)
 
-1. En la lista de aplicaciones, en la fila en la que aparece **Conector de ATP de Microsoft Defender** , haga clic en **Iniciar sesión**.
+1. En la lista de aplicaciones, en la fila en la que aparece **Microsoft Defender for Endpoint connector** (Conector de Microsoft Defender for Endpoint), haga clic en **Iniciar sesión**.
 
     ![Captura de pantalla de la página de plantillas de Power Automate, donde se muestra el proceso de inicio de sesión.](media/tutorial-flow-templates-signin.png)
 
@@ -110,7 +110,7 @@ Si no tiene un plan de Power Automate, [regístrese para obtener una cuenta de e
 
 Ahora todas las alertas generadas para esta directiva iniciarán el flujo para ejecutar el examen antivirus.
 
-Siga los pasos que se indican en este tutorial para crear una amplia variedad de acciones basadas en flujos de trabajo con el fin de ampliar las funciones de corrección de Cloud App Security, incluidas otras acciones de ATP de Defender. Para ver una lista de flujos de trabajo predefinidos de Cloud App Security, [busque "Cloud App Security"](https://go.microsoft.com/fwlink/?linkid=2102574) en Power Automate.
+Siga los pasos que se indican en este tutorial para crear una amplia variedad de acciones basadas en flujos de trabajo con el fin de ampliar las funcionalidades de corrección de Cloud App Security, incluidas otras acciones de Defender for Endpoint. Para ver una lista de flujos de trabajo predefinidos de Cloud App Security, [busque "Cloud App Security"](https://go.microsoft.com/fwlink/?linkid=2102574) en Power Automate.
 
 ## <a name="see-also"></a>Consulte también
 

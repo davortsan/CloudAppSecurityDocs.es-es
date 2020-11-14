@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f507b287f04789967b04abbb804d6f2b406e2ca2
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 7007f8aad61c1f504a73855360fad40f0c58bcc4
+ms.sourcegitcommit: 138d435905eaf29584f50d6dac30489d2104189a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877647"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93415426"
 ---
 # <a name="what-are-the-differences-in-discovery-capabilities-for-azure-active-directory-and-microsoft-cloud-app-security"></a>¿Qué diferencias hay en las funcionalidades de detección de Azure Active Directory y Microsoft Cloud App Security?
 
@@ -34,7 +34,7 @@ Microsoft Cloud App Security es una solución completa entre SaaS que proporcion
 
 ## <a name="enhanced-cloud-app-discovery-in-azure-active-directory"></a>Cloud App Discovery mejorado en Azure Active Directory
 
-Azure Active Directory Premium P1 incluye [Cloud App Discovery de Azure Active Directory](https://aka.ms/caddocsnew) sin costo adicional. Esta característica se basa en las funciones de Microsoft Cloud App Security Cloud Discovery que proporcionan una mayor visibilidad en el uso de las aplicaciones en la nube en sus organizaciones. [Actualice a Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) para recibir el conjunto completo de funciones de Cloud App Security Broker (CASB) que ofrece Microsoft Cloud App Security.
+Azure Active Directory Premium P1 incluye [Cloud App Discovery de Azure Active Directory](./set-up-cloud-discovery.md) sin costo adicional. Esta característica se basa en las funciones de Microsoft Cloud App Security Cloud Discovery que proporcionan una mayor visibilidad en el uso de las aplicaciones en la nube en sus organizaciones. [Actualice a Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) para recibir el conjunto completo de funciones de Cloud App Security Broker (CASB) que ofrece Microsoft Cloud App Security.
 
 ### <a name="feature-comparison"></a>Comparación de características
 
@@ -51,7 +51,7 @@ La siguiente tabla compara las capacidades de detección de Microsoft Cloud App 
 ||Informes y análisis en curso|Sí|Sí|
 ||Detección de anomalías en las aplicaciones detectadas|Sí||
 |Protección de la información|Compatibilidad con la prevención de pérdida de datos (DLP)|Control de uso compartido de datos y DLP entre SaaS||
-||Permisos de aplicación y capacidad para revocar el acceso|Sí||
+||Permisos de aplicación y capacidad para revocar el acceso (aplicaciones de OAuth)|Sí||
 ||Configuración y cumplimiento de directivas|Sí||
 ||Integración con Azure Information Protection |Sí||
 ||Integración con soluciones DLP de terceros|Sí||

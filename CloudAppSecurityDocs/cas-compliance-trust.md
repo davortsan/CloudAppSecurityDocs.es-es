@@ -9,12 +9,12 @@ ms.date: 10/18/2020
 ms.collection: M365-security-compliance
 ms.custom: seodec18
 ms.suite: ems
-ms.openlocfilehash: 411d3005a04949b083947a07d0c2a2c493e55f35
-ms.sourcegitcommit: 956139c1dbc47ab6c61b4a1725a174f41de58cae
+ms.openlocfilehash: eef7eaab53ddeb8ef26cb3c9f1603c1f66a17922
+ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2020
-ms.locfileid: "92163707"
+ms.lasthandoff: 11/08/2020
+ms.locfileid: "94371034"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Seguridad y privacidad de los datos de Microsoft Cloud App Security
 
@@ -127,7 +127,7 @@ En la tabla siguiente se muestran los datos que aparecen para cada integración 
 
 | Product | Datos expuestos | Configuración |
 | --- | --- | --- |
-| Protección contra amenazas de Microsoft | Alertas y actividades del usuario | Habilitado automáticamente en Protección contra amenazas de Microsoft durante la incorporación |
+| Microsoft 365 Defender | Alertas y actividades del usuario | Se habilita automáticamente en Microsoft 365 Defender tras la incorporación |
 | Azure Sentinel | Alertas y datos de detección | [Habilitado en Cloud App Security](siem-sentinel.md) y [configurado en Azure Sentinel](/azure/sentinel/connect-cloud-app-security) |
 | Centro de seguridad y cumplimiento de Office | Alertas para Office 365 | Se transmiten de forma automática al Centro de seguridad y cumplimiento de Office |
 | Azure Security Center | Alertas para Azure | Habilitado de forma predeterminada en Cloud App Security; se puede deshabilitar en Azure Security Center |
@@ -178,7 +178,7 @@ Microsoft Cloud App Security permite definir el ámbito de la implementación. 
 
 ### <a name="anonymization"></a>Anonimización
 
-Puede elegir que los informes de **Cloud Discovery** sean anónimos. Una vez cargados los archivos de registro en **Microsoft** Cloud App Security, toda la información de nombres de usuario se reemplaza por nombres de usuario cifrados. En el caso de investigaciones de seguridad específicas, puede resolver el nombre de usuario real. Los datos privados se cifran mediante AES-128 con una clave dedicada por inquilino. [Para más información](cloud-discovery-anonymizer.md).
+Puede elegir que los informes de **Cloud Discovery** sean anónimos. Una vez cargados los archivos de registro en **Microsoft**  Cloud App Security, toda la información de nombres de usuario se reemplaza por nombres de usuario cifrados. En el caso de investigaciones de seguridad específicas, puede resolver el nombre de usuario real. Los datos privados se cifran mediante AES-128 con una clave dedicada por inquilino. [Para más información](cloud-discovery-anonymizer.md).
 
 ## <a name="security-and-privacy-for-cloud-app-security-us-government-gcc-high-customers"></a>Seguridad y privacidad de los clientes de GCC High para la Administración Pública de Estados Unidos de Cloud App Security
 

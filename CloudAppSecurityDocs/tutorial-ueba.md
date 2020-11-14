@@ -1,21 +1,21 @@
 ---
 title: Investigación de usuarios de riesgo| Microsoft Docs
-description: En este tutorial se describe el proceso para investigar los usuarios de riesgo en Microsoft Cloud App Security, en entornos híbridos, mediante la integración con Azure ATP.
+description: En este tutorial se describe el proceso para investigar los usuarios de riesgo en Microsoft Cloud App Security, en entornos híbridos, mediante la integración con Microsoft Cloud App Security.
 keywords: ''
 author: shsagir
 ms.author: shsagir
-ms.date: 04/28/2020
+ms.date: 11/08/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 48b5c30fe95e75a68e896b1d366f8a1bdeec4665
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: b8dace138aeab11fdd334514bf0dd8850a983f37
+ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881151"
+ms.lasthandoff: 11/08/2020
+ms.locfileid: "94371309"
 ---
 # <a name="tutorial-investigate-risky-users"></a>Tutorial: Investigación de usuarios de riesgo
 
@@ -23,7 +23,7 @@ ms.locfileid: "90881151"
 
 Los equipos de operaciones de seguridad se enfrentan al desafío de supervisar la actividad del usuario, sospechosa o de otro tipo, en todas las dimensiones de la superficie expuesta a los ataques de identidad, mediante varias soluciones de seguridad que a menudo no están conectadas. Aunque muchas empresas disponen actualmente de equipos de búsqueda para identificar de forma proactiva las amenazas en sus entornos, saber qué buscar en la ingente cantidad de datos puede ser un desafío. Microsoft Cloud App Security simplifica ahora esta tarea, ya que elimina la necesidad de crear reglas de correlación complejas y le permite buscar ataques que se distribuyen entre la nube y la red local.
 
-Para ayudarle a centrarse en la identidad de los usuarios, Microsoft Cloud App Security proporciona análisis del comportamiento de los usuarios y las entidades (UEBA) en la nube. Esto se puede ampliar a su entorno local mediante la integración con Azure Advanced Threat Protection (ATP). Tras la integración con Azure ATP, también obtendrá contexto relacionado con la identidad del usuario a partir de su integración nativa con Active Directory.
+Para ayudarle a centrarse en la identidad de los usuarios, Microsoft Cloud App Security proporciona análisis del comportamiento de los usuarios y las entidades (UEBA) en la nube. Esta funcionalidad puede ampliarse al entorno local mediante la integración con Microsoft Defender for Identity. Tras la integración con Defender for Identity, también obtendrá contexto relacionado con la identidad del usuario a partir de su integración nativa con Active Directory.
 
 Tanto si su desencadenador es una alerta visible en el panel de Cloud App Security como si tiene información de un servicio de seguridad de terceros, comience su investigación en el panel de Cloud App Security para profundizar en los usuarios de riesgo.
 
@@ -48,7 +48,7 @@ La prioridad de la investigación se basa en las alertas de seguridad, las activ
 
 Si hace clic en el valor de la puntuación para una alerta o una actividad, puede ver las evidencias que explican cómo Cloud App Security puntuó la actividad.
 
-Cada usuario de Azure AD tiene una puntuación de prioridad de la investigación dinámica, que se actualiza constantemente en función del comportamiento reciente y el impacto, creada a partir de datos que se evalúan desde Azure ATP y Cloud App Security. Ahora puede saber de inmediato quiénes son los principales usuarios de riesgo filtrando por la **Puntuación de prioridad de la investigación**, comprobando directamente su impacto en el negocio e investigando todas las actividades relacionadas, independientemente de si están comprometidas, extrayendo datos o actuando como amenazas internas.
+Cada usuario de Azure AD tiene una puntuación de prioridad de investigación dinámica que se actualiza constantemente en función del comportamiento reciente y el impacto, creada a partir de datos que se evalúan desde Defender for Identity y Cloud App Security. Ahora puede saber de inmediato quiénes son los principales usuarios de riesgo filtrando por la **Puntuación de prioridad de la investigación** , comprobando directamente su impacto en el negocio e investigando todas las actividades relacionadas, independientemente de si están comprometidas, extrayendo datos o actuando como amenazas internas.
 
 Cloud App Security usa lo siguiente para medir el riesgo:
 
@@ -62,14 +62,14 @@ La puntuación de las actividades determina la probabilidad de que un usuario es
 
 1. Conecte al menos una aplicación a Microsoft Cloud App Security mediante los [conectores de API](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md). Es recomendable que comience estableciendo la conexión a [Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 1. Conecte más aplicaciones mediante [proxy para lograr el control de las aplicaciones de acceso condicional](proxy-deployment-aad.md).
-1. Para habilitar las conclusiones en un entorno local, configure Cloud App Security para la [integración con su entorno de Azure ATP](aatp-integration.md).
+1. Para habilitar las conclusiones en un entorno local, configure Cloud App Security para la [integración con el entorno de Defender for Identity](mdi-integration.md).
 
 ## <a name="phase-2-identify-top-risky-users"></a>Fase 2: Identificación de los usuarios de riesgo principales<a name="identify"></a>
 
 Para identificar quiénes son los usuarios de más riesgo en Cloud App Security:
 
 1. Vaya al panel de Cloud App Security y examine las personas identificadas en el icono **Usuarios principales por prioridad de investigación**. Luego, uno por uno, vaya a su página de usuario para investigarlos.  
-El **número de prioridad de investigación**, que se encuentra junto al nombre de usuario, es la suma de todas las actividades de riesgo del usuario durante la última semana.
+El **número de prioridad de investigación** , que se encuentra junto al nombre de usuario, es la suma de todas las actividades de riesgo del usuario durante la última semana.
 
    ![Panel Usuarios principales](media/dashboard-top-users.png)
 
@@ -86,7 +86,7 @@ La página Usuario le ayuda a responder a las siguientes preguntas:
     * ¿Qué riesgo representa el usuario para la organización?  
     Examine la lista que se encuentra en el panel inferior, que proporciona cada actividad y cada alerta relacionadas con el usuario, para ayudarlo a empezar a entender qué tipo de riesgo representa. En la escala de tiempo, haga clic en cada línea para que pueda explorar en profundidad la actividad o alerta propiamente dichas. También puede hacer clic en el número que aparece junto a la actividad para comprender la evidencia que ha influido en la propia puntuación.
     * ¿Cuál es el riesgo para otros recursos de la organización?  
-    Seleccione la pestaña **Rutas de desplazamiento lateral** para comprender qué rutas de acceso puede usar un atacante para asumir el control de otros recursos de la organización. Por ejemplo, incluso si el usuario objeto de su investigación tiene una cuenta no confidencial, un atacante puede usar conexiones a la cuenta para detectar e intentar poner en peligro cuentas confidenciales de su red. Para obtener más información, consulte [Rutas de desplazamiento lateral](/azure-advanced-threat-protection/investigate-lateral-movement-path).
+    Seleccione la pestaña **Rutas de desplazamiento lateral** para comprender qué rutas de acceso puede usar un atacante para asumir el control de otros recursos de la organización. Por ejemplo, incluso si el usuario objeto de su investigación tiene una cuenta no confidencial, un atacante puede usar conexiones a la cuenta para detectar e intentar poner en peligro cuentas confidenciales de su red. Para obtener más información, consulte [Rutas de desplazamiento lateral](/defender-for-identity/investigate-lateral-movement-path).
 
   >[!NOTE]
   >Es importante recordar que, mientras que la página Usuario proporciona información sobre los dispositivos, los recursos y las cuentas de todas las actividades, la puntuación de prioridad de investigación es la suma de todas las actividades de riesgo y las alertas de los últimos siete días.
