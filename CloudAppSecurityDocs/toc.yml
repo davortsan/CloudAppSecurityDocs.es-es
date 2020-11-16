@@ -115,7 +115,7 @@
           items:
             - name: Configuración de Cloud Discovery
               href: set-up-cloud-discovery.md
-            - name: Integración con ATP de Microsoft Defender
+            - name: "Integración con Microsoft\_Defender for Endpoint"
               href: mde-integration.md
             - name: Integración con Zscaler
               href: zscaler-integration.md
