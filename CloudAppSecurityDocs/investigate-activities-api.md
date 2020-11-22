@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7eabf167dacf06a51a8c78951a89923a5c8d01bd
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 180c7fac97d4ff275c61da48e3f5125432d826d2
+ms.sourcegitcommit: d1bb3a7ecc062e452c051790898c59ee85689c82
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90879393"
+ms.lasthandoff: 11/22/2020
+ms.locfileid: "95216894"
 ---
 # <a name="investigate-activities-using-the-api"></a>Investigación de actividades mediante la API
 
@@ -39,9 +39,9 @@ El modo de API de Cloud App Security actividades está optimizado para el análi
 1. Ejecute la consulta en los datos.
 1. Si hay más registros de los que se pueden mostrar en un solo examen, obtendrá un comando devuelto con `nextQueryFilters` que debe ejecutar. Obtendrá este comando cada vez que digitalice hasta que la consulta devuelva todos los resultados.
 
-**Parámetros del cuerpo**de la solicitud:
+**Parámetros del cuerpo** de la solicitud:
 
-- "filtros": los objetos de filtro con todos los filtros de búsqueda de la solicitud, vea [filtros de actividad](activity-filters.md) para obtener más información. Para evitar que las solicitudes se limiten, asegúrese de incluir una limitación en la consulta, por ejemplo, consultar las actividades del último día o filtrar por una aplicación determinada.
+- "filtros": los objetos de filtro con todos los filtros de búsqueda de la solicitud, vea [filtros de actividad](activity-filters-queries.md) para obtener más información. Para evitar que las solicitudes se limiten, asegúrese de incluir una limitación en la consulta, por ejemplo, consultar las actividades del último día o filtrar por una aplicación determinada.
 - "isScan": booleano. Habilita el modo de exploración.
 - "sortDirection": la dirección de ordenación, los valores posibles son "ASC" y "DESC"
 - "sortField": campos que se usan para ordenar las actividades. Los valores posibles son:
