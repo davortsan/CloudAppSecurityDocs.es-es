@@ -1,5 +1,5 @@
 ---
-title: Solución de problemas de errores de inspección de contenido-Cloud App Security
+title: Solucionar errores de inspección de contenido
 description: En este artículo se proporciona una lista de los estados de inspección de contenido, así como el significado de estos.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9ac46552691fd3298ab8ffb81355aed48a680c45
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 50c240d70492b9db22e584a1fdc2c438e982bb01
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877213"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96034099"
 ---
 # <a name="troubleshooting-content-inspection"></a>Solución de problemas relacionados con la inspección de contenido
 
@@ -34,7 +34,7 @@ En la tabla se enumera cada estado de inspección de contenido y su descripción
 |Estado de la inspección de contenido|Descripción|
 |---|---|
 |Completed|La inspección de contenido se completó correctamente.|
-|No es aplicable|La inspección de contenido no es aplicable para este archivo. Puede ser que este estado aparezca porque no hay ninguna directiva que requiera la inspección de contenido de este archivo o porque no se admite el tipo de archivo.|
+|No aplicable|La inspección de contenido no es aplicable para este archivo. Puede ser que este estado aparezca porque no hay ninguna directiva que requiera la inspección de contenido de este archivo o porque no se admite el tipo de archivo.|
 |Pending|El archivo está actualmente en la cola de inspección de contenido.|
 |Error: Error de descarga|Microsoft Cloud App Security no ha podido descargar el archivo para la inspección.|
 |Error: Archivo cifrado|El archivo no se ha podido descifrar.|

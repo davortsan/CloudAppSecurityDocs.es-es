@@ -1,5 +1,5 @@
 ---
-title: Conectar aplicaciones para obtener visibilidad y control Cloud App Security
+title: Conectar aplicaciones para obtener visibilidad y control
 description: En este artículo se describe el proceso para conectar aplicaciones con las aplicaciones en la nube de la organización mediante conectores de API.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 729dec5de9bb349927e3cd60f331f61b31b65864
-ms.sourcegitcommit: 812cb1e24ec18de2c4818970f3042ac06acea14c
+ms.openlocfilehash: 02760754d13bfbf0cb0fea0866ae9049c7a191bd
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92212007"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033385"
 ---
 # <a name="connect-apps"></a>Conectar aplicaciones
 
@@ -73,15 +73,15 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
 | **Lista de privilegios** | | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | No es compatible con el proveedor | ✔ | ✔ | ✔ | No es compatible con el proveedor |
 | **Regulación de usuario** | | ✔ | Próximamente | Conexión de asunto G Suite | ✔ | ✔ | | Próximamente | ✔ | Próximamente | No es compatible con el proveedor |
 | **Actividad de inicio de sesión** | ✔ | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **Actividad de usuario** | No es aplicable | ✔ | ✔ | ✔ | ✔ - requiere Google Business o Enterprise | ✔ | ✔ | Parcial | Compatible con Salesforce Shield | ✔ | ✔ |
+| **Actividad de usuario** | No aplicable | ✔ | ✔ | ✔ | ✔ - requiere Google Business o Enterprise | ✔ | ✔ | Parcial | Compatible con Salesforce Shield | ✔ | ✔ |
 | **Actividad administrativa** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Parcial | ✔ | ✔ | No es compatible con el proveedor |
-| **DLP: examen periódico** | | ✔ | ✔ | No es aplicable | ✔ | ✔ | No es aplicable | ✔ | ✔ | ✔ | No es compatible con el proveedor |
-| **Análisis en tiempo real de DLP-Near** | | ✔ | | No es aplicable | ✔: requiere Google Business Enterprise | ✔ | No es aplicable | | | ✔ | No es compatible con el proveedor |
-| **Control de uso compartido** | ✔ | ✔ | ✔ | No es aplicable | ✔ | ✔ | No aplicable | No aplicable | | ✔ | No es compatible con el proveedor |
-| **Regulación de archivos** | ✔ | ✔ | ✔ | No es aplicable | ✔ | ✔ | No es aplicable | | ✔ | | No es compatible con el proveedor |
-| **Ver permisos de aplicación** | No es aplicable | No es compatible con el proveedor | Próximamente | No es aplicable | ✔ | ✔ | No es aplicable | | ✔ | No aplicable | No aplicable |
-| **Revocar permisos de aplicación** | No es aplicable | No es compatible con el proveedor | en breve | No es aplicable | ✔ | ✔ | No es aplicable | | ✔ | No aplicable | No aplicable |
-| **Aplicación de etiquetas de Azure Information Protection** | No es aplicable | ✔ | | No es aplicable | ✔ | ✔ | No aplicable | | | No aplicable | No aplicable |
+| **DLP: examen periódico** | | ✔ | ✔ | No aplicable | ✔ | ✔ | No aplicable | ✔ | ✔ | ✔ | No es compatible con el proveedor |
+| **Análisis en tiempo real de DLP-Near** | | ✔ | | No aplicable | ✔: requiere Google Business Enterprise | ✔ | No aplicable | | | ✔ | No es compatible con el proveedor |
+| **Control de uso compartido** | ✔ | ✔ | ✔ | No aplicable | ✔ | ✔ | No aplicable | No aplicable | | ✔ | No es compatible con el proveedor |
+| **Regulación de archivos** | ✔ | ✔ | ✔ | No aplicable | ✔ | ✔ | No aplicable | | ✔ | | No es compatible con el proveedor |
+| **Ver permisos de aplicación** | No aplicable | No es compatible con el proveedor | Próximamente | No aplicable | ✔ | ✔ | No aplicable | | ✔ | No aplicable | No aplicable |
+| **Revocar permisos de aplicación** | No aplicable | No es compatible con el proveedor | en breve | No aplicable | ✔ | ✔ | No aplicable | | ✔ | No aplicable | No aplicable |
+| **Aplicación de etiquetas de Azure Information Protection** | No aplicable | ✔ | | No aplicable | ✔ | ✔ | No aplicable | | | No aplicable | No aplicable |
 
 ## <a name="prerequisites"></a>Prerrequisitos
 

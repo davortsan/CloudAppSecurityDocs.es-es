@@ -1,5 +1,5 @@
 ---
-title: 'Bloqueo de aplicaciones detectadas: Cloud App Security'
+title: Bloqueo de aplicaciones detectadas
 description: En este artículo se describe el procedimiento para exportar scripts de bloqueo para aplicaciones detectadas.
 keywords: ''
 author: shsagir
@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: dc6eb398526c416af306881d9fd17c71992b8c86
-ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
+ms.openlocfilehash: 6dcb55f70e96082c22504f692b8b441796293723
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2020
-ms.locfileid: "94370932"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033334"
 ---
 # <a name="govern-discovered-apps"></a>Control de aplicaciones detectadas
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Después de revisar la lista de aplicaciones detectadas en su entorno, puede proteger su entorno mediante la aprobación de aplicaciones seguras ( **autorizadas** ) o la prohibición de las aplicaciones no deseadas (no **autorizadas** ) de las siguientes maneras.
+Después de revisar la lista de aplicaciones detectadas en su entorno, puede proteger su entorno mediante la aprobación de aplicaciones seguras (**autorizadas**) o la prohibición de las aplicaciones no deseadas (no **autorizadas**) de las siguientes maneras.
 
 ## <a name="sanctioningunsanctioning-an-app"></a><a name="BKMK_SanctionApp"></a> Autorizar o no autorizar una aplicación
 
@@ -52,7 +52,7 @@ Cloud App Security permite bloquear el acceso a aplicaciones no autorizadas con 
 
     ![Generación de scripts de bloques](media/generate-block-script.png)
 
-3. En **Generar script de bloque** , seleccione la aplicación para la que quiere generar el script de bloque.
+3. En **Generar script de bloque**, seleccione la aplicación para la que quiere generar el script de bloque.
 
     ![Ventana emergente de Generar script de bloqueo](media/generate-block-script-pop-up.png)
 

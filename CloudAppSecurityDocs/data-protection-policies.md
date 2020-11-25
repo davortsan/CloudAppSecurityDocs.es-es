@@ -1,5 +1,5 @@
 ---
-title: 'Supervisión y protección de archivos en aplicaciones en la nube: Cloud App Security'
+title: Supervisar y proteger archivos en aplicaciones en la nube
 description: En este artículo se describe el procedimiento para configurar una directiva de datos para supervisar y controlar los datos y los archivos durante el uso de aplicaciones en la nube de la organización.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8e1d6285e4aa4f551f58af417c01e489ae4c19ed
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: f396b3f0319cf0bb4cc387fade0abc0624f0b4a5
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880732"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033521"
 ---
 # <a name="file-policies"></a>Directivas de archivos
 

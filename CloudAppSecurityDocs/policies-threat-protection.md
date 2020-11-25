@@ -1,5 +1,5 @@
 ---
-title: 'Directivas de protección contra amenazas: Cloud App Security'
+title: Directivas de protección contra amenazas
 description: En este tema se describen los pasos para configurar muchas directivas de protección contra amenazas en Cloud App Security.
 author: shsagir
 ms.author: shsagir
@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 50e9e52ba245520f25f3b014d6fc63325dd1dbb9
-ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
+ms.openlocfilehash: 97bb8c60dfc04858d20ee4bc0a12236ea060eb65
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2020
-ms.locfileid: "94371106"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96034167"
 ---
 # <a name="threat-protection-policies"></a>Directivas de protección contra amenazas
 
@@ -29,7 +29,7 @@ Cloud App Security le permite identificar problemas de seguridad en la nube y de
 
 Detección automática del acceso o actividad de los usuarios desde ubicaciones desconocidas que nunca han visitado otros usuarios de su organización.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) o incorporada mediante el [control de aplicaciones de acceso condicional con controles de sesión](proxy-deployment-aad.md).
 
@@ -41,7 +41,7 @@ Esta detección se configura automáticamente de forma automática para avisarle
 
 Detección automática del acceso o actividad de los usuarios desde dos ubicaciones diferentes dentro de un período de tiempo menor que el tiempo que se tarda en viajar entre los dos.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) o incorporada mediante el [control de aplicaciones de acceso condicional con controles de sesión](proxy-deployment-aad.md).
 
@@ -62,7 +62,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 Detectar cuándo un usuario, que se encuentra en un abandono no pagado y no debe estar activo en ningún recurso de la organización, tiene acceso a los recursos de la nube de su organización.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 - Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
@@ -84,7 +84,7 @@ Detectar cuándo un usuario, que se encuentra en un abandono no pagado y no debe
 
 Detecte Cuándo un usuario usa un explorador con una versión de cliente obsoleta que podría suponer riesgos de cumplimiento o seguridad para su organización.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) o incorporada mediante el [control de aplicaciones de acceso condicional con controles de sesión](proxy-deployment-aad.md).
 
@@ -94,7 +94,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 2. Establezca la **etiqueta de agente de usuario** filtrada en es el **Explorador obsoleto** y el **sistema operativo obsoleto**.
 
-3. Establecer las acciones de **gobierno** que se realizarán en los archivos cuando se detecte una infracción. Las acciones de gobierno disponibles varían entre los servicios. En **todas las aplicaciones** , seleccione **notificar al usuario** para que los usuarios puedan actuar sobre la alerta y actualizar los componentes necesarios.
+3. Establecer las acciones de **gobierno** que se realizarán en los archivos cuando se detecte una infracción. Las acciones de gobierno disponibles varían entre los servicios. En **todas las aplicaciones**, seleccione **notificar al usuario** para que los usuarios puedan actuar sobre la alerta y actualizar los componentes necesarios.
 
 4. Cree la Directiva de actividad.
 
@@ -102,7 +102,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 Detecte las actividades de administración realizadas desde y la dirección IP que se considera una dirección IP de riesgo, y notifique al administrador del sistema para que realice más investigación o establezca una acción de gobierno en la cuenta del administrador.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 - Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
@@ -118,7 +118,7 @@ Detecte las actividades de administración realizadas desde y la dirección IP q
 
 4. Establezca la **actividad administrativa** filtrar en **true** .
 
-5. Establecer las acciones de **gobierno** que se realizarán en los archivos cuando se detecte una infracción. Las acciones de gobierno disponibles varían entre los servicios. En **todas las aplicaciones** , seleccione **notificar al usuario** para que los usuarios puedan actuar en la alerta y actualizar los componentes necesarios en **el administrador del usuario**.
+5. Establecer las acciones de **gobierno** que se realizarán en los archivos cuando se detecte una infracción. Las acciones de gobierno disponibles varían entre los servicios. En **todas las aplicaciones**, seleccione **notificar al usuario** para que los usuarios puedan actuar en la alerta y actualizar los componentes necesarios en **el administrador del usuario**.
 
 6. Cree la Directiva de actividad.
 
@@ -126,7 +126,7 @@ Detecte las actividades de administración realizadas desde y la dirección IP q
 
 Detectar las actividades de la cuenta de servicio que se originan en una dirección IP no interna. Esto podría indicar un comportamiento sospechoso o una cuenta en peligro.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 - Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 - En el engranaje de configuración, seleccione **intervalos de direcciones IP** y haga clic en + para agregar intervalos de direcciones IP para las subredes internas y sus direcciones IP públicas de salida. Establezca la **categoría** en **interno**.
@@ -149,7 +149,7 @@ Detectar las actividades de la cuenta de servicio que se originan en una direcci
 
 Detectar cuándo un usuario determinado tiene acceso o descarga un número masivo de archivos en un breve período de tiempo.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) o incorporada mediante el [control de aplicaciones de acceso condicional con controles de sesión](proxy-deployment-aad.md).
 
@@ -168,7 +168,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 Detección automática de la posible actividad de ransomware.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
@@ -185,7 +185,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 Detecte archivos que contengan malware en los entornos de nube mediante la integración de Cloud App Security con el motor de inteligencia de amenazas de Microsoft.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 - Para la detección de malware de Office 365, debe tener una licencia válida para Microsoft defender para Office 365 P1.
 - Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
@@ -198,7 +198,7 @@ Detecte archivos que contengan malware en los entornos de nube mediante la integ
 
 Detecte una actividad de administración repetida que puede indicar intenciones malintencionadas.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
@@ -219,7 +219,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 Si se ha establecido una regla de bandeja de entrada sospechosa en la bandeja de entrada de un usuario, puede indicar que la cuenta de usuario está en peligro y que el buzón se usa para distribuir el correo no deseado y el malware en la organización.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 - Uso de Microsoft Exchange para el correo electrónico.
 
@@ -233,7 +233,7 @@ Cuando los delincuentes cibernéticos ponen en peligro contraseñas válidas de 
 
 Cloud App Security usa la inteligencia de amenazas de Microsoft para hacer coincidir las credenciales con las que se usan dentro de la organización.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
@@ -245,7 +245,7 @@ Esta detección se configura automáticamente de forma automática para avisarle
 
 Detecte Cuándo los usuarios realizan varias actividades de descarga de archivos en una sola sesión, en relación con la base de referencia aprendida. Esto podría indicar un intento de infracción.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) o incorporada mediante el [control de aplicaciones de acceso condicional con controles de sesión](proxy-deployment-aad.md).
 
@@ -259,7 +259,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 Detecte Cuándo los usuarios realizan varias actividades de uso compartido de archivos en una sola sesión con respecto a la base de referencia aprendida, lo que podría indicar una infracción de intento.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) o incorporada mediante el [control de aplicaciones de acceso condicional con controles de sesión](proxy-deployment-aad.md).
 
@@ -273,7 +273,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 Detecte actividades de una ubicación que no se haya visitado recientemente o que nunca haya visitado el usuario o cualquier usuario de la organización.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) o incorporada mediante el [control de aplicaciones de acceso condicional con controles de sesión](proxy-deployment-aad.md).
 
@@ -290,7 +290,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 Detectar cuándo un usuario que ya no es un empleado de la organización realiza una actividad en una aplicación autorizada. Esto puede indicar una actividad malintencionada por parte de un empleado terminado que todavía tiene acceso a los recursos corporativos.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 

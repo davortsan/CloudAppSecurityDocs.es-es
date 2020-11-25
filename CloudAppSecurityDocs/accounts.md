@@ -1,5 +1,5 @@
 ---
-title: 'Visibilidad de las cuentas de aplicaciones en la nube: Cloud App Security'
+title: Visibilidad de las cuentas de aplicaciones en la nube
 description: En este artículo se proporciona información sobre la revisión de las cuentas de las aplicaciones conectadas.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9d59c944fb2467eef98ac13f8d6a3673b2049a8c
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 434e68484dad0ef3d372760242282b5e5c5826af
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880247"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033232"
 ---
 # <a name="accounts"></a>Cuentas
 
@@ -76,7 +76,7 @@ Puede aplicar manualmente la acción **confirmar el compromiso del usuario** med
 
 * En la página **usuarios y cuentas** , en la fila donde aparece el usuario o la cuenta correspondiente, elija los tres puntos al final de la fila y, a continuación, elija **confirmar usuario comprometido**.
 
-* En la **página usuario**, seleccione **acciones del usuario**y, a continuación, elija **confirmar usuario comprometido**.
+* En la **página usuario**, seleccione **acciones del usuario** y, a continuación, elija **confirmar usuario comprometido**.
 
 * **Nombre de usuario**: permite filtrar a usuarios específicos.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Solución de problemas de integración de SIEM: Cloud App Security'
+title: Solución de problemas de integración de SIEM
 description: En este artículo se proporciona una lista de posibles problemas al conectar su SIEM con Cloud App Security, así como soluciones para cada uno de ellos.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c7d2a5357273bcefd74db69208b874b21e8169a0
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: ae2f83f04557342122b733600daba11c3fbe7d58
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93186201"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96034082"
 ---
 # <a name="troubleshooting-the-siem-agent"></a>Solución de problemas del agente SIEM
 
@@ -40,9 +40,9 @@ Si recibió una alerta del sistema con respecto a un problema con la entrega de 
 
 1. En el portal de Cloud App Security, vaya a la página extensiones de seguridad.
 1. En la pestaña agentes SIEM, haga clic en [Agregar un nuevo agente Siem](siem.md)y use el Asistente para configurar los detalles de conexión a su Siem. Por ejemplo, puede crear un nuevo agente SIEM con la siguiente configuración:
-    - **Protocolo** : TCP
-    - **Host remoto** : cualquier dispositivo en el que pueda escuchar un puerto. Por ejemplo, una solución sencilla sería usar el mismo dispositivo que el agente y establecer la dirección IP del host remoto en 127.0.0.1
-    - **Puerto** : cualquier puerto que pueda escuchar en el dispositivo host remoto
+    - **Protocolo**: TCP
+    - **Host remoto**: cualquier dispositivo en el que pueda escuchar un puerto. Por ejemplo, una solución sencilla sería usar el mismo dispositivo que el agente y establecer la dirección IP del host remoto en 127.0.0.1
+    - **Puerto**: cualquier puerto que pueda escuchar en el dispositivo host remoto
 
     > [!NOTE]
     > Este agente debe ejecutarse en paralelo al existente, por lo que es posible que la configuración de red no sea idéntica.
@@ -81,7 +81,7 @@ Asegúrese de que el estado del agente SIEM en el portal de Microsoft Cloud App 
 
 Si ve alguno de los errores siguientes en el símbolo del sistema mientras se ejecuta al agente, siga estos pasos para corregir el problema:
 
-|Error|Descripción|Solución|
+|Error|Descripción|Resolución|
 |----|----|----|
 |Error general durante el arranque|Error inesperado durante el arranque del agente.|Póngase en contacto con el servicio de soporte técnico.|
 |Demasiados errores críticos|Se han producido demasiados errores críticos al conectar la consola. Apagando el equipo.|Póngase en contacto con el servicio de soporte técnico.|
@@ -90,9 +90,9 @@ Si ve alguno de los errores siguientes en el símbolo del sistema mientras se ej
 
 Después de crear el agente, consulte la página del agente SIEM en el portal de Cloud App Security. Si ve alguna de las **Notificaciones del agente** siguientes, siga estos pasos para corregir el problema:
 
-|Error|Descripción|Solución|
+|Error|Descripción|Resolución|
 |----|----|----|
-|**Error interno**|Se ha producido un problema desconocido con el agente SIEM.|Póngase en contacto con el servicio de soporte técnico.|
+|**Error interno.**|Se ha producido un problema desconocido con el agente SIEM.|Póngase en contacto con el servicio de soporte técnico.|
 |**Error en el envío al servidor de datos**|Este error puede aparecer si está trabajando con un servidor de Syslog sobre TCP. El agente SIEM no puede conectarse a su servidor de Syslog.  Si recibe este error, el agente dejará de extraer nuevas actividades hasta que se corrija. Debe seguir los pasos de corrección indicados hasta que el error deje de aparecer.|1. Asegúrese de que ha definido correctamente el servidor de syslog: en la interfaz de usuario de Cloud App Security, edite el agente SIEM tal y como se ha descrito anteriormente. Compruebe que haya escrito correctamente el nombre del servidor y establecido el puerto correcto. </br>2. Compruebe la conectividad con el servidor de syslog: Asegúrese de que el Firewall no está bloqueando la comunicación.|
 |**Error en la conexión al servidor de datos**| Este error puede aparecer si está trabajando con un servidor de Syslog sobre TCP. El agente SIEM no puede conectarse a su servidor de Syslog.  Si recibe este error, el agente dejará de extraer nuevas actividades hasta que se corrija. Debe seguir los pasos de corrección indicados hasta que el error deje de aparecer.|1. Asegúrese de que ha definido correctamente el servidor de syslog: en la interfaz de usuario de Cloud App Security, edite el agente SIEM tal y como se ha descrito anteriormente. Compruebe que haya escrito correctamente el nombre del servidor y establecido el puerto correcto. </br>2. Compruebe la conectividad con el servidor de syslog: Asegúrese de que el Firewall no está bloqueando la comunicación.|
 |**Error del agente SIEM**|El agente SIEM ha estado desconectado durante más de X horas.|Asegúrese de que no ha cambiado la configuración de SIEM en el portal de Cloud App Security. De lo contrario, este error podría indicar problemas de conectividad entre Cloud App Security y el equipo en el que se ejecuta el agente SIEM.|

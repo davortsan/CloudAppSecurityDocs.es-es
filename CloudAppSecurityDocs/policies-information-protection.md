@@ -1,5 +1,5 @@
 ---
-title: 'Directivas de protección de la información: Cloud App Security'
+title: Directivas de protección de la información
 description: En este tema se describen los pasos para configurar muchas directivas de protección de la información en Cloud App Security.
 author: shsagir
 ms.author: shsagir
@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d5b42984d8e0f1b16db5a92116e4d7835d3882b8
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 379ff12d418ec6ec928817eff45da5b59b25f13f
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877859"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033861"
 ---
 # <a name="information-protection-policies"></a>Directivas de protección de la información
 
@@ -28,7 +28,7 @@ Cloud App Security puede supervisar cualquier tipo de archivo en función de má
 
 Detecte Cuándo los archivos con información de identificación personal u otros datos confidenciales se almacenan en un servicio en la nube y se comparten con usuarios externos a su organización que infringen la Directiva de seguridad de la empresa y crea una posible infracción de cumplimiento.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
@@ -48,7 +48,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 Detectar cuándo los archivos con la etiqueta **confidencial** y que se almacenan en un servicio en la nube se comparten con usuarios externos, infringiendo las directivas de la empresa.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 - Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
@@ -70,7 +70,7 @@ Detectar cuándo los archivos con la etiqueta **confidencial** y que se almacena
 
 Detectar archivos que contienen información de identificación personal y otros datos confidenciales que se comparten en una aplicación en la nube y aplicar etiquetas de clasificación para limitar el acceso únicamente a los empleados de la empresa.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 - Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
@@ -93,7 +93,7 @@ Detectar archivos que contienen información de identificación personal y otros
 
 Detectar archivos no usados y obsoletos, archivos que no se actualizaron recientemente, a los que se puede tener acceso públicamente a través de un vínculo público directo, una búsqueda web o a usuarios externos específicos.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
@@ -119,7 +119,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 Detectar cuándo se tiene acceso a los archivos desde una ubicación no autorizada, en función de las ubicaciones comunes de la organización, para identificar una posible fuga de datos o acceso malintencionado.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
@@ -127,7 +127,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 1. En la página **directivas** , cree una nueva **Directiva de actividad**.
 
-2. Establezca el **tipo de actividad** de filtro en las actividades de archivos y carpetas que le interesen, como **Ver**, **Descargar**, **obtener acceso**y **modificar**.
+2. Establezca el **tipo de actividad** de filtro en las actividades de archivos y carpetas que le interesen, como **Ver**, **Descargar**, **obtener acceso** y **modificar**.
 
 3. Establezca la **Ubicación** del filtro no es igual a y, a continuación, especifique los países o regiones desde los que la organización espera la actividad.
 
@@ -141,7 +141,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 Detectar archivos etiquetados como confidenciales y almacenados en un sitio de SharePoint no compatible.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 Azure Information Protection las etiquetas se configuran y se usan dentro de la organización.
 
@@ -163,7 +163,7 @@ Azure Information Protection las etiquetas se configuran y se usan dentro de la 
 
 Detectar si los archivos que contienen contenido que podría ser código fuente se comparten públicamente o se comparten con usuarios ajenos a la organización.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
@@ -183,7 +183,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 Detectar si un usuario que no forma parte del grupo tiene un acceso excesivo a determinados archivos que pertenecen a un grupo de usuarios específico, lo que podría ser una posible amenaza de Insider.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
@@ -193,7 +193,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 2. En **acción** , seleccione **actividad repetida** y Personalice las **actividades mínimas repetidas** y establezca un **período de tiempo** para cumplir con la Directiva de su organización.
 
-3. Establezca el **tipo de actividad** de filtro en las actividades de archivos y carpetas que le interesen, como **Ver**, **Descargar**, **obtener acceso**y **modificar**.
+3. Establezca el **tipo de actividad** de filtro en las actividades de archivos y carpetas que le interesen, como **Ver**, **Descargar**, **obtener acceso** y **modificar**.
 
 4. Establezca el valor de filtrar **usuario** en **de grupo** es igual a y, a continuación, seleccione los grupos de usuarios correspondientes.
 
@@ -210,7 +210,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 Detección y protección frente a posibles fugas de datos desde los cubos de AWS S3.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 Debe tener una instancia de AWS conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
@@ -228,7 +228,7 @@ Debe tener una instancia de AWS conectada mediante los [conectores de aplicacion
 
 Detectar archivos que se comparten en aplicaciones de almacenamiento en la nube y que contienen información de identificación personal y otros datos confidenciales que están enlazados mediante una directiva de cumplimiento de RGPD. A continuación, aplique automáticamente etiquetas de clasificación para limitar el acceso únicamente al personal autorizado.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 - Debe tener al menos una aplicación conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
@@ -251,7 +251,7 @@ Detectar archivos que se comparten en aplicaciones de almacenamiento en la nube 
 
 Impedir que los usuarios externos expongan los datos de la empresa, bloqueando las descargas de archivos en tiempo real, utilizando [los controles de sesión](proxy-intro-aad.md)de Cloud App Security.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 - [Implemente el control de aplicaciones de acceso condicional para aplicaciones Azure ad](proxy-deployment-aad.md).
 
@@ -278,7 +278,7 @@ Impedir que los usuarios externos expongan los datos de la empresa, bloqueando l
 
 Impedir que los usuarios externos expongan los datos de la empresa, bloqueando las actividades de impresión y copia y pegado en tiempo real, utilizando [los controles de sesión](proxy-intro-aad.md)de Cloud App Security.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 - [Implemente el control de aplicaciones de acceso condicional para aplicaciones Azure ad](proxy-deployment-aad.md).
 - Asegúrese de que la aplicación es una aplicación basada en SAML que use Azure AD para el inicio de sesión único. Para obtener más información sobre las aplicaciones compatibles, consulte [aplicaciones y clientes compatibles](proxy-intro-aad.md#supported-apps-and-clients).
@@ -308,7 +308,7 @@ Impedir que los usuarios externos expongan los datos de la empresa, bloqueando l
 
 Evite que los usuarios carguen datos no protegidos en la nube mediante el uso de [los controles de sesión](proxy-intro-aad.md)de Cloud App Security.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 - [Implemente el control de aplicaciones de acceso condicional para aplicaciones Azure ad](proxy-deployment-aad.md).
 

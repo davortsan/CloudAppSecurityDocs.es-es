@@ -1,5 +1,5 @@
 ---
-title: Establecer preferencias de notificación de correo electrónico-Cloud App Security
+title: " Establecimiento de preferencias de notificación de correo electrónico"
 description: En este artículo se proporciona información sobre cómo personalizar las notificaciones de correo electrónico que Cloud App Security envía.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5313745b303e6ff4e8dee19f7fe496c059b15288
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: c7aef2b281139b7bf2b50b5f92b5947e0e389580
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90879317"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033929"
 ---
 # <a name="email-notification-preferences"></a>Preferencias de notificación de correo electrónico
 
@@ -125,6 +125,6 @@ A continuación se muestra una plantilla de correo electrónico de ejemplo:
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Configurar Cloud Discovery](set-up-cloud-discovery.md)
+> [Configuración de Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

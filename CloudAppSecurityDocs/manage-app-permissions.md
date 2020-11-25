@@ -1,5 +1,5 @@
 ---
-title: 'Controlar qué aplicaciones de OAuth de nube de terceros obtienen permisos: Cloud App Security'
+title: Controlar qué aplicaciones de OAuth de nube de terceros obtienen permisos
 description: Este artículo proporciona información sobre cómo puede controlar, prohibir y permitir aplicaciones de OAuth de terceros.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0f6aebe10c147a6be1250ce5f15a208570947edc
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: e95e22231d54a83c2bc9e24159aaabaa432d6ffe
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90879254"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033946"
 ---
 # <a name="manage-oauth-apps"></a>Administración de aplicaciones de OAuth
 
@@ -64,7 +64,7 @@ La página Aplicaciones de OAuth de aplicación proporciona la siguiente informa
 1. En la página **Aplicación de OAuth**, haga clic en la aplicación para abrir el **Cajón de la aplicación** y obtener más información sobre ella y los permisos que se le han concedido.
 
     - Haga clic en **permisos** para ver una lista completa de los permisos concedidos a la aplicación.
-    - En **uso**de la comunidad, puede ver la frecuencia con que la aplicación se encuentra en otras organizaciones.
+    - En **uso** de la comunidad, puede ver la frecuencia con que la aplicación se encuentra en otras organizaciones.
     - Haga clic en **actividad relacionada** para ver las actividades que aparecen en el registro de actividades relacionadas con esta aplicación.
 
 2. Para prohibir la aplicación, haga clic en el icono Prohibir al final de la fila de la aplicación en la tabla.

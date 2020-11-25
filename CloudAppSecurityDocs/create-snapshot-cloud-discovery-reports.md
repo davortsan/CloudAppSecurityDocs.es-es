@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0f74f1ad1cec5a8a3f57298378ef00e6f89c71ca
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: e458859d0eea99efa6e99c0d1a2f97a50980fe59
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880790"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033538"
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Crear informes de instantáneas de Cloud Discovery
 
@@ -33,7 +33,7 @@ Para crear un informe de instantáneas:
 
 1. Recopile archivos de registro del firewall y el servidor proxy a través de los cuales los usuarios de la organización acceden a Internet. Asegúrese de recopilar registros durante períodos de tráfico pico que sean representativos de toda la actividad de usuario de la organización.
 
-1. En el portal de Cloud App Security, haga clic en **Detectar** y, después, en **Crear un informe de instantáneas**.
+1. En el portal de Cloud App Security, haga clic en **detectar** y, a continuación, haga clic en **crear informe de instantáneas**.
 
     ![Creación de un informe de instantánea](media/create-new-snapshot-report.png)
 
@@ -43,13 +43,12 @@ Para crear un informe de instantáneas:
 
 1. Seleccione el **origen de datos** desde el que desea cargar los archivos de registro.
 
-1. Compruebe el formato del registro para asegurarse de que es correcto según el registro de ejemplo que puede descargar. Haga clic en **View and verify** (Ver y comprobar) y luego haga clic en **Download sample log** (Descargar registro de ejemplo). Compare su registro con el ejemplo proporcionado para asegurarse de que es compatible.
+1. Compruebe el formato del registro para asegurarse de que es correcto según el registro de ejemplo que puede descargar. Haga clic en **ver y compruebe** , a continuación, en **Descargar registro de ejemplo**. Compare su registro con el ejemplo proporcionado para asegurarse de que es compatible.
 
     ![Comprobación del formato del registro](media/cloud-discovery-snapshot-verify.png)
 
     > [!NOTE]
-    > El formato de ejemplo FTP se admite en las instantáneas y la carga automatizada, mientras que syslog solo se admite en la carga automatizada.  
-    Si se descarga un registro de ejemplo, se descargará un registro de FTP de ejemplo.
+    > Se admite el formato de ejemplo FTP en las instantáneas y en la carga automatizada mientras syslog es compatible únicamente con la carga automatizada. Si se descarga un registro de ejemplo, se descargará un registro de FTP de ejemplo.
 
 1. **Elija los registros de tráfico** que desea cargar. Puede cargar hasta 20 archivos a la vez. También se admiten archivos comprimidos y zip.
 
@@ -65,7 +64,7 @@ Para crear un informe de instantáneas:
 
 1. Una vez cargados correctamente los registros, verá una notificación informándole de que el procesamiento de los archivos de registro se ha completado correctamente. En este punto, puede ver el informe haciendo clic en el vínculo de la barra de estado, o haciendo clic en el ![icono](media/settings-icon.png "icono de configuración")configuración engranaje de configuración y, después, seleccionando **configuración**.
 
-1. A continuación, en **Cloud Discovery**, seleccione **informes de instantáneas**y seleccione el informe de instantáneas.
+1. A continuación, en **Cloud Discovery**, seleccione **informes de instantáneas** y seleccione el informe de instantáneas.
 
     ![administración de informes de instantáneas](media/snapshot-report-managment.png)
 

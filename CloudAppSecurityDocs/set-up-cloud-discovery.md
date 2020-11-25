@@ -1,5 +1,5 @@
 ---
-title: Implementación de Cloud Discovery Cloud App Security
+title: Implementación de Cloud Discovery
 description: En este artículo se describe el procedimiento de configuración de Cloud Discovery para que entre en funcionamiento.
 author: shsagir
 ms.author: shsagir
@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8a5d2d5ee97677482be80a44b33f832cfaee6ddf
-ms.sourcegitcommit: 288f3011c0ce0e5f2d8cbaa9057a63be044465f7
+ms.openlocfilehash: 72a1d6f1d7dfdf88460dceddf62a6277226cfe66
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94375098"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033963"
 ---
 # <a name="set-up-cloud-discovery"></a>Configuración de Cloud Discovery
 
@@ -27,13 +27,13 @@ Cloud Discovery analiza los registros de tráfico en el catálogo de aplicacione
 
 Puede generar los siguientes tipos de informes:
 
-- **Informes de instantáneas** : proporcionan visibilidad ad hoc de un conjunto de registros de tráfico que puede cargar manualmente desde los firewalls y los servidores proxy.
+- **Informes de instantáneas**: proporcionan visibilidad ad hoc de un conjunto de registros de tráfico que puede cargar manualmente desde los firewalls y los servidores proxy.
 
-- **Informes continuos** : analizan todos los registros que se reenvían desde la red mediante Cloud App Security. Proporcionan una mejor visibilidad de todos los datos e identifican automáticamente los usos erróneos, ya sea mediante el motor de detección de anomalías de aprendizaje automático o mediante las directivas personalizadas que haya definido. Estos informes pueden crearse conectándose de varias maneras:
+- **Informes continuos**: analizan todos los registros que se reenvían desde la red mediante Cloud App Security. Proporcionan una mejor visibilidad de todos los datos e identifican automáticamente los usos erróneos, ya sea mediante el motor de detección de anomalías de aprendizaje automático o mediante las directivas personalizadas que haya definido. Estos informes pueden crearse conectándose de varias maneras:
 
   - [**Microsoft defender for Endpoint Integration**](mde-integration.md): Cloud App Security se integra con defender para el punto de conexión de forma nativa, para simplificar el lanzamiento de Cloud Discovery, ampliar las funcionalidades de Cloud Discovery más allá de la red corporativa y habilitar la investigación basada en el equipo.
   - [**Recopilador de registros**](discovery-docker.md): los recopiladores de registros permiten automatizar fácilmente la carga de registros desde la red. El recopilador de registros se ejecuta en la red y recibe los registros a través de Syslog o FTP.
-  - **Puerta de enlace web segura (SWG)** : Si trabaja con Cloud App Security y uno de los siguientes SWGs, puede integrar los productos para mejorar su experiencia de Cloud Discovery de seguridad. Juntos, Cloud App Security y SWGs proporcionan una implementación sin problemas de Cloud Discovery, el bloqueo automático de aplicaciones no autorizadas y la evaluación de riesgos directamente en el portal de SWG.
+  - **Puerta de enlace web segura (SWG)**: Si trabaja con Cloud App Security y uno de los siguientes SWGs, puede integrar los productos para mejorar su experiencia de Cloud Discovery de seguridad. Juntos, Cloud App Security y SWGs proporcionan una implementación sin problemas de Cloud Discovery, el bloqueo automático de aplicaciones no autorizadas y la evaluación de riesgos directamente en el portal de SWG.
     - [Integración de Zscaler](zscaler-integration.md)
     - [integración de iboss](iboss-integration.md)
     - [Integración de Corrata](corrata-integration.md)
@@ -45,13 +45,13 @@ Puede generar los siguientes tipos de informes:
 
 El proceso de generación de una evaluación de riesgos consta de los siguientes pasos. El proceso tarda desde unos minutos hasta varias horas según la cantidad de datos procesados.
 
-- **Cargar** : se cargan los registros de tráfico web de la red en el portal.
+- **Cargar**: se cargan los registros de tráfico web de la red en el portal.
 
-- **Redistribuir** : Cloud App Security redistribuye y extrae datos de tráfico de los registros de tráfico con un analizador dedicado para cada origen de datos.
+- **Redistribuir**: Cloud App Security redistribuye y extrae datos de tráfico de los registros de tráfico con un analizador dedicado para cada origen de datos.
 
-- **Analizar** : se analizan los datos de tráfico con el catálogo de aplicaciones en la nube para identificar más de 16 000 aplicaciones en la nube y evaluar su puntuación de riesgo. Los usuarios activos y las direcciones IP también se identifican como parte del análisis.
+- **Analizar**: se analizan los datos de tráfico con el catálogo de aplicaciones en la nube para identificar más de 16 000 aplicaciones en la nube y evaluar su puntuación de riesgo. Los usuarios activos y las direcciones IP también se identifican como parte del análisis.
 
-- **Generar informe** : se genera un informe de evaluación de riesgos de los datos extraídos de los archivos de registro.
+- **Generar informe**: se genera un informe de evaluación de riesgos de los datos extraídos de los archivos de registro.
 
 >[!NOTE]
 > Los datos de informe continuos se analizan cuatro veces al día.

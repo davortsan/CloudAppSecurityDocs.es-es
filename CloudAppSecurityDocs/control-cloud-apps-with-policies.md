@@ -1,5 +1,5 @@
 ---
-title: 'Control del uso de aplicaciones en la nube mediante la creación de directivas: Cloud App Security'
+title: Control del uso de aplicaciones en la nube mediante la creación de directivas
 description: En este artículo se proporciona información sobre cómo se usan las directivas y cómo se configuran para controlar el uso de las aplicaciones en la nube.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a701de6959bdaba8045c42d6317b62bd42645d0f
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 93b4acdbf27c39b0918fe6765ec33427e7050080
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880832"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033691"
 ---
 # <a name="control-cloud-apps-with-policies"></a>Control de aplicaciones en la nube con directivas
 

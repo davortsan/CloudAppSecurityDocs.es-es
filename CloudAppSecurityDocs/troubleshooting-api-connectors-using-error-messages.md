@@ -1,5 +1,5 @@
 ---
-title: 'Solucionar problemas de mensajes de error del conector de aplicaciones: Cloud App Security'
+title: Solucionar problemas de mensajes de error del conector de aplicaciones
 description: En este artículo se proporciona una lista de los mensajes de error de los conectores de aplicaciones de la API, así como recomendaciones para solucionarlos.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9b99e5477c96752f65e4b20a1f9d7f977a5b4ad7
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: d0b9a0fe5bb74468c7f5bc149c4190e29f402869
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880972"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96034150"
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>Solucionar problemas relacionados con conectores de aplicaciones a partir de los mensajes de error
 
@@ -33,7 +33,7 @@ Los errores de conectores de aplicaciones se pueden consultar en el cuadro de di
 
 > [!div class="mx-tableFixed"]
 >
-> |Mensaje de error|Aplicación correspondiente|Descripción|Solución|
+> |Mensaje de error|Aplicación correspondiente|Descripción|Resolución|
 > |----|----|----|------------|
 > |HttpRequestFailure: Server returned: 500 Internal server error (HttpRequestFailure: El servidor devolvió: 500 Error interno del servidor)|Todas las aplicaciones|Se ha producido un error en la aplicación.|Compruebe el estado de la aplicación.|
 > |El tiempo de servicio expiró.|Todas las aplicaciones|Se ha detectado un tiempo de espera en la conexión entre Cloud App Security y la aplicación. Esto podría deberse a un problema con la aplicación.|Vuelva a intentarlo más tarde.|

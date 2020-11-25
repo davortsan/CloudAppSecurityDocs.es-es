@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0b3dcf585f394b3e2752ac46ea799a34a13373db
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: b6c05885ea07834e0dd474bda08904dd364793a6
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880343"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033402"
 ---
 # <a name="docker-on-linux-in-azure"></a>Docker en Linux en Azure
 
@@ -27,7 +27,7 @@ ms.locfileid: "90880343"
 
 Puede configurar la carga de registros automática para informes continuos en Cloud App Security mediante Docker en Ubuntu, Red Hat Enterprise Linux (RHEL) o en Azure.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 * Sistema operativo:
     * Ubuntu 14,04, 16,04 y 18,04
@@ -107,7 +107,7 @@ El compilador de registros puede administrar correctamente la capacidad de regis
     >
     > * Un único recopilador de registros puede administrar varios orígenes de datos.
     > * Copie el contenido de la pantalla, ya que necesitará la información al configurar el recopilador de registros para comunicarse con Cloud App Security. Si ha seleccionado Syslog, esta información incluirá información sobre el puerto en el que escucha el agente de escucha de Syslog.
-    > * Para que los usuarios envíen datos de registro a través de FTP por primera vez, se recomienda cambiar la contraseña del usuario de FTP. Para obtener más información, consulte [cambiar la contraseña de FTP](log-collector-ftp.md#changing-the-ftp-password).
+    > * Para que los usuarios envíen datos de registro a través de FTP por primera vez, se recomienda cambiar la contraseña del usuario de FTP. Para obtener más información, consulte [cambiar la contraseña de FTP](log-collector-advanced-management.md#changing-the-ftp-password).
 
 ### <a name="step-2--deployment-of-your-machine-in-azure"></a>Paso 2: Implementación de la máquina en Azure
 
@@ -150,7 +150,7 @@ El compilador de registros puede administrar correctamente la capacidad de regis
 1. Ejecute el comando para implementar el recopilador de registros.
 
     ```bash
-    (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+    (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i mcr.microsoft.com/mcas/logcollector starter
     ```
 
     ![Proxy Ubuntu](media/ubuntu-proxy.png)
@@ -190,6 +190,6 @@ Compruebe que se cargan los registros de Cloud App Security y que se generan los
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Configuración de FTP del recopilador de registros](log-collector-ftp.md)
+> [Modificación de la configuración de FTP del recopilador de registros](log-collector-advanced-management.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

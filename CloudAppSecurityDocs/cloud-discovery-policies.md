@@ -1,5 +1,5 @@
 ---
-title: 'Crear directivas en Cloud Discovery aplicaciones: Cloud App Security'
+title: Crear directivas en Cloud Discovery aplicaciones
 description: En este artículo se proporciona información sobre cómo trabajar con directivas de Cloud Discovery.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2561017dec734db588b31789a078156fbe4bc59e
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 3daf44081471de230c0aca8db0fa0b8cc0257f6a
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881474"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033776"
 ---
 # <a name="create-cloud-discovery-policies"></a>Crear directivas de Cloud Discovery
 

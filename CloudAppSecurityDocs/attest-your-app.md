@@ -1,5 +1,5 @@
 ---
-title: 'Atestación de las aplicaciones: Cloud App Security'
+title: Atestar sus aplicaciones
 description: En este artículo se proporcionan instrucciones para la atestación de las aplicaciones en Cloud App Security.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 296b4a4b882c15fe716eebe7b8975a938a34ca97
-ms.sourcegitcommit: cc283f0ecf8124953f1f71181655603de6846d8c
+ms.openlocfilehash: 59cdb1de028d0aed6c85d0df2a057b02d0489c0b
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254710"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033844"
 ---
 # <a name="attest-your-app"></a>Comprobaciones sobre la aplicación
 
@@ -29,10 +29,10 @@ Si la aplicación ya aparece en el catálogo de aplicaciones en la nube o es nue
 
 Siga los atributos de servicio que se describen a continuación para completar correctamente el envío del cuestionario:
 
-| Campo | Categoría de información | Tipo | Valores aceptados | Description |
+| Campo | Categoría de información | Tipo | Valores aceptados | Descripción |
 |------|-------|------|---------|----------|
 | Nombre de la aplicación | General | String | Texto libre | El nombre de la aplicación tal como debe aparecer en el catálogo de aplicaciones en la nube. |
-| Description | General | String | Texto libre | Breve explicación de lo que la aplicación permite a los usuarios realizar o conseguir. |
+| Descripción | General | String | Texto libre | Breve explicación de lo que la aplicación permite a los usuarios realizar o conseguir. |
 | Category| General | String | Cerrar lista: se proporciona en el cuestionario | Clasificación de la aplicación según el campo con el que se relaciona. |
 | Oficina central | General | Código de país | Cerrar lista: se proporciona en el cuestionario | País o región de la sede del proveedor.|
 | Centro de datos| General | Matriz de código de país * | Cerrar lista: se proporciona en cuestionario (selección múltiple) | El país o región en el que reside el centro de datos (puede ser varias ubicaciones) |
@@ -47,7 +47,7 @@ Siga los atributos de servicio que se describen a continuación para completar c
 | Tipos de datos | General | String | Cerrar lista: se proporciona en el cuestionario | ¿Qué tipos de datos puede cargar el usuario en la aplicación?|
 | Página principal | General | URL | Texto libre | Dirección URL de la Página principal del proveedor. |
 | Plan de recuperación ante desastres | General | Boolean | True, False | ¿Esta aplicación tiene un plan de recuperación ante desastres que incluye una estrategia de copia de seguridad y restauración? |
-| Última infracción | Seguridad | Date | MMM-DD-YYYY | Incidente más reciente en el que los datos confidenciales, protegidos o confidenciales que pertenecen a la aplicación se han visto, robado o utilizado por una persona no autorizada para ello. |
+| Última infracción | Seguridad | Fecha | MMM-DD-YYYY | Incidente más reciente en el que los datos confidenciales, protegidos o confidenciales que pertenecen a la aplicación se han visto, robado o utilizado por una persona no autorizada para ello. |
 | Método de cifrado de datos en reposo | Seguridad | String | Cerrar lista: se proporciona en el cuestionario | El tipo de cifrado de datos en reposo realizado en la aplicación. |
 | Multi-Factor Authentication | Seguridad | Boolean | True, False | ¿Admite esta aplicación soluciones de autenticación multifactor? |
 | Restricción de dirección IP | Seguridad | Boolean | True, False | ¿Esta aplicación admite la restricción de direcciones IP específicas de la aplicación? |
@@ -115,7 +115,7 @@ Siga los atributos de servicio que se describen a continuación para completar c
 | RGPD: legal base de procesamiento | Información legal | Boolean | True, false, N/A | ¿Esta aplicación procesa los datos personales legalmente de acuerdo con el consentimiento, el contrato, la obligación legal, los intereses vitales, los intereses legítimos, la categoría especial, los datos y los datos de ofensa Penal? |
 | RGPD: derecho a rectificación | Información legal | Boolean | True, false, N/A | ¿Esta aplicación proporciona a los usuarios la capacidad de rectificar sus datos personales? El controlador debe responder a todas las solicitudes de sus asuntos de datos en un mes. |
 
-\*Los campos de tipo *array* deben separarse con un punto y coma (;).
+\* Los campos de tipo *array* deben separarse con un punto y coma (;).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

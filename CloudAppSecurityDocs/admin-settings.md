@@ -1,5 +1,5 @@
 ---
-title: 'Establecer preferencias de administración: Cloud App Security'
+title: Establecer preferencias de administrador
 description: En este artículo se proporcionan instrucciones para configurar las preferencias de administración en Cloud App Security.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5114b50577d75d2301fae189e1c61275444fe2ca
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: f5172eb103c04726814068a01d57c459ebe46ba8
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880141"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033886"
 ---
 # <a name="admin-user-settings"></a>Configuración de usuario de administración
 
@@ -49,6 +49,6 @@ Para configurar sus preferencias como un administrador de Microsoft Cloud App Se
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Configurar Cloud Discovery](set-up-cloud-discovery.md)
+> [Configuración de Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

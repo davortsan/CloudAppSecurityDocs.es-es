@@ -1,5 +1,5 @@
 ---
-title: 'Configuración de la carga de registros automática para informes continuos: Cloud App Security'
+title: Configurar la carga de registros automática para informes continuos
 description: En este artículo se proporciona información sobre cómo cargar registros para crear informes de Cloud Discovery automáticos.
 keywords: ''
 author: shsagir
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8711209823bdb2ea010dbb734fc67c03561122ed
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 98e5a260a3b0af3e2aeb8998f3845fc9076c7cc3
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881455"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96033810"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Configuración de la carga de registros automática para informes continuos en una aplicación virtual: en desuso
 
@@ -28,7 +28,7 @@ ms.locfileid: "90881455"
 > [!WARNING]
 > Es muy recomendable configurar la carga de registros mediante [Docker](discovery-docker.md) para una implementación más flexible.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 - Hypervisor: Hyper-V o VMware
 - Espacio en disco: 250 GB
@@ -69,7 +69,7 @@ El recopilador de registros tiene un mecanismo de seguridad integrado que superv
 
     a. Haga clic en **Agregar recopilador de registros**.
 
-    b. Asigne un **nombre**al recopilador de registros.
+    b. Asigne un **nombre** al recopilador de registros.
 
     c. Seleccione todos los **orígenes de datos** que quiera conectar al recopilador. Haga clic en **Actualizar** para guardar la configuración y generar un token de acceso.
 
@@ -103,7 +103,7 @@ El recopilador de registros tiene un mecanismo de seguridad integrado que superv
 
 8. Elija **Usar un disco duro virtual existente**. Seleccione el archivo **.vhd** incluido en el archivo ZIP que ha descargado.
 
-9. Haga clic en **Siguiente** y, después, en **Finalizar**. La máquina se agrega al entorno de Hyper-V.
+9. Haga clic en **Siguiente** y, a continuación, en **Finalizar**. La máquina se agrega al entorno de Hyper-V.
 
 10. Haga clic en la máquina en la tabla **Máquinas virtuales** y luego en **Iniciar**.
 
@@ -153,7 +153,7 @@ Si tiene problemas durante la implementación, consulte [Solución de problemas 
 
 Después de comprobar que los registros se cargan en Cloud App Security y que se generan los informes, puede crear informes personalizados. Ahora puede crear informes de detección personalizados en función de los grupos de usuarios de Azure Active Directory. Por ejemplo, si quiere ver el uso de la nube por parte del departamento de marketing, puede importar el grupo de marketing mediante la característica para importar grupos de usuarios y, después, crear un informe personalizado para este grupo. También puede personalizar un informe en función de la etiqueta de dirección IP o los intervalos de direcciones IP.
 
-1. En el portal de Cloud App Security, en el engranaje de configuración, seleccione **configuración de Cloud Discovery**y, a continuación, seleccione **informes continuos**.
+1. En el portal de Cloud App Security, en el engranaje de configuración, seleccione **configuración de Cloud Discovery** y, a continuación, seleccione **informes continuos**.
 2. Haga clic en el botón **Crear informe** y rellene los campos.
 3. En **Filtros**, puede filtrar los datos por origen de datos, por [grupo de usuarios importados](user-groups.md) o por [etiquetas e intervalos de direcciones IP](ip-tags.md).
 
