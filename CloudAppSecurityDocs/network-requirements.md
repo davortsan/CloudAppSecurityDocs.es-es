@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cd4138ad0bad611e38c382ab0151b8964a55ce3d
-ms.sourcegitcommit: 06471b9b3d20868d36e76e4b1cc9c61feab19f64
+ms.openlocfilehash: 0dc03caf55a6d45f2698d3e9c56d8d15bee42d11
+ms.sourcegitcommit: dbc41414e828f27ae9bee8dc057f2e15727ddad8
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/26/2020
-ms.locfileid: "96231287"
+ms.locfileid: "96295798"
 ---
 # <a name="network-requirements"></a>Requisitos de red
 
@@ -45,26 +45,26 @@ Para ver el centro de datos al que se está conectando, siga estos pasos:
 Para acceder al portal de Cloud App Security, agregue el **Puerto de salida 443** para las siguientes direcciones IP y nombres DNS a la lista de permitidos del firewall:
 
 ```ini
-    portal.cloudappsecurity.com
-    *.portal.cloudappsecurity.com
-    cdn.cloudappsecurity.com
-    https://adaproddiscovery.azureedge.net
-    *.s-microsoft.com
-    *.msecnd.net
-    dev.virtualearth.net
-    *.cloudappsecurity.com
-    flow.microsoft.com
-    static2.sharepointonline.com
-    dc.services.visualstudio.com
-    *.blob.core.windows.net
+portal.cloudappsecurity.com
+*.portal.cloudappsecurity.com
+cdn.cloudappsecurity.com
+https://adaproddiscovery.azureedge.net
+*.s-microsoft.com
+*.msecnd.net
+dev.virtualearth.net
+*.cloudappsecurity.com
+flow.microsoft.com
+static2.sharepointonline.com
+dc.services.visualstudio.com
+*.blob.core.windows.net
 ```
 
 En el caso de los clientes de la administración pública de Estados Unidos, también es necesario agregar los siguientes nombres DNS a la lista de permitidos del firewall para proporcionar acceso al portal de Cloud App Security GCC High:
 
 ```ini
-    portal.cloudappsecurity.us
-    *.portal.cloudappsecurity.us
-    cdn.cloudappsecurity.com
+portal.cloudappsecurity.us
+*.portal.cloudappsecurity.us
+cdn.cloudappsecurity.com
 ```
 
 Además, se deben permitir los siguientes elementos, según el centro de datos que use:
@@ -90,10 +90,10 @@ Configure el firewall para el proxy inverso con los valores relevantes para su e
 En el caso de los clientes comerciales, para habilitar Cloud App Security proxy inverso, agregue el **Puerto de salida 443** para las siguientes direcciones IP y nombres DNS a la lista de permitidos del firewall:
 
 ```ini
-    *.cas.ms
-    *.mcas.ms
-    *.admin-mcas.ms
-    mcasproxy.azureedge.net
+*.cas.ms
+*.mcas.ms
+*.admin-mcas.ms
+mcasproxy.azureedge.net
 ```
 
 Además, se deben permitir los siguientes elementos, según el centro de datos que use:
@@ -111,9 +111,9 @@ Además, se deben permitir los siguientes elementos, según el centro de datos q
 Para los clientes de la administración pública de Estados Unidos GCC, para habilitar Cloud App Security proxy inverso, agregue el **Puerto de salida 443** para los siguientes nombres DNS a la lista de permitidos del firewall:
 
 ```ini
-    *.mcas-gov.us
-    *.admin-mcas-gov.us
-    mcasproxy.azureedge.net
+*.mcas-gov.us
+*.admin-mcas-gov.us
+mcasproxy.azureedge.net
 ```
 
 ## <a name="siem-agent-connection"></a>Conexión del agente SIEM
@@ -130,7 +130,7 @@ Para habilitar Cloud App Security para conectarse a su SIEM, agregue el **Puerto
 |Estados Unidos 1 gov|13.72.19.4, 52.227.143.223|
 
 > [!NOTE]
-> Si no especificó un proxy al configurar el agente de Cloud App Security SIEM, debe permitir las conexiones http a http://ocsp.msocsp.com/ y OCSP.DigiCert.com en el puerto 80. Esto sirve para comprobar el estado de revocación de certificado al conectarse al portal de Cloud App Security.
+> Si no especificó un proxy al configurar el agente de SIEM de Cloud App Security, debe permitir las conexiones http en el puerto 80 para las direcciones URL que aparecen en la página [cambios de certificado TLS de Azure](/azure/security/fundamentals/tls-certificate-changes#will-this-change-affect-me) . Esto sirve para comprobar el estado de revocación de certificado al conectarse al portal de Cloud App Security.
 
 ## <a name="app-connector"></a>Conector de la aplicación
 
@@ -212,7 +212,7 @@ Para habilitar características de Cloud Discovery por medio de un recopilador d
 >
 > - Si el Firewall requiere una lista de acceso de dirección IP estática y no admite la función basada en la dirección URL, permita que el recopilador de registros inicie el tráfico saliente a los [Microsoft Azure intervalos IP del centro](https://www.microsoft.com/download/details.aspx?id=56519) de seguridad en el puerto 443.
 > - Permita que el recopilador de registros inicie tráfico saliente al portal de Cloud App Security.
-> - Si no especificó un proxy al configurar el recopilador de registros, debe permitir las conexiones http a http://ocsp.msocsp.com/ y OCSP.DigiCert.com en el puerto 80. Esto sirve para comprobar el estado de revocación de certificado al conectarse al portal de Cloud App Security.
+> - Si no especificó un proxy al configurar el compilador de registros, debe permitir las conexiones http en el puerto 80 para las direcciones URL que aparecen en la página [cambios de certificado TLS de Azure](/azure/security/fundamentals/tls-certificate-changes#will-this-change-affect-me) . Esto sirve para comprobar el estado de revocación de certificado al conectarse al portal de Cloud App Security.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
