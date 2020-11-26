@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5160d606c28bcd2d9f449f79785aca01a8250875
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: cd4138ad0bad611e38c382ab0151b8964a55ce3d
+ms.sourcegitcommit: 06471b9b3d20868d36e76e4b1cc9c61feab19f64
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033895"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96231287"
 ---
 # <a name="network-requirements"></a>Requisitos de red
 
@@ -67,7 +67,7 @@ En el caso de los clientes de la administración pública de Estados Unidos, tam
     cdn.cloudappsecurity.com
 ```
 
-Además, estos elementos deben estar en una lista blanca, según el centro de datos que use:
+Además, se deben permitir los siguientes elementos, según el centro de datos que use:
 
 |Centro de datos|Direcciones IP|Nombre DNS|
 |----|----|----|
@@ -96,7 +96,7 @@ En el caso de los clientes comerciales, para habilitar Cloud App Security proxy 
     mcasproxy.azureedge.net
 ```
 
-Además, estos elementos deben estar en una lista blanca, según el centro de datos que use:
+Además, se deben permitir los siguientes elementos, según el centro de datos que use:
 
 |Centro de datos|Direcciones IP|Nombre DNS|
 |----|----|----|----|----|
@@ -154,7 +154,7 @@ Para conectarse a aplicaciones de terceros, habilite Cloud App Security para per
 
 Para permitir que Cloud App Security envíe datos a través de Stunnel al servidor ICAP, abra el firewall de red perimetral a estas direcciones IP con un número de puerto de origen dinámico.
 
-1. **Direcciones de origen**: estas direcciones deben incluirse en la lista de admitidas como se detalla anteriormente para las aplicaciones de conector de la API de terceros
+1. **Direcciones de origen** : estas direcciones se deben permitir como se indicó anteriormente en el caso de las aplicaciones de terceros del conector de API
 2. **Puerto TCP de origen**: dinámico
 3. **Direcciones de destino**: una o dos direcciones IP del servidor Stunnel conectado al servidor ICAP externo
 4. **Puerto TCP de destino**: según se defina en la red
