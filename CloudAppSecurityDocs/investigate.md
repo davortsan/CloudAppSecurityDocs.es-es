@@ -1,5 +1,5 @@
 ---
-title: Investigue los riesgos de las aplicaciones en la nube & actividad sospechosa-Cloud App Security
+title: Investigación de riesgos de las aplicaciones en la nube y actividad sospechosa
 description: En este artículo se proporciona un esquema del proceso de investigación de alertas, problemas y actividades sospechosas mediante Cloud App Security.
 keywords: ''
 author: shsagir
@@ -14,14 +14,14 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 46a2493d86650a0040eb3a5664b99ed5fc9fe799
-ms.sourcegitcommit: b0ad9e8e6b5668849e1c292c43084480f229d981
-ms.translationtype: MT
+ms.openlocfilehash: 0d4062a046d121e1698b7bc9bf5c1f9409a8f8f2
+ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "90879449"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96034009"
 ---
-# <a name="investigate"></a>Investigación
+# <a name="investigate"></a>Investigar
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -33,31 +33,31 @@ Los siguientes paneles están disponibles para ayudarle a investigar las aplicac
 
 |Panel|Descripción|
 |---------------|-----------------|
-|Panel principal|Información general sobre el estado de la nube (usuarios, archivos, actividades) y las acciones necesarias (alertas, infracciones de actividad e infracciones de contenido).|
-|Panel de la aplicación: información general|Información general sobre el uso de aplicaciones por ubicación, gráficos de uso por número de usuarios.|
+|Panel principal|Información general sobre el estado en la nube (usuarios, archivos, actividades), así como las acciones necesarias (alertas, infracciones de actividad e infracciones de contenido).|
+|Panel de la aplicación: información general|Información general del uso de la aplicación por ubicación, gráficos de uso por número de usuarios.|
 |Panel de la aplicación: información|Información sobre los detalles de la aplicación, la seguridad y el cumplimiento.|
-|Panel de la aplicación: información  
-*(si es aplicable)*|Análisis de los datos almacenados en la aplicación, desglosados por tipo de archivo y nivel de uso compartido de archivos.|
+|Panel de la aplicación: conclusiones  
+*(cuando proceda)*|Análisis de los datos almacenados en la aplicación, desglosados por tipo de archivo y nivel de uso compartido de archivos.|
 |Panel de la aplicación: archivos  
-*(si es aplicable)*|Explorar en profundidad los archivos; capacidad de filtrar según el propietario, el nivel de uso compartido y mucho más. Realizar acciones de gobierno como la cuarentena.|
+*(cuando proceda)*|Profundice en los archivos; capacidad de filtrar según el propietario, el nivel de uso compartido y mucho más. Realice acciones de gobernanza como la cuarentena.|
 |Panel de la aplicación: cuentas|Información general de todas las cuentas o usuarios vinculados a la aplicación.|
 |Panel de la aplicación: aplicaciones de OAuth  
-*(si es aplicable)*|Profundice en las aplicaciones de OAuth actualmente implementadas, como G Suite, y definir directivas.|
-|Panel de la aplicación: registro de actividades|Explorar en profundidad toda la actividad de la aplicación; posibilidad de filtrar según los usuarios, la dirección IP y mucho más.|
-|Panel de la aplicación: alertas|Profundice en todas las alertas de la aplicación; capacidad de filtrar según el estado, la categoría, la gravedad, etc.|
+*(cuando proceda)*|Profundice en las aplicaciones de OAuth actualmente implementadas, como G Suite, y defina directivas.|
+|Panel de la aplicación: registro de actividad|Profundice en toda la actividad de la aplicación; capacidad de filtrar según los usuarios, la dirección IP y mucho más.|
+|Panel de la aplicación: alertas|Profundice en todas las alertas de la aplicación; capacidad de filtrar según el estado, la categoría, la gravedad y mucho más.|
 |Panel de la aplicación: cuentas con privilegios especiales  
 *(Solo Salesforce)*|Información general de los usuarios por tipo de usuario con privilegios.|
 |Panel del usuario|Información general completa del perfil de usuario en la nube, ubicaciones, actividades recientes, alertas relacionadas.|
 
-## <a name="tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp"></a>Etiquetar aplicaciones como autorizadas o no autorizadas
+## <a name="tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp"></a>Etiquetado de aplicaciones como autorizadas o no autorizadas
 
 Marcar aplicaciones como autorizadas o no autorizadas es un paso importante para comprender su entorno en la nube. Después de autorizar una aplicación, puede filtrar por las aplicaciones que no estén autorizadas e iniciar la migración a las aplicaciones autorizadas que sean del mismo tipo.
 
 - En la consola de Cloud App Security, vaya a Catálogo de aplicaciones o Aplicaciones detectadas.
 
-- En la lista de aplicaciones, en la fila que contenga la aplicación que quiera marcar como autorizada, elija los tres puntos al final de la fila ![Puntos para marcar como autorizada](media/sanction-three-dots.png "Etiquetar como puntos autorizados") y elija **Marcar como autorizada** .
+- En la lista de aplicaciones, en la fila que contenga la aplicación que quiera marcar como autorizada, elija los tres puntos al final de la fila ![Puntos para marcar como autorizada](media/sanction-three-dots.png "Etiquetado como puntos autorizados") y elija **Marcar como autorizada**.
 
-    ![Marcar como autorizada](media/mark-as-sanctioned.png "etiqueta como autorizada")
+    ![Marcar como autorizada](media/mark-as-sanctioned.png "etiquetado como autorizado")
 
 ## <a name="use-the-investigation-tools"></a>Usar las herramientas de investigación
 
@@ -75,7 +75,7 @@ Marcar aplicaciones como autorizadas o no autorizadas es un paso importante para
 
     - ¿Hay inicios de sesión erróneos procedentes de direcciones IP esperadas?
 
-2. Vaya a **Investigar** y luego a **Archivos** , y compruebe los siguientes elementos:
+2. Vaya a **Investigar** y luego a **Archivos**, y compruebe los siguientes elementos:
 
     - ¿Cuántos archivos se comparten públicamente para que nadie pueda tener acceso a ellos sin un vínculo?
 
@@ -85,7 +85,7 @@ Marcar aplicaciones como autorizadas o no autorizadas es un paso importante para
 
     - ¿Alguno de los archivos se comparte con la cuenta personal de alguien?
 
-3. Vaya a **Investigar** y luego a **Usuarios y cuentas** , y compruebe los siguientes elementos:
+3. Vaya a **Investigar** y luego a **Usuarios y cuentas**, y compruebe los siguientes elementos:
 
     - ¿Las cuentas han estado inactivas en un servicio determinado durante un largo periodo de tiempo? Quizás pueda revocar la licencia para ese usuario a ese servicio.
 
@@ -95,9 +95,9 @@ Marcar aplicaciones como autorizadas o no autorizadas es un paso importante para
 
     - ¿Quiere revocar el permiso de un usuario en una aplicación concreta o requerir a un usuario específico que use la autenticación multifactor?
 
-    - Puede profundizar en la cuenta de usuario si hace clic en los tres puntos al final de la fila de cuenta de usuario y selecciona la acción que realizar. Realice una acción como **Suspender usuario** o **Quitar las colaboraciones del usuario** . Si el usuario se ha importado desde Azure Active Directory, también puede hacer clic en **Configuración de la cuenta de Azure AD** para obtener acceso fácil a las características de administración de usuario avanzadas. Los ejemplos de características de administración incluyen la administración de grupos, MFA, detalles sobre inicios de sesión del usuario y la capacidad de bloquear el inicio de sesión.
+    - Puede profundizar en la cuenta de usuario si hace clic en los tres puntos al final de la fila de cuenta de usuario y selecciona la acción que realizar. Realice una acción como **Suspender usuario** o **Quitar las colaboraciones del usuario**. Si el usuario se ha importado desde Azure Active Directory, también puede hacer clic en **Configuración de la cuenta de Azure AD** para obtener acceso fácil a las características de administración de usuario avanzadas. Los ejemplos de características de administración incluyen la administración de grupos, MFA, detalles sobre inicios de sesión del usuario y la capacidad de bloquear el inicio de sesión.
 
-4. Vaya a **Investigar** , seguido de **Aplicaciones conectadas** y seleccione una aplicación. El panel de la aplicación se abre y le presenta información y datos. Puede usar las pestañas de la parte superior para comprobar:
+4. Vaya a **Investigar**, seguido de **Aplicaciones conectadas** y seleccione una aplicación. El panel de la aplicación se abre y le presenta información y datos. Puede usar las pestañas de la parte superior para comprobar:
 
     - ¿Qué tipo de dispositivos usan los usuarios para conectarse a la aplicación?
 
@@ -127,21 +127,21 @@ Marcar aplicaciones como autorizadas o no autorizadas es un paso importante para
 
     - Para soluciones alternativas, ¿quiere no autorizar algunas aplicaciones en su organización?
 
-    - ¿Hay aplicaciones en la nube que se usen pero que no cumplan la Directiva de su organización?
+    - ¿Hay aplicaciones en la nube que se usen pero no cumplan la directiva de su organización?
 
 ## <a name="sample-investigation"></a>Ejemplo de investigación
 
 Imaginemos que, en teoría, ninguna dirección IP de riesgo puede tener acceso a su entorno en la nube. Por ejemplo, supongamos que Tor. Pero crearemos una directiva para las IP de riesgo solo para asegurarnos de ello:
 
-1. En el portal, vaya a **Control** y elija **Plantilla** .
+1. En el portal, vaya a **Control** y elija **Plantilla**.
 
-2. Elija la **Directiva de actividad** para el **Tipo** .
+2. Elija la **Directiva de actividad** para el **Tipo**.
 
-3. Al final de la fila **Inicio de sesión desde una dirección IP de riesgo** , haga clic en el signo más ( **+** ) para crear una directiva.
+3. Al final de la fila **Inicio de sesión desde una dirección IP de riesgo**, haga clic en el signo más (**+**) para crear una directiva.
 
 4. Cambie el nombre de la directiva para que pueda identificarla.
 
-5. En **Actividades que coinciden con todas las opciones siguientes** , haga clic en **+** para agregar un filtro. Desplácese hasta **Etiqueta IP** y luego elija **Tor** .
+5. En **Actividades que coinciden con todas las opciones siguientes**, haga clic en **+** para agregar un filtro. Desplácese hasta **Etiqueta IP** y luego elija **Tor**.
 
     ![Ejemplo de directiva de IP de riesgo](media/example-policy-risky-ips.png "ejemplo de directiva de IP de riesgo")
 
