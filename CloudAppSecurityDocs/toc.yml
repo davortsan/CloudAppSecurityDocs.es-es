@@ -133,10 +133,8 @@
               href: discovery-docker-ubuntu.md
             - name: Docker en Linux en Azure
               href: discovery-docker-ubuntu-azure.md
-            - name: Configuración de FTP del recopilador de registros
-              href: log-collector-ftp.md
-            - name: Recopilador de registros detrás de un proxy
-              href: log-collector-proxy.md
+            - name: Administración avanzada del recopilador de registros
+              href: log-collector-advanced-management.md
             - name: Uso del analizador de registros personalizado
               href: custom-log-parser.md
         - name: Enriquecimiento de Cloud Discovery
