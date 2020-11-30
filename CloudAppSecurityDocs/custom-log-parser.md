@@ -1,25 +1,14 @@
 ---
 title: Cloud App Security analizador de registros personalizado para registros que no se admiten
 description: En este artículo se proporciona información sobre el empleo del analizador de registros personalizado para cargar registros de dispositivos que no son compatibles con Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/10/2018
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 0c18810e5fc6c4aa94fecd2db5e6b8a03d82ae20
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: a70e7930dcbf1d5932c02beeb03d006f6229c705
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880754"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96312034"
 ---
 # <a name="use-a-custom-log-parser"></a>Uso del analizador de registros personalizado
 
@@ -54,7 +43,7 @@ Para configurar un analizador personalizado:
 
     ![Rellene los campos de analizador de registros personalizados](media/custom-log-parser.png)
 
-7. Haga clic en **Save**(Guardar). El formato de registro personalizado que ha configurado se guardará como analizador personalizado de forma predeterminada. Puede editarlo en cualquier momento si hace clic en **Editar**.
+7. Haga clic en **Guardar**. El formato de registro personalizado que ha configurado se guardará como analizador personalizado de forma predeterminada. Puede editarlo en cualquier momento si hace clic en **Editar**.
 
 8. En **Elija los registros de tráfico**, seleccione el archivo de registro que ha modificado y cárguelo. Puede cargar hasta 20 archivos a la vez. También se admiten archivos comprimidos y zip.
 

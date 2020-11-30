@@ -1,18 +1,14 @@
 ---
 title: Cómo Cloud App Security ayuda a proteger su entorno de Azure
 description: En este artículo se proporciona información sobre las ventajas de conectar la aplicación de Azure a Cloud App Security mediante el conector de API para la visibilidad y el control del uso.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: article
 ms.date: 09/15/2020
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 44e15814bf3a7017d44eb7fb3465245b8ad8e43b
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.topic: article
+ms.openlocfilehash: 2eeaca28f55bd836774e0388923ddbdb1a40eadd
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877539"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96310897"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-azure-environment"></a>Cómo Cloud App Security ayuda a proteger su entorno de Azure
 

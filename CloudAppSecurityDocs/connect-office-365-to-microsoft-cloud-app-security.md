@@ -1,25 +1,14 @@
 ---
 title: Conectar Office 365 con Cloud App Security
 description: En este artículo se proporciona información sobre cómo conectar Office 365 con Cloud App Security mediante el conector de API para la visibilidad y el control del uso.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 08/17/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: d50d185ce75b5ca301dd55681c11fbca8039491e
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 8edb45ffab805edc6c8bc5e3c4b9f4828a28886f
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881330"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96312750"
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Conectar Office 365 con Microsoft Cloud App Security
 
@@ -76,7 +65,7 @@ Cloud App Security admite las siguientes aplicaciones de Office 365:
     > [!NOTE]
     >
     > - Para lograr una protección óptima, se recomienda seleccionar todos los componentes de Office 365.
-    > - El componente **Office 365 files** requiere el componente de **actividades de Office 365** y Cloud App Security la supervisión de archivos (**Settings**  >  **los archivos**de configuración  >  **habilitan la supervisión de archivos**).
+    > - El componente **Office 365 files** requiere el componente de **actividades de Office 365** y Cloud App Security la supervisión de archivos (**Settings**  >  **los archivos** de configuración  >  **habilitan la supervisión de archivos**).
 
     ![conectar componentes de O365](media/connect-o365-components.png)
 

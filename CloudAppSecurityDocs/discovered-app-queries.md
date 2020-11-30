@@ -1,25 +1,14 @@
 ---
 title: Filtros y consultas de aplicaciones detectadas de Cloud App Security
 description: En este artículo se proporciona una lista de filtros y consultas de aplicaciones detectadas de Cloud App Security y se explica cómo trabajar con ellos.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 07/07/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: ef61d90f23eb9e15b8b84f926b0b4424f4b3b36b
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 3503790663866ee737fe70937517ae2663cabf21
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881676"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96311747"
 ---
 # <a name="discovered-app-filters-and-queries"></a>Consultas y filtros de aplicaciones detectadas
 
@@ -49,7 +38,7 @@ Puede crear etiquetas de aplicación personalizadas. Estas etiquetas pueden usar
 
 Para crear una etiqueta de aplicación personalizada:
 
-1. En el engranaje de **configuración** , seleccione **configuración de Cloud Discovery**y, a continuación, la pestaña Etiquetas de la **aplicación** . Haga clic en el icono de signo más. ![icono de signo más](media/plus-icon.png)
+1. En el engranaje de **configuración** , seleccione **configuración de Cloud Discovery** y, a continuación, la pestaña Etiquetas de la **aplicación** . Haga clic en el icono de signo más. ![icono de signo más](media/plus-icon.png)
 
    ![Crear una etiqueta de aplicación personalizada](media/create-app-tag.png)
 
@@ -58,7 +47,7 @@ Para crear una etiqueta de aplicación personalizada:
 3. Para aplicar una etiqueta de aplicación, en la pestaña **Aplicaciones detectadas**, haga clic en los tres puntos situados a la derecha del nombre de aplicación. Seleccione la etiqueta de aplicación que se aplicará.
 
 > [!NOTE]
->También puede crear una etiqueta de aplicación directamente en la tabla **Aplicaciones detectadas**. Para ello, haga clic en **Create app tag** (Crear etiqueta de aplicación) después de seleccionar los tres puntos situados a la derecha de cualquier aplicación seleccionada. Cuando se crea la etiqueta desde la aplicación detectada, se puede aplicar a la aplicación. También puede acceder a la pantalla **Etiquetas de aplicación**si hace clic en el vínculo **Administrar etiquetas** de la esquina.
+>También puede crear una etiqueta de aplicación directamente en la tabla **Aplicaciones detectadas**. Para ello, haga clic en **Create app tag** (Crear etiqueta de aplicación) después de seleccionar los tres puntos situados a la derecha de cualquier aplicación seleccionada. Cuando se crea la etiqueta desde la aplicación detectada, se puede aplicar a la aplicación. También puede acceder a la pantalla **Etiquetas de aplicación** si hace clic en el vínculo **Administrar etiquetas** de la esquina.
 > ![Crear una etiqueta de aplicación desde la aplicación](media/create-app-tag-from-app.png)
 
 ## <a name="discovered-app-queries"></a>Consultas de aplicaciones detectadas

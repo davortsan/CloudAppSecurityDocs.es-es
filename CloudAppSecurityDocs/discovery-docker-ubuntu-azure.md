@@ -1,25 +1,14 @@
 ---
 title: Configuración de la carga de registros automática con Docker en Azure
 description: En este artículo se describe el proceso de configuración de la carga de registros automática para informes continuos en Cloud App Security mediante Docker en Linux en Azure.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 06/02/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: b6c05885ea07834e0dd474bda08904dd364793a6
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 0e34ebfc6d4afcb8ecf0967ddecc7b8dbd0b885f
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033402"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96311900"
 ---
 # <a name="docker-on-linux-in-azure"></a>Docker en Linux en Azure
 
@@ -27,7 +16,7 @@ ms.locfileid: "96033402"
 
 Puede configurar la carga de registros automática para informes continuos en Cloud App Security mediante Docker en Ubuntu, Red Hat Enterprise Linux (RHEL) o en Azure.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 * Sistema operativo:
     * Ubuntu 14,04, 16,04 y 18,04
@@ -122,7 +111,7 @@ El compilador de registros puede administrar correctamente la capacidad de regis
     1. Vaya a **reglas de seguridad de entrada** y haga clic en **Agregar**, ![ agregar reglas de seguridad de entrada.](media/ubuntu-azure.png)
     1. Agregue las siguientes reglas (en modo **Avanzado**):
 
-    |Nombre|Intervalos de puertos de destino|Protocolo|Source|Destination|
+    |Name|Intervalos de puertos de destino|Protocolo|Source|Destination|
     |----|----|----|----|----|
     |caslogcollector_ftp|21|TCP|<Subred de la dirección IP del dispositivo>|Any|
     |caslogcollector_ftp_passive|20000-20099|TCP|<Subred de la dirección IP del dispositivo>|Any|

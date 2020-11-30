@@ -1,20 +1,14 @@
 ---
 title: Directivas de Cloud Discovery
 description: En este artículo se describen los pasos para configurar muchas directivas de Cloud Discovery en Cloud App Security.
-author: shsagir
-ms.author: shsagir
 ms.date: 06/13/2019
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 6b4c5a06de1666c54d2542812c767b50e33fa066
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 5d96558ff1da3c42cd4acff559ca0ec6d7cd65a7
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96034184"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96310965"
 ---
 # <a name="cloud-discovery-policies"></a>Directivas de Cloud Discovery
 
@@ -28,7 +22,7 @@ Cloud App Security permite detectar y analizar las aplicaciones en la nube que s
 
 Detecte las nuevas aplicaciones que se usan con mucha capacidad, en cuanto al número de usuarios o la cantidad de tráfico de su organización.
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 Configure la carga de registros automática para informes de Cloud Discovery continuos, como se describe en [configurar la carga de registros automática para informes continuos](configure-automatic-log-upload-for-continuous-reports.md).
 
@@ -49,7 +43,7 @@ Configure la carga de registros automática para informes de Cloud Discovery con
 
 Detecte una posible exposición de su organización en aplicaciones en la nube que no cumplan los estándares de seguridad.
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 Configure la carga de registros automática para informes de Cloud Discovery continuos, como se describe en [configurar la carga de registros automática para informes continuos](configure-automatic-log-upload-for-continuous-reports.md).
 
@@ -75,7 +69,7 @@ Configure la carga de registros automática para informes de Cloud Discovery con
 
 Puede detectar cuándo los empleados siguen usando aplicaciones no autorizadas como reemplazo de aplicaciones aprobadas para el negocio.
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 - Configure la carga de registros automática para informes de Cloud Discovery continuos, como se describe en [configurar la carga de registros automática para informes continuos](configure-automatic-log-upload-for-continuous-reports.md).
 
@@ -95,7 +89,7 @@ Puede detectar cuándo los empleados siguen usando aplicaciones no autorizadas c
 
 Detección de patrones de uso de tráfico anómalos (cargas y descargas) en las aplicaciones en la nube, que se originan a partir de usuarios o direcciones IP dentro de la red de su organización.
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 Configure la carga de registros automática para informes de Cloud Discovery continuos, como se describe en [configurar la carga de registros automática para informes continuos](configure-automatic-log-upload-for-continuous-reports.md).
 
@@ -118,7 +112,7 @@ Configure la carga de registros automática para informes de Cloud Discovery con
 
 Detección de posibles exfiltración de datos por parte de un usuario en una aplicación de almacenamiento en la nube no autorizada.
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 Configure la carga de registros automática para informes de Cloud Discovery continuos, como se describe en [configurar la carga de registros automática para informes continuos](configure-automatic-log-upload-for-continuous-reports.md).
 
@@ -136,7 +130,7 @@ Configure la carga de registros automática para informes de Cloud Discovery con
 
 Obtenga visibilidad y control sobre las [aplicaciones de OAuth](investigate-risky-oauth.md) que se instalan dentro de aplicaciones como G Suite, Office 365 y Salesforce. Las aplicaciones de OAuth que solicitan permisos altos y tienen poco uso de la comunidad se pueden considerar arriesgadas.
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 Debe tener la aplicación G Suite, Office 365 o Salesforce conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 

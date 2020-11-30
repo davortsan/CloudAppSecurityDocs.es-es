@@ -1,25 +1,14 @@
 ---
 title: Conexión de Salesforce con Cloud App Security
 description: En este artículo se proporciona información sobre cómo conectar Salesforce con Cloud App Security mediante el conector de API para la visibilidad y el control del uso.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/06/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 9809f3f2d95497b1813d44f82261cf0d2fb11213
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: c2a1514fcb5fc02823f8d365a21fd1f154ab0e86
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880858"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96312512"
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Conectar Salesforce con Microsoft Cloud App Security
 
@@ -35,7 +24,7 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
 
     La cuenta de Salesforce debe ser una de las siguientes ediciones que incluyen compatibilidad con la API de REST:
 
-    **Performance**, **Enterprise**, **Unlimited**o **Developer**.
+    **Performance**, **Enterprise**, **Unlimited** o **Developer**.
 
     La edición **Professional** no tiene la API REST de forma predeterminada, pero se puede agregar a petición.
 
@@ -56,7 +45,7 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
       * **API Enabled** (API habilitada)
       * **Ver todos los datos**
       * **Manage Salesforce CRM Content** (Administrar contenido CRM de Salesforce)
-      * **Administrar usuarios**
+      * **Administración de usuarios**
       * **[Consultar todos los archivos](https://go.microsoft.com/fwlink/?linkid=2106480)**
 
       Si estas casillas no están activadas, es posible que deba ponerse en contacto con Salesforce para agregarlas a su cuenta.
@@ -79,7 +68,7 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
 
         ![usuario de contenido CRM de Salesforce](media/salesforce-crm-content-user.png "usuario de contenido CRM de Salesforce")
 
-    1. Haga clic en **Save**(Guardar).
+    1. Haga clic en **Guardar**.
 
 1. En la consola de Cloud App Security, haga clic en **Investigar** y, después, en **Aplicaciones conectadas**.
 

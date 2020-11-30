@@ -1,25 +1,14 @@
 ---
 title: Conectar equipos WebEx a Cloud App Security
 description: En este artículo se proporciona información sobre cómo conectar la aplicación de equipos WebEx a Cloud App Security mediante el conector de API para la visibilidad y el control del uso.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 04/16/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 6b995b6ec4e7ba4cf04407df9f4badb08b303931
-ms.sourcegitcommit: 9391853beca4bd62e0f05bd457faac97e7dec646
+ms.openlocfilehash: 32e440f86ad78537066336f339eb41fb6bb5461f
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93278519"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96312481"
 ---
 # <a name="connect-cisco-webex-teams-to-microsoft-cloud-app-security"></a>Conexión de equipos de Cisco WebEx a Microsoft Cloud App Security
 
@@ -27,7 +16,7 @@ ms.locfileid: "93278519"
 
 En este artículo se proporcionan instrucciones para conectar Microsoft Cloud App Security a su cuenta de Cisco WebEx existente mediante las API del conector. Esta conexión le proporciona visibilidad y control sobre los usuarios, las actividades y los archivos de WebEx. Para obtener información sobre cómo Cloud App Security protege los equipos de Cisco WebEx, consulte [protección de equipos](protect-webex.md)de Cisco WebEx.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Requisitos previos
 
 - Se recomienda crear una cuenta de servicio dedicada para la conexión. Esto le permite ver las acciones de gobierno realizadas en WebEx como realizadas desde esta cuenta, como eliminar mensajes enviados en WebEx. De lo contrario, el nombre del administrador que se conectó Cloud App Security a Webex aparecerá como el usuario que realizó las acciones.
 - Debe tener permisos de administrador total **y** de administrador de cumplimiento en WebEx.

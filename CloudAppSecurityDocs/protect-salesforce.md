@@ -1,18 +1,14 @@
 ---
 title: Cómo Cloud App Security ayuda a proteger su entorno de Salesforce
 description: En este artículo se proporciona información sobre las ventajas de conectar su aplicación de Salesforce a Cloud App Security mediante el conector de API para la visibilidad y el control del uso.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: article
 ms.date: 12/04/2019
-ms.collection: M365-security-compliance
-ms.openlocfilehash: ca62a0deb82c5f81f0bcb200f425ab325d9720ab
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.topic: article
+ms.openlocfilehash: 477f7372bc65a704d6a68f6fd2c9e43de2a27da8
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880452"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96310829"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-salesforce-environment"></a>Cómo Cloud App Security ayuda a proteger su entorno de Salesforce
 

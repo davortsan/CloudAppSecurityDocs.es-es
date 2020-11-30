@@ -1,25 +1,14 @@
 ---
 title: Conexión de WorkDay a Cloud App Security (versión preliminar)
 description: En este artículo se proporciona información sobre cómo conectar la aplicación WorkDay a Cloud App Security mediante el conector de API para la visibilidad y el control del uso.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 11/10/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: c849aace75d1d4268a44e02feaecdcd032a53888
-ms.sourcegitcommit: 98f1b892294beb74157cb3452aa5d489e78bbef4
+ms.openlocfilehash: 5b9a1e75ab20999d36f18500dfb6037cdf1aeabd
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94424544"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96312580"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security"></a>Conexión de WorkDay a Microsoft Cloud App Security
 
@@ -58,11 +47,11 @@ Para obtener más información sobre la configuración de usuarios, grupos de se
 
 1. Inicie sesión en WorkDay con una cuenta que sea miembro del grupo de seguridad mencionado en los requisitos previos.
 
-1. Busque "Editar configuración de inquilino – sistema" y, en **registro de actividad de usuario** , seleccione **Habilitar registro de actividad de usuario**.
+1. Busque "Editar configuración de inquilino – sistema" y, en **registro de actividad de usuario**, seleccione **Habilitar registro de actividad de usuario**.
 
     ![Captura de pantalla para permitir el registro de actividad de usuario](media/connect-workday-enable-logging.png)
 
-1. Busque "Editar configuración de inquilino – seguridad" y, en **configuración de oauth 2,0** , seleccione **clientes de OAuth 2,0 habilitados**.
+1. Busque "Editar configuración de inquilino – seguridad" y, en **configuración de oauth 2,0**, seleccione **clientes de OAuth 2,0 habilitados**.
 
 1. Busque "registrar el cliente de API" y seleccione **registrar API Client – tarea**.
 
@@ -73,8 +62,8 @@ Para obtener más información sobre la configuración de usuarios, grupos de se
     | Nombre de cliente | Microsoft Cloud App Security |
     | Tipo de concesión de cliente | Concesión de código de autorización |
     | Tipo de token de acceso | Portador |
-    | URI de redireccionamiento | `https://portal.cloudappsecurity.com/api/oauth/connect`<br /><br />**Nota** : para clientes de la administración pública de Estados Unidos GCC, escriba el siguiente valor: `https://portal.cloudappsecurity.us/api/oauth/connect` |
-    | Tokens de actualización que no son de expiración | Sí |
+    | URI de redireccionamiento | `https://portal.cloudappsecurity.com/api/oauth/connect`<br /><br />**Nota**: para clientes de la administración pública de Estados Unidos GCC, escriba el siguiente valor: `https://portal.cloudappsecurity.us/api/oauth/connect` |
+    | Tokens de actualización que no son de expiración | Yes |
     | Ámbitos de OAuth2 | **Personal** y **sistema** |
     | Ámbito (áreas funcionales) | **Personal** y **sistema** |
 

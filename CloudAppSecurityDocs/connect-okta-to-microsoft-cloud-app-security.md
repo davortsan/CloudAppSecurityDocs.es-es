@@ -1,25 +1,14 @@
 ---
 title: Conexión de Okta con Cloud App Security
 description: En este artículo se proporciona información sobre cómo conectar Okta con Cloud App Security mediante el conector de API para la visibilidad y el control del uso.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 9/1/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 6d5765c89498df4f7140ad9adbbab949b8970cbb
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 511988d7383ad58d7f572d6c0c3ff1319ed4c92b
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881309"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96312614"
 ---
 # <a name="connect-okta-to-microsoft-cloud-app-security"></a>Conectar Okta con Microsoft Cloud App Security
 
@@ -41,7 +30,7 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
 
          ![API de Okta](media/okta-api.png "API de Okta")
 
-    - Haga clic en **Crear token**.
+    - Haga clic en **crear token**.
 
          ![Okta crear token](media/okta-createtoken.jpg "Okta crear token")
 

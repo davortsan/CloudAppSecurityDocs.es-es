@@ -1,21 +1,14 @@
 ---
 title: Implementación del control de aplicaciones de acceso condicional para aplicaciones de Azure AD
 description: En este artículo se ofrece información sobre cómo implementar las características del proxy inverso de control de aplicaciones de acceso condicional de Microsoft Cloud App Security para aplicaciones de Azure AD.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/31/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: 0df2a20c1c8c8bb1aef440cf3eb8bf16634e6ce0
-ms.sourcegitcommit: 812cb1e24ec18de2c4818970f3042ac06acea14c
+ms.openlocfilehash: 66063b54ce774612431d74aef2b1b045b7bf9d9f
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92212024"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96310948"
 ---
 # <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Implementación del Control de aplicaciones de acceso condicional para aplicaciones destacadas
 
@@ -23,7 +16,7 @@ ms.locfileid: "92212024"
 
 Los controles de sesión de Microsoft Cloud App Security funcionan con las aplicaciones destacadas. Para obtener una lista de las aplicaciones que se incluyen en Cloud App Security trabajar de forma integrada, consulte [proteger aplicaciones con Cloud App Security control de aplicaciones de acceso condicional](proxy-intro-aad.md#featured-apps).
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 - Su organización debe tener las licencias siguientes para usar Control de aplicaciones de acceso condicional:
 
@@ -56,7 +49,7 @@ Siga estos pasos para configurar las aplicaciones destacadas que se van a contro
 
 Use los pasos siguientes para crear una Azure AD Directiva de acceso condicional que enruta las sesiones de la aplicación a Cloud App Security. Para otras soluciones IdP, consulte [configuración de la integración con otras soluciones IDP](#configure-integration-with-other-idp-solutions).
 
-1. En Azure ad, vaya a **Security**  >  **acceso condicional**de seguridad.
+1. En Azure ad, vaya a **Security**  >  **acceso condicional** de seguridad.
 
 1. En el panel **acceso condicional** , en la barra de herramientas de la parte superior, haga clic en **nueva Directiva**.
 
@@ -128,7 +121,7 @@ Use los pasos siguientes para enrutar las sesiones de la aplicación desde otras
     1. Agregue los atributos y valores que anotó anteriormente a las propiedades de la aplicación.
         > [!NOTE]
         >
-        > - Algunos proveedores pueden hacer referencia a ellos como atributos o *notificaciones*de *usuario* .
+        > - Algunos proveedores pueden hacer referencia a ellos como atributos o *notificaciones* de *usuario* .
         > - Al crear una nueva aplicación SAML, el proveedor de identidades Okta limita los atributos a 1024 caracteres. Para mitigar esta limitación, cree primero la aplicación sin los atributos pertinentes. Después de crear la aplicación, edítela y, a continuación, agregue los atributos pertinentes.
     1. Compruebe que el identificador de nombre tiene el formato de dirección de correo electrónico.
     1. Guarde la configuración.
@@ -161,10 +154,10 @@ Las instrucciones anteriores le han ayudado a crear una directiva integrada de C
 
 1. En el portal de Cloud App Security, haga clic en el icono configuración engranaje ![configuración](media/settings-icon.png "icono de configuración")y seleccione **control de aplicaciones de acceso condicional**.
 
-1. En la tabla Control de aplicaciones de acceso condicional Apps, fíjese en la columna **controles disponibles** y compruebe que el **control de acceso** o el **acceso condicional Azure ad**y el **control de sesión** aparecen para las aplicaciones.
+1. En la tabla Control de aplicaciones de acceso condicional Apps, fíjese en la columna **controles disponibles** y compruebe que el **control de acceso** o el **acceso condicional Azure ad** y el **control de sesión** aparecen para las aplicaciones.
 
     > [!NOTE]
-    > Si el control de sesión no aparece para una aplicación, aún no está disponible para esa aplicación específica. Puede agregarla inmediatamente como una [aplicación personalizada](proxy-deployment-any-app.md)o puede abrir una solicitud para agregarla como una aplicación destacada haciendo clic en **solicitar control**de la sesión.
+    > Si el control de sesión no aparece para una aplicación, aún no está disponible para esa aplicación específica. Puede agregarla inmediatamente como una [aplicación personalizada](proxy-deployment-any-app.md)o puede abrir una solicitud para agregarla como una aplicación destacada haciendo clic en **solicitar control** de la sesión.
     >
     >![Solicitud del Control de aplicaciones de acceso condicional](media/caac-request.png)
 

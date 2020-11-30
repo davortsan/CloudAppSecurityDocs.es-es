@@ -1,25 +1,14 @@
 ---
 title: Supervisión de alertas generadas en Cloud App Security
 description: En este artículo se proporcionan una lista y una descripción de todas las alertas.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/10/2018
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: e5effef1c69cf3a8ce44218a8838bbb4d0ef1614
-ms.sourcegitcommit: b173d24dba412e81801c498cc0c3623ad9e31601
+ms.openlocfilehash: f6346180c3a45fb1c7ae2e885d90732f4a269be3
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2020
-ms.locfileid: "91941601"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96311203"
 ---
 # <a name="monitor-alerts-in-cloud-app-security"></a>Supervisión de alertas en Cloud App Security
 
@@ -81,7 +70,7 @@ En el menú emergente que aparece, proporcione un motivo para cerrar la alerta y
 
 Se mostrarán los siguientes tipos de alertas.
 
-|Nombre de la alerta|Id. de alerta|Descripción|
+|Nombre de la alerta|Id. de alerta|Description|
 |----|----|----|
 |Nueva ubicación|ALERT_GEOLOCATION_NEW_COUNTRY|Se ha detectado una nueva ubicación desde que comenzó el examen (hasta 6 meses). Esta alerta solo se muestra una vez para cada país o región de toda la organización. |
 |Nuevo usuario administrador|ALERT_ADMIN_USER|Se ha detectado un nuevo administrador de una aplicación específica. Puede tratarse de una persona que es un administrador de una aplicación y ahora es un administrador de otra aplicación. Esta alerta está relacionada con el tipo de administrador específico, por lo que se mostrará cada vez que cambie el tipo de administrador. Si un usuario había perdido los privilegios de administrador y los ha recuperado, se mostrará esta alerta.|
@@ -93,7 +82,7 @@ Se mostrarán los siguientes tipos de alertas.
 
 Se mostrarán los siguientes tipos de alertas.
 
-|Nombre de la alerta|Id. de alerta|Descripción|
+|Nombre de la alerta|Id. de alerta|Description|
 |----|----|----|
 |Alerta de actividad sospechosa|ALERT_SUSPICIOUS_ACTIVITY|Las actividades sospechosas se puntúan según lo sospechosa que sea la actividad anómala (¿hay una cuenta inactiva implicada?, ¿Se trata de una nueva ubicación?) Estos criterios se calculan juntos para proporcionar una puntuación de riesgo en función de los siguientes factores de riesgo: <br />El usuario es un administrador <br />Usuario estrictamente remoto<br />Proxy anónimo<br /> Todos los inicios de sesión son erróneos<br />Numerosos inicios de sesión fallidos<br />Nuevo (administrador)<br />IP/ISP/país/agente de usuario para usuario/inquilino<br /> IP/ISP/país/agente de usuario usado solo por el usuario (administrador)<br />Primera actividad de usuario (administrador) tras un tiempo<br />Primera vez que se realiza esta actividad administrativa tras un tiempo<br />Esta actividad administrativa no es común o no se había realizado nunca<br />Esta dirección IP solo tuvo inicios de sesión erróneos en el pasado<br />Viaje imposible|
 |Alerta de uso sospechoso de la nube|ALERT_DISCOVERY_ANOMALY_DETECTION|La detección de anomalías de Cloud Discovery comprueba el patrón de comportamiento normal y busca los usuarios o las aplicaciones que se usan de manera inusual. |

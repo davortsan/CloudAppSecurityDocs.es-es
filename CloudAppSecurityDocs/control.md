@@ -1,25 +1,14 @@
 ---
 title: Cómo usar acciones de gobernanza en Cloud App Security
 description: En este artículo se proporciona información sobre las acciones de gobernanza que se pueden realizar en Cloud App Security para controlar el uso de aplicaciones en la nube de la organización.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/10/2018
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: f2825f1a423f6739e397a497684b930aad7cf3bd
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: d3326bcaca154084b113745359abe382ca47970d
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880831"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96312240"
 ---
 # <a name="control"></a>Control
 

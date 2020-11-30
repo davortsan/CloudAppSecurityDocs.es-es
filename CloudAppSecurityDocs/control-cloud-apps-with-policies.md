@@ -1,25 +1,14 @@
 ---
 title: Control del uso de aplicaciones en la nube mediante la creación de directivas
 description: En este artículo se proporciona información sobre cómo se usan las directivas y cómo se configuran para controlar el uso de las aplicaciones en la nube.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 09/26/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 93b4acdbf27c39b0918fe6765ec33427e7050080
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 695737038f0c45e366581c0262550b4c769039a5
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033691"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96312308"
 ---
 # <a name="control-cloud-apps-with-policies"></a>Control de aplicaciones en la nube con directivas
 
@@ -38,7 +27,7 @@ Pueden crearse los siguientes tipos de directivas:
 |Icono de tipo de directiva|Tipo de directiva|Uso|
 |-----|-----------------|---------|
 |![Icono de directiva de acceso](media/proxy-policy.png)|Directiva de acceso|Las directivas de acceso proporcionan funcionalidades de supervisión y control en tiempo real de los inicios de sesión de usuario en las aplicaciones en la nube.|
-|![icono de directiva de actividad](media/activity_policy.png)|Directiva de actividades|Las directivas de actividad permiten aplicar toda una variedad de procesos automatizados usando las API del proveedor de aplicaciones. Estas directivas permiten supervisar actividades concretas realizadas por distintos usuarios o seguir niveles inesperadamente altos de un determinado tipo de actividad.|
+|![icono de directiva de actividad](media/activity_policy.png)|Directiva de actividades|Las directivas de actividad permiten aplicar una amplia gama de procesos automatizados mediante las API del proveedor de la aplicación. Estas directivas permiten supervisar actividades concretas realizadas por distintos usuarios o seguir niveles inesperadamente altos de un determinado tipo de actividad.|
 |![icono de directiva de detección de anomalías](media/anomaly_detection_policy.png)|Directiva de detección de anomalías|Las directivas de detección de anomalías permiten buscar actividades inusuales en la nube. La detección se basa en los factores de riesgo que se configuran para avisarle cuando ocurre algo que es diferente de la línea base de la organización o de la actividad normal del usuario.|
 |![icono de directivas de Cloud Discovery](media/discovery_policy.png)|Directiva de detección de aplicaciones|Las directivas de detección de aplicaciones permiten establecer alertas que notifican cuando se detectan nuevas aplicaciones en la organización.|
 |![icono de directiva de detección de anomalías](media/anomaly_detection_policy.png)|Directiva de detección de anomalías de Cloud Discovery|Las directivas de detección de anomalías de Cloud Discovery examinan los registros que se usan para detectar aplicaciones en la nube y buscan apariciones inusuales. Por ejemplo, cuando un usuario que nunca ha usado Dropbox de repente carga 600 GB o cuando hay muchas más transacciones de lo habitual en una aplicación determinada.|
@@ -93,7 +82,7 @@ Siga este proceso para controlar el riesgo con directivas:
 
 ### <a name="create-a-policy"></a>Crear una directiva
 
-Puede usar plantillas de directiva de Cloud App Security como base para todas las directivas o crear directivas a partir de una consulta.
+Puede usar las plantillas de directiva de Cloud App Security como base para todas las directivas o crear directivas a partir de una consulta.
 
 Las plantillas de directiva le ayudan a establecer los filtros correctos y las configuraciones necesarias para detectar eventos específicos de interés en el entorno. Las plantillas incluyen directivas de todos los tipos y se pueden aplicar a diversos servicios.
 
@@ -107,7 +96,7 @@ Para crear una directiva a partir de una **plantilla de directiva**, siga los pa
 
 1. Modifique la plantilla según sea necesario para la directiva personalizada. Cada propiedad y campo de esta nueva directiva basada en plantilla se puede modificar según las propias necesidades.
    > [!NOTE]
-   > Al usar filtros de directiva, **Contiene** solo buscará palabras completas separadas por comas, puntos, espacios o caracteres de subrayado. Por ejemplo, si busca **malware** o **virus**, encontrará virus_malware_file.exe, pero no encontrará malwarevirusfile.exe. Si busca *malware.exe*, encontrará TODOS los archivos que contengan malware o exe en el nombre de archivo, mientras que si busca **"malware.exe"** (con comillas) solo encontrará los archivos que contengan exactamente "malware.exe".  
+   > Al usar filtros de directiva, **Contiene** solo buscará palabras completas separadas por comas, puntos, espacios o caracteres de subrayado. Por ejemplo, si busca **malware** o **virus**, encontrará virus_malware_file.exe, pero no encontrará malwarevirusfile.exe. Si busca *malware.exe*, encontrará todos los archivos con malware o exe en el nombre de archivo, mientras que si busca **"malware.exe"** (con comillas) solo encontrará los archivos que contengan exactamente "malware.exe".  
 **Es igual a** solo buscará la cadena completa. Por ejemplo, si busca *malware.exe*, encontrará malware.exe pero no malware.exe.txt.
 
 1. Después de crear la nueva directiva basada en plantilla, aparece un vínculo a la nueva directiva en la columna **Directivas vinculadas** de la tabla de plantillas de directivas situada junto a la plantilla a partir de la que se ha creado la directiva.
@@ -115,7 +104,7 @@ Para crear una directiva a partir de una **plantilla de directiva**, siga los pa
 
 También puede **crear una directiva durante la investigación**. Si está investigando el **registro de actividad**, los **archivos** o las **cuentas** y los explora en profundidad en busca de algo concreto, puede crear una nueva directiva basada en los resultados de la investigación en cualquier momento.
 
-Por ejemplo, si está consultando el **registro de actividad** y observa una actividad de administrador que no proviene de la dirección IP de su oficina.
+Por ejemplo, si está examinando el **registro de actividades** y ve una actividad de administrador desde fuera de las direcciones IP de su oficina.
 
 Para crear una directiva basada en los resultados de la investigación, siga estos pasos:
 
