@@ -1,27 +1,20 @@
 ---
 title: Creación de directivas para controlar actividades en Cloud App Security
 description: En este artículo se proporcionan instrucciones para crear directivas de actividad y trabajar con ellas.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: how-to
 ms.date: 03/01/2020
-ms.collection: M365-security-compliance
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: fe73288981009f8fe1f94126d39522d2730d0a6d
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.topic: how-to
+ms.openlocfilehash: 26f7b171f0a2addad3c480914c8c7845e452f9ac
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90878420"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315733"
 ---
 # <a name="activity-policies"></a>Directivas de actividad
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Las directivas de actividad permiten aplicar toda una variedad de procesos automatizados usando las API del proveedor de aplicaciones. Estas directivas permiten supervisar actividades concretas realizadas por distintos usuarios o seguir niveles inesperadamente altos de un determinado tipo de actividad.
+Las directivas de actividad permiten aplicar una amplia gama de procesos automatizados mediante las API del proveedor de la aplicación. Estas directivas permiten supervisar actividades concretas realizadas por distintos usuarios o seguir niveles inesperadamente altos de un determinado tipo de actividad.
 
 Una vez que se ha establecido una directiva de detección de actividad, empieza a generar alertas, pero únicamente para las actividades que se producen después de haber creado la directiva.
 

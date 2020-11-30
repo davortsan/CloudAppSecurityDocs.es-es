@@ -1,25 +1,14 @@
 ---
 title: Solución de problemas de integración de SIEM
 description: En este artículo se proporciona una lista de posibles problemas al conectar su SIEM con Cloud App Security, así como soluciones para cada uno de ellos.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 06/29/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: ae2f83f04557342122b733600daba11c3fbe7d58
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: f2604ca6a74c70eca40cd2dbbe947e2dcafd7a14
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96034082"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315861"
 ---
 # <a name="troubleshooting-the-siem-agent"></a>Solución de problemas del agente SIEM
 
@@ -81,7 +70,7 @@ Asegúrese de que el estado del agente SIEM en el portal de Microsoft Cloud App 
 
 Si ve alguno de los errores siguientes en el símbolo del sistema mientras se ejecuta al agente, siga estos pasos para corregir el problema:
 
-|Error|Descripción|Resolución|
+|Error|Descripción|Solución|
 |----|----|----|
 |Error general durante el arranque|Error inesperado durante el arranque del agente.|Póngase en contacto con el servicio de soporte técnico.|
 |Demasiados errores críticos|Se han producido demasiados errores críticos al conectar la consola. Apagando el equipo.|Póngase en contacto con el servicio de soporte técnico.|
@@ -90,7 +79,7 @@ Si ve alguno de los errores siguientes en el símbolo del sistema mientras se ej
 
 Después de crear el agente, consulte la página del agente SIEM en el portal de Cloud App Security. Si ve alguna de las **Notificaciones del agente** siguientes, siga estos pasos para corregir el problema:
 
-|Error|Descripción|Resolución|
+|Error|Descripción|Solución|
 |----|----|----|
 |**Error interno.**|Se ha producido un problema desconocido con el agente SIEM.|Póngase en contacto con el servicio de soporte técnico.|
 |**Error en el envío al servidor de datos**|Este error puede aparecer si está trabajando con un servidor de Syslog sobre TCP. El agente SIEM no puede conectarse a su servidor de Syslog.  Si recibe este error, el agente dejará de extraer nuevas actividades hasta que se corrija. Debe seguir los pasos de corrección indicados hasta que el error deje de aparecer.|1. Asegúrese de que ha definido correctamente el servidor de syslog: en la interfaz de usuario de Cloud App Security, edite el agente SIEM tal y como se ha descrito anteriormente. Compruebe que haya escrito correctamente el nombre del servidor y establecido el puerto correcto. </br>2. Compruebe la conectividad con el servidor de syslog: Asegúrese de que el Firewall no está bloqueando la comunicación.|

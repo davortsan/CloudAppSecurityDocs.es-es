@@ -1,24 +1,14 @@
 ---
 title: Integración de Azure Sentinel con Cloud App Security
 description: En este artículo se proporciona información sobre la integración de Azure Sentinel con Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 08/23/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 154cb0eda5a223c31813e1753b9dc0bcb8836436
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: e30981259f1ee0c6894918f12ebfa2c370e72564
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90878711"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315470"
 ---
 # <a name="azure-sentinel-integration-preview"></a>Integración de centinela de Azure (versión preliminar)
 
@@ -68,7 +58,7 @@ Para integrar con Azure Sentinel:
 
     ![Captura de pantalla que muestra la página de inicio de configuración de la integración de centinela de Azure](media/siem-sentinel-configuration.png)
 
-1. Haga clic en **siguiente**y continúe con Azure Sentinel para finalizar la integración. Para obtener información sobre cómo configurar Azure Sentinel, consulte [/Azure/Sentinel/Connect-Cloud-App-Security](/azure/sentinel/connect-cloud-app-security).
+1. Haga clic en **siguiente** y continúe con Azure Sentinel para finalizar la integración. Para obtener información sobre cómo configurar Azure Sentinel, consulte [/Azure/Sentinel/Connect-Cloud-App-Security](/azure/sentinel/connect-cloud-app-security).
 
     ![Captura de pantalla que muestra la página de finalización de configuración de Azure Sentinel](media/siem-sentinel-configuration-complete.png)
 
@@ -90,7 +80,7 @@ En la tabla siguiente se describe cada campo del esquema **McasShadowItReporting
 
 | Campo | Tipo | Descripción | Ejemplos |
 | --- | --- | --- | --- |
-| TenantId | String | Identificador del área de trabajo | b459b4u5-912x-46d5-9cb1-p43069212nb4 |
+| TenantId | String | Id. del área de trabajo | b459b4u5-912x-46d5-9cb1-p43069212nb4 |
 | SourceSystem | String | Sistema de origen: valor estático | Azure |
 | TimeGenerated [UTC] | DateTime | Fecha de datos de detección | 2019-07-23T11:00:35.858 Z |
 | StreamName | String | Nombre del flujo específico | Departamento de marketing |
@@ -129,7 +119,7 @@ Puede empezar a trabajar rápidamente con los pasos siguientes:
 
 ### <a name="connect-the-cloud-app-security-app"></a>Conexión de la aplicación Cloud App Security
 
-1. En Power BI, haga clic en **aplicaciones**y, a continuación, haga clic en la aplicación **Shadow it Discovery** .
+1. En Power BI, haga clic en **aplicaciones** y, a continuación, haga clic en la aplicación **Shadow it Discovery** .
 
 1. En la página **Introducción a la nueva aplicación** , haga clic en **conectar**.
 

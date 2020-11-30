@@ -1,21 +1,14 @@
 ---
 title: Implementación de Cloud Discovery
 description: En este artículo se describe el procedimiento de configuración de Cloud Discovery para que entre en funcionamiento.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: how-to
 ms.date: 08/09/2020
-ms.collection: M365-security-compliance
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 72a1d6f1d7dfdf88460dceddf62a6277226cfe66
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.topic: how-to
+ms.openlocfilehash: bdb4438c18b82b7426de09b73e1ce8c2753d21a1
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033963"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315589"
 ---
 # <a name="set-up-cloud-discovery"></a>Configuración de Cloud Discovery
 
@@ -89,6 +82,7 @@ El proceso de generación de una evaluación de riesgos consta de los siguientes
 - Stormshield
 - Websense - Soluciones de seguridad web - Informe de detalle de investigación (CSV)
 - Websense - Soluciones de seguridad web - Registro de actividad de Internet (CEF)
+- WatchGuard
 - Zscaler
 
 > [!NOTE]
@@ -134,6 +128,7 @@ Atributos de datos (según la documentación del proveedor):
 | Stormshield | No | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
 | Websense: informe de detalle de investigación (CSV) | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
 | Websense - Registro de actividad de Internet (CEF) | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
+| WatchGuard | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
 | Zscaler | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
 
 \* No se admiten las versiones 8,5 y posteriores de Forcepoint Web Security Cloud

@@ -1,18 +1,14 @@
 ---
 title: Cómo Cloud App Security ayuda a proteger su entorno de Amazon Web Services
 description: En este artículo se proporciona información sobre las ventajas de conectar la aplicación AWS a Cloud App Security mediante el conector de API para la visibilidad y el control del uso.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: article
 ms.date: 09/15/2020
-ms.collection: M365-security-compliance
-ms.openlocfilehash: bdf597d8cd387d2d062a96cb18e80a71d4c2926b
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.topic: article
+ms.openlocfilehash: 79c13b4102b69442355071f34a7b36aede1c344b
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880480"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315317"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-amazon-web-services-aws-environment"></a>Cómo Cloud App Security ayuda a proteger el entorno de Amazon Web Services (AWS)
 

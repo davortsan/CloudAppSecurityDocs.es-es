@@ -1,25 +1,14 @@
 ---
 title: Solucionar problemas de mensajes de error del conector de aplicaciones
 description: En este artículo se proporciona una lista de los mensajes de error de los conectores de aplicaciones de la API, así como recomendaciones para solucionarlos.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 01/29/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: d0b9a0fe5bb74468c7f5bc149c4190e29f402869
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: c4179f2d384b2fb7ee6eb9e450b07937c8c11160
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96034150"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315963"
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>Solucionar problemas relacionados con conectores de aplicaciones a partir de los mensajes de error
 
@@ -33,11 +22,11 @@ Los errores de conectores de aplicaciones se pueden consultar en el cuadro de di
 
 > [!div class="mx-tableFixed"]
 >
-> |Mensaje de error|Aplicación correspondiente|Descripción|Resolución|
+> |Mensaje de error|Aplicación correspondiente|Description|Solución|
 > |----|----|----|------------|
 > |HttpRequestFailure: Server returned: 500 Internal server error (HttpRequestFailure: El servidor devolvió: 500 Error interno del servidor)|Todas las aplicaciones|Se ha producido un error en la aplicación.|Compruebe el estado de la aplicación.|
 > |El tiempo de servicio expiró.|Todas las aplicaciones|Se ha detectado un tiempo de espera en la conexión entre Cloud App Security y la aplicación. Esto podría deberse a un problema con la aplicación.|Vuelva a intentarlo más tarde.|
-> |NullPointerException|AWS|Error interno.|Ponerse en contacto con soporte técnico|
+> |NullPointerException|AWS|Error interno.|Póngase en contacto con el soporte técnico.|
 > |AuthFatalFailureException: com.box.boxjavalibv2.exceptions.BoxServerException: {"error":"invalid_grant","error_description":"Invalid refresh token"} (AuthFatalFailureException: com.box.boxjavalibv2.exceptions.BoxServerException: {"error":"invalid_grant","error_description":"Token de actualización no válido"})|Box|El token de actualización de Box no es válido.|Siga el proceso para volver a conectar Box con Cloud App Security.|
 > |BoxRestException: Failed to parse response. (BoxRestException: No se pudo analizar la respuesta.)|Box|Error interno.|Haga clic de nuevo en el vínculo Probar ahora para probar la conexión con Box.|
 > |ContextManagerServiceException: com.adallom.adalib.httputils.exceptions.TokenRefreshException: {"error":"invalid_grant","error_description":"Invalid refresh token"}' (ContextManagerServiceException: com.adallom.adalib.httputils.exceptions.TokenRefreshException: {"error":"invalid_grant","error_description":"Token de actualización no válido"}')|Box|El token de actualización de Box no es válido.|Siga el proceso para volver a conectar Box con Cloud App Security.|
@@ -49,14 +38,14 @@ Los errores de conectores de aplicaciones se pueden consultar en el cuadro de di
 > |GoogleJsonResponseException: 403 Forbidden (GoogleJsonResponseException: 403 Prohibido)|G Suite|Problema al ejecutar la API de G Suite.|Si acaba de implementar el conector de aplicaciones de Cloud App Security para G Suite, compruebe lo siguiente: si hizo clic en Ilimitado, asegúrese de que su cuenta de G Suite es realmente ilimitada. Si no es así, vuelva a ejecutar el conector de aplicaciones y desactive la opción de cuenta ilimitada. Compruebe que los ámbitos definidos durante la configuración son correctos. Si no está realizando una implementación nueva y ve este error, es posible que se haya alcanzado el límite diario de API y al día siguiente se renovarán los eventos de G Suite.|
 > |TokenResponseException: 400 Bad Request (TokenResponseException: 400 Solicitud incorrecta)|G Suite|O bien la conexión con G Suite no se ha completado, o bien ha expirado.|Siga el proceso para volver a conectar G Suite con Cloud App Security.|
 > |HttpRequestFailure: Server returned: 401 Unauthorized (HttpRequestFailure: El servidor devolvió: 401 No autorizado)|Okta|El token de Okta no es válido.|Siga el proceso para volver a conectar Okta con Cloud App Security.|
-> |IOException:|Okta|Error interno.|Ponerse en contacto con soporte técnico|
-> |HttpRequestFailure: Server returned: 404 Not Found (HttpRequestFailure: El servidor devolvió: 404 No encontrado)|Okta|Error interno.|Ponerse en contacto con soporte técnico|
+> |IOException:|Okta|Error interno.|Póngase en contacto con el soporte técnico.|
+> |HttpRequestFailure: Server returned: 404 Not Found (HttpRequestFailure: El servidor devolvió: 404 No encontrado)|Okta|Error interno.|Póngase en contacto con el soporte técnico.|
 > |HttpRequestFailure: Server returned: 400 Bad Request: {"error":{"code":"AF20012","message":"Specified tenant ID (Tenant_ID goes here) is incorrectly configured in the system." (HttpRequestFailure: El servidor devolvió: 400 Solicitud incorrecta: {"error":{"code":"AF20012","message":"El id. de inquilino especificado (ID_de_inquilino) está configurado incorrectamente en el sistema".)|Office 365 |No se han encontrado licencias de Office 365 asignadas. |Asigne al menos una licencia de Office 365 a su inquilino.|
 > |Microsoft. Office. Compliance. Audit. DataServiceException: el inquilino 998cea7e-35cd-46A5-ab3c-8ec88a45d7d5 no existe o {"error": "Code": "AF20023", "message": "se deshabilitó la suscripción".|Office 365|El registro de auditoría no está habilitado en Office 365|Habilite el registro de auditoría en Office 365. [Más información](connect-office-365-to-microsoft-cloud-app-security.md#how-to-connect-office-365-to-cloud-app-security)|
 > |HttpRequestFailure: Server returned: 401 Unauthorized (HttpRequestFailure: El servidor devolvió: 401 No autorizado)|Office 365|Problema interno.|Haga clic de nuevo en el vínculo Probar ahora.|
 > |TokenRefreshException: {"error":"invalid_grant","error_description":"AADSTS70002: Error validating credentials. AADSTS70008: The provided authorization code or refresh token is expired. (TokenRefreshException: {"error":"invalid_grant","error_description":"AADSTS70002: Error al validar las credenciales. AADSTS70008: El código de autorización proporcionado o token de actualización ha expirado.) Envíe una nueva solicitud de autorización interactiva para este usuario y recurso.|Office 365|Token expirado|Siga el proceso para volver a conectar Office 365 con Cloud App Security.|
 > |SocketTimeoutException: Read timed out (SocketTimeoutException: Agotado el tiempo de espera de lectura)|Office 365|Error interno.|Haga clic de nuevo en el vínculo Probar ahora.|
-> |NullPointerException|Office 365|Error interno.|Ponerse en contacto con soporte técnico|
+> |NullPointerException|Office 365|Error interno.|Póngase en contacto con el soporte técnico.|
 > |IgniteException|Office 365|El dominio o el usuario no son válidos.|Restablezca la configuración y siga el proceso para volver a conectar Office 365 con Cloud App Security.|
 > |ContextManagerServiceException: com.adallom.adalib.httputils.exceptions.TokenRefreshException: {"error":"invalid_grant","error_description":"AADSTS70002: Error validating credentials. AADSTS70008: The provided authorization code or refresh token is expired. (TokenRefreshException: {"error":"invalid_grant","error_description":"AADSTS70002: Error al validar las credenciales. AADSTS70008: El código de autorización proporcionado o token de actualización ha expirado.) Envíe una nueva solicitud de autorización interactiva para este usuario y recurso.|Office 365|El dominio o el usuario no son válidos.|Restablezca la configuración y siga el proceso para volver a conectar Office 365 con Cloud App Security.|
 > |HttpRequestFailure: Server returned: 400 Bad Request (HttpRequestFailure: El servidor devolvió: 400 Solicitud incorrecta)|Office 365|Error interno.|Haga clic de nuevo en el vínculo Probar ahora dentro de unos minutos. Si no funciona, siga el proceso para volver a conectar Office 365 con Cloud App Security.|

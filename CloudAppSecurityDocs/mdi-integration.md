@@ -1,27 +1,16 @@
 ---
 title: Integre Microsoft defender para identidad con Cloud App Security
 description: En este artículo se proporciona información sobre cómo aprovechar Microsoft defender para obtener información sobre identidades en Cloud App Security para la detección de riesgos híbridos.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 11/08/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 0c5bb0d20a4e82280841d95352181739be8ea4fa
-ms.sourcegitcommit: 66d818441eaae1e07c4bb2ce35bbcb833febf622
+ms.openlocfilehash: 260effd5750af75e8ca5bc58d566c6cbb95b1cd3
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94428115"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315113"
 ---
-# <a name="microsoft-defender-for-identity-integration"></a>Microsoft defender para la integración de identidades
+# <a name="microsoft-defender-for-identity-integration"></a>Integración de Microsoft Defender for Identity
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -47,7 +36,7 @@ Para habilitar la integración de Cloud App Security con defender para la identi
 
     ![Menú Configuración](media/azip-system-settings.png)
 
-1. En **protección contra amenazas** , seleccione **Microsoft defender para identidad**.
+1. En **protección contra amenazas**, seleccione **Microsoft defender para identidad**.
 
     ![habilitación de la protección contra amenazas avanzada de Azure](media/mdi-integration.png)
 
@@ -71,7 +60,7 @@ Para deshabilitar la integración de Cloud App Security con defender para la ide
 
 1. En Cloud App Security, en el engranaje de configuración, seleccione **configuración**.
 
-1. En **protección contra amenazas** , seleccione **Microsoft defender para identidad**.
+1. En **protección contra amenazas**, seleccione **Microsoft defender para identidad**.
 
 1. Desactive **Habilitar Microsoft defender para la integración de datos de identidad** y haga clic en **Guardar**.
 

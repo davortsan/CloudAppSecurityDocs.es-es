@@ -1,25 +1,14 @@
 ---
 title: Uso del motor de RegEx en Cloud App Security para directivas de inspección de contenido
 description: En este artículo se proporcionan instrucciones para usar RegEx para la coincidencia de patrones en directivas de Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/14/2018
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 87d08111ba38590dfa4c1b32986a15a556e258ae
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 0f9d2aafded05ac8f06f1408080ab8bd0da550b5
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881110"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96316949"
 ---
 # <a name="working-with-the-regex-engine"></a>Trabajo con el motor de RegEx
 

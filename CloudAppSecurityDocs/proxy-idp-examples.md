@@ -1,23 +1,14 @@
 ---
 title: Implementación de Control de aplicaciones de acceso condicional de Cloud App Security para cualquier aplicación Web mediante PingOne
 description: En este artículo se proporciona información sobre cómo implementar el Control de aplicaciones de acceso condicional de Microsoft Cloud App Security para cualquier aplicación web que use el proveedor de identidades de PingOne.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 09/29/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.suite: ems
-ms.openlocfilehash: d0f36a9abb5b7a1fefed9b32683b926995d3dcd4
-ms.sourcegitcommit: 812cb1e24ec18de2c4818970f3042ac06acea14c
+ms.openlocfilehash: d49d7994e577321cfc276f642f77f7c81e4c9d9f
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92214716"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315249"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-web-app-using-pingone-identity-provider-idp"></a>Incorporación e implementación de Control de aplicaciones de acceso condicional para cualquier aplicación web que use el proveedor de identidades de PingOne (IdP)
 
@@ -27,7 +18,7 @@ Puede configurar controles de sesión en Microsoft Cloud App Security para que f
 
 En este artículo, usaremos la aplicación Salesforce como ejemplo de una aplicación web que se configura para usar Cloud App Security controles de sesión.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 - Su organización debe tener las licencias siguientes para usar Control de aplicaciones de acceso condicional:
 
@@ -74,7 +65,7 @@ Siga estos pasos para enrutar las sesiones de la aplicación web desde PingOne a
 
     ![Selección de la configuración de SSO de Salesforce](media/proxy-idp-examples/idp-pingone-sf-select-sso-settings.png)
 
-1. En la página de **configuración de Sign-On único de SAML** , tome nota de la **dirección URL de inicio de sesión**de Salesforce. Lo necesitará más adelante.
+1. En la página de **configuración de Sign-On único de SAML** , tome nota de la **dirección URL de inicio de sesión** de Salesforce. Lo necesitará más adelante.
 
     ![Seleccione la dirección URL de inicio de sesión de Salesforce SSO](media/proxy-idp-examples/idp-pingone-sf-copy-saml-sso-login-url.png)
 
@@ -104,7 +95,7 @@ Antes de continuar, siga los pasos que se indican a continuación para obtener i
 
     ![Nota: atributos de la aplicación de Salesforce existentes](media/proxy-idp-examples/idp-pingone-sf-app-copy-saml-sso-attributes.png)
 
-1. Abra el archivo de metadatos de SAML y tome nota de la **Ubicación de SingleSignOnService**de PingOne. Lo necesitará más adelante.
+1. Abra el archivo de metadatos de SAML y tome nota de la **Ubicación de SingleSignOnService** de PingOne. Lo necesitará más adelante.
 
     ![Anote la ubicación del servicio SSO de la aplicación de Salesforce existente](media/proxy-idp-examples/idp-pingone-sf-app-copy-saml-sso-service-location.png)
 
@@ -197,13 +188,13 @@ De nuevo en la página Cloud App Security cambios en la **aplicación** , realic
 
 ## <a name="step-7-complete-the-app-changes"></a>Paso 7: completar los cambios de la aplicación
 
-En Salesforce, **vaya a configuración configuración**  >  **Settings**  >  **identidad**  >  **única Sign-On configuración**y haga lo siguiente:
+En Salesforce, **vaya a configuración configuración**  >  **Settings**  >  **identidad**  >  **única Sign-On configuración** y haga lo siguiente:
 
 1. Recomendado: cree una copia de seguridad de la configuración actual.
 1. Reemplace el valor del campo **dirección URL de inicio de sesión del proveedor de identidad** por el Cloud App Security dirección URL de inicio de sesión único de SAML que anotó anteriormente.
 1. Cargue el certificado SAML Cloud App Security que descargó anteriormente.
 1. Reemplace el valor del campo ID. de **entidad** por el identificador de entidad de la aplicación personalizada PingOne que anotó anteriormente.
-1. Haga clic en **Save**(Guardar).
+1. Haga clic en **Guardar**.
 
     > [!NOTE]
     > El certificado SAML Cloud App Security es válido durante un año. Una vez que expire, se deberá generar un nuevo certificado.

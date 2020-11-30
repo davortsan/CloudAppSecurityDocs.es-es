@@ -1,25 +1,14 @@
 ---
 title: Establecimiento del ámbito de la implementación de Microsoft Cloud App Security
 description: En este artículo se proporciona información acerca de cómo definir el ámbito de la implementación de Cloud App Security, incluyendo o excluyendo usuarios o grupos específicos.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 8/25/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: d2074b58a4f0411f8272ff3f10241604d06a893b
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 94aec27172d83c2884ea91c944ecd80898ae0381
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90879019"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315572"
 ---
 # <a name="scoped-deployment"></a>Implementación con ámbito <a name="scoped-deployment"></a> 
 
@@ -97,6 +86,6 @@ Se supervisan las actividades de usuario siguientes:
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Configurar Cloud Discovery](set-up-cloud-discovery.md)
+> [Configuración de Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

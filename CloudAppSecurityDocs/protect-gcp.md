@@ -1,18 +1,14 @@
 ---
 title: Cómo Cloud App Security ayuda a proteger su entorno de Google Cloud Platform
 description: En este artículo se proporciona información sobre las ventajas de conectar la aplicación Google Cloud Platform a Cloud App Security mediante el conector de API para la visibilidad y el control del uso.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: article
 ms.date: 09/15/2020
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 56685b66f26e3f8085125cf9cf1c5fd9ec528093
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.topic: article
+ms.openlocfilehash: 461d6c0c883c84892a049de7193dd5f28e1a0a99
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90877417"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315266"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-google-cloud-platform-gcp-environment"></a>Cómo Cloud App Security ayuda a proteger el entorno de Google Cloud Platform (GCP)
 

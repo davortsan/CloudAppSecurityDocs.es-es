@@ -1,25 +1,14 @@
 ---
 title: Obtención de recomendaciones de configuración de seguridad para Azure
 description: En este artículo se proporciona información sobre cómo obtener recomendaciones de configuración de seguridad en Cloud App Security mediante la integración de con Azure Security Center.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 09/15/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 6f1b55e3675b9419ca1e53ddeea9189e260b8022
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: e34cd55f3e09b36c1bbb4641a7842e525f3c56d7
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880196"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315521"
 ---
 # <a name="security-configuration-for-azure"></a>Configuración de seguridad para Azure
 
@@ -37,7 +26,7 @@ Para habilitar las recomendaciones de configuración de seguridad en Cloud App S
 
 ## <a name="how-to-view-azure-security-recommendations"></a>Visualización de las recomendaciones de seguridad de Azure
 
-1. En Cloud App Security, vaya a **investigar**  >  **configuración de seguridad**y, a continuación, seleccione la pestaña **Azure** .
+1. En Cloud App Security, vaya a **investigar**  >  **configuración de seguridad** y, a continuación, seleccione la pestaña **Azure** .
 
     > [!NOTE]
     > Es posible que los cambios tarden hasta 15 minutos en surtir efecto.

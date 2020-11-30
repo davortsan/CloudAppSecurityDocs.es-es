@@ -1,24 +1,14 @@
 ---
 title: Integración de SIEM genérica con Cloud App Security
 description: En este artículo se proporciona información sobre cómo integrar el SIEM genérico con Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 11/08/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: c5fc424ece0dd777760e3d63ab5c41219330f2fe
-ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
+ms.openlocfilehash: a0c4fffdec7c870254baf0d20cdbaf7f0e40b39c
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2020
-ms.locfileid: "94371295"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315422"
 ---
 # <a name="generic-siem-integration"></a>Integración de SIEM genérica
 
@@ -78,16 +68,16 @@ La integración con SIEM se realiza en tres pasos:
     ![Captura de pantalla que muestra el menú Agregar integración de SIEM](media/siem0.png)
 
 1. En el asistente, haga clic en **Iniciar asistente**.
-1. En el asistente, asigne un nombre, **seleccione el formato SIEM** y establezca la **Configuración avanzada** que esté relacionada con ese formato. Haga clic en **Siguiente**.
+1. En el asistente, asigne un nombre, **seleccione el formato SIEM** y establezca la **Configuración avanzada** que esté relacionada con ese formato. Haga clic en **Next**.
 
     ![Configuración general de SIEM](media/siem1.png)
 
 1. Escriba la dirección IP o nombre de host del **host de syslog remoto** y el **número de puerto de syslog**. Seleccione TCP o UDP como protocolo de syslog remoto.
-    Puede trabajar con el administrador de seguridad para obtener estos detalles si no los tiene. Haga clic en **Siguiente**.
+    Puede trabajar con el administrador de seguridad para obtener estos detalles si no los tiene. Haga clic en **Next**.
 
     ![Configuración remota de Syslog](media/siem2.png)
 
-1. Seleccione los tipos de datos que quiera exportar al servidor SIEM para **Alertas** y **Actividades**. Use el control deslizante para habilitarlas y deshabilitarlas; de forma predeterminada todo está seleccionado. Puede usar el menú desplegable **Apply to** (Aplicar a) para establecer filtros para enviar solo alertas y actividades específicas al servidor SIEM. Haga clic en **Editar y obtener vista previa de resultados** para comprobar que el filtro funciona según lo esperado. Haga clic en **Siguiente**.
+1. Seleccione los tipos de datos que quiera exportar al servidor SIEM para **Alertas** y **Actividades**. Use el control deslizante para habilitarlas y deshabilitarlas; de forma predeterminada todo está seleccionado. Puede usar el menú desplegable **Apply to** (Aplicar a) para establecer filtros para enviar solo alertas y actividades específicas al servidor SIEM. Haga clic en **Editar y obtener vista previa de resultados** para comprobar que el filtro funciona según lo esperado. Haga clic en **Next**.
 
    ![Configuración de tipos de datos](media/siem3.png)
 
@@ -153,7 +143,7 @@ El siguiente texto es un ejemplo de archivo de registro de alertas:
 
 #### <a name="sample-cloud-app-security-alerts-in-cef-format"></a>Alertas de Cloud App Security de ejemplo en formato CEF
 
-| Aplicable a | Nombre del campo CEF | Descripción |
+| Aplicable a | Nombre del campo CEF | Description |
 | --- | --- | --- |
 | Actividades y alertas | start | Marca de tiempo de actividad o alerta |
 | Actividades y alertas | end | Marca de tiempo de actividad o alerta |
@@ -176,7 +166,7 @@ El siguiente texto es un ejemplo de archivo de registro de alertas:
 
 ### <a name="step-3-validate-that-the-siem-agent-is-working"></a>Paso 3: validación del correcto funcionamiento del agente SIEM
 
-1. Asegúrese de que el estado del agente SIEM en el portal de Cloud App Security no sea **Error de conexión** o **Desconectado** , y de que no haya ninguna notificación del agente. Se mostrará como **Error de conexión** si la conexión está inactiva durante más de dos horas. El estado se muestra como **Desconectado** si la conexión está inactiva durante más de 12 horas.
+1. Asegúrese de que el estado del agente SIEM en el portal de Cloud App Security no sea **Error de conexión** o **Desconectado**, y de que no haya ninguna notificación del agente. Se mostrará como **Error de conexión** si la conexión está inactiva durante más de dos horas. El estado se muestra como **Desconectado** si la conexión está inactiva durante más de 12 horas.
  ![SIEM desconectado](media/siem-not-connected.png)
 
     En su lugar, el estado debe ser Conectado, tal como se muestra aquí: ![SIEM conectado](media/siem-connected.png).

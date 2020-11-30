@@ -1,25 +1,14 @@
 ---
 title: Creación de directivas de sesión en Cloud App Security
 description: En este artículo se describe el procedimiento para configurar una directiva de sesión de control de aplicaciones de acceso condicional de Cloud App Security para obtener visibilidad detallada de las actividades de la sesión del usuario y bloquear descargas por medio de las funciones de proxy inverso.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/31/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: c1b33c82b74f9b7b648bcae3c9bdc20949319fc8
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 9e755da569c6d90274a6fd347408587a1a6732f7
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90878791"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315449"
 ---
 # <a name="session-policies"></a>Directivas de sesión
 
@@ -153,7 +142,7 @@ Por ejemplo, puede crear una directiva que examine el contenido de un archivo pa
 
 ## <a name="block-malware-on-upload"></a>Bloquear malware al cargar
 
-Cuando el **control de carga de archivos (con inspección)**   se establece como el **tipo de control de sesión** y la **detección de malware** está establecida como **método de inspección** en la Directiva de sesión de Cloud App Security, control de aplicaciones de acceso condicional impide que un usuario cargue un archivo en tiempo real si se detecta malware. Los archivos se examinan con el motor de inteligencia de amenazas de Microsoft.
+Cuando el  **control de carga de archivos (con inspección)**   se establece como el  **tipo de control de sesión** y la **detección de malware** está establecida como **método de inspección** en la Directiva de sesión de Cloud App Security, control de aplicaciones de acceso condicional impide que un usuario cargue un archivo en tiempo real si se detecta malware. Los archivos se examinan con el motor de inteligencia de amenazas de Microsoft.
 
 Puede ver los archivos marcados como posibles malware mediante el filtro **potencial de malware detectado** en el registro de actividad.
 

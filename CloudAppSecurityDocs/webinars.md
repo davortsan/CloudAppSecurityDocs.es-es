@@ -1,18 +1,14 @@
 ---
 title: Vea nuestros seminarios web
 description: Muestra una lista de seminarios web anteriores, incluida una descripción.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: conceptual
 ms.date: 8/25/2019
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 23e7462818adcacda42c20f24369366f45524b5d
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.topic: conceptual
+ms.openlocfilehash: a536967ac77355dc45c3ab2fde262067bbab9644
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96034031"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315640"
 ---
 # <a name="microsoft-cloud-app-security-webinars"></a>Seminarios web de Microsoft Cloud App Security
 
@@ -26,7 +22,7 @@ Para conocer nuestros próximos seminarios web y otros desarrollos, [Únase a la
 
 Vea las sesiones grabadas en cualquier momento
 
-| Title | Información |
+| Título | Información |
 | --- | --- |
 | **Protección de la información**<br />[Ver ahora](https://go.microsoft.com/fwlink/?linkid=2101487) | -Protección de los datos en la nube<br />-Control y supervisión en tiempo real<br />: Procedimientos recomendados para la conexión de aplicaciones, identificación de tipos de datos, auditoría del entorno y corrección de acciones de gobierno |
 | **Detección de amenazas**<br />[Ver ahora](https://go.microsoft.com/fwlink/?linkid=2101574) | -Protección contra amenazas en la nube<br />-Detección de amenazas en aplicaciones en la nube<br />-Detección de malware<br />-Permisos de aplicación de OAuth<br />-Configuración de alertas en directivas |

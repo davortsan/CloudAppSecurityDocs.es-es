@@ -1,25 +1,14 @@
 ---
 title: Usar datos de Cloud Discovery para detectar un comportamiento arriesgado
 description: En este tema se proporcionan instrucciones sobre cómo trabajar con datos de Cloud Discovery, lo que incluye trabajar con la puntuación de riesgo de la aplicación.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: angrobe
 ms.date: 05/06/2019
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 9f63783f2634770b37d4b97782454a15198c89de
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 0ae744dcdc777ab806654abb7862ec27730be143
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96034065"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315606"
 ---
 # <a name="working-with-discovery-data"></a>Trabajo con datos de detección
 

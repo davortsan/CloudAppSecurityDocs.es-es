@@ -1,23 +1,14 @@
 ---
 title: Implementar Control de aplicaciones de acceso condicional de Cloud App Security para las aplicaciones
 description: En este artículo se proporciona información sobre cómo implementar las características de Microsoft Cloud App Security Control de aplicaciones de acceso condicional proxy inverso para las aplicaciones.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/31/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.suite: ems
-ms.openlocfilehash: 13505c22de0751041bc42f2891248163a51e6239
-ms.sourcegitcommit: 812cb1e24ec18de2c4818970f3042ac06acea14c
+ms.openlocfilehash: 32aa858eca58f8b76cc90bd96f5ebe17516af1e7
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92212041"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315402"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Incorporación e implementación del Control de aplicaciones de acceso condicional para cualquier aplicación
 
@@ -27,7 +18,7 @@ Los controles de sesión de Microsoft Cloud App Security se pueden configurar pa
 
 Para obtener una lista de las aplicaciones que se incluyen en Cloud App Security trabajar de forma integrada, consulte [proteger aplicaciones con Cloud App Security control de aplicaciones de acceso condicional](proxy-intro-aad.md#featured-apps).
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 - Su organización debe tener las licencias siguientes para usar Control de aplicaciones de acceso condicional:
 
@@ -67,7 +58,7 @@ Siga estos pasos para configurar cualquier aplicación que se controlará Cloud 
 
 Use los pasos siguientes para crear una Azure AD Directiva de acceso condicional que enruta las sesiones de la aplicación a Cloud App Security. Para otras soluciones IdP, consulte [configuración de la integración con otras soluciones IDP](#configure-integration-with-other-idp-solutions).
 
-1. En Azure ad, vaya a **Security**  >  **acceso condicional**de seguridad.
+1. En Azure ad, vaya a **Security**  >  **acceso condicional** de seguridad.
 
 1. En el panel **acceso condicional** , en la barra de herramientas de la parte superior, haga clic en **nueva Directiva**.
 
@@ -139,7 +130,7 @@ Use los pasos siguientes para enrutar las sesiones de la aplicación desde otras
     1. Agregue los atributos y valores que anotó anteriormente a las propiedades de la aplicación.
         > [!NOTE]
         >
-        > - Algunos proveedores pueden hacer referencia a ellos como atributos o *notificaciones*de *usuario* .
+        > - Algunos proveedores pueden hacer referencia a ellos como atributos o *notificaciones* de *usuario* .
         > - Al crear una nueva aplicación SAML, el proveedor de identidades Okta limita los atributos a 1024 caracteres. Para mitigar esta limitación, cree primero la aplicación sin los atributos pertinentes. Después de crear la aplicación, edítela y, a continuación, agregue los atributos pertinentes.
 
     1. Compruebe que el identificador de nombre tiene el formato de dirección de correo electrónico.
@@ -162,7 +153,7 @@ Use los pasos siguientes para enrutar las sesiones de la aplicación desde otras
 
 1. En Cloud App Security, en la barra de menús, haga clic en el ![icono](media/settings-icon.png "icono de configuración") de configuración engranaje de configuración y seleccione **configuración**.
 
-1. En **control de aplicaciones de acceso condicional**, seleccione **incorporación/mantenimiento**de la aplicación.
+1. En **control de aplicaciones de acceso condicional**, seleccione **incorporación/mantenimiento** de la aplicación.
 
 1. Escriba el nombre principal de usuario o el correo electrónico de los usuarios que van a incorporar la aplicación y, a continuación, haga clic en **Guardar**.
 
@@ -172,7 +163,7 @@ Use los pasos siguientes para enrutar las sesiones de la aplicación desde otras
 
 Vaya a la aplicación que va a implementar. La página que vea dependerá de si se reconoce la aplicación. Realice una de las siguientes acciones:
 
-| Estado de la aplicación | Descripción | Pasos |
+| Estado de la aplicación | Description | Pasos |
 | --- | --- | --- |
 | No reconocido | Verá una página de aplicación no reconocida que le pide que configure la aplicación. | 1. [agregue la aplicación a control de aplicaciones de acceso condicional](#add-app).<br /> 2. [agregue los dominios de la aplicación](#add-domains)y, a continuación, vuelva a la aplicación y actualice la página.<br /> 3. [Instale los certificados para la aplicación](#install-certs). |
 | Recognized | Verá una página de incorporación que le pide que continúe con el proceso de configuración de la aplicación. | - [Instale los certificados para la aplicación](#install-certs). <br /><br /> **Nota:** Asegúrese de que la aplicación esté configurada con todos los dominios necesarios para que la aplicación funcione correctamente. Para configurar dominios adicionales, vaya a [Agregar los dominios de la aplicación](#add-domains)y, a continuación, vuelva a la página de la aplicación. |
@@ -218,7 +209,7 @@ Por ejemplo, si ha configurado una directiva que bloquea la descarga de archivos
 
 1. Repita los pasos siguientes para instalar la **entidad de certificación actual** y los certificados raíz autofirmados de la **entidad de certificación** .
     1. Seleccione el certificado.
-    1. Haga clic en **abrir**y, cuando se le pida, haga clic en **abrir** de nuevo.
+    1. Haga clic en **abrir** y, cuando se le pida, haga clic en **abrir** de nuevo.
     1. Haga clic en **instalar certificado**.
     1. Elija el **usuario actual** o el **equipo local**.
     1. Seleccione **colocar todos los certificados en el siguiente almacén** y, a continuación, haga clic en **examinar**.
