@@ -1,25 +1,14 @@
 ---
 title: Bloqueo de aplicaciones detectadas
 description: En este artículo se describe el procedimiento para exportar scripts de bloqueo para aplicaciones detectadas.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/12/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 6dcb55f70e96082c22504f692b8b441796293723
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: ee1deba23e7f2eb8ae002af414094b8912a03ac8
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033334"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314858"
 ---
 # <a name="govern-discovered-apps"></a>Control de aplicaciones detectadas
 

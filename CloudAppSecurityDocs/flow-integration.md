@@ -1,24 +1,14 @@
 ---
 title: Integre Microsoft Power Automate con Microsoft Cloud App Security para obtener una automatización de alertas personalizada
 description: En este artículo se proporciona información sobre cómo obtener una automatización de alertas personalizada mediante la integración de Microsoft Power Automate con Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 04/27/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.openlocfilehash: 6ea53492ebb2b3edbc08ebd7568b809953e8a6cb
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 015657815c2fde3904807363c9e0e6db3d45b3a5
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90878203"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314926"
 ---
 # <a name="integrate-with-microsoft-power-automate-for-custom-alert-automation"></a>Integración con Microsoft Power Automate para la automatización de alertas personalizada
 
@@ -40,7 +30,7 @@ El [conector de Cloud App Security](/connectors/cloudappsecurity/) de Power Auto
 
 1. [Crear un token de API](api-tokens.md) en Cloud App Security.
 
-2. Vaya al [portal de Power Automate](https://flow.microsoft.com), seleccione **Mis flujos**, seleccione **nuevo**y, en la lista desplegable, seleccione **automatizado-desde**cero.
+2. Vaya al [portal de Power Automate](https://flow.microsoft.com), seleccione **Mis flujos**, seleccione **nuevo** y, en la lista desplegable, seleccione **automatizado-desde** cero.
 
     ![Power Automate crear nuevo flujo](media/flow-create-new.png)
 

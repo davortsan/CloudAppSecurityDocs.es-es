@@ -1,25 +1,14 @@
 ---
 title: Cloud App Security guía de investigación de alertas de detección de anomalías
 description: En este artículo se explica cómo investigar las alertas de detección de anomalías de Cloud App Security emitidas cuando se detectan ataques en su organización.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 06/08/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: itfalcon
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 57d27e6cda7f4750464b4f1c4330c4776aa79467
-ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
+ms.openlocfilehash: 69490396c2669307372c0073e8f0ad58e3bf09c5
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2020
-ms.locfileid: "94371134"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315079"
 ---
 # <a name="how-to-investigate-anomaly-detection-alerts"></a>Cómo investigar alertas de detección de anomalías
 
@@ -41,23 +30,23 @@ En esta guía se proporciona información sobre cómo investigar y corregir Clou
 > - [Elevación de privilegios](#privilege-escalation-alerts)
 > - [Acceso a credenciales](#credential-access-alerts)
 > - [Colección](#collection-alerts)
-> - [Exfiltración](#exfiltration-alerts)
+> - [Filtración](#exfiltration-alerts)
 > - [Impacto](#impact-alerts)
 
 ## <a name="security-alert-classifications"></a>Clasificaciones de las alertas de seguridad
 
 Tras una investigación adecuada, todas las alertas de Cloud App Security se pueden clasificar como uno de los siguientes tipos de actividad:
 
-- **Verdadero positivo (TP)** : una alerta en una actividad malintencionada confirmada.
-- **Verdadero positivo benigno (B-TP)** : una alerta de actividad sospechosa pero no malintencionada, como una prueba de penetración u otra acción sospechosa autorizada.
-- **Falso positivo (FP)** : una alerta en una actividad no malintencionada.
+- **Verdadero positivo (TP)**: una alerta en una actividad malintencionada confirmada.
+- **Verdadero positivo benigno (B-TP)**: una alerta de actividad sospechosa pero no malintencionada, como una prueba de penetración u otra acción sospechosa autorizada.
+- **Falso positivo (FP)**: una alerta en una actividad no malintencionada.
 
 ## <a name="general-investigation-steps"></a>Pasos de investigación generales
 
 Debe usar las siguientes directrices generales al investigar cualquier tipo de alerta para obtener una descripción más clara de la posible amenaza antes de aplicar la acción recomendada.
 
 - Revise la puntuación de [prioridad](tutorial-ueba.md#understand-the-investigation-priority-score) de la investigación del usuario y compárelo con el resto de la organización. Esto le ayudará a identificar qué usuarios de su organización suponen el mayor riesgo.
-- Si identifica un **TP** , revise todas las actividades del usuario para comprender el impacto.
+- Si identifica un **TP**, revise todas las actividades del usuario para comprender el impacto.
 - Revise toda la actividad de los usuarios para ver otros indicadores de riesgo y explore el origen y el ámbito de impacto. Por ejemplo, revise la siguiente información del dispositivo de usuario y compárela con la información de dispositivo conocida:
   - Sistema operativo y versión
   - Explorador y versión
@@ -73,16 +62,16 @@ En esta sección se describen las alertas que indican que un actor malintenciona
 
 Actividad de una dirección IP identificada como dirección IP de proxy anónima de Microsoft Threat Intelligence o de su organización. Estos proxys se pueden usar para ocultar la dirección IP de un dispositivo y se pueden usar para actividades malintencionadas.
 
-**TP** , **B-TP** o **FP** ?
+**TP**, **B-TP** o **FP**?
 
 Esta detección usa un algoritmo de aprendizaje automático que reduce los incidentes **de B-TP** , como las direcciones IP con etiquetas no utilizadas ampliamente por los usuarios de la organización.
 
-1. **TP** : si es capaz de confirmar que la actividad se realizó desde una dirección IP anónima o de Tor.
+1. **TP**: si es capaz de confirmar que la actividad se realizó desde una dirección IP anónima o de Tor.
 
-    **Acción recomendada** : suspender al usuario, marcar el usuario como comprometido y restablecer su contraseña.
-1. **B-TP** : si se sabe que un usuario usa direcciones IP anónimas en el ámbito de sus tareas. Por ejemplo, cuando un analista de seguridad realiza pruebas de seguridad o de penetración en nombre de la organización.
+    **Acción recomendada**: suspender al usuario, marcar el usuario como comprometido y restablecer su contraseña.
+1. **B-TP**: si se sabe que un usuario usa direcciones IP anónimas en el ámbito de sus tareas. Por ejemplo, cuando un analista de seguridad realiza pruebas de seguridad o de penetración en nombre de la organización.
 
-    **Acción recomendada** : descartar la alerta.
+    **Acción recomendada**: descartar la alerta.
 
 **Comprender el ámbito de la vulneración de seguridad**
 
@@ -98,16 +87,16 @@ De forma predeterminada, la Directiva está configurada para incluir solo las ac
 
 La detección de ubicaciones anómalas requiere un período de aprendizaje inicial de siete días durante el cual no se desencadenan alertas para las nuevas ubicaciones.
 
-**TP** , **B-TP** o **FP** ?
+**TP**, **B-TP** o **FP**?
 
-1. **TP** : si es capaz de confirmar que un usuario legítimo no ha realizado la actividad.
+1. **TP**: si es capaz de confirmar que un usuario legítimo no ha realizado la actividad.
 
-    **Acción recomendada** :
+    **Acción recomendada**:
     1. Suspenda al usuario, restablezca la contraseña e identifique el momento adecuado para volver a habilitar la cuenta de forma segura.
     1. Opcional: cree una guía de uso de Power Automatic para ponerse en contacto con los usuarios detectados como la conexión desde ubicaciones poco frecuentes y sus administradores para comprobar su actividad.
-1. **B-TP** : si se sabe que un usuario está en esta ubicación. Por ejemplo, cuando un usuario viaja con frecuencia y actualmente está en la ubicación especificada.
+1. **B-TP**: si se sabe que un usuario está en esta ubicación. Por ejemplo, cuando un usuario viaja con frecuencia y actualmente está en la ubicación especificada.
 
-    **Acción recomendada** :
+    **Acción recomendada**:
     1. Descartar la alerta y modificar la Directiva para excluir al usuario.
     1. Crear un grupo de usuarios para viajeros frecuentes, importar el grupo en Cloud App Security y excluir a los usuarios de esta alerta
     1. Opcional: cree una guía de uso de Power Automatic para ponerse en contacto con los usuarios detectados como la conexión desde ubicaciones poco frecuentes y sus administradores para comprobar su actividad.
@@ -120,14 +109,14 @@ La detección de ubicaciones anómalas requiere un período de aprendizaje inici
 
 Actividad de una dirección IP identificada como arriesgada por Microsoft Threat Intelligence o por su organización. Estas direcciones IP se identifican como implicadas en actividades malintencionadas, como el comando y el control de zombi (C&C), y pueden indicar una cuenta en peligro.
 
-**TP** , **B-TP** o **FP** ?
+**TP**, **B-TP** o **FP**?
 
-1. **TP** : si es capaz de confirmar que un usuario legítimo no ha realizado la actividad.
+1. **TP**: si es capaz de confirmar que un usuario legítimo no ha realizado la actividad.
 
-    **Acción recomendada** : suspender al usuario, marcar el usuario como comprometido y restablecer su contraseña.
-1. **B-TP** : si se sabe que un usuario usa la dirección IP en el ámbito de sus tareas. Por ejemplo, cuando un analista de seguridad realiza pruebas de seguridad o de penetración en nombre de la organización.
+    **Acción recomendada**: suspender al usuario, marcar el usuario como comprometido y restablecer su contraseña.
+1. **B-TP**: si se sabe que un usuario usa la dirección IP en el ámbito de sus tareas. Por ejemplo, cuando un analista de seguridad realiza pruebas de seguridad o de penetración en nombre de la organización.
 
-    **Acción recomendada** : descartar la alerta.
+    **Acción recomendada**: descartar la alerta.
 
 **Comprender el ámbito de la vulneración de seguridad**
 
@@ -145,19 +134,19 @@ Para mejorar la precisión y alertar solo cuando hay una indicación fuerte de u
 
 El establecimiento del patrón de actividad de un usuario nuevo requiere un período de aprendizaje inicial de siete días durante el cual no se desencadenan alertas para las nuevas ubicaciones.
 
-**TP** , **B-TP** o **FP** ?
+**TP**, **B-TP** o **FP**?
 
 Esta detección usa un algoritmo de aprendizaje automático que omite las condiciones **de TP de B** obvias, como cuando las direcciones IP de ambos lados del viaje se consideran seguras, el viaje es de confianza y se excluye de desencadenar la detección de viajes imposibles. Por ejemplo, ambos lados se consideran seguros si se [etiquetan como corporativos](ip-tags.md). Sin embargo, si la dirección IP de un solo lado del viaje se considera segura, la detección se desencadena como normal.
 
-1. **TP** : si se puede confirmar que la ubicación de la alerta de viaje imposible es improbable para el usuario.
+1. **TP**: si se puede confirmar que la ubicación de la alerta de viaje imposible es improbable para el usuario.
 
-    **Acción recomendada** : suspender al usuario, marcar el usuario como comprometido y restablecer su contraseña.
+    **Acción recomendada**: suspender al usuario, marcar el usuario como comprometido y restablecer su contraseña.
 1. **FP** (viaje de usuario no detectado): si puede confirmar que el usuario ha viajado recientemente al destino mencionado en la alerta. Por ejemplo, si el teléfono de un usuario que está en modo de avión sigue conectado a servicios como Exchange online en la red corporativa mientras viaja a una ubicación diferente. Cuando el usuario llega a la nueva ubicación, el teléfono se conecta a Exchange Online y desencadena la alerta de viaje imposible.
 
-    **Acción recomendada** : descartar la alerta.
+    **Acción recomendada**: descartar la alerta.
 1. **FP** (VPN sin etiquetar): si es capaz de confirmar que el intervalo de direcciones IP procede de una VPN autorizada.
 
-    **Acción recomendada** : descartar la alerta y [Agregar el intervalo de direcciones IP de la VPN](ip-tags.md#create-an-ip-address-range) a Cloud App Security y usarlo para etiquetar el intervalo de direcciones IP de la VPN.
+    **Acción recomendada**: descartar la alerta y [Agregar el intervalo de direcciones IP de la VPN](ip-tags.md#create-an-ip-address-range) a Cloud App Security y usarlo para etiquetar el intervalo de direcciones IP de la VPN.
 
 **Comprender el ámbito de la vulneración de seguridad**
 
@@ -171,19 +160,19 @@ Esta detección usa un algoritmo de aprendizaje automático que omite las condic
 
 El nombre de la aplicación OAuth engañosa identifica las aplicaciones con caracteres, como letras extranjeras, similares a las letras latinas. Esto puede indicar un intento de disfrazar una aplicación malintencionada como una aplicación conocida y de confianza para que los atacantes puedan engañar a los usuarios para que descarguen su aplicación malintencionada.
 
-**TP** , **B-TP** o **FP** ?
+**TP**, **B-TP** o **FP**?
 
-1. **TP** : si es capaz de confirmar que la aplicación tiene un nombre engañoso.
+1. **TP**: si es capaz de confirmar que la aplicación tiene un nombre engañoso.
 
-    **Acción recomendada** : Revise el nivel de permiso que solicita esta aplicación y a qué usuarios se les ha concedido acceso. En función de la investigación, puede optar por prohibir el acceso a esta aplicación.
+    **Acción recomendada**: Revise el nivel de permiso que solicita esta aplicación y a qué usuarios se les ha concedido acceso. En función de la investigación, puede optar por prohibir el acceso a esta aplicación.
 
 Para prohibir el acceso a la aplicación, en la página de **aplicaciones de OAuth** , en la fila en la que aparece la aplicación que desea vetar, haga clic en el icono de veto.
     - Puede elegir si quiere indicar a los usuarios que se ha prohibido la aplicación que han instalado y autorizado. La notificación informa a los usuarios de que la aplicación estará deshabilitada y no tendrán acceso a la aplicación conectada. Si no quiere que lo sepan, anule la selección de **Enviar una notificación a los usuarios que hayan concedido permiso a esta aplicación prohibida** en el cuadro de diálogo.
     - Se recomienda permitir que los usuarios de la aplicación sepan que se ha prohibido el uso de la aplicación.
 
-1. **FP** : Si va a confirmar que la aplicación tiene un nombre engañoso pero tiene un uso empresarial legítimo en la organización.
+1. **FP**: Si va a confirmar que la aplicación tiene un nombre engañoso pero tiene un uso empresarial legítimo en la organización.
 
-    **Acción recomendada** : descartar la alerta.
+    **Acción recomendada**: descartar la alerta.
 
 **Comprender el ámbito de la vulneración de seguridad**
 
@@ -193,14 +182,14 @@ Para prohibir el acceso a la aplicación, en la página de **aplicaciones de OAu
 
 El nombre del publicador de OAuth engañoso para una aplicación de OAuth identifica aplicaciones con caracteres, como letras extranjeras, similares a las letras latinas. Esto puede indicar un intento de disfrazar una aplicación malintencionada como una aplicación conocida y de confianza para que los atacantes puedan engañar a los usuarios para que descarguen su aplicación malintencionada.
 
-**TP** , **B-TP** o **FP** ?
+**TP**, **B-TP** o **FP**?
 
-1. **TP** : si es capaz de confirmar que la aplicación tiene un nombre de publicador engañoso.
+1. **TP**: si es capaz de confirmar que la aplicación tiene un nombre de publicador engañoso.
 
-    **Acción recomendada** : Revise el nivel de permiso que solicita esta aplicación y a qué usuarios se les ha concedido acceso. En función de la investigación, puede optar por prohibir el acceso a esta aplicación.
-1. **FP** : Si va a confirmar que la aplicación tiene un nombre de publicador engañoso, pero es un publicador legítimo.
+    **Acción recomendada**: Revise el nivel de permiso que solicita esta aplicación y a qué usuarios se les ha concedido acceso. En función de la investigación, puede optar por prohibir el acceso a esta aplicación.
+1. **FP**: Si va a confirmar que la aplicación tiene un nombre de publicador engañoso, pero es un publicador legítimo.
 
-    **Acción recomendada** : descartar la alerta.
+    **Acción recomendada**: descartar la alerta.
 
 **Comprender el ámbito de la vulneración de seguridad**
 
@@ -225,14 +214,14 @@ Actividades en una sola sesión que indica que un usuario ha realizado un númer
 
 El establecimiento del patrón de actividad de un usuario nuevo requiere un período de aprendizaje inicial de siete días durante el cual no se desencadenan alertas para las nuevas ubicaciones.
 
-**TP** , **B-TP** o **FP** ?
+**TP**, **B-TP** o **FP**?
 
-1. **TP** : Si va a confirmar que las eliminaciones no se autorizaron.
+1. **TP**: Si va a confirmar que las eliminaciones no se autorizaron.
 
-    **Acción recomendada** : suspenda al usuario, restablezca la contraseña y examine todos los dispositivos en busca de amenazas malintencionadas. Revise toda la actividad de los usuarios para ver otros indicadores de riesgo y explore el ámbito de impacto.
-1. **FP** : Si después de la investigación, puede confirmar que el administrador está autorizado para realizar estas actividades de eliminación.
+    **Acción recomendada**: suspenda al usuario, restablezca la contraseña y examine todos los dispositivos en busca de amenazas malintencionadas. Revise toda la actividad de los usuarios para ver otros indicadores de riesgo y explore el ámbito de impacto.
+1. **FP**: Si después de la investigación, puede confirmar que el administrador está autorizado para realizar estas actividades de eliminación.
 
-    **Acción recomendada** : descartar la alerta.
+    **Acción recomendada**: descartar la alerta.
 
 **Comprender el ámbito de la vulneración de seguridad**
 
@@ -248,16 +237,16 @@ Actividades en una única sesión que indica que un usuario ha realizado un núm
 
 El establecimiento del patrón de actividad de un usuario nuevo requiere un período de aprendizaje inicial de siete días durante el cual no se desencadenan alertas para las nuevas ubicaciones.
 
-**TP** , **B-TP** o **FP** ?
+**TP**, **B-TP** o **FP**?
 
 Para mejorar la precisión y alertar solo cuando hay una indicación fuerte de una infracción, esta detección establece una línea base en cada entorno de la organización para reducir los incidentes **B-TP** , como un administrador creó legítimamente más máquinas virtuales que la línea base establecida y solo alerta cuando se detecta el comportamiento inusual.
 
-- **TP** : si es capaz de confirmar que las actividades de creación no fueron realizadas por un usuario legítimo.
+- **TP**: si es capaz de confirmar que las actividades de creación no fueron realizadas por un usuario legítimo.
 
-    **Acción recomendada** : suspenda al usuario, restablezca la contraseña y examine todos los dispositivos en busca de amenazas malintencionadas. Revise toda la actividad de los usuarios para ver otros indicadores de riesgo y explore el ámbito de impacto. Además, póngase en contacto con el usuario, confirme sus acciones legítimas y, a continuación, asegúrese de deshabilitar o eliminar las máquinas virtuales en peligro.
-- **B-TP** : Si después de la investigación, puede confirmar que el administrador está autorizado para realizar estas actividades de creación.
+    **Acción recomendada**: suspenda al usuario, restablezca la contraseña y examine todos los dispositivos en busca de amenazas malintencionadas. Revise toda la actividad de los usuarios para ver otros indicadores de riesgo y explore el ámbito de impacto. Además, póngase en contacto con el usuario, confirme sus acciones legítimas y, a continuación, asegúrese de deshabilitar o eliminar las máquinas virtuales en peligro.
+- **B-TP**: Si después de la investigación, puede confirmar que el administrador está autorizado para realizar estas actividades de creación.
 
-    **Acción recomendada** : descartar la alerta.
+    **Acción recomendada**: descartar la alerta.
 
 **Comprender el ámbito de la vulneración de seguridad**
 
@@ -272,16 +261,16 @@ Actividades que indican que un usuario ha realizado una acción de creación de 
 
 El establecimiento del patrón de actividad de un usuario nuevo requiere un período de aprendizaje inicial de siete días durante el cual no se desencadenan alertas para las nuevas ubicaciones.
 
-**TP** , **B-TP** o **FP** ?
+**TP**, **B-TP** o **FP**?
 
 Para mejorar la precisión y alertar solo cuando hay una indicación fuerte de una infracción, esta detección establece una línea base en cada entorno de la organización para reducir los incidentes **B-TP** .
 
-- **TP** : si es capaz de confirmar que las actividades de creación no fueron realizadas por un usuario legítimo.
+- **TP**: si es capaz de confirmar que las actividades de creación no fueron realizadas por un usuario legítimo.
 
-    **Acción recomendada** : suspenda al usuario, restablezca la contraseña y examine todos los dispositivos en busca de amenazas malintencionadas. Revise toda la actividad de los usuarios para ver otros indicadores de riesgo y explore el ámbito de impacto. Además, póngase en contacto con el usuario, confirme sus acciones legítimas y, a continuación, asegúrese de deshabilitar o eliminar los recursos en peligro en la nube.
-- **B-TP** : Si después de la investigación, puede confirmar que el administrador está autorizado para realizar estas actividades de creación.
+    **Acción recomendada**: suspenda al usuario, restablezca la contraseña y examine todos los dispositivos en busca de amenazas malintencionadas. Revise toda la actividad de los usuarios para ver otros indicadores de riesgo y explore el ámbito de impacto. Además, póngase en contacto con el usuario, confirme sus acciones legítimas y, a continuación, asegúrese de deshabilitar o eliminar los recursos en peligro en la nube.
+- **B-TP**: Si después de la investigación, puede confirmar que el administrador está autorizado para realizar estas actividades de creación.
 
-    **Acción recomendada** : descartar la alerta.
+    **Acción recomendada**: descartar la alerta.
 
 **Comprender el ámbito de la vulneración de seguridad**
 
@@ -296,14 +285,14 @@ En esta sección se describen las alertas que indican que un actor malintenciona
 
 La actividad realizada por un usuario Terminado puede indicar que un empleado terminado que todavía tiene acceso a los recursos corporativos está intentando realizar una actividad malintencionada. Cloud App Security perfiles a los usuarios de la organización y desencadena una alerta cuando un usuario Terminado realiza una actividad.
 
-**TP** , **B-TP** o **FP** ?
+**TP**, **B-TP** o **FP**?
 
-1. **TP** : si se puede confirmar que el usuario terminado todavía tiene acceso a determinados recursos corporativos y está realizando actividades.
+1. **TP**: si se puede confirmar que el usuario terminado todavía tiene acceso a determinados recursos corporativos y está realizando actividades.
 
-    **Acción recomendada** : deshabilitar el usuario.
-1. **B-TP** : si se puede determinar que el usuario se ha deshabilitado temporalmente o se ha eliminado y se ha vuelto a registrar.
+    **Acción recomendada**: deshabilitar el usuario.
+1. **B-TP**: si se puede determinar que el usuario se ha deshabilitado temporalmente o se ha eliminado y se ha vuelto a registrar.
 
-    **Acción recomendada** : descartar la alerta.
+    **Acción recomendada**: descartar la alerta.
 
 **Comprender el ámbito de la vulneración de seguridad**
 
@@ -318,14 +307,14 @@ La actividad realizada por un usuario Terminado puede indicar que un empleado te
 
 Actividades en una única sesión que indica que un usuario ha realizado cambios sospechosos en el servicio de registro de CloudTrail de AWS. Esto puede indicar un intento de infracción de la organización. Al deshabilitar CloudTrail, ya no se registran los cambios operativos. Un atacante puede realizar actividades malintencionadas al tiempo que evita un evento de auditoría CloudTrail, como la modificación de un cubo S3 de privado a público.
 
-**TP** , **B-TP** o **FP** ?
+**TP**, **B-TP** o **FP**?
 
-1. **TP** : si es capaz de confirmar que un usuario legítimo no ha realizado la actividad.
+1. **TP**: si es capaz de confirmar que un usuario legítimo no ha realizado la actividad.
 
-    **Acción recomendada** : suspender al usuario, restablecer la contraseña e invertir la actividad CloudTrail.
-1. **FP** : si es capaz de confirmar que el usuario ha deshabilitado de forma legítima el servicio CloudTrail.
+    **Acción recomendada**: suspender al usuario, restablecer la contraseña e invertir la actividad CloudTrail.
+1. **FP**: si es capaz de confirmar que el usuario ha deshabilitado de forma legítima el servicio CloudTrail.
 
-    **Acción recomendada** : descartar la alerta.
+    **Acción recomendada**: descartar la alerta.
 
 **Comprender el ámbito de la vulneración de seguridad**
 
@@ -336,14 +325,14 @@ Actividades en una única sesión que indica que un usuario ha realizado cambios
 
 Actividades en una única sesión que indica que un usuario realizó eliminaciones de correo electrónico sospechosas. Esto puede indicar un intento de infracción de la organización, por ejemplo, que los atacantes intentan enmascarar las operaciones mediante la eliminación de correos electrónicos relacionados con las actividades de correo no deseado.
 
-**TP** , **B-TP** o **FP** ?
+**TP**, **B-TP** o **FP**?
 
-1. **TP** : si es capaz de confirmar que un usuario legítimo no ha realizado la actividad.
+1. **TP**: si es capaz de confirmar que un usuario legítimo no ha realizado la actividad.
 
-    **Acción recomendada** : suspender al usuario, marcar el usuario como comprometido y restablecer su contraseña.
-1. **FP** : si es capaz de confirmar que el usuario ha creado legítimamente una regla para eliminar mensajes.
+    **Acción recomendada**: suspender al usuario, marcar el usuario como comprometido y restablecer su contraseña.
+1. **FP**: si es capaz de confirmar que el usuario ha creado legítimamente una regla para eliminar mensajes.
 
-    **Acción recomendada** : descartar la alerta.
+    **Acción recomendada**: descartar la alerta.
 
 **Comprender el ámbito de la vulneración de seguridad**
 
@@ -359,14 +348,14 @@ Actividades en una única sesión que indica que un usuario realizó eliminacion
 
 Actividades que indican que un atacante ha obtenido acceso a la bandeja de entrada de un usuario y ha creado una regla sospechosa. Las reglas de manipulación, como eliminar o mover mensajes, o carpetas, desde la bandeja de entrada de un usuario pueden ser un intento de pasar información de la organización. De forma similar, pueden indicar un intento de manipular la información que un usuario ve o para usar su bandeja de entrada para distribuir correo no deseado, correos electrónicos de suplantación de identidad (phishing) o malware. Cloud App Security genera perfiles de su entorno y desencadena alertas cuando se detectan reglas de manipulación de bandeja de entrada sospechosas en la bandeja de entrada de un usuario. Esto puede indicar que la cuenta del usuario está en peligro.
 
-**TP** , **B-TP** o **FP** ?
+**TP**, **B-TP** o **FP**?
 
-1. **TP** : si es capaz de confirmar que se ha creado una regla de bandeja de entrada malintencionada y que la cuenta se ha puesto en peligro.
+1. **TP**: si es capaz de confirmar que se ha creado una regla de bandeja de entrada malintencionada y que la cuenta se ha puesto en peligro.
 
-    **Acción recomendada** : suspenda al usuario, restablezca la contraseña y quite la regla de reenvío.
-1. **FP** : si es capaz de confirmar que un usuario ha creado la regla de forma legítima.
+    **Acción recomendada**: suspenda al usuario, restablezca la contraseña y quite la regla de reenvío.
+1. **FP**: si es capaz de confirmar que un usuario ha creado la regla de forma legítima.
 
-    **Acción recomendada** : descartar la alerta.
+    **Acción recomendada**: descartar la alerta.
 
 **Comprender el ámbito de la vulneración de seguridad**
 
@@ -388,14 +377,14 @@ Actividades que indican que un atacante ha puesto en peligro una cuenta de usuar
 
 El establecimiento del patrón de actividad de un usuario nuevo requiere un período de aprendizaje inicial de siete días durante el cual no se desencadenan alertas para las nuevas ubicaciones.
 
-**TP** , **B-TP** o **FP** ?
+**TP**, **B-TP** o **FP**?
 
-1. **TP** : si es capaz de confirmar que un administrador legítimo no ha realizado la actividad.
+1. **TP**: si es capaz de confirmar que un administrador legítimo no ha realizado la actividad.
 
-    **Acción recomendada** : suspender al usuario, marcar el usuario como comprometido y restablecer su contraseña.
-1. **FP** : si es capaz de confirmar que un administrador ha realizado legítimamente el volumen inusual de actividades administrativas.
+    **Acción recomendada**: suspender al usuario, marcar el usuario como comprometido y restablecer su contraseña.
+1. **FP**: si es capaz de confirmar que un administrador ha realizado legítimamente el volumen inusual de actividades administrativas.
 
-    **Acción recomendada** : descartar la alerta.
+    **Acción recomendada**: descartar la alerta.
 
 **Comprender el ámbito de la vulneración de seguridad**
 
@@ -414,28 +403,28 @@ Los intentos de inicio de sesión erróneos podrían indicar un intento de incum
 
 El establecimiento del patrón de actividad de un usuario nuevo requiere un período de aprendizaje inicial de siete días durante el cual no se desencadenan alertas para las nuevas ubicaciones.
 
-**TP** , **B-TP** o **FP** ?
+**TP**, **B-TP** o **FP**?
 
 Esta Directiva se basa en el aprendizaje del comportamiento normal de inicio de sesión de un usuario. Cuando se detecta una desviación de la norma, se desencadena una alerta. Si la detección comienza para ver que el mismo comportamiento continúa, la alerta solo se genera una vez.
 
 1. **TP** (error de MFA): si es capaz de confirmar que MFA funciona correctamente, podría ser un signo de un ataque por fuerza bruta intentada.
 
-    **Acciones recomendadas** :
+    **Acciones recomendadas**:
     1. Suspenda al usuario, marque el usuario como comprometido y restablezca la contraseña.
     1. Busque la aplicación que realizó las autenticaciones con errores y vuelva a configurarla.
     1. Busque otros usuarios que hayan iniciado sesión en torno a la hora de la actividad, ya que también pueden estar en peligro. Suspenda al usuario, marque el usuario como comprometido y restablezca la contraseña.
 1. **B-TP** (error de MFA): si es capaz de confirmar que la alerta se debe a un problema con MFA.
 
-    **Acción recomendada** : cree una guía con Power Automate para ponerse en contacto con el usuario y comprobar si hay problemas con MFA.
+    **Acción recomendada**: cree una guía con Power Automate para ponerse en contacto con el usuario y comprobar si hay problemas con MFA.
 1. **B-TP** (aplicación configurada de forma incorrecta): si es capaz de confirmar que una aplicación mal configurada está intentando conectarse a un servicio varias veces con credenciales expiradas.
 
-    **Acción recomendada** : descartar la alerta.
+    **Acción recomendada**: descartar la alerta.
 1. **B-TP** (contraseña modificada): si es capaz de confirmar que un usuario ha cambiado recientemente su contraseña, pero no ha afectado a las credenciales a través de recursos compartidos de red.
 
-    **Acción recomendada** : descartar la alerta.
+    **Acción recomendada**: descartar la alerta.
 1. **B-TP** (prueba de seguridad): si es capaz de confirmar que los analistas de seguridad llevan a cabo una prueba de seguridad o penetración en nombre de la organización.
 
-    **Acción recomendada** : descartar la alerta.
+    **Acción recomendada**: descartar la alerta.
 
 **Comprender el ámbito de la vulneración de seguridad**
 
@@ -459,14 +448,14 @@ Actividades en una única sesión que indica que un usuario ha realizado un núm
 
 El establecimiento del patrón de actividad de un usuario nuevo requiere un período de aprendizaje inicial de siete días durante el cual no se desencadenan alertas para las nuevas ubicaciones.
 
-**TP** , **B-TP** o **FP** ?
+**TP**, **B-TP** o **FP**?
 
-1. **TP** : si es capaz de confirmar que un usuario legítimo no ha realizado la actividad.
+1. **TP**: si es capaz de confirmar que un usuario legítimo no ha realizado la actividad.
 
-    **Acción recomendada** : quitar el acceso compartido de Power BI. Si es capaz de confirmar que la cuenta está en peligro, suspenda al usuario, marque el usuario como comprometido y restablezca la contraseña.
-1. **FP** : si es capaz de confirmar que el usuario tenía una justificación comercial para compartir estos informes.
+    **Acción recomendada**: quitar el acceso compartido de Power BI. Si es capaz de confirmar que la cuenta está en peligro, suspenda al usuario, marque el usuario como comprometido y restablezca la contraseña.
+1. **FP**: si es capaz de confirmar que el usuario tenía una justificación comercial para compartir estos informes.
 
-    **Acción recomendada** : descartar la alerta.
+    **Acción recomendada**: descartar la alerta.
 
 **Comprender el ámbito de la vulneración de seguridad**
 
@@ -477,14 +466,14 @@ El establecimiento del patrón de actividad de un usuario nuevo requiere un per�
 
 Actividades que indican que un usuario ha compartido un informe de Power BI que puede contener información confidencial identificada mediante NLP para analizar los metadatos del informe. El informe se ha compartido con una dirección de correo electrónico externa, se ha publicado en la web o se ha entregado una instantánea a una dirección de correo electrónico suscrita externamente. Esto puede indicar un intento de infracción de la organización.
 
-**TP** , **B-TP** o **FP** ?
+**TP**, **B-TP** o **FP**?
 
-1. **TP** : si es capaz de confirmar que un usuario legítimo no ha realizado la actividad.
+1. **TP**: si es capaz de confirmar que un usuario legítimo no ha realizado la actividad.
 
-    **Acción recomendada** : quitar el acceso compartido de Power BI. Si es capaz de confirmar que la cuenta está en peligro, suspenda al usuario, marque el usuario como comprometido y restablezca la contraseña.
-1. **FP** : si es capaz de confirmar que el usuario tenía una justificación comercial para compartir estos informes.
+    **Acción recomendada**: quitar el acceso compartido de Power BI. Si es capaz de confirmar que la cuenta está en peligro, suspenda al usuario, marque el usuario como comprometido y restablezca la contraseña.
+1. **FP**: si es capaz de confirmar que el usuario tenía una justificación comercial para compartir estos informes.
 
-    **Acción recomendada** : descartar la alerta.
+    **Acción recomendada**: descartar la alerta.
 
 **Comprender el ámbito de la vulneración de seguridad**
 
@@ -499,17 +488,17 @@ En cierto software, hay opciones para permitir que otros usuarios suplanten a ot
 
 El establecimiento del patrón de actividad de un usuario nuevo requiere un período de aprendizaje inicial de siete días durante el cual no se desencadenan alertas para las nuevas ubicaciones.
 
-**TP** , **B-TP** o **FP** ?
+**TP**, **B-TP** o **FP**?
 
-1. **TP** : si es capaz de confirmar que un usuario legítimo no ha realizado la actividad.
+1. **TP**: si es capaz de confirmar que un usuario legítimo no ha realizado la actividad.
 
-    **Acción recomendada** : suspender al usuario, marcar el usuario como comprometido y restablecer su contraseña.
+    **Acción recomendada**: suspender al usuario, marcar el usuario como comprometido y restablecer su contraseña.
 1. **FP** (comportamiento inusual): si es capaz de confirmar que el usuario ha realizado legítimamente las actividades inusuales o más actividades que la línea base establecida.
 
-    **Acción recomendada** : descartar la alerta.
-1. **FP** : si es capaz de confirmar que las aplicaciones, como los equipos, suplantan al usuario de forma legítima.
+    **Acción recomendada**: descartar la alerta.
+1. **FP**: si es capaz de confirmar que las aplicaciones, como los equipos, suplantan al usuario de forma legítima.
 
-    **Acción recomendada** : Revise las acciones y descartar la alerta si es necesario.
+    **Acción recomendada**: Revise las acciones y descartar la alerta si es necesario.
 
 **Comprender el ámbito de la vulneración de seguridad**
 
@@ -525,14 +514,14 @@ En esta sección se describen las alertas que indican que un actor malintenciona
 
 Actividades que indican que un atacante ha obtenido acceso a la bandeja de entrada de un usuario y ha creado una regla sospechosa. Las reglas de manipulación, como reenviar todos los mensajes o correos electrónicos específicos a otra cuenta de correo electrónico, pueden tratar de transmitir información de su organización. Cloud App Security genera perfiles de su entorno y desencadena alertas cuando se detectan reglas de manipulación de bandeja de entrada sospechosas en la bandeja de entrada de un usuario. Esto puede indicar que la cuenta del usuario está en peligro.
 
-**TP** , **B-TP** o **FP** ?
+**TP**, **B-TP** o **FP**?
 
-1. **TP** : si es capaz de confirmar que se ha creado una regla de reenvío de bandeja de entrada malintencionada y que la cuenta se ha puesto en peligro.
+1. **TP**: si es capaz de confirmar que se ha creado una regla de reenvío de bandeja de entrada malintencionada y que la cuenta se ha puesto en peligro.
 
-    **Acción recomendada** : suspenda al usuario, restablezca la contraseña y quite la regla de reenvío.
-1. **FP** : si es capaz de confirmar que el usuario ha creado una regla de reenvío en una cuenta de correo electrónico externa nueva o personal por motivos legítimos.
+    **Acción recomendada**: suspenda al usuario, restablezca la contraseña y quite la regla de reenvío.
+1. **FP**: si es capaz de confirmar que el usuario ha creado una regla de reenvío en una cuenta de correo electrónico externa nueva o personal por motivos legítimos.
 
-    **Acción recomendada** : descartar la alerta.
+    **Acción recomendada**: descartar la alerta.
 
 **Comprender el ámbito de la vulneración de seguridad**
 
@@ -553,17 +542,17 @@ Actividades que indican que un usuario ha realizado un número inusual de descar
 
 El establecimiento del patrón de actividad de un usuario nuevo requiere un período de aprendizaje inicial de siete días durante el cual no se desencadenan alertas para las nuevas ubicaciones.
 
-**TP** , **B-TP** o **FP** ?
+**TP**, **B-TP** o **FP**?
 
-1. **TP** : si es capaz de confirmar que un usuario legítimo no ha realizado la actividad.
+1. **TP**: si es capaz de confirmar que un usuario legítimo no ha realizado la actividad.
 
-    **Acción recomendada** : suspender al usuario, marcar el usuario como comprometido y restablecer su contraseña.
+    **Acción recomendada**: suspender al usuario, marcar el usuario como comprometido y restablecer su contraseña.
 1. **FP** (comportamiento inusual): si puede confirmar que el usuario ha realizado legítimamente más actividades de descarga de archivos que la línea base establecida.
 
-    **Acción recomendada** : descartar la alerta.
+    **Acción recomendada**: descartar la alerta.
 1. **FP** (sincronización de software): si se puede confirmar que el software, como OneDrive, está sincronizado con una copia de seguridad externa que produjo la alerta.
 
-    **Acción recomendada** : descartar la alerta.
+    **Acción recomendada**: descartar la alerta.
 
 **Comprender el ámbito de la vulneración de seguridad**
 
@@ -578,14 +567,14 @@ Actividades que indican que un usuario ha realizado un número inusual de accion
 
 El establecimiento del patrón de actividad de un usuario nuevo requiere un período de aprendizaje inicial de siete días durante el cual no se desencadenan alertas para las nuevas ubicaciones.
 
-**TP** , **B-TP** o **FP** ?
+**TP**, **B-TP** o **FP**?
 
-1. **TP** : si es capaz de confirmar que un usuario legítimo no ha realizado la actividad.
+1. **TP**: si es capaz de confirmar que un usuario legítimo no ha realizado la actividad.
 
-    **Acción recomendada** : suspender al usuario, marcar el usuario como comprometido y restablecer su contraseña.
+    **Acción recomendada**: suspender al usuario, marcar el usuario como comprometido y restablecer su contraseña.
 1. **FP** (comportamiento inusual): si es capaz de confirmar que el usuario ha realizado legítimamente más actividades de uso compartido de archivos que la línea base establecida.
 
-    **Acción recomendada** : descartar la alerta.
+    **Acción recomendada**: descartar la alerta.
 
 **Comprender el ámbito de la vulneración de seguridad**
 
@@ -601,7 +590,7 @@ En esta sección se describen las alertas que indican que un actor malintenciona
 
 Actividades en una única sesión que indica que un usuario ha realizado un número inusual de eliminaciones de la máquina virtual en comparación con la base de referencia aprendida. La eliminación de varias máquinas virtuales puede indicar un intento de interrumpir o destruir un entorno. Sin embargo, hay muchos escenarios normales en los que se eliminan las máquinas virtuales.
 
-**TP** , **B-TP** o **FP** ?
+**TP**, **B-TP** o **FP**?
 
 Para mejorar la precisión y alertar solo cuando hay una indicación fuerte de una infracción, esta detección establece una línea base en cada entorno de la organización para reducir los incidentes **B-TP** y solo alerta cuando se detecta el comportamiento inusual.
 
@@ -609,12 +598,12 @@ Para mejorar la precisión y alertar solo cuando hay una indicación fuerte de u
 
 El establecimiento del patrón de actividad de un usuario nuevo requiere un período de aprendizaje inicial de siete días durante el cual no se desencadenan alertas para las nuevas ubicaciones.
 
-- **TP** : si es capaz de confirmar que las eliminaciones no se autorizaron.
+- **TP**: si es capaz de confirmar que las eliminaciones no se autorizaron.
 
-    **Acción recomendada** : suspenda al usuario, restablezca la contraseña y examine todos los dispositivos en busca de amenazas malintencionadas. Revise toda la actividad de los usuarios para ver otros indicadores de riesgo y explore el ámbito de impacto.
-- **B-TP** : Si después de la investigación, puede confirmar que el administrador está autorizado para realizar estas actividades de eliminación.
+    **Acción recomendada**: suspenda al usuario, restablezca la contraseña y examine todos los dispositivos en busca de amenazas malintencionadas. Revise toda la actividad de los usuarios para ver otros indicadores de riesgo y explore el ámbito de impacto.
+- **B-TP**: Si después de la investigación, puede confirmar que el administrador está autorizado para realizar estas actividades de eliminación.
 
-    **Acción recomendada** : descartar la alerta.
+    **Acción recomendada**: descartar la alerta.
 
 **Comprender el ámbito de la vulneración de seguridad**
 
@@ -633,17 +622,17 @@ Las directivas de detección de amenazas automatizadas de Cloud App Security emp
 
 El establecimiento del patrón de actividad de un usuario nuevo requiere un período de aprendizaje inicial de siete días durante el cual no se desencadenan alertas para las nuevas ubicaciones.
 
-**TP** , **B-TP** o **FP** ?
+**TP**, **B-TP** o **FP**?
 
-1. **TP** : si es capaz de confirmar que el usuario no ha realizado la actividad.
+1. **TP**: si es capaz de confirmar que el usuario no ha realizado la actividad.
 
-    **Acción recomendada** : suspender al usuario, marcar el usuario como comprometido y restablecer su contraseña.
+    **Acción recomendada**: suspender al usuario, marcar el usuario como comprometido y restablecer su contraseña.
 1. **FP** (comportamiento inusual): el usuario realizó legítimamente varias actividades de eliminación y carga de archivos similares en un breve período de tiempo.
 
-    **Acción recomendada** : después de revisar el registro de actividad y confirmar que las extensiones de archivo no son sospechosas, descartar la alerta.
+    **Acción recomendada**: después de revisar el registro de actividad y confirmar que las extensiones de archivo no son sospechosas, descartar la alerta.
 1. **FP** (extensión de archivo de ransomware común): si es capaz de confirmar que las extensiones de los archivos afectados coinciden con una extensión de ransomware conocida.
 
-    **Acción recomendada** : póngase en contacto con el usuario y confirme que los archivos son seguros y, a continuación, descarte la alerta.
+    **Acción recomendada**: póngase en contacto con el usuario y confirme que los archivos son seguros y, a continuación, descarte la alerta.
 
 **Comprender el ámbito de la vulneración de seguridad**
 
@@ -659,21 +648,21 @@ Actividades que indican que un usuario realizó una actividad de eliminación de
 
 El establecimiento del patrón de actividad de un usuario nuevo requiere un período de aprendizaje inicial de siete días durante el cual no se desencadenan alertas para las nuevas ubicaciones.
 
-**TP** , **B-TP** o **FP** ?
+**TP**, **B-TP** o **FP**?
 
-1. **TP** : si es capaz de confirmar que un usuario legítimo no ha realizado la actividad.
+1. **TP**: si es capaz de confirmar que un usuario legítimo no ha realizado la actividad.
 
-    **Acción recomendada** : suspender al usuario, marcar el usuario como comprometido y restablecer su contraseña.
-1. **FP** : si es capaz de confirmar que el usuario ha realizado legítimamente más actividades de eliminación de archivos que la línea base establecida.
+    **Acción recomendada**: suspender al usuario, marcar el usuario como comprometido y restablecer su contraseña.
+1. **FP**: si es capaz de confirmar que el usuario ha realizado legítimamente más actividades de eliminación de archivos que la línea base establecida.
 
-    **Acción recomendada** : descartar la alerta.
+    **Acción recomendada**: descartar la alerta.
 
 **Comprender el ámbito de la vulneración de seguridad**
 
 1. Revise las actividades de eliminación y cree una lista de los archivos eliminados. Si es necesario, recupere los archivos eliminados.
 1. Opcionalmente, puede crear una guía mediante la automatización de la energía para ponerse en contacto con los usuarios y sus administradores para comprobar la actividad.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 > [!div class="nextstepaction"]
 > [Tutorial: Investigación de usuarios de riesgo](tutorial-ueba.md)

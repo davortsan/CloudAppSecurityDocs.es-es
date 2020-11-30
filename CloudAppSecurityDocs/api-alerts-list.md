@@ -1,21 +1,14 @@
 ---
 title: API List-Alerts
 description: En este artículo se describe la solicitud de lista en la API de alertas de Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: c6cb171c5141579364b3b23387591d3f4c5cbfa6
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: a4a24db5bab13a12fdeb7ecbe88ad45c41b90577
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90879798"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314594"
 ---
 # <a name="list---alerts-api"></a>API List-Alerts
 
@@ -35,7 +28,7 @@ POST /api/v1/alerts/
 
 ## <a name="request-body-parameters"></a>Parámetros del cuerpo de la solicitud
 
-| Parámetro | Descripción |
+| Parámetro | Description |
 | --- | --- |
 | filters | Filtre los objetos con todos los filtros de búsqueda de la solicitud; consulte [filtros de alerta](api-alerts.md#filters) para obtener más detalles. |
 | sortDirection | Dirección de ordenación. Los valores posibles son: `asc` y `desc` |

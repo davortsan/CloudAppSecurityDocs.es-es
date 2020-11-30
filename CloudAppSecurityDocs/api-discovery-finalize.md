@@ -1,21 +1,14 @@
 ---
 title: 'Finalización de la carga de archivos: API de Cloud Discovery'
 description: En este artículo se describe la solicitud de done_upload en la API de Cloud Discovery de Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: a30fd3f257089d8d3aeda125f63ae2c695d6344c
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 52adeb1b0a9f858a5c4251ff9a79cb4a24656a14
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880605"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314484"
 ---
 # <a name="finalize-file-upload---cloud-discovery-api"></a>Finalización de la carga de archivos: API de Cloud Discovery
 
@@ -31,7 +24,7 @@ POST /api/v1/discovery/done_upload/
 
 ## <a name="request-body-parameters"></a>Parámetros del cuerpo de la solicitud
 
-| Parámetro | Descripción |
+| Parámetro | Description |
 | --- | --- |
 | uploadUrl | La dirección URL que se devolvió en la llamada inicial que solicita la carga de archivos. |
 | inputStreamName | Nombre del origen de datos desde el que entran los datos (representa el dispositivo). |

@@ -1,24 +1,14 @@
 ---
 title: Privacidad de las actividades
 description: En este artículo se proporciona información sobre cómo configurar la supervisión de la actividad para que cumpla con la Directiva de privacidad del usuario.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 05/27/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 89a5f95512a2cfd3eb64c181b5e805944c0275eb
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: d43913861adbc06ef59ac463e9cb187967941635
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880931"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314824"
 ---
 # <a name="activity-privacy"></a>Privacidad de las actividades
 

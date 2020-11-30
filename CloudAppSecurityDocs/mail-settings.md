@@ -1,25 +1,14 @@
 ---
 title: " Establecimiento de preferencias de notificación de correo electrónico"
 description: En este artículo se proporciona información sobre cómo personalizar las notificaciones de correo electrónico que Cloud App Security envía.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 2/4/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: c7aef2b281139b7bf2b50b5f92b5947e0e389580
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: e98a587f78892d255736f3c2328ac0ae195c725d
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033929"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315045"
 ---
 # <a name="email-notification-preferences"></a>Preferencias de notificación de correo electrónico
 

@@ -1,25 +1,14 @@
 ---
 title: Conectar aplicaciones para obtener visibilidad y control
 description: En este artículo se describe el proceso para conectar aplicaciones con las aplicaciones en la nube de la organización mediante conectores de API.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 07/14/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 02760754d13bfbf0cb0fea0866ae9049c7a191bd
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 3b6733e0addabf8db1064ff8b5f4e20a8eb76c93
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033385"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314957"
 ---
 # <a name="connect-apps"></a>Conectar aplicaciones
 
@@ -36,7 +25,7 @@ Cloud App Security admite varias instancias de la misma aplicación conectada. P
 > [!NOTE]
 > No se admiten instancias múltiples de Office 365 y Azure.
 
-## <a name="how-it-works"></a>Funcionamiento
+## <a name="how-it-works"></a>Cómo funciona
 
 Cloud App Security se implementa con privilegios de administrador del sistema para permitir el acceso total a todos los objetos del entorno.
 
@@ -83,7 +72,7 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
 | **Revocar permisos de aplicación** | No aplicable | No es compatible con el proveedor | en breve | No aplicable | ✔ | ✔ | No aplicable | | ✔ | No aplicable | No aplicable |
 | **Aplicación de etiquetas de Azure Information Protection** | No aplicable | ✔ | | No aplicable | ✔ | ✔ | No aplicable | | | No aplicable | No aplicable |
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 - En el caso de algunas aplicaciones, puede que sea necesario permitir que las direcciones IP de la lista permitan Cloud App Security recopilar registros y proporcionar acceso a la consola de Cloud App Security. Para obtener más información, consulte [requisitos de red](network-requirements.md).
 
@@ -98,7 +87,7 @@ Para usar los conectores de aplicaciones, debe asegurarse de que tiene lo siguie
 |-----|--------------|------|
 | Azure | | Administrador global |
 | AWS | | Usuario creado recientemente |
-| Box | Enterprise | Se recomienda encarecidamente que se conecte a Box como administrador. la conexión como coadmin dará como resultado la visibilidad parcial de los datos. En caso de que se conecte como coadministrador, asegúrese de seleccionar todos los permisos. |
+| Box | Empresa | Se recomienda encarecidamente que se conecte a Box como administrador. la conexión como coadmin dará como resultado la visibilidad parcial de los datos. En caso de que se conecte como coadministrador, asegúrese de seleccionar todos los permisos. |
 | Dropbox | Empresa/Enterprise | Administración |
 | GitHub | Nube de GitHub Enterprise | Propietario |
 | GCP | | Consulte los [requisitos previos de Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |

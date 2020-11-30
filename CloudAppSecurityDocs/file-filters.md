@@ -1,31 +1,20 @@
 ---
 title: Descripción de los datos y los filtros de archivo disponibles en Cloud App Security
 description: En este artículo de referencia se proporciona información sobre los tipos de archivo y filtros de archivo que usa Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagirn
 ms.date: 7/7/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 50e6d6855a6e1b94a4d10cb47b31321e0ee242ae
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 181fa6b890f211ab5029f1179ebf55615c3985c9
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90879638"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314958"
 ---
 # <a name="files"></a>Archivos
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Para proporcionar protección de datos, Microsoft Cloud App Security le ofrece visibilidad de todos los archivos de las aplicaciones conectadas. Después de conectar Microsoft Cloud App Security a una aplicación mediante el conector de aplicaciones, Microsoft Cloud App Security examina todos los archivos, como, por ejemplo, todos los archivos almacenados en OneDrive y Salesforce. Después, Cloud App Security vuelve a examinar todos los archivos cada vez que se modifican (la modificación puede ser de contenido, metadatos o permisos de uso compartido). Los tiempos de examen dependen del número de archivos almacenados en la aplicación. También puede usar la página **Archivos** para filtrar archivos e investigar qué tipo de datos se guarda en las aplicaciones en la nube.
+Para proporcionar protección de datos, Microsoft Cloud App Security le ofrece visibilidad de todos los archivos de las aplicaciones conectadas. Después de conectar Microsoft Cloud App Security a una aplicación mediante el conector de aplicaciones, Microsoft Cloud App Security examina todos los archivos, como, por ejemplo, todos los archivos almacenados en OneDrive y Salesforce. A continuación, Cloud App Security vuelve a examinar cada archivo cada vez que se modifica: la modificación puede realizarse en el contenido, los metadatos o los permisos de uso compartido. Los tiempos de examen dependen del número de archivos almacenados en la aplicación. También puede usar la página **Archivos** para filtrar archivos e investigar qué tipo de datos se guarda en las aplicaciones en la nube.
 
 ## <a name="file-filter-examples"></a>Ejemplos de filtros de archivo
 

@@ -1,25 +1,14 @@
 ---
 title: Creación de directivas de detección de anomalías en Cloud App Security
 description: En este artículo se proporciona una descripción de las directivas de detección de anomalías, así como información de referencia sobre los bloques de creación de una directiva de detección de anomalías.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 08/20/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 1d2fb570be2c764bbd439821377e27f182d1fb60
-ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
+ms.openlocfilehash: 6cddeb16149a61aa1099d4fe74c3423dbd45042f
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2020
-ms.locfileid: "94371080"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314756"
 ---
 # <a name="get-behavioral-analytics-and-anomaly-detection"></a>Obtención de análisis de comportamiento y detección de anomalías
 
@@ -35,7 +24,7 @@ Las anomalías se detectan mediante el examen de la actividad del usuario. El ri
 * Errores de inicio de sesión
 * Actividad administrativa
 * Cuentas inactivas
-* Location
+* Ubicación
 * Viaje imposible
 * Agente de usuario y dispositivo
 * Tasa de actividad
@@ -157,8 +146,8 @@ Estas directivas buscan actividades dentro de una única sesión según la líne
 Puede habilitar acciones de corrección automatizadas en las alertas generadas por directivas de detección de anomalías.
 
 1. Haga clic en el nombre de la directiva de detección en la página **Directiva**.
-1. En la ventana **Editar directiva de detección de anomalías** que se abre, en **Gobernanza** , establezca las acciones de corrección que quiera para cada aplicación conectada o para todas las aplicaciones.
-1. Haga clic en **Update** (Actualizar).
+1. En la ventana **Editar directiva de detección de anomalías** que se abre, en **Gobernanza**, establezca las acciones de corrección que quiera para cada aplicación conectada o para todas las aplicaciones.
+1. Haga clic en **Actualizar**.
 
 ## <a name="tune-anomaly-detection-policies"></a>Ajuste de directivas de detección de anomalías
 
@@ -166,9 +155,9 @@ Para influir en el motor de detección de anomalías con el fin de suprimir o ex
 
 * En la directiva de viaje imposible, puede establecer el control deslizante de sensibilidad para determinar el nivel de comportamiento anómalo necesario antes de que se desencadene una alerta. Por ejemplo, si se establece en Low, se suprimirán las alertas de viaje imposibles de las ubicaciones comunes de un usuario y, si se establece en alto, se mostrarán dichas alertas. Puede elegir entre los niveles de sensibilidad siguientes:
 
-  * **Bajo** : suprimes del sistema, del inquilino y del usuario
-  * **Media** : supresiones del usuario y el sistema
-  * **Alta** : solo supresiones del sistema
+  * **Bajo**: suprimes del sistema, del inquilino y del usuario
+  * **Media**: supresiones del usuario y el sistema
+  * **Alta**: solo supresiones del sistema
 
     Donde:
 
@@ -181,7 +170,7 @@ Para influir en el motor de detección de anomalías con el fin de suprimir o ex
 * También puede configurar si las alertas de actividad de un país o región poco frecuente, direcciones IP anónimas, direcciones IP sospechosas y viajes imposibles deben analizar tanto inicios de sesión con errores como correctos o simplemente inicios de sesión correctos.
 
 > [!NOTE]
-> De forma predeterminada, los protocolos de inicio de sesión heredados, como los que no usan la autenticación multifactor (por ejemplo, WS-Trust), no se supervisan con la Directiva de viajes imposibles. Si su organización usa protocolos heredados, para evitar que falten actividades relevantes, edite la Directiva y, en **Configuración avanzada** , establezca **analizar las actividades de inicio de sesión** en **todos los inicios de sesión**.
+> De forma predeterminada, los protocolos de inicio de sesión heredados, como los que no usan la autenticación multifactor (por ejemplo, WS-Trust), no se supervisan con la Directiva de viajes imposibles. Si su organización usa protocolos heredados, para evitar que falten actividades relevantes, edite la Directiva y, en **Configuración avanzada**, establezca **analizar las actividades de inicio de sesión** en **todos los inicios de sesión**.
 
 ## <a name="scope-anomaly-detection-policies"></a>Ámbito de directivas de detección de anomalías
 
@@ -192,7 +181,7 @@ Para establecer el ámbito de una directiva de detección de anomalías:
 
 1. Haga **Control** clic en  >  **directivas** de control y establezca el filtro de **tipo** en **Directiva de detección de anomalías**.
 1. Haga clic en la directiva cuyo ámbito desea establecer.
-1. En **Ámbito** , cambie la lista desplegable de la configuración predeterminada de **Todos los usuarios y grupos** a **Usuarios y grupos específicos**.
+1. En **Ámbito**, cambie la lista desplegable de la configuración predeterminada de **Todos los usuarios y grupos** a **Usuarios y grupos específicos**.
 1. Seleccione **Incluir** para especificar los usuarios y grupos para los que se aplicará esta directiva. Cualquier usuario o grupo que no se seleccione aquí no se considerará una amenaza y no generará una alerta.
 1. Seleccione **Excluir** para especificar los usuarios para los que no se aplicará esta directiva. Cualquier usuario que seleccione aquí no se considerará una amenaza y no generará una alerta, incluso si es miembro de los grupos seleccionados en **Incluir**.
 
@@ -202,11 +191,11 @@ Para establecer el ámbito de una directiva de detección de anomalías:
 
 Puede evaluar la prioridad de las diversas alertas desencadenadas por las nuevas directivas de detección de anomalías rápidamente y decidir cuáles es necesario atender primero. Para ello, necesita el contexto de la alerta, de forma que pueda ver la imagen más grande y comprender si realmente está ocurriendo algo malintencionado.
 
-1. En el **registro de actividades** , puede abrir una actividad para mostrar el cajón de actividades. Haga clic en **usuario** para ver la pestaña información de usuario. Esta pestaña incluye información como el número de alertas, las actividades y el lugar desde el que se han conectado, lo que es importante en una investigación.
+1. En el **registro de actividades**, puede abrir una actividad para mostrar el cajón de actividades. Haga clic en **usuario** para ver la pestaña información de usuario. Esta pestaña incluye información como el número de alertas, las actividades y el lugar desde el que se han conectado, lo que es importante en una investigación.
 
     ![detección de anomalías alert1 ](media/anomaly-alert-user1.png) ![ detección de anomalías alert2](media/anomaly-alert-user2.png)
 
-1. Esto le permite comprender qué actividades sospechosas realizó el usuario y aumentar la confianza en cuanto a si la cuenta se vio comprometida. Por ejemplo, una alerta sobre varios inicios de sesión erróneos realmente puede ser sospechosa y puede indicar posibles ataques por fuerza bruta, pero también puede ser un error de configuración de aplicación, haciendo que la alerta resulte ser verdadera. Sin embargo, si ve una alerta de varios inicios de sesión erróneos con actividades sospechosas adicionales, entonces hay una mayor probabilidad de que la cuenta se vea comprometida. En el ejemplo siguiente, puede ver que, después de la alerta de los **diversos intentos de inicio de sesión erróneos** , hubo **actividad desde una dirección IP TOR** y **actividad de viaje imposible** , ambas buenos indicadores de riesgo (IOC) por sí mismas. Si esto no era lo suficientemente sospechoso, puede ver que el mismo usuario realizó una **actividad de descarga masiva** , que suele ser un indicador del atacante que realiza la exfiltración de datos.
+1. Esto le permite comprender qué actividades sospechosas realizó el usuario y aumentar la confianza en cuanto a si la cuenta se vio comprometida. Por ejemplo, una alerta sobre varios inicios de sesión erróneos realmente puede ser sospechosa y puede indicar posibles ataques por fuerza bruta, pero también puede ser un error de configuración de aplicación, haciendo que la alerta resulte ser verdadera. Sin embargo, si ve una alerta de varios inicios de sesión erróneos con actividades sospechosas adicionales, entonces hay una mayor probabilidad de que la cuenta se vea comprometida. En el ejemplo siguiente, puede ver que, después de la alerta de los **diversos intentos de inicio de sesión erróneos**, hubo **actividad desde una dirección IP TOR** y **actividad de viaje imposible**, ambas buenos indicadores de riesgo (IOC) por sí mismas. Si esto no era lo suficientemente sospechoso, puede ver que el mismo usuario realizó una **actividad de descarga masiva**, que suele ser un indicador del atacante que realiza la exfiltración de datos.
 
     ![detección de anomalías alert3](media/anomaly-alert-user3.png)
 

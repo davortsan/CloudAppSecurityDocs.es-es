@@ -1,25 +1,14 @@
 ---
 title: Enriquecimiento de los datos de Cloud App Security Discovery con nombres de usuario de Azure AD
 description: En este artículo se proporciona información sobre cómo enriquecer los datos de Cloud App Security Discovery con nombres de usuario de Azure AD.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/10/2018
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: ae44525ae235bd80ce40a80c7c309e20e64cb5a1
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: bcedf73defb825bf3188592f719814755de89a25
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881586"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96313481"
 ---
 # <a name="cloud-discovery-enrichment"></a>Enriquecimiento de Cloud Discovery
 
@@ -42,7 +31,7 @@ Ahora es posible mejorar los datos de Cloud Discovery con datos de nombre de usu
 
 2. En la pestaña **Enriquecimiento de usuarios**, seleccione **Enriquezca los identificadores de los usuarios detectados con los nombres de usuario de Azure Active Directory**. Esta opción permite a Cloud App Security usar datos de Azure Active Directory para mejorar los nombres de usuarios de forma predeterminada.
 
-3. Haga clic en **Save**(Guardar).
+3. Haga clic en **Guardar**.
 
 ![Enriquecer Cloud App Security Discovery con nombres de usuario de Azure AD](media/discovery-enrichment.png)
 

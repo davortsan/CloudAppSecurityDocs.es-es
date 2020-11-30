@@ -1,25 +1,14 @@
 ---
 title: Configurar la carga de registros automática para informes continuos
 description: En este artículo se proporciona información sobre cómo cargar registros para crear informes de Cloud Discovery automáticos.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 98e5a260a3b0af3e2aeb8998f3845fc9076c7cc3
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.openlocfilehash: 1cae2f61af80348156090afe7b1058462dcab58d
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033810"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96313084"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>Configuración de la carga de registros automática para informes continuos en una aplicación virtual: en desuso
 
@@ -28,7 +17,7 @@ ms.locfileid: "96033810"
 > [!WARNING]
 > Es muy recomendable configurar la carga de registros mediante [Docker](discovery-docker.md) para una implementación más flexible.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 - Hypervisor: Hyper-V o VMware
 - Espacio en disco: 250 GB
@@ -42,7 +31,7 @@ El recopilador de registros puede manejar correctamente una capacidad de registr
 Los principales cuellos de botella del proceso de recopilación de registros son:
 
 - Ancho de banda de red: el ancho de banda de red determina la velocidad de carga de registros.
-- Rendimiento de E/S de la máquina virtual: determina la velocidad a la que se escriben los registros en el disco del recopilador de registros.
+- Rendimiento de e/s de la máquina virtual: determina la velocidad a la que se escriben los registros en el disco del recopilador de registros.
 El recopilador de registros tiene un mecanismo de seguridad integrado que supervisa la velocidad a la que llegan los registros y la compara con la velocidad de carga. En caso de congestión, el recopilador de registros comienza a quitar archivos de registro. Si la configuración normalmente supera los 50 GB por hora, se recomienda dividir el tráfico entre varios recopiladores de registros.
 
 ## <a name="set-up-and-configuration"></a>Establecimiento y configuración

@@ -1,27 +1,16 @@
 ---
 title: Administración de alertas generadas en Cloud App Security
 description: En este artículo se explica cómo trabajar con alertas generadas en el portal de Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 01/22/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 2b4e87b1c1ceaf5f089eb67ff2f2b451d5759efd
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: cef0c80ff1494d36ea216f8b3d6c4c588d7167db
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90879058"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314994"
 ---
-# <a name="manage-alerts"></a>Administrar alertas
+# <a name="manage-alerts"></a>Administración de alertas
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -77,7 +66,7 @@ Es buena idea revisar todas las alertas y usarlas como herramientas para modific
 
 En la tabla siguiente se proporciona una lista de los tipos de alertas que pueden activarse y se recomiendan formas para resolverlas.
 
-|Tipo de alerta|Descripción|Solución recomendada|
+|Tipo de alerta|Description|Solución recomendada|
 |----------------|-----------------|----------------------------|
 |Infracción de directiva de actividad|Este tipo de alerta es el resultado de una directiva que ha creado.|Para trabajar con este tipo de alerta en masa, se recomienda que trabaje en el centro de directivas para mitigarlas.<br /><br /> Ajuste la directiva para excluir las entidades con ruido al agregar más filtros y controles más pormenorizados.<br /><br />Si la directiva es precisa, la alerta está garantizada y es una infracción que quiere detener inmediatamente, considere la posibilidad de agregar una corrección automática en la directiva.|
 |Infracción de directiva de archivo|Este tipo de alerta es el resultado de una directiva que ha creado.| Para trabajar con este tipo de alerta en masa, se recomienda que trabaje en el centro de directivas para mitigarlas.<br /><br /> Ajuste la directiva para excluir las entidades con ruido al agregar más filtros y controles más pormenorizados.<br /><br />Si la directiva es precisa, la alerta está garantizada y es una infracción que quiere detener inmediatamente, considere la posibilidad de agregar una corrección automática en la directiva.|

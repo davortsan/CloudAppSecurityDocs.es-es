@@ -1,21 +1,14 @@
 ---
 title: 'Fetch: API de entidades'
 description: En este artículo se describe la solicitud de captura en la API de entidades de Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: 001f0ec02b22f33a57ee6a860b376bbee0c983d0
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 34db1003dd3ac23f7bc4d5f14100b6c1ff4f6a2e
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880895"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314280"
 ---
 # <a name="fetch---entities-api"></a>Fetch: API de entidades
 
@@ -34,7 +27,7 @@ GET /api/v1/entities/<pk>/
 
 ## <a name="request-url-parameters"></a>Parámetros de URL de solicitud
 
-| Parámetro | Descripción |
+| Parámetro | Description |
 | --- | --- |
 | pk | Un diccionario con el identificador de entidad, SaaS e información de instancia codificado como una cadena Base64. Por ejemplo: `{"id":"3fa9f28b-eb0e-463a-ba7b-8089fe9991e2","saas":11161,"inst":0}` codificado como una cadena Base64. |
 

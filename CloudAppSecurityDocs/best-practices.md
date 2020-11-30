@@ -1,18 +1,14 @@
 ---
 title: Prácticas recomendadas para proteger su organización
 description: En este artículo se proporciona un conjunto de procedimientos recomendados para proteger una organización.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: quickstart
 ms.date: 10/24/2019
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 67212e07104db5abe75267b55df398dd5dad17d3
-ms.sourcegitcommit: a0a8e25bda77fb21f280a0e504896be85b89ed6f
+ms.topic: quickstart
+ms.openlocfilehash: b0639bb79c9aed35086c3e8dea084f1e1c823628
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96033726"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96313665"
 ---
 # <a name="cloud-app-security-best-practices"></a>Procedimientos recomendados de Cloud App Security
 
@@ -23,6 +19,7 @@ En este artículo se proporcionan prácticas recomendadas para proteger su organ
 Los procedimientos recomendados que se describen en este artículo son los siguientes:
 
 > [!div class="checklist"]
+>
 > * [Detección y evaluación de aplicaciones en la nube](#discover-and-assess-cloud-apps)
 > * [Aplicación de directivas de gobernanza de la nube](#apply-cloud-governance-policies)
 > * [Limitación de la exposición de datos compartidos y aplicación de directivas de colaboración](#limit-exposure-of-shared-data-and-enforce-collaboration-policies)

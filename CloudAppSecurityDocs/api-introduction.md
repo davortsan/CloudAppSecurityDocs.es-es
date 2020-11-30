@@ -1,21 +1,14 @@
 ---
 title: Cloud App Security API de REST
 description: En este artículo se describe cómo interactuar con Cloud App Security a través de HTTPS.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: cb66e8d45d74d57adf71a095851c40087d102ce4
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 468d039f6bc620616e86b98b4967a055c7d0e380
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880545"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96313991"
 ---
 # <a name="cloud-app-security-rest-api"></a>Cloud App Security API de REST
 
@@ -83,11 +76,11 @@ Donde **Resource** representa un grupo de entidades relacionadas.
 
 En la tabla siguiente se describen los tipos de campo admitidos:
 
-|Campo|Descripción|
+|Campo|Description|
 |---|---|
 |string|Una cadena de texto|
 |boolean|Un valor booleano que representa true/false|
-|Entero|Entero de 32 bits con signo|
+|integer|Entero de 32 bits con signo|
 |timestamp|Milisegundos desde la época|
 
 ## <a name="limits"></a>Límites
@@ -141,9 +134,9 @@ curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenan
 
 En la tabla siguiente se describen los operadores admitidos:
 
-| Operator | Tipo de respuesta | Descripción |
+| Operador | Tipo de respuesta | Description |
 | --- | --- | --- |
-| contiene | lista de cadenas | Devuelve todos los registros pertinentes que contienen una de las cadenas proporcionadas. |
+| contains | lista de cadenas | Devuelve todos los registros pertinentes que contienen una de las cadenas proporcionadas. |
 | deq | lista de valores | Devuelve todos los registros que contienen un valor que no es igual a uno de los valores proporcionados. |
 | descendiente | lista de valores | Devuelve todos los registros pertinentes que coinciden con valores o descendientes de ellos. |
 | doesnotstartwith | lista de cadenas | Devuelve todos los registros relevantes que no empiecen por cada una de las cadenas proporcionadas. |
@@ -155,7 +148,7 @@ En la tabla siguiente se describen los operadores admitidos:
 | isnotset | boolean | Cuando se establece en "true", devuelve todos los registros pertinentes que no tienen un valor en el campo especificado. |
 | isset | boolean | Cuando se establece en "true", devuelve todos los registros pertinentes que tienen un valor en el campo especificado. |
 | lt | valor único | Devuelve todos los registros cuyo valor es menor que el valor proporcionado. |
-| ELP | valor único | Devuelve todos los registros cuyo valor es menor o igual que el valor proporcionado. |
+| lte | valor único | Devuelve todos los registros cuyo valor es menor o igual que el valor proporcionado. |
 | lte_ndays | number | Devuelve todos los registros con una fecha anterior a N días. |
 | ncontains | lista de cadenas | Devuelve todos los registros pertinentes que no contienen una de las cadenas proporcionadas |
 | ndescendantof | lista de valores | Devuelve todos los registros pertinentes que no coinciden con valores o descendientes de ellos. |

@@ -1,21 +1,14 @@
 ---
 title: API de Cloud App Security actividades
 description: En este artículo se proporciona información sobre el uso de la API de actividades.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: 9ba5e83c10406308a1faf6e323fcfb9837da4b12
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 501d8a5ccaad1673c34aa0367f06531de94035b5
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880033"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314688"
 ---
 # <a name="activities-api"></a>API de actividades
 
@@ -37,8 +30,8 @@ En la tabla siguiente se describen los filtros admitidos:
 
 | Filtrar | Tipo | Operadores | Descripción |
 | --- | --- | --- | --- |
-| service | Entero | EQ, Neq | Filtre las actividades relacionadas con el appID de servicio especificado, por ejemplo: 11770 |
-| instance | Entero | EQ, Neq | Filtrar actividades de instancias especificadas |
+| service | integer | EQ, Neq | Filtre las actividades relacionadas con el appID de servicio especificado, por ejemplo: 11770 |
+| instance | integer | EQ, Neq | Filtrar actividades de instancias especificadas |
 | usuario. unidad organizativa | string | EQ, Neq, isset, isnotset | Filtrar actividades por la unidad organizativa del usuario que realiza la operación |
 | Activity. eventType | string | EQ, Neq | Filtrar actividades por tipo de evento |
 | activity.id | string | eq | Buscar una actividad por identificador |
@@ -55,7 +48,7 @@ En la tabla siguiente se describen los filtros admitidos:
 | fileSelector | archivo | EQ, Neq | Filtrar las actividades que contienen el archivo o carpeta especificados |
 | office365url | string | StartsWith, EQ, EndsWith | Filtrar actividades por direcciones URL de Office 365 |
 | fileId | string | eq | Buscar un archivo por identificador |
-| IP. categoría | Entero | EQ, Neq | Filtre las actividades con las categorías de subred especificadas. Los valores posibles son:<br /><br />**1**: empresa<br />**2**: administración<br />**3**: arriesgado<br />**4**: VPN<br />**5**: proveedor de la nube<br />**6**: otros |
+| IP. categoría | integer | EQ, Neq | Filtre las actividades con las categorías de subred especificadas. Los valores posibles son:<br /><br />**1**: empresa<br />**2**: administración<br />**3**: arriesgado<br />**4**: VPN<br />**5**: proveedor de la nube<br />**6**: otros |
 | IP. Tags | string | EQ, Neq | Filtrar actividades por ID. de etiquetas IP |
 | text | string | EQ, startswithsingle, texto | Filtrar actividades realizando una búsqueda de texto libre |
 | date | timestamp | LTE, GTE, intervalo, lte_ndays, gte_ndays | Filtrar las actividades que se produjeron en el intervalo de tiempo especificado |

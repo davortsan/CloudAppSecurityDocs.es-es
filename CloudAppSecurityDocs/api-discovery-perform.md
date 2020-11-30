@@ -1,21 +1,14 @@
 ---
 title: Realización de la API de Cloud Discovery de carga de archivos
 description: En este artículo se describe la solicitud realizar carga de archivos en la API Cloud Discovery de Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.suite: ems
-ms.openlocfilehash: a943bf41934a6f90bd8d23b1b6bb358d673f35e7
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 551a8a0434c916f1df7b591638908970712e9d28
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90880573"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96314433"
 ---
 # <a name="perform-file-upload---cloud-discovery-api"></a>Realización de la API de Cloud Discovery de carga de archivos
 
