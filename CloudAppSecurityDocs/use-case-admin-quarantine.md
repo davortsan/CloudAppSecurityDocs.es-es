@@ -1,25 +1,14 @@
 ---
 title: Protección de archivos con la cuarentena de administrador de Cloud App Security
 description: En este tutorial se describe el escenario para usar la cuarentena de administrador para controlar las vulneraciones de datos.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 7/30/2019
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 2835a0f8bc66f937d8569c327c5fd61c0e6ebac9
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: 5d0a9e666b415806a0cb6a3a047f0b81e2b2a4fc
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881156"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315776"
 ---
 # <a name="tutorial-protect-files-with-admin-quarantine"></a>Tutorial: Protección de archivos con la cuarentena de administrador
 

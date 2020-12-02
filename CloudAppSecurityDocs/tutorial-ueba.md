@@ -1,21 +1,14 @@
 ---
 title: Investigación de usuarios de riesgo| Microsoft Docs
 description: En este tutorial se describe el proceso para investigar los usuarios de riesgo en Microsoft Cloud App Security, en entornos híbridos, mediante la integración con Microsoft Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
 ms.date: 11/08/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-ms.reviewer: dannyk
-ms.suite: ems
-ms.openlocfilehash: b8dace138aeab11fdd334514bf0dd8850a983f37
-ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
+ms.openlocfilehash: 9ef0555a8fc7fa82a87fd7238d0abc2ec85e4540
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2020
-ms.locfileid: "94371309"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315844"
 ---
 # <a name="tutorial-investigate-risky-users"></a>Tutorial: Investigación de usuarios de riesgo
 
@@ -48,7 +41,7 @@ La prioridad de la investigación se basa en las alertas de seguridad, las activ
 
 Si hace clic en el valor de la puntuación para una alerta o una actividad, puede ver las evidencias que explican cómo Cloud App Security puntuó la actividad.
 
-Cada usuario de Azure AD tiene una puntuación de prioridad de investigación dinámica que se actualiza constantemente en función del comportamiento reciente y el impacto, creada a partir de datos que se evalúan desde Defender for Identity y Cloud App Security. Ahora puede saber de inmediato quiénes son los principales usuarios de riesgo filtrando por la **Puntuación de prioridad de la investigación** , comprobando directamente su impacto en el negocio e investigando todas las actividades relacionadas, independientemente de si están comprometidas, extrayendo datos o actuando como amenazas internas.
+Cada usuario de Azure AD tiene una puntuación de prioridad de investigación dinámica que se actualiza constantemente en función del comportamiento reciente y el impacto, creada a partir de datos que se evalúan desde Defender for Identity y Cloud App Security. Ahora puede saber de inmediato quiénes son los principales usuarios de riesgo filtrando por la **Puntuación de prioridad de la investigación**, comprobando directamente su impacto en el negocio e investigando todas las actividades relacionadas, independientemente de si están comprometidas, extrayendo datos o actuando como amenazas internas.
 
 Cloud App Security usa lo siguiente para medir el riesgo:
 
@@ -69,7 +62,7 @@ La puntuación de las actividades determina la probabilidad de que un usuario es
 Para identificar quiénes son los usuarios de más riesgo en Cloud App Security:
 
 1. Vaya al panel de Cloud App Security y examine las personas identificadas en el icono **Usuarios principales por prioridad de investigación**. Luego, uno por uno, vaya a su página de usuario para investigarlos.  
-El **número de prioridad de investigación** , que se encuentra junto al nombre de usuario, es la suma de todas las actividades de riesgo del usuario durante la última semana.
+El **número de prioridad de investigación**, que se encuentra junto al nombre de usuario, es la suma de todas las actividades de riesgo del usuario durante la última semana.
 
    ![Panel Usuarios principales](media/dashboard-top-users.png)
 

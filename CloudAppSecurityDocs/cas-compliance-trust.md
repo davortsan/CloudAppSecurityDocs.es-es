@@ -1,20 +1,14 @@
 ---
 title: Cumplimiento, seguridad de datos, privacidad y confianza de Cloud App Security
 description: En este artículo se describe la oferta de cumplimiento de Cloud App Security, el centro de confianza, la privacidad y la seguridad de los datos.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: overview
 ms.date: 10/18/2020
-ms.collection: M365-security-compliance
-ms.custom: seodec18
-ms.suite: ems
-ms.openlocfilehash: eef7eaab53ddeb8ef26cb3c9f1603c1f66a17922
-ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
+ms.topic: overview
+ms.openlocfilehash: 33aa4d7693357cef452cee14974b6892e00f338a
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2020
-ms.locfileid: "94371034"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96313515"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Seguridad y privacidad de los datos de Microsoft Cloud App Security
 
@@ -178,7 +172,7 @@ Microsoft Cloud App Security permite definir el ámbito de la implementación. 
 
 ### <a name="anonymization"></a>Anonimización
 
-Puede elegir que los informes de **Cloud Discovery** sean anónimos. Una vez cargados los archivos de registro en **Microsoft**  Cloud App Security, toda la información de nombres de usuario se reemplaza por nombres de usuario cifrados. En el caso de investigaciones de seguridad específicas, puede resolver el nombre de usuario real. Los datos privados se cifran mediante AES-128 con una clave dedicada por inquilino. [Para más información](cloud-discovery-anonymizer.md).
+Puede elegir que los informes de **Cloud Discovery** sean anónimos. Una vez cargados los archivos de registro en **Microsoft** Cloud App Security, toda la información de nombres de usuario se reemplaza por nombres de usuario cifrados. En el caso de investigaciones de seguridad específicas, puede resolver el nombre de usuario real. Los datos privados se cifran mediante AES-128 con una clave dedicada por inquilino. [Para más información](cloud-discovery-anonymizer.md).
 
 ## <a name="security-and-privacy-for-cloud-app-security-us-government-gcc-high-customers"></a>Seguridad y privacidad de los clientes de GCC High para la Administración Pública de Estados Unidos de Cloud App Security
 

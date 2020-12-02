@@ -1,17 +1,14 @@
 ---
 title: Ampliación de la gobernanza a la corrección de puntos de conexión
 description: En este tutorial se describe el proceso para configurar alertas de directivas de Microsoft Cloud App Security para desencadenar flujos de trabajo de Microsoft Power Automate a fin de ejecutar acciones de corrección de Microsoft Defender for Endpoint.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: tutorial
 ms.date: 04/27/2020
-ms.openlocfilehash: 213b041630a1367a4f505643e73482490456682d
-ms.sourcegitcommit: 5367d8fdf99d61719a395728f2ef4b014604e3bc
+ms.topic: tutorial
+ms.openlocfilehash: f2e4910c93d4689663a63cc650b160b46afe090e
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2020
-ms.locfileid: "94370663"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96316983"
 ---
 # <a name="tutorial-extend-governance-to-endpoint-remediation"></a>Tutorial: Ampliación de la gobernanza a la corrección de puntos de conexión
 
@@ -46,8 +43,8 @@ Si no tiene un plan de Power Automate, [regístrese para obtener una cuenta de e
 
 1. En la barra de menús de Cloud App Security, haga clic en el engranaje de configuración ![icono de configuración](media/settings-icon.png "icono de configuración") y seleccione **Extensiones de seguridad**.
 
-1. En la página **Extensiones de seguridad** , haga clic en el botón del signo más para generar un nuevo token de la API.
-1. En el elemento emergente **Generar nuevo token** , escriba el nombre del token (por ejemplo, "Flow-token") y haga clic en **Generar**.
+1. En la página **Extensiones de seguridad**, haga clic en el botón del signo más para generar un nuevo token de la API.
+1. En el elemento emergente **Generar nuevo token**, escriba el nombre del token (por ejemplo, "Flow-token") y haga clic en **Generar**.
 
     ![Captura de pantalla de la ventana del token, donde se muestran la entrada de nombre y el botón Generar.](media/tutorial-flow-token-generate.png)
 1. Una vez generado el token, haga clic en el icono de copia situado a la derecha del token generado y luego en **Cerrar**. Va a necesitar el token más adelante.
@@ -76,17 +73,17 @@ Si no tiene un plan de Power Automate, [regístrese para obtener una cuenta de e
 > [!NOTE]
 > Si ha creado anteriormente un flujo con un conector de Azure AD, Power Automate vuelve a usar el token automáticamente y se puede omitir este paso.
 
-1. En la lista de aplicaciones, en la fila en la que aparece **Cloud App Security** , haga clic en **Crear**.
+1. En la lista de aplicaciones, en la fila en la que aparece **Cloud App Security**, haga clic en **Crear**.
 
     ![Captura de pantalla de la página de plantillas de Power Automate, donde se muestra el botón Crear de Cloud App Security.](media/tutorial-flow-templates-create.png)
 
-1. En el elemento emergente **Cloud App Security** , escriba el nombre de la conexión (por ejemplo, "Cloud App Security Token"), pegue el token de API que ha copiado y haga clic en **Crear**.
+1. En el elemento emergente **Cloud App Security**, escriba el nombre de la conexión (por ejemplo, "Cloud App Security Token"), pegue el token de API que ha copiado y haga clic en **Crear**.
 
     ![Captura de pantalla de la ventana Cloud App Security, donde se muestran la entrada de nombre y clave, y el botón Crear.](media/tutorial-flow-templates-create-window.png)
 
-1. En la lista de aplicaciones, en la fila en la que aparece **HTTP con Azure AD** , haga clic en **Iniciar sesión**.
+1. En la lista de aplicaciones, en la fila en la que aparece **HTTP con Azure AD**, haga clic en **Iniciar sesión**.
 
-1. En el elemento emergente **HTTP con Azure AD** , en los campos **Dirección URL del recurso base** y **URI de recurso de Azure AD** , escriba `https://graph.microsoft.com`, haga clic en **Iniciar sesión** y escriba las credenciales de administrador que quiere usar con el conector HTTP con Azure AD.
+1. En el elemento emergente **HTTP con Azure AD**, en los campos **Dirección URL del recurso base** y **URI de recurso de Azure AD**, escriba `https://graph.microsoft.com`, haga clic en **Iniciar sesión** y escriba las credenciales de administrador que quiere usar con el conector HTTP con Azure AD.
 
     ![Captura de pantalla de la ventana HTTP con Azure AD, donde se muestran los campos de recursos y el botón de inicio de sesión.](media/tutorial-flow-templates-azure.png)
 
@@ -104,7 +101,7 @@ Si no tiene un plan de Power Automate, [regístrese para obtener una cuenta de e
 
 1. En la lista de directivas, en la fila donde se muestre una directiva pertinente, seleccione el signo de tres puntos al final de la fila y, después, haga clic en **Editar directiva**.
 
-1. En **Alertas** , seleccione **Enviar alertas a Flow** y, después, haga clic en **Ejecutar examen antivirus con Windows Defender tras una alerta de Cloud App Security**.
+1. En **Alertas**, seleccione **Enviar alertas a Flow** y, después, haga clic en **Ejecutar examen antivirus con Windows Defender tras una alerta de Cloud App Security**.
 
     ![Captura de pantalla de la página de directivas, donde se muestra la sección de configuración de alertas.](media/tutorial-flow-templates-alerts.png)
 

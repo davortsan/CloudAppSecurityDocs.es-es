@@ -1,25 +1,14 @@
 ---
 title: Bloqueo de las descargas desde dispositivos no administrados con control de aplicaciones de acceso condicional de Cloud App Security
 description: En este tutorial se describe el escenario para proteger su organización frente a las descargas de datos confidenciales por parte de dispositivos no administrados mediante funcionalidades de proxy inverso de Azure AD.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/31/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-ms.openlocfilehash: 3dec3c1729d63649a754098ace7f638ccc3029bc
-ms.sourcegitcommit: e711727f2f00ee3b54e08337a5040449e352ca46
+ms.openlocfilehash: 7817b7309483556b961eb00d6c267249a1ff07c5
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93185940"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315708"
 ---
 # <a name="tutorial-block-download-of-sensitive-information"></a>Tutorial: Bloqueo de la descarga de información confidencial
 
@@ -68,36 +57,36 @@ Después de completar esta tarea, vaya al portal de Cloud App Security y cree un
 
 1. En el portal de Cloud App Security, seleccione **Control** seguido de **Directivas**.
 
-2. En la página **Directivas** , haga clic en **Crear directiva** seguido de **Directiva de sesión**.
+2. En la página **Directivas**, haga clic en **Crear directiva** seguido de **Directiva de sesión**.
 
-3. En la página **Crear directiva de sesión** , asigne un nombre y una descripción a la directiva. Por ejemplo, **Bloquear descargas de Salesforce para dispositivos no administrados**.
+3. En la página **Crear directiva de sesión**, asigne un nombre y una descripción a la directiva. Por ejemplo, **Bloquear descargas de Salesforce para dispositivos no administrados**.
 
 4. Asigne una **gravedad de directiva** y una **categoría**.
 
-5. En **Tipo de control de sesión** , seleccione **Controlar la descarga de archivos (con inspección)** . Esta configuración le permite supervisar todo lo que hacen los usuarios en una sesión de Salesforce y le ofrece control para bloquear y proteger las descargas en tiempo real.
+5. En **Tipo de control de sesión**, seleccione **Controlar la descarga de archivos (con inspección)** . Esta configuración le permite supervisar todo lo que hacen los usuarios en una sesión de Salesforce y le ofrece control para bloquear y proteger las descargas en tiempo real.
 
-6. En **Origen de actividad** en la sección **Actividades que coinciden con todo lo siguiente** , seleccione los filtros:
+6. En **Origen de actividad** en la sección **Actividades que coinciden con todo lo siguiente**, seleccione los filtros:
 
-   * **Etiquetas de dispositivo** : seleccione **No es igual a** y, después, seleccione **Conforme con Intune** , **Unidos a Azure AD híbrido** o **Certificado de cliente válido**. La selección depende del método que se use en su organización para identificar los dispositivos administrados.
+   * **Etiquetas de dispositivo**: seleccione **No es igual a** y, después, seleccione **Conforme con Intune**, **Unidos a Azure AD híbrido** o **Certificado de cliente válido**. La selección depende del método que se use en su organización para identificar los dispositivos administrados.
 
-   * **Aplicación** : Seleccione la aplicación que desea controlar.
+   * **Aplicación**: Seleccione la aplicación que desea controlar.
 
-   * **Usuarios** : seleccione los usuarios que desea supervisar.
+   * **Usuarios**: seleccione los usuarios que desea supervisar.
 
-7. También puede bloquear las descargas de ubicaciones que no forman parte de la red corporativa. En **Origen de actividad** en la sección **Actividades que coinciden con todo lo siguiente** , configure los filtros siguientes:
+7. También puede bloquear las descargas de ubicaciones que no forman parte de la red corporativa. En **Origen de actividad** en la sección **Actividades que coinciden con todo lo siguiente**, configure los filtros siguientes:
 
-   * **Dirección IP** o **Ubicación** : puede usar cualquiera de estos dos parámetros para identificar las ubicaciones desconocidas o no corporativas desde las que un usuario podría estar intentando acceder a información confidencial.
+   * **Dirección IP** o **Ubicación**: puede usar cualquiera de estos dos parámetros para identificar las ubicaciones desconocidas o no corporativas desde las que un usuario podría estar intentando acceder a información confidencial.
 
      > [!NOTE]
      > Si quiere bloquear las descargas TANTO desde dispositivos no administrados COMO desde ubicaciones no corporativas, tendrá que crear dos directivas de sesión. Una directiva establece el **origen de la actividad** de mediante la ubicación. La otra directiva establece el **origen de la actividad** en dispositivos no administrados.
 
-   * **Aplicación** : Seleccione la aplicación que desea controlar.
+   * **Aplicación**: Seleccione la aplicación que desea controlar.
 
-   * **Usuarios** : seleccione los usuarios que desea supervisar.
+   * **Usuarios**: seleccione los usuarios que desea supervisar.
 
-8. En **Origen de actividad** en la sección **Archivos que coinciden con todo lo siguiente** , configure los filtros siguientes:
+8. En **Origen de actividad** en la sección **Archivos que coinciden con todo lo siguiente**, configure los filtros siguientes:
 
-   * **Etiquetas de clasificación** : si usa etiquetas de clasificación de Azure Information Protection, filtre los archivos por una etiqueta de clasificación concreta de Azure Information Protection.
+   * **Etiquetas de clasificación**: si usa etiquetas de clasificación de Azure Information Protection, filtre los archivos por una etiqueta de clasificación concreta de Azure Information Protection.
 
    * Seleccione **Nombre de archivo** o **Tipo de archivo** para aplicar las restricciones según el nombre o el tipo de archivo.
 9. Habilite **Inspección de contenido** para permitir que la DLP interna examine los archivos en busca de contenido confidencial.
