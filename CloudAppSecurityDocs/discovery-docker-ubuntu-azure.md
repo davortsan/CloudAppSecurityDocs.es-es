@@ -3,12 +3,12 @@ title: Configuración de la carga de registros automática con Docker en Azure
 description: En este artículo se describe el proceso de configuración de la carga de registros automática para informes continuos en Cloud App Security mediante Docker en Linux en Azure.
 ms.date: 12/02/2020
 ms.topic: how-to
-ms.openlocfilehash: a8f82a550e7ea203b3144f995d3df33446a533c2
-ms.sourcegitcommit: c2c9bd46229ebe9e22bb03d43487d4c544f5e5f4
+ms.openlocfilehash: 6c4f7243758dce46e5469d503ec572a18a7a2afe
+ms.sourcegitcommit: 53e485ed8460f1123b3b55277fa5991b427b5302
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "96510002"
+ms.locfileid: "96512957"
 ---
 # <a name="docker-on-linux-in-azure"></a>Docker en Linux en Azure
 
@@ -124,13 +124,85 @@ El compilador de registros puede administrar correctamente la capacidad de regis
 
 1. Cambie a los privilegios raíz con `sudo -i`.
 
-1. Si acepta los [términos de licencia del software](https://go.microsoft.com/fwlink/?linkid=862492), desinstale las versiones anteriores e instale Docker CE con el comando siguiente:
+1. Si acepta los términos de la [licencia de software](https://go.microsoft.com/fwlink/?linkid=862492), desinstale las versiones anteriores e instale Docker CE ejecutando los comandos adecuados para su entorno:
+
+#### <a name="centos"></a>[CentOS](#tab/centos)
+
+1. Quite las versiones anteriores de Docker: `yum erase docker docker-engine docker.io`
+1. Instale los requisitos previos del motor de Docker: `yum install -y yum-utils`
+1. Agregue el repositorio de Docker:
 
     ```bash
-    curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
+    yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    yum makecache
     ```
 
-    ![Comando de Ubuntu en Azure](media/ubuntu-azure-command.png)
+1. Instale el motor de Docker: `yum -y install docker-ce`
+1. Iniciar Docker
+
+    ```bash
+    systemctl start docker
+    systemctl enable docker
+    ```
+
+1. Prueba de la instalación de Docker: `docker run hello-world`
+
+#### <a name="red-hat"></a>[Red Hat](#tab/red-hat)
+
+1. Quite las versiones anteriores de Docker: `yum erase docker docker-engine docker.io`
+1. Instale los requisitos previos del motor de Docker:
+
+    ```bash
+    yum install -y yum-utils
+    yum install -y https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.3.7-3.1.el7.x86_64.rpm
+    ```
+
+1. Agregue el repositorio de Docker:
+
+    ```bash
+    yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    yum makecache
+    ```
+
+1. Instale el motor de Docker: `yum -y install docker-ce`
+1. Iniciar Docker
+
+    ```bash
+    systemctl start docker
+    systemctl enable docker
+    ```
+
+1. Prueba de la instalación de Docker: `docker run hello-world`
+
+#### <a name="ubuntu"></a>[Ubuntu](#tab/ubuntu)
+
+1. Quite las versiones anteriores de Docker: `apt-get remove docker docker-engine docker.io`
+1. Si va a instalar en Ubuntu 14,04, instale el paquete Linux-Image-extra.
+
+    ```bash
+    apt-get update -y
+    apt-get install -y linux-image-extra-$(uname -r) linux-image-extra-virtual
+    ```
+
+1. Instale los requisitos previos del motor de Docker:
+
+    ```bash
+    apt-get update -y
+    (apt-get install -y apt-transport-https ca-certificates curl software-properties-common && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - )
+    ```
+
+1. Compruebe que el UID de la huella digital de la clave apt es docker@docker.com:`apt-key fingerprint | grep uid`
+1. Instale el motor de Docker:
+
+    ```bash
+    add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+    apt-get update -y
+    apt-get install -y docker-ce
+    ```
+
+1. Prueba de la instalación de Docker: `docker run hello-world`
+
+---
 
 1. En el portal de Cloud App Security, en la ventana **Create new log collector** (Crear nuevo recopilador de registros), copie el comando para importar la configuración del recopilador en la máquina host:
 
