@@ -1,14 +1,14 @@
 ---
 title: Configuración de la carga de registros automática mediante Docker local
 description: En este artículo se describe el proceso de configuración de la carga de registros automática para informes continuos en Cloud App Security mediante Docker en Linux en un servidor local.
-ms.date: 06/02/2020
+ms.date: 12/02/2020
 ms.topic: how-to
-ms.openlocfilehash: 4a339361b232cee1ee85758f4545856d4674e847
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 311839a4af2ba1c445253a094d07bdaf47cb8700
+ms.sourcegitcommit: c2c9bd46229ebe9e22bb03d43487d4c544f5e5f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96311866"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96509985"
 ---
 # <a name="docker-on-linux-on-premises"></a>Docker en Linux local
 
@@ -153,6 +153,11 @@ Compruebe el estado del recopilador en la tabla **Recopilador de registros** y a
 ![Comprobar la implementación correcta del recopilador de registros](media/ubuntu9.png)
 
 También puede ir al **registro de gobernanza** y comprobar que los registros se están cargando periódicamente en el portal.
+
+Como alternativa, puede comprobar el estado del recopilador de registros desde el contenedor de Docker mediante los siguientes comandos:
+
+1. Inicie sesión en el contenedor con este comando: `docker exec -it <Container Name> bash`
+1. Compruebe el estado del recopilador de registros con este comando: `collector_status -p`
 
 Si tiene problemas durante la implementación, consulte [Solución de problemas de Cloud Discovery](troubleshooting-cloud-discovery.md).
 

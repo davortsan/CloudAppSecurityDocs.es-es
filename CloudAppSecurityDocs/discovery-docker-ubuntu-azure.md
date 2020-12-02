@@ -1,14 +1,14 @@
 ---
 title: Configuración de la carga de registros automática con Docker en Azure
 description: En este artículo se describe el proceso de configuración de la carga de registros automática para informes continuos en Cloud App Security mediante Docker en Linux en Azure.
-ms.date: 06/02/2020
+ms.date: 12/02/2020
 ms.topic: how-to
-ms.openlocfilehash: 0e34ebfc6d4afcb8ecf0967ddecc7b8dbd0b885f
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: a8f82a550e7ea203b3144f995d3df33446a533c2
+ms.sourcegitcommit: c2c9bd46229ebe9e22bb03d43487d4c544f5e5f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96311900"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96510002"
 ---
 # <a name="docker-on-linux-in-azure"></a>Docker en Linux en Azure
 
@@ -111,7 +111,7 @@ El compilador de registros puede administrar correctamente la capacidad de regis
     1. Vaya a **reglas de seguridad de entrada** y haga clic en **Agregar**, ![ agregar reglas de seguridad de entrada.](media/ubuntu-azure.png)
     1. Agregue las siguientes reglas (en modo **Avanzado**):
 
-    |Name|Intervalos de puertos de destino|Protocolo|Source|Destination|
+    |Nombre|Intervalos de puertos de destino|Protocolo|Source|Destination|
     |----|----|----|----|----|
     |caslogcollector_ftp|21|TCP|<Subred de la dirección IP del dispositivo>|Any|
     |caslogcollector_ftp_passive|20000-20099|TCP|<Subred de la dirección IP del dispositivo>|Any|
@@ -163,6 +163,11 @@ Compruebe el estado del recopilador en la tabla **Recopilador de registros** y a
 ![Comprobar el estado del recopilador en el recopilador de registros](media/ubuntu9.png)
 
 También puede ir al **registro de gobernanza** y comprobar que los registros se están cargando periódicamente en el portal.
+
+Como alternativa, puede comprobar el estado del recopilador de registros desde el contenedor de Docker mediante los siguientes comandos:
+
+1. Inicie sesión en el contenedor con este comando: `docker exec -it <Container Name> bash`
+1. Compruebe el estado del recopilador de registros con este comando: `collector_status -p`
 
 Si tiene problemas durante la implementación, consulte [Solución de problemas de Cloud Discovery](troubleshooting-cloud-discovery.md).
 

@@ -1,14 +1,14 @@
 ---
 title: Implementación de informes continuos para Cloud App Security con Docker en Windows
 description: En este artículo se describe el proceso de configuración de la carga de registros automática para los informes continuos de Cloud App Security con Docker. Se utiliza un servidor local de Windows.
-ms.date: 11/19/2019
+ms.date: 12/02/2020
 ms.topic: how-to
-ms.openlocfilehash: 3fe411948dd2f0fe64917d69047351d835744ac0
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 7164cdb91664e131915c489d00085c164321afbb
+ms.sourcegitcommit: c2c9bd46229ebe9e22bb03d43487d4c544f5e5f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96311815"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96509968"
 ---
 # <a name="docker-on-windows-on-premises"></a>Docker en Windows local
 
@@ -150,6 +150,11 @@ Compruebe el estado del recopilador en la tabla **Recopilador de registros** y a
 ![Comprobar que el recopilador se ha implementado correctamente](media/ubuntu9.png)
 
 También puede ir al **registro de gobernanza** y comprobar que los registros se están cargando periódicamente en el portal.
+
+Como alternativa, puede comprobar el estado del recopilador de registros desde el contenedor de Docker mediante los siguientes comandos:
+
+1. Inicie sesión en el contenedor con este comando: `docker exec -it <Container Name> bash`
+1. Compruebe el estado del recopilador de registros con este comando: `collector_status -p`
 
 Si tiene problemas durante la implementación, consulte [Solución de problemas de Cloud Discovery](troubleshooting-cloud-discovery.md).
 
