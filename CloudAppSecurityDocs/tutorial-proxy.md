@@ -1,18 +1,14 @@
 ---
 title: Protección de cualquier aplicación en uso de la organización en tiempo real
 description: En este tutorial se proporcionan instrucciones para usar controles de acceso y de sesión para supervisar y controlar el acceso a las aplicaciones y sus datos.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: tutorial
 ms.date: 01/01/2020
-ms.collection: M365-security-compliance
-ms.openlocfilehash: bb0ae32a16d9ea9a8f36a0bd0ae0405b1d28b273
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.topic: tutorial
+ms.openlocfilehash: 4024c0f0a3e06c028d5cdb6995137c7fadd6adf8
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881193"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315810"
 ---
 # <a name="tutorial-protect-any-apps-in-use-in-your-organization-in-real-time"></a>Tutorial: Protección de cualquier aplicación en uso de la organización en tiempo real
 

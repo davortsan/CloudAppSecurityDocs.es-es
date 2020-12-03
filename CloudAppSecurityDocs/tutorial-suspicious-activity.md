@@ -1,24 +1,14 @@
 ---
 title: Detección de actividad sospechosa del usuario con análisis de comportamiento (UEBA)
 description: En este tutorial se describe el proceso para ajustar las detecciones de actividad del usuario en Microsoft Cloud App Security.
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 05/10/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.prod: ''
-ms.service: cloud-app-security
-ms.technology: ''
-ms.reviewer: galz
-ms.suite: ems
-ms.openlocfilehash: bdf58b83e01dc6ab088d3956f2a71ef52f368438
-ms.sourcegitcommit: 575f2b2efa9ca4477d7e60271d21e225ef2c38ea
+ms.openlocfilehash: b8b971af09a2ae245999ddcae5f503912aec4d9f
+ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90881188"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96315793"
 ---
 # <a name="tutorial-detect-suspicious-user-activity-with-ueba"></a>Tutorial: Detección de actividad sospechosa del usuario con UEBA
 
@@ -60,7 +50,7 @@ En este tutorial se proporcionan instrucciones para ajustar las detecciones de a
 
 Antes de configurar directivas individuales, es aconsejable configurar intervalos IP a fin de que estén disponibles para su uso en el ajuste de cualquier tipo de directiva de detección de actividad del usuario sospechosa.
 
-Dado que la información de direcciones IP es fundamental en casi todas las investigaciones, [configurar direcciones IP conocidas](ip-tags.md) ayuda a nuestros algoritmos de aprendizaje automático a identificar ubicaciones conocidas y considerarlas como parte de los modelos de Machine Learning. Por ejemplo, agregar el intervalo de direcciones IP de la VPN ayudará al modelo a clasificar correctamente este intervalo IP y lo excluirá automáticamente de las detecciones de viaje imposible, ya que la ubicación de la VPN no representa la verdadera ubicación de ese usuario.
+Dado que la información de direcciones IP es fundamental en casi todas las investigaciones, [configurar direcciones IP conocidas](ip-tags.md) ayuda a nuestros algoritmos de aprendizaje automático a identificar ubicaciones conocidas y considerarlas como parte de los modelos de Machine Learning. Por ejemplo, agregar el intervalo de direcciones IP de la VPN ayudará al modelo a clasificar correctamente este intervalo IP y lo excluirá automáticamente de las detecciones de viaje imposible, ya que la ubicación de la VPN no representa la verdadera ubicación de ese usuario.
 
 Nota:  Los intervalos IP configurados no se limitan a las detecciones y se usan en Cloud App Security en áreas como las actividades del registro de actividad, el acceso condicional, etc. Tenga esto en cuenta al configurar los intervalos. Así pues, por ejemplo, la identificación de las direcciones IP de la oficina física permite personalizar el modo en que se muestran e investigan los registros y las alertas.
 
