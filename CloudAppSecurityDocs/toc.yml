@@ -87,7 +87,11 @@
           href: protect-webex.md
         - name: Protección de Workday
           href: protect-workday.md
-- name: Guías de procedimientos
+    - name: Seguridad
+      items:
+        - name: Línea de base de seguridad
+          href: security-baseline.md
+- name: Guías paso a paso
   items:
     - name: Configuración básica
       href: general-setup.md
