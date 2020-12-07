@@ -3,12 +3,12 @@ title: Conectar aplicaciones para obtener visibilidad y control
 description: En este artículo se describe el proceso para conectar aplicaciones con las aplicaciones en la nube de la organización mediante conectores de API.
 ms.date: 07/14/2020
 ms.topic: how-to
-ms.openlocfilehash: 3b6733e0addabf8db1064ff8b5f4e20a8eb76c93
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 3750fe01f774dd81ada1ebdb6b60c6bf6dfbb370
+ms.sourcegitcommit: 1bea874c7531c1926b6e46b96eac00ceeeeb69f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96314957"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96749841"
 ---
 # <a name="connect-apps"></a>Conectar aplicaciones
 
@@ -62,15 +62,15 @@ En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades 
 | **Lista de privilegios** | | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | No es compatible con el proveedor | ✔ | ✔ | ✔ | No es compatible con el proveedor |
 | **Regulación de usuario** | | ✔ | Próximamente | Conexión de asunto G Suite | ✔ | ✔ | | Próximamente | ✔ | Próximamente | No es compatible con el proveedor |
 | **Actividad de inicio de sesión** | ✔ | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **Actividad de usuario** | No aplicable | ✔ | ✔ | ✔ | ✔ - requiere Google Business o Enterprise | ✔ | ✔ | Parcial | Compatible con Salesforce Shield | ✔ | ✔ |
+| **Actividad de usuario** | No es aplicable | ✔ | ✔ | ✔ | ✔ - requiere Google Business o Enterprise | ✔ | ✔ | Parcial | Compatible con Salesforce Shield | ✔ | ✔ |
 | **Actividad administrativa** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Parcial | ✔ | ✔ | No es compatible con el proveedor |
-| **DLP: examen periódico** | | ✔ | ✔ | No aplicable | ✔ | ✔ | No aplicable | ✔ | ✔ | ✔ | No es compatible con el proveedor |
-| **Análisis en tiempo real de DLP-Near** | | ✔ | | No aplicable | ✔: requiere Google Business Enterprise | ✔ | No aplicable | | | ✔ | No es compatible con el proveedor |
-| **Control de uso compartido** | ✔ | ✔ | ✔ | No aplicable | ✔ | ✔ | No aplicable | No aplicable | | ✔ | No es compatible con el proveedor |
-| **Regulación de archivos** | ✔ | ✔ | ✔ | No aplicable | ✔ | ✔ | No aplicable | | ✔ | | No es compatible con el proveedor |
-| **Ver permisos de aplicación** | No aplicable | No es compatible con el proveedor | Próximamente | No aplicable | ✔ | ✔ | No aplicable | | ✔ | No aplicable | No aplicable |
-| **Revocar permisos de aplicación** | No aplicable | No es compatible con el proveedor | en breve | No aplicable | ✔ | ✔ | No aplicable | | ✔ | No aplicable | No aplicable |
-| **Aplicación de etiquetas de Azure Information Protection** | No aplicable | ✔ | | No aplicable | ✔ | ✔ | No aplicable | | | No aplicable | No aplicable |
+| **DLP: examen periódico** | | ✔ | ✔ | No es aplicable | ✔ | ✔ | No es aplicable | ✔ | ✔ | ✔ | No es compatible con el proveedor |
+| **Análisis en tiempo real de DLP-Near** | | ✔ | | No es aplicable | ✔: requiere Google Business Enterprise | ✔ | No es aplicable | | | ✔ | No es compatible con el proveedor |
+| **Control de uso compartido** | ✔ | ✔ | ✔ | No es aplicable | ✔ | ✔ | No aplicable | No aplicable | | ✔ | No es compatible con el proveedor |
+| **Regulación de archivos** | ✔ | ✔ | ✔ | No es aplicable | ✔ | ✔ | No es aplicable | | ✔ | | No es compatible con el proveedor |
+| **Ver permisos de aplicación** | No es aplicable | No es compatible con el proveedor | Próximamente | No es aplicable | ✔ | ✔ | No es aplicable | | ✔ | No aplicable | No aplicable |
+| **Revocar permisos de aplicación** | No es aplicable | No es compatible con el proveedor | en breve | No es aplicable | ✔ | ✔ | No es aplicable | | ✔ | No aplicable | No aplicable |
+| **Aplicación de etiquetas de Azure Information Protection** | No es aplicable | ✔ | | No es aplicable | ✔ | ✔ | No aplicable | | | No aplicable | No aplicable |
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -87,21 +87,21 @@ Para usar los conectores de aplicaciones, debe asegurarse de que tiene lo siguie
 |-----|--------------|------|
 | Azure | | Administrador global |
 | AWS | | Usuario creado recientemente |
-| Box | Empresa | Se recomienda encarecidamente que se conecte a Box como administrador. la conexión como coadmin dará como resultado la visibilidad parcial de los datos. En caso de que se conecte como coadministrador, asegúrese de seleccionar todos los permisos. |
-| Dropbox | Empresa/Enterprise | Administración |
+| Box | Enterprise | Se recomienda encarecidamente que se conecte a Box como administrador. la conexión como coadmin dará como resultado la visibilidad parcial de los datos. En caso de que se conecte como coadministrador, asegúrese de seleccionar todos los permisos. |
+| Dropbox | Empresa/Enterprise | Administrador |
 | GitHub | Nube de GitHub Enterprise | Propietario |
 | GCP | | Consulte los [requisitos previos de Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | G Suite | Se prefiere G Suite Business o Enterprise<br /><br />G Suite Enterprise (como mínimo) | Superadministrador |
 | Office 365 | | Administrador global |
-| Okta | Enterprise (no versión de prueba) | Administración |
-| Salesforce | | Administración |
+| Okta | Enterprise (no versión de prueba) | Administrador |
+| Salesforce | | Administrador |
 | ServiceNow | Eureka o versión posterior | Rol de administrador + RestAPI |
 | Webex | | Administrador + administrador de cumplimiento |
 | Workday | | Consulte los [requisitos previos de Connect WorkDay](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) |
 
 ### <a name="expressroute"></a>ExpressRoute
 
-Cloud App Security se ha implementado en Azure y está totalmente integrado con [ExpressRoute](/azure/expressroute/expressroute-introduction). Todas las interacciones con las aplicaciones Cloud App Security y el tráfico enviado a Cloud App Security, incluida la carga de registros de detección, se enrutan a través **del emparejamiento público** de ExpressRoute para mejorar la latencia, el rendimiento y la seguridad. No hay ningún paso de configuración necesario en el lado cliente.
+Cloud App Security se ha implementado en Azure y está totalmente integrado con [ExpressRoute](/azure/expressroute/expressroute-introduction). Todas las interacciones con las aplicaciones Cloud App Security y el tráfico enviado a Cloud App Security, incluida la carga de registros de detección, se enrutan a través de ExpressRoute para mejorar la latencia, el rendimiento y la seguridad. No hay ningún paso de configuración necesario en el lado cliente.
 Para obtener más información sobre el emparejamiento público, vea [Circuitos ExpressRoute y dominios de enrutamiento](/azure/expressroute/expressroute-circuit-peerings).
 
 ## <a name="disable-app-connectors"></a>Deshabilitación de conectores de aplicaciones

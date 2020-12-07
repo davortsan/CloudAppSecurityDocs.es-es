@@ -3,12 +3,12 @@ title: Configure los valores de la organización en Cloud App Security
 description: En este artículo se explica cómo proporcionar información sobre su organización en Cloud App Security.
 ms.date: 11/08/2020
 ms.topic: how-to
-ms.openlocfilehash: d070b45db464c5789446dc87c4216b1e4e3370c8
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: e46b7c651d67fbd655d548f9d77228c29794ab74
+ms.sourcegitcommit: 1bea874c7531c1926b6e46b96eac00ceeeeb69f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96314909"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96749840"
 ---
 # <a name="basic-setup-for-cloud-app-security"></a>Configuración básica de Cloud App Security
 
@@ -55,7 +55,7 @@ En el caso de los clientes de la administración pública de Estados Unidos, tam
 1. Si, en un momento determinado, quiere hacer una copia de seguridad de la configuración del portal, puede hacerlo en esta pantalla. Haga clic en **exportar configuración del portal** para crear un archivo JSON de toda la configuración del portal, incluidas las reglas de directivas, los grupos de usuarios y los intervalos de direcciones IP.
 
 > [!NOTE]
-> Si utiliza ExpressRoute, Cloud App Security se ha implementado en Azure y está totalmente integrado con [ExpressRoute](/azure/expressroute/expressroute-introduction). Todas las interacciones con las aplicaciones Cloud App Security y el tráfico enviado a Cloud App Security, incluida la carga de registros de detección, se enrutan a través **del emparejamiento público** de ExpressRoute para mejorar la latencia, el rendimiento y la seguridad. No hay ningún paso de configuración necesario en el lado cliente.
+> Si utiliza ExpressRoute, Cloud App Security se ha implementado en Azure y está totalmente integrado con [ExpressRoute](/azure/expressroute/expressroute-introduction). Todas las interacciones con las aplicaciones Cloud App Security y el tráfico enviado a Cloud App Security, incluida la carga de registros de detección, se enrutan a través de ExpressRoute para mejorar la latencia, el rendimiento y la seguridad. No hay ningún paso de configuración necesario en el lado cliente.
 >
 > Para obtener más información sobre el emparejamiento público, vea [Circuitos ExpressRoute y dominios de enrutamiento](/azure/expressroute/expressroute-circuit-peerings).
 
