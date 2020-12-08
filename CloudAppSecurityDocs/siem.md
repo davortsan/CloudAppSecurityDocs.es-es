@@ -3,14 +3,14 @@ title: Integración de SIEM genérica con Cloud App Security
 description: En este artículo se proporciona información sobre cómo integrar el SIEM genérico con Cloud App Security.
 ms.date: 11/08/2020
 ms.topic: how-to
-ms.openlocfilehash: a0c4fffdec7c870254baf0d20cdbaf7f0e40b39c
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: ed69404df787a9c439c3e433b00b0f06fbd8769a
+ms.sourcegitcommit: 605ab52545796cff9b0f6392ceff12c310c7fe2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315422"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96851877"
 ---
-# <a name="generic-siem-integration"></a>Integración de SIEM genérica
+# <a name="generic-siem-integration-preview"></a>Integración de SIEM genérica (versión preliminar)
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -47,7 +47,7 @@ La integración con SIEM se realiza en tres pasos:
 2. Descarga del archivo JAR y ejecución en el servidor
 3. Valide que el agente SIEM funcione.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 * Servidor Windows o Linux estándar (puede ser una máquina virtual).
 * Sistema operativo: Windows o Linux
@@ -68,16 +68,16 @@ La integración con SIEM se realiza en tres pasos:
     ![Captura de pantalla que muestra el menú Agregar integración de SIEM](media/siem0.png)
 
 1. En el asistente, haga clic en **Iniciar asistente**.
-1. En el asistente, asigne un nombre, **seleccione el formato SIEM** y establezca la **Configuración avanzada** que esté relacionada con ese formato. Haga clic en **Next**.
+1. En el asistente, asigne un nombre, **seleccione el formato SIEM** y establezca la **Configuración avanzada** que esté relacionada con ese formato. Haga clic en **Siguiente**.
 
     ![Configuración general de SIEM](media/siem1.png)
 
 1. Escriba la dirección IP o nombre de host del **host de syslog remoto** y el **número de puerto de syslog**. Seleccione TCP o UDP como protocolo de syslog remoto.
-    Puede trabajar con el administrador de seguridad para obtener estos detalles si no los tiene. Haga clic en **Next**.
+    Puede trabajar con el administrador de seguridad para obtener estos detalles si no los tiene. Haga clic en **Siguiente**.
 
     ![Configuración remota de Syslog](media/siem2.png)
 
-1. Seleccione los tipos de datos que quiera exportar al servidor SIEM para **Alertas** y **Actividades**. Use el control deslizante para habilitarlas y deshabilitarlas; de forma predeterminada todo está seleccionado. Puede usar el menú desplegable **Apply to** (Aplicar a) para establecer filtros para enviar solo alertas y actividades específicas al servidor SIEM. Haga clic en **Editar y obtener vista previa de resultados** para comprobar que el filtro funciona según lo esperado. Haga clic en **Next**.
+1. Seleccione los tipos de datos que quiera exportar al servidor SIEM para **Alertas** y **Actividades**. Use el control deslizante para habilitarlas y deshabilitarlas; de forma predeterminada todo está seleccionado. Puede usar el menú desplegable **Apply to** (Aplicar a) para establecer filtros para enviar solo alertas y actividades específicas al servidor SIEM. Haga clic en **Editar y obtener vista previa de resultados** para comprobar que el filtro funciona según lo esperado. Haga clic en **Siguiente**.
 
    ![Configuración de tipos de datos](media/siem3.png)
 
@@ -143,7 +143,7 @@ El siguiente texto es un ejemplo de archivo de registro de alertas:
 
 #### <a name="sample-cloud-app-security-alerts-in-cef-format"></a>Alertas de Cloud App Security de ejemplo en formato CEF
 
-| Aplicable a | Nombre del campo CEF | Description |
+| Aplicable a | Nombre del campo CEF | Descripción |
 | --- | --- | --- |
 | Actividades y alertas | start | Marca de tiempo de actividad o alerta |
 | Actividades y alertas | end | Marca de tiempo de actividad o alerta |
