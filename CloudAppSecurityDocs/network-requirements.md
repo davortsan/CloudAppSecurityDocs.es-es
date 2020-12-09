@@ -3,12 +3,12 @@ title: Requisitos de red
 description: En este artículo se describen las direcciones IP y los puertos que debe abrir para trabajar con Cloud App Security.
 ms.date: 11/01/2019
 ms.topic: how-to
-ms.openlocfilehash: 78f054b4ba8ea1a2d11ddfd70e40aa2cbd7b8430
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: c7f61971f8535c9848765a735d164716bc6f7996
+ms.sourcegitcommit: 3e8aa24bfa8836b1b228c434ddaa5bdbdbc26e82
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96310880"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96918421"
 ---
 # <a name="network-requirements"></a>Requisitos de red
 
@@ -106,6 +106,13 @@ Para los clientes de la administración pública de Estados Unidos GCC, para hab
 mcasproxy.azureedge.net
 ```
 
+Además, se deben permitir los siguientes elementos:
+
+|Direcciones IP|Nombre DNS|
+|----|----|
+|13.72.27.223, 13.72.27.219, 13.72.27.220, 13.72.27.222, 52.244.39.14, 52.244.38.212, 52.244.39.0, 52.244.39.80|\*. mcas-gov.us<br />\*. admin-mcas-gov.us mcasproxy.azureedge.net|
+|13.72.27.216, 13.72.27.215,52.244.39.82, 52.244.39.15|\*. access.cloudappsecurity.us<br />\*. saml.cloudappsecurity.us|
+
 ## <a name="siem-agent-connection"></a>Conexión del agente SIEM
 
 Para habilitar Cloud App Security para conectarse a su SIEM, agregue el **Puerto de salida 443** para las siguientes direcciones IP a la lista de permitidos del firewall:
@@ -189,7 +196,7 @@ Para habilitar características de Cloud Discovery por medio de un recopilador d
 - Permita que el recopilador de registros inicie tráfico saliente al portal (por ejemplo, contoso.cloudappsecurity.com) en el puerto 443.
 - Permita que el recopilador de registros inicie tráfico saliente a Azure Blog Storage en el puerto 443:
 
-  | Centro de datos |                        URL                                 |
+  | Centro de datos |                        Dirección URL                                 |
   |-------------|------------------------------------------------------------|
   |     Estados Unidos 1     | https: \/ /adaprodconsole.BLOB.Core.Windows.net/             |
   |     US2     | https: \/ /prod03use2console1.BLOB.Core.Windows.net/         |
