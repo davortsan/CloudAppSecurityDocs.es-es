@@ -1,14 +1,14 @@
 ---
 title: Diferencias de capacidad de detección en Cloud App Security y Azure AD
 description: En este artículo se describen las diferencias entre las capacidades de detección de Microsoft Cloud App Security y Azure AD.
-ms.date: 8/29/2019
+ms.date: 12/03/2020
 ms.topic: overview
-ms.openlocfilehash: 4a5374294407d1b3011f4b7fcd4edca1254e0532
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: c66173dc28d0e0f9d349327583afa30a328912db
+ms.sourcegitcommit: 4177401f2f7948f230a6cb1f7af8ceeceb844fad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96311492"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544707"
 ---
 # <a name="what-are-the-differences-in-discovery-capabilities-for-azure-active-directory-and-microsoft-cloud-app-security"></a>¿Qué diferencias hay en las funcionalidades de detección de Azure Active Directory y Microsoft Cloud App Security?
 
@@ -33,7 +33,7 @@ La siguiente tabla compara las capacidades de detección de Microsoft Cloud App 
 |Capacidad|Característica|Microsoft Cloud App Security|Azure AD Cloud App Discovery|
 |----|----|----|----|
 |Cloud Discovery|Aplicaciones detectadas|Más de 16 000 aplicaciones en la nube|Más de 16 000 aplicaciones en la nube|
-||Implementación para análisis de detección|Carga de registros manual y automática|Carga de registros manual y automática|
+||Implementación para análisis de detección|Carga de registros manual y automática|Carga de registros manual y automática. [Más información sobre cómo configurar Cloud Discovery](set-up-cloud-discovery.md)|
 ||Anonimización de registros para la privacidad del usuario|Sí|Sí|
 ||Acceso al catálogo completo de aplicaciones en la nube|Sí|Sí|
 ||Valoración del riesgo de las aplicaciones en la nube|Sí|Sí|
