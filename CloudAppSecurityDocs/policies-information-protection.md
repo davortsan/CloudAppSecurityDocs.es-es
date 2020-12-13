@@ -3,12 +3,12 @@ title: Directivas de protección de la información
 description: En este tema se describen los pasos para configurar muchas directivas de protección de la información en Cloud App Security.
 ms.date: 06/13/2019
 ms.topic: conceptual
-ms.openlocfilehash: daa61b471ea37a7f3bb7c9271357ceebc8185936
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: baa218a101742f1c8e6188fd0771df16ce49cebd
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96310744"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97370065"
 ---
 # <a name="information-protection-policies"></a>Directivas de protección de la información
 
@@ -34,7 +34,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 3. En **método de inspección**, seleccione **servicio de clasificación de datos (DC)** y, en **Seleccionar tipo** , seleccione el tipo de información confidencial que quiere que los DC inspeccionen.
 
-4. Configure las acciones de **gobierno** que se realizarán cuando se desencadene una alerta. Por ejemplo, puede crear una acción de gobierno que se ejecute en las infracciones de archivos detectadas en G Suite, en la que puede seleccionar la opción para **quitar usuarios externos** y **quitar el acceso público**.
+4. Configure las acciones de **gobierno** que se realizarán cuando se desencadene una alerta. Por ejemplo, puede crear una acción de gobierno que se ejecute en infracciones de archivos detectadas en el área de trabajo de Google en la que se selecciona la opción para **quitar usuarios externos** y **quitar el acceso público**.
 
 5. Cree la Directiva de archivo.
 
@@ -81,7 +81,7 @@ Detectar archivos que contienen información de identificación personal y otros
 4. Cree la Directiva de archivo.
 
 > [!NOTE]
-> La capacidad de aplicar una etiqueta de clasificación directamente en Cloud App Security solo se admite actualmente para Box, G Suite, SharePoint Online y OneDrive para la empresa.
+> La capacidad de aplicar una etiqueta de clasificación directamente en Cloud App Security solo se admite actualmente para Box, Google Workspace, SharePoint Online y OneDrive para la empresa.
 
 ## <a name="detect-stale-externally-shared-data"></a>Detectar datos compartidos externamente obsoletos
 
@@ -101,7 +101,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 
 4. Opcional: establecer acciones de **gobierno** que se realizarán en los archivos cuando se detecte una infracción. Las acciones de gobierno disponibles varían entre los servicios. Por ejemplo:
 
-    - G Suite: convertir el archivo en privado y notificar al último editor de archivos
+    - Área de trabajo de Google: convertir el archivo en privado y notificar al último editor de archivos
 
     - Box: notificar al último editor de archivos
 
@@ -239,7 +239,7 @@ Detectar archivos que se comparten en aplicaciones de almacenamiento en la nube 
 4. Crear la Directiva de archivo
 
 > [!NOTE]
-> Actualmente, **Aplicar etiqueta de clasificación** solo se admite para Box, G Suite, SharePoint Online y OneDrive para la empresa.
+> Actualmente, **Aplicar etiqueta de clasificación** solo se admite para Box, Google Workspace, SharePoint Online y OneDrive para la empresa.
 
 ## <a name="block-downloads-for-external-users-in-real-time"></a>Bloquear descargas para usuarios externos en tiempo real
 

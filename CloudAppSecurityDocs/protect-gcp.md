@@ -3,12 +3,12 @@ title: Cómo Cloud App Security ayuda a proteger su entorno de Google Cloud Plat
 description: En este artículo se proporciona información sobre las ventajas de conectar la aplicación Google Cloud Platform a Cloud App Security mediante el conector de API para la visibilidad y el control del uso.
 ms.date: 09/15/2020
 ms.topic: article
-ms.openlocfilehash: 461d6c0c883c84892a049de7193dd5f28e1a0a99
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 0c1a34171fab84b845e4fb996d4c9dc18cb0d92c
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315266"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97370034"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-google-cloud-platform-gcp-environment"></a>Cómo Cloud App Security ayuda a proteger el entorno de Google Cloud Platform (GCP)
 
@@ -48,7 +48,7 @@ Además de supervisar posibles amenazas, puede aplicar y automatizar las siguien
 
 | Tipo | Acción |
 | ---- | ---- |
-| Regulación de usuario | -Requerir al usuario que restablezca la contraseña en Google (requiere la instancia vinculada de G Suite)<br />-Suspender usuario (requiere la instancia vinculada de G Suite)<br />-Notificar al usuario sobre la alerta (a través de Azure AD)<br />-Requerir al usuario que inicie sesión de nuevo (a través de Azure AD)<br />-Suspender usuario (a través de Azure AD) |
+| Regulación de usuario | -Requerir al usuario que restablezca la contraseña en Google (requiere la instancia de área de trabajo de Google vinculada conectada)<br />-Suspender usuario (requiere la instancia de área de trabajo de Google vinculada conectada)<br />-Notificar al usuario sobre la alerta (a través de Azure AD)<br />-Requerir al usuario que inicie sesión de nuevo (a través de Azure AD)<br />-Suspender usuario (a través de Azure AD) |
 
 Para obtener más información acerca de cómo corregir amenazas de aplicaciones, consulte [control de aplicaciones conectadas](governance-actions.md).
 

@@ -3,12 +3,12 @@ title: Directivas de Cloud Discovery
 description: En este artículo se describen los pasos para configurar muchas directivas de Cloud Discovery en Cloud App Security.
 ms.date: 06/13/2019
 ms.topic: conceptual
-ms.openlocfilehash: 5d96558ff1da3c42cd4acff559ca0ec6d7cd65a7
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 1cdaec33791e601bc47108c88320c67ab42dad82
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96310965"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369912"
 ---
 # <a name="cloud-discovery-policies"></a>Directivas de Cloud Discovery
 
@@ -128,26 +128,26 @@ Configure la carga de registros automática para informes de Cloud Discovery con
 
 ## <a name="detect-risky-oauth-apps"></a>Detección de aplicaciones de OAuth peligrosas
 
-Obtenga visibilidad y control sobre las [aplicaciones de OAuth](investigate-risky-oauth.md) que se instalan dentro de aplicaciones como G Suite, Office 365 y Salesforce. Las aplicaciones de OAuth que solicitan permisos altos y tienen poco uso de la comunidad se pueden considerar arriesgadas.
+Obtenga visibilidad y control sobre las [aplicaciones de OAuth](investigate-risky-oauth.md) que se instalan dentro de aplicaciones como Google Workspace, Office 365 y Salesforce. Las aplicaciones de OAuth que solicitan permisos altos y tienen poco uso de la comunidad se pueden considerar arriesgadas.
 
 ### <a name="prerequisites"></a>Requisitos previos
 
-Debe tener la aplicación G Suite, Office 365 o Salesforce conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+Debe tener la aplicación Google Workspace, Office 365 o Salesforce conectada mediante los [conectores de aplicaciones](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>Pasos
 
 1. En la página **directivas** , cree una nueva **Directiva de aplicación de OAuth**.
 
-2. Seleccione la **aplicación** de filtro y establezca la aplicación que debe cubrir la Directiva, G Suite, Office 365 o Salesforce.
+2. Seleccione la **aplicación** de filtro y establezca la aplicación que debe cubrir la Directiva, el área de trabajo de Google, Office 365 o Salesforce.
 
-3. Seleccione el filtro de **nivel de permiso** es igual a **alto** (disponible para G Suite y Office 365).
+3. Seleccione el filtro de **nivel de permiso** es igual a **alto** (disponible para Google Workspace y Office 365).
 
 4. Agregar el uso de la **comunidad** de filtros es igual a **inusual**.
 
 5. Configure las acciones que deben llevarse a cabo cuando se desencadene una alerta. Por ejemplo, para Office 365, Active **revocar aplicación** para OAuth aplicaciones detectadas por la Directiva.
 
 > [!NOTE]
-> Compatible con tiendas de aplicaciones de G Suite, Office 365 y Salesforce.
+> Compatible con las tiendas de aplicaciones de Google Workspace, Office 365 y Salesforce.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

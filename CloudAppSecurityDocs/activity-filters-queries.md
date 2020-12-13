@@ -3,12 +3,12 @@ title: Trabajo con filtros y consultas de actividad de Cloud App Security
 description: En este artículo se proporciona una lista de filtros y consultas de actividad de Cloud App Security y se explica cómo trabajar con ellos.
 ms.date: 12/10/2018
 ms.topic: how-to
-ms.openlocfilehash: b3557c67ea4ac899f2a9c96525b26c039cd52c47
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: f88d4f9fe4ef9906567a5408a58894bdacc6afd8
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96311186"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369861"
 ---
 # <a name="activity-filters-and-queries"></a>Consultas y filtros de actividad
 
@@ -83,7 +83,7 @@ A continuación se muestra una lista de los filtros de actividad que se pueden a
 
 - Usuario: el usuario que realizó la actividad, que se puede filtrar en el dominio, grupo, nombre u organización. Para filtrar las actividades sin un usuario específico, puede usar el operador ' no establecido '.
   - Dominio del usuario: busca un dominio de usuario específico.
-  - Organización de usuario: unidad organizativa del usuario que ha realizado la actividad, por ejemplo, todas las actividades realizadas por usuarios de marketing o EMEA. Esto solo es relevante para las instancias conectadas de G Suite mediante unidades organizativas.
+  - Organización de usuario: unidad organizativa del usuario que ha realizado la actividad, por ejemplo, todas las actividades realizadas por usuarios de marketing o EMEA. Esto solo es relevante para las instancias conectadas del área de trabajo de Google mediante unidades organizativas.
   - Grupo de usuarios: grupos de usuarios específicos que puede importar de aplicaciones conectadas, como administradores de Office 365.
   - Nombre de usuario: busca por un nombre de usuario específico. Para ver una lista de los usuarios de un grupo de usuarios específico, en el **Cajón de actividades**, haga clic en el nombre del grupo de usuarios. Al hacer clic se le lleva a la página Cuentas, en la que se enumeran todos los usuarios del grupo. Desde ahí puede profundizar en los detalles de las cuentas de usuarios específicos del grupo.
   - Los filtros **Grupo de usuarios** y **Nombre de usuario** se pueden filtrar aún más si se usa el filtro **Como** y se selecciona el rol del usuario, que puede ser uno de los siguientes:

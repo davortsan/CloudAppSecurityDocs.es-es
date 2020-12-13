@@ -3,12 +3,12 @@ title: Supervisar y proteger archivos en aplicaciones en la nube
 description: En este artículo se describe el procedimiento para configurar una directiva de datos para supervisar y controlar los datos y los archivos durante el uso de aplicaciones en la nube de la organización.
 ms.date: 10/7/2019
 ms.topic: how-to
-ms.openlocfilehash: 215606ce154ea47f850b247cbfa60c73a93ac676
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 1fd1ae1d09838a9db5e481f3f34f546996e6a76c
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96311968"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369555"
 ---
 # <a name="file-policies"></a>Directivas de archivos
 
@@ -42,7 +42,7 @@ Estos son algunos ejemplos de las directivas de archivo que se pueden crear:
 
 * **Sharing with external domains** (Uso compartido con dominios externos): reciba una alerta sobre cualquier archivo compartido con cuentas propiedad de determinados dominios externos. Por ejemplo, los archivos compartidos con el dominio de un competidor. Seleccione el dominio externo con el que quiera limitar el uso compartido.
 
-* **Quarantine shared files not modified during the last period** (Archivos compartidos en cuarentena no modificados durante el último período): reciba una alerta sobre los archivos compartidos que nadie haya modificado recientemente, para ponerlos en cuarentena u optar por activar una acción automatizada. Excluya todos los archivos privados que no se han modificado durante un intervalo de fechas especificado. En G Suite, puede poner en cuarentena estos archivos, mediante la casilla "archivo de cuarentena" de la página de creación de directivas.
+* **Quarantine shared files not modified during the last period** (Archivos compartidos en cuarentena no modificados durante el último período): reciba una alerta sobre los archivos compartidos que nadie haya modificado recientemente, para ponerlos en cuarentena u optar por activar una acción automatizada. Excluya todos los archivos privados que no se han modificado durante un intervalo de fechas especificado. En el área de trabajo de Google, puede poner en cuarentena estos archivos, mediante la casilla "archivo de cuarentena" de la página de creación de directivas.
 
 * **Sharing with unauthorized users** (Uso compartido con usuarios no autorizados): reciba una alerta sobre los archivos que se comparten con un grupo de usuarios no autorizado de la organización. Seleccione los usuarios para los que el uso compartido no está autorizado.
 

@@ -3,12 +3,12 @@ title: Conectar Google Cloud Platform a Cloud App Security
 description: En este artículo se proporciona información sobre cómo conectar el Google Cloud Platform a Cloud App Security mediante el conector de API para la visibilidad y el control del uso.
 ms.date: 06/28/2020
 ms.topic: how-to
-ms.openlocfilehash: bc000751610829d07e0ebd477a716255fdff2fa1
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: b6776796491d957a15a5246bac97144494e5789d
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96313107"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369980"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security"></a>Conectar Google Cloud Platform a Microsoft Cloud App Security
 
@@ -16,7 +16,7 @@ ms.locfileid: "96313107"
 
 En este artículo se proporcionan instrucciones para conectar Microsoft Cloud App Security a su cuenta de Google Cloud Platform (GCP) existente mediante las API del conector. Esta conexión le proporciona visibilidad y control sobre el uso de GCP. Para obtener información sobre cómo Cloud App Security protege GCP, consulte [protección](protect-gcp.md)de GCP.
 
-Se recomienda usar un proyecto dedicado para la integración y restringir el acceso al proyecto para mantener la integración estable y evitar las eliminaciones o modificaciones del proceso de instalación. Además, si la instancia de GCP es parte de una instancia de G Suite que ya está conectada a Cloud App Security, se recomienda seguir el **para una instancia de GCP que forme parte de los pasos de una organización de g Suite conectada** al agregar los detalles de conexión de GCP.
+Se recomienda usar un proyecto dedicado para la integración y restringir el acceso al proyecto para mantener la integración estable y evitar las eliminaciones o modificaciones del proceso de instalación. Además, si la instancia de GCP es parte de una instancia de área de trabajo de Google que ya está conectada a Cloud App Security, se recomienda seguir las instrucciones **para una instancia de GCP que forme parte de los pasos de la organización del área de trabajo de Google conectada** al agregar los detalles de conexión de GCP.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -125,7 +125,7 @@ Tome nota del identificador de la **organización**, lo necesitará más adelant
 1. En la página **conectores de aplicaciones** , para proporcionar las credenciales del conector de AWS, realice una de las acciones siguientes:
 
     > [!NOTE]
-    > Se recomienda conectar la instancia de G Suite para obtener administración unificada de usuarios y gobernanza. Este es el recomendado incluso si no usa ningún producto G Suite y los usuarios de GCP se administran a través del sistema de administración de usuarios de G Suite.
+    > Se recomienda conectar la instancia de Google Workspace para obtener administración unificada de usuarios y gobernanza. Este es el recomendado incluso si no usa ningún producto de área de trabajo de Google y los usuarios de GCP se administran a través del sistema de administración de usuarios del área de trabajo de Google.
 
     **Para un nuevo conector**
 

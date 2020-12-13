@@ -3,12 +3,12 @@ title: Información general sobre el escenario de protección contra amenazas
 description: En este tema se describe el escenario para proteger su organización contra amenazas en su entorno en la nube.
 ms.date: 12/14/2018
 ms.topic: conceptual
-ms.openlocfilehash: 0476e4ac0066e3f3584b12646e9c0143b9d64e04
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 86fe03e26d60107d0c8b825fca566f73afe62d56
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315691"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97370116"
 ---
 # <a name="protecting-your-organization-from-ransomware"></a>Proteger la organización frente a ransomware
 
@@ -21,7 +21,7 @@ En el ataque de ransomware masivo más reciente, WannaCry asestó un duro golpe 
 El ransomware es un ataque cibernético en el que el atacante envía un archivo que puede bloquear el acceso al equipo y cifrar los archivos. A menudo, el atacante conserva los archivos para pedir un rescate y no los descifra hasta que recibe el pago, tras lo cual restaura el acceso al equipo, los archivos o aplicaciones de LOB críticas. Los ataques de ransomware pueden afectar a cualquier equipo, hogar, oficina, red o servidor. De hecho, dado que las grandes organizaciones están integradas por numerosos usuarios que pueden abrir accidentalmente un archivo que libera ransomware en la red, son estas las que corren un mayor riesgo de tener que pagar al atacante para detener el ransomware y restaurar el acceso a los archivos o los equipos.
 
 >[!NOTE]
-> Este caso de uso se aplica a Office 365, G Suite, Box y Dropbox.
+> Este caso de uso se aplica a Office 365, Google Workspace, Box y Dropbox.
 
 ## <a name="the-threat"></a>LA AMENAZA
 
@@ -33,7 +33,7 @@ Detecte el posible ransomware en el entorno en la nube. Para ello, cree una dire
 
 ## <a name="out-of-the-box-protection"></a>Protección de serie
 
-[Conecte](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) al menos una aplicación en la nube (Office 365, G Suite, Box y Dropbox) con Cloud App Security.
+[Conecte](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) al menos una aplicación en la nube (Office 365, Google Workspace, Box y Dropbox) a Cloud App Security.
 
 1. De forma predeterminada, Cloud App Security examina la red para establecer una base de referencia. Esto permite identificar los patrones de actividad habitual de sus usuarios en la nube, tanto el hecho en sí como el momento en el que actúen.
 

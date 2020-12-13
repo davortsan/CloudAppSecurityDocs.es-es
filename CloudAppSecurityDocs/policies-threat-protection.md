@@ -3,12 +3,12 @@ title: Directivas de protección contra amenazas
 description: En este tema se describen los pasos para configurar muchas directivas de protección contra amenazas en Cloud App Security.
 ms.date: 11/08/2020
 ms.topic: conceptual
-ms.openlocfilehash: 0bb2b12a528569a8a444a2273ed34154b996804d
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 9c394fae7ccb76e54a8b188129eaca0c3bff109a
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315334"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369933"
 ---
 # <a name="threat-protection-policies"></a>Directivas de protección contra amenazas
 
@@ -173,7 +173,7 @@ Debe tener al menos una aplicación conectada mediante los [conectores de aplica
 2. Es posible configurar el **ámbito** de la detección y personalizar las acciones de gobierno que se llevarán a cabo cuando se desencadene una alerta. Para obtener más información acerca de cómo Cloud App Security identifica ransomware, consulte [protección de la organización desde ransomware](use-case-ransomware.md).
 
 > [!NOTE]
-> Esto se aplica a Office 365, G Suite, Box y Dropbox.
+> Esto se aplica a Office 365, Google Workspace, Box y Dropbox.
 
 ## <a name="detect-malware-in-the-cloud"></a>Detección de malware en la nube
 

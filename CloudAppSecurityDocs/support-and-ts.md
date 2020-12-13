@@ -3,12 +3,12 @@ title: Información de soporte técnico y de solución de problemas para Cloud A
 description: En este artículo se describen las opciones de soporte técnico y de solución de problemas de Microsoft Cloud App Security
 ms.date: 11/14/2019
 ms.topic: conceptual
-ms.openlocfilehash: 5a7e3a184b99dcc3c1e1d763566c73cf3d9d700f
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: fb4791559129a8a95ff998954aafbea72367886c
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315385"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97370082"
 ---
 # <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Soporte técnico y solución de problemas de Microsoft Cloud App Security
 
@@ -29,11 +29,11 @@ Como administrador, puede usar la opción **Ayuda y soporte técnico** para pres
 Seleccione **Solicitud de soporte técnico** para crear una solicitud de soporte técnico que se abre en la pestaña **Datos básicos** de la página *Ayuda y soporte técnico* de Azure siguiendo este protocolo.
 
 >[!NOTE]
-> Para obtener soporte técnico con productos de terceros que funcionan con Microsoft Cloud App Security (por ejemplo, Box, Salesforce y G Suite), póngase en contacto primero con el proveedor de ese producto.
+> Para obtener soporte técnico con productos de terceros que funcionan con Microsoft Cloud App Security (por ejemplo, Box, Salesforce y Google Workspace), póngase en contacto con el proveedor de ese producto en primer lugar.
 
 ### <a name="create-an-online-support-request"></a>Creación de una solicitud de soporte técnico en línea
 
-1. Inicie sesión en el Azure Portal [https://portal.azure.com](https://portal.azure.com/) con sus credenciales de administrador, **?** seleccione la situado en la esquina superior derecha del portal y, después, seleccione **Ayuda y soporte técnico** para ir a la página [Ayuda y soporte técnico de Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
+1. Inicie sesión en el Azure Portal [https://portal.azure.com](https://portal.azure.com/) con sus credenciales de administrador,  seleccione la situado en la esquina superior derecha del portal y, después, seleccione **Ayuda y soporte técnico** para ir a la página [Ayuda y soporte técnico de Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
 
 2. En la página **Ayuda y soporte técnico** de Azure, seleccione **Nueva solicitud de soporte técnico**.
 
@@ -61,7 +61,7 @@ Seleccione **Solicitud de soporte técnico** para crear una solicitud de soporte
 
 Puede ver una solicitud de soporte técnico desde Azure Portal. Para ello:
 
-1. Inicie sesión en Azure [https://portal.azure.com](https://portal.azure.com/) con sus credenciales de administrador, **?** seleccione la situado en la esquina superior derecha del portal y, después, seleccione **Ayuda y soporte técnico** para ir a la página [Ayuda y soporte técnico de Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
+1. Inicie sesión en Azure [https://portal.azure.com](https://portal.azure.com/) con sus credenciales de administrador,  seleccione la situado en la esquina superior derecha del portal y, después, seleccione **Ayuda y soporte técnico** para ir a la página [Ayuda y soporte técnico de Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
 
 2. En la página **Ayuda y soporte técnico**, puede ver la lista de **solicitudes de soporte técnico recientes** y seleccionarlas para ver detalles adicionales.
 

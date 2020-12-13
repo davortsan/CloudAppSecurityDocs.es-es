@@ -3,12 +3,12 @@ title: Conectar aplicaciones para obtener visibilidad y control
 description: En este artículo se describe el proceso para conectar aplicaciones con las aplicaciones en la nube de la organización mediante conectores de API.
 ms.date: 07/14/2020
 ms.topic: how-to
-ms.openlocfilehash: 3750fe01f774dd81ada1ebdb6b60c6bf6dfbb370
-ms.sourcegitcommit: 1bea874c7531c1926b6e46b96eac00ceeeeb69f2
+ms.openlocfilehash: 1bbdf2933bc2495ba397e3d78fb1ca1efcd3ffff
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96749841"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369538"
 ---
 # <a name="connect-apps"></a>Conectar aplicaciones
 
@@ -55,22 +55,22 @@ En función de la aplicación a la que se conecte, la conexión de API habilita 
 
 En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades son compatibles con los conectores de aplicaciones:
 
-| | AWS | Box | Dropbox | GCP | G Suite | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
+| | AWS | Box | Dropbox | GCP | Área de trabajo de Google | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
 |-|-|-|-|-|-|-|-|-|-|-|-|
-| **Enumeración de cuentas** | ✔ | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **Lista de grupos** | ✔ | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | ✔ | ✔ | ✔ | | No es compatible con el proveedor |
-| **Lista de privilegios** | | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | No es compatible con el proveedor | ✔ | ✔ | ✔ | No es compatible con el proveedor |
-| **Regulación de usuario** | | ✔ | Próximamente | Conexión de asunto G Suite | ✔ | ✔ | | Próximamente | ✔ | Próximamente | No es compatible con el proveedor |
-| **Actividad de inicio de sesión** | ✔ | ✔ | ✔ | Conexión de asunto G Suite | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **Actividad de usuario** | No es aplicable | ✔ | ✔ | ✔ | ✔ - requiere Google Business o Enterprise | ✔ | ✔ | Parcial | Compatible con Salesforce Shield | ✔ | ✔ |
+| **Enumeración de cuentas** | ✔ | ✔ | ✔ | Asunto conexión del área de trabajo de Google | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| **Lista de grupos** | ✔ | ✔ | ✔ | Asunto conexión del área de trabajo de Google | ✔ | ✔ | ✔ | ✔ | ✔ | | No es compatible con el proveedor |
+| **Lista de privilegios** | | ✔ | ✔ | Asunto conexión del área de trabajo de Google | ✔ | ✔ | No es compatible con el proveedor | ✔ | ✔ | ✔ | No es compatible con el proveedor |
+| **Regulación de usuario** | | ✔ | Próximamente | Asunto conexión del área de trabajo de Google | ✔ | ✔ | | Próximamente | ✔ | Próximamente | No es compatible con el proveedor |
+| **Actividad de inicio de sesión** | ✔ | ✔ | ✔ | Asunto conexión del área de trabajo de Google | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| **Actividad de usuario** | No aplicable | ✔ | ✔ | ✔ | ✔ - requiere Google Business o Enterprise | ✔ | ✔ | Parcial | Compatible con Salesforce Shield | ✔ | ✔ |
 | **Actividad administrativa** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Parcial | ✔ | ✔ | No es compatible con el proveedor |
-| **DLP: examen periódico** | | ✔ | ✔ | No es aplicable | ✔ | ✔ | No es aplicable | ✔ | ✔ | ✔ | No es compatible con el proveedor |
-| **Análisis en tiempo real de DLP-Near** | | ✔ | | No es aplicable | ✔: requiere Google Business Enterprise | ✔ | No es aplicable | | | ✔ | No es compatible con el proveedor |
-| **Control de uso compartido** | ✔ | ✔ | ✔ | No es aplicable | ✔ | ✔ | No aplicable | No aplicable | | ✔ | No es compatible con el proveedor |
-| **Regulación de archivos** | ✔ | ✔ | ✔ | No es aplicable | ✔ | ✔ | No es aplicable | | ✔ | | No es compatible con el proveedor |
-| **Ver permisos de aplicación** | No es aplicable | No es compatible con el proveedor | Próximamente | No es aplicable | ✔ | ✔ | No es aplicable | | ✔ | No aplicable | No aplicable |
-| **Revocar permisos de aplicación** | No es aplicable | No es compatible con el proveedor | en breve | No es aplicable | ✔ | ✔ | No es aplicable | | ✔ | No aplicable | No aplicable |
-| **Aplicación de etiquetas de Azure Information Protection** | No es aplicable | ✔ | | No es aplicable | ✔ | ✔ | No aplicable | | | No aplicable | No aplicable |
+| **DLP: examen periódico** | | ✔ | ✔ | No aplicable | ✔ | ✔ | No aplicable | ✔ | ✔ | ✔ | No es compatible con el proveedor |
+| **Análisis en tiempo real de DLP-Near** | | ✔ | | No aplicable | ✔: requiere Google Business Enterprise | ✔ | No aplicable | | | ✔ | No es compatible con el proveedor |
+| **Control de uso compartido** | ✔ | ✔ | ✔ | No aplicable | ✔ | ✔ | No aplicable | No aplicable | | ✔ | No es compatible con el proveedor |
+| **Regulación de archivos** | ✔ | ✔ | ✔ | No aplicable | ✔ | ✔ | No aplicable | | ✔ | | No es compatible con el proveedor |
+| **Ver permisos de aplicación** | No aplicable | No es compatible con el proveedor | Próximamente | No aplicable | ✔ | ✔ | No aplicable | | ✔ | No aplicable | No aplicable |
+| **Revocar permisos de aplicación** | No aplicable | No es compatible con el proveedor | en breve | No aplicable | ✔ | ✔ | No aplicable | | ✔ | No aplicable | No aplicable |
+| **Aplicación de etiquetas de Azure Information Protection** | No aplicable | ✔ | | No aplicable | ✔ | ✔ | No aplicable | | | No aplicable | No aplicable |
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -91,7 +91,7 @@ Para usar los conectores de aplicaciones, debe asegurarse de que tiene lo siguie
 | Dropbox | Empresa/Enterprise | Administrador |
 | GitHub | Nube de GitHub Enterprise | Propietario |
 | GCP | | Consulte los [requisitos previos de Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
-| G Suite | Se prefiere G Suite Business o Enterprise<br /><br />G Suite Enterprise (como mínimo) | Superadministrador |
+| Área de trabajo de Google | Se prefiere la empresa o Enterprise de Google Workspace<br /><br />Google Workspace Enterprise (mínimo) | Superadministrador |
 | Office 365 | | Administrador global |
 | Okta | Enterprise (no versión de prueba) | Administrador |
 | Salesforce | | Administrador |

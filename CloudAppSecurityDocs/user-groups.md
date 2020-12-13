@@ -3,12 +3,12 @@ title: Importación de grupos de usuarios de aplicaciones conectadas en Cloud Ap
 description: En este artículo se proporcionan instrucciones para importar grupos de usuarios de aplicaciones conectadas en Cloud App Security.
 ms.date: 11/17/2019
 ms.topic: how-to
-ms.openlocfilehash: d441e28280df81e8f34a73e28e56797b2826f867
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 92b72e4269355743b4a325a1ab4f0a8b22da2dda
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315742"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97370133"
 ---
 # <a name="importing-user-groups-from-connected-apps"></a>Importación de grupos de usuarios de aplicaciones conectadas
 
@@ -22,7 +22,7 @@ Microsoft Cloud App Security crea de manera predeterminada grupos automáticos. 
   - Externo
   - Administrador de Dropbox
   - Administrador de Office 365
-  - Administrador de G Suite
+  - Administrador del área de trabajo de Google
   - Administrador de Box
   - Todos los perfiles estándar y personalizados de Salesforce, como Administrador del sistema de Salesforce. Vea la lista completa [aquí](https://help.salesforce.com/articleView?id=standard_profiles.htm&language=en&type=0).
 

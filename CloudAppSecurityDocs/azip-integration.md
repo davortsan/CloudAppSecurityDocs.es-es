@@ -3,12 +3,12 @@ title: Integración de Azure Information Protection con Cloud App Security
 description: Este artículo proporciona información sobre cómo sacar provecho de las etiquetas de Azure Information Protection en Cloud App Security para tener un mayor control del uso de aplicaciones de nube de la organización.
 ms.date: 12/09/2019
 ms.topic: how-to
-ms.openlocfilehash: 864111ba6d1877c24a70f0de83aa66104fb8c1f4
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 32d157877fa71c12c4ea515316b160cbcfe59396
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96313719"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369878"
 ---
 # <a name="azure-information-protection-integration"></a>Integración de Azure Information Protection
 
@@ -44,7 +44,7 @@ Actualmente, Cloud App Security permite aplicar etiquetas de clasificación de A
   > [!NOTE]
   > En el caso de PDF, debe usar etiquetas unificadas.
 
-Esta característica está disponible actualmente para los archivos que se almacenan en Box, G Suite, SharePoint Online y OneDrive para la Empresa. Se admitirán más aplicaciones en la nube en futuras versiones.
+Esta característica está disponible actualmente para los archivos almacenados en Box, Google Workspace, SharePoint Online y OneDrive para la empresa. Se admitirán más aplicaciones en la nube en futuras versiones.
 
 Cloud App Security no pueden cambiar los archivos etiquetados con protección fuera de Cloud App Security. Sin embargo, puede examinar estos archivos concediendo permisos para [inspeccionar el contenido de los archivos protegidos](content-inspection.md#content-inspection-for-protected-files).
 

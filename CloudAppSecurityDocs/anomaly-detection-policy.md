@@ -1,14 +1,25 @@
 ---
 title: Creación de directivas de detección de anomalías en Cloud App Security
 description: En este artículo se proporciona una descripción de las directivas de detección de anomalías, así como información de referencia sobre los bloques de creación de una directiva de detección de anomalías.
+keywords: ''
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 08/20/2020
 ms.topic: how-to
-ms.openlocfilehash: 6cddeb16149a61aa1099d4fe74c3423dbd45042f
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.collection: M365-security-compliance
+ms.prod: ''
+ms.service: cloud-app-security
+ms.technology: ''
+ms.reviewer: reutam
+ms.suite: ems
+ms.custom: seodec18
+ms.openlocfilehash: 43490c416d1d19882321343c18e3e4417a6110f4
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96314756"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369908"
 ---
 # <a name="get-behavioral-analytics-and-anomaly-detection"></a>Obtención de análisis de comportamiento y detección de anomalías
 
@@ -69,7 +80,7 @@ Están disponibles las directivas de detección de anomalías siguientes:
     >
     > * Box
     > * Dropbox
-    > * G Suite
+    > * Área de trabajo de Google
     > * Office 365 (requiere una licencia válida para Microsoft defender para Office 365 P1)
 
 ### <a name="activity-from-anonymous-ip-addresses"></a>Actividad desde una dirección IP anónima
@@ -179,7 +190,7 @@ Por ejemplo, puede establecer la actividad a partir de la detección de condados
 
 Para establecer el ámbito de una directiva de detección de anomalías:
 
-1. Haga **Control** clic en  >  **directivas** de control y establezca el filtro de **tipo** en **Directiva de detección de anomalías**.
+1. Haga clic en  >  **directivas** de control y establezca el filtro de **tipo** en **Directiva de detección de anomalías**.
 1. Haga clic en la directiva cuyo ámbito desea establecer.
 1. En **Ámbito**, cambie la lista desplegable de la configuración predeterminada de **Todos los usuarios y grupos** a **Usuarios y grupos específicos**.
 1. Seleccione **Incluir** para especificar los usuarios y grupos para los que se aplicará esta directiva. Cualquier usuario o grupo que no se seleccione aquí no se considerará una amenaza y no generará una alerta.

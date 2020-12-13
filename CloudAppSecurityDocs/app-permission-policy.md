@@ -3,12 +3,12 @@ title: Creación de directivas para controlar las aplicaciones de OAuth en Cloud
 description: En este artículo se proporcionan instrucciones para crear directivas de permisos de la aplicación y trabajar con ellas en Microsoft Cloud App Security.
 ms.date: 11/27/2019
 ms.topic: how-to
-ms.openlocfilehash: c97fbd615432b2c1579f406bc57427b261124848
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 53b3c8d10bdc11714cffcc4bcd9402ee3a0e0adb
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96313838"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369946"
 ---
 # <a name="oauth-app-policies"></a>Directivas de aplicación de OAuth
 
@@ -16,7 +16,7 @@ ms.locfileid: "96313838"
 
 Además de la [investigación existente de aplicaciones OAuth](manage-app-permissions.md) conectada a su entorno, puede establecer directivas de permisos para recibir notificaciones automatizadas cuando una aplicación OAuth cumpla determinados criterios. Por ejemplo, puede recibir automáticamente una alerta cuando haya aplicaciones que requieran un nivel de permisos elevado y que hayan sido autorizadas por más de 50 usuarios.
 
-Las directivas de aplicación de OAuth de la aplicación permiten investigar qué permisos ha solicitado cada aplicación y qué usuarios los han autorizado para Office 365, G Suite y Salesforce. También es posible marcar estos permisos como aprobados o prohibidos. Si se marcan como prohibidos, se revocarán los permisos de cada aplicación para cada usuario que la haya autorizado.
+Las directivas de aplicación de OAuth permiten investigar qué permisos solicitó cada aplicación y qué usuarios los autorizaron para Office 365, Google Workspace y Salesforce. También es posible marcar estos permisos como aprobados o prohibidos. Si se marcan como prohibidos, se revocarán los permisos de cada aplicación para cada usuario que la haya autorizado.
 
 ## <a name="create-a-new-oauth-app-policy"></a>Crear una directiva de aplicación de OAuth
 

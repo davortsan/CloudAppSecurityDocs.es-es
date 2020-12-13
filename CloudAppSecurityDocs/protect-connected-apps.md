@@ -3,12 +3,12 @@ title: Protección de aplicaciones en su entorno mediante las API del proveedor 
 description: En este artículo se describe cómo Cloud App Security protegen las aplicaciones conectadas.
 ms.date: 02/20/2020
 ms.topic: conceptual
-ms.openlocfilehash: ac06786b3aa7dbe5fac1c9c3ee9be6a276d3c176
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 4a707a5281179e6f16ef56fec801c667f4b69aeb
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315368"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97369997"
 ---
 # <a name="protecting-connected-apps"></a>Protección de aplicaciones conectadas
 
@@ -24,7 +24,7 @@ La amplitud de compatibilidad para cada aplicación se basa en la riqueza de sus
 - [Protección de Dropbox](protect-dropbox.md)
 - [Protección de GitHub Enterprise Cloud](protect-github.md)
 - [Protección de GCP](protect-gcp.md)
-- [Protección de G Suite](protect-gsuite.md)
+- [Proteger el área de trabajo de Google](protect-google-workspace.md)
 - [Protección de Office 365](protect-office-365.md)
 - [Protección de Okta](protect-okta.md)
 - [Protección de Salesforce](protect-salesforce.md)
