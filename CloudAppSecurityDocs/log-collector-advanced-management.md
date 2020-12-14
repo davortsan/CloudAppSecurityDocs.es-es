@@ -1,14 +1,14 @@
 ---
 title: Administración avanzada del recopilador de registros
 description: En este artículo se proporciona información sobre cómo las tareas de administración avanzadas para Cloud App Security recopiladores de registros de Cloud Discovery.
-ms.date: 11/25/2020
+ms.date: 12/14/2020
 ms.topic: how-to
-ms.openlocfilehash: f9edb4d76f105293574551ba1ef9c7d2ba7d1838
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: dd8ab619f7284bde404bbe90a44d346595e2b99a
+ms.sourcegitcommit: d3f243593f86e0f13a1fbc67702a99c23af5a45a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315164"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97386567"
 ---
 # <a name="advanced-log-collector-management"></a>Administración avanzada del recopilador de registros
 
@@ -263,7 +263,7 @@ Siga estos pasos para descargar la imagen del recopilador de registros con un eq
 >   - https://download.docker.com/linux/centos/
 >   - https://download.docker.com/linux/rhel/
 >
-> Después de la descarga, use la [Guía de instalación sin conexión](https://docs.docker.com/datacenter/dtr/2.0/install/install-dtr-offline/#download-the-offline-package) para instalar el sistema operativo.
+> Después de la descarga, use la [Guía de instalación sin conexión](https://docs.docker.com/engine/install/binaries/) para instalar el sistema operativo.
 
 Para iniciar el proceso, [exporte la imagen del recopilador de registros](#export-the-log-collector-image-from-your-docker-hub) e [importe la imagen al host de destino](#import-and-load-the-log-collector-image-to-your-destination-host).
 
