@@ -3,12 +3,12 @@ title: Investigación de riesgos de las aplicaciones en la nube y actividad sosp
 description: En este artículo se proporciona un esquema del proceso de investigación de alertas, problemas y actividades sospechosas mediante Cloud App Security.
 ms.date: 11/18/2019
 ms.topic: how-to
-ms.openlocfilehash: 8227ac61b16bcac8211e3714f19569e3924db7c6
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 16e08a919af058ba3ee38f35fdc4af9a5e85aa8e
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315130"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97370048"
 ---
 # <a name="investigate"></a>Investigar
 
@@ -31,7 +31,7 @@ Los siguientes paneles están disponibles para ayudarle a investigar las aplicac
 *(cuando proceda)*|Profundice en los archivos; capacidad de filtrar según el propietario, el nivel de uso compartido y mucho más. Realice acciones de gobernanza como la cuarentena.|
 |Panel de la aplicación: cuentas|Información general de todas las cuentas o usuarios vinculados a la aplicación.|
 |Panel de la aplicación: aplicaciones de OAuth  
-*(cuando proceda)*|Profundice en las aplicaciones de OAuth actualmente implementadas, como G Suite, y defina directivas.|
+*(cuando proceda)*|Profundice en las aplicaciones de OAuth actualmente implementadas, como Google Workspace, y defina directivas.|
 |Panel de la aplicación: registro de actividad|Profundice en toda la actividad de la aplicación; capacidad de filtrar según los usuarios, la dirección IP y mucho más.|
 |Panel de la aplicación: alertas|Profundice en todas las alertas de la aplicación; capacidad de filtrar según el estado, la categoría, la gravedad y mucho más.|
 |Panel de la aplicación: cuentas con privilegios especiales  
