@@ -3,12 +3,12 @@ title: Administración de la seguridad de plataformas en la nube que usa la orga
 description: En este tutorial se describe cómo usar Microsoft Cloud App Security para proteger las plataformas en la nube de Azure, AWS y GCP.
 ms.date: 09/17/2020
 ms.topic: tutorial
-ms.openlocfilehash: 7711285b895d63e47e770a9079ef50bf8a091808
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: dfdff2b5b124ee9ea9d5fe4822196fa42cbe9f0a
+ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315878"
+ms.lasthandoff: 12/13/2020
+ms.locfileid: "97370167"
 ---
 # <a name="tutorial-manage-cloud-platform-security"></a>Tutorial: Administración de la seguridad de plataformas en la nube
 
@@ -22,7 +22,7 @@ El trabajo remoto suele conllevar un uso intensivo de aplicaciones en la nube y 
 
 Es fundamental tener las herramientas de seguridad adecuadas para proteger los recursos que podrían no estar correctamente protegidos. Las organizaciones deben obtener visibilidad de la posición de sus recursos en la nube, tener capacidades de detección para obtener información sobre la utilización real de cada plataforma, ser capaces de supervisar las actividades sospechosas, evaluar y revisar las configuraciones y los estados de cumplimiento, así como estar habilitadas a fin de implementar mecanismos de protección en tiempo real.
 
-La administración de la posición de seguridad en la nube (CSPM) se extiende más allá de la posición de seguridad de IaaS y PaaS, ya que también cubre las configuraciones de SaaS. Por ejemplo, el repositorio de GitHub con un nivel de acceso público o aplicaciones de OAuth que tienen acceso a mis aplicaciones SaaS, como Office 365, G Suite o Sales Force. La CSPM de SaaS es un dominio nuevo y creciente de CSPM, que es una expansión nativa del producto Cloud App Security.
+La administración de la posición de seguridad en la nube (CSPM) se extiende más allá de la posición de seguridad de IaaS y PaaS, ya que también cubre las configuraciones de SaaS. Por ejemplo, el repositorio de GitHub con un nivel de acceso público o aplicaciones de OAuth que tienen acceso a mis aplicaciones SaaS, como Office 365, Google Workspace o Sales Force. La CSPM de SaaS es un dominio nuevo y creciente de CSPM, que es una expansión nativa del producto Cloud App Security.
 
 ## <a name="protecting-multiple-clouds-from-a-single-management-portal"></a>Protección de varias nubes desde un único portal de administración
 

@@ -1,14 +1,14 @@
 ---
 title: Acciones de gobierno para controlar las aplicaciones conectadas
 description: En este artículo se enumeran y se describen todas las acciones de gobernanza que se pueden realizar en Cloud App Security, así como los mensajes de registro asociados.
-ms.date: 06/28/2020
+ms.date: 12/16/2020
 ms.topic: how-to
-ms.openlocfilehash: dfb0a829caf2e31ecd556c351fad8a5b95f19ae2
-ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
+ms.openlocfilehash: 0742759a3a4f8c220123040b21f81886b9ef3276
+ms.sourcegitcommit: bc154649585ca95590e82423aa411ab6d922bf83
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97369572"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97582867"
 ---
 # <a name="governing-connected-apps"></a>Control de aplicaciones conectadas
 
@@ -40,7 +40,7 @@ Las siguientes acciones de gobernanza pueden realizarse para aplicaciones conect
     - **Quitar etiqueta**: capacidad de quitar una etiqueta de clasificación de Azure Information Protection.
   - **Cambio del uso compartido**
 
-    - **Quitar el uso compartido público** : permite el acceso únicamente a los colaboradores con nombre, por ejemplo: quitar el acceso público para el área de trabajo de Google y quitar el vínculo compartido directo para Box.
+    - **Quitar el uso compartido público** : permite el acceso únicamente a los colaboradores con nombre, por ejemplo: *quitar el acceso público* para el área de trabajo de Google y *quitar el vínculo compartido directo* para Box y Dropbox.
 
     - **Quitar usuarios externos** : permite el acceso únicamente a los usuarios de la empresa.
 
@@ -111,7 +111,7 @@ Para ver el registro de gobierno, en la barra de menús, haga clic en el engrana
 En la tabla siguiente se muestra una lista completa de las acciones que Cloud App Security permite realizar. Estas acciones se habilitarán en varios lugares de la consola, como se describe en la columna **Ubicación**. Cada acción de gobernanza realizada se incluye en el registro de gobernanza.
 Para obtener información sobre cómo se tratan las acciones de control cuando hay conflictos de directivas, vea [Policy Conflicts](control-cloud-apps-with-policies.md) (Conflictos de directivas).
 
-| Ubicación | Tipo de objeto de destino | Acción de gobierno |Descripción| Conectores relacionados|
+| Location | Tipo de objeto de destino | Acción de gobierno |Descripción| Conectores relacionados|
 |-------------------|---------|-----|--------|-------|
 |Cuentas |Archivo |Quitar las colaboraciones del usuario | Se quitan todas las colaboraciones de un usuario específico en cualquiera de los archivos. Resulta conveniente cuando las personas dejan la empresa. |Box, área de trabajo de Google|
 |Cuentas | Cuenta | Anular la suspensión del usuario |Se anula la suspensión del usuario. |Área de trabajo de Google, Box, Office, Salesforce|
@@ -153,7 +153,7 @@ Para obtener información sobre cómo se tratan las acciones de control cuando h
 |Archivos|Archivo|Expiración del vínculo compartido| Establezca una fecha de expiración para un vínculo compartido después de la cual dejará de estar activo.|Box|
 |Archivos|Archivo|Cambio del nivel de acceso del vínculo compartido|Cambia el nivel de acceso del vínculo compartido entre la empresa solo, solo los colaboradores y público.| Box|
 |Archivos, Directiva de archivo|Archivo | Quitar el acceso público| Si pone un archivo suyo como de acceso público, pasa a ser accesible para quien esté configurado para tener acceso a él, según el tipo de acceso que tuviera el archivo. | Área de trabajo de Google|
-|Archivos, Directiva de archivo|Archivo |Quitar el vínculo compartido directo| Se quita un vínculo creado para un archivo que es público, pero que solo se comparte con personas específicas.|Box |
+|Archivos, Directiva de archivo|Archivo |Quitar el vínculo compartido directo| Se quita un vínculo creado para un archivo que es público, pero que solo se comparte con personas específicas.|Box, Dropbox |
 |Configuración > Configuración de Cloud Discovery| Cloud Discovery | Recalcular las puntuaciones de Cloud Discovery |Se recalculan las puntuaciones en el catálogo de aplicaciones de Cloud tras un cambio en la métrica de puntuación.| Detección |
 |Configuración > Configuración de Cloud Discovery > Administrar vistas de datos| Cloud Discovery | Crear vista de datos de filtro personalizado de Cloud Discovery|Se crea una vista de datos para obtener una vista más detallada de los resultados de la detección. Por ejemplo, intervalos de IP específicos. | Detección |
 |Configuración > Configuración de Cloud Discovery > Eliminar datos| Cloud Discovery | Eliminar datos de Cloud Discovery |Se eliminan todos los datos recopilados de los orígenes de detección.| Detección |
