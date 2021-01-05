@@ -3,12 +3,12 @@ title: Solucionar problemas de mensajes de error del conector de aplicaciones
 description: En este artículo se proporciona una lista de los mensajes de error de los conectores de aplicaciones de la API, así como recomendaciones para solucionarlos.
 ms.date: 01/29/2020
 ms.topic: conceptual
-ms.openlocfilehash: bc15d27ce42d8bd691897d7b0a3eed78b7691d64
-ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
+ms.openlocfilehash: 5848e0286d6d99ed3699652e3a44ef5fe1cf359b
+ms.sourcegitcommit: 40d17309b8729eb914ea91ba5fa7017340231488
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97370150"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97809004"
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>Solucionar problemas relacionados con conectores de aplicaciones a partir de los mensajes de error
 
@@ -22,7 +22,7 @@ Los errores de conectores de aplicaciones se pueden consultar en el cuadro de di
 
 > [!div class="mx-tableFixed"]
 >
-> |Mensaje de error|Aplicación correspondiente|Descripción|Solución|
+> |Mensaje de error|Aplicación correspondiente|Description|Solución|
 > |----|----|----|------------|
 > |HttpRequestFailure: Server returned: 500 Internal server error (HttpRequestFailure: El servidor devolvió: 500 Error interno del servidor)|Todas las aplicaciones|Se ha producido un error en la aplicación.|Compruebe el estado de la aplicación.|
 > |El tiempo de servicio expiró.|Todas las aplicaciones|Se ha detectado un tiempo de espera en la conexión entre Cloud App Security y la aplicación. Esto podría deberse a un problema con la aplicación.|Vuelva a intentarlo más tarde.|
@@ -51,6 +51,7 @@ Los errores de conectores de aplicaciones se pueden consultar en el cuadro de di
 > |HttpRequestFailure: Server returned: 400 Bad Request (HttpRequestFailure: El servidor devolvió: 400 Solicitud incorrecta)|Office 365|Error interno.|Haga clic de nuevo en el vínculo Probar ahora dentro de unos minutos. Si no funciona, siga el proceso para volver a conectar Office 365 con Cloud App Security.|
 > |SocketTimeoutException: Read timed out (SocketTimeoutException: Agotado el tiempo de espera de lectura)|Salesforce|Error interno.|Haga clic de nuevo en el vínculo Probar ahora para probar la conexión con Salesforce.|
 > |HttpRequestFailure: Server returned: 400 Bad Request (HttpRequestFailure: El servidor devolvió: 400 Solicitud incorrecta)|Salesforce|O bien la conexión con Salesforce no se ha completado, o bien ha expirado.|Siga el proceso para volver a conectar Salesforce con Cloud App Security.|
+> |Obtener permisos: NoHttpResponseException: `*******.salesforce.com:443` no se pudo responder|Salesforce|Restricción de IP en el ENV del cliente.|En el portal de Salesforce, en configuración de la  >  **sesión** de configuración, desactive la casilla **bloquear sesiones en la dirección IP desde la que se originaron** .|
 > |RuntimeException: com.adallom.adalib.httputils.exceptions.HttpRequestFailure: Server returned: 403 Forbidden (RuntimeException: com.adallom.adalib.httputils.exceptions.HttpRequestFailure: El servidor devolvió: 403 Prohibido)|ServiceNow|Los permisos no son correctos.|Siga el proceso para volver a conectar ServiceNow con Cloud App Security mediante una cuenta de administrador.|
 > |Obtener eventos: {"Code": 403, "serverResponse"<br />Obtener usuarios: {"Code": 403, "serverResponse"<br />…<br />"cuerpo": "{" error ":" Permiso denegado "}"|Workday|Permisos insuficientes para tener acceso a los registros de auditoría y/o a los puntos de conexión de usuario|Compruebe que todos los permisos están en vigor. [Más información](connect-workday-to-microsoft-cloud-app-security.md#prerequisites)|
 > |"Code": 400, "serverResponse"<br />…<br />cuerpo ":" {"error": "invalid_grant"}|Workday|Problema de autenticación|La cuenta usada para configurar la instancia puede estar bloqueada o deshabilitada. Para comprobarlo, vea la cuenta de WorkDay y seleccione **ver el historial de inicio de sesión**. Es posible que vea un mensaje de error de autenticación en el informe especificando que la cuenta del sistema está deshabilitada. [Más información](connect-workday-to-microsoft-cloud-app-security.md#how-to-connect-workday-to-cloud-app-security-using-oauth)|

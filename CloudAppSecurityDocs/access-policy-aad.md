@@ -1,14 +1,14 @@
 ---
 title: Creación de directivas de acceso de Cloud App Security para permitir y bloquear el acceso
 description: En este artículo se describe el procedimiento para configurar una directiva de acceso al control de aplicaciones de acceso condicional de Cloud App Security para permitir y bloquear el acceso a las aplicaciones conectadas a través de Azure AD mediante las funcionalidades de proxy inverso.
-ms.date: 03/31/2020
+ms.date: 01/05/2021
 ms.topic: how-to
-ms.openlocfilehash: 21ecae14e030b731028975cc4c72dcd3252adf81
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 951cde88df62054cf005d26e602d27acfb5aba23
+ms.sourcegitcommit: ee66e70f711aa11501e308e53b1a4b46f2175e4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96311509"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97894610"
 ---
 # <a name="access-policies"></a>Directivas de acceso
 
@@ -31,12 +31,15 @@ Las directivas de acceso de Microsoft Cloud App Security permiten la supervisió
 
 Para crear una directiva de acceso, siga este procedimiento:
 
-1. En el portal, seleccione **Control** y, después, **Directivas**.
-2. En la página **Directivas**, haga clic en **Crear directiva** y seleccione **Directiva de acceso**.
+1. Vaya a **control**  >  **directivas**  >  **acceso condicional**.
 
-3. En la ventana **Directiva de acceso**, asigne un nombre a la directiva, por ejemplo, *Bloquear el acceso desde dispositivos no administrados*.
+1. Haga clic en **Crear directiva** y seleccione **Directiva de acceso**.
 
-4. En la sección **Actividades que coinciden con todo lo siguiente** de **Origen de la actividad**, seleccione más filtros de actividad para aplicarlos a la directiva. Los filtros incluyen las siguientes opciones:
+    ![Crear una directiva de acceso condicional](media/create-policy-from-conditional-access-tab.png)
+
+1. En la ventana **Directiva de acceso**, asigne un nombre a la directiva, por ejemplo, *Bloquear el acceso desde dispositivos no administrados*.
+
+1. En la sección **Actividades que coinciden con todo lo siguiente** de **Origen de la actividad**, seleccione más filtros de actividad para aplicarlos a la directiva. Los filtros incluyen las siguientes opciones:
 
     - **Etiqueta de dispositivo**: use este filtro para identificar los dispositivos no administrados.
 
@@ -46,13 +49,18 @@ Para crear una directiva de acceso, siga este procedimiento:
 
     - **Etiqueta de agente de usuario**: use este filtro para habilitar la heurística que permite identificar las aplicaciones de escritorio y móviles. Este filtro se puede establecer en "igual a" o "no es igual a". Los valores se deben probar con las aplicaciones de escritorio y móviles para cada aplicación en la nube.
 
-5. En **Acciones**, seleccione una de las siguientes opciones:
+1. En **Acciones**, seleccione una de las siguientes opciones:
 
     - **Prueba**: establezca esta acción para permitir explícitamente el acceso según los filtros de directiva que establezca.
 
     - **Bloquear**: establezca esta acción para bloquear expresamente el acceso según los filtros de directiva que haya establecido.
 
-6. Puede **crear una alerta para cada evento que coincida con la gravedad de directiva**, establecer un límite de alerta y seleccionar si quiere que la alerta llegue como un correo electrónico, como un mensaje de texto o ambas.
+1. Puede **crear una alerta para cada evento que coincida con la gravedad de directiva**, establecer un límite de alerta y seleccionar si quiere que la alerta llegue como un correo electrónico, como un mensaje de texto o ambas.
+
+## <a name="related-videos"></a>Vídeos relacionados
+
+> [!div class="nextstepaction"]
+> [Seminario Web de Control de aplicaciones de acceso condicional](webinars.md#on-demand-webinars)
 
 ## <a name="next-steps"></a>Pasos siguientes
 

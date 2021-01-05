@@ -1,14 +1,14 @@
 ---
 title: Integración de Azure Information Protection con Cloud App Security
 description: Este artículo proporciona información sobre cómo sacar provecho de las etiquetas de Azure Information Protection en Cloud App Security para tener un mayor control del uso de aplicaciones de nube de la organización.
-ms.date: 12/09/2019
+ms.date: 12/27/2020
 ms.topic: how-to
-ms.openlocfilehash: 32d157877fa71c12c4ea515316b160cbcfe59396
-ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
+ms.openlocfilehash: 2b5d3399479850d04caba7f6e7f0411c4429b4a6
+ms.sourcegitcommit: 243baad1adeb32d157c7f6165c08df2136b28db0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97369878"
+ms.lasthandoff: 12/27/2020
+ms.locfileid: "97792780"
 ---
 # <a name="azure-information-protection-integration"></a>Integración de Azure Information Protection
 
@@ -26,10 +26,10 @@ Al integrar Azure Information Protection en Cloud App Security, puede aprovechar
 - La capacidad de investigar en función del nivel de clasificación y cuantificar la exposición de la información confidencial en las aplicaciones en la nube.
 - La capacidad de crear directivas para asegurarse de que los archivos clasificados se controlan correctamente.
 
-> [!NOTE]
-> Para habilitar esta característica, necesita una licencia de Cloud App Security y una licencia para Azure Information Protection Premium P1. Tan pronto como se activen las licencias, Cloud App Security sincroniza las etiquetas de las organizaciones del servicio Azure Information Protection.
-
 ## <a name="prerequisites"></a>Requisitos previos
+
+> [!NOTE]
+> Para habilitar esta característica, necesita una licencia de Cloud App Security y una licencia para Azure Information Protection Premium P1. En cuanto se hayan implementado ambas licencias, Cloud App Security sincronizará las etiquetas de la organización desde el servicio Azure Information Protection.
 
 - Para trabajar con la integración de Azure Information Protection, primero debe habilitar el [conector de aplicaciones para Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
@@ -45,8 +45,6 @@ Actualmente, Cloud App Security permite aplicar etiquetas de clasificación de A
   > En el caso de PDF, debe usar etiquetas unificadas.
 
 Esta característica está disponible actualmente para los archivos almacenados en Box, Google Workspace, SharePoint Online y OneDrive para la empresa. Se admitirán más aplicaciones en la nube en futuras versiones.
-
-Cloud App Security no pueden cambiar los archivos etiquetados con protección fuera de Cloud App Security. Sin embargo, puede examinar estos archivos concediendo permisos para [inspeccionar el contenido de los archivos protegidos](content-inspection.md#content-inspection-for-protected-files).
 
 ## <a name="how-it-works"></a>Cómo funciona
 
@@ -64,6 +62,11 @@ Probablemente esté familiarizado con las etiquetas de clasificación de archivo
 4. Después de habilitar Azure Information Protection en Cloud App Security, todos los archivos nuevos que se agreguen a las aplicaciones conectadas en la nube se examinarán en busca de etiquetas de clasificación.
 
 5. Puede crear directivas de seguridad de Cloud App Security que apliquen sus etiquetas de clasificación de forma automática.
+
+> [!NOTE]
+>
+> - Cloud App Security no pueden cambiar los archivos etiquetados con protección fuera de Cloud App Security. Sin embargo, puede examinar estos archivos concediendo permisos para [inspeccionar el contenido de los archivos protegidos](content-inspection.md#content-inspection-for-protected-files).
+> - Por el contrario, los archivos etiquetados por Cloud App Security y cargados en SharePoint o OneDrive y la etiqueta aplicó el cifrado mediante una cuenta de un nombre de entidad de seguridad de servicio, los archivos no se pueden abrir en Office en la Web. Entre los escenarios de ejemplo se incluyen Cloud App Security y un archivo enviado a los equipos por correo electrónico.
 
 ## <a name="how-to-integrate-azure-information-protection-with-cloud-app-security"></a>Cómo integrar Azure Information Protection con Cloud App Security
 
@@ -128,7 +131,9 @@ Siga estas instrucciones para crear la directiva de archivo:
     ![Aplicar etiqueta](media/aip-gov-action.png)
 
 > [!NOTE]
-> La posibilidad de aplicar automáticamente una etiqueta de Azure Information Protection mediante la directiva de archivo resulta una funcionalidad eficaz. Para impedir que los clientes apliquen por error una etiqueta a gran cantidad de archivos, como medida de seguridad existe un límite diario de 100 acciones **Aplicar etiqueta** por aplicación y por inquilino. Cuando se alcanza el límite diario, la acción de aplicar etiqueta se detiene temporalmente y continúa automáticamente al día siguiente (después de 12:00 UTC). Para aumentar el límite del inquilino, abra una incidencia de soporte técnico.
+>
+> - La posibilidad de aplicar automáticamente una etiqueta de Azure Information Protection mediante la directiva de archivo resulta una funcionalidad eficaz. Para impedir que los clientes apliquen por error una etiqueta a gran cantidad de archivos, como medida de seguridad existe un límite diario de 100 acciones **Aplicar etiqueta** por aplicación y por inquilino. Cuando se alcanza el límite diario, la acción de aplicar etiqueta se detiene temporalmente y continúa automáticamente al día siguiente (después de 12:00 UTC). Para aumentar el límite del inquilino, abra una incidencia de soporte técnico.
+> - Cuando se deshabilita una directiva, se suspenden todas las tareas de etiquetado pendientes de esa Directiva.
 
 ### <a name="control-file-exposure"></a>Controlar la exposición del archivo
 

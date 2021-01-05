@@ -1,14 +1,14 @@
 ---
 title: Crear directivas en Cloud Discovery aplicaciones
 description: En este artículo se proporciona información sobre cómo trabajar con directivas de Cloud Discovery.
-ms.date: 06/29/2020
+ms.date: 01/05/2021
 ms.topic: how-to
-ms.openlocfilehash: 9e875a2d5f18696c025d3d68b578b6bdc43557e0
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 9c892eed6b1200fb658a9ea03a77eeb0a98078f8
+ms.sourcegitcommit: ee66e70f711aa11501e308e53b1a4b46f2175e4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96313209"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97894712"
 ---
 # <a name="create-cloud-discovery-policies"></a>Crear directivas de Cloud Discovery
 
@@ -20,19 +20,19 @@ Puede crear directivas de detección de aplicaciones para que se le envíen aler
 
 Las directivas de detección permiten establecer alertas que avisan cuando se detectan nuevas aplicaciones en la organización.
 
-1. En la consola, haga clic en **Control**, seguido de **Directivas**.
+1. Vaya a **control**  >  **directivas**  >  **Shadow it**.
 
-2. Haga clic en **Crear directiva** y seleccione **Directiva de detección de aplicaciones**.
+1. Haga clic en **Crear directiva** y seleccione **Directiva de detección de aplicaciones**.
 
-    ![menú de directiva de detección de aplicaciones](media/app-discovery-policy-menu.png "menú de directiva de detección de aplicaciones")
+    ![Creación de una directiva de Cloud Discovery](media/create-policy-from-shadow-it-tab.png)
 
-3. Proporcione un nombre y una descripción para la directiva. Si quiere, puede basarse en una plantilla. Para obtener más información sobre las plantillas de directiva, vea [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).
+1. Proporcione un nombre y una descripción para la directiva. Si quiere, puede basarse en una plantilla. Para obtener más información sobre las plantillas de directiva, vea [Controlar las aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).
 
-4. Establezca la **gravedad** de la directiva.
+1. Establezca la **gravedad** de la directiva.
 
-5. Agregue filtros para definir qué aplicaciones detectadas van a activar esta directiva.
+1. Agregue filtros para definir qué aplicaciones detectadas van a activar esta directiva.
 
-6. Puede establecer el umbral de sensibilidad de la directiva. Habilite la opción **Desencadenar una coincidencia de directiva si todo lo siguiente sucede en el mismo día**. Puede establecer los criterios que la aplicación debe superar diariamente para que coincida con la directiva. Seleccione uno de estos criterios:
+1. Puede establecer el umbral de sensibilidad de la directiva. Habilite la opción **Desencadenar una coincidencia de directiva si todo lo siguiente sucede en el mismo día**. Puede establecer los criterios que la aplicación debe superar diariamente para que coincida con la directiva. Seleccione uno de estos criterios:
     - Tráfico diario
     - Datos descargados
     - Número de direcciones IP
@@ -40,13 +40,13 @@ Las directivas de detección permiten establecer alertas que avisan cuando se de
     - Número de usuarios
     - Datos cargados
 
-7. Establezca un **límite de alertas diarias** en **Alertas**. Seleccione si quiere que la alerta se envíe como mensaje de correo electrónico, de texto o ambos. A continuación, proporcione números de teléfono y direcciones de correo electrónico según sea necesario.
+1. Establezca un **límite de alertas diarias** en **Alertas**. Seleccione si quiere que la alerta se envíe como mensaje de correo electrónico, de texto o ambos. A continuación, proporcione números de teléfono y direcciones de correo electrónico según sea necesario.
     - Al hacer clic en **Guardar configuración de alertas como valor predeterminado para la organización**, permitirá que se use la configuración para futuras directivas.
     - Si tiene una configuración predeterminada, puede seleccionar **Usar la configuración predeterminada de la organización**.
 
-8. Seleccione las acciones de **gobernanza** que se aplicarán cuando una aplicación coincida con esta directiva. Es posible etiquetar las directivas como **autorizadas** o **no autorizadas**, o bien una etiqueta personalizada.
+1. Seleccione las acciones de **gobernanza** que se aplicarán cuando una aplicación coincida con esta directiva. Es posible etiquetar las directivas como **autorizadas** o **no autorizadas**, o bien una etiqueta personalizada.
 
-9. Haga clic en **Crear**.
+1. Haga clic en **Crear**.
 
 > [!NOTE]
 >
@@ -67,27 +67,32 @@ Cloud App Security busca en todos los registros de Cloud Discovery para encontra
 
 1. En la consola, haga clic en **Control**, seguido de **Directivas**.
 
-2. Haga clic en **Crear directiva** y seleccione la directiva **Detección de anomalías de Cloud Discovery**.
+1. Haga clic en **Crear directiva** y seleccione la directiva **Detección de anomalías de Cloud Discovery**.
 
     ![menú de directiva de detección de anomalías de Cloud Discovery](media/cloud-discovery-anomaly-detection-policy-menu.png "menú de directiva de detección de anomalías de Cloud Discovery")
 
-3. Proporcione un nombre y una descripción para la directiva. Si quiere, puede basarse en una plantilla. Para obtener más información sobre las plantillas de directiva, vea [Controlar aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).
+1. Proporcione un nombre y una descripción para la directiva. Si quiere, puede basarse en una plantilla. Para obtener más información sobre las plantillas de directiva, vea [Controlar aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).
 
-4. Haga clic en **Agregar filtros** para definir qué aplicaciones detectadas van a activar esta directiva.
+1. Haga clic en **Agregar filtros** para definir qué aplicaciones detectadas van a activar esta directiva.
 
     Los filtros se eligen en las listas desplegables. Para agregar filtros, haga clic en el botón del signo más. Para quitar un filtro, haga clic en la "X".
 
-5. En **Aplicar a**, elija si esta directiva se aplica a **Todos los informes continuos** o a **Informes continuos específicos**. Seleccione si la directiva se aplica a **Usuarios**, **Direcciones IP** o a ambos.
+1. En **Aplicar a**, elija si esta directiva se aplica a **Todos los informes continuos** o a **Informes continuos específicos**. Seleccione si la directiva se aplica a **Usuarios**, **Direcciones IP** o a ambos.
 
-6. Seleccione las fechas en las que se ha producido la actividad anómala para activar la alerta en **Generar alertas solo para las actividades sospechosas que se produzcan después de la fecha**.
+1. Seleccione las fechas en las que se ha producido la actividad anómala para activar la alerta en **Generar alertas solo para las actividades sospechosas que se produzcan después de la fecha**.
 
-7. Establezca un **límite de alertas diarias** en **Alertas**. Seleccione si quiere que la alerta se envíe como mensaje de correo electrónico, de texto o ambos. A continuación, proporcione números de teléfono y direcciones de correo electrónico según sea necesario.
+1. Establezca un **límite de alertas diarias** en **Alertas**. Seleccione si quiere que la alerta se envíe como mensaje de correo electrónico, de texto o ambos. A continuación, proporcione números de teléfono y direcciones de correo electrónico según sea necesario.
     - Al hacer clic en **Guardar configuración de alertas como valor predeterminado para la organización**, permitirá que se use la configuración para futuras directivas.
     - Si tiene una configuración predeterminada, puede seleccionar **Usar la configuración predeterminada de la organización**.
 
-8. Haga clic en **Crear**.
+1. Haga clic en **Crear**.
 
-![nueva directiva de detección de anomalías](media/new-discovery-anomaly-policy.png "nueva directiva de detección de anomalías")
+    ![nueva directiva de detección de anomalías](media/new-discovery-anomaly-policy.png "nueva directiva de detección de anomalías")
+
+## <a name="related-videos"></a>Vídeos relacionados
+
+> [!div class="nextstepaction"]
+> [Seminario Web de configuración del recopilador de registros y de detección de aplicaciones](webinars.md#on-demand-webinars)
 
 ## <a name="next-steps"></a>Pasos siguientes
 

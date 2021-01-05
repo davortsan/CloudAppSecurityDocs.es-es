@@ -1,70 +1,56 @@
 ---
-title: 'Creación de un intervalo de direcciones IP: API de enriquecimiento de datos'
-description: En este artículo se describe la solicitud de creación de un intervalo de direcciones IP en la API de enriquecimiento de datos de Cloud App Security.
-ms.date: 03/27/2020
+title: API de enriquecimiento de datos de Cloud App Security
+description: En este artículo se proporciona información sobre el uso de la API de enriquecimiento de datos.
+ms.date: 12/13/2020
 ms.topic: reference
-ms.openlocfilehash: ec84185e0523b8b9f9f172e1940302656f10316b
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 814f4e038c129576377aea9fe5e7c3e74a4b09d1
+ms.sourcegitcommit: 90df07ce9cd64fd9c46fb6563f0249079204e174
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96314518"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97859027"
 ---
-# <a name="create-ip-address-range---data-enrichment-api"></a>Creación de un intervalo de direcciones IP: API de enriquecimiento de datos
+# <a name="data-enrichment-api"></a>API de enriquecimiento de datos
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Ejecute la solicitud POST para agregar un nuevo intervalo de direcciones IP.
+La API de enriquecimiento de datos permite crear intervalos de direcciones IP identificables, como las direcciones IP de la oficina física. Los intervalos de direcciones IP permiten etiquetar, clasificar y personalizar la forma en que los registros y alertas se muestran e investigan. Para obtener más información, vea [trabajar con etiquetas y intervalos IP](ip-tags.md).
 
-## <a name="http-request"></a>Solicitud HTTP
+A continuación se enumeran las solicitudes admitidas:
 
-```rest
-POST /api/v1/subnet/
-```
+- [Enumerar intervalos de direcciones IP](api-data-enrichment-list.md)
+- [Actualización del intervalo de direcciones IP](api-data-enrichment-create.md)
+- [Actualizar intervalo de direcciones IP](api-data-enrichment-update.md)
+- [Eliminar intervalo de direcciones IP](api-data-enrichment-delete.md)
 
-## <a name="request-body-parameters"></a>Parámetros del cuerpo de la solicitud
+## <a name="properties"></a>Propiedades
 
-| Parámetro | Descripción |
-| --- | --- |
-| category | Identificador de la categoría de rango |
-| subredes | Una matriz de máscaras como cadenas (IPv4/IPv6) |
-| Organización (opcional) | El ISP registrado |
-| etiquetas (opcional) | Una matriz de etiquetas (objetos con la propiedad "Text" establecida con el nombre de etiqueta): nuevo o existente |
+El objeto de respuesta define las siguientes propiedades.
 
-Actualmente se admiten las siguientes categorías:
+| Propiedad | Tipo | Description |
+| --- | --- | --- |
+| total | int | Número total de registros |
+| hasNext | bool | Indica si hay registros adicionales |
+| datos | list | Lista de los registros existentes |
+| _id | string | Identificador único del intervalo de direcciones IP |
+| name | string | Nombre único del intervalo. |
+| subredes | list | Una matriz de máscaras, direcciones IP (IPv4/IPv6) y cadenas originales |
+| ubicación | string | Objeto que incluye el nombre de la ubicación, la latitud, la longitud, el código de país y el nombre del país. |
+| organization | string | El ISP registrado |
+| etiquetas| list | Una matriz de objetos nuevos o existentes, incluidos el nombre de etiqueta, el identificador, la descripción, la plantilla de nombre y el identificador de inquilino. |
+| category | int | La categoría del intervalo IP. Proporcionar una categoría le ayuda a reconocer fácilmente las actividades de las direcciones IP interesantes. Los valores posibles son:<br /><br />**1**: empresa<br />**2**: administración<br />**3**: arriesgado<br />**4**: VPN<br />**5**: proveedor de la nube<br />**6**: otros |
+| lastModified | long | Marca de tiempo de la última regla modificada |
 
-| Category | Identificador |
-| --- | -- |
-| Corporativos | 1 |
-| Administrativa | 2 |
-| Riesgo | 3 |
-| VPN | 4 |
-| Proveedor de servicios en la nube | 5 |
-| Otros | 6 |
+## <a name="filters"></a>Filtros
 
-## <a name="example"></a>Ejemplo
+Para obtener información sobre cómo funcionan los filtros, vea [filtros](api-introduction.md#filters).
 
-### <a name="request"></a>Solicitud
+En la tabla siguiente se describen los filtros admitidos:
 
-Este es un ejemplo de la solicitud.
-
-```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/subnet/create_rule/" -d '{
-  "name":"range name",
-  "category":5,
-  "organization":"Microsoft",
-  "subnets":[
-    "192.168.1.0/24",
-    "192.168.2.0/16"
-  ],
-  "tags":[
-    "existing tag"
-  ]
-}'
-```
-
-### <a name="response"></a>Response
-
-Devuelve el identificador del nuevo intervalo como una cadena.
+| Filtrar | Tipo | Operadores | Descripción |
+| --- | --- | --- | --- |
+| category | integer | EQ, Neq | Filtrar intervalos IP por categoría. Los valores posibles son:<br /><br />**1**: empresa<br />**2**: administración<br />**3**: arriesgado<br />**4**: VPN<br />**5**: proveedor de la nube<br />**6**: otros |
+| etiquetas | string | EQ, Neq | Filtrar intervalos IP por ID. de etiqueta |
+| builtIn | bool | eq | Filtrar intervalos IP por tipo. Los valores posibles son: **true** (integrado) o **false** (personalizado). |
 
 [!INCLUDE [Open support ticket](includes/support.md)]

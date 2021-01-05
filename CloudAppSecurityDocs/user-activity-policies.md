@@ -1,14 +1,14 @@
 ---
 title: Creación de directivas para controlar actividades en Cloud App Security
 description: En este artículo se proporcionan instrucciones para crear directivas de actividad y trabajar con ellas.
-ms.date: 03/01/2020
+ms.date: 01/03/2021
 ms.topic: how-to
-ms.openlocfilehash: 26f7b171f0a2addad3c480914c8c7845e452f9ac
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 6619c9e0a39e2d59585a8c1b73df048840a646ad
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315733"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855882"
 ---
 # <a name="activity-policies"></a>Directivas de actividad
 
@@ -33,24 +33,24 @@ Puede establecer que se le envíen alertas de actividad a usted o al usuario cua
 
 Para crear una nueva directiva de actividad, siga este procedimiento:
 
-1. En la consola, haga clic en **Control**, seguido de **Directivas**.
+1. Vaya a **control**  >  **directivas**  >  **detección de amenazas**.
 
-2. Haga clic en **Crear directiva** y seleccione **Directiva de actividad**.
+1. Haga clic en **Crear directiva** y seleccione **Directiva de actividad**.
 
-     ![menú de directiva de actividad](media/activity-policy-menu.png)
+    ![Creación de una directiva de detección de amenazas](media/create-policy-from-threat-detection-tab.png)
 
-3. Asigne un nombre y una descripción a la directiva. Si quiere, puede basarla en una plantilla. Para obtener más información sobre las plantillas de directiva, vea [Controlar aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).
+1. Asigne un nombre y una descripción a la directiva. Si quiere, puede basarla en una plantilla. Para obtener más información sobre las plantillas de directiva, vea [Controlar aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).
 
-4. Para establecer qué acciones o qué otras métricas desencadenan esta directiva, trabaje con **filtros de actividad**.
+1. Para establecer qué acciones o qué otras métricas desencadenan esta directiva, trabaje con **filtros de actividad**.
     > [!NOTE]
     > Para asegurarse de que solo se incluyen los resultados en los que el campo de filtro especificado tiene un valor, se recomienda volver a agregar el mismo campo mediante la prueba **set** . Por ejemplo, si el filtrado por **Ubicación** *no es igual* a una lista especificada de países, agregue también un filtro para **Ubicación** *establecida*. También puede obtener una vista previa de los resultados del filtro seleccionando **Editar y vista previa de los resultados**.
     >
     > ![Captura de pantalla de la configuración del filtro, donde se muestra el campo Ubicación](media/activity-example-location-isset.png)
 
-5. En **Activity match parameters** (Parámetros de coincidencia de actividad), seleccione cuándo se desencadenará una infracción de la directiva. Elija que se desencadene cuando una única actividad coincida con los filtros o solo cuando se detecte un número especificado de **actividades repetidas**.
+1. En **Activity match parameters** (Parámetros de coincidencia de actividad), seleccione cuándo se desencadenará una infracción de la directiva. Elija que se desencadene cuando una única actividad coincida con los filtros o solo cuando se detecte un número especificado de **actividades repetidas**.
     - Si elige **Actividad repetida**, puede establecer **En una única aplicación**. Esta configuración desencadenará una coincidencia de directiva solo cuando se producen las actividades repetidas en la misma aplicación. Por ejemplo, cinco descargas en 30 minutos desde Box desencadenan una coincidencia de directiva.
 
-6. Configure las **acciones** que deben realizarse cuando se encuentra una coincidencia.
+1. Configure las **acciones** que deben realizarse cuando se encuentra una coincidencia.
 
 Observe estos ejemplos:
 

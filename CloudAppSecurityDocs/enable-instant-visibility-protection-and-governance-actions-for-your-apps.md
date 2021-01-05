@@ -1,14 +1,14 @@
 ---
 title: Conectar aplicaciones para obtener visibilidad y control
 description: En este artículo se describe el proceso para conectar aplicaciones con las aplicaciones en la nube de la organización mediante conectores de API.
-ms.date: 07/14/2020
+ms.date: 01/05/2021
 ms.topic: how-to
-ms.openlocfilehash: 1bbdf2933bc2495ba397e3d78fb1ca1efcd3ffff
-ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
+ms.openlocfilehash: 1df724883ff1944e0ff5c1e62c1fe6fbcaef233a
+ms.sourcegitcommit: ee66e70f711aa11501e308e53b1a4b46f2175e4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97369538"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97894661"
 ---
 # <a name="connect-apps"></a>Conectar aplicaciones
 
@@ -16,7 +16,7 @@ ms.locfileid: "97369538"
 
 Los conectores de aplicaciones usan las API de los proveedores de aplicaciones para permitir una mayor visibilidad y control de las aplicaciones a las que se conecta mediante Microsoft Cloud App Security.
 
-Microsoft Cloud App Security usa las API proporcionadas por el proveedor de nube. Cada servicio tiene su propia plataforma y limitaciones de API, como la limitación de peticiones, los límites de API, las ventanas de API dinámicas de cambio de tiempo, etc. Microsoft Cloud App Security funciona con los servicios para optimizar el uso de las API y proporcionar el máximo rendimiento. Los motores de Cloud App Security usan la capacidad permitida teniendo en cuenta las diferentes limitaciones que los servicios imponen a las API. Algunas operaciones, como el análisis de todos los archivos del inquilino, requieren numerosas API y, por tanto, se reparten a lo largo de un período de tiempo mayor. Tenga en cuenta que algunas directivas pueden ejecutarse durante varias horas o varios días.
+Microsoft Cloud App Security usa las API proporcionadas por el proveedor de nube. Todas las comunicaciones entre Cloud App Security y las aplicaciones conectadas se cifran mediante HTTPS. Cada servicio tiene su propia plataforma y limitaciones de API, como la limitación de peticiones, los límites de API, las ventanas de API dinámicas de cambio de tiempo, etc. Microsoft Cloud App Security funciona con los servicios para optimizar el uso de las API y proporcionar el máximo rendimiento. Los motores de Cloud App Security usan la capacidad permitida teniendo en cuenta las diferentes limitaciones que los servicios imponen a las API. Algunas operaciones, como el análisis de todos los archivos del inquilino, requieren numerosas API y, por tanto, se reparten a lo largo de un período de tiempo mayor. Tenga en cuenta que algunas directivas pueden ejecutarse durante varias horas o varios días.
 
 ## <a name="multi-instance-support"></a>Compatibilidad con varias instancias
 
@@ -55,22 +55,22 @@ En función de la aplicación a la que se conecte, la conexión de API habilita 
 
 En la siguiente tabla se enumeran, por aplicación en la nube, qué capacidades son compatibles con los conectores de aplicaciones:
 
-| | AWS | Box | Dropbox | GCP | Área de trabajo de Google | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
-|-|-|-|-|-|-|-|-|-|-|-|-|
-| **Enumeración de cuentas** | ✔ | ✔ | ✔ | Asunto conexión del área de trabajo de Google | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **Lista de grupos** | ✔ | ✔ | ✔ | Asunto conexión del área de trabajo de Google | ✔ | ✔ | ✔ | ✔ | ✔ | | No es compatible con el proveedor |
-| **Lista de privilegios** | | ✔ | ✔ | Asunto conexión del área de trabajo de Google | ✔ | ✔ | No es compatible con el proveedor | ✔ | ✔ | ✔ | No es compatible con el proveedor |
-| **Regulación de usuario** | | ✔ | Próximamente | Asunto conexión del área de trabajo de Google | ✔ | ✔ | | Próximamente | ✔ | Próximamente | No es compatible con el proveedor |
-| **Actividad de inicio de sesión** | ✔ | ✔ | ✔ | Asunto conexión del área de trabajo de Google | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **Actividad de usuario** | No aplicable | ✔ | ✔ | ✔ | ✔ - requiere Google Business o Enterprise | ✔ | ✔ | Parcial | Compatible con Salesforce Shield | ✔ | ✔ |
-| **Actividad administrativa** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Parcial | ✔ | ✔ | No es compatible con el proveedor |
-| **DLP: examen periódico** | | ✔ | ✔ | No aplicable | ✔ | ✔ | No aplicable | ✔ | ✔ | ✔ | No es compatible con el proveedor |
-| **Análisis en tiempo real de DLP-Near** | | ✔ | | No aplicable | ✔: requiere Google Business Enterprise | ✔ | No aplicable | | | ✔ | No es compatible con el proveedor |
-| **Control de uso compartido** | ✔ | ✔ | ✔ | No aplicable | ✔ | ✔ | No aplicable | No aplicable | | ✔ | No es compatible con el proveedor |
-| **Regulación de archivos** | ✔ | ✔ | ✔ | No aplicable | ✔ | ✔ | No aplicable | | ✔ | | No es compatible con el proveedor |
-| **Ver permisos de aplicación** | No aplicable | No es compatible con el proveedor | Próximamente | No aplicable | ✔ | ✔ | No aplicable | | ✔ | No aplicable | No aplicable |
-| **Revocar permisos de aplicación** | No aplicable | No es compatible con el proveedor | en breve | No aplicable | ✔ | ✔ | No aplicable | | ✔ | No aplicable | No aplicable |
-| **Aplicación de etiquetas de Azure Information Protection** | No aplicable | ✔ | | No aplicable | ✔ | ✔ | No aplicable | | | No aplicable | No aplicable |
+| | AWS | Box | Dropbox | GitHub | GCP | Área de trabajo de Google | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
+|-|-|-|-|-|-|-|-|-|-|-|-|-|
+| **Enumeración de cuentas** | ✔ | ✔ | ✔ | ✔ | Asunto conexión del área de trabajo de Google | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| **Lista de grupos** | ✔ | ✔ | ✔ | ✔ | Asunto conexión del área de trabajo de Google | ✔ | ✔ | ✔ | ✔ | ✔ | | No es compatible con el proveedor |
+| **Lista de privilegios** | | ✔ | ✔ | ✔ | Asunto conexión del área de trabajo de Google | ✔ | ✔ | No es compatible con el proveedor | ✔ | ✔ | ✔ | No es compatible con el proveedor |
+| **Regulación de usuario** | | ✔ | Próximamente | | Asunto conexión del área de trabajo de Google | ✔ | ✔ | | | ✔ | | No es compatible con el proveedor |
+| **Actividad de inicio de sesión** | ✔ | ✔ | ✔ | | Asunto conexión del área de trabajo de Google | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| **Actividad de usuario** | No aplicable | ✔ | ✔ | ✔ | ✔ | ✔ - requiere Google Business o Enterprise | ✔ | ✔ | Parcial | Compatible con Salesforce Shield | ✔ | ✔ |
+| **Actividad administrativa** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Parcial | ✔ | ✔ | No es compatible con el proveedor |
+| **DLP: examen periódico** | | ✔ | ✔ | | No aplicable | ✔ | ✔ | No aplicable | ✔ | ✔ | ✔ | No es compatible con el proveedor |
+| **Análisis en tiempo real de DLP-Near** | | ✔ | | | No aplicable | ✔: requiere Google Business Enterprise | ✔ | No aplicable | | | ✔ | No es compatible con el proveedor |
+| **Control de uso compartido** | ✔ | ✔ | ✔ | | No aplicable | ✔ | ✔ | No aplicable | No aplicable | | ✔ | No es compatible con el proveedor |
+| **Regulación de archivos** | ✔ | ✔ | ✔ | | No aplicable | ✔ | ✔ | No aplicable | | ✔ | | No es compatible con el proveedor |
+| **Ver permisos de aplicación** | No aplicable | No es compatible con el proveedor | Próximamente | ✔ | No aplicable | ✔ | ✔ | No aplicable | | ✔ | No aplicable | No aplicable |
+| **Revocar permisos de aplicación** | No aplicable | No es compatible con el proveedor | Próximamente | | No aplicable | ✔ | ✔ | No aplicable | | ✔ | No aplicable | No aplicable |
+| **Aplicación de etiquetas de Azure Information Protection** | No aplicable | ✔ | | | No aplicable | ✔ | ✔ | No aplicable | | | No aplicable | No aplicable |
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -88,13 +88,13 @@ Para usar los conectores de aplicaciones, debe asegurarse de que tiene lo siguie
 | Azure | | Administrador global |
 | AWS | | Usuario creado recientemente |
 | Box | Enterprise | Se recomienda encarecidamente que se conecte a Box como administrador. la conexión como coadmin dará como resultado la visibilidad parcial de los datos. En caso de que se conecte como coadministrador, asegúrese de seleccionar todos los permisos. |
-| Dropbox | Empresa/Enterprise | Administrador |
+| Dropbox | Empresa/Enterprise | Administración |
 | GitHub | Nube de GitHub Enterprise | Propietario |
 | GCP | | Consulte los [requisitos previos de Connect GCP](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | Área de trabajo de Google | Se prefiere la empresa o Enterprise de Google Workspace<br /><br />Google Workspace Enterprise (mínimo) | Superadministrador |
 | Office 365 | | Administrador global |
-| Okta | Enterprise (no versión de prueba) | Administrador |
-| Salesforce | | Administrador |
+| Okta | Enterprise (no versión de prueba) | Administración |
+| Salesforce | | Administración |
 | ServiceNow | Eureka o versión posterior | Rol de administrador + RestAPI |
 | Webex | | Administrador + administrador de cumplimiento |
 | Workday | | Consulte los [requisitos previos de Connect WorkDay](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) |
@@ -126,14 +126,17 @@ Para volver a habilitar las aplicaciones conectadas:
 1. En la página **aplicaciones conectadas** , en la fila correspondiente, haga clic en los tres puntos y seleccione **Editar aplicación**. Esto inicia el proceso para agregar un conector.
 1. Agregue el conector siguiendo los pasos de la guía del conector de API correspondiente. Por ejemplo, si va a volver a habilitar GitHub, siga los pasos que se describen en [conexión de github Enterprise Cloud a Cloud App Security](connect-github-ec-to-microsoft-cloud-app-security.md).
 
+## <a name="related-videos"></a>Vídeos relacionados
+
+> [!div class="nextstepaction"]
+> [Seminario web sobre la conexión de aplicaciones de terceros](webinars.md#on-demand-webinars)
+
+> [!div class="nextstepaction"]
+> [Microsoft Cloud App Security: tokens y API de REST](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)
+
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
 > [Actividades diarias para proteger el entorno de nube](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
-
-## <a name="check-out-this-video"></a>Eche un vistazo a este vídeo.
-
-> [!div class="nextstepaction"]
-> [Microsoft Cloud App Security: tokens y API de REST](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)

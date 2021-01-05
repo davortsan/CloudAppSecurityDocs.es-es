@@ -3,12 +3,12 @@ title: List-entidades API
 description: En este artículo se describe la solicitud de lista en la API de entidades de Cloud App Security.
 ms.date: 03/27/2020
 ms.topic: reference
-ms.openlocfilehash: bbe7e57bb50be9ca9b55fc48c1906811f8460d72
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: a93fa00db40720d8b8bf31a8494ce949402bca0b
+ms.sourcegitcommit: 90df07ce9cd64fd9c46fb6563f0249079204e174
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96314110"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97858993"
 ---
 # <a name="list---entities-api"></a>List-entidades API
 
@@ -35,7 +35,7 @@ POST /api/v1/entities/
 | --- | --- |
 | filters | Filtre los objetos con todos los filtros de búsqueda de la solicitud; consulte [filtros de entidad](api-entities.md#filters) para obtener más detalles. |
 | sortDirection | Dirección de ordenación. Los valores posibles son: `asc` y `desc` |
-| sortField | Campos usados para ordenar entidades. Los valores posibles son:<br /><br />**fecha**: fecha en la que se creó la entidad.<br /><br />**gravedad**: la gravedad de la entidad |
+| sortField | Campos usados para ordenar entidades. Los valores posibles son:<br />- **fecha**: fecha en la que se creó la entidad.<br />- **gravedad**: la gravedad de la entidad |
 | skip | Omite el número de registros especificado. |
 | limit | Número máximo de registros devueltos por la solicitud |
 

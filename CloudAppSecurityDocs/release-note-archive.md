@@ -3,12 +3,12 @@ title: Archivado de actualizaciones anteriores en Cloud App Security
 description: Este artículo es un archivo que describe las actualizaciones realizadas en versiones anteriores de Cloud App Security.
 ms.date: 11/25/2020
 ms.topic: conceptual
-ms.openlocfilehash: 50f8bc735743d1506ac9ad18e6b10b659de7ab6e
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: d64c12289025ef7270ae94f922cea187e8ca5dbf
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315555"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855768"
 ---
 # <a name="past-release-archive-of-microsoft-cloud-app-security"></a>Archivo de versiones anteriores de Microsoft Cloud App Security
 
@@ -728,7 +728,7 @@ Publicado el 12 de noviembre de 2017
 
 - Con el nuevo signo de interrogación azul en la esquina, ahora puede acceder a la página de documentación pertinente de Cloud App Security en docs.microsoft.com desde las páginas del portal. Cada vínculo es contextual, le lleva a la información que necesita en función de la página en la que se encuentra.
 - Ahora puede enviar comentarios desde cada página del portal de Cloud App Security. Los comentarios le permiten informar sobre errores, solicitar nuevas características y compartir su experiencia directamente con el equipo de Cloud App Security.
-- Se han realizado mejoras en la capacidad de detección en la nube para reconocer subdominios para investigaciones de análisis profundo del uso de la nube de la organización. Para más información, consulte [Trabajar con aplicaciones detectadas](discovered-apps.md).
+- Se han realizado mejoras en la capacidad Cloud Discovery para reconocer subdominios para investigaciones de análisis profundo del uso de la nube de la organización. Para más información, consulte [Trabajar con aplicaciones detectadas](discovered-apps.md).
 
 ### <a name="cloud-app-security-release-109"></a>Notas de la versión 109 de Cloud App Security
 
@@ -745,7 +745,7 @@ Publicado el 29 de octubre de 2017
 
 - Implementaremos gradualmente la capacidad para aplicar filtros a partir de nombres de actividad de servicio específicos. Este nuevo filtro Tipo de actividad es más granular y le permite supervisar actividades de la aplicación concretas, en lugar de los tipos de actividad más generales habituales. Por ejemplo, antes se podía filtrar por el **Comando Ejecutar**, mientras que ahora se puede filtrar por cmdlets de EXO específicos. El nombre de actividad también se puede ver en el cajón de actividades, en **Tipo (en la aplicación)**. Esta capacidad acabará reemplazando al filtro Tipo de actividad.
 
-- Cloud Discovery ya admite Cisco ASA con FirePOWER.
+- Cloud Discovery ahora es compatible con Cisco ASA con FirePOWER.
 
 - Se han realizado mejoras de rendimiento en las páginas de IP y usuario de Discovery para mejorar la experiencia del usuario.
 
@@ -755,7 +755,7 @@ Publicado en septiembre/octubre de 2017
 
 - Ahora, Cloud App Security incluye un centro de datos en la Unión Europea. Así, aparte de nuestro centro de datos en Estados Unidos, el centro de datos de la UE permitirá a los clientes de Cloud App Security cumplir plenamente con las nuevas normas y certificaciones europeas y las que están por venir.
 - Se han agregado nuevos filtros a la página **Conectores de aplicaciones** que permiten un filtrado más sencillo y obtener más información.
-- Se ha mejorado Cloud Discovery en los archivos de registro que contienen solo información de las direcciones IP de destino.
+- Se mejoró Cloud Discovery en archivos de registro que solo tienen información de dirección IP de destino.
 
 ### <a name="cloud-app-security-release-104"></a>Notas de la versión 104 de Cloud App Security
 
@@ -969,7 +969,7 @@ Fecha de publicación: 20 de marzo de 2017
 - El conector de la aplicación de Cloud App Security para ServiceNow se ha expandido para incluir compatibilidad con tokens de OAuth (tal como se presenta en Ginebra, Helsinki y Estambul). Este cambio proporciona una conexión más sólida de la API con ServiceNow, que no se basa en el usuario de implementación. Para obtener más información, vea [Conectar ServiceNow con Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security.md). Los clientes existentes pueden actualizar su configuración en la página del conector de ServiceNow App.
 - Si configura escáneres DLP adicionales de terceros, el estado del examen DLP ahora mostrará el estado de cada conector de forma independiente para mejorar la visibilidad.
 - Cloud App Security ahora incluye compatibilidad para las actividades de Microsoft Teams que se admiten en el registro de auditoría de Office 365. Esta característica se está implantando gradualmente.
-- En el caso de los eventos de suplantación de Exchange Online, ahora puede filtrar por el nivel de permiso usado-delegado, administrador o administrador delegado. Puede buscar eventos que muestren el nivel de suplantación que le interese en el **registro de actividad** mediante la búsqueda de elementos de **objetos de actividad**  >  **Item**.
+- En el caso de los eventos de suplantación de Exchange Online, ahora puede filtrar por el nivel de permiso usado-delegado, administrador o administrador delegado. Puede buscar eventos que muestren el nivel de suplantación que le interese en el **registro de actividad** mediante la búsqueda de elementos de **objetos de actividad**  >  .
 - En el cajón de aplicaciones de la pestaña **Permisos de la aplicación** de aplicaciones Office 365, ahora puede ver el **publicador** de cada aplicación. También puede utilizar el publicador como un filtro para la investigación de las aplicaciones adicionales del mismo publicador.
 - Las direcciones IP de riesgo aparecen ahora como un factor de riesgo independiente en lugar de ponderado en el factor de riesgo de la **ubicación** general.
 - Cuando las etiquetas de Azure Information Protection están deshabilitadas en un archivo, las etiquetas deshabilitadas aparecerán como deshabilitadas en Cloud App Security. No se mostrarán las etiquetas eliminadas.

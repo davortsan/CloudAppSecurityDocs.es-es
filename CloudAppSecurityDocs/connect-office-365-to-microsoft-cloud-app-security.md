@@ -3,12 +3,12 @@ title: Conectar Office 365 con Cloud App Security
 description: En este artículo se proporciona información sobre cómo conectar Office 365 con Cloud App Security mediante el conector de API para la visibilidad y el control del uso.
 ms.date: 08/17/2020
 ms.topic: how-to
-ms.openlocfilehash: 8edb45ffab805edc6c8bc5e3c4b9f4828a28886f
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 4d0735251469641c3e268eda2e99a791c6d05d2e
+ms.sourcegitcommit: 243baad1adeb32d157c7f6165c08df2136b28db0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96312750"
+ms.lasthandoff: 12/27/2020
+ms.locfileid: "97792797"
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Conectar Office 365 con Microsoft Cloud App Security
 
@@ -45,14 +45,14 @@ Cloud App Security admite las siguientes aplicaciones de Office 365:
 >- Para habilitar la supervisión de las actividades de Office 365 en Cloud App Security, es necesario habilitar la auditoría en el [centro de seguridad y cumplimiento de Office](https://support.microsoft.com/help/4026501/office-auditing-in-office-365-for-admins).
 >- El registro de auditoría de administrador de Exchange, que está habilitado de forma predeterminada en Office 365, registra un evento en el registro de auditoría de Office 365 cuando un administrador (o un usuario al que se han asignado privilegios administrativos) realiza un cambio en la organización de Exchange Online. Los cambios realizados mediante el Centro de administración de Exchange o mediante la ejecución de un cmdlet en Windows PowerShell se registran en el registro de auditoría de administrador de Exchange. Para obtener más información sobre el registro de auditoría de administrador de Exchange, consulte [Registro de auditoría de administrador](/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log).
 >- El registro de auditoría de buzones de Exchange debe estar activado para cada buzón de usuario antes de que se registre la actividad del usuario en Exchange Online. Consulte las [actividades de buzones de Exchange](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
->- Si las aplicaciones de Office están habilitadas, también se importan los grupos que forman parte de Office 365 a Cloud App Security desde las aplicaciones de Office específicas. Por ejemplo, si SharePoint está habilitado, se importan también grupos de Office 365 como grupos de SharePoint.
+>- Si las aplicaciones de Office están habilitadas, los grupos que forman parte de Office 365 también se importan a Cloud App Security desde las aplicaciones de Office específicas; por ejemplo, si SharePoint está habilitado, los grupos de Office 365 se importan también como grupos de SharePoint.
 >- Debe [habilitar la auditoría en Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-auditing/) para obtener los registros desde ahí. Una vez habilitada, Cloud App Security empieza a obtener los registros (con un retraso de 24-72 horas).
 >- Debe [Habilitar la auditoría en Dynamics 365](/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing#enable-auditing) para obtener los registros desde allí. Una vez habilitada, Cloud App Security empieza a obtener los registros (con un retraso de 24-72 horas).
 >- Si Azure Active Directory está establecido de modo que se sincronice automáticamente con los usuarios del entorno local de Active Directory, la configuración del entorno local reemplaza la configuración de Azure AD y se revierte el uso de la acción de gobernanza **Suspender usuario**.
 >- En el caso de las actividades de inicio de sesión Azure AD, Cloud App Security solo muestra las actividades de inicio de sesión interactivas y las actividades de inicio de sesión de los protocolos heredados, como ActiveSync. Las actividades de inicio de sesión no interactivas se pueden ver en el registro de auditoría Azure AD.
 > - Las [implementaciones multigeográfica](/office365/enterprise/office-365-multi-geo) solo se admiten en OneDrive
 
-1. En la página **Conectores de aplicaciones**, haga clic en el botón del signo más y seleccione **Office 365**.
+1. En la página **aplicaciones conectadas** , haga clic en el botón más y seleccione **Office 365**.
 
     ![opción de menú conectar O365](media/connect-o365.png)
 
@@ -65,7 +65,7 @@ Cloud App Security admite las siguientes aplicaciones de Office 365:
     > [!NOTE]
     >
     > - Para lograr una protección óptima, se recomienda seleccionar todos los componentes de Office 365.
-    > - El componente **Office 365 files** requiere el componente de **actividades de Office 365** y Cloud App Security la supervisión de archivos (**Settings**  >  **los archivos** de configuración  >  **habilitan la supervisión de archivos**).
+    > - El componente **Office 365 files** requiere el componente de **actividades de Office 365** y Cloud App Security la supervisión de archivos (  >  **los archivos** de configuración  >  **habilitan la supervisión de archivos**).
 
     ![conectar componentes de O365](media/connect-o365-components.png)
 

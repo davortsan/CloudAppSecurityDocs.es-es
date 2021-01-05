@@ -1,14 +1,14 @@
 ---
 title: Supervisar y proteger archivos en aplicaciones en la nube
 description: En este artículo se describe el procedimiento para configurar una directiva de datos para supervisar y controlar los datos y los archivos durante el uso de aplicaciones en la nube de la organización.
-ms.date: 10/7/2019
+ms.date: 01/05/2021
 ms.topic: how-to
-ms.openlocfilehash: 1fd1ae1d09838a9db5e481f3f34f546996e6a76c
-ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
+ms.openlocfilehash: a69f618b324fcdcc93077e22e54c354bf3665082
+ms.sourcegitcommit: ee66e70f711aa11501e308e53b1a4b46f2175e4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97369555"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97894689"
 ---
 # <a name="file-policies"></a>Directivas de archivos
 
@@ -52,9 +52,11 @@ Estos son algunos ejemplos de las directivas de archivo que se pueden crear:
 
 Haga lo siguiente para crear una directiva de archivo:
 
-1. En la consola, haga clic en **Control**, seguido de **Directivas**.
+1. Vaya a **control**  >  **directivas**  >  **Information Protection**.
 
-1. Haga clic en **crear Directiva** y seleccione Directiva de **archivo** .
+1. Haga clic en **Crear directiva** y seleccione **Directiva de archivo**.
+
+    ![Creación de una directiva de Information Protection](media/create-policy-from-information-protection-tab.png)
 
 1. Asigne un nombre y una descripción a la directiva. Si quiere, puede basarla en una plantilla. Para obtener más información sobre las plantillas de directiva, vea [Controlar aplicaciones en la nube con directivas](control-cloud-apps-with-policies.md).
 
@@ -114,6 +116,11 @@ Para que la investigación sea incluso más sencilla, ahora puede crear consulta
 1. En el elemento emergente **Guardar consulta** , asigne un nombre a la consulta.
 
 1. Para volver a usar esta consulta en el futuro, en **Consultas**, desplácese hacia abajo hasta **Consultas guardadas** y seleccione la consulta.
+
+## <a name="related-videos"></a>Vídeos relacionados
+
+> [!div class="nextstepaction"]
+> [Seminario Web de Information Protection](webinars.md#on-demand-webinars)
 
 ## <a name="next-steps"></a>Pasos siguientes
 

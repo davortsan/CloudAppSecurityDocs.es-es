@@ -3,12 +3,12 @@ title: Cloud App Security guía de investigación de alertas de detección de an
 description: En este artículo se explica cómo investigar las alertas de detección de anomalías de Cloud App Security emitidas cuando se detectan ataques en su organización.
 ms.date: 06/08/2020
 ms.topic: how-to
-ms.openlocfilehash: 69490396c2669307372c0073e8f0ad58e3bf09c5
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 6c3a099153da4ac69961fd759a26c08a31e6867b
+ms.sourcegitcommit: 40d17309b8729eb914ea91ba5fa7017340231488
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315079"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97808987"
 ---
 # <a name="how-to-investigate-anomaly-detection-alerts"></a>Cómo investigar alertas de detección de anomalías
 
@@ -30,7 +30,7 @@ En esta guía se proporciona información sobre cómo investigar y corregir Clou
 > - [Elevación de privilegios](#privilege-escalation-alerts)
 > - [Acceso a credenciales](#credential-access-alerts)
 > - [Colección](#collection-alerts)
-> - [Filtración](#exfiltration-alerts)
+> - [Exfiltración](#exfiltration-alerts)
 > - [Impacto](#impact-alerts)
 
 ## <a name="security-alert-classifications"></a>Clasificaciones de las alertas de seguridad
@@ -158,7 +158,7 @@ Esta detección usa un algoritmo de aprendizaje automático que omite las condic
 
 ### <a name="misleading-oauth-app-name"></a>Nombre de aplicación OAuth engañoso
 
-El nombre de la aplicación OAuth engañosa identifica las aplicaciones con caracteres, como letras extranjeras, similares a las letras latinas. Esto puede indicar un intento de disfrazar una aplicación malintencionada como una aplicación conocida y de confianza para que los atacantes puedan engañar a los usuarios para que descarguen su aplicación malintencionada.
+Esta detección identifica las aplicaciones con caracteres, como letras extranjeras, similares a las letras latinas. Esto puede indicar un intento de disfrazar una aplicación malintencionada como una aplicación conocida y de confianza para que los atacantes puedan engañar a los usuarios para que descarguen su aplicación malintencionada.
 
 **TP**, **B-TP** o **FP**?
 
@@ -180,7 +180,7 @@ Para prohibir el acceso a la aplicación, en la página de **aplicaciones de OAu
 
 ### <a name="misleading-publisher-name-for-an-oauth-app"></a>Nombre de publicador engañoso para una aplicación de OAuth
 
-El nombre del publicador de OAuth engañoso para una aplicación de OAuth identifica aplicaciones con caracteres, como letras extranjeras, similares a las letras latinas. Esto puede indicar un intento de disfrazar una aplicación malintencionada como una aplicación conocida y de confianza para que los atacantes puedan engañar a los usuarios para que descarguen su aplicación malintencionada.
+Esta detección identifica las aplicaciones con caracteres, como letras extranjeras, similares a las letras latinas. Esto puede indicar un intento de disfrazar una aplicación malintencionada como una aplicación conocida y de confianza para que los atacantes puedan engañar a los usuarios para que descarguen su aplicación malintencionada.
 
 **TP**, **B-TP** o **FP**?
 
@@ -201,6 +201,18 @@ El nombre del publicador de OAuth engañoso para una aplicación de OAuth identi
     - Aplicaciones que no se han actualizado recientemente. Esto podría ser signo de una aplicación que ya no se admite.
     - Aplicaciones que tienen permisos no pertinentes. Esto podría indicar que una aplicación es de riesgo.
 1. Si todavía sospecha que una aplicación es sospechosa, puede investigar el nombre de la aplicación, el editor y la dirección URL en línea.
+
+### <a name="unusual-addition-of-credentials-to-an-oauth-app"></a>Adición inusual de credenciales a una aplicación de OAuth
+
+Esta detección identifica la adición sospechosa de credenciales con privilegios a una aplicación de OAuth. Esto puede indicar que un atacante ha puesto en peligro la aplicación y la está usando para actividades malintencionadas.
+
+> [!NOTE]
+> Puesto que el riesgo que suponen un ataque realizado correctamente es alto, Cloud App Security también le notifica las detecciones que se vuelven a mediados de septiembre de 2020.
+> Las alertas de eventos anteriores tienen el título "alerta del sistema: adición inusual de credenciales a una aplicación de OAuth" y el tipo de alerta se MCAS_ALERT_MANAGEMENT_GENERIC.
+
+**Período de aprendizaje**
+
+Conocer el entorno de su organización requiere un período de siete días durante el cual puede esperar un gran volumen de alertas.
 
 ## <a name="execution-alerts"></a>Alertas de ejecución
 

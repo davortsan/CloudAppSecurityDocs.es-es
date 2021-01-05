@@ -1,14 +1,14 @@
 ---
 title: Creación de directivas de sesión en Cloud App Security
 description: En este artículo se describe el procedimiento para configurar una directiva de sesión de control de aplicaciones de acceso condicional de Cloud App Security para obtener visibilidad detallada de las actividades de la sesión del usuario y bloquear descargas por medio de las funciones de proxy inverso.
-ms.date: 03/31/2020
+ms.date: 01/05/2021
 ms.topic: how-to
-ms.openlocfilehash: 9e755da569c6d90274a6fd347408587a1a6732f7
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 7d3c2c2fbea1b5cae9013b84b07e59ea1c07ee83
+ms.sourcegitcommit: ee66e70f711aa11501e308e53b1a4b46f2175e4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315449"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97894627"
 ---
 # <a name="session-policies"></a>Directivas de sesión
 
@@ -38,8 +38,12 @@ Por ejemplo, puede decidir que, desde cualquier dispositivo no administrado o en
 
 Haga lo siguiente para crear una directiva de sesión:
 
-1. En el portal, seleccione **Control** y, después, **Directivas**.
-1. En la página **Directivas**, haga clic en **Crear directiva** y seleccione **Directiva de sesión**.
+1. Vaya a **control**  >  **directivas**  >  **acceso condicional**.
+
+1. Haga clic en **Crear directiva** y seleccione **Directiva de sesión**.
+
+    ![Crear una directiva de acceso condicional](media/create-policy-from-conditional-access-tab.png)
+
 1. En la ventana **Directiva de sesión**, especifique un nombre para la directiva, como *Bloquear descarga de documentos confidenciales en Box de usuarios de marketing*.
 1. En el campo **Tipo de control de sesión**, haga lo siguiente:
 
@@ -153,6 +157,11 @@ También puede configurar directivas de sesión para bloquear el malware en la d
 Es importante formar a los usuarios cuando infrinjan una directiva para que aprendan a cumplir las directivas de la organización. Como cada empresa tiene necesidades y directivas exclusivas, Cloud App Security le permite personalizar los filtros de una directiva y el mensaje que se muestra al usuario cuando se detecta una infracción. Puede proporcionar instrucciones específicas a los usuarios, como proporcionar instrucciones sobre cómo etiquetar correctamente un archivo o cómo inscribir un dispositivo no administrado, para asegurarse de que los archivos se cargan correctamente.
 
 Por ejemplo, si un usuario carga un archivo sin una etiqueta de Azure Information Protection, se puede mostrar un mensaje que explica que el archivo contiene contenido confidencial que requiere una etiqueta adecuada. De forma similar, si un usuario intenta cargar un documento desde un dispositivo no administrado, se puede mostrar un mensaje con instrucciones sobre cómo inscribir el dispositivo o uno que proporciona una explicación más detallada de por qué se debe inscribir el dispositivo.
+
+## <a name="related-videos"></a>Vídeos relacionados
+
+> [!div class="nextstepaction"]
+> [Seminario Web de Control de aplicaciones de acceso condicional](webinars.md#on-demand-webinars)
 
 ## <a name="next-steps"></a>Pasos siguientes
 

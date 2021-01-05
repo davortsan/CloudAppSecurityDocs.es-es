@@ -3,12 +3,12 @@ title: Conexión de Salesforce con Cloud App Security
 description: En este artículo se proporciona información sobre cómo conectar Salesforce con Cloud App Security mediante el conector de API para la visibilidad y el control del uso.
 ms.date: 10/06/2019
 ms.topic: how-to
-ms.openlocfilehash: c2a1514fcb5fc02823f8d365a21fd1f154ab0e86
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 45c1a74e860c155662d4e7ff66e16bea956b94e6
+ms.sourcegitcommit: 40d17309b8729eb914ea91ba5fa7017340231488
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96312512"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97808953"
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Conectar Salesforce con Microsoft Cloud App Security
 
@@ -34,12 +34,12 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
 
     * En **Administrar usuarios**, vaya a la página **Perfiles de usuario**.
 
-        ![administrar perfiles de usuarios de Salesforce](media/salesforce-manageusers-profiles.png "administrar perfiles de usuarios de Salesforce")
+        ![administrar perfiles de usuarios de Salesforce](media/salesforce-manageusers-profiles.png)
 
     * Haga clic en **Nuevo** para crear un perfil nuevo.
     * Elija el perfil que acaba de crear para implementar Cloud App Security y haga clic en **Editar**. Este perfil se utilizará para la cuenta de servicio de Cloud App Security para configurar el conector de aplicaciones.
 
-         ![editar perfil en Salesforce](media/salesforce-edit-profile.png "editar perfil en Salesforce")
+         ![editar perfil en Salesforce](media/salesforce-edit-profile.png)
 
     * Asegúrese de que las siguientes casillas están activadas:
       * **API Enabled** (API habilitada)
@@ -54,11 +54,11 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
 
     1. Vaya a la página de configuración de Salesforce.
 
-        ![configuración de Salesforce](media/salesforce-setup.png "configuración de Salesforce")
+        ![configuración de Salesforce](media/salesforce-setup.png)
 
     1. En el menú lateral, seleccione **Administrar usuarios** y haga clic en **Usuarios**.
 
-        ![menú de usuarios de Salesforce](media/salesforce-menu-users.png "menú de usuarios de Salesforce")
+        ![menú de usuarios de Salesforce](media/salesforce-menu-users.png)
 
     1. Seleccione el usuario administrativo actual de su usuario de Cloud App Security dedicado.
 
@@ -66,21 +66,25 @@ En este artículo se ofrecen instrucciones para conectar Microsoft Cloud App Sec
 
         Si no está activada, haga clic en **Editar** y después active la casilla.
 
-        ![usuario de contenido CRM de Salesforce](media/salesforce-crm-content-user.png "usuario de contenido CRM de Salesforce")
+        ![usuario de contenido CRM de Salesforce](media/salesforce-crm-content-user.png)
 
-    1. Haga clic en **Guardar**.
+    1. En **configuración de sesión**, asegúrese de que la casilla de verificación seleccionar **las sesiones de bloqueo en la dirección IP desde la que se originaron** **no** está activada.
+
+        ![configuración de sesión de Salesforce](media/salesforce-setup-session-settings.png)
+
+    1. Haga clic en **Save**(Guardar).
 
 1. En la consola de Cloud App Security, haga clic en **Investigar** y, después, en **Aplicaciones conectadas**.
 
 1. En la página **Conectores de aplicaciones**, haga clic en el botón del signo más y, después, en **Salesforce**.
 
-    ![conectar Salesforce](media/connect-salesforce.png "conectarse a Salesforce")
+    ![conectarse a Salesforce](media/connect-salesforce.png)
 
 1. En la página de configuración de Salesforce, en la pestaña API, haga clic en **Seguir vínculo**, en función de la instancia que vaya a instalar.
 
 1. Se abrirá la página de inicio de sesión de Salesforce. Escriba sus credenciales para permitir que Cloud App Security tenga acceso a la aplicación de Salesforce de su equipo.
 
-    ![Inicio de sesión de Salesforce](media/salesforce-logon.png "inicio de sesión en Salesforce")
+    ![Inicio de sesión de Salesforce](media/salesforce-logon.png)
 
 1. Salesforce le preguntará si quiere permitir que Cloud App Security acceda a la información y el registro de actividad de su equipo y que realice actividades como cualquier miembro del equipo. Para continuar, haga clic en **Permitir**.
 

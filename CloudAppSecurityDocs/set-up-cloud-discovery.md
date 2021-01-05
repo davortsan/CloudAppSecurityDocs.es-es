@@ -3,12 +3,12 @@ title: Implementación de Cloud Discovery
 description: En este artículo se describe el procedimiento de configuración de Cloud Discovery para que entre en funcionamiento.
 ms.date: 08/09/2020
 ms.topic: how-to
-ms.openlocfilehash: bdb4438c18b82b7426de09b73e1ce8c2753d21a1
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: e4ac4ce0e6148ca37c4c666b94da6779578ca77a
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315589"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855241"
 ---
 # <a name="set-up-cloud-discovery"></a>Configuración de Cloud Discovery
 
@@ -32,7 +32,7 @@ Puede generar los siguientes tipos de informes:
     - [Integración de Corrata](corrata-integration.md)
     - [Integración de seguridad de Menlo](menlo-integration.md)
 
-- **[Cloud Discovery API](api-discovery.md)** : Use la api de Cloud Discovery de Cloud App Security para automatizar la carga del registro de tráfico y obtener una evaluación de riesgos y un informe de Cloud Discovery automatizados. También puede usar la API para [generar scripts de bloqueo](api-discovery-script.md) y optimizar los controles de aplicación directamente en el dispositivo de red.
+- **[API de Cloud Discovery](api-discovery.md)** : Use la api de Cloud Discovery de Cloud App Security para automatizar la carga del registro de tráfico y obtener análisis automatizado de la Cloud Discovery de informes y riesgos. También puede usar la API para [generar scripts de bloqueo](api-discovery-script.md) y optimizar los controles de aplicación directamente en el dispositivo de red.
 
 ## <a name="log-process-flow-from-raw-data-to-risk-assessment"></a>Flujo del proceso de registro: de datos sin procesar a evaluación de riesgos
 

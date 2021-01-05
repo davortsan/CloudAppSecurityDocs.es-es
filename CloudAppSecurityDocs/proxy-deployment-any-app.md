@@ -3,12 +3,12 @@ title: Implementar Control de aplicaciones de acceso condicional de Cloud App Se
 description: En este artículo se proporciona información sobre cómo implementar las características de Microsoft Cloud App Security Control de aplicaciones de acceso condicional proxy inverso para las aplicaciones.
 ms.date: 03/31/2020
 ms.topic: how-to
-ms.openlocfilehash: 32aa858eca58f8b76cc90bd96f5ebe17516af1e7
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 52eb9874a5b80fa22f957f855374a0f3444d7101
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315402"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855853"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Incorporación e implementación del Control de aplicaciones de acceso condicional para cualquier aplicación
 
@@ -58,7 +58,7 @@ Siga estos pasos para configurar cualquier aplicación que se controlará Cloud 
 
 Use los pasos siguientes para crear una Azure AD Directiva de acceso condicional que enruta las sesiones de la aplicación a Cloud App Security. Para otras soluciones IdP, consulte [configuración de la integración con otras soluciones IDP](#configure-integration-with-other-idp-solutions).
 
-1. En Azure ad, vaya a **Security**  >  **acceso condicional** de seguridad.
+1. En Azure ad, vaya a   >  **acceso condicional** de seguridad.
 
 1. En el panel **acceso condicional** , en la barra de herramientas de la parte superior, haga clic en **nueva Directiva**.
 
@@ -82,7 +82,7 @@ Use los pasos siguientes para enrutar las sesiones de la aplicación desde otras
 
 1. En Cloud App Security, vaya a **investigar**  >  **aplicaciones conectadas**  >  **control de aplicaciones de acceso condicional aplicaciones**.
 
-1. Haga clic en el signo más y, en el elemento emergente, seleccione la aplicación que desea implementar y, a continuación, haga clic en **iniciar el asistente**.
+1. Haga clic en el signo más ( **+** ) y, en el elemento emergente, seleccione la aplicación que desea implementar y, a continuación, haga clic en **iniciar el asistente**.
 1. En la página información de la **aplicación** , rellene el formulario con la información de la página de configuración de inicio de sesión único de la aplicación y, a continuación, haga clic en **siguiente**.
     - Si el IdP proporciona un archivo de metadatos de inicio de sesión único para la aplicación seleccionada, seleccione **Cargar archivo de metadatos desde la aplicación** y cargue el archivo de metadatos.
     - O bien, seleccione **rellenar datos manualmente** y proporcione la siguiente información:
@@ -219,7 +219,7 @@ Por ejemplo, si ha configurado una directiva que bloquea la descarga de archivos
     > [!NOTE]
     > Para que se reconozcan los certificados, una vez que haya instalado el certificado, debe reiniciar el explorador e ir a la misma página.<!-- You'll see a check-mark by the certificates links confirmation they are installed.-->
 
-1. Haga clic en **Continuar**.
+1. Haga clic en **Continue**.
 
 ## <a name="step-4-verify-that-the-app-is-working-correctly"></a>Paso 4: comprobar que la aplicación funciona correctamente<a name="verify-app"></a>
 

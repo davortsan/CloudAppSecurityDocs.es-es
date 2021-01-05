@@ -1,14 +1,14 @@
 ---
 title: Conectar equipos WebEx a Cloud App Security
 description: En este artículo se proporciona información sobre cómo conectar la aplicación de equipos WebEx a Cloud App Security mediante el conector de API para la visibilidad y el control del uso.
-ms.date: 04/16/2019
+ms.date: 12/27/2020
 ms.topic: how-to
-ms.openlocfilehash: 32e440f86ad78537066336f339eb41fb6bb5461f
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 7cc58ee71f57c82aae87332d292fad8cf08894d4
+ms.sourcegitcommit: cfa59a538167bd126d64dbd05f04a1957bc035c8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96312481"
+ms.lasthandoff: 12/27/2020
+ms.locfileid: "97792707"
 ---
 # <a name="connect-cisco-webex-teams-to-microsoft-cloud-app-security"></a>Conexión de equipos de Cisco WebEx a Microsoft Cloud App Security
 
@@ -19,7 +19,9 @@ En este artículo se proporcionan instrucciones para conectar Microsoft Cloud Ap
 ## <a name="prerequisites"></a>Requisitos previos
 
 - Se recomienda crear una cuenta de servicio dedicada para la conexión. Esto le permite ver las acciones de gobierno realizadas en WebEx como realizadas desde esta cuenta, como eliminar mensajes enviados en WebEx. De lo contrario, el nombre del administrador que se conectó Cloud App Security a Webex aparecerá como el usuario que realizó las acciones.
-- Debe tener permisos de administrador total **y** de administrador de cumplimiento en WebEx.
+- Debe tener roles de administrador total **y** del responsable de cumplimiento en WebEx (en roles **y roles de**  >  **Administrador** de seguridad).
+
+    ![Roles de WebEx de requisito previo](media/connect-webex-roles.png)
 
 ## <a name="how-to-connect-webex-to-cloud-app-security"></a>Cómo conectar WebEx a Cloud App Security
 
@@ -27,7 +29,7 @@ En este artículo se proporcionan instrucciones para conectar Microsoft Cloud Ap
 
 1. En la página **conectores de aplicaciones** , haga clic en el botón de signo más seguido de **Cisco WebEx**.
 
-    ![conectar WebEx](media/cisco-webex.png "conectar WebEx")
+    ![conectar WebEx](media/cisco-webex.png)
 
 1. En el elemento emergente, escriba el nombre de instancia de este conector.
 

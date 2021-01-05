@@ -3,12 +3,12 @@ title: Implementación de Control de aplicaciones de acceso condicional de Cloud
 description: En este artículo se proporciona información sobre cómo implementar el Control de aplicaciones de acceso condicional de Microsoft Cloud App Security para cualquier aplicación web que use el proveedor de identidades de PingOne.
 ms.date: 09/29/2020
 ms.topic: how-to
-ms.openlocfilehash: d49d7994e577321cfc276f642f77f7c81e4c9d9f
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: ef55a9a52c67a4329533caaa2a7e5700cec87796
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315249"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855836"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-web-app-using-pingone-identity-provider-idp"></a>Incorporación e implementación de Control de aplicaciones de acceso condicional para cualquier aplicación web que use el proveedor de identidades de PingOne (IdP)
 
@@ -18,7 +18,7 @@ Puede configurar controles de sesión en Microsoft Cloud App Security para que f
 
 En este artículo, usaremos la aplicación Salesforce como ejemplo de una aplicación web que se configura para usar Cloud App Security controles de sesión.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 - Su organización debe tener las licencias siguientes para usar Control de aplicaciones de acceso condicional:
 
@@ -59,7 +59,7 @@ Siga estos pasos para enrutar las sesiones de la aplicación web desde PingOne a
 
 ## <a name="step-1-get-your-apps-saml-single-sign-on-settings"></a>Paso 1: obtener la configuración de inicio de sesión único de SAML de la aplicación
 
-1. En Salesforce, **vaya a configuración configuración**  >  **Settings**  >  **identidad**  >  **Sign-On configuración**.
+1. En Salesforce, **vaya a configuración configuración**  >    >  **identidad**  >  **Sign-On configuración**.
 
 1. En **configuración de Sign-On única**, haga clic en el nombre de la aplicación SAML 2,0 que desea configurar.
 
@@ -75,7 +75,7 @@ Siga estos pasos para enrutar las sesiones de la aplicación web desde PingOne a
 
 1. En Cloud App Security, vaya a **investigar**  >  **aplicaciones conectadas**  >  **control de aplicaciones de acceso condicional aplicaciones**.
 
-1. Haga clic en el signo más y, en el elemento emergente, seleccione la aplicación que desea implementar y, a continuación, haga clic en **iniciar el asistente**.
+1. Haga clic en el signo más ( **+** ) y, en el elemento emergente, seleccione la aplicación que desea implementar y, a continuación, haga clic en **iniciar el asistente**.
 1. En la **página información** de la aplicación, seleccione **rellenar datos manualmente**, en la **dirección URL del servicio de consumidor de aserciones** , escriba la **dirección URL de inicio de sesión** de Salesforce que anotó anteriormente y, a continuación, haga clic en **siguiente**.
 
     > [!NOTE]
@@ -188,7 +188,7 @@ De nuevo en la página Cloud App Security cambios en la **aplicación** , realic
 
 ## <a name="step-7-complete-the-app-changes"></a>Paso 7: completar los cambios de la aplicación
 
-En Salesforce, **vaya a configuración configuración**  >  **Settings**  >  **identidad**  >  **única Sign-On configuración** y haga lo siguiente:
+En Salesforce, **vaya a configuración configuración**  >    >  **identidad**  >  **única Sign-On configuración** y haga lo siguiente:
 
 1. Recomendado: cree una copia de seguridad de la configuración actual.
 1. Reemplace el valor del campo **dirección URL de inicio de sesión del proveedor de identidad** por el Cloud App Security dirección URL de inicio de sesión único de SAML que anotó anteriormente.

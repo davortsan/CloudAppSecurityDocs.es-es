@@ -3,12 +3,12 @@ title: Establecer intervalos IP y etiquetas
 description: En este artículo se proporcionan instrucciones para trabajar con etiquetas IP y categorías IP.
 ms.date: 11/09/2020
 ms.topic: how-to
-ms.openlocfilehash: 80058d36ecf7496c9dad2fe8253efa9775076452
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 295b4b812679600254cb2a82b8efef57aa71757b
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315062"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855757"
 ---
 # <a name="working-with-ip-ranges-and-tags"></a><a name="IPtagsandRanges"></a>Trabajar con etiquetas y intervalos IP
 
@@ -32,7 +32,7 @@ Las etiquetas de dirección IP integradas y las etiquetas IP personalizadas se c
 
 ## <a name="create-an-ip-address-range"></a>Crear un intervalo de direcciones IP
 
-En la barra de menús, haga clic en el icono de configuración. Seleccione **Intervalo de direcciones IP**. Haga clic en el signo más para agregar intervalos de direcciones IP y configurar los campos siguientes:
+En la barra de menús, haga clic en el icono de configuración. Seleccione **Intervalo de direcciones IP**. Haga clic en el signo más ( **+** ) para agregar intervalos de direcciones IP y establezca los campos siguientes:
 
 1. Dé un **nombre** al intervalo IP. El nombre no se mostrará en el registro de actividades, solo se usará para administrar el intervalo IP.
 

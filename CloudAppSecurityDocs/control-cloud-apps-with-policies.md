@@ -1,14 +1,14 @@
 ---
 title: Control del uso de aplicaciones en la nube mediante la creación de directivas
 description: En este artículo se proporciona información sobre cómo se usan las directivas y cómo se configuran para controlar el uso de las aplicaciones en la nube.
-ms.date: 09/26/2019
+ms.date: 01/03/2021
 ms.topic: how-to
-ms.openlocfilehash: 695737038f0c45e366581c0262550b4c769039a5
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: d7d3bc90de1db4e2ec474c111b4799ad5a2078c8
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96312308"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855496"
 ---
 # <a name="control-cloud-apps-with-policies"></a>Control de aplicaciones en la nube con directivas
 
@@ -20,19 +20,21 @@ Por ejemplo, si hay una amenaza de infracción de datos que quiere poner en cuar
 
 ## <a name="policy-types"></a>Tipos de directiva
 
-Cuando consulta la página **Directiva**, se pueden distinguir las distintas políticas y plantillas por tipo e icono para ver las directivas que estarán disponibles. Las directivas disponibles dependen del origen de datos y lo que ha habilitado en Cloud App Security para su organización. Por ejemplo, si se cargan registros de Cloud Discovery, se muestran las directivas relativas a Cloud Discovery.
+Cuando consulta la página **Directiva**, se pueden distinguir las distintas políticas y plantillas por tipo e icono para ver las directivas que estarán disponibles. Las directivas se pueden ver juntas en la pestaña **todas las directivas** o en sus pestañas de categoría correspondientes. Las directivas disponibles dependen del origen de datos y lo que ha habilitado en Cloud App Security para su organización. Por ejemplo, si se cargan registros de Cloud Discovery, se muestran las directivas relativas a Cloud Discovery.
 
 Pueden crearse los siguientes tipos de directivas:
 
-|Icono de tipo de directiva|Tipo de directiva|Uso|
-|-----|-----------------|---------|
-|![Icono de directiva de acceso](media/proxy-policy.png)|Directiva de acceso|Las directivas de acceso proporcionan funcionalidades de supervisión y control en tiempo real de los inicios de sesión de usuario en las aplicaciones en la nube.|
-|![icono de directiva de actividad](media/activity_policy.png)|Directiva de actividades|Las directivas de actividad permiten aplicar una amplia gama de procesos automatizados mediante las API del proveedor de la aplicación. Estas directivas permiten supervisar actividades concretas realizadas por distintos usuarios o seguir niveles inesperadamente altos de un determinado tipo de actividad.|
-|![icono de directiva de detección de anomalías](media/anomaly_detection_policy.png)|Directiva de detección de anomalías|Las directivas de detección de anomalías permiten buscar actividades inusuales en la nube. La detección se basa en los factores de riesgo que se configuran para avisarle cuando ocurre algo que es diferente de la línea base de la organización o de la actividad normal del usuario.|
-|![icono de directivas de Cloud Discovery](media/discovery_policy.png)|Directiva de detección de aplicaciones|Las directivas de detección de aplicaciones permiten establecer alertas que notifican cuando se detectan nuevas aplicaciones en la organización.|
-|![icono de directiva de detección de anomalías](media/anomaly_detection_policy.png)|Directiva de detección de anomalías de Cloud Discovery|Las directivas de detección de anomalías de Cloud Discovery examinan los registros que se usan para detectar aplicaciones en la nube y buscan apariciones inusuales. Por ejemplo, cuando un usuario que nunca ha usado Dropbox de repente carga 600 GB o cuando hay muchas más transacciones de lo habitual en una aplicación determinada.|
-|![icono de directiva de archivo](media/file_policy.png)|Directiva de archivo|Las directivas de archivo permiten examinar las aplicaciones en la nube para detectar tipos de archivo o archivos concretos (compartidos, compartidos con dominios externos), datos (información de propiedad, datos personales, información de tarjeta de crédito y otros tipos de datos) y aplicar acciones de gobernanza a los archivos (las acciones de gobernanza son específicas de la aplicación en la nube).|
-|![Icono de directiva de sesión](media/proxy-policy.png)|Directiva de sesión|Las directivas de la sesión ofrecen supervisión y control en tiempo real de la actividad del usuario en las aplicaciones en la nube.|
+|Icono de tipo de directiva|Tipo de directiva|Category|Usar|
+|-----|---------|--------|---------|
+|![icono de directiva de actividad](media/activity-policy.png)|Directiva de actividades|Detección de amenazas|Las directivas de actividad permiten aplicar una amplia gama de procesos automatizados mediante las API del proveedor de la aplicación. Estas directivas permiten supervisar actividades concretas realizadas por distintos usuarios o seguir niveles inesperadamente altos de un determinado tipo de actividad. [Más información](user-activity-policies.md)|
+|![icono de directiva de detección de anomalías](media/anomaly-detection-policy.png)|Directiva de detección de anomalías|Detección de amenazas|Las directivas de detección de anomalías permiten buscar actividades inusuales en la nube. La detección se basa en los factores de riesgo que se configuran para avisarle cuando ocurre algo que es diferente de la línea base de la organización o de la actividad normal del usuario. [Más información](anomaly-detection-policy.md)|
+|![Icono de directiva de aplicación de OAuth](media/oauth-policy.png)|Directiva de aplicación de OAuth|Detección de amenazas|Las directivas de aplicación de OAuth permiten investigar los permisos que solicitó cada aplicación de OAuth y aprobarlos o revocarlos automáticamente. Se trata de directivas integradas que incluyen Cloud App Security y no se pueden crear. [Más información](app-permission-policy.md)|
+|![Icono de directiva de detección de malware](media/malware-detection-policy.png)|Directiva de detección de malware|Detección de amenazas|Las directivas de detección de malware permiten identificar archivos malintencionados en el almacenamiento en la nube y aprobarlos o revocarlos automáticamente. Se trata de una directiva integrada que viene con Cloud App Security y que no se puede crear. [Más información](anomaly-detection-policy.md#malware-detection)|
+|![icono de directiva de archivo](media/file-policy.png)|Directiva de archivo|Protección de la información|Las directivas de archivo permiten examinar las aplicaciones en la nube para detectar tipos de archivo o archivos concretos (compartidos, compartidos con dominios externos), datos (información de propiedad, datos personales, información de tarjeta de crédito y otros tipos de datos) y aplicar acciones de gobernanza a los archivos (las acciones de gobernanza son específicas de la aplicación en la nube). [Más información](data-protection-policies.md)|
+|![Icono de directiva de acceso](media/proxy-policy.png)|Directiva de acceso|Acceso condicional|Las directivas de acceso proporcionan funcionalidades de supervisión y control en tiempo real de los inicios de sesión de usuario en las aplicaciones en la nube. [Más información](access-policy-aad.md)|
+|![Icono de directiva de sesión](media/proxy-policy.png)|Directiva de sesión|Acceso condicional|Las directivas de la sesión ofrecen supervisión y control en tiempo real de la actividad del usuario en las aplicaciones en la nube. [Más información](session-policy-aad.md)|
+|![icono de directivas de Cloud Discovery](media/discovery-policy.png)|Directiva de detección de aplicaciones|Sombra|Las directivas de detección de aplicaciones permiten establecer alertas que notifican cuando se detectan nuevas aplicaciones en la organización. [Más información](cloud-discovery-policies.md)|
+|![icono de directiva de detección de anomalías](media/anomaly-detection-policy.png)|Directiva de detección de anomalías de Cloud Discovery|Sombra|Las directivas de detección de anomalías de Cloud Discovery examinan los registros que se usan para detectar aplicaciones en la nube y buscan apariciones inusuales. Por ejemplo, cuando un usuario que nunca ha usado Dropbox de repente carga 600 GB o cuando hay muchas más transacciones de lo habitual en una aplicación determinada. [Más información](cloud-discovery-anomaly-detection-policy.md)|
 
 ## <a name="identifying-risk"></a>La identificación de riesgos
 
@@ -80,7 +82,7 @@ Siga este proceso para controlar el riesgo con directivas:
 
 1. Agregue acciones automatizadas para responder a los riesgos y corregirlos automáticamente.
 
-### <a name="create-a-policy"></a>Crear una directiva
+### <a name="create-a-policy"></a>Creación de una directiva
 
 Puede usar las plantillas de directiva de Cloud App Security como base para todas las directivas o crear directivas a partir de una consulta.
 
@@ -90,9 +92,9 @@ Para crear una directiva a partir de una **plantilla de directiva**, siga los pa
 
 1. En la consola, haga clic en **Control** y luego en **Plantillas**.
 
-    ![Creación de la directiva desde una plantilla](media/create-policy-from-template.png)
+    ![Crear la Directiva a partir de una plantilla](media/create-policy-from-template.png)
 
-1. Haga clic en el **+** extremo derecho de la fila de la plantilla que desea usar. Se abre una página de creación de directivas con la configuración predefinida de la plantilla.
+1. Haga clic en el signo más ( **+** ) situado en el extremo derecho de la fila de la plantilla que desea usar. Se abre una página de creación de directivas con la configuración predefinida de la plantilla.
 
 1. Modifique la plantilla según sea necesario para la directiva personalizada. Cada propiedad y campo de esta nueva directiva basada en plantilla se puede modificar según las propias necesidades.
    > [!NOTE]
