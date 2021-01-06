@@ -3,12 +3,12 @@ title: Vea nuestros seminarios web
 description: Muestra una lista de seminarios web anteriores, incluida una descripción.
 ms.date: 01/05/2021
 ms.topic: conceptual
-ms.openlocfilehash: 147064103d1cf26bd94b2d03f7f0ed71444239c6
-ms.sourcegitcommit: ee66e70f711aa11501e308e53b1a4b46f2175e4e
+ms.openlocfilehash: 1429806209a84476c9219f18a67830b2c41729a7
+ms.sourcegitcommit: 3f148f3ecea57c0ce8623722a60bab593bd20282
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97894644"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97930502"
 ---
 # <a name="microsoft-cloud-app-security-webinars"></a>Seminarios web de Microsoft Cloud App Security
 
@@ -20,7 +20,10 @@ Para conocer nuestros próximos seminarios web y otros desarrollos, [Únase a la
 
 ## <a name="on-demand-webinars"></a>Seminarios web a petición
 
-Puede ver las sesiones grabadas en cualquier momento y, si está disponible, puede activar los subtítulos haciendo clic en **subtítulos (CC** ) y seleccionando el idioma deseado.
+Puede ver las sesiones grabadas en cualquier momento.
+
+> [!NOTE]
+> Si está disponible, puede activar los subtítulos haciendo clic en **subtítulos (CC** ) y seleccionando el idioma deseado.
 
 | Title | Información |
 | --- | --- |
