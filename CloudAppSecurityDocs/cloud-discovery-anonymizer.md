@@ -3,12 +3,12 @@ title: Anonimización de datos de usuario en Cloud App Security
 description: En este artículo se proporciona información sobre cómo proteger la privacidad de los usuarios al anonimizar los nombres de usuario en los datos de Cloud Discovery.
 ms.date: 04/20/2020
 ms.topic: how-to
-ms.openlocfilehash: bb8befb8c65f766118f6a3221b382c6699b17a0e
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: e17d837110028a7e252cf4092a09cc9bbd0ff7e1
+ms.sourcegitcommit: 3f148f3ecea57c0ce8623722a60bab593bd20282
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96313532"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97930530"
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Anonimización de datos de Cloud Discovery
 
@@ -34,12 +34,12 @@ Puntos clave:
 
     - Puede establecer el valor predeterminado en Cloud App Security para anonimizar todos los datos de los informes de instantáneas de los archivos de registro cargados y de los informes continuados de recopiladores de registros como se muestra a continuación:
 
-    1. Seleccione **configuración**  >  **Cloud Discovery configuración**.
+        1. Seleccione **configuración**  >  **Cloud Discovery configuración**.
 
-    2. En la pestaña **anonimización** , para anonimización los nombres de usuario de forma predeterminada, seleccione **anonimización información privada de forma predeterminada en nuevos informes y orígenes de datos**. También puede seleccionar la **información del dispositivo anonimización de forma predeterminada en el informe "usuarios del punto de conexión de Win10"**.
-    3. Haga clic en **Guardar**.
+        2. En la pestaña **anonimización** , para anonimización los nombres de usuario de forma predeterminada, seleccione **anonimización información privada de forma predeterminada en nuevos informes y orígenes de datos**. También puede seleccionar la **información del dispositivo anonimización de forma predeterminada en el informe "usuarios del punto de conexión de Win10"**.
+        3. Haga clic en **Guardar**.
 
-    ![Página de configuración de anonimización](media/anonymizer1.png)
+        ![Página de configuración de anonimización](media/anonymizer1.png)
 
 2. Cuando se selecciona la anonimización, Cloud App Security analiza el registro del tráfico y extrae los atributos de datos específicos.
 3. Cloud App Security reemplaza el nombre de usuario por un nombre de usuario cifrado.
