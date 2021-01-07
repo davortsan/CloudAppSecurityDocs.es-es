@@ -229,20 +229,18 @@
         - name: Control de aplicaciones en la nube con directivas
           href: control-cloud-apps-with-policies.md
           items:
-            - name: Directivas de Cloud Discovery
-              href: cloud-discovery-policies.md
+            - name: Detección de amenazas
               items:
-                - name: Directiva de detección de anomalías de Cloud Discovery
-                  href: cloud-discovery-anomaly-detection-policy.md
-            - name: Directivas de actividad
-              href: user-activity-policies.md
-            - name: Directivas de detección de anomalías
-              href: anomaly-detection-policy.md
-            - name: Directivas de OAuth
-              href: app-permission-policy.md
-            - name: Directivas de archivos
-              href: data-protection-policies.md
+                - name: Directivas de actividad
+                  href: user-activity-policies.md
+                - name: Directivas de detección de anomalías
+                  href: anomaly-detection-policy.md
+                - name: Directivas de OAuth
+                  href: app-permission-policy.md
+            - name: Protección de la información
               items:
+                - name: Directivas de archivos
+                  href: data-protection-policies.md
                 - name: Inspección de contenido
                   href: content-inspection.md
                   items:
@@ -252,12 +250,18 @@
                       href: dcs-inspection.md
                     - name: Trabajo con el motor de RegEx
                       href: working-with-the-regex-engine.md
-            - name: Directivas de Control de aplicaciones de acceso condicional
+            - name: Directivas de acceso condicional
               items:
                 - name: Directivas de acceso
                   href: access-policy-aad.md
                 - name: Directivas de sesión
                   href: session-policy-aad.md
+            - name: Directivas de shadow IT
+              items:
+                - name: Directiva de Cloud Discovery
+                  href: cloud-discovery-policies.md
+                - name: Directiva de detección de anomalías de Cloud Discovery
+                  href: cloud-discovery-anomaly-detection-policy.md
             - name: Referencia de plantillas de directiva
               href: policy-template-reference.md
         - name: Control de aplicaciones conectadas
@@ -280,14 +284,8 @@
               href: icap-stunnel.md
             - name: Integraciones adicionales
               href: additional-integrations.md
-        - name: Automatización de procesos y flujos de trabajo
-          items:
-            - name: Uso de la API de REST
-              href: api-tokens.md
-            - name: Investigación de actividades con las API
-              href: investigate-activities-api.md
-            - name: "Uso de Microsoft\_Power Automate"
-              href: flow-integration.md
+        - name: "Automatización de procesos con Microsoft\_Power Automate"
+          href: flow-integration.md
 - name: Referencia
   items:
     - name: Comprobaciones sobre la aplicación
@@ -318,14 +316,26 @@
               href: api-discovery-finalize.md
             - name: Generación de scripts de bloques
               href: api-discovery-script.md
-        - name: Mejora de datos
+        - name: Enriquecimiento de datos
           items:
-            - name: Actualización del intervalo de direcciones IP
+            - name: Información general
               href: api-data-enrichment.md
+            - name: Administración de intervalos de direcciones IP mediante la API
+              href: api-data-enrichment-manage-script.md
+            - name: Enumeración de intervalos IP
+              href: api-data-enrichment-list.md
+            - name: Actualización del intervalo de direcciones IP
+              href: api-data-enrichment-create.md
+            - name: Actualización del intervalo de direcciones IP
+              href: api-data-enrichment-update.md
+            - name: Eliminación del intervalo de direcciones IP
+              href: api-data-enrichment-delete.md
         - name: Actividades
           items:
             - name: Introducción
               href: api-activities.md
+            - name: Investigación de actividades con las API
+              href: api-activities-investigate-script.md
             - name: Enumeración de actividades
               href: api-activities-list.md
             - name: Captura de actividades
