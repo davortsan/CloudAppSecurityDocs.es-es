@@ -1,14 +1,14 @@
 ---
 title: Creación de directivas para controlar las aplicaciones de OAuth en Cloud App Security
 description: En este artículo se proporcionan instrucciones para crear directivas de permisos de la aplicación y trabajar con ellas en Microsoft Cloud App Security.
-ms.date: 11/27/2019
+ms.date: 01/11/2021
 ms.topic: how-to
-ms.openlocfilehash: 53b3c8d10bdc11714cffcc4bcd9402ee3a0e0adb
-ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
+ms.openlocfilehash: 3fe565607f59834cf1b4a6931b087b597c3f5c8d
+ms.sourcegitcommit: 04d8731dce2a3b3b2d10bbfa27e5dc80b0a3e0f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97369946"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98062709"
 ---
 # <a name="oauth-app-policies"></a>Directivas de aplicación de OAuth
 
@@ -55,7 +55,9 @@ Además de las directivas de aplicación de OAuth que puede crear, hay las sigui
 -->
 
 > [!NOTE]
-> Las directivas de detección de anomalías solo están disponibles para las aplicaciones de OAuth autorizadas en el Azure Active Directory.
+>
+> - Las directivas de detección de anomalías solo están disponibles para las aplicaciones de OAuth autorizadas en el Azure Active Directory.
+> - No se puede modificar la gravedad de las directivas de detección de anomalías de aplicación de OAuth.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

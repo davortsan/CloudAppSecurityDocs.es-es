@@ -1,16 +1,16 @@
 ---
 title: Descripción de los datos y los filtros de archivo disponibles en Cloud App Security
 description: En este artículo de referencia se proporciona información sobre los tipos de archivo y filtros de archivo que usa Cloud App Security.
-ms.date: 7/7/2019
+ms.date: 01/11/2021
 ms.topic: how-to
-ms.openlocfilehash: 181fa6b890f211ab5029f1179ebf55615c3985c9
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 381710d324dcb3e118a729d7c78c852c61351fbd
+ms.sourcegitcommit: 04d8731dce2a3b3b2d10bbfa27e5dc80b0a3e0f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96314958"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98062754"
 ---
-# <a name="files"></a>Archivos
+# <a name="files"></a>Files
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -74,7 +74,7 @@ A continuación se muestra una lista de los filtros de archivo que se pueden apl
 
     - **Cualquiera del dominio** : Si algún usuario de este dominio tiene acceso al archivo.
 
-    - **Dominio completo** : si todo el dominio tiene acceso al archivo.
+    - **Toda la organización** : si toda la organización tiene acceso al archivo.
 
     - **Grupos** : Si un grupo específico tiene acceso al archivo. Se pueden importar grupos de Active Directory o de aplicaciones en la nube, o bien crearse manualmente en el servicio.
 
@@ -95,11 +95,22 @@ A continuación se muestra una lista de los filtros de archivo que se pueden apl
         - **Contraseña cifrada** : archivos cuyo contenido no se ha inspeccionado porque están protegidos por contraseña por el usuario.
         - **Archivo dañado**: archivos cuyo contenido no se ha inspeccionado porque no se ha podido leer su contenido.
 
-- **Tipo de archivo** : Cloud App Security toma el tipo MIME recibido del servicio y examina el archivo para determinar el tipo de archivo real. Este examen se aplica a archivos pertinentes para el examen de datos (documentos, imágenes, presentaciones, hojas de cálculo, texto y archivos de almacenamiento o ZIP). El filtro funciona por tipo de archivo o carpeta. Por ejemplo, Todas las carpetas que son… o Todos los archivos de hoja de cálculo que son...
+- **Tipo de archivo** : Cloud App Security toma el tipo MIME recibido (vea la tabla) del servicio y examina el archivo para determinar el tipo de archivo real. Este examen se aplica a archivos pertinentes para el examen de datos (documentos, imágenes, presentaciones, hojas de cálculo, texto y archivos de almacenamiento o ZIP). El filtro funciona por tipo de archivo o carpeta. Por ejemplo, Todas las carpetas que son… o Todos los archivos de hoja de cálculo que son...
 
-    ![filtros en papelera de archivo de directiva](media/policy_file-filters-trash.png "filtros en papelera de archivo de directiva")
+    | Tipo de MIME | Tipo de archivo |
+    |--|--|
+    | -Application/vnd.openxmlformats-officedocument.wordprocessingml.document<br />-Application/vnd.ms-word.document. macroEnabled. 12<br />-Application/MSWord<br />-Application/vnd. oasis. opendocument. Text<br />-Application/vnd. stardivision. Writer<br />-Application/vnd. stardivision. Writer-global<br />-Application/vnd.sun.xml. Writer<br />-Application/vnd. stardivision. Math<br />-Application/vnd. stardivision. Chart<br />-application/x-StarWriter<br />-application/x-stardraw<br />-application/x-starmath<br />-application/x-StarChart<br />-Application/vnd.google-apps.document<br />-Application/vnd. Google-Apps. Kix<br />-application/pdf<br />-application/x-pdf<br />-Application/vnd. Box. webdoc<br />-Application/vnd. Box. boxnote<br />-Application/vnd.jive.document<br />-texto/RTF<br />-Application/RTF | Documento |
+    | -Application/vnd. oasis. opendocument. Image<br />-Application/vnd. Google-Apps. Photo<br />- **empieza por:** imagen/ | Imagen |
+    | -Application/vnd. openxmlformats. presentationml. Presentation<br />-Application/vnd. MS-PowerPoint. template. macroEnabled. 12<br />-Application/MSPowerPoint<br />-aplicación/PowerPoint<br />-Application/vnd. MS-PowerPoint<br />-application/x-MSPowerPoint<br />-Application/MSPowerPoint<br />-Application/vnd. MS-PowerPoint<br />-Application/vnd. oasis. opendocument. Presentation<br />-Application/vnd.sun.xml. impress<br />-Application/vnd. stardivision. impress<br />-application/x-starimpress<br />-Application/vnd. Google-Apps. Presentation | Presentación |
+    | -Application/vnd. openxmlformats. SpreadsheetML. sheet<br />-Application/vnd. ms. sheet. macroEnabled. 12<br />-aplicación/Excel<br />-Application/vnd. ms<br />-application/x-Excel<br />-application/x-MSExcel<br />-Application/vnd. oasis. opendocument. Spreadsheet<br />-Application/vnd.sun.xml. Calc<br />-Application/vnd. stardivision. Calc<br />-application/x-StarCalc<br />-Application/vnd. Google-Apps. Spreadsheet | Hoja de cálculo |
+    | - **empieza por:** texto/ | Texto |
+    | Todos los demás tipos MIME de archivo | Otros |
+
+    ![policy_file tipo de filtros](media/policy_file-filters-type.png)
 
 - **En la papelera** : incluir o excluir archivos en la carpeta de la papelera. Estos archivos siguen pudiendo compartirse y suponen un riesgo.
+
+    ![filtros en papelera de archivo de directiva](media/policy_file-filters-trash.png)
 
 - **Última** modificación: hora de modificación del archivo. El filtro admite fechas anteriores y posteriores, intervalos de fechas y expresiones de tiempo relativo. Por ejemplo, todos los archivos que no se han modificado en los últimos seis meses.
 

@@ -3,12 +3,12 @@ title: Cloud App Security guía de investigación de alertas de detección de an
 description: En este artículo se explica cómo investigar las alertas de detección de anomalías de Cloud App Security emitidas cuando se detectan ataques en su organización.
 ms.date: 06/08/2020
 ms.topic: how-to
-ms.openlocfilehash: 6c3a099153da4ac69961fd759a26c08a31e6867b
-ms.sourcegitcommit: 40d17309b8729eb914ea91ba5fa7017340231488
+ms.openlocfilehash: 06920ce7812adc3d2a3ac98ecda86b9becbe7141
+ms.sourcegitcommit: 04d8731dce2a3b3b2d10bbfa27e5dc80b0a3e0f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97808987"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98062777"
 ---
 # <a name="how-to-investigate-anomaly-detection-alerts"></a>Cómo investigar alertas de detección de anomalías
 
@@ -30,7 +30,7 @@ En esta guía se proporciona información sobre cómo investigar y corregir Clou
 > - [Elevación de privilegios](#privilege-escalation-alerts)
 > - [Acceso a credenciales](#credential-access-alerts)
 > - [Colección](#collection-alerts)
-> - [Exfiltración](#exfiltration-alerts)
+> - [Filtración](#exfiltration-alerts)
 > - [Impacto](#impact-alerts)
 
 ## <a name="security-alert-classifications"></a>Clasificaciones de las alertas de seguridad
@@ -201,18 +201,6 @@ Esta detección identifica las aplicaciones con caracteres, como letras extranje
     - Aplicaciones que no se han actualizado recientemente. Esto podría ser signo de una aplicación que ya no se admite.
     - Aplicaciones que tienen permisos no pertinentes. Esto podría indicar que una aplicación es de riesgo.
 1. Si todavía sospecha que una aplicación es sospechosa, puede investigar el nombre de la aplicación, el editor y la dirección URL en línea.
-
-### <a name="unusual-addition-of-credentials-to-an-oauth-app"></a>Adición inusual de credenciales a una aplicación de OAuth
-
-Esta detección identifica la adición sospechosa de credenciales con privilegios a una aplicación de OAuth. Esto puede indicar que un atacante ha puesto en peligro la aplicación y la está usando para actividades malintencionadas.
-
-> [!NOTE]
-> Puesto que el riesgo que suponen un ataque realizado correctamente es alto, Cloud App Security también le notifica las detecciones que se vuelven a mediados de septiembre de 2020.
-> Las alertas de eventos anteriores tienen el título "alerta del sistema: adición inusual de credenciales a una aplicación de OAuth" y el tipo de alerta se MCAS_ALERT_MANAGEMENT_GENERIC.
-
-**Período de aprendizaje**
-
-Conocer el entorno de su organización requiere un período de siete días durante el cual puede esperar un gran volumen de alertas.
 
 ## <a name="execution-alerts"></a>Alertas de ejecución
 
@@ -447,6 +435,18 @@ Esta Directiva se basa en el aprendizaje del comportamiento normal de inicio de 
     - Dirección IP y ubicación
 1. Identifique la dirección IP de origen o la ubicación en la que se ha producido el intento de autenticación.
 1. Identifique si el usuario ha cambiado recientemente su contraseña y asegúrese de que todas las aplicaciones y dispositivos tienen la contraseña actualizada.
+
+### <a name="unusual-addition-of-credentials-to-an-oauth-app"></a>Adición inusual de credenciales a una aplicación de OAuth
+
+Esta detección identifica la adición sospechosa de credenciales con privilegios a una aplicación de OAuth. Esto puede indicar que un atacante ha puesto en peligro la aplicación y la está usando para actividades malintencionadas.
+
+> [!NOTE]
+> Puesto que el riesgo que suponen un ataque realizado correctamente es alto, Cloud App Security también le notifica las detecciones que se vuelven a mediados de septiembre de 2020.
+> Las alertas de eventos anteriores tienen el título "alerta del sistema: adición inusual de credenciales a una aplicación de OAuth" y el tipo de alerta se MCAS_ALERT_MANAGEMENT_GENERIC.
+
+**Período de aprendizaje**
+
+Conocer el entorno de su organización requiere un período de siete días durante el cual puede esperar un gran volumen de alertas.
 
 ## <a name="collection-alerts"></a>Alertas de recopilación
 
