@@ -1,14 +1,14 @@
 ---
-title: Detección y administración de TI en la sombra
+title: Detección y administración de shadow IT
 description: En este tutorial se describe el proceso para aplicar automáticamente etiquetas de clasificación de Azure Information Protection en Microsoft Cloud App Security.
 ms.date: 06/29/2020
 ms.topic: tutorial
-ms.openlocfilehash: d0b4e795aac071cb7583ed4851e2955a609e8d49
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: d7e3db3ca7f648b966ef9fbe3948eb345a710c10
+ms.sourcegitcommit: 4900168878f42e9fa79873df4b7c2d81991b5b27
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96316966"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97857999"
 ---
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>Tutorial: detección y administración de shadow IT en la red
 

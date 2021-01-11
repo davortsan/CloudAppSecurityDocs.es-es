@@ -3,12 +3,12 @@ title: Implementación de Cloud App Security
 description: En este inicio rápido se describe el proceso de empezar a trabajar con Cloud App Security para tener el control de las aplicaciones en la nube, información sobre ellas y usarlas.
 ms.date: 06/07/2020
 ms.topic: quickstart
-ms.openlocfilehash: 17a6416c7af8a6da814ad267307eea603e50604b
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: f17608329facabe6f48ae20938c44f3e8ef1b05a
+ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96314892"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97855547"
 ---
 # <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>Inicio rápido: Introducción a Microsoft Cloud App Security
 
@@ -49,7 +49,7 @@ Para acceder al portal de Cloud App Security, vaya a [https://portal.cloudappsec
 Tarea necesaria: Conectar aplicaciones
 
 1. En el engranaje de configuración, seleccione **Conectores de aplicaciones**.
-1. Haga clic en el signo más para agregar una aplicación y seleccione una aplicación.
+1. Haga clic en el signo más ( **+** ) para agregar una aplicación y seleccione una aplicación.
 1. Siga los pasos de configuración para conectar la aplicación.
 
 **¿Por qué conectar una aplicación?**
@@ -131,7 +131,7 @@ Tarea recomendada: Configurar los valores importantes
 
 1. En el engranaje de configuración, seleccione **Cloud Discovery settings** (Configuración de Cloud Discovery).
 1. En el engranaje de configuración, seleccione **Intervalos de direcciones IP**.
-1. Haga clic en el signo más para agregar un intervalo de direcciones IP.
+1. Haga clic en el signo más ( **+** ) para agregar un intervalo de direcciones IP.
 1. Escriba los **detalles**, la **ubicación**, las **etiquetas** y la **categoría** del intervalo IP.
 1. Elija **Crear**.
 
