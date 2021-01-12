@@ -3,12 +3,12 @@ title: Archivado de actualizaciones anteriores en Cloud App Security
 description: Este artículo es un archivo que describe las actualizaciones realizadas en versiones anteriores de Cloud App Security.
 ms.date: 11/25/2020
 ms.topic: conceptual
-ms.openlocfilehash: d64c12289025ef7270ae94f922cea187e8ca5dbf
-ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
+ms.openlocfilehash: bf9cc9d4d4a3e12931ba78b74eefb2ec04868d37
+ms.sourcegitcommit: 0768aa1992819e2651a14a731f79e178fdececc5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/03/2021
-ms.locfileid: "97855768"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98114792"
 ---
 # <a name="past-release-archive-of-microsoft-cloud-app-security"></a>Archivo de versiones anteriores de Microsoft Cloud App Security
 
@@ -806,7 +806,7 @@ Publicado el 3 de julio de 2017
 
 - **Extensiones de seguridad:** se trata de un nuevo panel para la administración centralizada de todas las extensiones de seguridad de Cloud App Security.  Las extensiones incluyen la administración de tokens de API, agentes SIEM y conectores de DLP externa. El nuevo panel está disponible en Cloud App Security en "configuración".
 
-  - Tokens de API: genere y administre sus propios [tokens de API](api-tokens.md) para integrar Cloud App Security con software de terceros mediante nuestras API de RESTful.
+  - Tokens de API: genere y administre sus propios [tokens de API](api-authentication.md) para integrar Cloud App Security con software de terceros mediante nuestras API de RESTful.
   - Agentes SIEM: la [integración de Siem](siem.md) se encontraba anteriormente en "configuración", que ahora está disponible como una pestaña en las extensiones de seguridad.
   - DLP externa (versión preliminar): Cloud App Security permite [aprovechar las inversiones existentes en sistemas de clasificación de terceros](icap-stunnel.md), como soluciones de prevención de pérdida de datos (DLP), y permite examinar el contenido de aplicaciones en la nube mediante las implementaciones que se ejecutan en el entorno. Póngase en contacto con el administrador de cuentas para tomar parte en la versión preliminar.
 
@@ -1196,7 +1196,7 @@ Publicado el 4 de septiembre de 2016
 
 **Mejoras:**
 
-- Cuando se produce un error en el examen de DLP, ahora se proporciona una explicación de por qué Cloud App Security no pudo examinar el archivo. Para obtener más información, consulte [Content Inspection](./content-inspection.md) (Inspección de contenido).
+- Cuando se produce un error en el examen de DLP, ahora se proporciona una explicación de por qué Cloud App Security no pudo examinar el archivo. Para obtener más información, consulte [Content Inspection](content-inspection.md) (Inspección de contenido).
 - Se han realizado mejoras en los motores de detección de anomalías, incluido en las alertas de viaje imposible.
 - Se han realizado mejoras en la experiencia de descartar alertas. También puede agregar comentarios para que pueda permitir que el equipo de Cloud App Security sepa si la alerta era interesante y por qué. Sus comentarios se usarán para mejorar las detecciones de Cloud App Security.
 - Se han mejorado los analizadores de Cloud Discovery de Cisco ASA.

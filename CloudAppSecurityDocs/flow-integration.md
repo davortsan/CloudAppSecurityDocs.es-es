@@ -3,12 +3,12 @@ title: Integre Microsoft Power Automate con Microsoft Cloud App Security para ob
 description: En este artículo se proporciona información sobre cómo obtener una automatización de alertas personalizada mediante la integración de Microsoft Power Automate con Cloud App Security.
 ms.date: 01/05/2021
 ms.topic: how-to
-ms.openlocfilehash: fc178428b74a77772e9d366bcdd8051fdc1a62b6
-ms.sourcegitcommit: ee66e70f711aa11501e308e53b1a4b46f2175e4e
+ms.openlocfilehash: 8b2575764470bb444c2bb7a36e37cf80dc6251ce
+ms.sourcegitcommit: 0768aa1992819e2651a14a731f79e178fdececc5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97894729"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98114741"
 ---
 # <a name="integrate-with-microsoft-power-automate-for-custom-alert-automation"></a>Integración con Microsoft Power Automate para la automatización de alertas personalizada
 
@@ -20,7 +20,7 @@ Cloud App Security se integra con [Microsoft Power Automate](/flow/getting-start
 
 - Debe tener un [plan de Microsoft Power Automate](https://flow.microsoft.com/pricing) válido.
 
-## <a name="how-it-works"></a>Cómo funciona
+## <a name="how-it-works"></a>Funcionamiento
 
 Por su cuenta, Cloud App Security proporciona opciones de gobierno predefinidas, como suspender a un usuario o hacer que un archivo sea privado al definir directivas. Mediante la creación de una guía en Power Automate mediante Cloud App Security Connector, puede crear flujos de trabajo para habilitar opciones de gobierno personalizadas para sus directivas. Una vez que se haya creado la guía en Power Automate, basta con asociarla a una directiva en Cloud App Security para enviar alertas a Power Automate. Microsoft Power Automate ofrece varios conectores y condiciones para crear un flujo de trabajo personalizado para su organización.
 
@@ -28,7 +28,7 @@ El [conector de Cloud App Security](/connectors/cloudappsecurity/) de Power Auto
 
 ## <a name="how-to-create-playbooks-with-power-automate"></a>Creación de guías con Power Automatic
 
-1. [Crear un token de API](api-tokens.md) en Cloud App Security.
+1. [Crear un token de API](api-authentication.md) en Cloud App Security.
 
 2. Vaya al [portal de Power Automate](https://flow.microsoft.com), seleccione **Mis flujos**, seleccione **nuevo** y, en la lista desplegable, seleccione **automatizado-desde** cero.
 
