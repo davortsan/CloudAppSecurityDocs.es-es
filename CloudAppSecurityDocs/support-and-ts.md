@@ -3,12 +3,12 @@ title: Información de soporte técnico y de solución de problemas para Cloud A
 description: En este artículo se describen las opciones de soporte técnico y de solución de problemas de Microsoft Cloud App Security
 ms.date: 11/14/2019
 ms.topic: conceptual
-ms.openlocfilehash: fb4791559129a8a95ff998954aafbea72367886c
-ms.sourcegitcommit: 72ddcd0f9a83251d588009abf506676612c50267
+ms.openlocfilehash: 5a8c0a92e1f3f69b9ce54f92b1ef424640a14fe2
+ms.sourcegitcommit: 9ff0ed1b2fe4080a253a310d0dd3024bc0865f3f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2020
-ms.locfileid: "97370082"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98162976"
 ---
 # <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Soporte técnico y solución de problemas de Microsoft Cloud App Security
 
@@ -75,7 +75,7 @@ Compruebe el [estado actual de Microsoft Cloud App Security](https://status.clou
 
 * [Comience hoy una versión de evaluación](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1)
 
-* [Manténgase al día con nuestro blog](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/bg-p/enterprisemobilityandsecurity/label-name/Microsoft%20Cloud%20App%20Security)
+* [Manténgase al día con nuestro blog](https://aka.ms/mcasblogposts)
 
 * Descargue la [hoja de datos de Cloud App Security](https://download.microsoft.com/download/E/F/E/EFE908F8-7EDB-4244-8039-67BA574186CC/Microsoft_Cloud_App_Security_eBook.pdf)
 
