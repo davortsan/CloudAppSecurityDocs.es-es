@@ -1,14 +1,14 @@
 ---
 title: Novedades de Cloud App Security
 description: Este artículo se actualiza con frecuencia para informarle de las novedades de la versión más reciente de Cloud App Security.
-ms.date: 10/25/2020
+ms.date: 01/10/2021
 ms.topic: overview
-ms.openlocfilehash: a98d6305b20b7cca12754edc8804781d20dd0f4e
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 891e01d44a8a76c3f3194ad817445690b80def8c
+ms.sourcegitcommit: 0768aa1992819e2651a14a731f79e178fdececc5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315487"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98114724"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Novedades de Microsoft Cloud App Security
 
@@ -21,6 +21,25 @@ Fuente RSS: reciba notificaciones cuando esta página se actualice copiando y pe
 > [!IMPORTANT]
 >
 > Los nombres de productos de protección contra amenazas de Microsoft están cambiando. Obtenga más información sobre esta y otras actualizaciones [en este artículo](https://www.microsoft.com/security/blog/?p=91813). Usaremos los nombres nuevos en futuras versiones.
+
+## <a name="cloud-app-security-release-189-190-and-191"></a>Versiones 189, 190 y 191 de Cloud App Security
+
+Fecha de publicación: 10 de enero de 2021
+
+- **Nueva detección de anomalías: adición sospechosa de credenciales a una aplicación de OAuth**  
+Se han ampliado las detecciones de anomalías para incluir la adición sospechosa de credenciales con privilegios a una aplicación de OAuth. La nueva detección ahora viene integrada y se habilita automáticamente. La detección puede indicar que un atacante ha puesto en peligro la aplicación y la está usando para actividades malintencionadas. Para más información, vea [Adición inusual de credenciales a una aplicación de OAuth](investigate-anomaly-alerts.md#unusual-addition-of-credentials-to-an-oauth-app).
+
+- **Auditoría mejorada de las actividades de detección de shadow IT**  
+Hemos actualizado la auditoría de las actividades de [shadow IT](tutorial-shadow-it.md) para incluir las acciones realizadas por los administradores. Las siguientes actividades nuevas ahora están disponibles en el registro de actividad y se pueden usar como parte de la [experiencia de investigación](investigate.md#use-the-investigation-tools) de Cloud App Security.
+  - Etiquetado o desetiquetado de aplicaciones
+  - Creación, actualización o eliminación de recopiladores de registros
+  - Creación, actualización o eliminación de orígenes de datos
+
+- **Nuevos puntos de conexión de la API de REST para el enriquecimiento de datos**  
+Se han agregado los siguientes [puntos de conexión de API para el enriquecimiento de datos](api-data-enrichment.md), para poder administrar totalmente los intervalos de direcciones IP mediante la API. Use el [script de administración de ejemplo](api-data-enrichment-manage-script.md) para que le ayude a empezar. Para más información sobre los intervalos, vea [Trabajo con etiquetas e intervalos IP](ip-tags.md).
+  - [Enumeración de intervalos de direcciones IP](api-data-enrichment-list.md)
+  - [Actualización del intervalo de direcciones IP](api-data-enrichment-update.md)
+  - [Eliminación del intervalo de direcciones IP](api-data-enrichment-delete.md)
 
 ## <a name="cloud-app-security-release-187-and-188"></a>Versiones 187 y 188 de Cloud App Security
 
