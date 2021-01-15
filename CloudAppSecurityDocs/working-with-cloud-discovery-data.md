@@ -3,12 +3,12 @@ title: Usar datos de Cloud Discovery para detectar un comportamiento arriesgado
 description: En este tema se proporcionan instrucciones sobre cómo trabajar con datos de Cloud Discovery, lo que incluye trabajar con la puntuación de riesgo de la aplicación.
 ms.date: 05/06/2019
 ms.topic: conceptual
-ms.openlocfilehash: 0ae744dcdc777ab806654abb7862ec27730be143
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: df1cd5bb2a75f8d68c8ec6822960c96dfc848ea9
+ms.sourcegitcommit: 7fc4d916a43d188b1aa4e3cee2e8bd1de230d135
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315606"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98206552"
 ---
 # <a name="working-with-discovery-data"></a>Trabajo con datos de detección
 
@@ -50,7 +50,7 @@ Para crear una exclusión:
 
 Los informes continuos personalizados proporcionan más granularidad al supervisar los datos de registro de Cloud Discovery de la organización. Al crear informes personalizados, es posible filtrar por ubicaciones geográficas concretas, redes y sitios o unidades organizativas. De forma predeterminada, solo aparecen los informes siguientes en el selector de informes de Cloud Discovery:
 
-- El **informe global** consolida toda la información del portal de todos los orígenes de datos incluidos en los registros.  El informe global no incluye datos de ATP de Microsoft defender.
+- El **informe global** consolida toda la información del portal de todos los orígenes de datos incluidos en los registros.  El informe global no incluye datos de Microsoft defender para el punto de conexión.
 
 - El **informe específico de origen de datos** muestra únicamente la información de un origen de datos concreto.
 
@@ -91,7 +91,7 @@ Para eliminar datos de Cloud Discovery:
 
     Es importante estar seguro de querer eliminar los datos antes de continuar: esta acción no se puede deshacer y elimina **todos** los datos de Cloud Discovery del sistema.
 
-3. Haga clic en el botón **Eliminar** .
+3. Haga clic en el botón **Eliminar**.
 
     ![eliminar datos](media/delete-data.png "eliminar datos")
 

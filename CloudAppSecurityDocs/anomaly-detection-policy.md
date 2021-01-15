@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1c84882ec04d72ef24d9fe044c0fabbb355a15bb
-ms.sourcegitcommit: ee66e70f711aa11501e308e53b1a4b46f2175e4e
+ms.openlocfilehash: 0fce6bbf6e13b34c904d88a34fe858f1586d9d90
+ms.sourcegitcommit: 7fc4d916a43d188b1aa4e3cee2e8bd1de230d135
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97894695"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98206481"
 ---
 # <a name="get-behavioral-analytics-and-anomaly-detection"></a>Obtención de análisis de comportamiento y detección de anomalías
 
@@ -35,7 +35,7 @@ Las anomalías se detectan mediante el examen de la actividad del usuario. El ri
 * Errores de inicio de sesión
 * Actividad administrativa
 * Cuentas inactivas
-* Location
+* Ubicación
 * Viaje imposible
 * Agente de usuario y dispositivo
 * Tasa de actividad
@@ -118,7 +118,7 @@ La detección busca los usuarios cuya cuenta de Azure AD ha quedado suspendida, 
 * Esta directiva genera perfiles de su entorno y desencadena alertas cuando un usuario realiza actividades de eliminación de correo electrónico sospechosas en una sola sesión. Esta Directiva puede indicar que los buzones de un usuario pueden estar en peligro por posibles vectores de ataque, como la comunicación de comando y control (C&C/C2) por correo electrónico.
 
 > [!NOTE]
-> Cloud App Security se integra con protección contra amenazas avanzada de Office (ATP de Office) para proporcionar protección para Exchange Online, incluida la detonación de direcciones URL, la protección contra malware y mucho más. Una vez habilitada la ATP de Office, comenzará a ver alertas en el registro de actividad de Cloud App Security.
+> Cloud App Security se integra con Microsoft defender para Office 365 con el fin de proporcionar protección para Exchange Online, incluida la detonación de direcciones URL, la protección contra malware y mucho más. Una vez que se haya habilitado defender para Office 365, comenzará a ver alertas en el registro de actividad de Cloud App Security.
 
 ### <a name="suspicious-oauth-app-file-download-activities"></a>Actividades de descarga de archivos de la aplicación OAuth sospechosa
 
@@ -158,7 +158,7 @@ Puede habilitar acciones de corrección automatizadas en las alertas generadas p
 
 1. Haga clic en el nombre de la directiva de detección en la página **Directiva**.
 1. En la ventana **Editar directiva de detección de anomalías** que se abre, en **Gobernanza**, establezca las acciones de corrección que quiera para cada aplicación conectada o para todas las aplicaciones.
-1. Haga clic en **Actualizar**.
+1. Haga clic en **Update**(Actualizar).
 
 ## <a name="tune-anomaly-detection-policies"></a>Ajuste de directivas de detección de anomalías
 

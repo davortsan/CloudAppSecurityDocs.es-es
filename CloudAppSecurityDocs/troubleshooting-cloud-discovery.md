@@ -3,12 +3,12 @@ title: Solución de problemas de errores de Cloud Discovery
 description: En este artículo se proporciona una lista de errores frecuentes de Cloud Discovery y recomendaciones para la solución de cada uno de ellos.
 ms.date: 04/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 96ff00be024688a025d30c03dca8194a99413038
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: c8c34f6d08fa0ba360988a11dd5501546c8ec318
+ms.sourcegitcommit: 7fc4d916a43d188b1aa4e3cee2e8bd1de230d135
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315946"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98206532"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Solución de problemas de Cloud Discovery
 
@@ -16,9 +16,9 @@ ms.locfileid: "96315946"
 
 En este artículo se proporciona una lista de errores de Cloud Discovery y recomendaciones para la solución de cada uno de ellos.
 
-## <a name="microsoft-defender-atp-integration"></a>Integración de Microsoft Defender ATP
+## <a name="microsoft-defender-for-endpoint-integration"></a>Integración de Microsoft Defender for Endpoint
 
-Si ha integrado ATP de Microsoft defender con Cloud App Security y no ve los resultados de la integración.
+Si ha integrado Microsoft defender para el punto de conexión con Cloud App Security y no ve los resultados de la integración.
 
 |Problema|Solución|
 |----|----|

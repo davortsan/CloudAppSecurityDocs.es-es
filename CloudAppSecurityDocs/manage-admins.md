@@ -3,12 +3,12 @@ title: Administración del acceso de administrador al portal de Cloud App Securi
 description: En este artículo se ofrecen instrucciones para configurar el acceso al portal de Cloud App Security para los administradores.
 ms.date: 01/11/2021
 ms.topic: how-to
-ms.openlocfilehash: b715ccf3495978ab2c7359507562347091a100a6
-ms.sourcegitcommit: 04d8731dce2a3b3b2d10bbfa27e5dc80b0a3e0f6
+ms.openlocfilehash: a9ab36e788d74493059187bc043d701283b1969f
+ms.sourcegitcommit: 7fc4d916a43d188b1aa4e3cee2e8bd1de230d135
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98062794"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98206521"
 ---
 # <a name="manage-admin-access"></a>Administrar el acceso de administrador
 
@@ -99,7 +99,7 @@ En el portal de Cloud App Security se pueden configurar los siguientes roles de 
   - Acciones de gobernanza: solo acciones relacionadas con Cloud Discovery
   - Recomendaciones de seguridad para plataformas en la nube: sin permisos
 
-- **Cloud Discovery administrador de informes**: tiene permisos para ver todos los datos de Cloud App Security que se ocupan exclusivamente de los informes de Cloud Discovery específicos seleccionados. Por ejemplo, puede conceder permisos de administrador a un usuario para el informe continuo desde ATP de Microsoft defender. El administrador de detección verá solo los Cloud Discovery datos relacionados con ese origen de datos y con el catálogo de aplicaciones. Este administrador no tendrá acceso a las páginas de **actividades**, **archivos** o **recomendaciones de seguridad** y acceso limitado a las directivas.
+- **Cloud Discovery administrador de informes**: tiene permisos para ver todos los datos de Cloud App Security que se ocupan exclusivamente de los informes de Cloud Discovery específicos seleccionados. Por ejemplo, puede conceder permisos de administrador a un usuario para el informe continuo de Microsoft defender para el punto de conexión. El administrador de detección verá solo los Cloud Discovery datos relacionados con ese origen de datos y con el catálogo de aplicaciones. Este administrador no tendrá acceso a las páginas de **actividades**, **archivos** o **recomendaciones de seguridad** y acceso limitado a las directivas.
 
 > [!NOTE]
 > Los roles de administrador de Cloud App Security integrados solo proporcionan permisos de acceso a Cloud App Security.

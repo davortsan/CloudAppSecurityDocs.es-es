@@ -3,12 +3,12 @@ title: Trabajo con aplicaciones detectadas en Cloud App Security
 description: En este artículo se describe el proceso de identificación y corrección de aplicaciones de riesgo de Cloud Discovery en Cloud App Security.
 ms.date: 09/25/2019
 ms.topic: conceptual
-ms.openlocfilehash: 4f3cae41623c352c957640ce2fc4002e0d1f09e0
-ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
+ms.openlocfilehash: 72cc84a98f61649ba7b1f15251e001a372d3a56b
+ms.sourcegitcommit: 7fc4d916a43d188b1aa4e3cee2e8bd1de230d135
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/03/2021
-ms.locfileid: "97855402"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98206464"
 ---
 # <a name="working-with-discovered-apps"></a>Trabajar con aplicaciones detectadas
 
@@ -110,7 +110,7 @@ Para crear una exclusión:
 
 Los informes continuos personalizados proporcionan más granularidad al supervisar los datos de registro de Cloud Discovery de la organización. Al crear informes personalizados, es posible filtrar por ubicaciones geográficas concretas, redes y sitios o unidades organizativas. De forma predeterminada, solo aparecen los informes siguientes en el selector de informes de Cloud Discovery:
 
-- El **informe global** consolida toda la información del portal de todos los orígenes de datos incluidos en los registros.  El informe global no incluye datos de ATP de Microsoft defender.
+- El **informe global** consolida toda la información del portal de todos los orígenes de datos incluidos en los registros.  El informe global no incluye datos de Microsoft defender para el punto de conexión.
 
 - El **informe específico de origen de datos** muestra únicamente la información de un origen de datos concreto.
 
@@ -151,7 +151,7 @@ Para eliminar datos de Cloud Discovery:
 
     Es importante estar seguro de querer eliminar los datos antes de continuar: esta acción no se puede deshacer y elimina **todos** los datos de Cloud Discovery del sistema.
 
-1. Haga clic en el botón **Eliminar** .
+1. Haga clic en el botón **Eliminar**.
 
     ![eliminar datos](media/delete-data.png "eliminar datos")
 
