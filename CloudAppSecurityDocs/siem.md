@@ -1,16 +1,16 @@
 ---
 title: Integración de SIEM genérica con Cloud App Security
 description: En este artículo se proporciona información sobre cómo integrar el SIEM genérico con Cloud App Security.
-ms.date: 11/08/2020
+ms.date: 01/17/2021
 ms.topic: how-to
-ms.openlocfilehash: ed69404df787a9c439c3e433b00b0f06fbd8769a
-ms.sourcegitcommit: 605ab52545796cff9b0f6392ceff12c310c7fe2d
+ms.openlocfilehash: aa2ba2bf7a43f2140724e47e82e9f5018d79c342
+ms.sourcegitcommit: 7a7c0c0fa0ca78a1f3538933eb136a17c57dfb9a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96851877"
+ms.lasthandoff: 01/17/2021
+ms.locfileid: "98537595"
 ---
-# <a name="generic-siem-integration-preview"></a>Integración de SIEM genérica (versión preliminar)
+# <a name="generic-siem-integration"></a>Integración de SIEM genérica
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -47,7 +47,7 @@ La integración con SIEM se realiza en tres pasos:
 2. Descarga del archivo JAR y ejecución en el servidor
 3. Valide que el agente SIEM funcione.
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 * Servidor Windows o Linux estándar (puede ser una máquina virtual).
 * Sistema operativo: Windows o Linux
@@ -68,16 +68,16 @@ La integración con SIEM se realiza en tres pasos:
     ![Captura de pantalla que muestra el menú Agregar integración de SIEM](media/siem0.png)
 
 1. En el asistente, haga clic en **Iniciar asistente**.
-1. En el asistente, asigne un nombre, **seleccione el formato SIEM** y establezca la **Configuración avanzada** que esté relacionada con ese formato. Haga clic en **Siguiente**.
+1. En el asistente, asigne un nombre, **seleccione el formato SIEM** y establezca la **Configuración avanzada** que esté relacionada con ese formato. Haga clic en **Next**.
 
     ![Configuración general de SIEM](media/siem1.png)
 
 1. Escriba la dirección IP o nombre de host del **host de syslog remoto** y el **número de puerto de syslog**. Seleccione TCP o UDP como protocolo de syslog remoto.
-    Puede trabajar con el administrador de seguridad para obtener estos detalles si no los tiene. Haga clic en **Siguiente**.
+    Puede trabajar con el administrador de seguridad para obtener estos detalles si no los tiene. Haga clic en **Next**.
 
     ![Configuración remota de Syslog](media/siem2.png)
 
-1. Seleccione los tipos de datos que quiera exportar al servidor SIEM para **Alertas** y **Actividades**. Use el control deslizante para habilitarlas y deshabilitarlas; de forma predeterminada todo está seleccionado. Puede usar el menú desplegable **Apply to** (Aplicar a) para establecer filtros para enviar solo alertas y actividades específicas al servidor SIEM. Haga clic en **Editar y obtener vista previa de resultados** para comprobar que el filtro funciona según lo esperado. Haga clic en **Siguiente**.
+1. Seleccione los tipos de datos que quiera exportar al servidor SIEM para **Alertas** y **Actividades**. Use el control deslizante para habilitarlas y deshabilitarlas; de forma predeterminada todo está seleccionado. Puede usar el menú desplegable **Apply to** (Aplicar a) para establecer filtros para enviar solo alertas y actividades específicas al servidor SIEM. Haga clic en **Editar y obtener vista previa de resultados** para comprobar que el filtro funciona según lo esperado. Haga clic en **Next**.
 
    ![Configuración de tipos de datos](media/siem3.png)
 
@@ -190,9 +190,6 @@ Para editar el agente SIEM, haga clic en los tres puntos al final de la fila del
 Para eliminar el agente SIEM, haga clic en los tres puntos al final de la fila del agente SIEM de la tabla y seleccione **Eliminar**.
 
 ![SIEM: eliminación](media/siem-delete.png)
-
-> [!NOTE]
-> Esta característica está en versión preliminar pública.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
