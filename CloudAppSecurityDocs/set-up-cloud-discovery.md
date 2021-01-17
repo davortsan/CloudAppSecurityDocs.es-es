@@ -1,14 +1,14 @@
 ---
 title: Implementación de Cloud Discovery
 description: En este artículo se describe el procedimiento de configuración de Cloud Discovery para que entre en funcionamiento.
-ms.date: 08/09/2020
+ms.date: 01/17/2021
 ms.topic: how-to
-ms.openlocfilehash: e4ac4ce0e6148ca37c4c666b94da6779578ca77a
-ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
+ms.openlocfilehash: 2ac879d1cd4ac75aebdf080599f77b0bedba640e
+ms.sourcegitcommit: e9d295ba27d0797e970d10b3effaff4961cbf556
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/03/2021
-ms.locfileid: "97855241"
+ms.lasthandoff: 01/17/2021
+ms.locfileid: "98540903"
 ---
 # <a name="set-up-cloud-discovery"></a>Configuración de Cloud Discovery
 
@@ -113,8 +113,8 @@ Atributos de datos (según la documentación del proveedor):
 | Digital Arts i-FILTER | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
 | ForcePoint LEEF |**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
 | Nube de seguridad Web de ForcePoint\* |**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
-| Fortigate | No | **Sí** | No | **Sí** | **Sí** | **Sí** |
-| Fortinet FortiOS |**Sí**|**Sí**|No|**Sí**|**Sí**|**Sí**|
+| Fortinet Fortigate | No | **Sí** | No | **Sí** | **Sí** | **Sí** |
+| FortiOS |**Sí**|**Sí**|No|**Sí**|**Sí**|**Sí**|
 | iboss |**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|**Sí**|
 | Juniper SRX | No | **Sí** | No | **Sí** | **Sí** | **Sí** |
 | Juniper SSG | No | **Sí** | **Sí** | **Sí** | **Sí** | **Sí** |
