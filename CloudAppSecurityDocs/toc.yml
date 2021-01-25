@@ -304,32 +304,6 @@
           href: api-introduction.md
         - name: Autenticación
           href: api-authentication.md
-        - name: Cloud Discovery
-          items:
-            - name: Introducción
-              href: api-discovery.md
-            - name: Iniciación de la carga de archivos
-              href: api-discovery-initiate.md
-            - name: Realización de la carga de archivos
-              href: api-discovery-perform.md
-            - name: Finalización de la carga de archivos
-              href: api-discovery-finalize.md
-            - name: Generación de scripts de bloques
-              href: api-discovery-script.md
-        - name: Enriquecimiento de datos
-          items:
-            - name: Información general
-              href: api-data-enrichment.md
-            - name: Administración de intervalos de direcciones IP mediante la API
-              href: api-data-enrichment-manage-script.md
-            - name: Enumeración de intervalos IP
-              href: api-data-enrichment-list.md
-            - name: Actualización del intervalo de direcciones IP
-              href: api-data-enrichment-create.md
-            - name: Actualización del intervalo de direcciones IP
-              href: api-data-enrichment-update.md
-            - name: Eliminación del intervalo de direcciones IP
-              href: api-data-enrichment-delete.md
         - name: Actividades
           items:
             - name: Introducción
@@ -360,6 +334,36 @@
               href: api-alerts-mark-read.md
             - name: Marcación de alerta como no leída
               href: api-alerts-mark-unread.md
+        - name: Cloud Discovery
+          items:
+            - name: Introducción
+              href: api-discovery.md
+            - name: Iniciación de la carga de archivos
+              href: api-discovery-initiate.md
+            - name: Realización de la carga de archivos
+              href: api-discovery-perform.md
+            - name: Finalización de la carga de archivos
+              href: api-discovery-finalize.md
+            - name: Enumeración de informes continuos
+              href: api-discovery-list-streams.md
+            - name: Enumeración de categorías de informes continuos
+              href: api-discovery-list-categories.md
+            - name: Generación de scripts de bloques
+              href: api-discovery-script.md
+        - name: Enriquecimiento de datos
+          items:
+            - name: Información general
+              href: api-data-enrichment.md
+            - name: Administración de intervalos de direcciones IP mediante la API
+              href: api-data-enrichment-manage-script.md
+            - name: Enumeración de intervalos IP
+              href: api-data-enrichment-list.md
+            - name: Actualización del intervalo de direcciones IP
+              href: api-data-enrichment-create.md
+            - name: Actualización del intervalo de direcciones IP
+              href: api-data-enrichment-update.md
+            - name: Eliminación del intervalo de direcciones IP
+              href: api-data-enrichment-delete.md
         - name: Entities
           items:
             - name: Introducción
