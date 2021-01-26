@@ -3,12 +3,12 @@ title: Solución de problemas de controles de sesión y acceso
 description: En este artículo se proporcionan a los administradores instrucciones sobre cómo investigar y resolver controles de acceso y de sesión comunes.
 ms.date: 07/15/2020
 ms.topic: conceptual
-ms.openlocfilehash: 9d327449ba51871f2277f521ddd6ec6f1ba47ade
-ms.sourcegitcommit: d87372b47ca98e942c2bf94032a6a61902627d69
+ms.openlocfilehash: 6de4bfea4892328871661819411a2be5e8d4b568
+ms.sourcegitcommit: f56a2060b99ab087b8637606a1fb66e5577aded8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96315895"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794891"
 ---
 # <a name="troubleshooting-access-and-session-controls"></a>Solución de problemas de controles de sesión y acceso
 
@@ -59,7 +59,7 @@ Cuando se configura por primera vez Cloud App Security controles de acceso y de 
     > - Cloud App Security aprovecha los protocolos de seguridad de la capa de transporte (TLS) 1.2 + para proporcionar el mejor cifrado de la clase. No se podrá obtener acceso a las aplicaciones y exploradores de cliente nativo que no admitan TLS 1.2 + cuando se configuran con el control de sesión. Sin embargo, las aplicaciones SaaS que usen TLS 1.1 o versiones anteriores aparecerán en el explorador como usuarias de TLS 1.2+ al configurarse con Cloud App Security.
     > - Aunque los controles de sesión se compilan para trabajar con cualquier explorador en cualquier plataforma principal de cualquier sistema operativo, se admite Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest) o Apple Safari (latest). También se puede bloquear o permitir el acceso a aplicaciones móviles y de escritorio.
 
-    | Explorador | Pasos |
+    | Browser | Pasos |
     |---|---|
     | Microsoft Internet Explorer | 1. abrir Internet Explorer<br />2. seleccionar **herramientas**  >  **Opciones**  >  **avanzadas** de Internet (pestaña)<br />3. en **seguridad**, seleccione **TLS 1,2**<br />4. Seleccione **aplicar** y, después, haga clic en **Aceptar** .<br />5. Reinicie el explorador y compruebe que puede acceder a la aplicación |
     | Cromo de Microsoft Edge/Edge | 1. Abra la búsqueda desde la barra de tareas y busque "opciones de Internet"<br />2. Seleccione **Opciones de Internet**<br />3. en **seguridad**, seleccione **TLS 1,2**<br />4. Seleccione **aplicar** y, después, haga clic en **Aceptar** .<br />5. Reinicie el explorador y compruebe que puede acceder a la aplicación |
@@ -144,7 +144,7 @@ Azure AD el acceso condicional permite que la información del dispositivo compa
 1. En un explorador, inicie sesión en un dispositivo que esté Azure AD híbrido Unido o compatible con Intune según el filtro de la Directiva.
 1. Compruebe que las actividades de estos dispositivos rellenan el registro. En Cloud App Security, en la página **registro de actividad** , [filtre](activity-filters.md) por la **etiqueta de dispositivo** igual a **Azure ad híbrido unida**, **compatible con Intune** o ambos según los filtros de la Directiva.
 1. Si las actividades no se rellenan en el registro de actividad Cloud App Security, vaya a Azure AD y haga lo siguiente:
-    1. En **Monitoring**  >  **inicios de sesión** de supervisión, compruebe que hay actividades de inicio de sesión en los registros.
+    1. En   >  **inicios de sesión** de supervisión, compruebe que hay actividades de inicio de sesión en los registros.
     1. Seleccione la entrada de registro correspondiente al dispositivo en el que ha iniciado sesión.
     1. En el panel **Detalles**, en la pestaña **Información del dispositivo**, compruebe que el dispositivo está **administrado** (unido a Azure AD híbrido) o es **compatible** (compatible con Intune). Si no puede comprobar ninguno de estos estados, pruebe con otra entrada de registro o asegúrese de que los datos del dispositivo estén configurados correctamente en Azure AD.
     1. En el caso del acceso condicional, algunos exploradores pueden requerir una configuración adicional, como la instalación de una extensión. Utilice la información de la guía de [soporte del explorador de acceso condicional](/azure/active-directory/conditional-access/concept-conditional-access-conditions#supported-browsers) para configurar el explorador.
@@ -180,12 +180,12 @@ El mecanismo de identificación de dispositivos puede solicitar la autenticació
 
 Si está experimentando el certificado de cliente que se está expulsando después de abrir una nueva pestaña, esto puede deberse a que la configuración está oculta en **las opciones de Internet**.
 
-| Explorador | Pasos |
+| Browser | Pasos |
 |---|---|
 | Microsoft Internet Explorer | 1. abrir Internet Explorer<br />2. seleccionar **herramientas**  >  **Opciones**  >  **avanzadas** de Internet (pestaña)<br />3. en **seguridad**, seleccione **no solicitar la selección de certificado de cliente cuando solo existe un certificado** .<br />4. Seleccione **aplicar** y, después, haga clic en **Aceptar** .<br />5. Reinicie el explorador y compruebe que puede acceder a la aplicación sin los mensajes adicionales. |
 | Cromo de Microsoft Edge/Edge | 1. Abra la búsqueda desde la barra de tareas y busque "opciones de Internet"<br />2. Seleccione **Opciones de Internet**<br />3. Seleccione **seguridad**, seleccione **Intranet local** y, a continuación, haga clic en **nivel personalizado** .<br />4. en **varios**  >  **no preguntar si se selecciona un certificado de cliente cuando solo existe un certificado**, seleccione **deshabilitar** .<br />5. Haga clic en **Aceptar** para cerrar el cuadro de diálogo nivel personalizado<br />6. Haga clic en **aplicar** y, a continuación, seleccione **Aceptar** para cerrar opciones de Internet.<br />7. Reinicie el explorador y compruebe que puede acceder a la aplicación sin los mensajes adicionales. |
 
-<a name="device-identification-additional-considerations"></a>s
+<a name="device-identification-additional-considerations"></a>
 
 #### <a name="additional-considerations"></a>Consideraciones adicionales
 
@@ -285,7 +285,7 @@ Después de agregar una aplicación, puede ver la opción **solicitar control de
 1. Escriba el nombre principal de usuario o el correo electrónico de los usuarios que van a incorporar la aplicación y, a continuación, haga clic en **Guardar**.
 1. Vaya a la aplicación que va a implementar. La página que vea dependerá de si se reconoce la aplicación. Realice una de las siguientes acciones:
 
-    | Estado de la aplicación | Description | Pasos |
+    | Estado de la aplicación | Descripción | Pasos |
     | --- | --- | --- |
     | No reconocido | Verá una página de aplicación no reconocida que le pide que configure la aplicación. | 1. [agregue la aplicación a control de aplicaciones de acceso condicional](proxy-deployment-any-app.md#add-app).<br /> 2. [agregue los dominios de la aplicación](proxy-deployment-any-app.md#add-domains)y, a continuación, vuelva a la aplicación y actualice la página.<br /> 3. [Instale los certificados para la aplicación](proxy-deployment-any-app.md#install-certs). |
     | Recognized | Verá una página de incorporación que le pide que continúe con el proceso de configuración de la aplicación. | - [Instale los certificados para la aplicación](proxy-deployment-any-app.md#install-certs). <br /><br /> **Nota:** Asegúrese de que la aplicación esté configurada con todos los dominios necesarios para que la aplicación funcione correctamente. Para configurar dominios adicionales, vaya a [Agregar los dominios de la aplicación](proxy-deployment-any-app.md#add-domains)y, a continuación, vuelva a la página de la aplicación. |
@@ -422,9 +422,9 @@ Al enrutar a un usuario a través del Cloud App Security, puede notificar al usu
     | Tipo de mensaje | Detalles |
     | --- | --- |
     | Valor predeterminado | **Encabezado**:<br />El acceso a [nombre de la aplicación aparecerá aquí] está supervisado<br />**Cuerpo**:<br />Para mejorar la seguridad, su organización permite el acceso a [el nombre de la aplicación aparecerá aquí] en modo de supervisión. El acceso solo está disponible desde un explorador Web. |
-    | Personalizados | **Encabezado**:<br />Use este cuadro para proporcionar un encabezado personalizado para informar a los usuarios que se están supervisando.<br />**Cuerpo**:<br />Use este cuadro para agregar información personalizada adicional para el usuario, como quién debe ponerse en contacto con preguntas y admite las siguientes entradas: texto sin formato, texto enriquecido, hipervínculos. |
+    | Personalizado | **Encabezado**:<br />Use este cuadro para proporcionar un encabezado personalizado para informar a los usuarios que se están supervisando.<br />**Cuerpo**:<br />Use este cuadro para agregar información personalizada adicional para el usuario, como quién debe ponerse en contacto con preguntas y admite las siguientes entradas: texto sin formato, texto enriquecido, hipervínculos. |
 1. Haga clic en **vista previa** para comprobar la página de supervisión de usuarios que aparece antes de acceder a una aplicación.
-1. Haga clic en **Guardar**.
+1. Haga clic en **Save**(Guardar).
 
 ### <a name="not-able-to-access-app-from-a-third-party-identity-provider"></a>No se puede tener acceso a la aplicación desde un proveedor de identidades de terceros
 

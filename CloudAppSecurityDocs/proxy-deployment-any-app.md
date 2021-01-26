@@ -1,14 +1,14 @@
 ---
 title: Implementar Control de aplicaciones de acceso condicional de Cloud App Security para las aplicaciones
 description: En este artículo se proporciona información sobre cómo implementar las características de Microsoft Cloud App Security Control de aplicaciones de acceso condicional proxy inverso para las aplicaciones.
-ms.date: 03/31/2020
+ms.date: 01/26/2021
 ms.topic: how-to
-ms.openlocfilehash: 52eb9874a5b80fa22f957f855374a0f3444d7101
-ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
+ms.openlocfilehash: ac99dee3b145a8d77c4eaaba8c5624a572aec86b
+ms.sourcegitcommit: f56a2060b99ab087b8637606a1fb66e5577aded8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/03/2021
-ms.locfileid: "97855853"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794985"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>Incorporación e implementación del Control de aplicaciones de acceso condicional para cualquier aplicación
 
@@ -78,7 +78,13 @@ Use los pasos siguientes para crear una Azure AD Directiva de acceso condicional
 
 ### <a name="configure-integration-with-other-idp-solutions"></a>Configuración de la integración con otras soluciones IdP
 
-Use los pasos siguientes para enrutar las sesiones de la aplicación desde otras soluciones IdP a Cloud App Security. Para obtener Azure AD, consulte Configuración de la [integración con Azure ad](#configure-integration-with-azure-ad). Para ver ejemplos de cómo configurar las soluciones IdP, consulte [configuración de su IDP](proxy-idp-examples.md).
+Use los pasos siguientes para enrutar las sesiones de la aplicación desde otras soluciones IdP a Cloud App Security. Para obtener Azure AD, consulte Configuración de la [integración con Azure ad](#configure-integration-with-azure-ad).
+
+> [!NOTE]
+> Para ver ejemplos de cómo configurar las soluciones IdP, consulte:
+>
+> - [Configuración del IdP PingOne](proxy-idp-pingone.md)
+> - [Configuración de la AD FS IdP](proxy-idp-adfs.md)
 
 1. En Cloud App Security, vaya a **investigar**  >  **aplicaciones conectadas**  >  **control de aplicaciones de acceso condicional aplicaciones**.
 
@@ -163,7 +169,7 @@ Use los pasos siguientes para enrutar las sesiones de la aplicación desde otras
 
 Vaya a la aplicación que va a implementar. La página que vea dependerá de si se reconoce la aplicación. Realice una de las siguientes acciones:
 
-| Estado de la aplicación | Description | Pasos |
+| Estado de la aplicación | Descripción | Pasos |
 | --- | --- | --- |
 | No reconocido | Verá una página de aplicación no reconocida que le pide que configure la aplicación. | 1. [agregue la aplicación a control de aplicaciones de acceso condicional](#add-app).<br /> 2. [agregue los dominios de la aplicación](#add-domains)y, a continuación, vuelva a la aplicación y actualice la página.<br /> 3. [Instale los certificados para la aplicación](#install-certs). |
 | Recognized | Verá una página de incorporación que le pide que continúe con el proceso de configuración de la aplicación. | - [Instale los certificados para la aplicación](#install-certs). <br /><br /> **Nota:** Asegúrese de que la aplicación esté configurada con todos los dominios necesarios para que la aplicación funcione correctamente. Para configurar dominios adicionales, vaya a [Agregar los dominios de la aplicación](#add-domains)y, a continuación, vuelva a la página de la aplicación. |

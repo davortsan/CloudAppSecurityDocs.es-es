@@ -1,14 +1,14 @@
 ---
 title: Implementación del control de aplicaciones de acceso condicional para aplicaciones de Azure AD
 description: En este artículo se ofrece información sobre cómo implementar las características del proxy inverso de control de aplicaciones de acceso condicional de Microsoft Cloud App Security para aplicaciones de Azure AD.
-ms.date: 03/31/2020
+ms.date: 01/26/2021
 ms.topic: how-to
-ms.openlocfilehash: 3fecc4eca9b867aba72dc625151ec915906075eb
-ms.sourcegitcommit: 16a65ab2c8ca778d0b3cfa97b847af4c812363b2
+ms.openlocfilehash: e4a913c3da802b58180f3611f19ff62c6f0c4ad4
+ms.sourcegitcommit: f56a2060b99ab087b8637606a1fb66e5577aded8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/03/2021
-ms.locfileid: "97855535"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794970"
 ---
 # <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Implementación del Control de aplicaciones de acceso condicional para aplicaciones destacadas
 
@@ -69,7 +69,13 @@ Use los pasos siguientes para crear una Azure AD Directiva de acceso condicional
 
 ### <a name="configure-integration-with-other-idp-solutions"></a>Configuración de la integración con otras soluciones IdP
 
-Use los pasos siguientes para enrutar las sesiones de la aplicación desde otras soluciones IdP a Cloud App Security. Para obtener Azure AD, consulte Configuración de la [integración con Azure ad](#configure-integration-with-azure-ad). Para ver ejemplos de cómo configurar las soluciones IdP, consulte [configuración de su IDP](proxy-idp-examples.md).
+Use los pasos siguientes para enrutar las sesiones de la aplicación desde otras soluciones IdP a Cloud App Security. Para obtener Azure AD, consulte Configuración de la [integración con Azure ad](#configure-integration-with-azure-ad).
+
+> [!NOTE]
+> Para ver ejemplos de cómo configurar las soluciones IdP, consulte:
+>
+> - [Configuración del IdP PingOne](proxy-idp-pingone.md)
+> - [Configuración de la AD FS IdP](proxy-idp-adfs.md)
 
 1. En Cloud App Security, vaya a **investigar**  >  **aplicaciones conectadas**  >  **control de aplicaciones de acceso condicional aplicaciones**.
 
