@@ -3,12 +3,12 @@ title: Administración del acceso de administrador al portal de Cloud App Securi
 description: En este artículo se ofrecen instrucciones para configurar el acceso al portal de Cloud App Security para los administradores.
 ms.date: 01/11/2021
 ms.topic: how-to
-ms.openlocfilehash: a9ab36e788d74493059187bc043d701283b1969f
-ms.sourcegitcommit: 7fc4d916a43d188b1aa4e3cee2e8bd1de230d135
+ms.openlocfilehash: f25524e7190a8ac75bdf0b467bba2e98c0b23b10
+ms.sourcegitcommit: 2294a61e636b436ac96a02eb7d4969f445b4aebb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98206521"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98949527"
 ---
 # <a name="manage-admin-access"></a>Administrar el acceso de administrador
 
@@ -20,7 +20,7 @@ Microsoft Cloud App Security es compatible con el control de acceso basado en r
 
 De forma predeterminada, los siguientes roles de administrador de Office 365 y [Azure Active Directory (Azure ad)](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) tienen acceso a Cloud App Security:
 
-- Administrador **global y administrador de seguridad**: los administradores con **acceso completo** tienen permisos completos en Cloud App Security. Pueden agregar administradores, incorporar directivas y configuración, cargar registros y realizar acciones de gobernanza.
+- Administrador **global y administrador de seguridad**: los administradores con **acceso completo** tienen permisos completos en Cloud App Security. Pueden agregar administradores, agregar directivas y opciones de configuración, cargar registros y realizar acciones de gobierno, acceder y administrar agentes de SIEM.
 
 - **Administrador de cumplimiento**: tiene permisos de solo lectura y puede administrar alertas. No se puede tener acceso a recomendaciones de seguridad para plataformas en la nube. Puede crear y modificar directivas de archivo, permitir acciones de control de archivos y ver todos los informes integrados en Administración de datos.
 
@@ -38,7 +38,7 @@ De forma predeterminada, los siguientes roles de administrador de Office 365 y [
   - Obtener acceso a la página de conectores de aplicaciones ni verla
   - Obtener acceso al registro de gobernanza ni verlo
   - Obtener acceso a la página de informes de instantáneas de administración ni verla
-  - Acceso y edición del agente SIEM
+  - Acceso y visualización de agentes SIEM
 
 - **Lector global**: tiene acceso de solo lectura completo a todos los aspectos de Cloud App Security. No se puede cambiar la configuración ni realizar ninguna acción.
 
